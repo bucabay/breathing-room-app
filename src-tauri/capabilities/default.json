@@ -1,0 +1,6 @@
+{
+  "identifier": "main",
+  "description": "Local maintenance commands for the main application window. No general shell capability.",
+  "windows": ["main", "activity-panel"],
+  "permissions": ["core:default"]
+}

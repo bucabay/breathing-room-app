@@ -1,0 +1,10 @@
+Breathing Room
+Copyright (c) 2026 Bucabay
+https://github.com/bucabay/breathing-room-app
+
+Breathing Room includes a React/Tauri UI foundation derived from Seal,
+Copyright (c) 2026 Bucabay, licensed under the MIT License.
+The original notice is preserved in THIRD_PARTY_LICENSES/Seal-MIT.txt.
+
+Other third-party dependencies retain their respective licenses.
+This notice does not grant rights to trademarks or imply endorsement.

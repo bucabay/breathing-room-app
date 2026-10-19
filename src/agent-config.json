@@ -1,0 +1,4 @@
+{
+  "baseUrl": "https://breathing-room-api.worker-sendhub.workers.dev",
+  "model": "@cf/qwen/qwen3-30b-a3b-fp8"
+}

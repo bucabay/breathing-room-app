@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+src-tauri/target/
+src-tauri/gen/
+.DS_Store
+*.log
+.env*
+__pycache__/
+*.pyc
+scripts/cleanup/agent.mjs
+.desktop-signing.local.json
+*.p12
+*.p8
+*.key

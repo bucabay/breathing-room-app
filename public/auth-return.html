@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <title>Signed in — Breathing Room</title>
+  <style>
+    /* Bundled by the native build; the source preview uses system fallbacks. */
+    {{font_faces}}
+    :root { --canvas:#f7f9fc; --panel:#fff; --ink:#171717; --soft:#647087; --line:#e4e9f1; --blue:#3b82f6; --mint:#eaf7f2; --green:#11745f; --orange:#f38020; --shadow:0 20px 70px rgba(31,55,91,.06); }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; min-height:100svh; display:grid; place-items:center; padding:40px 22px; background:var(--canvas); color:var(--ink); font-family:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+    .confirmation { width:100%; max-width:540px; }
+    .brand { display:flex; align-items:center; justify-content:center; gap:13px; margin-bottom:34px; }
+    .brand svg { width:52px; height:52px; flex-shrink:0; }
+    .wordmark { font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,sans-serif; font-size:27px; font-weight:600; line-height:.96; letter-spacing:-1.25px; }
+    .wordmark span { display:block; }
+    .wordmark i { color:var(--orange); font-style:normal; }
+    .card { border:1px solid var(--line); border-radius:20px; background:var(--panel); padding:42px 40px 28px; box-shadow:var(--shadow); }
+    .status { display:inline-flex; align-items:center; gap:9px; margin-bottom:25px; color:var(--green); font-size:13px; font-weight:600; }
+    .status svg { width:30px; height:30px; padding:6px; border-radius:50%; background:var(--mint); }
+    h1 { font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,sans-serif; font-size:clamp(30px,5vw,40px); font-weight:600; line-height:1.15; letter-spacing:-1.6px; margin:0 0 15px; }
+    .message { margin:0; max-width:38ch; font-size:15px; line-height:1.8; color:var(--soft); }
+    .return { display:flex; align-items:center; gap:13px; border-top:1px solid var(--line); padding-top:24px; margin-top:32px; }
+    .return > svg { width:25px; height:25px; color:var(--blue); flex-shrink:0; }
+    .return-copy { flex:1; min-width:0; }
+    .return strong { display:block; font-size:13px; font-weight:600; }
+    .return small { display:block; font-size:12px; color:var(--soft); line-height:1.6; margin-top:4px; }
+    kbd { font:12px "DM Sans",-apple-system,sans-serif; white-space:nowrap; color:var(--soft); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:6px 9px; }
+    footer { display:flex; align-items:center; justify-content:center; gap:7px; margin-top:23px; color:var(--soft); font-size:11px; }
+    footer svg { width:14px; height:14px; }
+    body[data-status="error"] { --mint:#fff0ef; --green:#b7443e; }
+    @media (prefers-color-scheme:dark) { :root { --canvas:#141b25; --panel:#1b2431; --ink:#eff3fa; --soft:#a1aec1; --line:#2a3444; --mint:#213e36; --green:#5cc7a3; --shadow:0 20px 70px rgba(0,0,0,.15); } body[data-status="error"] { --mint:#47302f; --green:#ffaba6; } }
+    @media (max-width:480px) { body { padding:30px 18px; } .brand { margin-bottom:28px; } .card { padding:30px 25px 24px; border-radius:16px; } .return { gap:10px; } kbd { display:none; } }
+  </style>
+</head>
+<body data-status="success">
+  <main class="confirmation" aria-labelledby="page-title">
+    <header class="brand" aria-label="Breathing Room">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-hidden="true"><rect x="42" y="42" width="940" height="940" rx="218" fill="#3b82f6"/><g fill="none" stroke="#fff" stroke-width="62" stroke-linecap="round"><path d="M240 420h375c115 0 124-158 25-158-43 0-66 20-73 49"/><path d="M240 544h523c108 0 120-142 29-142"/><path d="M240 666h311c96 0 111 137 19 137-39 0-64-20-69-47"/></g></svg>
+      <div class="wordmark"><span>breathing</span><span>room<i>.</i></span></div>
+    </header>
+    <section class="card">
+      <div class="status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg><span>Sign-in complete</span></div>
+      <h1 id="page-title">You’re signed in.</h1>
+      <p class="message">Your cleanup agent is ready. Head back to Breathing Room to find a little more space.</p>
+      <div class="return">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        <div class="return-copy"><strong>Switch back to Breathing Room</strong><small>You can close this browser tab.</small></div>
+        <kbd aria-label="Command Tab">⌘ Tab</kbd>
+      </div>
+    </section>
+    <footer><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8 12 3 3 5-5"/></svg><span>Your desktop app handles the cleanup.</span></footer>
+  </main>
+</body>
+</html>

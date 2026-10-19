@@ -1,0 +1,9 @@
+{
+  "stripeSubscriptionUrl": "https://buy.stripe.com/3cIbJ2dlC1dUaR9a5t2wU00",
+  "stripeAnnualUrl": "https://buy.stripe.com/5kQ28s4P63m22kDgtR2wU01",
+  "liveCheckoutEnabled": true,
+  "currency": "usd",
+  "monthlyAmount": 500,
+  "annualAmount": 5000,
+  "appAmount": 500
+}
