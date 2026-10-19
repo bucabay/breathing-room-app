@@ -24,6 +24,7 @@ GitHub's `releases/latest` endpoint, which excludes prereleases.
    version-bound signature, SHA-256 checksums, and a candidate `preview.json` in
    `build/releases/vVERSION/`. Cryptographically verify the archive against the
    pinned public key and check that a modified payload is rejected.
+   Run `BREATHING_ROOM_RELEASE_ARCHIVE=/absolute/path/to/the/staged.app.tar.gz cargo test --manifest-path src-tauri/Cargo.toml --test release_signature -- --ignored`.
 7. Commit the release source and push it. Create a GitHub prerelease for that
    exact source revision and upload all staged assets. Verify their public URLs.
 8. **Only after the assets are publicly downloadable**, copy the staged

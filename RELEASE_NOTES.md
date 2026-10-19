@@ -10,6 +10,9 @@
   may block this build. We do not recommend disabling Gatekeeper or system-wide
   security protections.
 - Verify the DMG against `SHA256SUMS.txt` before installing.
+- Open the DMG, drag Breathing Room to Applications, eject the DMG, then launch
+  the Applications copy. Run it from Applications so later in-app updates can
+  replace the installed bundle rather than a read-only disk-image copy.
 
 ## What is included
 
