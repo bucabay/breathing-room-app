@@ -171,7 +171,7 @@ pub fn ask(request:String)->Result<Value,String>{
     })
 }
 pub fn auth_start(provider:String)->Result<Value,String>{
-    if !["google","github"].contains(&provider.as_str()){return Err("Choose Google or GitHub".into());}
+    if !["google","github","email"].contains(&provider.as_str()){return Err("Choose Google, GitHub, or email".into());}
     let base=base_url()?;let code=random()?;let nonce=random()?;
     let listener=TcpListener::bind("127.0.0.1:0").map_err(|_|"Could not open the local sign-in return address")?;
     listener.set_nonblocking(true).map_err(|_|"Could not initialize browser sign-in")?;

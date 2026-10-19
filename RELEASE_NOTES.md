@@ -22,6 +22,8 @@
   required for the local tools. AI requests may send questions and relevant tool
   results, including paths, to the configured hosted service.
 - Apache-2.0 app source with a NOTICE and preserved Seal MIT attribution.
+- Google, GitHub, and email sign-in. The website asks for a free account before
+  starting its download; public GitHub downloads and in-app updates remain public.
 
 ## Known limitations
 

@@ -493,12 +493,16 @@ mod tests {
     fn native_cpu_counter_is_monotonic_nanoseconds() {
         let before=super::io_counters(std::process::id() as i32).unwrap();
         let mut value=1u64;
-        // Fixed work avoids confusing time descheduled under load with CPU time.
-        for _ in 0..2_000_000 {value=std::hint::black_box(value.wrapping_mul(31).wrapping_add(1));}
-        // Let the kernel update the process's CPU accounting after this timeslice.
-        std::thread::sleep(std::time::Duration::from_millis(10));
-        let after=super::io_counters(std::process::id() as i32).unwrap();
-        assert_eq!(before.0,after.0);assert!(after.4>before.4+1_000_000);assert!(after.3>0);
+        // Accumulate real CPU work, allowing for fast CPUs and delayed kernel
+        // accounting. A single fixed batch is not guaranteed to consume 1 ms.
+        let deadline=std::time::Instant::now()+std::time::Duration::from_secs(1);
+        let after=loop {
+            for _ in 0..2_000_000 {value=std::hint::black_box(value.wrapping_mul(31).wrapping_add(1));}
+            std::thread::sleep(std::time::Duration::from_millis(10));
+            let sample=super::io_counters(std::process::id() as i32).unwrap();
+            if sample.4>before.4+1_000_000||std::time::Instant::now()>=deadline {break sample;}
+        };
+        assert_eq!(before.0,after.0);assert!(after.4>before.4+1_000_000,"CPU counter did not advance: before={}, after={}",before.4,after.4);assert!(after.3>0);
     }
     use super::*;
     #[test]
