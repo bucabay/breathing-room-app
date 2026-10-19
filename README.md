@@ -151,8 +151,9 @@ See the [website](https://breathing-room.chatic.ai/#pricing) for the current off
 
 The website's download registration and subscription checkout use the same
 Breathing Room accounts. Use the same sign-in method in the desktop app. The
-website records registrations and download starts; release/update email consent
-is a separate, optional opt-in. Public releases and in-app updates are not gated
+website records registrations and download starts. Product/release emails are
+optional; uncheck the website's update-email preference to continue without a
+new enrollment. Public releases and in-app updates are not gated
 by website registration.
 
 ## Privacy and safety boundaries
