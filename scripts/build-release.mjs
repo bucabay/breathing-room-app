@@ -16,6 +16,6 @@ if (args.some(arg => ["--debug", "--config", "-c", "--no-bundle", "--bundles", "
 const require = createRequire(import.meta.url);
 const cli = join(dirname(require.resolve("@tauri-apps/cli/package.json")), "tauri.js");
 const override = { bundle: { createUpdaterArtifacts: true }, plugins: { updater: { pubkey: config.publicKey, requireSignedVersion: true } } };
-const result = spawnSync(process.execPath, [cli, "build", "--bundles", "app,dmg", "--config", JSON.stringify(override), ...args], { cwd: root, stdio: "inherit" });
+const result = spawnSync(process.execPath, [cli, "build", "--bundles", "app,dmg", "--config", "src-tauri/tauri.direct.conf.json", "--config", JSON.stringify(override), ...args], { cwd: root, stdio: "inherit" });
 if (result.error) throw result.error;
 process.exit(result.status ?? 1);

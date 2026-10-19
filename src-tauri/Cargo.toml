@@ -29,3 +29,6 @@ sha2 = "0.10"
 [build-dependencies]
 base64 = "0.22"
 tauri-build = { version = "2", optional = true , features = [] }
+
+[dev-dependencies]
+minisign-verify = "0.3"

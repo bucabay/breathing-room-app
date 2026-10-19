@@ -1,4 +1,4 @@
 {
-  "endpoint": null,
-  "publicKey": null
+  "endpoint": "https://raw.githubusercontent.com/bucabay/breathing-room-app/main/updates/preview.json",
+  "publicKey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk2M0ZDQTM3QkFCNDE3MDMKUldRREY3UzZOOG8vbHRZc2R0TWlIMHpEdkJTNi9lVEFIVFhCcVQySnE4QW9JK1hmcGtBOEQrdjgK"
 }

@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const read = path => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
+test('preview ships pinned HTTPS updates, version consistency, and bundled attribution', () => {
+  const app = JSON.parse(read('package.json'));
+  const tauri = JSON.parse(read('src-tauri/tauri.conf.json'));
+  const update = JSON.parse(read('src-tauri/update-config.json'));
+  assert.equal(app.version, tauri.version);
+  assert.ok(read('src-tauri/Cargo.toml').includes(`version = "${app.version}"`));
+  assert.equal(app.license, 'Apache-2.0');
+  assert.equal(update.endpoint, 'https://raw.githubusercontent.com/bucabay/breathing-room-app/main/updates/preview.json');
+  assert.ok(Buffer.from(update.publicKey, 'base64').toString().includes('minisign public key'));
+  assert.equal(tauri.plugins.updater.pubkey, update.publicKey);
+  assert.deepEqual(tauri.plugins.updater.endpoints, [update.endpoint]);
+  assert.equal(tauri.plugins.updater.requireSignedVersion, true);
+  assert.equal(tauri.bundle.createUpdaterArtifacts, true);
+  for (const file of ['LICENSE', 'NOTICE']) assert.equal(tauri.bundle.resources[`../${file}`], file);
+  assert.ok(read('THIRD_PARTY_LICENSES/Seal-MIT.txt').includes('MIT License'));
+  assert.equal(JSON.parse(read('src-tauri/tauri.direct.conf.json')).bundle.macOS.entitlements, 'Entitlements.direct.plist');
+});

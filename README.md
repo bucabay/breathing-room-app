@@ -35,16 +35,26 @@ python3 -m unittest discover -s tests -p "*_test.py"
 
 ## Downloads and releases
 
-Public signed installers have not been published yet. This source snapshot is
-not a claim that a notarized release or automatic updates are available.
-GitHub Releases will host official installers when release verification is done.
+The first download is a **preview for testing and development**, with a universal
+installer for Apple Silicon and Intel Macs running macOS 13+. It is signed with an Apple Development
+certificate, **not Developer ID signed or notarized**. macOS may block it. This
+is not a production-ready release. Future signed updates can be installed from
+inside the app, with your approval; you choose when to restart. The updater
+signature is separate from Apple notarization. See [Releasing](RELEASING.md).
+
+Get the DMG and SHA-256 checksum from
+[GitHub Releases](https://github.com/bucabay/breathing-room-app/releases).
+Disk inventory and legacy cleanup scripts require Python 3.10+ at a supported
+system/Homebrew location. The preview does not bundle Python.
 
 Use the Tauri CLI directly for a local build without the install wrapper:
 ```sh
-pnpm exec tauri build --debug --bundles app
+pnpm exec tauri build --debug --bundles app --config src-tauri/tauri.direct.conf.json
 ```
 
 The pnpm tauri build wrapper installs and relaunches the app in /Applications.
+The direct-distribution config disables App Sandbox so the inventory subprocess
+and filesystem inspection can work; macOS privacy permissions still apply.
 Developer ID signing, notarization, and updater signing credentials must remain
 outside this repository. The release helper requires an update endpoint and
 public key in src-tauri/update-config.json plus signing credentials supplied

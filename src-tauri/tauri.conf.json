@@ -3,17 +3,62 @@
   "productName": "Breathing Room",
   "version": "0.1.0-preview.1",
   "identifier": "app.breathingroom.mac",
-  "build": { "beforeDevCommand": "pnpm dev", "devUrl": "http://localhost:1430", "beforeBuildCommand": "pnpm build", "frontendDist": "../dist" },
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1430",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
   "app": {
-    "windows": [{ "label": "main", "title": "Breathing Room", "width": 1180, "height": 820, "minWidth": 800, "minHeight": 600, "resizable": true }],
-    "security": { "csp": "default-src 'self'; img-src 'self' data: asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src ipc: http://ipc.localhost" }
+    "windows": [
+      {
+        "label": "main",
+        "title": "Breathing Room",
+        "width": 1180,
+        "height": 820,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src ipc: http://ipc.localhost"
+    }
   },
   "bundle": {
-    "active": true, "targets": ["app", "dmg"], "category": "Utility",
-    "resources": { "../scripts/cleanup/": "cleanup/", "../LICENSE": "LICENSE", "../NOTICE": "NOTICE", "../THIRD_PARTY_LICENSES/": "THIRD_PARTY_LICENSES/" },
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "category": "Utility",
+    "resources": {
+      "../scripts/cleanup/": "cleanup/",
+      "../LICENSE": "LICENSE",
+      "../NOTICE": "NOTICE",
+      "../THIRD_PARTY_LICENSES/": "THIRD_PARTY_LICENSES/"
+    },
     "shortDescription": "Clear space, understand busy apps, and give your Mac breathing room.",
-    "icon": ["icons/icon.png", "icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns"],
-    "macOS": { "minimumSystemVersion": "13.0", "entitlements": "Entitlements.plist" }
+    "icon": [
+      "icons/icon.png",
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "13.0",
+      "entitlements": "Entitlements.plist"
+    },
+    "createUpdaterArtifacts": true
   },
-  "plugins": { "updater": { "pubkey": "", "endpoints": [], "requireSignedVersion": true } }
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk2M0ZDQTM3QkFCNDE3MDMKUldRREY3UzZOOG8vbHRZc2R0TWlIMHpEdkJTNi9lVEFIVFhCcVQySnE4QW9JK1hmcGtBOEQrdjgK",
+      "endpoints": [
+        "https://raw.githubusercontent.com/bucabay/breathing-room-app/main/updates/preview.json"
+      ],
+      "requireSignedVersion": true
+    }
+  }
 }
