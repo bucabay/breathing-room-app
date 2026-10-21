@@ -13,3 +13,4 @@ scripts/cleanup/agent.mjs
 *.p12
 *.p8
 *.key
+docs/content/.runtime/

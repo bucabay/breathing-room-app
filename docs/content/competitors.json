@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "jobId": "sources",
+  "status": "blocked",
+  "retrievedDate": "2026-10-21",
+  "publicationStatus": "research-only",
+  "counts": {
+    "requiredPublishedRelationships": 2,
+    "confirmedPublishedRelationships": 0,
+    "verifiedEligibleProducts": 0,
+    "verifiedDirectProducts": 0,
+    "verifiedAdjacentProducts": 0,
+    "snippetOnlyUniqueLeads": 4,
+    "snippetOnlyEdges": 5,
+    "successfullyRetrievedListingPages": 0,
+    "listingFetchAttempts": 8,
+    "targetEligibleProducts": 100,
+    "verifiedShortfallToTarget": 100
+  },
+  "confirmedRelationships": [],
+  "candidateSeeds": [
+    {
+      "id": "cleanmymac",
+      "name": "CleanMyMac",
+      "seedUrl": "https://alternativeto.net/software/cleanmymac",
+      "relationshipStatus": "unverified",
+      "provenance": "docs/content/research-handoff.md:5-9",
+      "retrievedDate": "2026-10-21",
+      "paginationStatus": "blocked",
+      "observedPaginationUrls": [
+        "https://alternativeto.net/software/cleanmymac/?p=7",
+        "https://alternativeto.net/software/cleanmymac/?p=8",
+        "https://alternativeto.net/software/cleanmymac/?p=9"
+      ]
+    },
+    {
+      "id": "daisydisk",
+      "name": "DaisyDisk",
+      "seedUrl": "https://alternativeto.net/software/daisydisk",
+      "relationshipStatus": "unverified",
+      "provenance": "docs/content/research-handoff.md:5-9",
+      "retrievedDate": "2026-10-21",
+      "paginationStatus": "blocked",
+      "observedPaginationUrls": [
+        "https://alternativeto.net/software/daisydisk/?p=7",
+        "https://alternativeto.net/software/daisydisk/?p=10"
+      ]
+    }
+  ],
+  "competitors": [],
+  "unverifiedLeads": [
+    {
+      "id": "disk-mop",
+      "name": "Disk Mop",
+      "canonicalProductUrl": null,
+      "classification": "unverified",
+      "eligible": false,
+      "identityStatus": "name-only",
+      "edges": [
+        {
+          "candidateSeedId": "cleanmymac",
+          "seedUrl": "https://alternativeto.net/software/cleanmymac",
+          "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+          "retrievedDate": "2026-10-21",
+          "evidenceType": "search-snippet-only",
+          "excerpt": "Is Disk Mop a good alternative to CleanMyMac? You are at page 7 of CleanMyMac ..."
+        }
+      ]
+    },
+    {
+      "id": "glary-disk-cleaner",
+      "name": "Glary Disk Cleaner",
+      "canonicalProductUrl": null,
+      "classification": "unverified",
+      "eligible": false,
+      "identityStatus": "name-only",
+      "edges": [
+        {
+          "candidateSeedId": "cleanmymac",
+          "seedUrl": "https://alternativeto.net/software/cleanmymac",
+          "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=8",
+          "retrievedDate": "2026-10-21",
+          "evidenceType": "search-snippet-only",
+          "excerpt": "Is Glary Disk Cleaner a good alternative to CleanMyMac? You are at page 8 of ..."
+        },
+        {
+          "candidateSeedId": "cleanmymac",
+          "seedUrl": "https://alternativeto.net/software/cleanmymac",
+          "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=9",
+          "retrievedDate": "2026-10-21",
+          "evidenceType": "search-snippet-only",
+          "excerpt": "Is Glary Disk Cleaner a good alternative to CleanMyMac? You are at page 9 of CleanMyMac alternatives."
+        }
+      ]
+    },
+    {
+      "id": "dut",
+      "name": "dut",
+      "canonicalProductUrl": null,
+      "classification": "unverified",
+      "eligible": false,
+      "identityStatus": "name-only",
+      "edges": [
+        {
+          "candidateSeedId": "daisydisk",
+          "seedUrl": "https://alternativeto.net/software/daisydisk",
+          "edgeUrl": "https://alternativeto.net/software/daisydisk/?p=7",
+          "retrievedDate": "2026-10-21",
+          "evidenceType": "search-snippet-only",
+          "excerpt": "Is dut a good alternative to DaisyDisk? You are at page 7 of DaisyDisk alternatives."
+        }
+      ]
+    },
+    {
+      "id": "omnidisksweeper",
+      "name": "OmniDiskSweeper",
+      "canonicalProductUrl": null,
+      "classification": "unverified",
+      "eligible": false,
+      "identityStatus": "name-only",
+      "edges": [
+        {
+          "candidateSeedId": "daisydisk",
+          "seedUrl": "https://alternativeto.net/software/daisydisk",
+          "edgeUrl": "https://alternativeto.net/software/daisydisk/?platform=mac",
+          "retrievedDate": "2026-10-21",
+          "evidenceType": "search-snippet-only",
+          "excerpt": "Is OmniDiskSweeper a good alternative to DaisyDisk? 12 of 65 DaisyDisk ..."
+        }
+      ]
+    }
+  ],
+  "excludedProducts": [],
+  "deadProducts": [],
+  "listingFetches": [
+    {"url": "https://alternativeto.net/software/cleanmymac", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/daisydisk", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/cleanmymac/?p=7", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/cleanmymac/?p=8", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/cleanmymac/?p=9", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/daisydisk/?p=7", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/daisydisk/?p=10", "retrievedDate": "2026-10-21", "httpStatus": 403},
+    {"url": "https://alternativeto.net/software/daisydisk/?platform=mac", "retrievedDate": "2026-10-21", "httpStatus": 403}
+  ],
+  "paginationComplete": false,
+  "canonicalDeduplicationComplete": false,
+  "nameDeduplicationCompleteForObservedLeads": true,
+  "blockers": [
+    "Exact two published Breathing Room placement URLs absent from searched local records and not confirmed by public search; candidate seeds must not replace them.",
+    "All eight listing fetches returned HTTP 403 with no listing content; pagination cannot be exhausted or totals verified.",
+    "Chrome DevTools could not fetch http://127.0.0.1:9333/json/version on initial check and one retry; no browser tabs were accessed.",
+    "Snippet-only leads lack verified canonical identity, platform relevance and direct/adjacent classification."
+  ],
+  "provenanceDocument": "docs/content/sources.md"
+}
