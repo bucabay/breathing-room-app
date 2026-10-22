@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-omni-remover-3",
+  "productId": "omni-remover-3",
+  "status": "blocked",
+  "publicationEligible": false,
+  "checkedAtUtc": "2026-10-21T21:49:57Z",
+  "clockNote": "Actual UTC from system date command; conversation environment labels the local working date October 22, 2026.",
+  "identity": {
+    "listingName": "Omni Remover 3",
+    "officialName": null,
+    "candidateHomepage": "https://www.minicreo.com/omni-remover/",
+    "verifiedHomepage": null,
+    "officialRepository": null,
+    "repositoryState": "not-verified, not evidence of closed source",
+    "canonicalOwnerId": null,
+    "provisionalRecordOwnerId": "omni-remover-3",
+    "aliases": [],
+    "aliasStatus": "not-verified",
+    "aliasSkipDecision": "No verified alias; do not merge, claim a distinct official identity, or draft separate alias pages. Shared alias-decisions.json has no Omni Remover decision. PowerMyMac entries are unrelated unresolved records, not evidence about this product; no other queue job investigated.",
+    "classification": "not-verified",
+    "candidateFit": "Potential Mac app-uninstall/storage-cleaning overlap based only on directory text; direct versus adjacent fit requires official scope evidence.",
+    "platformIntent": "Mac workflow only if officially supported; no Windows/Linux support inferred.",
+    "skipDecision": "Defer drafting, not a permanent dead-product/irrelevance/alias skip. TLS failure does not establish discontinuation."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/omni-remover-3/about/",
+    "destinationUrl": "https://www.minicreo.com/omni-remover/",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=3",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:26.872Z",
+    "aboutRetrievedAtUtc": "2026-10-21T19:05:03.417Z",
+    "method": "Reuse batch-2 rendered about-page DOM and competitors.json existing pagination edge; no repeat directory retrieval.",
+    "rawCapture": "docs/content/.runtime/verification-2/omni-remover-3-directory.json",
+    "sha256": "21587f1225f0883e4662cdbe3c6fd108c90c416e1477265006b0f642aa41d9da",
+    "scope": "Directory identity and outgoing link only; no official product feature verification. Directory savings claims excluded."
+  },
+  "sources": [
+    {
+      "id": "D1",
+      "publisher": "AlternativeTo",
+      "title": "Omni Remover 3: Clean uninstall 32-bit, leftover and orphaned apps on macOS",
+      "url": "https://alternativeto.net/software/omni-remover-3/about/",
+      "finalUrl": "https://alternativeto.net/software/omni-remover-3/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:03.417Z",
+      "excerpt": "Official Website\nminicreo.com/omni-remover/",
+      "snapshotPath": "docs/content/.runtime/verification-2/omni-remover-3-directory.json",
+      "sha256": "21587f1225f0883e4662cdbe3c6fd108c90c416e1477265006b0f642aa41d9da",
+      "publicationDate": null,
+      "scope": "Reused discovery, not an official feature source"
+    },
+    {
+      "id": "O0",
+      "publisher": "Candidate MiniCreo official site",
+      "url": "https://www.minicreo.com/omni-remover/",
+      "finalUrl": null,
+      "retrievedAtUtc": "2026-10-21T19:09:30.341261+00:00",
+      "excerpt": "certificate verify failed: self-signed certificate",
+      "snapshotPath": "docs/content/.runtime/verification-2/omni-remover-3-official.json",
+      "sha256": "ebab4f6abce961cd501535ffb6128436fb37f9ea3d6b981b1f9d0e85e72426bb",
+      "scope": "Reused access failure; no product facts"
+    },
+    {
+      "id": "O1",
+      "publisher": "Candidate MiniCreo official site / access diagnostic",
+      "url": "https://www.minicreo.com/omni-remover/",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "checkedAtUtc": "2026-10-21T21:49:57Z",
+      "excerpt": "WebFetch: Transport error (GET https://www.minicreo.com/omni-remover/). Chrome owned tab 146: net::ERR_CERT_AUTHORITY_INVALID.",
+      "snapshotPath": "docs/content/competitors/omni-remover-3/evidence/official-access.txt",
+      "scope": "New access attempt only; exact per-tool timestamp unavailable, checkedAtUtc records subsequent system clock check. No TLS bypass."
+    },
+    {
+      "id": "BR1",
+      "publisher": "Breathing Room internal source/publication evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "localPath": "docs/content/capabilities.md",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "scope": "Reuse current register and its exact source citations; no new runtime verification or public price retrieval"
+    },
+    {
+      "id": "BR2",
+      "publisher": "Breathing Room screenshot library",
+      "url": "http://127.0.0.1:1431/",
+      "localPath": "docs/content/screenshots.json",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "scope": "Retained first-party browser illustration, not a new capture or distributed-release test"
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"AlternativeTo lists Omni Remover 3 and points to minicreo.com/omni-remover/.","sourceIds":["D1"],"sourceUrl":"https://alternativeto.net/software/omni-remover-3/about/","excerpt":"Official Website\nminicreo.com/omni-remover/","checkedOn":"2026-10-21","state":"verified","evidenceClass":"directory-discovery","scope":"Not official identity verification","intendedLocation":"research provenance","reviewer":"scheduled research worker"},
+    {"id":"C2","wording":"The official-site candidate could not be read in this research attempt; Chrome reported ERR_CERT_AUTHORITY_INVALID.","sourceIds":["O0","O1"],"sourceUrl":"https://www.minicreo.com/omni-remover/","excerpt":"net::ERR_CERT_AUTHORITY_INVALID","checkedOn":"2026-10-21","state":"verified","evidenceClass":"observed-access-failure","scope":"Environment-specific access failure, not proof product is dead or universally unavailable","intendedLocation":"research blocker","reviewer":"scheduled research worker"},
+    {"id":"C3","wording":"Official product identity, current exact version, supported macOS releases/architectures and purchase conditions remain not verified.","sourceIds":["O1"],"sourceUrl":"https://www.minicreo.com/omni-remover/","excerpt":"net::ERR_CERT_AUTHORITY_INVALID","checkedOn":"2026-10-21","state":"not-verified","evidenceClass":"unknown","scope":"The numeral 3 in the listing name is not an exact current build","intendedLocation":"withhold factual comparison cells","reviewer":"scheduled research worker"},
+    {"id":"BR-C1","wording":"Breathing Room is a macOS maintenance preview; hosted AI needs internet and authentication, and source presence does not certify the distributed build.","sourceIds":["BR1"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","scope":"See capabilities.md exact references; no new native test","intendedLocation":"future comparison caveats","reviewer":"scheduled research worker"},
+    {"id":"BR-C2","wording":"The selected Space image is a current-source browser preview with example data, not measured storage or cleanup results.","sourceIds":["BR2"],"sourceUrl":"http://127.0.0.1:1431/","excerpt":"Interactive preview · example data","checkedOn":"2026-10-21","state":"verified","evidenceClass":"retained-image-inspection","scope":"Opened actual PNG during this job; no native behavior inferred","intendedLocation":"figure caption","reviewer":"scheduled research worker"}
+  ],
+  "productMatrix": {
+    "officialIdentity":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "currentVersion":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "macOSVersionsAndArchitectures":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "license":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "pricing":{"amount":null,"currency":null,"billingPeriod":null,"deviceCount":null,"tax":null,"renewal":null,"trialRestrictions":null,"state":"not-verified","claimIds":["C3"]},
+    "localVsHosted":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "scanAndCleanupModel":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "approvalControls":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "processHelperGrouping":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "recurringGrowthMonitoring":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "developerCaches":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "runtimeInstallSigningNotarization":{"value":null,"state":"not-verified","claimIds":["C3"]},
+    "availability":{"value":null,"state":"not-verified","claimIds":["C2","C3"]}
+  },
+  "visuals": [
+    {
+      "id":"omni-remover-app-ui-pending","productId":"omni-remover-3","kind":"official-asset","view":null,
+      "sourcePageUrl":"https://www.minicreo.com/omni-remover/","assetUrl":null,"capturedAtUtc":null,"retrievedAtUtc":null,
+      "originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "reuse":{"status":"pending","basis":null,"evidenceUrlOrPath":null,"credit":null},
+      "caption":null,"alt":null,"review":{"status":"blocked"},
+      "limitations":["No authenticated official UI image source or exact asset URL obtained; candidate page fails TLS. No competitor image downloaded. Public availability would not establish permission. Do not substitute a logo, error-page capture, invented UI or generic diagram."]
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","kind":"browser-preview","view":"Space",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"productVersion":null,
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party example UI capture, per screenshots.json; third-party marks retain their owners' rights. Context-specific publication review remains required.","evidenceUrlOrPath":"docs/content/screenshots.json","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview showing example storage categories and the visible example-data banner.",
+      "supportedClaimIds":["BR-C2"],"review":{"status":"research-image-inspected-publication-pending","reviewer":"scheduled research worker","reviewedOn":"2026-10-21"},
+      "limitations":["Selected existing asset, no new capture or copy. Preserve preview banner and disclosure. Floating composer overlaps part of the chart. Native version and distributed-release parity not established. Source/asset is local; no public asset URL asserted."]
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"conditional-do-not-draft",
+      "track":"search-reference",
+      "proposedTitle":"Before removing an old Mac app, separate leftovers from files you still need",
+      "proposedSlug":"review-old-mac-app-leftovers-before-removal",
+      "intent":"Decide which app-associated files are disposable without treating age, 32-bit status or file size as deletion permission.",
+      "distinctAngle":"App retirement and retained user data, not a generic storage-cleaner ranking or expanded comparison matrix.",
+      "outline":["Inventory app identity and retained projects/backups without deletion","Distinguish vendor-documented uninstall scope from inferred ownership","Review candidate paths, recovery limits and backup needs","Choose an uninstaller workflow versus storage investigation only after verified scope"],
+      "interactionHandoff":"Non-mutating decision checklist: still use app, retain documents, verified ownership, backup/reinstall availability, reviewed exact paths. No filesystem access or cleanup commands.",
+      "requiredEvidence":"Official Omni identity, actual current uninstall workflow and review semantics; authoritative Apple guidance before claiming 32-bit compatibility rules; both required visuals with rights.",
+      "internalLinkHandoff":["/comparisons/","/comparisons/omni-remover-3/"],
+      "routeNote":"Proposals only, not created or checked as live routes."
+    },
+    "comparison": {
+      "status":"conditional-do-not-draft",
+      "proposedTitle":"Omni Remover 3 and Breathing Room: app removal or storage investigation?",
+      "proposedSlug":"omni-remover-3",
+      "intent":"Concise workflow choice, conditional on verifying that app removal is Omni's actual current scope.",
+      "format":"Lead decision with disclosed affiliation; sourced matrix of scope, macOS/architecture, review, monitoring, local/hosted boundary, install/runtime and exact licence/price conditions; honest unknown cells; link to distinct workflow article.",
+      "doNotClaim":["Breathing Room is a verified full app-uninstaller replacement","Omni lacks helper monitoring or developer caches","Omni is dead because its site failed TLS","Listing name proves latest release is version 3","Either app guarantees safety, speed or savings"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "omniRemover":"No comparative product advantage verified. Directory suggests uninstall intent only; obtain official evidence before recommendation or direct-substitute framing.",
+    "breathingRoomPotentialFit":"Editorial judgment based on current capabilities.md: storage exploration and grouped app/process investigation may suit understanding ongoing growth rather than retiring an app. Not evidence of superiority or full app uninstall parity.",
+    "breathingRoomCaveats":"We build Breathing Room. Register identifies 0.1.0-preview.1, macOS 13+, advertised universal installer with physical Intel untested, Apple Development signing without Developer ID/notarization, Python 3.10+ requirement, permission-limited inventory, internet/account for hosted AI, and advertised $5 USD/month or $50 USD/year optional AI Care with tax/renewal conditions. These are reused October 21 documentary findings, not a new installer test or entitlement audit. Ordinary approval, optional automatic verified Ruff-cache mode and daily saved approvals differ; do not promise unconditional per-action prompting. App must remain running for daily care.",
+    "pricingComparison":"No cheaper/free competitor conclusion possible without verified Omni purchase terms. Refresh volatile offers within 30 days and before publication if overdue."
+  },
+  "draftGate": {
+    "status":"blocked",
+    "blockers":[
+      {"id":"B1","diagnostic":"Official identity, availability, exact current version, platform and workflow cannot be established from accessible official content; candidate homepage fails transport/TLS in WebFetch and owned Chrome tab.","resolution":"Obtain certificate-valid official documentation or authenticated official alternate source for these facts without bypassing security."},
+      {"id":"B2","diagnostic":"No verified competitor app screenshot asset URL or reuse basis; required competitor UI visual gate unsatisfied.","resolution":"Identify official/authoritative actual app UI asset, provenance and permission/licence or separately authorized editorial rights decision. Link-only evidence would not silently waive on-page gate."},
+      {"id":"B3","diagnostic":"Canonical owner/alias identity and direct/adjacent classification unresolved.","resolution":"Verify official identity/rebrand evidence before separate drafts; record canonicalOwnerId and explicit alias skip if established."}
+    ],
+    "noncriticalUnknowns":["Public source repository","Exact internal monitoring implementation where not part of a proposed recommendation"],
+    "independentReview":"pending, no score awarded",
+    "handsOnTestsPerformed":false,
+    "siteFilesChanged":false
+  }
+}

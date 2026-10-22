@@ -1,0 +1,202 @@
+{
+  "jobId": "research-depflush",
+  "checkedAtUtc": "2026-10-21T20:27:02.124708+00:00",
+  "result": "pass",
+  "checks": [
+    {
+      "check": "research.json parses and required job identity/blocking state is explicit",
+      "outcome": "pass"
+    },
+    {
+      "check": "D01 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D01 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D02 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D02 supportingExcerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D02 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D03 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D03 supportingExcerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D03 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D04 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D04 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D05 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D05 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D06 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D06 supportingExcerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D06 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D07 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D07 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D08 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D08 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D09 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D09 supportingExcerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D09 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D10 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D10 supportingExcerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D10 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D11 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D11 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "D12 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "D12 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "B01 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "B01 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "B02 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "B02 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "B03 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "B03 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "B04 excerpt matches retained source",
+      "outcome": "pass"
+    },
+    {
+      "check": "B04 required evidence fields",
+      "outcome": "pass"
+    },
+    {
+      "check": "official source SHA-256 matches",
+      "outcome": "pass"
+    },
+    {
+      "check": "repo source SHA-256 matches",
+      "outcome": "pass"
+    },
+    {
+      "check": "discovery raw SHA-256 matches",
+      "outcome": "pass"
+    },
+    {
+      "check": "selected Breathing Room image SHA-256 matches",
+      "outcome": "pass"
+    },
+    {
+      "check": "selected first-party caption matches required shared disclosure",
+      "outcome": "pass"
+    },
+    {
+      "check": "official competitor image URL is in retained source links",
+      "outcome": "pass"
+    },
+    {
+      "check": "no competitor image downloaded; link-only gate explicit",
+      "outcome": "pass"
+    },
+    {
+      "check": "both briefs and human-readable packet exist",
+      "outcome": "pass"
+    }
+  ],
+  "limitations": [
+    "Structural/hash/excerpt validation only; no native, site build or browser test",
+    "Initial exact-excerpt check detected Markdown emphasis mismatch in D03; corrected to retained raw README wording and rerun",
+    "Screenshot permission remains a critical evidence blocker; test pass does not clear drafting"
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/depflush/research.json": "d942a7cddc7a5c19fa8cb43264ff1d00e2a8a2499ad4e64155b8fdc66fa16a8c",
+    "docs/content/competitors/depflush/research.md": "b1719a8fd0f51bf4b8ae98bc5cc17efdac44802437fb65253dff1c4b63d59f32",
+    "docs/content/competitors/depflush/evidence/repository-readme.md": "ce22d0deaecbe64e0518e5a1830b7bd98ef231cf2fe07cd6e5601f7dfe3433df",
+    "docs/content/competitors/depflush/evidence/repository-readme.provenance.json": "54ba989cde272c4699cdc3ccd661ed77144355bbc276fb4f39860bee7521e3fd"
+  }
+}

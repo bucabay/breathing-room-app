@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-leaves",
+  "productId": "leaves",
+  "stage": "research",
+  "status": "blocked",
+  "checkedAtUtc": "2026-10-21T21:24:10.191747+00:00",
+  "dateNote": "Actual machine UTC check time retained; session calendar says October 22. Prior verification dates have not been bumped.",
+  "ownership": "docs/content/competitors/leaves/ only, plus required runtime receipt; no website edits",
+  "identity": {
+    "officialName": "Leaves",
+    "homepage": "https://github.com/patonw/leaves",
+    "repository": "https://github.com/patonw/leaves",
+    "publisher": "patonw (repository account)",
+    "canonicalOwnerId": "leaves",
+    "aliases": ["leaves (command/package name)", "patonw/leaves (repository identity)"],
+    "aliasSkipDecision": "Do not skip as an alias: directory official link resolves to the same independently identified patonw/leaves repository. WinDirStat and QDirStat are inspirations, not aliases. No evidence associates this identity with PowerMyMac; do not merge unrelated products or draft those jobs.",
+    "classification": "adjacent-platform-limited",
+    "fit": "Terminal disk-usage visualization overlaps storage investigation, not a verified full Mac maintenance substitute. Linux binaries verified; macOS execution and Windows execution not verified.",
+    "macReplacementIntent": "For a developer using Leaves on a Linux host over SSH, distinguish remote treemap inspection from maintaining the local Mac. Breathing Room is not a replacement for inspecting that remote host.",
+    "deadProductDecision": "Do not label dead: public source and four published release records exist. Ongoing support cadence not established.",
+    "publicationEligible": false
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/leaves/about/",
+    "officialDestination": "https://github.com/patonw/leaves",
+    "retrievedAtUtc": "2026-10-21T19:08:14.503Z",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=4",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:13.603Z",
+    "method": "Reused live-browser-rendered listing edge in competitors.json and retained verification-1 snapshots; no directory refetch.",
+    "pagination": 4,
+    "snapshotPath": "docs/content/.runtime/verification-1/leaves-directory.json",
+    "sha256": "b13473b1b9fd9039151a6d8de7fd48402bf75d32d5cde472ded1e4ccf53cafca",
+    "limitations": "Directory platform and privacy tags are discovery data, not official support or audited behavior. Edge-specific raw snapshot hash not located; the listing snapshot hash is not the seed-edge response hash."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "patonw / GitHub", "title": "Leaves README and repository",
+      "url": "https://github.com/patonw/leaves", "finalUrl": "https://github.com/patonw/leaves",
+      "retrievedAtUtc": "2026-10-21T19:09:42.704039+00:00", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/leaves-official.json",
+      "sha256": "d89d94e1cb34ee4eaa58875857570de68fcb3879ccca81173f6d1bfc9e86f4b5",
+      "method": "Reused current batch-1 record and read retained full README text; not refetched.",
+      "scope": "Default-branch documentation, not demonstrated release behavior",
+      "excerpts": [
+        "Leaves is a disk usage analyzer inspired by WinDirStat and QDirStat. It shows files and directories in a hierarchy of nested rectangles.",
+        "this will work over remote shell connections when graphical desktop environments are not available or impractical.",
+        "A Rust toolchain is required to build this project.",
+        "By default, hidden directories will be ignored. Additionally, anything matching patterns in .gitignore or .ignore files in the hierarchy will not be counted.",
+        "You can disable all ignore rules with -A.",
+        "leaves will not follow symbolic links since they don't incur additional disk usage inside the directory. No attempt is made to detect hard links, so they will be double counted.",
+        "However, due to the limited resolution of working at a character level, this is a fairly coarse approximation compared to a graphical tool."
+      ]
+    },
+    {
+      "id": "S2", "publisher": "patonw / GitHub Releases API", "title": "Public Leaves releases",
+      "url": "https://api.github.com/repos/patonw/leaves/releases", "finalUrl": "https://api.github.com/repos/patonw/leaves/releases",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": "2026-07-15T19:27:46Z",
+      "method": "Read-only webfetch; excerpts and release fields retained here, full raw response not saved",
+      "scope": "Four records returned: v0.2.0-cross, v0.2.0, v0.1.1, v0.1.0; assets not downloaded or tested",
+      "excerpts": ["A re-release of v0.2.0 cross-compiled to musl for static linking.", "leaves-v0.2.0-cross-x86_64-linux", "leaves-v0.2.0-cross-x86_64-linux-musl"],
+      "releaseUrl": "https://github.com/patonw/leaves/releases/tag/v0.2.0-cross",
+      "draft": false, "prerelease": false,
+      "assetUrls": ["https://github.com/patonw/leaves/releases/download/v0.2.0-cross/leaves-v0.2.0-cross-x86_64-linux", "https://github.com/patonw/leaves/releases/download/v0.2.0-cross/leaves-v0.2.0-cross-x86_64-linux-musl"]
+    },
+    {
+      "id": "S3", "publisher": "patonw", "title": "Cargo manifest",
+      "url": "https://raw.githubusercontent.com/patonw/leaves/main/Cargo.toml", "finalUrl": "https://raw.githubusercontent.com/patonw/leaves/main/Cargo.toml",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": null,
+      "scope": "Mutable main, not immutable tag; dependency compatibility not tested",
+      "excerpts": ["name = \"leaves\"", "version = \"0.2.0\"", "edition = \"2024\"", "default = [\"clipboard\"]"]
+    },
+    {
+      "id": "S4", "publisher": "patonw", "title": "Release workflow",
+      "url": "https://raw.githubusercontent.com/patonw/leaves/main/.github/workflows/release.yml", "finalUrl": "https://raw.githubusercontent.com/patonw/leaves/main/.github/workflows/release.yml",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": null,
+      "scope": "Current workflow configuration, not proof all CI runs passed",
+      "excerpts": ["runs-on: ubuntu-latest", "cargo build --release --target=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-musl"]
+    },
+    {
+      "id": "S5", "publisher": "patonw", "title": "MPL-2.0 LICENSE",
+      "url": "https://raw.githubusercontent.com/patonw/leaves/main/LICENSE", "finalUrl": "https://raw.githubusercontent.com/patonw/leaves/main/LICENSE",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": null,
+      "scope": "Software licence; image-specific coverage not established",
+      "excerpts": ["Mozilla Public License Version 2.0", "No additional rights or licenses will be implied from the distribution or licensing of Covered Software under this License.", "This License does not grant any rights in the trademarks, service marks, or logos of any Contributor"]
+    },
+    {
+      "id": "S6", "publisher": "patonw", "title": "Nix package",
+      "url": "https://raw.githubusercontent.com/patonw/leaves/main/package.nix", "finalUrl": "https://raw.githubusercontent.com/patonw/leaves/main/package.nix",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": null,
+      "scope": "Build configuration, not Mac runtime evidence",
+      "excerpts": ["target ? \"x86_64-unknown-linux-musl\"", "CARGO_BUILD_TARGET = target;"]
+    },
+    {
+      "id": "S7", "publisher": "patonw", "title": "Nix flake",
+      "url": "https://raw.githubusercontent.com/patonw/leaves/main/flake.nix", "finalUrl": "https://raw.githubusercontent.com/patonw/leaves/main/flake.nix",
+      "retrievedAtUtc": "2026-10-21T21:24:10.191747+00:00", "publicationDate": null,
+      "scope": "eachDefaultSystem wrapper alone is not platform validation",
+      "excerpts": ["flake-utils.lib.eachDefaultSystem (system:", "packages = callPackage ./package.nix {};"]
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room content programme", "title": "Current capabilities register",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md", "retrievedAtUtc": "2026-10-21", "publicationDate": null,
+      "method": "Reused current evidence register, including its source paths and release/pricing/privacy URL register; no live refetch or runtime testing",
+      "excerpts": ["0.1.0-preview.1", "macOS 13+", "Apple Development signed, not Developer ID signed or notarized", "Python 3.10+", "$5 USD/month", "$50 USD/year"],
+      "relatedUrls": ["https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1", "https://breathing-room.chatic.ai/privacy/", "https://breathing-room.chatic.ai/checkout/monthly/"]
+    }
+  ],
+  "claims": [
+    {"id":"L1","wording":"Leaves is patonw's terminal disk-usage treemap utility, inspired by WinDirStat and QDirStat.","sourceIds":["S1"],"support":"Description and About sections","state":"verified","evidenceClass":"official-documentation","scope":"Not hands-on testing","location":"identity/lead","checkedOn":"2026-10-21"},
+    {"id":"L2","wording":"The newest returned release is v0.2.0-cross (July 15, 2026), a re-release of v0.2.0; its two binaries target Linux x86-64, glibc and musl.","sourceIds":["S2","S3","S4"],"support":"Release tag, published_at, body and asset names; package version 0.2.0","state":"verified","evidenceClass":"published-release-metadata","scope":"No binary execution; no Mac/Windows compatibility conclusion","location":"availability/version matrix","checkedOn":"2026-10-21"},
+    {"id":"L3","wording":"Leaves source is MPL-2.0; source and listed binaries are publicly accessible without a checkout in the inspected official sources. Commercial support, paid tiers and pricing terms were not verified.","sourceIds":["S1","S2","S5"],"support":"MPL-2.0 and public release asset URLs","state":"verified","evidenceClass":"official-source-and-release","scope":"Do not turn the directory's Free label into a verified lifetime price or support promise","location":"licence/pricing","checkedOn":"2026-10-21"},
+    {"id":"L4","wording":"The documented treemap can be used over a remote shell; its character-cell sizing is approximate.","sourceIds":["S1"],"support":"Description passages about remote shell and coarse approximation","state":"verified","evidenceClass":"official-documentation","scope":"SSH suitability is documented, not tested here","location":"workflow/trade-offs","checkedOn":"2026-10-21"},
+    {"id":"L5","wording":"Default scans omit hidden and ignored entries; -A disables automatic ignores. Symbolic links are not followed and hard links can be counted twice.","sourceIds":["S1"],"support":"Executing and Links sections","state":"verified","evidenceClass":"official-documentation","scope":"Not an APFS allocated-space or recoverable-space measurement","location":"scan model/workflow","checkedOn":"2026-10-21"},
+    {"id":"L6","wording":"Building from source requires a Rust toolchain; Nix is a documented alternative environment. The inspected Nix package defaults to a Linux-musl target.","sourceIds":["S1","S3","S6","S7"],"support":"Dependencies; edition 2024; package target","state":"verified","evidenceClass":"documentation-and-build-config","scope":"No minimum OS, exact minimum Rust version or successful local build verified; do not run install commands as research","location":"installation","checkedOn":"2026-10-21"},
+    {"id":"L7","wording":"Native macOS support, minimum macOS, Apple Silicon/Intel compatibility, Windows support, signing and notarization are not verified.","sourceIds":["S2","S4","S6"],"support":"Inspected binaries/config target Linux; directory platform tags are insufficient","state":"not-verified","evidenceClass":"explicit-evidence-gap","scope":"Not a claim that those platforms are unsupported","location":"platform matrix","checkedOn":"2026-10-21"},
+    {"id":"L8","wording":"Cleanup execution/approval controls, app-helper grouping, recurring-growth monitoring, developer-cache adapters and hosted-data behavior are not verified for Leaves.","sourceIds":["S1"],"support":"README documents visualization; no source audit of these other capabilities performed","state":"not-verified","evidenceClass":"explicit-evidence-gap","scope":"No negative feature or privacy claims permitted","location":"feature matrix","checkedOn":"2026-10-21"},
+    {"id":"B1","wording":"Breathing Room, which we build, is a macOS 13+ maintenance preview; current identified release is 0.1.0-preview.1. It discloses Python 3.10+, no Developer ID/notarization, and unvalidated physical Intel/clean-machine execution.","sourceIds":["BR1"],"support":"capabilities.md preview/install table and linked public release","state":"verified","evidenceClass":"reused-source-and-published-register","scope":"Not new binary validation or feature parity proof","location":"comparison caveats","checkedOn":"2026-10-21"},
+    {"id":"B2","wording":"Breathing Room source includes local storage views, grouped CPU/memory monitoring and reviewable cleanup. Hosted AI requires authentication and internet; optional AI Care is advertised at $5 USD/month or $50 USD/year, renewing with applicable tax at checkout. Core desktop app is advertised free.","sourceIds":["BR1"],"support":"capabilities.md matrices, local/hosted boundary and pricing register","state":"verified","evidenceClass":"reused-source-and-published-register","scope":"No unlimited-AI, fully offline AI, performance or guaranteed-savings claim; exact AI allowance not established","location":"comparison/decision","checkedOn":"2026-10-21"}
+  ],
+  "productMatrix": {
+    "macOS": {"value":"not verified","claimIds":["L7"]},
+    "verifiedBinaryPlatforms": {"value":"Linux x86-64 glibc/musl","claimIds":["L2"]},
+    "licence": {"value":"MPL-2.0","claimIds":["L3"]},
+    "pricing": {"value":"Public source/binaries; exact commercial/support pricing not verified","claimIds":["L3"]},
+    "localHosted": {"value":"Terminal scan of target directory documented, usable over remote shell; network/privacy behavior not audited","claimIds":["L4","L8"]},
+    "scanModel": {"value":"Nested rectangle treemap with ignore rules and link-counting caveats","claimIds":["L1","L5"]},
+    "cleanupApproval": {"value":"not verified","claimIds":["L8"]},
+    "helperGrouping": {"value":"not verified","claimIds":["L8"]},
+    "recurringGrowth": {"value":"not verified","claimIds":["L8"]},
+    "developerCaches": {"value":"not verified as cleanup adapters; visualizing a project is not validating disposal","claimIds":["L8"]},
+    "installation": {"value":"Linux release binaries or documented source build requiring Rust; Nix environment also documented","claimIds":["L2","L6"]}
+  },
+  "visuals": [
+    {
+      "id":"leaves-normal-mode-official-link", "productId":"leaves", "view":"Terminal treemap normal mode", "kind":"official-asset",
+      "sourcePageUrl":"https://github.com/patonw/leaves#layout",
+      "assetPageUrl":"https://github.com/patonw/leaves/blob/main/docs/images/normal-mode.png",
+      "assetUrl":"https://raw.githubusercontent.com/patonw/leaves/main/docs/images/normal-mode.png",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"unknown", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":null, "heightPx":null, "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official README links the real application UI image. Software MPL licence does not by itself establish image-specific permission. No download or republication authorized on this evidence.","evidenceUrlOrPath":"https://raw.githubusercontent.com/patonw/leaves/main/LICENSE","credit":"Leaves / patonw"},
+      "caption":"Official Leaves normal-mode terminal screenshot, linked from the project README. Capture date, platform and version not verified; not our hands-on test.",
+      "alt":"Official Leaves normal-mode screenshot showing a terminal disk-usage treemap and explorer, as described in the README.",
+      "supportedClaimIds":["L1"],
+      "limitations":["Source link verified in retained official README; raw URL follows GitHub's public raw-file mapping but was not fetched.","Pixels not downloaded or visually reviewed; no hash, dimensions or rights approval invented.","Link-only fallback does not satisfy required on-page competitor visual gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "capturedBy":"screenshot-library job (reused manifest)", "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null,
+      "dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-in-shared-manifest","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; third-party marks remain their owners' marks. Per-page review still pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":["B2"],
+      "limitations":["Current relative to the captured source commit, not a new native release test.","Keep example-data banner visible; no measured savings implied.","Asset reused in place, not copied or edited; independent target-page visual review required."],
+      "review":{"status":"shared-library-reviewed; target-page-pending","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"conditional-brief-not-a-draft", "track":"search-reference", "slug":"terminal-treemap-ignore-rules-remote-host-local-mac",
+      "title":"Why a terminal treemap and Mac storage totals can disagree",
+      "primaryIntent":"Understand Leaves ignore/link semantics and whether the scan is of a remote Linux host or the local Mac before choosing a maintenance tool.",
+      "leadDirection":"A terminal treemap is a map of its selected host and scan rules, not permission to delete large files or proof of local Mac recoverable space.",
+      "sections":["Identify the host and target directory before comparing totals","Explain hidden/gitignore exclusions and -A without running a scan","Explain hard-link double counting and coarse character-cell areas","Choose remote inspection versus local Mac maintenance; disclose affiliation once","Review rebuild costs and permissions before a separate cleanup decision"],
+      "claimIds":["L1","L4","L5","L6","L7","B1","B2"],
+      "visualPlan":"Rights-cleared Leaves normal-mode UI after lead; current-source Breathing Room Space example-data preview later at local/remote decision. Both pending target-page review.",
+      "interactionPass":"Proposed static decision checklist: Which host? Which directory? Which ignore rules? Is the size logical, allocated or reclaimable? No filesystem access or deletion widget.",
+      "boundaries":"Not a tested tutorial, no invented terminal output or remote session, no promise that totals reconcile exactly, no Windows support for Breathing Room.",
+      "internalLinkIntents":["/comparisons/","/comparisons/leaves/","storage unit converter if a verified route exists; do not invent its URL"]
+    },
+    "comparison": {
+      "status":"blocked-pending-visual-rights", "slug":"leaves", "title":"Leaves vs Breathing Room: terminal inspection or local Mac care?",
+      "primaryIntent":"Choose between adjacent workflows rather than present Leaves as a verified native Mac cleanup suite.",
+      "structure":["Conclusion and adjacent-platform qualification","Concise sourced matrix: host/platform, scan rules, licence/access, install requirements, approvals unknowns","When Leaves fits: terminal/remote treemap investigation","When Breathing Room fits: local Mac source-implemented maintenance with preview/hosted caveats","Link deeper ignore-rules workflow"],
+      "claimIds":["L1","L2","L3","L4","L5","L6","L7","L8","B1","B2"],
+      "publicationRules":"Keep status draft/published false; no route or site edit in this job. Do not imply unsupported negative checkmarks or Linux/Windows support for Breathing Room."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "leavesAdvantages":[{"judgment":"Better documented fit for terminal/remote-shell treemap inspection, including configurable ignore rules.","claimIds":["L4","L5"]}],
+    "leavesTradeoffs":[{"judgment":"Character-cell sizing is approximate; hard links can inflate counts. Verified release binaries are Linux-only in the inspected records; native Mac runtime unverified.","claimIds":["L2","L5","L7"]}],
+    "breathingRoomAdvantages":[{"judgment":"Broader documented local Mac-maintenance scope: storage views and app/process grouping with reviewable cleanup architecture, if a preview and its requirements suit the reader.","claimIds":["B1","B2"]}],
+    "breathingRoomTradeoffs":[{"judgment":"Not a verified replacement for remote Linux treemaps; preview/notarization/Python caveats matter. Hosted AI needs account/network and optional paid care is distinct from free local features.","claimIds":["B1","B2"]}]
+  },
+  "unknowns": ["Native Mac/Windows/BSD compatibility and exact OS/runtime minimums for Leaves", "Image-specific reuse permission, capture version/OS/date and pixel review", "Commercial support/paid terms; no universal lifetime-free pricing claim", "Leaves network/privacy audit and maintenance/cleanup capabilities beyond README visualization", "Binary execution and benchmarks for either product"],
+  "draftGate": {
+    "decision":"blocked",
+    "blockers":[{"id":"visual-rights","diagnostic":"Required competitor app UI is identified by the official README, but image-specific licence/permission has not been established. Link-only is research fallback, not image-gate approval. Need explicit licence evidence or separately approved policy decision, then permitted asset retrieval, original hash, visual/privacy review and caption verification before drafting."}],
+    "conditionalBlockers":["Any native-Mac Leaves recommendation requires official platform/version evidence or permitted platform-specific test; current briefs deliberately avoid that recommendation."],
+    "skipDecision":"No alias/dead/irrelevance skip. Adjacent remote-inspection intent is plausible, but draft remains blocked on mandatory competitor imagery.",
+    "independentReview":"pending; no score awarded"
+  },
+  "safety": {"installedOrRanCompetitor":false,"cleanupPerformed":false,"browserUsed":false,"assetsDownloaded":false,"credentialsRead":false,"siteEdited":false,"queueEdited":false,"agentsSpawned":false},
+  "validation": ["Read PLAN.md, EDITORIAL.md, capabilities.md, screenshots.json and applicable instruction search before editing.","Reused batch-1 Leaves identity/function/licence and both retained snapshots; verified original snapshot SHA-256 matches batch evidence.","Retrieved only missing official release/build/licence details with six read-only webfetch calls; no existing identity/README refetch.","Research-only: site build/tests and native runtime tests are not applicable and were not run."]
+}

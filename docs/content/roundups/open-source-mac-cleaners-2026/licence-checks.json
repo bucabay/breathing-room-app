@@ -1,0 +1,51 @@
+[
+  {
+    "product": "mole",
+    "path": "docs/content/competitors/mole/sources/cli-LICENSE",
+    "licenceTextMarker": "GNU GENERAL PUBLIC LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "pass": true
+  },
+  {
+    "product": "puremac",
+    "path": "docs/content/competitors/puremac/sources/license.txt",
+    "licenceTextMarker": "MIT License",
+    "sha256": "88258dee1e1b9ced27bfbe7c40b3374ac1900adc82c427f71459a3d1e0976e2f",
+    "pass": true
+  },
+  {
+    "product": "dusty",
+    "path": "docs/content/competitors/dusty/assets/DUSTY-LICENSE.txt",
+    "licenceTextMarker": "MIT License",
+    "sha256": "938b5dfe0ae48ccf5d1a1ce27facc4dec34554a517ef963b13eecf4ccba36904",
+    "pass": true
+  },
+  {
+    "product": "depflush",
+    "path": "docs/content/roundups/open-source-mac-cleaners-2026/sources/depflush-license.txt",
+    "licenceTextMarker": "GNU GENERAL PUBLIC LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "pass": true
+  },
+  {
+    "product": "mac-sai",
+    "path": "docs/content/roundups/open-source-mac-cleaners-2026/sources/mac-sai-license.txt",
+    "licenceTextMarker": "BSD 3-Clause License",
+    "sha256": "2f3ff9183d4dce8ba6f81a6be99b402fcde91b4e4d7f2be5a1dec357769f84fc",
+    "pass": true
+  },
+  {
+    "product": "app-eraser",
+    "path": "docs/content/roundups/open-source-mac-cleaners-2026/sources/app-eraser-license.txt",
+    "licenceTextMarker": "GNU GENERAL PUBLIC LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "pass": true
+  },
+  {
+    "product": "breathing-room",
+    "path": "LICENSE",
+    "licenceTextMarker": "Apache License",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "pass": true
+  }
+]

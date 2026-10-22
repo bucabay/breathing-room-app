@@ -1,0 +1,19 @@
+{
+  "checkedAtUtc": "2026-10-21T22:50:45.314Z",
+  "schema": "pass (matches current content fields)",
+  "draftState": "review/unpublished",
+  "shortlistCount": 8,
+  "figureCount": 2,
+  "wordCountWhitespace": 1620,
+  "titleCharacters": 38,
+  "descriptionCharacters": 155,
+  "sourceCount": 16,
+  "markdownRender": "pass using installed Astro Satteri processor; table and eight h3 sections present",
+  "assets": {
+    "/assets/roundups/mac-disk-space-analyzers-2026/inspect-before-remove.svg": "90d792a58cdbe135d1d27baee903d7d5fae7cc60496ae5ca46118608565de31f",
+    "/assets/roundups/mac-disk-space-analyzers-2026/breathing-room-space-preview.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+  },
+  "articleSha256": "f9e1ed913042bea03a807b569b0d5d61d2aeeaf7009d5fd040f2f777e708a495",
+  "sharedBuild": "not run: job prohibits shared build output",
+  "independentReview": "pending"
+}

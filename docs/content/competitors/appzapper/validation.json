@@ -1,0 +1,33 @@
+{
+  "jobId": "research-appzapper",
+  "checkedAtUtc": "2026-10-21T20:04:02.459497+00:00",
+  "result": "structural-checks-passed; drafting-blocked",
+  "checks": [
+    {
+      "command": "python3 docs/content/competitors/appzapper/validate.py",
+      "exitCode": 0,
+      "output": "PASS: JSON structure; 10 claim/source mappings; 7 matrix rows; 6 source/asset hashes; PNG dimensions; official asset/USD metadata; blocked visual/draft gates; both briefs."
+    },
+    {
+      "command": "git diff --check -- docs/content/competitors/appzapper",
+      "exitCode": 0,
+      "limitations": "Git diff does not cover untracked new files; supplemented with direct Python file checks."
+    },
+    {
+      "command": "Read-only Python final-newline and trailing-whitespace checks for research.json, research.md, validate.py",
+      "exitCode": 0,
+      "output": "PASS: final newlines; no unintended trailing whitespace (Markdown hard-break pairs allowed); source tool-output bytes unchanged."
+    }
+  ],
+  "artifactsSha256": {
+    "research.json": "6ebf829709f82db1f7a7e242511745ebb9cfdf8285b113ccee9a04c1e8a9b1b6",
+    "research.md": "43236639eaef99e0246b7df59332ee9787e58e1b9a7deb069ed4262fe6dde083",
+    "sources/homepage-html-tool-output.txt": "0ba0c7991e1a0e682bec05fc96ddfee5ed54c67b4c8fefb45b87bc0f1e29927b",
+    "validate.py": "aa2d4f3105c867e0efdad31f19e6a3d9040ded881740df72829d7f9c1599655d"
+  },
+  "limitations": [
+    "Official competitor app-window URL located in HTML; image reuse permission and actual pixel inspection not established. No competitor image downloaded.",
+    "Breathing Room existing example-data preview hash/dimensions checked; not a native observation or new capture.",
+    "No site files edited, so no website build/test/browser-render checks run. No native product tests or independent editorial approval claimed."
+  ]
+}

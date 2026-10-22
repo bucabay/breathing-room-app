@@ -1,0 +1,47 @@
+[
+  {
+    "id": "release-v1.1.0.json",
+    "url": "https://api.github.com/repos/TuguiDragos/Peel/releases/tags/v1.1.0",
+    "finalUrl": "https://api.github.com/repos/TuguiDragos/Peel/releases/tags/v1.1.0",
+    "retrievedAtUtc": "2026-10-21T21:55:34.173951+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/peel-cleaner/evidence/release-v1.1.0.json",
+    "sha256": "9ab9079ee3b4a2797b5297114393983996a5c8528810e284fe2ec1e5822e39b2"
+  },
+  {
+    "id": "README-v1.1.0.md",
+    "url": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/README.md",
+    "retrievedAtUtc": "2026-10-21T21:55:35.082407+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/peel-cleaner/evidence/README-v1.1.0.md",
+    "sha256": "c57490d51f6066ef187b49be85b7ff80fb2fbea4826883885cf4966b04b5c014"
+  },
+  {
+    "id": "LICENSE-v1.1.0.txt",
+    "url": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/LICENSE",
+    "retrievedAtUtc": "2026-10-21T21:55:35.861941+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/peel-cleaner/evidence/LICENSE-v1.1.0.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "id": "GUIDE-v1.1.0.md",
+    "url": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/GUIDE.md",
+    "finalUrl": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/GUIDE.md",
+    "retrievedAtUtc": "2026-10-21T21:55:36.657826+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/peel-cleaner/evidence/GUIDE-v1.1.0.md",
+    "sha256": "b1efea957ce5b8a808bf6cef43e5572d04507a01a54d3e93ca981e9387765c3d"
+  },
+  {
+    "id": "PRIVACY-v1.1.0.md",
+    "url": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/PRIVACY.md",
+    "finalUrl": "https://raw.githubusercontent.com/TuguiDragos/Peel/v1.1.0/PRIVACY.md",
+    "retrievedAtUtc": "2026-10-21T21:55:37.476169+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/peel-cleaner/evidence/PRIVACY-v1.1.0.md",
+    "sha256": "b37491a69dcd780e1d9e9dab8a054a38b580e926608f4a179f389ad09405105a"
+  }
+]

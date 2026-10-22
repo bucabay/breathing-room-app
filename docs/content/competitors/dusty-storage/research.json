@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-dusty-storage",
+  "stage": "research",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "reviewer": "scheduled Breathing Room research worker; not independent publication reviewer",
+  "ownership": "docs/content/competitors/dusty-storage/ only, plus required job receipt",
+  "identity": {
+    "id": "dusty-storage",
+    "officialName": "Dusty",
+    "editorialName": "Dusty (dustystorage.com)",
+    "canonicalOwnerId": "dusty-storage",
+    "homepage": "https://dustystorage.com/",
+    "repository": null,
+    "repositoryStatus": "Not identified in inspected official links. Privacy policy mentions a GitHub update repository but supplies no repository URL. Homebrew tap text is an installation pointer, not proof of a source repository or open-source licence.",
+    "aliases": ["Dusty Storage", "Dusty (dustystorage.com)"],
+    "aliasDecision": {
+      "skipAsAlias": false,
+      "relatedId": "dusty",
+      "relationship": "distinct-products / name collision; no official same-product relationship established",
+      "basis": "Reuse docs/content/verification/alias-decisions.json: Dusty Storage advertises paid lifetime licences at dustystorage.com; toprak.sh/dusty advertises a free MIT-licensed offering. Domain-qualify names; never import toprak.sh features, repository, licence or images.",
+      "sourceIds": ["S1", "S7"]
+    },
+    "classification": "direct-mac-storage-cleaner-with-adjacent-specialist-workflows",
+    "classificationBasis": "Both address Mac storage investigation and cleanup; Dusty's documented backup offload and uninstaller workflows are not established Breathing Room equivalents. This is editorial classification, not a hands-on equivalence test.",
+    "platformFit": "Mac-native replacement/comparison intent; no Windows or Linux support claimed.",
+    "skipDecision": "Do not skip as irrelevant, dead or alias. Hold separate drafting for the visual-rights gate."
+  },
+  "baselineReuse": {
+    "record": "docs/content/verification/batch-1.json#records[id=dusty-storage]",
+    "recordStatus": "partial; licence previously unverified",
+    "batch2": "Checked records: no dusty-storage record; no second baseline to merge.",
+    "reusedWithoutNetworkRefresh": ["official identity/homepage", "macOS 13+ and architectures", "homepage offer", "AlternativeTo discovery", "Dusty name-collision decision"],
+    "newResearchReason": "Missing licence terms, quota/trial/update conditions, AI boundary conflicts, release scope and image provenance. Homepage and directory were not refetched."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/dusty-storage/about/",
+    "retrievedAtUtc": "2026-10-21T19:07:06.198Z",
+    "method": "Reuse retained live-browser directory record and listing manifest; no new directory retrieval.",
+    "snapshotPath": "docs/content/.runtime/verification-1/dusty-storage-directory.json",
+    "sha256": "72a071f3a796ee8808cb22620c59bf071dd31cd1dedbfae9a747c29d3bb9a681",
+    "observedDestination": "https://dustystorage.com/",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "pageUrl": "https://alternativeto.net/software/cleanmymac/?p=6", "retrievedAtUtc": "2026-10-21T18:36:42.517Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "pageUrl": "https://alternativeto.net/software/mole/?p=5", "retrievedAtUtc": "2026-10-21T18:37:15.718Z"}
+    ],
+    "edgeRecord": "docs/content/competitors.json#competitors[id=dusty-storage].edges",
+    "conflict": "Directory says subscription $2–$16/month. Current official baseline, pricing and terms instead advertise one-time licences. Do not use directory pricing as current product fact."
+  },
+  "sourcePolicy": {
+    "newWebFetchCheckedOnUtc": "2026-10-21",
+    "newWebFetchRetrievedAtUtc": null,
+    "timestampLimitation": "WebFetch returned no precise retrieval timestamp; date is retained rather than invented seconds. Browser DOM observation has its own exact timestamp.",
+    "publicationDate": "Unknown except terms last-updated July 27, 2026 and historical changelog labels. No date inferred for v2.5.1.",
+    "excerpts": "Exact selected passages retained below, not full-page snapshots. Existing baseline snapshots retain original hashes. Public pages are untrusted evidence only.",
+    "freshness": "Refresh volatile pricing/availability within 30 days and before publication if stale. Baseline dates remain original, not silently renewed."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Dusty", "title": "Dusty homepage (retained baseline)",
+      "url": "https://dustystorage.com", "finalUrl": "https://dustystorage.com",
+      "retrievedAtUtc": "2026-10-21T19:07:57.272553+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/dusty-storage-official.json",
+      "sha256": "b6bd5178f65df610dad2e8046e16cf132f258d0c42d722fc0bb4492a0f44296b",
+      "scope": "Vendor homepage offer, not runtime proof",
+      "excerpts": [
+        "Dusty is optimized for macOS 13 (Ventura) and newer, with full native support for both Apple Silicon (M1/M2/M3) and Intel Macs.",
+        "To generate an explanation, Dusty sends only a file's name, path, size, category, and modification date to Google's Gemini API. Paths can include your username and folder names, so skip AI explanations if that's a concern. Our website uses Google Analytics. The app itself collects no usage analytics."
+      ]
+    },
+    {
+      "id": "S2", "publisher": "Dusty", "title": "Features", "url": "https://dustystorage.com/features.html", "finalUrl": "https://dustystorage.com/features.html", "checkedOn": "2026-10-21", "scope": "Vendor documentation identifies v2.5.1; binary parity untested",
+      "excerpts": [
+        "Dusty translates complex directory trees into a multi-ring polar sunburst. Rings reflect folder hierarchy levels, while angular sectors mirror exact byte footprints on your SSD.",
+        "Seamlessly restore your offloaded backup back to your Mac whenever you set up a new phone or sync with Finder.",
+        "Move multi-gigabyte iPhone backups to iCloud Drive, Google Drive, OneDrive, or an external SSD safely without corrupting device pairing.",
+        "Detects abandoned node_modules, Xcode DerivedData, IntelliJ caches, and Homebrew download archives across your system.",
+        "Dusty connects directly to Google Gemini 1.5 Flash to synthesize plain English explanations before you touch a single byte.",
+        "Nothing is permanently destroyed without your deliberate confirmation.",
+        "© 2026 Dusty. All rights reserved."
+      ],
+      "excerptNote": "Marketing safety qualifiers are quoted evidence, not endorsed guarantees."
+    },
+    {
+      "id": "S3", "publisher": "Dusty", "title": "Pricing", "url": "https://dustystorage.com/pricing.html", "finalUrl": "https://dustystorage.com/pricing.html", "checkedOn": "2026-10-21", "scope": "Displayed offer only; no checkout opened",
+      "excerpts": [
+        "Solo Lifetime", "1 Mac • One-time payment, zero subscriptions", "$9.99 once",
+        "Family / Multi-Mac", "Up to 3 Macs • One-time payment, zero subscriptions", "$19.99 once",
+        "After 24 hours, cleaning features pause until you choose a plan. Your scans and AI explanations remain available to review what you could free.",
+        "Our managed cloud proxy includes up to 10 AI scan explanations per day per device",
+        "All major future v2.x updates included", "Perpetual updates & macOS compatibility patches",
+        "No credit card required • Instant download"
+      ]
+    },
+    {
+      "id": "S4", "publisher": "Dusty", "title": "Privacy Policy", "url": "https://dustystorage.com/privacy.html", "finalUrl": "https://dustystorage.com/privacy.html", "checkedOn": "2026-10-21", "scope": "Published policy statements, not independent network audit",
+      "excerpts": [
+        "We do not upload file lists, metadata, or directory structures to any server.",
+        "Only file paths, file category labels, and size metadata are sent to the AI. Document contents, code files, database rows, chats, and images are never read or uploaded.",
+        "Our managed cloud proxy includes 10 AI scan explanations per day per device.",
+        "Dusty checks for updates periodically by pinging our secure GitHub repository.",
+        "All binaries are Apple-notarized"
+      ]
+    },
+    {
+      "id": "S5", "publisher": "Dusty", "title": "Terms of Service", "url": "https://dustystorage.com/terms.html", "finalUrl": "https://dustystorage.com/terms.html", "checkedOn": "2026-10-21", "publishedOrUpdatedOn": "2026-07-27", "scope": "Commercial end-user terms; no asset reuse licence found",
+      "excerpts": [
+        "Dusty is provided under a Perpetual Lifetime License (Pay Once, Own Forever).",
+        "All minor and major v2.x updates and compatibility patches are included with zero recurring fees.",
+        "Each licensed device includes up to 10 AI scan explanations per calendar day",
+        "By default, Dusty moves items to the macOS System Trash to allow for user review and recovery.",
+        "Once the system trash is emptied, Dusty cannot recover deleted data. We recommend regular Time Machine backups.",
+        "you are entitled to a full refund within 30 calendar days of your initial purchase."
+      ]
+    },
+    {
+      "id": "S6", "publisher": "Dusty", "title": "Changelog", "url": "https://dustystorage.com/changelog.html", "finalUrl": "https://dustystorage.com/changelog.html", "checkedOn": "2026-10-21", "scope": "Latest vendor-labelled version, not installed binary",
+      "excerpts": [
+        "Latest v2.5.1",
+        "System Data & iOS Backup Hub: Deep discovery of abandoned iPhone & iPad local backups in MobileSync, Time Machine local snapshots, and Xcode bloat.",
+        "Tamper-Proof Hardware Trial Ledger: Server-backed hardware UUID validation to ensure uninterrupted and fair 24-hour evaluation for genuine new users."
+      ],
+      "notes": "v2.5.1 date absent; UUID sentence belongs to v2.5.0. Historical v0.1.1 is labelled Oct 24, 2024. Do not infer recent release dates or measured speed gains."
+    },
+    {
+      "id": "S7", "publisher": "Breathing Room verification worker", "title": "Retained distinct-product alias decision", "url": "https://toprak.sh/dusty/", "localRecord": "docs/content/verification/alias-decisions.json#decisions[aliasId=dusty-storage]", "checkedOn": "2026-10-21", "scope": "Reused official-source identity distinction only", "excerpts": ["Free, MIT licensed"], "notes": "This describes toprak.sh Dusty, not Dusty Storage. Its baseline official record is in batch-1.json#records[id=dusty]."
+    },
+    {
+      "id": "S8", "publisher": "Breathing Room", "title": "Current capability evidence register", "url": "https://breathing-room.chatic.ai/", "localRecord": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "scope": "Same-day retained source/public-page verification; no new native testing", "excerpts": [
+        "Breathing Room is a free, Apache-2.0 macOS maintenance preview",
+        "AI Care is advertised at $5 USD/month or $50 USD/year",
+        "Python 3.10+ is a disclosed prerequisite for disk inventory and legacy scripts, not bundled."
+      ], "notes": "Read entire register; preserve source versus distributed-binary limits, hosted authentication, macOS 13+, Apple Development signing/non-notarization, untested clean-machine/Intel runtime, saved exact daily-care approvals, and optional automatic verified Ruff mode. Exact underlying paths and public URLs are in the register."
+    },
+    {
+      "id": "S9", "publisher": "Dusty", "title": "Owned-tab official feature-image DOM observation", "url": "https://dustystorage.com/features.html", "finalUrl": "https://dustystorage.com/features.html", "retrievedAtUtc": "2026-10-21T20:35:25.101Z", "scope": "DOM only, no image download, screenshot or native test", "excerpts": ["Concentric Radar Lens Visual Disk Map in Dusty macOS", "© 2026 Dusty. All rights reserved."], "observation": {"assetUrl": "https://dustystorage.com/images/features/feature-disk-map.webp", "naturalWidth": 1920, "naturalHeight": 989, "loaded": true, "repositoryLinksFound": 0}, "limitations": "Image loads and alt text identify a vendor-presented app UI candidate; visual authenticity/version and reuse clearance are not established by dimensions. No exact repository link found on this page only."
+    }
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "evidenceClass": "documented-vendor-statement-not-hands-on", "reviewer": "scheduled research worker", "intendedLocation": "comparison matrix and workflow brief"},
+  "claims": [
+    {"id": "C1", "wording": "Dusty Storage's official site calls the app Dusty; qualify it by dustystorage.com.", "sourceIds": ["S1", "S7"], "state": "verified", "scope": "Identity only"},
+    {"id": "C2", "wording": "Dusty advertises macOS 13+ and Apple Silicon/Intel support.", "sourceIds": ["S1", "S2"], "state": "verified", "scope": "Vendor compatibility; no runtime validation on any architecture or later macOS version"},
+    {"id": "C3", "wording": "The vendor changelog labels v2.5.1 as latest.", "sourceIds": ["S6"], "state": "verified", "scope": "Publication date and downloaded binary version unknown"},
+    {"id": "C4", "wording": "Advertised one-time licences cost $9.99 for one personal Mac or $19.99 for up to three personal Macs.", "sourceIds": ["S3", "S5"], "state": "verified", "scope": "Dollar symbol as displayed; ISO currency, tax, regional total and checkout behavior unverified. No recurring licence fee advertised; do not call it a subscription."},
+    {"id": "C5", "wording": "A no-credit-card 24-hour full-feature trial is advertised; afterward cleaning pauses pending a plan while scans and explanations remain available.", "sourceIds": ["S3"], "state": "verified", "scope": "Trial not started; AI usage remains subject to the separate daily quota"},
+    {"id": "C6", "wording": "Terms include v2.x updates and compatibility patches; a 30-calendar-day refund is advertised.", "sourceIds": ["S5"], "state": "verified", "scope": "Do not promise all future major versions: Family pricing also says perpetual updates. Refund fulfillment untested."},
+    {"id": "C7", "wording": "Dusty documents a sunburst disk map, iPhone/iPad backup offload to cloud-drive locations or external SSD, restore, and residual app uninstallation.", "sourceIds": ["S1", "S2", "S6"], "state": "verified", "scope": "Documented functions, not tested backup integrity, cloud retention or guaranteed complete uninstallation"},
+    {"id": "C8", "wording": "Dusty documents developer cleanup discovery for node_modules, Xcode DerivedData, IntelliJ caches and Homebrew archives.", "sourceIds": ["S2"], "state": "verified", "scope": "No execution, recoverability, speed or bytes-reclaimed claims"},
+    {"id": "C9", "wording": "Terms say items move to Trash by default, users review before emptying Trash, and emptied data cannot be recovered by Dusty.", "sourceIds": ["S5"], "state": "verified", "scope": "Default behavior, not universal reversibility or a safety guarantee"},
+    {"id": "C10", "wording": "Dusty says scanning is local but AI explanations send paths, sizes and categories to Google Gemini; the homepage additionally names file names and modification dates.", "sourceIds": ["S1", "S4"], "state": "verified", "scope": "Attributed policy only. Privacy page also contradictorily says metadata is never uploaded; no network/backend audit."},
+    {"id": "C11", "wording": "The managed AI service advertises up to 10 explanations per device per calendar day; BYOK is offered.", "sourceIds": ["S3", "S4", "S5"], "state": "verified", "scope": "Provider quotas, model availability and API charges remain unverified; do not promise free unlimited Gemini usage or use the approximate 300/month as an exact quota."},
+    {"id": "C12", "wording": "Dusty never transmits metadata or device identifiers.", "sourceIds": ["S1", "S4", "S6"], "state": "contradicted", "scope": "Exclude: AI metadata transmission and v2.5.0 server-backed hardware UUID trial validation are documented."},
+    {"id": "C13", "wording": "All Dusty binaries are independently verified Apple-notarized.", "sourceIds": ["S4", "S1"], "state": "not-verified", "scope": "Policy says notarized but binary uninspected and homepage contains security-alert instructions. Attribute only if necessary; do not provide bypass commands."},
+    {"id": "C14", "wording": "Dusty has a publicly verified open-source licence and source repository.", "sourceIds": ["S5", "S9"], "state": "not-verified", "scope": "Only commercial end-user licence established; no repository identified. Do not borrow toprak.sh MIT licence."},
+    {"id": "B1", "wording": "Breathing Room, which we build, is a free Apache-2.0 macOS maintenance preview with optional advertised AI Care at $5 USD/month or $50 USD/year.", "sourceIds": ["S8"], "state": "verified", "evidenceClass": "reused-current-source-and-published-offer", "scope": "0.1.0-preview.1; not production readiness or binary feature parity"},
+    {"id": "B2", "wording": "Breathing Room source implements storage views, grouped CPU/memory monitoring, activity history and exact-approved daily care while running; hosted assistance requires authentication/internet.", "sourceIds": ["S8"], "state": "verified", "evidenceClass": "reused-source-inspection", "scope": "Implementation, not runtime testing. Daily care/AI benefits advertised paid; not every local tool requires subscription. Optional narrowly verified Ruff automatic mode qualifies blanket approval claims."},
+    {"id": "B3", "wording": "Breathing Room's identified preview requires macOS 13+ and Python 3.10+ for disk inventory; published caveats say Apple Development signed, not Developer ID signed or notarized, with clean-machine and physical-Intel validation pending.", "sourceIds": ["S8"], "state": "verified", "evidenceClass": "reused-release-disclosure", "scope": "0.1.0-preview.1, not a newly inspected installer"}
+  ],
+  "matrix": [
+    {"dimension": "macOS/version", "dustyStorage": "C2, C3", "breathingRoom": "B3"},
+    {"dimension": "licence/pricing", "dustyStorage": "C4, C5, C6, C14", "breathingRoom": "B1"},
+    {"dimension": "local versus hosted", "dustyStorage": "C10, C11; reject C12", "breathingRoom": "B2"},
+    {"dimension": "scan/cleanup and approval", "dustyStorage": "C7, C8, C9", "breathingRoom": "B2; source reviewable exact actions, optional Ruff automatic mode"},
+    {"dimension": "grouped helper CPU/memory", "dustyStorage": "not verified", "breathingRoom": "B2"},
+    {"dimension": "recurring growth/daily care", "dustyStorage": "not verified", "breathingRoom": "B2"},
+    {"dimension": "developer caches", "dustyStorage": "C8", "breathingRoom": "B2; S8 capability register developer/builder cleanup row"},
+    {"dimension": "backup offload / full uninstaller", "dustyStorage": "C7", "breathingRoom": "not verified; do not promise parity"},
+    {"dimension": "runtime and installation", "dustyStorage": "C13; DMG advertised, no runtime prerequisites beyond OS verified", "breathingRoom": "B3"}
+  ],
+  "conflictsAndUnknowns": [
+    {"topic": "privacy wording", "resolution": "Use local scanning plus explicit hosted AI metadata disclosure. Reject all-local/no-metadata blanket claims. UUID trial validation is documented, implementation/retention not verified.", "sourceIds": ["S1", "S4", "S6"]},
+    {"topic": "update entitlement", "resolution": "Say terms include v2.x; broader Family perpetual-update wording remains unresolved. Do not promise v3+.", "sourceIds": ["S3", "S5"]},
+    {"topic": "stale-download thresholds", "resolution": "Homepage says older than 3 months, features says 60 days and over 100 MB. Omit exact thresholds unless version-specific evidence resolves them.", "sourceIds": ["S1", "S2"]},
+    {"topic": "AI model and quotas", "resolution": "Gemini 1.5 Flash is vendor-named, not proof of a currently working backend/model. BYOK remains subject to Google terms, availability and limits.", "sourceIds": ["S2", "S5"]},
+    {"topic": "noncritical unknowns", "resolution": "Exact legal vendor identity, official source repo, ISO price currency/taxes, v2.5.1 release date, runtime/binary parity, extra dependencies, signing, app monitoring/growth features and asset capture version/date not verified. Do not convert unknowns to negative claims."}
+  ],
+  "visuals": [
+    {
+      "id": "dusty-storage-disk-map-link-only", "productId": "dusty-storage", "view": "Vendor-presented concentric disk map", "kind": "official-asset", "sourcePageUrl": "https://dustystorage.com/features.html#disk-map", "assetUrl": "https://dustystorage.com/images/features/feature-disk-map.webp", "capturedAtUtc": null, "retrievedAtUtc": null, "observedAtUtc": "2026-10-21T20:35:25.101Z", "capturedBy": null, "productVersion": null, "buildOrCommit": null, "osVersion": null, "dataMode": "vendor-illustration", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "widthPx": 1920, "heightPx": 989, "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Public official visual can be linked; no republication licence/permission established. Footer all rights reserved; end-user software licence is not image permission. No image downloaded.", "evidenceUrlOrPath": "https://dustystorage.com/features.html", "credit": "Dusty / dustystorage.com"},
+      "caption": "Official Dusty disk-map visual supplied by dustystorage.com; vendor data, capture version/date unknown. Linked source, not our native test or measured savings.", "alt": "Official Dusty disk-map visual linked from its feature documentation.", "supportedClaimIds": ["C7"], "limitations": ["DOM confirms loaded official image and dimensions, not independent visual authenticity or current binary parity.", "Must inspect actual image and privacy before reuse; no local original/hash exists because rights are unclear.", "A linked visual does not satisfy required on-page competitor image gate."], "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview", "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library job (reused inventory)", "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example", "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a", "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-example-data", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party example UI capture per screenshots.json; third-party marks remain their owners' marks, no endorsement or blanket trademark licence inferred.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room (which we build)"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.", "alt": "Breathing Room Space browser preview showing example categories and storage, with the example-data banner visible.", "supportedClaimIds": ["B2"], "limitations": ["Source-render illustration, not distributed-release parity or native/runtime evidence.", "Keep Interactive preview · example data and browser-preview disclosure visible; no example byte count is a measured outcome.", "Actual PNG opened/read in this job; floating assistant overlaps the category chart. Contextual crop requires recorded edits/hash and must retain disclosure.", "Publication-context readability and independent review remain pending."], "review": {"status": "research-visual-inspection-only", "reviewer": "scheduled research worker", "reviewedOn": "2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status": "brief-only-blocked-not-a-draft", "track": "search-reference", "proposedTitle": "Move or delete? Reviewing an iPhone backup before Mac cleanup", "proposedSlug": "review-iphone-backup-before-mac-cleanup", "primaryIntent": "Help a Mac owner distinguish preserving an old phone backup by offloading from deleting expendable generated files.",
+      "descriptionDirection": "Start with preservation: determine whether a phone backup is still needed before treating its size as removable waste. Dusty documents offload/restore; this is not a tested restore tutorial.",
+      "sections": ["Keep the backup decision separate from the free-space goal", "Documented Dusty offload and restore destinations, with unknown recovery behavior", "Review destination capacity, backup copies, access and restoration needs before acting", "Do not mistake Trash bytes or offloaded bytes for measured available space", "Choose specialised offload or broader investigation based on the job"],
+      "claimIds": ["C7", "C9", "C10", "B2", "B3"],
+      "visualPlan": "After lead: cleared real Dusty iOS Hub image if permission and visual review obtained; otherwise no draft. Later: selected Breathing Room Space preview with mandatory example labels, never implying it offloads backups.",
+      "candidateWorkflowVisual": {"sourcePageUrl": "https://dustystorage.com/features.html#ios-hub", "assetUrl": "https://dustystorage.com/images/features/feature-ios-system-data.webp", "reuse": "link-only; same rights blocker; not downloaded", "domObservedDimensions": "1696×874"},
+      "interactionPass": "A non-destructive decision checklist: still need backup? independent copy? destination accessible? verified restore procedure? If any unknown, stop. No deletion commands, device data upload or claimed trial results.",
+      "additionalEvidenceBeforeTutorial": "If expanded into step-by-step instructions, obtain official Apple backup-management documentation and version-specific offload/restore evidence. This packet does not authorise a tested restoration tutorial.",
+      "internalLinks": ["/comparisons/", "/comparisons/dusty-storage/"],
+      "distinctness": "Preservation/offload decision, not the similarly named toprak.sh Dusty's package-manager cleanup workflow and not an expanded generic comparison matrix. Slugs are proposals; collision check belongs to draft stage."
+    },
+    "comparison": {
+      "status": "brief-only-blocked-not-a-draft", "proposedTitle": "Breathing Room vs Dusty (dustystorage.com)", "proposedSlug": "dusty-storage", "primaryIntent": "Choose documented Mac storage-offload/uninstaller scope versus a broader maintenance preview with app/activity investigation.",
+      "structure": ["Conclusion and affiliation disclosure", "Concise sourced matrix: documented versus source-implemented versus unknown", "Choose Dusty for documented backup offload, sunburst or residual uninstaller intent", "Consider Breathing Room for source-implemented app/activity investigation, with preview/Python/hosted AI caveats", "Price and approval boundaries; links to workflow and primary sources"],
+      "claimIds": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "B1", "B2", "B3"],
+      "visualPlan": "Official disk-map app visual only after rights and actual-image review; selected current-source Space preview with exact caption. Minimum two product views, no landing-page or logo substitution.",
+      "internalLinks": ["/comparisons/", "/blog/review-iphone-backup-before-mac-cleanup/"],
+      "disclosure": "Breathing Room, which we build. No independent performance, safety or cleanup testing was performed."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "evidenceClass": "editorial-judgment-from-documented-scope-not-benchmark",
+    "dustyStorage": ["Documented backup offload/restore, radial map and app residual uninstaller may fit targeted storage work; Breathing Room parity not established.", "One-time per-device licence offer may appeal to subscription-averse users, but AI quota/provider conditions and v2.x update scope matter.", "Vendor risk labels and Trash-first defaults do not guarantee reversibility, complete uninstall or safe deletion. AI metadata leaves the device; blanket privacy claims conflict."],
+    "breathingRoom": ["Source-implemented grouped app/process and activity views may suit investigation beyond a one-off storage cleanup; Dusty equivalents are unknown, not absent.", "Free local preview and inspectable Apache-2.0 desktop source differ from paid hosted AI Care; do not describe all AI as local/free.", "Python prerequisite, non-notarized identified preview, untested clean-machine/Intel operation and source-versus-binary uncertainty can outweigh broader intended scope."]
+  },
+  "draftGate": {
+    "ready": false,
+    "blockers": [{"id": "VISUAL-RIGHTS", "diagnostic": "Official competitor app-image URLs identified, but no republication permission/licence established. All-rights-reserved footer is not reuse permission. No image downloaded; original hash and full visual/privacy review are unavailable. Linked official image is research fallback only, not the mandatory on-page visual.", "requiredResolution": "Obtain existing written permission/licence or explicit owner-approved reuse-policy decision; then preserve original bytes/hash, visually inspect authentic app UI/privacy and version labels, record provenance, and independently review page context. Do not send permission requests in this job."}],
+    "claimExclusions": ["C12", "C13 as independently verified fact", "C14 as verified open-source claim", "unqualified lifetime future-version updates", "zero-risk/100%-leftover-free/speed/savings promises", "offline AI or no transmitted metadata", "exact stale-download thresholds"],
+    "noncriticalUnknownsAllowed": true,
+    "independentReview": "pending separate review stage; no score awarded",
+    "siteChanges": false,
+    "runtimeTesting": false,
+    "publicationEligible": false
+  }
+}

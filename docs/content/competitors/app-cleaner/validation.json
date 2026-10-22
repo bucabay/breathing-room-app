@@ -1,0 +1,23 @@
+{
+  "jobId": "research-app-cleaner",
+  "checkedAtUtc": "2026-10-21T20:00:04.008839+00:00",
+  "status": "passed-structural-checks-only",
+  "command": "Read-only Python JSON, source-reference, SHA-256 and shared-caption assertions; exit 0",
+  "checks": [
+    "Research JSON parses; 11 unique claim IDs and all source references resolve.",
+    "Canonical owner, blocked state, no-drafting and competitor link-only/null-hash gates consistent.",
+    "Retained official snapshot SHA-256 matches reused verification baseline.",
+    "Breathing Room original SHA-256 and required caption match shared screenshot manifest.",
+    "Discovery snapshot exists and SHA-256 calculated.",
+    "research.json and research.md hashes calculated."
+  ],
+  "sha256": {
+    "docs/content/.runtime/verification-1/app-cleaner-directory.json": "bc00774a089072636a6a486d049d80c4606466189d2965aaba8771f60fa75c3b",
+    "docs/content/.runtime/verification-1/app-cleaner-official.json": "d8999e5bcbfd5d5ebc9314276f94f929e96bd1b66e816b804196a1f684a097ff",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+    "docs/content/competitors/app-cleaner/research.json": "fd1c4ee20e0209724f6bbd405c72178d649cce9d7ef6ff625afa3535e788396f",
+    "docs/content/competitors/app-cleaner/research.md": "a908e4f0884c3c2286b4db42c54fec2653550d45315bbf504bce15cd03f2cfcc"
+  },
+  "notPerformed": ["Competitor image download or decoded visual review: rights unresolved", "Native app testing/install/cleanup", "Website changes/build/tests", "Independent editorial approval"],
+  "diagnostic": "Research structure and retained evidence hashes pass. Mandatory competitor on-page image rights/access review remains blocked; no permission or asset hash invented."
+}

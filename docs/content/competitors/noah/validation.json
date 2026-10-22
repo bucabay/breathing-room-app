@@ -1,0 +1,19 @@
+{
+  "jobId": "research-noah",
+  "scope": "Research records and retained documentary sources, not publication or runtime approval",
+  "result": "passed-structural-checks; drafting-blocked",
+  "checks": [
+    "Python parsed all packet JSON successfully.",
+    "35 source/hash/excerpt checks passed: 10 newly retained source hashes, 3 reused baseline hashes, selected first-party preview hash/dimensions, and 21 claim excerpts matched retained source text after whitespace/HTML normalization.",
+    "15 unique Noah claim IDs and all product-matrix claim references validated.",
+    "Selected Breathing Room PNG SHA-256 matches screenshots.json and PNG header dimensions match 2940x3468.",
+    "Blocked publication/drafting state and link-only competitor visual without fabricated hash were asserted."
+  ],
+  "correctionDuringValidation": "Initial excerpt check exposed N12 Markdown bold markers missing from the quoted release passage. Excerpt corrected to source spelling; final complete check passed. No product fact altered to fit the test.",
+  "artifactSha256": {
+    "research.json": "49f0bb7897911454f90d49b2b1e550a422dbb2d94eb02b7aa7d5c2505aee776b",
+    "research.md": "cec6470143386ba30455c3d5c87db681ae6cbc5eca289607939e668963d296c2"
+  },
+  "notPerformed": ["competitor image download or visual review", "new browser session", "native installation or product tests", "website checks/build/tests (no site edits)", "independent editorial review"],
+  "remainingBlocker": "VISUAL-NOAH-01: screenshot reuse clearance and visual/edition fidelity review pending; official repository GIF remains link-only."
+}

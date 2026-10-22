@@ -1,0 +1,20 @@
+{
+  "jobId": "research-buhocleaner",
+  "checkedOn": "2026-10-21",
+  "scope": "Research packet only; no marketing site changes",
+  "checks": [
+    {"check": "Python JSON parse and reference assertions", "result": "passed", "detail": "15 unique claim IDs; all claim source IDs resolve; all 9 matrix dimensions resolve claim IDs; canonicalOwnerId and drafting blocker consistent."},
+    {"check": "Reused official snapshot SHA-256", "result": "passed", "sha256": "473faea422c9bcfe8db444e200ed4328e1a9bb6d804edbc590c785fc85661eb2"},
+    {"check": "Existing discovery snapshot hashed", "result": "passed", "path": "docs/content/.runtime/verification-1/buhocleaner-directory.json", "sha256": "8428b42b2edb3c9e5b1ed553bdf9187ea6cdf3ac3645ebfb3df2ad725a36591d"},
+    {"check": "Shared selected Space PNG SHA-256 and PNG header", "result": "passed", "detail": "Matches shared manifest: 2940 x 3468; SHA-256 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a."},
+    {"check": "Breathing Room Space PNG opened with image-capable read tool", "result": "passed-research-inspection", "detail": "Read example-data banners, Space navigation, category chart/list and composer overlap. This is not native/runtime or independent publication review."},
+    {"check": "Owned folder competitor-image absence and link-only record", "result": "passed", "detail": "No PNG downloaded in owned folder. Competitor original path/hash remain null; permission restriction explicitly blocks drafting."},
+    {"check": "Official missing facts read with WebFetch", "result": "completed", "detail": "Product, terms, autumn sale, FAQ, guide index, overview, trial, Flash Clean, download, mobile offer and helper pages inspected. No homepage/directory refetch; no checkout/account/binary access."},
+    {"check": "Site build/test, app execution and independent editorial approval", "result": "not-run", "detail": "Research-only scope; site unchanged. No claim of runtime success or publication approval."}
+  ],
+  "artifactHashes": {
+    "research.json": "15050cdc63026ad418a946b81fe31f7ec79f343526042ce225ba591b738aca85",
+    "research.md": "c2d0a2b8a67a62a2817fa5cf1d52a3ce5ba11bae67617fea36b84ab7bd87b22b"
+  },
+  "diagnostic": "Verified relevant Mac competitor with useful source-backed briefs. Required competitor app image remains link-only because official terms restrict copying/display without written permission; no permission established. Drafting blocked. Noncritical pricing/runtime/data-flow unknowns retained explicitly."
+}

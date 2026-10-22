@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-purge",
+  "stage": "research",
+  "status": "complete-research-not-publication-approved",
+  "assembledAtUtc": "2026-10-21T22:00:36.921127+00:00",
+  "dateNote": "Machine UTC retrieval/check date is October 21; scheduled local task date is October 22. Neither is a fabricated later check date.",
+  "ownership": {
+    "folder": "docs/content/competitors/purge",
+    "websiteEdits": false,
+    "receiptException": "docs/content/.runtime/research-purge.1792619917266646000.receipt.json"
+  },
+  "identity": {
+    "productId": "purge",
+    "officialName": "Purge",
+    "canonicalOwnerId": "purge",
+    "homepage": "https://purgemac.com/",
+    "repository": "https://github.com/jithin-sabu/purge-app",
+    "author": "Jithin Sabu",
+    "aliases": [
+      "Purge for Mac"
+    ],
+    "aliasDecision": "Same-product descriptive name, not a second draft. No evidence linking this repository to PowerMyMac; do not transfer facts from similarly named products or the macOS purge command.",
+    "skipSeparateAliasDraft": true,
+    "skipProductDraft": false,
+    "classification": "direct-macos-storage-cleanup-overlap",
+    "classificationReason": "Documented Mac caches, developer artifacts and reviewable cleanup overlap. App removal and non-AI operation are useful Purge decision factors; process/history investigation is a separately documented Breathing Room emphasis.",
+    "availability": "Public GitHub non-prerelease v1.12.0 with DMG and checksum asset records; download/install execution untested",
+    "claimIds": [
+      "P01",
+      "P03",
+      "P04",
+      "P05"
+    ]
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/purge/about/",
+    "retrievedAt": "2026-10-21T19:05:29.670Z",
+    "excerpt": "Official Website\npurgemac.com",
+    "rawCapture": "docs/content/.runtime/verification-2/purge-directory.json",
+    "sha256": "8bebe5d64614af39f4cf2506412d0c87f45bbd42bb00218bb8cc27c73ad1d102",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=10",
+        "retrievedAt": "2026-10-21T18:36:56.904Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=8",
+        "retrievedAt": "2026-10-21T18:37:24.218Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "directoryCapabilityWarning": "Directory discovery only. Its nothing-is-ever-lost wording is not usable against explicit official permanent-removal exceptions."
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-2.json",
+    "productId": "purge",
+    "fieldsReused": [
+      "identity",
+      "homepage",
+      "macOS minimum",
+      "free offer",
+      "MIT",
+      "discovery"
+    ],
+    "unnecessaryHomepageRefetch": false
+  },
+  "sources": [
+    {
+      "id": "official-homepage",
+      "publisher": "Purge / Jithin Sabu",
+      "url": "https://purgemac.com/",
+      "finalUrl": "https://purgemac.com/",
+      "retrievedAtUtc": "2026-10-21T19:09:36.999927+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-2/purge-official.json",
+      "sha256": "01b0962aee8ba175ecf85661206097062da9e08176d37e64f196d45510ccde5a",
+      "method": "Reused current batch-2 verification; not refetched",
+      "scope": "Homepage documentary claims"
+    },
+    {
+      "id": "directory",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/purge/about/",
+      "finalUrl": "https://alternativeto.net/software/purge/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:29.670Z",
+      "snapshotPath": "docs/content/.runtime/verification-2/purge-directory.json",
+      "sha256": "8bebe5d64614af39f4cf2506412d0c87f45bbd42bb00218bb8cc27c73ad1d102",
+      "method": "Reused current batch-2 verification; not refetched",
+      "scope": "Discovery/identity only"
+    },
+    {
+      "id": "readme",
+      "publisher": "Purge / Jithin Sabu",
+      "url": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "retrievedAtUtc": "2026-10-21T21:58:58.580194+00:00",
+      "snapshotPath": "docs/content/competitors/purge/sources/readme-v1.12.0.txt",
+      "sha256": "3f4405081c81d8baf4a39e751a135ec4aa99ad931a0571e37e54f087a0823730",
+      "scope": "v1.12.0",
+      "publicationDate": null
+    },
+    {
+      "id": "license",
+      "publisher": "Purge / Jithin Sabu",
+      "url": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/LICENSE",
+      "retrievedAtUtc": "2026-10-21T21:58:59.350059+00:00",
+      "snapshotPath": "docs/content/competitors/purge/sources/license-v1.12.0.txt",
+      "sha256": "eddec7b5ff07f1d591a9c11b4180314781b9ae2884de5d69c7ceb15e71039431",
+      "scope": "v1.12.0",
+      "publicationDate": null
+    },
+    {
+      "id": "release",
+      "publisher": "Purge / Jithin Sabu",
+      "url": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+      "finalUrl": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+      "retrievedAtUtc": "2026-10-21T21:59:00.574613+00:00",
+      "snapshotPath": "docs/content/competitors/purge/sources/release-latest.json",
+      "sha256": "2d21c59682701e5e6184093b0fac30dfeea07ff5af748f65e327e1a3401821c5",
+      "scope": "GitHub latest release API at retrieval",
+      "publicationDate": "2026-10-20T12:40:24Z"
+    },
+    {
+      "id": "safety",
+      "publisher": "Purge / Jithin Sabu",
+      "url": "https://purgemac.com/safety/",
+      "finalUrl": "https://purgemac.com/safety/",
+      "retrievedAtUtc": "2026-10-21T21:59:01.163580+00:00",
+      "snapshotPath": "docs/content/competitors/purge/sources/safety.txt",
+      "sha256": "b109f24019cc2ddde31c9b1c3c6bb6c5967374b757666c57b850aaac20e8da1e",
+      "scope": "v1.12.0",
+      "publicationDate": null
+    },
+    {
+      "id": "br-capabilities",
+      "publisher": "Breathing Room (first-party evidence register)",
+      "url": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "checkedOn": "2026-10-21",
+      "scope": "Reused current 2026-10-21 source/public-page register; not native runtime verification"
+    },
+    {
+      "id": "br-visuals",
+      "publisher": "Breathing Room (first-party evidence register)",
+      "url": "http://127.0.0.1:1431/",
+      "snapshotPath": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "checkedOn": "2026-10-21",
+      "scope": "Reused current 2026-10-21 source/public-page register; not native runtime verification"
+    }
+  ],
+  "claims": [
+    {
+      "id": "P01",
+      "wording": "Purge is the Mac cleaner at purgemac.com, with official repository jithin-sabu/purge-app.",
+      "sourceIds": [
+        "official-homepage"
+      ],
+      "sourceUrl": "https://purgemac.com/",
+      "excerpt": "Purge on GitHub",
+      "locator": "links: Purge on GitHub → https://github.com/jithin-sabu/purge-app",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Identity cross-linked by directory, official homepage and repository",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P02",
+      "wording": "Purge is advertised free, with no trial or paid tier.",
+      "sourceIds": [
+        "official-homepage"
+      ],
+      "sourceUrl": "https://purgemac.com/",
+      "excerpt": "Yes. No license, no trial, no paid tier, nothing bundled in.",
+      "locator": "Is it really free?",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Current advertised offer; no currency, billing period, device limit or checkout tested",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P03",
+      "wording": "Purge documents macOS 13 or later.",
+      "sourceIds": [
+        "official-homepage"
+      ],
+      "sourceUrl": "https://purgemac.com/",
+      "excerpt": "macOS 13+",
+      "locator": "download version/platform line",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Mac platform; architecture support not verified; no Windows/Linux support inferred",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P04",
+      "wording": "The latest public release returned by GitHub was v1.12.0, published October 20, 2026.",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+      "excerpt": "v1.12.0",
+      "locator": "tag_name; published_at=2026-10-20T12:40:24Z; draft=false; prerelease=false",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "As returned at retrieval; asset URLs listed, installer not downloaded or tested",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P05",
+      "wording": "The repository is MIT licensed; retain the copyright and permission notice when reusing its documentation asset.",
+      "sourceIds": [
+        "license"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/LICENSE",
+      "excerpt": "Copyright (c) 2026 Jithin Sabu",
+      "locator": "Entire LICENSE; permission covers software and associated documentation files",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Repository licence; not a blanket licence for third-party marks or external artwork",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P06",
+      "wording": "Purge documents local scans and cleanup history, and says it does not use AI; its documented network exception is update checking.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Purge does not use AI. Nothing you scan or clean is sent to an AI service.",
+      "locator": "Privacy, lines 330–338",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Vendor documentation, not packet-capture/source privacy audit; do not repeat blanket no-network or file-content claims",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P07",
+      "wording": "Purge normally moves files to Trash and never empties it; simulators, simulator runtimes and Time Machine snapshots are permanent-removal exceptions. Apple Intelligence model removal uses Apple’s asset service.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Files and folders go to the Trash by default, and Purge never empties the Trash",
+      "locator": "Note line 47; Cleaning line 145",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Model feature documented for macOS 27 / Apple silicon only (Overview line 62); not independently tested",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P08",
+      "wording": "Clean Selected presents a confirmation sheet; Large Files and duplicate removal require review and confirmation.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Nothing is removed until you review and confirm",
+      "locator": "Large Files line 95; Cleaning line 142",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Do not generalize manual confirmation to enabled automatic scheduled cleaning",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P09",
+      "wording": "Optional scheduled cleaning targets Safe items; the documented schedule offers weekly, monthly, every three months or custom intervals and cleans when the app opens.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Purge sends a local reminder and cleans safe items when you open the app",
+      "locator": "Cleaning line 144",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Homepage says scheduled cleaning and deleted-app review are off by default; no promise of background schedule execution while quit",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P10",
+      "wording": "Purge documents Xcode, npm, pnpm, Homebrew and other tool caches, plus project artifacts such as node_modules and Rust target.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "**Developer projects**: `node_modules`, Python virtual environments, Rust `target`",
+      "locator": "Dev Tools lines 78–84",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Vendor says active projects are skipped; stale threshold one month to two years or Show all. No compatibility or savings test performed",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P11",
+      "wording": "Purge documents an app uninstaller with per-item path/size review and an optional deleted-app leftover watcher.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "review a per-app sheet that lists every item with its path and size and a safety label",
+      "locator": "App Uninstaller lines 118–123",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Watcher is off by default; documented to work even if Purge is quit; this is distinct from scheduled cleanup",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P12",
+      "wording": "Purge documents App Caches and Dev Tools scanning without Full Disk Access; Large Files and app scans require it.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Large Files and the app scans need Full Disk Access; without it only App Caches and Dev Tools scan",
+      "locator": "Overview line 60",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Specific qualified description supersedes broad README installation wording at line 228; permission behavior not tested",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P13",
+      "wording": "Official instructions offer Homebrew or a direct DMG, describe Apple notarization and Sparkle updates, and list optional Xcode command-line tools for full simulator listing.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "Purge is notarized by Apple",
+      "locator": "Installation lines 184–245; Requirements lines 322–326",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Vendor notarization statement only; no binary signature/notarization inspection. Xcode 16 and Node 18+ apply to source build/icon regeneration, not ordinary installed runtime",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P14",
+      "wording": "Purge documents a read-only Everything else map for storage not listed as cleanup candidates.",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+      "excerpt": "It is read only and moves nothing.",
+      "locator": "body / See what is in Everything else",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "v1.12.0 release notes, not observed behavior",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "P15",
+      "wording": "Purge’s safety labels are vendor classifications, not an independent guarantee that removal has no cost or data risk.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/README.md",
+      "excerpt": "May be safe, but could cause inconvenience",
+      "locator": "Safety labels lines 125–138",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Editorial interpretation; avoid calling arbitrary folders safe based on a label",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "B01",
+      "wording": "Breathing Room, which we build, is a free Apache-2.0 macOS maintenance preview, with advertised optional AI Care at $5 USD/month or $50 USD/year.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "AI Care is advertised at **$5 USD/month or $50 USD/year**",
+      "locator": "Conclusion; pricing table lines 70–80",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 register; renewal/tax terms apply; no paid entitlement or payment test",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "B02",
+      "wording": "Breathing Room’s register documents grouped app/helper CPU and memory sampling and local activity history; sampled attribution is not forensic proof.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Path-derived ownership and sampled writes are not proof of the writer of a specific file",
+      "locator": "Capability matrix Apps and Activity",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Source implementation, not distributed-binary/native performance verification",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "B03",
+      "wording": "Breathing Room requires macOS 13+ and Python 3.10+ for inventory; the identified preview is Apple Development signed, not Developer ID signed or notarized.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "**Apple Development signed, not Developer ID signed or notarized**",
+      "locator": "Preview/runtime caveats lines 44–56",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Universal installer advertised; clean-machine and physical Intel execution untested; do not advise protection bypass",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "B04",
+      "wording": "Breathing Room’s hosted AI needs authentication and internet and may send relevant paths, process and storage data; local inspection is a separate boundary.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "relevant paths/process/storage data can reach the service and Cloudflare Workers AI",
+      "locator": "Local versus hosted boundary lines 58–68",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Published policy/source register, not backend audit; never entirely offline AI or all-data-stays-on-Mac",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    },
+    {
+      "id": "B05",
+      "wording": "Breathing Room’s daily care reuses exact saved approvals while the app runs. Interactive cleanup has an explicit optional automatic verified-Ruff-cache mode.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Automatically move verified Ruff lint caches to Trash",
+      "locator": "Approval modes lines 36–42; Daily care row",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "state": "verified",
+      "scope": "Source architecture; not an unconditional never-deletes-without-asking promise or runtime test",
+      "intendedLocation": "article and comparison",
+      "reviewer": "research-purge worker; independent review pending"
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "macOS / version / offer / licence",
+      "purgeClaimIds": [
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "breathingRoomClaimIds": [
+        "B01",
+        "B03"
+      ]
+    },
+    {
+      "dimension": "local versus hosted",
+      "purgeClaimIds": [
+        "P06"
+      ],
+      "breathingRoomClaimIds": [
+        "B04"
+      ]
+    },
+    {
+      "dimension": "scan and cleanup model",
+      "purgeClaimIds": [
+        "P07",
+        "P10",
+        "P14"
+      ],
+      "breathingRoomClaimIds": [
+        "B02",
+        "B05"
+      ]
+    },
+    {
+      "dimension": "approval and schedule",
+      "purgeClaimIds": [
+        "P08",
+        "P09"
+      ],
+      "breathingRoomClaimIds": [
+        "B05"
+      ]
+    },
+    {
+      "dimension": "process/helper CPU-memory grouping",
+      "purge": "not verified",
+      "breathingRoomClaimIds": [
+        "B02"
+      ]
+    },
+    {
+      "dimension": "recurring-growth attribution",
+      "purge": "not verified; cleaning history/schedule is not proof of growth attribution",
+      "breathingRoomClaimIds": [
+        "B02",
+        "B04"
+      ]
+    },
+    {
+      "dimension": "developer cache support",
+      "purgeClaimIds": [
+        "P10"
+      ],
+      "breathingRoom": "Source register capability matrix: discovery for npm, uv, pip, pnpm, Go, Bun, Yarn; adapters require installed tools and path validation; not native-tested",
+      "breathingRoomSourceId": "br-capabilities"
+    },
+    {
+      "dimension": "install/runtime caveats",
+      "purgeClaimIds": [
+        "P12",
+        "P13"
+      ],
+      "breathingRoomClaimIds": [
+        "B03",
+        "B04"
+      ]
+    },
+    {
+      "dimension": "app removal",
+      "purgeClaimIds": [
+        "P11"
+      ],
+      "breathingRoom": "full uninstaller not established; not a verified absence"
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "purge-official-overview",
+      "productId": "purge",
+      "view": "Overview with storage categories",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/jithin-sabu/purge-app/blob/v1.12.0/README.md",
+      "assetUrl": "https://raw.githubusercontent.com/jithin-sabu/purge-app/v1.12.0/Assets/github-hero.png",
+      "retrievedAtUtc": "2026-10-21T21:59:13.769722+00:00",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": "Asset included at v1.12.0; actual capture version not supplied",
+      "buildOrCommit": "v1.12.0 repository tag",
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": "docs/content/competitors/purge/assets/github-hero-v1.12.0.original.png",
+      "originalSha256": "9d7e5c45ba033e543ed8bb51d936873dfb5a7ce3460af8534e37498ddac387e7",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1600,
+      "heightPx": 900,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "redactions": [],
+        "notes": "Opened original PNG; no private paths/accounts visible."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Repository-associated documentation asset under root MIT LICENSE; retain Copyright (c) 2026 Jithin Sabu and full permission/warranty notice. No endorsement or third-party trademark rights inferred.",
+        "evidenceUrlOrPath": "docs/content/competitors/purge/sources/license-v1.12.0.txt",
+        "credit": "Purge / Copyright (c) 2026 Jithin Sabu, MIT licence; include full retained notice with published asset."
+      },
+      "caption": "Official Purge Overview image supplied in its v1.12.0 repository. Vendor illustration, not our scan or measured cleanup result. Purge / Jithin Sabu, MIT licence.",
+      "alt": "Purge Overview app window with App Caches, Dev Tools, Large Files, app removal and Everything else storage rows.",
+      "supportedClaimIds": [
+        "P14"
+      ],
+      "limitations": [
+        "Real app view embedded in vendor hero artwork, not a landing-page capture.",
+        "Promotional safety headline is vendor wording, not our endorsement.",
+        "Numbers cannot substantiate savings or benchmarks.",
+        "Bottom of app window is cropped in vendor original; avoid inferring controls outside image."
+      ],
+      "review": {
+        "status": "research-visual-inspected; publication-context-independent-review-pending",
+        "reviewer": "research-purge worker",
+        "reviewedAtUtc": "2026-10-21T22:00:36.920986+00:00"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "productVersion": "current-source browser preview on 2026-10-21, not a binary",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room, first-party browser preview"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredVisibleLabels": [
+        "Interactive preview · example data",
+        "This browser preview uses example data. Actions never change your Mac."
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Asset URL inapplicable: existing first-party local capture, no new hosted asset created.",
+        "Source-current at capture only; recheck context/currentness before publication."
+      ],
+      "supportedClaimIds": [],
+      "review": {
+        "status": "original PNG opened and read in this research job; publication review pending",
+        "reviewer": "research-purge worker"
+      }
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "issue": "Homepage says never deletes permanently elsewhere, but explicitly lists permanent exceptions.",
+      "resolution": "Use qualified P07 and exact exception passage, never blanket reversibility. Directory nothing-is-ever-lost wording rejected.",
+      "draftBlocking": false
+    },
+    {
+      "issue": "README installation/requirements broadly require Full Disk Access, while Overview/homepage qualify categories that work without it.",
+      "resolution": "Use specific P12 category boundary. Do not promise full scan without permission or claim permission needed just to start.",
+      "draftBlocking": false
+    },
+    {
+      "issue": "Safety page never-touch prose and bundled explanation labels include apparently overlapping protected categories; labels also contain data-loss caveats under generic nothing-is-lost prose.",
+      "resolution": "Do not generalize never-touch coverage or no-loss guarantees. No claim that labels establish safety. Any detailed rule assertion needs tagged source inspection.",
+      "draftBlocking": false
+    }
+  ],
+  "unknowns": [
+    {
+      "field": "Purge CPU architectures and installer size",
+      "state": "not-verified",
+      "draftBlocking": false,
+      "treatment": "Omit architecture and size comparisons."
+    },
+    {
+      "field": "Purge binary notarization, install, performance and runtime privacy",
+      "state": "not-tested",
+      "draftBlocking": false,
+      "treatment": "Attribute documentation; no tested/safe/faster/no-telemetry certification."
+    },
+    {
+      "field": "Purge process grouping / growth attribution",
+      "state": "not-verified",
+      "draftBlocking": false,
+      "treatment": "Use not verified, not No."
+    },
+    {
+      "field": "Breathing Room binary/source parity and paid service end-to-end behavior",
+      "state": "not-tested",
+      "draftBlocking": false,
+      "treatment": "Keep preview/source/hosted limitations and do not promise distributed feature parity."
+    },
+    {
+      "field": "Vendor screenshot capture date/version and original OS",
+      "state": "not-supplied",
+      "draftBlocking": false,
+      "treatment": "Label vendor illustration contained in tag, not verified capture of v1.12.0."
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search/reference",
+      "title": "Review stale developer artifacts before clearing Mac storage",
+      "slug": "purge-mac-workflow",
+      "primaryIntent": "Decide whether an old project artifact is rebuildable, actively used, orphaned, or original data before acting on a cleaner result.",
+      "leadConclusion": "Review project ownership and rebuild cost before selecting artifacts. Purge documents stale-project and orphaned-worktree rules; those are not permission to discard uncommitted work.",
+      "sections": [
+        "Separate global tool caches from project output and original files",
+        "Use Purge’s documented stale-project and worktree boundaries without treating age as consent",
+        "Check rebuild access, offline requirements and unsaved work",
+        "Distinguish Trash moves from permanent simulator/snapshot operations and actual free-space change",
+        "Investigate repeat growth before choosing the next cleanup"
+      ],
+      "interactionPass": "Plan a non-mutating checklist: known owner? active terminal/agent? original or reproducible? dependencies available? uncommitted work? Trash or permanent? No filesystem scanning, cleanup buttons, guaranteed savings or forced demo repo.",
+      "visualPlan": [
+        "Official Purge Overview after lead; caption vendor illustration",
+        "Breathing Room Space later at the investigate-growth decision; retain example-data labels"
+      ],
+      "boundaries": "No copied shell deletion commands or performed-cleanup narrative. Explain build/download costs and preserve backups; add no numeric savings.",
+      "links": [
+        "existing /comparisons/ hub",
+        "planned /comparisons/purge/ counterpart; validate when created"
+      ]
+    },
+    "comparison": {
+      "title": "Breathing Room vs Purge for Mac",
+      "slug": "purge",
+      "primaryIntent": "Choose between documented local non-AI cleaning and a preview that combines storage, activity and hosted assistance.",
+      "format": "Concise sourced matrix, two bounded reader choices, caveats, link to distinct workflow article; not an expanded duplicate.",
+      "purgeAdvantages": [
+        "Advertised free with no paid tier (P02)",
+        "Documented local non-AI model (P06)",
+        "Documented app removal, developer artifact and optional scheduling workflows (P09–P11)",
+        "Vendor documents notarization; unlike Breathing Room preview disclosure, not independently checked here (P13/B03)"
+      ],
+      "breathingRoomFit": "Breathing Room, which we build, may fit readers investigating app/helper activity alongside storage. Describe source-backed grouping/history, not proven performance or automatic blame (B02).",
+      "tradeoffs": [
+        "Do not sell Breathing Room as production-ready or entirely offline AI (B03/B04)",
+        "Purge also has schedules and cleanup history; never invent their absence (P09)",
+        "Neither Trash movement nor category size proves newly free space",
+        "Unknown Purge monitoring fields remain not verified, not No"
+      ],
+      "requiredDisclosures": [
+        "We build Breathing Room",
+        "Breathing Room example-data browser preview, non-notarized release/Python caveats",
+        "Free local app versus advertised optional paid hosted AI",
+        "No installation or cleanup tests performed"
+      ]
+    }
+  },
+  "gates": {
+    "identity": "pass-documentary",
+    "alias": "canonical-purge-no-product-skip",
+    "platformFit": "direct-mac-overlap",
+    "criticalClaimEvidence": "pass-for-bounded-brief",
+    "competitorVisual": "original-inspected-and-MIT-notice-retained",
+    "breathingRoomVisual": "existing-current-source-example-preview-inspected-hash-matched",
+    "drafting": "eligible-only-with-stated-boundaries",
+    "criticalBlockers": [],
+    "publication": "not-approved-independent-review-required"
+  },
+  "safety": {
+    "cleanup": false,
+    "installs": false,
+    "signups": false,
+    "credentialsRead": false,
+    "browserCookieExtraction": false,
+    "commitsPushesDeployments": false,
+    "queueMutation": false,
+    "websiteEdits": false,
+    "subagents": false,
+    "browser": "Skill loaded; no Chrome interactions necessary. Reused directory evidence; missing official material retrieved read-only over public HTTP."
+  }
+}

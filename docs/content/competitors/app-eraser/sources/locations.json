@@ -1,0 +1,9 @@
+{
+  "id": "locations",
+  "url": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/utils/pathLocations.js",
+  "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/utils/pathLocations.js",
+  "status": 200,
+  "retrievedAtUtc": "2026-10-21T19:58:28.370939+00:00",
+  "sha256": "418e5839726801df21a64f76c9740b6c5c2749d8c7c028d45714a16f6c09d8b5",
+  "text": "const homedir = require('os').homedir();\n\nconst pathLocations = [\n  '/Applications',\n  '/private/var/db/receipts',\n  '/Library/LaunchDaemons',\n  homedir,\n  `${homedir}/Downloads`,\n  `${homedir}/Library`,\n  `${homedir}/Library/Application Support`,\n  `${homedir}/Library/Application Scripts`,\n  `${homedir}/Library/Application Support/CrashReporter`,\n  `${homedir}/Library/Containers`,\n  `${homedir}/Library/Caches`,\n  `${homedir}/Library/HTTPStorages`,\n  `${homedir}/Library/Group Containers`,\n  `${homedir}/Library/Internet Plug-Ins`,\n  `${homedir}/Library/LaunchAgents`,\n  `${homedir}/Library/Logs`,\n  '/Library/Logs/DiagnosticReports',\n  `${homedir}/Library/Preferences`,\n  `${homedir}/Library/Preferences/ByHost`,\n  `${homedir}/Library/Saved Application State`,\n  `${homedir}/Library/WebKit`,\n  `${homedir}/Library/Caches/com.apple.helpd/Generated`,\n  '/Library/Audio/Plug-Ins/HAL',\n];\n\nmodule.exports = {\n  pathLocations,\n};\n"
+}

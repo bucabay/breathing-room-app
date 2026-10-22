@@ -1,0 +1,27 @@
+{
+  "jobId": "research-appcleaner",
+  "checkedAtUtc": "2026-10-21T20:00:28.528594+00:00",
+  "checks": [
+    "All five source snapshot paths exist; both declared source SHA-256 values match retained bytes.",
+    "All 8 claims have valid source IDs, excerpts, check dates and scope boundaries.",
+    "Selected Breathing Room original image SHA-256 matches screenshots.json; competitor asset remains link-only with no downloaded bytes or invented hash.",
+    "Explicit drafting blocker, canonical owner, alias decision, distinct briefs and unknowns present; JSON parses successfully."
+  ],
+  "hashes": {
+    "docs/content/.runtime/verification-1/appcleaner-official.json": "b07c6f718be63459a8e8d1e479a6537c4e2950a04dd7aef31277b5f85934f757",
+    "docs/content/.runtime/verification-1/appcleaner-directory.json": "3dd2557d9b579fc7d80d3bdca2656d945636f754567d108d93120356da8af3bd",
+    "docs/content/competitors/appcleaner/sources/official.html": "bc3a32c5091eb4c6e6c89441d0911f8ca75b356b1d4f284e3d975ea87f9ccbb9",
+    "docs/content/capabilities.md": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+    "docs/content/screenshots.json": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+    "docs/content/competitors/appcleaner/research.json": "91abaab7c29691fca71fc1026eaf45e68b07bca5dd910ae8f16ed59d86e88499",
+    "docs/content/competitors/appcleaner/research.md": "be96dfd231f532049255fa4b94bcf34f43fe1aed0289393a28aab46313b32eb1",
+    "docs/content/competitors/appcleaner/sources/official-retrieval.json": "35f9711c28f4f3dce599b459ea1b706f559831bcfed60bed3a3a28274716ca34"
+  },
+  "notRun": [
+    "No site build/test: research-only job with no website changes.",
+    "No native app/install/uninstall/cleanup or performance tests.",
+    "No competitor image inspection: rights unresolved; no download."
+  ],
+  "result": "passed structural/provenance checks; drafting blocked on competitor image rights and inspection"
+}

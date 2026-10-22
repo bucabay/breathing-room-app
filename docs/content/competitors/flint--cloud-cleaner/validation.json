@@ -1,0 +1,46 @@
+{
+  "checkedAtUtc": "2026-10-21T20:41:29.661677+00:00",
+  "jobId": "research-flint--cloud-cleaner",
+  "outcome": "structural checks passed; drafting blocked by B01",
+  "checks": [
+    "PASS: six new source snapshots match their recorded original SHA-256 metadata.",
+    "PASS: inherited official snapshot and selected Breathing Room preview hashes match source registers; directory snapshot and current registers also hashed.",
+    "PASS: research JSON parses; 12 unique claims have source IDs, excerpts and check dates; all matrix/visual claim references resolve.",
+    "PASS: retained US browser disclosure verifies Lifetime Access $14.99; USD, macOS 14+, App Store 1.37.0 and direct-release v1.37.1 date cross-checked against retained official content. No purchase or installation.",
+    "PASS: exact official competitor app-image reference retained; no image bytes/republication claimed; unresolved rights explicitly block drafting (B01).",
+    "PASS: no competitor images downloaded while rights unresolved; selected first-party PNG opened visually and hash-verified. Owned browser tabs 105/107 closed; no other tabs inspected beyond metadata."
+  ],
+  "sha256": {
+    "docs/content/competitors/flint--cloud-cleaner/sources/app-store-us.html": "5acd3051d3b2d48e8010880912f88d9b475ec9247623673378713387b028dc6c",
+    "docs/content/competitors/flint--cloud-cleaner/sources/app-store-us.meta.json": "3b06032b64fdff50e3cb52d0becda85207c3d5eb4efe77b2a290e2e4be5a30f2",
+    "docs/content/competitors/flint--cloud-cleaner/sources/browser-app-store-before.txt": "8b190a8bdc45ae6875aa76dc6763d4056685277e5d0e30c30e474a1385aa6a77",
+    "docs/content/competitors/flint--cloud-cleaner/sources/browser-app-store-expanded.txt": "0add45d2f909d6e38c50501973fec3435b132e8f8c3ef0d5ed91a8436a25e4e6",
+    "docs/content/competitors/flint--cloud-cleaner/sources/browser-homepage-visuals.json": "6285a88c48d40ac0ca42fd70de901de532d61ac423ba879e764d53af319c979f",
+    "docs/content/competitors/flint--cloud-cleaner/sources/homepage-visuals.html": "067b603d68717dd05672841be4fea16d4e002b46af6f310801e6b717d9fc0a77",
+    "docs/content/competitors/flint--cloud-cleaner/sources/homepage-visuals.meta.json": "70a4de8c12497807a49cb93440e6442ac3c1b348f5ed7b3dc0f2290d22b900bf",
+    "docs/content/competitors/flint--cloud-cleaner/sources/privacy.html": "f675bfa808f6b13ec98a4426a9f3d21aedffb2f2f58d8bdc13f341762fe4a22d",
+    "docs/content/competitors/flint--cloud-cleaner/sources/privacy.meta.json": "f27a4bd917797a420875a1f409a925850c7fef8e6ef24d986e3a4a957c6d13bc",
+    "docs/content/competitors/flint--cloud-cleaner/sources/release-latest.json": "ea2586229d54ac0f8f1a608d161ead8161a54e04f6bdeb7689f7eb3973a1c940",
+    "docs/content/competitors/flint--cloud-cleaner/sources/release-latest.meta.json": "dd72d2c9020091084a6f3a73350bc2c32b2f536a89986a5d5eff4429d56c668d",
+    "docs/content/competitors/flint--cloud-cleaner/sources/repository.json": "1603c9d0418d723e3a44755e19029086a57e9b9ecfa71800e466db0bc43667f3",
+    "docs/content/competitors/flint--cloud-cleaner/sources/repository.meta.json": "583f903800fdcf835e7da9228ee2db34a8e05e79cd105bbdd74560559182a422",
+    "docs/content/competitors/flint--cloud-cleaner/sources/terms.html": "197ae00a6a513dfb1d56e1421d106e0ac5670cf23ecb2b1f1e44fb0ba446c2a0",
+    "docs/content/competitors/flint--cloud-cleaner/sources/terms.meta.json": "0db30c0730f4dac5b8892f8890b3112a5bde2b8e32648d4619c506472e50e14f",
+    "docs/content/.runtime/verification-1/flint--cloud-cleaner-directory.json": "08a51d4e5261cbceed5a09879089de8b54bfc39bed2b536467fc1abfd11da134",
+    "docs/content/.runtime/verification-1/flint--cloud-cleaner-official.json": "e52d25f1114d2201e5844c46ecc3d5375b639ea398a659ca32caa6752e6fbc98",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+    "docs/content/capabilities.md": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+    "docs/content/screenshots.json": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+    "docs/content/competitors/flint--cloud-cleaner/research.json": "aceea37a1fc67003fc1e7e92283a063762eadd29245df5ec9c3b720dbff5f389",
+    "docs/content/competitors/flint--cloud-cleaner/research.md": "13fa3933e9346b16e80083458e4bf63e31f122f7bbf62bde8247fbcddfeeb540"
+  },
+  "notPerformed": [
+    "app install/cleanup or native runtime tests",
+    "site check/build/test (no site edits)",
+    "competitor asset visual/privacy review",
+    "independent publication review"
+  ],
+  "limitations": [
+    "Source content verified against retained excerpts and browser disclosure, not merely HTTP status. No independent runtime verification."
+  ]
+}

@@ -1,0 +1,179 @@
+About Cindori
+Main Nav Open Menu
+Page Nav Close Menu
+Cindori
+Cindori
+Store
+Backdrop
+New
+Sensei
+Trim Enabler
+Blog
+Support
+About
+Cindori
+Page Nav Open Menu
+Page Nav Close Menu
+About
+Affiliate
+Contact
+Cindori
+We enhance the Mac experience.
+15
+Years Experience
+10
+Apps Released
+7M+
+Downloads
+100+
+Countries Reached
+Featured In
+"
+A Beautifully-Designed Dashboard and Set of Utilities for Your Mac.
+"
+MacStories
+on Sensei
+"
+Gorgeous UI with lots of great functionality for monitoring and adjusting your Mac.
+"
+9to5Mac
+on Sensei
+"
+The go-to utility for enabling TRIM support on third-party SSDs.
+"
+Tom's Hardware
+on Trim Enabler
+"
+Gorgeous Mac performance utility.
+"
+Macworld
+on Sensei
+"
+A Wallpaper Engine alternative for Mac, featuring 4K video backdrops.
+"
+AppleInsider
+on Backdrop
+"
+Top 5 apps: A Cleaner app with a lot of other neat and useful features.
+"
+MacRumors
+on Sensei
+"
+Sensei fits right in with macOS, featuring native design and beautiful realistic illustrations.
+"
+Sketch
+on Sensei
+"
+Impressively versatile all-in-one system information and maintenance app.
+"
+Softpedia
+on Sensei
+"
+All the information you need about your Mac, gathered in one beautifully designed place.
+"
+MacUpdate
+on Sensei
+About Us
+A small team with a passion for crafting amazing experiences for Apple platforms.
+Oskar Groth
+Founder & Developer
+"I got my first Mac as a teenager and quickly fell in love with the platform. What started as building small utilities for myself and others turned into Cindori — an indie studio focused on crafting tools that enhance the Mac experience. Right now I handle everything from design and development to support, with a focus on performance, native design, and attention to detail."
+oskargroth.com
+@oskargroth
+Our Journey
+Over a decade of crafting Mac software
+2010
+Early Experiments
+Developed and released Zeus, a GPU-flashing utility that enabled PC graphics cards to run in the Mac Pro — quickly gaining traction in the MacRumors community.
+2011-2013
+Trim Enabler
+Our first commercial product unlocked TRIM support for third-party SSDs on macOS — a feature Apple reserved only for their own drives. It received great acclaim from the Mac community and laid the foundation for Cindori as a company.
+2013
+Founded Cindori AB
+Cindori was officially established as an independent Mac software studio, with a mission to enhance the Mac experience.
+2015
+Disk Sensei
+We released Disk Sensei, a comprehensive disk utility to monitor drive health, analyze storage usage, and optimize performance — building on the success of Trim Enabler.
+2015
+Command Center
+We released Command Center, a macOS Control Center–style utility providing quick access to system settings and hardware monitoring — five years before Apple introduced their own.
+2019
+Sensei
+We launched
+Sensei
+, a comprehensive Mac optimization suite featuring performance dashboards, disk health analytics, and a real-time menu bar monitor.
+2023
+Cindori.com
+We launched a new website with streamlined purchasing, in-depth support articles, and a License Manager that gives customers instant access to their purchases.
+2024
+Customer Portal
+We introduced a self-service portal where customers can manage licenses, download apps, and get support — secured with 2FA and no account registration required.
+2025
+Backdrop
+We launched
+Backdrop
+, bringing immersive 4K video wallpapers to Mac — including the world's first support for lock-screen videos. Thousands of users now share and discover backdrops in our built-in community platform.
+And we're just getting started.
+Stay in the loop.
+Get exclusive deals and invitations to try out our new app releases.
+Cindori Footer
+Home
+About
+Store
+Open Menu
+Close Menu
+Store
+Buy Backdrop
+Buy Sensei
+Upgrade
+Backdrop
+Open Menu
+Close Menu
+Overview
+Sensei
+Open Menu
+Close Menu
+Overview
+Trim Enabler
+Open Menu
+Close Menu
+Overview
+Press Kits
+Open Menu
+Close Menu
+Backdrop
+Sensei
+Trim Enabler
+Company
+Open Menu
+Close Menu
+About
+Press
+Affiliate
+Community
+Open Menu
+Close Menu
+Discord
+Support
+Open Menu
+Close Menu
+Support Center
+License Manager
+Blog
+Open Menu
+Close Menu
+Cindori Blog
+News
+Developer
+Social
+Follow
+@CindoriApps
+Newsletter
+Be the first to know about Cindori sales and new app releases.
+Copyright ©
+2026
+Cindori AB. All rights reserved.
+Terms of Use
+Affiliate Terms
+Sales and Refunds
+Legal

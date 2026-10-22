@@ -1,0 +1,24 @@
+{
+  "jobId": "research-pangalin-uninstaller",
+  "status": "passed-structural-checks; drafting-blocked",
+  "checks": [
+    {"check": "Python json.loads research.json", "result": "pass"},
+    {"check": "16 unique claim IDs; claim source references and matrix claim references resolve", "result": "pass"},
+    {"check": "Every claim contains an HTTPS source URL, excerpt and checked date", "result": "pass"},
+    {"check": "Reused official snapshot, capabilities register and screenshot register hashes match packet", "result": "pass"},
+    {"check": "Discovery snapshot SHA-256 computed against batch-2 value", "result": "pass; 2132e3189a2634b497ae9c1bf93c203843c883a179dbc67da7e9282869a4a071"},
+    {"check": "Selected Space PNG SHA-256 matches screenshot inventory", "result": "pass; 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"},
+    {"check": "Selected Space PNG opened and visually read with image-capable read tool", "result": "pass for example-data research selection; target-page review pending"},
+    {"check": "Six reused official-text passages matched retained capture", "result": "pass: Intel exclusion, free offer, macOS 26, spelling alias, sibling-storage relationship, vendor notarization wording"},
+    {"check": "Canonical owner, spelling alias skip and blocked visual/draft fields asserted", "result": "pass"},
+    {"check": "Official release-history, EULA, privacy and product HTML metadata retrieved read-only", "result": "pass for documentary evidence; no execution/network-privacy/binary verification"},
+    {"check": "Competitor screenshot download, original-byte hash and visual/privacy review", "result": "not performed; no verified redistribution basis, V01 remains blocked"},
+    {"check": "Website build/test/rendering", "result": "not applicable; no website files changed"},
+    {"check": "Independent editorial review", "result": "pending separate stage; no score or publication approval awarded"}
+  ],
+  "artifacts": [
+    {"path": "docs/content/competitors/pangalin-uninstaller/research.json", "sha256": "172e7fadf1b7d3880e2ffb213857e28b4fa8ea58bea9752ff3caa2e512459fb2"},
+    {"path": "docs/content/competitors/pangalin-uninstaller/research.md", "sha256": "7c7d654b3e6bd581d1b2270dc53e42bb9b3b4c0381115861ca41aca1a649274f"}
+  ],
+  "diagnostic": "Evidence packet and distinct briefs retained. Official UI image is link-only with unknown reuse permission; drafting is blocked, not silently waived. No site, shared queue or database changes."
+}

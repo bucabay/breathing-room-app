@@ -1,0 +1,202 @@
+{
+  "jobId": "research-clean-me",
+  "checks": [
+    {
+      "check": "JSON parses",
+      "passed": true,
+      "detail": "research.json and acquisition.json parsed with Python json"
+    },
+    {
+      "check": "acquisition license",
+      "passed": true,
+      "detail": "200; original bytes/hash match"
+    },
+    {
+      "check": "acquisition release",
+      "passed": true,
+      "detail": "200; original bytes/hash match"
+    },
+    {
+      "check": "acquisition paths",
+      "passed": true,
+      "detail": "200; original bytes/hash match"
+    },
+    {
+      "check": "acquisition project",
+      "passed": true,
+      "detail": "200; original bytes/hash match"
+    },
+    {
+      "check": "acquisition screenshot",
+      "passed": true,
+      "detail": "200; original bytes/hash match"
+    },
+    {
+      "check": "acquisition homebrew",
+      "passed": true,
+      "detail": "404; original bytes/hash match"
+    },
+    {
+      "check": "baseline official",
+      "passed": true,
+      "detail": "Retained prior snapshot hash matches, no new fetch"
+    },
+    {
+      "check": "baseline repo",
+      "passed": true,
+      "detail": "Retained prior snapshot hash matches, no new fetch"
+    },
+    {
+      "check": "discovery edge cleanmymac",
+      "passed": true,
+      "detail": "Original capture hash matches shared manifest: docs/content/.runtime/cleanmymac-2.json"
+    },
+    {
+      "check": "discovery edge mole",
+      "passed": true,
+      "detail": "Original capture hash matches shared manifest: docs/content/.runtime/mole-4.json"
+    },
+    {
+      "check": "unique source and claim IDs",
+      "passed": true,
+      "detail": "10 sources; 16 claims"
+    },
+    {
+      "check": "claim evidence fields",
+      "passed": true,
+      "detail": "Every claim maps to exact source URLs in ledger and carries excerpt/date/scope/state/location"
+    },
+    {
+      "check": "matrix claim references",
+      "passed": true,
+      "detail": "All 10 rows reference known claims; unknowns not negative checkmarks"
+    },
+    {
+      "check": "visual clean-me-official-ui",
+      "passed": true,
+      "detail": "PNG IHDR dimensions (1006, 1708) and original SHA-256 match; actual image opened and read"
+    },
+    {
+      "check": "visual provenance clean-me-official-ui",
+      "passed": true,
+      "detail": "Caption/alt/source/reuse basis and known claims present; published derivative intentionally null"
+    },
+    {
+      "check": "visual current-space-browser-preview",
+      "passed": true,
+      "detail": "PNG IHDR dimensions (2940, 3468) and original SHA-256 match; actual image opened and read"
+    },
+    {
+      "check": "visual provenance current-space-browser-preview",
+      "passed": true,
+      "detail": "Caption/alt/source/reuse basis and known claims present; published derivative intentionally null"
+    },
+    {
+      "check": "release conditions",
+      "passed": true,
+      "detail": "Actual retained metadata names v1.4.2, Catalina 10.15.x and uploaded ZIP; no binary test"
+    },
+    {
+      "check": "required packet/notice present",
+      "passed": true,
+      "detail": "Both research formats, original image and complete licence notice present"
+    }
+  ],
+  "passed": true,
+  "referencedFiles": [
+    {
+      "path": "docs/content/competitors/clean-me/assets/Clean-Me-LICENSE.txt",
+      "sha256": "68f9fdb84444f7b3075ffcdeee6af5f64d25ce72711abd81994655f6780cedd7",
+      "bytes": 1073
+    },
+    {
+      "path": "docs/content/competitors/clean-me/sources/release.json",
+      "sha256": "2da1db3e405c5ceae8dd98205714df53cc486526033a77563a334b5bc137be4f",
+      "bytes": 3809
+    },
+    {
+      "path": "docs/content/competitors/clean-me/sources/Paths.swift",
+      "sha256": "c253aee9b251f95b8caf245455599d66aea379669cd3d0d820feb46cebca2728",
+      "bytes": 3020
+    },
+    {
+      "path": "docs/content/competitors/clean-me/sources/project.pbxproj",
+      "sha256": "60b59d66c8aa0957473e88880ae0a1d194c99ed4fe86f24e20eb6da6353ca765",
+      "bytes": 20649
+    },
+    {
+      "path": "docs/content/competitors/clean-me/assets/clean-me-official-original.png",
+      "sha256": "895711d46c31155cfa71462639a6a1c5d11b40e9a9e04b8f07039c08f3ab9598",
+      "bytes": 611451
+    },
+    {
+      "path": "docs/content/competitors/clean-me/sources/homebrew-response.txt",
+      "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368",
+      "bytes": 9379
+    },
+    {
+      "path": "docs/content/.runtime/verification-1/clean-me-official.json",
+      "sha256": "10a74ffe44d2e700191e0e162150cec80c6c97795289a78f7834a6c7d051056c",
+      "bytes": 6230
+    },
+    {
+      "path": "docs/content/.runtime/verification-1/clean-me-repo-extra.json",
+      "sha256": "05000e6c343a513d047f0e9cd771178e531868556ff84b056f2eb20340e7a3b0",
+      "bytes": 28180
+    },
+    {
+      "path": "docs/content/.runtime/verification-1/clean-me-directory.json",
+      "sha256": "a04f96cba1791fbeb9bfebeb0a20149c9d42ee34c0d48042c50c0690c654deb1",
+      "bytes": 5292
+    },
+    {
+      "path": "docs/content/.runtime/cleanmymac-2.json",
+      "sha256": "c0781f3e83039b0bf510c9baff760feec52ba674d94db1da5ef78291002124b3",
+      "bytes": 65232
+    },
+    {
+      "path": "docs/content/.runtime/mole-4.json",
+      "sha256": "26c4fe7f7dac297350644d323feed4cf1053eb94ced3155bb7624aed7d947453",
+      "bytes": 49214
+    },
+    {
+      "path": "docs/content/competitors/clean-me/assets/clean-me-official-original.png",
+      "sha256": "895711d46c31155cfa71462639a6a1c5d11b40e9a9e04b8f07039c08f3ab9598",
+      "bytes": 611451
+    },
+    {
+      "path": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "bytes": 587216
+    },
+    {
+      "path": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "bytes": 23124
+    },
+    {
+      "path": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "bytes": 24457
+    },
+    {
+      "path": "docs/content/competitors/clean-me/research.json",
+      "sha256": "ec5053307e17baf0792190dbcb9538d8b077fe376bd6b0a8052d1ac85b3219d0",
+      "bytes": 32259
+    },
+    {
+      "path": "docs/content/competitors/clean-me/research.md",
+      "sha256": "4498552d21061482af05288addd7f9be7a73f207e67eff9f4bffeb154bfc9d44",
+      "bytes": 13325
+    }
+  ],
+  "notPerformed": [
+    "No site changes, site build/test or browser render QA; research-only",
+    "No native tests, cleanup, installation, binary downloads, sign-in, payment, credential access, queue edits, agents, commit, push or deployment"
+  ],
+  "visualInspection": "Both selected actual PNGs opened using functions.read; no performance/native claims inferred.",
+  "validatedAtUtc": "2026-10-21T20:15:38.971721+00:00",
+  "corrections": [
+    "Initial validation caught an incorrectly transcribed competitor image dimension (1000\u00d71700). Corrected from actual PNG IHDR to 1006\u00d71708 and reran JSON, original hashes, claim references, discovery hashes, dimensions, release conditions and required-file checks; all pass."
+  ]
+}

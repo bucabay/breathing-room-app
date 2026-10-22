@@ -1,0 +1,18 @@
+{
+  "jobId": "research-macflow-ai",
+  "result": "passed-packet-checks-with-critical-drafting-blocker",
+  "checks": [
+    "Python JSON parse passed for research.json.",
+    "All 13 claim records contain source IDs, HTTPS URL, supporting excerpt and checked date; all source IDs resolve.",
+    "All 8 S1-backed MacFlow homepage claim excerpts matched normalized retained official text. First console label incorrectly said 10 homepage claims; corrected by a second successful count/assertion run: 10 total MacFlow claims, 8 homepage-backed.",
+    "Existing official snapshot SHA-256 matches batch-1 record; discovery, screenshot inventory and selected Breathing Room original PNG hashes match packet.",
+    "canonicalOwnerId, blocked/draftingAllowed=false, competitor link-only/null-hash fields and mandatory Breathing Room example-data caption assertions passed.",
+    "HTMLParser found official img sources for storage-cleanup.webp, workspace-ai.webp, package-manager.webp and security-privacy.webp; no GitHub anchors emitted. This does not validate image pixels, rights, or repository nonexistence."
+  ],
+  "artifactSha256": {
+    "research.json": "9650655c17053023605613f197a314754245532d8743189e482804c0135cbbce",
+    "research.md": "0f98cbd5ad6aa4468b60935b22f15545fc28753d9ba05f065c2c1fe67da08d94"
+  },
+  "notPerformed": ["Competitor asset download or visual approval", "Native installation/testing or cleanup", "Website edits/build/tests", "Independent editorial review"],
+  "blocker": "VISUAL-01: competitor app screenshot permission and actual capture/pixel provenance unresolved; no drafting gate waiver."
+}

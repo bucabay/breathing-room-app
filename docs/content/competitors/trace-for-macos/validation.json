@@ -1,0 +1,23 @@
+{
+  "jobId": "research-trace-for-macos",
+  "scope": "Research packet structural/provenance validation, not publication or product runtime approval",
+  "command": "python3 read-only JSON/source-reference/excerpt/SHA-256 assertions",
+  "exitCode": 0,
+  "result": "pass",
+  "claimCount": 20,
+  "sourceCount": 8,
+  "checks": [
+    "JSON parses; unique claim IDs and all claim/source/visual references resolve",
+    "Reused directory and official snapshot SHA-256 match recorded evidence",
+    "Selected Breathing Room preview SHA-256 matches screenshot library",
+    "All baseline-only claim excerpts match retained official text verbatim",
+    "Competitor image is link-only and undownloaded; drafting explicitly blocked",
+    "Canonical identity retained; no alias doorway brief"
+  ],
+  "artifactHashes": {
+    "research.json": "0d47142c01079084e95bae73e059d2abe317ff41b985be2045d761bde377bc40",
+    "research.md": "1c1f7a724e47ecb761b7dfc45c45038e31ce13660167bdcbdc764904c1abd213"
+  },
+  "notPerformed": ["Competitor image download/pixel review because rights unresolved", "New Breathing Room capture or pixel review; library review reused", "Browser interaction", "Installation/native behavior/cleanup/performance tests", "Website check/build/test; no website changes", "Independent publication review"],
+  "blockingDiagnostic": "Required real Trace app screenshot has an official source/asset URL but no verified republication rights. Link-only fallback does not satisfy the required on-page screenshot gate. Obtain an authorized rights basis, then download/hash/inspect the permitted image before drafting."
+}

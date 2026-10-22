@@ -1,0 +1,37 @@
+{
+  "checkedAtUtc": "2026-10-21T22:51:08.009Z",
+  "status": "passed-scoped-draft-checks",
+  "schema": "actual src/content.config.ts expression via installed Zod",
+  "publication": "review / false",
+  "numberedSelections": 10,
+  "tableRows": 10,
+  "usefulImages": 2,
+  "bodyWordCountRendered": 1656,
+  "titleLength": 47,
+  "descriptionLength": 158,
+  "internalDestinations": [
+    "/assets/roundups/top-10-mac-cleaners-2026/breathing-room-preview.png",
+    "/tools/storage-headroom/",
+    "/tools/",
+    "/comparisons/"
+  ],
+  "sourceRecords": 21,
+  "articleSha256": "525d629e214cb298ed0b32f97983d99c92a57f43c213ddf2311e6c71ef73dd8d",
+  "assets": [
+    {
+      "src": "/assets/roundups/top-10-mac-cleaners-2026/workflow-choice.svg",
+      "alt": "Decision diagram grouping the ten options into built-in review, broad suites, focused inspection, app removal, terminal cleanup and preview investigation.",
+      "sha256": "a93d5869ca96e4cb1fbf828973aa64dce01c925275e02ed5288d0fd439b29ef5"
+    },
+    {
+      "src": "/assets/roundups/top-10-mac-cleaners-2026/breathing-room-preview.png",
+      "alt": "Breathing Room Home browser preview with a visible example-data banner, illustrative storage categories and grouped app memory.",
+      "sha256": "7adbafc5c0641c4ad7776cc98847224d8e772d5a8ed5b18a3fa5a353e1c61761"
+    }
+  ],
+  "notRun": [
+    "pnpm check/build/test: shared output forbidden by task",
+    "production-layout rendered review",
+    "independent editorial/factual approval"
+  ]
+}

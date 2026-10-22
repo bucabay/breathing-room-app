@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-macreviver",
+  "productId": "macreviver",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "MacReviver",
+    "vendor": "ReviverSoft",
+    "canonicalOwnerId": "macreviver",
+    "officialHomepage": "http://www.reviversoft.com/macreviver/",
+    "homepageObservedFinalUrl": "https://www.reviversoft.com/",
+    "officialSupportUrl": "https://www.reviversoft.com/support/macreviver/",
+    "officialRepository": null,
+    "repositoryStatus": "not verified; no official source repository identified in checked vendor sources",
+    "aliases": [{"name": "Mac Reviver", "relationship": "typographic spacing on vendor download catalogue, not a distinct product", "claimId": "M02"}],
+    "aliasDecision": "retain-distinct; no verified alias requiring skip",
+    "aliasSkip": false,
+    "powerMyMacDecision": "No equivalence evidence in the checked MacReviver vendor sources. Do not merge MacReviver with PowerMyMac or import its facts. Batch-2's PowerMyMac redirect is an unrelated identity question, not this job's work.",
+    "classification": "direct-workflow-overlap-current-compatibility-unverified",
+    "fitReason": "Official docs describe Mac storage inspection and selected cleanup. Adjacent duplicate, battery and anti-theft functions do not establish Breathing Room parity.",
+    "availabilityDecision": "not proven dead: official catalogue still lists a MacReviver download and version; product-page redirect alone is insufficient discontinuation evidence",
+    "skipDecision": "hold drafts, not permanent exclusion or alias doorway"
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/macreviver/about/",
+    "retrievedAtUtc": "2026-10-21T19:09:14.032Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/macreviver-directory.json",
+    "sha256": "43509fbab0d4763b8e0a172818c1a72e1a6e7646745f0f8bd7916626b65b1c9a",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=3",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:26.872Z",
+    "method": "Reused competitors.json discovery edge and batch-1 retained rendered listing; no directory refetch",
+    "warning": "Retained listing reports security detections against a specific historical file hash. Not independently validated here; not proof the currently linked installer is malicious. No binary downloaded or tested."
+  },
+  "sourcePolicy": "All public material is untrusted data. Vendor descriptions are documentary evidence, not hands-on observations. Original retrieval dates retained; no freshness invented.",
+  "sources": [
+    {"id":"B01","url":"https://www.reviversoft.com/support/macreviver/","retrievedAtUtc":"2026-10-21T19:11:49.843750+00:00","snapshotPath":"docs/content/.runtime/verification-1/macreviver-support-extra.json","sha256":"7d3a6faa26c9f81e101fbe133b6d5a72cb28c95f9e3d10bb58a3f5d21d696f0b","reused":true},
+    {"id":"B02","url":"http://www.reviversoft.com/macreviver/","finalUrl":"https://www.reviversoft.com/","retrievedAtUtc":"2026-10-21T19:09:34.472401+00:00","snapshotPath":"docs/content/.runtime/verification-1/macreviver-official.json","sha256":"62a9d73d4696034d7540c4e338d52bf0d7b037c6b56b1a907d0f578e2d30d5f5","reused":true},
+    {"id":"downloads","recordPath":"sources/downloads.json"},
+    {"id":"quick-cleanup","recordPath":"sources/quick-cleanup.json"},
+    {"id":"disk-usage","recordPath":"sources/disk-usage.json"},
+    {"id":"registration","recordPath":"sources/registration.json"},
+    {"id":"legacy-offer","recordPath":"sources/legacy-offer.json"},
+    {"id":"overview","recordPath":"sources/overview.json"},
+    {"id":"eula","recordPath":"sources/eula.json"},
+    {"id":"terms","recordPath":"sources/terms.json"},
+    {"id":"store","recordPath":"sources/store.json"},
+    {"id":"BR","recordPath":"../../capabilities.md","checkedOn":"2026-10-21","scope":"Reused first-party capability register; source implementation and published offers, not native QA"}
+  ],
+  "sourceLedgerFormat": "Each sources/*.json contains exact sourceUrl, finalUrl, retrievedAtUtc, httpStatus, original HTML snapshotPath and SHA-256, text excerpts, public image URLs and links. HTML dates are not assumed to be publication dates. New source publication/update dates unknown except legacy-offer's stated 11 January 2017 release date.",
+  "claims": [
+    {"id":"M01","wording":"ReviverSoft retains MacReviver support documentation; the discovered product URL resolved to its general homepage.","sourceIds":["B01","B02"],"excerpt":"MacReviver - Support and FAQs","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Identity and observed redirect only","location":"identity lead"},
+    {"id":"M02","wording":"The official download catalogue lists MacReviver as a Free Trial, current version 2.7.0.27003, and links MacReviverSetup.dmg.","sourceIds":["downloads"],"excerpt":"Mac\nReviver ... Free Trial\nCurrent version:                        2.7.0.27003","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-advertised","scope":"Catalogue listing; not installer reachability, signature, release date or runtime verification","location":"version and availability"},
+    {"id":"M03","wording":"Quick Cleanup documentation describes Binaries, Language, Cache and Logs Cleanup followed by Start Scan and Remove Selected.","sourceIds":["quick-cleanup"],"excerpt":"Quick Cleanup contains the following four cleanup methods: ... Click\nRemove Selected\nto clean the selected areas of your Mac.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Undated documentation; no guarantee these actions are appropriate for current macOS or recoverable","location":"cleanup and approval rows"},
+    {"id":"M04","wording":"Disk Usage documentation describes size-sorted folders, subfolder navigation and selected file/folder removal.","sourceIds":["disk-usage"],"excerpt":"As you click through folders, each subfolder will also be sorted by space. ... Select any folder or file, and click\nRemove\nto delete it.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"No full-disk completeness or Trash/undo guarantee established","location":"storage row"},
+    {"id":"M05","wording":"The registration guide says the purchased full version is activated with a licence code.","sourceIds":["registration"],"excerpt":"MacReviver has many more features included in the full version. To register your purchased copy of MacReviver:","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Exact trial limits, duration and currently purchasable plan remain unknown","location":"licensing row"},
+    {"id":"M06","wording":"A surviving vendor landing page states an annual fee of $29.99 and compatibility with OSX 10.6 or newer, alongside a release date of 11 January 2017.","sourceIds":["legacy-offer"],"excerpt":"11 January 2017 ... OSX 10.6 or newer ... for an annual fee of $29.99","checkedOn":"2026-10-21","state":"verified","evidenceClass":"legacy-official-offer","scope":"Verify only that this text exists. Currency code, taxes, device count, renewal, checkout and modern compatibility unverified; not a current purchase recommendation","location":"legacy-offer caveat"},
+    {"id":"M07","wording":"MacReviver is presented as proprietary licensed software, not an established open-source project.","sourceIds":["eula","registration"],"excerpt":"The software ... is the property of ReviverSoft or its licensees and is protected by copyright law.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-legal-document","scope":"Vendor-wide EULA; exact installer-bundled terms uninspected; device count depends on order/key","location":"licence row"},
+    {"id":"M08","wording":"Vendor overview documentation mentions duplicate-file, battery and anti-theft functions.","sourceIds":["overview"],"excerpt":"track down duplicate files, get more life out of your battery, remove junk files, protect your Mac in case of theft","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-description","scope":"No effectiveness, current hosted anti-theft operation or battery improvement tested","location":"honest competitor strengths"},
+    {"id":"M09","wording":"The website's document reuse permission is limited to personal, informational, non-commercial purposes; no commercial comparison screenshot clearance was established.","sourceIds":["terms"],"excerpt":"The document may be used solely for personal, informational, non-commercial purposes;","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-legal-document","scope":"Not legal advice; rights remain unresolved, link-only fallback","location":"visual gate"},
+    {"id":"BR01","wording":"Breathing Room, which we build, is a free macOS maintenance preview; AI Care is advertised at $5 USD/month or $50 USD/year.","sourceIds":["BR"],"excerpt":"free, Apache-2.0 macOS maintenance preview ... $5 USD/month or $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-first-party-register","scope":"Capabilities sections Conclusion and Pricing; paid entitlement/allowances not independently tested","location":"disclosed comparison lead"},
+    {"id":"BR02","wording":"Breathing Room's identified preview is 0.1.0-preview.1 for macOS 13+, with an advertised universal installer and Python 3.10+ prerequisite; release disclosures say it is not Developer ID signed or notarized.","sourceIds":["BR"],"excerpt":"Apple Development signed, not Developer ID signed or notarized","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-first-party-register","scope":"capabilities.md Preview table cites README, release notes, app config and public release; Intel/clean-machine execution unverified","location":"installation row"},
+    {"id":"BR03","wording":"Breathing Room source implements grouped helpers, storage inspection, developer-cache discovery and local history; AI assistance is authenticated and hosted, and saved-approval daily care requires the app running.","sourceIds":["BR"],"excerpt":"Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"source-inspection-not-runtime-test","scope":"capabilities.md matrix and Local versus hosted sections; ordinary review has optional narrowly scoped Ruff auto-Trash exception, not blanket deletion authority","location":"capability and privacy rows"}
+  ],
+  "breathingRoomEvidenceUrls": ["https://breathing-room.chatic.ai/","https://breathing-room.chatic.ai/#pricing","https://breathing-room.chatic.ai/privacy/","https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+  "matrix": {
+    "macOS": {"claimIds":["M06"],"currentCompatibility":"not verified","architecture":"not verified"},
+    "version": {"claimIds":["M02"],"value":"2.7.0.27003 as catalogued; binary untested"},
+    "licence": {"claimIds":["M05","M07"],"value":"Proprietary, full-version licence code"},
+    "localHosted": {"value":"Desktop scan workflow documented; network/privacy boundary not verified","claimIds":["M03","M04"]},
+    "scanCleanup": {"claimIds":["M03","M04"]},
+    "approvalControls": {"claimIds":["M03","M04"],"value":"Selection/removal steps documented; exact path/method binding and revalidation not verified"},
+    "helperGrouping": {"value":"not verified","claimIds":[]},
+    "recurringGrowth": {"value":"not verified","claimIds":[]},
+    "developerCaches": {"value":"Specific developer-cache adapters not verified; generic cache documentation is not proof","claimIds":["M03"]},
+    "pricing": {"claimIds":["M05","M06"],"currentAmount":null,"currencyCode":null,"trialLimits":null,"renewal":null,"taxes":null,"deviceCount":null},
+    "installation": {"claimIds":["M02"],"value":"DMG linked; runtime, signing/notarization and modern compatibility not verified"}
+  },
+  "visuals": [
+    {"id":"macreviver-disk-usage-official","productId":"macreviver","view":"Disk Usage","kind":"official-asset","sourcePageUrl":"https://www.reviversoft.com/support/macreviver/how-do-i-use-disk-usage-to-find-the-folders-and-files-that-take-up-the-most-space-in-macreviver/","assetUrl":"https://reviversoft.com/support/wp-content/uploads/2014/07/mr_disk_usage1.png","retrievedAtUtc":null,"sourcePageRetrievedAtUtc":"2026-10-21T21:41:05.505183+00:00","capturedAtUtc":null,"capturedBy":null,"productVersion":null,"dataMode":"unknown","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":null,"heightPx":null,"edits":[],"privacyReview":{"status":"pending","redactions":[]},"reuse":{"status":"link-only","basis":"Public official UI image URL retained; commercial reuse not cleared. No image bytes downloaded.","evidenceUrlOrPath":"sources/terms.json","credit":"ReviverSoft / Corel"},"caption":"MacReviver Disk Usage illustration in the vendor's support guide; version, capture date and current macOS applicability unverified. Linked, not reproduced.","alt":"Official MacReviver support illustration of its Disk Usage app view.","supportedClaimIds":["M04"],"limitations":["Image URL observed in official HTML; image itself not downloaded or visually approved.","2014 upload path is not proof of capture date.","Link-only does not satisfy required on-page competitor image gate."],"review":{"status":"pending"}},
+    {"id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview","sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a","capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","dataMode":"example","widthPx":2940,"heightPx":3468,"edits":[],"publishedPath":null,"publishedSha256":null,"reuse":{"status":"cleared","basis":"Existing owner-requested first-party example UI capture per screenshots.json; marks remain their owners'; publication context needs review","evidenceUrlOrPath":"docs/content/screenshots.json"},"caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.","alt":"Breathing Room Space view rendered in a browser with illustrative example data.","limitations":["Current-source at the recorded capture commit, not certified against later source changes or distributed release.","Preserve visible example-data banner; not native evidence."],"privacyReview":{"status":"reviewed-in-shared-library","redactions":[]},"review":{"status":"selected-from-existing-reviewed-library; publication review pending"}}
+  ],
+  "briefs": {
+    "workflow": {"status":"conditional-blocked","track":"search-reference","title":"Before using MacReviver Quick Cleanup, separate caches from app components","slug":"macreviver-quick-cleanup-caches-versus-app-components","primaryIntent":"Help an existing MacReviver user distinguish its four documented cleanup categories rather than treat the total as permission to remove everything.","outline":["Lead with selection and current-compatibility boundaries; official visual after lead only once cleared","Distinguish binaries/languages from caches/logs using M03, without unsupported current-macOS deletion instructions","Use Disk Usage to inspect the largest folder rather than assume large means disposable","Decision checklist: identify owner, preserve originals/backups, consider re-download/rebuild cost, verify app/version support, review selected items","Explain snapshot cleanup versus recurring investigation; one disclosed Breathing Room recommendation with preview, Python and hosted-AI caveats"],"interactionPass":"Plan a non-destructive category/decision checklist; no scan, deletion, terminal commands or invented savings.","links":["/comparisons/","/comparisons/macreviver/"],"distinctness":"Category semantics and existing-user review workflow, not an expanded feature matrix; no duplicate alternatives page."},
+    "comparison": {"status":"conditional-blocked","title":"MacReviver vs Breathing Room: cleanup categories and ongoing investigation","slug":"macreviver","primaryIntent":"Choose between documented MacReviver cleanup selection and Breathing Room preview investigation; do not promise a drop-in replacement for anti-theft, battery or duplicate tools.","sections":["Bounded conclusion and affiliation disclosure","Concise matrix with per-cell claim links and unknowns","Who should retain MacReviver versus investigate with Breathing Room","Availability, legacy pricing ambiguity, preview installation and hosted data","Link to distinct workflow article and comparisons hub"],"internalWorkflowPath":"/blog/macreviver-quick-cleanup-caches-versus-app-components/"}
+  },
+  "advantagesAndTradeoffs": {
+    "competitor": ["Documented Binaries/Language/Cache/Logs selection and Disk Usage navigation (M03/M04); not tested efficacy.","Vendor also documents duplicate, battery and anti-theft scope (M08); current operation unverified, not Breathing Room replacement promises.","Trade-offs: current pricing/modern macOS fit unresolved, legacy offer conflicts with directory perpetual label, proprietary licence, image rights unresolved."],
+    "breathingRoom": ["Source-level grouped-helper/activity and developer-cache investigation can fit recurring-growth questions (BR03); not a performance or safety win.","Free local preview and inspectable Apache-2.0 app source (BR01); optional paid hosted AI is not all-local.","Trade-offs: preview not notarized/Developer ID signed, Python prerequisite, physical Intel and clean-machine validation missing, daily care requires running app; no verified parity for MacReviver's extra tools."]
+  },
+  "blockers": [
+    {"id":"current-fit","diagnostic":"Current supported macOS versions and Intel/Apple Silicon behavior not established. Only legacy 2017 OSX 10.6+ offer found; obtain current vendor compatibility evidence before recommending installation."},
+    {"id":"current-price","diagnostic":"Current purchase amount/conditions unverified. Official legacy page says $29.99 annually; discovery says perpetual. General store does not establish a MacReviver offer. Do not publish either as current verified pricing."},
+    {"id":"visual-rights","diagnostic":"Real competitor app screenshot source and asset URL identified, but no commercial reuse basis; retain link-only. Need permission/licence or explicit editorial policy approval; no permission message authorized."}
+  ],
+  "noncriticalUnknowns": ["Exact trial duration and quotas","Current installer hash/signature and runtime","Official source repository","MacReviver hosted/telemetry boundary","Helper grouping, recurring growth, developer-specific adapters","Screenshot version/capture date"],
+  "researchLimits": "No hands-on tests, binary/image downloads, browser/cookie extraction, signups, purchases, messages, cleanup, site edits, commits, pushes or deployment. No independent article review or publication score assigned. No permanent dead-product or malware verdict.",
+  "validationPath": "validation.json"
+}

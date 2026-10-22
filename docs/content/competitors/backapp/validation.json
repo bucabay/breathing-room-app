@@ -1,0 +1,142 @@
+{
+  "jobId": "research-backapp",
+  "validatedAtUtc": "2026-10-21T20:05:27.521941+00:00",
+  "command": "python3 docs/content/competitors/backapp/validate.py",
+  "outcome": "pass",
+  "checks": [
+    {
+      "check": "Research JSON and source ledger parse; expected task and blocked status",
+      "outcome": "pass"
+    },
+    {
+      "check": "Ten retained official sources with unique IDs",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: install",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: usage",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: readme",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: license",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: snapshot-model",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: project",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: release",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: cask",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: competitor-visual",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: tagged-project",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: baseline-home",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: br-capabilities",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained source SHA-256: br-screenshots",
+      "outcome": "pass"
+    },
+    {
+      "check": "Discovery snapshot hash: listing",
+      "outcome": "pass"
+    },
+    {
+      "check": "Discovery snapshot hash: edge",
+      "outcome": "pass"
+    },
+    {
+      "check": "Baseline verification hash retained",
+      "outcome": "pass"
+    },
+    {
+      "check": "All claims point to known source IDs and carry wording/excerpt/locator/state",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim date/reviewer defaults present",
+      "outcome": "pass"
+    },
+    {
+      "check": "All comparison matrix claim links resolve",
+      "outcome": "pass"
+    },
+    {
+      "check": "PNG hash and dimensions: backapp-snapshot-compare",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual caption, alt, permission basis and unmodified original: backapp-snapshot-compare",
+      "outcome": "pass"
+    },
+    {
+      "check": "PNG hash and dimensions: current-apps-browser-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual caption, alt, permission basis and unmodified original: current-apps-browser-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "MIT copyright, documentation grant and notice condition retained",
+      "outcome": "pass"
+    },
+    {
+      "check": "Both main and v1.0.0 source targets say 26.2 twice",
+      "outcome": "pass"
+    },
+    {
+      "check": "Stable release tag and asset version agree with cask",
+      "outcome": "pass"
+    },
+    {
+      "check": "Reported release digest equals cask; not a binary checksum test",
+      "outcome": "pass"
+    },
+    {
+      "check": "Adjacent canonical owner and explicit alias/skip decisions",
+      "outcome": "pass"
+    },
+    {
+      "check": "Critical missing OS evidence blocks drafting",
+      "outcome": "pass"
+    },
+    {
+      "check": "Distinct workflow and comparison briefs present",
+      "outcome": "pass"
+    }
+  ],
+  "limitations": "Offline JSON/reference/hash/header/evidence consistency checks only. Both PNGs separately opened and read with image tool. No vendor code, native app, installer, website build, network or independent publication review run by this validator.",
+  "artifactHashes": {
+    "docs/content/competitors/backapp/research.json": "668bdee354b0941ae1b7185c808174b6ebb5b7a1ce141a192b9578ca04d2ea71",
+    "docs/content/competitors/backapp/research.md": "cae125eba80acd553e1bdf787037a281061b38bfdd15efa9f25d7542e7c9321f",
+    "docs/content/competitors/backapp/source-ledger.json": "08207ba4caeb82e52c3542013272d878e03171344446ae0426bd816b0ebc989b"
+  }
+}

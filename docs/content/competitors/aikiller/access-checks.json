@@ -1,0 +1,44 @@
+{
+  "jobId": "research-aikiller",
+  "checkedOn": "2026-10-21",
+  "recordedAtUtc": "2026-10-21T19:52:02Z",
+  "note": "Retained tool-result excerpts, not raw HTTP responses. Individual tool calls did not expose exact retrieval timestamps; recordedAtUtc is the subsequent recording time.",
+  "checks": [
+    {
+      "url": "https://aikiller.yogisoftworks.com/",
+      "method": "webfetch markdown",
+      "result": "Transport error (GET https://aikiller.yogisoftworks.com/)",
+      "finalUrl": null
+    },
+    {
+      "url": "https://aikiller.yogisoftworks.com/",
+      "method": "Chrome DevTools navigate_page, owned pageId 54, followed by take_snapshot",
+      "result": "net::ERR_NAME_NOT_RESOLVED",
+      "snapshotExcerpt": "This site can’t be reached; aikiller.yogisoftworks.com’s DNS address could not be found. Diagnosing the problem. DNS_PROBE_STARTED",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "closedOwnedTab": true,
+      "otherTabsInspected": false
+    },
+    {
+      "url": "https://yogisoftworks.com/",
+      "method": "webfetch markdown",
+      "result": "AiKiller\n\nRedirecting to aikiller.yogisoftworks.com…",
+      "observedLinkUrl": "https://aikiller.yogisoftworks.com/",
+      "finalUrl": null,
+      "limitation": "Returned page text links the parent domain to the product. No successful destination load or HTTP redirect status was established."
+    },
+    {
+      "url": "https://yogisoftworks.com/",
+      "method": "Python urllib.request.urlopen, 30-second timeout",
+      "result": "HTTPError 403: Forbidden",
+      "limitation": "Different client access result; not proof that the parent website is unavailable to all visitors."
+    }
+  ],
+  "searchLeads": {
+    "queries": ["\"AiKiller\" \"Yogi\"", "\"AiKiller\" github screenshot Yogi Software Works"],
+    "result": "No official repository or cleared app screenshot established. Results included the existing AlternativeTo listing, third-party aggregation and unrelated GitHub usernames.",
+    "excludedIdentityLead": "https://github.com/AIKiller",
+    "exclusionReason": "Name match alone does not connect this account to Yogi Software Works or the macOS product.",
+    "policy": "Search summaries are leads only; no product claim verified from them."
+  }
+}

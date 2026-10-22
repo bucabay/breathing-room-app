@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-appzapper",
+  "productId": "appzapper",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "stage": "research-only",
+  "published": false,
+  "reviewer": "scheduled research worker; independent review pending",
+  "identity": {
+    "officialName": "AppZapper 3000",
+    "canonicalOwnerId": "appzapper",
+    "homepage": "https://appzapper.com/",
+    "officialRepository": null,
+    "repositoryStatus": "Not verified; no repository link in the retained official homepage links. Do not infer source licensing.",
+    "creditedCreators": ["Austin Sarner", "Brian Ball", "Clemens Knieper"],
+    "aliases": ["AppZapper", "AppZapper 3000"],
+    "aliasEvidence": "S1 identifies AppZapper 3000 and says AppZapper was first released in 2006; S0 links the AppZapper listing to this same official domain. Treat the new branding as this product, not a second competitor.",
+    "aliasSkipDecision": "Keep this canonical research record; skip a separate AppZapper 3000 draft as duplicate branding. No evidence links this identity to PowerMyMac; do not merge unrelated products on speculation.",
+    "productSkipDecision": "Do not exclude as dead or irrelevant: a current official download and purchase offer are documented, not execution-tested.",
+    "classification": "adjacent-mac-uninstaller",
+    "classificationReason": "App-centric uninstall/associated-file discovery overlaps maintenance intent, but is not established as a direct substitute for storage investigation, process monitoring or ongoing care. Breathing Room has no verified full app-uninstaller claim in its capability register.",
+    "platformFit": "Native Mac-replacement intent: choosing an app-removal tool versus investigating continuing disk growth. No Windows or Linux support inferred.",
+    "claimIds": ["AZ01", "AZ02", "AZ03", "AZ06"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/appzapper/about/",
+    "destinationUrl": "https://appzapper.com/",
+    "retrievedAtUtc": "2026-10-21T19:05:11.560Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/appzapper-directory.json",
+    "sha256": "1984885af4d485174d932012a7a0d8a2b4d882055acd64d129bd3051b5b9dee7",
+    "method": "Reused batch-1 discovery snapshot and competitors.json edges; no new directory request.",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=2", "retrievedAtUtc": "2026-10-21T18:36:23.710Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=3", "retrievedAtUtc": "2026-10-21T18:37:11.107Z"}
+    ],
+    "edgeEvidencePath": "docs/content/competitors.json#appzapper.edges",
+    "limitations": "Retained directory JSON is rendered text/links, not a raw HTTP response. Seed pagination metadata reused from shared manifest, not independently revisited. Directory licensing labels are not official licence terms."
+  },
+  "sources": [
+    {
+      "id": "S0", "publisher": "AlternativeTo", "title": "AppZapper listing",
+      "url": "https://alternativeto.net/software/appzapper/about/", "finalUrl": "https://alternativeto.net/software/appzapper/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:11.560Z", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/appzapper-directory.json", "sha256": "1984885af4d485174d932012a7a0d8a2b4d882055acd64d129bd3051b5b9dee7",
+      "scope": "Discovery only; listing may describe older AppZapper releases.",
+      "excerpt": "Official Website / appzapper.com; COST / LICENSE: Pay once / Proprietary"
+    },
+    {
+      "id": "S1", "publisher": "AppZapper", "title": "AppZapper 3000 official homepage",
+      "url": "https://appzapper.com", "finalUrl": "https://appzapper.com",
+      "retrievedAtUtc": "2026-10-21T19:08:03.357728+00:00", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/appzapper-official.json", "sha256": "e3a466188d7dbbec9859498ae95e40ee3bf6225a4bf26387f1b60dac6e46259a",
+      "scope": "Same-day batch-1 official verification reused; marketed release 1.0.1, AppZapper 3000, macOS 15.6+.",
+      "excerpt": "AppZapper 3000; Drag in any app and instantly find all of its extra files. Then delete them with a real 3D zapper. Try 3 free zaps. Version 1.0.1 · macOS 15.6+; Austin Sarner, Brian Ball, and Clemens Knieper"
+    },
+    {
+      "id": "S2", "publisher": "AppZapper", "title": "Buy AppZapper 3000",
+      "url": "https://appzapper.com/buy", "finalUrl": "https://appzapper.com/buy",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "retrievalMethod": "Read-only WebFetch markdown followed by HTML to inspect missing licence/payment qualifiers; tool did not expose exact retrieval timestamp.",
+      "scope": "Public pre-checkout offer only; no checkout created or purchase attempted.",
+      "excerpt": "Single User / 1 Mac / $18; Family Pack / up to 5 Macs / $29; Enterprise / up to 25 Macs / $99; meta description: One-time purchase, registers automatically in the app.; public script: function usd(c)",
+      "snapshotPath": null,
+      "limitations": "Retained excerpts, not a full immutable HTML snapshot. Tax, refund, upgrade entitlement and activation behavior not verified. USD is supported by homepage structured data, not dollar glyph alone."
+    },
+    {
+      "id": "S3", "publisher": "AppZapper", "title": "Official homepage HTML visual provenance",
+      "url": "https://appzapper.com", "finalUrl": "https://appzapper.com",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "retrievalMethod": "Read-only WebFetch HTML to locate app UI assets and image-reuse terms absent from text baseline; exact tool retrieval timestamp unavailable.",
+      "toolOutputPath": "/Users/gabe/.local/share/opencode/tool-output/tool_1600d8dca001MvvKzKbikFYcO5",
+      "snapshotPath": "docs/content/competitors/appzapper/sources/homepage-html-tool-output.txt",
+      "sha256": "0ba0c7991e1a0e682bec05fc96ddfee5ed54c67b4c8fefb45b87bc0f1e29927b",
+      "scope": "Asset references and structured metadata, not installed-app behavior.",
+      "excerpt": "How it works: /site/appzapper-3000/assets/step1.png, step2.png, step3.png (width 1170, height 870); step1 alt: Step 1: AppZapper 3000’s empty window, ready for an app to be dragged in; SoftwareApplication offers priceCurrency: USD, price: 18.00",
+      "limitations": "No image-reuse grant established. HTML source identifies app-window images; visual content and exact screenshot version not independently inspected."
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room programme", "title": "Same-day capability verification",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": "https://breathing-room.chatic.ai/",
+      "retrievedOn": "2026-10-21", "publicationDate": null,
+      "snapshotPath": "docs/content/capabilities.md", "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reuse current source/public-release/published-offer verification; not native runtime testing. Public release version 0.1.0-preview.1 differs from local source HEAD.",
+      "excerpt": "macOS 13+; Python 3.10+; Apple Development signed, not Developer ID signed or notarized; AI Care $5 USD/month or $50 USD/year; hosted reasoning requires authentication and internet.",
+      "additionalUrls": ["https://breathing-room.chatic.ai/#pricing", "https://breathing-room.chatic.ai/privacy/", "https://breathing-room.chatic.ai/download/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"]
+    },
+    {
+      "id": "BR2", "publisher": "Breathing Room programme", "title": "Current-source browser-preview inventory",
+      "url": "http://127.0.0.1:1431/", "finalUrl": "http://127.0.0.1:1431/",
+      "retrievedOn": "2026-10-21", "publicationDate": null,
+      "snapshotPath": "docs/content/screenshots.json", "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "scope": "Existing first-party example-data browser capture, not recaptured by this worker.",
+      "excerpt": "current-space-browser-preview; verified-current-source-render; Example data only; not a native scan, measured activity or cleanup result."
+    }
+  ],
+  "claims": [
+    {"id":"AZ01","wording":"The AppZapper listing points to the official AppZapper 3000 website; the site credits Austin Sarner, Brian Ball and Clemens Knieper.","sourceIds":["S0","S1"],"excerpt":"Official Website: appzapper.com; AppZapper 3000; Austin Sarner, Brian Ball, and Clemens Knieper","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented","scope":"Brand continuity, not legal corporate ownership verification.","location":"identity"},
+    {"id":"AZ02","wording":"The official site advertises AppZapper 3000 version 1.0.1 for macOS 15.6+ and three free zaps.","sourceIds":["S1"],"excerpt":"Try 3 free zaps. Version 1.0.1 · macOS 15.6+","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented","scope":"Advertised requirement/version; architecture, signing and compatibility not tested. Do not reuse AppZapper 2 compatibility.","location":"platform/trial matrix"},
+    {"id":"AZ03","wording":"AppZapper documents dragging in an app, finding associated caches, preferences and support files, and deleting the identified files using its zapper interface.","sourceIds":["S1"],"excerpt":"Drag in any app ... find all of its extra files ... Then delete them ... Instantly find all caches, preferences, and support files.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"Do not repeat all as independently established completeness, safety, speed or recoverability.","location":"workflow"},
+    {"id":"AZ04","wording":"The public offer is a one-time purchase: Single User $18 for 1 Mac, Family Pack $29 for up to 5 Macs, Enterprise $99 for up to 25 Macs; homepage structured data specifies USD.","sourceIds":["S2","S3"],"excerpt":"One-time purchase; Single User 1 Mac $18; Family Pack up to 5 Macs $29; Enterprise up to 25 Macs $99; priceCurrency: USD","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented-offer","scope":"No checkout or activation test. Taxes, refunds and future-upgrade entitlement unknown. Not a lifetime-updates promise.","location":"pricing matrix"},
+    {"id":"AZ05","wording":"The site describes one-click zapping and a Zap All option.","sourceIds":["S1"],"excerpt":"One click, one shot. Or use Zap All to blast them all away, automatically.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"Exact selection controls, per-file exclusions, deletion destination, restore behavior and permission model not verified.","location":"approval controls"},
+    {"id":"AZ06","wording":"The official site offers an AppZapper-3000.zip download and public purchase page.","sourceIds":["S1","S2"],"excerpt":"Download: https://appzapper.com/AppZapper-3000.zip; Buy: https://appzapper.com/buy","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented-availability","scope":"Binary not fetched, installed or tested; source-code repository and EULA not established.","location":"availability"},
+    {"id":"BR01","wording":"Breathing Room, which we build, is a free macOS maintenance preview; its source supports storage investigation and grouped app/process monitoring.","sourceIds":["BR1"],"excerpt":"Free core desktop app; Space ... category, app/tool-owner, project, folder and large-file views; native sampling groups helpers ... CPU/memory","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-verification","scope":"Source implementation is not distributed-binary feature parity or a full app-uninstaller guarantee.","location":"comparison scope"},
+    {"id":"BR02","wording":"The identified Breathing Room release is 0.1.0-preview.1 for macOS 13+, with Python 3.10+ required for inventory/legacy scripts; its release discloses no Developer ID signing or notarization.","sourceIds":["BR1"],"excerpt":"0.1.0-preview.1; macOS 13+; Python 3.10+; Apple Development signed, not Developer ID signed or notarized","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-release-disclosure","scope":"Universal installer advertised; physical Intel/clean-machine runtime unverified. No protection-bypass advice.","location":"installation caveats"},
+    {"id":"BR03","wording":"Breathing Room advertises optional AI Care at $5 USD/month or $50 USD/year; hosted AI requires internet/authentication and may receive relevant storage/process/path data.","sourceIds":["BR1"],"excerpt":"AI Care monthly/yearly: $5 USD/month, $50 USD/year; relevant paths/process/storage data can reach the service and Cloudflare Workers AI","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-published-and-source-verification","scope":"Renews until cancelled; tax at checkout; no verified unlimited allowance or payment/activation test. Free local tools are not the same as hosted AI.","location":"cost/privacy"},
+    {"id":"BR04","wording":"Breathing Room implements reviewable cleanup and saved-approval daily care while running; an explicit optional automatic mode is restricted to verified Ruff caches.","sourceIds":["BR1"],"excerpt":"Automatically move verified Ruff lint caches to Trash; saved approvals bind account, API origin, action method/path and native rule; app must remain running","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-verification","scope":"Not a blanket never-deletes-without-asking promise. Moving to Trash is not immediate recovered disk space.","location":"approval/ongoing-care matrix"}
+  ],
+  "matrix": [
+    {"dimension":"macOS/version","appzapper":"1.0.1; macOS 15.6+ advertised","claimIds":["AZ02"],"breathingRoom":"0.1.0-preview.1; macOS 13+; preview limitations","breathingRoomClaimIds":["BR02"]},
+    {"dimension":"licence/pricing","appzapper":"Commercial one-time purchase; $18/1 Mac, $29/up to 5, $99/up to 25; USD. Exact EULA/source licence not verified.","claimIds":["AZ04"],"breathingRoom":"Free Apache-2.0 desktop source per BR1; optional recurring AI Care is separate","breathingRoomClaimIds":["BR01","BR03"]},
+    {"dimension":"scan/cleanup","appzapper":"App-associated file discovery and removal, vendor documented","claimIds":["AZ03"],"breathingRoom":"Storage investigation and reviewable cleanup implementation, not verified full uninstall parity","breathingRoomClaimIds":["BR01","BR04"]},
+    {"dimension":"approval","appzapper":"One click and Zap All documented; exact file-selection/restore boundaries not verified","claimIds":["AZ05"],"breathingRoom":"Reviewable actions, saved daily-care approvals, optional narrow Ruff exception","breathingRoomClaimIds":["BR04"]},
+    {"dimension":"local/hosted","appzapper":"Mac download documented; offline operation, telemetry and cloud behavior not verified","claimIds":["AZ06"],"breathingRoom":"Local inspection; hosted AI with authentication/data boundary","breathingRoomClaimIds":["BR03"]},
+    {"dimension":"helper grouping / recurring growth / developer caches","appzapper":"Not verified for all three; generic app caches are not proof of developer-tool cache adapters","claimIds":[],"breathingRoom":"Source supports grouped processes, local activity and developer-tool cache discovery; runtime parity unverified","breathingRoomClaimIds":["BR01","BR04"],"evidenceLocator":"BR1 current capability matrix: Apps, Activity, Developer/builder cleanup"},
+    {"dimension":"installation/runtime","appzapper":"Architecture, notarization, external runtime requirements and permission scope not verified","claimIds":["AZ02","AZ06"],"breathingRoom":"Python/preview/signing caveats; website registration differs from public GitHub downloads","breathingRoomClaimIds":["BR02"],"evidenceLocator":"BR1: Preview, installation and runtime caveats; Direct public releases/updates"}
+  ],
+  "visuals": [
+    {
+      "id":"appzapper-official-step2-link-only", "productId":"appzapper", "view":"Official How it works step 2 app-window asset",
+      "kind":"official-asset", "sourcePageUrl":"https://appzapper.com/", "assetUrl":"https://appzapper.com/site/appzapper-3000/assets/step2.png",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "sourcePageCheckedOn":"2026-10-21", "capturedBy":null, "productVersion":null,
+      "dataMode":"vendor-illustration", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":1170, "heightPx":870, "dimensionBasis":"HTML attributes, not downloaded-image inspection", "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"No licence or permission for image republication established. Public availability is not permission. Do not download, hotlink as an embedded image or publish without clearance.","evidenceUrlOrPath":"https://appzapper.com/","credit":"AppZapper official website; rights remain with their owners."},
+      "caption":"AppZapper 3000 vendor-provided app-window illustration, linked from its official How it works section. Not a hands-on test; capture date and exact version unknown.",
+      "alt":"Official AppZapper 3000 step 2 app-window illustration (visual inspection pending).",
+      "supportedClaimIds":["AZ03"],
+      "limitations":["Image bytes not downloaded because reuse is not cleared; no invented hash.","Source HTML identifies an app UI image, not a landing-page screenshot or logo; visual inspection remains pending.","Link-only research fallback does not satisfy required on-page competitor screenshot gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null, "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "capturedBy":"screenshot-library worker per shared inventory, not this research worker", "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null,
+      "dataMode":"example", "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-in-shared-inventory","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; third-party marks remain their owners' marks; target-page visual review pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room browser preview, example data."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.", "supportedClaimIds":["BR01"],
+      "limitations":["Local first-party source asset has no public asset URL assigned; not copied or published.","Keep Example data banner visible. Do not present source render as distributed-release/native behavior.","Floating composer may overlap content; independently inspect legibility at target widths before publication."],
+      "review":{"status":"shared-inventory-reviewed; target-page-independent-review-pending","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "unknowns": [
+    {"field":"AppZapper image reuse and visual inspection","critical":true,"diagnostic":"Official step2.png located, but no republication permission/licence established; no image fetched. Need clearance or explicitly approved policy decision, permitted original bytes/hash and actual visual inspection before drafting."},
+    {"field":"AppZapper repository/EULA, offline/privacy, architecture, notarization, exact approval/restore semantics, update rights, taxes/refunds","critical":false,"diagnostic":"Exclude unsupported assertions, retain not verified matrix cells. Do not describe offline/privacy, complete removal, safe deletion or restoration as established."},
+    {"field":"Hands-on performance and savings","critical":false,"diagnostic":"Not tested for either product; no comparative measurements or cleanup executed."}
+  ],
+  "briefs": {
+    "article": {
+      "track":"search-reference", "slug":"appzapper-uninstall-or-investigate-disk-growth",
+      "title":"Uninstall an app or investigate disk growth? The AppZapper boundary",
+      "primaryIntent":"Decide whether the problem is removing one unwanted app and associated files, or identifying continuing storage growth from apps the reader still needs.",
+      "description":"AppZapper 3000 documents app-focused removal. Continuing disk growth is a different investigation: establish what changed before choosing what, if anything, to remove.",
+      "outline":["Top: permitted AppZapper app-window visual, not a landing page; hold until cleared.","Decide whether the app itself is unwanted; use vendor uninstall instructions where relevant (verify Apple/vendor instructions before actionable steps).","Separate caches/preferences/support data from original documents and shared data; no automatic disposable classification.","Explain AppZapper's documented drag/drop/zap path and three-zap trial without claiming testing or complete coverage.","If the app must stay, investigate growth rather than prescribe removal; show labeled Breathing Room Space example preview.","One disclosed comparison arc: Breathing Room, which we build, has source-level storage/activity investigation; explain preview, Python and hosted/paid AI boundaries.","Close with a decision checklist, not a command to delete files."],
+      "interactionPass":"Proposed decision checklist: unwanted app versus needed app, one-off associated files versus recurring growth, supported macOS version, required undo/approval evidence. Non-mutating; no scanner, deletion code or savings estimator.",
+      "internalLinks":["/comparisons/","/comparisons/appzapper/"],
+      "distinctness":"Workflow diagnosis, not a renamed feature matrix or a separate AppZapper 3000 doorway page. No invented demand-volume or search-ranking evidence.",
+      "draftGate":"blocked-image-rights-and-visual-inspection"
+    },
+    "comparison": {
+      "slug":"appzapper", "title":"Breathing Room vs AppZapper 3000",
+      "primaryIntent":"Choose app removal versus storage/activity investigation; adjacent tools, not verified uninstall substitutes.",
+      "format":"Concise sourced matrix using claim IDs, decision criteria, honest unknowns, required product visuals, preview/install/hosted-data caveats and workflow-article link.",
+      "appzapperAdvantages":["Dedicated documented app-removal workflow; Breathing Room full-uninstaller parity is not established.","Explicit one-time purchase and machine-count offers, versus optional recurring Breathing Room AI Care; neither is automatically cheaper for every job."],
+      "appzapperTradeoffs":["Advertised macOS 15.6+ minimum narrows eligibility compared with Breathing Room's advertised 13+ preview, without proving either works on every eligible Mac.","Ongoing monitoring/developer-cache adapter capabilities, offline/privacy and restore guarantees remain unverified, not absent."],
+      "breathingRoomAdvantages":["Source-level storage categories, app/process grouping, activity history and developer-cache discovery suit investigation rather than just removing an unwanted app."],
+      "breathingRoomTradeoffs":["Preview, Python 3.10+, non-notarized release disclosures and unverified clean-machine/Intel behavior.","Hosted authenticated AI is not offline; AI Care has recurring pricing and app-running/saved-approval conditions. No verified full app-uninstaller parity."],
+      "internalLinks":["/comparisons/","/blog/appzapper-uninstall-or-investigate-disk-growth/"],
+      "draftGate":"blocked-image-rights-and-visual-inspection"
+    }
+  },
+  "handoff": {
+    "draftingAllowed": false,
+    "blockers": ["Competitor app UI image rights/access gate: no explicit image reuse basis established; link-only record cannot satisfy on-page visual requirement.","Competitor image content not independently visually inspected; no permitted downloaded original/hash exists."],
+    "resolution": "Obtain permission/licence or an explicitly approved editorial policy basis without sending a request in this scheduled job. Then retrieve only the permitted public image, preserve original hash/provenance, inspect it and independently review both contextual visuals. Do not draft around the blocker.",
+    "freshness": "Same-day verification reused. Refresh volatile offers/availability within 30 days and again if stale before publication; do not change dates without review.",
+    "siteEdits": false, "nativeTests": false, "cleanupPerformed": false, "browserUsed": false,
+    "reviewStatus":"Independent evidence/rendered review and draft scoring not performed; research packet is not publication approval."
+  }
+}

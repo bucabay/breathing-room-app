@@ -1,0 +1,103 @@
+Sensei 1.6 is now available
+Main Nav Open Menu
+Page Nav Close Menu
+Cindori
+Cindori
+Store
+Backdrop
+New
+Sensei
+Trim Enabler
+Blog
+Support
+About
+Blog
+Page Nav Open Menu
+Page Nav Close Menu
+News
+Developer
+How To
+Reviews
+Subscribe
+News
+Announcements
+Sensei 1.6 is now available
+Oskar Groth
+May 17, 2025
+Sensei 1.6 is now available
+Sensei 1.6 introduces a new LaunchDaemon, improved performance, and a unified app. The legacy helper tool is gone, making onboarding faster and more reliable.
+We've been working on a major update to Sensei over the last few weeks. This release completely overhauls the internal architecture, improves performance across the board, and fixes some of the more persistent bugs.
+A new Background Service Item
+Previous versions of Sensei included a privileged helper tool for performing tasks like gathering stats and cleaning files. But the installation process could sometimes fail, leaving users stuck in onboarding.
+Sensei 1.6 replaces the helper tool with a modern LaunchDaemon. It’s more reliable, integrates better with macOS, and once approved in System Settings, it just works. No need to re-approve it when updating the app.
+The brand new onboarding experience will guide you through approving the item.
+One app instead of two
+The menu bar Monitor app is now fully integrated into the main app. No more need to start/stop the Monitor. One launch. One experience. Same features.
+Laying the groundwork for Sensei 2.0
+The new architecture is cleaner, faster, and more future-proof. This update keeps everything you know, while getting rid of the legacy pieces that made updates and bug fixes harder for us than they should’ve been.
+Sensei 1.6 is available now as a free update. If you’re already using Sensei, just open the app to get started.
+Thanks to everyone who’s supported the app so far. We're just getting started.
+Oskar Groth
+Cindori Developer
+Passionate about Apple platforms.
+Stay in the loop.
+Get exclusive deals and invitations to try out our new app releases.
+Cindori Footer
+Store
+Open Menu
+Close Menu
+Store
+Buy Backdrop
+Buy Sensei
+Upgrade
+Backdrop
+Open Menu
+Close Menu
+Overview
+Sensei
+Open Menu
+Close Menu
+Overview
+Trim Enabler
+Open Menu
+Close Menu
+Overview
+Press Kits
+Open Menu
+Close Menu
+Backdrop
+Sensei
+Trim Enabler
+Company
+Open Menu
+Close Menu
+About
+Press
+Affiliate
+Community
+Open Menu
+Close Menu
+Discord
+Support
+Open Menu
+Close Menu
+Support Center
+License Manager
+Blog
+Open Menu
+Close Menu
+Cindori Blog
+News
+Developer
+Social
+Follow
+@CindoriApps
+Newsletter
+Be the first to know about Cindori sales and new app releases.
+Copyright ©
+2026
+Cindori AB. All rights reserved.
+Terms of Use
+Affiliate Terms
+Sales and Refunds
+Legal

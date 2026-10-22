@@ -1,0 +1,89 @@
+[
+  {
+    "id": "about",
+    "url": "https://onnoah.app/about-noah.md",
+    "finalUrl": "https://onnoah.app/about-noah.md",
+    "retrievedAtUtc": "2026-10-21T21:49:04.536380+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/about.txt",
+    "sha256": "4704d876b331910cc3a8f4db38a21f12478373d22951079af24a415e0db867b1"
+  },
+  {
+    "id": "privacy",
+    "url": "https://onnoah.app/privacy/",
+    "finalUrl": "https://onnoah.app/privacy/",
+    "retrievedAtUtc": "2026-10-21T21:49:04.452338+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/privacy.html",
+    "sha256": "afc28880798e4e01e00feb789a7ffc46a059a566c29bd9b7266655a79c61a1ab"
+  },
+  {
+    "id": "terms",
+    "url": "https://onnoah.app/terms/",
+    "finalUrl": "https://onnoah.app/terms/",
+    "retrievedAtUtc": "2026-10-21T21:49:04.465216+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/terms.html",
+    "sha256": "7279e4c3a353c4cceb0f1bacb5bb3eba81d7afaea4b6844b06aec263fb6cf677"
+  },
+  {
+    "id": "changelog",
+    "url": "https://onnoah.app/changelog/",
+    "finalUrl": "https://onnoah.app/changelog/",
+    "retrievedAtUtc": "2026-10-21T21:49:04.599274+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/changelog.html",
+    "sha256": "d268c98b2e04fa07eb88774597539f6f9aa8c9555078e30cd3396f6c7312f9d5"
+  },
+  {
+    "id": "repo",
+    "url": "https://api.github.com/repos/noahapp/noah-for-tinkerers",
+    "finalUrl": "https://api.github.com/repos/noahapp/noah-for-tinkerers",
+    "retrievedAtUtc": "2026-10-21T21:49:05.377535+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/repo.json",
+    "sha256": "1a497d9d119a0fe6f6e9ed223e62b9faba20984ee467b84f981f866b08943112"
+  },
+  {
+    "id": "commit",
+    "url": "https://api.github.com/repos/noahapp/noah-for-tinkerers/commits/main",
+    "finalUrl": "https://api.github.com/repos/noahapp/noah-for-tinkerers/commits/main",
+    "retrievedAtUtc": "2026-10-21T21:49:05.595008+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/commit.json",
+    "sha256": "6006c6ffc5601bc384d36626a5c8ca951ce9ae601144c3deb875604c51a6a0b0"
+  },
+  {
+    "id": "releases",
+    "url": "https://api.github.com/repos/noahapp/noah-for-tinkerers/releases/latest",
+    "finalUrl": "https://api.github.com/repos/noahapp/noah-for-tinkerers/releases/latest",
+    "retrievedAtUtc": "2026-10-21T21:49:05.479956+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/noah/sources/releases.json",
+    "sha256": "263eef879f550e65a4dcdd54f9f57cf39c7c96e557aed67049cc746f1edc01df"
+  },
+  {
+    "id": "readme",
+    "url": "https://raw.githubusercontent.com/noahapp/noah-for-tinkerers/d5e3a818a2a15afa96ece458f90e21ebed6c47ad/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/noahapp/noah-for-tinkerers/d5e3a818a2a15afa96ece458f90e21ebed6c47ad/README.md",
+    "retrievedAtUtc": "2026-10-21T21:49:16.376556+00:00",
+    "path": "docs/content/competitors/noah/sources/readme.txt",
+    "sha256": "680901fca3150186d7aba5090d0c22efd90f5079c9991bfa2420cf17bab231db"
+  },
+  {
+    "id": "license",
+    "url": "https://raw.githubusercontent.com/noahapp/noah-for-tinkerers/d5e3a818a2a15afa96ece458f90e21ebed6c47ad/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/noahapp/noah-for-tinkerers/d5e3a818a2a15afa96ece458f90e21ebed6c47ad/LICENSE",
+    "retrievedAtUtc": "2026-10-21T21:49:16.376715+00:00",
+    "path": "docs/content/competitors/noah/sources/license.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "id": "tree",
+    "url": "https://api.github.com/repos/noahapp/noah-for-tinkerers/git/trees/d5e3a818a2a15afa96ece458f90e21ebed6c47ad?recursive=1",
+    "finalUrl": "https://api.github.com/repos/noahapp/noah-for-tinkerers/git/trees/d5e3a818a2a15afa96ece458f90e21ebed6c47ad?recursive=1",
+    "retrievedAtUtc": "2026-10-21T21:49:16.491335+00:00",
+    "path": "docs/content/competitors/noah/sources/tree.json",
+    "sha256": "890c9c81d843c6cabd167a9b0757b5b955d94ff68b8d5ff01cadacd16fcafc43"
+  }
+]

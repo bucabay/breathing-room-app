@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-ccleaner",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "id": "ccleaner",
+    "name": "CCleaner",
+    "comparisonEdition": "CCleaner for Mac",
+    "canonicalOwnerId": "ccleaner",
+    "homepage": "https://www.ccleaner.com/ccleaner",
+    "macHomepage": "https://www.ccleaner.com/ccleaner-mac",
+    "officialRepository": null,
+    "repositoryState": "Not verified; no official app source repository established",
+    "aliases": [
+      "CCleaner for Mac: platform edition, not a second queue identity"
+    ],
+    "aliasSkipDecision": {
+      "skip": false,
+      "reason": "One CCleaner canonical identity; no verified cross-product alias. PowerMyMac is not implicated by this evidence; no other queue job researched."
+    },
+    "classification": "direct-overlapping-mac-cleanup",
+    "classificationReason": "Official Mac edition overlaps maintenance; Windows registry/driver claims excluded; not a full substitute for activity/developer investigation.",
+    "skipDecision": {
+      "skip": false,
+      "reason": "Official Mac offer and dated release; download execution not tested"
+    }
+  },
+  "ownership": [
+    "docs/content/competitors/ccleaner/"
+  ],
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "ccleaner",
+    "record": {
+      "id": "ccleaner",
+      "name": "CCleaner",
+      "officialUrl": "https://www.ccleaner.com/ccleaner",
+      "officialFinalUrl": "https://www.ccleaner.com/ccleaner",
+      "officialName": "CCleaner",
+      "status": "partial",
+      "discovery": {
+        "sourceUrl": "https://alternativeto.net/software/ccleaner/about/",
+        "retrievedAt": "2026-10-21T19:05:40.339Z",
+        "observedOfficialLink": {
+          "text": "Official Website\nccleaner.com/ccleaner",
+          "url": "https://alternativeto.net/outgoing/software/ccleaner",
+          "title": "https://www.ccleaner.com/ccleaner"
+        },
+        "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-directory.json"
+      },
+      "facts": [
+        {
+          "field": "officialName",
+          "value": "CCleaner",
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "excerpt": "CCleaner",
+          "retrievedAt": "2026-10-21T19:11:08.486Z"
+        },
+        {
+          "field": "coreFunction",
+          "value": "Удаляйте ненужные файлы для очистки ПК с ОС Windows и освобождения места на жестком диске.",
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "excerpt": "Удаляйте ненужные файлы для очистки ПК с ОС Windows и освобождения места на жестком диске.",
+          "retrievedAt": "2026-10-21T19:11:08.486Z"
+        },
+        {
+          "field": "platforms",
+          "value": "Системные требования: совместимость с Windows 11, 10 и 8,1, включая как 32-разрядные, так и 64-разрядные версии.",
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "excerpt": "Системные требования: совместимость с Windows 11, 10 и 8,1, включая как 32-разрядные, так и 64-разрядные версии.",
+          "retrievedAt": "2026-10-21T19:11:08.486Z"
+        },
+        {
+          "field": "pricing",
+          "value": "CCleaner Professional Сэкономьте 0% руб 2 964.93 за первый год",
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "excerpt": "CCleaner Professional Сэкономьте 0% руб 2 964.93 за первый год",
+          "retrievedAt": "2026-10-21T19:11:08.486Z"
+        },
+        {
+          "field": "platforms",
+          "value": "Mac, Android and iOS variants also advertised; platform-specific feature parity unverified.",
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "excerpt": "Доступно также для Mac, Android и iOS",
+          "retrievedAt": "2026-10-21T19:11:08.486Z"
+        }
+      ],
+      "aliases": [],
+      "blockers": [],
+      "sources": [
+        {
+          "sourceUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner",
+          "retrievedAt": "2026-10-21T19:11:08.486Z",
+          "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-browser.json",
+          "sha256": "b290cfbdbd12a4204028aa106c851f169ff3b687f580531c35b3727eab88896e"
+        },
+        {
+          "sourceUrl": "https://www.ccleaner.com/ccleaner",
+          "finalUrl": "https://www.ccleaner.com/ccleaner",
+          "retrievedAt": "2026-10-21T19:08:04.070168+00:00",
+          "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-official.json",
+          "sha256": "639b9c9dd4f6fd779a4a5ff27dec6b38fa53f55a33a61f58db61e74a5ae2e327"
+        }
+      ],
+      "unverifiedFields": [
+        "license",
+        "availability"
+      ]
+    },
+    "batch2Record": null,
+    "reasonForNewResearch": "Windows baseline lacks Mac material facts and image rights"
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/ccleaner/about/",
+    "retrievedAt": "2026-10-21T19:05:40.339Z",
+    "observedOfficialLink": {
+      "text": "Official Website\nccleaner.com/ccleaner",
+      "url": "https://alternativeto.net/outgoing/software/ccleaner",
+      "title": "https://www.ccleaner.com/ccleaner"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-directory.json",
+    "sha256": "0008c2f0841b75ed1a9d4ee52bbe5ffec18e5a863bb6d3b6cb75e7884ad5496a",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/",
+        "retrievedAt": "2026-10-21T18:36:14.532Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/",
+        "retrievedAt": "2026-10-21T18:37:03.597Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "mac",
+      "publisher": "CCleaner / Gen Digital",
+      "url": "https://www.ccleaner.com/ru-ru/ccleaner-mac",
+      "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner-mac",
+      "title": "Бесплатная программа для очистки Mac | Очищайте Mac",
+      "retrievedAtUtc": "2026-10-21T20:11:14.664Z",
+      "publicationDate": null,
+      "snapshotPath": "docs/content/competitors/ccleaner/sources/mac-browser.json",
+      "sha256": "1ee78227ffa0b78eb9d1c722548d0d85e12a945de1ba16b38a9353cf521af279",
+      "method": "Read-only public DOM, owned Chrome DevTools tab 75; no authentication/cookie interaction"
+    },
+    {
+      "id": "download",
+      "publisher": "CCleaner / Gen Digital",
+      "url": "https://www.ccleaner.com/ru-ru/ccleaner-mac/download",
+      "finalUrl": "https://www.ccleaner.com/ru-ru/ccleaner-mac/download",
+      "title": "Загрузите CCleaner для Mac | Очистка и оптимизация Mac",
+      "retrievedAtUtc": "2026-10-21T20:11:34.800Z",
+      "publicationDate": null,
+      "snapshotPath": "docs/content/competitors/ccleaner/sources/mac-download-browser.json",
+      "sha256": "19a4dc2fb202053bda9b013c885d47540d40df884ed99611b1c40fc9bc878eab",
+      "method": "Read-only public DOM, owned Chrome DevTools tab 75; no authentication/cookie interaction"
+    },
+    {
+      "id": "terms",
+      "publisher": "CCleaner / Gen Digital",
+      "url": "https://www.ccleaner.com/about/terms-of-use?cc-noredirect=",
+      "finalUrl": "https://www.ccleaner.com/about/terms-of-use?cc-noredirect=",
+      "title": "Terms of Use",
+      "retrievedAtUtc": "2026-10-21T20:11:49.806Z",
+      "publicationDate": null,
+      "snapshotPath": "docs/content/competitors/ccleaner/sources/terms-browser.json",
+      "sha256": "0d665e2caa7b86ada6457f5f509734f92ee50734d5713496b8650d7686ee5377",
+      "method": "Read-only public DOM, owned Chrome DevTools tab 75; no authentication/cookie interaction"
+    },
+    {
+      "id": "discovery",
+      "url": "https://alternativeto.net/software/ccleaner/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:40.339Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-directory.json",
+      "sha256": "0008c2f0841b75ed1a9d4ee52bbe5ffec18e5a863bb6d3b6cb75e7884ad5496a",
+      "method": "Reused current batch-1 record, not refetched"
+    },
+    {
+      "id": "baseline-windows",
+      "url": "https://www.ccleaner.com/ru-ru/ccleaner",
+      "retrievedAtUtc": "2026-10-21T19:11:08.486Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/ccleaner-browser.json",
+      "sha256": "b290cfbdbd12a4204028aa106c851f169ff3b687f580531c35b3727eab88896e",
+      "method": "Reused current batch-1 record, not refetched"
+    },
+    {
+      "id": "br-register",
+      "url": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "checkedOn": "2026-10-21",
+      "method": "Reused same-day source/public-page register; README requirements/runtime/pricing cross-checked; no needless public refetch"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "CCleaner offers an official Mac edition.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Очищайте компьютер Mac с помощью CCleaner",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "vendor",
+      "wording": "Terms identify Piriform Software Limited; footer identifies Gen Digital trademark ownership.",
+      "sourceIds": [
+        "terms"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/about/terms-of-use?cc-noredirect="
+      ],
+      "excerpt": "We are Piriform Software Limited, a company incorporated in England under company number 8235567.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "cleanup",
+      "wording": "Mac page advertises cache, temporary-file and duplicate cleanup, including automatic Trash emptying.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Находите и удаляйте кэш и временные файлы, автоматически очищайте корзину.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "uninstall",
+      "wording": "Mac page advertises identifying/removing large or unused apps.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Ускорьте работу Mac и освободите место путем выявления и удаления крупных и неиспользуемых приложений.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "browser",
+      "wording": "Mac page advertises scheduled removal of browser history, cookies and autofill data including passwords/email addresses.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Автоматически удаляйте историю, файлы cookie и уязвимые данные для автозаполнения (включая пароли и адреса электронной почты) в своих браузерах по заданному вами расписанию.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "photos",
+      "wording": "Photo analysis is advertised for Mac Professional; accuracy and results not tested.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Новая версия CCleaner для Mac Professional сканирует жесткий диск",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "version",
+      "wording": "Download page lists Mac v2.11.194 dated June 19, 2026; no binary downloaded.",
+      "sourceIds": [
+        "download"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac/download"
+      ],
+      "excerpt": "CCleaner for Mac v2.11.194 (19 июн. 2026)",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "home-use",
+      "wording": "Download page restricts new Free and Professional Mac versions to home use.",
+      "sourceIds": [
+        "download"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac/download"
+      ],
+      "excerpt": "Новые версии CCleaner для Mac (Free и Professional) предназначены только для домашнего использования.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "requirements-download",
+      "wording": "Download page says 64-bit macOS 10.10+.",
+      "sourceIds": [
+        "download"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac/download"
+      ],
+      "excerpt": "Requires an Apple Mac running 64-bit macOS 10.10 and above.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "contradicted",
+      "scope": "Conflicts with product-page minimum; current OS/architecture compatibility unresolved",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "requirements-product",
+      "wording": "Product page enumerates macOS 10.12 through 13; later OS support is not established.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac"
+      ],
+      "excerpt": "Apple macOS 13 (Ventura), macOS 12.x (Monterey)",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "contradicted",
+      "scope": "Product-page list conflicts with download minimum; do not silently pick one",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "pricing",
+      "wording": "Professional displayed USD 24.95 beside USD 44.95; billing period, renewal, tax and promotion conditions not established.",
+      "sourceIds": [
+        "download"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/ru-ru/ccleaner-mac/download"
+      ],
+      "excerpt": "USD 44.95 USD 24.95",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Price display observation only, NOT a verified annual/lifetime offer; Windows RUB offer excluded",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "rights-copy",
+      "wording": "Terms prohibit copying website content without prior permission; no permission retained.",
+      "sourceIds": [
+        "terms"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/about/terms-of-use?cc-noredirect="
+      ],
+      "excerpt": "You may not reproduce or copy the content of our Website in any form without prior permission.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "rights-link",
+      "wording": "Terms prohibit direct image links without express permission. Link only to product page as research fallback.",
+      "sourceIds": [
+        "terms"
+      ],
+      "sourceUrls": [
+        "https://www.ccleaner.com/about/terms-of-use?cc-noredirect="
+      ],
+      "excerpt": "You do not link to any images displayed anywhere on our Website except where you are expressly permitted by us to do so.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "officially-documented",
+      "state": "verified",
+      "scope": "Mac edition; vendor documentation, not runtime testing",
+      "intendedLocation": "Workflow / comparison matrix",
+      "reviewer": "research-ccleaner worker; independent review pending"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Free Apache-2.0 macOS 13+ preview; Apple Silicon/Intel advertised but physical Intel untested. Python 3.10+ not bundled; Apple Development signed, not Developer ID signed/notarized.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Free Apache-2.0 macOS 13+ preview; Apple Silicon/Intel advertised but physical Intel untested. Python 3.10+ not bundled; Apple Development signed, not Developer ID signed/notarized.",
+      "excerptKind": "Register summary, not verbatim vendor quotation; exact source locators in register",
+      "locator": "README.md:59–72; capabilities.md:44–56",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-source-and-published-verification",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 release disclosures versus current source implementation; no runtime certification"
+    },
+    {
+      "id": "br-activity",
+      "wording": "Source implements local sampled storage/activity history and grouped app/helper CPU/memory. Inferred ownership and sampled writes do not prove a specific file writer.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Source implements local sampled storage/activity history and grouped app/helper CPU/memory. Inferred ownership and sampled writes do not prove a specific file writer.",
+      "excerptKind": "Register summary, not verbatim vendor quotation; exact source locators in register",
+      "locator": "README.md:102–118; capabilities.md:24–34",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-source-and-published-verification",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 release disclosures versus current source implementation; no runtime certification"
+    },
+    {
+      "id": "br-approval",
+      "wording": "Exact reviewed actions and saved location/method daily approvals; optional automatic verified Ruff-cache mode is an exception to blanket ask-every-time language. Daily care requires app running.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Exact reviewed actions and saved location/method daily approvals; optional automatic verified Ruff-cache mode is an exception to blanket ask-every-time language. Daily care requires app running.",
+      "excerptKind": "Register summary, not verbatim vendor quotation; exact source locators in register",
+      "locator": "README.md:86–100,120–128; capabilities.md:36–42",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-source-and-published-verification",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 release disclosures versus current source implementation; no runtime certification"
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Hosted AI requires internet/sign-in and sends relevant tool/inventory data; local tools need no AI Care subscription.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Hosted AI requires internet/sign-in and sends relevant tool/inventory data; local tools need no AI Care subscription.",
+      "excerptKind": "Register summary, not verbatim vendor quotation; exact source locators in register",
+      "locator": "README.md:64–72,141–149; capabilities.md:58–68",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-source-and-published-verification",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 release disclosures versus current source implementation; no runtime certification"
+    },
+    {
+      "id": "br-price",
+      "wording": "Free local core; optional AI Care $5 USD/month or $50 USD/year, renewable, applicable tax at checkout; allowances/enforcement unverified.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Free local core; optional AI Care $5 USD/month or $50 USD/year, renewable, applicable tax at checkout; allowances/enforcement unverified.",
+      "excerptKind": "Register summary, not verbatim vendor quotation; exact source locators in register",
+      "locator": "README.md:141–157; capabilities.md:70–86",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-source-and-published-verification",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 release disclosures versus current source implementation; no runtime certification"
+    }
+  ],
+  "matrix": {
+    "macOS": [
+      "requirements-download",
+      "requirements-product"
+    ],
+    "license": {
+      "value": "Proprietary per listing; official Mac EULA not verified",
+      "sourceIds": [
+        "discovery"
+      ],
+      "state": "not-verified-official-eula"
+    },
+    "localHosted": "Native Mac cleanup advertised; offline entitlement/telemetry/data flow not verified",
+    "scanCleanup": [
+      "cleanup",
+      "uninstall",
+      "photos"
+    ],
+    "approvalControls": "Exact per-file review/undo/deletion method not verified; automatic Trash/browser cleaning advertised",
+    "helperGrouping": "not verified",
+    "recurringGrowth": "not verified; scheduled browser cleaning is not growth history",
+    "developerCaches": "not verified; generic caches do not prove owning-tool-specific adapters",
+    "pricing": [
+      "pricing",
+      "home-use"
+    ],
+    "runtimeInstall": [
+      "version",
+      "requirements-download",
+      "requirements-product"
+    ],
+    "breathingRoom": [
+      "br-preview",
+      "br-activity",
+      "br-approval",
+      "br-hosted",
+      "br-price"
+    ]
+  },
+  "visuals": [
+    {
+      "id": "ccleaner-mac-ui-candidate",
+      "productId": "ccleaner",
+      "view": "Official Mac product hero UI candidate",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://www.ccleaner.com/ru-ru/ccleaner-mac",
+      "assetUrl": "https://cdn-production.ccleaner.com/site/nt1hqv4v/mac-new-hero-image.png",
+      "assetUrlObservedAtUtc": "2026-10-21T20:11:14.664Z",
+      "retrievedAtUtc": null,
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1082,
+      "heightPx": 460,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "denied",
+        "basis": "No prior copying/image-link permission retained; official terms explicitly restrict both.",
+        "evidenceUrlOrPath": "docs/content/competitors/ccleaner/sources/terms-browser.json",
+        "credit": "CCleaner / Gen Digital"
+      },
+      "caption": "Official CCleaner for Mac vendor illustration; version and values unverified. Product-page link only until cleared.",
+      "alt": "Official CCleaner for Mac UI illustration; visible controls require pixel inspection.",
+      "supportedClaimIds": [
+        "identity"
+      ],
+      "limitations": [
+        "URL/label/dimensions observed in public DOM, not independently visually approved.",
+        "Exact URL retained for private provenance only; do not hotlink or render a public direct image link.",
+        "No asset bytes downloaded; no hash or vendor capture date invented."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null
+      }
+    },
+    {
+      "id": "current-activity-browser-preview",
+      "productId": "breathing-room",
+      "view": "Activity",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:07:11.343331+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/activity-preview-2026-10-21.png",
+      "originalSha256": "b96994bca93ba6c3ff3f69604cae7a24db0eab175949e8150173488646c175de",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 4188,
+      "edits": [],
+      "caption": "Current-source Breathing Room Activity browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Activity view rendered in a browser with illustrative example data.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json"
+      },
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Retain example-data banner/caption; not native/release-binary evidence."
+      ],
+      "review": {
+        "status": "pending-independent-page-context-review"
+      },
+      "supportedClaimIds": [
+        "br-activity"
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "id": "visual-rights",
+      "diagnostic": "Required competitor app screenshot not cleared. Terms prohibit copying and direct image links without permission; none retained. No image downloaded.",
+      "resolution": "Retain applicable permission or independently approved lawful reuse decision; inspect actual UI pixels and preserve original/published hashes before drafting."
+    },
+    {
+      "id": "compatibility-conflict",
+      "diagnostic": "Mac product page enumerates 10.12–13 while download says 64-bit 10.10+. Current later macOS and Apple Silicon requirements unresolved.",
+      "resolution": "Obtain version-specific official support requirements for v2.11.194, resolving the conflicting minimum."
+    },
+    {
+      "id": "pricing-conditions",
+      "diagnostic": "USD 24.95/44.95 display lacks verified billing period, renewal, tax/promotion conditions.",
+      "resolution": "Verify complete official Mac offer without purchase/account, or obtain approval for narrower brief excluding numerical competitor pricing."
+    }
+  ],
+  "unknowns": [
+    "Later macOS/Apple Silicon certification",
+    "Mac exact EULA, sign-in, runtime dependencies and signing/notarization",
+    "Tier checkmarks missing from text extraction; do not infer yes/no",
+    "Exact Mac approval/recovery, offline/telemetry, helper/growth/developer behavior",
+    "Screenshot build/capture author/date and visual approval"
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference",
+      "slug": "mac-cleanup-browser-data-or-recurring-storage-growth",
+      "title": "Mac cleanup: browser traces or recurring storage growth?",
+      "primaryIntent": "Decide between deliberate browser-data removal and investigating storage that keeps returning; do not promise deletion solves growth.",
+      "sections": [
+        "Identify what must be retained: sessions, autofill and originals are not automatically junk",
+        "Read Mac feature scope, not Windows registry/driver claims",
+        "Choose a documented cleanup task or investigate time-correlated growth",
+        "Review location/method/rebuild costs; distinguish Trash from recovered space",
+        "Choose by documented task, with affiliation and preview/hosted limitations"
+      ],
+      "interactionPass": "Hand off a local-only decision checklist: browser-data removal, app removal or recurring-growth investigation; no filesystem access, uploads or automatic winner score.",
+      "visualPlan": "Cleared CCleaner Mac UI after lead; selected example-data Breathing Room Activity preview later. Rights and contextual review remain pending.",
+      "internalLinks": [
+        "/comparisons/",
+        "/comparisons/ccleaner/"
+      ],
+      "status": "brief-only-blocked"
+    },
+    "comparison": {
+      "slug": "ccleaner",
+      "title": "Breathing Room vs CCleaner for Mac",
+      "primaryIntent": "Compare overlapping Mac maintenance tasks, not Windows parity.",
+      "rows": [
+        "Requirements/install/preview caveats",
+        "Cleanup categories and exact approval unknowns",
+        "Activity/helpers/developer caches with unknown competitor cells",
+        "Local versus hosted/account boundary",
+        "Fully conditioned free/paid pricing"
+      ],
+      "internalLinks": [
+        "/comparisons/",
+        "/blog/mac-cleanup-browser-data-or-recurring-storage-growth/"
+      ],
+      "status": "brief-only-blocked"
+    }
+  },
+  "advantagesTradeoffs": {
+    "ccleaner": [
+      "Documents Mac browser-data scheduling, app removal, duplicates and Professional photo analysis. Choose it for a documented matching task, not invented absence elsewhere.",
+      "Home-use restriction documented; tier checkmarks, requirement conflict and price conditions unresolved. No safety/performance benchmark."
+    ],
+    "breathingRoom": [
+      "Breathing Room, which we build, has source-documented grouped helpers, sampled history and developer-cache investigation; fit judgment, not tested superiority.",
+      "Non-notarized preview, Python requirement, incomplete runtime validation and hosted-data caveats must accompany recommendations.",
+      "Do not recommend replacing CCleaner just for photo/duplicate analysis or a production-ready notarized utility; Breathing Room parity for those tasks not established."
+    ]
+  },
+  "reproduction": {
+    "handsOnTests": false,
+    "cleanupPerformed": false,
+    "calculatedSavings": null,
+    "scope": "Read-only documentary research; no app install/binary download, cleanup, purchase, account, messages, credential access, settings, deploy, commit or queue change"
+  },
+  "review": {
+    "independentReviewer": null,
+    "score": null,
+    "status": "pending; research only, no publication approval"
+  },
+  "accessFailures": [
+    {
+      "url": "https://www.ccleaner.com/ccleaner-mac",
+      "method": "webfetch",
+      "error": "HTTP 403",
+      "checkedOn": "2026-10-21"
+    },
+    {
+      "url": "https://www.ccleaner.com/ccleaner-mac/version-history",
+      "method": "webfetch",
+      "error": "HTTP 403",
+      "checkedOn": "2026-10-21"
+    },
+    {
+      "url": "https://www.ccleaner.com/about/terms-of-use",
+      "method": "webfetch",
+      "error": "HTTP 403",
+      "checkedOn": "2026-10-21"
+    }
+  ]
+}

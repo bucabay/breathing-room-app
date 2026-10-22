@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-clickandclean",
+  "productId": "clickandclean",
+  "reviewedAtUtc": "2026-10-22",
+  "status": "done",
+  "researchOutcome": "drafting-allowed-with-bounded-claims",
+  "identity": {
+    "officialName": "Click&Clean",
+    "publisher": "Mixesoft (copyright attribution on official page; publisher relationship not independently investigated)",
+    "canonicalUrl": "https://www.hotcleaner.com/clickclean_chrome.html",
+    "discoveryUrl": "https://alternativeto.net/software/clickandclean/about/",
+    "aliases": [],
+    "deduplication": "No verified alias evidence. Treat Click&Clean for Chrome as this product identity; related Firefox and Edge links are presented by the vendor as separate browser extensions, but their capability parity is not established.",
+    "classification": "adjacent-browser-privacy-data-cleaner-not-mac-system-cleaner",
+    "readerJob": "Clear selected browser-profile browsing data, not perform general macOS storage or system cleanup."
+  },
+  "provenance": {
+    "discovery": {
+      "url": "https://alternativeto.net/software/clickandclean/about/",
+      "retrievedAtUtc": "2026-10-21T19:07:35.090Z",
+      "excerpt": "Official Website hotcleaner.com/clickclean_chrome.html",
+      "rawCapture": "docs/content/.runtime/verification-2/clickandclean-directory.json",
+      "sha256": "369e6003f9f76fcab9d6b5dfe26778e79f0e848bb572096103d4bc19a2d355e8",
+      "method": "Previously observed rendered AlternativeTo about-page DOM in owned Chrome DevTools tab; discovery only, not capability evidence."
+    },
+    "sources": [
+      {
+        "id": "official-chrome",
+        "publisher": "Mixesoft / HotCleaner",
+        "title": "Cleaner for Google Chrome | Click&Clean",
+        "url": "https://www.hotcleaner.com/clickclean_chrome.html",
+        "finalUrl": "https://www.hotcleaner.com/clickclean_chrome.html",
+        "retrievedAtUtc": "2026-10-21T19:10:01.895664Z",
+        "publicationDate": "Unknown; page states Chrome extension version 9.8.1.0 released May 29, 2024.",
+        "scope": "Vendor's Chrome extension product page; page itself says OS Mac OS X/Linux/Chrome OS and Chrome 115+ for the stated version.",
+        "rawCapture": "docs/content/.runtime/verification-2/clickandclean-official.json",
+        "rawCaptureSha256": "755dd9704516118eb6936617e02f55cbeaccda58bac0601c01fb206a05819d80",
+        "captureSha256": "116cde3416085c1e5016e73dfae7948c8b9486b496f0d7b114f6e34fd5f04880",
+        "httpStatus": 200,
+        "relevantExcerpts": [
+          "The Click&Clean web browser extension is a Private Data Cleaner for Google Chrome web browser.",
+          "You can choose one of the predefined cleaning modes: Low - Medium - High and Dev mode.",
+          "You can remove your browsing data from the beginning of time or from a certain period of time: from the past 1-24 hours, from the past week or choose any date and time you wish.",
+          "Delete Browsing History ... Empty the Cache - Delete Cookies - Clear Saved Passwords - Clear Saved Form Data - Delete Local Storage ...",
+          "option to save your browsing data to an HTML file before deleting that data.",
+          "Version: Click&Clean for Google Chrome 9.8.1.0; Released: May 29, 2024; License: Freeware; OS: Windows 11 / 10 / 8.1 / Mac OS X / Linux / Chrome OS; Browser version: Google Chrome 115+.",
+          "Related Apps: Click&Clean for Microsoft Edge; Click&Clean for Firefox."
+        ],
+        "accessFailures": []
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "wording": "Click&Clean is a browser-data cleaner for Google Chrome, rather than a general Mac disk-cleanup utility.",
+      "sourceIds": ["official-chrome"],
+      "support": "The vendor describes its product as a private data cleaner for Google Chrome; scope in the captured page enumerates browser history, downloads, cache, cookies, saved form data and browser storage.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "conditions": "Describe as the vendor's documented scope; no comparative or hands-on test was performed."
+    },
+    {
+      "id": "C2",
+      "wording": "The captured Chrome product page lists macOS (using the page's legacy label 'Mac OS X') and Chrome 115+ for version 9.8.1.0, released May 29, 2024.",
+      "sourceIds": ["official-chrome"],
+      "support": "Product details block states version, release date, OS list and browser version.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "conditions": "This is a dated vendor page statement, not confirmation of current Chrome compatibility, installation success or current release. Do not recommend installation without fresh compatibility verification."
+    },
+    {
+      "id": "C3",
+      "wording": "The vendor documents selectable cleaning modes and time-range choices, and lists browser data categories that may be cleared.",
+      "sourceIds": ["official-chrome"],
+      "support": "Features section lists Low/Medium/High/Dev modes, selectable periods and specific browsing-data categories.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "conditions": "Not independently tested; do not imply that all categories exist in every browser version or are recoverable after clearing."
+    },
+    {
+      "id": "C4",
+      "wording": "The vendor says the extension can save browsing data to an HTML file before deleting it.",
+      "sourceIds": ["official-chrome"],
+      "support": "Page says it gives the option to save browsing data to an HTML file before deletion.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "verified",
+      "evidenceClass": "vendor-claim",
+      "conditions": "Attribute to vendor; no export content, handling, security or restoration behavior tested."
+    },
+    {
+      "id": "C5",
+      "wording": "The captured product page labels version 9.8.1.0 'Freeware'; current price, licence terms and present availability are not established by the baseline record.",
+      "sourceIds": ["official-chrome"],
+      "support": "Captured page gives 'License: Freeware'; baseline verification marks license and availability as unverified.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "qualified",
+      "evidenceClass": "vendor-documented-with-source-record-conflict",
+      "conditions": "Do not state an unqualified current free price or legal licence. The baseline field list includes 'pricing: Freeware' while the same record says license is unverified; this packet preserves that inconsistency by limiting claim to the dated page wording."
+    },
+    {
+      "id": "C6",
+      "wording": "AlternativeTo describes Chrome and Firefox availability; the captured official Chrome page directly documents Chrome and links to separate Firefox and Edge product pages.",
+      "sourceIds": ["official-chrome"],
+      "support": "AlternativeTo listing text says Google Chrome and Mozilla Firefox; official capture labels Chrome product and includes related links for Firefox and Edge.",
+      "checkedAtUtc": "2026-10-21T19:10:01.895664Z",
+      "state": "qualified",
+      "evidenceClass": "directory-discovery-plus-vendor-links",
+      "conditions": "Firefox/Edge existence and feature parity were not separately verified; do not claim every edition or feature supports those browsers based only on links/listing."
+    }
+  ],
+  "productMatrix": {
+    "macOSCompatibility": {"value": "Vendor page lists Mac OS X for Chrome extension v9.8.1.0; current compatibility unknown.", "claimIds": ["C2"]},
+    "license": {"value": "Page says 'Freeware'; legal licence/current price unresolved in baseline record.", "claimIds": ["C5"]},
+    "localOrHosted": {"value": "Not verified; page describes a browser extension but does not establish data flow or local/hosted processing sufficiently for this matrix.", "claimIds": []},
+    "scanAndCleanupModel": {"value": "Vendor-documented browser-data deletion options; no general filesystem scan or macOS cleanup claim established.", "claimIds": ["C1", "C3"]},
+    "approvalControls": {"value": "Selectable modes and categories documented; exact confirmation/approval behavior not verified.", "claimIds": ["C3"]},
+    "helperGrouping": {"value": "Not verified; not relevant to established browser-extension scope.", "claimIds": []},
+    "recurringGrowthMonitoring": {"value": "Not verified.", "claimIds": []},
+    "developerCaches": {"value": "Not verified. 'Dev mode' appears in the vendor's mode list; this does not establish developer-cache discovery or cleanup.", "claimIds": ["C3"]},
+    "pricing": {"value": "Dated page labels v9.8.1.0 freeware; current offer/licence unverified.", "claimIds": ["C5"]},
+    "runtimeAndInstall": {"value": "Vendor page lists Chrome 115+ for v9.8.1.0; current compatibility, installation flow and current version not checked.", "claimIds": ["C2"]}
+  },
+  "visualPlan": {
+    "route": "B",
+    "firstPartyPreview": {
+      "assetId": "current-space-browser-preview",
+      "path": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "rights": "First-party example UI; publication-specific image/third-party marks review still required per screenshots.json."
+    },
+    "competitorVisual": {
+      "status": "link-only",
+      "url": "https://www.hotcleaner.com/clickclean-chrome-screenshots.html",
+      "basis": "Official page links to 'View all screenshots'; no image downloaded/copied and no reuse permission inferred.",
+      "credit": "Click&Clean / Mixesoft, official screenshot page (link only)."
+    },
+    "originalDiagram": {
+      "specification": "Create an original two-lane decision/workflow diagram, not app UI: (1) browser privacy task -> choose browser + data category/time range -> review selected scope -> browser-data clearing; (2) Mac storage/system task -> inspect files, app/process activity and developer caches -> use a Mac-oriented storage tool. Highlight that the documented Click&Clean page is browser-scoped and does not establish general Mac disk cleanup. Mark all Click&Clean workflow steps 'vendor-documented, not independently tested'; do not depict undocumented dialogs, toggles, results, or interface elements.",
+      "sourceClaimIds": ["C1", "C3"],
+      "alt": "Decision diagram separating browser-data clearing from general Mac storage maintenance; Click&Clean scope is based on vendor documentation, not hands-on testing."
+    }
+  },
+  "skipDecisions": [],
+  "drafting": {"allowed": true, "basis": "Official identity and substantive first-party Chrome product-page evidence are retained. Missing competitor-image reuse permission alone is not a blocker under the October 22 route-B policy."},
+  "publicationGates": [
+    "Independently refresh vendor identity, current version, Chrome/macOS compatibility, availability, price and legal licence before publication; omit unresolved values or qualify precisely.",
+    "Review official privacy policy/data-flow statements before making local-versus-hosted or privacy claims.",
+    "Do not recommend installing a version/platform until current compatibility is verified; no installation or app test was performed.",
+    "Review and visually inspect the first-party preview in article context; preserve example-data disclosure and independently resolve publication-specific asset/third-party mark rights.",
+    "Build the original route-B diagram from the specification, with source-adjacent citations, accessible responsive layout and no imitation of Click&Clean UI.",
+    "Independent editorial, factual, SEO, rendered-site and browser review remains pending; this is not publication approval."
+  ],
+  "validation": {
+    "baselineReused": true,
+    "readOnlyChecks": ["Read PLAN.md, EDITORIAL.md October22 update, capabilities.md, screenshots.json, verification batch-2 records, competitors.json baseline record, and retained raw AlternativeTo/official captures."],
+    "networkRefresh": false,
+    "appTesting": false,
+    "imageCopied": false,
+    "publicationReview": false
+  }
+}

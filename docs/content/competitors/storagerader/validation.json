@@ -1,0 +1,25 @@
+{
+  "checkedAtUtc": "2026-10-21T22:16:09.331105+00:00",
+  "status": "passed-packet-integrity-only",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 docs/content/competitors/storagerader/validate-research.py",
+  "checks": [
+    "S1: retained raw SHA-256 matches",
+    "S2: retained raw SHA-256 matches",
+    "S3: retained raw SHA-256 matches",
+    "S4: retained raw SHA-256 matches",
+    "S5: retained raw SHA-256 matches",
+    "S6: retained raw SHA-256 matches",
+    "S7: retained raw SHA-256 matches",
+    "All 17 competitor claims have exact supporting excerpts, URLs, timestamps and scope",
+    "All product matrix claim references resolve; unsupported dimensions explicitly remain not verified",
+    "All six Breathing Room caveat claims map to dated reused register excerpts/URLs; register hash matches",
+    "Selected first-party PNG original hash, capture provenance and required example-data caption match inventory",
+    "Canonical alias deduplication and critical visual-rights block enforced; no competitor image or binary downloaded",
+    "Both required research artifacts exist; no publication approval asserted"
+  ],
+  "limitations": [
+    "These are packet integrity checks, not rights clearance, app tests or independent editorial approval.",
+    "Marketing check/build/test not run: no site files edited.",
+    "Competitor visual not opened or downloaded; gate remains blocked."
+  ]
+}

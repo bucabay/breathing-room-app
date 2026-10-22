@@ -1,0 +1,923 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-storagerader",
+  "stage": "research",
+  "status": "blocked",
+  "assembledAtUtc": "2026-10-21T22:16:03.771725+00:00",
+  "timeBasis": "Actual UTC system clock; check timestamps preserved, not rewritten to harness calendar date.",
+  "draftingAllowed": false,
+  "published": false,
+  "ownership": "Only docs/content/competitors/storagerader/ plus required runtime receipt; no site edits.",
+  "identity": {
+    "id": "storagerader",
+    "officialName": "StorageRadar",
+    "directoryName": "StorageRader",
+    "homepage": "https://storageradar.app/",
+    "formerHomepage": "https://storageradar.chama.pro/",
+    "developer": "Vladimir Chemeris",
+    "appStoreId": "6759776887",
+    "canonicalOwnerId": "storagerader",
+    "aliases": [
+      "StorageRader",
+      "StorageRadar: Disk Space"
+    ],
+    "aliasDecision": {
+      "verified": true,
+      "skipSeparateAliasDrafts": true,
+      "skipThisCanonicalProduct": false,
+      "evidence": [
+        "S1",
+        "S2",
+        "S3",
+        "S7"
+      ],
+      "rationale": "Keep existing stable queue owner storagerader for official StorageRadar. Do not create a second StorageRadar packet/article. No evidence connecting this product to PowerMyMac."
+    },
+    "repository": {
+      "url": null,
+      "state": "not-verified",
+      "rationale": "No official source repository linked in inspected official homepage/about/direct pages; do not infer open source or invent GitHub URL."
+    },
+    "fit": "direct-overlap-mac",
+    "fitReason": "macOS disk analysis, review-first cleanup and developer storage. No non-Mac replacement framing needed.",
+    "productSkipDecision": "do-not-skip-relevant-canonical-product; block drafting for missing visual rights"
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/storagerader/about/",
+    "retrievedAt": "2026-10-21T19:06:16.577Z",
+    "excerpt": "Official Website\nstorageradar.chama.pro",
+    "rawCapture": "docs/content/.runtime/verification-2/storagerader-directory.json",
+    "sha256": "e6d0f1775d041c5c4394af31286394b662747800aa1c530e03dcfd848dec47a1",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=7",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:22.582Z",
+    "edgeSource": "docs/content/competitors.json, storagerader.edges; no new traversal",
+    "currentRawSha256": "e6d0f1775d041c5c4394af31286394b662747800aa1c530e03dcfd848dec47a1"
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-2.json",
+    "recordId": "storagerader",
+    "reused": [
+      "Identity/redirect",
+      "macOS platform",
+      "core workflow",
+      "pricing",
+      "all retained homepage text"
+    ],
+    "added": [
+      "Developer/about",
+      "Direct-build conditions",
+      "channel-specific release history",
+      "privacy policy",
+      "App Store identity/version and screenshot URL"
+    ],
+    "homepageRefetched": false
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/storagerader/about/",
+      "finalUrl": "https://alternativeto.net/software/storagerader/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:16.577Z",
+      "rawPath": "docs/content/.runtime/verification-2/storagerader-directory.json",
+      "sha256": "e6d0f1775d041c5c4394af31286394b662747800aa1c530e03dcfd848dec47a1",
+      "text": "{\"url\":\"https://alternativeto.net/software/storagerader/about/\",\"title\":\"StorageRader: StorageRadar maps your disk, shows blocked paths instead of hiding them, lets | AlternativeTo\",\"retrievedAt\":\"2026-10-21T19:06:16.577Z\",\"links\":[{\"text\":\"Official Website\\nstorageradar.chama.pro\",\"href\":\"https://storageradar.chama.pro/\"}]}",
+      "method": "Reused batch-2 owned-tab rendered DOM; discovery only"
+    },
+    {
+      "id": "S2",
+      "publisher": "StorageRadar",
+      "url": "https://storageradar.chama.pro/",
+      "finalUrl": "https://storageradar.app/",
+      "retrievedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "rawPath": "docs/content/.runtime/verification-2/storagerader-official.json",
+      "sha256": "2c2af695c7b33bce3e6f4c4d7ca53c97c78a18a281ebedf4ab45442a86fd767c",
+      "text": "Mac Disk Space Analyzer | Find What's Taking Space | StorageRadar\nSkip to content\nStorageRadar\nFeatures\nWorkflow\nPricing\nPrivacy\nFAQ\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nEN\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nFeatures\nWorkflow\nPricing\nPrivacy\nFAQ\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nNow live\nStandard install on the Mac App Store\nSee what's taking space. Know what's safe to delete.\nA disk space analyzer for macOS, not an automatic cleaner.\nScan locally, see exact paths and sizes, and decide what to remove yourself. Nothing is deleted without your say.\nSee the evidence\nTreemap, large files, Duplicate Review, leftovers, and storage hotspots stay visible before any cleanup step.\nReview the risk\nNothing is deleted without your approval. Dry Run shows the exact paths and sizes before anything applies.\nTrack change locally\nSnapshots, reports, and cleanup history stay on your Mac. No cloud sync. No account required.\nView on the App Store\n(opens in new tab)\nSee what's free\nThe App Store version is the standard path for most users. Need broader filesystem access for advanced analysis workflows?\nSee the Direct build\nFree to scan and review. Cleanups move to Trash by default. One-time purchase to apply.\nLive on the App Store · macOS 15+ · One-time purchase, no subscription\n4\nScan sources\n2\nVisualization modes\n0\nCloud sync required\n1x\nPurchase. No subscription.\nScan first. Decide second. Act third.\nStorageRadar is built around deliberate action: analysis and cleanup are always separate steps.\n01\nScan your storage\nChoose a scan source: Home folder, Developer folder, System Volume, or a custom directory. The scanner indexes your files and shows live metrics as it goes.\n02\nVisualize and explore\nNavigate your disk through Treemap or Sunburst. Browse largest files. Find apps with leftover bloat. See exactly what's using your space before you do anything.\n03\nClean with confidence\nDry-run first and see what would be removed. For risky operations, step through a pre-apply review that shows exactly what changes. Then apply: move to Trash with undo support or delete permanently.\nUnderstand your storage before you touch a single file\nStorageRadar is built for evidence first: visualize what is using space, resolve permissions blockers, compare snapshots over time, then act locally with full review.\nDisk Overview\nSummary shows free space, storage by category, and what you can reclaim. In Map, Treemap and Sunburst views turn disk usage into evidence you can inspect, and Large Files lists the biggest files in the scan. Shortlist candidates, review exact paths, and build a cleanup batch in the Cleanup List before any destructive action. In Duplicates, use Duplicate Review to group exact file copies, compare potential savings, preview selections, and move verified duplicates to Trash only after review.\nTreemap & Sunburst visualization\nLarge Files with filters & search\nDuplicate Review for exact file copies\nCleanup List for batch operations\nPreview-first cleanup before Move to Trash or Delete\nDev Cleanup\nDeveloper environments mix rebuildable caches with workflow-sensitive data. StorageRadar separates the two, adds ecosystem context, and lets you inspect profiles, dry-run risky actions, and step through a safety review before apply is unlocked.\nXcode, npm, Docker, Gradle & more\nSafe / Caution / Dangerous risk levels\nDry Run & step-by-step review before apply\nDeveloper tier unlock for apply actions\nReports & Snapshots\nCapture snapshots locally, then compare what grew, shrank, appeared, or disappeared when storage management needs evidence over time, not just a one-time panic cleanup.\nPoint-in-time snapshot capture\nSnapshot history with baseline / target selection\nGrew / Shrank / New / Removed diff\nJSON, Markdown, CSV export\nMore tools\nPermissions & Access\nWhen macOS blocks access, StorageRadar tells you exactly which path is affected and what permission is missing. The blocker stays visible instead of disappearing into a black box.\nAccessible / Blocked / Missing counts\nPer-path recovery hints\nFull Disk Access & App Management\nChanged paths tracking\nApp Uninstaller\nApps leave support files across caches, containers, preferences, and logs. StorageRadar shows the residue path by path so you can inspect the uninstall plan, re-check access, and preview the result before apply.\nComplete leftover detection\nRisk labels: Can Remove Now / Review First / Unavailable\nPreview Removal before apply\nRe-check Access for blocked coverage\nMCP Integration\nOptional local integration. Run a read-only endpoint on 127.0.0.1 that AI agents can query for disk analytics. No file access, no deletion capability: just aggregated insights over a secure local connection.\nLocal MCP endpoint (127.0.0.1)\nRead-only, zero file access\nToken-based authentication\nConfigurable path privacy policy\nYour storage data stays on your Mac.\nYour files never leave your Mac. Scan sessions, snapshots, reports, and cleanup history all live in ~/Library/Application Support/StorageRadar/ on this machine. The only outbound signals are feature-level analytics (which workflows ran, not what was inside) and crash reports. Both are on by default, and you can turn either one off in Settings. Neither carries file paths or scan contents.\nStorage data stays local\nScan sessions, indexes, snapshots, reports, cleanup history, and local usage metrics live on this Mac.\nNo cloud sync for storage data\nThere is no StorageRadar account and no remote workspace for your scans, reports, or cleanup history.\nAnalytics cannot see your files\nUsage analytics receive feature-level events: which workflows ran, not what was inside them. No file paths, names, scan contents, or MCP tokens ever leave the app.\nCrash reports are opt-out\nCrash diagnostics use Sentry. Scan contents are never attached. You can turn delivery off in Settings at any time.\nLocal-only MCP endpoint\nThe AI integration runs on 127.0.0.1 and stays read-only: no delete, move, or file-content access.\nLocal storage only\n📁\n~/Library/Application Support/StorageRadar/\n📁\nIndexStore/\n📁\nReportsStore/\n📄\noperation-log.json\nNo cloud sync for storage data. No required account. MCP stays local.\nLive on the App Store. Preview every workflow before you unlock.\nOne-time purchase. No subscription. Family Sharing supported where available. Free keeps preview access across Disk Overview, Duplicate Review, App Uninstaller, Dev Cleanup, and Reports. Core is $9.99, Developer is $19.99, and upgrading from Core to Developer is $9.99.\nFree\n$0\nforever\nPreview every main workflow before deciding which cleanup and reporting actions are worth unlocking.\nIncluded\nPreview access across Disk Overview, Duplicate Review, App Uninstaller, Dev Cleanup & Reports\nDeep storage scanning\nDisk Map: Treemap & Sunburst\nLarge Files viewer\nDry Run, Preview Removal & pre-apply review\nLocal snapshot capture & history\nPermissions diagnostics\nMCP local integration\nNot included\nMove to Trash / Delete\nApp Uninstaller apply\nDev Cleanup apply\nReports compare & export\nView on the App Store\n(opens in new tab)\nMost Popular\nCore\n$9.99\none-time\nFor people who want to act on file cleanup and app removal after reviewing the evidence.\nIncluded\nEverything in Free\nMove to Trash with undo window\nDelete Permanently\nDisk Overview cleanup actions (Cleanup List → Move to Trash), including Duplicate Review\nApp Uninstaller apply\nNot included\nDev Cleanup apply\nReports compare & export\nView on the App Store\n(opens in new tab)\nDeveloper\n$19.99\none-time\nUpgrade from Core: +$9.99\nFor developers who need ecosystem-aware cleanup and full compare/export reports over time.\nIncluded\nEverything in Core\nDev Cleanup apply\nEcosystem profiles (Xcode, npm…)\nStep-by-step pre-apply review\nReports compare over time\nJSON / Markdown / CSV export\nView on the App Store\n(opens in new tab)\nFree keeps preview access across all main workspaces · Upgrade from Core to Developer is $9.99 · USD pricing shown; regional App Store pricing may vary · No subscription · Family Sharing supported where available\nFAQ\nCommon questions\nCan I try every section before buying?\nYes. The Free tier keeps preview mode across Disk Overview, App Uninstaller, Dev Cleanup, and Reports. You can inspect results, run Dry Run, Preview Removal, or Guided Preflight where applicable, and capture local snapshots before you unlock paid apply actions or Reports comparison and export.\nCan I buy StorageRadar without the App Store?\nYes. Buy the Direct build on this site and your license key arrives by email. No Apple ID, no account here, and a 14-day refund. The Direct build runs outside App Store sandboxing, so it reaches developer caches the sandboxed version cannot. If you already bought on the App Store, open Settings > Purchases > Get Direct License Key and activate that key in the Direct build at no extra cost.\nCan I share StorageRadar with my family?\nYes. StorageRadar supports Apple's Family Sharing for eligible one-time App Store purchases. Availability still depends on the Apple family group, purchase sharing settings, and App Store account state.\nDoes StorageRadar work without internet?\nYes for core workflows. Scanning, analysis, visualization, dry-run, permissions diagnostics, snapshots, reports, and local MCP access work on-device. Network is only needed for App Store purchases or restore flows and, if you keep them enabled, privacy-safe product analytics or Sentry diagnostics and feedback.\nWhat data can leave my Mac?\nCore storage data stays local: scan indexes, cleanup history, snapshots, reports, and local usage metrics stay on-device. StorageRadar also has separate remote channels for privacy-safe product analytics (Aptabase) and diagnostics or feedback (Sentry). Remote delivery does not include scan paths, file names, bundle identifiers, snapshot labels, raw scan payloads, MCP secrets, or raw error text, and scan files are not attached automatically. Both can be turned off in Settings.\nWhat's different from CleanMyMac or similar tools?\nStorageRadar is not a one-click cleaner. It's built around a deliberate workflow: scan → visualize → review → act. Nothing is deleted automatically. Every cleanup requires your explicit decision, and risky operations require dry-run or guided preflight first. You're always in control.\nDoes StorageRadar find duplicate files?\nYes. Duplicate Review finds exact duplicate files, groups them for comparison, shows potential savings, and lets you preview selections before moving anything to Trash. It is review-first, not automatic cleanup.\nWhat is Dry Run?\nDry Run simulates a cleanup operation without deleting or moving anything. You see exactly what would be affected (paths, sizes, risk levels) before committing. For risky developer profiles, there's also a Guided Preflight that walks you through potential consequences step by step before unlock.\nCan I undo a deletion?\nMove to Trash supports a quick undo window: you can restore items from Trash via Finder afterward. Delete Permanently does not support undo. StorageRadar always makes the distinction clear and asks for confirmation before any permanent deletion.\nWhat developer ecosystems does Dev Cleanup support?\nDev Cleanup covers six groups: Apple (Xcode DerivedData, Archives, simulators, device support, SwiftPM, CocoaPods, Carthage), Web (npm, pnpm, Yarn, Corepack, and node-gyp caches), Backend (Homebrew, JetBrains, Composer, Go, and Rust Cargo caches), Android (Gradle caches, the Android SDK cache, emulator artifacts), Data (pip and pytest caches), and Containers (Docker, Colima, Podman). Each profile carries its own risk level and states what happens after cleanup.\nWhat is the MCP integration for?\nIt runs a local read-only HTTP endpoint that AI assistants (like Claude via MCP) can query for disk analytics and scan data. It doesn't give AI agents any ability to delete files; it's purely informational, letting your AI tools understand your storage situation without direct filesystem access.\nWhy are some folders showing as blocked?\nmacOS protects certain directories (Desktop, Documents, app containers, and system volumes) from direct access. The Access screen under Reports & Access shows exactly which paths are blocked and gives you step-by-step guidance to grant appropriate access: folder-scoped permission, Full Disk Access, or App Management.\nHow are Reports different from Large Files?\nLarge Files shows the biggest files and folders in your current scan. Reports starts with local snapshots, so you can keep history over time. Free and Core can capture snapshots and review that history; Developer unlocks diff and export to answer 'what grew, shrank, appeared, or disappeared?'\nDistribution Paths\nBuy on the App Store, or buy direct from this site.\nThe App Store release is the standard path for most users. You can also buy StorageRadar on this site: the Direct build runs outside App Store sandboxing, so it reaches the developer caches a sandboxed app cannot.\nStandard path\nStart with the App Store release\nBest default path for most users\nCurrent public pricing and purchase flow\nFree tier stays preview-first before paid apply actions\nView on the App Store\n(opens in new tab)\nOn the Mac App Store. macOS 15+. One-time purchase, no subscription.\nPrefer to buy outside the App Store?\nBuy the Direct build\nWant to know when StorageRadar updates?\nGet a short email when a new version ships. No spam — and this never gates your download.\nEmail address\nI agree to receive occasional StorageRadar product update emails. Unsubscribe anytime.\nKeep me posted\nSomething went wrong. Please check your email address and try again.\nYou're on the list\nWe'll let you know when the next StorageRadar build is out.\nUse the blog like a Mac storage playbook, not a dumping ground for updates.\nStart with the broadest diagnosis guide if the problem is still vague. Switch to the narrower article once you know the culprit is System Data, app leftovers, Xcode, Docker, or recurring growth over time.\nFebruary 12, 2026\n6 min read\nHow to Free Up Disk Space on Mac Without Breaking Anything\nNeed to free up disk space on Mac without deleting the wrong files? Start with safe first wins, review risky paths separately, and reclaim storage without breaking apps or workflows.\nMac Cleanup\nDisk Space\nReview First\nFebruary 15, 2026\n11 min read\nHow to Find What Is Taking Space on Mac\nNeed to find what is taking space on your Mac? Learn how to find large files, review the storage tree, and identify folders using the most disk space.\nMac Storage\nDisk Analysis\nReview First\nFebruary 9, 2026\n10 min read\nMac System Data Too Large? What It Usually Means and What to Check\nWhy is System Data so large on Mac? Learn which caches, snapshots, and developer artifacts inflate it, and what to check before deleting anything.\nSystem Data\nMac Storage\nReview First\nChoose the guide by problem, not by cleanup mood.\nFree up disk space on Mac without breaking anything\nFind what is taking space on Mac before deleting\nUnderstand why System Data is so large on Mac\nSafely clean developer caches on Mac\nCompare CleanMyMac alternatives by workflow\nCore guides are available in localized versions. Use the language switcher or open the guide index for the current locale.\nBrowse guides\nCompare disk usage over time\nBuild history\nRecent release history. Each build ships what is actually stable.\n3.0.8\nRelease\nBuild 308\n2026-10-21\nFixed\nTreemap and Sunburst show the same legend. Disk Map adds up each category across the whole folder, including items too small to draw. Before, each view counted what it drew, so the two legends disagreed\nScans skip virtual volumes such as DeviceFS in ~/Library/Developer/CoreDevice. DeviceFS takes no space on your Mac. Before, scans of your home folder and startup disk counted its contents as part of ~/Library/Developer\nFolder scans stay on the folder's own volume. Disks and disk images mounted inside the folder appear as empty folders. Scans of the startup disk and of /Volumes keep counting connected disks\nThe Disk Map tooltip hides the item count for folders the map hasn't loaded. Before, a large folder deep in the tree could show “Items 0”\n3.0.7\nRelease\nBuild 307\n2026-10-20\nAdded\nA heads-up before the first scan when less than 2 GB is free\nImproved\nClear guidance when your disk is full. If a scan can't save its results because the disk is out of space, StorageRadar now says so and offers Dev Cleanup, App Uninstaller and Open Trash — they free up space without a scan. Before, you saw a generic “Scan failed” error, and Retry failed again\nFixed\nClosing the App Store payment sheet no longer looks like an error (App Store version). Before, cancelling a purchase could show “Purchase failed”\n3.0.6\nRelease\nBuild 306\n2026-10-15\nFixed\nScans keep going while macOS asks for access. If macOS shows an access dialog during a Home Folder scan, StorageRadar finishes the scan and lists the folders that didn't open in time. Answer the dialog, then rescan. Before, the scan stayed at 0 files until you answered\nCategories appear right after a scan. Before, the bar in Disk Overview showed only Other & not scanned until you restarted the app\nView full changelog\nStorageRadar\nPrivacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control.\nProduct\nFeatures\nPricing\nApp Store & Direct\nDirect build\nInfo\nBlog\nSupport\nAbout\nCompare\nPrivacy\nFAQ\nChangelog\nMCP Docs\n© 2026 StorageRadar. All rights reserved.\nMade for Mac",
+      "method": "Reused current batch-2 official rendered text; not refetched"
+    },
+    {
+      "id": "S3",
+      "publisher": "StorageRadar",
+      "url": "https://storageradar.app/about/",
+      "finalUrl": "https://storageradar.app/about/",
+      "retrievedAtUtc": "2026-10-21T22:13:24.615190+00:00",
+      "rawPath": "docs/content/competitors/storagerader/evidence/about.html",
+      "sha256": "60078ef5ae0c6068790c9b97ca31b70604aab81b40b9bb7d9bad6fe791cdeaa6",
+      "text": "About StorageRadar | Founder, Principles, And Contact\nSkip to content\nStorageRadar\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nEN\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nBack to home\nAbout\nThe person behind StorageRadar\nOne person designs, builds, and supports StorageRadar. This page says who that is, which rules the app follows, and how to reach him.\nFounder\nVladimir Chemeris\nFounder, StorageRadar\nVladimir Chemeris builds StorageRadar, a privacy-first macOS storage analysis app focused on review-first cleanup, developer storage, and before-and-after visibility.\nHe writes the code, ships the updates, and answers support mail himself.\nStorageRadar sells as a one-time purchase on the Mac App Store and as a Direct build with its own license keys.\nThe app has been on the Mac App Store since April 2026.\nPrinciples\nRules the app follows\nEach rule here is checkable inside the app.\nReview before removal\nThe app shows exact paths and sizes before each cleanup step, and a dry run previews what would change. You approve each removal.\nLocal by default\nScans run on your Mac, and storage data stays there. No account, no cloud sync.\nOne-time purchase\nYou buy the User or Developer unlock once. There is no subscription.\nDeveloper-aware cleanup\nDev Cleanup groups Xcode, Docker, simulators, and package caches by ecosystem and risk.\nLocal AI access\nA local, read-only MCP endpoint lets AI tools read scan results. It exposes no file contents and grants no write access.\nContact and profiles\nSupport mail and press questions land in the same inbox, the founder's.\nX (Twitter): @vladimirchama\nMac App Store listing\nEmail: support@storageradar.app\nStorageRadar\nPrivacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control.\nProduct\nFeatures\nPricing\nApp Store & Direct\nDirect build\nInfo\nBlog\nSupport\nAbout\nCompare\nPrivacy\nFAQ\nChangelog\nMCP Docs\n© 2026 StorageRadar. All rights reserved.\nMade for Mac",
+      "method": "Public HTTP read; retained HTML"
+    },
+    {
+      "id": "S4",
+      "publisher": "StorageRadar",
+      "url": "https://storageradar.app/direct/",
+      "finalUrl": "https://storageradar.app/direct/",
+      "retrievedAtUtc": "2026-10-21T22:13:25.079335+00:00",
+      "rawPath": "docs/content/competitors/storagerader/evidence/direct.html",
+      "sha256": "27a52e95228fbae06d7dd7a6c59b9ef016c1eedcac2efc64ddeeb03940df9786",
+      "text": "Buy StorageRadar Direct — Mac Disk Space Analyzer\nSkip to content\nStorageRadar\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nEN\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nBack to StorageRadar\nDirect Build\nBuy the Direct build — or download the DMG and try it first\nThe Direct build is the disk space analyzer for developers and power users who want broader macOS access. Buy it directly on this page — your license key arrives by email — or download the DMG and try it first.\nBuy Direct\nDownload the DMG\nOne-time purchase\nPay once, own it forever\n14-day refund\nFull refund within 14 days, no questions\nNo Apple ID\nNo Apple ID or account needed\nKey by email\nLicense key sent to your inbox\nOffline activation\nActivate and run without internet\nBuilt for developers\nReclaim the storage Xcode, Docker, and your toolchains hide\nThe Direct build runs outside the App Store sandbox, so it can scan and clean the developer caches a sandboxed app simply cannot reach — review-first, nothing deleted without your say.\nXcode DerivedData\nStale build indexes and module caches that regrow with every project\nCoreSimulator devices\nOld simulator runtimes and unavailable devices eating tens of GB\nDocker.raw\nThe Docker Desktop disk image that quietly balloons over time\nnode_modules · npm / pnpm / yarn caches\nPackage caches and abandoned dependency trees across old projects\nBuy Direct\nBuy the Direct build — pay once, own it\nPay once, get the signed DMG and a license key by email — no Apple ID, no account on this site.\nFree\n$0\nTry every workflow free — preview-first, no key needed\nIncluded\nDeep storage scanning\nDisk Map: treemap & sunburst\nDry run & pre-apply review\nLocal snapshots & history\nRead-only local MCP integration\nDownload the DMG\nCore\n$9.99\nReview-first disk space analyzer with the removal actions you control.\nIncluded\nEverything in the free analyzer\nMove to Trash with an undo window\nDelete permanently when you choose\nDisk Overview cleanup actions (Cleanup List → Move to Trash), incl. Duplicate Review\nApp Uninstaller — remove apps and leftovers\nBuy Core — $9.99\nMost popular\nDeveloper\n$19.99\nEverything in Core plus ecosystem-aware dev cleanup and storage reports over time.\nIncluded\nEverything in Core\nDev Cleanup — Xcode, Docker, caches, build artifacts\nEcosystem profiles (Xcode, npm, …)\nStep-by-step pre-apply review\nReports: compare storage over time\nExport to JSON / Markdown / CSV\nBuy Developer — $19.99\nAlready own Core Direct? Add the Developer features for the difference.\nUpgrade Core → Developer — $10\nGet StorageRadar release notes\nDrop your email to hear when new versions ship — what changed, what's fixed, what's faster. No spam, and the download above stays free without it.\nEmail address\nI agree to receive occasional StorageRadar product update emails. Unsubscribe anytime.\nKeep me posted\nSomething went wrong. Please check your email address and try again.\nYou're on the list\nWe'll email you when the next StorageRadar build is out — nothing more.\nFrom checkout to activation in three steps\n1\nBuy on this page\nCheckout opens right here via Gumroad — no Apple ID required.\n2\nGet your license key by email\nYour key is sent from licenses@storageradar.app within minutes after checkout. Check your spam folder if you don't see it.\n3\nActivate in the Direct build\nOpen Settings → Purchases & Updates, click Open Paywall, then use Paste Key → Activate License Key. The key is tied to your purchase, not an Apple ID.\nWhat the Direct build does not do\nIt never asks you to sign in on this website.\nYour purchase and license key never require an Apple ID.\nIt does not auto-delete anything — every removal is your decision.\nIt makes no performance or speed claims.\nDirect purchase — questions\nHow is the Direct build different from the App Store version?\nThe Direct build gets broader macOS access for advanced and developer cleanup that sandboxing limits on the App Store. It's the same review-first disk space analyzer — bought outside the App Store and activated with a license key.\nDo I need an Apple ID?\nNo — the purchase and your license key never require an Apple ID or an account on this site.\nHow do I get my license key?\nYour key is emailed from licenses@storageradar.app within minutes after checkout. Check your spam folder if needed, then open Settings → Purchases & Updates, click Open Paywall, and use Paste Key → Activate License Key.\nCan I get a refund?\nYes — you have 14 days from purchase to request a full refund through Gumroad.\nI already bought on the App Store — do I pay again?\nNo — existing App Store customers can unlock the Direct build for free. See the crossgrade page for details.\nDirect DMG:\nhttps://releases.storageradar.app/latest.dmg\nApp Store listing:\nhttps://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8\nI already bought on the App Store — do I pay again?\nQuestions about Direct?\nEmail\nsupport@storageradar.app\nStorageRadar\nPrivacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control.\nProduct\nFeatures\nPricing\nApp Store & Direct\nDirect build\nInfo\nBlog\nSupport\nAbout\nCompare\nPrivacy\nFAQ\nChangelog\nMCP Docs\n© 2026 StorageRadar. All rights reserved.\nMade for Mac",
+      "method": "Public HTTP read; retained HTML"
+    },
+    {
+      "id": "S5",
+      "publisher": "StorageRadar",
+      "url": "https://storageradar.app/changelog/",
+      "finalUrl": "https://storageradar.app/changelog/",
+      "retrievedAtUtc": "2026-10-21T22:13:25.578532+00:00",
+      "rawPath": "docs/content/competitors/storagerader/evidence/changelog.html",
+      "sha256": "6eaf4e51b19255b1ca66fea63edd030cac8b8fd19f77336050686b4c7e457bd6",
+      "text": "StorageRadar Changelog | Release Notes For The macOS App\nSkip to content\nStorageRadar\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nEN\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nBack to StorageRadar\nChangelog\nFull release history\nEvery beta build in one place. Use this page for the complete history while the home page stays focused on the product itself.\n3.0.8\nRelease\nBuild 308\n2026-10-21\nFixed\nTreemap and Sunburst show the same legend. Disk Map adds up each category across the whole folder, including items too small to draw. Before, each view counted what it drew, so the two legends disagreed\nScans skip virtual volumes such as DeviceFS in ~/Library/Developer/CoreDevice. DeviceFS takes no space on your Mac. Before, scans of your home folder and startup disk counted its contents as part of ~/Library/Developer\nFolder scans stay on the folder's own volume. Disks and disk images mounted inside the folder appear as empty folders. Scans of the startup disk and of /Volumes keep counting connected disks\nThe Disk Map tooltip hides the item count for folders the map hasn't loaded. Before, a large folder deep in the tree could show “Items 0”\n3.0.7\nRelease\nBuild 307\n2026-10-20\nAdded\nA heads-up before the first scan when less than 2 GB is free\nImproved\nClear guidance when your disk is full. If a scan can't save its results because the disk is out of space, StorageRadar now says so and offers Dev Cleanup, App Uninstaller and Open Trash — they free up space without a scan. Before, you saw a generic “Scan failed” error, and Retry failed again\nFixed\nClosing the App Store payment sheet no longer looks like an error (App Store version). Before, cancelling a purchase could show “Purchase failed”\n3.0.6\nRelease\nBuild 306\n2026-10-15\nFixed\nScans keep going while macOS asks for access. If macOS shows an access dialog during a Home Folder scan, StorageRadar finishes the scan and lists the folders that didn't open in time. Answer the dialog, then rescan. Before, the scan stayed at 0 files until you answered\nCategories appear right after a scan. Before, the bar in Disk Overview showed only Other & not scanned until you restarted the app\n3.0.5\nRelease\nBuild 305\n2026-10-12\nFixed\nDocker inside Colima is counted once. When Docker runs in the Colima VM, its images and build cache live on the VM disk that Colima Runtime Data already counts. The Developer caches total added them a second time. The Docker card now shows an Inside Colima VM label\n3.0.4\nRelease\nBuild 304\n2026-10-12\nFixed\nUndo in Developer caches. After a cleanup, the Undo button stays on screen for 10 seconds and returns the items from the Trash. Before, this screen moved items to the Trash without it\n3.0.3\nRelease\nBuild 303\n2026-10-12\nFixed\nReview & Apply scrolls again. With dozens of simulators, Xcode archives or other items, the window cut off the Run Dry Run and Apply Cleanup buttons\n3.0.2\nRelease\nBuild 302\n2026-10-11\nAdded\nA new “Rate StorageRadar…” item in the app menu (App Store version)\nImproved\nIf StorageRadar can't open ~/Library/Developer yet, it asks for access once and scans the folder right away\nFixed\nThe developer scan no longer ends in an error on a Mac without Xcode data. StorageRadar says there is no Xcode data on this Mac and opens Dev Cleanup, which still covers caches from Homebrew, npm, Docker and other developer tools\n3.0.0\nRelease\nBuild 300\n2026-09-22\nAdded\nDisk Overview is the new home screen: free space, what is using it, and what you can reclaim, with dedicated states for a first launch, a scan in progress, and a disk with nothing to clean. The sidebar now has five sections\nImproved\nRedesigned interface: a new color, type, and spacing system, a brand accent in place of the system blue, and one category palette for light and dark mode\nDisk Map colors items by category and adds breadcrumbs, a legend, and an inspector panel. After a cleanup it refreshes without asking for another scan\nDuplicate Review rebuilt: stage-by-stage scan progress, file counts per group, a 10-second undo window, and empty states that explain why the list is empty\nApp Uninstaller and Dev Cleanup reworked: a removal plan fits on one line, a missing permission shows up as a task instead of an error, and each cleanup profile states its consequence before you run it\nScanning shows a real percentage with a Stop button and stops as soon as you press it. Post-processing is faster\nComplete translations for all 10 languages, with real plural forms in place of “file(s)”\nFixed\nSize numbers reconciled across the app: folder totals, category sums, and header counts now agree with the lists beneath them\n2.2.4\nRelease\nBuild 224\n2026-07-11\nImproved\nApp Uninstaller: Preview Removal now works even while the app you want to remove is still running — previewing is a safe dry run and never deletes anything\nIf an app truly cannot be closed automatically, StorageRadar now tells you instead of retrying silently\nClearer error reporting for scanning, purchases, and restoring purchases\nFixed\nMove to Trash no longer asks you to quit the app by hand, and no longer stalls on apps that keep a background helper running. StorageRadar closes them for you and says so up front\n2.2.2\nRelease\nBuild 222\n2026-07-09\nImproved\nImproved diagnostics for scanning and in-app purchases, helping us detect and fix rare issues faster\nMinor internal refinements for better long-term reliability\n2.2.1\nRelease\nBuild 221\n2026-07-06\nImproved\nBackground scans keep full speed when the app is minimized\nImproved diagnostics to pinpoint where a slow scan gets stuck\nFixed\nMore reliable scanning on large disks — scans no longer stall or slow to a crawl, even with lots of cloud files\nThe scanner now skips unreachable iCloud files and network drives instead of getting stuck, so every scan finishes\n2.2.0\nRelease\nBuild 220\n2026-07-03\nImproved\nStorageRadar 2.2.0 updates the App Store listing for disk space, Xcode, Docker, and cleanup searches. Cleanup behavior stays the same\n2.1.9\nRelease\nBuild 211\n2026-06-30\nImproved\nClearer status — if preparation ever fails, you see a clear message instead of an endless spinner\nFixed\nDisk Map fix — the disk map now builds reliably after a scan instead of getting stuck on \"preparing.\"\nStability improvements and minor fixes throughout\n2.1.0\nRelease\nBuild 210\n2026-06-15\nAdded\nA clear finish — removing an app ends on a summary that counts up the space you reclaimed, next to the app name and where it lived\nHonest about the Trash — when an app moves to the Trash, you're told the space returns once you empty it, with Empty Trash (or Open Trash) right there\nLeftovers in one step — if related caches or settings remain, the summary shows how much is left and takes you straight to review them\nImproved\nClearer removal confirmation — before an app leaves your Mac you see exactly what happens: its icon, how many items and how much space, and a plain \"will be moved to Trash\" instead of a wall of text\nNothing hidden — items that may hold your data are flagged in amber; anything that can't be removed (no access or system-protected) is listed separately under \"Won't be removed\"\nFixed\nUndo you can trust — the Undo button only ever reverses the removal you just made\nButtons that fit — permission guidance now wraps cleanly on smaller screens, with nothing cut off\nStability improvements and minor fixes throughout\n2.0.4\nRelease\nBuild 204\n2026-06-09\nAdded\nBuy and upgrade right inside the app: get Core or Developer straight from the Unlock screen, with checkout opening securely in your browser and your license key arriving by email within minutes\nOne-tap upgrade from Core to Developer that unlocks Dev Cleanup for Xcode, Docker, and caches plus Reports compare and export, without re-buying\nImproved\nClearer Unlock screen that puts buying front and center, with \"Already have a license key?\" and App Store recovery tucked into tidy collapsible sections\nLess guesswork at checkout: a hint shows which address your key email comes from, and a Contact support button appears if a key reaches its device limit\nFull, natural localization across all 10 languages — English, German, Spanish, French, Japanese, Korean, Dutch, Portuguese (Brazil), Russian, and Simplified Chinese — with no more screens falling back to English\nOne-time purchases, no subscription ever, and nothing removed automatically: every cleanup still asks for confirmation and Move to Trash can be undone\n2.0.1\nRelease\nBuild 201\n2026-05-30\nAdded\nNew first run that starts you on a safe Home Folder scan instead of a generic welcome, with confirmation always required before anything is removed\nAccessible risk levels: safe, caution, and danger now read by icon as well as color, with full Increase Contrast support\nImproved\nA refreshed, more native look across every screen, with flatter surfaces, lighter shadows, and consistent spacing for a calmer, clearer app\nCalmer Home with a disk-space overview at a glance and quieter, easier-to-scan cards\nDuplicate Review now matches the app's light theme, with larger text, less on-screen clutter, and scan progress that stays visible while scanning\nClearer Unlock screen with a recommended plan, benefit-focused wording, and a reclaimable-space estimate\n1.9.9\nRelease\nBuild 99\n2026-05-22\nAdded\nDuplicate Review now finds exact duplicate folders, not just files, confirmed by a full content fingerprint so only genuinely identical folders are grouped for review\nImproved\nFaster exact-folder matching that reuses an in-memory index and partial content hashes to skip unnecessary full-file reads on large Home folders\nSafer broad scans, with exact-folder matching skipping Library, Trash, caches, and app containers, the same protected areas already excluded for files\nCloud-aware by default: cloud-only files and provider placeholders are skipped before any read in local-only mode, so nothing is downloaded just to scan it\nHardlink-aware savings estimates so the reclaimable space shown reflects what you would actually get back\nSteadier progress during long folder scans instead of going quiet until the end\n1.9.5\nRelease\nBuild 95\n2026-05-18\nAdded\nDuplicate Review, a new review-first workflow for finding exact duplicate files, comparing potential savings, previewing selections, and moving verified copies to Trash only after review\nImproved\nDuplicate Review handles large scans with clearer group ordering, faster scrolling, and a more focused Preview flow before moving anything to Trash\nDisk Map details are easier to understand, with clearer file and folder labels, readable action buttons, and improved wording across supported languages\nGuided onboarding helps you find the right next step in Home and Disk Analysis without getting in the way\nActive scans and long-running work are easier to follow with a top activity strip and Stop controls where supported\nStability, performance, and privacy-safe diagnostics have been improved across cleanup, uninstall, purchases, and reports\n1.6.2\nRelease\nBuild 82\n2026-05-09\nImproved\nClearer purchase and unlock diagnostics so blocked checkout, restore, and entitlement states are easier to identify and resolve\nPrivacy-safe funnel signals around paywall views, exits, purchase attempts, restore attempts, and product availability\nBetter cleanup intent reporting with broad count and size buckets, without collecting file paths, file names, bundle IDs, product IDs, transaction IDs, or license keys\n1.6.0\nRelease\nBuild 80\n2026-04-24\nAdded\nFamily Sharing support: share your license with family members at no extra cost\nImproved\nClearer error messages during uninstall when something goes wrong\nApp Uninstaller identifies related files more accurately and no longer includes unrelated shared containers in the removal plan\nFixed\nLanguage override bug: choosing English no longer leaves parts of the interface stuck in the system language\nGeneral stability improvements and performance optimizations\n1.5.2\nRelease\nBuild 72\n2026-04-23\nAdded\nPurchase diagnostics: copy a full license report to clipboard for faster support\nRecover a direct license from your App Store purchase without re-entering a key\nCleanup guardrails warn before deleting protected or system-critical paths\nCollector workflow: review collected items before applying batch cleanup actions\nImproved\nManual license activation shows specific error messages for every scenario\nApp Uninstaller switches between apps without flashing empty states\nDev Cleanup summary bar shows clear progress while cleanup runs\n1.4.6\nRelease\nBuild 66\n2026-04-19\nImproved\nClearer review-first guidance before cleanup or uninstall\nUpdated explanations for protected paths, partial results, and macOS permission boundaries\nRefined privacy wording for local storage, optional analytics, and diagnostics\nBetter follow-up monitoring across cleanup, app uninstall, reports, and purchase flows\n1.4.5\nRelease\nBuild 65\n2026-04-18\nAdded\nFree disk space shown in the title bar while you work\nDev Cleanup shows reclaimable safe space at a glance\nImproved\nFolder pickers skip redundant permission steps for faster access\nCompact window and layout polish for smaller screens\n1.4.1\nRelease\nBuild 61\n2026-04-16\nFixed\nCrash when scanning certain folder structures with duplicate path entries\nLarge Files screen no longer freezes when displaying many items\n1.4.0\nRelease\nBuild 60\n2026-04-14\nAdded\nBatch app removal: select multiple apps and remove them all with a single confirmation instead of one dialog per app\nAuto-quit before removal: running apps are gracefully closed so you never hit a \"close the app first\" wall\nSystem-protected apps are now clearly marked and explained so you immediately know which ones macOS won't let you remove\nCopy Diagnostics copies a full error report to your clipboard for faster troubleshooting and support\nReveal in Finder button gives you a manual fallback when automatic deletion is not possible\nImproved\nEvery error now shows a specific, actionable message instead of a generic \"permission denied\", so you always know what went wrong and what to do next\nFixed\nAdmin users no longer see incorrect non-admin error messages\n1.3.9\nRelease\nBuild 59\n2026-04-13\nAdded\nApp Uninstaller refreshes automatically after you grant access: no more manual re-scans, just keep working\nBroader app discovery across /Applications, Home-folder apps, and Library data for a more complete uninstall picture\nImproved\nMore complete data detection for Steam, Android Studio, and JetBrains-based apps when support files live in shared vendor folders\nMore accurate Detected App Data and Preview Removal details so you can decide what to delete with confidence\nConsistent permission guidance between the Home flow and the direct App Uninstaller flow: fewer surprises, smoother cleanup\n1.3.6\nRelease\nBuild 56\n2026-04-12\nAdded\nOne-time purchase model: Free stays preview-first, Core unlocks cleanup and App Uninstaller, Developer unlocks Dev Cleanup, Reports compare and export. No subscription, ever\nImproved\nRefreshed workspaces across Home, App Uninstaller, Dev Cleanup, Reports, and Permissions for a clearer review-first flow\nBetter low-resolution layout handling so key actions stay visible and usable on compact MacBook screens\nMore confident cleanup with exact file paths, risk-aware grouping, Preview Removal, Dry Run, and Guided Preflight before every final action\nSmoother day-to-day use with better access reuse, stronger workspace continuity, and more polished app removal flows\n1.3.5\nRelease\nBuild 55\n2026-03-31\nAdded\nDev Cleanup now asks for Home folder access once instead of requesting each cache folder separately\nImproved\nDev Cleanup profiles are detected automatically when you open the screen, with no manual Refresh needed\nFixed\nDev Cleanup no longer misses files inside folders that already have granted access\n1.3.0\nBuild 50\n2026-03-30\nAdded\nA Mac App Store app warning before deletion so users know macOS may still require manual removal through Finder or Launchpad\nAn Open App Management button that replaces Reveal in Finder for apps macOS blocks from being removed in-app\nGranular App Uninstaller discovery permission steps for ~/Applications and ~/Library with clearer explanations for Steam wrappers, manifests, caches, and app data\nImproved\nApp Uninstaller leftover size estimation for more accurate remaining-file sizing\nHome Dashboard Continue now opens Disk Map instead of the Scan screen so the latest analysis result is visible immediately\nGrouped protected areas on Home so scan skips are shown as logical protected zones with clearer guidance instead of a raw skipped-entry count\nOptimistic purchase restore so paid users no longer see Preview flash on launch while entitlements restore\nPermissions now group protected scan skips into logical zones instead of individual entries\nHome and Permissions folder access is automatically reused in App Uninstaller\nFixed\nWorkspace behavior when switching between Installed Apps and Removed App Leftovers modes\n1.1.8\nBuild 38\n2026-03-29\nAdded\nA new Permission Action Plan panel with step-by-step instructions for what button to press and which folder to select when access is denied\nSupport for different access types, including folder selection bookmarks, Full Disk Access, and App Management\nAccess re-check directly from the UI with no app restart required\nA manual fallback path when the system dialog does not work\nA dual trash removal strategy that tries FileManager.trashItem first and falls back to NSWorkspace.recycle when needed\nSentry integration for crash monitoring to improve stability\nImproved\nLeftovers detection in App Uninstaller with better filtering so only meaningful files are shown\nBlocked-size estimates so users can see exactly how much space remains inaccessible because of missing permissions\nHandling of complex apps such as nested bundles and Steam games\nFast app icon caching so the app list loads almost instantly\nDetailed troubleshooting hints that explain why access is needed and how to grant it\nDiagnostics for protected folders and system paths\nAutomatic suggestions for alternative actions on errors\nDetailed error messages that explain the root cause\nUndo for move-to-trash operations\nLocalization coverage for new App Uninstaller, Dev Cleanup, and Permissions strings\nTranslation consistency across all supported languages\nFixed\nPartial uninstall handling so the main app can still be removed when some related files remain locked, with blocked items shown together with an explanation\n1.0.3\nBuild 23\n2026-03-27\nAdded\nRetry Removal in App Uninstaller so you can try again after granting permissions in System Settings without re-scanning\nNew Docker cleanup modes: Conservative, Balanced, and Aggressive\nDocker cleanup controls for stopped containers and volumes\nGerman localization for new features\nImproved\nAccess troubleshooting in App Uninstaller with clearer instructions when macOS requires App Management or admin approval\nFinder fallback for apps in /Applications, using the system recycle mechanism to work around sandbox restrictions\nDocker cleanup hints before apply\nDocker cleanup and App Uninstaller translations across all supported languages\nFixed\nPartial success handling when the main app is removed but some related files remain protected\n1.0.1\nBuild 21\n2026-03-26\nAdded\nFree Tier Preview Mode so users can explore App Uninstaller, Dev Cleanup, and Reports in read-only preview mode before purchasing\nLocalized preview summaries with feature descriptions and badges for locked premium features in the current app language\nCollapsible advanced settings for a cleaner Settings workspace\n0.9.10\nBuild 20\n2026-03-25\nImproved\nBetter multilingual support with automatic fallback for missing translations\nNew and updated translations for App Uninstaller and Home screen\nImproved handling when folder access is limited or blocked\nBetter recovery suggestions when permissions need attention\nRefined window layout and spacing throughout the app\nFixed\nPaywall screens now properly adapt to light and dark system themes\n0.9.9\nBuild 19\n2026-03-25\nAdded\nGuided Review and Apply flows for Xcode Archives, CoreSimulator data, iOS Device Support, and Android Emulator AVD artifacts\nNew Dev Cleanup profiles for Rust Cargo Registry Cache, Rust Cargo Git Cache, CocoaPods artifacts, and Carthage artifacts\nImproved\nXcode Archives cleanup with quicker actions, clearer grouping by date, and better selection previews\nRicher explanations for cleanup targets so it is easier to understand what each profile contains, why it was flagged, and what may happen after removal\nGuided preflight details and item selection for caution-level cleanup flows\nLocalization coverage across Dev Cleanup, Settings, Reports, Home, Disk Map, and other workspaces\nCleanup detection and size estimation for hidden files, Device Support data, and symbolic links\nApp Uninstaller and cleanup messaging for clearer actions and status feedback\nFixed\nStability across cleanup flows, diagnostics, and localization, with additional test coverage\n0.9.8\nBuild 18\n2026-03-23\nAdded\nAdded snapshot test coverage for Docker Guided Cleanup states, including Conservative review, running-container blocker, stale dry-run refresh, Aggressive mode before dry run, and returning to Conservative mode after riskier settings\nImproved\nRefined the Docker Guided Cleanup experience with a more structured review flow, clearer next-step guidance, and better runtime context\nAdded mode-aware Docker cleanup presentation for Conservative, Balanced, and Aggressive presets, including clearer visual tinting and contextual badges\nImproved Dev Cleanup risk badges with dynamic colors and localized labels for better readability across appearance modes and languages\nEnhanced Docker preflight summary parsing so localized preflight output is interpreted more reliably in the UI\nFixed\nStale Docker error states are now cleared once Docker size detection succeeds\nDocker dry run estimate handling no longer shows older results as the current reclaimable amount after cleanup settings change\nGuided Docker cleanup now refreshes preflight automatically after a fresh dry run, reducing manual repetition before apply\n0.9.7\nBuild 17\n2026-03-22\nAdded\nApp Uninstaller now includes Cookies and LaunchAgents for more complete uninstalls\nExpanded multi-language support with new Disk Analysis translations\nImproved\nRebuilt App Uninstaller around a disk-space-focused app inventory so you can see exactly how much space you will free before removing anything\nMore accurate on-disk app sizes based on real physical footprint instead of filesystem metadata\nPersistent path size caching so re-inspecting apps is effectively instant\nSafety checks before removal so the app verifies the target is quit before proceeding\nCleaner App Uninstaller UI with nested scrolling removed and more compact leftover cards\nReworked Home screen hierarchy and key metrics for a clearer first-run experience\nContextual post-scan feedback that guides you toward the right next action\nImproved sidebar emphasis and navigation flow\nRefreshed Disk Analysis workflow states\nImproved snapshot comparison view in Reports\nUpdated Permissions recovery flow\nRefined action hierarchy in Dev Cleanup\nCleaned up Settings and Integrations workspaces\nStandardized and refreshed localization strings across the app\nImproved translation quality and consistency\nFixed\nEstimated freed-space previews are no longer overstated\nTap area on ecosystem filter chips\n0.9.6\nBuild 16\n2026-03-21\nFixed\nApp Uninstaller Removed App Leftovers now correctly shows results when leftover files from removed apps are still present on disk, including cached data, preferences, and support files found in your Library folders\n0.9.5\nBuild 15\n2026-03-16\nAdded\nNew guided first-run experience inside Home, with a safer default path for most users and a clear developer-oriented fast path\nImproved\nRenamed Storage Cleanup to Disk Analysis to better reflect the analyze-first, act-later workflow\nRenamed workspace tabs: Scan → Overview, Largest → Large Files\nRepositioned Home as a resume and overview surface instead of a second full scan launcher\nReworked the Disk Analysis Overview screen into a clearer post-scan workflow with a current result summary, key metrics, and actionable next steps into Disk Map, Large Files, and Dev Cleanup\nReplaced the raw Quick Result Preview with a new What We Found section that highlights the main insight, suggests the best next view, and shows a short deduplicated evidence list\nImproved scan-source selection and analysis entry points across Home and Disk Analysis for a more consistent flow\nHid the empty global Collector by default so cleanup UI no longer appears before the user has selected anything\nRefined English and Russian localization coverage, fixed mixed-language fallback issues, and updated a large set of workspace and action strings\nImproved overall information hierarchy, reducing duplicated controls and making the transition from scan results to analysis views more obvious\nUpdated internal entitlement refresh behavior for development and TestFlight environments to make developer-tier testing more reliable\nFixed\nRestored-session behavior after relaunch: the latest analysis is restored more reliably, preview data is rebuilt automatically, and the UI no longer falls back to misleading empty states after reopening the app\nPersistent \"Finalizing index...\" messaging that remained visible on completed result cards\n0.9.4\nBuild 14\n2026-03-15\nAdded\nLive progress for Removed App Leftovers scans in App Uninstaller, with results appearing as they are found\nImproved\nRedesigned the App Uninstaller mode switch to make it easier to move between Installed Apps and Removed App Leftovers\nSimplified leftover review cards and cleanup actions with clearer Safe and Review states, plus a cleaner refresh and access re-check flow\nImproved localization consistency across the app\n0.9.3\nBuild 13\n2026-03-14\nImproved\nApp Uninstaller can now detect leftover files from apps you have already removed and group them for easier cleanup\nCleanup detection now more safely and accurately skips shared, generic, and system-related files that should not be removed without review\nUpdated access flows for Mac App Store compatibility with a clearer Choose Folder experience and improved App Management guidance\nImproved stability across Dev Cleanup, scanning, and the app interface\n0.9.1\nBuild 11\n2026-03-12\nImproved\nDev Cleanup now refreshes progressively so detected profiles appear earlier and stay visible while size calculation continues\nClearer readiness states for Dev Cleanup profiles before actions become available\nBetter per-profile gating for Dry Run, Preflight, and Apply, making refresh behavior more predictable\nBroad localization pass across status messages, summaries, guidance, confirmation dialogs, paywall copy, settings text, scan states, Collector messaging, App Uninstaller text, and permission hints\nRefined Russian and other in-app translations for better clarity and consistency\nImproved Docker cleanup wording to better explain Conservative, Balanced, and Aggressive modes\nFixed\nDev Cleanup size estimation for edge cases such as symlinked content\n0.9.0\nBuild 10\n2026-03-12\nImproved\nMajor App Uninstaller update with faster app inventory loading and smoother background size calculation\nVisible progress while app sizes are being calculated\nBetter size estimates for Steam apps, including related game data beyond the .app bundle\nImproved detection and reuse of Steam manifest data for more reliable results\nUpdated App Uninstaller layout for both compact and wide windows\nClearer review flow for extra files that may contain shared app data\nImproved access guidance when macOS blocks files, including easier re-check and quick links to App Management and Full Disk Access\nMinor UI cleanup: segmented controls now use a cleaner label-free presentation across the app\nFixed\nOrphan Steam shortcut apps no longer appear as valid installed apps\n0.8.9\nBuild 9\n2026-03-11\nAdded\nCompleted French localization for the App Uninstaller\nImproved\nMajor redesign of the App Uninstaller screen with clearer removal details and next steps\nmacOS permission handling for app removal and leftover cleanup, with clearer guidance when extra access is required\nDetection of related app files, including preferences, sandbox/container data, and other leftovers that were sometimes missed\nA more compact App Uninstaller layout with more space for the files that will actually be removed, especially on smaller screens\nSimpler wording across the uninstaller UI with fewer technical terms\nSupport for the full set of app languages\nFixed\nIn-app language switching in release builds\n0.8.8\nBuild 8\n2026-03-07\nAdded\nReports now compare only snapshots from the same folder\nFolder drill-down in comparison results\nOpen in Finder from report rows\nImproved\nFaster snapshot capture after scan\nCleanup of duplicate local scan data\nFixed\nBaseline/Target auto-selection after new snapshot capture\n0.8.7\nBuild 7\n2026-03-07\nFixed\nSnapshot saving could hang indefinitely on large disk scans (500GB+); now uses streaming processing for reliable saves\n0.8.6\nBuild 6\n2026-03-07\nFixed\nHome Folder path handling so the app targets the real user home folder\nCases where macOS access prompts could appear but scanning would not start afterward\nScan Sources tiles so the full card is clickable, not just the text\nImproved\nHome Folder permission flow for sandboxed beta builds\nPath validation for Home Folder access on systems that return equivalent macOS paths\nAdded\nExternal beta builds now include all features unlocked for testing\nKnown Issues\nPricing is not final in this beta\n0.8.4\nBuild 4\n2026-03-02\nAdded\nImproved Disk Map interaction\nBetter folder detail panel\nInitial beta feedback flow improvements\nImproved\nScan result presentation\nDetail sidebar clarity\nGeneral UI polish\nFixed\nStability issues during scan completion\nMinor layout issues in cleanup views\nKnown Issues\nSome folders may require additional permissions\nCleanup workflows are still being refined in beta\n0.8.2\nBuild 3\n2026-02-27\nAdded\nDisk Map view\nLargest items view\nEarly developer cleanup profiles\nImproved\nScan performance\nNavigation structure\nFixed\nInitial build upload issues\n0.7.8\nBuild 2\n2026-02-20\nAdded\nApp Uninstaller: leftover detection across standard app locations and user-defined folders\nPermissions section with accessible / blocked / missing path breakdown and recovery hints\nCollector for batch cleanup candidate management across Disk Map and Largest\nRisk labels for uninstall candidates: Ready / Needs Check / Blocked / Missing\nImproved\nHome Launcher source selection layout\nScan tab live telemetry presentation\nSettings structure: Appearance, Language, Scan Performance Mode sections\nFixed\nScan cancellation leaving partial index state on disk\nIncorrect size totals for directories containing symlinks\nSection navigation resetting scroll position unexpectedly\nKnown Issues\nFull Disk Access required for complete App Uninstaller leftover coverage\nCollector batch apply UX still in progress\n0.7.2\nBuild 1\n2026-02-09\nAdded\nStorage Cleanup section: Scan tab with live telemetry (items scanned, volume found, speed, blocked count)\nHome Launcher with 4 scan sources: Home Folder, Developer Folder, System Volume, Custom Folder\nDry Run mode for cleanup operations before any apply\nPersistent scan session storage via local IndexStore\nInitial Settings section with debug and purchase simulation panels\nImproved\nScan engine stability on large directory trees\nFirst-launch experience with empty-state handling\nProgress feedback and radar visualization during indexing\nFixed\nCold-start crash when no prior scan session existed\nScanner stopping prematurely on permission-denied paths\nMemory pressure during large Home Folder scans\nKnown Issues\nDisk Map and Largest views not yet implemented\nApp Uninstaller not included in this build\n0.6.0\nBuild 0\n2026-01-28\nAdded\nInitial internal alpha\nHome Folder scanning with file tree indexing\nPreliminary file list with size and path display\nSidebar navigation scaffolding\nLocal scan session persistence (IndexStore)\nApplication structure and core module layout\nKnown Issues\nHome Folder only, no additional scan sources\nNo Disk Map, Largest, App Uninstaller, or Dev Cleanup\nNavigation stubs for most sections\nStorageRadar\nPrivacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control.\nProduct\nFeatures\nPricing\nApp Store & Direct\nDirect build\nInfo\nBlog\nSupport\nAbout\nCompare\nPrivacy\nFAQ\nChangelog\nMCP Docs\n© 2026 StorageRadar. All rights reserved.\nMade for Mac",
+      "method": "Public HTTP read; retained HTML"
+    },
+    {
+      "id": "S6",
+      "publisher": "StorageRadar",
+      "url": "https://storageradar.app/privacy/",
+      "finalUrl": "https://storageradar.app/privacy/",
+      "retrievedAtUtc": "2026-10-21T22:13:26.095101+00:00",
+      "rawPath": "docs/content/competitors/storagerader/evidence/privacy.html",
+      "sha256": "9b9c638a3a632f5ec2106844c08b0aac85ba1d6200629557b40dc1f205971ab6",
+      "text": "StorageRadar Privacy Policy | App Store Privacy URL\nSkip to content\nStorageRadar\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nEN\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nHome\nFeatures\nPricing\nFAQ\nBlog\nChangelog\nMCP\nBuy Direct\nApp Store\n(opens in new tab)\nEnglish\nDeutsch\nEspañol\nFrançais\n日本語\n한국어\nNederlands\nPortuguês (BR)\nРусский\n简体中文\nBack to StorageRadar\nPrivacy Policy\nStorageRadar keeps core storage data on your Mac.\nThis policy explains what StorageRadar stores locally, when limited data may leave your Mac, how analytics and diagnostics behave, and what controls you have in Settings.\nLast updated: March 25, 2026\nPrivacy-by-default summary\nStorageRadar does not require a StorageRadar account for core app usage, does not offer cloud sync for scan data, and is designed so that scan paths, file metadata, reports, cleanup history, and MCP access stay local unless a clearly scoped remote feature is used.\nScope\nThis privacy policy describes the StorageRadar macOS app and the limited companion services used by the app when it is distributed through Apple platforms.\nStorageRadar is designed around local-first storage analysis. Core scan data, cleanup history, reports, and related metadata are meant to stay on your Mac rather than in a cloud account.\nWhat stays on your Mac\nStorageRadar stores its core working data locally in Application Support and local preferences. The app does not require a StorageRadar account and does not provide cloud sync for scans, snapshots, reports, or cleanup history.\nScan sessions, indexes, and node metadata\nReports snapshots and local diff artifacts\nOperation log history for cleanup actions\nLocal usage counters and some UI preferences\nMCP configuration, path policy, and other app-specific local settings\nPrimary local stores\nStorageRadar uses local storage under ~/Library/Application Support/StorageRadar/, including IndexStore/, ReportsStore/, and operation-log.json.\nLocal preferences\nThe app also uses local preference storage for appearance and language choices, selected tabs, filter drafts, local usage metrics, Disk Map parameters, MCP configuration, and related device-level settings.\nData that may leave your Mac\nStorageRadar keeps its core storage analysis local, but some limited remote services can be involved depending on the feature you use or the settings you keep enabled.\nPrivacy-safe product analytics\nStorageRadar can send low-cardinality product event summaries to Aptabase. According to the current app documentation and shipping settings copy, this analytics delivery is enabled by default and can be turned off in Settings.\nRemote analytics is intentionally minimized and does not include scan paths, file names, bundle identifiers, snapshot labels, raw scan payloads, MCP secrets, or raw error text.\nDiagnostics and user-initiated feedback\nStorageRadar can send crash diagnostics, manual test errors, and in-app feedback to Sentry. Current app documentation indicates that Sentry delivery is enabled by default and can be turned off in Settings.\nScan files are not attached automatically. In-app feedback is an explicit user action rather than a hidden background upload.\nPurchases and restore\nIf you buy or restore a StorageRadar unlock, Apple purchase systems such as StoreKit are involved. StorageRadar uses those flows to determine entitlement state, while Apple's handling of payment and store account information is governed by Apple's own policies.\nStorageRadar does not require you to create a separate app account to use core features.\nLocal-only MCP integration\nStorageRadar's MCP integration is designed to stay local on 127.0.0.1 and read-only. It does not provide remote cloud processing, file-content access, delete operations, or move operations.\nPermissions and filesystem access\nStorageRadar may request macOS permissions that are relevant to storage analysis and cleanup workflows, such as access needed to inspect protected folders or app-related locations.\nThese permissions are used to improve local coverage on your Mac. They do not change the product's local-first design, and blocked paths are surfaced explicitly when access is incomplete.\nRetention, deletion, and your choices\nBecause StorageRadar stores its core data locally and does not require an account, the main privacy controls are available directly on your Mac through the app and through local file removal.\nYou can turn off privacy-safe product analytics in Settings to stop new analytics delivery.\nYou can turn off Sentry diagnostics and feedback delivery in Settings to stop new Sentry delivery.\nYou can clear the local operation log and reset local usage metrics in Settings.\nYou can delete snapshots in Reports & Access → Snapshots and clear local analytics fallback data from Settings where available.\nFor complete local data removal, uninstall the app and remove the StorageRadar Application Support folder from your Mac.\nImportant limitation\nTurning off analytics or diagnostics stops new delivery. It does not retroactively erase information that may already have been processed by the relevant provider before you disabled the setting.\nBecause StorageRadar does not maintain a required user account for core app usage, we generally do not have a customer profile that maps your local scan history to an online identity.\nNo advertising profile or cloud workspace\nStorageRadar is not built around advertising profiles, cross-service tracking, or a hosted cloud workspace for your scans and cleanup history.\nThe app's core value proposition is local review-first analysis on your Mac, not remote storage of your filesystem activity.\nEmail updates and the StorageRadar website\nIf you choose to subscribe to product update emails on the StorageRadar website, we collect the email address you submit, along with the page source and your selected site language, so we can send you release notes and occasional product updates. This is optional and separate from using the StorageRadar app — you can download and use StorageRadar without subscribing.\nThese email subscriptions are processed by Resend, our email service provider, which stores the contact and handles delivery and unsubscribe requests on our behalf. Every email includes an unsubscribe link, and you can ask us to delete your contact at any time. We do not sell email addresses or use them for anything other than StorageRadar product updates.\nContact\nIf you have privacy questions about StorageRadar, or if you need help understanding which local controls apply to your setup, contact us at the address below.\nEmail:\nsupport@storageradar.app\nWebsite:\nhttps://storageradar.app\nIf your data practices change, this page should be updated before the matching App Store privacy metadata is published for a new version.\nStorageRadar\nPrivacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control.\nProduct\nFeatures\nPricing\nApp Store & Direct\nDirect build\nInfo\nBlog\nSupport\nAbout\nCompare\nPrivacy\nFAQ\nChangelog\nMCP Docs\n© 2026 StorageRadar. All rights reserved.\nMade for Mac",
+      "method": "Public HTTP read; retained HTML"
+    },
+    {
+      "id": "S7",
+      "publisher": "Apple App Store / developer supplied listing",
+      "url": "https://apps.apple.com/us/app/storageradar/id6759776887",
+      "finalUrl": "https://apps.apple.com/us/app/storageradar-disk-space/id6759776887",
+      "retrievedAtUtc": null,
+      "checkedAtUtc": "2026-10-21T22:16:03.771725+00:00",
+      "retrievalTimeNote": "Read by WebFetch in this job before packet assembly; exact HTTP retrieval timestamp unavailable. checkedAtUtc is assembly/check time, not fabricated capture time.",
+      "rawPath": "docs/content/competitors/storagerader/evidence/app-store.html",
+      "sha256": "9ad891cb074426b7d1ca2a6a3f238b1250443fc924565319f182dcab89e63589",
+      "text": "‎StorageRadar: Disk Space App - App Store\nSearch\nDiscover\nArcade\nCreate\nWork\nPlay\nDevelop\nCategories\nPlatform\niPhone\niPad\nMac\nVision\nWatch\nTV\nStorageRadar: Disk Space\nDeveloper Cache Cleanup\nOnly for Mac\nFree · In‑App Purchases\nShare\nAge Rating\n4+\nYears\nCategory\nUtilities\nDeveloper\nVladimir Chemeris\nLanguage\nEN\n+ 9 More\nSize\n12.6\nMB\nMac\nClean Xcode, Docker, caches, app leftovers, and large files after you review exact paths and risk. StorageRadar keeps scan data on your Mac.\n\nFree up disk space without guessing. StorageRadar scans your Mac, then shows Xcode data, Docker data, app leftovers, caches, large files, and blocked paths before you delete anything.\n\nStart with a scan. Review exact paths, sizes, and risk. Run Dry Run, Preview Removal, or Guided Preflight where StorageRadar offers them. You choose the cleanup.\n\nDeveloper cleanup groups Xcode, Docker, package managers, DerivedData, simulators, build caches, and other toolchains by ecosystem and risk. App Uninstaller shows leftover files before removal. Disk Map and Large Files help you find the folders and files taking space.\n\nThe Free tier lets you inspect Disk Analysis, App Uninstaller, Dev Cleanup, Reports, Permissions, and local snapshots before you buy. Core unlocks cleanup actions and App Uninstaller removal. Developer adds Dev Cleanup actions, report compare, and export.\n\nScan indexes, cleanup history, snapshots, and reports stay on your Mac. Network access handles App Store purchases, restore flows, optional analytics, optional diagnostics, and the local MCP endpoint if you turn it on. The MCP endpoint exposes disk analytics and leaves file contents private. It cannot delete files.\n\nSome cleanup results can stay partial when macOS permissions or sandbox rules block protected paths. StorageRadar shows those blocked paths so you can grant access or narrow the target.\n\nStorageRadar has no subscription. Family Sharing works where Apple supports it.\nmore\nRatings & Reviews\nThis app hasn’t received enough ratings or reviews to display an overview.\nA Smart Tool That Truly Supports Education\nMay 3\nMan.Osm\nHonestly, I didn’t expect an app like Storage Radar to have such a strong impact on the education environment. As an educator, I constantly struggle with file clutter and limited storage, especially with large projects and study materials. This app completely changed how I manage my storage.What I like most is that it doesn’t delete things randomly—it gives you a clear view of every file and its path, with the option to review everything before making any decision. That’s extremely important in education, where losing important documents or research by mistake is not an option. The “review-first” approach makes everything feel safer and more professional.\nDeveloper Response\nThank you for such a thoughtful review.I’m really glad Storage Radar helps with managing large projects and study materials safely. The app is intentionally built around a review-first workflow, so you can see what takes space, check the exact paths, and make the final decision yourself.I really appreciate you sharing this.\nA Smart Tool That Truly Supports Education\nMay 3\nMan.Osm\nHonestly, I didn’t expect an app like Storage Radar to have such a strong impact on the education environment. As an educator, I constantly struggle with file clutter and limited storage, especially with large projects and study materials. This app completely changed how I manage my storage.What I like most is that it doesn’t delete things randomly—it gives you a clear view of every file and its path, with the option to review everything before making any decision. That’s extremely important in education, where losing important documents or research by mistake is not an option. The “review-first” approach makes everything feel safer and more professional.\nDeveloper Response\nMay 4\nThank you for such a thoughtful review.I’m really glad Storage Radar helps with managing large projects and study materials safely. The app is intentionally built around a review-first workflow, so you can see what takes space, check the exact paths, and make the final decision yourself.I really appreciate you sharing this.\nWhat’s New\nVersion History\n• Scans keep going while macOS asks for access. If macOS shows an access dialog during a Home Folder scan, StorageRadar finishes the scan and lists the folders that didn't open in time. Answer the dialog, then rescan. Before, the scan stayed at 0 files until you answered.\n• Categories appear right after a scan. Before, the bar in Disk Overview showed only Other & not scanned until you restarted the app.\n3.0.6\n6d ago\n• Docker inside Colima is counted once. When Docker runs in the Colima VM, its images and build cache live on the VM disk that Colima Runtime Data already counts. The Developer caches total added them a second time. The Docker card now shows an Inside Colima VM label.\n3.0.5\nOct 14\n• Undo in Developer caches. After a cleanup, the Undo button stays on screen for 10 seconds and returns the items from the Trash. Before, this screen moved items to the Trash without it.\n• Review & Apply scrolls again. With dozens of simulators, Xcode archives or other items, the window cut off the Run Dry Run and Apply Cleanup buttons.\n3.0.4\nOct 13\n• The developer scan no longer ends in an error on a Mac without Xcode data. StorageRadar says there is no Xcode data on this Mac and opens Dev Cleanup, which still covers caches from Homebrew, npm, Docker and other developer tools.\n• If StorageRadar can't open ~/Library/Developer yet, it asks for access once and scans the folder right away.\n• A new \"Rate StorageRadar…\" item in the app menu.\n3.0.2\nOct 13\n• A redesigned interface throughout: a new color, type and spacing system, a brand accent in place of the system blue, and one category palette that reads correctly in both light and dark.\n• The sidebar is now five sections, and Disk Overview is the new home screen — free space, what is using it, and what you can reclaim, with honest states for a first launch, a scan in progress, and a disk with nothing to clean.\n• Disk Map is colored by category, with breadcrumbs, a legend and an inspector panel, and it refreshes after a cleanup instead of asking for another scan.\n• Duplicate Review rebuilt: stage-by-stage scan progress, file counts per group, a 10-second undo window, and empty states that tell you which kind of empty you are looking at.\n• App Uninstaller and Dev Cleanup reworked — a removal plan reads as one line, a missing permission reads as a task instead of an error, and every cleanup profile states its consequence before you run it.\n• Scanning reports a real percentage with a Stop button, stops the moment you ask, and post-processing is faster.\n• Size numbers reconciled across the app: folder totals, category sums and header counts now agree with the lists beneath them.\n• Every remaining English string translated across all 10 languages, with real plural forms in place of \"file(s)\".\n3.0.0\nSep 22\n• App Uninstaller: Preview Removal now works even while the app you want to remove is still running — previewing is a safe dry run and never deletes anything.\n• Move to Trash no longer asks you to quit the app by hand, and no longer stalls on apps that keep a background helper running. StorageRadar closes them for you and says so up front.\n• If an app truly cannot be closed automatically, StorageRadar now tells you instead of retrying silently.\n• Clearer error reporting for scanning, purchases, and restoring purchases.\n2.2.4\nJul 10\n• Improved diagnostics for scanning and in-app purchases, helping us detect and fix rare issues faster.\n• Minor internal refinements for better long-term reliability.\n2.2.2\nJul 10\n• More reliable scanning on large disks — scans no longer stall or slow to a crawl, even with lots of cloud files.\n• Background scans keep full speed when the app is minimized.\n• The scanner now skips unreachable iCloud files and network drives instead of getting stuck, so every scan finishes.\n• Improved diagnostics to pinpoint where a slow scan gets stuck.\n2.2.1\nJul 6\nStorageRadar 2.2.0 updates the App Store listing for disk space, Xcode, Docker, and cleanup searches. Cleanup behavior stays the same.\n2.2.0\nJul 5\n• Disk Map fix — the disk map now builds reliably after a scan instead of getting stuck on \"preparing.\"\n• Clearer status — if preparation ever fails, you see a clear message instead of an endless spinner.\n• Stability improvements and minor fixes throughout.\n2.1.9\nJun 30\n• Clearer removal confirmation — before an app leaves your Mac you see exactly what happens: its icon, how many items and how much space, and a plain \"will be moved to Trash\" instead of a wall of text.\n• Nothing hidden — items that may hold your data are flagged in amber; anything that can't be removed (no access or system-protected) is listed separately under \"Won't be removed.\"\n• A clear finish — removing an app ends on a summary that counts up the space you reclaimed, next to the app name and where it lived.\n• Honest about the Trash — when an app moves to the Trash, you're told the space returns once you empty it, with Empty Trash (or Open Trash) right there.\n• Leftovers in one step — if related caches or settings remain, the summary shows how much is left and takes you straight to review them.\n• Undo you can trust — the Undo button only ever reverses the removal you just made.\n• Buttons that fit — permission guidance now wraps cleanly on smaller screens, with nothing cut off.\n• Stability improvements and minor fixes throughout.\n2.1.0\nJun 15\nWhat's new in 2.0.4\n\n• Refreshed design — lighter, more native look across every screen with consistent spacing and calmer colors.\n• Smarter first run — the app starts with a safe Home Folder scan; nothing is removed without your confirmation.\n• Duplicate Review update — cleaner layout, larger text, less on-screen clutter, and visible scan progress.\n• Accessible risk levels — safe, caution, and danger are now distinguished by icon as well as color, with full Increase Contrast support.\n• Clearer Unlock screen — benefit-focused wording and a recommended plan help you pick the right tier at a glance.\n• Fully localized — the entire app now reads naturally in 10 languages: English, German, Spanish, French, Japanese, Korean, Dutch, Portuguese (Brazil), Russian, and Simplified Chinese.\n• Stability improvements and minor fixes throughout.\n2.0.4\nJun 9\n- Stopped scans now properly release temporary data — no more phantom disk usage after cancelling a scan\n- Scan cache is cleaned automatically when the app starts, recovering space from any previous interrupted sessions\n- Improved reliability for users with multiple external drives and large storage setups\n2.0.1\nJun 8\nSmarter duplicate detection, guided tips, and a more responsive Disk Map.\n\n- Exact Folders now detects cloud-only files and skips them safely, so scans are faster and more accurate on iCloud and managed storage\n- Duplicate Review is smoother on large scans with clearer group ordering, faster scrolling, and a focused preview before moving anything to Trash\n- Guided Onboarding highlights the next step on Home and Disk Analysis without getting in the way\n- Disk Map labels and action buttons are clearer and easier to read\n- Active scans and long-running tasks are easier to follow with a top activity strip and Stop controls\n- Stability, performance, and privacy-safe diagnostics improved across cleanup, uninstall, purchases, and reports\n1.9.9\nMay 29\nStorageRadar 1.9.5 is a larger App Store update focused on clearer review-first cleanup.\n\n- Duplicate Review is smoother on large scans, with clearer group ordering, faster scrolling, and a more focused Preview flow before you move anything to Trash\n- Disk Map details are easier to understand, with clearer file and folder labels, readable action buttons, and improved wording across supported languages\n- Guided onboarding helps you find the right next step in Home and Disk Analysis without getting in the way\n- Active scans and long-running work are easier to follow with a top activity strip and Stop controls where supported\n- Stability, performance, and privacy-safe diagnostics have been improved across cleanup, uninstall, purchases, and reports\n1.9.5\nMay 22\n- Clearer purchase and restore diagnostics for easier help if an unlock does not complete\n- Smoother upgrade flow with better product availability checks before checkout\n- Privacy-safe diagnostics improvements that help improve cleanup workflows without collecting file paths, file names, bundle IDs, transaction IDs, or license keys\n- General stability and reliability improvements\n1.6.2\nMay 14\n- New App Store Review option in Settings, so it is easier to rate StorageRadar after it helps you understand or reclaim space\n- Clearer Feedback & Diagnostics separation: private issue reports stay separate from public App Store reviews\n- More considerate rating prompts that appear only after successful review-first cleanup moments\n- General stability improvements\n1.6.1\nMay 2\n- Fixed a language override bug where choosing English could leave parts of the interface stuck in the system language\n- App Uninstaller identifies related files more accurately and no longer includes unrelated shared containers in the removal plan\n- Improved error reporting for App Uninstaller — clearer messages when something goes wrong during uninstall\n- General stability improvements and performance optimizations\n1.6.0\nApr 24\n- Copy a full purchase diagnostics report to clipboard — one tap helps support resolve license questions faster\n- Recover a direct license from your App Store purchase without re-entering a key\n- Manual license activation is more reliable with clearer, specific error messages for every scenario\n- New cleanup guardrails warn before deleting protected or system-critical paths\n- Collector workflow bridges analysis and cleanup — review collected items before applying batch actions\n- App Uninstaller switches plans smoothly between apps without flashing empty states\n- Dev Cleanup summary bar now shows clear progress and status while cleanup runs\n- Overall trust and clarity improvements across license activation, diagnostics, and recovery flows\n1.5.2\nApr 23\n- Dev Cleanup refresh is now noticeably faster on large developer folders\n- Progress updates are smoother and less jumpy while cleanup targets are being measured\n- Batch Apply for safe profiles moves to the next profile without the extra wait between steps\n- Dev Cleanup cards scroll and resize more smoothly, especially in dense or narrow layouts\n1.4.6\nApr 20\n- See free disk space in the title bar while you work\n- Dev Cleanup now shows how much safe space is reclaimable at a glance\n- Folder pickers skip redundant permission steps for a faster, cleaner access flow\n- Small window and layout polish for a more compact workspace\n1.4.5\nApr 19\n- Fixed a crash that could occur when scanning certain folder structures with duplicate path entries\n- Large Files screen no longer freezes for several seconds when displaying many items\n1.4.1\nApr 16\n- Remove multiple apps at once with a single confirmation dialog instead of one per app\n- Running apps are now gracefully quit before removal — no more \"close the app first\" roadblock\n- System-protected apps (SIP) are clearly marked and explained, so you know which ones cannot be removed\n- Reveal in Finder button gives you a manual fallback when automatic deletion is not possible\n- Copy Diagnostics copies a full error report to clipboard for easier troubleshooting and support\n- Clearer, more specific error messages replace generic \"permission denied\" for every failure scenario\n- Fixed a bug where admin users could see incorrect non-admin error messages\n1.4.0\nApr 16\n- App Uninstaller now refreshes automatically after you grant app-folder or Library access, so you can keep moving without manual rescans\n- Better app discovery across /Applications, Home-folder apps, and related data in Library for a fuller uninstall view\n- More complete data detection for Steam, Android Studio, and JetBrains-based apps when support files live in shared vendor folders\n- More accurate Detected App Data and Preview Removal details before you decide what to delete\n- Smoother permission guidance and more consistent results between the Home flow and the direct App Uninstaller flow\n1.3.9\nApr 15\nStorageRadar 1.3.6 is here.\n\n- New one-time purchase model: Free stays preview-first, User unlocks cleanup and App Uninstaller apply, and Developer unlocks Dev Cleanup apply plus Reports compare and export\n- Refreshed workspaces across Home, App Uninstaller, Dev Cleanup, Reports, and Permissions for a clearer review-first flow\n- Better low-resolution layout handling so key actions stay visible on compact MacBook screens\n- More confident cleanup with exact paths, risk-aware grouping, Preview Removal, Dry Run, and Guided Preflight before final actions\n- Smoother day-to-day use with better access reuse, stronger workspace continuity, and more polished app removal flows\n- Core storage data stays on your Mac. No subscription.\n1.3.6\nApr 13\n• Scans keep going while macOS asks for access. If macOS shows an access dialog during a Home Folder scan, StorageRadar finishes the scan and lists the folders that didn't open in time. Answer the dialog, then rescan. Before, the scan stayed at 0 files until you answered.\n• Categories appear right after a scan. Before, the bar in Disk Overview showed only Other & not scanned until you restarted the app.\nmore\nVersion 3.0.6\n6d ago\nApp Privacy\nApp Privacy\nThe developer,\nVladimir Chemeris\n, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the\ndeveloper’s privacy policy\n.\nTo help you better understand the developer’s responses, see\nPrivacy Definitions and Examples\n.\nPrivacy practices may vary, for example, based on the features you use or your age.\nLearn More\nData Not Linked to You\nThe following data, which may be collected but is not linked to your identity, may be used for the following purposes:\nAnalytics\nUsage Data\nProduct Interaction\nDiagnostics\nCrash Data\nThe developer,\nVladimir Chemeris\n, indicated that the app’s privacy practices may include handling of data as described below. For more information, see the\ndeveloper’s privacy policy\n.\nData Not Linked to You\nThe following data may be collected but it is not linked to your identity:\nUsage Data\nDiagnostics\nPrivacy practices may vary, for example, based on the features you use or your age.\nLearn More\nAccessibility\nThe developer has not yet indicated which accessibility features this app supports.\nLearn More\nInformation\nSeller\nVladimir Chemeris\nSize\n12.6 MB\nCategory\nUtilities\nCompatibility\nRequires macOS 15.0 or later.\nMac\nRequires macOS 15.0 or later.\nLanguages\nEnglish and 9 more\nEnglish, Dutch, French, German, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish\nAge Rating\n4+\n4+\nLearn More\nIn-App Purchases\nYes\nDeveloper\n$19.99\nUser\n$9.99\nUpgrade to Developer\n$9.99\nLearn More\nCopyright\n© 2026 Vladimir Chemeris\nDeveloper Website\nPrivacy Policy\nSupports\nFamily Sharing\nSome in-app purchases and subscriptions may be shareable with your family group when Family Sharing is enabled.\nLearn More\nMore by Vladimir Chemeris\nView\niPerf3 Client & Server\nProfessional Network Testing\nView\nOpen Links in Apps\nOpen apps • Clean links\nView\nMQTT Commander\nWatch your MQTT broker live\nView\nProbeDeck: ClickHouse® Client\nCluster Monitor, Kill Query\nView\nCacheDeck: Redis® Client\nCluster, SSH tunnel, Streams\nView\nOffline AI Translator & Chat\nPrivate offline AI translation\nView\nModbus TCP FieldKit\nClient, Server, Simulator\nUnited States\nEspañol (México)\nالعربية\nРусский\n简体中文\nFrançais (France)\n한국어\nPortuguês (Brazil)\nTiếng Việt\n繁體中文 (台灣)\nSelect a country or region\nAfrica, Middle East, and India\nSee All\nAlgeria\nAngola\nArmenia\nAzerbaijan\nBahrain\nBenin\nBotswana\nBurkina Faso\nCameroun\nCape Verde\nChad\nCôte d’Ivoire\nCongo, The Democratic Republic Of The\nEgypt\nEswatini\nGabon\nGambia\nGhana\nGuinea-Bissau\nIndia\nIraq\nIsrael\nJordan\nKenya\nKuwait\nLebanon\nLiberia\nLibya\nMadagascar\nMalawi\nMali\nMauritania\nMauritius\nMorocco\nMozambique\nNamibia\nNiger (English)\nNigeria\nOman\nQatar\nCongo, Republic of\nRwanda\nSão Tomé and Príncipe\nSaudi Arabia\nSenegal\nSeychelles\nSierra Leone\nSouth Africa\nSri Lanka\nTajikistan\nTanzania, United Republic Of\nTunisia\nTurkmenistan\nUnited Arab Emirates\nUganda\nYemen\nZambia\nZimbabwe\nAsia Pacific\nSee All\nAfghanistan\nAustralia\nBhutan\nBrunei Darussalam\nCambodia\n中国大陆\nFiji\n香港\nIndonesia (English)\n日本\nKazakhstan\n대한민국\nKyrgyzstan\nLao People's Democratic Republic\n澳門\nMalaysia (English)\nMaldives\nMicronesia, Federated States of\nMongolia\nMyanmar\nNauru\nNepal\nNew Zealand\nPakistan\nPalau\nPapua New Guinea\nPhilippines\nSingapore\nSolomon Islands\n台灣\nThailand\nTonga\nTurkmenistan\nUzbekistan\nVanuatu\nVietnam\nEurope\nSee All\nAlbania\nArmenia\nÖsterreich\nBelarus\nBelgium\nBosnia and Herzegovina\nBulgaria\nCroatia\nCyprus\nCzechia\nDenmark\nEstonia\nFinland\nFrance (Français)\nGeorgia\nDeutschland\nGreece\nHungary\nIceland\nIreland\nItalia\nKosovo\nLatvia\nLithuania\nLuxembourg (English)\nMalta\nMoldova, Republic Of\nMontenegro\nNederland\nNorth Macedonia\nNorway\nPoland\nPortugal (Português)\nRomania\nРоссия\nSerbia\nSlovakia\nSlovenia\nEspaña\nSverige\nSchweiz\nTürkiye (English)\nUkraine\nUnited Kingdom\nLatin America and the Caribbean\nSee All\nAnguilla\nAntigua and Barbuda\nArgentina (Español)\nBahamas\nBarbados\nBelize\nBermuda\nBolivia (Español)\nBrasil\nVirgin Islands, British\nCayman Islands\nChile (Español)\nColombia (Español)\nCosta Rica (Español)\nDominica\nRepública Dominicana\nEcuador (Español)\nEl Salvador (Español)\nGrenada\nGuatemala (Español)\nGuyana\nHonduras (Español)\nJamaica\nMéxico\nMontserrat\nNicaragua (Español)\nPanamá\nParaguay (Español)\nPerú\nSt. Kitts and Nevis\nSaint Lucia\nSt. Vincent and The Grenadines\nSuriname\nTrinidad and Tobago\nTurks and Caicos\nUruguay (English)\nVenezuela (Español)\nThe United States and Canada\nSee All\nCanada (English)\nCanada (Français)\nUnited States\nEstados Unidos (Español México)\nالولايات المتحدة\nСША\n美国 (简体中文)\nÉtats-Unis (Français France)\n미국\nEstados Unidos (Português Brasil)\nHoa Kỳ\n美國 (繁體中文台灣)\nCopyright © 2026\nApple Inc.\nAll rights reserved.\nInternet Service Terms\nApp Store & Privacy\nCookie Warning\nSupport",
+      "method": "Retained complete WebFetch HTML output; canonical URL from link rel=canonical, not an asserted redirect"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "wording": "The directory name StorageRader resolves to official StorageRadar.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "StorageRadar",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Directory official link storageradar.chama.pro redirected to storageradar.app in retained batch-2 evidence; same listing identity, not a second product.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C02",
+      "wording": "StorageRadar identifies its founder as Vladimir Chemeris.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/about/"
+      ],
+      "excerpt": "Vladimir Chemeris",
+      "checkedAtUtc": "2026-10-21T22:13:24.615190+00:00",
+      "scope": "Also corroborated by App Store seller. Do not substitute country or company inferred from a directory.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C03",
+      "wording": "The App Store edition requires macOS 15.0 or later.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S7"
+      ],
+      "sourceUrls": [
+        "https://apps.apple.com/us/app/storageradar-disk-space/id6759776887"
+      ],
+      "excerpt": "Requires macOS 15.0 or later.",
+      "checkedAtUtc": "2026-10-21T22:16:03.771725+00:00",
+      "scope": "US Mac listing; no Windows/Linux or processor compatibility claim established.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C04",
+      "wording": "Vendor release history lists version 3.0.8, build 308, dated 2026-10-21.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/changelog/"
+      ],
+      "excerpt": "3.0.8",
+      "checkedAtUtc": "2026-10-21T22:13:25.578532+00:00",
+      "scope": "Vendor release history, not proof this is the version in every distribution channel.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C05",
+      "wording": "The US App Store page checked in this job displays version 3.0.6.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S7"
+      ],
+      "sourceUrls": [
+        "https://apps.apple.com/us/app/storageradar-disk-space/id6759776887"
+      ],
+      "excerpt": "3.0.6",
+      "checkedAtUtc": "2026-10-21T22:16:03.771725+00:00",
+      "scope": "Channel-specific listing observation; do not call 3.0.8 the current App Store version. No installer downloaded.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C06",
+      "wording": "StorageRadar documents Treemap and Sunburst, large files, exact duplicate review and batch cleanup review.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Treemap & Sunburst visualization\nLarge Files with filters & search\nDuplicate Review for exact file copies\nCleanup List for batch operations",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Vendor documentation; no coverage, accuracy or performance benchmark.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C07",
+      "wording": "Free includes scanning, previews, dry run and local snapshot capture/history; applying cleanup and report compare/export are excluded.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Move to Trash / Delete\nApp Uninstaller apply\nDev Cleanup apply\nReports compare & export",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "These lines are under Free / Not included. Snapshot capture is not the same entitlement as comparison/export.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C08",
+      "wording": "The homepage advertises Core at $9.99 USD, Developer at $19.99 USD and Core-to-Developer upgrade at $9.99, one-time rather than subscription.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Free keeps preview access across all main workspaces · Upgrade from Core to Developer is $9.99 · USD pricing shown; regional App Store pricing may vary · No subscription · Family Sharing supported where available",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Core/Developer amounts in adjacent pricing cards. Region and Family Sharing conditions apply; no checkout tested.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C09",
+      "wording": "Core unlocks file cleanup and App Uninstaller apply; Developer adds Dev Cleanup apply and report compare/export.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Dev Cleanup apply\nEcosystem profiles (Xcode, npm…)\nStep-by-step pre-apply review\nReports compare over time\nJSON / Markdown / CSV export",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Developer includes Core. Do not present paid apply actions as free.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C10",
+      "wording": "StorageRadar says removal follows review, with Trash/undo distinguished from permanent deletion.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Move to Trash supports a quick undo window: you can restore items from Trash via Finder afterward. Delete Permanently does not support undo.",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Documented controls, not a safety guarantee. No cleanup run. Trash movement is not immediate free-space recovery.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C11",
+      "wording": "Developer profiles cover Apple, Web, Backend, Android, Data and Containers ecosystems.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Dev Cleanup covers six groups: Apple (Xcode DerivedData, Archives, simulators, device support, SwiftPM, CocoaPods, Carthage), Web (npm, pnpm, Yarn, Corepack, and node-gyp caches), Backend (Homebrew, JetBrains, Composer, Go, and Rust Cargo caches), Android (Gradle caches, the Android SDK cache, emulator artifacts), Data (pip and pytest caches), and Containers (Docker, Colima, Podman).",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Vendor catalogue; profile presence does not establish compatibility with every tool version or permission state.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C12",
+      "wording": "StorageRadar documents local snapshot history and Developer-tier diff/export for growth comparisons.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/"
+      ],
+      "excerpt": "Free and Core can capture snapshots and review that history; Developer unlocks diff and export to answer 'what grew, shrank, appeared, or disappeared?'",
+      "checkedAtUtc": "2026-10-21T19:09:44.535562+00:00",
+      "scope": "Point-in-time comparisons; do not infer a continuous watcher, process attribution or scheduled cleanup.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C13",
+      "wording": "Vendor documentation says core storage data stays local, with opt-out analytics and diagnostics enabled by default.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/privacy/"
+      ],
+      "excerpt": "this analytics delivery is enabled by default and can be turned off in Settings.",
+      "checkedAtUtc": "2026-10-21T22:13:26.095101+00:00",
+      "scope": "Aptabase analytics and Sentry diagnostics are documented remote channels; policy assertions, not an audit. Never say no network traffic or no telemetry.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C14",
+      "wording": "The optional MCP endpoint is documented as local and read-only without file-content or mutation access.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/privacy/"
+      ],
+      "excerpt": "It does not provide remote cloud processing, file-content access, delete operations, or move operations.",
+      "checkedAtUtc": "2026-10-21T22:13:26.095101+00:00",
+      "scope": "Describes StorageRadar endpoint, not any external assistant client privacy policy.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C15",
+      "wording": "The Direct build is documented as outside App Store sandboxing and uses a separately activated licence key.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/direct/"
+      ],
+      "excerpt": "The Direct build gets broader macOS access for advanced and developer cleanup that sandboxing limits on the App Store.",
+      "checkedAtUtc": "2026-10-21T22:13:25.079335+00:00",
+      "scope": "Broader access is vendor-described; macOS permissions still apply. Signing/notarization not independently checked.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C16",
+      "wording": "The Direct page currently labels the Core-to-Developer upgrade $10.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://storageradar.app/direct/"
+      ],
+      "excerpt": "Upgrade Core → Developer — $10",
+      "checkedAtUtc": "2026-10-21T22:13:25.079335+00:00",
+      "scope": "Different channel/page from homepage $9.99 upgrade. Preserve both; do not silently round or assert one universal upgrade price.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "C17",
+      "wording": "App Store metadata labels the download free with in-app purchases.",
+      "state": "verified",
+      "evidenceClass": "officially-documented, not hands-on-tested",
+      "sourceIds": [
+        "S7"
+      ],
+      "sourceUrls": [
+        "https://apps.apple.com/us/app/storageradar-disk-space/id6759776887"
+      ],
+      "excerpt": "Free · In‑App Purchases",
+      "checkedAtUtc": "2026-10-21T22:16:03.771725+00:00",
+      "scope": "Free download does not mean paid apply/report actions are free; actual purchases and availability in other storefronts untested.",
+      "intendedLocation": "comparison matrix / workflow brief",
+      "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+      "unresolvedQuestions": []
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "macOS compatibility",
+      "value": "macOS 15.0+ App Store edition; architecture not verified",
+      "claimIds": [
+        "C03"
+      ]
+    },
+    {
+      "dimension": "versions",
+      "value": "Vendor history 3.0.8 build 308 (2026-10-21); US App Store displays 3.0.6",
+      "claimIds": [
+        "C04",
+        "C05"
+      ]
+    },
+    {
+      "dimension": "licence",
+      "value": "Paid one-time unlocks; source-code licence not verified",
+      "claimIds": [
+        "C08",
+        "C09"
+      ]
+    },
+    {
+      "dimension": "local / hosted",
+      "value": "Local scan data and no required app account documented; analytics/diagnostics are remote and opt-out",
+      "claimIds": [
+        "C13"
+      ]
+    },
+    {
+      "dimension": "scan / cleanup model",
+      "value": "Treemap/Sunburst, large files, duplicates; review then paid apply",
+      "claimIds": [
+        "C06",
+        "C07",
+        "C09"
+      ]
+    },
+    {
+      "dimension": "approval controls",
+      "value": "Dry run / pre-apply review; Trash undo differs from irreversible permanent deletion",
+      "claimIds": [
+        "C10"
+      ]
+    },
+    {
+      "dimension": "helper grouping",
+      "value": "CPU/memory app-helper grouping not verified; do not write No",
+      "claimIds": []
+    },
+    {
+      "dimension": "recurring growth",
+      "value": "Local snapshots; Developer diff/export. Continuous watcher not verified",
+      "claimIds": [
+        "C12"
+      ]
+    },
+    {
+      "dimension": "developer caches",
+      "value": "Six documented ecosystem groups; Developer apply; build/access restrictions",
+      "claimIds": [
+        "C11",
+        "C15"
+      ]
+    },
+    {
+      "dimension": "pricing",
+      "value": "Free previews; Core $9.99 USD; Developer $19.99 USD; homepage upgrade $9.99 / Direct upgrade $10",
+      "claimIds": [
+        "C07",
+        "C08",
+        "C09",
+        "C16"
+      ]
+    },
+    {
+      "dimension": "runtime / installation",
+      "value": "App Store and Direct build differ in sandbox scope; external runtime requirements and native signature/notarization not verified",
+      "claimIds": [
+        "C15"
+      ]
+    },
+    {
+      "dimension": "AI",
+      "value": "Local read-only MCP, not deletion authority; no parity claim with hosted Breathing Room assistant",
+      "claimIds": [
+        "C14"
+      ]
+    }
+  ],
+  "breathingRoomEvidence": {
+    "path": "docs/content/capabilities.md",
+    "checkedOn": "2026-10-21",
+    "refetched": false,
+    "method": "Reused current first-party evidence register, source/published distinctions retained; not new runtime validation.",
+    "homepage": "https://breathing-room.chatic.ai/",
+    "releaseUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1",
+    "claims": [
+      {
+        "id": "BR01",
+        "wording": "0.1.0-preview.1 preview, macOS 13+, universal installer advertised; physical Intel and clean-machine behavior unvalidated.",
+        "locator": "capabilities.md:48-54",
+        "sourceUrls": [
+          "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+        ],
+        "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised.",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      },
+      {
+        "id": "BR02",
+        "wording": "Apple Development signed preview, not Developer ID signed/notarized; Python 3.10+ disclosed, not bundled.",
+        "locator": "capabilities.md:50-52",
+        "sourceUrls": [
+          "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+        ],
+        "excerpt": "Apple Development signed, not Developer ID signed or notarized",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      },
+      {
+        "id": "BR03",
+        "wording": "Free local inspection/monitoring, optional AI Care advertised at $5 USD/month or $50/year; renews until cancelled, tax may apply.",
+        "locator": "capabilities.md:74-79",
+        "sourceUrls": [
+          "https://breathing-room.chatic.ai/#pricing"
+        ],
+        "excerpt": "$5 USD/month",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      },
+      {
+        "id": "BR04",
+        "wording": "Hosted AI needs network/authentication and can send relevant paths/process/storage information; do not describe all-local AI.",
+        "locator": "capabilities.md:60-66",
+        "sourceUrls": [
+          "https://breathing-room.chatic.ai/privacy/"
+        ],
+        "excerpt": "relevant paths/process/storage data can reach the service and Cloudflare Workers AI",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      },
+      {
+        "id": "BR05",
+        "wording": "Source implements grouped helper CPU/memory, local activity history and saved exact daily approvals while running; not proof of installer parity.",
+        "locator": "capabilities.md:24-40",
+        "sourceUrls": [
+          "https://github.com/bucabay/breathing-room-app"
+        ],
+        "excerpt": "Native sampling groups helpers through parent/app relationships and exposes CPU/memory.",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      },
+      {
+        "id": "BR06",
+        "wording": "Optional automatic Ruff-cache mode is an exception to ordinary interactive approvals; daily care uses exact saved approvals.",
+        "locator": "capabilities.md:36-42",
+        "sourceUrls": [
+          "https://github.com/bucabay/breathing-room-app"
+        ],
+        "excerpt": "Automatically move verified Ruff lint caches to Trash.",
+        "checkedOn": "2026-10-21",
+        "evidenceClass": "Reused first-party capability register; source/published evidence, not runtime test",
+        "supportingRegister": "docs/content/capabilities.md",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)"
+      }
+    ],
+    "requiredBeforePublication": "Recheck if material source/release changes; refresh volatile offers within 30 days. Retain native-runtime caveats.",
+    "registerSha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613"
+  },
+  "visuals": [
+    {
+      "id": "storageradar-app-store-disk-map",
+      "productId": "storagerader",
+      "view": "Disk Map listing screenshot candidate",
+      "kind": "listing-asset",
+      "sourcePageUrl": "https://apps.apple.com/us/app/storageradar-disk-space/id6759776887",
+      "assetUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/6f/35/e16f350f-5b50-ae19-07a6-d98938433ad8/2_see-your-disk-clearly.png/1286x804bb.webp",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "reuse": {
+        "status": "link-only",
+        "basis": "No licence or permission grant established. Public App Store display is not republication permission.",
+        "evidenceUrlOrPath": "docs/content/competitors/storagerader/evidence/app-store.html",
+        "credit": "StorageRadar / Vladimir Chemeris; source: Mac App Store"
+      },
+      "caption": "StorageRadar app screenshot supplied on its Mac App Store listing. Vendor illustration; version and capture date unknown; not our test.",
+      "alt": "StorageRadar disk visualization screenshot linked from its Mac App Store listing; visual description pending inspection.",
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "supportedClaimIds": [
+        "C06"
+      ],
+      "limitations": [
+        "URL found inside Mac App Previews and Screenshots shelf, not the social card or icon.",
+        "No competitor image downloaded because reuse rights are unclear; dimensions in URL are not measured file dimensions.",
+        "Image contents not independently opened or visually approved. Candidate alt/caption must be refined after rights-cleared inspection."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "kind": "browser-preview",
+      "view": "Space",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job (reused, not recaptured)",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room, which we build"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "supportedClaimIds": [],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Current-source means captured source commit, not a certification of every subsequent change. Retain both example-data banners; no numerical result claims."
+      ],
+      "review": {
+        "status": "research-visual-inspected",
+        "reviewer": "scheduled-research-storagerader (documentary research; not independent approval)",
+        "reviewedAtUtc": "2026-10-21T22:16:03.771725+00:00"
+      }
+    }
+  ],
+  "workflowArticleBrief": {
+    "status": "brief-only-blocked",
+    "track": "search/LLM reference",
+    "title": "Compare two Mac storage scans without mistaking permission gaps for growth",
+    "proposedSlug": "compare-mac-storage-scans-permission-gaps",
+    "primaryIntent": "Use baseline/target snapshots to investigate growth while holding scan root and permission coverage constant.",
+    "audience": "Mac developers whose storage keeps growing between work sessions",
+    "distinctMechanism": "StorageRadar snapshots, Developer compare/export, and visible blocked paths; contrast point-in-time diff with ongoing sampled activity.",
+    "conclusion": "Choose snapshot comparisons for a bounded before/after question; do not treat a new permission grant, mounted volume or changed scan root as proof an app generated new data.",
+    "outline": [
+      "Define one scan root and record build, time, scope and access coverage.",
+      "Review blocked paths before interpreting a baseline; unknown size is not zero.",
+      "Capture a second local snapshot of the same root; compare/export requires Developer.",
+      "Separate grew/new/removed from changed visibility and mounted-volume handling (3.0.8 release note).",
+      "Inspect exact paths and rebuild/download cost; review before any removal. No cleanup instructions executed here.",
+      "When repeated activity rather than two snapshots is the question, consider Breathing Room, which we build, with preview/hosted/paid caveats."
+    ],
+    "interactionHandoff": "A no-upload checklist with scan root, version, permissions changed?, and baseline/target timestamps. If scope/access changed, return incomparable, not a fabricated GB delta. No filesystem access or deletion.",
+    "visualPlan": "Rights-cleared StorageRadar Disk Map after lead, selected Breathing Room Space preview later with both example-data warnings; do not imply these show the same scan.",
+    "internalLinks": [
+      "/comparisons/",
+      "/comparisons/storagerader/"
+    ],
+    "unknownLinks": "Confirm counterpart route and suitable local tool route at draft stage; do not invent working links.",
+    "noHandsOn": "Documented workflow brief, not a claim that two scans were executed."
+  },
+  "comparisonBrief": {
+    "status": "brief-only-blocked",
+    "title": "Breathing Room vs StorageRadar: snapshots or ongoing activity?",
+    "proposedSlug": "storagerader",
+    "primaryIntent": "Choose between review-first storage snapshots and a maintenance preview with ongoing activity and optional hosted assistance.",
+    "classification": "direct for storage analysis/reviewed cleanup; partial overlap, not whole-product equivalents",
+    "rows": [
+      [
+        "macOS compatibility",
+        "macOS 15.0+ App Store edition; architecture not verified",
+        [
+          "C03"
+        ]
+      ],
+      [
+        "versions",
+        "Vendor history 3.0.8 build 308 (2026-10-21); US App Store displays 3.0.6",
+        [
+          "C04",
+          "C05"
+        ]
+      ],
+      [
+        "licence",
+        "Paid one-time unlocks; source-code licence not verified",
+        [
+          "C08",
+          "C09"
+        ]
+      ],
+      [
+        "local / hosted",
+        "Local scan data and no required app account documented; analytics/diagnostics are remote and opt-out",
+        [
+          "C13"
+        ]
+      ],
+      [
+        "scan / cleanup model",
+        "Treemap/Sunburst, large files, duplicates; review then paid apply",
+        [
+          "C06",
+          "C07",
+          "C09"
+        ]
+      ],
+      [
+        "approval controls",
+        "Dry run / pre-apply review; Trash undo differs from irreversible permanent deletion",
+        [
+          "C10"
+        ]
+      ],
+      [
+        "helper grouping",
+        "CPU/memory app-helper grouping not verified; do not write No",
+        []
+      ],
+      [
+        "recurring growth",
+        "Local snapshots; Developer diff/export. Continuous watcher not verified",
+        [
+          "C12"
+        ]
+      ],
+      [
+        "developer caches",
+        "Six documented ecosystem groups; Developer apply; build/access restrictions",
+        [
+          "C11",
+          "C15"
+        ]
+      ],
+      [
+        "pricing",
+        "Free previews; Core $9.99 USD; Developer $19.99 USD; homepage upgrade $9.99 / Direct upgrade $10",
+        [
+          "C07",
+          "C08",
+          "C09",
+          "C16"
+        ]
+      ],
+      [
+        "runtime / installation",
+        "App Store and Direct build differ in sandbox scope; external runtime requirements and native signature/notarization not verified",
+        [
+          "C15"
+        ]
+      ],
+      [
+        "AI",
+        "Local read-only MCP, not deletion authority; no parity claim with hosted Breathing Room assistant",
+        [
+          "C14"
+        ]
+      ]
+    ],
+    "disclosure": "Breathing Room, which we build",
+    "decision": "StorageRadar suits local snapshot/diff and documented duplicate/uninstall workflows with one-time paid unlocks. Breathing Room may suit sampled activity/process investigation and approval-based care, if preview and hosted-service caveats are acceptable.",
+    "caveats": "No measured speed, savings, safety, coverage or parity claims. No invented Windows support. Unknown competitor monitoring/helper grouping is not No."
+  },
+  "truthfulAdvantagesAndTradeoffs": {
+    "storageRadar": [
+      "Documented Treemap/Sunburst, exact-duplicate review and App Uninstaller; not verified capabilities of Breathing Room in current register.",
+      "Free local scanning and snapshot capture; Developer compare/export and developer cleanup require paid unlock.",
+      "One-time offers; core data local, but analytics and diagnostics default on. App Store sandbox limits differ from Direct.",
+      "Requires macOS 15+ on App Store, versus advertised macOS 13+ Breathing Room preview. Not a runtime compatibility test."
+    ],
+    "breathingRoom": [
+      "Source-backed grouped process monitoring/activity/care may fit ongoing investigation rather than just point-in-time diff.",
+      "Free core and Apache-2.0 desktop source, but hosted AI Care is separately advertised and not entirely offline.",
+      "Non-notarized preview, Python prerequisite and unvalidated installation/Intel behavior are real trade-offs. Do not declare winner from source alone."
+    ]
+  },
+  "noncriticalUnknowns": [
+    "Official source-code repository/licence",
+    "StorageRadar processor architectures and external-runtime requirements",
+    "StorageRadar native signature/notarization inspection",
+    "Exact screenshot build/capture date/data authenticity",
+    "Continuous monitoring, helper CPU/memory grouping and scheduled care in StorageRadar",
+    "Exact Direct currently downloadable binary version; no installer fetched",
+    "Actual checkout, activation, refunds and Family Sharing behavior"
+  ],
+  "sourceDiscrepancies": [
+    "Homepage upgrade $9.99 vs Direct page $10: retain channel-specific labels; do not assert universal upgrade cost.",
+    "Vendor 3.0.8 history vs US Store 3.0.6: distinguish channel/listing, not an unsupported parity claim.",
+    "About page calls one unlock User while pricing calls it Core; use pricing-page labels, no invented fourth plan."
+  ],
+  "blockers": [
+    {
+      "id": "VISUAL-RIGHTS",
+      "severity": "critical",
+      "gate": "drafting",
+      "diagnostic": "Real competitor app screenshot URL found in App Store shelf, but no republication licence/permission established. Kept link-only, not downloaded. Required on-page competitor visual gate is unsatisfied.",
+      "resolution": "Provide documented rights/permission for that app image or another permitted official/listing app screenshot, then download original, retain hash/provenance and visually inspect. Do not send permission requests in this scheduled job."
+    }
+  ],
+  "review": {
+    "status": "not-independent-review",
+    "score": null,
+    "publicationApproval": false
+  },
+  "safety": {
+    "browserUsed": false,
+    "imagesDownloaded": 0,
+    "binariesDownloaded": 0,
+    "installed": false,
+    "cleanup": false,
+    "signup": false,
+    "purchase": false,
+    "messages": false,
+    "credentialsRead": false,
+    "queueChanged": false,
+    "siteEdited": false
+  }
+}

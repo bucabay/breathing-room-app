@@ -1,0 +1,20 @@
+{
+  "jobId": "research-hidden-file-cleaner",
+  "checkedOn": "2026-10-21",
+  "method": "Executed read-only Python json/pathlib/hashlib/struct assertions against retained packets and PNG header.",
+  "result": "10/10 passed",
+  "checks": [
+    "JSON parses; product/canonical owner, blocked drafting and non-alias skip decision consistent",
+    "All 10 claims have valid source references, URLs, excerpts, dates and evidence classes",
+    "All matrix claim references resolve",
+    "Directory raw snapshot SHA-256 matches",
+    "Official baseline raw snapshot SHA-256 matches",
+    "Breathing Room PNG hash and 2940x3468 dimensions match screenshot library",
+    "Preview caption labels example data and non-native/non-measured results",
+    "Competitor image remains link-only with null asset paths/hashes",
+    "Distinct briefs and critical visual blocker retained",
+    "No competitor image downloaded into owned directory"
+  ],
+  "notPerformed": ["Competitor installation or cleanup", "Competitor image visual inspection", "Screenshot reuse clearance", "Site build/tests or browser QA", "Independent editorial review"],
+  "limitations": "Structural/provenance checks do not clear the visual-rights blocker or certify product behavior. No site edits, so website build/test commands were not run."
+}

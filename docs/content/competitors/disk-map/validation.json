@@ -1,0 +1,22 @@
+{
+  "jobId": "research-disk-map",
+  "checkedAtUtc": "2026-10-21T20:30:05.820823+00:00",
+  "result": "pass-structural-checks-not-draft-clearance",
+  "method": "Read-only Python json/hashlib/struct assertions executed against retained files; first-party image also opened with image-capable read tool.",
+  "checks": [
+    "JSON parses; 15 unique claim IDs and all source/matrix/visual references resolve",
+    "Both reused snapshot SHA-256 values match original bytes",
+    "Selected Breathing Room PNG SHA-256 and decoded dimensions 2940x3468 match manifest",
+    "All S1-only claim excerpt fragments occur verbatim in retained official text",
+    "Canonical owner, no-alias-skip and blocked link-only competitor image invariants pass",
+    "Research Markdown exists",
+    "First-party PNG visually inspected: example-data labels visible, composer overlap noted"
+  ],
+  "notRun": [
+    "Site check/build/tests: no site edits",
+    "Competitor binary/runtime tests",
+    "Competitor image download/render/rights clearance",
+    "Independent draft/browser QA"
+  ],
+  "limitations": "Claim-reference validation and source-excerpt checks are not independent factchecking or publication approval. New terms/privacy excerpts reviewed against WebFetch output, not a separately retained raw page. No competitor image bytes downloaded."
+}

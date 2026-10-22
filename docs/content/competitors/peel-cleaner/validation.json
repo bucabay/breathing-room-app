@@ -1,0 +1,537 @@
+{
+  "jobId": "research-peel-cleaner",
+  "checkedAtUtc": "2026-10-21T21:58:03.551432+00:00",
+  "passed": true,
+  "passedCount": 82,
+  "checkCount": 82,
+  "checks": [
+    {
+      "check": "packet parses and blocked gate is explicit",
+      "passed": true,
+      "detail": {
+        "allowed": false,
+        "blockerIds": [
+          "competitorScreenshotReuse"
+        ],
+        "publicationAllowed": false,
+        "independentReview": "pending separate review stage; no score awarded"
+      }
+    },
+    {
+      "check": "unique source and claim identifiers",
+      "passed": true,
+      "detail": "10 sources; 20 claims"
+    },
+    {
+      "check": "source exists: directory",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-2/peel-cleaner-directory.json"
+    },
+    {
+      "check": "source SHA-256: directory",
+      "passed": true,
+      "detail": "2fcca0dc98370d312245a61a2bc25deb43be7860fe090209afadd74199fce8e7"
+    },
+    {
+      "check": "source exists: homepage",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-2/peel-cleaner-official.json"
+    },
+    {
+      "check": "source SHA-256: homepage",
+      "passed": true,
+      "detail": "9a94a5228950adfffedb2c15a39e42e9066016865e67c683d1e87dce360fdc59"
+    },
+    {
+      "check": "source exists: release",
+      "passed": true,
+      "detail": "docs/content/competitors/peel-cleaner/evidence/release-v1.1.0.json"
+    },
+    {
+      "check": "source SHA-256: release",
+      "passed": true,
+      "detail": "9ab9079ee3b4a2797b5297114393983996a5c8528810e284fe2ec1e5822e39b2"
+    },
+    {
+      "check": "source exists: readme",
+      "passed": true,
+      "detail": "docs/content/competitors/peel-cleaner/evidence/README-v1.1.0.md"
+    },
+    {
+      "check": "source SHA-256: readme",
+      "passed": true,
+      "detail": "c57490d51f6066ef187b49be85b7ff80fb2fbea4826883885cf4966b04b5c014"
+    },
+    {
+      "check": "source exists: license",
+      "passed": true,
+      "detail": "docs/content/competitors/peel-cleaner/evidence/LICENSE-v1.1.0.txt"
+    },
+    {
+      "check": "source SHA-256: license",
+      "passed": true,
+      "detail": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "check": "source exists: guide",
+      "passed": true,
+      "detail": "docs/content/competitors/peel-cleaner/evidence/GUIDE-v1.1.0.md"
+    },
+    {
+      "check": "source SHA-256: guide",
+      "passed": true,
+      "detail": "b1efea957ce5b8a808bf6cef43e5572d04507a01a54d3e93ca981e9387765c3d"
+    },
+    {
+      "check": "source exists: privacy",
+      "passed": true,
+      "detail": "docs/content/competitors/peel-cleaner/evidence/PRIVACY-v1.1.0.md"
+    },
+    {
+      "check": "source SHA-256: privacy",
+      "passed": true,
+      "detail": "b37491a69dcd780e1d9e9dab8a054a38b580e926608f4a179f389ad09405105a"
+    },
+    {
+      "check": "source exists: br-capabilities",
+      "passed": true,
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source exists: br-visuals",
+      "passed": true,
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "claim sources: P01",
+      "passed": true,
+      "detail": [
+        "directory",
+        "homepage",
+        "readme"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P01",
+      "passed": true,
+      "detail": "My only websites are [tuguidragos.com](https://tuguidragos.com) and Peel's page"
+    },
+    {
+      "check": "claim sources: P02",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "readme"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P02",
+      "passed": true,
+      "detail": "macOS Tahoe 26 or later \u00b7 Apple silicon and the Intel Macs macOS 26 supports"
+    },
+    {
+      "check": "claim sources: P03",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "license"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P03",
+      "passed": true,
+      "detail": "No paid edition, no ads, and no account."
+    },
+    {
+      "check": "claim sources: P04",
+      "passed": true,
+      "detail": [
+        "latest-release",
+        "release"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P04",
+      "passed": true,
+      "detail": "\"tag_name\":\"v1.1.0\""
+    },
+    {
+      "check": "claim sources: P05",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "readme",
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P05",
+      "passed": true,
+      "detail": "A file another app also uses is shown, but never selected for you."
+    },
+    {
+      "check": "claim sources: P06",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P06",
+      "passed": true,
+      "detail": "it keeps the latest 20,000 items"
+    },
+    {
+      "check": "claim sources: P07",
+      "passed": true,
+      "detail": [
+        "readme"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P07",
+      "passed": true,
+      "detail": "Four things can't be\n  undone that way, and Peel says so before you confirm them"
+    },
+    {
+      "check": "claim sources: P08",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P08",
+      "passed": true,
+      "detail": "Turn it on in Settings > General > Sidebar."
+    },
+    {
+      "check": "claim sources: P09",
+      "passed": true,
+      "detail": [
+        "homepage"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P09",
+      "passed": true,
+      "detail": "Files and whole folders with identical contents, compared with SHA-256. One copy is always kept."
+    },
+    {
+      "check": "claim sources: P10",
+      "passed": true,
+      "detail": [
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P10",
+      "passed": true,
+      "detail": "Without it, Peel can't find everything an app leaves behind."
+    },
+    {
+      "check": "claim sources: P11",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P11",
+      "passed": true,
+      "detail": "While Peel is open or in the menu bar and has Full Disk Access"
+    },
+    {
+      "check": "claim sources: P12",
+      "passed": true,
+      "detail": [
+        "privacy"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P12",
+      "passed": true,
+      "detail": "version, sent to `api.osv.dev`"
+    },
+    {
+      "check": "claim sources: P13",
+      "passed": true,
+      "detail": [
+        "release",
+        "readme"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P13",
+      "passed": true,
+      "detail": "It's signed by its developer and notarized by Apple."
+    },
+    {
+      "check": "claim sources: P14",
+      "passed": true,
+      "detail": [
+        "homepage",
+        "guide"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P14",
+      "passed": true,
+      "detail": "Every command that moves your files asks first, and takes\n--dry-run\nto only show the plan."
+    },
+    {
+      "check": "claim sources: P15",
+      "passed": true,
+      "detail": [
+        "readme"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: P15",
+      "passed": true,
+      "detail": "background items, extensions, plug-ins, installer receipts"
+    },
+    {
+      "check": "claim sources: B01",
+      "passed": true,
+      "detail": [
+        "br-capabilities"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: B01",
+      "passed": true,
+      "detail": "Apple Development signed, not Developer ID signed or notarized"
+    },
+    {
+      "check": "claim sources: B02",
+      "passed": true,
+      "detail": [
+        "br-capabilities"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: B02",
+      "passed": true,
+      "detail": "Source implementation is not proof that every feature works in the distributed installer."
+    },
+    {
+      "check": "claim sources: B03",
+      "passed": true,
+      "detail": [
+        "br-capabilities"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: B03",
+      "passed": true,
+      "detail": "$5 USD/month"
+    },
+    {
+      "check": "claim sources: B04",
+      "passed": true,
+      "detail": [
+        "br-capabilities"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: B04",
+      "passed": true,
+      "detail": "Automatically move verified Ruff lint caches to Trash."
+    },
+    {
+      "check": "claim sources: B05",
+      "passed": true,
+      "detail": [
+        "br-capabilities"
+      ]
+    },
+    {
+      "check": "supporting excerpt retained: B05",
+      "passed": true,
+      "detail": "Public release page retrieved without signing in"
+    },
+    {
+      "check": "matrix references: platform/peel",
+      "passed": true,
+      "detail": [
+        "P02"
+      ]
+    },
+    {
+      "check": "matrix references: platform/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B01"
+      ]
+    },
+    {
+      "check": "matrix references: licenceAndPricing/peel",
+      "passed": true,
+      "detail": [
+        "P03"
+      ]
+    },
+    {
+      "check": "matrix references: licenceAndPricing/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B01",
+        "B03"
+      ]
+    },
+    {
+      "check": "matrix references: localHosted/peel",
+      "passed": true,
+      "detail": [
+        "P12"
+      ]
+    },
+    {
+      "check": "matrix references: localHosted/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B03"
+      ]
+    },
+    {
+      "check": "matrix references: scanCleanup/peel",
+      "passed": true,
+      "detail": [
+        "P05",
+        "P06",
+        "P08",
+        "P09"
+      ]
+    },
+    {
+      "check": "matrix references: scanCleanup/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B02",
+        "B04"
+      ]
+    },
+    {
+      "check": "matrix references: approvalControls/peel",
+      "passed": true,
+      "detail": [
+        "P05",
+        "P06",
+        "P07"
+      ]
+    },
+    {
+      "check": "matrix references: approvalControls/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B04"
+      ]
+    },
+    {
+      "check": "matrix references: helperCpuMemoryGrouping/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B02"
+      ]
+    },
+    {
+      "check": "matrix references: recurringGrowthMonitoring/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B02",
+        "B03"
+      ]
+    },
+    {
+      "check": "matrix references: scheduledCleanup/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B04"
+      ]
+    },
+    {
+      "check": "matrix references: developerCaches/peel",
+      "passed": true,
+      "detail": [
+        "P08"
+      ]
+    },
+    {
+      "check": "matrix references: developerCaches/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B02"
+      ]
+    },
+    {
+      "check": "matrix references: installationRuntime/peel",
+      "passed": true,
+      "detail": [
+        "P02",
+        "P10",
+        "P13"
+      ]
+    },
+    {
+      "check": "matrix references: installationRuntime/breathingRoom",
+      "passed": true,
+      "detail": [
+        "B01",
+        "B05"
+      ]
+    },
+    {
+      "check": "matrix references: appUninstallDuplicateFinder/peel",
+      "passed": true,
+      "detail": [
+        "P05",
+        "P09"
+      ]
+    },
+    {
+      "check": "selected first-party image hash",
+      "passed": true,
+      "detail": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+    },
+    {
+      "check": "selected first-party PNG dimensions",
+      "passed": true,
+      "detail": [
+        2940,
+        3468
+      ]
+    },
+    {
+      "check": "competitor is link-only, no invented original hash",
+      "passed": true,
+      "detail": "Rights and image review remain blocked; no competitor PNG downloaded"
+    },
+    {
+      "check": "both required briefs present",
+      "passed": true,
+      "detail": "Distinct workflow and concise comparison briefs; neither is a draft"
+    },
+    {
+      "check": "research markdown exists",
+      "passed": true,
+      "detail": "research.md"
+    },
+    {
+      "check": "release metadata matches packet",
+      "passed": true,
+      "detail": {
+        "published_at": "2026-10-14T13:38:21Z",
+        "tag_name": "v1.1.0"
+      }
+    }
+  ],
+  "limitations": [
+    "Document structure, excerpt retention and hashes are not native runtime tests or screenshot-rights clearance.",
+    "No marketing changes; site check/build/test not run.",
+    "Independent editorial/rendered review remains pending."
+  ]
+}

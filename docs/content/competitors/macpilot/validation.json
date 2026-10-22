@@ -1,0 +1,19 @@
+{
+  "jobId": "research-macpilot",
+  "result": "passed-research-structure-with-drafting-blocker",
+  "checks": [
+    "Python json.loads parsed research.json successfully.",
+    "Seven unique source IDs and 15 unique claim IDs; all claim source references resolve and have excerpts/check dates/states.",
+    "All eight matrix rows reference existing claim IDs.",
+    "SHA-256 of retained official and discovery snapshots matches original baseline evidence (two hashes).",
+    "Selected current-source Space preview file SHA-256 matches screenshots.json provenance (one hash).",
+    "Canonical owner macpilot, blocked state, draftingAllowed false, critical blocker and required example-data caption asserted.",
+    "Competitor image remains link-only with null originalPath; no image download or image-rights approval claimed.",
+    "research.md exists. No site edits; site check/build/test and rendered browser QA not run for research-only outputs."
+  ],
+  "limitations": [
+    "Structural checks do not grant image rights, independently approve content, verify competitor screenshot contents or test a product.",
+    "Official public text retrieved read-only; no competitor/native runtime, checkout, cleanup or performance tests performed.",
+    "Critical competitor-image permission gate remains unresolved."
+  ]
+}

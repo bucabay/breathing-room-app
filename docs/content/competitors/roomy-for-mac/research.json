@@ -1,0 +1,873 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-roomy-for-mac",
+  "stage": "research",
+  "status": "complete-research-pending-independent-review",
+  "researchedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "identity": {
+    "id": "roomy-for-mac",
+    "officialName": "Roomy",
+    "publisher": "TSOFT LLC",
+    "homepage": "https://roomymac.com/",
+    "repositoryUrl": null,
+    "canonicalOwnerId": "roomy-for-mac",
+    "aliases": [
+      "Roomy for Mac"
+    ],
+    "aliasDecision": "same product display-name variant; retain one canonical owner",
+    "skipDecision": false,
+    "skipReason": null,
+    "powerMyMacRelationship": "No alias evidence in corresponding batch record or inspected official identity; do not conflate.",
+    "classification": "direct",
+    "rationale": "Mac storage cleaner with developer-cache and review-before-removal workflow overlap; not feature-for-feature parity."
+  },
+  "ownership": [
+    "docs/content/competitors/roomy-for-mac/"
+  ],
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/roomy-for-mac/about/",
+    "retrievedAt": "2026-10-21T19:05:44.499Z",
+    "excerpt": "Official Website\nroomymac.com",
+    "rawCapture": "docs/content/.runtime/verification-2/roomy-for-mac-directory.json",
+    "sha256": "f32ce8f5ef8245b50468e56a17e64d9b7d4725939fa709e10cf0f4764b79f151",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:45.366Z",
+    "edgeRecord": "docs/content/competitors.json#roomy-for-mac"
+  },
+  "reusedVerification": {
+    "path": "docs/content/verification/batch-2.json",
+    "sha256": "fda272220e871a39a22b541175b42bcf6123a8af52c7e1a0a495e61bc3c3476f",
+    "unnecessaryRefetch": false
+  },
+  "sources": [
+    {
+      "sourceUrl": "https://alternativeto.net/software/roomy-for-mac/about/",
+      "retrievedAt": "2026-10-21T19:05:44.499Z",
+      "excerpt": "Official Website\nroomymac.com",
+      "rawCapture": "docs/content/.runtime/verification-2/roomy-for-mac-directory.json",
+      "sha256": "f32ce8f5ef8245b50468e56a17e64d9b7d4725939fa709e10cf0f4764b79f151",
+      "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+      "id": "directory",
+      "reused": true,
+      "verifiedHash": "f32ce8f5ef8245b50468e56a17e64d9b7d4725939fa709e10cf0f4764b79f151"
+    },
+    {
+      "sourceUrl": "https://roomymac.com/",
+      "finalUrl": "https://roomymac.com/",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "rawCapture": "docs/content/.runtime/verification-2/roomy-for-mac-official.json",
+      "sha256": "5090a6510a28490b3deecdf22db38f91057c3406d9fa174f9302b08cdc58f18f",
+      "error": null,
+      "id": "homepage",
+      "reused": true,
+      "verifiedHash": "5090a6510a28490b3deecdf22db38f91057c3406d9fa174f9302b08cdc58f18f"
+    },
+    {
+      "id": "press",
+      "publisher": "TSOFT LLC / Roomy",
+      "title": "Press kit",
+      "sourceUrl": "https://roomymac.com/press",
+      "finalUrl": "https://roomymac.com/press",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "retrievedOn": "2026-10-21",
+      "method": "WebFetch rendered Markdown, read in this job",
+      "publicationDate": null,
+      "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+      "excerpts": [
+        "Use them freely in articles, reviews and videos about Roomy.",
+        "Taken from the app on a real Mac, with personal file and app names blurred.",
+        "Screenshots may be cropped, resized and annotated.",
+        "Roomy is an independent app by TSOFT LLC, not affiliated with or endorsed by Apple Inc.",
+        "1.0.0, released October 13, 2026"
+      ],
+      "rawCapture": null,
+      "excerptRecord": "docs/content/competitors/roomy-for-mac/evidence/press-excerpts.json"
+    },
+    {
+      "id": "security",
+      "publisher": "TSOFT LLC / Roomy",
+      "title": "Security & Privacy",
+      "sourceUrl": "https://roomymac.com/security",
+      "finalUrl": "https://roomymac.com/security",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "retrievedOn": "2026-10-21",
+      "method": "WebFetch rendered Markdown, read in this job",
+      "publicationDate": null,
+      "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+      "excerpts": [
+        "Roomy contacts our server only to activate and check a Pro license, and to load current prices for its Plans screen.",
+        "Caches, logs and other rebuildable data are deleted, because apps recreate them.",
+        "Downloads, backups, archives, large files, duplicates and uninstalled apps go to the Trash, so you can put them back.",
+        "One setting sends everything to the Trash.",
+        "Roomy doesn\u2019t install launch agents, login items, system extensions or browser extensions.",
+        "Quit it and nothing of it keeps running.",
+        "Caches of apps that are open, macOS caches, unknown caches over 1 GB and app data are rated Review.",
+        "Device backups and Xcode archives are rated Caution.",
+        "None of them is ever preselected."
+      ],
+      "rawCapture": null,
+      "excerptRecord": "docs/content/competitors/roomy-for-mac/evidence/security-excerpts.json"
+    },
+    {
+      "id": "changelog",
+      "publisher": "TSOFT LLC / Roomy",
+      "title": "What\u2019s new in Roomy",
+      "sourceUrl": "https://roomymac.com/changelog",
+      "finalUrl": "https://roomymac.com/changelog",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "retrievedOn": "2026-10-21",
+      "method": "WebFetch rendered Markdown, read in this job",
+      "publicationDate": "2026-10-13",
+      "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+      "excerpts": [
+        "October 13, 2026",
+        "First release",
+        "Xcode DerivedData, device support, archives, SwiftUI previews and simulator caches, plus npm, Yarn, pnpm, Bun, Deno, Homebrew, pip, Poetry, uv, CocoaPods, Carthage, SwiftPM, Gradle, Maven, Cargo, Go, JetBrains, VS Code and Cursor caches.",
+        "Activity Log of every clean, and exclusions for files and folders you never want cleaned."
+      ],
+      "rawCapture": null,
+      "excerptRecord": "docs/content/competitors/roomy-for-mac/evidence/changelog-excerpts.json"
+    },
+    {
+      "id": "install",
+      "publisher": "TSOFT LLC / Roomy",
+      "title": "Install Roomy",
+      "sourceUrl": "https://roomymac.com/help/install",
+      "finalUrl": "https://roomymac.com/help/install",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "retrievedOn": "2026-10-21",
+      "method": "WebFetch rendered Markdown, read in this job",
+      "publicationDate": null,
+      "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+      "excerpts": [
+        "You don't need an account or a license to start: the free version scans your whole Mac and cleans up to 500 MB.",
+        "Roomy is sold directly by us, not through the Mac App Store or other download sites.",
+        "Full Disk Access is optional.",
+        "To update, quit Roomy, download the latest version from the download page, and drag it to Applications again."
+      ],
+      "rawCapture": null,
+      "excerptRecord": "docs/content/competitors/roomy-for-mac/evidence/install-excerpts.json"
+    },
+    {
+      "id": "eula",
+      "publisher": "TSOFT LLC / Roomy",
+      "title": "End User License Agreement",
+      "sourceUrl": "https://roomymac.com/legal/eula",
+      "finalUrl": "https://roomymac.com/legal/eula",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "retrievedOn": "2026-10-21",
+      "method": "WebFetch rendered Markdown, read in this job",
+      "publicationDate": "2026-10-13",
+      "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+      "excerpts": [
+        "Last updated October 13, 2026",
+        "The Software is licensed, not sold.",
+        "Free version. You may use the Software without a license key to scan your Mac and to clean up to 500 MB in total.",
+        "For a Lifetime license, it lasts for the lifetime of the Roomy product, as described in our Terms of Service.",
+        "It works offline for up to 21 days between checks; after that, Pro pauses until the Software can reach our server again.",
+        "You are responsible for reviewing what you remove and for keeping backups"
+      ],
+      "rawCapture": null,
+      "excerptRecord": "docs/content/competitors/roomy-for-mac/evidence/eula-excerpts.json"
+    },
+    {
+      "id": "br-register",
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "publisher": "Breathing Room first-party evidence register",
+      "title": "Capabilities evidence register",
+      "reused": true,
+      "checkedOn": "2026-10-21",
+      "rawCapture": "docs/content/capabilities.md",
+      "verifiedHash": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Source and published disclosures, not native runtime QA"
+    }
+  ],
+  "claims": [
+    {
+      "id": "baseline-1",
+      "wording": "Roomy",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Roomy",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-2",
+      "wording": "Roomy is a Mac cleaner app that finds caches, app leftovers, build data and forgotten files, tells you exactly what each one is, and removes only what you approve.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Roomy is a Mac cleaner app that finds caches, app leftovers, build data and forgotten files, tells you exactly what each one is, and removes only what you approve.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-3",
+      "wording": "macOS 14 Sonoma+; Apple silicon and Intel",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "macOS 14 Sonoma or later \u00b7 Apple silicon and Intel",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-4",
+      "wording": "Free scans and 500 MB cleanup; Pro for 1 Mac; prices US dollars, tax included",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Scan everything and clean up to 500 MB for free. Pro removes the limit on 1 Mac. Prices in US dollars, tax included.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-5",
+      "wording": "$4.99/month",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "$4.99/month. Renews automatically until you cancel.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-6",
+      "wording": "$29.99/year",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "$29.99/year. Renews automatically until you cancel.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "baseline-7",
+      "wording": "$59.99 one-time",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "One-time payment of $59.99. No subscription, never renews.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused current batch-2 verification; not re-fetched",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "review-workflow",
+      "wording": "Roomy documents Safe, Review and Caution ratings and confirmation before removal.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Every item shows what it is, how big it is, where it lives, and a Safe, Review or Caution rating.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Vendor documentation; no cleanup, purchase or refund tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "developer-scope",
+      "wording": "Roomy documents Xcode and package-manager cleanup.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Remove Xcode DerivedData, old device support files and simulator caches, plus npm, Yarn, pnpm, Homebrew, pip, Gradle, Cargo and Go caches.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Vendor documentation; no cleanup, purchase or refund tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "duplicates",
+      "wording": "Roomy advertises a content-based duplicate finder.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Find duplicate files on your Mac by comparing their contents, not their names. The oldest copy is kept.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Vendor documentation; no cleanup, purchase or refund tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "uninstaller",
+      "wording": "Roomy advertises an app uninstaller including caches, logs and helpers.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Uninstall apps on your Mac completely, with the caches, logs and helpers they leave behind.",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Vendor documentation; no cleanup, purchase or refund tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "billing-conditions",
+      "wording": "Pro applies to one Mac; subscriptions renew automatically; lifetime includes future updates. USD, applicable tax included; advertised seven-day money-back guarantee.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "All future updates included",
+      "checkedAtUtc": "2026-10-21T19:09:38.607606+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Vendor documentation; no cleanup, purchase or refund tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": [],
+      "supportingPassages": [
+        "Use on 1 Mac",
+        "All future updates included",
+        "7-day money-back guarantee",
+        "$4.99/month. Renews automatically until you cancel. Cancel anytime.",
+        "Prices in US dollars, tax included."
+      ]
+    },
+    {
+      "id": "version",
+      "wording": "The official changelog identifies 1.0.0 as the first public release, dated October 13, 2026.",
+      "sourceIds": [
+        "changelog"
+      ],
+      "sourceUrl": "https://roomymac.com/changelog",
+      "excerpt": "October 13, 2026 / First release",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "No binary downloaded or tested",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "local-hosted",
+      "wording": "Roomy says scanning stays on the Mac; it contacts its server for Pro checks and current prices.",
+      "sourceIds": [
+        "security"
+      ],
+      "sourceUrl": "https://roomymac.com/security",
+      "excerpt": "Roomy contacts our server only to activate and check a Pro license, and to load current prices for its Plans screen.",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Policy statement, not network audit. License checks disclose key, hardware hash, Mac name, app version and IP visibility.",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "deletion",
+      "wording": "Roomy documents immediate deletion of rebuildable data, Trash for personal files, and an optional all-to-Trash setting.",
+      "sourceIds": [
+        "security"
+      ],
+      "sourceUrl": "https://roomymac.com/security",
+      "excerpt": "Caches, logs and other rebuildable data are deleted, because apps recreate them.",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Do not promise universal undo; backups and review still matter.",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "runtime",
+      "wording": "Roomy says it installs no background helpers and nothing keeps running after quit.",
+      "sourceIds": [
+        "security"
+      ],
+      "sourceUrl": "https://roomymac.com/security",
+      "excerpt": "Quit it and nothing of it keeps running.",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Not evidence of absence of every in-app monitoring feature.",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "install",
+      "wording": "Roomy is directly distributed; an account is not needed to start, and Full Disk Access is optional.",
+      "sourceIds": [
+        "install"
+      ],
+      "sourceUrl": "https://roomymac.com/help/install",
+      "excerpt": "Full Disk Access is optional.",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "No installer execution; signing, notarization and additional runtime dependencies not independently verified.",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": [],
+      "supportingPassages": [
+        "You don't need an account or a license to start: the free version scans your whole Mac and cleans up to 500 MB.",
+        "Roomy is sold directly by us, not through the Mac App Store or other download sites.",
+        "Full Disk Access is optional."
+      ]
+    },
+    {
+      "id": "license",
+      "wording": "Roomy uses a proprietary EULA, with Pro on one Mac and up to 21 days offline between checks.",
+      "sourceIds": [
+        "eula"
+      ],
+      "sourceUrl": "https://roomymac.com/legal/eula",
+      "excerpt": "It works offline for up to 21 days between checks; after that, Pro pauses until the Software can reach our server again.",
+      "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Lifetime means lifetime of product, not a guarantee of perpetual support. No official source repository identified in inspected links; absence not proven.",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a macOS 13+ preview with Python 3.10+ prerequisite; published release discloses no Developer ID signing or notarization.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Apple Development signed, not Developer ID signed or notarized",
+      "checkedAtUtc": "2026-10-21",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused 2026-10-21 evidence; no new runtime verification. capabilities.md:46\u201355; public v0.1.0-preview.1 release",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-price",
+      "wording": "Breathing Room has a free local core; advertised AI Care is USD 5/month or 50/year with renewal and applicable-tax caveats.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "$5 USD/month",
+      "checkedAtUtc": "2026-10-21",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused 2026-10-21 evidence; no new runtime verification. capabilities.md:70\u201386; homepage pricing",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-monitor",
+      "wording": "Breathing Room source groups app/helpers and records sampled activity; daily care needs a running app and exact saved approvals.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Saved approvals bind account, API origin, action method/path and native rule",
+      "checkedAtUtc": "2026-10-21",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused 2026-10-21 evidence; no new runtime verification. capabilities.md:25\u201332; source code citations retained there",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Breathing Room hosted assistance requires authentication/internet and can send relevant paths/process/storage data.",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "relevant paths/process/storage data can reach the service and Cloudflare Workers AI",
+      "checkedAtUtc": "2026-10-21",
+      "state": "verified",
+      "evidenceClass": "officially-documented; not hands-on",
+      "scope": "Reused 2026-10-21 evidence; no new runtime verification. capabilities.md:58\u201368; public privacy policy",
+      "intendedLocation": "workflow article / comparison matrix",
+      "reviewer": "scheduled research worker",
+      "unresolvedQuestions": []
+    }
+  ],
+  "matrix": [
+    {
+      "dimension": "macOS",
+      "value": "macOS 14+; Apple silicon and Intel",
+      "claimIds": [
+        "baseline-3"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "license",
+      "value": "Proprietary EULA; no verified official repository",
+      "claimIds": [
+        "license"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "operation",
+      "value": "Local scanning; licensing/pricing requests to vendor",
+      "claimIds": [
+        "local-hosted"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "scan / cleanup",
+      "value": "Caches, build data, app leftovers, duplicates, large files",
+      "claimIds": [
+        "baseline-2",
+        "developer-scope",
+        "duplicates",
+        "uninstaller"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "approval",
+      "value": "Ratings, review and confirmation",
+      "claimIds": [
+        "review-workflow"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "helper grouping",
+      "value": "not verified",
+      "claimIds": [],
+      "state": "not-verified"
+    },
+    {
+      "dimension": "recurring-growth monitoring",
+      "value": "not verified",
+      "claimIds": [],
+      "state": "not-verified"
+    },
+    {
+      "dimension": "developer caches",
+      "value": "Xcode and package-manager categories documented",
+      "claimIds": [
+        "developer-scope"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "pricing",
+      "value": "Free scans + total 500 MB cleanup; USD 4.99/month, 29.99/year or 59.99 once, one Mac",
+      "claimIds": [
+        "baseline-4",
+        "baseline-5",
+        "baseline-6",
+        "baseline-7",
+        "billing-conditions",
+        "license"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "removal / undo",
+      "value": "Rebuildable data deleted by default; personal files to Trash; optional all-to-Trash",
+      "claimIds": [
+        "deletion"
+      ],
+      "state": "verified"
+    },
+    {
+      "dimension": "runtime / installation",
+      "value": "Direct DMG distribution; optional Full Disk Access; no account needed to start",
+      "claimIds": [
+        "install"
+      ],
+      "state": "verified"
+    }
+  ],
+  "breathingRoomEvidence": {
+    "register": "docs/content/capabilities.md",
+    "checkedOn": "2026-10-21",
+    "version": "0.1.0-preview.1",
+    "limitations": [
+      "macOS 13+, universal installer advertised; physical Intel untested",
+      "Apple Development signed; not Developer ID signed or notarized per release disclosure",
+      "Python 3.10+ required for inventory/legacy scripts; not bundled",
+      "Free local core; hosted authenticated AI Care advertised USD 5/month or 50/year",
+      "Hosted assistant sends relevant context/tool outputs; not entirely offline",
+      "Daily care needs running app and exact saved approvals; optional automatic verified Ruff mode must be qualified"
+    ],
+    "sourceUrls": [
+      "https://breathing-room.chatic.ai/",
+      "https://breathing-room.chatic.ai/privacy/",
+      "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+    ]
+  },
+  "visuals": [
+    {
+      "id": "roomy-developer-cleanup",
+      "productId": "roomy-for-mac",
+      "view": "developer-cleanup",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://roomymac.com/press",
+      "assetUrl": "https://roomymac.com/images/press/screenshots/developer-cleanup.png",
+      "finalAssetUrl": "https://roomymac.com/images/press/screenshots/developer-cleanup.png",
+      "retrievedAtUtc": "2026-10-21T22:06:20.270529+00:00",
+      "capturedAtUtc": null,
+      "capturedBy": "Vendor; exact photographer unknown",
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "unknown",
+      "originalPath": "docs/content/competitors/roomy-for-mac/assets/developer-cleanup-original.png",
+      "originalSha256": "471d6cd3bd0a4ee89f97edbbaa57b7bc178b65862973ac46f3fe8d0a9e053a6b",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1328,
+      "heightPx": 960,
+      "bytes": 214221,
+      "contentType": "image/png (validated PNG signature)",
+      "edits": [],
+      "privacyReview": {
+        "status": "research-reviewed",
+        "redactions": [],
+        "diagnostic": "Opened actual PNG with image-capable read tool; no account, license key or personal path visible. Confirmation item names are already vendor-blurred; no edits made."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Use them freely in articles, reviews and videos about Roomy.",
+        "evidenceUrlOrPath": "https://roomymac.com/press",
+        "credit": "Roomy screenshot courtesy of TSOFT LLC; https://roomymac.com/press"
+      },
+      "caption": "Roomy developer cleanup view, supplied in the official press kit. Vendor capture; exact version, capture date and measurement conditions not supplied. Not our test results.",
+      "alt": "Roomy Developer view showing Gradle, pnpm, npm, Xcode and Swift Package Manager entries with Safe or Review ratings.",
+      "supportedClaimIds": [
+        "developer-scope"
+      ],
+      "limitations": [
+        "Vendor describes real-Mac capture with personal names blurred; not independently reproduced.",
+        "Publication-specific visual review remains required."
+      ],
+      "review": {
+        "status": "research-visually-inspected; independent page review pending",
+        "reviewer": "scheduled research worker",
+        "reviewedAtUtc": "2026-10-21T22:06:20.261812+00:00"
+      }
+    },
+    {
+      "id": "roomy-clean-confirmation",
+      "productId": "roomy-for-mac",
+      "view": "clean-confirmation",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://roomymac.com/press",
+      "assetUrl": "https://roomymac.com/images/press/screenshots/clean-confirmation.png",
+      "finalAssetUrl": "https://roomymac.com/images/press/screenshots/clean-confirmation.png",
+      "retrievedAtUtc": "2026-10-21T22:06:20.271723+00:00",
+      "capturedAtUtc": null,
+      "capturedBy": "Vendor; exact photographer unknown",
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "unknown",
+      "originalPath": "docs/content/competitors/roomy-for-mac/assets/clean-confirmation-original.png",
+      "originalSha256": "43eaa3239d26e3aad6f4d5762e8a46c75fa905ab1858353001e9d6422675b92b",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1328,
+      "heightPx": 960,
+      "bytes": 223986,
+      "contentType": "image/png (validated PNG signature)",
+      "edits": [],
+      "privacyReview": {
+        "status": "research-reviewed",
+        "redactions": [],
+        "diagnostic": "Opened actual PNG with image-capable read tool; no account, license key or personal path visible. Confirmation item names are already vendor-blurred; no edits made."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Use them freely in articles, reviews and videos about Roomy.",
+        "evidenceUrlOrPath": "https://roomymac.com/press",
+        "credit": "Roomy screenshot courtesy of TSOFT LLC; https://roomymac.com/press"
+      },
+      "caption": "Roomy clean confirmation view, supplied in the official press kit. Vendor capture; exact version, capture date and measurement conditions not supplied. Not our test results.",
+      "alt": "Roomy Clean Safe Items confirmation warning that selected rebuildable data is deleted immediately, with vendor-blurred item names.",
+      "supportedClaimIds": [
+        "review-workflow"
+      ],
+      "limitations": [
+        "Vendor describes real-Mac capture with personal names blurred; not independently reproduced.",
+        "Publication-specific visual review remains required."
+      ],
+      "review": {
+        "status": "research-visually-inspected; independent page review pending",
+        "reviewer": "scheduled research worker",
+        "reviewedAtUtc": "2026-10-21T22:06:20.261812+00:00"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ],
+      "selectedFor": "Storage classification and size-versus-disposability explanation",
+      "inspectedInThisJob": true,
+      "publishedPath": null,
+      "publishedSha256": null
+    }
+  ],
+  "unknowns": [
+    "Roomy exact screenshot version, OS and capture date: vendor did not supply these.",
+    "Roomy Developer ID signing/notarization, executable behavior and performance: not independently verified; do not claim.",
+    "Roomy public source repository: none identified in inspected official pages; do not invent a GitHub URL or claim none exists.",
+    "Roomy live CPU/helper grouping and recurring storage-growth investigation: not verified, never label No.",
+    "Roomy external runtime requirements beyond documented macOS requirement: not verified.",
+    "500 MB is total allowance, not a daily/monthly reset. MB unit convention and accounting details not verified.",
+    "No purchase, refund, activation, installation, cleanup, native scan or end-to-end comparison performed.",
+    "Breathing Room binary parity and runtime caveats remain as documented in capabilities.md; source/UI evidence is not distributed binary QA."
+  ],
+  "criticalBlockers": [],
+  "draftGate": {
+    "eligibleForBoundedDraft": true,
+    "publicationApproved": false,
+    "conditions": [
+      "Use only documented claims with adjacent citations.",
+      "Keep unknown cells not verified.",
+      "Refresh volatile facts if older than 30 days; independent draft/render review required.",
+      "Never present screenshots or vendor language as our tests or guaranteed savings."
+    ]
+  },
+  "briefs": {
+    "workflow": {
+      "title": "Review developer caches before deleting: Roomy\u2019s ratings and the rebuild cost",
+      "slug": "review-developer-caches-roomy",
+      "primaryIntent": "Decide which developer-cache candidates need review before a Mac cleanup",
+      "track": "search/LLM reference",
+      "distinctMechanism": "Safe/Review/Caution ratings, open-app caches, Xcode archives and immediate deletion versus Trash",
+      "outline": [
+        "Start with rebuildability, not folder size",
+        "Read Roomy\u2019s rating and removal method",
+        "Keep backups and archives distinct from caches",
+        "Account for rebuild/download cost without invented timings",
+        "Choose a local categorized cleanup or a hosted investigation workflow"
+      ],
+      "topVisual": "roomy-developer-cleanup",
+      "laterVisual": "current-space-browser-preview",
+      "interactionHandoff": "A static checklist: data type, open app, rebuild/download cost, backup status, removal method, explicit approval. No filesystem mutation or fake savings estimator."
+    },
+    "comparison": {
+      "title": "Breathing Room vs Roomy: investigation or categorized Mac cleanup",
+      "slug": "roomy-for-mac",
+      "primaryIntent": "Choose between two Mac maintenance approaches",
+      "scope": "Concise sourced matrix, not a second copy of the developer-cache guide",
+      "decision": "Roomy for documented local categorized cleanup, duplicate finding and uninstalling; Breathing Room for source-documented app/activity investigation and optional hosted assistance, with preview caveats.",
+      "requiredDisclosure": "Breathing Room, which we build",
+      "internalLinks": [
+        "/comparisons/",
+        "/comparisons/roomy-for-mac/",
+        "/blog/review-developer-caches-roomy/"
+      ],
+      "linkStatus": "Proposed routes only; verify existence during drafting, no site edits in research."
+    }
+  },
+  "advantagesAndTradeoffs": [
+    "Roomy documents local scan data, no-account free scanning, duplicate finding and app uninstalling; do not invent equivalent Breathing Room capabilities.",
+    "Roomy offers a one-time option but limits free cleanup to 500 MB total and Pro to one Mac; lifetime is product lifetime.",
+    "Breathing Room source documents helper grouping, sampled activity and saved-approval daily care; not proof of binary parity or forensic attribution.",
+    "Breathing Room has a free local core but hosted AI has authentication, data-sharing and advertised paid-care boundaries; preview signing and Python prerequisites matter.",
+    "Neither product\u2019s documented approval or Trash model establishes risk-free deletion or measured performance gains."
+  ],
+  "execution": {
+    "browserUsed": false,
+    "reason": "Existing verified discovery plus read-only public documentation and permitted asset downloads were sufficient.",
+    "assetDownloadDiagnostic": "Initial urllib request returned HTTP 403; ordinary curl succeeded for both public press PNGs without authentication/cookies. WebFetch recognized PNG but could not render it.",
+    "installations": false,
+    "cleanup": false,
+    "credentialsAccessed": false,
+    "websiteChanged": false,
+    "independentReview": "pending separate stage"
+  }
+}

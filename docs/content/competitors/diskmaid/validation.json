@@ -1,0 +1,16 @@
+{
+  "jobId": "research-diskmaid",
+  "checkedAtUtc": "2026-10-21T20:33:58.903618+00:00",
+  "checks": [
+    "PASS: job/product ownership, canonical identity and blocked/not-published gates",
+    "PASS: 5 retained/shared source SHA-256 checks",
+    "PASS: 17 claim/source links, dated excerpts; official/store excerpt membership",
+    "PASS: matrix claim references; unknown cells explicitly not verified",
+    "PASS: exact public competitor image locator, no copied competitor image, selected Breathing Room hash/disclosure, two discovery edges",
+    "PASS: research.md exists; no website build required for research-only files; no product runtime test claimed",
+    "BLOCKED: competitor image reuse permission and pixel/privacy review absent; tracking disclosures conflict"
+  ],
+  "researchSha256": "3598a689f88f56d930b268ec044abb6647a00f20d32b38597d7730f19a8a1ead",
+  "summarySha256": "65933dc46069881c92e59319114133aa8e473cc78429f6e4485ee779af158311",
+  "publicationApproved": false
+}

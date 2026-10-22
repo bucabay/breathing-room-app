@@ -1,0 +1,26 @@
+{
+  "jobId": "research-nix--the-mac-uninstaller",
+  "method": "Executed read-only Python assertions against saved research files, retained source files and selected PNG; not model-only validation.",
+  "checks": {
+    "researchJsonParse": "passed",
+    "uniqueSourceIds": 9,
+    "uniqueClaimIds": 18,
+    "requiredPerClaimFields": "passed: URL, excerpt, checked date, state, scope, intended location",
+    "claimSourceAndMatrixReferences": "passed: all references resolve",
+    "baselineRawCaptureHashes": "passed: both match batch-2 file-byte hashes",
+    "selectedBreathingRoomPngHash": "passed: matches screenshots.json hash",
+    "selectedBreathingRoomPngHeader": "passed: PNG, 2940 x 3468",
+    "visualMetadata": "passed: captions, alt text and reuse bases populated; Nix explicitly link-only and undownloaded",
+    "draftingBlock": "passed: status blocked and draftingAllowed false",
+    "canonicalOwnership": "passed: self-canonical, not skipped as alias",
+    "visualInspection": "Opened and read existing Breathing Room PNG with image-capable read tool; Nix asset not downloaded or visually approved",
+    "runtimeTesting": "not performed; no app installation, cleanup or permission changes",
+    "siteBuildAndTests": "not applicable; no site edits",
+    "independentReview": "pending, not performed in research stage"
+  },
+  "artifactHashes": {
+    "research.json": "664c4e218b06e4d4f7e88baced9bf40262e3aba43d0694baf66a61bd017a36e6",
+    "research.md": "5ce47d16eb7ba87612fedc5351ac6f70f5d617177fbd12e5cd65a236ceba3292"
+  },
+  "outcome": "Research packet retained; drafting blocked on competitor screenshot republication permission and subsequent asset/privacy/visual review. No publication approval inferred from structural checks."
+}

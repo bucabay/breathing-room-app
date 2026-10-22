@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-bushfire-app",
+  "productId": "bushfire-app",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "identity": {
+    "name": "Bushfire",
+    "homepage": "https://bushfire-app.de/en/",
+    "repository": "https://github.com/ghostjuza/open-bushfire",
+    "canonicalOwnerId": "bushfire-app",
+    "aliases": ["Open Bushfire", "open-bushfire"],
+    "aliasEvidence": "S2 links to the repository; S3 reciprocally links to the homepage and calls the same app Bushfire. Open Bushfire is the repository/community name, not another product.",
+    "aliasSkipDecision": "Do not create separate Open Bushfire or open-bushfire drafts. This canonical Bushfire record is not skipped as an alias.",
+    "classification": "adjacent-mac-safari-privacy",
+    "classificationReason": "Safari-session data deletion is distinct from general storage investigation and app/process monitoring. Do not position Breathing Room as a verified Safari-on-quit replacement.",
+    "exclusionDecision": "Not excluded or declared dead. Reachable official site and repository support a distinct reader intent, but drafting is blocked pending evidence gates.",
+    "unresolvedAliases": "No evidence found connecting Bushfire to PowerMyMac; no such alias is asserted. Exhaustive trademark/ownership history was not established."
+  },
+  "ownership": ["docs/content/competitors/bushfire-app/", "docs/content/.runtime/research-bushfire-app.1792613369755521000.receipt.json"],
+  "verificationReuse": {
+    "record": "docs/content/verification/batch-1.json#bushfire-app",
+    "batch1Sha256": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "batch2Checked": true,
+    "batch2MatchingRecord": false,
+    "policy": "Reused same-day homepage identity, function, price and licence evidence without re-fetching homepage or directory. Added only missing repository, release, support and image-provenance evidence."
+  },
+  "discovery": {
+    "seed": "cleanmymac",
+    "listingUrl": "https://alternativeto.net/software/bushfire-app/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:32.887Z",
+    "method": "Reused verification-1 directory snapshot and its observed Official Website link.",
+    "snapshotPath": "docs/content/.runtime/verification-1/bushfire-app-directory.json",
+    "sha256": "213f3e463acfb6a67cbb26d5adc644d4a8d64ad78bbd4d147584b41d07b066cc",
+    "pagination": "Not retained in corresponding verification record; no page number invented.",
+    "officialDestination": "https://bushfire-app.de/en/",
+    "limitations": "Directory establishes discovery, not runtime behavior or reuse permission."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "AlternativeTo", "title": "Bushfire about listing",
+      "url": "https://alternativeto.net/software/bushfire-app/about/",
+      "finalUrl": "https://alternativeto.net/software/bushfire-app/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:32.887Z",
+      "excerpt": "Official Website\nbushfire-app.de/en/",
+      "snapshotPath": "docs/content/.runtime/verification-1/bushfire-app-directory.json",
+      "sha256": "213f3e463acfb6a67cbb26d5adc644d4a8d64ad78bbd4d147584b41d07b066cc"
+    },
+    {
+      "id": "S2", "publisher": "Bushfire Team", "title": "Bushfire English homepage",
+      "url": "https://bushfire-app.de/en/", "finalUrl": "https://bushfire-app.de/en/",
+      "retrievedAtUtc": "2026-10-21T19:08:13.249114+00:00",
+      "excerpt": "macOS 10.11+; Always free including all updates; Choose exactly which data should disappear; only two anonymous numbers are transmitted; Bushfire works entirely locally. No account, no cloud, no transfer of your data.",
+      "excerptType": "Selected passages, separated with semicolons; full text retained in snapshot",
+      "snapshotPath": "docs/content/.runtime/verification-1/bushfire-app-official.json",
+      "sha256": "67dafe3932b7e2a535002eaf275e190de71013141cc1bd32d24542f24ad031b3",
+      "publicationDate": null,
+      "scope": "Undated vendor marketing, not measured behavior"
+    },
+    {
+      "id": "S3", "publisher": "ghostjuza / Open Bushfire Community", "title": "open-bushfire repository and README",
+      "url": "https://github.com/ghostjuza/open-bushfire", "finalUrl": "https://github.com/ghostjuza/open-bushfire",
+      "checkedOn": "2026-10-21", "retrievalMethod": "Read-only WebFetch; retained excerpts here, not a full raw snapshot",
+      "excerpt": "Currently it runs up macOS 10.11 to 12.x.\nImmediate cleanup from the macOS menu bar, without quitting Safari\nChoose the data categories individually, pause Bushfire at any time\nStatistics: number and size of deleted items\nOptional secure overwriting\nCopyright (c) Open Bushfire Community. All rights reserved.\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License ... either version 3 ... or ... any later version.",
+      "locator": "README Features, Status and License; README screenshot img/bushfire-panel.png",
+      "publicationDate": null, "snapshotPath": null, "sha256": null,
+      "scope": "Mutable master README; no installed binary testing"
+    },
+    {
+      "id": "S4", "publisher": "Bushfire Team", "title": "Bushfire support",
+      "url": "https://bushfire-app.de/en/support/", "finalUrl": "https://bushfire-app.de/en/support/",
+      "checkedOn": "2026-10-21", "retrievalMethod": "Read-only WebFetch; excerpts retained here",
+      "excerpt": "macOS 15 Sequoia & newer\nmacOS blocks Bushfire on first launch\nFor Bushfire to delete Safari data, you have to authorise the app explicitly\nIf Safari syncs with iCloud, Bushfire cannot delete any Safari data – it is restored right away.",
+      "locator": "First launch, Library permissions, iCloud sections",
+      "publicationDate": null, "snapshotPath": null, "sha256": null,
+      "scope": "Vendor troubleshooting advice, not verified compatibility or independent signing evidence. Do not reproduce advice about disabling protections or change settings."
+    },
+    {
+      "id": "S5", "publisher": "GitHub release API / project maintainers", "title": "Latest published GitHub release",
+      "url": "https://api.github.com/repos/ghostjuza/open-bushfire/releases/latest",
+      "finalUrl": "https://api.github.com/repos/ghostjuza/open-bushfire/releases/latest",
+      "checkedOn": "2026-10-21", "retrievalMethod": "Read-only WebFetch; selected API fields retained here",
+      "excerpt": "tag_name: build-2022.235; name: build-2022.235; draft: false; prerelease: false; published_at: 2022-10-02T11:55:31Z; asset name: Bushfire.dmg; body: improved handle SIP status: enabled, disabled, unknown; improved FullDiskAccess handle; notice Remove AuthorizationManager",
+      "releaseUrl": "https://github.com/ghostjuza/open-bushfire/releases/tag/build-2022.235",
+      "assetUrl": "https://github.com/ghostjuza/open-bushfire/releases/download/build-2022.235/Bushfire.dmg",
+      "publicationDate": "2022-10-02T11:55:31Z", "snapshotPath": null, "sha256": null,
+      "scope": "Latest GitHub release response only; not proof of newest website download, internal semantic version, architecture, notarization or binary behavior. Installer not downloaded."
+    },
+    {
+      "id": "S6", "publisher": "Bushfire Team / project repository", "title": "Licence evidence",
+      "url": "https://bushfire-app.de/en/license/", "finalUrl": "https://bushfire-app.de/en/license/",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Bushfire is free software. Version 3, 29 June 2007. Only the original license text is legally binding.",
+      "additionalUrl": "https://raw.githubusercontent.com/ghostjuza/open-bushfire/master/LICENSE.md",
+      "additionalExcerpt": "The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work.",
+      "locator": "Website licence page; repository GPL text section 2",
+      "scope": "GPL software licensing is established; screenshot-specific scope and publication compliance are not independently cleared.",
+      "snapshotPath": null, "sha256": null
+    },
+    {
+      "id": "BR", "publisher": "Breathing Room local evidence register", "title": "Current same-day capabilities register",
+      "url": "https://breathing-room.chatic.ai/", "additionalUrls": ["https://breathing-room.chatic.ai/privacy/", "https://breathing-room.chatic.ai/download/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "checkedOn": "2026-10-21", "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "excerpt": "macOS 13+; 0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized; Python 3.10+; hosted AI assistance requires internet access and authentication; $5 USD/month or $50 USD/year.",
+      "scope": "Reused source-level and published-offer verification, not independent binary QA. See register for exact source file ranges and public-page checks."
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"Bushfire is the Safari-focused macOS app linked by its official homepage to ghostjuza/open-bushfire.","sourceIds":["S1","S2","S3"],"support":"Homepage GitHub links and repository reciprocal homepage/README name","state":"verified","evidenceClass":"official-documentation","location":"identity/lead","checkedOn":"2026-10-21"},
+    {"id":"C2","wording":"Bushfire is advertised as free, including updates, with no account or registration needed; donations do not imply a service contract.","sourceIds":["S2","S3"],"support":"Always free including all updates; Free, no account, no registration; donation does not imply any service contract","state":"verified","evidenceClass":"vendor-offer","location":"pricing","checkedOn":"2026-10-21","conditions":"No checkout or download flow tested; no paid tier, currency or billing period applies to the advertised free offer."},
+    {"id":"C3","wording":"The project describes its software as GPLv3; the README permits version 3 or later.","sourceIds":["S2","S3","S6"],"support":"GPLv3; either version 3 ... or ... any later version","state":"verified","evidenceClass":"official-licence","location":"licence","checkedOn":"2026-10-21","conditions":"Not a blanket licence clearance for website imagery or third-party marks."},
+    {"id":"C4","wording":"Documented Bushfire controls include deletion when Safari quits, immediate menu-bar cleanup, per-category selection and pause.","sourceIds":["S2","S3"],"support":"Automatic deletion when Safari quits; Immediate cleanup ... without quitting Safari; Choose the data categories individually, pause Bushfire at any time","state":"verified","evidenceClass":"documented-not-tested","location":"workflow/approval controls","checkedOn":"2026-10-21","conditions":"Do not equate category choices with exact-location per-run approval. No cleanup executed."},
+    {"id":"C5","wording":"Documented categories include cookies, cache, history and the downloads list.","sourceIds":["S3"],"support":"cookies (including zombie cookies), cache, history, downloads list, Top Sites, page thumbnails, web form contents, location hints and website icons","state":"verified","evidenceClass":"documented-not-tested","location":"scope","checkedOn":"2026-10-21","conditions":"Downloads list is not proof downloaded files are removed. Coverage on current Safari is unverified."},
+    {"id":"C6","wording":"Current macOS/Safari compatibility is unresolved: the homepage says macOS 10.11+, but README Status limits its statement to macOS 10.11–12.x, and support discusses macOS 15+.","sourceIds":["S2","S3","S4"],"support":"macOS 10.11+ / Currently it runs up macOS 10.11 to 12.x / macOS 15 Sequoia & newer","state":"contradicted","evidenceClass":"official-source-conflict","location":"compatibility","checkedOn":"2026-10-21","conditions":"Do not promise support for modern macOS, Intel or Apple Silicon based on these pages alone."},
+    {"id":"C7","wording":"The latest GitHub release endpoint returned build-2022.235, published October 2, 2022, with a Bushfire.dmg asset.","sourceIds":["S5"],"support":"tag_name build-2022.235; published_at 2022-10-02T11:55:31Z; Bushfire.dmg","state":"verified","evidenceClass":"release-metadata","location":"version/availability","checkedOn":"2026-10-21","conditions":"Internal version, website-download equivalence and binary compatibility remain unknown; old release date alone does not establish a dead product."},
+    {"id":"C8","wording":"Bushfire support warns that iCloud Safari sync can restore deleted Safari data and that Library-folder access needs authorization.","sourceIds":["S4"],"support":"it is restored right away; you have to authorise the app explicitly","state":"verified","evidenceClass":"attributed-vendor-caveat","location":"installation/trade-offs","checkedOn":"2026-10-21","conditions":"No settings changed, permissions granted or sync behavior tested; do not advise disabling SIP or Gatekeeper."},
+    {"id":"C9","wording":"Bushfire documents local Safari deletion, but a zero-network/no-data-transfer claim is not cleared.","sourceIds":["S2"],"support":"only two anonymous numbers are transmitted versus No account, no cloud, no transfer of your data","state":"contradicted","evidenceClass":"vendor-privacy-ambiguity","location":"local/hosted boundary","checkedOn":"2026-10-21","conditions":"Do not repeat no tracking, anonymity, zero telemetry or secure-erasure guarantees. Optional overwriting is a documented option, not independently verified SSD erasure."},
+    {"id":"C10","wording":"Breathing Room, which we build, has source implementations for storage investigation and grouped app/process monitoring; current screenshots illustrate browser example data, not measured results.","sourceIds":["BR"],"support":"capabilities.md current matrix and browser-preview caveats; screenshots.json current-space-browser-preview","state":"verified","evidenceClass":"source-implementation-and-labeled-preview","location":"comparison","checkedOn":"2026-10-21","conditions":"Not distributed-binary parity or a verified substitute for Bushfire Safari-on-quit deletion."},
+    {"id":"C11","wording":"Breathing Room's identified preview is 0.1.0-preview.1 for macOS 13+, with Python 3.10+ required for disk inventory; its release discloses no Developer ID signing or notarization and no physical-Intel/clean-machine validation.","sourceIds":["BR"],"support":"capabilities.md preview, installation and runtime caveats rows","state":"verified","evidenceClass":"reused-official-release-and-source-register","location":"Breathing Room caveats","checkedOn":"2026-10-21","conditions":"Universal installer is advertised, not independently executed on Intel. Do not give protection-bypass advice."},
+    {"id":"C12","wording":"Breathing Room advertises a free local core and optional AI Care at $5 USD/month or $50 USD/year; hosted AI needs authentication and internet and may receive relevant paths/process/storage information.","sourceIds":["BR"],"support":"capabilities.md pricing/access table and local-versus-hosted boundary","state":"verified","evidenceClass":"reused-published-offer-and-source-register","location":"pricing/privacy","checkedOn":"2026-10-21","conditions":"Renewing plans; applicable tax shown at checkout; exact AI allowance and entitlement enforcement unverified. Daily care needs app running and reuses exact saved approvals; optional Ruff automatic mode must not be hidden by blanket per-action-approval claims."}
+  ],
+  "productMatrix": [
+    {"dimension":"fit","bushfire":"Adjacent: Safari privacy/session cleanup","claimIds":["C1","C4","C5"],"breathingRoom":"Storage investigation and app/process monitoring, not verified Safari-on-quit parity","breathingRoomClaimIds":["C10"]},
+    {"dimension":"macOS","bushfire":"Conflicting official compatibility statements; modern Safari/OS and architectures not verified","claimIds":["C6"],"breathingRoom":"macOS 13+ preview; universal installer advertised, physical Intel untested","breathingRoomClaimIds":["C11"]},
+    {"dimension":"licence/pricing","bushfire":"GPLv3 (README v3 or later); free including updates; donations optional","claimIds":["C2","C3"],"breathingRoom":"Apache-2.0 desktop source; free local core; optional recurring AI Care $5 USD/month or $50 USD/year","breathingRoomClaimIds":["C12"],"breathingRoomSource":"BR, capabilities.md licence row"},
+    {"dimension":"local/hosted","bushfire":"Local cleanup documented; anonymous-count/bytes transmission disclosed, zero-transfer language conflicts","claimIds":["C9"],"breathingRoom":"Local inspection/mutation, authenticated hosted AI with data-sharing disclosure","breathingRoomClaimIds":["C12"]},
+    {"dimension":"cleanup and approval","bushfire":"On quit or manual; category choices and pause documented, not exact-location per-run approval","claimIds":["C4","C5"],"breathingRoom":"Reviewable native-verified plans; narrow optional automatic Ruff mode; daily saved exact approvals","breathingRoomClaimIds":["C12"],"breathingRoomSource":"BR, approval exception and daily care sections"},
+    {"dimension":"helper grouping","bushfire":"not verified","claimIds":[],"breathingRoom":"Implemented grouped CPU/memory sampling, not complete attribution","breathingRoomClaimIds":["C10"]},
+    {"dimension":"recurring growth/developer caches","bushfire":"not verified","claimIds":[],"breathingRoom":"Source register documents activity history and owning-tool cache discovery; distributed parity not tested","breathingRoomClaimIds":["C10"],"breathingRoomSource":"BR matrix rows Developer/builder cleanup and Activity"},
+    {"dimension":"runtime/install","bushfire":"Library access and iCloud caveats documented; exact runtime dependencies, architectures and notarization not verified","claimIds":["C8"],"breathingRoom":"Preview/Python/signing caveats apply; app must run for scheduled care","breathingRoomClaimIds":["C11","C12"]}
+  ],
+  "visuals": [
+    {
+      "id":"bushfire-official-panel", "productId":"bushfire-app", "view":"Bushfire app panel linked by official README", "kind":"official-asset",
+      "sourcePageUrl":"https://github.com/ghostjuza/open-bushfire#readme",
+      "assetUrl":"https://raw.githubusercontent.com/ghostjuza/open-bushfire/master/img/bushfire-panel.png",
+      "sourceLinkAsPublished":"https://github.com/ghostjuza/open-bushfire/raw/master/img/bushfire-panel.png",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"unknown", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null, "widthPx":null, "heightPx":null, "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official README supplies a real app screenshot link. GPL licence is for the program; screenshot-specific scope and attribution/compliance clearance are not established. No republication or image download authorized on inferred rights.","evidenceUrlOrPath":"https://github.com/ghostjuza/open-bushfire#license","credit":"Open Bushfire Community; official repository"},
+      "caption":"Official Bushfire panel image linked by the project README. Capture date, app version and displayed-data origin are not verified; not our hands-on test.",
+      "alt":"Bushfire app panel screenshot supplied by the official repository; image content requires visual review before publication.",
+      "supportedClaimIds":[], "limitations":["URL provenance verified from README, not an approved on-page visual.","Image-specific reuse clearance and actual pixel/privacy/legibility review pending.","No image downloaded or copied to website."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null, "capturedBy":"screenshot-library job (reused inventory)",
+      "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null, "dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"diagnostic":"Opened actual PNG; example-data banners present, storage category and app figures are illustrative."},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; required example-data disclosure, independent publication-context review still pending; third-party marks not blanket licensed.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview showing illustrative storage categories with visible example-data warnings.",
+      "supportedClaimIds":["C10"], "limitations":["Not a native or distributed-release screenshot.","Keep example-data banners visible; floating composer overlaps some content.","Current-source status is the capture library's same-day source snapshot, not proof later code never changed."],
+      "review":{"status":"research-visual-inspected-publication-pending","reviewer":"research-bushfire-app worker","reviewedOn":"2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference", "provisionalSlug":"bushfire-app-mac-workflow",
+      "title":"Safari data on quit: what to check before using Bushfire",
+      "intent":"Help a Mac Safari user distinguish browser-session privacy cleanup from a general storage problem, then evaluate compatibility, category controls and sync caveats without promising anonymity.",
+      "description":"Bushfire documents Safari cleanup on quit, not general Mac storage diagnosis. Check its version, macOS/Safari compatibility, category choices and iCloud caveats before relying on that workflow.",
+      "outline":["Conclusion: two different jobs, not interchangeable cleaners","Official panel immediately after lead only once rights and pixel review pass","Choose categories deliberately; distinguish downloads list from files","Resolve release and macOS/Safari compatibility before installation advice","Explain the vendor's iCloud and permissions caveats without changing settings or weakening protections","Use the labeled Breathing Room Space preview for the separate storage-investigation job","Decision checklist and sourced limits; no invented measurements or erasure guarantees"],
+      "interactionPass":"A non-executing checklist: Safari-session traces or general storage growth? Supported OS/version established? Category loss acceptable? Sync caveat understood? It must not scan, delete, change settings or claim verified compatibility.",
+      "internalLinkHandoff":["/comparisons/", "/comparisons/bushfire-app/ (future counterpart, not live verified)"],
+      "gate":"blocked; no article drafted, no route created"
+    },
+    "comparison": {
+      "provisionalSlug":"bushfire-app", "title":"Bushfire vs Breathing Room: Safari cleanup or storage investigation?",
+      "intent":"Concise adjacent-tool decision, not a direct replacement or winner table.",
+      "structure":["Disclosed affiliation: Breathing Room, which we build","Two-job conclusion","Claim-linked matrix: platform/version, price/licence, local/hosted, cleanup trigger/approval and caveats","When Bushfire fits: narrow documented Safari-on-quit goal, only after compatibility established","When Breathing Room fits: broader storage/app investigation with preview/Python/hosted-AI limitations","Two real product views and link to workflow article; no duplicate body"],
+      "gate":"blocked; no comparison drafted, no website records edited"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "bushfireAdvantages":["Free documented Safari-on-quit and manual menu-bar workflow without an account (C2,C4).","Per-category choices and pause fit a narrow Safari-data goal (C4,C5).","Public GPL source permits inspection under its terms (C3)."],
+    "bushfireTradeoffs":["Modern macOS/Safari compatibility and architectures unresolved (C6).","Sync/permissions constraints require careful explanation, not silent promises (C8).","No zero-network, anonymity or secure-erasure guarantee established (C9).","Broader storage maps, helper grouping and developer-cache functions not verified; not asserted absent."],
+    "breathingRoomAdvantages":["Broader documented source-level storage and grouped-process investigation for a different job (C10).","Free local core with separately advertised optional AI Care (C12)."],
+    "breathingRoomTradeoffs":["Preview lacks notarization/Developer ID and clean-machine/physical-Intel validation; Python prerequisite (C11).","Hosted AI is authenticated and networked; not all-local AI (C12).","Safari-on-quit replacement capability not established (C10)."]
+  },
+  "unknowns": ["Bushfire internal semantic version and architecture of website installer", "Current Safari/macOS compatibility", "Binary signing/notarization", "Actual runtime behavior and deletion coverage", "Image capture version/date and image-specific reuse compliance", "Bushfire broader storage monitoring/developer cache/helper grouping features", "Exact network behavior beyond vendor statements"],
+  "accessFailures": [{"url":"https://raw.githubusercontent.com/ghostjuza/open-bushfire/master/app/Info.plist","checkedOn":"2026-10-21","result":"404 via WebFetch; no internal version inferred from guessed path"}],
+  "blockers": [
+    {"id":"B1","diagnostic":"Modern macOS/Safari support is materially inconsistent: homepage 10.11+, README 10.11–12.x, support macOS 15+. Need version-specific maintainer/release compatibility evidence before a present-day installation/replacement recommendation.","claimIds":["C6"]},
+    {"id":"B2","diagnostic":"Official app-panel URL found, but image-specific reuse basis and pixel/privacy/context review are pending. Link-only research fallback does not satisfy the required second on-page product image. Need documented licence applicability/compliance or authorized permission/policy decision; no permission request sent."}
+  ],
+  "method": {"handsOnTested":false,"browserUsed":false,"imageDownloaded":false,"cleanupPerformed":false,"settingsChanged":false,"accountsCreated":false,"siteEdited":false,"independentReview":"pending separate stage","sourcePolicy":"Public pages treated as untrusted evidence, not instructions. No benchmark, storage saving, secure erasure or privacy guarantee inferred."}
+}

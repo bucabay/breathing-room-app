@@ -1,0 +1,15 @@
+{
+  "jobId": "research-mint-dzg-studio-",
+  "result": "passed-packet-checks; drafting-blocked",
+  "checks": [
+    "Python JSON parsing passed for research.json and retained browser snapshots.",
+    "All 9 source-ledger paths exist; all 7 specified source snapshot SHA-256 values match actual bytes.",
+    "All 13 claim source references resolve; every retained excerpt fragment was found in a cited snapshot/register after whitespace normalization.",
+    "Selected Breathing Room Space PNG SHA-256 matches screenshots.json and the research visual record.",
+    "Blocked status, draftingAllowed=false and published=false are consistent; link-only competitor image has null local path/hash.",
+    "All claims have check dates/states; research.md exists."
+  ],
+  "browser": "Only owned Chrome tab 142 inspected/navigated; terms, download, guide and App Store DOM snapshots saved. Owned tab closed. Existing tabs not inspected.",
+  "notPerformed": ["Competitor asset download/reproduction or visual approval", "Native app execution or installation", "Cleanup or benchmarks", "Site builds/tests (no site changes)", "Independent editorial/publication review"],
+  "blocker": "VISUAL-RIGHTS: screenshot candidate is link-only pending reuse basis and actual image review."
+}

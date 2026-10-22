@@ -1,0 +1,87 @@
+{
+  "jobId": "research-spacebroom",
+  "executedAtUtc": "2026-10-21T22:14:55.810268+00:00",
+  "command": "python3 docs/content/competitors/spacebroom/validate.py",
+  "outcome": "pass",
+  "checks": [
+    {
+      "check": "json-parse",
+      "outcome": "pass",
+      "detail": "Research, excerpts, baseline captures, screenshot inventory and batch-2 parse as JSON."
+    },
+    {
+      "check": "claim-source-links",
+      "outcome": "pass",
+      "detail": "23 unique claims have existing source IDs, source URL, retained excerpt, date and scope."
+    },
+    {
+      "check": "matrix-brief-references",
+      "outcome": "pass",
+      "detail": "All matrix/brief/tradeoff claim IDs resolve; unsupported competitor cells explicitly not verified."
+    },
+    {
+      "check": "source-file-integrity",
+      "outcome": "pass",
+      "detail": "4 declared source-file hashes match actual bytes; all local snapshots exist."
+    },
+    {
+      "check": "baseline-reuse-integrity",
+      "outcome": "pass",
+      "detail": "Copied captures match existing batch-2 raw-byte hashes and original official-check timestamp."
+    },
+    {
+      "check": "homepage-claim-excerpts",
+      "outcome": "pass",
+      "detail": "11 homepage-supported claim excerpts match retained baseline text; mismatches: []."
+    },
+    {
+      "check": "renewal-terms-excerpt",
+      "outcome": "pass",
+      "detail": "Annual renewal/cancellation excerpt matches its primary terms source, not homepage wording."
+    },
+    {
+      "check": "official-visual-reference",
+      "outcome": "pass",
+      "detail": "Space Lens img element occurs verbatim in retained official HTML; HTML hash also matches baseline embedded content hash. This does not verify image bytes/rights."
+    },
+    {
+      "check": "identity-and-alias-boundary",
+      "outcome": "pass",
+      "detail": "Canonical owner/self identity and direct-Mac classification are explicit; no false alias skip."
+    },
+    {
+      "check": "selected-preview-integrity",
+      "outcome": "pass",
+      "detail": "Selected PNG is 2940 \u00d7 3468, hash and required example-data caption match shared inventory."
+    },
+    {
+      "check": "visual-inspection-record",
+      "outcome": "pass",
+      "detail": "Actual selected PNG opened/read through image-capable tool in this run; example-data banners and composer overlap recorded. Not native/independent publication review."
+    },
+    {
+      "check": "honest-blocker",
+      "outcome": "pass",
+      "detail": "Uncleared/uninspected competitor image blocks drafting; no invented downloaded asset hash or publication approval."
+    },
+    {
+      "check": "owned-packet-file-set",
+      "outcome": "pass",
+      "detail": "Owned folder has research/text source records and checker only; no competitor image, binary or site asset downloaded. No shared/site builds run."
+    }
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/spacebroom/research.json": "85ac4707e33d8a8c9ff1982a8fe10927b6e9b76c622c30ae8abc30470c58d605",
+    "docs/content/competitors/spacebroom/research.md": "013695220200d401a4de291bb8e37551a0b850ea7891af503769deeea2cdb311",
+    "docs/content/competitors/spacebroom/sources/additional-excerpts.json": "6d55a890f390519d755be779e17da9d3cfab38e8e9ed63804356faba1040787d",
+    "docs/content/competitors/spacebroom/sources/discovery-baseline.json": "5915a437e1fdca701b4ae31b6ebead9f4907cbf3b43482e5d558762760487d8a",
+    "docs/content/competitors/spacebroom/sources/homepage-images.html": "8ad20995a2841c06fec92a56a97998d4e17cd25054ee06556542cb519460c108",
+    "docs/content/competitors/spacebroom/sources/official-baseline.json": "d759b6d349a19971a81ad3f5dc0dd2bbebabb05ec99e57e8024e91bd25b98151",
+    "docs/content/competitors/spacebroom/validate.py": "f3b1003425035829bbf1bcde0c3ad64895c854203673f4a1666c988909e32324"
+  },
+  "limitations": [
+    "Structural/evidence-retention checks do not clear screenshot rights or test apps.",
+    "New legal/policy excerpts were manually retained from actual WebFetch results, not full raw snapshots.",
+    "Independent drafting, rendered browser QA and publication checks remain pending; no site build required for research-only change."
+  ]
+}

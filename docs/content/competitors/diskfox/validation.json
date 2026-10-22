@@ -1,0 +1,69 @@
+{
+  "jobId": "research-diskfox",
+  "checkedAtUtc": "2026-10-21T20:31:19.821147+00:00",
+  "checks": [
+    {
+      "check": "Research JSON parses and records required blocked image-rights gate",
+      "result": "pass"
+    },
+    {
+      "check": "Claim IDs unique and all claim source references resolve",
+      "result": "pass"
+    },
+    {
+      "check": "All comparison matrix claims resolve",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash matches: docs/content/.runtime/verification-1/diskfox-official.json",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash matches: docs/content/capabilities.md",
+      "result": "pass"
+    },
+    {
+      "check": "Discovery snapshot hash matches",
+      "result": "pass"
+    },
+    {
+      "check": "Selected Breathing Room image hash matches inventory",
+      "result": "pass"
+    },
+    {
+      "check": "Baseline batch hash preserved",
+      "result": "pass"
+    },
+    {
+      "check": "Retained homepage contains excerpt D10",
+      "result": "pass"
+    },
+    {
+      "check": "Retained homepage contains excerpt D12",
+      "result": "pass"
+    },
+    {
+      "check": "Real competitor asset is link-only without invented download hash",
+      "result": "pass"
+    },
+    {
+      "check": "Both briefs block drafting and product stays distinct",
+      "result": "pass"
+    },
+    {
+      "check": "Browser visual observation artifact exists",
+      "result": "pass"
+    }
+  ],
+  "allPassed": true,
+  "artifactHashes": {
+    "docs/content/competitors/diskfox/research.md": "c22100490abd82a687d41c8fc93e4c1d3cd594b754327e0d14361638c33e3ab9",
+    "docs/content/competitors/diskfox/visual-source-observation.json": "ad243fd6bd9a64e8de1d0847662d981229f68e1de7812f862e71ed96f9ccb5e5",
+    "docs/content/competitors/diskfox/research.json": "1f533c25364242f8db21b8022f558582b29aa0e6b556da49eb627610679cebf0"
+  },
+  "notRun": [
+    "native app tests",
+    "marketing check/build/tests (no site edits)",
+    "independent visual/publication review"
+  ]
+}

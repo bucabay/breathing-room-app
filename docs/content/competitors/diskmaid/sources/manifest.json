@@ -1,0 +1,30 @@
+[
+  {
+    "id": "app-store",
+    "url": "https://apps.apple.com/us/app/id6758129723",
+    "finalUrl": "https://apps.apple.com/us/app/diskmaid-clean-your-computer/id6758129723?mt=12",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:31:37.349823+00:00",
+    "path": "sources/app-store.html",
+    "sha256": "8794fba2ea4e9bc5dcb4f934441cb906f06183c0cb3c6a53058c76c0f1940b59",
+    "purpose": "Missing terms/platform/availability/privacy evidence or exact official screenshot locators; not a repeat feature verification."
+  },
+  {
+    "id": "terms",
+    "url": "https://nalarin.com/mymacmaid/terms",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAtUtc": "2026-10-21T20:31:37.872272+00:00"
+  },
+  {
+    "id": "privacy",
+    "url": "https://nalarin.com/mymacmaid/privacy",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAtUtc": "2026-10-21T20:31:38.414320+00:00"
+  },
+  {
+    "id": "official-visual-locators",
+    "url": "https://nalarin.com/diskmaid",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAtUtc": "2026-10-21T20:31:38.949962+00:00"
+  }
+]

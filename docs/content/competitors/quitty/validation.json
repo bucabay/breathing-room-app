@@ -1,0 +1,26 @@
+{
+  "jobId": "research-quitty",
+  "status": "passed-structural-checks-not-editorial-clearance",
+  "method": "Executed read-only Python JSON, claim/source reference, SHA-256, HTTP-ledger and PNG-header assertions after writing the packet; process exited 0.",
+  "checks": [
+    "PASS: 18 claim records have source references, excerpts, check dates, states and conditions",
+    "PASS: 10 matrix rows reference existing claims",
+    "PASS: all 3 hashed source-ledger files and 5 retained HTTP response hashes match",
+    "PASS: official visual-source HTML 200; repository API, release API, README and repository page 404 recorded",
+    "PASS: selected Breathing Room preview hash and 2940x4440 PNG dimensions match; PNG opened and read using image-capable tool",
+    "PASS: explicit blocked-drafting, canonical owner, no verified aliases, link-only image and example-data disclosure gates retained",
+    "PASS: required research packet files exist; no site builds/tests needed (no site edits)"
+  ],
+  "browser": {
+    "pageId": 160,
+    "actions": ["Created owned about:blank tab", "Read blank health snapshot", "Navigated to official dashboard image URL", "Read fresh image-page snapshot reporting 3840x2160", "Closed owned tab"],
+    "imagePixelsReviewed": false,
+    "otherTabsInspected": false,
+    "recoveryUsed": false
+  },
+  "imageGate": "blocked: competitor reuse permission and visual/privacy review pending",
+  "availabilityGate": "blocked: official repository/releases inaccessible; version, binary requirements and license unresolved",
+  "runtimeTests": "Not performed; no app installed or launched",
+  "siteChecks": "Not performed; no site changes",
+  "independentEditorialReview": "Pending, no score awarded"
+}

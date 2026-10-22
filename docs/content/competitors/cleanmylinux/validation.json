@@ -1,0 +1,118 @@
+{
+  "jobId": "research-cleanmylinux",
+  "validatedAtUtc": "2026-10-21T22:39:02.160065+00:00",
+  "command": "python3 docs/content/competitors/cleanmylinux/validate-packet.py",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "Required research files exist and Markdown is nonempty",
+      "outcome": "pass"
+    },
+    {
+      "check": "Task, canonical owner and alias decision recorded",
+      "outcome": "pass"
+    },
+    {
+      "check": "All 18 claims have source URLs, excerpts, dates, locators, state and valid source IDs",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: commit.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: README.md",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: LICENSE",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: release.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: tree.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: baseline-home",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: discovery",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: br-README.md",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: br-src-tauri/tauri.conf.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: br-src/billing-config.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Source bytes match SHA-256: br-src/components/cleanup-assistant.tsx",
+      "outcome": "pass"
+    },
+    {
+      "check": "11 retained sources have whole-file hashes",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual bytes and PNG dimensions match: cleanmylinux-applications-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual caption, alt, rights and unpublished status: cleanmylinux-applications-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual bytes and PNG dimensions match: current-space-browser-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "Visual caption, alt, rights and unpublished status: current-space-browser-preview",
+      "outcome": "pass"
+    },
+    {
+      "check": "MIT notice retained with original copyright and permission conditions",
+      "outcome": "pass"
+    },
+    {
+      "check": "Mac preview caption retains example/native limitations",
+      "outcome": "pass"
+    },
+    {
+      "check": "Compatibility contradiction explicitly prevents exact minimum/install claims",
+      "outcome": "pass"
+    },
+    {
+      "check": "Distinct workflow/comparison intents and adjacent platform fit recorded",
+      "outcome": "pass"
+    },
+    {
+      "check": "Release metadata distinguishes beta name from API prerelease flag",
+      "outcome": "pass"
+    },
+    {
+      "check": "No publication or native-test approval claimed",
+      "outcome": "pass"
+    }
+  ],
+  "manualChecks": [
+    "Opened/read both actual product PNGs with image-capable read tool.",
+    "Reused matching batch-2 official/directory captures; did not refetch baseline homepage.",
+    "Read official pinned README, MIT licence and release metadata; flagged distro/GLIBC conflict."
+  ],
+  "limitations": [
+    "Structural/hash checks are not independent factual, legal, native runtime or rendered-page approval.",
+    "No website changes: site check/build/test not run or required at this research-only stage.",
+    "Initial packet assembly failed with KeyError products; corrected manifest key to competitors and reran successfully."
+  ]
+}

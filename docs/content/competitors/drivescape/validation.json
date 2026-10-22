@@ -1,0 +1,232 @@
+{
+  "status": "pass",
+  "scope": "Research structure, source excerpts and retained-byte integrity, not runtime QA or reuse clearance",
+  "checks": [
+    {
+      "check": "source-hash:press",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/press.html"
+    },
+    {
+      "check": "source-hash:eula",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/eula.html"
+    },
+    {
+      "check": "source-hash:changelog",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/changelog.html"
+    },
+    {
+      "check": "source-hash:privacy",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/privacy.html"
+    },
+    {
+      "check": "source-hash:how-it-works",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/how-it-works.html"
+    },
+    {
+      "check": "source-hash:repository",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/repository.html"
+    },
+    {
+      "check": "source-hash:release-latest",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/release-latest.json"
+    },
+    {
+      "check": "source-hash:baseline-home",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-1/drivescape-official.json"
+    },
+    {
+      "check": "source-hash:baseline-directory",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-1/drivescape-directory.json"
+    },
+    {
+      "check": "source-hash:br-capabilities",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source-hash:br-visuals",
+      "outcome": "pass",
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "source-hash:listing-visuals-browser.json",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/listing-visuals-browser.json"
+    },
+    {
+      "check": "source-hash:listing-visuals-snapshot.txt",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/drivescape/sources/listing-visuals-snapshot.txt"
+    },
+    {
+      "check": "supporting-excerpt:identity",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:license",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:repo",
+      "outcome": "pass",
+      "detail": "https://github.com/BrickLogic/ChartyDriveReleases"
+    },
+    {
+      "check": "supporting-excerpt:mac",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:other-platforms",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:version",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/changelog"
+    },
+    {
+      "check": "supporting-excerpt:pricing",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/eula"
+    },
+    {
+      "check": "supporting-excerpt:major-upgrades",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/eula"
+    },
+    {
+      "check": "supporting-excerpt:free-trial",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/"
+    },
+    {
+      "check": "supporting-excerpt:trial-data",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/privacy"
+    },
+    {
+      "check": "supporting-excerpt:local",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/privacy"
+    },
+    {
+      "check": "supporting-excerpt:sunburst",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/en/how-it-works"
+    },
+    {
+      "check": "supporting-excerpt:approval",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/en/how-it-works"
+    },
+    {
+      "check": "supporting-excerpt:dev",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:duplicates-sweep",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:trends",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/"
+    },
+    {
+      "check": "supporting-excerpt:shields",
+      "outcome": "pass",
+      "detail": "https://drivescape.dev/press"
+    },
+    {
+      "check": "supporting-excerpt:install",
+      "outcome": "pass",
+      "detail": "https://github.com/BrickLogic/ChartyDriveReleases"
+    },
+    {
+      "check": "supporting-excerpt:br-preview",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "supporting-excerpt:br-workflow",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "supporting-excerpt:br-pricing-hosted",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "supporting-excerpt:br-license",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "supporting-excerpt:br-dev",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "unique-claim-ids",
+      "outcome": "pass",
+      "detail": "23 claim IDs"
+    },
+    {
+      "check": "canonical-and-fit",
+      "outcome": "pass",
+      "detail": "Distinct Mac storage competitor; no verified duplicate"
+    },
+    {
+      "check": "link-only-not-downloaded",
+      "outcome": "pass",
+      "detail": "Rights unresolved; no image bytes downloaded or hashes invented"
+    },
+    {
+      "check": "screenshot-url-in-public-dom",
+      "outcome": "pass",
+      "detail": "Source DOM identifies selected screenshot URL"
+    },
+    {
+      "check": "breathing-room-original-hash",
+      "outcome": "pass",
+      "detail": "Selected existing Space PNG unchanged; example-data caption retained"
+    },
+    {
+      "check": "required-block",
+      "outcome": "pass",
+      "detail": "Missing competitor image rights blocks drafting"
+    },
+    {
+      "check": "briefs-present",
+      "outcome": "pass",
+      "detail": "Workflow and comparison are briefs, not published drafts"
+    },
+    {
+      "check": "markdown-present",
+      "outcome": "pass",
+      "detail": "Human-readable packet explicitly blocked"
+    }
+  ],
+  "failures": [],
+  "notRun": [
+    "Site builds/tests (no site edits)",
+    "Native app/binary tests",
+    "Independent publication/visual review"
+  ]
+}

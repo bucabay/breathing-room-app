@@ -1,0 +1,20 @@
+{
+  "jobId": "research-disk-diet",
+  "checkedOn": "2026-10-21",
+  "method": "Executed read-only Python json/hashlib/Path assertions against written artifacts and existing evidence files",
+  "results": [
+    "PASS: research.json parses as JSON",
+    "PASS: eight unique source IDs; all thirteen claims have valid source IDs, nonempty excerpts, source URLs and check dates",
+    "PASS: retained official snapshot SHA-256 matches S1; directory snapshot SHA-256 matches discovery record",
+    "PASS: selected Breathing Room Space original SHA-256 matches screenshot manifest and research packet",
+    "PASS: canonicalOwnerId disk-diet and aliasSkip false",
+    "PASS: required Example data only caption retained",
+    "PASS: competitor visual link-only with no downloaded original; status blocked and draftingAllowed false"
+  ],
+  "artifacts": [
+    {"path": "docs/content/competitors/disk-diet/research.json", "sha256": "1607c5f40ddc138ab058aa2341d7c957e9c903c90e0a39c580fc25decbc86427"},
+    {"path": "docs/content/competitors/disk-diet/research.md", "sha256": "cd9a82c3aa401edcd02d2536ce3388bf7c40ea74f87b70bf0552eafbfcfdbcef"}
+  ],
+  "notPerformed": ["Competitor pixel/rights approval", "Native tests or cleanup", "Website checks/build/tests: no website changes", "Independent editorial review"],
+  "outcome": "Research retained; drafting blocked by competitor screenshot reuse rights."
+}

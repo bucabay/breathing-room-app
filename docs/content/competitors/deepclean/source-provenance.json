@@ -1,0 +1,142 @@
+[
+  {
+    "id": "baseline-home",
+    "publisher": "DeepClean",
+    "title": "DeepClean: See What's Inside System Data on Your Mac",
+    "url": "https://deepclean.app",
+    "finalUrl": "https://deepclean.app",
+    "retrievedAtUtc": "2026-10-21T19:08:12.712053+00:00",
+    "snapshotPath": "docs/content/.runtime/verification-1/deepclean-official.json",
+    "sha256": "a4ace2c162cac1754bf639ffcab062f7180bf3e74890a491f8bba8132334b973",
+    "scope": "Reused current batch-1 official text; not re-fetched; publication/update date unknown",
+    "retainedFileSha256": "a4ace2c162cac1754bf639ffcab062f7180bf3e74890a491f8bba8132334b973"
+  },
+  {
+    "id": "baseline-deepcleanmac",
+    "publisher": "DeepCleanMac",
+    "title": "DeepCleanMac official homepage",
+    "url": "https://deepcleanmac.com",
+    "finalUrl": "https://deepcleanmac.com",
+    "snapshotPath": "docs/content/.runtime/verification-1/deepcleanmac-official.json",
+    "metadataSource": "docs/content/verification/batch-1.json:deepcleanmac",
+    "scope": "Reused only for similar-name resolution, not this product's feature matrix",
+    "retainedFileSha256": "76403e4f07576520a85bbfbcc1d5d15e77fa7e238f03df2f3924c761f2266018",
+    "retrievedAtUtc": "2026-10-21T19:08:01.448108+00:00"
+  },
+  {
+    "id": "about",
+    "publisher": "DeepClean",
+    "title": "About",
+    "url": "https://deepclean.app/about",
+    "archiveRecord": "sources/retrievals.json#about",
+    "publicationDate": null,
+    "retrievedAtUtc": "2026-10-21T20:22:30.711425+00:00",
+    "finalUrl": "https://deepclean.app/about",
+    "httpStatus": 200,
+    "snapshotPath": "sources/about.html",
+    "sha256": "775524c8929477c768f25a6e448eb315e2d3aab8d204ad586c19943d233fa06d",
+    "textPath": "sources/about.txt"
+  },
+  {
+    "id": "terms",
+    "publisher": "DeepClean",
+    "title": "Terms of Use",
+    "url": "https://deepclean.app/terms",
+    "archiveRecord": "sources/retrievals.json#terms",
+    "publicationDate": "2026-10-17",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711590+00:00",
+    "finalUrl": "https://deepclean.app/terms",
+    "httpStatus": 200,
+    "snapshotPath": "sources/terms.html",
+    "sha256": "a2f72a07a60940e41c57dc88e8450b77101198cd820d0a98a6be39e69713b845",
+    "textPath": "sources/terms.txt"
+  },
+  {
+    "id": "privacy",
+    "publisher": "DeepClean",
+    "title": "Privacy Policy",
+    "url": "https://deepclean.app/privacy",
+    "archiveRecord": "sources/retrievals.json#privacy",
+    "publicationDate": "2026-09-11",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711655+00:00",
+    "finalUrl": "https://deepclean.app/privacy",
+    "httpStatus": 200,
+    "snapshotPath": "sources/privacy.html",
+    "sha256": "1b84c504e735aca9f727139ca4d60faed91baa1e31f23e55d69c5832261d436b",
+    "textPath": "sources/privacy.txt"
+  },
+  {
+    "id": "download",
+    "publisher": "DeepClean",
+    "title": "Download and install",
+    "url": "https://deepclean.app/download",
+    "archiveRecord": "sources/retrievals.json#download",
+    "publicationDate": null,
+    "retrievedAtUtc": "2026-10-21T20:22:30.711695+00:00",
+    "finalUrl": "https://deepclean.app/download",
+    "httpStatus": 200,
+    "snapshotPath": "sources/download.html",
+    "sha256": "823a3e7c68f6591a892c3dc6a94653122c612f290dc4bdcb036633b2a9785cb5",
+    "textPath": "sources/download.txt"
+  },
+  {
+    "id": "press",
+    "publisher": "DeepClean",
+    "title": "Press Kit",
+    "url": "https://deepclean.app/press/",
+    "archiveRecord": "sources/retrievals.json#press",
+    "publicationDate": null,
+    "retrievedAtUtc": "2026-10-21T20:22:30.711728+00:00",
+    "finalUrl": "https://deepclean.app/press/",
+    "httpStatus": 200,
+    "snapshotPath": "sources/press.html",
+    "sha256": "c0fa0946cd0bb93f94f8536b2580771b6ee43377a7133b824010b162ed6bccb0",
+    "textPath": "sources/press.txt"
+  },
+  {
+    "id": "developer-tools",
+    "publisher": "DeepClean",
+    "title": "Developer Tools",
+    "url": "https://deepclean.app/features/developer-tools",
+    "archiveRecord": "sources/retrievals.json#developer-tools",
+    "publicationDate": null,
+    "retrievedAtUtc": "2026-10-21T20:22:30.711758+00:00",
+    "finalUrl": "https://deepclean.app/features/developer-tools",
+    "httpStatus": 200,
+    "snapshotPath": "sources/developer-tools.html",
+    "sha256": "c854123220bd3b8357211ae0731ec8ce0510c91e7e9b2c638498c572278bca18",
+    "textPath": "sources/developer-tools.txt"
+  },
+  {
+    "id": "listing-visual",
+    "publisher": "AlternativeTo",
+    "title": "DeepClean listing image metadata",
+    "url": "https://alternativeto.net/software/deepclean/about/",
+    "snapshotPath": "sources/listing-visual-dom.json",
+    "scope": "Read-only live DOM metadata; asset not downloaded and UI not independently tested",
+    "retainedFileSha256": "29088fbdea981117256e3540c12039c1c04a5fc526d4300ec5e7ebe4e50fc994"
+  },
+  {
+    "id": "br-capabilities",
+    "publisher": "Breathing Room programme",
+    "url": "https://github.com/bucabay/breathing-room-app",
+    "snapshotPath": "docs/content/capabilities.md",
+    "checkedOn": "2026-10-21",
+    "scope": "Reused same-day source/release/public-page register, not new native validation",
+    "retainedFileSha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613"
+  },
+  {
+    "id": "br-visuals",
+    "publisher": "Breathing Room programme",
+    "url": "http://127.0.0.1:1431/",
+    "snapshotPath": "docs/content/screenshots.json",
+    "checkedOn": "2026-10-21",
+    "scope": "Existing first-party current-source browser preview, example data",
+    "retainedFileSha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c"
+  },
+  {
+    "id": "discovery-snapshot",
+    "path": "docs/content/.runtime/verification-1/deepclean-directory.json",
+    "sha256": "f687883904e40ba215ae6c910836426cabedf58855fcd62b5096d7c706d914c9"
+  }
+]

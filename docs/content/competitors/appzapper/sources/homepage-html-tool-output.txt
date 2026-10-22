@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppZapper 3000</title>
+    <meta name="description" content="The legendary Mac uninstaller is back. Drag, drop, and zap apps — and everything they leave behind — with a real 3D zapper.">
+
+    <!-- Link previews (iMessage, Slack, Facebook, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://appzapper.com/">
+    <meta property="og:site_name" content="AppZapper 3000">
+    <meta property="og:title" content="AppZapper 3000">
+    <meta property="og:description" content="The uninstaller Apple forgot.">
+    <meta property="og:image" content="https://appzapper.com/site/appzapper-3000/assets/share-card-v4.png">
+    <meta property="og:image:secure_url" content="https://appzapper.com/site/appzapper-3000/assets/share-card-v4.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AppZapper 3000: uninstall Mac apps completely. Leftover files, caches and settings included. appzapper.com">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AppZapper 3000">
+    <meta name="twitter:description" content="The uninstaller Apple forgot.">
+    <meta name="twitter:image" content="https://appzapper.com/site/appzapper-3000/assets/share-card-twitter-v4.png">
+    <meta name="twitter:image:alt" content="AppZapper 3000: uninstall Mac apps completely. Leftover files, caches and settings included. appzapper.com">
+
+    <link rel="icon" type="image/png" href="/site/appzapper-3000/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/site/appzapper-3000/assets/zapper-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --lime: #43DC1E;
+            --lime-bright: #63EE3E;
+            --red: #FC001B;
+            --red-deep: #D40017;
+            --ink: #0A0A0A;
+            --card: #1B1B1B;
+            --card-border: rgba(255, 255, 255, 0.09);
+            --text: #F2F2F2;
+            --text-dim: #9C9C9C;
+            --text-on-lime: #071400;
+            --dim-on-lime: rgba(7, 20, 0, 0.72);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            overflow-x: clip;
+        }
+
+        body {
+            background: var(--ink);
+            color: var(--text);
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+            overflow-x: clip;
+        }
+
+        ::selection { background: var(--lime); color: var(--text-on-lime); }
+
+        img, video { max-width: 100%; display: block; }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3 { text-wrap: balance; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Hero                                                                */
+        /* ------------------------------------------------------------------ */
+        .hero {
+            position: relative;
+            /* bottom padding stands in for the AppZapper 2 link that used to sit under the laptop */
+            padding: clamp(36px, 5.5vh, 60px) 0 22px;
+            text-align: center;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero::before {
+            /* faint lime haze behind the wordmark */
+            content: '';
+            position: absolute;
+            top: -160px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(900px, 100vw);
+            height: 480px;
+            background: radial-gradient(ellipse at center, rgba(67, 220, 30, 0.12), transparent 65%);
+            pointer-events: none;
+        }
+
+        .wordmark {
+            font-weight: 900;
+            font-size: clamp(1.9rem, 7.6vw, 5.2rem);
+            line-height: 0.95;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.24em;
+        }
+
+        .wordmark .logo-icon {
+            width: clamp(44px, 8.5vw, 96px);
+            height: clamp(44px, 8.5vw, 96px);
+            object-fit: contain;
+            flex: 0 0 auto;
+            filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.5));
+        }
+
+        /* The buy-section headline reuses the wordmark without the icon. */
+        .wordmark--buy { display: block; }
+
+        /* invisible wrapper on desktop; becomes the two-line stack on mobile */
+        .wm-text { display: contents; }
+
+        @media (max-width: 480px) {
+            .wordmark { font-size: clamp(1.6rem, 8.4vw, 2.05rem); gap: 0.12em; }
+
+            /* em-sized so it scales with the type and the lockup always fits */
+            .wordmark .logo-icon { width: 1.4em; height: 1.4em; }
+        }
+
+        .wordmark .az {
+            background: linear-gradient(180deg, var(--lime-bright) 25%, #2FB50C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            filter: drop-shadow(0 0 26px rgba(67, 220, 30, 0.35));
+        }
+
+        /* the buy-section lockup runs a bit looser than the hero */
+        .wordmark.wordmark--buy .three-k { margin-left: 0.14em; }
+
+        .wordmark .three-k {
+            margin-left: -0.02em;
+            background: linear-gradient(180deg, #FF5240 20%, #D40017);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            filter: drop-shadow(0 0 22px rgba(252, 0, 27, 0.4));
+        }
+
+        .tagline {
+            margin-top: 6px;
+            font-size: clamp(1rem, 2.3vw, 1.3rem);
+            font-weight: 500;
+            color: #E4E4E4;
+            letter-spacing: 0.005em;
+        }
+
+        .cta-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* TRY / BUY / HELP — same shape, green / red / black fills */
+        .btn.btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            /* equal widths, or the middle button drifts off the centerline */
+            width: 132px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.92rem;
+        }
+
+        .btn.btn-cta:hover { transform: translateY(-2px); filter: brightness(1.12); }
+
+        .btn.btn-cta--try {
+            background: linear-gradient(180deg, var(--lime-bright), var(--lime) 55%);
+            color: var(--text-on-lime);
+            box-shadow: 0 6px 24px rgba(67, 220, 30, 0.3);
+        }
+
+        /* TRY / BUY + the small line under each ("macOS 15.6+", "from $18") */
+        .cta-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .cta-req {
+            font-size: 0.74rem;
+            letter-spacing: 0.04em;
+            color: var(--text-dim);
+        }
+
+        .btn.btn-cta--buy {
+            background: linear-gradient(180deg, #FF4030, var(--red-deep) 60%);
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(252, 0, 27, 0.25);
+        }
+
+        .btn.btn-cta--help {
+            background: linear-gradient(180deg, #2E2E2E, #1E1E1E 60%);
+            color: var(--text);
+            border-color: rgba(255, 255, 255, 0.14);
+        }
+
+        .ic {
+            display: block;
+            width: 16px;
+            height: 16px;
+            flex: 0 0 auto;
+            margin-top: -1px;
+        }
+
+        /* TRY / HELP popovers — anchored under the clicked button from JS */
+        .popover {
+            position: fixed;
+            inset: auto;
+            margin: 0;
+            width: 280px;
+            background: var(--card);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 14px;
+            padding: 20px 22px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+            z-index: 60;
+        }
+
+        /* flat, solid buttons inside popovers — no gradients or glows; same
+           uppercase lettering as the main CTAs */
+        .popover .btn,
+        .popover .btn:hover {
+            background: var(--lime);
+            color: var(--text-on-lime);
+            border-radius: 10px;
+            box-shadow: none;
+            transform: none;
+            filter: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.92rem;
+        }
+
+        .popover .btn:hover { background: var(--lime-bright); }
+
+        .popover::before {
+            /* caret pointing at the button (x set from JS) */
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: calc(var(--caret-x, 50%) - 7px);
+            width: 13px;
+            height: 13px;
+            background: var(--card);
+            border-left: 1px solid var(--card-border);
+            border-top: 1px solid var(--card-border);
+            transform: rotate(45deg);
+        }
+
+        .popover.above::before {
+            top: auto;
+            bottom: -7px;
+            border: 0;
+            border-right: 1px solid var(--card-border);
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .popover .try-meta {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .popover .try-note {
+            margin: 0 0 4px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .popover .try-note + .try-meta { margin-bottom: 14px; }
+
+        .popover .try-note strong { color: var(--lime); font-weight: inherit; }
+
+        .popover .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            width: 100%;
+            padding: 13px 20px;
+            line-height: 1;
+        }
+
+        /* HELP popover: email us, or get a lost license re-sent */
+        #help-dialog { width: 300px; text-align: left; }
+        #help-dialog:focus { outline: none; } /* the popover itself takes focus on open so the email field doesn't */
+
+        .help-or {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 12px 0;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+
+        /* same height as the email field + Resend row above it */
+        #help-dialog .help-email { padding-top: 16px; padding-bottom: 16px; }
+
+        .help-or::before,
+        .help-or::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--card-border);
+        }
+
+        .help-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .help-label strong { color: var(--lime); font-weight: 800; }
+
+        .help-field { display: flex; gap: 6px; }
+
+        .help-field input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.14);
+            background: #0F0F0F;
+            color: var(--text);
+            font: inherit;
+            font-size: 0.9rem;
+        }
+
+        .help-field input::placeholder { color: #666; }
+
+        .help-field input:focus {
+            outline: none;
+            border-color: var(--lime);
+        }
+
+        .popover .help-field .btn {
+            width: auto;
+            padding: 10px 14px;
+            border-radius: 10px;
+        }
+
+        .help-status {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        .help-status:empty { display: none; }
+
+        .help-status.ok { color: var(--lime); }
+        .help-status.err { color: #FF6B6B; }
+
+        .btn:focus { outline: none; }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 36px;
+            border: 0;
+            border-radius: 12px;
+            font-family: inherit;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+            letter-spacing: -0.005em;
+            cursor: pointer;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+            will-change: transform;
+        }
+
+        .btn-zap {
+            background: linear-gradient(180deg, var(--lime-bright), var(--lime) 55%);
+            color: var(--text-on-lime);
+            box-shadow: 0 6px 28px rgba(67, 220, 30, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        .btn-zap:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 38px rgba(67, 220, 30, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* MacBook                                                             */
+        /* ------------------------------------------------------------------ */
+        .laptop-stage {
+            position: relative;
+            margin: clamp(26px, 4vh, 40px) auto 0;
+            max-width: 660px;
+            padding: 0 24px;
+        }
+
+        .laptop-stage::after {
+            /* lime glow pooling under the machine */
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            transform: translateX(-50%);
+            width: 82%;
+            height: 130px;
+            background: radial-gradient(ellipse at center, rgba(67, 220, 30, 0.3), transparent 68%);
+            filter: blur(14px);
+            pointer-events: none;
+        }
+
+        .macbook { position: relative; z-index: 1; }
+
+        .mb-lid {
+            position: relative;
+            margin: 0 auto;
+            width: 88%;
+            background: #050505;
+            border: 3px solid #3B701D;
+            border-bottom-color: #2A5013;
+            border-radius: clamp(12px, 2.2vw, 22px) clamp(12px, 2.2vw, 22px) 0 0;
+            padding: clamp(8px, 1.6vw, 16px);
+            padding-bottom: clamp(10px, 2vw, 20px);
+            box-shadow:
+                inset 0 0 0 2px #101010,
+                0 30px 80px rgba(0, 0, 0, 0.75);
+        }
+
+        .mb-screen {
+            position: relative;
+            border-radius: clamp(5px, 1vw, 10px);
+            overflow: hidden;
+            background: #0a0a0a;
+            aspect-ratio: 16 / 10; /* matches demo.mp4 (1600x1000) */
+        }
+
+        .mb-screen video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .sound-toggle {
+            --toggle-inset: 12px; /* also read by pinSoundToggle in JS */
+            position: absolute;
+            bottom: var(--toggle-inset);
+            right: var(--toggle-inset);
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.65);
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(6px);
+            transition: background 0.2s;
+        }
+        .sound-toggle:hover { background: rgba(0, 0, 0, 0.85); }
+        .sound-toggle svg { width: 20px; height: 20px; }
+        /* phones: the laptop screen is small, so tuck the toggle further into the corner */
+        @media (max-width: 640px) {
+            .sound-toggle { --toggle-inset: 6px; }
+        }
+
+        /* Click to enlarge: the video element is moved into this overlay
+           and sits centred over a dimmed page (FLIP-animated from JS). */
+        .video-lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 70;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            touch-action: none;          /* no page scrolling behind the overlay */
+            overscroll-behavior: contain;
+        }
+
+        .video-lightbox.open { display: flex; }
+
+        /* the dimmer fades on its own so the video itself stays solid
+           while it glides */
+        .video-lightbox::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.82);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .video-lightbox.show::before { opacity: 1; }
+
+        /* iOS/iPadOS: WebKit clips fixed layers to the visible viewport, so
+           nothing inside the overlay can paint behind Safari's toolbar. Page
+           content can, so on those devices the dimmer is a document-positioned
+           layer instead — JS sizes it to the screen plus a margin above and
+           below at the current scroll offset (scrolling is locked while zoomed). */
+        .video-dimmer {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 69; /* just under the overlay, so the video stays on top */
+            background: rgba(0, 0, 0, 0.82); /* same tint as the desktop dimmer */
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+        .video-dimmer.open { display: block; }
+        .video-dimmer.show { opacity: 1; }
+        html.ios .video-lightbox::before { display: none; }
+
+        /* while enlarged the toggle floats in the overlay; JS pins it to the
+           video's corner (see pinSoundToggle) so it keeps its size and place */
+        .video-lightbox .sound-toggle { right: auto; bottom: auto; }
+
+        .video-lightbox video {
+            position: relative;
+            width: min(92vw, calc(88vh * 16 / 10));
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+            transform-origin: 0 0;
+            will-change: transform;
+        }
+
+        .mb-base {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: clamp(10px, 1.8vw, 18px);
+            background: linear-gradient(180deg, #67B13E 0%, #47832A 45%, #2B5418 100%);
+            border-radius: 3px 3px clamp(8px, 1.6vw, 14px) clamp(8px, 1.6vw, 14px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .mb-base::before {
+            /* thumb scoop */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: clamp(70px, 12%, 130px);
+            height: 55%;
+            background: linear-gradient(180deg, #1D3A10, #3B701D);
+            border-radius: 0 0 12px 12px;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Wavy lime bands                                                     */
+        /* ------------------------------------------------------------------ */
+        .wave {
+            display: block;
+            position: relative;
+            z-index: 1; /* above the starbursts, so rays run under the lime curve */
+            width: 100%;
+            height: clamp(38px, 6.5vw, 88px);
+        }
+
+        /* overlap the band by a pixel so subpixel rounding can't open a seam */
+        .wave[data-wave="down"] { margin-bottom: -1px; }
+        .wave[data-wave="up"] { margin-top: -1px; }
+
+        .wave svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .band {
+            position: relative;
+            z-index: 1; /* above the starbursts */
+            background: var(--lime);
+            color: var(--text-on-lime);
+            text-align: center;
+            padding: clamp(30px, 5.5vw, 64px) 0 clamp(38px, 6vw, 72px);
+        }
+
+        .band h2,
+        .buy-section h2 {
+            font-weight: 900;
+            font-size: clamp(2.1rem, 6.2vw, 4.4rem);
+            line-height: 1;
+            letter-spacing: -0.035em;
+            text-transform: uppercase;
+        }
+
+        .band h2 .accent { color: var(--red-deep); }
+
+        .band .lede {
+            max-width: 620px;
+            margin: 26px auto 0;
+            font-size: clamp(0.98rem, 1.9vw, 1.13rem);
+            line-height: 1.72;
+            color: var(--dim-on-lime);
+            font-weight: 500;
+            text-wrap: pretty;
+        }
+
+        .band .lede strong { color: var(--text-on-lime); font-weight: 800; }
+
+        .band .lede + .lede { margin-top: 16px; }
+
+        /* The big, Transmit-style pitch paragraph */
+        .band .lede-xl {
+            max-width: 700px;
+            font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+            line-height: 1.55;
+            font-weight: 500;
+            text-align: justify;
+            text-wrap: normal;
+        }
+
+        .band .lede-xl strong {
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Drag / Drop / Zap steps                                             */
+        /* ------------------------------------------------------------------ */
+        /* Three equal windows around a circle, in the spirit of the
+           AppZapper 1 site: drag top-left, drop top-right, zap centred
+           below, with curved arrows stepping round. Everything is placed
+           in percentages of a fixed-ratio stage so the composition scales. */
+        .steps {
+            position: relative;
+            max-width: 1040px;
+            aspect-ratio: 1040 / 820;
+            /* room above for the first arrow's arc as well as breathing
+               space under the pitch copy; the bottom tucks under the wave
+               divider so the zap window sits low in the band */
+            margin: clamp(56px, 8vw, 96px) auto -7%;
+        }
+
+        .step { position: absolute; width: 44%; z-index: 1; }
+
+        /* slightly off a true triangle, with a hair of tilt, so it reads as
+           laid out by hand rather than by a compass */
+        .step--1 { left: 1%; top: 3%; width: 43%; transform: rotate(-1.4deg); }
+        .step--2 { left: 55%; top: 0; width: 45%; transform: rotate(2.2deg); }
+        .step--3 { left: 31%; top: 52%; z-index: 2; transform: rotate(-0.7deg); } /* the zap */
+
+        .step-fig { position: relative; margin: 0; }
+
+        .step-fig > img:first-child { width: 100%; height: auto; }
+
+        /* hand-drawn arcs between the steps, in stage coordinates */
+        .step-arrows {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: visible;
+            color: var(--text-on-lime);
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        /* small connecting arrows for the stacked phone layout */
+        .step-link { display: none; }
+
+        /* Explosion + smoke frames from the app, composited over the hole
+           where Figma.app used to be. Both spill past the screenshot.
+           --hole-x/y locate the scorch mark within step3.png. */
+        .step--zap { --hole-x: 15%; --hole-y: 25.3%; }
+
+        .fx {
+            position: absolute;
+            left: var(--hole-x);
+            top: var(--hole-y);
+            z-index: 2;
+            max-width: none;
+            pointer-events: none;
+            /* plain source-over: the PNGs carry real alpha, no lightening */
+            mix-blend-mode: normal;
+            isolation: isolate;
+        }
+
+        /* Sized and anchored as the app does it. The app plays the energy
+           clip in a 1536pt window (0.75pt per frame px) anchored at
+           (0.5, 0.45) of the frame; this crop is 820px of the 2048px frame,
+           so at the 2x screenshot scale it spans 105% of the window image,
+           with the anchor at (50%, 61%) of the crop. */
+        .fx-explosion {
+            z-index: 3;
+            width: 105%;
+            transform: translate(-50%, -61%);
+        }
+
+        /* Smoke: the app plays the full 540x1024pt (rotated) clip anchored
+           at (0.47, 0.775 from the top), so it's 92% of the window image
+           wide. It lives on the stage rather than in the zap step so it can
+           rise behind every window; --hole-x/y is the scorch mark in stage
+           coordinates (zap step at 31%/55%, hole at 15%/25.3% of it). */
+        .fx-smoke {
+            z-index: 0;
+            /* nudged left of the true mark so the plume clears the burst */
+            --hole-x: 30%;
+            --hole-y: 62.5%;
+            width: 40.6%;
+            opacity: 0.75;
+            transform: translate(-47%, -77.5%);
+        }
+
+        /* the pitch copy stays above the smoke rising into it */
+        .band .container { position: relative; z-index: 3; }
+
+        /* ------------------------------------------------------------------ */
+        /* 3D zapper stage                                                     */
+        /* ------------------------------------------------------------------ */
+        .zapper-section {
+            position: relative;
+            padding: clamp(30px, 5vw, 60px) 0;
+        }
+
+        .zapper-section::before {
+            /* the gun's own colors, bleeding into the dark */
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 40% 45% at 36% 52%, rgba(67, 220, 30, 0.07), transparent 70%),
+                radial-gradient(ellipse 35% 40% at 66% 42%, rgba(252, 0, 27, 0.07), transparent 70%);
+            pointer-events: none;
+        }
+
+        .ddz {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            font-weight: 900;
+            font-size: clamp(2.1rem, 6.2vw, 4.4rem);
+            line-height: 1;
+            letter-spacing: -0.035em;
+            text-transform: uppercase;
+            margin: clamp(14px, 2.5vw, 30px) 24px 24px;
+        }
+
+        .ddz .zap {
+            color: var(--red);
+            text-shadow: 0 0 28px rgba(252, 0, 27, 0.4);
+        }
+
+        .zapper-stage {
+            position: relative;
+            max-width: 1120px;
+            margin: 0 auto;
+            height: clamp(420px, 62vw, 660px);
+        }
+
+        /* The outer box only positions. The disc is rotated from JS — CSS
+           animations here would make WebKit freeze percentage transforms /
+           origins on resize, drifting the burst out of place. */
+        .starburst {
+            position: absolute;
+            left: 50%;
+            aspect-ratio: 1;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .burst-disc {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: repeating-conic-gradient(
+                rgba(255, 255, 255, 0.1) 0deg 7.5deg,
+                transparent 7.5deg 15deg
+            );
+            -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 42%, transparent 64%);
+            mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 42%, transparent 64%);
+            will-change: transform;
+        }
+
+        /* px floors keep the rays reaching the edges at narrow widths */
+        .starburst--zapper { top: 54%; width: clamp(1100px, 170vw, 2000px); opacity: 0.55; }
+        .starburst--laptop { top: 56%; width: clamp(950px, 135vw, 1600px); }
+
+        .zapper-stage model-viewer { position: relative; z-index: 1; }
+
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            /* keep hotspot markers fully opaque even when occluded */
+            --min-hotspot-opacity: 1;
+            /* no loading bar along the top edge, no poster flash */
+            --progress-bar-height: 0px;
+            --progress-bar-color: transparent;
+            --poster-color: transparent;
+        }
+
+        /* Pulsing markers pinned to the gun parts the callouts describe;
+           left/top set from JS, hidden until the first projection lands */
+        .anchor {
+            position: absolute;
+            visibility: hidden;
+            z-index: 2;
+            width: 12px;
+            height: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.55);
+            pointer-events: none;
+        }
+
+        .anchor::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.75);
+            animation: anchor-pulse 2.2s ease-out infinite;
+        }
+
+        @keyframes anchor-pulse {
+            0% { transform: scale(1); opacity: 0.9; }
+            70%, 100% { transform: scale(2.6); opacity: 0; }
+        }
+
+        .callout {
+            position: absolute;
+            will-change: transform;
+            width: 224px;
+            background: rgba(14, 14, 14, 0.88);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 15px 17px;
+            text-align: left;
+            backdrop-filter: blur(6px);
+            z-index: 2;
+        }
+
+        .callout h3 {
+            font-size: 0.98rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            margin-bottom: 5px;
+        }
+
+        .callout p {
+            font-size: 0.79rem;
+            line-height: 1.5;
+            color: #A8A8A8;
+        }
+
+        .callout.c1 { top: 3%; left: 4%; }
+        .callout.c2 { top: 6%; right: 4%; }
+        .callout.c3 { top: 40%; left: 1%; }
+        .callout.c4 { top: 44%; right: 1%; }
+        .callout.c5 { bottom: 5%; left: 6%; }
+        .callout.c6 { bottom: 2%; right: 7%; }
+
+        /* JS-drawn line from each card straight to its pulsing marker */
+        .tether {
+            position: absolute;
+            height: 2px;
+            border-radius: 1px;
+            transform-origin: 0 50%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Testimonials                                                        */
+        /* ------------------------------------------------------------------ */
+        /* A cloud of chat bubbles: a grid of slots (built from JS), each
+           holding one bubble that pops in, floats, pops out, and is replaced
+           by the next quote. Tilt and nudge are randomized per appearance. */
+        .quotes-wrap {
+            position: relative;
+            max-width: 1040px;
+            height: 660px; /* placeholder; JS sizes it to the tallest column */
+            margin: 8px auto -40px; /* the centred stacks sit close to the copy above and the wave below */
+            padding: 0 16px;
+            transition: height 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .quotes-wrap:has(.no-anim) { transition: none; }
+
+        /* two-column widths get more room at the sides and below */
+        @media (max-width: 959px) {
+            .quotes-wrap { margin-bottom: -20px; padding: 0 40px; }
+        }
+
+        .quotes {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* each slot is a fixed-size cell in a staggered honeycomb (JS sets
+           left/top/width/height); the bubble is centred inside it, so a
+           taller or shorter quote never shifts anything */
+        /* each slot is one bubble in a column stack; JS sets left/width/top
+           and the top eases, so the stack flows around a new arrival */
+        .quote-slot {
+            position: absolute;
+            transition: top 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* first layout and resizes snap into place rather than sliding */
+        .quotes.no-anim .quote-slot { transition: none; }
+
+        /* placed and measured, but not yet revealed */
+        .quote.pending { visibility: hidden; animation: none; }
+
+        .quote {
+            --rot: 0deg;
+            --jx: 0px;
+            --jy: 0px;
+            width: 100%; /* every bubble in a column is the same width */
+            margin: 0;
+            text-align: left;
+            transform: translate(var(--jx), var(--jy)) rotate(var(--rot));
+            animation: quote-in 0.9s cubic-bezier(0.22, 1.25, 0.36, 1) both;
+        }
+
+        .quote.out { animation: quote-out 0.55s cubic-bezier(0.4, 0, 0.7, 0.2) forwards; }
+
+        .quote-inner {
+            background: #F4FEEE;
+            color: #1A2205;
+            border-radius: 18px;
+            padding: 13px 19px 11px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.42;
+            text-wrap: pretty;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+            /* gentle drift; duration/delay randomized from JS */
+            animation: quote-bob 10s ease-in-out infinite;
+        }
+
+        @keyframes quote-bob {
+            0%, 100% { transform: translateY(-3px); }
+            50% { transform: translateY(3px); }
+        }
+
+        /* the wordier quotes drop a size so they still fit their cell */
+        .quote.long .quote-inner { font-size: 0.84rem; line-height: 1.38; }
+
+        @keyframes quote-in {
+            from { opacity: 0; transform: translate(var(--jx), calc(var(--jy) + 10px)) rotate(var(--rot)) scale(0.7); }
+            to   { opacity: 1; transform: translate(var(--jx), var(--jy)) rotate(var(--rot)) scale(1); }
+        }
+
+        @keyframes quote-out {
+            to { opacity: 0; transform: translate(var(--jx), calc(var(--jy) - 8px)) rotate(var(--rot)) scale(0.85); }
+        }
+
+        @media (max-width: 660px) {
+            .quotes-wrap { margin: 0 auto -20px; padding: 0 24px; }
+            /* skinny columns: a size down so quotes don't tower */
+            .quote-inner { font-size: 0.84rem; padding: 11px 15px 9px; }
+        }
+
+        .quote .who {
+            display: block;
+            text-align: right;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--red-deep);
+            margin-top: 3px;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Pricing                                                             */
+        /* ------------------------------------------------------------------ */
+        .buy-section {
+            padding: clamp(56px, 9vw, 110px) 0 clamp(64px, 10vw, 120px);
+            text-align: center;
+        }
+
+        /* The section headline is the wordmark itself; keep its tracking. */
+        .buy-section h2.wordmark { letter-spacing: 0.02em; }
+
+        .buy-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 26px;
+            margin-top: clamp(30px, 5vw, 50px);
+            padding: 0 24px;
+        }
+
+        .buy-cta .cta-row { margin-top: 0; }
+
+        /* the exported icon carries its own rounded rect; only a soft shadow is added here */
+        .app-icon {
+            width: 132px;
+            height: 132px;
+            margin-bottom: 24px;
+            filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.55));
+        }
+
+        .app-icon img { width: 100%; height: 100%; object-fit: contain; }
+
+        /* ------------------------------------------------------------------ */
+        /* Footer                                                              */
+        /* ------------------------------------------------------------------ */
+        .footer {
+            border-top: 1px solid var(--card-border);
+            padding: 34px 24px 42px;
+        }
+
+        .footer-grid {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .footer .names {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-align: center;
+        }
+
+        .footer .legal {
+            font-size: 0.78rem;
+            color: #5E5E5E;
+            text-align: left;
+        }
+
+        .knife {
+            justify-self: end;
+            font-size: 0.62rem;
+            letter-spacing: 0.16em;
+            color: #5E5E5E;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.2s ease;
+        }
+
+        .knife:hover { color: var(--text-dim); }
+
+        .knife .strike {
+            position: relative;
+            font-weight: 800;
+        }
+
+        .knife .strike::after {
+            /* the slash reads as negative space cut out of the letters */
+            content: '';
+            position: absolute;
+            top: 47%;
+            left: -5%;
+            width: 110%;
+            height: 1.5px;
+            background: var(--ink);
+            transform: rotate(-11deg);
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* Responsive                                                          */
+        /* ------------------------------------------------------------------ */
+        .callout-grid { display: contents; }
+
+        @media (max-width: 900px) {
+            .zapper-stage { height: clamp(480px, 135vw, 620px); }
+
+            .starburst--zapper { width: clamp(760px, 220vw, 1100px); }
+
+            .starburst--laptop { width: clamp(680px, 180vw, 900px); }
+
+            /* keep the callouts floating over the gun, just smaller */
+            .callout {
+                width: min(42vw, 176px);
+                padding: 9px 11px;
+                border-radius: 10px;
+                background: rgba(14, 14, 14, 0.78);
+            }
+
+            .callout h3 { font-size: 0.84rem; margin-bottom: 3px; }
+
+            .callout p { font-size: 0.7rem; line-height: 1.4; }
+
+        }
+
+        @media (max-width: 640px) {
+            /* too crowded for six — drop the middle pair */
+            .callout.c3, .callout.c4,
+            .anchor[data-anchor="c3"], .anchor[data-anchor="c4"] { display: none; }
+
+            /* the remaining four zigzag down the stage so the bigger type
+               doesn't collide */
+            .callout.c1 { top: 0; left: 3%; }
+            .callout.c2 { top: 9%; right: 0; }
+            .callout.c5 { bottom: 1%; left: 0; }
+            .callout.c6 { bottom: 0; right: 3%; }
+
+            /* no room for the circle: stack the three steps, linked by
+               little down-arrows */
+            .steps { aspect-ratio: auto; display: flex; flex-direction: column; align-items: center; padding: 0 16px; margin-bottom: 10px; }
+            .step, .step--1, .step--2, .step--3 { position: relative; left: auto; top: auto; width: min(100%, 440px); margin: -3% 0; transform: none; }
+            .step-arrows, .fx-smoke { display: none; }
+            .step-link {
+                display: block;
+                width: 60px;
+                height: 60px;
+                margin: -12px 0 14px;
+                overflow: visible;
+                color: var(--text-on-lime);
+                opacity: 0.5;
+            }
+
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer .legal { text-align: center; }
+            .knife { justify-self: center; }
+            .mb-lid { width: 92%; }
+
+            /* keep TRY / BUY / HELP on a single row, just smaller */
+            .cta-row { flex-wrap: nowrap; gap: 8px; }
+
+            .btn.btn-cta {
+                width: 96px;
+                flex: 0 0 auto;
+                padding: 12px 10px;
+                font-size: 0.8rem;
+                letter-spacing: 0.06em;
+                gap: 6px;
+            }
+
+            .btn.btn-cta .ic { width: 14px; height: 14px; }
+        }
+
+        @media (max-width: 480px) {
+            /* stacked lockup: APPZAPPER on top, icon beside 3000 below */
+            .wordmark {
+                flex-wrap: wrap;
+                gap: 0.14em 0.18em;
+                font-size: clamp(2.05rem, 11.5vw, 2.85rem);
+                letter-spacing: 0;
+                line-height: 0.92;
+            }
+
+            /* icon rides the first row beside APPZAPPER; 3000 wraps below.
+               Small layout box, scaled-up art — reads bigger without
+               widening the row and re-wrapping it. */
+            .wordmark .logo-icon {
+                display: block;
+                width: 0.72em;
+                height: 0.72em;
+                /* the scaled art hangs left of its layout box; reserve that
+                   space so the lockup reads centered */
+                margin-left: 0.36em;
+                margin-right: 0.05em;
+                transform: scale(1.5);
+                transform-origin: 100% 50%;
+            }
+
+            .wordmark .three-k {
+                flex: 0 0 100%;
+                text-align: center;
+                margin-left: 0;
+            }
+            .tagline { font-size: 0.9rem; margin-top: 12px; }
+        }
+    </style>
+    <link rel="canonical" href="https://appzapper.com/">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AppZapper 3000", "operatingSystem": "macOS", "applicationCategory": "UtilitiesApplication", "url": "https://appzapper.com/", "downloadUrl": "https://appzapper.com/download", "image": "https://appzapper.com/site/appzapper-3000/assets/share-card-v4.png", "description": "The legendary Mac uninstaller is back. Drag, drop, and zap apps — and everything they leave behind — with a real 3D zapper.", "offers": {"@type": "Offer", "price": "18.00", "priceCurrency": "USD", "url": "https://appzapper.com/3000/purchase"}}</script>
+</head>
+<body>
+
+    <!-- ================================================================== -->
+    <!-- HERO                                                                -->
+    <!-- ================================================================== -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="wordmark">
+                <img class="logo-icon" src="/site/appzapper-3000/assets/zapper-icon.png" alt="" aria-hidden="true">
+                <span class="wm-text"><span class="az">APPZAPPER</span><span class="three-k">3000</span></span>
+            </h1>
+            <p class="tagline">The uninstaller Apple forgot.</p>
+
+            <div class="cta-row">
+                <div class="cta-wrap">
+                    <button class="btn btn-cta btn-cta--try try-btn" type="button">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+                        Try
+                    </button>
+                    <span class="cta-req">macOS 15.6+</span>
+                </div>
+                <div class="cta-wrap">
+                    <a class="btn btn-cta btn-cta--buy" href="https://appzapper.com/buy">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                        Buy
+                    </a>
+                    <span class="cta-req">from $18</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="laptop-stage">
+            <div class="starburst starburst--laptop" aria-hidden="true"><div class="burst-disc"></div></div>
+            <div class="macbook">
+                <div class="mb-lid">
+                    <div class="mb-screen">
+                        <video autoplay loop muted playsinline preload="auto" title="Click to enlarge" aria-label="AppZapper 3000 zapping an app and its leftover files">
+                            <source src="/site/appzapper-3000/assets/demo.mp4" type="video/mp4">
+                        </video>
+                        <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Toggle sound">
+                            <svg id="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                            <svg id="icon-unmuted" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-base"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- READY. AIM. UNINSTALL.                                              -->
+    <!-- ================================================================== -->
+    <section>
+        <div class="wave" data-wave="down" data-seed="0" aria-hidden="true">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="var(--lime)"/></svg>
+        </div>
+
+        <div class="band">
+            <div class="container">
+                <h2>Drag. <span class="accent">Drop.</span> Zap.</h2>
+                <p class="lede lede-xl">
+                    The <strong>most fun uninstaller</strong> for macOS has been
+                    rebuilt for the 31st&nbsp;century. <strong>Introducing
+                    AppZapper&nbsp;3000.</strong> Drag in any app and instantly
+                    find <strong>all of its extra files</strong>. Then delete
+                    them with a <strong>real 3D zapper</strong>.
+                </p>
+            </div>
+
+            <div class="steps" aria-label="How it works">
+                <div class="step step--1">
+                    <figure class="step-fig">
+                        <img src="/site/appzapper-3000/assets/step1.png" width="1170" height="870" decoding="async" alt="Step 1: AppZapper 3000’s empty window, ready for an app to be dragged in">
+                    </figure>
+                </div>
+                <svg class="step-link" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <defs><marker id="arrowhead-m1" viewBox="0 0 12 12" refX="1.5" refY="6" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto"><path d="M0 0.5 L11.5 6 L0 11.5 Z" fill="currentColor" stroke="none"/></marker></defs>
+                    <path d="M29 4 C 33 18, 33 34, 30 50" marker-end="url(#arrowhead-m1)"/>
+                </svg>
+                <div class="step step--2">
+                    <figure class="step-fig">
+                        <img src="/site/appzapper-3000/assets/step2.png" width="1170" height="870" decoding="async" alt="Step 2">
+                    </figure>
+                </div>
+                <svg class="step-link" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <defs><marker id="arrowhead-m2" viewBox="0 0 12 12" refX="1.5" refY="6" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto"><path d="M0 0.5 L11.5 6 L0 11.5 Z" fill="currentColor" stroke="none"/></marker></defs>
+                    <path d="M31 4 C 27 18, 27 34, 30 50" marker-end="url(#arrowhead-m2)"/>
+                </svg>
+                <div class="step step--3 step--zap">
+                    <figure class="step-fig">
+                        <img src="/site/appzapper-3000/assets/step3.png" width="1170" height="870" decoding="async" alt="Step 3">
+                        <img class="fx fx-explosion" src="/site/appzapper-3000/assets/fx-explosion.png" alt="" aria-hidden="true" decoding="async">
+                    </figure>
+                </div>
+                <img class="fx fx-smoke" src="/site/appzapper-3000/assets/fx-smoke.png" alt="" aria-hidden="true" decoding="async">
+                <svg class="step-arrows" viewBox="0 0 1040 820" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <defs>
+                        <!-- the browser rotates this to the curve's end
+                             tangent, so the tip always sits on the line -->
+                        <!-- refX sits at the head's base, so the line (and
+                             its round cap) ends inside the triangle -->
+                        <marker id="arrowhead" viewBox="0 0 12 12" refX="1.5" refY="6" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto">
+                            <path d="M0 0.5 L11.5 6 L0 11.5 Z" fill="currentColor" stroke="none"/>
+                        </marker>
+                    </defs>
+                    <!-- 1 → 2: lifts off above the first window's right end,
+                         arcs high over the gap, and points straight down at
+                         the middle of the results window, stopping short
+                         of its top edge -->
+                    <path d="M366 20 C 430 -70, 780 -112, 792 -10" marker-end="url(#arrowhead)"/>
+                    <!-- 2 → 3: drops from the middle of the results window's
+                         bottom edge, hooks round, and points left at the zap -->
+                    <path d="M806 328 C 846 404, 874 550, 796 566" marker-end="url(#arrowhead)"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="wave" data-wave="up" data-seed="1" aria-hidden="true">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="var(--lime)"/></svg>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- 3D ZAPPER                                                           -->
+    <!-- ================================================================== -->
+    <section class="zapper-section" aria-label="The 3D zapper">
+        <h2 class="ddz">Ready. <span class="zap">Aim.</span> Uninstall.</h2>
+
+        <div class="zapper-stage">
+            <div class="starburst starburst--zapper" aria-hidden="true"><div class="burst-disc"></div></div>
+            <model-viewer
+                id="zapper3d"
+                src="/site/appzapper-3000/assets/zapper.glb"
+                loading="eager"
+                alt="The AppZapper 3000 zapper — a green and red ray gun"
+                interaction-prompt="none"
+                camera-controls
+                touch-action="pan-y"
+                disable-zoom
+                disable-pan
+                camera-orbit="0deg 90deg auto"
+                orientation="-26deg 29deg 71deg"
+                exposure="0.8"
+                shadow-intensity="0">
+            </model-viewer>
+
+            <!-- markers on the model; positioned each frame by our own projection -->
+            <div class="anchor" data-anchor="c1" data-position="0 0 -0.67" aria-hidden="true"></div>
+            <div class="anchor" data-anchor="c2" data-position="-0.41 0.1 0.44" aria-hidden="true"></div>
+            <div class="anchor" data-anchor="c3" data-position="-0.33 -0.16 -0.28" aria-hidden="true"></div>
+            <div class="anchor" data-anchor="c4" data-position="0 -0.02 0.58" aria-hidden="true"></div>
+            <div class="anchor" data-anchor="c5" data-position="0 -0.4 0.02" aria-hidden="true"></div>
+            <div class="anchor" data-anchor="c6" data-position="-0.11 -0.4 0.24" aria-hidden="true"></div>
+
+            <div class="callout-grid">
+                <div class="callout c1">
+                    <h3>The business end.</h3>
+                    <p>Real laser bolts blast away your unwanted apps and the junk they install.</p>
+                </div>
+                <div class="callout c2">
+                    <h3>Built to fly.</h3>
+                    <p>Rebuilt with the fluidity, agility, and smoothness we always dreamed of.</p>
+                </div>
+                <div class="callout c3">
+                    <h3>Ring in.</h3>
+                    <p>Instantly find all caches, preferences, and support files. Target locked.</p>
+                </div>
+                <div class="callout c4">
+                    <h3>Sleek finish.</h3>
+                    <p>Use the classic livery, or apply one of our new blaster themes to zap in style.</p>
+                </div>
+                <div class="callout c5">
+                    <h3>One pull.</h3>
+                    <p>One click, one shot. Or use Zap All to blast them all away, automatically.</p>
+                </div>
+                <div class="callout c6">
+                    <h3>Fits your hand.</h3>
+                    <p>With manageable recoil and instant mouse aiming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- 20 YEAR LEGACY                                                      -->
+    <!-- ================================================================== -->
+    <section>
+        <div class="wave" data-wave="down" data-seed="2" aria-hidden="true">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="var(--lime)"/></svg>
+        </div>
+
+        <div class="band">
+            <div class="container">
+                <h2>20 Year <span class="accent">Legacy.</span></h2>
+                <p class="lede lede-xl">
+                    We first released AppZapper in <strong>2006.</strong>
+                    We are <strong>forever grateful</strong> to everyone who has
+                    been zapping apps over the past <strong>twenty years.</strong>
+                    We truly hope you <strong>love</strong> AppZapper&nbsp;3000.
+                </p>
+            </div>
+
+            <div class="quotes-wrap">
+                <div class="quotes" id="quotes"></div>
+            </div>
+        </div>
+
+        <div class="wave" data-wave="up" data-seed="3" aria-hidden="true">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="var(--lime)"/></svg>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- BUY                                                                 -->
+    <!-- ================================================================== -->
+    <section class="buy-section" id="buy">
+        <div class="container">
+            <h2 class="wordmark wordmark--buy"><span class="az">APPZAPPER</span><span class="three-k">3000</span></h2>
+        </div>
+
+        <div class="buy-cta">
+            <div class="app-icon">
+                <img src="/site/appzapper-3000/assets/app-icon.png" alt="AppZapper 3000 app icon" width="132" height="132">
+            </div>
+            <div class="cta-row">
+                <div class="cta-wrap">
+                    <button class="btn btn-cta btn-cta--try try-btn" type="button">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+                        Try
+                    </button>
+                    <span class="cta-req">macOS 15.6+</span>
+                </div>
+                <div class="cta-wrap">
+                    <a class="btn btn-cta btn-cta--buy" href="https://appzapper.com/buy">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                        Buy
+                    </a>
+                    <span class="cta-req">from $18</span>
+                </div>
+                <button class="btn btn-cta btn-cta--help help-btn" type="button">
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4"/><circle cx="12" cy="17.5" r="0.5" fill="currentColor"/></svg>
+                    Help
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRY popover -->
+    <dialog id="try-dialog" class="popover">
+        <p class="try-note">Try <strong>3 free zaps</strong>.</p>
+        <p class="try-meta">Version 1.0.1 · macOS 15.6+</p>
+        <a class="btn btn-zap" href="https://appzapper.com/AppZapper-3000.zip">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+            Download
+        </a>
+    </dialog>
+
+    <!-- HELP popover -->
+    <dialog id="help-dialog" class="popover" tabindex="-1">
+        <form class="help-form" id="help-form">
+            <label class="help-label" for="help-email">Lost your license? <strong>We’ll resend it.</strong></label>
+            <div class="help-field">
+                <input type="email" id="help-email" name="email" placeholder="Purchase email" autocomplete="email" required>
+                <button class="btn btn-zap" type="submit">Resend</button>
+            </div>
+            <p class="help-status" id="help-status" aria-live="polite"></p>
+        </form>
+        <p class="help-or">or</p>
+        <a class="btn btn-zap help-email" href="mailto:help@appzapper.com">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            Email support
+        </a>
+    </dialog>
+
+    <!-- ================================================================== -->
+    <!-- FOOTER                                                              -->
+    <!-- ================================================================== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="legal">© 2006–2026 · <a href="/p/privacy" style="color:inherit">Privacy</a></div>
+            <div class="names">Austin Sarner, Brian Ball, and Clemens Knieper</div>
+            <a class="knife" href="https://byaknife.com" target="_blank" rel="noopener noreferrer">
+                Design by a <span class="strike">knife</span>
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js" integrity="sha384-Ftcjj/GNLxPvzNDftO/oryXB9aGxsGZY9JGqsXG0uUKgQDl9RfDgsx9NJ/4IVNPe" crossorigin="anonymous"></script>
+    <script>
+        // ?ref=X on the homepage → keep it through checkout (2026-10-17: c16 + producthunt refs were lost here).
+        // Same az_ref cookie /3000/purchase sets (90 days); BUY goes straight to the purchase page, since /buy drops the query.
+        (function () {
+            const ref = (new URLSearchParams(location.search).get('ref') || '').trim().toLowerCase().slice(0, 80);
+            if (!ref) return;
+            try { document.cookie = 'az_ref=' + encodeURIComponent(ref) + '; Path=/3000; Max-Age=7776000; SameSite=Lax; Secure'; } catch (_) {}
+            document.querySelectorAll('a.btn-cta--buy').forEach((a) => {
+                a.href = '/3000/purchase?ref=' + encodeURIComponent(ref);
+            });
+        })();
+    </script>
+
+    <script>
+        // ------------------------------------------------------------------
+        // Gel waves: each divider is a sum of slow-drifting sines, redrawn
+        // every frame so the lime edges slosh like liquid.
+        // ------------------------------------------------------------------
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const waves = [...document.querySelectorAll('.wave')].map((el, i) => {
+            const seed = Number(el.dataset.seed || i) * 137.5;
+            return {
+                path: el.querySelector('path'),
+                up: el.dataset.wave === 'up', // lime above the curve instead of below
+                // three sine components: (amplitude, spatial freq, speed, phase)
+                parts: [
+                    [16, 0.0042, 0.16, seed],
+                    [9,  0.0091, -0.26, seed * 1.7 + 2],
+                    [5,  0.0163, 0.42,  seed * 2.3 + 4],
+                ],
+            };
+        });
+
+        const W = 1440, H = 90, MID = 45, STEP = 30;
+
+        function drawWaves(t) {
+            for (const w of waves) {
+                let d = '';
+                for (let x = 0; x <= W; x += STEP) {
+                    let y = MID;
+                    for (const [a, f, s, p] of w.parts) y += a * Math.sin(x * f + p + t * s);
+                    d += (x === 0 ? 'M' : 'L') + x + ',' + y.toFixed(1);
+                }
+                d += w.up ? `L${W},-2 L0,-2 Z` : `L${W},${H + 2} L0,${H + 2} Z`;
+                w.path.setAttribute('d', d);
+            }
+        }
+
+        drawWaves(0);
+
+        if (!reducedMotion) {
+            let waveVisible = true;
+            const discs = [...document.querySelectorAll('.burst-disc')];
+            (function tick() {
+                const t = performance.now() / 1000;
+                if (waveVisible) drawWaves(t);
+                // Starburst spin lives here (not in a CSS animation) so window
+                // resizes never desync it — one revolution every 150s.
+                const rot = (t * 2.4) % 360;
+                for (const d of discs) d.style.transform = `rotate(${rot}deg)`;
+                requestAnimationFrame(tick);
+            })();
+            // Skip the wave redraw while no divider is on screen.
+            const vis = new Set();
+            const io = new IntersectionObserver((entries) => {
+                for (const e of entries) e.isIntersecting ? vis.add(e.target) : vis.delete(e.target);
+                waveVisible = vis.size > 0;
+            });
+            document.querySelectorAll('.wave').forEach((el) => io.observe(el));
+        }
+
+        // ------------------------------------------------------------------
+        // iOS Safari pauses the autoplaying demo when the app is backgrounded
+        // and won't always resume it — kick it back to life on return.
+        // ------------------------------------------------------------------
+        const demoVideo = document.querySelector('.mb-screen video');
+        const soundBtn = document.getElementById('sound-toggle');
+        const iconMuted = document.getElementById('icon-muted');
+        const iconUnmuted = document.getElementById('icon-unmuted');
+        if (soundBtn && demoVideo) {
+            soundBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                demoVideo.muted = !demoVideo.muted;
+                iconMuted.style.display = demoVideo.muted ? '' : 'none';
+                iconUnmuted.style.display = demoVideo.muted ? 'none' : '';
+            });
+        }
+        function resumeDemo() {
+            if (!demoVideo) return;
+            // iOS can freeze the video while still reporting paused === false,
+            // so always kick it; if the element got suspended, reload it.
+            const kick = () => {
+                const p = demoVideo.play();
+                if (p) p.catch(() => {
+                    demoVideo.load();
+                    demoVideo.play().catch(() => {});
+                });
+            };
+            kick();
+            setTimeout(kick, 350);
+        }
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) resumeDemo();
+        });
+        window.addEventListener('pageshow', resumeDemo);
+        window.addEventListener('focus', resumeDemo);
+
+        // Click the demo to enlarge it on the page: the video element is
+        // moved into a full-window overlay (moving it synchronously keeps
+        // it playing) and a FLIP transform glides it between the laptop
+        // and the centre of the screen. Click anywhere, or press Escape,
+        // to put it back.
+        const demoScreen = document.querySelector('.mb-screen');
+        const videoLightbox = document.createElement('div');
+        videoLightbox.className = 'video-lightbox';
+        document.body.appendChild(videoLightbox);
+        // iPhone, iPod, and iPad — including iPads with a trackpad, which
+        // present as a Mac with touch points (every iOS browser is WebKit)
+        const isIOS = /iP(hone|ad|od)/.test(navigator.platform)
+            || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        if (isIOS) document.documentElement.classList.add('ios');
+        const videoDimmer = document.createElement('div');
+        videoDimmer.className = 'video-dimmer';
+        document.body.appendChild(videoDimmer);
+        function placeDimmer() {
+            const margin = Math.round(window.innerHeight * 0.25);
+            videoDimmer.style.top = `${Math.max(0, window.scrollY - margin)}px`;
+            videoDimmer.style.height = `${window.innerHeight + margin * 2}px`;
+        }
+        let videoZoomed = false;
+        let videoAnimating = false;
+        const ZOOM_EASE = 'transform 0.55s cubic-bezier(0.32, 0.72, 0, 1)';
+
+        // While enlarged, the sound toggle floats in the overlay and is pinned
+        // to the video's bottom-right corner — every frame during the glide,
+        // and on resize at rest — so it rides along without scaling or fading.
+        function pinSoundToggle() {
+            const r = demoVideo.getBoundingClientRect();
+            const inset = parseFloat(getComputedStyle(soundBtn).getPropertyValue('--toggle-inset')) || 12;
+            soundBtn.style.left = `${r.right - inset - soundBtn.offsetWidth}px`;
+            soundBtn.style.top = `${r.bottom - inset - soundBtn.offsetHeight}px`;
+        }
+        function trackSoundToggle() {
+            if (!videoAnimating) return; // a stray frame after put-back must not re-pin
+            pinSoundToggle();
+            requestAnimationFrame(trackSoundToggle);
+        }
+        window.addEventListener('resize', () => {
+            if (!videoZoomed) return;
+            pinSoundToggle();
+            if (isIOS) placeDimmer(); // rotation / larger resizes than the margin covers
+        });
+
+        function setVideoZoom(open) {
+            if (videoAnimating || open === videoZoomed) return;
+            videoZoomed = open;
+            if (open) {
+                const from = demoVideo.getBoundingClientRect();
+                if (isIOS) { placeDimmer(); videoDimmer.classList.add('open'); }
+                videoLightbox.classList.add('open');
+                videoLightbox.append(demoVideo, soundBtn);
+                demoVideo.play().catch(() => {});
+                const to = demoVideo.getBoundingClientRect();
+                if (reducedMotion) { videoLightbox.classList.add('show'); videoDimmer.classList.add('show'); pinSoundToggle(); return; }
+                videoAnimating = true;
+                // start where the small one was, glide to the big layout
+                demoVideo.style.transition = 'none';
+                demoVideo.style.transform = `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${from.width / to.width}, ${from.height / to.height})`;
+                trackSoundToggle();
+                requestAnimationFrame(() => requestAnimationFrame(() => {
+                    videoLightbox.classList.add('show');
+                    videoDimmer.classList.add('show');
+                    demoVideo.style.transition = ZOOM_EASE;
+                    demoVideo.style.transform = '';
+                }));
+                demoVideo.addEventListener('transitionend', () => {
+                    demoVideo.style.transition = '';
+                    videoAnimating = false;
+                    pinSoundToggle();
+                }, { once: true });
+            } else {
+                const putBack = () => {
+                    demoVideo.style.transition = '';
+                    demoVideo.style.transform = '';
+                    demoScreen.prepend(demoVideo);
+                    demoVideo.after(soundBtn);
+                    soundBtn.style.left = soundBtn.style.top = '';
+                    demoVideo.play().catch(() => {});
+                    videoLightbox.classList.remove('open');
+                    videoDimmer.classList.remove('open');
+                    videoAnimating = false;
+                };
+                videoLightbox.classList.remove('show');
+                videoDimmer.classList.remove('show');
+                if (reducedMotion) { putBack(); return; }
+                videoAnimating = true;
+                // glide onto the laptop screen's spot, then drop back in
+                const from = demoVideo.getBoundingClientRect();
+                const to = demoScreen.getBoundingClientRect();
+                demoVideo.style.transition = ZOOM_EASE;
+                demoVideo.style.transform = `translate(${to.left - from.left}px, ${to.top - from.top}px) scale(${to.width / from.width}, ${to.height / from.height})`;
+                trackSoundToggle();
+                demoVideo.addEventListener('transitionend', putBack, { once: true });
+            }
+        }
+
+        demoScreen.addEventListener('click', () => setVideoZoom(true));
+        videoLightbox.addEventListener('click', () => setVideoZoom(false));
+        document.addEventListener('keydown', (e) => {
+            if (!videoZoomed) return;
+            if (e.key === 'Escape') setVideoZoom(false);
+            // keys that would scroll the page behind the overlay
+            if ([' ', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) e.preventDefault();
+        });
+        // The overlay covers the whole viewport, so swallowing wheel and touch
+        // moves on it keeps the page from scrolling while the video is zoomed
+        // (no body/html changes, which iOS Safari handles badly).
+        const swallow = (e) => e.preventDefault();
+        videoLightbox.addEventListener('wheel', swallow, { passive: false });
+        videoLightbox.addEventListener('touchmove', swallow, { passive: false });
+
+        // ------------------------------------------------------------------
+        // TRY / HELP popovers — anchored under whichever button was clicked
+        // ------------------------------------------------------------------
+        const popovers = [...document.querySelectorAll('dialog.popover')];
+        const popoverAnchor = new Map();
+
+        function positionPopover(dialog) {
+            const anchor = popoverAnchor.get(dialog);
+            if (!dialog.open || !anchor) return;
+            const r = anchor.getBoundingClientRect();
+            const w = dialog.offsetWidth;
+            const h = dialog.offsetHeight;
+            const left = Math.max(12, Math.min(window.innerWidth - w - 12, r.left + r.width / 2 - w / 2));
+            let top = r.bottom + 12;
+            let above = false;
+            if (top + h > window.innerHeight - 12 && r.top - h - 12 > 0) {
+                top = r.top - h - 12;
+                above = true;
+            }
+            dialog.classList.toggle('above', above);
+            dialog.style.left = left + 'px';
+            dialog.style.top = top + 'px';
+            // keep the caret aimed at the button even when the popover is
+            // clamped against a viewport edge
+            const caretX = Math.max(16, Math.min(w - 16, r.left + r.width / 2 - left));
+            dialog.style.setProperty('--caret-x', caretX + 'px');
+        }
+
+        function togglePopover(dialog, button) {
+            if (dialog.open && popoverAnchor.get(dialog) === button) { dialog.close(); return; }
+            popovers.forEach((d) => { if (d !== dialog && d.open) d.close(); });
+            popoverAnchor.set(dialog, button);
+            if (!dialog.open) dialog.show();
+            positionPopover(dialog);
+        }
+
+        const tryDialog = document.getElementById('try-dialog');
+        const helpDialog = document.getElementById('help-dialog');
+        document.querySelectorAll('.try-btn').forEach((b) =>
+            b.addEventListener('click', () => togglePopover(tryDialog, b)));
+        document.querySelectorAll('.help-btn').forEach((b) =>
+            b.addEventListener('click', () => {
+                togglePopover(helpDialog, b);
+                // show() focuses the first field by default; park focus on the popover instead
+                if (helpDialog.open) helpDialog.focus({ preventScroll: true });
+            }));
+
+        // appzapper.com/#help opens the help popover (old /help links redirect here, 2026-10-09).
+        const openHelpFromHash = () => {
+            const b = document.querySelector('.help-btn');
+            if (location.hash !== '#help' || !b || helpDialog.open) return;
+            b.scrollIntoView({ block: 'center' });
+            togglePopover(helpDialog, b);
+            helpDialog.focus({ preventScroll: true });
+        };
+        window.addEventListener('hashchange', openHelpFromHash);
+        openHelpFromHash();
+
+        const repositionPopovers = () => popovers.forEach(positionPopover);
+        window.addEventListener('resize', repositionPopovers, { passive: true });
+        window.addEventListener('scroll', repositionPopovers, { passive: true });
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.try-btn, .help-btn')) return;
+            popovers.forEach((d) => { if (d.open && !d.contains(e.target)) d.close(); });
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') popovers.forEach((d) => { if (d.open) d.close(); });
+        });
+
+        const LICENSE_RESEND_URL = '/api/help-lookup';
+        const helpForm = document.getElementById('help-form');
+        const helpStatus = document.getElementById('help-status');
+        helpForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = helpForm.email.value.trim();
+            helpStatus.className = 'help-status';
+            if (!LICENSE_RESEND_URL) {
+                const subject = encodeURIComponent('Lost AppZapper 3000 license');
+                const body = encodeURIComponent(`Please resend my license key.\n\nPurchase email: ${email}\n`);
+                window.location.href = `mailto:help@appzapper.com?subject=${subject}&body=${body}`;
+                helpStatus.textContent = 'Opening your mail app...';
+                return;
+            }
+            helpStatus.textContent = 'Sending...';
+            try {
+                const res = await fetch(LICENSE_RESEND_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email }),
+                });
+                const data = await res.json();
+                if (!res.ok) throw new Error(data.error || res.statusText);
+                helpStatus.classList.add('ok');
+                helpStatus.textContent = data.message || 'Sent! Check your inbox.';
+                helpForm.reset();
+            } catch (err) {
+                helpStatus.classList.add('err');
+                helpStatus.textContent = err.message || "Couldn't send. Email us instead.";
+            }
+        });
+
+        // ------------------------------------------------------------------
+        // Testimonial cloud: a grid of slots, each holding one bubble. Every
+        // few seconds ONE bubble pops out and the next quote from a shuffled
+        // pool pops into its place. Tilt and nudge are re-rolled on every
+        // appearance so the wall never repeats itself.
+        // ------------------------------------------------------------------
+        // TODO: replace the stubs with the real quotes (30–50 expected).
+        const QUOTES = [
+            ["Best. App. Ever. Thank you for making it.", "Joe"],
+            ["I STILL use this app. It's the first app I install on any Mac I buy", "Ramesh"],
+            ["So good to have you back! You've been in my dock for over 15 years.", "Carson"],
+            ["Love this app & thanks for all your fantastic work on it over the years. Most useful piece of software I've ever bought!", "Stuart"],
+            ["AppZapper has been one of the most useful pieces of software I've ever installed.", "Nigel"],
+            ["I still use App Zapper and would be lost without it.", "Drew"],
+            ["I ❤️ AppZapper and have used it many a time on mij iMac and MacBook. Cannot keep them the way I want without it.", "Eric"],
+            ["Your app has always been „the missing app\" on Apple devices.", "Mitch"],
+            ["It's one of my favourite Mac apps of all time. The sound it plays when you zap an app puts a smile on my face every time", "Oliver"],
+            ["Great app and you have to wonder how Apple STILL hasn't incorporated it into the OS!", "Jack"],
+            ["Happy AppZapper user since '08, best tool in the game.", "Antoine"],
+            ["I've been using AppZapper forever and it just works.", "Dave"],
+            ["AppZapper is one of those apps I've been using for years and it always just works.", "Zachary"],
+            ["I used your app for years and it has never failed me.", "Bob"],
+            ["I have been using AppZapper since my first Mac 15 years ago, and I haven't found anything better yet.", "Lorenzo"],
+            ["Love AppZapper, classic little utility that has worked like a champ for decades!", "Sheldon"],
+            ["AppZapper is a classic!", "Jeffrey"],
+            ["AppZapper is still one of the best apps out there. Thanks for making deleting programs so much easier.", "Jonathan"],
+            ["I think it's a must-have app for every Mac.", "Robert"],
+            ["AppZapper is an indispensable app for me!!", "Scott"],
+            ["Thank you for probably the most useful utilities out there.", "Dave"],
+            ["A fun life is incomplete without AppZapper. First of all, why delete an app without deleting all the extra files along with it? This is a no-brainer.", "Melissa"],
+            ["Even when I don't use it, it stays on the dock because it has one of the coolest icons to date.", "Tom"],
+            ["Your app is awesome and has been one of the first things I install on every new Mac.", "Sam"],
+            ["AppZapper is always one of the first things I install when setting up a new Mac.", "Brian"],
+            ["App Zapper is one of the first apps I install when I get a new machine.", "Maurice"],
+            ["I've loved using appzapper over the years, and it's been moved to every new Mac I've owned since I got my license.", "Russell"],
+            ["I have moved it from machine to machine as the machine died!", "Thomas"],
+            ["Such a simple and elegant program that's kept my various Macs tidy", "Andrew"],
+            ["Thank you for maintaining this simple, yet powerful, app!", "Steve"],
+            ["As a 40-year mainframer I appreciate the simplicity of the product and its accuracy.", "Philip"],
+            ["Thanks, love your App: simple and effective.", "Frans"],
+            ["AppZapper has been my go-to app for removing other apps and making sure everything is removed.", "John"],
+            ["Can't think of another app I've been using since 2012 and still use. Thanks for making such a great piece of software!", "Steve"],
+            ["I've been using AppZapper for nigh onto those 20 years and every time I hope it doesn't quit working. It's the perfect little tool when you need it.", "Roger"],
+            ["I just checked and I bought my licence on 12 Sept 2006 and have used it to uninstall every application I've needed to since then.", "Sirbastian"],
+            ["AppZapper has been one of my favorite all-time Apple apps.", "Hahnemann"],
+            ["love love love AppZapper thank you", "Laura"],
+        ];
+
+        const cloud = document.getElementById('quotes');
+        const CLOUD = {
+            cellWidth: 320,          // one column per ~320px of width (density)
+            maxCols: 3,
+            perCol: 5,               // bubbles stacked in each column
+            gap: 26,                 // px between stacked bubbles
+            pad: 24,                 // px above and below the tallest column
+            colGap: 30,              // px between columns
+            colStart: [0, 0, 0, 0],  // px nudge per column off true centre (none: columns share a midline)
+            swapEvery: [3500, 6000], // ms between swaps (one bubble at a time)
+            pause: [350, 800],       // ms a slot sits empty between bubbles
+            rotate: 3,               // max tilt, degrees either way
+            jitterX: 10,             // max sideways nudge, px
+        };
+
+        const rand = (a, b) => a + Math.random() * (b - a);
+        let cloudSlots = [];   // every slot, in column order
+        let cloudColumns = []; // slots grouped by column
+        let cloudQueue = [];
+        let cloudCols = 0, cloudPerCol = 0;
+        let cloudVisible = true;
+
+        // Shuffled pass through the pool; never hands back a quote that is
+        // currently on screen. On narrow two-column layouts only the shorter
+        // quotes are used, so nothing has to wrap into a tower.
+        let cloudMaxChars = Infinity;
+
+        function nextQuote() {
+            if (!cloudQueue.length) {
+                cloudQueue = QUOTES.map((_, i) => i).filter((i) => QUOTES[i][0].length <= cloudMaxChars);
+                for (let i = cloudQueue.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cloudQueue[i], cloudQueue[j]] = [cloudQueue[j], cloudQueue[i]];
+                }
+            }
+            const onScreen = new Set(cloudSlots.map((s) => s.quoteIndex));
+            let idx = cloudQueue.findIndex((q) => !onScreen.has(q));
+            if (idx < 0) idx = 0;
+            return cloudQueue.splice(idx, 1)[0];
+        }
+
+        function makeBubble(qi, side) {
+            const [text, who] = QUOTES[qi];
+            const el = document.createElement('blockquote');
+            el.className = 'quote ' + side + (text.length > 105 ? ' long' : '');
+            const inner = document.createElement('div');
+            inner.className = 'quote-inner';
+            inner.append(`"${text}"`);
+            const span = document.createElement('span');
+            span.className = 'who';
+            span.textContent = `— ${who}`;
+            inner.appendChild(span);
+            el.appendChild(inner);
+            return el;
+        }
+
+        // Stack a column's bubbles centred vertically in the cloud (plus a
+        // small per-column nudge so rows never align); slots animate to
+        // their new tops (CSS transition), so a taller or shorter arrival
+        // smoothly spreads the column out or draws it in around the middle.
+        function columnHeight(c) {
+            const filled = cloudColumns[c].filter((s) => s.h);
+            return filled.reduce((sum, s) => sum + s.h, 0) + CLOUD.gap * Math.max(0, filled.length - 1);
+        }
+
+        function layoutColumn(c, areaH) {
+            let y = (areaH - columnHeight(c)) / 2 + CLOUD.colStart[c % CLOUD.colStart.length];
+            for (const slot of cloudColumns[c]) {
+                slot.el.style.top = y.toFixed(1) + 'px';
+                y += slot.h + (slot.h ? CLOUD.gap : 0);
+            }
+        }
+
+        // Size the area to the tallest column (plus breathing room) and
+        // centre every column in it, so no stack can ever run into the copy
+        // above or the wave below; the height eases along with the slots.
+        function fitCloud() {
+            const areaH = Math.max(...cloudColumns.map((_, c) => columnHeight(c))) + CLOUD.pad * 2;
+            cloud.parentElement.style.height = areaH + 'px';
+            cloudColumns.forEach((_, c) => layoutColumn(c, areaH));
+        }
+
+        // Put the next quote in a slot, measured but hidden, without
+        // touching the layout yet.
+        function placeInSlot(slot) {
+            const qi = nextQuote();
+            slot.quoteIndex = qi;
+            const el = makeBubble(qi, Math.random() < 0.5 ? 'left' : 'right');
+            el.classList.add('pending');
+            el.style.setProperty('--rot', rand(-CLOUD.rotate, CLOUD.rotate).toFixed(1) + 'deg');
+            el.style.setProperty('--jx', rand(-CLOUD.jitterX, CLOUD.jitterX).toFixed(1) + 'px');
+            const inner = el.firstElementChild;
+            inner.style.animationDuration = rand(8, 12).toFixed(2) + 's';
+            inner.style.animationDelay = (-rand(0, 12)).toFixed(2) + 's';
+            slot.el.replaceChildren(el);
+            slot.bubble = el;
+            slot.h = el.offsetHeight; // unaffected by the pop-in transform
+        }
+
+        function revealSlot(slot) {
+            if (slot.bubble) slot.bubble.classList.remove('pending');
+        }
+
+        function showInSlot(slot) {
+            placeInSlot(slot);
+            fitCloud();
+            revealSlot(slot);
+        }
+
+        // Pop this slot's bubble out, then pop the next quote in after a beat.
+        // The slot keeps its old height while empty so the column only
+        // reflows once the newcomer's size is known.
+        function swapSlot(slot) {
+            const el = slot.bubble;
+            if (!el) return;
+            el.classList.add('out');
+            slot.quoteIndex = -1;
+            slot.timer = setTimeout(() => {
+                if (slot.bubble === el) { el.remove(); slot.bubble = null; }
+                showInSlot(slot);
+            }, 500 + rand(...CLOUD.pause));
+        }
+
+        // One swap at a time, on a lazy random cadence; never the same slot
+        // twice in a row, and it waits while the section is off screen.
+        let swapTimer = 0;
+        let lastSwapped = null;
+        function swapOne() {
+            if (!cloudVisible) { swapTimer = setTimeout(swapOne, 1000); return; }
+            const candidates = cloudSlots.filter((s) => s.bubble && s !== lastSwapped);
+            if (candidates.length) {
+                const slot = candidates[Math.floor(Math.random() * candidates.length)];
+                lastSwapped = slot;
+                swapSlot(slot);
+            }
+            swapTimer = setTimeout(swapOne, rand(...CLOUD.swapEvery));
+        }
+
+        // Columns of stacked bubbles, each column's stack starting at a
+        // slightly different height so rows never line up. Rebuilt only
+        // when the column count changes; a plain resize just reflows.
+        function buildCloud() {
+            const w = cloud.clientWidth;
+            // phones get a single column; otherwise never fewer than two
+            const narrow = window.innerWidth < 480; // phones only
+            const cols = narrow ? 1 : Math.max(2, Math.min(CLOUD.maxCols, Math.floor(w / CLOUD.cellWidth)));
+            const perCol = cols === 1 ? 6 : CLOUD.perCol; // one column stacks six, others five
+            const maxChars = Infinity; // full-width phone bubbles fit every quote
+            if (cols === cloudCols && perCol === cloudPerCol && maxChars === cloudMaxChars) {
+                reflowCloud();
+                return;
+            }
+            cloudCols = cols;
+            cloudPerCol = perCol;
+            cloudMaxChars = maxChars;
+            cloudSlots.forEach((s) => clearTimeout(s.timer));
+            cloud.replaceChildren();
+            cloudSlots = [];
+            cloudColumns = [];
+            const colW = `calc((100% - ${CLOUD.colGap * (cols - 1)}px) / ${cols})`;
+            for (let c = 0; c < cols; c++) {
+                const column = [];
+                for (let i = 0; i < perCol; i++) {
+                    const el = document.createElement('div');
+                    el.className = 'quote-slot';
+                    el.style.width = colW;
+                    el.style.left = `calc(${c} * (${colW} + ${CLOUD.colGap}px))`;
+                    el.style.top = '0px';
+                    cloud.appendChild(el);
+                    const slot = { el, col: c, h: 0, bubble: null, timer: 0, quoteIndex: -1 };
+                    column.push(slot);
+                    cloudSlots.push(slot);
+                }
+                cloudColumns.push(column);
+            }
+            cloudQueue = [];
+            // Place and measure every bubble first, lay the columns out at
+            // their final positions with no sliding, then reveal top to
+            // bottom (columns interleaved) so nothing shuffles as it appears.
+            cloud.classList.add('no-anim');
+            cloudSlots.forEach(placeInSlot);
+            fitCloud();
+            requestAnimationFrame(() => requestAnimationFrame(() => cloud.classList.remove('no-anim')));
+            // then reveal the whole wall in one go
+            cloudSlots.forEach(revealSlot);
+            clearTimeout(swapTimer);
+            lastSwapped = null;
+            if (!reducedMotion) { // static wall under reduced motion
+                swapTimer = setTimeout(swapOne, 1500 + rand(...CLOUD.swapEvery));
+            }
+        }
+
+        // Widths changed, so heights may have too: re-measure and restack
+        // in place, without the slide.
+        function reflowCloud() {
+            cloud.classList.add('no-anim');
+            for (const slot of cloudSlots) if (slot.bubble) slot.h = slot.bubble.offsetHeight;
+            fitCloud();
+            requestAnimationFrame(() => requestAnimationFrame(() => cloud.classList.remove('no-anim')));
+        }
+
+        buildCloud();
+        window.addEventListener('resize', buildCloud, { passive: true });
+        new IntersectionObserver((entries) => {
+            cloudVisible = entries.some((e) => e.isIntersecting);
+        }).observe(cloud);
+
+        // ------------------------------------------------------------------
+        // 3D viewer: the gun holds its spot and pivots gently with scroll —
+        // yaw and pitch together, starting muzzle-left like in the app.
+        // ------------------------------------------------------------------
+        const mv = document.getElementById('zapper3d');
+
+        if (!reducedMotion) {
+            // Let the user spin the gun while held; the moment they release,
+            // retarget the scroll pose and model-viewer glides it home.
+            let draggingGun = false;
+            mv.addEventListener('pointerdown', () => { draggingGun = true; });
+            window.addEventListener('pointerup', () => {
+                if (draggingGun) { draggingGun = false; poseFromScroll(); }
+            });
+            window.addEventListener('pointercancel', () => {
+                if (draggingGun) { draggingGun = false; poseFromScroll(); }
+            });
+
+            // Scroll animates the MODEL's orientation through three keyframes
+            // (roll, pitch, yaw); the camera stays parked dead ahead. The end
+            // keyframes are reached exactly when the stage is fully offscreen.
+            const ORIENT_BELOW = [-8, 43, 37];   // fully offscreen below
+            const ORIENT_CENTER = [-26, 29, 71]; // hand-tuned center-on pose
+            const ORIENT_ABOVE = [-8, 4, 99];    // fully offscreen above
+
+            function lerpOrient(a, b, t) {
+                return a.map((v, i) => v + (b[i] - v) * t);
+            }
+
+            // Scroll only retargets; the pin loop eases toward the target so
+            // notchy wheel scrolling still reads as one fluid motion.
+            let targetOrient = ORIENT_CENTER.slice();
+            let currentOrient = ORIENT_CENTER.slice();
+            let poseQueued = false;
+            function poseFromScroll() {
+                if (draggingGun) return;
+                const r = mv.getBoundingClientRect();
+                // 0 with the stage centered; ±1 exactly when it has fully
+                // left the viewport (above positive, below negative).
+                const travel = window.innerHeight / 2 + r.height / 2;
+                const p = Math.max(-1, Math.min(1,
+                    ((window.innerHeight / 2) - (r.top + r.height / 2)) / travel));
+                targetOrient = p < 0
+                    ? lerpOrient(ORIENT_CENTER, ORIENT_BELOW, -p)
+                    : lerpOrient(ORIENT_CENTER, ORIENT_ABOVE, p);
+                // home the camera too (it only moves if the user dragged it)
+                mv.cameraOrbit = '0deg 90deg auto';
+            }
+            window.addEventListener('scroll', () => {
+                if (poseQueued) return;
+                poseQueued = true;
+                requestAnimationFrame(() => { poseQueued = false; poseFromScroll(); });
+            }, { passive: true });
+            window.addEventListener('resize', poseFromScroll, { passive: true });
+            poseFromScroll();
+
+            // Pin the callout cards to points on the model: each card drifts
+            // by half of its anchor's on-screen movement from the rest pose.
+            const stage = document.querySelector('.zapper-stage');
+            const compactCallouts = window.matchMedia('(max-width: 900px)');
+            const cardAnchors = [];
+            for (let i = 1; i <= 6; i++) {
+                const card = document.querySelector('.callout.c' + i);
+                const anchor = stage.querySelector('.anchor[data-anchor="c' + i + '"]');
+                if (!card || !anchor) continue;
+                const tether = document.createElement('div');
+                tether.className = 'tether';
+                tether.setAttribute('aria-hidden', 'true');
+                stage.appendChild(tether);
+                // the authored data-position is in the model's unrotated space
+                const base = anchor.dataset.position.split(/\s+/).map(parseFloat);
+                cardAnchors.push({ card, anchor, tether, base, baseFx: null, baseFy: null, home: null });
+            }
+
+            // Dots, tethers, and card drift all derive from ONE analytic
+            // projection computed from the same orientation value we just
+            // applied — never read back from model-viewer's DOM, which updates
+            // a frame late and reads as jitter while scrolling.
+            function anchorScreenPoints(orient, restCamera) {
+                if (!mv.loaded || typeof mv.getCameraOrbit !== 'function') return null;
+                const box = mv.getBoundingClientRect();
+                if (!box.width || !box.height) return null;
+                const live = mv.getCameraOrbit();
+                const theta = restCamera ? 0 : live.theta;
+                const phi = restCamera ? Math.PI / 2 : live.phi;
+                const radius = live.radius;
+                const tgt = mv.getCameraTarget();
+                const halfFovY = mv.getFieldOfView() * Math.PI / 360;
+
+                // camera on the orbit sphere, looking at the target
+                const sp = Math.sin(phi), cp = Math.cos(phi);
+                const st = Math.sin(theta), ct = Math.cos(theta);
+                const cam = [tgt.x + radius * sp * st, tgt.y + radius * cp, tgt.z + radius * sp * ct];
+                let f = [tgt.x - cam[0], tgt.y - cam[1], tgt.z - cam[2]];
+                const fl = Math.hypot(f[0], f[1], f[2]);
+                f = [f[0] / fl, f[1] / fl, f[2] / fl];
+                let r = [-f[2], 0, f[0]];
+                const rl = Math.hypot(r[0], r[1], r[2]) || 1;
+                r = [r[0] / rl, r[1] / rl, r[2] / rl];
+                const u = [
+                    r[1] * f[2] - r[2] * f[1],
+                    r[2] * f[0] - r[0] * f[2],
+                    r[0] * f[1] - r[1] * f[0],
+                ];
+                const tanY = Math.tan(halfFovY);
+                const tanX = tanY * box.width / box.height;
+
+                // model rotation — same YXZ Euler model-viewer applies
+                const [rollD, pitchD, yawD] = orient;
+                const rr = rollD * Math.PI / 180;
+                const pp = pitchD * Math.PI / 180;
+                const yy = yawD * Math.PI / 180;
+                const cy = Math.cos(yy), sy = Math.sin(yy);
+                const cx = Math.cos(pp), sx = Math.sin(pp);
+                const cz = Math.cos(rr), sz = Math.sin(rr);
+                const m = [
+                    [cy * cz + sy * sx * sz, -cy * sz + sy * sx * cz, sy * cx],
+                    [cx * sz, cx * cz, -sx],
+                    [-sy * cz + cy * sx * sz, sy * sz + cy * sx * cz, cy * cx],
+                ];
+
+                return cardAnchors.map((ca) => {
+                    const [x, y, z] = ca.base;
+                    const w = [
+                        m[0][0] * x + m[0][1] * y + m[0][2] * z - cam[0],
+                        m[1][0] * x + m[1][1] * y + m[1][2] * z - cam[1],
+                        m[2][0] * x + m[2][1] * y + m[2][2] * z - cam[2],
+                    ];
+                    const zc = w[0] * f[0] + w[1] * f[1] + w[2] * f[2];
+                    const xc = w[0] * r[0] + w[1] * r[1] + w[2] * r[2];
+                    const yc = w[0] * u[0] + w[1] * u[1] + w[2] * u[2];
+                    return {
+                        x: box.left + (0.5 + xc / zc / (2 * tanX)) * box.width,
+                        y: box.top + (0.5 - yc / zc / (2 * tanY)) * box.height,
+                    };
+                });
+            }
+
+            function captureBaselines() {
+                // rest pose is computed analytically, so baselines don't care
+                // what the current scroll/drag state is
+                const pts = anchorScreenPoints(ORIENT_CENTER, true);
+                if (!pts) return;
+                const box = mv.getBoundingClientRect();
+                const stageR = stage.getBoundingClientRect();
+                cardAnchors.forEach((ca, i) => {
+                    ca.baseFx = (pts[i].x - box.left) / box.width;
+                    ca.baseFy = (pts[i].y - box.top) / box.height;
+                    ca.card.style.transform = '';
+                    const cr = ca.card.getBoundingClientRect();
+                    ca.home = {
+                        x: cr.left - stageR.left,
+                        y: cr.top - stageR.top,
+                        w: cr.width,
+                        h: cr.height,
+                    };
+                });
+            }
+
+            mv.addEventListener('load', () => {
+                setTimeout(() => { captureBaselines(); poseFromScroll(); }, 100);
+            });
+            window.addEventListener('resize', () => {
+                if (mv.loaded) captureBaselines();
+            }, { passive: true });
+
+            let lastPoseTick = performance.now();
+            (function pinTick(now) {
+                requestAnimationFrame(pinTick);
+                // ease the orientation toward the scroll target
+                const dt = Math.min(0.1, ((now || performance.now()) - lastPoseTick) / 1000);
+                lastPoseTick = now || performance.now();
+                const ease = 1 - Math.pow(0.002, dt);
+                let moved = false;
+                for (let i = 0; i < 3; i++) {
+                    const d = targetOrient[i] - currentOrient[i];
+                    if (Math.abs(d) > 0.005) {
+                        currentOrient[i] += d * ease;
+                        moved = true;
+                    }
+                }
+                if (moved) {
+                    mv.orientation = `${currentOrient[0].toFixed(2)}deg ${currentOrient[1].toFixed(2)}deg ${currentOrient[2].toFixed(2)}deg`;
+                }
+
+                const pts = anchorScreenPoints(currentOrient, false);
+                if (!pts) return;
+                const box = mv.getBoundingClientRect();
+                const stageR = stage.getBoundingClientRect();
+                cardAnchors.forEach((ca, i) => {
+                    if (ca.card.offsetParent === null) {
+                        // hidden at this breakpoint (compact drops c3/c4)
+                        ca.tether.style.display = 'none';
+                        return;
+                    }
+                    const ax = pts[i].x;
+                    const ay = pts[i].y;
+                    ca.anchor.style.left = (ax - stageR.left).toFixed(1) + 'px';
+                    ca.anchor.style.top = (ay - stageR.top).toFixed(1) + 'px';
+                    ca.anchor.style.visibility = 'visible';
+                    if (ca.baseFx === null) return;
+
+                    // drift the card by half the anchor's movement, but never
+                    // push it out of the stage
+                    let dx = (ax - box.left - ca.baseFx * box.width) * 0.5;
+                    let dy = (ay - box.top - ca.baseFy * box.height) * 0.5;
+                    dx = Math.max(4 - ca.home.x, Math.min(stageR.width - ca.home.w - 4 - ca.home.x, dx));
+                    dy = Math.max(2 - ca.home.y, Math.min(stageR.height - ca.home.h - 2 - ca.home.y, dy));
+                    ca.card.style.transform = `translate(${dx.toFixed(2)}px, ${dy.toFixed(2)}px)`;
+
+                    // line from the card's gun-facing edge straight to the
+                    // marker — side edges on desktop, top/bottom when compact
+                    const cr = ca.card.getBoundingClientRect();
+                    let sx, sy;
+                    if (compactCallouts.matches && !ca.card.classList.contains('c3')) {
+                        sx = cr.left + cr.width / 2 - stageR.left;
+                        sy = (ay < cr.top + cr.height / 2 ? cr.top : cr.bottom) - stageR.top;
+                    } else {
+                        const fromRight = ax >= cr.left + cr.width / 2;
+                        sx = (fromRight ? cr.right : cr.left) - stageR.left;
+                        sy = cr.top + cr.height / 2 - stageR.top;
+                    }
+                    const ex = ax - stageR.left;
+                    const ey = ay - stageR.top;
+                    const len = Math.hypot(ex - sx, ey - sy);
+                    ca.tether.style.display = '';
+                    ca.tether.style.left = sx + 'px';
+                    ca.tether.style.top = sy + 'px';
+                    ca.tether.style.width = len.toFixed(1) + 'px';
+                    ca.tether.style.transform = `rotate(${Math.atan2(ey - sy, ex - sx)}rad)`;
+                });
+            })();
+
+        }
+    </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"be77bb7043c84bf5853edd26d0778cd9","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

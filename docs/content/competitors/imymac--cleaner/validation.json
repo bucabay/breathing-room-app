@@ -1,0 +1,345 @@
+{
+  "checkedAtUtc": "2026-10-21T21:07:41.280088+00:00",
+  "command": "python3 docs/content/competitors/imymac--cleaner/validate.py",
+  "scope": "Local documentary integrity only; no browser/native/cleanup test or site build",
+  "passed": true,
+  "checkCount": 66,
+  "results": [
+    {
+      "check": "ownership",
+      "passed": true,
+      "detail": "Canonical owner is this product, not a guessed cross-vendor alias"
+    },
+    {
+      "check": "blocked-gates",
+      "passed": true,
+      "detail": "No drafting/publication approval while critical evidence is missing"
+    },
+    {
+      "check": "unique-ids",
+      "passed": true,
+      "detail": "No duplicate source or claim IDs"
+    },
+    {
+      "check": "claim:identity",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:alias-boundary",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:platform",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:modules",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:approval",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:cache-categories",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:menu-monitor",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:pricing",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:trial",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:license",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:installation",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:reuse",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:br-preview",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "claim:br-boundaries",
+      "passed": true,
+      "detail": "Excerpt/date/source references retained"
+    },
+    {
+      "check": "matrix:macOS",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Version",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Licence",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Local/hosted",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Scan/cleanup",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Approval",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Monitoring",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:App/helper grouping",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Recurring growth history",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Developer caches",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Pricing/trial",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "matrix:Installation",
+      "passed": true,
+      "detail": "Factual cells reference claims; unknowns explicitly not verified"
+    },
+    {
+      "check": "source-exists:homepage-baseline",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-1/imymac--cleaner-official.json"
+    },
+    {
+      "check": "source-hash:homepage-baseline",
+      "passed": true,
+      "detail": "5097c20142b9d142d21eeb233d24fb01e23ce9b6b1de6dc8c6c9fdcf2541f90c"
+    },
+    {
+      "check": "source-exists:product-baseline",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-1/imymac-product-extra.json"
+    },
+    {
+      "check": "source-hash:product-baseline",
+      "passed": true,
+      "detail": "a438005cb3bc0cf7140e65159423daeec87c1a81a5b7fc66edf99964aba912b1"
+    },
+    {
+      "check": "source-exists:alias-baseline",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-1/powermymac-alias-extra.json"
+    },
+    {
+      "check": "source-hash:alias-baseline",
+      "passed": true,
+      "detail": "51880d1809b1661cdb93faaf34ba416105eaf7ee5dc1f9d076cb521563b00971"
+    },
+    {
+      "check": "source-exists:techycub-baseline",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-2/powermymac-official.json"
+    },
+    {
+      "check": "source-hash:techycub-baseline",
+      "passed": true,
+      "detail": "6fd3cedea0d57ed0551fd6cb408cdc63abb733a059d47d6400b233dbb8b8d2d9"
+    },
+    {
+      "check": "source-exists:pricing",
+      "passed": true,
+      "detail": "docs/content/competitors/imymac--cleaner/sources/pricing.html"
+    },
+    {
+      "check": "source-hash:pricing",
+      "passed": true,
+      "detail": "7bdc9568604866d02f6c496ad41e58ec7c95cee8532a751c31ee7b11beec4cef"
+    },
+    {
+      "check": "metadata:pricing",
+      "passed": true,
+      "detail": "Actual final URL/retrieval timestamp/HTTP result match retained metadata"
+    },
+    {
+      "check": "text-hash:pricing",
+      "passed": true,
+      "detail": "f99da0abbbf287d7997170c6cff3c27f8f95fb884379fe50936c2e7afd110b4a"
+    },
+    {
+      "check": "source-exists:eula",
+      "passed": true,
+      "detail": "docs/content/competitors/imymac--cleaner/sources/eula.html"
+    },
+    {
+      "check": "source-hash:eula",
+      "passed": true,
+      "detail": "f796733299b0093972e26e62991eb723cf2d65ffb2fcb6f3e5a400e8111bbcf0"
+    },
+    {
+      "check": "metadata:eula",
+      "passed": true,
+      "detail": "Actual final URL/retrieval timestamp/HTTP result match retained metadata"
+    },
+    {
+      "check": "text-hash:eula",
+      "passed": true,
+      "detail": "f2a797d83eceb72124f0675dde4f4eaf9983956e7399fb6250cab92ecc266498"
+    },
+    {
+      "check": "source-exists:guide",
+      "passed": true,
+      "detail": "docs/content/competitors/imymac--cleaner/sources/guide.html"
+    },
+    {
+      "check": "source-hash:guide",
+      "passed": true,
+      "detail": "dc0cbecfaef8a7b9074f3c05f14709ac8d8a23376398213b7a14567b0fd20c58"
+    },
+    {
+      "check": "metadata:guide",
+      "passed": true,
+      "detail": "Actual final URL/retrieval timestamp/HTTP result match retained metadata"
+    },
+    {
+      "check": "text-hash:guide",
+      "passed": true,
+      "detail": "ac9d56ccbfd9eb8dcc9e2b290e75aaec893bee09ae87894a6c4dd365d91fefe6"
+    },
+    {
+      "check": "source-exists:breathing-room-capabilities",
+      "passed": true,
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source-exists:breathing-room-visuals",
+      "passed": true,
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "exact-guide-excerpt:modules",
+      "passed": true,
+      "detail": "Quoted supporting text occurs in retained official guide"
+    },
+    {
+      "check": "exact-guide-excerpt:approval",
+      "passed": true,
+      "detail": "Quoted supporting text occurs in retained official guide"
+    },
+    {
+      "check": "exact-guide-excerpt:cache-categories",
+      "passed": true,
+      "detail": "Quoted supporting text occurs in retained official guide"
+    },
+    {
+      "check": "exact-guide-excerpt:menu-monitor",
+      "passed": true,
+      "detail": "Quoted supporting text occurs in retained official guide"
+    },
+    {
+      "check": "exact-guide-excerpt:installation",
+      "passed": true,
+      "detail": "Quoted supporting text occurs in retained official guide"
+    },
+    {
+      "check": "exact-trial-excerpt",
+      "passed": true,
+      "detail": "Literal 500M limit retained without invented units"
+    },
+    {
+      "check": "advertised-plan-prices",
+      "passed": true,
+      "detail": "['9.95', '24.95', '39.95', '64.95', '59.95', '89.95', '129.95']"
+    },
+    {
+      "check": "pricing-conditions",
+      "passed": true,
+      "detail": "Renewal/tax/lifetime conditions retained"
+    },
+    {
+      "check": "official-ui-reference",
+      "passed": true,
+      "detail": "Exact competitor app-image path embedded in retained official guide"
+    },
+    {
+      "check": "image-rights-not-waived",
+      "passed": true,
+      "detail": "No third-party image download, invented hash or invented licence"
+    },
+    {
+      "check": "preview-hash",
+      "passed": true,
+      "detail": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+    },
+    {
+      "check": "preview-dimensions",
+      "passed": true,
+      "detail": "2940x3468"
+    },
+    {
+      "check": "preview-disclosure",
+      "passed": true,
+      "detail": "Required current-source/example-data/non-native caption and provenance match inventory"
+    },
+    {
+      "check": "discovery-snapshot",
+      "passed": true,
+      "detail": "da647d8ecdcf03265fe15619258136683a0366beef42b9d7880e5e37e11e8465"
+    },
+    {
+      "check": "briefs-and-tradeoffs",
+      "passed": true,
+      "detail": "Distinct briefs, not drafts; both products' advantages and limitations retained"
+    }
+  ],
+  "discoverySha256": "da647d8ecdcf03265fe15619258136683a0366beef42b9d7880e5e37e11e8465",
+  "packetHashes": {
+    "research.json": "de894ab52364bc021fc1d1c384d606516d549b187eec2a6d4622f5a2b4487d0b",
+    "research.md": "4868ad7c6f7af2a76a72f6bd617f61226fad15f8e8123f703abf21285136a1a6"
+  },
+  "blockingEvidenceRemains": "Official identity, platform, cleanup workflow and conditional prices are documented. Drafting is blocked because no competitor screenshot reuse basis is established, image visual review is pending, and the FoneDog/TechyCub alias relation remains unresolved. Do not merge IDs or publish duplicate same-title pages. No website files or queue state changed."
+}

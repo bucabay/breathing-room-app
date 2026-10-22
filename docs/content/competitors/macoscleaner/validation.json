@@ -1,0 +1,27 @@
+{
+  "jobId": "research-macoscleaner",
+  "status": "passed-structural-checks-with-editorial-blocker",
+  "packetHashes": {
+    "research.json": "9ad978b92ca12c2f35a69308ebc8812397d993488da64415bed427cdf6d5cb2a",
+    "research.md": "6f7f147e93f10180321d004af95694f56479916c19902f3904cf0b66b221298d"
+  },
+  "checks": [
+    "PASS: research.json parses; canonicalOwnerId is macoscleaner and drafting gate is blocked.",
+    "PASS: all 7 source paths exist and SHA-256 hashes match retained evidence.",
+    "PASS: all 15 claim excerpts match retained source content with whitespace normalization; source IDs resolve and conditions/check dates/locations are present.",
+    "PASS: all 4 new raw snapshots match retrieval-manifest SHA-256 values and HTTP 200 records.",
+    "PASS: inherited AlternativeTo directory snapshot SHA-256 matches.",
+    "PASS: selected Breathing Room PNG SHA-256 matches library; PNG header dimensions are 2940 by 3468.",
+    "PASS: official competitor screenshot asset URL, blob SHA-1 and 2161300-byte metadata match the retained GitHub index; no downloaded-original SHA-256 fabricated.",
+    "PASS: no competitor PNG downloaded into this folder; both visual records contain captions, alt text and explicit reuse limitations.",
+    "PASS: JSON and Markdown handoff files exist and retain the blocked drafting gate."
+  ],
+  "initialCheckFailure": "First exact-substring excerpt check failed on license because the retained source wraps the sentence across lines. Reran with whitespace-only normalization; all excerpts passed. No wording/content normalization beyond whitespace.",
+  "notPerformed": [
+    "Competitor image download or pixel/privacy/legibility review: rights unresolved.",
+    "Native product, binary signing/notarization, cleanup, installation or network behavior tests.",
+    "Browser interactions or independent article review.",
+    "Site checks/build/tests: no site changes or drafts in this research-only job."
+  ],
+  "blocker": "Screenshot is link-only: no unambiguous reuse permission or approved editorial reuse basis for on-page use. EDITORIAL.md requires this gate remain blocked, regardless of structural checks."
+}

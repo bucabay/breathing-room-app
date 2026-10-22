@@ -1,0 +1,27 @@
+{
+  "jobId": "research-appvoid",
+  "checkedOn": "2026-10-21",
+  "result": "structural-checks-pass; critical-evidence-gates-blocked",
+  "checks": [
+    "Python json.loads parsed research.json successfully; job ID, blocked status and draftingAllowed=false assertions passed.",
+    "Every claim source ID and every matrix claim ID resolved; all claim checked dates, passages and scope fields present. Exact counts are verified in final receipt validation.",
+    "Baseline batch, discovery snapshot, failed official snapshot and capabilities register SHA-256 checks passed against actual local bytes.",
+    "Selected Breathing Room Apps PNG SHA-256 and actual PNG header dimensions 2940x4440 matched; required Example data only caption assertion passed.",
+    "Competitor visual is link-only with no downloaded asset; canonicalOwnerId appvoid and two critical blocker assertions passed.",
+    "Markdown handoff contains hold decision, B1/B2, affiliation disclosure and non-native-scan limitation.",
+    "Read actual selected Breathing Room PNG using image-capable tool; visible example-data warnings and helper rows inspected.",
+    "Read official vendor product, studio, open-source and privacy pages via WebFetch; checked actual supporting text rather than HTTP reachability only.",
+    "Apple US lookup returned resultCount 0; UK App Store request returned HTTP 404. Reused baseline US 404 without repeating that request."
+  ],
+  "artifactHashes": {
+    "research.json": "80f7cf8a3a0bb791934fcd925e46a7029e24ba2fe79f1de0a70021df01e174c5",
+    "research.md": "c3beb3b0d06c0b1a58e56d14e449f9477eb00feb03ad76af555662b40b4b189f"
+  },
+  "limitations": [
+    "Initial validation console summary hard-coded 12 claims; exact JSON count is checked separately. Assertions iterated every claim and did not rely on that summary count.",
+    "No site build/tests: research packet only, no site files changed.",
+    "No native testing, independent editorial review or publication approval.",
+    "New public responses retained as excerpts in packet, not complete response snapshots or invented byte hashes."
+  ],
+  "blockingGates": ["Unresolved current AppVoid distribution/availability", "Competitor image rights, retrieval and actual UI/privacy inspection pending"]
+}

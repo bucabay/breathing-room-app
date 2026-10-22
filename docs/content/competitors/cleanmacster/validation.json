@@ -1,0 +1,27 @@
+{
+  "jobId": "research-cleanmacster",
+  "checkedOn": "2026-10-21",
+  "result": "pass-structural-and-provenance-checks; drafting-remains-blocked",
+  "command": "python3 read-only JSON/reference/hash assertions (executed through shell)",
+  "exitCode": 0,
+  "counts": {"claims": 10, "sources": 8, "matrixRows": 10},
+  "checks": [
+    "PASS: research.json and listing-images.json parse; all claims have dates, excerpts, scope, evidence class and location.",
+    "PASS: claim source IDs, matrix claim IDs and visual supported-claim IDs resolve.",
+    "PASS: all referenced retained snapshot paths exist.",
+    "PASS: official and directory snapshot hashes, capabilities.md hash and screenshots.json hash match packet records.",
+    "PASS: selected Space browser-preview PNG SHA-256 matches shared screenshot manifest.",
+    "PASS: competitor visual asset URL matches retained public listing DOM metadata.",
+    "PASS: retained official homepage HTML contains exact demo-poster reference and explicit interactive-preview label, and no github.com link.",
+    "PASS: canonicalOwnerId cleanmacster, explicit blocked drafting state, link-only competitor image and zero image-download state retained.",
+    "PASS: owned Chrome tab 82 closed; existing tabs not read or modified.",
+    "NOT RUN: app install/runtime/cleanup, image republication, website build/render/independent review; research-only scope, no implementation or website edits."
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/cleanmacster/evidence/homepage-visual-source.html": "732756617dbd8a357d55b783bbf10cbeb513421f5370795935627cb66485321c",
+    "docs/content/competitors/cleanmacster/evidence/listing-images.json": "d2da32dfac031643a2f37869dad76da1699cbfb9c917739c99a26e96dc0b0fa5",
+    "docs/content/competitors/cleanmacster/research.json": "ecac96a98367bbbd3bf99498ead950ed633f5f4c99add4143ad9452618b9f177",
+    "docs/content/competitors/cleanmacster/research.md": "19b1973618cff62b26d10358bd616c0aa352088d435ac6975fe258d58b7ab991"
+  },
+  "diagnostic": "Research structure and reused provenance validated, not publication approval. VISUAL-01 remains critical: competitor image reuse permission and actual visual/privacy inspection unresolved; no third-party image downloaded."
+}

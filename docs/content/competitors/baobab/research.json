@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-baobab",
+  "stage": "research",
+  "status": "complete-with-bounded-unknowns",
+  "checkedOn": "2026-10-21",
+  "publicationApproved": false,
+  "identity": {
+    "productId": "baobab",
+    "canonicalOwnerId": "baobab",
+    "officialName": "Disk Usage Analyzer",
+    "discoveryName": "Baobab Disk Usage Analyzer",
+    "homepage": "https://apps.gnome.org/Baobab/",
+    "repository": "https://gitlab.gnome.org/GNOME/baobab",
+    "aliases": ["Baobab", "GNOME Disk Usage Analyzer", "Disk Usage Analyzer", "org.gnome.baobab"],
+    "aliasEvidence": ["identity", "repository", "distribution"],
+    "aliasSkipDecision": "Do not create separate drafts for these GNOME/package names; retain this canonical baobab packet. No evidence connects this product to PowerMyMac; no other product identity is asserted or edited.",
+    "classification": "adjacent-storage-analyzer-with-macos-package",
+    "fit": "Direct overlap in folder-size investigation, adjacent to broader Mac maintenance. GNOME advertises Linux/Flathub; Homebrew separately distributes a macOS build. Not an all-feature cleanup substitute or Linux-only product.",
+    "skipProduct": false,
+    "decisionBasis": "An independently useful Mac workflow exists for GNOME users moving to macOS, including the option to keep Baobab through Homebrew. Do not manufacture Windows support or declare a dead product."
+  },
+  "ownership": {"appFolder": "docs/content/competitors/baobab/", "websiteChanges": [], "queueMutation": false},
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/baobab/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:18.140Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/baobab-directory.json",
+    "hashReference": "validation.json",
+    "method": "Reused browser-rendered baseline directory snapshot and docs/content/competitors.json record, not a new directory fetch.",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:03.597Z",
+    "pagination": "Seed edge recorded without a page query; no additional page number inferred.",
+    "limitation": "Directory is discovery only; its Mac label is qualified using Homebrew evidence, not treated as a native vendor support promise."
+  },
+  "sourceLedger": [
+    {"id":"baseline","publisher":"The GNOME Project","title":"Disk Usage Analyzer – Apps for GNOME","url":"https://apps.gnome.org/Baobab","finalUrl":"https://apps.gnome.org/Baobab/","retrievedAtUtc":"2026-10-21T19:08:09.444578+00:00","sourceUpdatedAt":"Page generated 2026-10-21; release dated 2026-03-13","snapshotPath":"docs/content/.runtime/verification-1/baobab-official.json","sha256":"5e970c12b186cf78770c5258d7ecad9cb80eef0ed0a06a634a669978ab451066","reuse":"docs/content/verification/batch-1.json baobab; reused identity/core/Linux facts without needless reverification","scope":"Published description and release listing, not runtime tests"},
+    {"id":"gnome-visual-page","publisher":"The GNOME Project","title":"Disk Usage Analyzer – Explore the interface","url":"https://apps.gnome.org/Baobab/","snapshotIndex":"evidence-index.json#gnome-visual-page","scope":"Fetched HTML specifically to resolve missing screenshot URLs and app-content reuse notice; baseline lacked images"},
+    {"id":"homebrew","publisher":"Homebrew","title":"baobab formula JSON","url":"https://formulae.brew.sh/api/formula/baobab.json","humanUrl":"https://formulae.brew.sh/formula/baobab","snapshotIndex":"evidence-index.json#homebrew","scope":"Homebrew stable 50.0, package dependencies and bottle platforms; not successful launch testing","sourceUpdatedAt":"generated_date 2026-10-21"},
+    {"id":"gnome-contribute","publisher":"The GNOME Project","title":"Welcome to GNOME – Disk Usage Analyzer","url":"https://welcome.gnome.org/app/Baobab/","snapshotIndex":"evidence-index.json#gnome-contribute","scope":"Canonical code repository and advertised Flathub release"},
+    {"id":"trash-help","publisher":"GNOME Help; Ekaterina Gerasimova","title":"How do I delete a folder?","url":"https://help.gnome.org/baobab/question-trash.html","snapshotIndex":"evidence-index.json#trash-help","sourceUpdatedAt":null,"scope":"Current served GNOME help; copyright 2014, unversioned, not proof of exact 50.0 Mac menus"},
+    {"id":"remote-help","publisher":"GNOME Help","title":"Scan a remote folder","url":"https://help.gnome.org/baobab/scan-remote.html","snapshotIndex":"evidence-index.json#remote-help","sourceUpdatedAt":null,"scope":"GNOME documented remote workflow; backend/protocol parity on Homebrew untested"},
+    {"id":"permissions-help","publisher":"GNOME Help; Baptiste Mille-Mathias","title":"Error when scanning","url":"https://help.gnome.org/baobab/problem-permissions.html","snapshotIndex":"evidence-index.json#permissions-help","sourceUpdatedAt":null,"scope":"General permission caveat only; copyright 2014. Do not repeat legacy implementation claims about du/df as current source verification"},
+    {"id":"br-capabilities","publisher":"Breathing Room programme","title":"Breathing Room capabilities: evidence register","localPath":"docs/content/capabilities.md","url":"https://breathing-room.chatic.ai/","checkedOn":"2026-10-21","scope":"Reuse same-day source/published verification with its release/runtime limitations; not a new installation or hosted-service audit"},
+    {"id":"br-visuals","publisher":"Breathing Room programme","title":"Current browser-preview screenshot inventory","localPath":"docs/content/screenshots.json","checkedOn":"2026-10-21","scope":"Current-source illustrative browser UI, not native scan evidence"}
+  ],
+  "sourceIndexContract": "New retrieval timestamps, final URLs, HTTP outcomes, byte counts and original SHA-256 values are keyed by source ID in evidence-index.json. Local evidence paths there are relative to this folder. Validation hashes also cover reused local sources.",
+  "claimLedger": [
+    {"id":"identity","wording":"GNOME calls the app Disk Usage Analyzer; Baobab is its project/package name.","state":"verified","evidenceClass":"official-published","sources":["baseline","homebrew"],"excerpt":"Disk Usage Analyzer; Keywords Baobab; name: baobab; homepage: https://apps.gnome.org/Baobab/","checkedOn":"2026-10-21","scope":"GNOME app and matching Homebrew formula","location":"identity/lead","reviewer":"scheduled research worker"},
+    {"id":"repository","wording":"The canonical code repository is GNOME/baobab on GNOME GitLab.","state":"verified","evidenceClass":"official-link","sources":["gnome-contribute"],"excerpt":"Code Repository — The project’s home, keeping the source code and more information; https://gitlab.gnome.org/GNOME/baobab","checkedOn":"2026-10-21","scope":"Repository identity verified via official contribution page; GitLab content returned HTTP 406","location":"sources/identity","reviewer":"scheduled research worker"},
+    {"id":"scan","wording":"GNOME documents scanning specific folders, storage devices and online accounts, with tree and graphical folder-size views.","state":"verified","evidenceClass":"official-published","sources":["baseline"],"excerpt":"Disk Usage Analyzer can scan specific folders, storage devices and online accounts. It provides both a tree and a graphical representation showing the size of each folder","checkedOn":"2026-10-21","scope":"Documented behavior, not a Mac runtime test or complete disk coverage guarantee","location":"workflow/matrix","reviewer":"scheduled research worker"},
+    {"id":"distribution","wording":"GNOME lists release 50.0 dated March 13, 2026 and directs users to Flathub; Homebrew also lists stable 50.0 for macOS and Linux.","state":"verified","evidenceClass":"official-published-and-package-record","sources":["baseline","gnome-contribute","homebrew"],"excerpt":"Latest version 50.0 released on 2026-03-13; The latest released version on Flathub is version 50.0; versions.stable: 50.0","checkedOn":"2026-10-21","scope":"Listed release, not proof latest across every channel; Homebrew deprecated:false, disabled:false","location":"version/install","reviewer":"scheduled research worker"},
+    {"id":"mac-package","wording":"Homebrew provides Baobab 50.0 bottles for Apple Silicon golden_gate, tahoe, sequoia and sonoma, and Intel sonoma.","state":"verified","evidenceClass":"distributor-record","sources":["homebrew"],"excerpt":"bottle.stable.files: arm64_golden_gate, arm64_tahoe, arm64_sequoia, arm64_sonoma, sonoma, arm64_linux, x86_64_linux","checkedOn":"2026-10-21","scope":"Exact Homebrew keys, not an upstream minimum OS, notarized DMG or Mac feature-parity guarantee; no install performed","location":"platform matrix","reviewer":"scheduled research worker"},
+    {"id":"license","wording":"Homebrew records Baobab under GPL-2.0-or-later.","state":"verified","evidenceClass":"distributor-record","sources":["homebrew"],"excerpt":"license: GPL-2.0-or-later","checkedOn":"2026-10-21","scope":"App licensing; do not confuse website AGPL with app licence or claim trademark rights","location":"license/pricing matrix","reviewer":"scheduled research worker"},
+    {"id":"dependencies","wording":"The Homebrew formula depends on GTK4, libadwaita, GLib and other libraries.","state":"verified","evidenceClass":"distributor-record","sources":["homebrew"],"excerpt":"dependencies: adwaita-icon-theme, cairo, glib, graphene, gtk4, hicolor-icon-theme, libadwaita, pango, gettext","checkedOn":"2026-10-21","scope":"Package dependencies, not measured installation size or startup speed","location":"installation caveat","reviewer":"scheduled research worker"},
+    {"id":"trash","wording":"GNOME help documents moving a selected folder to Trash, then emptying Trash separately in a file browser.","state":"verified","evidenceClass":"official-documentation","sources":["trash-help"],"excerpt":"Right-click on the folder that you want to delete and select Move to Trash. Open a file browser such as Files and empty the Trash.","checkedOn":"2026-10-21","scope":"Unversioned GNOME help; not a performed action, exact 50.0 Mac menu test or advice to delete unknown data","location":"cleanup model/trade-off","reviewer":"scheduled research worker"},
+    {"id":"remote","wording":"GNOME help describes scanning remotely accessible storage; connecting may require a username and password.","state":"verified","evidenceClass":"official-documentation","sources":["remote-help"],"excerpt":"Disk Usage Analyzer can scan storage devices which are accessible remotely; you may be asked for more details, like a password and username","checkedOn":"2026-10-21","scope":"Documented GNOME workflow, not proof of all protocols on the Mac package; no credentials accessed","location":"local/remote boundary","reviewer":"scheduled research worker"},
+    {"id":"permissions","wording":"GNOME warns that inaccessible files are excluded from chart calculations.","state":"verified","evidenceClass":"official-documentation","sources":["permissions-help"],"excerpt":"The files you can't access won't be used to compute the chart representing the disk usage","checkedOn":"2026-10-21","scope":"Permission caveat only; no assertion that apparent folder totals equal reclaimable disk space","location":"workflow limitations","reviewer":"scheduled research worker"},
+    {"id":"image-license","wording":"The official GNOME app page labels app-specific content copyright the respective contributors under GPL-2.0+.","state":"verified","evidenceClass":"published-reuse-notice","sources":["gnome-visual-page"],"excerpt":"App specific content © The respective app contributors (GPL-2.0+)","checkedOn":"2026-10-21","scope":"Basis for retaining the unmodified official scan screenshot with attribution, licence and source; not CC0 metadata or blanket trademark permission","location":"visual credit","reviewer":"scheduled research worker"},
+    {"id":"br-scope","wording":"Breathing Room, which we build, is a macOS 13+ maintenance preview with local storage views and source implementations of grouped process monitoring and reviewable cleanup.","state":"verified","evidenceClass":"reused-source-and-published-register","sources":["br-capabilities"],"excerpt":"free, Apache-2.0 macOS maintenance preview; Source implementation is not proof that every feature works in the distributed installer","checkedOn":"2026-10-21","scope":"Identified 0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized; Python 3.10+ required for inventory; physical Intel and clean-machine execution unvalidated","location":"comparison/caveats","reviewer":"scheduled research worker; reuses capabilities register"},
+    {"id":"br-pricing","wording":"Breathing Room advertises a free core desktop app and optional AI Care at $5 USD/month or $50 USD/year.","state":"verified","evidenceClass":"reused-published-register","sources":["br-capabilities"],"excerpt":"AI Care is advertised at $5 USD/month or $50 USD/year, not a separate app purchase","checkedOn":"2026-10-21","scope":"Renewal and tax conditions in capabilities.md; no unlimited allowance or tested billing entitlement asserted","location":"pricing matrix","reviewer":"scheduled research worker; reuses capabilities register"},
+    {"id":"br-hosted","wording":"Breathing Room's AI requires authentication and internet access; relevant paths, process and storage data can reach its hosted service.","state":"verified","evidenceClass":"reused-source-and-policy-register","sources":["br-capabilities"],"excerpt":"Hosted AI assistance requires internet access and authentication; relevant paths/process/storage data can reach the service and Cloudflare Workers AI","checkedOn":"2026-10-21","scope":"Not entirely offline; exact approval methods and optional automatic Ruff mode must remain qualified","location":"privacy/approval matrix","reviewer":"scheduled research worker; reuses capabilities register"}
+  ],
+  "productMatrix": [
+    {"dimension":"macOS","baobab":"Homebrew package; exact bottle targets in mac-package; upstream page identifies Linux","claimIds":["mac-package","distribution"],"breathingRoomClaimIds":["br-scope"]},
+    {"dimension":"licence/pricing","baobab":"GPL-2.0-or-later package. No required purchase shown in the verified installation route; exact vendor pricing/paid-support terms not verified. Do not turn open-source licensing into a blanket $0-all-services promise.","claimIds":["license","distribution"],"breathingRoomClaimIds":["br-pricing"]},
+    {"dimension":"local/hosted","baobab":"Desktop folder/device scanning plus documented remote locations; no blanket offline/no-telemetry assertion","claimIds":["scan","remote"],"breathingRoomClaimIds":["br-hosted"]},
+    {"dimension":"scan/cleanup model","baobab":"Tree/graphical sizes; GNOME help documents selected-folder Trash workflow","claimIds":["scan","trash"],"breathingRoomClaimIds":["br-scope"]},
+    {"dimension":"approval controls","baobab":"User selects a folder and Move to Trash in help; AI plans, saved approvals and automation controls not verified","claimIds":["trash"],"breathingRoom":"See capabilities.md approval exception: default review, explicit optional automatic verified Ruff caches, daily exact saved approvals","breathingRoomClaimIds":["br-hosted","br-scope"]},
+    {"dimension":"helper/process grouping","baobab":"not verified","claimIds":[],"breathingRoomClaimIds":["br-scope"]},
+    {"dimension":"recurring-growth monitoring","baobab":"not verified","claimIds":[],"breathingRoom":"Source monitoring and advertised AI Care are documented in capabilities.md, not a tested binary result","breathingRoomClaimIds":["br-scope","br-pricing"]},
+    {"dimension":"developer-cache semantics","baobab":"not verified; seeing .cache in an image does not prove cache-disposal rules","claimIds":[],"breathingRoom":"Source catalogue includes developer caches; compatibility and exact-location validation limits apply","breathingRoomClaimIds":["br-scope"]},
+    {"dimension":"runtime/install caveats","baobab":"GTK4/libadwaita package dependencies; no Mac runtime test, minimum upstream Mac version or notarization verification","claimIds":["dependencies","mac-package","permissions"],"breathingRoomClaimIds":["br-scope"]}
+  ],
+  "visuals": [
+    {
+      "id":"baobab-official-scan", "productId":"baobab", "view":"Scan View", "kind":"official-asset",
+      "sourcePageUrl":"https://apps.gnome.org/Baobab/", "assetUrl":"https://static.gnome.org/catalog/app-screenshot/org.gnome.baobab/image-2_orig.png",
+      "capturedAtUtc":null, "retrievedAtUtc":"2026-10-21T20:04:47.737545+00:00", "capturedBy":null,
+      "productVersion":null, "buildOrCommit":null, "osVersion":null, "dataMode":"vendor-illustration",
+      "originalPath":"docs/content/competitors/baobab/evidence/scan-image.png", "originalSha256":"17cb82c4744a88716fbde35ddca773724fd850b78477428ca61b61c91480ec50",
+      "publishedPath":null, "publishedSha256":null, "widthPx":1082, "heightPx":722, "edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"diagnostic":"Official illustration shows generic Home Folder names and vendor example sizes; no worker/user files captured."},
+      "reuse":{"status":"cleared","basis":"Official app page explicitly licences app-specific content GPL-2.0+. Retain original image, attribution, licence link and source-page link; this does not licence trademarks or unrelated third-party material.","evidenceUrlOrPath":"docs/content/competitors/baobab/evidence/gnome-visual-page.html","credit":"Disk Usage Analyzer contributors / The GNOME Project, GPL-2.0-or-later. Official screenshot, unmodified.","licenseUrl":"https://www.gnu.org/licenses/old-licenses/gpl-2.0.html","conditions":["Publish this image under GPL-2.0-or-later with original source and credit, not as proprietary artwork.","Keep unmodified original available and retain notices; independent publication review must verify licence presentation."]},
+      "caption":"Official Disk Usage Analyzer (Baobab) Scan View from GNOME. Vendor illustration; version and capture date unspecified. Not a macOS capture or our test results. © respective app contributors, GPL-2.0-or-later; source: Apps for GNOME.",
+      "alt":"Baobab Home Folder scan with a folder-size table beside a multicolour ring chart.",
+      "supportedClaimIds":["scan","image-license"], "limitations":["No version label; cannot call this a 50.0 screenshot.","Vendor sizes are not our measurements, savings or a benchmark.","Not proof of the Homebrew Mac interface."],
+      "review":{"status":"research-worker-visual-inspection-only","reviewer":"scheduled research worker","reviewedOn":"2026-10-21","observation":"Opened actual PNG using image-capable read tool: Home Folder table, Downloads/.cache entries and ring chart visible; no generated UI. Independent page-context review pending."}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null, "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null, "capturedBy":"screenshot-library job",
+      "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null, "dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"diagnostic":"Built-in example data only; preview banner visible."},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party screenshot under screenshots.json reuse basis; no blanket third-party mark rights inferred.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room current-source browser preview, example data."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview with a visible example-data notice, category chart and folder-size rows.",
+      "supportedClaimIds":[], "limitations":["Local source URL is capture provenance, not a public source link; reuse existing image, do not require a live server.","Current source at capture, not distributed-release runtime proof.","Retain example-data banner and exact disclosure caption; do not relabel as native.","Floating composer overlaps part of the category chart. Full image is tall; responsive page-context legibility remains pending."],
+      "review":{"status":"research-worker-visual-inspection-only","reviewer":"scheduled research worker","reviewedOn":"2026-10-21","observation":"Opened actual shared PNG and read example-data notice, Space tab, categories and rows; independent publication review pending."}
+    }
+  ],
+  "unknowns": [
+    {"field":"Exact Baobab purchase/paid-support conditions","critical":false,"handling":"Do not claim a vendor price schedule or absence of paid services. Describe verified open-source licence and package routes."},
+    {"field":"Mac runtime, permissions, remote backends, Trash menu parity, signing/notarization","critical":false,"handling":"No installation instructions beyond attributed package availability; no hands-on or certified Mac parity claims."},
+    {"field":"Windows/BSD support and exact upstream macOS minimum","critical":false,"handling":"Omit; directory and historical mirror are insufficient proof of current supported builds."},
+    {"field":"Competitor monitoring, developer cleanup rules, helper grouping, AI controls, telemetry","critical":false,"handling":"Not verified, never No. Do not infer absence from folder-analysis focus."},
+    {"field":"Screenshot version/capture date","critical":false,"handling":"Caption as undated official vendor illustration; never label version 50.0 or macOS."}
+  ],
+  "accessFailures": [
+    {"url":"https://gitlab.gnome.org/GNOME/baobab","checkedOn":"2026-10-21","result":"WebFetch HTTP 406","resolution":"Repository identity verified through official GNOME contribution link; contents not claimed inspected."},
+    {"url":"https://gitlab.gnome.org/GNOME/baobab/-/raw/master/data/org.gnome.baobab.appdata.xml.in","checkedOn":"2026-10-21","result":"WebFetch HTTP 406","resolution":"Do not bypass; use distributor licence and official app-page visual notice."},
+    {"url":"https://raw.githubusercontent.com/GNOME/baobab/master/data/org.gnome.baobab.appdata.xml.in","checkedOn":"2026-10-21","result":"Accessible but stale metadata ended at 42.beta (2022)","resolution":"Excluded as evidence of current platform/version and image rights. CC0 metadata is not a screenshot licence."},
+    {"url":"https://flathub.org/en/apps/org.gnome.baobab","checkedOn":"2026-10-21","result":"WebFetch returned navigation shell only","resolution":"Official GNOME contribution page independently lists Flathub version 50.0. No checkout or account interaction attempted."}
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference",
+      "title":"From Baobab to a Mac: investigate a large folder before removing it",
+      "slug":"baobab-folder-size-workflow-on-mac",
+      "intent":"Help GNOME/Baobab users moving to macOS preserve a deliberate inspect-before-delete workflow, including the option to retain Baobab via Homebrew.",
+      "description":"Baobab's folder-size workflow can carry over to a Mac. Start with the folder and its contents, not a deletion target; choose between the documented Homebrew package and a broader Mac maintenance preview without treating chart sizes as recoverable space.",
+      "outline":["Place official Baobab scan image directly after the lead, credited and undated.","Separate folder size, accessible scan coverage and available disk space; cite permissions caveat without repeating old implementation details.","Choose one folder, inspect its children and identify whether files are personal originals, reproducible outputs or unknown app data. These are editorial decision steps, not reported testing.","Retain Baobab through Homebrew if its documented analysis workflow is the job; disclose package targets/dependencies and untested Mac behavior.","Explain GNOME's documented selected-folder Trash action, backup and restore/rebuild consequences; never recommend emptying Trash automatically.","Use the labelled Breathing Room Space preview later to distinguish category/app/project views and broader source-level monitoring, with affiliation, preview, Python and hosted-AI caveats.","End with a decision checklist rather than a repeated sales pitch."],
+      "interactionPass":"Handoff a no-upload, non-executing checklist: Is the folder understood? Is it an original? Is there a backup or verified rebuild path? If unknown, stop. It must not classify actual files or promise safe deletion.",
+      "internalLinkIntents":["/comparisons/","/comparisons/baobab/","Relevant storage-unit tool only after its route and utility are verified"],
+      "avoid":["A generic best alternatives list","Linux-only framing","Scan-only claim","A disguised install tutorial without runtime tests","Repeating the description in the first body paragraph"]
+    },
+    "comparison": {
+      "title":"Baobab vs Breathing Room: folder analysis or broader Mac care?",
+      "slug":"baobab",
+      "intent":"Concise product choice, not the workflow article repeated.",
+      "description":"Baobab is a GNOME folder-size analyzer with a Homebrew Mac package. Breathing Room, which we build, is a broader macOS maintenance preview. Choose by workflow and installation constraints, not unsupported cleanup or performance scores.",
+      "sections":["Conclusion: keep Baobab for its focused documented folder/remote analysis; consider broader preview features only if needed.","Short claim-linked matrix: platforms/package, licence/pricing conditions, scanning, Trash/approval model, local/hosted boundaries, dependencies and runtime caveats.","Unknown monitoring/helper/cache cells remain not verified, not negative checkmarks.","Official Baobab image after lead; labelled current-source Breathing Room Space illustration later.","One disclosed recommendation arc and link to distinct folder-investigation article."],
+      "suggestedLength":"Only enough prose for the matrix and decision; no padding or invented FAQ."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "baobabAdvantages":["Documented focused tree/graphical folder-size analysis and remote locations.","GPL-2.0-or-later package; Linux/Flathub and Homebrew distribution choices.","Folder Trash capability documented: no need to portray it as visualization-only."],
+    "baobabTradeoffs":["Mac package brings GNOME/GTK dependencies; actual Mac behavior untested here.","Permission-limited charts do not establish a complete disk inventory or recoverable bytes.","This research does not establish semantic cache rules, monitoring or helper grouping, so do not sell their absence."],
+    "breathingRoomAdvantages":["For readers wanting a broader Mac workflow, source includes category/app/project exploration, process grouping and local activity history; keep source-versus-release qualification."],
+    "breathingRoomTradeoffs":["0.1.0-preview.1 release caveats, no Developer ID/notarization, Python 3.10+ requirement and unvalidated clean-machine/physical Intel behavior.","AI uses hosted authenticated requests; optional AI Care is recurring paid service, not entirely offline free AI.","Review architecture is not guaranteed safety; optional automatic verified Ruff-cache mode and saved daily approvals require precise explanation."]
+  },
+  "reproduction": {"handsOnTesting":false,"nativeAppLaunched":false,"cleanupPerformed":false,"benchmarks":[],"calculations":[],"note":"Document/source and image review only. No installations, sign-ins, private data or credential extraction. Browser interaction not needed; browser skill loaded for policy."},
+  "gates": {
+    "researchComplete":true,
+    "draftingBlocked":false,
+    "criticalResearchBlockers":[],
+    "draftingConditions":["Use only bounded verified statements, preserving unknowns and source/runtime distinctions.","Retain both visual disclosures and GPL credit/licence/source for the competitor image.","Keep drafts unpublished. No Mac hands-on tutorial without separately authorized runtime verification."],
+    "publicationPending":["Independent claim and image-rights presentation review against draft/asset hashes","Responsive light/dark rendered visual review including tall Space preview","Required site check/build/tests if marketing content is later changed","Refresh volatile facts within 30 days and before release if stale"],
+    "scorecard":null,
+    "reviewerApproval":null
+  },
+  "validationReference":"validation.json"
+}

@@ -1,0 +1,18 @@
+{
+  "jobId": "research-macoptimizers",
+  "method": "Executed read-only Python json/pathlib/hashlib assertions against saved research and evidence files",
+  "result": "pass",
+  "checks": {
+    "researchJsonParse": "pass",
+    "sourceSnapshotHashes": "pass: 8 new source records match retained bytes; pricing distinguishes original response hash from edited retained hash",
+    "reusedBaselineHash": "pass: batch-1 official snapshot matches recorded SHA-256",
+    "breathingRoomPreviewHash": "pass: selected existing Space preview matches screenshots.json SHA-256",
+    "claimIdsAndRequiredFields": "pass: 11 unique claims have URL, excerpt and actual check date",
+    "exactExcerpts": "pass: baseline/HTML-text claim excerpt segments occur in saved source text",
+    "priceAndVersion": "pass: retained JSON reports 799 EUR cents and 2.0.9 build 122",
+    "draftGate": "pass: explicit blocked state and canonicalOwnerId macoptimizers",
+    "competitorImageDownloads": "pass: no PNG files in owned folder; official screenshot is link-only"
+  },
+  "notPerformed": ["Native installation or product behavior tests", "Competitor image visual inspection or permission acquisition", "Marketing-site check/build/test: no site files changed", "Independent editorial review"],
+  "publicationDecision": "blocked on competitor screenshot reproduction permission; structural checks do not waive editorial gate"
+}

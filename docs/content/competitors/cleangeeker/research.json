@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cleangeeker",
+  "productId": "cleangeeker",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "TunesBro CleanMate (CleanGeeker in the official guide)",
+    "publisher": "TunesBro",
+    "homepage": "https://www.tunesbro.com/mac-cleaner.html",
+    "repository": null,
+    "repositoryState": "Not verified; no public source repository established by the inspected product/guide/spec/purchase sources.",
+    "canonicalOwnerId": "cleangeeker",
+    "aliases": ["TunesBro CleanGeeker", "CleanGeeker", "TunesBro CleanMate", "CleanMate"],
+    "aliasDecision": "One official offering, not separate CleanMate and CleanGeeker articles: CleanGeeker guide downloads CleanMate.dmg and links the shared overview; shared purchase page names CleanMate. This verifies same-offering naming, not a historical rename date or binary equivalence across versions.",
+    "aliasSkipDecision": "Skip a separate CleanMate draft; retain this stable manifest owner. Do not merge PowerMyMac: no inspected source establishes an association with this TunesBro offering.",
+    "classification": "direct-mac-cleanup-overlap",
+    "classificationReason": "Vendor documents Mac junk/cache scanning, selectable cleanup, large-file review and app removal. Scope overlaps storage maintenance, but not every feature is interchangeable with Breathing Room.",
+    "platformFit": "Mac-native replacement intent; no Windows support established. Generic PC/Windows text on the overview is not platform evidence.",
+    "deadProductDecision": "Do not mark dead: accessible official guide, purchase offer and download links exist; installer health not tested.",
+    "sourceIds": ["baseline", "guide", "purchase"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/cleangeeker/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:52.588Z",
+    "observedOfficialDestination": "https://www.tunesbro.com/mac-cleaner.html",
+    "method": "Reused batch-1 rendered directory snapshot and competitors.json edges; no refetch.",
+    "snapshotPath": "docs/content/.runtime/verification-1/cleangeeker-directory.json",
+    "sha256": "e1cac84f3e0ac1e4eabb9abc4b63119d6eddbec9882a24d4ed03e2d7e79303e8",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "pageUrl": "https://alternativeto.net/software/cleanmymac/?p=4", "retrievedAtUtc": "2026-10-21T18:36:37.538Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "pageUrl": "https://alternativeto.net/software/mole/?p=8", "retrievedAtUtc": "2026-10-21T18:37:24.218Z"}
+    ],
+    "limitations": "Edge timestamps copied from manifest; edge raw snapshot/hash not independently located here. Listing snapshot retained and hash checked. Directory pay-once label is not current pricing authority."
+  },
+  "sources": [
+    {
+      "id": "baseline", "publisher": "TunesBro", "title": "Mac cleaner overview",
+      "url": "https://www.tunesbro.com/mac-cleaner.html", "finalUrl": "https://www.tunesbro.com/mac-cleaner.html",
+      "retrievedAtUtc": "2026-10-21T19:08:12.121057+00:00", "checkedOn": "2026-10-21", "reused": true,
+      "snapshotPath": "docs/content/.runtime/verification-1/cleangeeker-official.json",
+      "sha256": "334e85b9d39d4962acd71307be243fe72817e5ac209325ec602419d74f741987",
+      "sourceUpdatedAt": null,
+      "scope": "Mixed CleanMate/CleanGeeker naming and two version/price blocks. Vendor claims only."
+    },
+    {
+      "id": "guide", "publisher": "TunesBro", "title": "How to Use TunesBro CleanGeeker",
+      "url": "https://www.tunesbro.com/user-guide/mac-cleaner.html", "finalUrl": "https://www.tunesbro.com/user-guide/mac-cleaner.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "sourceUpdatedAt": null,
+      "method": "Read-only WebFetch markdown this job; exact tool retrieval timestamp unavailable; excerpts retained in claims.",
+      "scope": "Unversioned guide, Sonoma and M1/M2/M3 claims; links CleanMate.dmg; screenshots may depict an earlier UI."
+    },
+    {
+      "id": "spec", "publisher": "TunesBro", "title": "CleanGeeker technical specifications",
+      "url": "https://www.tunesbro.com/reference/mac-cleaner.html", "finalUrl": "https://www.tunesbro.com/reference/mac-cleaner.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "sourceUpdatedAt": null,
+      "method": "Read-only WebFetch markdown this job; exact tool retrieval timestamp unavailable.",
+      "scope": "Legacy requirements list; 2018 copyright is not a publication/update date."
+    },
+    {
+      "id": "purchase", "publisher": "TunesBro", "title": "You Are Buying: TunesBro CleanMate",
+      "url": "https://www.tunesbro.com/purchase/mac-cleaner.html", "finalUrl": "https://www.tunesbro.com/purchase/mac-cleaner.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "sourceUpdatedAt": null,
+      "method": "Read-only WebFetch markdown this job; checkout links not followed.",
+      "scope": "Public advertised license offer, not transaction or entitlement testing. Currency symbol only."
+    },
+    {
+      "id": "terms", "publisher": "TunesBro", "title": "Terms Conditions",
+      "url": "https://www.tunesbro.com/terms.html", "finalUrl": "https://www.tunesbro.com/terms.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "sourceUpdatedAt": null,
+      "method": "Read-only WebFetch markdown this job.",
+      "scope": "Website copyright and software agreement conditions, not an independently inspected installer EULA."
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room research programme", "title": "Capabilities evidence register",
+      "url": null, "path": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "reused": true,
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Same-day source and public-release verification; no repeated live fetch or native execution."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity", "wording": "TunesBro's CleanGeeker guide leads to the CleanMate download and shared purchase offer.",
+      "state": "verified", "evidenceClass": "documented-link-relationship", "sourceIds": ["guide", "purchase", "baseline"],
+      "sourceUrls": ["https://www.tunesbro.com/user-guide/mac-cleaner.html", "https://www.tunesbro.com/purchase/mac-cleaner.html"],
+      "excerpt": "How to Use TunesBro CleanGeeker; Download Mac Version -> https://www.tunesbro.com/downloads/CleanMate.dmg; You Are Buying: TunesBro CleanMate",
+      "checkedOn": "2026-10-21", "location": "Identity lead", "conditions": "No binary inspection or historical rename date."
+    },
+    {
+      "id": "cleanup", "wording": "The guide documents junk/cache scan results, individual file review, Delete and confirmation.",
+      "state": "verified", "evidenceClass": "vendor-documented-not-tested", "sourceIds": ["guide"],
+      "sourceUrls": ["https://www.tunesbro.com/user-guide/mac-cleaner.html"],
+      "excerpt": "Step 2: When the scan is done, you will see multiple categories of junk ... individual files on the right side. Step 3: Review whatever you want to remove, and then click on 'Delete' button and confirm when the popup appears.",
+      "checkedOn": "2026-10-21", "location": "Workflow / approval row", "conditions": "Do not generalize to guaranteed recoverability, safety or all actions."
+    },
+    {
+      "id": "toolkit", "wording": "The official guide describes duplicate preview/removal, large-file selection, app uninstall, archive extraction and startup controls.",
+      "state": "verified", "evidenceClass": "vendor-documented-not-tested", "sourceIds": ["guide"],
+      "sourceUrls": ["https://www.tunesbro.com/user-guide/mac-cleaner.html"],
+      "excerpt": "Duplicates Finder ... preview and then delete duplicates; Large Files Clean ... only select the ones to be removed; Uninstaller ... confirm the deletion by entering your login password; Unarchiver ... Zip, RAR, 7-Zip, GZip; Optimization ... apps that launch when starting up your computer.",
+      "checkedOn": "2026-10-21", "location": "Toolkit / competitor strengths", "conditions": "Unversioned documentation; not proof of latest installer parity. Never repeat unrecoverable-erasure or speedup guarantees."
+    },
+    {
+      "id": "platform", "wording": "TunesBro advertises Mac support, including Sonoma and M1/M2/M3 in the guide; exact current minimum and full architecture matrix remain unverified.",
+      "state": "verified", "evidenceClass": "vendor-documented-with-conflicting-scope", "sourceIds": ["guide", "baseline", "spec", "purchase"],
+      "sourceUrls": ["https://www.tunesbro.com/user-guide/mac-cleaner.html", "https://www.tunesbro.com/reference/mac-cleaner.html", "https://www.tunesbro.com/purchase/mac-cleaner.html", "https://www.tunesbro.com/mac-cleaner.html"],
+      "excerpt": "Guide: fully compatible with macOS Sonoma and Apple Silicon Mac, including M1, M2 and M3. Overview: Available for macOS Tahoe/Sequoia/Sonoma/Ventura/Monterey. Purchase: Support macOS from macOS 10.10 to macOS 26. Spec: Mac OS X 10.13/10.12/10.11/10.10/10.9/10.8 and macOS.",
+      "checkedOn": "2026-10-21", "location": "Compatibility row", "conditions": "Conflicting lower bounds; no Intel or latest Apple Silicon runtime test. Do not infer Windows support from copied overview prose."
+    },
+    {
+      "id": "version", "wording": "The overview displays Version 5.0 with a CleanMate.dmg link and a separate Version 4.0.2 placeholder block; exact latest binary version is not verified.",
+      "state": "verified", "evidenceClass": "published-page-not-binary", "sourceIds": ["baseline"],
+      "sourceUrls": ["https://www.tunesbro.com/mac-cleaner.html"],
+      "excerpt": "Free Trial Version: 5.0 -> downloads/CleanMate.dmg; Free Trial Version: 4.0.2 -> mac-cleaner.html#",
+      "checkedOn": "2026-10-21", "location": "Version caveat", "conditions": "Do not label guide screenshot version 5.0."
+    },
+    {
+      "id": "pricing", "wording": "The linked CleanMate offer advertises $9.95/month for 1 Mac, $29.95/year for 1 Mac, both auto-renewing and cancellable, and $39.95 lifetime for 3 Macs as a one-time purchase.",
+      "state": "verified", "evidenceClass": "advertised-offer-not-checkout-tested", "sourceIds": ["purchase"],
+      "sourceUrls": ["https://www.tunesbro.com/purchase/mac-cleaner.html"],
+      "excerpt": "1-Month License: Auto-renewal. Cancel at any time. Used on 1 Mac. $9.95 [struck $19.95]. 1-Year license: Auto-renewal. Cancel at any time. Used on 1 Mac. $29.95 [struck $39.95]. Lifetime License: One-time purchase. Used on 3 Macs. $39.95 [struck $59.95].",
+      "checkedOn": "2026-10-21", "location": "Price row", "conditions": "Currency code, tax, region, promotion expiry, renewal price and trial limits not verified. Preserve dollar symbol without asserting USD. Overview $59.95 placeholder is not a second confirmed current plan. Refresh within 30 days and before publication."
+    },
+    {
+      "id": "license", "wording": "TunesBro claims copyright in its downloadable software and makes use subject to the accompanying agreements.",
+      "state": "verified", "evidenceClass": "vendor-legal-statement", "sourceIds": ["terms"],
+      "sourceUrls": ["https://www.tunesbro.com/terms.html"],
+      "excerpt": "Any product that is available to download or use from TunesBro.com is the copyrighted work of TunesBro. Your use of the software is subject to all agreements like a user agreement and a license agreement which accompanies or is included in the package of the software.",
+      "checkedOn": "2026-10-21", "location": "Licence row", "conditions": "Commercial licence offer verified; full EULA not inspected; no open-source licence/repo established."
+    },
+    {
+      "id": "rights", "wording": "TunesBro's website terms require prior written permission for reproduction of site graphics.",
+      "state": "verified", "evidenceClass": "vendor-legal-statement", "sourceIds": ["terms"],
+      "sourceUrls": ["https://www.tunesbro.com/terms.html"],
+      "excerpt": "Copyright in this website (including without limitation, text, graphics, logos, sounds and software) is owned and licensed by TunesBro Software Co., Ltd. ... may not be copied, reproduced, distributed, transmitted, displayed, published adapted ... without the prior written permission of TunesBro Software Co., Ltd.",
+      "checkedOn": "2026-10-21", "location": "Visual rights gate", "conditions": "No permission request authorized or sent; no image downloaded. Link-only research fallback does not pass on-page visual gate."
+    },
+    {
+      "id": "br-scope", "wording": "Breathing Room, which we build, is a free macOS maintenance preview with source-backed inspection/grouped monitoring and optional hosted AI Care advertised at $5 USD/month or $50 USD/year.",
+      "state": "verified", "evidenceClass": "reused-same-day-source-and-public-offer-register", "sourceIds": ["br-capabilities"],
+      "sourceUrls": ["https://breathing-room.chatic.ai/", "https://breathing-room.chatic.ai/privacy/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "excerpt": "capabilities.md:7-9,48-55,60-79: 0.1.0-preview.1; macOS 13+ universal advertised; Apple Development signed, not Developer ID signed or notarized; Python 3.10+ prerequisite; hosted assistant requires internet/authentication and sends relevant paths/process/storage data; free local capabilities versus $5/month or $50/year AI Care.",
+      "checkedOn": "2026-10-21", "location": "Comparison and bounded recommendation", "conditions": "Source implementation is not binary parity; physical Intel/clean-machine execution unverified. Website account gate differs from public GitHub downloads. Daily care requires running app and exact saved approvals. Optional automatic verified Ruff Trash mode must not be hidden by blanket approval language."
+    }
+  ],
+  "matrix": [
+    {"dimension": "macOS / architecture / version", "value": "Mac advertised; exact minimum/latest binary unresolved; guide claims Sonoma, M1/M2/M3", "claimIds": ["platform", "version"]},
+    {"dimension": "Licence / repository", "value": "Commercial licence offer and copyrighted software; full EULA and public repository not verified", "claimIds": ["license", "pricing"]},
+    {"dimension": "Local versus hosted", "value": "Desktop download documented; exact network behavior, telemetry, offline entitlement and hosting boundaries not verified", "claimIds": ["identity"]},
+    {"dimension": "Scan / cleanup / approval", "value": "Guide describes scan, individual-file review, Delete and confirmation; execution not tested", "claimIds": ["cleanup"]},
+    {"dimension": "App/helper grouping", "value": "Not verified; overview CPU/memory marketing is not evidence of helper ownership grouping", "claimIds": []},
+    {"dimension": "Recurring growth / scheduled cleanup", "value": "Not verified", "claimIds": []},
+    {"dimension": "Developer cache adapters", "value": "Not verified; generic app-cache claims do not establish npm/pnpm/Ruff-aware cleanup", "claimIds": ["cleanup"]},
+    {"dimension": "Duplicate files / app uninstall / archives", "value": "Documented in unversioned guide; not hands-on verified", "claimIds": ["toolkit"]},
+    {"dimension": "Pricing", "value": "Advertised $9.95 monthly/1 Mac; $29.95 annual/1 Mac; $39.95 lifetime/3 Macs; symbol currency unspecified", "claimIds": ["pricing"]},
+    {"dimension": "Runtime / installation", "value": "Guide says drag to Applications; download link present. Signing, notarization, helper privileges, exact runtime prerequisites and activation limits not verified", "claimIds": ["identity", "platform"]}
+  ],
+  "visuals": [
+    {
+      "id": "cleangeeker-junk-scan-official-link", "productId": "cleangeeker", "view": "Junk scan results", "kind": "official-asset",
+      "sourcePageUrl": "https://www.tunesbro.com/user-guide/mac-cleaner.html",
+      "assetUrl": "https://www.tunesbro.com/images/clean-mac/junk-scan.webp",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "sourcePageCheckedOn": "2026-10-21", "capturedBy": null,
+      "productVersion": null, "buildOrCommit": null, "osVersion": null, "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "No reproduction permission established; official terms require prior written permission. Do not download or republish.", "evidenceUrlOrPath": "https://www.tunesbro.com/terms.html", "credit": "Source: TunesBro CleanGeeker user guide"},
+      "caption": "TunesBro's official CleanGeeker guide illustrates junk scan results. Vendor illustration; version and capture date unknown; not our test. Open the source guide to view.",
+      "alt": "Official CleanGeeker junk scan results illustration linked from TunesBro's guide.",
+      "supportedClaimIds": ["cleanup"], "limitations": ["App-UI source identified from guide image markup, not downloaded or visually approved.", "Not cleared for on-page reuse; does not satisfy visual gate."],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "capturedBy": "screenshot-library job (reused inventory)",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-in-shared-inventory", "redactions": []},
+      "reuse": {"status": "pending", "basis": "Selected existing app-owner-requested first-party capture; retain visible example-data banner. Target-page and third-party marks review pending.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room current-source browser preview"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview with illustrative example data, not a native scan.",
+      "supportedClaimIds": ["br-scope"], "limitations": ["Current-source at shared capture time, not distributed-release parity or current native behavior.", "Reuse shared visual review, not a new visual inspection in this job; independently inspect target-page context before publication."],
+      "review": {"status": "pending-target-page-review", "reviewer": null, "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status": "conditional-brief-not-draft", "track": "search-reference",
+      "title": "Review a Mac cleaner's junk list without treating every large file as disposable",
+      "slug": "review-mac-cleaner-junk-cache-file-list",
+      "primaryIntent": "Use the documented CleanGeeker category/file review workflow to distinguish disposable cache candidates from personal attachments, duplicates and archives.",
+      "leadDirection": "Inspect categories and specific files before approving removal; a vendor's junk label is not evidence that a file is expendable.",
+      "sections": ["Start with the documented category and file list, not a one-click result", "Separate cache candidates from originals, duplicates and attachments", "Record backups, rebuild/download costs and confirmation scope", "Check whether the same category grows again rather than claiming a speedup", "Choose documented toolkit features or preview investigation based on the actual job"],
+      "interactionPass": "Hand off a non-mutating decision checklist: known owner, reproducible cache, backed-up original, unknown location. Unknown/original routes to keep/review; size never grants deletion permission. No scanner or savings estimator implied.",
+      "visualPlan": "Cleared real competitor category/file screenshot directly after lead, current-source Breathing Room Space example preview later. Rights gate currently blocks the competitor image.",
+      "links": ["/comparisons/cleangeeker/", "/comparisons/", "/tools/"],
+      "limitations": "No terminal cleanup commands or hands-on outcomes; independently source macOS/cache guidance before writing procedural advice; never instruct erasure or bypass Gatekeeper."
+    },
+    "comparison": {
+      "status": "conditional-brief-not-draft", "track": "search-reference",
+      "title": "Breathing Room vs TunesBro CleanGeeker / CleanMate",
+      "slug": "cleangeeker", "primaryIntent": "Choose between a documented Mac-cleaning toolkit and a maintenance preview with investigation/grouped monitoring.",
+      "structure": ["Explain same-offering names once", "Concise claim-linked matrix: approval flow, toolkit, inspection, pricing, platform and installation caveats", "When each fits and when built-in tools or no deletion is preferable", "Link distinct file-review workflow"],
+      "disclosure": "Breathing Room, which we build",
+      "avoid": ["No unsupported negative checkmarks", "No all-local AI claim", "No Windows support", "No benchmark winner or guaranteed savings", "No separate CleanMate doorway route"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "evidenceClass": "editorial-judgment-on-documented-scope-not-hands-on-ranking",
+    "competitorAdvantages": ["Guide documents duplicates, archives and app uninstall in one toolkit; these are not established Breathing Room capabilities.", "Linked offer includes a 3-Mac lifetime option, unlike the advertised recurring hosted AI Care offer; these pay for different scopes."],
+    "competitorTradeoffs": ["Mixed versions and inconsistent legacy platform specifications make precise installer compatibility uncertain.", "Developer-specific adapters, helper grouping and recurring-growth behavior remain unverified, not absent."],
+    "breathingRoomAdvantages": ["Source-backed grouped process inspection and developer-cache discovery are relevant if those are the reader's actual maintenance jobs; do not assert competitor absence."],
+    "breathingRoomTradeoffs": ["Preview 0.1.0-preview.1 is disclosed as not Developer ID signed or notarized, requires Python 3.10+ for inventory, and lacks clean-machine/physical-Intel validation.", "Hosted AI requires internet/authentication and sends relevant inspection data; AI Care is separately advertised paid service; exact paid enforcement/allowances unverified.", "Review approvals have a narrowly scoped opt-in automatic Ruff exception; daily care needs running app and exact saved approvals."]
+  },
+  "unknowns": ["Latest installed binary version and guide-to-binary UI parity", "Exact current minimum OS, full Intel/Apple Silicon execution matrix", "Currency code, regional taxes, promotion duration and renewal price", "Trial duration and cleanup limits", "Full installer EULA, signing/notarization and privilege requirements", "CleanGeeker network/telemetry/offline behavior", "Helper grouping, developer-aware adapters and recurring-growth monitoring", "Source repository, historical rename date", "Competitor screenshot capture date/version and reuse permission"],
+  "blockers": [
+    {"id": "competitor-image-rights", "severity": "critical", "diagnostic": "Official app-UI asset is linked in guide, but https://www.tunesbro.com/terms.html prohibits reproduction without prior written permission. No permission exists in inspected evidence. No download performed. Link-only fallback cannot pass EDITORIAL.md visual gate.", "unblock": "An authorized owner must supply documented reproduction permission/licensed authoritative app screenshot or explicit policy approval. Do not send permission requests in this job."}
+  ],
+  "validation": {
+    "performed": ["Read required policy, capability and screenshot records; no applicable AGENTS.md found in app tree or checked ancestors.", "Reused batch-1 baseline; read four missing official guide/spec/purchase/terms pages via WebFetch, without checkout interaction.", "Verified stored official/discovery snapshot hashes and selected first-party screenshot hash using Python hashlib."],
+    "notPerformed": ["Competitor image download, rendering or rights clearance", "Installations, app launches, scans, cleanup, signups, purchases or native tests", "Site edits/build/test/browser QA or independent editorial approval"],
+    "websiteChanged": false,
+    "queueChanged": false,
+    "agentsSpawned": false
+  }
+}

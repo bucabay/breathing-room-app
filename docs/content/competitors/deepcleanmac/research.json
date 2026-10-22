@@ -1,0 +1,1057 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-deepcleanmac",
+  "productId": "deepcleanmac",
+  "stage": "research",
+  "status": "blocked",
+  "checkedAtUtc": "2026-10-21T20:26:41.784813+00:00",
+  "canonicalOwnerId": "deepcleanmac",
+  "identity": {
+    "officialName": "DeepCleanMac",
+    "homepage": "https://deepcleanmac.com/",
+    "repository": null,
+    "aliases": [],
+    "aliasDecision": {
+      "status": "no-verified-alias",
+      "skipSeparateDraft": false,
+      "rationale": "Directory and official pages consistently identify DeepCleanMac. No alias evidence in retained official sources. PowerMyMac ambiguity is a separate group in alias-decisions.json; no relation to this product established. Do not merge by shared cleaner category or similar DeepClean spelling."
+    },
+    "classification": "direct-with-scope-differences",
+    "fitRationale": "Native Mac cleanup/storage and CPU/memory dashboard overlap; broader documented updater/uninstaller/duplicates suite is not a one-to-one replacement for activity/approval investigation.",
+    "platformIntent": "Mac-to-Mac comparison only; no invented Windows/Linux support.",
+    "deadOrIrrelevant": false,
+    "skipDecision": "Do not skip a live relevant identity; block drafting for visual rights and price reconciliation instead."
+  },
+  "ownership": {
+    "ownedFolder": "docs/content/competitors/deepcleanmac",
+    "websiteEdits": false,
+    "queueMutation": false
+  },
+  "reuse": {
+    "baseline": "docs/content/verification/batch-1.json#deepcleanmac",
+    "reasonForHomepageRevisit": "Baseline lacked image URLs. Browser visit was for public image/repository-link discovery after direct HTTP 403, not a needless fact refresh.",
+    "otherReusedEvidence": [
+      "docs/content/capabilities.md",
+      "docs/content/screenshots.json",
+      "docs/content/verification/alias-decisions.json"
+    ]
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/deepcleanmac/about/",
+    "retrievedAt": "2026-10-21T19:06:21.309Z",
+    "observedOfficialLink": {
+      "text": "Official Website\ndeepcleanmac.com",
+      "url": "https://deepcleanmac.com/",
+      "title": "https://deepcleanmac.com"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/deepcleanmac-directory.json",
+    "sha256": "a1600c79e180bfd0dfc55ab700e85e25c943395e93fdcaa080ababb2462a23c7",
+    "seedEdges": [
+      {
+        "seedId": "cleanmymac",
+        "url": "https://alternativeto.net/software/cleanmymac/?p=6",
+        "retrievedAtUtc": "2026-10-21T18:36:42.517Z"
+      },
+      {
+        "seedId": "mole",
+        "url": "https://alternativeto.net/software/mole/?p=6",
+        "retrievedAtUtc": "2026-10-21T18:37:21.311Z"
+      }
+    ],
+    "edgeEvidencePath": "docs/content/competitors.json#deepcleanmac",
+    "method": "Inherited browser-rendered discovery; raw retained directory JSON hashed. Listing tags/prices not primary capability evidence."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "AlternativeTo",
+      "title": "S1",
+      "url": "https://alternativeto.net/software/deepcleanmac/about/",
+      "finalUrl": "https://alternativeto.net/software/deepcleanmac/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:21.309Z",
+      "sourceUpdated": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/deepcleanmac-directory.json",
+      "sha256": "a1600c79e180bfd0dfc55ab700e85e25c943395e93fdcaa080ababb2462a23c7",
+      "reused": true,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S2",
+      "publisher": "DeepCleanMac",
+      "title": "S2",
+      "url": "https://deepcleanmac.com",
+      "finalUrl": "https://deepcleanmac.com",
+      "retrievedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "sourceUpdated": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/deepcleanmac-official.json",
+      "sha256": "76403e4f07576520a85bbfbcc1d5d15e77fa7e238f03df2f3924c761f2266018",
+      "reused": true,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S3",
+      "publisher": "DeepCleanMac",
+      "title": "Terms of Service | DeepCleanMac",
+      "url": "https://deepcleanmac.com/terms",
+      "finalUrl": "https://deepcleanmac.com/terms",
+      "retrievedAtUtc": "2026-10-21T20:24:10.043Z",
+      "sourceUpdated": "2026-04-13",
+      "snapshotPath": "docs/content/competitors/deepcleanmac/sources/terms-browser.json",
+      "sha256": "7a290a0c9cd1468a9b0977ae583821f5d104feb3068b42b201c0ac632c935939",
+      "reused": false,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S4",
+      "publisher": "DeepCleanMac",
+      "title": "Privacy Policy | DeepCleanMac",
+      "url": "https://deepcleanmac.com/privacy",
+      "finalUrl": "https://deepcleanmac.com/privacy",
+      "retrievedAtUtc": "2026-10-21T20:24:11.772Z",
+      "sourceUpdated": "2026-04-13",
+      "snapshotPath": "docs/content/competitors/deepcleanmac/sources/privacy-browser.json",
+      "sha256": "2abb7cf7df363637854dee55ffd9d57ccb8e7378f71b0d29fcc5147af9bfaa1d",
+      "reused": false,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S5",
+      "publisher": "DeepCleanMac",
+      "title": "Changelog – DeepCleanMac | DeepCleanMac",
+      "url": "https://deepcleanmac.com/changelog",
+      "finalUrl": "https://deepcleanmac.com/changelog",
+      "retrievedAtUtc": "2026-10-21T20:24:13.438Z",
+      "sourceUpdated": "2026-10-19",
+      "snapshotPath": "docs/content/competitors/deepcleanmac/sources/changelog-browser.json",
+      "sha256": "9041d348c899d290e98a3a0d2c459ce3035ce9db5790874781f8e628242a5cfa",
+      "reused": false,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S6",
+      "publisher": "DeepCleanMac",
+      "title": "DeepCleanMac - Best Mac Cleaner App | Free Up Disk Space",
+      "url": "https://deepcleanmac.com/",
+      "finalUrl": "https://deepcleanmac.com/",
+      "retrievedAtUtc": "2026-10-21T20:23:56.806Z",
+      "sourceUpdated": null,
+      "snapshotPath": "docs/content/competitors/deepcleanmac/sources/homepage-browser.json",
+      "sha256": "c82fdc645915d2f3ffd488d73c989109eae4c6dda635702167153515fb425a6d",
+      "reused": false,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "S7",
+      "publisher": "AlternativeTo",
+      "title": "DeepCleanMac: A powerful native macOS cleaner to remove junk files, manage storage, uninstall | AlternativeTo",
+      "url": "https://alternativeto.net/software/deepcleanmac/about/",
+      "finalUrl": "https://alternativeto.net/software/deepcleanmac/about/",
+      "retrievedAtUtc": "2026-10-21T20:24:22.529Z",
+      "sourceUpdated": null,
+      "snapshotPath": "docs/content/competitors/deepcleanmac/sources/directory-visual-browser.json",
+      "sha256": "aeed5dac5974c53327f3ea4289c2b357e03fc92ea1f77a739878714e5b8ba19c",
+      "reused": false,
+      "evidenceClass": "publisher-documentation-not-runtime-test"
+    },
+    {
+      "id": "BR1",
+      "publisher": "Breathing Room evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "finalUrl": null,
+      "retrievedAtUtc": null,
+      "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "reused": true,
+      "evidenceClass": "same-day-first-party-register-with-source-and-public-URL-references"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "wording": "The listing identifies DeepCleanMac and links deepcleanmac.com as its official site.",
+      "intendedLocation": "identity",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://alternativeto.net/software/deepcleanmac/about/",
+      "excerpt": "Official Website\ndeepcleanmac.com",
+      "checkedAtUtc": "2026-10-21T19:06:21.309Z",
+      "scope": "Identity/discovery only",
+      "state": "verified",
+      "evidenceClass": "directory-discovery",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C02",
+      "wording": "DeepCleanMac advertises macOS Sonoma 14.0 or later on Apple Silicon and Intel.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "DeepCleanMac supports macOS Sonoma (14.0) and later, on both Apple Silicon and Intel Macs.",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Advertised requirements; neither architecture installed/tested",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C03",
+      "wording": "The documented cleanup workflow is scan, review file sizes/locations/types, then clean.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "See exactly what will be cleaned from your Mac - file sizes, locations, and types. You're always in control.",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Homepage describes user review; not evidence of every deletion guard or reversibility",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C04",
+      "wording": "The homepage advertises an updater for App Store, Homebrew and Sparkle apps.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "Detects updates from the App Store, Homebrew, and Sparkle automatically.",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Vendor description; update execution not tested",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C05",
+      "wording": "The homepage advertises an app uninstaller, duplicate finder, resetter and disk treemap.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "Eight powerful tools in one app - clean, update, uninstall, deduplicate, reset, shred, analyze, and monitor.",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Documented suite breadth; no guarantee of complete uninstall or irreversible shredding",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C06",
+      "wording": "The advertised health dashboard monitors CPU, memory and disk usage.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "Monitor CPU, memory, and disk usage in real-time with a clear health score.",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Vendor description; no inference of complete process attribution or historical monitoring",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C07",
+      "wording": "The homepage advertises $5/year with automatic renewal and $9 one-time lifetime.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "1-Year License\nFull access for one year with automatic renewal.\n$5\n/year",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Homepage offer, not confirmed transaction price; conflicts with historical changelog",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C08",
+      "wording": "The homepage lifetime offer is $9 one-time with lifetime updates.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "Lifetime License\nPay once, use forever. Best value for long-term users.\n$9\none-time",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Advertised offer only; historical price conflict retained",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C09",
+      "wording": "The terms grant a paid non-exclusive, non-transferable licence for one Mac.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/terms",
+      "excerpt": "non-exclusive, non-transferable license to use the Software on one (1) Mac computer",
+      "checkedAtUtc": "2026-10-21T20:24:10.043Z",
+      "scope": "Terms dated April 13, 2026; commercial proprietary-use conditions, not an open-source licence",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C10",
+      "wording": "The annual licence renews unless cancelled; lifetime includes future updates for one Mac.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/terms",
+      "excerpt": "The license renews automatically unless cancelled.",
+      "checkedAtUtc": "2026-10-21T20:24:10.043Z",
+      "scope": "Annual renewal term; lifetime separately stated in same terms section",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C11",
+      "wording": "Prices are stated in USD and may incur tax; the terms offer a 14-day refund window.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/terms",
+      "excerpt": "Prices are listed in USD and may be subject to applicable taxes.",
+      "checkedAtUtc": "2026-10-21T20:24:10.043Z",
+      "scope": "Published terms; checkout, refund and cancellation not exercised",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C12",
+      "wording": "The terms offer a full refund when contacted within 14 days of purchase.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/terms",
+      "excerpt": "contact us within 14 days of purchase",
+      "checkedAtUtc": "2026-10-21T20:24:10.043Z",
+      "scope": "Published policy only; no support contact or refund test",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C13",
+      "wording": "The privacy policy discloses cleanup statistics tied to a licence key.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/privacy",
+      "excerpt": "Anonymous cleanup statistics (files cleaned count, space freed) tied to your license key.",
+      "checkedAtUtc": "2026-10-21T20:24:11.772Z",
+      "scope": "Policy assertion, not network audit; do not repeat directory No Tracking as fact",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C14",
+      "wording": "The policy also discloses machine identifier/app version and approximate country/city analytics.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/privacy",
+      "excerpt": "Machine identifier and app version, used for license activation and update checks.",
+      "checkedAtUtc": "2026-10-21T20:24:11.772Z",
+      "scope": "Policy assertion; approximate-location wording recorded in C15",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C15",
+      "wording": "The policy says country and city are derived from IP for analytics and IP is not stored.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/privacy",
+      "excerpt": "Country and city derived from your IP address for analytics purposes. We do not store your IP address.",
+      "checkedAtUtc": "2026-10-21T20:24:11.772Z",
+      "scope": "Vendor policy statement; no independent retention verification",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C16",
+      "wording": "The policy says cleaned filenames and paths are not collected.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/privacy",
+      "excerpt": "We do not collect filenames or paths of files that are cleaned.",
+      "checkedAtUtc": "2026-10-21T20:24:11.772Z",
+      "scope": "Vendor policy statement; does not establish all-offline operation",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C17",
+      "wording": "The newest entry shown in the inspected changelog is version 1.7.3, October 19, 2026.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "October 19, 2026\n\nVersion 1.7.3",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "Latest listed changelog entry, not binary version verification",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C18",
+      "wording": "Version 1.7.1 documents keeping Git-committed build folders and skipping cloud-only project folders.",
+      "intendedLocation": "workflow brief",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "Those folders are now kept like any other folder with committed files.",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "October 13 release note; source/binary protection behavior not tested",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C19",
+      "wording": "Version 1.7.0 describes keeping build folders when a Git/deploy-key check cannot finish.",
+      "intendedLocation": "workflow brief",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "It's also kept whenever DeepCleanMac can't finish checking it.",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "October 7 release note; vendor assertion, not a safety certification",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C20",
+      "wording": "Version 1.6.7 records a fix for double-counted cache sizes and leaves Poetry virtual environments alone.",
+      "intendedLocation": "workflow brief",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "some cache folders were counted twice, so a scan could report far more space than it would actually free.",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "September 28 historical fix; do not imply present versions retain that defect",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C21",
+      "wording": "The July 22 version 1.5.2 note announces $9/year and $19 lifetime, unlike the current homepage offer.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "1-Year License now $9/year, Lifetime License now $19 one-time",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "Historical changelog vs current homepage; reduction/promotion/transaction amount unresolved",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C22",
+      "wording": "The homepage offers a public DMG link, but free-download wording does not establish a free full licence.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrl": "https://deepcleanmac.com",
+      "excerpt": "Download Free",
+      "checkedAtUtc": "2026-10-21T19:08:01.448108+00:00",
+      "scope": "Link https://deepcleanmac.com/DeepCleanMac.dmg; no binary retrieval/installation",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "C23",
+      "wording": "The changelog documents Full Disk Access detection and skipped protected paths when not granted.",
+      "intendedLocation": "comparison matrix",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://deepcleanmac.com/changelog",
+      "excerpt": "Protected paths are automatically skipped when not granted",
+      "checkedAtUtc": "2026-10-21T20:24:13.438Z",
+      "scope": "Version 1.3.0, April 23; not proof of sandbox/signing/notarization state",
+      "state": "verified",
+      "evidenceClass": "documented-vendor-claim",
+      "reviewer": "research-deepcleanmac worker; not independent review"
+    },
+    {
+      "id": "B01",
+      "wording": "Breathing Room is a free Apache-2.0 macOS maintenance preview; optional hosted AI is not all-offline.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/privacy/",
+      "supportingUrls": [
+        "https://breathing-room.chatic.ai/privacy/"
+      ],
+      "excerpt": "Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.",
+      "locator": "Conclusion; Local versus hosted boundary",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    },
+    {
+      "id": "B02",
+      "wording": "AI Care is advertised at $5 USD/month or $50 USD/year; local core tools require no app purchase.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/#pricing",
+      "supportingUrls": [
+        "https://breathing-room.chatic.ai/#pricing"
+      ],
+      "excerpt": "**$5 USD/month**, **$50 USD/year**",
+      "locator": "Pricing rows 74–79",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    },
+    {
+      "id": "B03",
+      "wording": "Identified preview is 0.1.0-preview.1, macOS 13+, with a universal installer advertised; physical Intel untested.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1",
+      "supportingUrls": [
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Physical Intel behavior remains explicitly untested.",
+      "locator": "Preview table rows 48–49",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    },
+    {
+      "id": "B04",
+      "wording": "Preview disclosures say Apple Development signed, not Developer ID signed/notarized, and Python 3.10+ required.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/download/",
+      "supportingUrls": [
+        "https://breathing-room.chatic.ai/download/",
+        "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+      ],
+      "excerpt": "Python **3.10+** is a disclosed prerequisite",
+      "locator": "Preview table rows 50–51",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    },
+    {
+      "id": "B05",
+      "wording": "Source includes grouped helpers, activity observations, developer-cache discovery and constrained cleanup approvals.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "supportingUrls": [
+        "https://github.com/bucabay/breathing-room-app"
+      ],
+      "excerpt": "Native sampling groups helpers through parent/app relationships",
+      "locator": "Capability matrix rows 24–32; approval exception 36–42",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    },
+    {
+      "id": "B06",
+      "wording": "Daily care requires the app to remain running and saved exact approvals; optional automatic Ruff-cache mode is separate.",
+      "intendedLocation": "comparison / bounded recommendation",
+      "sourceIds": [
+        "BR1"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "supportingUrls": [
+        "https://github.com/bucabay/breathing-room-app"
+      ],
+      "excerpt": "only remembered exact approvals are eligible.",
+      "locator": "Daily care and approval exception sections",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-current-register; source/publication-not-binary-QA",
+      "state": "verified",
+      "scope": "Register limitations apply; not newly tested in this job",
+      "reviewer": "research-deepcleanmac worker; inherited capabilities verification"
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "platform",
+      "competitor": "macOS 14+; Apple Silicon/Intel advertised",
+      "competitorClaimIds": [
+        "C02"
+      ],
+      "breathingRoom": "macOS 13+ universal preview; Intel untested",
+      "breathingRoomClaimIds": [
+        "B03"
+      ]
+    },
+    {
+      "dimension": "version",
+      "competitor": "Latest listed 1.7.3, Oct 19, not inspected binary",
+      "competitorClaimIds": [
+        "C17"
+      ],
+      "breathingRoom": "0.1.0-preview.1 identified, not all-channel latest certified",
+      "breathingRoomClaimIds": [
+        "B03"
+      ]
+    },
+    {
+      "dimension": "licence",
+      "competitor": "Commercial, single-Mac, non-transferable use licence",
+      "competitorClaimIds": [
+        "C09",
+        "C10"
+      ],
+      "breathingRoom": "Apache-2.0 source; hosted service separate",
+      "breathingRoomClaimIds": [
+        "B01"
+      ]
+    },
+    {
+      "dimension": "price",
+      "competitor": "Homepage $5 USD/year auto-renew or $9 lifetime; historical discrepancy unresolved",
+      "competitorClaimIds": [
+        "C07",
+        "C08",
+        "C11",
+        "C21"
+      ],
+      "breathingRoom": "Free core; AI Care $5 USD/month or $50 USD/year advertised",
+      "breathingRoomClaimIds": [
+        "B02"
+      ]
+    },
+    {
+      "dimension": "operation",
+      "competitor": "Native Mac utility marketed; network-related analytics/licensing documented",
+      "competitorClaimIds": [
+        "C02",
+        "C13",
+        "C14",
+        "C15",
+        "C16"
+      ],
+      "breathingRoom": "Local inspection and constrained execution; authenticated hosted AI",
+      "breathingRoomClaimIds": [
+        "B01",
+        "B05"
+      ]
+    },
+    {
+      "dimension": "scanCleanup",
+      "competitor": "Review sizes, locations, types before cleaning; deletion/undo details not verified",
+      "competitorClaimIds": [
+        "C03"
+      ],
+      "breathingRoom": "Source-backed discovery and approval architecture, not runtime-certified",
+      "breathingRoomClaimIds": [
+        "B05",
+        "B06"
+      ]
+    },
+    {
+      "dimension": "suiteBreadth",
+      "competitor": "Updater/uninstaller/duplicates/resetter/treemap advertised",
+      "competitorClaimIds": [
+        "C04",
+        "C05"
+      ],
+      "breathingRoom": "Do not position as equivalent full suite; corresponding full modules not established",
+      "breathingRoomClaimIds": [
+        "B05"
+      ]
+    },
+    {
+      "dimension": "monitoring",
+      "competitor": "CPU/memory/disk dashboard documented; grouping/history unknown",
+      "competitorClaimIds": [
+        "C06"
+      ],
+      "breathingRoom": "Grouped helpers/activity source implementation; attribution limitations",
+      "breathingRoomClaimIds": [
+        "B05"
+      ]
+    },
+    {
+      "dimension": "developerFiles",
+      "competitor": "Git-aware build-folder exclusions and Xcode changes documented",
+      "competitorClaimIds": [
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "breathingRoom": "Developer cache adapters source-backed, not every version certified",
+      "breathingRoomClaimIds": [
+        "B05"
+      ]
+    },
+    {
+      "dimension": "installation",
+      "competitor": "FDA detection documented; signing/notarization/runtime unknown",
+      "competitorClaimIds": [
+        "C23"
+      ],
+      "breathingRoom": "Non-notarized preview; Python 3.10+ prerequisite",
+      "breathingRoomClaimIds": [
+        "B04"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "field": "repository",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "No official source-repository link in retained homepage/terms/changelog. Do not invent a GitHub project or infer no repository exists."
+    },
+    {
+      "field": "publisherLegalIdentity",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Public sources identify DeepCleanMac, but no incorporated entity/person independently established."
+    },
+    {
+      "field": "trialLimits",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Download Free / Start for Free does not state free scan/cleanup quota, trial duration or activation rules."
+    },
+    {
+      "field": "exactTransactionPrice",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Homepage $5/$9 vs dated changelog $9/$19; no checkout opened and no promotion duration established."
+    },
+    {
+      "field": "signingNotarizationRuntime",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "No binary fetched; signing, notarization, runtime dependencies and actual DMG build unknown."
+    },
+    {
+      "field": "helperGroupingRecurringGrowth",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Dashboard documented, but ownership-grouping and persistent growth history equivalence to Breathing Room not verified."
+    },
+    {
+      "field": "cleanupMechanism",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Review workflow documented; Trash vs permanent deletion, complete guard rules and undo scope not verified."
+    },
+    {
+      "field": "offlineAndHosted",
+      "value": null,
+      "state": "not-verified",
+      "diagnostic": "Privacy policy documents network-related licence/update/analytics data; no code or traffic audit, all-offline unsupported."
+    }
+  ],
+  "visuals": [
+    {
+      "id": "deepcleanmac-dashboard-listing",
+      "productId": "deepcleanmac",
+      "view": "Dashboard — System health overview",
+      "kind": "listing-asset",
+      "sourcePageUrl": "https://alternativeto.net/software/deepcleanmac/about/",
+      "assetUrl": "https://img.alternativeto.net/s/618x394/avif/deepcleanmac_822195_full.jpg",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T20:24:50.717Z",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 618,
+      "heightPx": 394,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "No explicit image redistribution licence or permission verified. Public visibility is not permission.",
+        "evidenceUrlOrPath": "https://alternativeto.net/software/deepcleanmac/about/",
+        "credit": "DeepCleanMac app image via AlternativeTo; rights remain with respective owners."
+      },
+      "caption": "DeepCleanMac Dashboard app image published on AlternativeTo. Version, capture date and underlying measurement conditions are unknown; not our test results.",
+      "alt": "DeepCleanMac Dashboard showing health, available disk space, CPU and memory cards, with cleanup tools in a sidebar.",
+      "supportedClaimIds": [
+        "C06"
+      ],
+      "limitations": [
+        "Visually inspected in owned browser tab; real app UI, not just logo/landing page.",
+        "618 × 394 rendition has soft small text; publication needs a cleared legible source.",
+        "Viewed read-only; no third-party original copied to repository, so original hash is inapplicable, not invented.",
+        "Screenshot has lifetime cleanup figures; they are unknown-source image data, never verified savings.",
+        "Link-only fallback does not satisfy required on-page competitor-image gate."
+      ],
+      "review": {
+        "status": "research-visual-inspection-only",
+        "reviewer": "research-deepcleanmac worker",
+        "reviewedAtUtc": "2026-10-21T20:26:41.784813+00:00"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library worker (inherited manifest)",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room current-source browser preview; example data."
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "B05"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "No current native claim; independent page-context review still pending. Keep example-data banners visible."
+      ],
+      "review": {
+        "status": "research-inspected",
+        "reviewer": "research-deepcleanmac worker",
+        "reviewedAtUtc": "2026-10-21T20:26:41.784813+00:00"
+      }
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "price-conflict",
+      "claimIds": [
+        "C07",
+        "C08",
+        "C21"
+      ],
+      "diagnostic": "Current homepage advertises $5/year and $9 lifetime; July changelog says $9/year and $19 lifetime; directory says $19–$39. Official terms settle USD/tax/one-Mac conditions, not amounts. No transaction amount or sale duration established.",
+      "resolution": "Publish only as dated attributed homepage offer if independently approved; do not assert current final price or cheapest comparison. Exact-price drafting remains blocked pending reconciliation."
+    },
+    {
+      "id": "privacy-tag-conflict",
+      "claimIds": [
+        "C13",
+        "C14",
+        "C15",
+        "C16"
+      ],
+      "diagnostic": "Directory No Tracking/Works Offline labels are not proof; official policy discloses licence-linked analytics/device/location information.",
+      "resolution": "Use attributed official policy, never a blanket no-tracking/offline claim."
+    },
+    {
+      "id": "safety-marketing",
+      "claimIds": [
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "diagnostic": "Homepage absolute safety/recovery/speed language is not independent evidence. Dated changelog records protection and counting fixes.",
+      "resolution": "Describe fixes by exact version/date without implying present defects, risk-free deletion, guaranteed SSD shredding or reproduced failures."
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "state": "planning-only-blocked-not-a-draft",
+      "track": "search/reference",
+      "title": "Review developer build folders before cleaning a Mac",
+      "slug": "review-developer-build-folders-before-cleaning-mac",
+      "primaryIntent": "Distinguish disposable generated output from committed project data, environments and cloud-only files before approving cleanup.",
+      "angle": "Use DeepCleanMac 1.7.0/1.7.1 Git-aware exclusions and 1.6.7 counting fix as concrete documented reasons not to treat a scan total as permission to delete.",
+      "claimIds": [
+        "C18",
+        "C19",
+        "C20",
+        "B05",
+        "B06"
+      ],
+      "sections": [
+        "Start with a keep/rebuild/unknown decision, not a cleanup target.",
+        "Separate committed project content, regenerable output and environment state.",
+        "Explain the dated vendor protection changes without pretending to test them.",
+        "Review exact location, permissions, rebuild cost and backup before approval.",
+        "Show Breathing Room, which we build, as an optional review/investigation preview, not a replacement for every suite tool."
+      ],
+      "visualPlan": [
+        "Cleared DeepCleanMac app UI required; current link-only dashboard is not enough.",
+        "Selected current-source Space preview, example data banners and caption intact."
+      ],
+      "interactionHandoff": "A non-destructive decision checklist: committed/unknown → keep; generated → confirm reproducible rebuild, owner and exact location before review. No shell deletion demo, scan, upload or invented saved-byte calculator.",
+      "internalLinks": [
+        "/comparisons/deepcleanmac/",
+        "/comparisons/",
+        "/tools/"
+      ],
+      "limitations": "No SERP-volume evidence collected; title uniqueness across future drafts needs independent review; no hands-on claims."
+    },
+    "comparison": {
+      "state": "planning-only-blocked-not-a-draft",
+      "title": "Breathing Room vs DeepCleanMac: review workflow or utility suite?",
+      "slug": "deepcleanmac",
+      "primaryIntent": "Choose between a documented Mac utility suite and an open-source maintenance/investigation preview.",
+      "structure": [
+        "Conclusion with audience and affiliation disclosure.",
+        "Compact cited matrix: platform, scope, review controls, monitoring, network/privacy, pricing and install caveats.",
+        "When each product fits, what remains unverified, link to workflow and comparison hub."
+      ],
+      "boundedConclusion": "DeepCleanMac may fit someone needing the documented updater/uninstaller/duplicate tools. Breathing Room, which we build, may fit someone willing to use a non-notarized Python-dependent preview for source-backed investigation and exact approval workflows. Neither was benchmarked here.",
+      "noClaims": [
+        "No measured speed/savings/safety winner",
+        "No blanket no-tracking or offline AI claim",
+        "No unknown-as-No checkmarks",
+        "No full-feature parity",
+        "No final transaction price until resolved"
+      ]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "deepcleanmac": [
+      "Documented updater/uninstaller/duplicates/resetter/treemap breadth may serve suite buyers (C04–C05).",
+      "Published annual and lifetime single-Mac licensing options; amounts require reconciliation (C07–C12,C21).",
+      "Versioned release notes disclose concrete protection changes; this is documentation, not our certification (C17–C20).",
+      "Licence-linked analytics/device/location policy and unknown deletion/undo details need explicit qualification (C13–C16)."
+    ],
+    "breathingRoom": [
+      "Source-backed grouped activity and exact-approval investigation can suit developers (B05–B06).",
+      "Free local core and inspectable Apache-2.0 desktop source (B01–B02); hosted AI separate.",
+      "Non-notarized preview, Python dependency, untested physical Intel and hosted-auth boundary are material trade-offs (B01–B04).",
+      "Do not claim full uninstaller/updater/duplicate-suite equivalence or guaranteed cleanup outcomes."
+    ]
+  },
+  "blockers": [
+    {
+      "id": "competitor-image-rights",
+      "severity": "critical",
+      "diagnostic": "Real Dashboard listing asset found and visually inspected, but reuse permission/licence unknown. Link-only fallback does not satisfy EDITORIAL visual gate. No asset downloaded for publication.",
+      "unblock": "Obtain verifiable image reuse permission/licence and a legible app screenshot, or explicit authorized editorial policy decision; retain original bytes/hash/provenance when permitted."
+    },
+    {
+      "id": "exact-price-discrepancy",
+      "severity": "critical-for-price-comparison",
+      "diagnostic": "Official current homepage and historical changelog amounts differ without verified explanation; actual payable amount unknown.",
+      "unblock": "Read-only official price reconciliation or independent approval of explicit dated homepage-offer-only wording; no purchase/signup/contact permitted."
+    }
+  ],
+  "draftingGate": {
+    "ready": false,
+    "publicationReady": false,
+    "independentReview": "pending",
+    "score": null,
+    "diagnostic": "Research evidence retained; missing critical visual reuse basis and unresolved exact-price evidence block drafting. Noncritical unknowns are explicit, not fabricated."
+  },
+  "safety": {
+    "installedOrExecutedCompetitor": false,
+    "cleanup": false,
+    "accountsOrPurchasesOrMessages": false,
+    "credentialsOrCookiesRead": false,
+    "thirdPartyImageDownloadedForPublication": false,
+    "browser": "Only task-created tab 89 used and closed; no existing tabs inspected/navigated. No browser recovery needed.",
+    "fetchFailures": [
+      {
+        "url": "https://deepcleanmac.com/terms",
+        "method": "Python urllib public GET",
+        "result": "HTTP 403 Forbidden"
+      },
+      {
+        "url": "https://deepcleanmac.com/privacy",
+        "method": "Python urllib public GET",
+        "result": "HTTP 403 Forbidden"
+      },
+      {
+        "url": "https://deepcleanmac.com/changelog",
+        "method": "Python urllib public GET",
+        "result": "HTTP 403 Forbidden"
+      },
+      {
+        "url": "https://deepcleanmac.com/",
+        "method": "Python urllib public GET",
+        "result": "HTTP 403 Forbidden"
+      }
+    ],
+    "recovery": "WebFetch read source text; normal owned browser navigation retained public DOM snapshots. No challenge bypass, hidden extraction or alternate profile."
+  }
+}

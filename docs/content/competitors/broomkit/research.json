@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-broomkit",
+  "productId": "broomkit",
+  "stage": "research",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "researcher": "scheduled Breathing Room content worker",
+  "publicationApproved": false,
+  "identity": {
+    "officialName": "Broomkit",
+    "discoveryName": "BroomKit",
+    "homepage": "https://broomkit.com/",
+    "publisher": "DPR Software Labs OPC Private Limited",
+    "developer": "Diljit PR",
+    "canonicalOwnerId": "broomkit",
+    "aliases": ["BroomKit"],
+    "aliasSkipDecision": "Do not skip Broomkit as an alias. BroomKit is a capitalization variant, not a second product. Official About explicitly says it is not a rebadged cleaner. No evidence links it to PowerMyMac; do not merge them or create another capitalization draft.",
+    "identitySourceIds": ["S1", "S2", "S3"],
+    "repository": null,
+    "repositoryStatus": "not verified; no official source-code repository linked in the homepage metadata/links or checked About/Terms pages. Not a claim that no repository exists.",
+    "classification": "direct",
+    "classificationReason": "Mac disk inspection and reviewable cleanup overlap directly; app uninstallation and live performance displays add adjacent jobs. This is not a cross-platform replacement article.",
+    "platformFit": "macOS 14.0+; vendor documents Apple Silicon and Intel. No Windows or Linux support established.",
+    "version": {"version": "0.6.0", "build": 9, "published": "2026-09-12", "sourceIds": ["S6", "S7"], "scope": "Official update feed and homepage metadata, not installed-binary verification."}
+  },
+  "discovery": {
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=8",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:51.480Z",
+    "listingUrl": "https://alternativeto.net/software/broomkit/about/",
+    "listingRetrievedAtUtc": "2026-10-21T19:05:21.862Z",
+    "method": "Reuse existing live-browser-rendered discovery and baseline verification, not a new directory crawl.",
+    "manifestPath": "docs/content/competitors.json",
+    "snapshotPath": "docs/content/.runtime/verification-1/broomkit-directory.json",
+    "sha256": "b5ffebc955a4033f81b1ab05fa1f76c0a13f2ce91357ed77e1ee570deb235834",
+    "limitation": "Directory's from-$34 pricing is not the current official $9 offer; directory supports discovery, not product-feature verification. Seed edge is retained in shared manifest; no new raw seed response captured."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Broomkit / DPR Software Labs", "title": "Mac Cleaner App for macOS",
+      "url": "https://broomkit.com/", "finalUrl": "https://broomkit.com/",
+      "retrievedAtUtc": "2026-10-21T19:08:01.448223+00:00", "publicationDate": "2026-08-30", "pageUpdatedDate": "2026-09-12",
+      "snapshotPath": "docs/content/.runtime/verification-1/broomkit-official.json",
+      "sha256": "f043486b7564f1a1b507d784ddeaf3591b5c32ea4cfb22fd89fbfd7516735c91",
+      "reuse": "Existing current batch-1 record reused; no unnecessary feature re-fetch.",
+      "scope": "Vendor marketing, trial/lifetime offer, demo captions; not hands-on testing."
+    },
+    {
+      "id": "S2", "publisher": "AlternativeTo", "title": "BroomKit About",
+      "url": "https://alternativeto.net/software/broomkit/about/", "finalUrl": "https://alternativeto.net/software/broomkit/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:21.862Z", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/broomkit-directory.json",
+      "sha256": "b5ffebc955a4033f81b1ab05fa1f76c0a13f2ce91357ed77e1ee570deb235834",
+      "excerpt": "Official Website\nbroomkit.com/",
+      "scope": "Discovery identity only; directory pricing conflicts with official offer."
+    },
+    {
+      "id": "S3", "publisher": "Broomkit / DPR Software Labs", "title": "About Broomkit",
+      "url": "https://broomkit.com/about/", "finalUrl": "https://broomkit.com/about/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": "2026-08-31",
+      "excerpt": "Broomkit is a product of DPR Software Labs OPC Private Limited, designed and built by Diljit PR. It is not a product of Apple Inc., and it is not a rebadged version of any other cleaner. The app is written in Swift and ships as a native macOS application plus a command-line tool. It runs on macOS 14.0 or later, on both Apple Silicon and Intel Macs.",
+      "scope": "Read-only WebFetch; exact request timestamp not emitted, date retained honestly. Vendor statements, not corporate/binary audit."
+    },
+    {
+      "id": "S4", "publisher": "Broomkit / DPR Software Labs", "title": "Terms of service",
+      "url": "https://broomkit.com/terms/", "finalUrl": "https://broomkit.com/terms/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "pageUpdatedDate": "2026-09-03",
+      "excerpts": [
+        "Every feature is free for the first 3 days after installation and requires no account, no card and no licence. After that a valid licence is required to use the app.",
+        "It runs once per Mac and does not restart on reinstallation.",
+        "It is a non-exclusive, non-transferable right to use Broomkit on the number of Macs stated on the licence you bought — one.",
+        "You may move a licence between machines by deactivating it on one and activating it on another; a seat is concurrent, not permanently bound to the first Mac it touched.",
+        "Reverse engineer, decompile or disassemble the application, except where that right cannot lawfully be excluded",
+        "Broomkit requires macOS 14.0 or later and Full Disk Access to function as described.",
+        "We do not warrant that the software will be uninterrupted or error-free, or that its categorisation of any given file is correct"
+      ],
+      "scope": "WebFetch, retained excerpts; no broad image-republication grant found. Use-right restrictions support proprietary treatment, not an open-source licence."
+    },
+    {
+      "id": "S5", "publisher": "Broomkit / DPR Software Labs", "title": "Licensing — all sales final",
+      "url": "https://broomkit.com/refund-policy/", "finalUrl": "https://broomkit.com/refund-policy/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "pageUpdatedDate": "2026-09-03",
+      "excerpts": [
+        "After 3 days a licence is required to keep using the app.",
+        "Lifetime (never expires) | 1 | $9",
+        "The licence never expires and you are never charged again. Scanning continues to work for free either way.",
+        "All licence purchases are final. We do not offer refunds, chargebacks by agreement, or ‘try Reclaim then return’ windows.",
+        "A validated licence works offline for 14 days before it re-checks"
+      ],
+      "scope": "Vendor purchase terms, not a purchase test; page provides billing-error corrections for duplicate charges or missing keys, not product refunds. Mandatory legal rights not assessed."
+    },
+    {
+      "id": "S6", "publisher": "Broomkit / DPR Software Labs", "title": "Public update feed",
+      "url": "https://broomkit.com/downloads/latest.json", "finalUrl": "https://broomkit.com/downloads/latest.json",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": "2026-09-12",
+      "excerpt": "{\"version\":\"0.6.0\",\"build\":9,\"url\":\"https://broomkit.com/downloads/Broomkit.dmg\",\"notes\":\"Every feature is now free for 3 days, then a one-time licence keeps the app. Clearer Reclaim confirmation and readable text on coloured cards.\",\"published\":\"2026-09-12\"}",
+      "scope": "Official release pointer; no installer download or execution."
+    },
+    {
+      "id": "S7", "publisher": "Broomkit / DPR Software Labs", "title": "Homepage visual and structured-data metadata",
+      "url": "https://broomkit.com/", "finalUrl": "https://broomkit.com/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null,
+      "snapshotPath": "docs/content/competitors/broomkit/home-visual-metadata.json",
+      "excerpt": "softwareVersion: 0.6.0; priceCurrency: USD; Lifetime licence: Single payment. Unlocks Reclaim and the uninstaller on 1 Mac permanently. Does not auto-renew.",
+      "scope": "Owned Chrome tab 66 read-only DOM inspection solely to resolve missing visual URLs/currency/version. Normal public page, no cookie/storage extraction. Exact retrieval timestamp was not captured."
+    },
+    {
+      "id": "S8", "publisher": "Broomkit / DPR Software Labs", "title": "Privacy policy",
+      "url": "https://broomkit.com/privacy/", "finalUrl": "https://broomkit.com/privacy/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "pageUpdatedDate": "2026-08-31",
+      "excerpts": [
+        "Broomkit does not require an account, and never transmits your scan results, file names or file paths anywhere. Scanning happens entirely on your Mac, and the results stay on it.",
+        "The app makes two kinds of outbound request, and no others: validating a licence key against Dodo Payments, and an optional once-a-day fetch of a small version file from broomkit.com",
+        "The request contains the licence key and the identifier of the Mac it is being activated on",
+        "A validated licence works offline for 14 days before it needs to check again."
+      ],
+      "scope": "Published policy, not traffic/security audit. Website separately discloses Google Ads and Microsoft Clarity; do not apply app privacy statements to website."
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room", "title": "Current capability register",
+      "url": "https://breathing-room.chatic.ai/", "localEvidence": "docs/content/capabilities.md",
+      "checkedOn": "2026-10-21", "scope": "Reuse same-day independent source/public-page register; code existence is not distributed-binary parity."
+    },
+    {
+      "id": "BR2", "publisher": "Breathing Room", "title": "Preview provenance inventory",
+      "url": "http://127.0.0.1:1431/", "localEvidence": "docs/content/screenshots.json",
+      "checkedOn": "2026-10-21", "scope": "First-party current-source browser illustrations, not native or measured evidence."
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"Broomkit is a DPR Software Labs product built by Diljit PR, not a rebadged cleaner according to its About page.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S3"],"excerpt":"not a rebadged version of any other cleaner","checkedOn":"2026-10-21","location":"identity","conditions":"Capitalization alias only; not an independent corporate audit."},
+    {"id":"C02","wording":"Vendor requirements are macOS 14.0+ on Apple Silicon or Intel, with Full Disk Access for the documented scan scope.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S3","S4"],"excerpt":"on both Apple Silicon and Intel Macs; Full Disk Access to function as described","checkedOn":"2026-10-21","location":"platform/runtime","conditions":"No hands-on compatibility, CPU architecture, signing or install validation."},
+    {"id":"C03","wording":"The official feed identifies version 0.6.0 build 9, published September 12, 2026.","state":"verified","evidenceClass":"official-feed","sourceIds":["S6","S7"],"excerpt":"version: 0.6.0; build: 9; published: 2026-09-12","checkedOn":"2026-10-21","location":"version","conditions":"No asset checksum or installed-version verification."},
+    {"id":"C04","wording":"The advertised lifetime licence is USD $9 once for one Mac, non-renewing; deactivate it before moving to another Mac.","state":"verified","evidenceClass":"vendor-offer","sourceIds":["S1","S4","S5","S7"],"excerpt":"priceCurrency: USD; Lifetime (never expires) | 1 | $9; a seat is concurrent","checkedOn":"2026-10-21","location":"price","conditions":"No checkout opened. Tax, geographic adjustments, future major-version entitlement and delivered activation not verified. All-sales-final policy with billing-error exceptions; legal rights not assessed."},
+    {"id":"C05","wording":"Every feature is advertised free for three days, once per Mac, without an account or card.","state":"verified","evidenceClass":"vendor-offer","sourceIds":["S1","S4","S6"],"excerpt":"Every feature is free for the first 3 days after installation and requires no account, no card and no licence","checkedOn":"2026-10-21","location":"trial","conditions":"No trial started. Post-trial free scanning is unresolved under C06."},
+    {"id":"C06","wording":"What remains usable free after day three is unresolved in official copy.","state":"contradicted","evidenceClass":"source-conflict","sourceIds":["S1","S4","S5","S6"],"excerpt":"S1: Free to analyze forever / There is no reduced free tier after the trial. S5: After 3 days a licence is required to keep using the app / Scanning continues to work for free either way.","checkedOn":"2026-10-21","location":"free-versus-paid comparison","conditions":"Blocking: do not choose one statement silently or promise permanent free analysis. Need consistent official version-specific entitlement documentation or separately authorized non-destructive evidence; no contact sent."},
+    {"id":"C07","wording":"Broomkit documents a home-folder scan, Disk Map treemap, categories and a file-by-file review before Trash moves.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1","S3"],"excerpt":"Broomkit walks your whole home folder; Every file listed with a tick box before anything moves; Everything goes to the Trash rather than being unlinked","checkedOn":"2026-10-21","location":"inspection and approval","conditions":"Not a complete-disk coverage, safety, recovered-space or data-recovery guarantee. Trash emptying ends this ordinary restore path; backups still matter."},
+    {"id":"C08","wording":"The documented uninstaller lists leftovers and full paths, permits deselection, and includes a Reset action that leaves the app installed.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1"],"excerpt":"Lets you uncheck anything you want to keep; Reset action that removes an app's settings and data but leaves the app installed","checkedOn":"2026-10-21","location":"uninstaller","conditions":"Avoid claiming perfect removal or recommending Reset without a backup/data-retention decision. Paid after trial under the advertised offer."},
+    {"id":"C09","wording":"The Performance pane is advertised with live memory, CPU, disk and battery, per-app Quit and alerts.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1"],"excerpt":"Live memory, CPU, disk and battery, the apps eating them, and a Quit button on each","checkedOn":"2026-10-21","location":"performance","conditions":"Helper grouping, historical attribution, sampling accuracy and alert delivery not verified. Do not claim the competitor lacks monitoring."},
+    {"id":"C10","wording":"Vendor documentation includes package caches, simulators and nested dependency directories in cleanup discovery.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1"],"excerpt":"package caches, simulators, nested node_modules","checkedOn":"2026-10-21","location":"developer cleanup","conditions":"No claim of broader coverage, tool-command adapters or greater measured savings than Breathing Room."},
+    {"id":"C11","wording":"The privacy policy says scan data remains local; licence activation sends a key and machine identifier to Dodo Payments and requires revalidation after fourteen offline days.","state":"verified","evidenceClass":"published-policy","sourceIds":["S8","S4","S5"],"excerpt":"Scanning happens entirely on your Mac; The request contains the licence key and the identifier of the Mac; works offline for 14 days","checkedOn":"2026-10-21","location":"local/hosted and offline limits","conditions":"Not audited. Optional daily version check also makes network requests. No blanket no-network/no-tracking website claim."},
+    {"id":"C12","wording":"Broomkit says it has no login item, launch agent or privileged helper; tasks needing root print commands for the user instead.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1","S3"],"excerpt":"no login item and no launch agent; tasks that genuinely need root print the command for you to run yourself","checkedOn":"2026-10-21","location":"install and runtime","conditions":"No commands executed; no inference that root commands are safe or required. No independently verified scheduler/history feature beyond documented local activity log."},
+    {"id":"C13","wording":"Official marketing advertises Developer ID signing and Apple notarization.","state":"verified","evidenceClass":"vendor-documented","sourceIds":["S1"],"excerpt":"Notarized by Apple; Developer ID signed","checkedOn":"2026-10-21","location":"installation","conditions":"Attributed claim only; no binary signature/notarization audit."},
+    {"id":"C14","wording":"Broomkit is offered under a restricted proprietary use licence, not an established open-source licence.","state":"verified","evidenceClass":"published-terms","sourceIds":["S4"],"excerpt":"non-exclusive, non-transferable right to use Broomkit; Reverse engineer, decompile or disassemble ... except where that right cannot lawfully be excluded","checkedOn":"2026-10-21","location":"licence","conditions":"No repository identified; no legal opinion or screenshot-reuse grant inferred."},
+    {"id":"BR01","wording":"Breathing Room, which we build, is a free Apache-2.0 macOS 13+ preview; identified release 0.1.0-preview.1 is Apple Development signed, not Developer ID signed or notarized, and discloses Python 3.10+.","state":"verified","evidenceClass":"reused-current-register","sourceIds":["BR1"],"excerpt":"capabilities.md:48–55,74,80: 0.1.0-preview.1; macOS 13+; Python 3.10+; not Developer ID signed or notarized","checkedOn":"2026-10-21","location":"Breathing Room caveats","conditions":"No clean-machine/physical-Intel runtime certification or current-source/binary feature-parity claim."},
+    {"id":"BR02","wording":"Breathing Room source implements grouped app/helper monitoring, activity history, tool-aware cleanup and exact saved approvals for daily care while the app runs.","state":"verified","evidenceClass":"source-implementation-register","sourceIds":["BR1"],"excerpt":"capabilities.md:25–32,38–40: grouped helpers; local history; exact saved approvals; explicit optional Ruff automatic mode","checkedOn":"2026-10-21","location":"workflow comparison","conditions":"Not hands-on release validation; optional automatic Ruff-cache mode prevents unconditional never-deletes-without-asking claims."},
+    {"id":"BR03","wording":"Breathing Room advertises optional AI Care at USD $5/month or $50/year; hosted reasoning requires authentication/internet and sends relevant context/tool results off-device.","state":"verified","evidenceClass":"reused-current-register","sourceIds":["BR1"],"excerpt":"capabilities.md:62–79: hosted question/history/tool outputs; $5 USD/month; $50 USD/year; local tools need no AI Care subscription","checkedOn":"2026-10-21","location":"pricing/privacy","conditions":"No unlimited-use, paid-entitlement-enforcement, checkout-success or fully offline-AI claim. Public GitHub releases are not website-registration gated; website download is account gated."}
+  ],
+  "matrix": {
+    "macOS": {"claimIds":["C02","BR01"]},
+    "licence": {"claimIds":["C14","BR01"]},
+    "version": {"claimIds":["C03","BR01"]},
+    "localVersusHosted": {"claimIds":["C11","BR03"]},
+    "scanAndCleanup": {"claimIds":["C07","BR02"]},
+    "approvalControls": {"claimIds":["C07","C08","BR02"]},
+    "helperGrouping": {"broomkit":"not verified; per-app Performance UI is not proof of helper aggregation","claimIds":["C09","BR02"]},
+    "recurringGrowth": {"broomkit":"not verified; live alerts and an activity log do not establish recurring storage-growth investigation","claimIds":["C09","C12","BR02"]},
+    "developerCaches": {"claimIds":["C10","BR02"]},
+    "pricing": {"claimIds":["C04","C05","C06","BR03"],"state":"blocked by unresolved post-trial entitlement"},
+    "runtimeAndInstallation": {"claimIds":["C02","C11","C12","C13","BR01"]},
+    "malware": {"broomkit":"Vendor About explicitly says it does not scan for malware.","sourceIds":["S3"],"excerpt":"It does not scan for malware.","checkedOn":"2026-10-21","breathingRoom":"not verified as a malware removal tool; do not position either as security-software replacement"}
+  },
+  "visuals": [
+    {
+      "id":"broomkit-disk-map-official", "productId":"broomkit", "view":"Disk Map", "kind":"official-asset",
+      "sourcePageUrl":"https://broomkit.com/#demo", "assetUrl":"https://broomkit.com/demo/disk-map.jpg?v=021",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "assetDownloaded":false,
+      "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"vendor-illustration", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":980, "heightPx":647, "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official public app screenshot link identified; public availability and app-use terms do not grant republication rights. No asset downloaded, copied, hotlinked into a draft or modified.","evidenceUrlOrPath":"https://broomkit.com/terms/","credit":"Broomkit / DPR Software Labs OPC Private Limited"},
+      "caption":"Broomkit's official Disk Map screenshot. Vendor-supplied app view; figures are not our measurements or an expected cleanup result. Open the official demo for the image.",
+      "alt":"Broomkit Disk Map treemap of the Home folder with safe-to-remove, needs-review and not-reclaimable categories.",
+      "supportedClaimIds":["C07"],
+      "limitations":["URL and natural dimensions observed on the public homepage; image bytes not retained or independently visually approved.","Vendor says demo screenshots are the real app, not mockups; exact capture date and app build remain unknown.","Reference-machine macOS 26 measurements elsewhere on the site do not establish this image's OS or capture date.","Link-only fallback does not pass the required on-page competitor screenshot gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "capturedBy":"screenshot-library job per shared inventory", "productVersion":null,
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null,
+      "dataMode":"example", "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-in-shared-inventory","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture with mandatory example-data disclosure; third-party app marks remain their owners' marks. Publication-context review still pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room browser preview"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":[],
+      "limitations":["No public asset URL assigned; reuse shared local original without modifying it.","Keep example-data banner visible. Not an earlier preview, native capture, installed-release validation or measured savings.","Per-article legibility and contextual crop review required; any later edit needs a separate original/published hash record."],
+      "review":{"status":"shared-inventory-reviewed; article-context-pending","reviewer":"screenshot-library job","reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"blocked-not-a-draft", "track":"search/reference", "slug":"review-mac-cleanup-paths-before-emptying-trash",
+      "title":"Review a Mac cleanup list before emptying the Trash",
+      "primaryIntent":"Turn a disk map and candidate list into an explicit keep/remove/rebuild decision, rather than treating the headline total as permission.",
+      "distinctAngle":"Follow Broomkit's Disk Map → selected paths → review → confirmation sequence as a documented workflow, then distinguish one-off cleanup from investigating recurring growth. Do not write another generic System Data listicle.",
+      "sections":["Read the map without treating its total as guaranteed recovery","Classify each proposed path: original, regenerable or unknown","Separate app reset/uninstallation from disposable cache","Review Trash moves before deciding whether to empty","Investigate recurring growth instead of repeating deletion"],
+      "claimIds":["C07","C08","C10","C12","BR02"],
+      "visualPlan":"Cleared Broomkit Disk Map screenshot immediately after lead, then labeled current-source Breathing Room Space preview. Current link-only vendor visual blocks this plan.",
+      "interactionPass":"Handoff a local-only keep/remove/rebuild decision checklist: ownership known? backup available? rebuild/download cost understood? app closed where appropriate? unknown personal data stays. No filesystem access, deletion or invented space calculation.",
+      "recommendationBoundary":"At most one disclosed recommendation: Breathing Room, which we build, may suit source-based recurring-growth investigation; its preview, hosted AI, Python and signing caveats must remain visible. Broomkit may suit an integrated map/uninstaller workflow with a one-time offer. No hands-on claim.",
+      "internalLinks":["/comparisons/","/comparisons/broomkit/"],
+      "length":"Earned; normally 900–1800 words only if evidence supports it. No compulsory FAQ or code demo."
+    },
+    "comparison": {
+      "status":"blocked-not-a-draft", "slug":"broomkit", "route":"/comparisons/broomkit/",
+      "title":"Breathing Room vs Broomkit: cleanup review and ongoing care",
+      "primaryIntent":"Choose between two overlapping Mac maintenance tools by workflow, runtime, approvals, licence and data boundary, not headline gigabytes.",
+      "structure":["Conclusion with affiliation and preview boundary","Sourced concise matrix using claim IDs","When Broomkit fits","When Breathing Room may fit","Unknowns, trial conflict and installation limitations","Link to the distinct path-review workflow article"],
+      "requiredLabels":["Vendor-documented Broomkit behavior, not our test","Breathing Room source implementation is not binary validation","Example-data browser preview, not measured results"],
+      "noSeparateAlternativesPage":true,
+      "refresh":"Recheck volatile facts within 30 days and before publication; resolve C06 before drafting."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "broomkitAdvantages":["Documented integrated Disk Map, app uninstaller/reset and Performance pane; do not claim Breathing Room has a complete uninstaller.","One-time one-Mac licence offer rather than a recurring assistant-service price.","Vendor says local scan results stay on device and advertises Developer ID signing/notarization; distinguish these statements from an audit."],
+    "broomkitTradeoffs":["macOS 14+ rather than Breathing Room's advertised 13+.","Proprietary terms, fourteen-day offline licence validation limit, and all-sales-final policy.","Official post-trial entitlement language conflicts; do not call it permanently free.","Grouped helper accounting, exact tool-owned cleanup methods, saved daily approvals and recurring-growth investigation remain unverified, not absent."],
+    "breathingRoomAdvantages":["Apache-2.0 desktop source is inspectable.","Source includes helper grouping, history, tool-aware cleanup and exact saved daily approvals; useful distinctions, not tested superiority."],
+    "breathingRoomTradeoffs":["Non-notarized preview with Python 3.10+ requirement and unvalidated clean-machine/physical-Intel behavior.","Hosted authenticated AI transmits relevant context; optional AI Care is recurring paid service and app must run for daily care.","Current browser visuals use example data; no measured cleanup/speed/safety results."]
+  },
+  "unknowns": ["Post-trial scan entitlement is material and unresolved.","Competitor screenshot republication permission is not established.","Current installer signature, native runtime results and complete feature/build parity are not tested.","No official source repository identified; exact future update entitlement, tax and regional checkout totals not verified.","Screenshot capture date/build/OS and privacy details not independently reviewed.","Competitor helper aggregation, recurring-growth history, exact cache-tool adapters and scheduled approval mechanism not verified."],
+  "blockers": [
+    {"id":"B1","severity":"critical","claimId":"C06","diagnostic":"Official homepage, About, Terms and licensing copy disagree about permanent free analysis versus a licence needed for all use after day three. Need consistent current version-specific entitlement evidence before drafting price/free-feature recommendations."},
+    {"id":"B2","severity":"critical","visualId":"broomkit-disk-map-official","diagnostic":"Exact official app screenshot URL identified but no republication grant found. Link-only research fallback is not the mandatory on-page visual. Obtain independently evidenced permission/licence or explicit editorial policy approval; do not download on assumed rights or send permission requests in this job."}
+  ],
+  "skipDecision":{"skip":false,"reason":"Live, relevant Mac product; no verified alias/dead-product exclusion. Blocked research must not become doorway content."},
+  "validation": {
+    "testsPerformed":false,
+    "nativeTesting":false,
+    "siteChanged":false,
+    "downloadedCompetitorAssets":false,
+    "sourceAccessFailures":["Python urllib GET https://broomkit.com/ for missing visual metadata returned HTTP 403; no challenge bypass attempted. Normal authorized Chrome page loaded and supplied public DOM image URLs.","One additional read-only browser metadata expression failed with Unexpected token ')'; no state mutation. Existing successful metadata snapshot retained."],
+    "pending":["Independent evidence and visual review","Resolve B1 and B2 before draft job","Rendered QA/build/test belongs to separately authorized site draft/review stage; not run for research-only files"]
+  }
+}

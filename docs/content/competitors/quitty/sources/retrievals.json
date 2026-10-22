@@ -1,0 +1,52 @@
+[
+  {
+    "id": "official-visual-search",
+    "url": "https://quitty.iad1tya.cyou/",
+    "finalUrl": "https://quitty.iad1tya.cyou/",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:00:49.145270+00:00",
+    "path": "docs/content/competitors/quitty/sources/official-visual-search.html",
+    "sha256": "b19067fe1a6e19473e6cd6ad2bea1c3e35a239ce297f2dc61c9e96318cde1a5b",
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "id": "github-repository",
+    "url": "https://api.github.com/repos/iad1tya/Quitty",
+    "finalUrl": "https://api.github.com/repos/iad1tya/Quitty",
+    "httpStatus": 404,
+    "retrievedAtUtc": "2026-10-21T22:00:50.197893+00:00",
+    "path": "docs/content/competitors/quitty/sources/github-repository.json",
+    "sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "id": "github-latest-release",
+    "url": "https://api.github.com/repos/iad1tya/Quitty/releases/latest",
+    "finalUrl": "https://api.github.com/repos/iad1tya/Quitty/releases/latest",
+    "httpStatus": 404,
+    "retrievedAtUtc": "2026-10-21T22:00:50.931341+00:00",
+    "path": "docs/content/competitors/quitty/sources/github-latest-release.json",
+    "sha256": "d9e37600354c1839f6b22cebde497e9d14750d2401a06c9a51b1619baf991613",
+    "contentType": "application/json; charset=utf-8"
+  },
+  {
+    "id": "github-readme",
+    "url": "https://raw.githubusercontent.com/iad1tya/Quitty/main/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/iad1tya/Quitty/main/README.md",
+    "httpStatus": 404,
+    "retrievedAtUtc": "2026-10-21T22:00:56.782325+00:00",
+    "path": "docs/content/competitors/quitty/sources/github-readme.txt",
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+    "contentType": "text/plain; charset=utf-8"
+  },
+  {
+    "id": "github-public-page",
+    "url": "https://github.com/iad1tya/Quitty",
+    "finalUrl": "https://github.com/iad1tya/Quitty",
+    "httpStatus": 404,
+    "retrievedAtUtc": "2026-10-21T22:00:58.366813+00:00",
+    "path": "docs/content/competitors/quitty/sources/github-public-page.html",
+    "sha256": "feb2e83f9292c059405580e1da9fc12c3fa63a1eaff5ed550afecf49c70c2795",
+    "contentType": "text/html; charset=utf-8"
+  }
+]

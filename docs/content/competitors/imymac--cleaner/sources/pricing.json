@@ -1,0 +1,14 @@
+{
+  "id": "pricing",
+  "sourceUrl": "https://www.imymac.com/store/buy-powermymac.html",
+  "finalUrl": "https://www.imymac.com/store/buy-powermymac.html",
+  "retrievedAtUtc": "2026-10-21T20:42:37.515394+00:00",
+  "httpStatus": 200,
+  "publisher": "iMyMac",
+  "sourcePublishedAt": null,
+  "snapshotPath": "docs/content/competitors/imymac--cleaner/sources/pricing.html",
+  "sha256": "7bdc9568604866d02f6c496ad41e58ec7c95cee8532a751c31ee7b11beec4cef",
+  "textPath": "docs/content/competitors/imymac--cleaner/sources/pricing.txt",
+  "textSha256": "f99da0abbbf287d7997170c6cff3c27f8f95fb884379fe50936c2e7afd110b4a",
+  "method": "Public read-only HTTP GET; retained HTML for exact pricing/guide/rights evidence missing from baseline. No forms submitted."
+}

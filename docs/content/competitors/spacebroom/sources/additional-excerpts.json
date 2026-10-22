@@ -1,0 +1,50 @@
+{
+  "retentionType": "Selected verbatim excerpts and observed metadata, not full raw page captures",
+  "retrievedOnUtc": "2026-10-21",
+  "exactRetrievalTimes": null,
+  "method": "Read-only WebFetch for public text; Python urllib HEAD for download metadata. Pages treated as untrusted data.",
+  "sources": [
+    {
+      "id":"S3", "url":"https://spacebroom.app/en/terms", "title":"Terms and licence", "lastUpdated":"16 October 2026",
+      "excerpts":[
+        "This is an English translation for your information. Only the German version is binding; where the two differ, the German version applies.",
+        "The seller and licensor is DIGITALPASSION Ltd.",
+        "You receive a licence to use SpaceBroom on one Mac that you own or use: with the yearly or monthly subscription for the term of the subscription, with the one-time purchase without a time limit.",
+        "The monthly subscription renews for one month at a time and can be cancelled at any time with effect from the end of the paid month. The yearly subscription has a minimum term of one year and can be cancelled up to its end; after that it continues for an indefinite period, is still billed yearly in advance and can be cancelled at any time with one month's notice.",
+        "If it ends in this way before the end of a paid year, we refund the amount for the paid time after the end of the contract pro rata by the day.",
+        "Beyond that, the one-time purchase includes all new features of version 1; a version 2 may cost extra.",
+        "SpaceBroom removes only what you expressly confirm and, where possible, moves files to the Trash. Nevertheless, keep a current backup, for example with Time Machine."
+      ],
+      "rightsInspection":"No screenshot republication grant established in the checked terms. The right to install/use the app is not assumed to license its marketing screenshots."
+    },
+    {
+      "id":"S4", "url":"https://spacebroom.app/agb", "title":"AGB und Lizenz", "lastUpdated":"16. Oktober 2026",
+      "excerpts":[
+        "Du erhältst eine Lizenz zur Nutzung von SpaceBroom auf einen Mac, der dir gehört oder den du verwendest: im Jahres- oder Monatsabo für die Laufzeit des Abos, beim einmaligen Kauf ohne zeitliche Begrenzung.",
+        "Das Jahresabo hat eine Mindestlaufzeit von einem Jahr und ist bis zu ihrem Ende kündbar; danach läuft es auf unbestimmte Zeit weiter, wird weiter jährlich im Voraus abgerechnet und ist jederzeit mit einer Frist von einem Monat kündbar.",
+        "Darüber hinaus enthält der einmalige Kauf alle neuen Funktionen der Version 1; eine Version 2 darf neu kosten.",
+        "SpaceBroom entfernt nur, was du ausdrücklich bestätigst, und legt Dateien, wo möglich, in den Papierkorb. Halte trotzdem ein aktuelles Backup, etwa mit Time Machine."
+      ]
+    },
+    {
+      "id":"S5", "url":"https://spacebroom.app/en/privacy", "title":"Privacy policy", "lastUpdated":"20 October 2026",
+      "excerpts":[
+        "SpaceBroom has no account and sends no usage data. What the app finds on your Mac stays on your Mac. It connects to the internet in only three cases:",
+        "In doing so, it transfers only the licence identifier and fixed details unrelated to you (program name, language \"en\"); our server sees your IP address. The key itself is checked on your Mac without the internet.",
+        "Updates of your programs: For this, the app asks Apple's App Store and the update addresses that your programs specify themselves; these servers see your IP address and which program is being checked.",
+        "This edition is updated through the App Store, so it does not ask our website for updates and does not use Homebrew. It reads the user folder that you grant it in the folder selection, the list of installed programs in the Applications folder and, in Space Lens, the folder you choose there; it does not read other programs' data in their protected folders."
+      ],
+      "scope":"Vendor policy, not independent traffic inspection; App Store paragraph does not itself verify a live listing. German binding version not fetched."
+    },
+    {
+      "id":"S6", "url":"https://spacebroom.app/en/imprint", "title":"Legal notice",
+      "excerpts":["DIGITALPASSION Ltd. (private company limited by shares under Cypriot law)","Kevin Damiani (Director)","Registrar of Companies, Nicosia, HE 454538"],
+      "rightsInspection":"No image-reuse permission established in checked legal notice."
+    },
+    {
+      "id":"S7", "url":"https://spacebroom.app/download", "finalUrl":"https://spacebroom.app/SpaceBroom.dmg", "method":"HEAD", "status":200,
+      "headers":{"Content-Length":"10169956","Last-Modified":"Wed, 21 Oct 2026 07:45:25 GMT","Date":"Wed, 21 Oct 2026 22:11:24 GMT"},
+      "scope":"Observed metadata only; server Date is not an exact locally logged retrieval timestamp. No binary body downloaded."
+    }
+  ]
+}

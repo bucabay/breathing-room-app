@@ -1,0 +1,139 @@
+{
+  "jobId": "research-app-eraser",
+  "validatedAtUtc": "2026-10-21T20:01:32.308155+00:00",
+  "command": "python3 docs/content/competitors/app-eraser/validate-packet.py",
+  "checks": [
+    {
+      "check": "source IDs unique",
+      "result": "pass"
+    },
+    {
+      "check": "claim IDs unique",
+      "result": "pass"
+    },
+    {
+      "check": "every claim maps to existing sources and has a check date/scope",
+      "result": "pass"
+    },
+    {
+      "check": "every matrix cell maps to claims",
+      "result": "pass"
+    },
+    {
+      "check": "all sources have exact URL, excerpts and checked date",
+      "result": "pass"
+    },
+    {
+      "check": "baseline: retained snapshot exists",
+      "result": "pass"
+    },
+    {
+      "check": "baseline: snapshot SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "controller: retained snapshot exists",
+      "result": "pass"
+    },
+    {
+      "check": "controller: response-text SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "controller: excerpts occur in retained response",
+      "result": "pass"
+    },
+    {
+      "check": "controller: HTTP 200 and retrieval time retained",
+      "result": "pass"
+    },
+    {
+      "check": "view: retained snapshot exists",
+      "result": "pass"
+    },
+    {
+      "check": "view: response-text SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "view: excerpts occur in retained response",
+      "result": "pass"
+    },
+    {
+      "check": "view: HTTP 200 and retrieval time retained",
+      "result": "pass"
+    },
+    {
+      "check": "locations: retained snapshot exists",
+      "result": "pass"
+    },
+    {
+      "check": "locations: response-text SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "locations: excerpts occur in retained response",
+      "result": "pass"
+    },
+    {
+      "check": "locations: HTTP 200 and retrieval time retained",
+      "result": "pass"
+    },
+    {
+      "check": "directory snapshot SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "baseline reused identity matches current packet",
+      "result": "pass"
+    },
+    {
+      "check": "discovery edges match existing manifest",
+      "result": "pass"
+    },
+    {
+      "check": "Breathing Room original SHA-256 matches",
+      "result": "pass"
+    },
+    {
+      "check": "Breathing Room PNG dimensions match",
+      "result": "pass"
+    },
+    {
+      "check": "example-data/native limitations preserved",
+      "result": "pass"
+    },
+    {
+      "check": "competitor image not misrepresented as cleared/downloaded",
+      "result": "pass"
+    },
+    {
+      "check": "critical gaps block drafting and publication",
+      "result": "pass"
+    },
+    {
+      "check": "identity and alias skip decision present",
+      "result": "pass"
+    },
+    {
+      "check": "distinct workflow and comparison briefs",
+      "result": "pass"
+    },
+    {
+      "check": "human-readable packet exists",
+      "result": "pass"
+    }
+  ],
+  "passed": 30,
+  "failed": 0,
+  "artifactSha256": {
+    "docs/content/competitors/app-eraser/collect-evidence.py": "83ffca3f6e52f6321d396b0bdb8f8ce723ae36c28e267e345f6ff387d6ff9cb9",
+    "docs/content/competitors/app-eraser/research.json": "ced5ec595ff97efa2052c359aee8776d393fbfbc317d460953680ad73530ce76",
+    "docs/content/competitors/app-eraser/research.md": "12a33e256ce065b9a78906d7b141fdb4760ef19e2421d572187283d2de4cb191",
+    "docs/content/competitors/app-eraser/sources/controller.json": "ab0630c23f1854375af688bedc73bd37ad8f83ba0b5130449bc91c1dca569d95",
+    "docs/content/competitors/app-eraser/sources/locations.json": "04d9252efd17f30c1a8d5215f702c4edb1d68c5a88e2c91fa6ad5ba7d253dd62",
+    "docs/content/competitors/app-eraser/sources/view.json": "16ce73a00b96afdcd33ec11878c906aeb1e92f2342ee9d29206459abc702fa96",
+    "docs/content/competitors/app-eraser/validate-packet.py": "998b42d9be79fd5f8af3b382dc262c15ea62937077cfeae4cc42dabcf21a9c1b"
+  },
+  "limitations": "Structural/provenance checks only. Does not clear licensing, substitute for image inspection, establish runtime behavior or approve publication. No site changes/build/tests or browser QA."
+}

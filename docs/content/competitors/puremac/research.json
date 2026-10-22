@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-puremac",
+  "status": "research-complete",
+  "publicationStatus": "not-approved",
+  "assembledAtUtc": "2026-10-21T22:01:32.555239+00:00",
+  "identity": {
+    "id": "puremac",
+    "officialName": "PureMac",
+    "canonicalOwnerId": "puremac",
+    "officialHomepage": "https://www.moamenbasel.com/PureMac/",
+    "officialRepository": "https://github.com/momenbasel/PureMac",
+    "maintainer": "momenbasel / Moamen Basel",
+    "aliases": [
+      "PureMac Cleaner"
+    ],
+    "aliasSkipDecision": {
+      "skip": false,
+      "reason": "Verified independent repository identity; homepage alternateName belongs to same PureMac owner. PowerMyMac baseline resolves to TechyCub, not this project; no basis to merge or create a separate PureMac Cleaner article."
+    },
+    "classification": "direct-overlapping-mac-maintenance",
+    "fit": "Mac storage review and cleanup overlap directly; capabilities and approval models differ. Not Windows/Linux software."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/puremac/about/",
+    "retrievedAt": "2026-10-21T19:05:28.229Z",
+    "excerpt": "Official Website\ngithub.com/momenbasel/PureMac#install",
+    "rawCapture": "docs/content/.runtime/verification-2/puremac-directory.json",
+    "sha256": "135f2c14969fa26de8a996ddb202315c0339a4aeda48a212b71ce6851c4a8fe3",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/",
+        "retrievedAt": "2026-10-21T18:36:14.532Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/",
+        "retrievedAt": "2026-10-21T18:37:03.597Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "pagination": "Retained manifest edge URLs identify seed pages; no more-specific pagination is asserted.",
+    "reuse": "Existing baseline hashes checked, not refetched."
+  },
+  "sources": [
+    {
+      "id": "baseline",
+      "publisher": "PureMac / momenbasel on GitHub",
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "finalUrl": "https://github.com/momenbasel/PureMac#install",
+      "retrievedAt": "2026-10-21T19:09:34.973555+00:00",
+      "rawCapture": "docs/content/.runtime/verification-2/puremac-official.json",
+      "sha256": "0d1866283b3e1e57720bb2daa96c3b38383c51c23ce2deaaf55a290b1b7f1043",
+      "error": null
+    },
+    {
+      "id": "discovery",
+      "publisher": "AlternativeTo",
+      "sourceUrl": "https://alternativeto.net/software/puremac/about/",
+      "retrievedAt": "2026-10-21T19:05:28.229Z",
+      "excerpt": "Official Website\ngithub.com/momenbasel/PureMac#install",
+      "rawCapture": "docs/content/.runtime/verification-2/puremac-directory.json",
+      "sha256": "135f2c14969fa26de8a996ddb202315c0339a4aeda48a212b71ce6851c4a8fe3",
+      "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16"
+    },
+    {
+      "id": "latest-release",
+      "publisher": "PureMac project",
+      "url": "https://api.github.com/repos/momenbasel/PureMac/releases/latest",
+      "finalUrl": "https://api.github.com/repos/momenbasel/PureMac/releases/latest",
+      "retrievedAtUtc": "2026-10-21T21:59:16.418808+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/latest-release.txt",
+      "sha256": "7e5b339d765bb17d30c0551452def25781e715ed680be29ba8c034eb1943059c"
+    },
+    {
+      "id": "license",
+      "publisher": "PureMac project",
+      "url": "https://raw.githubusercontent.com/momenbasel/PureMac/main/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/main/LICENSE",
+      "retrievedAtUtc": "2026-10-21T21:59:17.191651+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/license.txt",
+      "sha256": "88258dee1e1b9ced27bfbe7c40b3374ac1900adc82c427f71459a3d1e0976e2f"
+    },
+    {
+      "id": "project",
+      "publisher": "PureMac project",
+      "url": "https://raw.githubusercontent.com/momenbasel/PureMac/main/project.yml",
+      "finalUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/main/project.yml",
+      "retrievedAtUtc": "2026-10-21T21:59:18.368637+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/project.txt",
+      "sha256": "548cf6b95aaf41063f74a61af45c18dbba24ccdc482df8e8eafbe1e68ca5c488"
+    },
+    {
+      "id": "homepage",
+      "publisher": "PureMac project",
+      "url": "https://www.moamenbasel.com/PureMac/",
+      "finalUrl": "https://www.moamenbasel.com/PureMac/",
+      "retrievedAtUtc": "2026-10-21T21:59:19.954509+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/homepage.txt",
+      "sha256": "ea33814a599903bfb678ee60f53032817ba5ca20af438dbdabab817e516615cf"
+    },
+    {
+      "id": "screenshots-tree",
+      "publisher": "PureMac project",
+      "url": "https://api.github.com/repos/momenbasel/PureMac/contents/screenshots",
+      "finalUrl": "https://api.github.com/repos/momenbasel/PureMac/contents/screenshots",
+      "retrievedAtUtc": "2026-10-21T21:59:20.755862+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/screenshots-tree.txt",
+      "sha256": "197bfa410bfa1137381985f7e91641fcb9d56b15ebd1a8b14618ee546ce01cd9"
+    },
+    {
+      "id": "commit",
+      "publisher": "PureMac project",
+      "url": "https://api.github.com/repos/momenbasel/PureMac/commits/main",
+      "finalUrl": "https://api.github.com/repos/momenbasel/PureMac/commits/main",
+      "retrievedAtUtc": "2026-10-21T21:59:21.733198+00:00",
+      "httpStatus": 200,
+      "path": "docs/content/competitors/puremac/sources/commit.txt",
+      "sha256": "b3b6ce42807b480279f7ec19ba4fe7f17ad53ef18dd8d15c94bb462f5e422c9f"
+    },
+    {
+      "id": "cleaning-engine",
+      "publisher": "PureMac project",
+      "url": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/PureMac/Services/CleaningEngine.swift",
+      "finalUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/PureMac/Services/CleaningEngine.swift",
+      "retrievedAtUtc": "2026-10-21T21:59:33.717967+00:00",
+      "path": "docs/content/competitors/puremac/sources/cleaning-engine.txt",
+      "sha256": "c8f726e85fd06a8d007a371df782f36b3a7ba61bef6d604544aa04f9293002f2",
+      "bytes": 43394
+    },
+    {
+      "id": "image-license",
+      "publisher": "PureMac project",
+      "url": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/LICENSE",
+      "retrievedAtUtc": "2026-10-21T21:59:34.467845+00:00",
+      "path": "docs/content/competitors/puremac/sources/image-license.txt",
+      "sha256": "88258dee1e1b9ced27bfbe7c40b3374ac1900adc82c427f71459a3d1e0976e2f",
+      "bytes": 1077
+    },
+    {
+      "id": "space-explorer",
+      "publisher": "PureMac project",
+      "url": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/screenshots/space-explorer.png",
+      "finalUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/screenshots/space-explorer.png",
+      "retrievedAtUtc": "2026-10-21T21:59:35.561388+00:00",
+      "path": "docs/content/competitors/puremac/assets/space-explorer-original.png",
+      "sha256": "739c0d02239cd73e69d67db79fb6f9a95da52aa0ce402a4ddb59889afe4c4ec1",
+      "bytes": 304135
+    },
+    {
+      "id": "br-register",
+      "publisher": "Breathing Room",
+      "path": "docs/content/capabilities.md",
+      "checkedOn": "2026-10-21",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reused source/published verification; not native runtime certification."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "PureMac is the Mac-care project maintained at momenbasel/PureMac.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Free, open-source Mac care: cleanup, app management, storage exploration, and system checks. No subscription or telemetry.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "free",
+      "wording": "PureMac is advertised as free, with no subscription, trial or account.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "No subscription, no trial, no account.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Advertised core offer; no checkout, install or account testing. No currency conversion needed for a free offer.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "license",
+      "wording": "The repository uses the MIT licence; preserve its copyright and permission notice on redistribution.",
+      "state": "verified",
+      "sourceIds": [
+        "license"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/main/LICENSE",
+      "excerpt": "The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.",
+      "checkedAt": "2026-10-21T21:59:17.191651+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "platform",
+      "wording": "Source configuration targets macOS 13.0, arm64 and x86_64; current source version 3.1.0, build 30.",
+      "state": "verified",
+      "sourceIds": [
+        "project"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/main/project.yml",
+      "excerpt": "MARKETING_VERSION: \"3.1.0\"",
+      "checkedAt": "2026-10-21T21:59:18.368637+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Also MACOSX_DEPLOYMENT_TARGET 13.0, ARCHS arm64 x86_64 and CURRENT_PROJECT_VERSION 30 in the retained configuration. Not Windows/Linux support or runtime certification.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "release",
+      "wording": "Latest stable GitHub API result is v3.1.0, published 2026-10-08; release offers DMG and ZIP.",
+      "state": "verified",
+      "sourceIds": [
+        "latest-release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/momenbasel/PureMac/releases/latest",
+      "excerpt": "PureMac 3.1.0",
+      "checkedAt": "2026-10-21T21:59:16.418808+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "API tag_name, published_at and assets fields retained. Installers were not downloaded or tested.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "signing",
+      "wording": "The v3.1.0 release describes a universal binary signed with Developer ID, notarized and stapled by Apple.",
+      "state": "verified",
+      "sourceIds": [
+        "latest-release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/momenbasel/PureMac/releases/latest",
+      "excerpt": "Universal binary (Intel + Apple Silicon). Signed with Developer ID + notarized + stapled by Apple.",
+      "checkedAt": "2026-10-21T21:59:16.418808+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Vendor release disclosure, not our binary-signature inspection. Source project Apple Development identity is a build setting, not contradiction of distribution signing.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "install",
+      "wording": "Repository offers Homebrew and a release DMG for installation in /Applications.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "brew install --cask puremac",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Release notes use the qualified momenbasel/tap/puremac cask. Do not promise either command was executed or Gatekeeper always permits launch.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "removal",
+      "wording": "Deletion method depends on workflow: user-level app, orphan and exact-duplicate removal use Trash; category, scheduled, admin and other documented cleanup can permanently delete.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "App uninstalls, orphan removal, and exact-duplicate removal use the Trash at user level.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Read the following permanent-delete list in Our promise. Never generalize Trash recovery or per-run approval to all modes.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "permanent-source",
+      "wording": "The inspected CleaningEngine has a removeItem path outside its special managed-DerivedData Trash branch.",
+      "state": "verified",
+      "sourceIds": [
+        "cleaning-engine"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/PureMac/Services/CleaningEngine.swift",
+      "excerpt": "try fileManager.removeItem(at: itemURL)",
+      "checkedAt": "2026-10-21T21:59:33.717967+00:00",
+      "evidenceClass": "source-inspected",
+      "scope": "Pinned commit, lines 165\u2013209. Source inspection only; no deletion executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "approvals",
+      "wording": "Manual destructive workflows require confirmation; scheduled auto-clean is unattended after enablement.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Scheduled auto-clean remains unattended after enablement.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "space",
+      "wording": "Space Explorer measures allocated space in a selected folder, supports drill-down and Finder reveal, and reports skipped/inaccessible items.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "measures the allocated space inside a folder you choose.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "developer",
+      "wording": "Documented cleanup includes Xcode, Homebrew, npm, Yarn classic, pnpm and Docker categories.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Node Cache\n- npm, yarn classic, pnpm content-addressable store",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Categories have different removal consequences; do not imply every artifact is disposable. Xcode runtimes and MCP DerivedData are opt-in, with documented exceptions.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "helpers",
+      "wording": "Performance documents live app/process CPU and memory with helper grouping.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "with live app/process usage, app icons, sorting, search and helper grouping.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Do not claim Breathing Room uniquely groups helpers. Resident memory can double-count shared pages; CPU uses total machine capacity.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "offline",
+      "wording": "Local scans/cleanup are documented to work offline; Homebrew update checking/installing requires a network connection.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Local scans and cleanup work offline. Checking for or installing Homebrew app updates requires a network connection.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "No-telemetry is a vendor statement, not an independently audited network finding. Release checks also contact GitHub.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "permissions",
+      "wording": "Without Full Disk Access, some categories and app-container scans are incomplete.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Without it, some cleanup categories and app-container scans will be incomplete.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "visual",
+      "wording": "Repository says screenshots show the running macOS app; file-tool images use sample files/images.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "Screenshots show the running macOS app. File tools use sample files and images.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Actual screenshot capture time, OS and exact app build are not supplied.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "protection",
+      "wording": "Protection is documented as a configuration audit, not an antivirus or malware scanner.",
+      "state": "verified",
+      "sourceIds": [
+        "baseline"
+      ],
+      "sourceUrl": "https://github.com/momenbasel/PureMac#install",
+      "excerpt": "This is a configuration audit, not an antivirus or malware scanner.",
+      "checkedAt": "2026-10-21T19:09:34.973555+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Current repository documentation; not independently executed.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "homepage-alias",
+      "wording": "Official homepage structured data gives PureMac Cleaner as an alternate name.",
+      "state": "verified",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://www.moamenbasel.com/PureMac/",
+      "excerpt": "\"alternateName\": \"PureMac Cleaner\"",
+      "checkedAt": "2026-10-21T21:59:19.954509+00:00",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Alias within this project, not evidence connecting it to PowerMyMac.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a free Apache-2.0 macOS maintenance preview; current identified release 0.1.0-preview.1, macOS 13+, Python 3.10+ prerequisite.",
+      "state": "verified",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance **preview**",
+      "checkedAt": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Reuse capabilities.md dated October 21; sections Current identified version, Python, License. Not native binary parity certification.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "br-caveats",
+      "wording": "Breathing Room preview is Apple Development signed, not Developer ID signed or notarized; clean-machine and physical Intel validation are incomplete.",
+      "state": "verified",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Apple Development signed, not Developer ID signed or notarized",
+      "checkedAt": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "scope": "Release disclosure retained in capabilities.md; no installation recommendation without these limitations.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "br-pricing",
+      "wording": "Breathing Room local core is advertised free; optional AI Care is $5 USD/month or $50 USD/year, renewing until cancelled with applicable tax at checkout.",
+      "state": "verified",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "$5 USD/month",
+      "checkedAt": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "scope": "capabilities.md Pricing/access rows; paid entitlement enforcement and exact allowances remain unverified.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Breathing Room hosted assistance requires authentication/internet and can send relevant paths, process and storage context to the service.",
+      "state": "verified",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Hosted AI assistance requires internet access and authentication",
+      "checkedAt": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "scope": "capabilities.md Local versus hosted boundary; do not claim fully offline AI or all data stays on device.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    },
+    {
+      "id": "br-workflow",
+      "wording": "Breathing Room source supports storage views, grouped processes, local activity history and daily care tied to saved exact approvals while the app runs.",
+      "state": "verified",
+      "sourceIds": [
+        "br-register"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Saved approvals bind account, API origin, action method/path and native rule",
+      "checkedAt": "2026-10-21",
+      "evidenceClass": "documented-not-tested",
+      "scope": "capabilities.md matrix and approval exceptions: optional verified Ruff-cache automatic Trash mode must be disclosed; not blanket per-item prompting.",
+      "location": "workflow article / comparison matrix",
+      "reviewer": "research-puremac worker"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "puremac-space-explorer",
+      "productId": "puremac",
+      "view": "Space Explorer",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/momenbasel/PureMac/blob/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/screenshots/space-explorer.png",
+      "assetUrl": "https://raw.githubusercontent.com/momenbasel/PureMac/1fbebb9840f2919a7d7fb71210c6ed37fe39f193/screenshots/space-explorer.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T21:59:35.561388+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": "1fbebb9840f2919a7d7fb71210c6ed37fe39f193",
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": "docs/content/competitors/puremac/assets/space-explorer-original.png",
+      "originalSha256": "739c0d02239cd73e69d67db79fb6f9a95da52aa0ce402a4ddb59889afe4c4ec1",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2240,
+      "heightPx": 1480,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "redactions": [],
+        "notes": "Visible /tmp/PureMac Samples/Projects and sample .bin filenames; no personal account visible."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Repository MIT covers software and associated documentation; this screenshot is a tracked documentation asset. Preserve complete copyright/permission notice. No trademark endorsement implied.",
+        "evidenceUrlOrPath": "sources/image-license.txt",
+        "credit": "PureMac Contributors, MIT License; official repository screenshot."
+      },
+      "caption": "PureMac Space Explorer, official running-app screenshot using sample files. Allocated-space figures are vendor sample data, not our measurements. Source: PureMac Contributors (MIT).",
+      "alt": "PureMac Space Explorer showing two sample design-asset files, allocated folder size and skipped/inaccessible counters.",
+      "supportedClaimIds": [
+        "space",
+        "visual"
+      ],
+      "limitations": [
+        "Vendor capture date, OS and exact screenshot version unknown; commit pins the asset, not the running app build.",
+        "Publication must include retained MIT notice and independent target-page review."
+      ],
+      "review": {
+        "status": "research-visual-inspection-complete",
+        "reviewer": "research-puremac worker",
+        "notes": "Actual PNG opened with image-capable read tool; not inferred from dimensions."
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room; first-party browser preview."
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "br-workflow"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Retain visible Interactive preview / example data banner; full-height figure needs contextual responsive treatment."
+      ],
+      "review": {
+        "status": "research-visual-inspection-complete",
+        "reviewer": "research-puremac worker",
+        "notes": "Actual image opened and read again in this job. Independent rendered-page review still pending."
+      }
+    }
+  ],
+  "productMatrix": {
+    "macOS": [
+      "platform",
+      "release"
+    ],
+    "license": [
+      "license"
+    ],
+    "pricing": [
+      "free"
+    ],
+    "localHosted": [
+      "offline"
+    ],
+    "scanModel": [
+      "space",
+      "developer"
+    ],
+    "approvalControls": [
+      "removal",
+      "approvals",
+      "permanent-source"
+    ],
+    "helperGrouping": [
+      "helpers"
+    ],
+    "recurringGrowth": "not verified; scheduled cleanup does not establish growth attribution/history",
+    "developerCaches": [
+      "developer"
+    ],
+    "runtimeInstall": [
+      "install",
+      "signing",
+      "permissions"
+    ]
+  },
+  "conflicts": [
+    {
+      "topic": "Homepage blanket Trash-only / no network claims",
+      "sources": [
+        "homepage",
+        "baseline",
+        "cleaning-engine"
+      ],
+      "resolution": "Reject blanket homepage wording. Retained repository describes workflow-specific permanent deletion and networked Homebrew/GitHub checks; pinned CleaningEngine confirms removeItem. Use only scoped repository claims. No generic safety, complete recoverability or never-network claim is draftable.",
+      "status": "resolved-for-bounded-comparison"
+    }
+  ],
+  "unknowns": [
+    "Independent binary signing/notarization and install/runtime results",
+    "Feature parity of all main-branch documentation with v3.1.0 binary",
+    "Screenshot capture date, exact app build and OS",
+    "PureMac recurring-growth history/attribution, hosted AI behavior and other unlisted features: not verified, never No",
+    "Breathing Room exact hosted AI allowance/paid gating and release feature parity"
+  ],
+  "briefs": {
+    "workflow": {
+      "title": "Inspect allocated folder space before choosing a Mac cleanup method",
+      "slug": "inspect-folder-space-before-mac-cleanup",
+      "intent": "Use PureMac Space Explorer to separate a folder-size inspection from a later destructive workflow; understand sample size versus recoverable space.",
+      "track": "search-reference",
+      "outline": [
+        "Inspect the selected folder and access limits",
+        "Allocated bytes are not promised free-space gains",
+        "Choose the specific removal workflow, not a blanket Trash assumption",
+        "Decide whether manual inspection or recurring investigation fits"
+      ],
+      "interaction": "A non-mutating decision checklist: inspect only / app or duplicate removal / category cleanup / scheduled cleanup. Show method, confirmation and permanent-deletion caveats; no fake scanner or predicted savings."
+    },
+    "comparison": {
+      "title": "Breathing Room vs PureMac: reviewable care or a free native toolkit",
+      "slug": "puremac",
+      "intent": "Concise product choice, not a second expanded workflow essay.",
+      "rows": [
+        "macOS/release and runtime",
+        "local inspection versus hosted assistance",
+        "cleanup method and approval boundaries",
+        "storage and grouped processes",
+        "scheduled cleanup versus saved exact approvals",
+        "price and installation limitations"
+      ],
+      "disclosure": "Breathing Room, which we build.",
+      "links": [
+        "/comparisons/",
+        "/blog/inspect-folder-space-before-mac-cleanup/",
+        "/tools/"
+      ]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "puremac": [
+      "Free MIT native toolkit with documented uninstaller, duplicate review and configuration audit; do not claim Breathing Room implements equivalent tools.",
+      "Vendor-disclosed signed/notarized stable release, unlike Breathing Room preview disclosures; not our binary audit.",
+      "Local scans documented offline; category/scheduled cleanup may permanently delete and unattended scheduling needs deliberate selection."
+    ],
+    "breathingRoom": [
+      "Source-evidenced activity history and hosted investigation may suit recurring questions; PureMac absence not established.",
+      "Saved exact approvals constrain daily care; optional interactive Ruff automatic Trash exception must remain explicit.",
+      "Preview, Python prerequisite, incomplete native QA and non-notarized distribution are material costs; hosted AI requires authentication/internet and optional paid AI Care."
+    ]
+  },
+  "gates": {
+    "drafting": "ready-for-bounded-documentary-draft",
+    "criticalResearchBlockers": [],
+    "independentReview": "pending",
+    "nativeTesting": "not-performed",
+    "websiteChanged": false,
+    "publication": "blocked-until-draft-site-and-independent-review",
+    "restrictions": [
+      "Do not recommend guaranteed safety/recovery/speed/savings.",
+      "Keep all eventual content draft/unpublished.",
+      "Do not copy vendor comparison-table claims about other products."
+    ]
+  }
+}

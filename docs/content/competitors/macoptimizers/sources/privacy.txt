@@ -1,0 +1,91 @@
+Politique de confidentialité | MacOptimizers
+MacOptimizers
+Maintenance & Dépannage macOS
+Fonctions
+Gratuit
+Diagnostics
+Captures
+FAQ
+Premium
+Suivi bugs
+Ressources
+Guides
+Blog
+Documentation
+Contact
+Mentions légales
+Données personnelles
+Politique de confidentialité
+Cette politique décrit les traitements de données liés au site MacOptimizers, aux commandes Premium, à l'activation des licences, au support et aux mesures d'audience soumises au consentement. Elle vise à informer clairement l'utilisateur et à renforcer la confiance dans un contexte où la transparence sur les logiciels système et de sécurité est essentielle.
+Responsable du traitement
+Le responsable du traitement est Informatique Connect, entreprise individuelle représentée par M. Anthony GERAUD, SIRET 83760672200028, 252 Chemin du rocher, 19130 Objat, France.
+Contact:
+contact@informatiqueconnect.fr
+·
+05 19 79 87 29
+.
+Catégories de données traitées
+Données d'identification et de contact: nom, prénom, adresse email, éventuellement téléphone si vous l'indiquez volontairement.
+Données de commande: produit acheté, montant, devise, prestataire de paiement, identifiants de transaction, statut de commande.
+Données de licence et d'activation: clé de licence, empreinte machine, version de l'application, plateforme, horodatages d'activation et de vérification, empreinte IP de sécurité.
+Données techniques de navigation et de sécurité: logs serveur, adresse IP, user-agent, pages visitées, erreurs techniques, événements de sécurité.
+Données de support: contenu des emails, demandes de support, captures ou pièces jointes transmises volontairement via les formulaires.
+Données de mesure d'audience et d'analyse lorsque vous y consentez expressément.
+Aucune vente de données personnelles n'est effectuée.
+Origine des données
+Les données sont collectées directement auprès de vous lorsque vous remplissez un formulaire, achetez une licence, activez le logiciel, demandez un renvoi de licence, sollicitez une réinitialisation d'activation, envoyez un rapport de bug ou contactez le support. Certaines données techniques sont également générées automatiquement par l'utilisation du site et des services d'activation.
+Finalités et bases légales
+Gérer le site, la sécurité, l'hébergement, la prévention de la fraude et la journalisation technique (intérêt légitime).
+Traiter les commandes Premium, délivrer la licence, permettre l'activation et assurer le suivi contractuel (exécution du contrat).
+Répondre aux demandes de support, réclamations et demandes précontractuelles (exécution du contrat ou mesures précontractuelles).
+Respecter les obligations comptables, fiscales, de preuve et de lutte contre la fraude (obligation légale).
+Déclencher les mesures d'audience ou événements analytiques uniquement lorsque le consentement requis a été donné (consentement).
+Destinataires
+Informatique Connect, dans la limite des personnes habilitées à gérer le site, les licences, le support et l'administration.
+Prestataires techniques intervenant pour l'hébergement, l'envoi d'emails, la sécurité ou la maintenance, strictement pour les besoins du service.
+Prestataires de paiement Stripe et PayPal, agissant selon leurs propres politiques de confidentialité pour la gestion de la transaction.
+Autorités administratives, judiciaires ou organismes habilités lorsque la loi l'impose.
+Durées de conservation
+Données de commande, facturation et preuve: pendant la durée nécessaire à l'exécution du contrat puis pendant les durées légales de conservation comptable, fiscale ou probatoire applicables.
+Données de licence et d'activation: pendant la durée de validité de la licence, puis pendant une durée raisonnable de preuve, de sécurité et de gestion des litiges.
+Logs techniques et sécurité: pendant la durée strictement nécessaire à la sécurité, au diagnostic et à la maintenance.
+Demandes de contact et support: pendant la durée nécessaire au traitement de la demande, puis archivage limité lorsque cela est justifié.
+Mesure d'audience soumise au consentement: conformément à la durée de vie du consentement et aux paramètres techniques du service utilisé.
+Cookies, traceurs et mesure d'audience
+Le site utilise des mécanismes techniques nécessaires à son fonctionnement et peut utiliser des outils de mesure d'audience ou d'analyse uniquement lorsque le consentement requis a été donné. Les traceurs non essentiels ne doivent pas être déposés sur votre terminal avant ce consentement.
+Les événements analytiques ne sont pas destinés à la vente de profils publicitaires et ne remplacent pas les obligations d'information propres aux prestataires tiers si ceux-ci sont activés.
+Application MacOptimizers
+MacOptimizers est conçu pour traiter l'essentiel des opérations localement sur le Mac de l'utilisateur. Toutefois, certaines interactions réseau peuvent intervenir pour l'activation de licence, la vérification de statut, l'envoi volontaire de rapports ou la récupération de services associés. Ces échanges sont limités aux besoins techniques, contractuels ou de support et ne servent pas à une exploitation publicitaire des fichiers locaux de l'utilisateur.
+Transferts hors Union européenne
+Le site est exploité prioritairement depuis la France. Certains prestataires techniques ou de paiement peuvent toutefois être amenés à traiter certaines données en dehors de l'Espace économique européen selon leurs propres infrastructures et garanties contractuelles. Dans ce cas, ces transferts doivent reposer sur un mécanisme juridique approprié au sens de la réglementation applicable.
+Sécurité
+Le responsable du traitement met en oeuvre des mesures techniques et organisationnelles raisonnables pour limiter l'accès non autorisé, la perte, l'altération ou la divulgation des données. Aucune mesure n'offrant une sécurité absolue, l'utilisateur est invité à adopter également de bonnes pratiques élémentaires: email exact, mot de passe robuste pour ses services externes et vigilance face au phishing.
+Vos droits (RGPD)
+Vous disposez, selon les conditions prévues par la réglementation, d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition, ainsi que, lorsque cela s'applique, d'un droit à la portabilité de vos données. Vous pouvez également retirer votre consentement à tout moment pour les traitements fondés sur celui-ci.
+Pour exercer vos droits:
+contact@informatiqueconnect.fr
+. Afin de protéger les comptes et licences, une preuve raisonnable d'identité peut être demandée en cas de doute légitime.
+Vous pouvez également introduire une réclamation auprès de la CNIL.
+Mise à jour
+Version politique de confidentialité: 2026-03-19.
+Informatique Connect
+— Représentée par M. GERAUD Anthony
+Téléphone:
+05 19 79 87 29
+· Email:
+contact@informatiqueconnect.fr
+N°SIRET: 83760672200028 · TVA non applicable (art. 293 B CGI) · Tous droits réservés
+© 2026 MacOptimizers
+Compatible macOS Ventura, Sonoma, Sequoia, Tahoe
+Apple Silicon & Intel
+Télécharger MacOptimizers
+Mentions légales
+Politique de confidentialité
+Conditions générales de vente
+Conditions d'utilisation (CGU)
+Accord de licence utilisateur (EULA)
+Guides et comparatifs
+Guide gratuit de nettoyage macOS
+Site officiel :
+macoptimizers.informatiqueconnect.fr
+Informatique Connect — Tous droits réservés

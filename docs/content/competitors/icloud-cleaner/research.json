@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-icloud-cleaner",
+  "productId": "icloud-cleaner",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "published": false,
+  "identity": {
+    "listingName": "iCloud Cleaner",
+    "officialName": null,
+    "homepageCandidate": "https://icloudcleaner.com/",
+    "verifiedOperationalHomepage": null,
+    "publisher": null,
+    "repository": null,
+    "canonicalOwnerId": "icloud-cleaner",
+    "canonicalOwnerBasis": "Existing manifest owner retained provisionally; not a verified vendor identity.",
+    "aliases": [],
+    "aliasDecision": "No verified alias. No evidence connecting this listing to PowerMyMac; do not merge or invent a separate renamed product.",
+    "aliasSkipDecision": "not-established; skip drafting for missing official evidence, not a verified alias",
+    "classification": "not-verified",
+    "provisionalFit": "Adjacent iCloud-quota workflow based solely on listing, with potential overlap in storage investigation. Not established as a direct substitute for Mac maintenance.",
+    "platformIntent": "Listing targets Mac; no Windows/Linux support asserted.",
+    "availability": "Homepage inaccessible with 404; discontinuation not established."
+  },
+  "decision": {
+    "action": "skip-drafting-pending-evidence",
+    "reason": "Official identity, current availability, version/platform requirements, pricing conditions and app-UI reuse evidence are missing. A 404 alone does not prove a dead product.",
+    "draftingAllowed": false,
+    "publicationAllowed": false,
+    "countAsDistinctFinishedArticle": false,
+    "unblock": [
+      "Obtain an operational official source establishing product/publisher identity and availability, including any rename or alias relationship.",
+      "Verify exact current version, macOS/architecture requirements and purchase/license conditions from official sources.",
+      "Verify a real competitor app-UI visual and its capture provenance/reuse permission; listing images are link-only candidates, not cleared on-page assets.",
+      "Independently review the resulting packet and retain draft status through later article review."
+    ]
+  },
+  "reuse": {
+    "baseline": "docs/content/verification/batch-1.json",
+    "baselineRecordId": "icloud-cleaner",
+    "baselineStatus": "blocked",
+    "factsReused": 0,
+    "note": "Baseline has facts: []; reused discovery and failure evidence. Only missing material facts/visuals were investigated. Current Breathing Room capability and screenshot registers reused without refetching public pricing/release pages."
+  },
+  "discovery": {
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=3",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:11.107Z",
+    "method": "live-browser-rendered-listing, inherited from docs/content/competitors.json",
+    "listingUrl": "https://alternativeto.net/software/icloud-cleaner/about/",
+    "listingRetrievedAtUtc": "2026-10-21T19:07:27.455Z",
+    "observedDestination": "https://icloudcleaner.com/",
+    "snapshotPath": "docs/content/.runtime/verification-1/icloud-cleaner-directory.json",
+    "snapshotSha256": "e1d16bc37cc47288e9e6c3bb5912970696fe7b0734cae9a0be991c7bbcf098ab",
+    "scope": "Discovery only; directory assertions do not establish product capabilities."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "AlternativeTo",
+      "title": "iCloud Cleaner listing (reused baseline)",
+      "url": "https://alternativeto.net/software/icloud-cleaner/about/",
+      "retrievedAtUtc": "2026-10-21T19:07:27.455Z",
+      "publicationOrUpdateDate": "2026-04-06 (listing states last updated)",
+      "snapshotPath": "docs/content/.runtime/verification-1/icloud-cleaner-directory.json",
+      "sha256": "e1d16bc37cc47288e9e6c3bb5912970696fe7b0734cae9a0be991c7bbcf098ab",
+      "excerpts": [
+        "iCloud Cleaner is a native macOS app that helps you stop paying for iCloud storage.",
+        "It scans your iCloud Drive, Desktop, and Documents",
+        "Developed by\nUnknown",
+        "One time purchase (perpetual license) ranging between $4 and $5."
+      ],
+      "scope": "Third-party listing, not official price, compatibility, rights or runtime proof."
+    },
+    {
+      "id": "S2",
+      "publisher": "Official-link candidate (publisher unknown)",
+      "url": "https://icloudcleaner.com",
+      "retrievedAtUtc": "2026-10-21T19:07:55.572356+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/icloud-cleaner-official.json",
+      "sha256": "578ff38e5214b07a292d2faad69bcc275f30829fc5620cd50dde738e7e0e1925",
+      "excerpt": "HTTP Error 404: Not Found",
+      "scope": "Reused baseline access failure; no verified product facts."
+    },
+    {
+      "id": "S3",
+      "publisher": "Official-link candidate (publisher unknown)",
+      "url": "https://icloudcleaner.com/",
+      "finalUrl": "https://icloudcleaner.com/",
+      "retrievedAtUtc": "2026-10-21T20:42:21.631Z",
+      "snapshotPath": "docs/content/competitors/icloud-cleaner/sources/homepage-browser.json",
+      "sha256": "609de16037a129b1bbb055d72d2fb72f6fed56ba812907651faca37d71a103e1",
+      "excerpt": "404 page not found",
+      "scope": "Read-only owned browser tab 111; no links or images in rendered page. WebFetch independently returned HTTP 404. Not proof of discontinuation."
+    },
+    {
+      "id": "S4",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/icloud-cleaner/about/",
+      "finalUrl": "https://alternativeto.net/software/icloud-cleaner/about/",
+      "retrievedAtUtc": "2026-10-21T20:42:31.656Z",
+      "snapshotPath": "docs/content/competitors/icloud-cleaner/sources/listing-visual-check.json",
+      "sha256": "7de7a673d53d2599562160dfe47cc3c3571e851fe9fd8e679a24b3daca03c1e0",
+      "excerpt": "Official Website\nicloudcleaner.com",
+      "scope": "Read-only DOM image/link inspection to fill missing visual evidence. Includes homepage image and two other image candidates; no permission inferred."
+    },
+    {
+      "id": "BR1",
+      "publisher": "Breathing Room",
+      "url": "https://breathing-room.chatic.ai/",
+      "checkedOn": "2026-10-21",
+      "evidencePath": "docs/content/capabilities.md",
+      "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance preview",
+      "scope": "Reused same-day source/public-page verification register; not fresh runtime testing. See register for exact underlying URLs and source locations."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "wording": "AlternativeTo identifies https://icloudcleaner.com/ as the official website for its iCloud Cleaner listing.",
+      "location": "identity/discovery",
+      "sourceIds": ["S1", "S4"],
+      "excerpt": "Official Website\nicloudcleaner.com",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "directory-observation",
+      "state": "verified",
+      "scope": "Verifies listing destination, not operational vendor identity.",
+      "reviewer": "research-icloud-cleaner worker"
+    },
+    {
+      "id": "C2",
+      "wording": "The linked homepage returned 404 during baseline retrieval and this research check.",
+      "location": "availability diagnostic",
+      "sourceIds": ["S2", "S3"],
+      "excerpt": "404 page not found",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "access-observation",
+      "state": "verified",
+      "scope": "Two retrievals on one date; not proof the product is discontinued.",
+      "reviewer": "research-icloud-cleaner worker"
+    },
+    {
+      "id": "C3",
+      "wording": "The listing describes a Mac app scanning iCloud Drive, Desktop and Documents.",
+      "location": "provisional intent only; no publishable capability matrix",
+      "sourceIds": ["S1"],
+      "excerpt": "It scans your iCloud Drive, Desktop, and Documents",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "third-party-description",
+      "state": "not-verified",
+      "scope": "Official implementation, minimum OS and current availability unknown. Do not repeat listing safety, notarization, encryption or savings claims as verified facts.",
+      "reviewer": "research-icloud-cleaner worker"
+    },
+    {
+      "id": "C4",
+      "wording": "Listing price is not a verified current offer.",
+      "location": "pricing unknown",
+      "sourceIds": ["S1"],
+      "excerpt": "One time purchase (perpetual license) ranging between $4 and $5.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "third-party-description",
+      "state": "not-verified",
+      "scope": "Currency, exact amount, tax, device count, updates, licence terms and current purchasing availability not established.",
+      "reviewer": "research-icloud-cleaner worker"
+    },
+    {
+      "id": "BR-C1",
+      "wording": "Breathing Room is a macOS maintenance preview, not a verified iCloud subscription migration replacement.",
+      "location": "future comparison boundary",
+      "sourceIds": ["BR1"],
+      "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised. Physical Intel behavior remains explicitly untested.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-source-register",
+      "state": "verified",
+      "scope": "0.1.0-preview.1 identified release, not binary feature-parity certification. iCloud migration capability not established; unknown is not an absence claim.",
+      "reviewer": "research-icloud-cleaner worker"
+    }
+  ],
+  "productMatrix": {
+    "officialNamePublisherRepo": {"value": "not verified", "sourceIds": ["S1", "S3"]},
+    "version": {"value": "not verified", "sourceIds": ["S3"]},
+    "macOSAndArchitecture": {"value": "not verified; listing says Mac, no official minimum OS/architecture", "claimIds": ["C3"]},
+    "license": {"value": "not verified; listing says proprietary/commercial", "sourceIds": ["S1"]},
+    "pricing": {"value": "not verified", "claimIds": ["C4"]},
+    "localHostedAndPrivacy": {"value": "not verified", "sourceIds": ["S3"]},
+    "scanCleanupAndApproval": {"value": "not verified", "claimIds": ["C3"]},
+    "helperGrouping": {"value": "not verified", "sourceIds": ["S3"]},
+    "recurringGrowth": {"value": "not verified", "sourceIds": ["S3"]},
+    "developerCaches": {"value": "not verified; listing mentions node_modules and .git, neither establishes disposability", "sourceIds": ["S1"]},
+    "runtimeInstallSigning": {"value": "not verified; do not adopt listing notarization claim", "sourceIds": ["S1", "S3"]}
+  },
+  "visuals": {
+    "competitor": {
+      "status": "blocked",
+      "kind": "listing-asset-candidates-not-approved",
+      "sourcePageUrl": "https://alternativeto.net/software/icloud-cleaner/about/",
+      "retrievedAtUtc": "2026-10-21T20:42:31.656Z",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "assetCandidates": [
+        {"listingAlt": "Make room for your iCloud data", "assetUrl": "https://img.alternativeto.net/s/618x394/avif/icloud-cleaner_674297_full.png"},
+        {"listingAlt": "Stop paying Apple for iCloud storage", "assetUrl": "https://img.alternativeto.net/s/618x394/avif/icloud-cleaner_200594_full.png"}
+      ],
+      "excludedLandingImage": "https://img.alternativeto.net/s/618x394/avif/icloud-cleaner_714618_full.png (listing alt: homepage)",
+      "appUiVerified": false,
+      "reuse": {"status": "link-only", "basis": "No licence or permission established. Public listing access is not reuse permission.", "credit": "iCloud Cleaner / AlternativeTo; ownership unverified"},
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "caption": "Not approved for on-page use; inspect linked visual and establish rights before drafting.",
+      "alt": null,
+      "limitations": ["Only public DOM asset URLs recorded; images not downloaded, visually approved or treated as real app UI evidence.", "Logo and homepage image do not satisfy competitor app screenshot gate."],
+      "review": {"status": "pending"}
+    },
+    "breathingRoom": {
+      "id": "current-space-browser-preview",
+      "kind": "browser-preview",
+      "sourceManifest": "docs/content/screenshots.json",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "dataMode": "example",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "reuse": {"status": "pending", "basis": "Manifest: app-owner-requested first-party UI capture; third-party marks remain their owners' marks. Publication-context review pending."},
+      "requiredLabels": ["Example data", "Browser preview", "Not native scan or measured cleanup results"],
+      "edits": [],
+      "publishedPath": null,
+      "publishedSha256": null,
+      "limitations": ["Existing asset selected and SHA-256 checked, not recaptured in this job.", "Current-source capture is not distributed-release/native behavior proof.", "Retain example-data banner; target-context visual and privacy approval remain pending."]
+    }
+  },
+  "briefs": {
+    "status": "conditional-research-only-not-draft-instructions",
+    "workflowArticle": {
+      "title": "iCloud quota or Mac disk space? Identify the constraint before cleaning",
+      "slug": "icloud-quota-versus-mac-disk-space-before-cleaning",
+      "intent": "Help Mac owners distinguish a cloud-storage quota problem from local storage pressure before considering an iCloud Cleaner replacement.",
+      "track": "search-reference",
+      "distinctFromComparison": "Problem diagnosis and decision workflow, not a repeated product matrix.",
+      "outline": ["Identify which storage limit is involved", "Confirm sync/download state and independent backups before considering changes", "Treat .git history, project dependencies and photos as different data classes", "Evaluate documented tool scope without promising iCloud-plan savings"],
+      "evidenceNeeded": ["Official Apple iCloud Drive/Photos storage and sync-deletion guidance before any procedural advice", "Operational official iCloud Cleaner docs and screenshots"],
+      "interactionHandoff": "A non-mutating checklist: which quota is full, where originals live, whether a backup exists. No disk access, upload, account login or delete buttons.",
+      "visualPlan": "Required cleared competitor UI directly after lead; labeled Breathing Room Space example later. Neither asset gate is waived."
+    },
+    "comparison": {
+      "title": "Breathing Room vs iCloud Cleaner: verify the storage job first",
+      "slug": "icloud-cleaner",
+      "intent": "Concise adjacent-fit comparison only after identity/availability evidence exists.",
+      "rows": ["Cloud quota versus Mac disk investigation", "Current version/platform", "Review/approval model", "Local/hosted data boundary", "Current pricing conditions", "Installation/preview caveats"],
+      "links": ["/comparisons/", "/blog/icloud-quota-versus-mac-disk-space-before-cleaning/"],
+      "linkPolicy": "Proposed routes only; do not create or imply these pages are live."
+    },
+    "advantagesAndTradeoffs": [
+      "If official sources later confirm the listing's iCloud-focused workflow, that specificity may fit cloud-quota investigation better; not verified now and no purchase recommendation is justified.",
+      "Breathing Room, which we build, has documented Mac storage and grouped-process investigation in its preview; this does not establish iCloud-plan migration equivalence.",
+      "Breathing Room register caveats: identified release 0.1.0-preview.1, macOS 13+, universal installer advertised but physical Intel untested; Apple Development signed, not Developer ID signed/notarized; Python 3.10+ prerequisite.",
+      "Free local desktop capabilities are separate from optional AI Care advertised at $5 USD/month or $50 USD/year, renewing with applicable tax. Hosted AI needs authentication/internet and can receive paths/process/storage data; not entirely offline.",
+      "Daily care needs app running and exact saved approvals; optional automatic verified Ruff-cache mode prevents an unconditional never-deletes-without-asking claim. No native execution or savings comparison tested here."
+    ]
+  },
+  "researchLimits": {
+    "searches": [
+      {"query": "\"icloudcleaner.com\" \"iCloud Cleaner\"", "result": "AlternativeTo and automatool.app leads only; not primary evidence."},
+      {"query": "\"iCloud Cleaner\" \"github\" \"icloudcleaner\"", "result": "No search results; this does not prove no repository exists."}
+    ],
+    "otherAttempt": "WebFetch https://automatool.app/tools/icloud_cleaner returned no usable content; no claims derived.",
+    "handsOnTesting": false,
+    "competitorImagesDownloaded": false,
+    "browser": "Only new owned tab 111 inspected; closed after checks. Existing tabs untouched; no recovery needed.",
+    "siteEdited": false,
+    "queueEdited": false,
+    "independentReview": "pending"
+  }
+}

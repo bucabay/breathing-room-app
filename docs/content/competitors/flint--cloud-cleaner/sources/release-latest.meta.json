@@ -1,0 +1,9 @@
+{
+  "id": "release-latest",
+  "url": "https://api.github.com/repos/oleksiimazurenko/flint-releases/releases/latest",
+  "finalUrl": "https://api.github.com/repos/oleksiimazurenko/flint-releases/releases/latest",
+  "retrievedAtUtc": "2026-10-21T20:38:40.651035+00:00",
+  "httpStatus": 200,
+  "path": "docs/content/competitors/flint--cloud-cleaner/sources/release-latest.json",
+  "sha256": "ea2586229d54ac0f8f1a608d161ead8161a54e04f6bdeb7689f7eb3973a1c940"
+}

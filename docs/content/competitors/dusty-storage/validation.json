@@ -1,0 +1,86 @@
+{
+  "checkedAtUtc": "2026-10-21T20:38:13.023470+00:00",
+  "command": "python3 docs/content/competitors/dusty-storage/validate.py",
+  "status": "passed-structural-checks-draft-gate-still-blocked",
+  "checks": [
+    {
+      "check": "JSON parses and remains blocked, research-only, unpublished",
+      "outcome": "pass"
+    },
+    {
+      "check": "Unique source and claim IDs",
+      "outcome": "pass"
+    },
+    {
+      "check": "Every claim resolves to cited source IDs and a defined evidence state",
+      "outcome": "pass"
+    },
+    {
+      "check": "Every brief claim resolves",
+      "outcome": "pass"
+    },
+    {
+      "check": "Every source retains URL and supporting excerpts",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained snapshot SHA-256: docs/content/.runtime/verification-1/dusty-storage-official.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Retained snapshot SHA-256: docs/content/.runtime/verification-1/dusty-storage-directory.json",
+      "outcome": "pass"
+    },
+    {
+      "check": "Homepage excerpts match retained original text",
+      "outcome": "pass"
+    },
+    {
+      "check": "Batch 2 has no duplicate dusty-storage baseline",
+      "outcome": "pass"
+    },
+    {
+      "check": "Canonical ownership retained; no alias merge",
+      "outcome": "pass"
+    },
+    {
+      "check": "Uncleared competitor image stays link-only with no invented hash",
+      "outcome": "pass"
+    },
+    {
+      "check": "Selected Breathing Room original hash matches",
+      "outcome": "pass"
+    },
+    {
+      "check": "Selected Breathing Room PNG dimensions match",
+      "outcome": "pass"
+    },
+    {
+      "check": "Required example/native disclaimer retained",
+      "outcome": "pass"
+    },
+    {
+      "check": "Exact privacy and safety claims excluded rather than fabricated",
+      "outcome": "pass"
+    }
+  ],
+  "artifactHashes": {
+    "research.json": "fb07a93fb160d2adc40b8bcee04b85aa4ae1616a21cf080798741b9aaf283861",
+    "research.md": "4ebf5a24ec264b600b1bc24ad68d526abe3482ecc7d4fcaaaf44a4f552c3133c",
+    "validate.py": "4b306f3d7d2e380ef4b953e72899e4f5add9f32f238348cf97a9bb9b23e41169"
+  },
+  "manualChecks": [
+    "Read PLAN, EDITORIAL, capabilities, screenshots, retained baseline and alias records.",
+    "Five official missing-evidence pages read with WebFetch; selected passages retained and manually compared, not automated full-page validation.",
+    "Owned Chrome tab 101 feature-page DOM confirms loaded official image candidate 1920x989 and all-rights-reserved footer; tab closed after read-only inspection.",
+    "Actual selected first-party PNG opened and read; disclosures visible and chart overlap noted."
+  ],
+  "notPerformed": [
+    "competitor image download or full visual review",
+    "native/installer/cleanup tests",
+    "account or payment testing",
+    "independent review",
+    "site edits/build/tests"
+  ],
+  "blocker": "VISUAL-RIGHTS: no competitor image republication permission established; official link-only fallback does not satisfy on-page image gate."
+}

@@ -1,0 +1,17 @@
+{
+  "jobId": "research-macwashing",
+  "result": "passed-structural-checks-research-still-blocked",
+  "checks": [
+    "Python json.loads parsed research.json successfully.",
+    "All 15 claims reference existing source IDs and contain source URL, excerpt, checked date, state and evidence class.",
+    "SHA-256 of both retained verification snapshots matches the recorded hashes.",
+    "SHA-256 of selected existing Breathing Room Space preview matches screenshots.json and research.json.",
+    "Canonical owner is macwashing; research is blocked and unpublished; workflow brief is blocked-not-a-draft.",
+    "Competitor visual remains link-only with no invented downloaded path/hash; critical visual blocker retained.",
+    "research.md exists. No app/site builds, runtime tests or new visual inspections performed."
+  ],
+  "artifactSha256": {
+    "research.json": "2de5e494662e35bff58f6f672dc239e8fd68a54a508925f76f9decf5224de0db",
+    "research.md": "2efdea6353271ac8d1786699f6bfddbc73641ea5647fd7c11db4ad1c09b62f88"
+  }
+}

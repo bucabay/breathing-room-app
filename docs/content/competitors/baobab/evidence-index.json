@@ -1,0 +1,72 @@
+[
+  {
+    "id": "gnome-visual-page",
+    "url": "https://apps.gnome.org/Baobab/",
+    "finalUrl": "https://apps.gnome.org/Baobab/",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:46.151736+00:00",
+    "path": "evidence/gnome-visual-page.html",
+    "sha256": "6e72c28226ea51dda63ff013c9c02cecb9694f7c886fbdf4d693f38bd42b0878",
+    "bytes": 15015
+  },
+  {
+    "id": "homebrew",
+    "url": "https://formulae.brew.sh/api/formula/baobab.json",
+    "finalUrl": "https://formulae.brew.sh/api/formula/baobab.json",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:46.152222+00:00",
+    "path": "evidence/homebrew.json",
+    "sha256": "04d7f623e2dd194cbd604b8a371c15f9982bf3518e4ff26bec06484143da2da5",
+    "bytes": 4536
+  },
+  {
+    "id": "gnome-contribute",
+    "url": "https://welcome.gnome.org/app/Baobab/",
+    "finalUrl": "https://welcome.gnome.org/app/Baobab/",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:46.152395+00:00",
+    "path": "evidence/gnome-contribute.html",
+    "sha256": "5e10c50c3f3519639fbac42b4431c5f0d7121587a8792dbdadb585fcf691afe8",
+    "bytes": 28022
+  },
+  {
+    "id": "trash-help",
+    "url": "https://help.gnome.org/baobab/question-trash.html",
+    "finalUrl": "https://help.gnome.org/baobab/question-trash.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:46.150415+00:00",
+    "path": "evidence/trash-help.html",
+    "sha256": "347239eb965941ee446231cc2ec91f4154cfb57334f0f7d1976a57441530004d",
+    "bytes": 7509
+  },
+  {
+    "id": "remote-help",
+    "url": "https://help.gnome.org/baobab/scan-remote.html",
+    "finalUrl": "https://help.gnome.org/baobab/scan-remote.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:47.198892+00:00",
+    "path": "evidence/remote-help.html",
+    "sha256": "02126fcba8d9842c7b4f258bc9df5f25da505b5a1e2653e444a19b4d3049a922",
+    "bytes": 8857
+  },
+  {
+    "id": "permissions-help",
+    "url": "https://help.gnome.org/baobab/problem-permissions.html",
+    "finalUrl": "https://help.gnome.org/baobab/problem-permissions.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:46.826247+00:00",
+    "path": "evidence/permissions-help.html",
+    "sha256": "9dd86a4a72c36183d7f11eac4152bc36453ed0bd2b1ac86938cae4f414fef551",
+    "bytes": 8555
+  },
+  {
+    "id": "scan-image",
+    "url": "https://static.gnome.org/catalog/app-screenshot/org.gnome.baobab/image-2_orig.png",
+    "finalUrl": "https://static.gnome.org/catalog/app-screenshot/org.gnome.baobab/image-2_orig.png",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:04:47.737545+00:00",
+    "path": "evidence/scan-image.png",
+    "sha256": "17cb82c4744a88716fbde35ddca773724fd850b78477428ca61b61c91480ec50",
+    "bytes": 111928
+  }
+]

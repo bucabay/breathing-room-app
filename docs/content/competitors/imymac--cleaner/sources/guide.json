@@ -1,0 +1,14 @@
+{
+  "id": "guide",
+  "sourceUrl": "https://www.imymac.com/powermymac/guide.html",
+  "finalUrl": "https://www.imymac.com/powermymac/user-guide.html",
+  "retrievedAtUtc": "2026-10-21T20:42:40.087791+00:00",
+  "httpStatus": 200,
+  "publisher": "iMyMac",
+  "sourcePublishedAt": null,
+  "snapshotPath": "docs/content/competitors/imymac--cleaner/sources/guide.html",
+  "sha256": "dc0cbecfaef8a7b9074f3c05f14709ac8d8a23376398213b7a14567b0fd20c58",
+  "textPath": "docs/content/competitors/imymac--cleaner/sources/guide.txt",
+  "textSha256": "ac9d56ccbfd9eb8dcc9e2b290e75aaec893bee09ae87894a6c4dd365d91fefe6",
+  "method": "Public read-only HTTP GET; retained HTML for exact pricing/guide/rights evidence missing from baseline. No forms submitted."
+}

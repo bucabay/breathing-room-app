@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-dissectmac",
+  "productId": "dissectmac",
+  "canonicalOwnerId": "dissectmac",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationApproved": false,
+  "identity": {
+    "officialName": "DissectMac",
+    "homepage": "https://dissectmac.com/",
+    "repositoryUrl": null,
+    "repositoryDiagnostic": "No repository link in retained official homepage links or current browser DOM; public source repository not verified. This does not prove none exists.",
+    "operator": "DissectMac team, per official footer; legal entity and individual ownership not independently verified",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip as an alias: reused verification record and official DissectMac identity support this canonical owner. No verified PowerMyMac relationship; do not merge or assert such an alias. Absence of known aliases is not an exhaustive corporate identity audit.",
+    "classification": "direct-mac-storage-overlap",
+    "fitReason": "Mac disk-space visualization and selected cleanup overlap Breathing Room storage investigation. DissectMac's documented uninstaller and free live stats also matter; do not frame it as merely a static disk map.",
+    "platformReplacementIntent": "Native Mac-to-Mac choice; no Windows/Linux support asserted.",
+    "skipDecision": "not-skipped-relevant-distinct-product; drafting blocked on visual rights"
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/dissectmac/about/",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=5",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:15.718Z",
+    "edgeSnapshotPath": "docs/content/.runtime/mole-5.json",
+    "edgeSha256": "b7884d8cfbdef2531d65ec28a6cfea800a64eabc7d9df6a43d30dc1ec14c95eb",
+    "listingRetrievedAtUtc": "2026-10-21T19:06:51.006Z",
+    "listingSnapshotPath": "docs/content/.runtime/verification-1/dissectmac-directory.json",
+    "listingSha256": "035085794cd51f454d599e14c8252f958d82fd3ac8df2e79df77a66f18bc2f27",
+    "method": "Reused retained live-browser discovery and batch-1 record, not a new AlternativeTo fetch. Directory claims are discovery only."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "DissectMac", "title": "Mac Disk Space Analyzer & Cleaner",
+      "url": "https://dissectmac.com/", "finalUrl": "https://dissectmac.com/",
+      "retrievedAtUtc": "2026-10-21T19:08:07.491766+00:00", "publishedOn": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/dissectmac-official.json",
+      "sha256": "bb00c6ba00411d5f8043aa6109b94651528feec1a051965bf1a4ddc1ab1d6520",
+      "reuse": "docs/content/verification/batch-1.json product dissectmac; current same-day evidence reused without re-fetching facts",
+      "scope": "Current marketed app, version not stated; vendor documentation, not runtime tests"
+    },
+    {
+      "id": "S2", "publisher": "DissectMac", "title": "Terms of Service",
+      "url": "https://dissectmac.com/terms", "finalUrl": "https://dissectmac.com/terms",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOn": "2026-01-01",
+      "method": "Read-only WebFetch this job; exact fetch timestamp not emitted; excerpts retained in claims",
+      "scope": "Licence and Pro terms, no app build specified"
+    },
+    {
+      "id": "S3", "publisher": "DissectMac", "title": "Pricing",
+      "url": "https://dissectmac.com/pricing", "finalUrl": "https://dissectmac.com/pricing",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOn": null,
+      "method": "Read-only WebFetch this job; exact fetch timestamp not emitted; excerpts retained in claims",
+      "scope": "Free Essentials and lifetime Power Suite offer; sale expiration/currency code not stated"
+    },
+    {
+      "id": "S4", "publisher": "DissectMac", "title": "Privacy Policy",
+      "url": "https://dissectmac.com/privacy", "finalUrl": "https://dissectmac.com/privacy",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOn": "2026-01-24",
+      "method": "Read-only WebFetch this job; exact fetch timestamp not emitted; excerpts retained in claims",
+      "scope": "Vendor policy, not independent network/backend audit"
+    },
+    {
+      "id": "S5", "publisher": "DissectMac", "title": "Official app image metadata",
+      "url": "https://dissectmac.com/", "finalUrl": "https://dissectmac.com/",
+      "retrievedAtUtc": "2026-10-21T20:32:13.039Z",
+      "method": "Read-only DOM evaluation in newly created owned Chrome tab 97; existing tabs untouched. Homepage opened only to fill missing visual/repository metadata, not to redo baseline research.",
+      "excerpt": "app-screenshot.webp: DissectMac showing a Mac drive as a colour-coded treemap, with the largest folders as the biggest blocks (808 x 453); appuninstaller.webp: DissectMac app uninstaller screen (1800 x 996); no github/release/version anchor links.",
+      "scope": "Rendered official asset URLs/dimensions only, not independent visual approval or rights clearance"
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room", "title": "Capabilities evidence register",
+      "path": "docs/content/capabilities.md", "checkedOn": "2026-10-21",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Same-day source and public-page verification reused, not new native testing; follow original citations and caveats"
+    },
+    {
+      "id": "BR2", "publisher": "Breathing Room", "title": "Screenshot library",
+      "path": "docs/content/screenshots.json", "checkedOn": "2026-10-21",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "scope": "Existing current-source browser-preview provenance, not native measurements"
+    }
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "reviewer": "scheduled research-dissectmac worker", "evidenceClass": "vendor-documented-not-tested", "intendedLocation": "comparison matrix and workflow brief"},
+  "claims": [
+    {"id":"C1","state":"verified","sourceIds":["S1"],"wording":"DissectMac offers a drive treemap with folder drill-down, name search and filters.","excerpt":"Click into a block to go deeper, search by name, or filter to Xcode, Docker, node_modules, disk images, archives and iOS backups.","conditions":"Documented behavior only; coverage and scan speed not measured."},
+    {"id":"C2","state":"verified","sourceIds":["S1"],"wording":"Vendor states macOS 12 Monterey and later, including macOS 26, on Apple Silicon and Intel.","excerpt":"DissectMac runs on macOS 12 Monterey and later, including macOS 26, on both Apple Silicon and Intel Macs.","conditions":"Separate Silicon and x64 DMG links advertised; no binary downloaded or compatibility tested."},
+    {"id":"C3","state":"verified","sourceIds":["S1","S3"],"wording":"The storage map, search and live CPU, memory and battery stats are free; in-app deletion and app/residue removal require Pro.","excerpt":"The map, search and monitor are free. / Everything in Free + / Delete files within the app / App uninstaller with residue cleanup","conditions":"No account/no time limit claimed in homepage FAQ. Do not imply all search variants are free: pricing lists Super Power search under Pro."},
+    {"id":"C4","state":"verified","sourceIds":["S1","S2","S3"],"wording":"Current advertised Pro offer is $12.99 one-time before government taxes, with lifetime access and future updates; pricing labels this Festival Sale against $14.99.","excerpt":"$14.99 Festival Sale / $12.99 one-time / excl. govt. taxes; Your purchase includes lifetime access to all current features and future updates.","conditions":"Dollar symbol only; ISO currency, region, device count, sale expiry and checkout total not verified. No checkout opened. Refresh within 30 days and before publication; do not promise permanent price."},
+    {"id":"C5","state":"verified","sourceIds":["S2"],"wording":"Terms grant a revocable, non-exclusive, non-transferable personal or commercial software-use licence.","excerpt":"We grant you a revocable, non-exclusive, non-transferable license to use the DissectMac software for personal or commercial purposes in accordance with the license you have purchased.","conditions":"Not an open-source grant or screenshot redistribution permission. Source availability not verified."},
+    {"id":"C6","state":"verified","sourceIds":["S1"],"wording":"Vendor describes selecting unwanted items and moving them to Trash inside Pro, plus app uninstall and leftover cleanup.","excerpt":"Select what you don't need and move it to the Trash from inside the app ... Everything goes to the Trash first","conditions":"Not tested; exact confirmation/approval granularity and exceptions unverified. Trash movement is not immediate reclaimed free space or guaranteed recovery."},
+    {"id":"C7","state":"verified","sourceIds":["S1","S4"],"wording":"Vendor says scans run locally without uploading filenames, folder structure or scan results, while Sentry crash reporting and payment/licence services are used.","excerpt":"We do not store, upload, or transmit your individual file names, folder structures, or the results of your disk scans to any server. / we use Sentry.io for automated crash reporting.","conditions":"Policy assertion, not network audit. Do not call the entire product network-free or telemetry-free. Privacy page uses subscription wording despite explicit one-time pricing; preserve that discrepancy, do not infer recurring billing."},
+    {"id":"C8","state":"verified","sourceIds":["S1"],"wording":"Official page claims Apple notarization and offers direct downloads outside the Mac App Store.","excerpt":"DissectMac is notarized by Apple / DissectMac is distributed outside the Mac App Store","conditions":"Vendor disclosure only; signing/notarization not independently checked; no installation or Gatekeeper changes."},
+    {"id":"C9","state":"not-verified","sourceIds":["S1","S5"],"wording":"Current DissectMac version/build and public repository: not verified.","excerpt":"Unversioned DissectMac.dmg and DissectMac-x64.dmg links; no repository anchor in checked official homepage.","conditions":"Do not invent a version, source licence, bundled runtime, or no-runtime-needed claim."},
+    {"id":"C10","state":"not-verified","sourceIds":["S1","S3"],"wording":"Helper grouping, recurring disk-growth history, saved per-location scheduled approvals and tool-native developer cache adapters: not verified.","excerpt":"Live CPU, memory and battery stats; developer category filters documented, not equivalent to these other capabilities.","conditions":"Never present unknown cells as No; do not claim DissectMac lacks monitoring."},
+    {"id":"C11","state":"verified","sourceIds":["S2"],"wording":"Pro purchases are described as final, with faulty, duplicate or unauthorised charge refunds and statutory rights preserved.","excerpt":"Pro purchases are final. We refund faulty, duplicate or unauthorised charges, and we honour your statutory rights.","conditions":"No general money-back trial established; refund policy linked but not independently fetched."},
+    {"id":"BR-C1","state":"verified","evidenceClass":"reused-source-and-published-register","sourceIds":["BR1"],"wording":"Breathing Room is a free macOS maintenance preview with optional hosted AI Care advertised at $5 USD/month or $50 USD/year.","excerpt":"macOS 13+; universal Apple Silicon/Intel installer advertised. / Python 3.10+ / Apple Development signed, not Developer ID signed or notarized.","conditions":"Identified release 0.1.0-preview.1; physical Intel/clean-machine validation incomplete. Hosted AI needs internet/authentication; local inspection differs from hosted requests. No new runtime tests."},
+    {"id":"BR-C2","state":"verified","evidenceClass":"reused-source-register","sourceIds":["BR1"],"wording":"Breathing Room source implements grouped app/helpers, activity history, developer cache discovery and approved daily care while the app runs.","excerpt":"Saved approvals bind account, API origin, action method/path and native rule; new actions wait for review. / Automatically move verified Ruff lint caches to Trash.","conditions":"Source implementation does not establish distributed-binary parity. Default interactive approval has an explicitly enabled narrow Ruff automatic exception. Sampled I/O/path ownership is not forensic proof."}
+  ],
+  "productMatrix": {
+    "macOSAndArchitectures": ["C2"], "licence": ["C5"], "localHosted": ["C7"],
+    "scanCleanup": ["C1","C3","C6"], "approvalControls": ["C6"],
+    "helperGrouping": ["C10"], "recurringGrowth": ["C10"], "developerCaches": ["C1","C10"],
+    "pricing": ["C4","C11"], "installationRuntime": ["C2","C8","C9"],
+    "breathingRoom": ["BR-C1","BR-C2"]
+  },
+  "visuals": [
+    {
+      "id":"dissectmac-treemap-official", "productId":"dissectmac", "view":"Drive treemap", "kind":"official-asset",
+      "sourcePageUrl":"https://dissectmac.com/", "assetUrl":"https://dissectmac.com/app-screenshot.webp",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "metadataCheckedAtUtc":"2026-10-21T20:32:13.039Z",
+      "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null, "dataMode":"unknown",
+      "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":808, "heightPx":453, "edits":[], "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official public app-UI asset link; no image redistribution grant found in checked terms. Public accessibility is not permission. Not downloaded or embedded.","evidenceUrlOrPath":"https://dissectmac.com/terms","credit":"DissectMac, official product screenshot"},
+      "caption":"DissectMac's official drive-treemap illustration. Vendor-provided view, not our scan or benchmark; version and capture date unknown.",
+      "alt":"DissectMac drive treemap with differently sized coloured folder blocks.", "supportedClaimIds":["C1"],
+      "limitations":["DOM metadata verified; image contents not independently visually approved","No asset bytes downloaded; no original hash exists in this job","Link-only research fallback does not satisfy publication image gate"],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"dissectmac-uninstaller-official", "productId":"dissectmac", "view":"App uninstaller", "kind":"official-asset",
+      "sourcePageUrl":"https://dissectmac.com/", "assetUrl":"https://dissectmac.com/appuninstaller.webp",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "metadataCheckedAtUtc":"2026-10-21T20:32:13.039Z",
+      "productVersion":null, "dataMode":"unknown", "originalPath":null, "originalSha256":null,
+      "publishedPath":null, "publishedSha256":null, "widthPx":1800, "heightPx":996, "edits":[],
+      "reuse":{"status":"link-only","basis":"Official image link only; redistribution permission not established.","evidenceUrlOrPath":"https://dissectmac.com/terms","credit":"DissectMac"},
+      "caption":"Official DissectMac app-uninstaller illustration; not a hands-on removal test.", "alt":"DissectMac app uninstaller screen, as identified by the official site.",
+      "supportedClaimIds":["C3","C6"], "review":{"status":"pending"}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "productVersion":null, "osVersion":null,
+      "dataMode":"example", "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party current-source UI capture with required example-data disclosure; third-party marks remain their owners' marks. Reused screenshot-library basis, not a blanket trademark licence.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredLabels":["Example data","Browser preview","Not a native scan or measured cleanup result"],
+      "privacyReview":{"status":"reviewed-in-library","redactions":[]},
+      "limitations":["Retain visible example-data banner","Source-render capture, not distributed-release parity or native measurements","Per-page independent visual/marks review remains pending"],
+      "review":{"status":"pending-per-page","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "briefsPath": "docs/content/competitors/dissectmac/research.md",
+  "blockers": [
+    {"id":"B1","gate":"drafting-required-product-visual","diagnostic":"Official DissectMac UI asset URLs found, but redistribution rights remain unverified. No download/embedding authorized by checked public terms. Link-only fallback does not pass EDITORIAL.md image gate.","resolution":"Obtain independently verified reuse permission/licence or explicit policy approval for an alternative treatment; then retain original bytes/hash/provenance and independently inspect the real image. Do not send permission requests from this scheduled job."}
+  ],
+  "noncriticalUnknowns": ["Exact DissectMac build/version and release date", "Public repository and source licence", "ISO currency, sale expiry, device/activation count and regional price", "Independent notarization and native compatibility verification", "Precise destructive-action confirmation details and recovery exceptions", "Monitoring/helper grouping beyond documented live stats", "Sentry implementation and privacy assertions not audited"],
+  "accessLog": [
+    "Python urllib homepage request for missing image metadata returned HTTP 403; no bypass or cookie extraction attempted.",
+    "Authorized Chrome endpoint was already available; no recovery, listener termination or profile switch. Fresh owned tab 97 loaded official public page successfully; DOM-only image metadata read.",
+    "No installations, binary downloads, cleanup, sign-in, purchase, account creation, messages, credentials, settings changes, site edits, queue edits, commits, pushes or deployments."
+  ],
+  "testsPerformed": "Research-only structural/hash checks recorded in validation.json; no competitor or native app execution and no website build needed for unchanged website.",
+  "independentReview": "pending; no score or publication approval awarded"
+}

@@ -1,0 +1,19 @@
+{
+  "jobId": "research-macclean",
+  "result": "research-structure-passed-drafting-blocked",
+  "checks": [
+    {"check":"Python json.loads and source/claim uniqueness","outcome":"passed: 10 sources, 11 claims"},
+    {"check":"Claim source references and matrix/visual claim references","outcome":"passed: all resolve"},
+    {"check":"SHA-256 of reused official snapshot and discovery snapshot","outcome":"passed: both match retained records"},
+    {"check":"SHA-256 of selected first-party Space preview","outcome":"passed: matches screenshots.json"},
+    {"check":"Identity, drafting block, competitor link-only/no-download and example-data caption assertions","outcome":"passed"},
+    {"check":"Official-source content inspection using WebFetch","outcome":"completed: specs, store offer, download, guide index, System Junk guide, Old & Large Files guide, terms and EULA; no checkout or binary download"},
+    {"check":"Marketing check/build/test and browser/native QA","outcome":"not run: no site edits, no installed-app tests; no publication approval"}
+  ],
+  "artifactSha256": {
+    "research.json":"1a9a702db307cee876c9bfb7db962ae7de8e6cf60fd465f8f4c75a370e8b0594",
+    "research.md":"8f38ccc9d294749a1b73cd47b3c6c28ef97c2f21e9937f3050f5d268963c9e33"
+  },
+  "blockingDiagnostic":"Official competitor app screenshot is identified, but terms require written image permission not obtained. Link-only fallback is not the required on-page screenshot; drafting remains blocked.",
+  "independentReview":"pending"
+}

@@ -1,0 +1,62 @@
+{
+  "reviewedOn": "2026-10-21",
+  "policy": "Similar names and shared vendors are not proof of the same product. Retain listing provenance; merge only on explicit official evidence. Redirects identify current destinations, not automatic historical feature parity.",
+  "decisions": [
+    {
+      "aliasId": "app-cleaner", "canonicalId": "maccleaner-pro", "status": "distinct-products",
+      "sourceUrl": "https://nektony.com/mac-cleaner-pro",
+      "excerpt": "Full toolkit for a detailed Mac cleanup App Cleaner & Uninstaller Completely remove programs Reset application settings",
+      "decision": "Nektony's App Cleaner & Uninstaller is a component offered in the MacCleaner Pro bundle, not an alias for the entire bundle. Compare the actual product/workflow scope; do not merge solely because the vendor is shared."
+    },
+    {
+      "aliasId": "mac-cleaner-pro", "canonicalId": "maccleaner-pro", "status": "distinct-products",
+      "sourceUrl": "https://www.iuwesoft.com/mac-cleaner-pro.html",
+      "excerpt": "Mac Cleaner Pro can permanently and easily shred files and folders",
+      "additionalSourceUrl": "https://nektony.com/mac-cleaner-pro",
+      "additionalExcerpt": "A bundle of six professional tools for a deep Mac cleanup.",
+      "decision": "IUWEsoft's file cleaner/shredder and Nektony's MacCleaner Pro suite have separate current official identities. Similar product spelling does not justify merging; retain vendor-qualified names."
+    },
+    {
+      "aliasId": "dusty-storage", "canonicalId": "dusty", "status": "distinct-products",
+      "sourceUrl": "https://dustystorage.com",
+      "excerpt": "Solo Lifetime 1 Mac • One-time payment, zero subscriptions $9.99 once",
+      "additionalSourceUrl": "https://toprak.sh/dusty/",
+      "additionalExcerpt": "Free, MIT licensed",
+      "decision": "Retain the two independently documented current official offerings with vendor/domain-qualified names. No same-product relationship established; do not merge solely from the Dusty name."
+    },
+    {
+      "aliasId": "pangalin-uninstaller", "canonicalId": "space-manager", "status": "distinct-products",
+      "sourceUrl": "https://pangalin.com/pangalin-uninstaller/",
+      "excerpt": "our storage app, shows what's using your disk and helps you clean, move or compress it.",
+      "additionalSourceUrl": "https://pangalin.com/space-manager/",
+      "additionalExcerpt": "See exactly what's taking up space on your Mac, then free up storage by cleaning, moving or compressing it.",
+      "decision": "The official uninstaller page refers to the vendor's other storage app. These are sibling products with different documented workflows, not alias listings."
+    },
+    {
+      "aliasId": "techtool-lite", "canonicalId": "techtool", "status": "distinct-products",
+      "sourceUrl": "https://www.micromat.com/products/techtool-lite/",
+      "excerpt": "Techtool Lite focuses on essential testing and maintenance. For volume repair, deeper diagnostics, external drive testing, and advanced tools, Techtool Pro gives you complete control.",
+      "decision": "Official source explicitly distinguishes Lite from Pro. Keep edition/scope-specific comparisons rather than treating the two as aliases."
+    },
+    {
+      "aliasId": "glary-disk-cleaner", "canonicalId": "glary-utilities", "status": "distinct-products",
+      "sourceUrl": "https://www.glarysoft.com/disk-cleaner/", "excerpt": "Glary Disk Cleaner",
+      "additionalSourceUrl": "https://www.glarysoft.com/glary-utilities/", "additionalExcerpt": "Glary Utilities",
+      "decision": "Distinct current official product pages and documented cleaner versus maintenance-suite scope. Shared vendor/navigation does not establish an alias. Keep product-qualified comparisons."
+    },
+    {
+      "aliasId": "yosemite-cache-cleaner", "canonicalId": "mavericks-cache-cleaner", "status": "unresolved",
+      "sourceUrl": "https://www.northernsoftworks.com/sequoiacachecleaner.html",
+      "excerpt": "Click the link to go to Golden Gate Cache Cleaner .",
+      "decision": "Legacy listing/generation names and vendor pointer do not establish identical versions, historical feature parity or discontinuation. Do not generate separate near-identical pages for OS-version labels without distinct current scope; per-product research must resolve or skip them."
+    },
+    {
+      "aliasId": "powermymac", "canonicalId": "imymac--cleaner", "status": "unresolved",
+      "sourceUrl": "https://www.imymac.com/powermymac/", "excerpt": "PowerMyMac",
+      "additionalSourceUrl": "https://www.fonedog.com/powermymac/",
+      "additionalFinalUrl": "https://www.techycub.com/mac-cleaner/",
+      "additionalExcerpt": "TechyCub Mac Cleaner helps free up disk space for Mac by scanning, identifying, and removing useless items.",
+      "decision": "Do not merge or publish two same-title PowerMyMac articles. The two directory records lead to iMyMac PowerMyMac and a FoneDog URL redirecting to TechyCub Mac Cleaner. Require a source-supported current-identity/title decision during per-product research; historical common-vendor/product identity is not established."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-onyx",
+  "productId": "onyx",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationEligible": false,
+  "checkedAtUtc": "2026-10-21T21:53:15Z",
+  "clockNote": "Actual shell UTC clock recorded above; session calendar reports October 22, 2026. No source dates advanced to match the session calendar.",
+  "reviewer": "scheduled research-onyx worker; documentary research only",
+  "ownership": "docs/content/competitors/onyx/ only, plus required attempt receipt; no marketing edits",
+  "identity": {
+    "name": "OnyX",
+    "officialNameStatus": "directory-confirmed; official page inaccessible",
+    "canonicalOwnerId": "onyx",
+    "canonicalOwnerIdBasis": "Provisional stable queue identity; not an independently verified vendor-alias conclusion.",
+    "officialHomepage": "https://www.titanium-software.fr/en/onyx.html",
+    "homepageBasis": "Reused directory official-website link, not successful official-page retrieval.",
+    "publisher": "Titanium Software (search-index lead; direct verification pending)",
+    "repositoryUrl": null,
+    "repositoryStatus": "not verified; do not mistake Homebrew cask packaging for product source",
+    "aliases": [],
+    "aliasDecision": {"status": "not-verified", "skipSeparateDraft": false, "reason": "No verified alias evidence. PowerMyMac is not established as an OnyX alias; do not merge or create alias drafts from name similarity."},
+    "classification": "adjacent-provisional",
+    "classificationReason": "Directory describes Mac maintenance, cache removal and Apple-app parameter controls. Potential cleanup overlap, but not evidence of equivalent monitoring, storage discovery or approval workflow.",
+    "platformFit": "Mac-relevant discovery; exact OS/version and architecture support remain blocked",
+    "skipDecision": {"skipProductAsIrrelevantDeadOrAlias": false, "reason": "Network failure is not evidence of a dead product. Hold drafting rather than publish a doorway or assert alias/exclusion."}
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-2.json",
+    "recordId": "onyx",
+    "status": "blocked",
+    "verifiedProductFactsAvailable": 0,
+    "action": "Reused discovery identity/link and prior access-failure history. No already-verified product facts re-fetched."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/onyx/about/",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=2",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:09.298Z",
+    "retrievedAtUtc": "2026-10-21T19:05:08.963Z",
+    "method": "Reused rendered directory evidence from baseline; no new directory retrieval",
+    "rawCapture": "docs/content/.runtime/verification-2/onyx-directory.json",
+    "sha256": "408ae76b2dd2b1ebe5afb35a497ece1b0f7ba06dbe14bf485eb6285fa8b7717c",
+    "excerpt": "Official Website\ntitanium-software.fr/en/onyx.html",
+    "limitations": "Discovery only; directory free/proprietary/Mac labels do not establish current official licensing or compatibility."
+  },
+  "sources": [
+    {"id": "D1", "publisher": "AlternativeTo", "title": "OnyX about-page official link", "url": "https://alternativeto.net/software/onyx/about/", "finalUrl": "https://alternativeto.net/software/onyx/about/", "retrievedAtUtc": "2026-10-21T19:05:08.963Z", "excerpt": "Official Website\ntitanium-software.fr/en/onyx.html", "snapshotPath": "docs/content/.runtime/verification-2/onyx-directory.json", "sha256": "408ae76b2dd2b1ebe5afb35a497ece1b0f7ba06dbe14bf485eb6285fa8b7717c", "state": "reused-discovery"},
+    {"id": "O1", "publisher": "Titanium Software candidate official site", "title": "OnyX", "url": "https://www.titanium-software.fr/en/onyx.html", "finalUrl": null, "checkedAtUtc": "2026-10-21T21:53:15Z", "checkTimeScope": "End-of-research clock reading, not exact request start", "excerpt": null, "state": "access-failed", "error": "WebFetch Request timed out (45-second cap); owned Chrome tab 149 navigation net::ERR_TIMED_OUT (40-second cap). Snapshot: This site can’t be reached; took too long to respond; ERR_TIMED_OUT.", "browserFinalUrl": "chrome-error://chromewebdata/"},
+    {"id": "O2", "publisher": "Titanium Software candidate official site", "title": "OnyX alternate host/path", "url": "https://titanium-software.fr/en/onyx.html", "finalUrl": null, "checkedAtUtc": "2026-10-21T21:53:15Z", "excerpt": null, "state": "access-failed", "error": "WebFetch Request timed out (35-second cap); https://titanium-software.fr/en/onyx also timed out (30-second cap)."},
+    {"id": "O3", "publisher": "Titanium Software candidate official site", "title": "OnyX Screenshots", "url": "https://www.titanium-software.fr/en/onyx_captures.html", "finalUrl": null, "checkedAtUtc": "2026-10-21T21:53:15Z", "excerpt": null, "state": "access-failed", "error": "WebFetch Request timed out (30-second cap). Search index identifies page title only; no app image inspected."},
+    {"id": "S1", "publisher": "Web search index of Titanium Software pages", "title": "Unverified official-source leads", "url": "https://www.titanium-software.fr/en/onyx.html", "checkedAtUtc": "2026-10-21T21:53:15Z", "state": "lead-only", "excerpt": "There’s a specific version of OnyX for each major operating system version. Use the correct version", "otherIndexedLeads": ["OnyX 5.1.1 for macOS Golden Gate 27; Apple silicon; October 11, 2026", "OnyX 5.0.6 for macOS Tahoe 26", "All the applications are free and fully usable, and no registration is necessary"], "limitations": "Search output is not a successfully retrieved primary page. None of these statements, version names, dates, prices, AI claims or notarization claims are approved facts. Refresh directly before use."},
+    {"id": "B1", "publisher": "Breathing Room programme", "title": "Capabilities evidence register", "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedDate": "2026-10-21", "state": "reused-current-register", "excerpt": "free, Apache-2.0 macOS maintenance preview ... Hosted AI assistance requires internet access and authentication", "scope": "Register documents source/public-offer evidence, not hands-on installer parity."},
+    {"id": "B2", "publisher": "Breathing Room programme", "title": "Screenshot inventory", "localPath": "docs/content/screenshots.json", "checkedDate": "2026-10-21", "state": "reused-current-register", "excerpt": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."}
+  ],
+  "claims": [
+    {"id": "C1", "wording": "The discovered OnyX listing links to titanium-software.fr/en/onyx.html as its official website.", "sourceIds": ["D1"], "supportingExcerpt": "Official Website\ntitanium-software.fr/en/onyx.html", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "directory-discovery", "intendedLocation": "research identity, not feature matrix"},
+    {"id": "C2", "wording": "OnyX version, supported macOS releases and CPU requirements: not verified from a retrievable official page.", "sourceIds": ["O1", "O2", "S1"], "supportingExcerpt": "ERR_TIMED_OUT", "checkedDate": "2026-10-21", "state": "not-verified", "evidenceClass": "access-diagnostic", "intendedLocation": "compatibility row", "conditions": "Do not turn indexed version strings into verified requirements."},
+    {"id": "C3", "wording": "OnyX current price, licence, donation conditions and registration requirements: not verified.", "sourceIds": ["O1", "S1"], "supportingExcerpt": null, "checkedDate": "2026-10-21", "state": "not-verified", "evidenceClass": "missing-primary-evidence", "intendedLocation": "pricing/licence rows"},
+    {"id": "C4", "wording": "OnyX maintenance, cache deletion, parameter controls and application-uninstallation scope require direct official verification.", "sourceIds": ["O1", "S1"], "supportingExcerpt": null, "checkedDate": "2026-10-21", "state": "not-verified", "evidenceClass": "search-lead-only", "intendedLocation": "workflow and cleanup rows"},
+    {"id": "C5", "wording": "Breathing Room is documented as a free macOS maintenance preview; hosted AI requires internet access and authentication, with AI Care advertised at $5 USD/month or $50 USD/year.", "sourceIds": ["B1"], "supportingExcerpt": "AI Care is advertised at $5 USD/month or $50 USD/year", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-and-published-register", "intendedLocation": "comparison caveats", "conditions": "Not production-readiness or binary-parity certification; renewals and applicable tax; recheck offer within 30 days and before publication."},
+    {"id": "C6", "wording": "Breathing Room source includes storage views, grouped process sampling and reviewable cleanup; this does not demonstrate equivalent functionality in the distributed installer.", "sourceIds": ["B1"], "supportingExcerpt": "Source implementation is not proof that every feature works in the distributed installer.", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-register", "intendedLocation": "comparison decision criteria"}
+  ],
+  "productMatrix": {
+    "macOSCompatibility": {"value": "not verified", "claimIds": ["C2"]},
+    "exactVersion": {"value": null, "claimIds": ["C2"]},
+    "licenseAndPricing": {"value": "not verified", "claimIds": ["C3"]},
+    "localVsHosted": {"value": "not verified", "claimIds": ["C4"]},
+    "scanCleanupModel": {"value": "not verified", "claimIds": ["C4"]},
+    "approvalControls": {"value": "not verified", "claimIds": ["C4"]},
+    "processHelperGrouping": {"value": "not verified", "claimIds": ["C4"]},
+    "recurringGrowthMonitoring": {"value": "not verified", "claimIds": ["C4"]},
+    "developerCacheCoverage": {"value": "not verified", "claimIds": ["C4"]},
+    "runtimePermissionsSigningInstall": {"value": "not verified", "claimIds": ["C2", "C4"]}
+  },
+  "visuals": [
+    {"id": "onyx-official-ui-pending", "productId": "onyx", "kind": "official-asset", "view": "Official screenshot gallery candidate; individual app view not inspected", "sourcePageUrl": "https://www.titanium-software.fr/en/onyx_captures.html", "assetUrl": null, "capturedAtUtc": null, "retrievedAtUtc": null, "productVersion": null, "dataMode": "unknown", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "edits": [], "reuse": {"status": "link-only", "basis": "No image licence or permission established. Link to official gallery only; no download or redistribution.", "evidenceUrlOrPath": "https://www.titanium-software.fr/en/onyx_captures.html", "credit": "Titanium Software"}, "caption": "Candidate official OnyX screenshot gallery; image content and version await verification.", "alt": null, "review": {"status": "blocked"}, "limitations": ["No real competitor UI image has been obtained or inspected; source-page lead alone does not satisfy the image gate.", "Exact asset URL, image rights, dimensions, hashes and actual UI description remain unknown."]},
+    {"id": "current-space-browser-preview", "productId": "breathing-room", "kind": "browser-preview", "view": "Space", "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a", "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "dataMode": "example", "edits": [], "reuse": {"status": "cleared", "basis": "App-owner-requested first-party UI capture per screenshots.json; third-party marks not blanket licensed", "evidenceUrlOrPath": "docs/content/screenshots.json", "credit": "Breathing Room"}, "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.", "alt": "Breathing Room Space browser preview with example storage categories and a visible example-data banner.", "privacyReview": {"status": "reviewed", "redactions": []}, "review": {"status": "research-inspected-not-publication-approved", "reviewer": "research-onyx worker"}, "limitations": ["Reused current-source inventory asset, not a newly captured or native release screenshot.", "Keep both example-data banners and supplied caption. Composer overlaps the category chart; contextual crop requires separate review and provenance."]}
+  ],
+  "briefs": {
+    "workflow": {"status": "conditional-not-a-draft", "track": "search-reference", "title": "Before running Mac maintenance: match the utility to your macOS version", "slug": "match-onyx-version-before-mac-maintenance", "primaryIntent": "Choose an OS-matched maintenance utility rather than blindly run cache cleanup for unexplained storage growth", "outline": ["Identify the Mac's macOS version and processor before selecting an installer", "Use the official version table, not an old download recommendation", "Separate a targeted repair or parameter change from investigating recurring disk growth", "Review intended changes and backups; do not equate cache size with safely recoverable space", "Choose the tool for the actual task, with source-backed limits"], "distinctValue": "OS-version selection and maintenance-versus-investigation decision, not a renamed comparison matrix", "interactionHandoff": "Read-only decision checklist: OS version, processor, intended task, official compatibility match. No cleanup commands or executable repair buttons.", "visualPlacement": "Selected Breathing Room Space preview immediately after lead; verified/cleared OnyX app UI near maintenance controls once available", "dependencies": ["Direct official version/architecture table", "Official maintenance scope and precautions", "Cleared competitor screenshot"], "internalLinks": ["/comparisons/", "/comparisons/onyx/"], "affiliation": "Breathing Room, which we build"},
+    "comparison": {"status": "conditional-not-a-draft", "title": "Breathing Room vs OnyX: storage investigation or targeted maintenance?", "slug": "onyx", "primaryIntent": "Decide between documented workflows without treating every maintenance tool as interchangeable", "format": "Concise claim-linked compatibility, cost, workflow, approvals, monitoring and runtime matrix; unknown cells remain not verified", "decision": "Potential OnyX fit: OS-specific maintenance/parameter controls after official verification. Potential Breathing Room fit: storage exploration and grouped app activity with preview caveats. Neither recommendation is approved while competitor evidence is blocked.", "internalLinks": ["/comparisons/", "/blog/match-onyx-version-before-mac-maintenance/"], "affiliation": "Breathing Room, which we build"}
+  },
+  "advantagesAndTradeoffs": {
+    "onyx": ["Candidate advantage, not verified fact: OS-specific maintenance and Apple-app parameter controls may serve a different job than storage investigation.", "Free-use and notarization search leads require official confirmation; no categorical recommendation or absence claims.", "Monitoring, developer-cache adapters, exact approvals and hosted/offline boundary remain unknown, not No."],
+    "breathingRoom": ["Source-documented storage exploration and helper grouping can inform investigation, not prove which process wrote a particular file.", "Preview 0.1.0-preview.1 register: macOS 13+, Python 3.10+ prerequisite, physical Intel/clean-machine validation incomplete; Apple Development signed, not Developer ID signed or notarized.", "Hosted AI sends relevant context/tool output to a service and requires authentication; do not describe all AI as offline. Optional Ruff-cache automatic mode qualifies blanket approval claims; Daily care reuses exact approvals while app runs.", "Free core and paid AI Care offer are separate; source presence is not distributed binary or billing-enforcement testing."]
+  },
+  "blockers": [
+    {"id": "official-material-facts", "diagnostic": "Official OnyX page still times out via WebFetch and owned Chrome tab. Baseline contains zero verified product facts. Cannot verify exact platform/version/architecture, feature scope, price/licence, install/runtime or alias identity from search leads.", "resolution": "Successful permitted direct official retrieval with retained excerpts and source hashes; verify current OS-specific version table and offer/licence conditions."},
+    {"id": "competitor-ui-and-rights", "diagnostic": "Official screenshot page times out; no individual image URL, inspected app screenshot, permission/licence basis or original hash. No image downloaded.", "resolution": "Obtain and inspect actual official/listing app UI, establish reuse permission or explicit policy approval, record exact asset URL and immutable original bytes/hash. Link-only fallback does not pass image gate."}
+  ],
+  "unknowns": ["Official source repository and licence text", "Whether any related Titanium utilities should be treated as components/aliases; search home-page lead is not enough to merge queue identities", "Live download availability and exact release chronology", "OnyX process grouping, recurring growth, developer caches and approval semantics", "Independent runtime, comparative performance and cleanup outcomes; no testing performed"],
+  "safety": {"cleanupRun": false, "installedCompetitor": false, "downloadedThirdPartyImages": false, "accountsOrMessages": false, "credentialsAccessed": false, "queueChanged": false, "websiteChanged": false, "agentsSpawned": false},
+  "validation": {"status": "passed structural, reference, discovery hash and preview hash/dimension checks; see validation.json", "independentReview": "pending; no score awarded", "siteBuild": "not applicable: no website files changed"}
+}

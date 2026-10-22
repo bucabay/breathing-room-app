@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "jobId": "screenshot-library",
+  "status": "done-browser-preview-scope",
+  "reviewedOn": "2026-10-21",
+  "purpose": "Reusable Breathing Room screenshot inventory; not evidence of native testing, cleanup results, or publication approval.",
+  "roots": {
+    "app": "/Users/gabe/code/breathing-room-app",
+    "marketing": "/Users/gabe/code/breathing-room/website"
+  },
+  "datePolicy": "capturedOn is null when original capture evidence is absent. Git dates describe asset changes, not capture dates. reviewedOn records this inventory review only.",
+  "reusePolicy": {
+    "publicationStatus": "draft-needs-independent-verification",
+    "exampleDataDisclosureRequired": true,
+    "nativeScanEvidenceAvailable": false,
+    "rules": [
+      "Keep the example-data banner visible and use the supplied disclosure caption for browser previews.",
+      "Do not describe example numbers as measured storage, cleanup savings, performance, or native test results.",
+      "Do not use legacy or unverified-current previews to represent the current release.",
+      "Review rights, privacy, currentness and target-page context independently before publication.",
+      "Current browser captures can illustrate the current-source UI with explicit example-data captions; never represent them as native measurements."
+    ],
+    "rightsNotes": "First-party repository assets. App package declares Apache-2.0; publication-specific image and third-party app-icon clearance was not independently established. No blanket image licence is inferred."
+  },
+  "assets": [
+    {
+      "id": "legacy-home-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/screenshots/home-preview.png",
+      "duplicateSourcePaths": [
+        "/Users/gabe/code/breathing-room/website/public/assets/home-preview.png"
+      ],
+      "view": "Home overview",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": null,
+      "reviewedOn": "2026-10-21",
+      "currentness": "known-legacy",
+      "reuseStatus": "historical-illustration-only-pending-review",
+      "width": 1020,
+      "height": 820,
+      "bytes": 104263,
+      "sha256": "b1bc709b4b6c18f2e71fc7ccb68ee0ea20b521e313f7159847f69ea504947a4c",
+      "alt": "Earlier Breathing Room browser preview with example storage categories and grouped app memory readings.",
+      "caption": "Earlier Breathing Room browser preview using illustrative data, not a live native scan or measured cleanup results. Labels and layout differ from the current preview.",
+      "provenance": [
+        "README.md:20-23 identifies this as a cropped earlier browser preview with illustrative data and different labels/layout.",
+        "Visually inspected: example-data banner, storage ring, Chrome/VS Code/Figma memory cards and Daily care teaser; not the dedicated Space, Apps or Daily care views.",
+        "src/App.tsx:275-288 now uses Clean up my Mac where the image shows Check my Mac.",
+        "Marketing comparison src/content/comparisons/built-in-tools-vs-breathing-room.md:23-24 discloses earlier example-data screenshot. Its width attribute is 1012; PNG header is actually 1020. No marketing file was edited.",
+        "App and marketing copies have identical bytes and SHA-256."
+      ],
+      "sourceLastChange": {
+        "commit": "f33b33fad32285f9eb3dda56466b953cbaf9e0a1",
+        "authorDate": "2026-10-19T03:40:46+03:00"
+      },
+      "duplicateLastChange": {
+        "commit": "791267e8c89221f9b7b688f4b0dfe777b0d8406b",
+        "authorDate": "2026-10-21T21:16:11+03:00"
+      }
+    },
+    {
+      "id": "existing-activity-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/screenshots/activity-preview.png",
+      "duplicateSourcePaths": [],
+      "view": "Activity",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": null,
+      "reviewedOn": "2026-10-21",
+      "currentness": "not-verified-against-current-render",
+      "reuseStatus": "illustration-only-pending-currentness-review",
+      "width": 1120,
+      "height": 820,
+      "bytes": 99723,
+      "sha256": "d40fe29d942948415a67b33702c427e79b504c220bd0cbd1d545abf830b91286",
+      "alt": "Breathing Room Activity browser preview with example app starts, file changes, writes and a free-space timeline.",
+      "caption": "Breathing Room Activity browser preview with example data. Activity counts, write rates and free-space changes are illustrative, not native observations or measured cleanup results. Current layout has not been reverified.",
+      "provenance": [
+        "README.md:40-43 identifies this as an example-data Activity browser preview, not measured results.",
+        "Visually inspected: example-data banner, summary metrics, monitoring controls and Space over time chart.",
+        "No successful current browser render or native capture was obtained in this run."
+      ],
+      "sourceLastChange": {
+        "commit": "f33b33fad32285f9eb3dda56466b953cbaf9e0a1",
+        "authorDate": "2026-10-19T03:40:46+03:00"
+      }
+    },
+    {
+      "id": "marketing-social-card-not-a-screenshot",
+      "sourcePath": "/Users/gabe/code/breathing-room/website/public/assets/social.png",
+      "duplicateSourcePaths": [],
+      "view": "Brand social card; no app view",
+      "kind": "illustrative-marketing-card",
+      "dataOrigin": "not-app-data",
+      "actualNativeScan": false,
+      "capturedOn": null,
+      "reviewedOn": "2026-10-21",
+      "currentness": "not-applicable",
+      "reuseStatus": "excluded-from-product-screenshot-coverage",
+      "width": 1200,
+      "height": 630,
+      "bytes": 51662,
+      "sha256": "cb3df70ec99bcfd50fde096347414be420dcd59e7e0c31b74727880297fc3a23",
+      "alt": "Breathing Room social card reading Mac storage, explained and cleared.",
+      "caption": "Breathing Room brand social card, not an app screenshot or evidence of cleanup outcomes.",
+      "provenance": [
+        "Visually inspected: logo, headline, tagline and website address only; no app UI.",
+        "Marketing src/pages/index.astro and src/layouts/ResourceLayout.astro reference this as the social sharing image."
+      ],
+      "sourceLastChange": {
+        "commit": "63a24875508e2e7096e2f59f9309a885f806fc6f",
+        "authorDate": "2026-10-18T17:37:05+03:00"
+      }
+    },
+    {
+      "id": "current-home-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/home-preview-2026-10-21.png",
+      "view": "Home overview",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:07:27.751120+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 2864,
+      "bytes": 624371,
+      "sha256": "7adbafc5c0641c4ad7776cc98847224d8e772d5a8ed5b18a3fa5a353e1c61761",
+      "alt": "Breathing Room Home overview view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Home overview browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    },
+    {
+      "id": "current-apps-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/apps-preview-2026-10-21.png",
+      "view": "Apps",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:59.096850+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 4440,
+      "bytes": 826195,
+      "sha256": "6bacc46187202835a29e24458383056e9cd55197bd53b0df2592e68c03c741d3",
+      "alt": "Breathing Room Apps view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Apps browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    },
+    {
+      "id": "current-daily-care-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/daily-care-preview-2026-10-21.png",
+      "view": "Daily care",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:07:06.190009+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3950,
+      "bytes": 719376,
+      "sha256": "f35abe00f034f890ba8020eab8a907738cff4429f8e45c1d7a4c1ebbaaf5c030",
+      "alt": "Breathing Room Daily care view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Daily care browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    },
+    {
+      "id": "current-activity-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/activity-preview-2026-10-21.png",
+      "view": "Activity",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:07:11.343331+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 4188,
+      "bytes": 745035,
+      "sha256": "b96994bca93ba6c3ff3f69604cae7a24db0eab175949e8150173488646c175de",
+      "alt": "Breathing Room Activity view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Activity browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    },
+    {
+      "id": "current-assistant-review-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/assistant-review-preview-2026-10-21.png",
+      "view": "Assistant plan review",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:07:38.214447+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 2220,
+      "bytes": 409708,
+      "sha256": "072dd61b3a08989c981a4c512a9a1908bd39b02ea68a64f0767383f3ff88f236",
+      "alt": "Breathing Room Assistant plan review view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Assistant plan review browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Focused view hides the global preview banner; the preceding in-app answer visibly states interactive preview / no Mac inspection. Keep that disclosure and the caption; no approval button was clicked."
+      ]
+    },
+    {
+      "id": "current-activity-panel-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/activity-panel-preview-2026-10-21.png",
+      "view": "Menu bar",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:07:47.737564+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/?panel=activity",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 1604,
+      "bytes": 244164,
+      "sha256": "66f8247c2d469b77f592c77582588de6351ce9cbbb71602132f46dcba824100c",
+      "alt": "Breathing Room Menu bar view rendered in a browser with illustrative example data.",
+      "caption": "Breathing Room Activity panel rendered in a browser with visible Example activity label. This is not a native macOS menu-bar screenshot or native interaction test.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Activity panel browser route only; native menu-bar placement/pinning remains unverified."
+      ]
+    }
+  ],
+  "requiredViews": [
+    {
+      "view": "Space",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-space-browser-preview",
+      "relatedAssetIds": [
+        "legacy-home-browser-preview"
+      ],
+      "diagnostic": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "view": "Apps",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-apps-browser-preview",
+      "relatedAssetIds": [
+        "legacy-home-browser-preview"
+      ],
+      "diagnostic": "Current-source Breathing Room Apps browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "view": "Assistant plan review",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-assistant-review-browser-preview",
+      "relatedAssetIds": [],
+      "diagnostic": "Current-source Breathing Room Assistant plan review browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "view": "Activity",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-activity-browser-preview",
+      "relatedAssetIds": [
+        "existing-activity-browser-preview"
+      ],
+      "diagnostic": "Current-source Breathing Room Activity browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "view": "Menu bar",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-activity-panel-browser-preview",
+      "relatedAssetIds": [],
+      "diagnostic": "Breathing Room Activity panel rendered in a browser with visible Example activity label. This is not a native macOS menu-bar screenshot or native interaction test."
+    },
+    {
+      "view": "Daily care",
+      "status": "verified-browser-preview",
+      "currentAssetId": "current-daily-care-browser-preview",
+      "relatedAssetIds": [
+        "legacy-home-browser-preview"
+      ],
+      "diagnostic": "Current-source Breathing Room Daily care browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    }
+  ],
+  "inspection": {
+    "instructions": "Read docs/content/PLAN.md. No AGENTS.md found in either scoped tree or checked ancestor directories.",
+    "assetSearch": "Enumerated PNG/JPG/JPEG/WebP/AVIF/GIF in app and marketing site; checked docs and marketing public SVG/HEIC/TIFF/BMP. App icons, marketing icon.svg and air-currents.svg are not product screenshots. Build/dependency duplicates are not independent capture evidence.",
+    "visualReview": "Read all four candidate image files with the image-capable read tool; three unique images after SHA-256 deduplication.",
+    "newCaptures": 7,
+    "nativeTestingPerformed": false,
+    "cleanupPerformed": false,
+    "browser": {
+      "tool": "chrome-devtools.list_pages",
+      "endpoint": "http://127.0.0.1:9333/json/version",
+      "attempts": 2,
+      "result": "failed-both-attempts",
+      "error": "Could not connect to Chrome. Check if Chrome is running. Cause: Failed to fetch browser webSocket URL from http://127.0.0.1:9333/json/version: fetch failed",
+      "recovery": "Stopped browser work after one retry per browser-automation skill. No alternate profile/provider launched and no existing tabs inspected."
+    },
+    "browserRecovery": "Existing authorized Chrome profile9333 restored; owned tab used against an owned app Vite preview on1431, existing user server1430 untouched. No cleanup approval, daily settings save, native scan, installation or external AI call performed."
+  },
+  "completionGate": {
+    "requiredCurrentViews": 6,
+    "verifiedCurrentViews": 6,
+    "scope": "Current browser-preview illustrations only",
+    "diagnostic": "All six view captures inspected, with explicit example-data/native limitations. Native menu-bar behavior remains unverified and cannot be claimed.",
+    "nextStep": "Independent per-article visual/provenance review remains required; choose readable contextual crops while retaining disclosure."
+  }
+}

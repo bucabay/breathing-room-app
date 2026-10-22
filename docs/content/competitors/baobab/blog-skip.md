@@ -1,0 +1,5 @@
+# Baobab alias workflow draft skip
+
+Verified name variants are consolidated under the canonical GNOME product record `baobab`: Baobab, GNOME Disk Usage Analyzer, Disk Usage Analyzer in this GNOME context, and package ID `org.gnome.baobab`. They are not separate products or separate workflow articles. Keep the one canonical workflow article at `/blog/baobab-mac-workflow/` in review/unpublished state. Evidence: `research.json` identity/alias ledger and `research.md` §§5–11, based on the reused October 21 official GNOME baseline, Homebrew formula and GNOME contribution page. The directory label is discovery provenance only.
+
+The requested alternatives intent is already handled as a distinct page by the existing Baobab alternatives draft and its `alternatives-handoff.md`; that handoff documents verified, job-relevant peer packets (DaisyDisk, Disk Map and DriveScape) and clearly distinguishes peer fit from an asserted AlternativeTo relationship. No additional alternatives page or product relationship was created for this workflow task. The separate Baobab comparison draft remains a distinct head-to-head intent and is not linked as if it were live.

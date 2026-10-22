@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-intego-washing-machine",
+  "productId": "intego-washing-machine",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "identity": {
+    "officialName": "Washing Machine X9",
+    "vendor": "Intego",
+    "canonicalOwnerId": "intego-washing-machine",
+    "aliases": ["Intego Mac Washing Machine", "Mac Washing Machine", "Washing Machine"],
+    "homepage": "http://www.intego.com/mac-cleaner",
+    "homepageRedirectDestination": "https://www.intego.com/features/smartclean",
+    "canonicalDocumentationUrl": "https://integosupport.zendesk.com/hc/en-us/articles/40945613333275-Washing-Machine-X9-User-Manual",
+    "repository": null,
+    "repositoryStatus": "not verified; no official source repository established",
+    "aliasSkipDecision": "Do not skip the Washing Machine identity as a SmartClean alias. Official support separately documents Washing Machine X9 and legacy subscription migration exclusions. Do not create an extra SmartClean doorway draft from this job or transfer historical features to SmartClean.",
+    "unrelatedAliasCandidates": "No evidence connects this product to PowerMyMac. Existing PowerMyMac decisions are outside this job; no merge or separate draft authorized.",
+    "fit": "direct-overlap-mac-cleanup; adjacent duplicate-finding and Desktop/Dock organization",
+    "fitReason": "Both address Mac storage maintenance, but duplicate selection and Desktop/Dock organization are distinct workflows, not verified Breathing Room equivalents.",
+    "deadProductDecision": "Not established as dead. Current official manual and release notes remain available; current standalone sale terms remain unverified."
+  },
+  "sources": [
+    {
+      "id": "directory", "publisher": "AlternativeTo", "title": "Intego Mac Washing Machine",
+      "url": "https://alternativeto.net/software/intego-washing-machine/about/",
+      "retrievedAtUtc": "2026-10-21T19:07:59.395Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/intego-washing-machine-directory.json",
+      "sha256": "8ee20f8a519fe7713339741b9cc679367715b1c00feda7eeec441692dc4b397a",
+      "excerpt": "Official Website\nintego.com/mac-cleaner",
+      "use": "Reused batch-1 discovery, not pricing or feature proof. Exact seed/pagination edge is not retained in this product snapshot; do not invent it."
+    },
+    {
+      "id": "redirect", "publisher": "Intego", "title": "SmartClean",
+      "url": "http://www.intego.com/mac-cleaner", "finalUrl": "https://www.intego.com/features/smartclean",
+      "retrievedAtUtc": "2026-10-21T19:09:30.857900+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/intego-washing-machine-official.json",
+      "sha256": "3f17065997e32eec99522ed60dbd80cbd302720df081bcb573cd96b0a16fdca2",
+      "excerpt": "Go to the SmartClean tab on your Intego ONE dashboard.",
+      "use": "Reused current batch-1 record; destination identity does not establish historical equivalence."
+    },
+    {
+      "id": "manual", "publisher": "Intego Support", "title": "Washing Machine X9 User Manual",
+      "url": "https://integosupport.zendesk.com/hc/en-us/articles/40945613333275-Washing-Machine-X9-User-Manual",
+      "retrievedAtUtc": "2026-10-21T20:44:31.618Z", "sourceUpdatedOn": "2026-09-23",
+      "snapshotPath": "sources/manual-browser.json",
+      "sha256": "cf6938e067592be5da2d97c3620632a19c999696039646e65007cce3d24129b0",
+      "scope": "Intego X9 for Mac; Washing Machine; vendor documentation, not execution evidence"
+    },
+    {
+      "id": "release", "publisher": "Intego Support", "title": "Washing Machine X9 Release Notes",
+      "url": "https://integosupport.zendesk.com/hc/en-us/articles/40945609280411-Washing-Machine-X9-Release-Notes",
+      "retrievedAtUtc": "2026-10-21T20:44:37.375Z", "sourceUpdatedOn": "2026-09-18",
+      "snapshotPath": "sources/release-notes-browser.json",
+      "sha256": "c8bf1c91ebe06e7d4591214de3ca0b2f7a29dba37feedd799c15e2541933617f",
+      "scope": "Historical public release ledger; not installed binary inspection"
+    },
+    {
+      "id": "identity", "publisher": "Intego Support", "title": "The Get Intego ONE Tile Is Missing or Won't Open in Your Intego X9 My Account",
+      "url": "https://integosupport.zendesk.com/hc/en-us/articles/56127413762715-Troubleshooting-The-Get-Intego-ONE-Tile-Is-Missing-or-Won-t-Open",
+      "finalUrl": "https://integosupport.zendesk.com/hc/en-us/articles/56127413762715-The-Get-Intego-ONE-Tile-Is-Missing-or-Won-t-Open-in-Your-Intego-X9-My-Account",
+      "retrievedAtUtc": "2026-10-21T20:44:45.862Z", "sourceUpdatedOn": "2026-10-06",
+      "snapshotPath": "sources/identity-browser.json",
+      "sha256": "e3a173346cbca3199db598baf08f47a978dffc64d46c6084eb756ce959ff7f43"
+    },
+    {
+      "id": "pricing", "publisher": "Intego", "title": "Plans and pricing",
+      "url": "https://www.intego.com/buynow",
+      "retrievedAtUtc": "2026-10-21T20:44:17.227Z", "sourceUpdatedOn": null,
+      "snapshotPath": "sources/pricing-browser.json",
+      "sha256": "faaa22228262439e3a61ad30803d70de359dcfe53a318d8550c979069d9d0ff6",
+      "scope": "Default displayed Intego ONE offers; no checkout or selector changes performed"
+    }
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "reviewer": "scheduled research worker", "evidenceClass": "vendor-documented, not hands-on tested", "state": "verified", "urlResolution": "sourceIds map to exact URLs above"},
+  "claims": [
+    {"id": "identity-separation", "wording": "Washing Machine X9 remains separately documented from the current SmartClean destination.", "sourceIds": ["manual", "identity", "redirect"], "excerpt": "Applies to: Intego X9 for Mac · Washing Machine", "location": "identity and comparison lead", "conditions": "Editorial identity judgment based on explicit product scope; no feature-equivalence claim."},
+    {"id": "platform", "wording": "The Washing Machine manual specifies macOS 10.13 High Sierra or higher, a 64-bit Mac processor and 1.5 GB free disk space.", "sourceIds": ["manual"], "excerpt": "System requirements: macOS 10.13 High Sierra or higher · Mac with a 64-bit processor · 1.5 GB free disk space", "location": "platform matrix", "conditions": "Vendor requirements, not tested compatibility; no Windows support inferred."},
+    {"id": "version", "wording": "The latest entry in the inspected Washing Machine X9 release ledger is 10.9.28, dated March 24, 2026; it states Tahoe compatibility.", "sourceIds": ["release"], "excerpt": "10.9.28\n\nRelease Date: March 24th, 2026", "location": "version note", "conditions": "Ledger also states: This update is compatible with macOS Tahoe. No installer downloaded; architecture-specific runtime not tested."},
+    {"id": "reclaim", "wording": "Reclaim offers Caches, Downloads, Languages, Logs and Trash categories, a Safe/Aggressive criteria slider, and result inspection before Clean.", "sourceIds": ["manual"], "excerpt": "Select Reclaim, then choose categories to scan: Caches, Downloads, Languages, Logs, and Trash.", "location": "workflow and cleanup matrix", "conditions": "Manual warns cleaned files cannot be recovered. Safe is the vendor's slider label, not our safety guarantee."},
+    {"id": "duplicates", "wording": "Duplicates analyzes actual file data and offers location selection, selection rules, Finder reveal and Quick Look before Clean.", "sourceIds": ["manual"], "excerpt": "Duplicates — Finds duplicate files by analyzing their actual data, not just names or timestamps", "location": "workflow and strengths", "conditions": "Advanced preferences offer moving duplicates to Trash instead of permanent deletion; not a blanket Trash guarantee for Reclaim."},
+    {"id": "organize", "wording": "Organize addresses Desktop, Dock and Smart Folders.", "sourceIds": ["manual"], "excerpt": "Organize — Cleans up your Desktop, Dock, and Smart Folders", "location": "scope matrix and trade-offs", "conditions": "Organization is not synonymous with reclaiming storage or uninstalling an app."},
+    {"id": "reminders", "wording": "The documented scheduler reminds users to scan every two weeks by default, with monthly or three-monthly alternatives.", "sourceIds": ["manual"], "excerpt": "Scheduler — Choose how often the Washing Machine reminds you to run a scan", "location": "recurring workflow matrix", "conditions": "Does not establish automatic cleanup or continuous recurring-growth monitoring."},
+    {"id": "trial", "wording": "The manual describes a 30-day trial with Clean and Tidy disabled, and serial-number registration.", "sourceIds": ["manual"], "excerpt": "try Washing Machine for 30 days — everything works except Clean and Tidy", "location": "access and pricing caveats", "conditions": "Documentation of trial behavior, not a verified current standalone purchase offer or licence duration."},
+    {"id": "updates", "wording": "Washing Machine uses Intego NetUpdate, installed alongside it.", "sourceIds": ["manual"], "excerpt": "Washing Machine uses Intego NetUpdate, installed alongside it, for updates.", "location": "installation matrix", "conditions": "Signing/notarization, full permission requirements and Python/runtime dependencies not verified."},
+    {"id": "migration", "wording": "Intego lists standalone Washing Machine among legacy plans not eligible for the self-service Intego ONE migration; a new ONE subscription is required to move to ONE.", "sourceIds": ["identity"], "excerpt": "these plans aren't eligible to migrate to Intego ONE", "location": "identity caveat", "conditions": "Applies to the listed standalone plan; do not generalize to Mac Premium Bundle X9 eligibility."},
+    {"id": "one-offer", "wording": "The displayed Intego ONE Advanced offer includes SmartClean and shows $90.99 for the first two years, renewing at $129.99 every two years.", "sourceIds": ["pricing"], "excerpt": "Automatically renews at $129.99 every 2 years", "location": "separate current-suite context only", "conditions": "Default page displays 1 Mac and dollar symbols; ISO currency, tax, geography and checkout total not independently established. $3.79/month is an equivalent display, not monthly billing. Never assign this price to Washing Machine X9."},
+    {"id": "legacy-price", "wording": "Current Washing Machine X9 standalone price, licence duration, device allowance and new-purchase availability are not verified.", "sourceIds": ["pricing", "directory"], "excerpt": "Pricing page displays Intego ONE plans, not a verified Washing Machine offer.", "location": "pricing matrix", "state": "not-verified", "conditions": "Directory's $70–$90 perpetual claim is discovery-only and must not be published as current official pricing."}
+  ],
+  "matrix": {
+    "macOS": ["platform", "version"], "license": ["trial", "legacy-price"],
+    "scanAndCleanup": ["reclaim", "duplicates", "organize"], "approval": ["reclaim", "duplicates"],
+    "runtimeAndInstall": ["updates", "trial"], "pricingAndAvailability": ["legacy-price", "one-offer", "migration"],
+    "localVsHosted": "not verified; native Mac app documentation does not prove wholly offline operation or no data sharing",
+    "helperGrouping": "not verified", "recurringGrowth": "not verified; reminder scheduler documented by reminders claim",
+    "developerCaches": "not verified; generic Caches category is not evidence of owning-tool developer cache adapters",
+    "telemetry": "Manual documents an anonymous usage-data Feedback toggle; no privacy/backend audit performed"
+  },
+  "breathingRoomEvidence": {
+    "source": "docs/content/capabilities.md", "checkedOn": "2026-10-21",
+    "reuse": "Same-day existing source/public-page verification reused; not fetched again.",
+    "claims": [
+      {"id": "br-preview", "wording": "0.1.0-preview.1 is a macOS 13+ preview; Apple Development signed, not Developer ID signed or notarized; Python 3.10+ prerequisite; physical Intel and clean-machine validation remain incomplete.", "locators": ["capabilities.md:44-56"], "sourceUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"},
+      {"id": "br-workflow", "wording": "Source implements storage exploration, grouped processes, sampled activity and developer-cache discovery. Native verified cleanup uses constrained methods and approvals; optional automatic verified Ruff-cache Trash mode is an exception to per-action review.", "locators": ["capabilities.md:20-42"], "sourceUrl": "https://github.com/bucabay/breathing-room-app", "conditions": "Source presence is not distributed-binary/runtime verification; activity inference is not forensic attribution."},
+      {"id": "br-access", "wording": "Free local core; advertised AI Care $5 USD/month or $50 USD/year. Hosted assistance requires authentication/internet and may send relevant paths, process and storage data. Daily care requires the app running and exact saved approvals.", "locators": ["capabilities.md:58-86"], "sourceUrls": ["https://breathing-room.chatic.ai/#pricing", "https://breathing-room.chatic.ai/privacy/"], "conditions": "Taxes/renewal apply; no unlimited quota or successful checkout asserted. Website download account gate differs from public GitHub release access."}
+    ]
+  },
+  "visuals": [
+    {
+      "id": "washing-machine-reclaim", "productId": "intego-washing-machine", "view": "Reclaim category selection", "kind": "official-asset",
+      "sourcePageUrl": "https://integosupport.zendesk.com/hc/en-us/articles/40945613333275-Washing-Machine-X9-User-Manual",
+      "assetUrl": "https://integosupport.zendesk.com/hc/article_attachments/56239213980571",
+      "retrievedAtUtc": "2026-10-21T20:44:31.618Z", "capturedAtUtc": null, "capturedBy": null,
+      "productVersion": null, "buildOrCommit": null, "osVersion": null, "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": 2048, "heightPx": 1343, "edits": [],
+      "reuse": {"status": "link-only", "basis": "Official manual embeds this real app UI image; no republication licence established. Footer says All rights reserved. Public accessibility is not permission.", "evidenceUrlOrPath": "sources/manual-browser.json", "credit": "Intego Support"},
+      "caption": "Intego's Washing Machine X9 Reclaim illustration in its official manual; vendor-provided example, not our scan or measured savings.",
+      "alt": "Official Washing Machine X9 Reclaim screen illustrating cleanup category selection.",
+      "privacyReview": {"status": "pending", "redactions": []},
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null},
+      "supportedClaimIds": ["reclaim"],
+      "limitations": ["Public image URL and nonzero dimensions observed in the rendered manual; no image file downloaded or independently visually approved.", "Retrieval timestamp describes page/link observation, not vendor capture or image-byte download.", "Rights block on-page reuse; linked official illustration does not pass publication image gate."]
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "kind": "browser-preview", "view": "Space",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "capturedBy": "screenshot-library job",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null,
+      "widthPx": 2940, "heightPx": 3468, "dataMode": "example", "edits": [],
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview with example-data banner, storage categories and illustrative file sizes.",
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party UI capture, as recorded in screenshots.json; preserve disclosure. Third-party marks remain their owners' marks.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview"},
+      "privacyReview": {"status": "reviewed", "redactions": []},
+      "review": {"status": "research-inspected", "reviewer": "scheduled research worker", "reviewedOn": "2026-10-21"},
+      "limitations": ["Opened and read actual PNG; visible Interactive preview/example-data labels verified. Full-height image has floating composer overlap and requires article-context legibility review.", "Current source at recorded commit, not proof of current distributed native release."]
+    }
+  ],
+  "briefs": {
+    "article": {"title": "Review duplicate copies before reclaiming space on a Mac", "slug": "review-duplicate-copies-before-reclaiming-mac-space", "track": "search-reference", "intent": "Separate duplicate-copy decisions from cache cleanup and Desktop organization, using Washing Machine X9's documented cycles.", "outline": ["Pick a cleanup job before selecting files", "Compare duplicate locations and preview the copy you intend to keep", "Check the duplicates-to-Trash preference; do not assume Reclaim is reversible", "Treat Dock/Desktop organization as a different task", "Choose a storage investigation workflow when the problem is unexplained growth"], "interactionPass": "A non-destructive decision checklist: original backed up, copy location understood, preview checked, deletion method known, rebuild/download cost accepted. No live filesystem controls.", "visualPlan": "Top: official Reclaim/duplicate UI only after rights clearance; later: disclosed Breathing Room Space example preview.", "boundary": "Documented workflow, not a hands-on tutorial, benchmark or claim that Breathing Room replaces duplicate detection."},
+    "comparison": {"title": "Breathing Room vs Intego Washing Machine X9", "slug": "intego-washing-machine", "intent": "Choose between legacy duplicate/organization cycles and a preview storage/process investigation workflow.", "rows": ["Product/version and SmartClean redirect caveat", "Platform and installation prerequisites", "Reclaim vs constrained cleanup plans", "Duplicate handling and organization scope", "Monitoring, helper grouping and recurrence: unknown is not No", "Pricing/access with separate legacy versus ONE scope"], "disclosure": "Breathing Room, which we build", "internalLinks": ["/comparisons/", "/blog/review-duplicate-copies-before-reclaiming-mac-space/"], "publication": "Keep unpublished; proposed routes are not verified live."}
+  },
+  "advantagesAndTradeoffs": {
+    "washingMachine": ["Documented content-based duplicate selection, preview and organization cycles suit those specific jobs.", "Reclaim warning says cleaned files cannot be recovered; duplicates have a separate Trash preference.", "Trial cannot Clean/Tidy; standalone current pricing and purchase availability remain unknown."],
+    "breathingRoom": ["Source-backed storage/process/activity investigation and developer-cache methods may fit unexplained growth better; this is editorial fit, not a superiority benchmark.", "Preview, Python, signing and untested runtime caveats are material; hosted AI is not entirely offline.", "Duplicate finding and Desktop/Dock organization equivalence are not established."]
+  },
+  "blockers": [
+    {"id": "image-rights", "diagnostic": "Official competitor app asset located but republication permission/licence is not established. Link-only fallback does not satisfy required on-page competitor visual.", "resolution": "Obtain authorized reuse evidence or an explicitly approved visual-policy decision before drafting. Do not send permission messages in this job."},
+    {"id": "legacy-offer", "diagnostic": "Current Washing Machine standalone price, licence duration/device allowance and new-purchase availability not verified; ONE pricing is a different product scope.", "resolution": "Verify a public official legacy offer or approve explicit existing-owner-only comparison framing; never import directory pricing or ONE bundle pricing."}
+  ],
+  "noncriticalUnknowns": ["Official source repository", "Exact screenshot app build/capture date", "Runtime architecture execution", "Local/hosted data flows and telemetry behavior", "Developer-cache adapters and helper grouping", "Exact discovery pagination edge"],
+  "accessLog": ["WebFetch manual and identity support pages succeeded.", "WebFetch pricing, release notes and Organize page returned HTTP 403; pricing and release notes were then read normally in owned Chrome tab 112, no challenge bypass.", "Only task-owned tab 112 was inspected/navigated and closed; unrelated tabs not read. Existing port/profile worked; no recovery performed."],
+  "safety": "No app installation, cleanup, signup, login, purchase, messages, secrets, hidden cookie extraction, site edits, queue updates, agents, commits, pushes or deployment. No third-party image downloaded."
+}

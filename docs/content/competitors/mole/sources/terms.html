@@ -1,0 +1,1999 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<script>
+var MOLE_SITE_LANG_KEY = 'mole.site.lang';
+var MOLE_SITE_LANG_PREFIXES = {en:'',zh:'/zh',tw:'/tw',ja:'/ja',ko:'/ko',fr:'/fr',de:'/de',it:'/it',es:'/es','pt-br':'/pt-br',nl:'/nl'};
+var MOLE_SITE_PAGES = ['terms', 'privacy', 'refund', 'help', 'docs', 'releases', 'affiliates', 'mac-cleaner', 'mac-app-uninstaller', 'mac-optimizer', 'mac-disk-analyzer', 'mac-system-monitor', 'windows'];
+
+function rememberSiteLang(lang) {
+  // localStorage keeps the client fallback working; the cookie is what lets
+  // vercel.json answer the language choice before any HTML is sent.
+  try { localStorage.setItem(MOLE_SITE_LANG_KEY, lang); }
+  catch (error) {}
+  try {
+    document.cookie = MOLE_SITE_LANG_KEY + '=' + lang + '; Path=/; Max-Age=31536000; SameSite=Lax'
+      + (location.protocol === 'https:' ? '; Secure' : '');
+  } catch (error) {}
+}
+
+(function(){
+  function readSavedLang() {
+    try { return localStorage.getItem(MOLE_SITE_LANG_KEY); }
+    catch (error) { return null; }
+  }
+
+  function matchLang(value) {
+    var tag = String(value || '').toLowerCase().replace(/_/g, '-');
+    if (!tag) return null;
+    if (
+      /^zh-(?:hant(?:-|$)|(?:tw|hk|mo)(?:-|$))/.test(tag)
+      || tag === 'yue'
+      || /^yue-(?:hant(?:-|$)|(?:hk|mo)(?:-|$))/.test(tag)
+    ) return 'tw';
+    if (/^(?:zh|yue)(?:-|$)/.test(tag)) return 'zh';
+    // Every site language gets the first-visit redirect (maintainer 2026-09-15);
+    // any Portuguese lands on the Brazilian pages, Dutch (nl-BE too) on the
+    // Dutch ones, everything else stays on English. Mirror of the
+    // Accept-Language rules in vercel.json.
+    var base = tag.split('-')[0];
+    if (/^(?:ja|ko|fr|de|it|es|nl)$/.test(base)) return base;
+    if (base === 'pt') return 'pt-br';
+    return null;
+  }
+
+  function langFromPath(pathname) {
+    var match = /^\/(zh|tw|ja|ko|fr|de|it|es|pt-br|nl)(?:\/|$)/.exec(pathname);
+    return match ? match[1] : 'en';
+  }
+
+  function routedPage(pathname) {
+    // The home page and the twelve default pages are the only surfaces the
+    // server language-routes; every blog tree carries its language in the URL.
+    var rest = pathname.replace(/^\/(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)(?=\/|$)/, '');
+    var clean = rest.replace(/\/+$/, '') || '/';
+    if (clean === '/') return 'home';
+    var name = clean.replace(/^\//, '');
+    return MOLE_SITE_PAGES.indexOf(name) !== -1 ? name : null;
+  }
+
+  function hasPage(lang, page) {
+    // pt-BR and Dutch ship the same partial page set; both also have their own
+    // complete blog tree, so blog links stay inside the requested language.
+    if (lang !== 'pt-br' && lang !== 'nl') return true;
+    if (page === 'home' || page === 'releases' || page === 'windows') return true;
+    if (page === 'terms' || page === 'privacy' || page === 'refund' || page === 'affiliates'
+      || page === 'help' || page === 'docs'
+      || page === 'mac-cleaner' || page === 'mac-app-uninstaller' || page === 'mac-optimizer'
+      || page === 'mac-disk-analyzer' || page === 'mac-system-monitor') return true;
+    return false;
+  }
+
+  var page = routedPage(location.pathname);
+  if (!page) return;
+  // A cookie means vercel.json already answered with this visitor's own choice.
+  if (document.cookie.indexOf(MOLE_SITE_LANG_KEY + '=') !== -1) return;
+  var current = langFromPath(location.pathname);
+  var saved = readSavedLang();
+  if (!MOLE_SITE_LANG_PREFIXES.hasOwnProperty(saved)) saved = null;
+  var lang;
+  if (saved) {
+    // A choice made before the cookie existed is invisible to the server, which
+    // now redirects before any of this page is built. Mirror it from whichever
+    // language page the visitor was sent to, then go where they chose.
+    rememberSiteLang(saved);
+    lang = saved;
+  } else if (current === 'en') {
+    var primary = navigator.languages && navigator.languages.length
+      ? navigator.languages[0]
+      : navigator.language || navigator.userLanguage || '';
+    lang = matchLang(primary) || 'en';
+  } else {
+    // A language-prefixed URL with nothing stored stays where it is.
+    return;
+  }
+  if (lang === current || !hasPage(lang, page)) return;
+  var prefix = MOLE_SITE_LANG_PREFIXES[lang];
+  var target = page === 'home' ? prefix + '/' : prefix + '/' + page;
+  // One hop at most: the cookie written above makes the server agree from the
+  // next request on, and the target is never the page already open.
+  if (target !== location.pathname) location.replace(target + location.search + location.hash);
+})();
+</script>
+<title>Mole Terms of Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4ed">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="robots" content="max-image-preview:large">
+<meta name="description" content="Read Mole's license terms for Mac and Windows, the two-device activation limit, usage restrictions, warranty disclaimer, liability terms, and contact details.">
+<meta name="google-site-verification" content="FcrLELhAI9DQanxdlRCytFgIa6ER0cFzdI1Pm03ZAAQ">
+<meta name="shenma-site-verification" content="996e5b2b99dc8511a79d33fba8f9892c_1789279363">
+<meta name="bytedance-verification-code" content="26IZnqUVAFgoWGGweRyn">
+<meta property="og:title" content="Mole Terms of Service">
+<meta property="og:description" content="Read Mole's license terms for Mac and Windows, the two-device activation limit, usage restrictions, warranty disclaimer, liability terms, and contact details.">
+<meta property="og:image" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta property="og:image:secure_url" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="Clean tab showing Earth and the space a scan found, with a button to review the results">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HiTw93">
+<meta name="twitter:creator" content="@HiTw93">
+<meta name="twitter:title" content="Mole Terms of Service">
+<meta name="twitter:description" content="Read Mole's license terms for Mac and Windows, the two-device activation limit, usage restrictions, warranty disclaimer, liability terms, and contact details.">
+<meta name="twitter:image" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta name="twitter:image:alt" content="Clean tab showing Earth and the space a scan found, with a button to review the results">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-mole-32-0c604534.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./img/favicon-mole-192-ba32c29d.png">
+<link rel="apple-touch-icon" href="./img/favicon-mole-192-ba32c29d.png">
+<link rel="canonical" href="https://mole.fit/terms">
+<link rel="alternate" hreflang="en" href="https://mole.fit/terms">
+<link rel="alternate" hreflang="zh-CN" href="https://mole.fit/zh/terms">
+<link rel="alternate" hreflang="zh-Hans" href="https://mole.fit/zh/terms">
+<link rel="alternate" hreflang="zh-Hant" href="https://mole.fit/tw/terms">
+<link rel="alternate" hreflang="ja" href="https://mole.fit/ja/terms">
+<link rel="alternate" hreflang="ko" href="https://mole.fit/ko/terms">
+<link rel="alternate" hreflang="fr" href="https://mole.fit/fr/terms">
+<link rel="alternate" hreflang="de" href="https://mole.fit/de/terms">
+<link rel="alternate" hreflang="it" href="https://mole.fit/it/terms">
+<link rel="alternate" hreflang="es" href="https://mole.fit/es/terms">
+<link rel="alternate" hreflang="pt-BR" href="https://mole.fit/pt-br/terms">
+<link rel="alternate" hreflang="nl" href="https://mole.fit/nl/terms">
+<link rel="alternate" hreflang="x-default" href="https://mole.fit/terms">
+<link rel="alternate" type="text/markdown" href="/llms.txt">
+<link rel="alternate" type="application/rss+xml" title="Mole Blog" href="/feed.xml">
+<link rel="alternate" type="text/markdown" href="/terms.md">
+<meta property="og:url" content="https://mole.fit/terms">
+<link rel="stylesheet" href="./styles.css">
+<link rel="preload" as="image" href="./img/en/clean-1980w.webp" imagesrcset="./img/en/clean-828w.webp 828w, ./img/en/clean-1400w.webp 1400w, ./img/en/clean-1980w.webp 1980w" imagesizes="(max-width: 880px) 100vw, 990px" type="image/webp" fetchpriority="high">
+
+<!-- Google tag (gtag.js) -->
+<script>
+  window.__siteAnalyticsEnabled = location.protocol === 'https:' && location.hostname === 'mole.fit';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){if (window.__siteAnalyticsEnabled) dataLayer.push(arguments);}
+  if (window.__siteAnalyticsEnabled) {
+    var googleTag = document.createElement('script');
+    googleTag.async = true;
+    googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-PGT9GXBZCY';
+    document.head.appendChild(googleTag);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-PGT9GXBZCY', { anonymize_ip: true });
+
+  // Capture this visit's GA identifiers so a server-side purchase (the Dodo webhook
+  // -> Measurement Protocol path in /api/dodo-webhook) can be credited back to the
+  // original acquisition source. The checkout redirect leaves mole.fit for Dodo's own
+  // domain via a /buy -> /session hop that strips GA's _gl linker, so client-side
+  // cross-domain never survives; riding these through Dodo metadata is the only channel
+  // that reaches the sale (the same channel affonso_referral already proves reliable).
+  try {
+    gtag('get', 'G-PGT9GXBZCY', 'client_id', function (v) { if (v) window.__gaClientId = v; });
+    gtag('get', 'G-PGT9GXBZCY', 'session_id', function (v) { if (v) window.__gaSessionId = v; });
+  } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mole.fit/#organization",
+      "name": "Mole",
+      "url": "https://mole.fit/",
+      "logo": "https://mole.fit/img/favicon-mole-192-ba32c29d.png",
+      "email": "hi@mole.fit",
+      "founder": { "@type": "Person", "@id": "https://tw93.fun/#person", "name": "Tw93", "url": "https://tw93.fun" },
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://faberon.io/#organization",
+        "name": "Faberon",
+        "url": "https://faberon.io/"
+      },
+      "sameAs": [
+        "https://github.com/tw93/Mole",
+        "https://github.com/tw93",
+        "https://x.com/HiTw93",
+        "https://tw93.fun"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hi@mole.fit",
+        "url": "https://mole.fit/help",
+        "availableLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "fr", "de", "it", "es"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mole.fit/#website",
+      "url": "https://mole.fit/",
+      "name": "Mole",
+      "description": "A native macOS app for reviewing and cleaning caches, sorting out old AI sessions and idle AI command-line tools, managing apps, maintaining the system, analyzing disk space, checking live status, and seeing key metrics in the menu bar.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://mole.fit/#organization" },
+      "about": { "@id": "https://mole.fit/#software" }
+    }
+  ]
+}
+</script>
+<script async defer
+  src="/r/pixel.js"
+  data-affonso="cmr7ipkwg000f4rl5rn98817p"
+  data-cookie_duration="30"
+  data-api-base="/r"></script>
+<script>
+  // Checkout link enhancement: stamp every checkout.dodopayments.com link with metadata
+  // so the sale can be credited. Two independent signals ride along as Dodo `metadata_*`
+  // params: the freshest window.affonso_referral (affiliate payout) and the GA client_id /
+  // session_id captured above (server-side conversion attribution via /api/dodo-webhook).
+  // The pixel and GA tag both resolve async, so run on the pixel ready event plus timed
+  // passes, and re-read at click time so a last-touch value is never left stale on the button.
+  (function () {
+    // App purchase links land on the localized homepage with a bounded `checkout`
+    // query. That gives GA one first-party page view carrying mole-app / app before
+    // this existing session flow continues to Dodo. Unknown values are ignored so
+    // a public query cannot create high-cardinality dimensions.
+    var appCheckoutEntry = (function () {
+      try {
+        var value = new URLSearchParams(location.search).get('checkout') || '';
+        return /^(?:onboarding|activation)$/.test(value) ? value : '';
+      } catch (e) { return ''; }
+    })();
+    // Which product this page sells. /api/checkout only ever chooses between its
+    // own two constants, so this picks a product, it cannot name one.
+    var checkoutProduct = /(?:^|\/)windows\/?$/.test(location.pathname) ? 'windows' : 'mac';
+    // The first page this tab opened on the site. Most sales check out on a
+    // localized home, which says nothing about whether the reader arrived on a
+    // blog post, and GA cannot answer it either: the webhook replays the
+    // purchase, so it never gets a landing page. Without storage the field is
+    // omitted rather than guessed from the current page.
+    var entryPage = (function () {
+      var here = location.pathname.slice(0, 100);
+      try {
+        var saved = sessionStorage.getItem('mole.entry_page');
+        if (saved) return saved;
+        sessionStorage.setItem('mole.entry_page', here);
+        return here;
+      } catch (e) { return ''; }
+    })();
+    function appCheckoutCtaLocation() {
+      return appCheckoutEntry ? 'app_' + appCheckoutEntry : '';
+    }
+    // gtag('get') only resolves once the async gtag.js has initialised. A click
+    // before that leaves __gaClientId undefined, the checkout link carries no GA
+    // identifier, and the webhook can only skip it, so the sale is never
+    // attributable. A traffic spike is exactly when that window is widest: new
+    // visitors, mobile networks, fast clicks. GA writes the same client_id into
+    // the _ga cookie (GA1.1.<client_id>), which a returning visitor already has,
+    // so read it from there when the callback has not landed. A first-ever visit
+    // that beats the cookie write stays unattributable; that is a real limit.
+    function cookieValue(name) {
+      var m = document.cookie.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+      return m ? m[1] : '';
+    }
+    function gaClientId() {
+      if (window.__gaClientId) return String(window.__gaClientId);
+      var raw = cookieValue('_ga');
+      var m = raw.match(/^GA\d+\.\d+\.(\d+\.\d+)$/);
+      return m ? m[1] : '';
+    }
+    function gaSessionId() {
+      if (window.__gaSessionId) return String(window.__gaSessionId);
+      // _ga_<MEASUREMENT_ID 去掉 G- 前缀>，session_id 是首个数字段，新版带 s 前缀。
+      var raw = cookieValue('_ga_PGT9GXBZCY');
+      var m = raw.match(/^GS\d+\.\d+\.s?(\d+)/);
+      return m ? m[1] : '';
+    }
+    function applyReferral(link) {
+      try {
+        var u = new URL(link.href);
+        // A link already upgraded to a checkout session must not get metadata_*
+        // appended: those are only read by static /buy/ links, while a session's
+        // metadata is injected server-side at creation. Both entry points match
+        // the same checkout.dodopayments.com selector, hence this guard.
+        if (link.hasAttribute('data-checkout-session') || u.pathname.indexOf('/session/') === 0) return;
+        if (window.affonso_referral) u.searchParams.set('metadata_affonso_referral', window.affonso_referral);
+        var cid = gaClientId();
+        var sid = gaSessionId();
+        if (cid) u.searchParams.set('metadata_ga_client_id', cid);
+        if (sid) u.searchParams.set('metadata_ga_session_id', sid);
+        // Which page sent the buyer to checkout. GA4's landingPage is a
+        // session-scoped dimension read off the session's first page_view, and a
+        // Measurement Protocol purchase is not a page_view, so every order lands
+        // under (not set) there no matter how well client_id is wired. This
+        // travels with the order instead and answers the question that was
+        // actually being asked: which page earned the sale.
+        u.searchParams.set('metadata_ga_page', location.pathname.slice(0, 100));
+        if (entryPage) u.searchParams.set('metadata_ga_entry_page', entryPage);
+        u.searchParams.set('metadata_ga_page_type', analyticsPageType());
+        u.searchParams.set('metadata_ga_site_language', analyticsSiteLanguage());
+        u.searchParams.set('metadata_ga_cta_location', analyticsCtaLocation(link));
+        link.href = u.toString();
+      } catch (e) {}
+    }
+    function enhanceDodoLinks() {
+      document.querySelectorAll('a[href*="checkout.dodopayments.com"]').forEach(applyReferral);
+    }
+    // Upgrade the static payment link to a configured Checkout Session (minimal
+    // address, page language, WeChat for Chinese buyers). The href must be swapped
+    // before the click: browsers only allow opening a window inside the gesture's
+    // synchronous stack, so awaiting a fetch first gets it blocked as a popup.
+    // If the upgrade fails the href stays static and buying is unaffected.
+    var checkoutUpgraded = false;
+    var checkoutHadClientId = false;
+    // Two session requests can overlap: the first one is deliberately sent before
+    // gtag has necessarily written client_id, then a better attributed request may
+    // follow 2.5s later. A slow first response must never overwrite the better URL.
+    var checkoutRequestVersion = 0;
+    var checkoutAppliedVersion = 0;
+    var checkoutAppliedAttribution = -1;
+    var appCheckoutRedirected = false;
+    var appCheckoutFallbackURL = '';
+    var appCheckoutFallbackTimer = 0;
+    var APP_CHECKOUT_ATTRIBUTION_WAIT_MS = 3500;
+    var appCheckoutFallbackAt = Date.now() + APP_CHECKOUT_ATTRIBUTION_WAIT_MS;
+    // A session URL expires in 24h while the static link never does, so a tab left
+    // open overnight would turn a working buy button into a dead one. Remember the
+    // original href and when the session was minted, and hand it back on click if
+    // the session is too old to trust.
+    var CHECKOUT_SESSION_MAX_AGE = 12 * 3600 * 1000;
+    function redirectAppCheckout(url) {
+      if (!appCheckoutEntry || appCheckoutRedirected || !url) return;
+      appCheckoutRedirected = true;
+      if (appCheckoutFallbackTimer) clearTimeout(appCheckoutFallbackTimer);
+      try { trackFunnelEvent('begin_checkout', null, new URL(url)); } catch (e) {}
+      window.location.replace(url);
+    }
+    function continueAppCheckout(url, attributionQuality) {
+      if (!appCheckoutEntry || !url) return;
+      if (attributionQuality > 0) {
+        redirectAppCheckout(url);
+        return;
+      }
+      appCheckoutFallbackURL = url;
+      if (appCheckoutFallbackTimer) return;
+      appCheckoutFallbackTimer = setTimeout(function () {
+        redirectAppCheckout(appCheckoutFallbackURL);
+      }, Math.max(0, appCheckoutFallbackAt - Date.now()));
+    }
+    function applySessionURL(url, requestVersion, attributionQuality) {
+      var born = Date.now();
+      var apply = function () {
+        if (attributionQuality < checkoutAppliedAttribution) return;
+        if (attributionQuality === checkoutAppliedAttribution && requestVersion < checkoutAppliedVersion) return;
+        checkoutAppliedAttribution = attributionQuality;
+        checkoutAppliedVersion = requestVersion;
+        // The team-purchase link carries its own ?quantity=N and must survive this
+        // pass untouched: a session URL is minted for quantity 1, so swapping it in
+        // would sell one license to someone who picked six, with nothing visible on
+        // the page to show for it.
+        // A session is minted for one product, so it only replaces that product's
+        // links: data-checkout-product="windows" marks Mole for Windows buttons, and a
+        // Mac session swapped into one would sell a Mac license from a Windows button.
+        var sessionLinks = checkoutProduct === 'windows'
+          ? 'a[data-checkout-product="windows"], a[data-checkout-session]'
+          : 'a[href*="checkout.dodopayments.com"]:not([data-bulk-static]):not([data-checkout-product]), a[data-checkout-session]';
+        document.querySelectorAll(sessionLinks).forEach(function (a) {
+          if (!a.hasAttribute('data-static-href')) a.setAttribute('data-static-href', a.href);
+          a.href = url;
+          a.setAttribute('data-checkout-session', '1');
+          a.setAttribute('data-session-born', String(born));
+        });
+        // A normal site visit waits for an explicit click. An App Buy action has
+        // already supplied that intent, so continue in the same tab. Prefer the
+        // rebuilt session carrying GA identifiers, but never hold payment hostage
+        // to analytics: after a short bounded wait the first valid session wins.
+        continueAppCheckout(url, attributionQuality);
+      };
+      // This script runs inside head, so body does not exist on the first call.
+      // Send the request anyway and defer only the href swap until the DOM is
+      // ready: request and parsing overlap, and the links are upgraded the moment
+      // they exist. An earlier version hid this behind a 3s timer, which cost the
+      // fastest deciders their upgraded link.
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', apply);
+      } else {
+        apply();
+      }
+    }
+    function upgradeCheckout(isAttributionRetry) {
+      if (checkoutUpgraded) return;
+      checkoutUpgraded = true;
+      // Everything, including reading the cookie, sits inside the try. This is
+      // called bare at top level, so an exception here (document.cookie can throw
+      // under some privacy settings) would abort the rest of this script block:
+      // the retry, the hover fallback and whatever else follows.
+      try {
+        var cid = gaClientId();
+        var requestVersion = ++checkoutRequestVersion;
+        var attributionQuality = cid ? 1 : 0;
+        checkoutHadClientId = !!cid;
+        fetch('/api/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            lang: document.documentElement.lang || '',
+            product: checkoutProduct,
+            attribution_retry: Boolean(isAttributionRetry),
+            metadata: {
+              ga_client_id: cid,
+              ga_session_id: gaSessionId(),
+              ga_page: location.pathname.slice(0, 100),
+              ga_entry_page: entryPage,
+              ga_page_type: analyticsPageType(),
+              ga_cta_location: appCheckoutCtaLocation(),
+              ga_site_language: analyticsSiteLanguage(),
+              affonso_referral: window.affonso_referral ? String(window.affonso_referral) : ''
+            }
+          })
+        }).then(function (r) { return r.json(); }).then(function (d) {
+          if (!d || !d.ok || !d.url) return;
+          applySessionURL(d.url, requestVersion, attributionQuality);
+        }).catch(function () {});
+      } catch (e) {}
+    }
+    // Fire immediately. The checkout configuration drives the sale while
+    // attribution is only analytics, so the former must not wait on the latter.
+    // A returning visitor's client_id is already in the _ga cookie by now.
+    upgradeCheckout(false);
+    // A first-time visitor's cookie is written by gtag, so the first call may
+    // carry no identifier. Retry once it lands so the session is rebuilt with a
+    // client_id: one extra call buys back an attributable sale, well under the
+    // throttle ceiling.
+    setTimeout(function () {
+      if (!checkoutHadClientId && gaClientId()) {
+        checkoutUpgraded = false;
+        upgradeCheckout(true);
+      }
+    }, 2500);
+    // Someone heading straight for pricing may click between those two, so
+    // hover and touch cover the gap.
+    ['mouseenter', 'touchstart', 'focus'].forEach(function (evt) {
+      document.addEventListener(evt, function (e) {
+        var t = e.target;
+        if (t && t.closest && t.closest('a[href*="checkout.dodopayments.com"]')) upgradeCheckout(false);
+      }, true);
+    });
+    // Restoring the static link is synchronous and does not preventDefault, so the
+    // browser simply follows the href it finds. A stale session must never be the
+    // thing standing between someone and paying.
+    document.addEventListener('click', function (e) {
+      try {
+        var link = e.target && e.target.closest ? e.target.closest('a[data-checkout-session]') : null;
+        if (!link) return;
+        var born = Number(link.getAttribute('data-session-born') || 0);
+        var fallback = link.getAttribute('data-static-href');
+        if (!fallback || !born || Date.now() - born < CHECKOUT_SESSION_MAX_AGE) return;
+        link.href = fallback;
+        link.removeAttribute('data-checkout-session');
+      } catch (err) {}
+    }, true);
+    // Explicit click events fill the gaps that Enhanced Measurement cannot:
+    // /download has no file extension, checkout leaves for Dodo's domain, and
+    // FAQ discovery needs a stable source instead of an inferred pageview jump.
+    // They only enqueue a GA event. No callback, preventDefault or wait is allowed,
+    // so a blocked tag or a broken analytics runtime cannot affect navigation.
+    function analyticsPageType() {
+      if (appCheckoutEntry) return 'app';
+      // The first Checkout Session request runs in <head>, before body exists.
+      // Classify from the canonical route so session metadata and later click
+      // events agree even when captured at different points in page construction.
+      var segments = location.pathname.split('/').filter(Boolean);
+      if (segments.length && /^(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)$/.test(segments[0])) segments.shift();
+      if (!segments.length) return 'home';
+      var route = segments[0];
+      if (route === 'blog') return 'blog';
+      if (route === 'windows') return 'windows';
+      if (/^mac-(?:cleaner|app-uninstaller|optimizer|disk-analyzer|system-monitor)$/.test(route)) return 'product';
+      if (/^(?:help|docs|releases)$/.test(route)) return 'support';
+      if (/^(?:terms|privacy|refund|affiliates)$/.test(route)) return 'secondary';
+      return 'content';
+    }
+    function analyticsSiteLanguage() {
+      var lang = String(document.documentElement.lang || 'en').toLowerCase();
+      if (lang === 'zh-cn' || lang === 'zh-hans') return 'zh';
+      if (lang === 'zh-tw' || lang === 'zh-hant') return 'zh-hant';
+      if (lang === 'pt-br') return 'pt-br';
+      var base = lang.split('-')[0];
+      return /^(?:en|zh|ja|ko|fr|de|it|es|nl)$/.test(base) ? base : 'other';
+    }
+    function analyticsCtaLocation(link) {
+      var appLocation = appCheckoutCtaLocation();
+      if (appLocation) return appLocation;
+      if (!link) return 'content';
+      if (link.getAttribute('data-download-location')) return link.getAttribute('data-download-location');
+      if (link.hasAttribute('data-bulk-static')) return 'team_purchase';
+      if (link.closest('.site-nav')) return 'navigation';
+      if (link.closest('.hero-cta')) return 'hero';
+      if (link.closest('.price-card')) return 'pricing';
+      if (link.closest('.faq-answer')) return 'faq';
+      if (link.closest('.platform-notice')) return 'platform_notice';
+      if (link.closest('.blog-cta')) return 'blog_cta';
+      if (link.closest('.blog')) return 'blog_content';
+      if (link.closest('.product-page')) return 'product_content';
+      if (link.closest('.foot')) return 'footer';
+      return 'content';
+    }
+    function analyticsCheckoutItem(link, url) {
+      if ((url && url.pathname.indexOf('pdt_0NoRCskSwjACLFPCWqpn4') !== -1)
+        || (link && link.getAttribute('data-checkout-product') === 'windows')) {
+        return { item_id: 'pdt_0NoRCskSwjACLFPCWqpn4', item_name: 'Mole for Windows', quantity: 1 };
+      }
+      var isTeam = Boolean(link && link.hasAttribute('data-bulk-static'));
+      var quantity = 1;
+      if (isTeam) {
+        var selected = Number(url.searchParams.get('quantity'));
+        if (Number.isInteger(selected) && selected >= 2 && selected <= 100) quantity = selected;
+      }
+      return {
+        item_id: isTeam ? 'pdt_0NkeEmac7stxsRbgx3sHY' : 'pdt_0NeAQjL4YEqzkukadjRUT',
+        item_name: isTeam ? 'Mole for Teams' : 'Mole for Mac',
+        quantity: quantity
+      };
+    }
+    function trackFunnelEvent(name, link, url, contentType) {
+      try {
+        if (typeof window.gtag !== 'function') return;
+        var params = {
+          page_type: analyticsPageType(),
+          cta_location: analyticsCtaLocation(link),
+          site_language: analyticsSiteLanguage()
+        };
+        if (name === 'file_download') {
+          var exe = url && /\.exe$/.test(url.pathname);
+          params.file_name = exe ? url.pathname.slice(1) : 'Mole.dmg';
+          params.file_extension = exe ? 'exe' : 'dmg';
+        } else if (name === 'begin_checkout') {
+          params.items = [analyticsCheckoutItem(link, url)];
+        } else if (name === 'select_content') {
+          params.content_type = link.closest('.blog') ? 'blog_product_link' : 'faq_internal_link';
+          if (contentType) params.content_type = contentType;
+          params.item_id = url.pathname;
+        }
+        window.gtag('event', name, params);
+      } catch (err) {}
+    }
+    // Mac and Windows switches: the platform menu, the one-time notice and any link to a Windows home.
+    function trackPlatformSwitch(link, url) {
+      if (!link || !url || url.origin !== location.origin) return false;
+      var toWindowsHome = /^(?:\/(?:zh|tw|ja|ko|de|fr|it|es|pt-br|nl))?\/windows\/?$/.test(url.pathname);
+      if (!toWindowsHome && !link.closest('[data-plat-menu], .platform-notice')) return false;
+      trackFunnelEvent('select_content', link, url, 'platform_switch');
+      return true;
+    }
+    function trackFAQInternalLink(link, url) {
+      if (!link || !url || !link.closest('.faq-answer')) return;
+      if (url.origin !== location.origin || url.pathname.indexOf('/blog/') === -1) return;
+      trackFunnelEvent('select_content', link, url);
+    }
+    function trackBlogProductLink(link, url) {
+      if (!link || !url || !link.closest('.blog') || url.origin !== location.origin) return;
+      var isProduct = /^\/(?:zh|tw|ja|ko|de|fr|it|es)\//.test(url.pathname)
+        ? url.pathname.replace(/^\/(?:zh|tw|ja|ko|de|fr|it|es)/, '') : url.pathname;
+      if (!/^\/mac-(?:cleaner|app-uninstaller|optimizer|disk-analyzer|system-monitor)$/.test(isProduct)
+          && !link.matches('.blog-cta-btn')) return;
+      trackFunnelEvent('select_content', link, url);
+    }
+    window.addEventListener('affonso_referral_ready', enhanceDodoLinks);
+    setTimeout(enhanceDodoLinks, 800);
+    setTimeout(enhanceDodoLinks, 1500);
+    setTimeout(enhanceDodoLinks, 2500);
+    document.addEventListener('click', function (e) {
+      try {
+        var link = e.target && e.target.closest
+          ? e.target.closest('a[href*="checkout.dodopayments.com"], a[href="/download"], a[href^="/Mole-Setup"], [data-plat-menu] a[href], .platform-notice a[href], .faq-answer a[href], .blog a[href]')
+          : null;
+        if (!link) return;
+        var url = new URL(link.href, location.href);
+        if (url.hostname === 'checkout.dodopayments.com') {
+          applyReferral(link);
+          trackFunnelEvent('begin_checkout', link, url);
+        } else if (url.origin === location.origin && (url.pathname === '/download' || /^\/Mole-Setup(-arm64)?\.exe$/.test(url.pathname))) {
+          if (link.hasAttribute('data-download-trigger') && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) return;
+          trackFunnelEvent('file_download', link, url);
+        } else if (!trackPlatformSwitch(link, url)) {
+          trackFAQInternalLink(link, url);
+          trackBlogProductLink(link, url);
+        }
+      } catch (err) {}
+    }, true);
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mole.fit/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Terms of Service",
+      "item": "https://mole.fit/terms"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+<main id="main-content" class="page" tabindex="-1">
+<div class="nav-wrap">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-head"><a class="nav-brand" href="/">
+      <img src="./img/mole-mark-de4ad137.png" width="26" height="26" alt="" decoding="async">
+      <b>Mole</b>
+    </a>
+    <div class="lang-switch plat-switch" data-plat-switch><button class="lang-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="platform-menu" aria-label="Choose a platform: Mac / Windows" data-plat-trigger><span class="plat-label">Mac / Windows</span></button><div class="lang-menu" id="platform-menu" aria-hidden="true" data-plat-menu><a href="/">Mac</a><a href="/windows">Windows</a></div></div></div>
+    
+    <div class="nav-actions">
+      <button class="nav-search" type="button" data-search-open aria-label="Search" aria-haspopup="dialog" aria-controls="site-search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      </button>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="language-menu" aria-label="Choose a language" data-lang-trigger>
+          <svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span class="lang-current-code">EN</span>
+          <span class="lang-current-name">English</span>
+        </button>
+        <div class="lang-menu" id="language-menu" aria-hidden="true" data-lang-menu>
+          <a href="/terms" class="active" aria-current="page" data-lang-en><span class="lang-name">English</span><span class="lang-code">EN</span></a>
+          <a href="/zh/terms"  data-lang-zh><span class="lang-name">简体中文</span><span class="lang-code">中</span></a>
+          <a href="/tw/terms"  data-lang-tw><span class="lang-name">繁體中文</span><span class="lang-code">繁</span></a>
+          <a href="/ja/terms"  data-lang-ja><span class="lang-name">日本語</span><span class="lang-code">日</span></a>
+          <a href="/ko/terms"  data-lang-ko><span class="lang-name">한국어</span><span class="lang-code">한</span></a>
+          <a href="/fr/terms"  data-lang-fr><span class="lang-name">Français</span><span class="lang-code">FR</span></a>
+          <a href="/de/terms"  data-lang-de><span class="lang-name">Deutsch</span><span class="lang-code">DE</span></a>
+          <a href="/it/terms"  data-lang-it><span class="lang-name">Italiano</span><span class="lang-code">IT</span></a>
+          <a href="/es/terms"  data-lang-es><span class="lang-name">Español</span><span class="lang-code">ES</span></a>
+          <a href="/pt-br/terms" data-lang-pt-br><span class="lang-name">Português</span><span class="lang-code">PT</span></a>
+          <a href="/nl/terms" data-lang-nl><span class="lang-name">Nederlands</span><span class="lang-code">NL</span></a>
+        </div>
+      </div>
+      <!-- Two labels, one per width: the phone bar has room for the verb alone
+           and reuses the hero CTA's own string rather than minting a short key. -->
+      
+      
+    </div>
+  </nav>
+</div>
+
+<!-- Site search. Lives above the Home marker so the same markup ships on the
+     landing page, the lean routes, and every blog page (build.py splits the
+     template at that marker). The index itself is fetched on first open. -->
+<div class="search-overlay" id="site-search" data-search hidden
+     data-search-index="/search-en.json" data-search-empty="Nothing found. Email hi@mole.fit and I will help.">
+  <div class="search-scrim" data-search-dismiss></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-field">
+      <svg class="search-field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input class="search-input" type="search" id="site-search-input" data-search-input
+             placeholder="Search help, docs, and articles" aria-label="Search"
+             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-autocomplete="list">
+      <button class="search-close" type="button" data-search-dismiss aria-label="Close search"><span aria-hidden="true">esc</span></button>
+    </div>
+    <ul class="search-results" id="site-search-results" role="listbox" aria-label="Search"></ul>
+    <p class="search-note" data-search-note>Help, documentation, releases, and articles.</p>
+  </div>
+</div>
+
+<div id="page-terms" class="legal" aria-hidden="false">
+  <h1 class="legal-title">Terms of Service</h1>
+  <p class="meta">Last updated · October 2026</p>
+
+  <h2>1. License</h2>
+  <p>When you purchase Mole, you receive a non-exclusive, non-transferable, perpetual license. Mole for Mac and Mole for Windows are sold separately, and a license works only on the platform it was bought for. Current retail licenses support up to two devices at the same time, two Macs for Mole for Mac and two PCs for Mole for Windows. You may deactivate a device at any time from within the app and reactivate on another device of the same platform.</p>
+  <h2>2. Restrictions</h2>
+  <p>You may not redistribute, sublicense, reverse-engineer, or modify the software. You may not use the same license key beyond the activation cap.</p>
+  <h2>3. Intellectual Property</h2>
+  <p>Mole, its trademarks, logos, and content are the property of Tw93. The software is protected by copyright law.</p>
+  <h2>4. Disclaimer</h2>
+  <p>The software is provided "as is" without warranty of any kind. Always confirm what will be removed before cleaning.</p>
+  <h2>5. Limitation of Liability</h2>
+  <p>In no event shall Tw93 be liable for any indirect, incidental, or consequential damages arising from the use of Mole. Total liability shall not exceed the amount paid for the license.</p>
+  <h2>6. Contact</h2>
+  <p>For questions about these terms, contact <a href="mailto:hi@mole.fit">hi@mole.fit</a>.</p>
+</div>
+
+<!-- ============ Footer ============ -->
+<footer class="foot">
+  <div class="foot-top">
+    <div class="mark">
+      <p class="wm-name">Mole · 鼴</p>
+    </div>
+    <nav class="foot-cols" aria-label="Footer navigation">
+      <div class="foot-col"><p class="foot-col-title">Support</p><a href="/help">Mac</a><a href="/windows/help">Windows</a></div>
+      <div class="foot-col">
+        <p class="foot-col-title">Legal</p>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/refund">Refund Policy</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Resources</p>
+        <a href="https://github.com/tw93/Mole" target="_blank" rel="noopener">CLI Tool</a>
+        <a href="/affiliates">Affiliate Program</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Connect</p>
+        <a href="https://x.com/HiTw93" target="_blank" rel="noopener">Twitter</a>
+        <a href="mailto:hi@mole.fit">hi@mole.fit</a>
+      </div>
+    </nav>
+  </div>
+  <div class="foot-bottom">
+    <p class="foot-official">Mole’s only official website <b>mole.fit</b> · Avoid installers from unknown sources</p>
+    <p class="ethos">The CLI stays free for terminal workflows.</p>
+  </div>
+</footer>
+
+</main>
+
+<script>
+function syncEyebrow(name) {
+  document.body.setAttribute('data-page', name);
+}
+// iOS browsers use a mix of the document root, body canvas, and theme-color for
+// the rubber-band and safe-area surfaces around the page. Match all three to
+// the footer while it is on screen, then return them to parchment everywhere
+// else. The body rule is mobile-only so desktop gutters never change color.
+var syncPageChrome = function(){};
+(function(){
+  var footer = document.querySelector('.foot');
+  var themeColor = document.querySelector('meta[name="theme-color"]');
+  if (!footer || !themeColor) return;
+  var root = document.documentElement;
+  var pageColor = getComputedStyle(document.body).backgroundColor;
+  var footerColor = getComputedStyle(footer).backgroundColor;
+
+  function applyFooterState(visible) {
+    root.classList.toggle('footer-in-view', visible);
+    document.body.classList.toggle('footer-in-view', visible);
+    themeColor.setAttribute('content', visible ? footerColor : pageColor);
+  }
+  function measureFooter() {
+    var rect = footer.getBoundingClientRect();
+    applyFooterState(rect.top < window.innerHeight && rect.bottom > 0);
+  }
+
+  syncPageChrome = measureFooter;
+  measureFooter();
+  if (typeof window.IntersectionObserver === 'function') {
+    var footerObserver = new IntersectionObserver(function(entries) {
+      // One observed element, so the LAST queued entry is the current state;
+      // entries[0] replayed the oldest transition when several coalesced.
+      applyFooterState(entries[entries.length - 1].isIntersecting);
+    });
+    footerObserver.observe(footer);
+  } else {
+    window.addEventListener('scroll', measureFooter, { passive: true });
+    window.addEventListener('resize', measureFooter);
+  }
+})();
+// While the hero's own Buy/Download pair is on screen, the nav shows only the
+// links (no doubled CTAs); the nav buttons appear once the hero CTA scrolls out.
+(function(){
+  var nav = document.querySelector('.site-nav');
+  var heroCta = document.querySelector('.hero-cta');
+  if (!nav || !heroCta) return;
+  if (typeof window.IntersectionObserver !== 'function') {
+    nav.classList.remove('hide-cta');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    // Same single-element rule as the footer observer: newest entry wins.
+    nav.classList.toggle('hide-cta', entries[entries.length - 1].isIntersecting);
+  }, { rootMargin: '-70px 0px 0px 0px' });
+  io.observe(heroCta);
+})();
+(function(){
+  var path = location.pathname.replace(/^\//, '').replace(/^\//, '').replace(/\/$/, '');
+  var legal = ['terms', 'privacy', 'refund', 'help', 'docs', 'releases', 'affiliates', 'mac-cleaner', 'mac-app-uninstaller', 'mac-optimizer', 'mac-disk-analyzer', 'mac-system-monitor', 'windows'];
+  var initial = legal.indexOf(path) !== -1 ? path : 'home';
+  syncEyebrow(initial);
+  syncLangSwitch(initial);
+})();
+function syncLangSwitch(name) {
+  if (document.getElementById('page-tested-apps')) return;
+  if (document.querySelector('.tested-guide')) return;
+  // Windows language links are rendered at build time and retain the page or article.
+  // Untranslated content uses its supported body language, never the home page.
+  // Rewriting these links here would discard that destination.
+  if (/^\/(?:(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)\/)?windows\/./.test(location.pathname)) return;
+  // Blog language links are rendered to the matching article at build time.
+  // Keep those crawlable URLs instead of replacing them with landing-page URLs.
+  // A Traditional Chinese preference still controls the surrounding site chrome
+  // while the only Chinese article body remains accurately marked as zh-CN.
+  if (document.getElementById('page-blog') || document.getElementById('page-blogpost')) {
+    var saved = null;
+    try { saved = localStorage.getItem(MOLE_SITE_LANG_KEY); }
+    catch (error) {}
+    if (saved === 'tw') {
+      document.querySelectorAll(
+        '.nav-brand[href^="/zh/"], .nav-links a[href^="/zh/"], .foot a[href^="/zh/"]'
+      ).forEach(function(link) {
+        link.setAttribute('href', link.getAttribute('href').replace(/^\/zh(?=\/)/, '/tw'));
+      });
+    }
+    return;
+  }
+  var links = {
+    en: document.querySelector('[data-lang-en]'),
+    zh: document.querySelector('[data-lang-zh]'),
+    tw: document.querySelector('[data-lang-tw]'),
+    ja: document.querySelector('[data-lang-ja]'),
+    ko: document.querySelector('[data-lang-ko]'),
+    fr: document.querySelector('[data-lang-fr]'),
+    de: document.querySelector('[data-lang-de]'),
+    it: document.querySelector('[data-lang-it]'),
+    es: document.querySelector('[data-lang-es]'),
+    'pt-br': document.querySelector('[data-lang-pt-br]'),
+    nl: document.querySelector('[data-lang-nl]')
+  };
+  Object.keys(links).forEach(function(lang) {
+    if (!links[lang]) return;
+    if ((lang === 'pt-br' || lang === 'nl') && name !== 'home') return;
+    var p = MOLE_SITE_LANG_PREFIXES[lang];
+    links[lang].href = name === 'home' ? (p || '/') + (p ? '/' : '') : p + '/' + name;
+  });
+}
+(function(){
+  var switcher = document.querySelector('[data-lang-switch]');
+  if (!switcher) return;
+  var trigger = switcher.querySelector('[data-lang-trigger]');
+  if (!trigger) return;
+  var langLinks = Array.prototype.slice.call(switcher.querySelectorAll('.lang-menu a'));
+
+  function setOpen(open) {
+    switcher.classList.toggle('is-open', open);
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var menu = switcher.querySelector('[data-lang-menu]');
+    if (menu) menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+
+  function rememberLang(link) {
+    Object.keys(MOLE_SITE_LANG_PREFIXES).some(function(lang) {
+      if (!link.hasAttribute('data-lang-' + lang)) return false;
+      rememberSiteLang(lang);
+      return true;
+    });
+  }
+
+  trigger.addEventListener('click', function(event) {
+    event.stopPropagation();
+    setOpen(!switcher.classList.contains('is-open'));
+  });
+  trigger.addEventListener('keydown', function(event) {
+    if (event.key !== 'ArrowDown') return;
+    event.preventDefault();
+    setOpen(true);
+    if (langLinks[0]) langLinks[0].focus();
+  });
+
+  langLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      rememberLang(link);
+    });
+  });
+
+  switcher.addEventListener('focusout', function() {
+    window.setTimeout(function() {
+      if (!switcher.contains(document.activeElement)) setOpen(false);
+    }, 0);
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!switcher.contains(event.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      setOpen(false);
+      if (switcher.contains(document.activeElement)) trigger.focus();
+    }
+  });
+})();
+// The platform marker's menu opens on click as well as hover, like the language one.
+(function(){
+  var switcher = document.querySelector('[data-plat-switch]');
+  if (!switcher) return;
+  var trigger = switcher.querySelector('[data-plat-trigger]');
+  var menu = switcher.querySelector('[data-plat-menu]');
+  function setOpen(open) {
+    switcher.classList.toggle('is-open', open);
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+  trigger.addEventListener('click', function(event) {
+    event.stopPropagation();
+    setOpen(event.detail > 0 && window.matchMedia('(hover: hover)').matches
+      ? true : !switcher.classList.contains('is-open'));
+  });
+  switcher.addEventListener('mouseenter', function() {
+    if (window.matchMedia('(hover: hover)').matches) setOpen(true);
+  });
+  switcher.addEventListener('mouseleave', function() {
+    if (!menu.contains(document.activeElement)) setOpen(false);
+  });
+  switcher.addEventListener('focusout', function(event) {
+    if (!switcher.contains(event.relatedTarget)) setOpen(false);
+  });
+  document.addEventListener('click', function(event) {
+    if (!switcher.contains(event.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && switcher.classList.contains('is-open')) {
+      setOpen(false);
+      trigger.focus();
+    }
+  });
+})();
+(function(){
+  var gallery = document.querySelector('[data-gallery]');
+  if (!gallery) return;
+  var frame = gallery.querySelector('.gallery-frame');
+  var panels = Array.prototype.slice.call(gallery.querySelectorAll('.gallery-panel'));
+  var tabs = Array.prototype.slice.call(gallery.querySelectorAll('.gallery-tabs button'));
+  var title = gallery.querySelector('[data-gallery-title]');
+  var line = gallery.querySelector('[data-gallery-line]');
+  var caption = gallery.querySelector('.gallery-caption');
+  var AUTO_ADVANCE_DELAY = 6000;
+  var VIDEO_END_DELAY = 1200;
+  var index = 0;
+  var timer = null;
+  var pendingCaptionIndex = null;
+  var holdForVideo = false;
+  var requestedIndex = 0;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // A phone used to fetch every absolutely-positioned gallery screenshot on
+  // first paint: native lazy-loading treats them as near the viewport even
+  // while CSS hides them. The 6-second rotation then promoted a late screenshot
+  // to the LCP. Keep mobile user-controlled and arm each hidden panel only when
+  // it is selected; desktop keeps the existing rotation.
+  var autoAdvance = !reduceMotion && !window.matchMedia('(max-width: 880px)').matches;
+
+  function loadPanel(panel) {
+    if (!panel || panel.getAttribute('data-gallery-loaded') === 'true') {
+      return Promise.resolve();
+    }
+    if (panel._galleryLoadPromise) return panel._galleryLoadPromise;
+    var waiters = [];
+    Array.prototype.forEach.call(panel.querySelectorAll('source[data-srcset]'), function(source) {
+      source.srcset = source.getAttribute('data-srcset');
+      source.removeAttribute('data-srcset');
+    });
+    Array.prototype.forEach.call(panel.querySelectorAll('img[data-src]'), function(img) {
+      waiters.push(new Promise(function(resolve) {
+        img.addEventListener('load', resolve, { once: true });
+        img.addEventListener('error', resolve, { once: true });
+      }));
+      img.src = img.getAttribute('data-src');
+      img.removeAttribute('data-src');
+    });
+    var video = panel.querySelector('video');
+    if (video) {
+      var poster = video.getAttribute('data-poster');
+      if (poster) {
+        video.poster = poster;
+        video.removeAttribute('data-poster');
+        waiters.push(new Promise(function(resolve) {
+          var posterImage = new Image();
+          posterImage.onload = resolve;
+          posterImage.onerror = resolve;
+          posterImage.src = poster;
+        }));
+      }
+      Array.prototype.forEach.call(video.querySelectorAll('source[data-src]'), function(source) {
+        source.src = source.getAttribute('data-src');
+        source.removeAttribute('data-src');
+      });
+      video.load();
+    }
+    panel._galleryLoadPromise = Promise.all(waiters).then(function() {
+      panel.setAttribute('data-gallery-loaded', 'true');
+    });
+    return panel._galleryLoadPromise;
+  }
+
+  function renderCaption(targetIndex) {
+    var panel = panels[targetIndex];
+    if (!panel) return;
+    if (title) title.textContent = panel.dataset.title || '';
+    if (line) line.textContent = panel.dataset.line || '';
+  }
+
+  function markTabs(active) {
+    tabs.forEach(function(tab, i) {
+      var on = i === active;
+      tab.classList.toggle('is-active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+      tab.tabIndex = on ? 0 : -1;
+    });
+  }
+
+  // A click marks its tab at once, even while that screenshot is still loading, and switches
+  // with the quick dissolve; the rotation keeps the slow one.
+  function activate(next, quick) {
+    requestedIndex = next;
+    markTabs(next);
+    if (next === index) return;
+    if (quick) gallery.setAttribute('data-pace', 'quick');
+    else gallery.removeAttribute('data-pace');
+    var incoming = panels[next];
+    if (incoming && incoming.getAttribute('data-gallery-loaded') !== 'true') {
+      loadPanel(incoming).then(function() {
+        if (requestedIndex === next) activate(next, quick);
+      });
+      return;
+    }
+    var previous = index;
+    panels.forEach(function(panel) {
+      panel.classList.remove('was-active');
+    });
+    var outgoing = panels[previous];
+    if (outgoing && !reduceMotion) outgoing.classList.add('was-active');
+    index = next;
+    panels.forEach(function(panel, i) {
+      var active = i === index;
+      panel.classList.toggle('is-active', active);
+      panel.setAttribute('aria-hidden', active ? 'false' : 'true');
+      var vid = panel.querySelector('video');
+      if (vid) {
+        if (active && !reduceMotion) {
+          panel.classList.remove('show-still');
+          try { vid.currentTime = 0; } catch (e) {}
+          holdForVideo = true;
+          stop();
+          var p = vid.play();
+          if (p && p.catch) p.catch(function() {
+            holdForVideo = false;
+            panel.classList.add('show-still');
+            start();
+          });
+        } else {
+          vid.pause();
+          holdForVideo = false;
+          panel.classList.toggle('show-still', active && reduceMotion);
+        }
+      }
+    });
+    if (reduceMotion || !caption) {
+      renderCaption(index);
+      gallery.classList.remove('is-caption-out');
+    } else {
+      pendingCaptionIndex = index;
+      gallery.classList.add('is-caption-out');
+    }
+  }
+
+  panels.forEach(function(panel) {
+    function finishPanelTransition(event) {
+      if (event.propertyName === 'transform' && panel.classList.contains('was-active')) {
+        panel.classList.remove('was-active');
+      }
+    }
+    panel.addEventListener('transitionend', finishPanelTransition);
+    panel.addEventListener('transitioncancel', finishPanelTransition);
+  });
+  if (caption) {
+    function finishCaptionTransition(event) {
+      if (event.propertyName !== 'opacity' || !gallery.classList.contains('is-caption-out')) return;
+      renderCaption(pendingCaptionIndex === null ? index : pendingCaptionIndex);
+      pendingCaptionIndex = null;
+      gallery.classList.remove('is-caption-out');
+    }
+    caption.addEventListener('transitionend', finishCaptionTransition);
+    caption.addEventListener('transitioncancel', finishCaptionTransition);
+  }
+
+  function start(delay) {
+    if (!autoAdvance || timer || holdForVideo) return;
+    timer = window.setTimeout(function() {
+      timer = null;
+      activate((index + 1) % panels.length);
+      start();
+    }, typeof delay === 'number' ? delay : AUTO_ADVANCE_DELAY);
+  }
+
+  function stop() {
+    if (!timer) return;
+    window.clearTimeout(timer);
+    timer = null;
+  }
+
+  tabs.forEach(function(tab, i) {
+    // Hovering or pressing a tab starts its download, so the click rarely waits on the network.
+    tab.addEventListener('pointerenter', function() { loadPanel(panels[i]); });
+    tab.addEventListener('pointerdown', function() { loadPanel(panels[i]); });
+    tab.addEventListener('click', function() {
+      stop();
+      activate(i, true);
+      start();
+    });
+    tab.addEventListener('keydown', function(event) {
+      var next = null;
+      if (event.key === 'ArrowRight') next = (i + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === null) return;
+      event.preventDefault();
+      stop();
+      activate(next, true);
+      tabs[next].focus();
+      start();
+    });
+  });
+  if (frame) {
+    // Phones: a horizontal swipe on the screenshot moves to the next or previous panel, sliding in
+    // from the side the finger came from; the tabs and the tap halves keep working. The neighbours
+    // load only after the first touch, so the first paint still fetches one screenshot.
+    var touchX = null, touchY = null, swipedAt = 0, neighboursArmed = false;
+    frame.addEventListener('touchstart', function(event) {
+      if (event.touches.length !== 1) { touchX = null; return; }
+      touchX = event.touches[0].clientX;
+      touchY = event.touches[0].clientY;
+      if (!neighboursArmed) {
+        neighboursArmed = true;
+        loadPanel(panels[(index + 1) % panels.length]);
+        loadPanel(panels[(index - 1 + panels.length) % panels.length]);
+      }
+    }, { passive: true });
+    frame.addEventListener('touchend', function(event) {
+      if (touchX === null || !event.changedTouches.length) return;
+      var dx = event.changedTouches[0].clientX - touchX;
+      var dy = event.changedTouches[0].clientY - touchY;
+      touchX = null;
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      swipedAt = Date.now();
+      var forward = dx < 0;
+      var next = forward ? (index + 1) % panels.length : (index - 1 + panels.length) % panels.length;
+      if (!reduceMotion) {
+        gallery.setAttribute('data-swipe', forward ? 'next' : 'prev');
+        void frame.offsetWidth;
+      }
+      stop();
+      activate(next, true);
+      loadPanel(panels[(next + (forward ? 1 : -1) + panels.length) % panels.length]);
+      var strip = tabs[next] && tabs[next].parentNode;
+      if (strip && strip.scrollWidth > strip.clientWidth) {
+        var box = tabs[next].getBoundingClientRect(), stripBox = strip.getBoundingClientRect();
+        var left = strip.scrollLeft + box.left - stripBox.left - (strip.clientWidth - box.width) / 2;
+        strip.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    }, { passive: true });
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() { gallery.removeAttribute('data-swipe'); });
+    });
+    frame.addEventListener('click', function(event) {
+      if (Date.now() - swipedAt < 500) return;
+      gallery.removeAttribute('data-swipe');
+      var box = frame.getBoundingClientRect();
+      var next = event.clientX < box.left + box.width / 2
+        ? (index - 1 + panels.length) % panels.length
+        : (index + 1) % panels.length;
+      stop();
+      activate(next, true);
+      start();
+    });
+  }
+  var worldsVideo = gallery.querySelector('.gallery-video');
+  if (worldsVideo) {
+    worldsVideo.addEventListener('ended', function() {
+      var box = worldsVideo.closest('.gallery-panel-video');
+      if (box) box.classList.add('show-still'); // rest on the About art
+      holdForVideo = false;
+      start(VIDEO_END_DELAY);
+    });
+  }
+  gallery.addEventListener('mouseenter', stop);
+  gallery.addEventListener('mouseleave', start);
+  gallery.addEventListener('focusin', stop);
+  gallery.addEventListener('focusout', start);
+  // The pills never wrap. Above the phone breakpoint they sit beside the caption only when the
+  // longest caption of any panel fits next to the whole row, so switching panels never moves
+  // the layout; otherwise the gallery takes the stacked tablet layout (is-stacked).
+  var stackedQuery = window.matchMedia('(max-width: 880px)');
+  function fitTabs() {
+    if (!caption || !tabs.length) return;
+    if (stackedQuery.matches) { gallery.classList.remove('is-stacked'); return; }
+    var strip = tabs[0].parentNode;
+    var gap = parseFloat(getComputedStyle(strip).columnGap) || 0;
+    var row = tabs.reduce(function(sum, tab) { return sum + tab.getBoundingClientRect().width; }, 0) + gap * (tabs.length - 1);
+    var probe = caption.cloneNode(true);
+    probe.setAttribute('aria-hidden', 'true');
+    probe.style.cssText = 'position:absolute;left:0;top:0;width:max-content;visibility:hidden;pointer-events:none;white-space:nowrap';
+    gallery.appendChild(probe);
+    var probeTitle = probe.querySelector('.title'), probeLine = probe.querySelector('.line');
+    var widest = 0;
+    panels.forEach(function(panel) {
+      if (probeTitle) probeTitle.textContent = panel.dataset.title || '';
+      if (probeLine) probeLine.textContent = panel.dataset.line || '';
+      widest = Math.max(widest, probe.getBoundingClientRect().width);
+    });
+    gallery.removeChild(probe);
+    var columnGap = parseFloat(getComputedStyle(gallery).columnGap) || 0;
+    gallery.classList.toggle('is-stacked', widest + columnGap + row > gallery.clientWidth);
+  }
+  var fitFrame = 0;
+  function scheduleFit() {
+    if (fitFrame) return;
+    fitFrame = window.requestAnimationFrame(function() { fitFrame = 0; fitTabs(); });
+  }
+  fitTabs();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTabs);
+  window.addEventListener('resize', scheduleFit);
+  // Desktop fetches the other screenshots once the page has loaded and the browser is idle, so a
+  // click finds them ready; phones keep loading only what is selected (the LCP note above).
+  if (!stackedQuery.matches) {
+    var warmAll = function() {
+      var queue = panels.filter(function(panel) { return !panel.querySelector('video'); });
+      (function next() {
+        var panel = queue.shift();
+        if (panel) loadPanel(panel).then(next);
+      })();
+    };
+    var whenIdle = function() {
+      if (window.requestIdleCallback) window.requestIdleCallback(warmAll, { timeout: 3000 });
+      else window.setTimeout(warmAll, 1200);
+    };
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle, { once: true });
+  }
+  start();
+})();
+(function(){
+  // Build a sticky section index for the long-form Help and Docs pages from their h2
+  // headings. On a lean /seo route the page is in the tree at load, so the
+  // calls below build it immediately. On the home page it is an inert template
+  // until first navigation, so the same builder runs again on hydration; both
+  // paths are needed because only one of them fires per document.
+  function buildDocToc(pageId) {
+    var page = document.getElementById(pageId);
+    if (!page) return;
+    var body = page.querySelector('.doc-body');
+    var nav = page.querySelector('.doc-toc');
+    if (!body || !nav) return;
+    if (nav.dataset.tocReady === 'true') return;
+    var heads = Array.prototype.slice.call(body.querySelectorAll('h2'));
+    if (!heads.length) { nav.style.display = 'none'; return; }
+    nav.dataset.tocReady = 'true';
+    var prefix = pageId.replace('page-', '');
+    var links = [];
+    function setActiveLink(id) {
+      links.forEach(function(link) {
+        var active = link.getAttribute('href') === '#' + id;
+        link.classList.toggle('is-active', active);
+      });
+    }
+    heads.forEach(function(head, i) {
+      if (!head.id) head.id = prefix + '-s' + (i + 1);
+      var link = document.createElement('a');
+      link.href = '#' + head.id;
+      link.textContent = head.textContent;
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        setActiveLink(head.id);
+        head.scrollIntoView({ block: 'start', behavior: smooth ? 'smooth' : 'auto' });
+        history.replaceState(null, '', '#' + head.id);
+      });
+      nav.appendChild(link);
+      links.push(link);
+    });
+    setActiveLink(heads[0].id);
+    if (!('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries) {
+      var visible = entries.filter(function(entry) { return entry.isIntersecting; });
+      if (!visible.length) return;
+      visible.sort(function(a, b) {
+        return a.boundingClientRect.top - b.boundingClientRect.top;
+      });
+      setActiveLink(visible[0].target.id);
+    }, { rootMargin: '-12% 0px -80% 0px' });
+    heads.forEach(function(head) { observer.observe(head); });
+  }
+  buildDocToc('page-help');
+  buildDocToc('page-docs');
+
+  // Team purchase: a quantity stepper that only rewrites the static /buy/ href.
+  // No fetch, no session, nothing to expire. The metadata_* stamping still happens
+  // through the shared click handler in the head, so a bulk sale stays attributable.
+  (function initBulkPurchase() {
+    var block = document.querySelector('[data-bulk]');
+    if (!block) return;
+    var toggle = block.querySelector('[data-bulk-toggle]');
+    var panel = block.querySelector('.bulk-panel');
+    var countEl = block.querySelector('[data-bulk-count]');
+    var summary = block.querySelector('[data-bulk-summary]');
+    var link = block.querySelector('[data-bulk-link]');
+    var steps = Array.prototype.slice.call(block.querySelectorAll('[data-bulk-step]'));
+    if (!toggle || !panel || !countEl || !summary || !link) return;
+    var unit = Number(block.getAttribute('data-bulk-unit')) || 19;
+    var min = Number(block.getAttribute('data-bulk-min')) || 2;
+    var max = Number(block.getAttribute('data-bulk-max')) || 20;
+    var buy = block.getAttribute('data-bulk-buy') || link.href.split('?')[0];
+    var count = min;
+
+    // Chinese pages price the checkout in CNY for the same reason /api/checkout does:
+    // the feedback was "I assumed you don't take RMB", and seeing the local currency
+    // is what answers that on the first screen. The static link cannot carry the
+    // session's WeChat ordering, but the checkout page still offers it.
+    function checkoutURL(n) {
+      // showDiscounts=false hides the promo field. A percentage code multiplies with
+      // the quantity, so the same coupon that takes $4 off one license takes $380 off
+      // a hundred, and a 100%-off comp code would hand over the whole cart. Promos
+      // belong on the single-license button above, which is where they are advertised.
+      var url = buy + '?quantity=' + n + '&showDiscounts=false';
+      // Every key of the order shows on mole.fit/purchase, one row each, so a
+      // team buyer whose mail lands in spam still has them all.
+      url += '&redirect_url=' + encodeURIComponent('https://mole.fit/purchase');
+      // Simplified pages only (zh-CN). Traditional pages (zh-TW) show $19 and let
+      // Dodo pick the local currency, matching /api/checkout.
+      if (/^zh-(cn|hans)/i.test(document.documentElement.lang || '')) url += '&paymentCurrency=CNY';
+      return url;
+    }
+
+    // While the field has focus its own text is left alone: rewriting it mid-keystroke
+    // would fight the caret. Everything else still reflects the committed count.
+    function render(keepField) {
+      var amount = String(count * unit);
+      if (!keepField) countEl.value = String(count);
+      summary.textContent = (summary.getAttribute('data-tpl') || '')
+        .replace('{n}', String(count)).replace('{amount}', amount);
+      link.href = checkoutURL(count);
+      steps.forEach(function (step) {
+        var delta = Number(step.getAttribute('data-bulk-step'));
+        step.disabled = delta < 0 ? count <= min : count >= max;
+      });
+    }
+
+    // The line says the same thing in both states, so it never swaps text: it is
+    // the block's one explanation, and reading it should not depend on opening
+    // anything. Only its colour steps back once the panel is out.
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      panel.hidden = open;
+    });
+
+    steps.forEach(function (step) {
+      step.addEventListener('click', function () {
+        var next = count + Number(step.getAttribute('data-bulk-step'));
+        if (next < min || next > max) return;
+        count = next;
+        render();
+      });
+    });
+
+    // Typing 15 passes through 1, and 1 is below the floor; clamping on every
+    // keystroke would rewrite it to 2 and make the field impossible to use. So an
+    // in-range number takes effect live, anything else waits for blur.
+    countEl.addEventListener('input', function () {
+      var digits = countEl.value.replace(/\D+/g, '');
+      if (digits !== countEl.value) countEl.value = digits;
+      var next = Number(digits);
+      if (!digits || next < min || next > max) return;
+      count = next;
+      render(true);
+    });
+    countEl.addEventListener('blur', function () {
+      var next = Number(countEl.value.replace(/\D+/g, ''));
+      count = Math.min(max, Math.max(min, next || min));
+      render();
+    });
+    countEl.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); countEl.blur(); }
+    });
+
+    render();
+  })();
+
+  // Version dot: hide it once this exact version has been clicked (seen),
+  // remember the choice, and let a later version bump light it up again.
+  (function initVersionDot() {
+    // querySelectorAll, not querySelector: the dot now rides on two surfaces
+    // (the hero trust tag and the footer version link). With the singular form
+    // only the first one ever cleared, so clicking the hero tag left the footer
+    // dot burning for a version the visitor had already seen.
+    // The attribute is part of the selector, not an assumption: this loop reads
+    // data-version off the first match, so an element wearing only the class
+    // would hand it an empty version, and an empty version never gets written
+    // to localStorage, leaving every dot on the page permanently lit.
+    var links = document.querySelectorAll('.has-update[data-version]');
+    if (!links.length) return;
+    var v = links[0].getAttribute('data-version') || '';
+    function markSeen() {
+      for (var i = 0; i < links.length; i++) links[i].classList.add('seen');
+    }
+    try {
+      if (v && localStorage.getItem('mole-seen-version') === v) markSeen();
+    } catch (e) {}
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function() {
+        try { if (v) localStorage.setItem('mole-seen-version', v); } catch (e) {}
+        markSeen();
+      });
+    }
+  })();
+
+  // Testimonials wall: a row-major masonry. Cards fill the shortest column in
+  // order, so "show more" only APPENDS cards below and never reshuffles the ones
+  // already on screen (CSS multicolumn is column-major and would move them when
+  // the height changes). Collapsed, every column fills to ~one screen for an even
+  // bottom edge; each "show more" shows four times that height, and the button counts the
+  // cards still below the line. Without JS the CSS-columns fallback renders all
+  // cards.
+  (function initVoicesMasonry() {
+    var wall = document.querySelector('[data-quotes]');
+    var btn = document.querySelector('[data-quotes-more]');
+    if (!wall) return;
+    var started = false;
+
+    function start() {
+    if (started) return;
+    started = true;
+    var cards = Array.prototype.slice.call(wall.querySelectorAll('.quote-card'));
+    if (cards.length < 2) return;
+
+    var COL_W = 272, GAP = 12;      // must match .quotes CSS (column-width / gap)
+    var canCollapse = !!btn && cards.length > 10;
+    var expanded = !canCollapse;    // every card visible
+    var level = 0;                  // "show more" clicks since the last collapse
+    var STEP = 4;                   // each click shows four times the height
+    var more = btn ? (btn.getAttribute('data-more') || btn.textContent) : '';
+    var less = btn ? (btn.getAttribute('data-less') || more) : '';
+    var raf = 0, rzTimer = 0, lastN = 0;
+
+    function columnCount() {
+      var w = wall.clientWidth || wall.offsetWidth || COL_W;
+      return Math.max(1, Math.floor((w + GAP) / (COL_W + GAP)));
+    }
+
+    function layout() {
+      var n = columnCount();
+      lastN = n;
+      // 1-column mobile shows a shorter first screen so it never feels endless
+      var collapseAt = (n <= 1 ? 460 : 880) * Math.pow(STEP, level);
+      var i, j, k;
+      for (i = 0; i < cards.length; i++) {
+        if (cards[i].parentNode) cards[i].parentNode.removeChild(cards[i]);
+      }
+      wall.textContent = '';
+      wall.classList.add('is-masonry');
+      var cols = [], h = [];
+      for (i = 0; i < n; i++) {
+        var col = document.createElement('div');
+        col.className = 'quotes-col';
+        wall.appendChild(col);
+        cols.push(col); h.push(0);
+      }
+      // Every card is appended even while collapsed, and the overflow is hidden
+      // by maxHeight + `overflow: clip` below rather than by stopping here. The
+      // loop used to break at the collapse line, which left ~200 of the 216 cards
+      // detached from the DOM: the static HTML carried them, so a crawler that
+      // does not run JS saw them all, while a rendering one saw 17. The clip
+      // height is captured at the moment the line is first crossed, so the
+      // collapsed wall is pixel-identical to before; fill order is greedy and
+      // does not depend on how many cards come after, so the visible cards and
+      // their columns are unchanged.
+      var clipped = false;
+      var clipHeight = 0;
+      var tops = [];
+      for (j = 0; j < cards.length; j++) {
+        if (!expanded && !clipped && j > 0) {
+          var full = true;
+          for (k = 0; k < n; k++) { if (h[k] < collapseAt) { full = false; break; } }
+          if (full) {
+            clipped = true;
+            var cut = h[0];
+            for (k = 1; k < n; k++) { if (h[k] < cut) cut = h[k]; }
+            clipHeight = Math.max(0, cut - GAP);
+          }
+        }
+        var m = 0;
+        for (k = 1; k < n; k++) { if (h[k] < h[m]) m = k; }
+        cols[m].appendChild(cards[j]);
+        tops[j] = h[m];
+        h[m] += cards[j].offsetHeight + GAP;
+      }
+      // A larger step that no longer reaches the line has shown every card.
+      if (!expanded && !clipped && level > 0) expanded = true;
+      var below = 0;
+      if (clipped) {
+        for (j = 0; j < cards.length; j++) {
+          if (tops[j] + cards[j].offsetHeight > clipHeight) below++;
+        }
+      }
+      wall.classList.toggle('is-collapsed', !expanded && clipped);
+      // Columns overshoot the collapse line by whatever the last card is tall, so
+      // a collapsed wall used to end on a ragged edge with the button hanging off
+      // the tallest column. Cut every column at the shortest one and let the fade
+      // cover the seam: one flat bottom, no dead space beside the short columns.
+      if (!expanded && clipped) {
+        wall.style.maxHeight = clipHeight + 'px';
+      } else {
+        wall.style.maxHeight = '';
+      }
+      if (btn) {
+        btn.hidden = !canCollapse || (!expanded && !clipped);
+        btn.textContent = expanded ? less : more.replace('{n}', below);
+        btn.classList.toggle('is-expanded', expanded);
+        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      }
+    }
+
+    // Re-packing detaches every card, so for one committed layout the document
+    // is only as tall as the wall's own box: measured on a phone-width page,
+    // 49901px collapses to 6680px and the browser clamps the scroll offset from
+    // 46058 to 5837. Desktop Chrome restores it afterwards; a phone does not
+    // reliably, which is what read as the page yanking you back to the bottom
+    // every time you tried to scroll up through an expanded wall. Pin the wall's
+    // top across every automatic relayout, the same trick the button uses.
+    function pinnedLayout() {
+      var top = wall.getBoundingClientRect().top;
+      layout();
+      window.scrollBy(0, wall.getBoundingClientRect().top - top);
+    }
+
+    function relayout() {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(pinnedLayout);
+    }
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        if (expanded) {
+          expanded = false;
+          level = 0;
+        } else {
+          level += 1;
+        }
+        if (level > 0) {
+          // Keep the viewport where it is. Re-laying out the wall grows it below
+          // the fade, and browser scroll anchoring on the button would otherwise
+          // yank the view to the bottom. Pin the wall's top across the relayout so
+          // the user stays in place and scrolls down into the new cards themselves.
+          var top = wall.getBoundingClientRect().top;
+          layout();
+          window.scrollBy(0, wall.getBoundingClientRect().top - top);
+        } else {
+          layout();
+          var sec = wall.closest('section');
+          if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    layout();
+    // No per-image relayout. Every image in the wall reserves its own box before
+    // it loads (.quote-avatar 36px, .gh-av 24px, .video-thumb aspect-ratio 16/9),
+    // so a finished load cannot change a card's height and there is nothing to
+    // re-pack. The listeners date from before those sizes were fixed, and with
+    // 266 lazy images they had become 266 full rebuilds of 254 cards, fired one
+    // by one as the reader scrolled through the expanded wall. The window load
+    // below stays: web fonts land after the first pack and DO change heights.
+    window.addEventListener('load', relayout);
+    window.addEventListener('resize', function() {
+      if (rzTimer) clearTimeout(rzTimer);
+      rzTimer = setTimeout(function() {
+        if (columnCount() !== lastN) pinnedLayout();
+      }, 150);
+    });
+    }
+
+    // The static CSS columns are a complete fallback. Do the measured, 215-card
+    // reflow only once the wall is close enough to be seen. The immediate bounds
+    // check preserves direct #voices links and restored scroll positions.
+    if (!('IntersectionObserver' in window)) {
+      start();
+      return;
+    }
+    if (wall.getBoundingClientRect().top < window.innerHeight + 900) {
+      start();
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries) {
+      if (!entries.some(function(entry) { return entry.isIntersecting; })) return;
+      observer.disconnect();
+      start();
+    }, { rootMargin: '900px 0px' });
+    observer.observe(wall);
+  })();
+})();
+(function(){
+  // Keep the build-time counts as a complete first paint. A cached same-origin
+  // endpoint may replace them after load; a missing token or upstream outage
+  // leaves the static values untouched.
+  var stats = document.querySelectorAll('[data-community-stat]');
+  if (!stats.length || typeof window.fetch !== 'function') return;
+
+  function compactCount(value, sample) {
+    if (value === null || value === undefined || value === '') return null;
+    var number = Number(value);
+    if (!Number.isSafeInteger(number) || number < 0) return null;
+    if (number < 1000) return String(number);
+    var formatted = (number / 1000).toFixed(1).replace(/\.0$/, '');
+    var lang = (document.documentElement.lang || '').toLowerCase();
+    if (/^(de|es|fr|it|nl|pt-br)(-|$)/.test(lang)) formatted = formatted.replace('.', ',');
+    return formatted + (/k/.test(sample) ? 'k' : 'K');
+  }
+
+  function update(kind, value) {
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-community-stat="' + kind + '"]'),
+      function(element) {
+        var current = element.textContent || '';
+        var match = current.match(/\d+(?:[.,]\d+)?\s*[kK]?/);
+        if (!match) return;
+        var replacement = compactCount(value, match[0]);
+        if (replacement) element.textContent = current.replace(match[0], replacement);
+      }
+    );
+  }
+
+  function refreshStats() {
+    window.fetch('/api/community-stats', {
+      credentials: 'omit',
+      headers: { Accept: 'application/json' }
+    }).then(function(response) {
+      if (!response.ok) throw new Error('community stats unavailable');
+      return response.json();
+    }).then(function(data) {
+      update('github-stars', data.githubStars);
+      update('github-profile-stars', data.githubProfileStars);
+      update('github-profile-forks', data.githubProfileForks);
+      update('github-profile-followers', data.githubProfileFollowers);
+      update('x-followers', data.xFollowers);
+    }).catch(function() {});
+  }
+
+  // Build-time values remain visible and accurate enough for first paint. Avoid
+  // waking a cold API dependency until its contact cards are near the viewport.
+  var statSection = stats[0].closest('section') || stats[0];
+  if (!('IntersectionObserver' in window)
+      || statSection.getBoundingClientRect().top < window.innerHeight + 700) {
+    refreshStats();
+    return;
+  }
+  var statsObserver = new IntersectionObserver(function(entries) {
+    if (!entries.some(function(entry) { return entry.isIntersecting; })) return;
+    statsObserver.disconnect();
+    refreshStats();
+  }, { rootMargin: '700px 0px' });
+  statsObserver.observe(statSection);
+})();
+(function(){
+  // mailto: depends on the OS mail handler; when none is configured (or the
+  // handler is a browser with no mail setup) the click silently does nothing.
+  // Keep the default mailto behavior, but also copy the address and confirm
+  // with a toast so every Email click leaves something actionable.
+  var toast = null, hideTimer = 0;
+  function showToast(text) {
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'copy-toast';
+      toast.setAttribute('role', 'status');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = text;
+    toast.classList.add('is-visible');
+    if (hideTimer) clearTimeout(hideTimer);
+    hideTimer = setTimeout(function() {
+      toast.classList.remove('is-visible');
+    }, 2400);
+  }
+  document.addEventListener('click', function(event) {
+    var target = event.target;
+    var link = target && target.closest ? target.closest('a[href^="mailto:"]') : null;
+    if (!link) return;
+    var address = (link.getAttribute('href') || '').replace(/^mailto:/, '').split('?')[0];
+    if (!address || !(navigator.clipboard && navigator.clipboard.writeText)) return;
+    navigator.clipboard.writeText(address).then(function() {
+      showToast('Copied hi@mole.fit');
+    }).catch(function() {});
+  });
+})();
+</script>
+
+<script>
+// Site search. A buyer had to use the refund form to send a suggestion because
+// he could not find anything else on the site, and the answer was already on
+// /help. The index is a per-language JSON built by build.py from the same
+// rendered blocks the routes ship, fetched on FIRST OPEN only: no cost to a
+// visitor who never searches, and one small file for the one who does.
+(function () {
+  var overlay = document.querySelector('[data-search]');
+  if (!overlay) return;
+  var input = overlay.querySelector('[data-search-input]');
+  var list = overlay.querySelector('.search-results');
+  var note = overlay.querySelector('[data-search-note]');
+  var openers = document.querySelectorAll('[data-search-open]');
+  var hint = note ? note.textContent : '';
+  // Read off the DOM rather than interpolating into the script: one apostrophe
+  // in a future translation would end the JS string literal and take search
+  // down in that locale only, which no other locale's page could reveal.
+  var empty = overlay.getAttribute('data-search-empty') || '';
+  var indexPath = overlay.getAttribute('data-search-index') || '';
+  var records = null, loading = null, hits = [], active = -1, restoreFocus = null;
+  var SNIPPET = 130;
+
+  function fold(value) {
+    // Latin diacritics fold so "documentacion" finds "documentación"; CJK is
+    // untouched by NFD stripping, and lowercasing is safe for every script here.
+    return String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function load() {
+    if (records) return Promise.resolve(records);
+    if (loading) return loading;
+    loading = fetch(indexPath, { credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (data) {
+        records = (Array.isArray(data) ? data : []).map(function (r) {
+          return { t: r.t, b: r.b, u: r.u, g: r.g, ft: fold(r.t), fb: fold(r.b) };
+        });
+        return records;
+      })
+      .catch(function () { records = []; return records; });
+    return loading;
+  }
+
+  // Whitespace splits Latin queries into terms that must ALL match; a CJK query
+  // has no spaces and stays one term, which substring matching already handles.
+  function score(record, terms) {
+    var total = 0;
+    for (var i = 0; i < terms.length; i++) {
+      var term = terms[i];
+      var inTitle = record.ft.indexOf(term);
+      var inBody = record.fb.indexOf(term);
+      if (inTitle < 0 && inBody < 0) return 0;
+      if (inTitle === 0) total += 12;
+      else if (inTitle > 0) total += 8;
+      else total += inBody < 200 ? 3 : 2;
+    }
+    return total;
+  }
+
+  function snippet(record, terms) {
+    var at = -1;
+    for (var i = 0; i < terms.length && at < 0; i++) at = record.fb.indexOf(terms[i]);
+    if (at < 0) return record.b.slice(0, SNIPPET);
+    var start = Math.max(0, at - 40);
+    var text = record.b.slice(start, start + SNIPPET);
+    return (start > 0 ? '…' : '') + text + (start + SNIPPET < record.b.length ? '…' : '');
+  }
+
+  function setActive(next) {
+    var items = list.children;
+    if (!items.length) { active = -1; return; }
+    if (next < 0) next = items.length - 1;
+    if (next >= items.length) next = 0;
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.toggle('is-active', i === next);
+      items[i].setAttribute('aria-selected', i === next ? 'true' : 'false');
+    }
+    active = next;
+    input.setAttribute('aria-activedescendant', items[next].id);
+    items[next].scrollIntoView({ block: 'nearest' });
+  }
+
+  // GA4 enhanced measurement only catches site search that travels in the URL,
+  // and this search never navigates, so the property has recorded zero terms
+  // since launch. What a visitor searches for after arriving is the sharpest
+  // content-gap signal there is, and a query that returns nothing is the
+  // sharpest of all, so misses are reported too. Wait for a settled query,
+  // ignore IME composition states, and flush the final term before closing or
+  // following a result: one search should not become five prefixes in GA4.
+  var SEARCH_REPORT_DELAY = 2500;
+  var searchReportTimer = null;
+  var lastReportedSearch = '';
+  var composingSearch = false;
+  function clearSearchReportTimer() {
+    if (!searchReportTimer) return;
+    clearTimeout(searchReportTimer);
+    searchReportTimer = null;
+  }
+  function sendSearchReport(query) {
+    var term = String(query || '').trim().slice(0, 100);
+    if (!term || term === lastReportedSearch) return;
+    if (typeof window.gtag !== 'function') return;
+    lastReportedSearch = term;
+    try {
+      window.gtag('event', 'view_search_results', { search_term: term });
+    } catch (e) {}
+  }
+  function reportSearch(query) {
+    clearSearchReportTimer();
+    if (composingSearch) return;
+    var term = String(query || '').trim().slice(0, 100);
+    if (!term || term === lastReportedSearch) return;
+    searchReportTimer = setTimeout(function () {
+      searchReportTimer = null;
+      sendSearchReport(term);
+    }, SEARCH_REPORT_DELAY);
+  }
+  function flushSearchReport(query) {
+    clearSearchReportTimer();
+    if (!composingSearch) sendSearchReport(query);
+  }
+
+  function render(query) {
+    reportSearch(query);
+    var terms = fold(query).split(/\s+/).filter(Boolean);
+    list.textContent = '';
+    active = -1;
+    input.removeAttribute('aria-activedescendant');
+    if (!terms.length) {
+      hits = [];
+      input.setAttribute('aria-expanded', 'false');
+      note.textContent = hint;
+      note.hidden = false;
+      return;
+    }
+    hits = (records || [])
+      .map(function (r) { return { r: r, s: score(r, terms) }; })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 8);
+    input.setAttribute('aria-expanded', hits.length ? 'true' : 'false');
+    if (!hits.length) {
+      note.textContent = empty;
+      note.hidden = false;
+      return;
+    }
+    note.hidden = true;
+    hits.forEach(function (x, i) {
+      var li = document.createElement('li');
+      li.className = 'search-result';
+      li.id = 'site-search-hit-' + i;
+      li.setAttribute('role', 'option');
+      li.setAttribute('aria-selected', 'false');
+      var link = document.createElement('a');
+      link.href = x.r.u;
+      var group = document.createElement('span');
+      group.className = 'search-result-group';
+      group.textContent = x.r.g;
+      var title = document.createElement('span');
+      title.className = 'search-result-title';
+      title.textContent = x.r.t;
+      var body = document.createElement('span');
+      body.className = 'search-result-body';
+      body.textContent = snippet(x.r, terms);
+      link.appendChild(group);
+      link.appendChild(title);
+      link.appendChild(body);
+      link.addEventListener('click', function () { flushSearchReport(input.value); });
+      li.appendChild(link);
+      li.addEventListener('mouseenter', function () { setActive(i); });
+      list.appendChild(li);
+    });
+    setActive(0);
+  }
+
+  var searchInertSiblings = [];
+  function open() {
+    if (!overlay.hidden) return;
+    var downloadMenu = document.getElementById('download-menu');
+    if (downloadMenu && downloadMenu.open) {
+      var downloadTrigger = document.querySelector('[data-download-trigger][aria-expanded="true"]');
+      var downloadFocused = downloadMenu.contains(document.activeElement);
+      downloadMenu.close();
+      if (downloadFocused && downloadTrigger) downloadTrigger.focus({ preventScroll: true });
+    }
+    restoreFocus = document.activeElement;
+    overlay.hidden = false;
+    // The dialog is nested inside main; keep its ancestors accessible.
+    for (var branch = overlay; branch.parentElement; branch = branch.parentElement) {
+      Array.prototype.forEach.call(branch.parentElement.children, function (sibling) {
+        if (sibling !== branch && !sibling.inert) {
+          sibling.inert = true;
+          searchInertSiblings.push(sibling);
+        }
+      });
+      if (branch.parentElement === document.body) break;
+    }
+    document.documentElement.classList.add('search-open');
+    input.value = '';
+    render('');
+    input.focus();
+    load().then(function () { if (!overlay.hidden) render(input.value); });
+  }
+
+  function close() {
+    if (overlay.hidden) return;
+    flushSearchReport(input.value);
+    overlay.hidden = true;
+    searchInertSiblings.forEach(function (element) { element.inert = false; });
+    searchInertSiblings = [];
+    document.documentElement.classList.remove('search-open');
+    if (restoreFocus && restoreFocus.focus) restoreFocus.focus();
+    restoreFocus = null;
+  }
+
+  Array.prototype.forEach.call(openers, function (button) {
+    button.addEventListener('click', open);
+  });
+  Array.prototype.forEach.call(overlay.querySelectorAll('[data-search-dismiss]'), function (el) {
+    el.addEventListener('click', close);
+  });
+  input.addEventListener('compositionstart', function () {
+    composingSearch = true;
+    clearSearchReportTimer();
+  });
+  input.addEventListener('compositionend', function () {
+    composingSearch = false;
+    render(input.value);
+  });
+  input.addEventListener('input', function () { render(input.value); });
+
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowDown') { event.preventDefault(); setActive(active + 1); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); setActive(active - 1); }
+    else if (event.key === 'Enter') {
+      var current = list.children[active];
+      var link = current ? current.querySelector('a') : null;
+      if (link) {
+        event.preventDefault();
+        flushSearchReport(input.value);
+        window.location.href = link.href;
+      }
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !overlay.hidden) { event.preventDefault(); close(); return; }
+    if (event.key === 'Tab' && !overlay.hidden) {
+      var controls = overlay.querySelectorAll('input, button, a[href]');
+      var first = controls[0];
+      var last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+    if ((event.metaKey || event.ctrlKey) && (event.key === 'k' || event.key === 'K')) {
+      event.preventDefault();
+      overlay.hidden ? open() : close();
+      return;
+    }
+    // Bare "/" is a search shortcut only when the visitor is not already typing.
+    if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+    var el = document.activeElement;
+    var tag = el && el.tagName ? el.tagName.toLowerCase() : '';
+    if (tag === 'input' || tag === 'textarea' || tag === 'select' || (el && el.isContentEditable)) return;
+    event.preventDefault();
+    open();
+  });
+})();
+</script>
+</body>
+</html>

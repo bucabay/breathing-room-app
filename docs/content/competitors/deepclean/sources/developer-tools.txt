@@ -1,0 +1,136 @@
+Developer Cache Cleaner for Mac (2026) | DeepClean
+DeepClean
+Features
+Blog
+Pricing
+Scan Your Mac Free
+Developer Tools
+17 Developer Toolchains.
+One Cleanup Scan.
+Xcode DerivedData, npm caches, Cargo registries, Docker images, Gradle builds. Developers carry 15 to 40 GB of reclaimable artifacts. DeepClean knows where all of them hide.
+Scan Your Mac Free
+17
++
+Developer toolchains scanned
+14
+Junk categories detected
+15-40
+GB
+Typical space recovered
+Supported Toolchains
+Every Tool, Every Cache
+DeepClean scans all major development ecosystems on macOS. Here is the complete list.
+🔨
+Xcode
+DerivedData, archives, device support, simulator runtimes, module caches, and documentation caches. The single largest source of developer junk on most Macs.
+~/Library/Developer/Xcode
+~/Library/Developer/CoreSimulator
+Typical: 5 - 30 GB
+🍺
+Homebrew
+Old formula versions, outdated cask downloads, and cached bottles. Running brew cleanup helps, but DeepClean catches what it misses.
+~/Library/Caches/Homebrew
+/usr/local/Cellar (old versions)
+Typical: 500 MB - 3 GB
+📦
+npm / Yarn / pnpm / Bun
+Global npm cache, Yarn offline mirror, pnpm content-addressable store, and Bun install cache. All four Node.js package managers in one scan.
+~/.npm, ~/.yarn, ~/.pnpm-store
+~/.bun/install/cache
+Typical: 1 - 5 GB
+🦀
+Cargo (Rust)
+Registry source cache, compiled dependency artifacts, and git checkouts. The Cargo cache grows quickly with large dependency trees.
+~/.cargo/registry
+~/.cargo/git
+Typical: 2 - 8 GB
+🐍
+pip / Poetry / uv / Ruff
+pip download cache, Poetry virtual environments cache, uv package cache, and Ruff linting cache. Covers the modern Python ecosystem.
+~/Library/Caches/pip
+~/Library/Caches/pypoetry
+Typical: 500 MB - 3 GB
+🐋
+Docker
+Docker Desktop's disk image, dangling images, build cache, and unused volumes. Docker is often the second-largest consumer of developer disk space.
+~/Library/Containers/com.docker.docker
+~/.docker
+Typical: 5 - 30 GB
+🐘
+Gradle / Maven / sbt / Ivy
+Gradle build caches and wrapper distributions, Maven local repository, sbt compiled targets, and Ivy dependency cache.
+~/.gradle/caches, ~/.m2/repository
+~/.sbt, ~/.ivy2/cache
+Typical: 2 - 10 GB
+💎
+CocoaPods
+Pod spec repository cache and downloaded pod source files. The specs repo alone can be over 1 GB.
+~/Library/Caches/CocoaPods
+~/.cocoapods/repos
+Typical: 1 - 3 GB
+⚡
+Swift Package Manager
+Resolved package checkouts and build artifacts from SPM-based projects. Shared across all Xcode projects that use SPM.
+~/Library/Developer/Xcode/DerivedData
+~/Library/Caches/org.swift.swiftpm
+Typical: 500 MB - 2 GB
+🖥
+JetBrains IDEs
+IntelliJ IDEA, PyCharm, WebStorm, GoLand, and other JetBrains IDE caches and log files. Each IDE version maintains its own cache directory.
+~/Library/Caches/JetBrains
+~/Library/Logs/JetBrains
+Typical: 1 - 5 GB
+📝
+VS Code
+Extension caches, cached data, cached extension manifests, and log files. VS Code's cache directories grow especially large with many installed extensions.
+~/Library/Application Support/Code/Cache
+.../CachedData, .../CachedExtensions
+Typical: 300 MB - 2 GB
+🌐
+Go
+Module download cache and build cache. Go's module system caches downloaded dependencies that can be safely removed.
+~/go/pkg/mod/cache
+~/Library/Caches/go-build
+Typical: 500 MB - 3 GB
+📓
+Jupyter / ML
+Jupyter notebook data, HuggingFace model downloads, and PyTorch hub cache. ML model files can be especially large (hundreds of MB to several GB each).
+~/Library/Jupyter
+~/.cache/huggingface, ~/.cache/torch
+Typical: 1 - 20 GB
+📱
+Android Studio
+Android build cache, emulator images, SDK components, and Android Studio IDE caches. The Android toolchain is notoriously storage-heavy.
+~/.android/build-cache
+~/Library/Android/sdk
+Typical: 3 - 15 GB
+💎
+Ruby / Gems
+RubyGems cache, old gem versions, and Bundler artifacts. Multiple Ruby version managers (rbenv, rvm) can each accumulate their own caches.
+~/.gem, ~/Library/Caches/ruby
+~/.rbenv, ~/.rvm
+Typical: 200 MB - 2 GB
+⚙️
+Composer (PHP)
+Composer package cache and downloaded vendor files. PHP developers using Composer accumulate dependency caches over time.
+~/.composer/cache
+Typical: 200 MB - 1 GB
+🚀
+Flutter / Dart
+Flutter SDK cache, Dart pub cache, and build outputs. The Flutter SDK itself can be several GB, and cached dependencies add more.
+~/.pub-cache
+~/flutter/bin/cache
+Typical: 1 - 4 GB
+Reclaim Your Developer Space
+One scan finds artifacts from every toolchain you use. Most developers recover 15 to 40 GB on their first cleanup.
+Scan Your Mac Free
+DeepClean
+Features
+Blog
+Press
+Pricing
+About
+Privacy
+Terms
+Contact
+© 2026 DeepClean

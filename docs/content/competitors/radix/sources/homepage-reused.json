@@ -1,0 +1,77 @@
+{
+  "id": "radix",
+  "retrievedAt": "2026-10-21T19:09:38.009021+00:00",
+  "discoveryUrl": "https://alternativeto.net/software/radix/about/",
+  "url": "https://radix.colinkim.dev/",
+  "finalUrl": "https://tryradix.app/",
+  "httpStatus": 200,
+  "title": "Radix \u2014 Free Mac Disk Space Analyzer & Visualizer",
+  "text": "Radix \u2014 Free Mac Disk Space Analyzer & Visualizer\nRadix\nProduct\nFeatures\nPrivacy\nGitHub\nDownload\nOpen Source\nSee your disk space in a whole new way\nYour\nMac's\nDisk\nSpace,\nBeautifully\nVisualized\nRadix scans millions of files and turns your Mac\u2019s storage into a clear, interactive map.\nExplore with sunburst and treemap views, compare changes over time, and safely review what to clean up \u2014 all locally on your Mac.\nDownload Radix\nView on GitHub\nbrew install --cask radix\nbrew install --cask radix\nRequires macOS 14 or later.\nHow It Works\nScan, Visualize, Discover\nChoose a folder or volume to scan. Explore it with sunburst and treemap views, search and inspect files, compare scans over time, and review cleanup candidates before moving anything to the Trash.\nTry Radix Now\nSee Radix at work.\n01\nExplore\n02\nVisualize\n03\nCompare\n01\nEverything you need, in one view.\nStart with the whole drive, then search, inspect, and add cleanup candidates to the Discard Pile without losing your place.\nEnlarge\n02\nSwitch from hierarchy to scale.\nUse the sunburst to follow folder structure or switch to the treemap to surface the largest items at a glance.\nEnlarge\n03\nSee what changed, not just what is large.\nCompare scans to see what grew, shrank, appeared, or disappeared \u2014 and trace every change back to its folder.\nEnlarge\nWhy Radix\nThe difference is everything.\nNative by Design\nBuilt with Swift and SwiftUI to feel at home on macOS. Scans and saved results stay local, with no account required.\nDiscard Pile\nDrag files and folders into the Discard Pile, then review everything before moving anything to the Trash.\nFast Scanning\nScan millions of files with live progress, faster follow-up scans, and automatic summaries for folders packed with tiny files.\nSaved Snapshots\nExport completed scans and reopen them later as read-only snapshots, ready to inspect again or compare over time.\n...\n...\nGitHub stars\n...\n...\nRelease downloads\nSee\nwhat\nRadix\ncan\nfind.\nSee what Radix can find.\nDownload for macOS\nDownload Radix today and reclaim your disk space. Open source and free forever.\n\u00a9\n2026\nColin Kim\nGitHub",
+  "links": [
+    {
+      "text": "Radix",
+      "href": "https://tryradix.app/#"
+    },
+    {
+      "text": "Product",
+      "href": "https://tryradix.app/#product"
+    },
+    {
+      "text": "Features",
+      "href": "https://tryradix.app/#features"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://tryradix.app/#privacy"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/colinvkim/Radix"
+    },
+    {
+      "text": "Download",
+      "href": "https://github.com/colinvkim/Radix/releases/latest/download/Radix.zip"
+    },
+    {
+      "text": "Download Radix",
+      "href": "https://github.com/colinvkim/Radix/releases/latest/download/Radix.zip"
+    },
+    {
+      "text": "View on GitHub",
+      "href": "https://github.com/colinvkim/Radix"
+    },
+    {
+      "text": "Try Radix Now",
+      "href": "https://github.com/colinvkim/Radix/releases/latest/download/Radix.zip"
+    },
+    {
+      "text": "01Explore",
+      "href": "https://tryradix.app/#product-01"
+    },
+    {
+      "text": "02Visualize",
+      "href": "https://tryradix.app/#product-02"
+    },
+    {
+      "text": "03Compare",
+      "href": "https://tryradix.app/#product-03"
+    },
+    {
+      "text": "......GitHub stars",
+      "href": "https://github.com/colinvkim/Radix"
+    },
+    {
+      "text": "......Release downloads",
+      "href": "https://github.com/colinvkim/Radix/releases"
+    },
+    {
+      "text": "Download for macOS",
+      "href": "https://github.com/colinvkim/Radix/releases/latest/download/Radix.zip"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/colinvkim/Radix"
+    }
+  ],
+  "sha256": "ce9064885d986eea9b9478828083e2c0d9e3b113cfc66053c9ee7a4bc42cc549"
+}

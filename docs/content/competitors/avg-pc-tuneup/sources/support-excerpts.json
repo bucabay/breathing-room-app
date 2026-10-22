@@ -1,0 +1,74 @@
+{
+  "recordedAtUtc": "2026-10-21T22:28:38Z",
+  "retrievalWindowUtc": ["2026-10-21T22:28:05.681Z", "2026-10-21T22:28:38Z"],
+  "method": "Read-only WebFetch; selected verbatim passages retained, not full page snapshots. Exact per-request timestamps unavailable. Both platform sections were returned; scope each passage explicitly.",
+  "sources": [
+    {
+      "id": "faq",
+      "url": "https://support.avg.com/SupportArticleView?l=en&urlName=avg-tuneup-faq",
+      "title": "AVG TuneUp - FAQs",
+      "publisher": "AVG / Gen Digital",
+      "publicationDate": null,
+      "excerpts": [
+        {"scope": "Windows / trial", "text": "A payment method is required to sign up for a free trial. When the trial ends, your paid subscription starts, unless it has been canceled before."},
+        {"scope": "Mac / Clean clutter", "text": "After the scan completes, you can review the amount of space taken up by unnecessary files and select which files you want to remove from your Mac."},
+        {"scope": "Mac / Find duplicates", "text": "Find duplicates detects multiple files with identical content."},
+        {"scope": "Mac / Analyze photos", "text": "Analyze photos detects photos that are blurry, badly lit, or similar."},
+        {"scope": "Mac / Uninstall apps", "text": "Uninstall apps allows you to easily find and remove applications from your Mac that you no longer use."},
+        {"scope": "Mac / Manage startup items", "text": "Review the list of applications, launch agents, and launch daemons."},
+        {"scope": "Mac / Settings", "text": "Scanning: Specify scan options for Cleaning clutter, Finding duplicates, Finding photos, and Uninstalling apps, or allow System Monitor."},
+        {"scope": "Mac / Settings", "text": "Trash: Enable to automatically delete files from the Trash after a specific time."},
+        {"scope": "Mac / Settings", "text": "Privacy: Manage which app-usage data you want to share."},
+        {"scope": "Mac / Alerts", "text": "Notify me when my disk space is less than: Tick or untick this option to enable or disable notifications about the amount of free disk space on your Mac."},
+        {"scope": "Mac / Scan-only mode", "text": "If you installed AVG TuneUp but you have not subscribed to or activated the app following your subscription purchase, the application runs in scan-only mode and cannot clean anything."},
+        {"scope": "Mac / Activation", "text": "Activate AVG TuneUp using the activation code from your order confirmation email."},
+        {"scope": "Mac / Permissions", "text": "Each time you remove files, photos, or applications using AVG TuneUp, you are asked to authorize the cleaning process by entering the password that you use when you start your Mac."}
+      ]
+    },
+    {
+      "id": "guide",
+      "url": "https://support.avg.com/SupportArticleView?l=en&urlName=use-avg-tuneup",
+      "title": "AVG TuneUp - Getting Started",
+      "publisher": "AVG / Gen Digital",
+      "publicationDate": null,
+      "excerpts": [
+        {"scope": "Mac / Quick clean", "text": "Quick Clean scans your Mac for unnecessary files and allows you to select which files are deleted to clear disk space."},
+        {"scope": "Mac / Clean clutter", "text": "Select none: Deselects all listed file categories. You can then manually select the file categories you want to clean."},
+        {"scope": "Mac / Schedule automatic scans", "text": "Click the panel for a browser to review and adjust the items that AVG TuneUp has permission to remove during each scan."},
+        {"scope": "Mac / Cookie allowlist", "text": "The selected website is now excluded from cookie clearing."},
+        {"scope": "Mac / Remove duplicate files", "text": "Keep oldest: Automatically selects the newest version of each file for removal."},
+        {"scope": "Mac / Remove duplicate files", "text": "Keep newest: Automatically selects the oldest version of each file for removal."},
+        {"scope": "Mac / Remove duplicate files", "text": "Select none: Deselects all files and allows you to manually select files for removal."}
+      ]
+    },
+    {
+      "id": "install",
+      "url": "https://support.avg.com/SupportArticleView?l=en&urlName=Install-AVG-TuneUp&option=mac",
+      "title": "Install AVG TuneUp",
+      "publisher": "AVG / Gen Digital",
+      "publicationDate": null,
+      "excerpts": [
+        {"scope": "Mac / Introduction", "text": "AVG TuneUp Premium for Mac is a paid app that requires a subscription to use."},
+        {"scope": "Mac / Installation", "text": "Double-click the downloaded setup file avgtuneup.dmg."},
+        {"scope": "Mac / Post-installation", "text": "AVG TuneUp is now installed, but some components may not fully function until you restart your Mac."},
+        {"scope": "Mac / Vendor installation warning (not independently verified OS identity)", "text": "We are aware of an issue that can cause the installation or reinstallation of AVG applications to fail intermittently on macOS 27 (Golden Gate)."}
+      ]
+    },
+    {
+      "id": "requirements",
+      "url": "https://support.avg.com/SupportArticleView?l=en&urlName=avg-system-requirements",
+      "title": "System requirements for AVG applications",
+      "publisher": "AVG / Gen Digital",
+      "publicationDate": null,
+      "excerpts": [
+        {"scope": "AVG TuneUp / Windows", "text": "AVG TuneUp 26.x for Windows"},
+        {"scope": "AVG TuneUp / Mac", "text": "AVG TuneUp 4.x for Mac"},
+        {"scope": "AVG TuneUp 4.x / Mac / OS list", "text": "Apple macOS 27.x (Golden Gate), Apple macOS 26.x (Tahoe), Apple macOS 15.x (Sequoia), Apple macOS 14.x (Sonoma), Apple macOS 13.x (Ventura), Apple macOS 12.x (Monterey), Apple macOS 11.x (Big Sur), Apple macOS 10.15.x (Catalina), Apple macOS 10.14.x (Mojave), Apple macOS 10.13.x (High Sierra)"},
+        {"scope": "AVG TuneUp 4.x / Mac / hardware", "text": "Intel based Mac with 64-bit processor or Apple silicon chip (M1)"},
+        {"scope": "AVG TuneUp 4.x / Mac / memory", "text": "512 MB RAM or above (1 GB RAM or higher preferred)"},
+        {"scope": "AVG TuneUp 4.x / Mac / storage", "text": "750 MB free space on the hard disk"},
+        {"scope": "AVG TuneUp 4.x / Mac / network", "text": "Internet connection to download, activate, and maintain application updates"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-canta-1",
+  "productId": "canta-1",
+  "status": "complete-exclusion-research",
+  "checkedAtUtc": "2026-10-21T22:30:57.132792+00:00",
+  "identity": {
+    "officialName": "Canta",
+    "homepage": "https://samolego.github.io/Canta/",
+    "repository": "https://github.com/samolego/Canta",
+    "publisherHandle": "samolego / samo_lego",
+    "canonicalOwnerId": "canta-1",
+    "aliases": [],
+    "aliasDecision": "No alias established in the reused baseline or official README. Repository and homepage cross-link to Canta; do not merge it with an unrelated cleaner.",
+    "aliasSkip": false,
+    "classification": "excluded-platform-mismatch",
+    "adjacentCategory": "Android software uninstaller / debloater",
+    "directMacSubstitute": false,
+    "macReplacementIntent": "Not established. A desktop Chromium browser can control an Android workflow; that does not establish Mac storage-cleanup functionality."
+  },
+  "decision": {
+    "action": "skip",
+    "reason": "Official evidence establishes an Android 9.0+ package-removal workflow, not a Mac maintenance replacement. No useful distinct Mac-replacement intent was established; avoid doorway comparison pages.",
+    "draftingAllowed": false,
+    "publicationEligible": false,
+    "skipType": "relevance-exclusion-not-dead-or-alias",
+    "nextStageInstruction": "Assigned draft/review stages should independently confirm this exclusion and produce their own skip handoffs, not website pages. This job does not execute those stages.",
+    "criticalEvidenceMissingForExclusion": [],
+    "reopenConditions": ["Official Mac maintenance functionality or a genuinely useful Mac-replacement reader intent is documented."],
+    "hypotheticalDraftBlockers": ["No evidenced Mac-replacement intent", "Competitor screenshot reuse not cleared; link-only research does not pass the on-page image gate"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/canta-1/about/",
+    "destinationUrl": "https://samolego.github.io/Canta/",
+    "retrievedAtUtc": "2026-10-21T19:07:16.250Z",
+    "method": "Reused verification/batch-2.json; originally rendered about-page DOM in owned Chrome tab 16.",
+    "rawCapture": "docs/content/.runtime/verification-2/canta-1-directory.json",
+    "sha256": "5d2335950d8428c10e407312c9a3b05f34eee1cf61b4f8358e34bc48eefb977f",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/", "retrievedAtUtc": "2026-10-21T18:36:14.532Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/", "retrievedAtUtc": "2026-10-21T18:37:03.597Z"}
+    ],
+    "edgeEvidence": "docs/content/competitors.json entry canta-1; exact pagination beyond the retained edge URLs not recorded here. No new traversal or directory fetch.",
+    "limitation": "Directory edges prove discovery only, not platform equivalence."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Canta / samo_lego", "title": "Canta - Debloat Android without root",
+      "url": "https://samolego.github.io/Canta/", "finalUrl": "https://samolego.github.io/Canta/",
+      "retrievedAtUtc": "2026-10-21T19:09:55.971308+00:00", "reusedFrom": "docs/content/verification/batch-2.json#canta-1",
+      "snapshotPath": "docs/content/.runtime/verification-2/canta-1-official.json", "sha256": "7c80dfce7da9ee33879f0bcf33f7fdc64e30955966ca318ed2e72f7dd934640a",
+      "publicationDate": null, "versionScope": "Unversioned homepage", "excerpts": ["Supports Android 9.0 (SDK 28) and above devices.", "Released under the LGPL-3.0 License.", "Copyright © samo_lego"],
+      "note": "File hash verified locally. Embedded sha256 field is not the whole-file hash; retain batch-level whole-file hash above."
+    },
+    {
+      "id": "S2", "publisher": "samolego/Canta", "title": "Official repository README",
+      "url": "https://raw.githubusercontent.com/samolego/Canta/master/README.md", "finalUrl": "https://raw.githubusercontent.com/samolego/Canta/master/README.md",
+      "sourcePageUrl": "https://github.com/samolego/Canta", "retrievedAtUtc": "2026-10-21T22:30:57.132792+00:00",
+      "snapshotPath": "docs/content/competitors/canta-1/sources/official-readme.md", "sha256": "67cc4b435bf1985207aa620b16132b6f0cd3e1795e824459e052b26492f3b5d1",
+      "publicationDate": null, "versionScope": "Mutable master, not a versioned release or runtime test",
+      "excerpts": ["uninstall pre-installed or user apps without root", "Works on Android **9.0+ (SDK 28+)**", "If you uninstall **critical apps**, you can experience bootloop and have to **factory reset**!", "Don't want to download and have a data USB cable and a Chromium-based browser?", "Some oplus apps"],
+      "purpose": "Targeted missing repository, workflow-risk, platform-fit and screenshot-source evidence. Baseline homepage not refetched."
+    },
+    {"id": "BR1", "title": "Breathing Room capability register", "path": "docs/content/capabilities.md", "checkedDate": "2026-10-21", "scope": "Reused documentary register; no new runtime verification", "url": "https://breathing-room.chatic.ai/", "excerpts": ["macOS 13+", "0.1.0-preview.1", "Python **3.10+**", "$5 USD/month", "$50 USD/year"]}
+  ],
+  "claims": [
+    {"id": "C1", "wording": "Canta's official homepage links to samolego/Canta, whose README links back to that homepage.", "sourceIds": ["S1", "S2"], "sourceUrls": ["https://samolego.github.io/Canta/", "https://github.com/samolego/Canta"], "excerpt": "View on GitHub → https://github.com/samolego/Canta; README icon link → https://samolego.github.io/Canta/", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "Identity / exclusion"},
+    {"id": "C2", "wording": "Canta documents Android 9.0 (SDK 28) and above support.", "sourceIds": ["S1", "S2"], "sourceUrls": ["https://samolego.github.io/Canta/"], "excerpt": "Supports Android 9.0 (SDK 28) and above devices.", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "scope": "Not proof of native macOS or Windows support", "location": "Platform matrix / exclusion"},
+    {"id": "C3", "wording": "The README describes uninstalling pre-installed or user apps without root through Shizuku.", "sourceIds": ["S2"], "sourceUrls": ["https://github.com/samolego/Canta"], "excerpt": "Canta allows you to **uninstall pre-installed or user apps without root**, by leveraging [Shizuku]", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "scope": "Not an unlimited-removal guarantee; README notes stubborn oplus apps", "location": "Workflow / trade-offs"},
+    {"id": "C4", "wording": "Removing critical Android apps can cause a bootloop requiring a factory reset, according to the README.", "sourceIds": ["S2"], "sourceUrls": ["https://github.com/samolego/Canta"], "excerpt": "If you uninstall **critical apps**, you can experience bootloop and have to **factory reset**!", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented-warning", "scope": "No execution or recovery test performed; reject blanket safe/no-risk wording", "location": "Safety boundary"},
+    {"id": "C5", "wording": "Canta's homepage states LGPL-3.0 licensing.", "sourceIds": ["S1"], "sourceUrls": ["https://samolego.github.io/Canta/"], "excerpt": "Released under the LGPL-3.0 License.", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "scope": "Does not establish separate screenshot/trademark permission", "location": "Licence matrix"},
+    {"id": "C6", "wording": "The README offers a web workflow with a data USB cable and Chromium-based browser.", "sourceIds": ["S2"], "sourceUrls": ["https://github.com/samolego/Canta"], "excerpt": "Don't want to download and have a data USB cable and a Chromium-based browser? Try Canta directly on the [web]", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "scope": "No Mac host compatibility or Mac cleanup claim; browser/device workflow not tested", "location": "Platform distinction"}
+  ],
+  "productMatrix": {
+    "platform": {"value": "Android 9.0+ (SDK 28+)", "claimIds": ["C2"]},
+    "license": {"value": "Homepage states LGPL-3.0", "claimIds": ["C5"]},
+    "cleanupModel": {"value": "Android app removal via Shizuku; web option documented", "claimIds": ["C3", "C6"]},
+    "approvalControls": {"value": "README instructs selecting an app and clicking trash; complete approval/revalidation model not verified", "sourceIds": ["S2"]},
+    "runtime": {"value": "Native Android instructions require Shizuku installation/activation; Android 16 might need a fork according to current README", "sourceIds": ["S2"]},
+    "localHostedBoundary": {"value": "not verified; no privacy/backend audit"},
+    "processHelperGrouping": {"value": "not verified"},
+    "recurringGrowthMonitoring": {"value": "not verified"},
+    "developerCaches": {"value": "not verified"},
+    "macCompatibility": {"value": "No Mac maintenance fit established, not a tested assertion of all host incompatibility", "claimIds": ["C2", "C3", "C6"]},
+    "pricing": {"value": "not verified; no exact amount, currency, plan or purchase terms asserted"},
+    "latestVersion": {"value": "not verified; mutable README not a release version"},
+    "availability": {"value": "Official README reachable HTTP 200; download channels linked, APK availability/integrity not tested", "sourceIds": ["S2"]}
+  },
+  "unknowns": {"criticalToSkipDecision": [], "noncriticalForExcludedProduct": ["Latest release/tag and APK integrity", "Exact current pricing and store-specific conditions", "Screenshot reuse licence", "Browser/USB host platform compatibility", "Local/hosted privacy behavior", "Full approval controls, helper grouping, growth monitoring, developer caches"], "policy": "Unknown never means No; do not research unrelated material to pad an excluded packet."},
+  "visuals": [
+    {"id": "canta-official-home", "productId": "canta-1", "kind": "official-asset", "view": "Home Android app view identified by official README", "sourcePageUrl": "https://github.com/samolego/Canta#screenshots", "assetUrl": "https://raw.githubusercontent.com/samolego/Canta/master/metadata/en-US/images/phoneScreenshots/screenshot-main.png", "capturedAtUtc": null, "retrievedAtUtc": null, "sourceReferenceCheckedAtUtc": "2026-10-21T22:30:57.132792+00:00", "productVersion": null, "dataMode": "unknown", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "edits": [], "reuse": {"status": "link-only", "basis": "Official README embeds this app screenshot; public accessibility and code licensing alone do not clear image reuse. No image downloaded.", "evidenceUrlOrPath": "docs/content/competitors/canta-1/sources/official-readme.md", "credit": "Canta / samolego"}, "caption": "Official Canta Home screenshot linked from the project's README; version and capture date not established. Not our hands-on test.", "alt": "Official Canta Android Home app screenshot (linked source; visual inspection pending).", "review": {"status": "not-downloaded-not-visually-reviewed"}, "limitations": ["Source reference verified, image contents/dimensions/hash not inspected", "Link-only does not pass an on-page screenshot gate", "Excluded product: no publication proposed"]},
+    {"id": "current-space-browser-preview", "productId": "breathing-room", "kind": "browser-preview", "sourceManifest": "docs/content/screenshots.json", "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a", "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "dataMode": "example", "widthPx": 2940, "heightPx": 3468, "publishedPath": null, "publishedSha256": null, "edits": [], "reuse": {"status": "cleared", "basis": "Reused manifest: app-owner-requested first-party UI capture with required disclosures; third-party marks not blanket licensed."}, "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.", "alt": "Breathing Room Space view rendered in a browser with illustrative example data.", "limitations": ["Current-source at capture, not proof of current distributed-release parity", "Keep example-data banner visible", "No new native test or visual approval performed by this research job", "Selected for handoff only; no page or published asset created"]}
+  ],
+  "briefs": {
+    "workflow": {"disposition": "skip-not-commissioned", "candidateTitle": "Android debloating is not Mac storage cleanup", "candidateSlug": "android-debloating-versus-mac-storage-cleanup", "primaryIntent": "Disambiguate Android system-app removal from reclaiming Mac storage", "distinctValue": "Device/goal decision aid rather than a renamed competitor matrix", "outlineIfReopened": ["Identify the device whose storage is constrained", "Distinguish package removal from Mac cache/file investigation", "Read Canta's critical-app warning", "Choose platform-appropriate inspection before removal"], "reasonNotDrafted": "No evidenced Mac-replacement demand; a useful boundary in research is not enough to justify a separate SEO page.", "interactionPass": "Device-and-goal checklist would be useful only if this intent is independently established; no widget built."},
+    "comparison": {"disposition": "skip-not-commissioned", "candidateTitle": "Canta and Breathing Room serve different devices", "candidateSlug": "canta-1", "primaryIntent": "Concise platform and task disambiguation", "proposedRows": ["Target device", "Removal/inspection model", "Runtime dependencies", "Documented risks", "Preview and hosted-service limits"], "reasonNotDrafted": "Not direct alternatives. Do not publish a false Mac replacement page or infer Windows support."}
+  },
+  "advantagesAndTradeoffs": {
+    "canta": ["Documented rootless Android pre-installed/user-app removal through Shizuku fits that Android task (C2/C3).", "Community recommendations are documented on the homepage, not independently validated safety evidence.", "Critical-app removal can bootloop and require factory reset (C4); some oplus removals are restricted (S2)."],
+    "breathingRoom": ["The reused capability register supports Mac storage exploration and grouped process views, not an Android replacement.", "Breathing Room, which we build, is a macOS 13+ preview (identified version 0.1.0-preview.1), with Python 3.10+ prerequisite and no Developer ID signing/notarization established in the register.", "Free local core; advertised optional AI Care $5 USD/month or $50 USD/year, renewal/tax conditions apply. Hosted AI needs authentication/internet and sends relevant context; not all-offline AI (BR1).", "Source implementation and illustrative previews are not release/runtime tests or measured savings. Recheck applicable material claims before any future draft."]
+  },
+  "testing": {"handsOn": false, "installation": false, "cleanup": false, "browserUsed": false, "note": "Read-only source research. Browser skill loaded; no browser needed because directory and homepage evidence were reused. No accounts, credentials, queue writes, site edits or deployments."},
+  "review": {"publicationApproval": "not-requested-excluded", "independentReview": "pending-separate-job", "score": null}
+}

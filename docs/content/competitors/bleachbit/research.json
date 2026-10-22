@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-bleachbit",
+  "stage": "research",
+  "status": "complete-research-packet",
+  "publicationStatus": "draft-not-approved",
+  "checkedOn": "2026-10-21",
+  "dateNote": "Task context displays October 22; shell/browser UTC clock during collection was October 21, 2026, 22:29 UTC. Actual observed UTC dates are retained. Exact WebFetch retrieval instants were unavailable, not invented.",
+  "reviewer": "research-bleachbit worker; documentary research, not independent approval",
+  "identity": {
+    "productId": "bleachbit",
+    "canonicalOwnerId": "bleachbit",
+    "officialName": "BleachBit",
+    "homepage": "https://www.bleachbit.org/",
+    "repository": "https://github.com/bleachbit/bleachbit",
+    "aliases": [],
+    "aliasDecision": "No verified alternate product identity in baseline or official links. Platform names and GTK/wxPython/TUI interfaces are this same project, not separate drafts. No evidence here links PowerMyMac to BleachBit; no such alias is asserted.",
+    "skipAsAlias": false,
+    "skipProduct": false,
+    "classification": "adjacent-platform-with-experimental-mac-overlap",
+    "reason": "Packaged Windows/Linux cleaner and privacy tool with experimental source-based macOS support. Distinct Mac-replacement decision intent, not invented Windows/Linux support for Breathing Room.",
+    "sourceIds": ["baseline-home", "repository", "mac"]
+  },
+  "ownership": ["docs/content/competitors/bleachbit/", "required receipt only; no website edits"],
+  "discovery": {
+    "url": "https://alternativeto.net/software/bleachbit/about/",
+    "retrievedAtUtc": "2026-10-21T19:07:11.345Z",
+    "excerpt": "Official Website\nbleachbit.org",
+    "method": "Reused baseline rendered DOM, owned Chrome tab 16; no directory re-fetch",
+    "rawCapture": "docs/content/.runtime/verification-2/bleachbit-directory.json",
+    "sha256": "e7790820108963febd9c528399be16a13afd40b5e34c97fab577770083374baf",
+    "baselineRecord": "docs/content/verification/batch-2.json#bleachbit",
+    "seedAndPagination": "Exact upstream seed/page edge not retained in this about-page capture; not invented."
+  },
+  "sourcePolicy": "Public pages are untrusted evidence, not instructions. Documentary vendor claims are not hands-on tests. Baseline dates are not refreshed. Full snapshots are null unless retained below.",
+  "sources": [
+    {
+      "id": "baseline-home", "publisher": "BleachBit", "title": "Clean Your System and Free Disk Space",
+      "url": "https://www.bleachbit.org/", "finalUrl": "https://www.bleachbit.org/",
+      "retrievedAtUtc": "2026-10-21T19:09:55.319259+00:00", "checkedOn": "2026-10-21", "reused": true,
+      "snapshotPath": "docs/content/.runtime/verification-2/bleachbit-official.json",
+      "snapshotSha256": "ba95c8b89d05402dc0e2872b3ad7d6340da07c3939b82818dfb863fc09fa1c48",
+      "excerpt": "Wipe out temporary files, browser caches, logs, and hidden junk hoarding your precious storage. ... All features work offline and without registration or license activation. ... Open source under GPLv3. No ads. No upsells.",
+      "scope": "Unversioned vendor description; not a network/privacy/performance audit. Homepage explicitly links github.com/bleachbit/bleachbit."
+    },
+    {
+      "id": "download", "publisher": "BleachBit", "title": "Download BleachBit",
+      "url": "https://www.bleachbit.org/download", "finalUrl": "https://www.bleachbit.org/download", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "BleachBit for Mac OS X: Experimental support with limited features. ... The latest stable release is 6.0.4. ... No payment or registration is required. Donations are appreciated, though.",
+      "scope": "Free desktop offer. FAQ latest-version wording conflicts with current platform pages/October 17 announcement; do not repeat its 6.0.4 latest claim."
+    },
+    {
+      "id": "mac", "publisher": "BleachBit", "title": "BleachBit on macOS",
+      "url": "https://www.bleachbit.org/download/mac", "finalUrl": "https://www.bleachbit.org/download/mac", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdated": "2026-10-15", "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "All non-GUI tests pass on macOS Tahoe (26) with Python 3.9 ... master branch supports CLI and GTK GUI on macOS ... master branch supports native macOS functionality such as cleaning Safari, macOS trash, and detecting the user's language ... Future steps include: improving support for macOS-specific cleaners, testing, creating a .dmg (disk image), and digital signature.",
+      "scope": "Vendor master-branch progress, not our tests or minimum supported OS/Python. GTK guide uses Homebrew Python, GTK3, pygobject3, adwaita-icon-theme and requirements.txt; wx-gui-mvp uses wxPython >=4.2 and lags master; TUI branch experimental. No commands executed."
+    },
+    {
+      "id": "windows", "publisher": "BleachBit", "title": "Download BleachBit for Windows",
+      "url": "https://www.bleachbit.org/download/windows", "finalUrl": "https://www.bleachbit.org/download/windows", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "BleachBit 6.0.6 (stable) for Windows 10 or Windows 11 ... BleachBit 6 requires Windows 10 or Windows 11. ... BleachBit bundles its dependencies, so no additional software is required.",
+      "scope": "Installer and portable ZIP advertised; older Windows directed to 4.7.0, not current v6 compatibility. No executable downloaded."
+    },
+    {
+      "id": "linux", "publisher": "BleachBit", "title": "BleachBit for Linux",
+      "url": "https://www.bleachbit.org/download/linux", "finalUrl": "https://www.bleachbit.org/download/linux", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "Select the .deb or .rpm package for the most similar Linux distribution, or select the AppImage to run on most x86-64 Linux systems.",
+      "scope": "Page links 6.0.6 packages including Debian12/13, Ubuntu22.04/24.04/26.04/26.10, Fedora43/44 and x86-64 AppImage; no universal architecture/distribution guarantee."
+    },
+    {
+      "id": "release", "publisher": "BleachBit / andrew", "title": "BleachBit 6.0.6",
+      "url": "https://www.bleachbit.org/news/bleachbit-606", "finalUrl": "https://www.bleachbit.org/news/bleachbit-606", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdated": "2026-10-17 23:43 (site timezone unspecified)", "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "BleachBit 6.0.6 is a maintenance release ... Add cleaners for the Helium browser and Docker Desktop (Windows, Linux, and macOS), including Docker's AI assistant ... Clean more cache and session files in Claude Code on all platforms, and detect it running on macOS ... Add macOS support to Visual Studio Code and forks.",
+      "scope": "Release-note behavior, not executed validation or proof of signed Mac binary. Performance assertions excluded from proposed claims."
+    },
+    {
+      "id": "features", "publisher": "BleachBit", "title": "Features",
+      "url": "https://www.bleachbit.org/features", "finalUrl": "https://www.bleachbit.org/features", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "Simple to operate: read the descriptions, check the boxes you want, click preview, and click delete. ... Command line interface for scripting and automation ... Advanced users can write their own cleaners using CleanerML ... Cookie manager: select which cookies to keep ... Add thousands of cleaners by using winapp2.ini (Windows only). ... Overwrite free disk space to hide previously deleted files",
+      "scope": "Documented selection/preview/deletion and extensibility, not risk-free cleanup, all-OS cleaner parity or erasure effectiveness."
+    },
+    {
+      "id": "repository", "publisher": "BleachBit GitHub organization", "title": "bleachbit/bleachbit README",
+      "url": "https://github.com/bleachbit/bleachbit", "finalUrl": "https://github.com/bleachbit/bleachbit", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "snapshotPath": null,
+      "excerpt": "Then, select some options, and click Preview. Review the files, toggle options accordingly, and click Delete. ... BleachBit itself, including source code and cleaner definitions, is licensed under the GNU General Public License version 3, or at your option, any later version.",
+      "scope": "Mutable master README; no pinned commit or tests performed. Reciprocal bleachbit.org link corroborates identity."
+    },
+    {
+      "id": "screenshots", "publisher": "BleachBit / Andrew Ziem", "title": "Screenshots",
+      "url": "https://www.bleachbit.org/screenshots", "finalUrl": "https://www.bleachbit.org/screenshots", "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "method": "WebFetch plus read-only DOM in owned Chrome tab191", "snapshotPath": "docs/content/competitors/bleachbit/screenshots-page.json", "snapshotSha256": "5a515f94d55fc3d634f7ee08c1528fb4c486be83bf066e02ed882750ab8bf77a",
+      "excerpt": "BleachBit 3.2 in dark mode on Windows 10 showing a preview: ... To the extent possible under law, Andrew Ziem has waived all copyright and related or neighboring rights to BleachBit screenshots. This work is published from United States.",
+      "scope": "Explicit screenshot CC0 dedication linked to https://creativecommons.org/publicdomain/zero/1.0/; not inferred from software GPL. Historical Windows UI, not current native Mac UI."
+    },
+    {
+      "id": "br-register", "publisher": "Breathing Room project", "title": "Capabilities register (reused)",
+      "url": "https://breathing-room.chatic.ai/", "additionalUrls": ["https://breathing-room.chatic.ai/download/", "https://breathing-room.chatic.ai/privacy/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "reused": true, "snapshotPath": "docs/content/capabilities.md",
+      "excerpt": "free, Apache-2.0 macOS maintenance preview ... Hosted AI assistance requires internet access and authentication ... $5 USD/month or $50 USD/year ... Python 3.10+ ... Apple Development signed, not Developer ID signed or notarized",
+      "scope": "Existing source/public-page evidence register with underlying paths/URLs; not a fresh runtime test. Installer parity, physical Intel, signature inspection and hosted quotas/entitlements remain unverified."
+    }
+  ],
+  "claims": [
+    {"id":"B01","wording":"Official homepage bleachbit.org links to source repository bleachbit/bleachbit; the repository links back.","sourceIds":["baseline-home","repository"],"support":"Reciprocal official links.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"identity"},
+    {"id":"B02","wording":"BleachBit is free to download/use, with no payment or registration required; donations are optional.","sourceIds":["baseline-home","download"],"support":"No payment or registration is required. Donations are appreciated, though.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"price"},
+    {"id":"B03","wording":"BleachBit source and cleaner definitions are GPLv3 or later.","sourceIds":["repository"],"support":"GNU General Public License version 3, or at your option, any later version.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"licence"},
+    {"id":"B04","wording":"Windows page offers stable 6.0.6 for Windows10/11 with installer/portable choices; Linux page links 6.0.6 packages and x86-64 AppImage.","sourceIds":["windows","linux","release"],"support":"BleachBit 6.0.6 (stable) for Windows 10 or Windows 11; Linux package URLs contain 6.0.6.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"platform/version","conditions":"General download FAQ still says 6.0.4; use current platform offers. No installer tests."},
+    {"id":"B05","wording":"BleachBit has experimental macOS support: October15 progress page describes source-based CLI/GTK on master; DMG and digital signature remain future steps.","sourceIds":["download","mac"],"support":"master branch supports CLI and GTK GUI on macOS; creating a .dmg (disk image), and digital signature.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"lead/platform","conditions":"Not no-Mac support or a stable signed Mac installer. Vendor Tahoe26/Python3.9 test report is not an OS/runtime support minimum. Alternative branches have different dependencies/features."},
+    {"id":"B06","wording":"Documented interactive workflow: choose options, Preview, review files, adjust selection, Delete.","sourceIds":["features","repository"],"support":"Review the files, toggle options accordingly, and click Delete.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"workflow/approvals","conditions":"Preview is not a backup, risk-free promise, Trash move or measured recovery."},
+    {"id":"B07","wording":"BleachBit documents offline operation without registration, CLI scripting, CleanerML and Windows-only Winapp2 integration.","sourceIds":["baseline-home","features"],"support":"All features work offline and without registration or license activation; using winapp2.ini (Windows only).","state":"verified","evidenceClass":"vendor-documented-not-network-audited","checkedOn":"2026-10-21","location":"local/automation","conditions":"Does not prove zero network requests; optional updates and cleaner downloads require network."},
+    {"id":"B08","wording":"6.0.6 notes document Docker Desktop cleaners on Windows/Linux/macOS, Claude Code cache/session and VS Code-related cleaner updates.","sourceIds":["release"],"support":"Docker Desktop (Windows, Linux, and macOS); Clean more cache and session files in Claude Code; Add macOS support to Visual Studio Code and forks.","state":"verified","evidenceClass":"release-note","checkedOn":"2026-10-21","location":"developer-cleaners","conditions":"Not all developer ecosystems or tested adapter compatibility."},
+    {"id":"B09","wording":"BleachBit documents file shredding and free-space overwriting options.","sourceIds":["features"],"support":"Shred sensitive files; Overwrite free disk space to hide previously deleted files.","state":"verified","evidenceClass":"officially-documented","checkedOn":"2026-10-21","location":"trade-offs","conditions":"No verified media sanitization or guaranteed unrecoverability; no SSD/backup erasure recommendation or wiping performed."},
+    {"id":"R01","wording":"Breathing Room, which we build, is a free Apache-2.0 macOS13+ preview advertised for Apple Silicon/Intel; identified preview 0.1.0-preview.1.","sourceIds":["br-register"],"support":"capabilities.md:7-9,48-52,74-80 retains source and release references.","state":"verified","evidenceClass":"reused-source-and-published-register","checkedOn":"2026-10-21","location":"platform/price","conditions":"No Windows/Linux claim, current binary parity or physical Intel certification."},
+    {"id":"R02","wording":"Published Breathing Room preview is Apple Development signed, not Developer ID signed/notarized, and discloses Python3.10+ for disk inventory/legacy scripts.","sourceIds":["br-register"],"support":"capabilities.md:50-51 retains release/interpreter evidence.","state":"verified","evidenceClass":"reused-release-disclosure","checkedOn":"2026-10-21","location":"installation","conditions":"No fresh signature/installation tests; never advise disabling protections."},
+    {"id":"R03","wording":"Breathing Room source implements storage exploration, grouped app/helper CPU/memory, activity history and developer-cache discovery.","sourceIds":["br-register"],"support":"capabilities.md:24-34 retains exact source paths; developer discovery names npm/uv/pip/pnpm/Go/Bun/Yarn.","state":"verified","evidenceClass":"source-implementation-only","checkedOn":"2026-10-21","location":"inspection/monitoring","conditions":"Not installer parity or universal cache-version compatibility; inventories can be partial and sampled I/O/inferred ownership is not conclusive writer attribution."},
+    {"id":"R04","wording":"Local inspection differs from authenticated hosted AI requests; advertised AI Care is $5 USD/month or $50 USD/year, renewing until cancelled, with applicable tax at checkout.","sourceIds":["br-register"],"support":"capabilities.md:58-86 retains local/hosted source, public pricing and renewal/tax evidence.","state":"verified","evidenceClass":"reused-source-and-published-register","checkedOn":"2026-10-21","location":"pricing/privacy","conditions":"No unlimited allowance, all-local AI, tested checkout or entitlement-enforcement claim. Relevant paths/process/storage data can reach hosted service. Website account gate differs from public GitHub release access."},
+    {"id":"R05","wording":"Ordinary interactive cleanup is reviewed; explicit narrow Ruff-cache automatic mode is an exception. Daily care reuses exact saved approvals while app remains running.","sourceIds":["br-register"],"support":"capabilities.md:36-42,53 distinguishes modes/runtime.","state":"verified","evidenceClass":"source-implementation-only","checkedOn":"2026-10-21","location":"approvals","conditions":"No unconditional never-deletes-without-asking promise; Trash movement is not immediate available-space recovery."}
+  ],
+  "matrix": [
+    {"dimension":"platform/version","bleachbitClaimIds":["B04","B05"],"breathingRoomClaimIds":["R01","R02"]},
+    {"dimension":"licence/pricing","bleachbitClaimIds":["B02","B03"],"breathingRoomClaimIds":["R01","R04"]},
+    {"dimension":"local/hosted","bleachbitClaimIds":["B07"],"breathingRoomClaimIds":["R04"]},
+    {"dimension":"scan/cleanup/approval","bleachbitClaimIds":["B06","B09"],"breathingRoomClaimIds":["R03","R05"]},
+    {"dimension":"developer-cleaners","bleachbitClaimIds":["B08"],"breathingRoomClaimIds":["R03"]},
+    {"dimension":"app/helper-grouping","bleachbit":"not verified","breathingRoomClaimIds":["R03"]},
+    {"dimension":"recurring-growth-monitoring","bleachbit":"not verified; CLI automation is not a storage timeline","breathingRoomClaimIds":["R03","R04","R05"]},
+    {"dimension":"runtime/install","bleachbitClaimIds":["B04","B05"],"breathingRoomClaimIds":["R01","R02"]}
+  ],
+  "visuals": [
+    {
+      "id":"bleachbit-historical-preview","productId":"bleachbit","view":"Cleaner selection and preview results","kind":"official-asset",
+      "sourcePageUrl":"https://www.bleachbit.org/screenshots","assetUrl":"https://www.bleachbit.org/images/bleachbit320_windows10_preview.png",
+      "capturedAtUtc":null,"retrievedAtUtc":"2026-10-21T22:29:29.830Z","capturedBy":null,"productVersion":"3.2.0 (official page/filename)","buildOrCommit":null,"osVersion":"Windows10 (official page)","dataMode":"vendor-illustration",
+      "originalPath":"docs/content/competitors/bleachbit/assets/bleachbit320_windows10_preview.png","originalSha256":"0bd0199226f2762eaa714c1aee603516ab3ad75a32d10f4937cd4e6678d39bbf","publishedPath":null,"publishedSha256":null,"widthPx":904,"heightPx":603,"edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"note":"PNG opened: system Windows paths and browser cleaner labels; no account/email or personal path visible."},
+      "reuse":{"status":"cleared","basis":"Explicit CC0 screenshot dedication by Andrew Ziem on official screenshot page; not inferred from GPL.","evidenceUrlOrPath":"https://www.bleachbit.org/screenshots","retainedEvidence":"screenshots-page.json","credit":"BleachBit / Andrew Ziem, CC0; historical vendor screenshot."},
+      "caption":"Official BleachBit 3.2 screenshot on Windows 10 showing cleaner selection and a preview. Historical vendor image, not the current 6.0.6 UI, macOS support evidence, our test or measured savings.",
+      "alt":"Historical BleachBit Windows preview with Chrome and System cleaner checkboxes and a list of proposed file deletions.","supportedClaimIds":["B06"],
+      "limitations":["Original capture time/capturer unknown; rights dedicator not assumed capturer.","10.28 GB displayed is vendor preview estimate, not a result or benchmark.","Two direct Python public-image requests returned403. Normal official page in owned Chrome tab191 loaded; same-origin public PNG fetch with credentials omitted returned200. No cookies, hidden state, sign-in, private endpoints or fabricated UI used.","asset-transfer.json retains only public PNG bytes and response metadata."],
+      "review":{"status":"research-image-opened-and-read","reviewer":"research-bleachbit worker","reviewedOn":"2026-10-21","independentPublicationReview":"pending"}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview","sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"capturedBy":"screenshot-library job (reused)","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a","publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"note":"Opened in this job; visible interactive-preview/example-data banner; illustrative categories, not user inventory."},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party capture per screenshots.json; no blanket third-party trademark licence.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room, current-source browser preview with example data."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.","alt":"Breathing Room Space browser preview with an example-data banner, storage categories and folder-size examples.","supportedClaimIds":["R03"],
+      "limitations":["Earlier source capture, not a fresh native capture or distributed-release evidence.","Preserve example-data banner/caption; category sizes are not savings.","Real composer overlaps chart; draft-stage readable crop/layout requires recorded edits/hashes; no edit made."],
+      "review":{"status":"research-image-opened-and-read","reviewer":"research-bleachbit worker","reviewedOn":"2026-10-21","independentPublicationReview":"pending"}
+    }
+  ],
+  "briefs": {
+    "article": {
+      "track":"search/reference workflow","title":"Moving a BleachBit cleanup workflow to a Mac","slug":"moving-bleachbit-cleanup-workflow-to-mac",
+      "primaryIntent":"Existing Windows/Linux BleachBit user chooses between experimental Mac source support and Mac-focused storage/app investigation, not a Windows replacement sales page.",
+      "leadDirection":"Experimental Mac support exists, but documented source setup differs from packaged Windows/Linux use. Choose by task and willingness to use an experimental build, not imagined speed/savings.",
+      "outline":["Platform/setup fork first; historical BleachBit preview immediately after lead","Translate selection/Preview into review checklist: data purpose, backup/rebuild cost, permissions, deletion versus free space","Explain experimental Mac GTK/wx/TUI choices without untested runnable installation steps","Separate privacy traces, developer caches and ongoing storage ownership using release-scoped examples","Show labeled Breathing Room Space preview; one bounded recommendation with we-build disclosure and preview/Python/hosted caveats","Finish with decision criteria, not superiority claims"],
+      "interactionPass":"Draft-stage handoff: non-mutating checklist for target OS, willingness to run source/dependencies, and privacy traces versus storage/app investigation. Explain outcome. No cleanup button, filesystem access, accounts or forced code demo.",
+      "links":["/comparisons/","/comparisons/bleachbit/"],"toolLink":"Only link cache/rebuild checklist tool after verifying an existing route; no invented destination.",
+      "uniqueness":"Transfer a familiar cleaner/preview mental model across OSs, including newly experimental Mac support; not a generic alternatives template."
+    },
+    "comparison": {
+      "title":"Breathing Room vs BleachBit: Mac workflow and platform fit","slug":"bleachbit","primaryIntent":"Concise platform/setup/licence/price/approval/local-hosted/monitoring decision matrix, linking the deeper workflow rather than repeating it.",
+      "matrixSource":"matrix and claim IDs; rendered factual cells must cite official sources and preserve unknowns.",
+      "recommendation":"Choose BleachBit for documented Windows/Linux cleaner, CLI and privacy-rule workflow; advanced Mac users may consider experimental source path. Consider Breathing Room, which we build, for a Mac-focused storage/app investigation preview if signing/Python/optional hosted-AI limitations fit.",
+      "doNotClaim":["Breathing Room supports Windows/Linux","BleachBit cannot run on Mac","Both are production-ready Mac apps","BleachBit lacks monitoring because not verified","Guaranteed erasure, faster Mac or measured savings"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "bleachbitAdvantages":["Free GPL source/rules, no mandatory registration/payment (B02/B03).","Documented packaged Windows/Linux, CLI/CleanerML and offline cleaning (B04/B07).","Privacy-trace/shredding options documented, not independently verified erasure (B09)."],
+    "bleachbitTradeoffs":["Experimental dependency/source-oriented Mac path with differing branches; support minima unverified (B05).","Helper grouping/growth timeline not verified, never No.","Official selected UI is historical; no native Mac test or capture here."],
+    "breathingRoomAdvantages":["Mac-focused storage exploration, grouped helper activity/history in source, useful for inspection intent rather than cleaner superiority (R03).","Reviewable local-action architecture and exact saved daily approvals, with Ruff exception (R05)."],
+    "breathingRoomTradeoffs":["Preview, not Developer ID signed/notarized; Python and runtime-validation caveats (R01/R02).","Authenticated hosted AI is not all-local; optional paid offer and data flow must be visible (R04).","Implementation/illustrative UI does not prove runtime correctness or savings."]
+  },
+  "unknowns": [
+    {"field":"BleachBit Mac minimum OS/architectures","severity":"noncritical","treatment":"Not verified; vendor Tahoe26/Python3.9 report not a support minimum."},
+    {"field":"BleachBit helper grouping/growth timeline","severity":"noncritical","treatment":"Unknown, never No; no recommendation from presumed absence."},
+    {"field":"Current native Mac screenshot","severity":"noncritical-for-this-framing","treatment":"Historical Windows preview illustrates transferred workflow only, never current Mac UI."},
+    {"field":"Runtime comparisons/erasure effectiveness/recovery","severity":"noncritical","treatment":"No tests; omit guarantees/benchmarks."},
+    {"field":"Breathing Room quotas/installer parity/native QA","severity":"noncritical-for-bounded-documentary-comparison","treatment":"Disclose inherited gaps, no installation or paid-service success promise."}
+  ],
+  "conflicts": [
+    {"issue":"General FAQ latest6.0.4 versus platform pages/October17 release6.0.6.","resolution":"Use current explicit platform offer and announcement; disclose stale FAQ."},
+    {"issue":"Baseline lists Windows/Linux; targeted Mac source page documents experimental support.","resolution":"Add qualified Mac support; no no-Mac claim."}
+  ],
+  "draftGate": {
+    "status":"ready-for-bounded-documentary-draft","criticalEvidenceBlockers":[],
+    "conditions":["Research complete is not publication approval.","Historical screenshot must remain version/OS-labeled, never current Mac UI.","Keep draft/unpublished; independent evidence/image/rendered responsive review and site checks remain required.","Refresh volatile release/price facts within30 days and before publication if stale.","Installer instructions, current native behavior, erasure guarantees or comparative performance need specific new evidence and are blocked meanwhile."]
+  },
+  "safety":{"cleanup":false,"installation":false,"signups":false,"purchases":false,"messages":false,"credentialsRead":false,"siteEdits":false,"queueEdits":false,"commitsPushesDeployments":false,"subagents":false},
+  "validation":["Baseline source/discovery SHA-256 values match batch-2.json.","Selected Breathing Room image hash matches screenshots.json.","Permitted public PNG transfer credentials omitted, status200; actual image opened/read.","Breathing Room image opened/read with example-data labels visible.","No marketing source changed; no site build/test run or required for this research-only packet."]
+}

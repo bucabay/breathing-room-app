@@ -1,0 +1,15 @@
+{
+  "jobId": "research-daisydisk",
+  "checkedOn": "2026-10-21",
+  "checks": [
+    {"check":"Python json.loads research.json and research.md existence","result":"pass"},
+    {"check":"12 unique claim IDs; claim-to-source and visual-to-claim references resolve","result":"pass"},
+    {"check":"SHA-256 of retained official and directory snapshots matches packet","result":"pass"},
+    {"check":"SHA-256 of selected existing Space browser preview matches screenshots.json and packet","result":"pass"},
+    {"check":"DaisyDisk record present in batch-1, absent from batch-2","result":"pass"},
+    {"check":"Blocked status, draftingAllowed false, no competitor PNG downloaded","result":"pass"},
+    {"check":"Ten official missing-detail pages retrieved and supporting excerpts inspected","result":"completed-documentary-only","limitations":"Not competitor runtime tests or permission clearance. No exact per-request timestamps supplied by WebFetch."},
+    {"check":"Site builds/native tests/browser image review","result":"not-run","reason":"No site edits, no authorized native testing; image rights unresolved. Shared Breathing Room visual review reused, not repeated."}
+  ],
+  "diagnostic":"VISUAL-RIGHTS blocks drafting: official Collector asset URL established, but no image republication permission verified. Link-only fallback retained. No score or publication approval awarded."
+}

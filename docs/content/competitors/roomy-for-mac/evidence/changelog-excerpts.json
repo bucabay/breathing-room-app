@@ -1,0 +1,19 @@
+{
+  "id": "changelog",
+  "publisher": "TSOFT LLC / Roomy",
+  "title": "What\u2019s new in Roomy",
+  "sourceUrl": "https://roomymac.com/changelog",
+  "finalUrl": "https://roomymac.com/changelog",
+  "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "retrievedOn": "2026-10-21",
+  "method": "WebFetch rendered Markdown, read in this job",
+  "publicationDate": "2026-10-13",
+  "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+  "excerpts": [
+    "October 13, 2026",
+    "First release",
+    "Xcode DerivedData, device support, archives, SwiftUI previews and simulator caches, plus npm, Yarn, pnpm, Bun, Deno, Homebrew, pip, Poetry, uv, CocoaPods, Carthage, SwiftPM, Gradle, Maven, Cargo, Go, JetBrains, VS Code and Cursor caches.",
+    "Activity Log of every clean, and exclusions for files and folders you never want cleaned."
+  ],
+  "rawCapture": null
+}

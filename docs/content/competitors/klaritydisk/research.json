@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-klaritydisk",
+  "stage": "research",
+  "status": "blocked",
+  "publicationStatus": "research-only-no-draft",
+  "checkedOn": "2026-10-22",
+  "clockNote": "Job calendar is October 22; machine UTC verification checkpoint was 2026-10-21T21:22:33.805444+00:00. New webfetch tools do not expose exact retrieval timestamps; these are not fabricated below.",
+  "ownership": "docs/content/competitors/klaritydisk/ only, plus required runtime receipt; no website edits",
+  "reviewer": "scheduled research-klaritydisk worker; not independent publication reviewer",
+  "identity": {
+    "productId": "klaritydisk",
+    "canonicalOwnerId": "klaritydisk",
+    "officialName": "Klarity Disk",
+    "aliases": ["Klarity", "KlarityDisk", "KLARITY DISK"],
+    "homepage": "https://www.klaritydisk.com/",
+    "developer": "Mukul Mehra",
+    "appStoreId": "6758895498",
+    "appStoreUrl": "https://apps.apple.com/us/app/klarity-disk/id6758895498",
+    "repository": null,
+    "repositoryStatus": "not verified; no public repository linked in retained homepage links, press or terms; this is not proof none exists",
+    "aliasDecision": {
+      "skipSeparateAliasDrafts": true,
+      "skipThisProduct": false,
+      "reason": "Directory KlarityDisk links the official homepage; homepage Klarity and press Klarity Disk link App Store ID 6758895498, whose seller is Mukul Mehra and developer website is the same domain. Treat these names as one product. No evidence associates this app with PowerMyMac; do not create a second article for any spelling variant.",
+      "claimIds": ["K01"]
+    },
+    "classification": "direct-overlap-storage-analysis; adjacent-to-broader-maintenance",
+    "fit": "Native Mac storage investigation and RAM/process visibility overlap Breathing Room. Do not imply identical cleanup automation or ongoing-history scope. No Windows/Linux support asserted.",
+    "deadOrIrrelevant": false,
+    "availabilityBasis": "Current public US App Store offer and version notes, not an installation test"
+  },
+  "discovery": {
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=6",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:21.311Z",
+    "rawEdgePath": "docs/content/.runtime/mole-6.json",
+    "rawEdgeSha256": "c044d8c632cf7355719dcc57a572371412dd3a2b4f86c0a8eddb09f9dcbf6d76",
+    "listingUrl": "https://alternativeto.net/software/klaritydisk/about/",
+    "listingRetrievedAtUtc": "2026-10-21T19:08:08.672Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/klaritydisk-directory.json",
+    "sha256": "4029b1213cfd4f6ca404741e5a54580bbecac18958cfe9e55a6d8eb446221d70",
+    "method": "Reused batch-1 official-baseline record and competitors.json pagination edge; no directory refetch",
+    "excerpt": "Klarity is a disk space analyzer for macOS ... Official Website: klaritydisk.com",
+    "limitations": "Directory licensing, rounded $7 price and feature tags are discovery metadata, not official feature proof. No direct Breathing Room AlternativeTo relationship asserted."
+  },
+  "reusedVerification": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "klaritydisk",
+    "sha256": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "originalStatus": "partial",
+    "originalMissingField": "license",
+    "reusedFacts": ["official identity/homepage", "storage map purpose", "macOS 14.6+", "advertised $6.99 one-time no-subscription offer"],
+    "freshLookupsReason": "Fill missing licence, version, storefront currency, screenshot URL and editorial-reuse permission. Homepage was not refetched."
+  },
+  "sources": [
+    {
+      "id": "S01", "publisher": "Mukul Mehra / Klarity", "title": "Official homepage (retained baseline)",
+      "url": "https://www.klaritydisk.com", "finalUrl": "https://www.klaritydisk.com",
+      "retrievedAtUtc": "2026-10-21T19:09:37.965667+00:00", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/klaritydisk-official.json",
+      "sha256": "7e4a476d1ba6b7514ced8e4b2814127b5e1deba0ccb0c7ce16f470070c7ce191",
+      "scope": "Vendor description, including 1.3.1; not hands-on testing",
+      "excerpts": ["$6.99 once · No subscription · 100% local", "macOS 14.6 or later", "Klarity draws your Mac’s storage as a map: every folder sized by the space it takes and coloured by how long it’s sat untouched.", "No network connections, no account, no analytics.", "Native SwiftUI, light by default and dark in one click, with a menu-bar readout that keeps memory and disk use in sight."]
+    },
+    {
+      "id": "S02", "publisher": "Mukul Mehra", "title": "Press & Coverage",
+      "url": "https://www.klaritydisk.com/press", "finalUrl": "https://www.klaritydisk.com/press",
+      "retrievedAtUtc": null, "retrievalWindowEndedAtUtc": "2026-10-21T21:22:33.805444+00:00", "checkedOn": "2026-10-22",
+      "publicationDate": "2026-09-30", "scope": "Press facts and explicit editorial image permission; page also lists an October release despite September dateline",
+      "excerpts": ["Name: Klarity Disk", "Developer: Mukul Mehra — solo developer, based in India", "Current version: 1.3.1, released 2 October 2026.", "Price: $6.99, one time. No subscription, no in-app purchases.", "These are the same assets the site uses. Right-click and save whichever you need; no permission required for editorial use.", "Treemap view — the main disk map"],
+      "links": [{"label": "Treemap view", "url": "https://www.klaritydisk.com/screenshot-treemap.png"}],
+      "snapshotPath": null, "retention": "Quoted excerpts retained in this packet; exact tool retrieval timestamp unavailable"
+    },
+    {
+      "id": "S03", "publisher": "Mukul Mehra", "title": "Terms of Service",
+      "url": "https://www.klaritydisk.com/terms", "finalUrl": "https://www.klaritydisk.com/terms",
+      "retrievedAtUtc": null, "retrievalWindowEndedAtUtc": "2026-10-21T21:22:33.805444+00:00", "checkedOn": "2026-10-22",
+      "publicationDate": "2026-02", "scope": "Licence conditions and conflicting legacy feature statement",
+      "excerpts": ["limited, non-exclusive, non-transferable, revocable license", "This license is for both personal and commercial use. You may install the App on multiple devices you own using the same Apple ID.", "Klarity is a read-only disk analyzer — it only reads file metadata (names and sizes) and does not modify, move, or delete files.", "Your purchase of Klarity grants you a license solely for the version of the App that is available for download on the App Store at the date of purchase.", "This license does not entitle you to any future versions, upgrades, or successor products", "All rights not expressly granted in these terms are reserved."],
+      "snapshotPath": null
+    },
+    {
+      "id": "S04", "publisher": "Mukul Mehra", "title": "Changelog",
+      "url": "https://www.klaritydisk.com/changelog", "finalUrl": "https://www.klaritydisk.com/changelog",
+      "retrievedAtUtc": null, "retrievalWindowEndedAtUtc": "2026-10-21T21:22:33.805444+00:00", "checkedOn": "2026-10-22",
+      "publicationDate": "2026-10-02", "scope": "Version 1.3.1 release notes; previous 1.3/1.1 entries for permission and Trash history",
+      "excerpts": ["1.3.1 — 2 October 2026", "Hidden folders are scanned. Your Library folder now shows up in a Home scan", "Sizes are the space files actually take on your disk, so iCloud files that are not downloaded no longer count.", "Klarity will not move folders your Mac depends on, such as Library or Keychains, to the Trash, and it asks twice before trashing app data, iCloud folders or files inside photo and video libraries.", "1.3 — 10 September 2026", "Klarity asks for access to your disk once, explains why, and remembers it per volume.", "1.1 — 1 March 2026", "Move to Trash from the treemap, icicle chart, and info panel, using Finder’s recoverable Trash."],
+      "snapshotPath": null
+    },
+    {
+      "id": "S05", "publisher": "Apple App Store / developer-supplied listing", "title": "KLARITY DISK — US Mac App Store",
+      "url": "https://apps.apple.com/us/app/klarity-disk/id6758895498", "finalUrl": "https://apps.apple.com/us/app/klarity-disk/id6758895498",
+      "retrievedAtUtc": null, "retrievalWindowEndedAtUtc": "2026-10-21T21:22:33.805444+00:00", "checkedOn": "2026-10-22",
+      "publicationDate": null, "scope": "US storefront price and compatibility, current listed version; no purchase/install",
+      "excerpts": ["KLARITY DISK", "Only for Mac", "$6.99", "Version 1.3.1 Oct 2", "Seller: Mukul Mehra", "Requires macOS 14.6 or later.", "United States", "Klarity won't move folders your Mac depends on, such as Library or Keychains, to the Trash, and it asks twice before trashing app data, iCloud folders or files inside photo and video libraries.", "The developer does not collect any data from this app."],
+      "limitations": ["Description also says macOS 14+; use stricter compatibility field 14.6+.", "Privacy is developer-reported, not an independent audit.", "Privacy link points at klaritydisk.netlify.app/privacy.html, unlike current developer homepage; not investigated as a separate product."],
+      "snapshotPath": null
+    },
+    {
+      "id": "B01", "publisher": "Breathing Room programme", "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md",
+      "retrievedAtUtc": null, "checkedOn": "2026-10-21", "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reused current first-party code/public-page register, not a new runtime test",
+      "excerpts": ["free, Apache-2.0 macOS maintenance preview", "AI Care is advertised at $5 USD/month or $50 USD/year", "macOS 13+", "Apple Development signed, not Developer ID signed or notarized", "Python 3.10+", "Hosted AI assistance requires internet access and authentication"],
+      "locators": ["Current capability matrix", "Preview, installation and runtime caveats", "Pricing, access and paid-feature claims", "Local versus hosted boundary"]
+    }
+  ],
+  "claims": [
+    {"id":"K01","wording":"Klarity, KlarityDisk and Klarity Disk refer to Mukul Mehra's Mac app, App Store ID 6758895498.","state":"verified","sourceIds":["S01","S02","S05"],"support":"Homepage download link, press name/developer and Apple seller/developer website agree.","location":"identity and comparison lead","checkedOn":"2026-10-22","evidenceClass":"official-documentation"},
+    {"id":"K02","wording":"The listed Mac release is 1.3.1; the vendor dates it October 2, 2026; minimum macOS is 14.6.","state":"verified","sourceIds":["S02","S04","S05"],"support":"Current version: 1.3.1, released 2 October 2026; Requires macOS 14.6 or later.","location":"compatibility matrix","checkedOn":"2026-10-22","evidenceClass":"official-documentation","conditions":"Listed release, not installed binary; architecture and build number not verified."},
+    {"id":"K03","wording":"The US Mac App Store lists $6.99; the vendor advertises a one-time purchase with no subscription or in-app purchases.","state":"verified","sourceIds":["S01","S02","S03","S05"],"support":"US storefront $6.99; press Price: $6.99, one time. No subscription, no in-app purchases.; terms scope purchase to current version.","location":"pricing matrix","checkedOn":"2026-10-22","evidenceClass":"published-offer","conditions":"USD US storefront, tax/other storefronts not verified; no perpetual free-upgrade claim. Terms explicitly exclude entitlement to future versions/upgrades. Recheck within 30 days and before publication."},
+    {"id":"K04","wording":"Klarity uses a restricted commercial/proprietary licence rather than granting open-source rights in the inspected terms.","state":"verified","sourceIds":["S03"],"support":"Limited, non-exclusive, non-transferable, revocable licence; reverse engineering/redistribution restrictions; all rights not expressly granted reserved.","location":"licence matrix","checkedOn":"2026-10-22","evidenceClass":"licence-documentation","conditions":"Personal and commercial use, multiple owned devices under same Apple ID; Apple Standard EULA also applies. No assertion about every possible repository."},
+    {"id":"K05","wording":"The vendor documents treemap and icicle storage views, colour by age and a Large Files list.","state":"verified","sourceIds":["S01","S05"],"support":"Homepage Treemap/Icicle sections, Colour by age and Large Files headings; Apple KEY FEATURES lists both views.","location":"workflow article and scan matrix","checkedOn":"2026-10-22","evidenceClass":"vendor-documented","conditions":"Age/size is prioritisation information, not proof a file is disposable. No usability superiority or scan-speed claim."},
+    {"id":"K06","wording":"Klarity's current release notes describe confirmed moves to Trash, but its terms still say read-only and no moves or deletes.","state":"contradicted","sourceIds":["S01","S03","S04","S05"],"support":"Terms section 5: does not modify, move, or delete files; 1.1/1.3/1.3.1 changelog and Apple What's New document Trash operations.","location":"cleanup/approval matrix and instructions","checkedOn":"2026-10-22","evidenceClass":"conflicting-official-documentation","conditions":"Newer version-specific notes support an attributed description, but do not silently reconcile the legal text. Blocking conflict for cleanup recommendations; no hands-on deletion performed."},
+    {"id":"K07","wording":"The vendor describes local operation with no network access, accounts or analytics; Apple reports the developer's Data Not Collected declaration.","state":"verified","sourceIds":["S01","S02","S05"],"support":"No network connections, no account, no analytics.; The developer does not collect any data from this app.","location":"privacy/local-hosted matrix","checkedOn":"2026-10-22","evidenceClass":"vendor-assertion","conditions":"Not an independent network, sandbox-entitlement or privacy audit. Do not expand to a certified privacy guarantee."},
+    {"id":"K08","wording":"Klarity documents RAM/process monitoring and a menu-bar readout.","state":"verified","sourceIds":["S01","S02","S04"],"support":"Press RAM and processes screenshot; menu bar readout; initial release RAM and process monitor.","location":"monitoring matrix","checkedOn":"2026-10-22","evidenceClass":"vendor-documented","conditions":"Helper grouping, historical growth attribution and alerts not verified; do not mark these absent."},
+    {"id":"K09","wording":"Version 1.3.1 documents hidden Library scanning and allocated-space sizing excluding undownloaded iCloud files.","state":"verified","sourceIds":["S04","S05"],"support":"Hidden folders are scanned; Sizes are the space files actually take on your disk, so iCloud files that are not downloaded no longer count.","location":"workflow explanation","checkedOn":"2026-10-22","evidenceClass":"versioned-release-notes","conditions":"Not independent accuracy testing; do not equate displayed size, logical bytes or Trash moves with newly available space."},
+    {"id":"K10","wording":"The official press kit permits editorial use of its linked screenshot assets without further permission.","state":"verified","sourceIds":["S02"],"support":"Right-click and save whichever you need; no permission required for editorial use.","location":"visual provenance","checkedOn":"2026-10-22","evidenceClass":"express-editorial-permission","conditions":"Editorial use of listed assets only; no blanket product/brand licence or endorsement. Actual image access and review remain blocked."},
+    {"id":"B02","wording":"Breathing Room, which we build, is a free macOS 13+ preview; hosted authenticated AI Care is advertised at $5 USD/month or $50 USD/year.","state":"verified","sourceIds":["B01"],"support":"Capabilities conclusion and pricing/install tables, reviewed October 21.","location":"disclosed comparison lead and caveats","checkedOn":"2026-10-21","evidenceClass":"reused-first-party-register","conditions":"0.1.0-preview.1; Python 3.10+; Apple Development signing, not Developer ID/notarized. Physical Intel/clean-machine parity not validated. Source implementation is not distributed-runtime proof."},
+    {"id":"B03","wording":"Breathing Room source implements helper grouping, local activity history, developer-cache discovery and exact saved daily-care approvals.","state":"verified","sourceIds":["B01"],"support":"Capabilities matrix Apps, Activity, Developer/builder cleanup and Daily care, with code locators.","location":"bounded advantages","checkedOn":"2026-10-21","evidenceClass":"source-implementation","conditions":"Not hands-on proof; hosted AI sends relevant question/history/tool outputs and requires authentication/internet. App must run for daily care. Optional automatic verified Ruff-cache mode means never-deletes-without-asking is not an unconditional claim."}
+  ],
+  "productMatrix": {
+    "platform": {"value":"macOS 14.6+; no Windows/Linux claim", "claimIds":["K02"]},
+    "version": {"value":"1.3.1 listed; build/architectures not verified", "claimIds":["K02"]},
+    "licence": {"value":"Restricted commercial/proprietary app licence; personal/commercial use", "claimIds":["K04"]},
+    "operation": {"value":"Vendor says local, no network/accounts/analytics; not independently audited", "claimIds":["K07"]},
+    "scanModel": {"value":"Treemap/icicle, age colour, Large Files; 1.3.1 hidden Library and allocated-space notes", "claimIds":["K05","K09"]},
+    "cleanupModel": {"value":"Conflicting official sources: current notes document Trash, terms say read-only", "claimIds":["K06"]},
+    "approvalControls": {"value":"Vendor documents confirmations/protected-folder guards; exact workflow recommendation blocked by conflict", "claimIds":["K06"]},
+    "processes": {"value":"RAM/process and menu-bar readout documented; helper grouping not verified", "claimIds":["K08"]},
+    "recurringGrowth": {"value":"not verified", "claimIds":[]},
+    "developerCaches": {"value":"Vendor mentions Xcode leftovers in Library; owning-tool-specific cache cleanup not verified", "claimIds":["K09"]},
+    "pricing": {"value":"US $6.99 advertised one-time; no subscription/IAP; future upgrades not included by terms", "claimIds":["K03"]},
+    "installation": {"value":"Mac App Store purchase; macOS 14.6+; vendor describes per-volume picker permissions; no install test", "claimIds":["K02","K03","K06"]},
+    "runtime": {"value":"SwiftUI per vendor; external runtime prerequisites and exact sandbox/signing entitlements not independently verified", "claimIds":["K08"]}
+  },
+  "visuals": [
+    {
+      "id":"klarity-official-treemap", "productId":"klaritydisk", "view":"Treemap disk map", "kind":"official-asset",
+      "sourcePageUrl":"https://www.klaritydisk.com/press", "assetUrl":"https://www.klaritydisk.com/screenshot-treemap.png",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"unknown", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":null, "heightPx":null, "edits":[],
+      "access":{"status":"blocked","method":"Public urllib.request.urlopen GET; no cookies/credentials","result":"HTTP Error 403: Forbidden","attempts":1,"downloaded":false},
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"cleared","basis":"Express editorial-use permission for linked press-kit assets; K10/S02","evidenceUrlOrPath":"https://www.klaritydisk.com/press","credit":"Klarity Disk / Mukul Mehra; official press-kit image"},
+      "caption":"Planned, subject to actual image inspection: Klarity Disk treemap, official press-kit image. Vendor illustration; not our hands-on test. Capture date and depicted app version not supplied.",
+      "alt":null, "supportedClaimIds":["K05"],
+      "limitations":["Press-kit label establishes intended app-view source, not successful pixel inspection.","Do not embed or invent final descriptive alt text until the asset is accessible and visually reviewed.","Link-only research fallback does not satisfy the required on-page screenshot gate."],
+      "review":{"status":"blocked-access","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "manifestPath":"docs/content/screenshots.json", "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "capturedBy":null, "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null,
+      "dataMode":"example", "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-in-library","redactions":[]},
+      "reuse":{"status":"cleared","basis":"Library: app-owner-requested first-party UI capture; required example disclosure; third-party marks remain their owners' marks","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room browser preview"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":[],
+      "limitations":["Keep example-data banner visible. Current-source as recorded on capture date, not current distributed native-release proof.","File hash rechecked in this job; previous library visual inspection is reused, not falsely claimed as new native testing.","No asset copied or edited. Per-article narrow-screen/context review remains pending."],
+      "review":{"status":"library-review-reused; publication-context-pending","reviewer":"screenshot-library job","reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflowArticle": {
+      "status":"conditional-brief-only; drafting blocked",
+      "track":"search/reference",
+      "title":"Use file age to investigate forgotten space on a Mac",
+      "slug":"mac-storage-file-age-before-cleanup",
+      "primaryIntent":"Interpret a size-and-age storage map without treating old files as disposable; decide when a one-time map is enough and when recurring investigation is needed.",
+      "descriptionDirection":"Large, old folders are candidates for investigation, not automatic deletion. Explain Klarity's documented age map and allocated-space caveats, then ownership, backup and rebuild-cost checks.",
+      "sections":["Start with the largest old area, not a clean-everything button", "Read modified age, allocated size and cloud placeholders as different signals", "Inspect ownership, project dependencies and backup status before any removal", "Separate one-time storage mapping from recurring-growth investigation", "Choose the map, manual Finder review or broader maintenance based on the job"],
+      "distinctiveEvidence":["K05 age colouring", "K09 1.3.1 allocated-size/iCloud and hidden-Library notes", "K06 explicit no deletion instructions while documentation conflict remains"],
+      "visualPlan":"Accessible official treemap directly after lead; current Space example-data preview later, with required caption. Neither demonstrates measured recovery.",
+      "interactionPass":"Hand off a local decision checklist: known owner, backed up, original versus rebuildable, available offline, rebuild/download cost. Unknown answers mean defer, not permission. No filesystem API, uploads or deletion.",
+      "links":["/comparisons/", "/comparisons/klaritydisk/"],
+      "linkCaveat":"Proposed targets only, not validated live routes. Link a relevant unit/cleanup-planning tool only if implemented and independently tested."
+    },
+    "comparison": {
+      "status":"conditional-brief-only; drafting blocked",
+      "title":"Breathing Room vs Klarity Disk",
+      "slug":"klaritydisk",
+      "primaryIntent":"Choose a local Mac storage map with documented RAM visibility or a broader maintenance preview with optional hosted AI.",
+      "leadDirection":"Klarity fits a one-time age/size map and advertised local-only operation. Breathing Room, which we build, fits broader investigation if its preview/runtime/hosted-data caveats are acceptable. Neither is proven faster or safer here.",
+      "matrixRows":["Mac requirements/version", "licence and price/upgrade conditions", "local versus hosted boundary", "storage map and size semantics", "documented cleanup and unresolved terms conflict", "RAM/process visibility versus unverified helper grouping", "recurring-growth/history unknowns", "permissions/runtime/preview caveats"],
+      "links":["/comparisons/", "/blog/mac-storage-file-age-before-cleanup/"],
+      "prohibitedFraming":["Klarity lacks monitoring", "Breathing Room is entirely offline", "Klarity lifetime free upgrades", "measured savings", "proven safer/faster", "Windows-compatible Breathing Room"]
+    }
+  },
+  "editorialJudgments": {
+    "klarityAdvantages":["Documented treemap/icicle plus age colouring is a focused fit for finding large forgotten data (K05).", "US one-time $6.99 offer, rather than recurring subscription; current terms do not promise future versions (K03).", "Vendor-described no-network operation may fit readers avoiding hosted reasoning (K07); not independently audited.", "RAM/process and menu-bar features must be acknowledged, not falsely omitted (K08)."],
+    "klarityTradeoffs":["macOS 14.6+ excludes older Macs that meet Breathing Room's documented 13+ preview floor (K02/B02).", "Trash behavior is subject to contradictory official terms; no unqualified cleanup recommendation (K06).", "Helper grouping, history, developer-tool adapters and scheduled approvals remain not verified, never No."],
+    "breathingRoomAdvantages":["Source-register scope includes grouped helpers, history, developer caches and saved daily approvals (B03), not binary benchmark proof."],
+    "breathingRoomTradeoffs":["0.1.0-preview.1 is not Developer ID signed/notarized; Python 3.10+ and incomplete clean-machine/Intel runtime validation matter (B02).", "Hosted authenticated AI shares relevant context/tool outputs; $5/month or $50/year advertised AI Care is optional, not entirely offline (B02/B03).", "Daily care needs app running, permissions and exact saved approvals; optional automatic Ruff mode needs explicit qualification (B03)."]
+  },
+  "unknowns": ["Klarity source repository", "Klarity exact binary build and CPU architecture support", "Klarity real scan accuracy/performance and complete sandbox/network behavior", "Klarity process-helper grouping, long-term growth history and developer-cache adapters", "Klarity non-US prices/tax/refund/upgrade treatment beyond terms", "Depicted screenshot version, capture date and image pixels until successful public access", "Breathing Room distributed-binary feature parity and native runtime QA; retained register is not a new app test"],
+  "gates": {
+    "draftingAllowed": false,
+    "skipDecision": "Do not skip canonical product as irrelevant/dead; skip spelling-variant aliases as separate content. Block canonical drafting pending evidence fixes.",
+    "blockers": [
+      {"id":"G01","diagnostic":"Official press-kit treemap asset returned HTTP 403 to the public GET. No original bytes/hash/dimensions or visual review obtained. Editorial reuse permission exists, but required competitor screenshot gate is unsatisfied.","needed":"Accessible public official/listing app-UI asset under verified editorial permission; retain original hash/provenance and visually inspect. Do not extract browser cookies or bypass access controls."},
+      {"id":"G02","diagnostic":"Terms section 5 calls app read-only/no moves or deletes, conflicting with 1.1–1.3.1 changelog and current App Store Trash notes. Cleanup is a material comparison dimension.","needed":"Public version-scoped clarification or updated official terms reconciling read-only text with Trash capability; then delta-review affected cleanup wording. No messages or cleanup tests authorized in this job."}
+    ],
+    "independentReview":"pending; no self-awarded score or publication approval",
+    "siteBuild":"not applicable; no site content or code changed"
+  },
+  "safety": {"handsOnTests":false,"cleanup":false,"signups":false,"purchases":false,"messages":false,"credentialsRead":false,"cookieExtraction":false,"commitsPushesDeployments":false,"queueMutation":false,"agentsSpawned":false,"browser":"Chrome tab metadata listed only; no existing tab contents inspected, no recovery or profile switch"}
+}

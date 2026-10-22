@@ -1,0 +1,20 @@
+{
+  "jobId": "research-lightermac",
+  "scope": "Research packet validation, not publication or runtime approval",
+  "checks": [
+    "PASS: Python parsed research.json; all 12 claims have valid source references, excerpts, dates, evidence classes and intended locations.",
+    "PASS: All 7 source snapshot references exist; all 5 recorded source SHA-256 hashes match retained bytes.",
+    "PASS: Selected existing Breathing Room Space preview SHA-256 matches screenshot library.",
+    "PASS: Retained official HTML contains softwareVersion 1.1.0 and comment identifying screenshot as 1.0; loaded image metadata matches official URL and 1400x933 dimensions.",
+    "PASS: Personal non-transferable licence and Mac-name activation passages found in retained terms/privacy HTML.",
+    "PASS: Rights blocker retained, draftingAllowed false, competitor image link-only, no PNG/JPG downloaded in owned folder.",
+    "PASS: Owned Chrome tab 124 closed; no existing tab read or altered.",
+    "NOT RUN: Site build/check/tests or native/runtime testing; no site edits or app installation performed."
+  ],
+  "artifactHashes": {
+    "research.json": "113bffd7fae50b7e6f409ccaeb462942dd0f14ea82d76c2de74996fed0dce945",
+    "research.md": "c0e5d16ceaf81d865e0589c140c3c33c28a92974a0c8483d7641bce1ab1e30f5"
+  },
+  "independentReview": "pending",
+  "visualRightsGate": "blocked"
+}

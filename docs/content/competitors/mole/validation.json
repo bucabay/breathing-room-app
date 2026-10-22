@@ -1,0 +1,177 @@
+{
+  "jobId": "research-mole",
+  "checkedAtUtc": "2026-10-21T19:53:43.554864+00:00",
+  "status": "passed-research-structure-not-drafting-approval",
+  "checks": [
+    {
+      "check": "JSON parses; canonical mole; research remains blocked and unpublished",
+      "result": "pass"
+    },
+    {
+      "check": "30 unique claim IDs with URLs/excerpts/dates/scopes and resolving source IDs",
+      "result": "pass"
+    },
+    {
+      "check": "All matrix claim references resolve",
+      "result": "pass"
+    },
+    {
+      "check": "17 source snapshots exist and match SHA-256",
+      "result": "pass"
+    },
+    {
+      "check": "Existing batch-1 homepage/repository verification reused without changing hashes",
+      "result": "pass"
+    },
+    {
+      "check": "Selected Breathing Room PNG hash, dimensions and example/native labels retained",
+      "result": "pass"
+    },
+    {
+      "check": "Both competitor asset candidates remain link-only with no invented downloaded hashes",
+      "result": "pass"
+    },
+    {
+      "check": "No competitor raster assets downloaded into owned folder",
+      "result": "pass"
+    },
+    {
+      "check": "Exact CLI candidate blob and pinned README reference match retained tree/source",
+      "result": "pass"
+    },
+    {
+      "check": "Both distinct briefs, CLI-only alternative and precise unresolved gate documented",
+      "result": "pass"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/content/competitors/mole/build-packet.py",
+      "sha256": "90080d0004d8b9edd2dd55e7544cb98ba86d99ad3054a3a35211616cb047d69b"
+    },
+    {
+      "path": "docs/content/competitors/mole/research.json",
+      "sha256": "deca23e7993bc92d4814a5c686047cdbcae9fe4f51cbf9d267ffa3752067cd06"
+    },
+    {
+      "path": "docs/content/competitors/mole/research.md",
+      "sha256": "291a4b0b0551e3bec1ae4b8054e0b4f813b99bd3bdb2dff86f4f844ffd17cc47"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-LICENSE.meta.json",
+      "sha256": "8a85aacca82bf0e7db7522a2ea44ed4cadffb296cbcc9e8bec31e8b208b22452"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-README.md",
+      "sha256": "2e41b675ac665b0a4f1cb9bc5f891b42ebd1870d619d9323384d81ac59dc9179"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-README.md.meta.json",
+      "sha256": "c28ae0225b61bd2837a80a679653025d05c51d4b4313693d3bc4976164760e51"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-base.sh",
+      "sha256": "158a0c873462e64bbf84a96fcfffb939c6cfb702b905ce797a5879491e253200"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-base.sh.meta.json",
+      "sha256": "3cb21c6caa5c2a9b9935b65bc5c6823f80e378be03115d50d51dbda3f8b2adfd"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-commands.sh",
+      "sha256": "de8a04ebc1883f3821038058559465dfbb349e35183df6dca7999665f3265af6"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-commands.sh.meta.json",
+      "sha256": "9b55ce5798c46945de85a2f5f0b8a902a865e058f537d90b4fecc3d31a4cc8dc"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-common.sh",
+      "sha256": "f1ec6ed3ef3ace93a5445d54e8f91fae8270b6ca324ef1ba4ebb8f9a27202a8e"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-common.sh.meta.json",
+      "sha256": "889f6a7472b230275bcb8730becdf4a1b572d3159bcc0f2fd8ca16fe6a8e676f"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-help.sh",
+      "sha256": "e1d7ca32ddaf35aa3c6a279745f57f90c659a412c1fda56be34a4489325db029"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-help.sh.meta.json",
+      "sha256": "0f4d61fb2426926ee1cf50074271d4d5c9ad76bf712795c5af848a9105dbd6cf"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-log.sh",
+      "sha256": "48177f980d03b36373a6775a51ad7f03b1cecf37b220358cd4f8cde4074982f6"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-lib-core-log.sh.meta.json",
+      "sha256": "93a36947e9f67688bbfc65e2368d4f114f50ae38969341eca51c3d4d3971a343"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-mole",
+      "sha256": "5d50dd4bdaeb3457a7328f290ca8428f9b7b6098e280c7071da7f3dd35477589"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-mole.meta.json",
+      "sha256": "48e751c844c5cd1d07a07601c9bc28ed1d2fa2dc30eb2d54a729bd80c003ec93"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-tree.json",
+      "sha256": "43745ba8f17d2b176686fa1ac6c6ee96ff2d320018c92be335186ceced5dd27e"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/cli-tree.meta.json",
+      "sha256": "93cbc216b1facd67335bf458b8c4461043406635f5a2b116ba5a23d6c4a349ed"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/docs.html",
+      "sha256": "d2df4a2cbc200b3a3689bcddb33f8054bc480b8619f1c87dcf031c042a2c7690"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/docs.meta.json",
+      "sha256": "8902efbfd131016eda35ed6e3d80c936e21dfed1a7979f9a3b80c10325145aa0"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/releases.html",
+      "sha256": "d5b4db1e2c2809a3c18723e73463c467b160d23d3a15cf98e1e74c43ccbdd97d"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/releases.meta.json",
+      "sha256": "615fc0022855b290a9ca15e9bf8add2a7aa4a6b2be37367ffe0621177a6c56a3"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/terms.html",
+      "sha256": "3bef977267b89e26b89d0c24117263f7c2b42f86ad1e004d75ed5b734c9ac21d"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/terms.meta.json",
+      "sha256": "cdf12831886ef564476c912bd7f3ddebf4a8f03d0f87b563fec9690ed156e624"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/visual-source.html",
+      "sha256": "622e533f4edbb68ec3153e0a0de2ac6cf1e4dbfcda194360662fac39cd51d6da"
+    },
+    {
+      "path": "docs/content/competitors/mole/sources/visual-source.meta.json",
+      "sha256": "21e4f0aa2a892487a2c4a99444350fda3f2b1478463251a9953cc2ec75a932c8"
+    },
+    {
+      "path": "docs/content/competitors/mole/validate-packet.py",
+      "sha256": "760a2753ce5f11d97a2213d92cb04fbbab23f723d4cb7045233e8f6cdd3715f3"
+    }
+  ],
+  "notRun": [
+    "third-party CLI execution or installation",
+    "native execution/cleanup",
+    "competitor image download/visual approval",
+    "browser responsive QA",
+    "marketing builds (no site edits)",
+    "independent publication review"
+  ]
+}

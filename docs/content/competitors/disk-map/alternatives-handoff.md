@@ -1,0 +1,69 @@
+# Disk Map alternatives — draft handoff
+
+Task: `draft-alternatives-disk-map` · Draft reviewed by its worker **2026-10-22**. **Complete internal draft, not publication approval.**
+
+## Outcome and ownership
+
+Created one replacement guide at `/Users/gabe/code/breathing-room/website/src/content/alternatives/disk-map.md`, intended public path `/alternatives/disk-map/`. It remains `status: review`, `published: false`, with date/updated `2026-10-22` and author Breathing Room team. About 1,370 body words; 52-character natural title, 155-character description, six H2 sections and eighteen adjacent official-source URLs.
+
+This is a search/reference alternatives page: DaisyDisk for visual selection, Mole CLI for project artifacts, AmpleCapacity for a time-limited vault, and a bounded, affiliated Breathing Room option for broader investigation. It is not the two-product comparison expanded or a four-record batch. No alias skip applies: retained official identity establishes Disk Map by Vikom Media as its own canonical owner. Alternatives are editorial workflow selections, **not asserted AlternativeTo relationships**. The retained discovery URL is https://alternativeto.net/software/disk-map/about/; no repeat directory fetch was performed.
+
+Read PLAN, October22 EDITORIAL update, capabilities, screenshots, Disk Map research.json/.md, peer packets, site schema/publishing/route/publication code, and the MailKite contract/comparison template. Loaded blog-write, blog-seo-check, blog-factcheck and browser-automation skills. No applicable AGENTS.md was found in either repository tree or checked ancestors. Project-specific policy overrides inherited statistics/FAQ/demo-repository quotas and subagent/build requirements. No research packet was changed to erase an old blocker.
+
+## Exact output snapshot
+
+| Real file (absolute) | SHA-256 | Bytes |
+| --- | --- | ---: |
+| `/Users/gabe/code/breathing-room/website/src/content/alternatives/disk-map.md` | `65a23c4adff27e5e9d84f74115d9fec6c468ccdd0f6188b6c173cd738cb82aae` | 13652 |
+| `/Users/gabe/code/breathing-room/website/public/assets/alternatives/disk-map/replacement-decision.svg` | `bdd3887cd3385475afe98d66a5444ce5fa8e2835a633094f95476709918a48d6` | 2366 |
+| `/Users/gabe/code/breathing-room/website/public/assets/alternatives/disk-map/space-preview-2026-10-21.png` | `9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a` | 587216 |
+
+This handoff is the fourth owned deliverable; its hash belongs in the terminal receipt/check output, not a circular self-hash. The runtime receipt is `/Users/gabe/code/breathing-room-app/docs/content/.runtime/draft-alternatives-disk-map.1792646437787052000.receipt.json`.
+
+## Evidence reuse and claim audit
+
+Reused `docs/content/verification/batch-1.json` records `disk-map`, `daisydisk`, `mole`, `amplecapacity`, then the retained peer research and exact supporting passages. No broad research refresh, installation, scan, cleanup or benchmark. Source checked dates remain **2026-10-21**, not relabeled as new retrievals. Today's date is the substantive drafting/review date.
+
+| Draft location / material claims | Retained evidence and boundary |
+| --- | --- |
+| Disk Map baseline and stay-with-it section | `research.json` D2–D3, D5–D10: macOS 15+, advertised free/no account, treemap/table, Advisor, project grouping, scan changes/warnings, estimated APFS reclaim, irreversible operations. D10/legal terms qualify reassuring homepage language; do not imply everything is recoverable. |
+| Disk Map local/AI distinction | D11–D12: local scan/history policy is not a blanket offline guarantee; Ask AI sends a report to an external agent, update checks exist. No network audit inferred. |
+| DaisyDisk | `../daisydisk/research.json` D2–D6,D8: current advertised 10.13+ floor rather than the older guide's 10.10 row; sunburst; staged Collector/permanent deletion/five-second cancellation; snapshot caveat; edition differences; displayed $9.99 once/five personal Macs, currency/taxes/region unknown; restricted email-key trial; paid major upgrades possible. Vendor documentation, not execution. |
+| Mole CLI | `../mole/research.json` cli-platform, cli-license, cli-delete, cli-purge, native-license, plus retained `sources/cli-README.md` at `84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5`: 12+ Intel/Apple Silicon, GPL-3.0 CLI, disk analysis/artifact review, command-specific permanent versus Trash behavior, clean's Trash-emptying default, recently active/unverified purge defaults. No native app price/platform/Preview behavior imported into the CLI recommendation. |
+| AmpleCapacity | `../amplecapacity/research.json` A01–A04,A06–A07,A10–A11,A13: free scan/account-card boundary, licensed vault moves, same-disk seven-day/thirty-day Guardian windows, permanent emptying, plan prices/device limits/tax, licence-check condition. Exact OS/CPU/build explicitly unknown; no device-specific installation advice. Guardian implementation unknown. Privacy's inconsistent call count/activation wording is expressly unresolved; no exact call count or universal offline claim. Promotion omitted. |
+| Breathing Room | `capabilities.md` matrix, approval exception, preview/runtime, local/hosted and pricing registers; Disk Map B3–B4. Source capabilities aren't binary parity. Explicit affiliation, macOS 13+, unbundled Python 3.10+, Apple Development signing but no Developer ID/notarization, incomplete clean-machine/physical-Intel validation, free local core versus renewing $5 USD/month or $50 USD/year AI Care plus applicable tax, authenticated hosted metadata/tool-output handling, unknown AI allowance, Ruff exception and app-running exact saved-approval daily care. |
+
+Snapshot hashes were checked against actual retained bytes: Disk Map directory/homepage (2), DaisyDisk directory/homepage (2), AmpleCapacity directory/homepage plus six retained official pages (8), Mole's seventeen retained source records including directory/homepage/repository and pinned README (17). These checks establish retained-byte integrity, not current network reachability or independent factual approval. Some original DaisyDisk/Disk Map follow-up fetches retain excerpts rather than full raw bodies; that limitation is unchanged.
+
+No unsupported negative feature cells, numerical savings, performance ranks, hands-on claims, compatibility guarantees, fake UI or inferred image rights appear. Source conflicts are qualified or affected claims omitted. Relevant unknowns remain unknown, not “No.”
+
+## Visual provenance and interaction pass
+
+**Route B selected under the October22 update.** Old image-only drafting blockers remain historical in research packets; this draft does not copy their restricted images or wait for unauthorized permission outreach.
+
+1. `replacement-decision.svg`: original worker-authored editorial decision aid, created 2026-10-22, 420 × 720. Four vertical cards map jobs to the documented options, with removal/preview limits. Not app UI, an app test, a scan, measured results or an attempt to redraw a competitor. Claim basis: DaisyDisk D5–D6; Mole cli-delete/cli-purge and pinned README; AmpleCapacity A06; capabilities matrix. Browser parsed XML with zero parser errors; all text bounding boxes fit the viewBox (maximum right edge about 371 of 420). No script, external image or foreignObject. Actual screenshot returned by Chrome DevTools was visually read: cards and footer legible at intrinsic presentation, no clipping/overlap. This is not the six-width/theme article-layout review. SVG contains accessible title/description; page provides descriptive alt/caption and an attributed link to Vikom Media's actual interface on https://diskmap.app/. No competitor image bytes copied or hotlinked.
+2. `space-preview-2026-10-21.png`: byte-identical, uncropped copy of `docs/content/assets/breathing-room/space-preview-2026-10-21.png`. Actual PNG dimensions 2940 × 3468; original/published SHA-256 match the inventory. Library ID `current-space-browser-preview`, captured `2026-10-21T19:06:45.416416+00:00` at source commit `54828ac3170b45861aee70861dd0b9c658ed7e51`, source URL `http://127.0.0.1:1431/`. Source capture belongs to screenshot-library, not this worker. First-party owner-requested reuse; no blanket third-party mark licence inferred. Opened the actual PNG with the image-capable reader: example-data/no-Mac-action disclosures visible, categories/rows shown, composer overlaps part of the chart. Full disclosure caption and overlap limitation retained. Example data, not native/release testing or measured recovery. No crop, edit or invented capture time.
+
+Interaction pass: the highest-value decision is which missing job warrants switching. Implemented that as the top static decision aid; the conclusion supplies platform/removal/backup/rebuild checks and a verified-live local arithmetic utility. No filesystem access, destructive buttons, artificial code demo or account funnel added. Independent mobile readability and page-context privacy/rights review remain pending; shrinking the tall preview may require a separately reviewed contextual crop that keeps disclosures.
+
+## Actual validation and diagnostics
+
+- **PASS, final snapshot:** ran Node v25.0.0 via job-local PATH `/Users/gabe/.nvm/versions/node/v25.0.0/bin`. Parsed YAML with the installed Astro dependency and evaluated the **actual** collection Zod schema from `src/content.config.ts`; dates, author and eighteen source records validate. Actual `isPublished` function returns false for this record.
+- **PASS:** installed Astro default Satteri processor rendered the body **in memory**, with six H2s/no body H1, two figures/captions and no unresolved placeholders. Title length 52, description length 155. All eighteen external body URLs have dated frontmatter records; no duplicate body URLs. Three third-party peer sections are present. No exact long-paragraph/title copies found in Disk Map's existing comparison/profile. No shared build or output fixture written.
+- **PASS:** both local image references exist; descriptive alt and captions present; PNG dimensions/hash match; browser XML parser/title/desc/text-bound checks passed for SVG. Visual observation scope is as documented above, not site approval.
+- **PASS, live-link correction:** Python unauthenticated GETs received 403 for three initially considered internal routes. Used one owned Chrome tab **584**, created at `/tools/storage-headroom/`, without reading/navigating other tabs. Browser same-origin GETs returned 200 with expected titles/H1s for `/tools/storage-headroom/`, `/tools/`, `/comparisons/`. The cache/rebuild-checklist and `/alternatives/` returned 404 despite local files; removed their links. Final draft links only the three verified-live routes. No hidden competitor draft links. The intended `/alternatives/disk-map/` is not claimed live.
+- **PASS:** browser opened the owned local SVG file in tab 584, checked parsing/text bounds and returned a screenshot that was read. Tab 584 was then closed; other tabs untouched. No profile recovery/settings change required.
+- **Earlier diagnostic, corrected:** initial retained-hash script assumed Mole's discovery object had `snapshotPath`; it stopped after the other three products. Corrected by using Mole's seventeen actual source records, all matching. No source edits made.
+- **Earlier diagnostic, corrected:** `@astrojs/markdown-remark` isn't installed in this Astro version. Switched validation to its installed default `@astrojs/markdown-satteri`; final body rendering passes. No packages installed.
+- **Earlier diagnostic, alternative check used:** Python XML parse failed because the installed pyexpat could not resolve `_XML_SetAllocTrackerActivationThreshold` in system libexpat. Did not repair the environment. Browser native XML parsing and bounds inspection passed instead. PNG dimensions/hash checks subsequently passed separately.
+
+Final automated validation was an inline Node invocation from the website directory (no saved validation script/log artifact); tool results are retained in the task session and summarized here. This handoff and receipt are real artifact files. Source integrity checks were read-only Python. Do not label any of these targeted checks as `pnpm check`, `pnpm build` or `pnpm test`.
+
+## Remaining review / release gates
+
+1. Independent claim/source review of this exact Markdown and asset snapshot, including the adjacent citations and scoped compatibility/price/approval/privacy boundaries. Refresh volatile offers within 30 days and before release if changed/stale. Do not silently resolve retained conflicts.
+2. Authorized shared-site `pnpm check`, `pnpm build`, `pnpm test`, then exact rendered canonical/H1, author/date, social metadata, Article/Breadcrumb and draft-feed/sitemap/listing exclusion checks. **Not run here per explicit job restriction.** In-memory body render and direct publication predicate test do not replace them.
+3. Independent article rendering at approximately 390/768/1440 px, light and dark, including actual image loads, diagram scale, tall first-party preview readability, captions, links and keyboard behavior. Bare SVG inspection isn't this review. Arrange an isolated review fixture through the responsible site job; don't publish this record to preview it.
+4. Itemized editorial score and zero-blocker independent approval. No publication score or release-ready status awarded by the drafter. Public alternatives hub currently 404; routing/deployment belongs to the separate authorized release stage, not this worker. No page or hub was deployed.
+
+Only this page, its two owned assets, this handoff and the explicitly requested runtime receipt were written. Existing unrelated work was preserved. No queue/database edits, shared navigation/schema/test edits, other job execution, subagents, purchases, accounts, messages, cleanup, app commands, credential reads, commits, pushes, deployments or computer-setting changes.

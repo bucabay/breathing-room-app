@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-clean-sweep",
+  "productId": "clean-sweep",
+  "canonicalOwnerId": "clean-sweep",
+  "status": "blocked",
+  "stage": "research-only",
+  "published": false,
+  "recordedAtUtc": "2026-10-21T22:37:05Z",
+  "clockNote": "UTC clock returned October 21; session calendar says October 22. Prior retrieval timestamps are preserved, not refreshed.",
+  "identity": {
+    "officialName": "Clean Sweep",
+    "storeName": "Clean Sweep - Phone Cleaner",
+    "homepage": "https://indiegoodies.com/cleansweep",
+    "documentation": "https://docs.indiegoodies.com/cleansweep",
+    "appStoreId": "6449146108",
+    "publisher": "Indie Goodies; App Store seller Khuong Pham; copyright Indie Goodies Lab",
+    "aliases": ["Clean Sweep - Photo Cleaner", "Clean Sweep - Phone Cleaner"],
+    "aliasEvidence": ["S1", "S2"],
+    "aliasSkipDecision": "Do not create separate drafts for homepage/store title variants: the official homepage links app ID 6449146108 and its listing links back. No evidence ties this identity to PowerMyMac; do not merge unrelated names.",
+    "officialProductRepo": null,
+    "repoDiagnostic": "Official homepage links https://github.com/IndieGoodies as an organisation, not an identified Clean Sweep source repository. Screenshot hosting repository is not app source.",
+    "classification": "adjacent",
+    "directSubstitute": false,
+    "platformFit": "Photo/video/contact library organisation, including documented Mac availability, not documented general Mac maintenance. No Windows support verified.",
+    "skipDecision": "No alias or dead-product skip. Do not draft a direct-replacement/doorway article. Conditional adjacent workflow and comparison briefs retained; drafting blocked by visual reuse evidence."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/clean-sweep/about/",
+    "destinationUrl": "https://indiegoodies.com/cleansweep",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=7",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:22.582Z",
+    "edgeEvidence": "docs/content/competitors.json: clean-sweep.edges",
+    "retrievedAtUtc": "2026-10-21T19:07:30.219Z",
+    "method": "Reused owned-tab rendered discovery from baseline, not a fresh visit",
+    "rawCapture": "docs/content/.runtime/verification-2/clean-sweep-directory.json",
+    "sha256": "727d6ac7eff77c9ff18e22138cc91c17e0fa9d529ce09279b0fe6b90531a4bf5",
+    "excerpt": "Official Website\nindiegoodies.com/cleansweep"
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Indie Goodies", "title": "Clean Sweep - Photo Cleaner",
+      "url": "https://indiegoodies.com/cleansweep", "finalUrl": "https://indiegoodies.com/cleansweep",
+      "retrievedAtUtc": "2026-10-21T19:10:00.293576+00:00", "publishedAt": null,
+      "rawCapture": "docs/content/.runtime/verification-2/clean-sweep-official.json",
+      "sha256": "5757f8ed6fa051f8f75b24a78225de47a393c9e2ec20ee911a2002568cdff869",
+      "scope": "Reused batch-2 official text and outbound links. Testimonials excluded from our claims."
+    },
+    {
+      "id": "S2", "publisher": "Apple App Store / developer supplied listing", "title": "Clean Sweep - Phone Cleaner",
+      "url": "https://apps.apple.com/app/id6449146108",
+      "finalUrl": "https://apps.apple.com/us/app/clean-sweep-phone-cleaner/id6449146108",
+      "retrievedAtUtc": "2026-10-21T19:13:59.139457+00:00", "publishedAt": null,
+      "rawCapture": "docs/content/.runtime/verification-2/clean-sweep-extra.json",
+      "sha256": "03164ab4480dd85358c3f694b1b9f1607771c12309b4d0d25f06a44e50be39c0",
+      "scope": "US storefront; version, requirements, IAP list; not install, checkout or runtime evidence"
+    },
+    {
+      "id": "S3", "publisher": "Indie Goodies", "title": "Clean Sweep documentation",
+      "url": "https://docs.indiegoodies.com/cleansweep", "finalUrl": "https://docs.indiegoodies.com/cleansweep",
+      "checkedOnUtc": "2026-10-21", "publishedAt": "Page says last updated October 12, 2026",
+      "snapshotPath": "docs/content/competitors/clean-sweep/research.md#new-official-source-excerpts",
+      "scope": "New targeted retrieval to resolve baseline platform conflict; full response available in session, excerpt retained here."
+    },
+    {
+      "id": "S4", "publisher": "Indie Goodies", "title": "Clean Sweep official HTML image locator",
+      "url": "https://indiegoodies.com/cleansweep", "checkedOnUtc": "2026-10-21",
+      "scope": "Targeted HTML retrieval for missing app-image URL only, not a new date for baseline claims",
+      "excerpt": "img alt=Clean Sweep src=https://raw.githubusercontent.com/khuong291/AppScreenshots/main/CleanSweep/Screenshot%202024-01-09%20at%2013.27.16.png"
+    },
+    {
+      "id": "S5", "publisher": "GitHub", "title": "Screenshot repository license endpoint",
+      "url": "https://api.github.com/repos/khuong291/AppScreenshots/license", "checkedOnUtc": "2026-10-21",
+      "result": "HTTP 404", "scope": "No reuse clearance established by this request; not proof that permission cannot exist elsewhere."
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room", "url": "https://breathing-room.chatic.ai/",
+      "localEvidence": "docs/content/capabilities.md", "checkedOnUtc": "2026-10-21",
+      "scope": "Reuse current capability register and its code/release/pricing source locators, not fresh runtime QA"
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"Clean Sweep is the Indie Goodies product linked to App Store ID 6449146108, sold by Khuong Pham.","sourceIds":["S1","S2"],"excerpt":"Homepage App Store link: https://apps.apple.com/app/id6449146108; Seller Khuong Pham; For more information, visit https://indiegoodies.com/cleansweep","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"identity"},
+    {"id":"C2","wording":"The vendor documents similar-photo/video/screenshot removal and duplicate-contact merging.","sourceIds":["S1","S2"],"excerpt":"Remove Similar Screenshots: Quickly clean up redundant screenshots. Merge Duplicate Contacts: Effortlessly combine duplicate contacts.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented-not-tested","location":"workflow and matrix"},
+    {"id":"C3","wording":"Official docs list Mac, iPhone and iPad availability. The captured US store compatibility section requires iOS 16+, or macOS 13+ with Apple M1 or later, or visionOS 1+.","sourceIds":["S2","S3"],"excerpt":"Universal: Available on Mac, iPhone, and iPad. / Mac Requires macOS 13.0 or later and a Mac with Apple M1 chip or later.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented-not-tested","conditions":"Store also says Only for iPhone and Not verified for macOS. Availability is documented, native Mac UI/runtime capability is not established. Intel support not established; Windows not verified.","location":"platform caveat"},
+    {"id":"C4","wording":"The retained US store listing shows version 1.8.3, dated Oct 12 (year not printed beside latest entry).","sourceIds":["S2"],"excerpt":"Version 1.8.3\nOct 12","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"store-listing","location":"version note","conditions":"Not installed or tested; do not infer screenshot version or exact release year from this abbreviated entry."},
+    {"id":"C5","wording":"Free download with IAP; US listing shows Monthly $3.99, Yearly $12.99, and two Lifetime access entries, $14.99 and $19.99.","sourceIds":["S1","S2"],"excerpt":"Free · In-App Purchases; Lifetime access $14.99; Monthly $3.99; Yearly $12.99; Lifetime access $19.99; You can buy once and use the app forever","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"advertised-offer-not-checkout","conditions":"US storefront dollar amounts; eligibility, active offer mapping, taxes, trial, renewal and exact free limits not verified. Do not select one lifetime amount as universal current price.","location":"pricing matrix"},
+    {"id":"C6","wording":"The vendor says data remains local; the store privacy label says Data Not Collected, a developer declaration not verified by Apple.","sourceIds":["S1","S2"],"excerpt":"No analysis and data collecting. Your data remain locally and safe on your devices. / This information has not been verified by Apple.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"attributed-vendor-privacy-claim","conditions":"No network/privacy audit; omit vendor safety guarantee.","location":"local versus hosted"},
+    {"id":"C7","wording":"Docs say buy on one device and restore on others with the same iCloud account, and list Family Sharing.","sourceIds":["S3"],"excerpt":"Buy on one device and restore purchases on other devices with the same iCloud account. Family Sharing: Lets you and other family members unlock the app.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented-not-tested","conditions":"Store says some purchases may be shareable; do not promise every SKU is shareable.","location":"purchase conditions"},
+    {"id":"B1","wording":"Breathing Room is a macOS maintenance preview with local inspection and authenticated hosted AI; free core and advertised AI Care at $5 USD/month or $50 USD/year.","sourceIds":["BR1"],"excerpt":"macOS 13+; 0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized; Python 3.10+; free core desktop app; $5 USD/month, $50 USD/year","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-evidence-register","conditions":"Source presence not binary parity. Physical Intel/clean-machine validation pending. AI sends relevant data to hosted service. Exact-location approvals; optional narrow automatic Ruff mode; daily care requires app running. No measured savings.","location":"comparison caveats"}
+  ],
+  "matrix": {
+    "platform": {"claimIds":["C3"],"value":"Documented Mac availability with M1+/macOS 13+ requirement; conflicting phone-only store headline retained"},
+    "license": {"claimIds":[],"value":"not verified; no source repository or open-source license established"},
+    "localHosted": {"claimIds":["C6"],"value":"Vendor local-data claim, not independently audited"},
+    "scanCleanup": {"claimIds":["C2"],"value":"Photo/video/screenshot similarity and contact merging"},
+    "approvals": {"claimIds":[],"value":"Exact selection, deletion, restore and approval mechanics not verified; testimonials excluded"},
+    "helperGrouping": {"claimIds":[],"value":"not verified"},
+    "recurringGrowth": {"claimIds":[],"value":"not verified"},
+    "developerCaches": {"claimIds":[],"value":"not verified"},
+    "pricing": {"claimIds":["C5","C7"],"value":"Free with IAP; multiple listed lifetime prices and monthly/yearly offers; terms partly unknown"},
+    "versionRuntime": {"claimIds":["C3","C4"],"value":"Store version 1.8.3; no installation or runtime test"},
+    "breathingRoom": {"claimIds":["B1"],"value":"Adjacent storage/activity/cleanup preview, not a verified photo-similarity/contact-merge replacement"}
+  },
+  "visuals": [
+    {
+      "id":"clean-sweep-official-app-image", "productId":"clean-sweep", "kind":"official-asset",
+      "sourcePageUrl":"https://indiegoodies.com/cleansweep",
+      "assetUrl":"https://raw.githubusercontent.com/khuong291/AppScreenshots/main/CleanSweep/Screenshot%202024-01-09%20at%2013.27.16.png",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"capturedBy":null,"productVersion":null,"osVersion":null,
+      "dataMode":"unknown","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"edits":[],
+      "reuse":{"status":"link-only","basis":"Official homepage embeds this app image. Public hosting is not a licence. GitHub license endpoint returned 404; no permission established.","evidenceUrlOrPath":"https://api.github.com/repos/khuong291/AppScreenshots/license","credit":"Clean Sweep / Indie Goodies"},
+      "caption":"Official Clean Sweep app illustration linked from its homepage; capture date, version and platform not verified.",
+      "alt":"Clean Sweep app screenshot linked by Indie Goodies; inspect actual image before assigning view-specific alt text.",
+      "supportedClaimIds":[],"privacyReview":{"status":"pending","redactions":[]},
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null},
+      "limitations":["Located actual img asset URL, not downloaded or visually reviewed. Filename date is not capture evidence.","No third-party image bytes downloaded without established permission. Required on-page screenshot gate remains blocked."]
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "dataMode":"example","widthPx":2940,"heightPx":3468,"edits":[],
+      "reuse":{"status":"cleared","basis":"Selected existing first-party app-owner-requested capture per screenshots.json; third-party marks remain their owners' marks. Per-publication review pending."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "limitations":["Retain example-data banner. Current-source as of recorded commit, not proof of current distributed binary.","Selected and hash checked in this job; existing library visual/privacy review reused, no new capture or independent publication review."]
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"conditional-blocked-not-a-draft","track":"search-reference",
+      "title":"Separate photo-library duplicates from Mac disk growth before cleaning",
+      "proposedSlug":"photo-library-duplicates-versus-mac-disk-growth",
+      "intent":"Decide whether the problem is similar media/duplicate contacts or broader Mac storage growth; no unsupported replacement claim.",
+      "outline":["Identify which library or disk is actually short on space","Match the documented Clean Sweep media/contact job without assuming a native Mac interface","Review broader storage ownership separately in Breathing Room, which we build","Keep originals and backup/recovery questions separate from file size","Choose by job, not a generic cleaner label"],
+      "interactionPass":"Decision checklist: photos/videos/contacts versus project/cache/app data; never calculates claimed savings or deletes anything.",
+      "visualPlan":"Breathing Room Space example-data view after lead; permission-cleared, visually inspected Clean Sweep app UI later. Link-only is not an on-page pass.",
+      "limits":"Not a tested tutorial. Before procedural deletion advice obtain official approval/recovery and synced-library documentation. No article produced or route reserved."
+    },
+    "comparison": {
+      "status":"conditional-blocked-not-a-draft","title":"Clean Sweep and Breathing Room: different cleanup jobs",
+      "proposedSlug":"clean-sweep","intent":"Concise adjacent-product distinction, not direct substitution",
+      "rows":["library job versus disk/activity job","documented platforms and conflicting store labels","local vendor claims versus authenticated hosted AI","free core versus IAP and paid AI conditions","preview/runtime/approval limitations"],
+      "decision":"Choose Clean Sweep for its documented similar-media/contact job if platform and purchase conditions fit. Consider Breathing Room, which we build, for broader Mac storage/activity investigation with preview and hosted-AI caveats. Do not claim it replaces contact merging or photo matching."
+    }
+  },
+  "advantagesAndTradeoffs": [
+    {"type":"editorial-judgment","claimIds":["C2","C7"],"text":"Clean Sweep's documented specialised media/contact scope and cross-device purchase restoration may fit a library-organisation job better than a general maintenance preview; restoration and Family Sharing are not tested."},
+    {"type":"editorial-judgment","claimIds":["B1","C2"],"text":"Breathing Room's documented storage/activity investigation is a different job, not evidence of superior media deduplication. Its non-notarized preview, Python prerequisite and hosted AI are material trade-offs."}
+  ],
+  "unknowns":["Clean Sweep app source repository and licence","Native Mac interface, actual install availability and runtime behavior","Deletion selection, recovery, synced-library effects and exact free quota","Why the US store phone-only headline and Mac compatibility differ","Which lifetime SKU is offered to which customer; taxes, trial and renewal details","Actual image contents, version, privacy and permission"],
+  "draftGate": {
+    "allowed":false,
+    "blockers":["VISUAL-RIGHTS: Required Clean Sweep app image located but reuse permission not established; link-only does not satisfy on-page gate.","VISUAL-REVIEW: Image not downloaded/inspected; exact view, platform, privacy and capture/version provenance remain unknown."],
+    "resolution":"Obtain existing licence/permission evidence or explicitly approved policy decision, then inspect authorised original image and retain its hash/provenance. Do not send permission requests in this job. Any hands-on Mac/deletion claims additionally require separate official evidence or authorised QA.",
+    "noncriticalUnknownsAllowed":true,
+    "independentReview":"pending; no score awarded"
+  },
+  "safety": "No browser needed, no login, credentials, cleanup, purchases, messages, installation, site edits, queue changes, commits, pushes or deployments. No agents spawned."
+}

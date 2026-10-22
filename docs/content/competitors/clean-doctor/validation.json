@@ -1,0 +1,224 @@
+{
+  "jobId": "research-clean-doctor",
+  "checkedAtUtc": "2026-10-22T10:08:19.033679+00:00",
+  "command": "python3 docs/content/competitors/clean-doctor/validate.py",
+  "passed": true,
+  "passedChecks": 49,
+  "totalChecks": 49,
+  "checks": [
+    {
+      "check": "source hash: directory",
+      "passed": true
+    },
+    {
+      "check": "source hash: baseline-store",
+      "passed": true
+    },
+    {
+      "check": "source hash: mac-store",
+      "passed": true
+    },
+    {
+      "check": "source hash: developer-home",
+      "passed": true
+    },
+    {
+      "check": "source hash: terms",
+      "passed": true
+    },
+    {
+      "check": "source hash: br-capabilities",
+      "passed": true
+    },
+    {
+      "check": "source hash: br-screenshots",
+      "passed": true
+    },
+    {
+      "check": "unique claim IDs",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: identity",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: mac-cleanup",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: platform",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: version",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: pricing",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: legacy-license",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: privacy",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: unknown-controls",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: br-fit",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: br-caveats",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: br-pricing",
+      "passed": true
+    },
+    {
+      "check": "claim evidence references: br-approvals",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Platform/version",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Workflow",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Licence/install",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Approvals/recovery",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Local/hosted/privacy",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Monitoring/helper/developer detail",
+      "passed": true
+    },
+    {
+      "check": "matrix references: Price",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Mac Requires macOS 10.15 or later.",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Version 7.7 12/12/2024",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Clean Doctor Pro - 1 Year $24.99",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Clean Doctor Pro - 1 Week $3.99",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Clean Doctor Pro - 1 Month $7.99",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Junk Files Cleaner: Delete system junk, broken data, and caches.",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Uninstall apps: Find and delete unwanted apps completely.",
+      "passed": true
+    },
+    {
+      "check": "retained Mac passage: Data Used to Track You",
+      "passed": true
+    },
+    {
+      "check": "retained terms passage: Last updated: June 2020",
+      "passed": true
+    },
+    {
+      "check": "retained terms passage: Current subscription price starts at $7.99/week.",
+      "passed": true
+    },
+    {
+      "check": "retained terms passage: unless expressly permitted",
+      "passed": true
+    },
+    {
+      "check": "retained terms passage: All rights not expressly granted herein are reserved.",
+      "passed": true
+    },
+    {
+      "check": "developer same-ID product card",
+      "passed": true
+    },
+    {
+      "check": "actual screenshot URL retained in Mac HTML",
+      "passed": true
+    },
+    {
+      "check": "no competitor image download or invented image hash",
+      "passed": true
+    },
+    {
+      "check": "selected preview original hash",
+      "passed": true
+    },
+    {
+      "check": "selected PNG signature and dimensions",
+      "passed": true
+    },
+    {
+      "check": "explicit example-data caption",
+      "passed": true
+    },
+    {
+      "check": "alias owner and skip decision",
+      "passed": true
+    },
+    {
+      "check": "critical evidence blocks drafting",
+      "passed": true
+    },
+    {
+      "check": "Breathing Room version and minimum OS cross-check",
+      "passed": true
+    },
+    {
+      "check": "Breathing Room current documented runtime and price limits",
+      "passed": true
+    }
+  ],
+  "localEvidenceHashes": [
+    {
+      "path": "README.md",
+      "sha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f"
+    },
+    {
+      "path": "src-tauri/tauri.conf.json",
+      "sha256": "6e3f8a23846b64f1b8eacfc14ef19bd1528669b2bf5bcc86886d82b1f8001636"
+    },
+    {
+      "path": "src/billing-config.json",
+      "sha256": "537168c749b07d9797a243cd6cfb68b6fd4e735d397773d297605c85f1de65e9"
+    }
+  ],
+  "limitations": [
+    "Documentary checks, not product execution or visual-rights clearance.",
+    "No website edits; website check/build/test not run."
+  ]
+}

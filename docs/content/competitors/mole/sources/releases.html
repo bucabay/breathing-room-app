@@ -1,0 +1,2265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<script>
+var MOLE_SITE_LANG_KEY = 'mole.site.lang';
+var MOLE_SITE_LANG_PREFIXES = {en:'',zh:'/zh',tw:'/tw',ja:'/ja',ko:'/ko',fr:'/fr',de:'/de',it:'/it',es:'/es','pt-br':'/pt-br',nl:'/nl'};
+var MOLE_SITE_PAGES = ['terms', 'privacy', 'refund', 'help', 'docs', 'releases', 'affiliates', 'mac-cleaner', 'mac-app-uninstaller', 'mac-optimizer', 'mac-disk-analyzer', 'mac-system-monitor', 'windows'];
+
+function rememberSiteLang(lang) {
+  // localStorage keeps the client fallback working; the cookie is what lets
+  // vercel.json answer the language choice before any HTML is sent.
+  try { localStorage.setItem(MOLE_SITE_LANG_KEY, lang); }
+  catch (error) {}
+  try {
+    document.cookie = MOLE_SITE_LANG_KEY + '=' + lang + '; Path=/; Max-Age=31536000; SameSite=Lax'
+      + (location.protocol === 'https:' ? '; Secure' : '');
+  } catch (error) {}
+}
+
+(function(){
+  function readSavedLang() {
+    try { return localStorage.getItem(MOLE_SITE_LANG_KEY); }
+    catch (error) { return null; }
+  }
+
+  function matchLang(value) {
+    var tag = String(value || '').toLowerCase().replace(/_/g, '-');
+    if (!tag) return null;
+    if (
+      /^zh-(?:hant(?:-|$)|(?:tw|hk|mo)(?:-|$))/.test(tag)
+      || tag === 'yue'
+      || /^yue-(?:hant(?:-|$)|(?:hk|mo)(?:-|$))/.test(tag)
+    ) return 'tw';
+    if (/^(?:zh|yue)(?:-|$)/.test(tag)) return 'zh';
+    // Every site language gets the first-visit redirect (maintainer 2026-09-15);
+    // any Portuguese lands on the Brazilian pages, Dutch (nl-BE too) on the
+    // Dutch ones, everything else stays on English. Mirror of the
+    // Accept-Language rules in vercel.json.
+    var base = tag.split('-')[0];
+    if (/^(?:ja|ko|fr|de|it|es|nl)$/.test(base)) return base;
+    if (base === 'pt') return 'pt-br';
+    return null;
+  }
+
+  function langFromPath(pathname) {
+    var match = /^\/(zh|tw|ja|ko|fr|de|it|es|pt-br|nl)(?:\/|$)/.exec(pathname);
+    return match ? match[1] : 'en';
+  }
+
+  function routedPage(pathname) {
+    // The home page and the twelve default pages are the only surfaces the
+    // server language-routes; every blog tree carries its language in the URL.
+    var rest = pathname.replace(/^\/(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)(?=\/|$)/, '');
+    var clean = rest.replace(/\/+$/, '') || '/';
+    if (clean === '/') return 'home';
+    var name = clean.replace(/^\//, '');
+    return MOLE_SITE_PAGES.indexOf(name) !== -1 ? name : null;
+  }
+
+  function hasPage(lang, page) {
+    // pt-BR and Dutch ship the same partial page set; both also have their own
+    // complete blog tree, so blog links stay inside the requested language.
+    if (lang !== 'pt-br' && lang !== 'nl') return true;
+    if (page === 'home' || page === 'releases' || page === 'windows') return true;
+    if (page === 'terms' || page === 'privacy' || page === 'refund' || page === 'affiliates'
+      || page === 'help' || page === 'docs'
+      || page === 'mac-cleaner' || page === 'mac-app-uninstaller' || page === 'mac-optimizer'
+      || page === 'mac-disk-analyzer' || page === 'mac-system-monitor') return true;
+    return false;
+  }
+
+  var page = routedPage(location.pathname);
+  if (!page) return;
+  // A cookie means vercel.json already answered with this visitor's own choice.
+  if (document.cookie.indexOf(MOLE_SITE_LANG_KEY + '=') !== -1) return;
+  var current = langFromPath(location.pathname);
+  var saved = readSavedLang();
+  if (!MOLE_SITE_LANG_PREFIXES.hasOwnProperty(saved)) saved = null;
+  var lang;
+  if (saved) {
+    // A choice made before the cookie existed is invisible to the server, which
+    // now redirects before any of this page is built. Mirror it from whichever
+    // language page the visitor was sent to, then go where they chose.
+    rememberSiteLang(saved);
+    lang = saved;
+  } else if (current === 'en') {
+    var primary = navigator.languages && navigator.languages.length
+      ? navigator.languages[0]
+      : navigator.language || navigator.userLanguage || '';
+    lang = matchLang(primary) || 'en';
+  } else {
+    // A language-prefixed URL with nothing stored stays where it is.
+    return;
+  }
+  if (lang === current || !hasPage(lang, page)) return;
+  var prefix = MOLE_SITE_LANG_PREFIXES[lang];
+  var target = page === 'home' ? prefix + '/' : prefix + '/' + page;
+  // One hop at most: the cookie written above makes the server agree from the
+  // next request on, and the target is never the page already open.
+  if (target !== location.pathname) location.replace(target + location.search + location.hash);
+})();
+</script>
+<title>Mole for Mac Releases: Version History & Changelog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4ed">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="robots" content="max-image-preview:large">
+<meta name="description" content="Release notes for Mole for Mac: what changed in each version, Preview builds, and how to update safely.">
+<meta name="google-site-verification" content="FcrLELhAI9DQanxdlRCytFgIa6ER0cFzdI1Pm03ZAAQ">
+<meta name="shenma-site-verification" content="996e5b2b99dc8511a79d33fba8f9892c_1789279363">
+<meta name="bytedance-verification-code" content="26IZnqUVAFgoWGGweRyn">
+<meta property="og:title" content="Mole for Mac Releases: Version History & Changelog">
+<meta property="og:description" content="Release notes for Mole for Mac: what changed in each version, Preview builds, and how to update safely.">
+<meta property="og:image" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta property="og:image:secure_url" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="Clean tab showing Earth and the space a scan found, with a button to review the results">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HiTw93">
+<meta name="twitter:creator" content="@HiTw93">
+<meta name="twitter:title" content="Mole for Mac Releases: Version History & Changelog">
+<meta name="twitter:description" content="Release notes for Mole for Mac: what changed in each version, Preview builds, and how to update safely.">
+<meta name="twitter:image" content="https://mole.fit/img/og-cover.jpg?v=259e64b2">
+<meta name="twitter:image:alt" content="Clean tab showing Earth and the space a scan found, with a button to review the results">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-mole-32-0c604534.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./img/favicon-mole-192-ba32c29d.png">
+<link rel="apple-touch-icon" href="./img/favicon-mole-192-ba32c29d.png">
+<link rel="canonical" href="https://mole.fit/releases">
+<link rel="alternate" hreflang="en" href="https://mole.fit/releases">
+<link rel="alternate" hreflang="zh-CN" href="https://mole.fit/zh/releases">
+<link rel="alternate" hreflang="zh-Hans" href="https://mole.fit/zh/releases">
+<link rel="alternate" hreflang="zh-Hant" href="https://mole.fit/tw/releases">
+<link rel="alternate" hreflang="ja" href="https://mole.fit/ja/releases">
+<link rel="alternate" hreflang="ko" href="https://mole.fit/ko/releases">
+<link rel="alternate" hreflang="fr" href="https://mole.fit/fr/releases">
+<link rel="alternate" hreflang="de" href="https://mole.fit/de/releases">
+<link rel="alternate" hreflang="it" href="https://mole.fit/it/releases">
+<link rel="alternate" hreflang="es" href="https://mole.fit/es/releases">
+<link rel="alternate" hreflang="pt-BR" href="https://mole.fit/pt-br/releases">
+<link rel="alternate" hreflang="nl" href="https://mole.fit/nl/releases">
+<link rel="alternate" hreflang="x-default" href="https://mole.fit/releases">
+<link rel="alternate" type="text/markdown" href="/llms.txt">
+<link rel="alternate" type="application/rss+xml" title="Mole for Mac Releases: Version History &amp; Changelog" href="/releases/feed.xml">
+<link rel="alternate" type="text/markdown" href="/releases.md">
+<meta property="og:url" content="https://mole.fit/releases">
+<link rel="stylesheet" href="./styles.css">
+<link rel="preload" as="image" href="./img/en/clean-1980w.webp" imagesrcset="./img/en/clean-828w.webp 828w, ./img/en/clean-1400w.webp 1400w, ./img/en/clean-1980w.webp 1980w" imagesizes="(max-width: 880px) 100vw, 990px" type="image/webp" fetchpriority="high">
+
+<!-- Google tag (gtag.js) -->
+<script>
+  window.__siteAnalyticsEnabled = location.protocol === 'https:' && location.hostname === 'mole.fit';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){if (window.__siteAnalyticsEnabled) dataLayer.push(arguments);}
+  if (window.__siteAnalyticsEnabled) {
+    var googleTag = document.createElement('script');
+    googleTag.async = true;
+    googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-PGT9GXBZCY';
+    document.head.appendChild(googleTag);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-PGT9GXBZCY', { anonymize_ip: true });
+
+  // Capture this visit's GA identifiers so a server-side purchase (the Dodo webhook
+  // -> Measurement Protocol path in /api/dodo-webhook) can be credited back to the
+  // original acquisition source. The checkout redirect leaves mole.fit for Dodo's own
+  // domain via a /buy -> /session hop that strips GA's _gl linker, so client-side
+  // cross-domain never survives; riding these through Dodo metadata is the only channel
+  // that reaches the sale (the same channel affonso_referral already proves reliable).
+  try {
+    gtag('get', 'G-PGT9GXBZCY', 'client_id', function (v) { if (v) window.__gaClientId = v; });
+    gtag('get', 'G-PGT9GXBZCY', 'session_id', function (v) { if (v) window.__gaSessionId = v; });
+  } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mole.fit/#organization",
+      "name": "Mole",
+      "url": "https://mole.fit/",
+      "logo": "https://mole.fit/img/favicon-mole-192-ba32c29d.png",
+      "email": "hi@mole.fit",
+      "founder": { "@type": "Person", "@id": "https://tw93.fun/#person", "name": "Tw93", "url": "https://tw93.fun" },
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://faberon.io/#organization",
+        "name": "Faberon",
+        "url": "https://faberon.io/"
+      },
+      "sameAs": [
+        "https://github.com/tw93/Mole",
+        "https://github.com/tw93",
+        "https://x.com/HiTw93",
+        "https://tw93.fun"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hi@mole.fit",
+        "url": "https://mole.fit/help",
+        "availableLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "fr", "de", "it", "es"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mole.fit/#website",
+      "url": "https://mole.fit/",
+      "name": "Mole",
+      "description": "A native macOS app for reviewing and cleaning caches, sorting out old AI sessions and idle AI command-line tools, managing apps, maintaining the system, analyzing disk space, checking live status, and seeing key metrics in the menu bar.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://mole.fit/#organization" },
+      "about": { "@id": "https://mole.fit/#software" }
+    }
+  ]
+}
+</script>
+<script async defer
+  src="/r/pixel.js"
+  data-affonso="cmr7ipkwg000f4rl5rn98817p"
+  data-cookie_duration="30"
+  data-api-base="/r"></script>
+<script>
+  // Checkout link enhancement: stamp every checkout.dodopayments.com link with metadata
+  // so the sale can be credited. Two independent signals ride along as Dodo `metadata_*`
+  // params: the freshest window.affonso_referral (affiliate payout) and the GA client_id /
+  // session_id captured above (server-side conversion attribution via /api/dodo-webhook).
+  // The pixel and GA tag both resolve async, so run on the pixel ready event plus timed
+  // passes, and re-read at click time so a last-touch value is never left stale on the button.
+  (function () {
+    // App purchase links land on the localized homepage with a bounded `checkout`
+    // query. That gives GA one first-party page view carrying mole-app / app before
+    // this existing session flow continues to Dodo. Unknown values are ignored so
+    // a public query cannot create high-cardinality dimensions.
+    var appCheckoutEntry = (function () {
+      try {
+        var value = new URLSearchParams(location.search).get('checkout') || '';
+        return /^(?:onboarding|activation)$/.test(value) ? value : '';
+      } catch (e) { return ''; }
+    })();
+    // Which product this page sells. /api/checkout only ever chooses between its
+    // own two constants, so this picks a product, it cannot name one.
+    var checkoutProduct = /(?:^|\/)windows\/?$/.test(location.pathname) ? 'windows' : 'mac';
+    // The first page this tab opened on the site. Most sales check out on a
+    // localized home, which says nothing about whether the reader arrived on a
+    // blog post, and GA cannot answer it either: the webhook replays the
+    // purchase, so it never gets a landing page. Without storage the field is
+    // omitted rather than guessed from the current page.
+    var entryPage = (function () {
+      var here = location.pathname.slice(0, 100);
+      try {
+        var saved = sessionStorage.getItem('mole.entry_page');
+        if (saved) return saved;
+        sessionStorage.setItem('mole.entry_page', here);
+        return here;
+      } catch (e) { return ''; }
+    })();
+    function appCheckoutCtaLocation() {
+      return appCheckoutEntry ? 'app_' + appCheckoutEntry : '';
+    }
+    // gtag('get') only resolves once the async gtag.js has initialised. A click
+    // before that leaves __gaClientId undefined, the checkout link carries no GA
+    // identifier, and the webhook can only skip it, so the sale is never
+    // attributable. A traffic spike is exactly when that window is widest: new
+    // visitors, mobile networks, fast clicks. GA writes the same client_id into
+    // the _ga cookie (GA1.1.<client_id>), which a returning visitor already has,
+    // so read it from there when the callback has not landed. A first-ever visit
+    // that beats the cookie write stays unattributable; that is a real limit.
+    function cookieValue(name) {
+      var m = document.cookie.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+      return m ? m[1] : '';
+    }
+    function gaClientId() {
+      if (window.__gaClientId) return String(window.__gaClientId);
+      var raw = cookieValue('_ga');
+      var m = raw.match(/^GA\d+\.\d+\.(\d+\.\d+)$/);
+      return m ? m[1] : '';
+    }
+    function gaSessionId() {
+      if (window.__gaSessionId) return String(window.__gaSessionId);
+      // _ga_<MEASUREMENT_ID 去掉 G- 前缀>，session_id 是首个数字段，新版带 s 前缀。
+      var raw = cookieValue('_ga_PGT9GXBZCY');
+      var m = raw.match(/^GS\d+\.\d+\.s?(\d+)/);
+      return m ? m[1] : '';
+    }
+    function applyReferral(link) {
+      try {
+        var u = new URL(link.href);
+        // A link already upgraded to a checkout session must not get metadata_*
+        // appended: those are only read by static /buy/ links, while a session's
+        // metadata is injected server-side at creation. Both entry points match
+        // the same checkout.dodopayments.com selector, hence this guard.
+        if (link.hasAttribute('data-checkout-session') || u.pathname.indexOf('/session/') === 0) return;
+        if (window.affonso_referral) u.searchParams.set('metadata_affonso_referral', window.affonso_referral);
+        var cid = gaClientId();
+        var sid = gaSessionId();
+        if (cid) u.searchParams.set('metadata_ga_client_id', cid);
+        if (sid) u.searchParams.set('metadata_ga_session_id', sid);
+        // Which page sent the buyer to checkout. GA4's landingPage is a
+        // session-scoped dimension read off the session's first page_view, and a
+        // Measurement Protocol purchase is not a page_view, so every order lands
+        // under (not set) there no matter how well client_id is wired. This
+        // travels with the order instead and answers the question that was
+        // actually being asked: which page earned the sale.
+        u.searchParams.set('metadata_ga_page', location.pathname.slice(0, 100));
+        if (entryPage) u.searchParams.set('metadata_ga_entry_page', entryPage);
+        u.searchParams.set('metadata_ga_page_type', analyticsPageType());
+        u.searchParams.set('metadata_ga_site_language', analyticsSiteLanguage());
+        u.searchParams.set('metadata_ga_cta_location', analyticsCtaLocation(link));
+        link.href = u.toString();
+      } catch (e) {}
+    }
+    function enhanceDodoLinks() {
+      document.querySelectorAll('a[href*="checkout.dodopayments.com"]').forEach(applyReferral);
+    }
+    // Upgrade the static payment link to a configured Checkout Session (minimal
+    // address, page language, WeChat for Chinese buyers). The href must be swapped
+    // before the click: browsers only allow opening a window inside the gesture's
+    // synchronous stack, so awaiting a fetch first gets it blocked as a popup.
+    // If the upgrade fails the href stays static and buying is unaffected.
+    var checkoutUpgraded = false;
+    var checkoutHadClientId = false;
+    // Two session requests can overlap: the first one is deliberately sent before
+    // gtag has necessarily written client_id, then a better attributed request may
+    // follow 2.5s later. A slow first response must never overwrite the better URL.
+    var checkoutRequestVersion = 0;
+    var checkoutAppliedVersion = 0;
+    var checkoutAppliedAttribution = -1;
+    var appCheckoutRedirected = false;
+    var appCheckoutFallbackURL = '';
+    var appCheckoutFallbackTimer = 0;
+    var APP_CHECKOUT_ATTRIBUTION_WAIT_MS = 3500;
+    var appCheckoutFallbackAt = Date.now() + APP_CHECKOUT_ATTRIBUTION_WAIT_MS;
+    // A session URL expires in 24h while the static link never does, so a tab left
+    // open overnight would turn a working buy button into a dead one. Remember the
+    // original href and when the session was minted, and hand it back on click if
+    // the session is too old to trust.
+    var CHECKOUT_SESSION_MAX_AGE = 12 * 3600 * 1000;
+    function redirectAppCheckout(url) {
+      if (!appCheckoutEntry || appCheckoutRedirected || !url) return;
+      appCheckoutRedirected = true;
+      if (appCheckoutFallbackTimer) clearTimeout(appCheckoutFallbackTimer);
+      try { trackFunnelEvent('begin_checkout', null, new URL(url)); } catch (e) {}
+      window.location.replace(url);
+    }
+    function continueAppCheckout(url, attributionQuality) {
+      if (!appCheckoutEntry || !url) return;
+      if (attributionQuality > 0) {
+        redirectAppCheckout(url);
+        return;
+      }
+      appCheckoutFallbackURL = url;
+      if (appCheckoutFallbackTimer) return;
+      appCheckoutFallbackTimer = setTimeout(function () {
+        redirectAppCheckout(appCheckoutFallbackURL);
+      }, Math.max(0, appCheckoutFallbackAt - Date.now()));
+    }
+    function applySessionURL(url, requestVersion, attributionQuality) {
+      var born = Date.now();
+      var apply = function () {
+        if (attributionQuality < checkoutAppliedAttribution) return;
+        if (attributionQuality === checkoutAppliedAttribution && requestVersion < checkoutAppliedVersion) return;
+        checkoutAppliedAttribution = attributionQuality;
+        checkoutAppliedVersion = requestVersion;
+        // The team-purchase link carries its own ?quantity=N and must survive this
+        // pass untouched: a session URL is minted for quantity 1, so swapping it in
+        // would sell one license to someone who picked six, with nothing visible on
+        // the page to show for it.
+        // A session is minted for one product, so it only replaces that product's
+        // links: data-checkout-product="windows" marks Mole for Windows buttons, and a
+        // Mac session swapped into one would sell a Mac license from a Windows button.
+        var sessionLinks = checkoutProduct === 'windows'
+          ? 'a[data-checkout-product="windows"], a[data-checkout-session]'
+          : 'a[href*="checkout.dodopayments.com"]:not([data-bulk-static]):not([data-checkout-product]), a[data-checkout-session]';
+        document.querySelectorAll(sessionLinks).forEach(function (a) {
+          if (!a.hasAttribute('data-static-href')) a.setAttribute('data-static-href', a.href);
+          a.href = url;
+          a.setAttribute('data-checkout-session', '1');
+          a.setAttribute('data-session-born', String(born));
+        });
+        // A normal site visit waits for an explicit click. An App Buy action has
+        // already supplied that intent, so continue in the same tab. Prefer the
+        // rebuilt session carrying GA identifiers, but never hold payment hostage
+        // to analytics: after a short bounded wait the first valid session wins.
+        continueAppCheckout(url, attributionQuality);
+      };
+      // This script runs inside head, so body does not exist on the first call.
+      // Send the request anyway and defer only the href swap until the DOM is
+      // ready: request and parsing overlap, and the links are upgraded the moment
+      // they exist. An earlier version hid this behind a 3s timer, which cost the
+      // fastest deciders their upgraded link.
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', apply);
+      } else {
+        apply();
+      }
+    }
+    function upgradeCheckout(isAttributionRetry) {
+      if (checkoutUpgraded) return;
+      checkoutUpgraded = true;
+      // Everything, including reading the cookie, sits inside the try. This is
+      // called bare at top level, so an exception here (document.cookie can throw
+      // under some privacy settings) would abort the rest of this script block:
+      // the retry, the hover fallback and whatever else follows.
+      try {
+        var cid = gaClientId();
+        var requestVersion = ++checkoutRequestVersion;
+        var attributionQuality = cid ? 1 : 0;
+        checkoutHadClientId = !!cid;
+        fetch('/api/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            lang: document.documentElement.lang || '',
+            product: checkoutProduct,
+            attribution_retry: Boolean(isAttributionRetry),
+            metadata: {
+              ga_client_id: cid,
+              ga_session_id: gaSessionId(),
+              ga_page: location.pathname.slice(0, 100),
+              ga_entry_page: entryPage,
+              ga_page_type: analyticsPageType(),
+              ga_cta_location: appCheckoutCtaLocation(),
+              ga_site_language: analyticsSiteLanguage(),
+              affonso_referral: window.affonso_referral ? String(window.affonso_referral) : ''
+            }
+          })
+        }).then(function (r) { return r.json(); }).then(function (d) {
+          if (!d || !d.ok || !d.url) return;
+          applySessionURL(d.url, requestVersion, attributionQuality);
+        }).catch(function () {});
+      } catch (e) {}
+    }
+    // Fire immediately. The checkout configuration drives the sale while
+    // attribution is only analytics, so the former must not wait on the latter.
+    // A returning visitor's client_id is already in the _ga cookie by now.
+    upgradeCheckout(false);
+    // A first-time visitor's cookie is written by gtag, so the first call may
+    // carry no identifier. Retry once it lands so the session is rebuilt with a
+    // client_id: one extra call buys back an attributable sale, well under the
+    // throttle ceiling.
+    setTimeout(function () {
+      if (!checkoutHadClientId && gaClientId()) {
+        checkoutUpgraded = false;
+        upgradeCheckout(true);
+      }
+    }, 2500);
+    // Someone heading straight for pricing may click between those two, so
+    // hover and touch cover the gap.
+    ['mouseenter', 'touchstart', 'focus'].forEach(function (evt) {
+      document.addEventListener(evt, function (e) {
+        var t = e.target;
+        if (t && t.closest && t.closest('a[href*="checkout.dodopayments.com"]')) upgradeCheckout(false);
+      }, true);
+    });
+    // Restoring the static link is synchronous and does not preventDefault, so the
+    // browser simply follows the href it finds. A stale session must never be the
+    // thing standing between someone and paying.
+    document.addEventListener('click', function (e) {
+      try {
+        var link = e.target && e.target.closest ? e.target.closest('a[data-checkout-session]') : null;
+        if (!link) return;
+        var born = Number(link.getAttribute('data-session-born') || 0);
+        var fallback = link.getAttribute('data-static-href');
+        if (!fallback || !born || Date.now() - born < CHECKOUT_SESSION_MAX_AGE) return;
+        link.href = fallback;
+        link.removeAttribute('data-checkout-session');
+      } catch (err) {}
+    }, true);
+    // Explicit click events fill the gaps that Enhanced Measurement cannot:
+    // /download has no file extension, checkout leaves for Dodo's domain, and
+    // FAQ discovery needs a stable source instead of an inferred pageview jump.
+    // They only enqueue a GA event. No callback, preventDefault or wait is allowed,
+    // so a blocked tag or a broken analytics runtime cannot affect navigation.
+    function analyticsPageType() {
+      if (appCheckoutEntry) return 'app';
+      // The first Checkout Session request runs in <head>, before body exists.
+      // Classify from the canonical route so session metadata and later click
+      // events agree even when captured at different points in page construction.
+      var segments = location.pathname.split('/').filter(Boolean);
+      if (segments.length && /^(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)$/.test(segments[0])) segments.shift();
+      if (!segments.length) return 'home';
+      var route = segments[0];
+      if (route === 'blog') return 'blog';
+      if (route === 'windows') return 'windows';
+      if (/^mac-(?:cleaner|app-uninstaller|optimizer|disk-analyzer|system-monitor)$/.test(route)) return 'product';
+      if (/^(?:help|docs|releases)$/.test(route)) return 'support';
+      if (/^(?:terms|privacy|refund|affiliates)$/.test(route)) return 'secondary';
+      return 'content';
+    }
+    function analyticsSiteLanguage() {
+      var lang = String(document.documentElement.lang || 'en').toLowerCase();
+      if (lang === 'zh-cn' || lang === 'zh-hans') return 'zh';
+      if (lang === 'zh-tw' || lang === 'zh-hant') return 'zh-hant';
+      if (lang === 'pt-br') return 'pt-br';
+      var base = lang.split('-')[0];
+      return /^(?:en|zh|ja|ko|fr|de|it|es|nl)$/.test(base) ? base : 'other';
+    }
+    function analyticsCtaLocation(link) {
+      var appLocation = appCheckoutCtaLocation();
+      if (appLocation) return appLocation;
+      if (!link) return 'content';
+      if (link.getAttribute('data-download-location')) return link.getAttribute('data-download-location');
+      if (link.hasAttribute('data-bulk-static')) return 'team_purchase';
+      if (link.closest('.site-nav')) return 'navigation';
+      if (link.closest('.hero-cta')) return 'hero';
+      if (link.closest('.price-card')) return 'pricing';
+      if (link.closest('.faq-answer')) return 'faq';
+      if (link.closest('.platform-notice')) return 'platform_notice';
+      if (link.closest('.blog-cta')) return 'blog_cta';
+      if (link.closest('.blog')) return 'blog_content';
+      if (link.closest('.product-page')) return 'product_content';
+      if (link.closest('.foot')) return 'footer';
+      return 'content';
+    }
+    function analyticsCheckoutItem(link, url) {
+      if ((url && url.pathname.indexOf('pdt_0NoRCskSwjACLFPCWqpn4') !== -1)
+        || (link && link.getAttribute('data-checkout-product') === 'windows')) {
+        return { item_id: 'pdt_0NoRCskSwjACLFPCWqpn4', item_name: 'Mole for Windows', quantity: 1 };
+      }
+      var isTeam = Boolean(link && link.hasAttribute('data-bulk-static'));
+      var quantity = 1;
+      if (isTeam) {
+        var selected = Number(url.searchParams.get('quantity'));
+        if (Number.isInteger(selected) && selected >= 2 && selected <= 100) quantity = selected;
+      }
+      return {
+        item_id: isTeam ? 'pdt_0NkeEmac7stxsRbgx3sHY' : 'pdt_0NeAQjL4YEqzkukadjRUT',
+        item_name: isTeam ? 'Mole for Teams' : 'Mole for Mac',
+        quantity: quantity
+      };
+    }
+    function trackFunnelEvent(name, link, url, contentType) {
+      try {
+        if (typeof window.gtag !== 'function') return;
+        var params = {
+          page_type: analyticsPageType(),
+          cta_location: analyticsCtaLocation(link),
+          site_language: analyticsSiteLanguage()
+        };
+        if (name === 'file_download') {
+          var exe = url && /\.exe$/.test(url.pathname);
+          params.file_name = exe ? url.pathname.slice(1) : 'Mole.dmg';
+          params.file_extension = exe ? 'exe' : 'dmg';
+        } else if (name === 'begin_checkout') {
+          params.items = [analyticsCheckoutItem(link, url)];
+        } else if (name === 'select_content') {
+          params.content_type = link.closest('.blog') ? 'blog_product_link' : 'faq_internal_link';
+          if (contentType) params.content_type = contentType;
+          params.item_id = url.pathname;
+        }
+        window.gtag('event', name, params);
+      } catch (err) {}
+    }
+    // Mac and Windows switches: the platform menu, the one-time notice and any link to a Windows home.
+    function trackPlatformSwitch(link, url) {
+      if (!link || !url || url.origin !== location.origin) return false;
+      var toWindowsHome = /^(?:\/(?:zh|tw|ja|ko|de|fr|it|es|pt-br|nl))?\/windows\/?$/.test(url.pathname);
+      if (!toWindowsHome && !link.closest('[data-plat-menu], .platform-notice')) return false;
+      trackFunnelEvent('select_content', link, url, 'platform_switch');
+      return true;
+    }
+    function trackFAQInternalLink(link, url) {
+      if (!link || !url || !link.closest('.faq-answer')) return;
+      if (url.origin !== location.origin || url.pathname.indexOf('/blog/') === -1) return;
+      trackFunnelEvent('select_content', link, url);
+    }
+    function trackBlogProductLink(link, url) {
+      if (!link || !url || !link.closest('.blog') || url.origin !== location.origin) return;
+      var isProduct = /^\/(?:zh|tw|ja|ko|de|fr|it|es)\//.test(url.pathname)
+        ? url.pathname.replace(/^\/(?:zh|tw|ja|ko|de|fr|it|es)/, '') : url.pathname;
+      if (!/^\/mac-(?:cleaner|app-uninstaller|optimizer|disk-analyzer|system-monitor)$/.test(isProduct)
+          && !link.matches('.blog-cta-btn')) return;
+      trackFunnelEvent('select_content', link, url);
+    }
+    window.addEventListener('affonso_referral_ready', enhanceDodoLinks);
+    setTimeout(enhanceDodoLinks, 800);
+    setTimeout(enhanceDodoLinks, 1500);
+    setTimeout(enhanceDodoLinks, 2500);
+    document.addEventListener('click', function (e) {
+      try {
+        var link = e.target && e.target.closest
+          ? e.target.closest('a[href*="checkout.dodopayments.com"], a[href="/download"], a[href^="/Mole-Setup"], [data-plat-menu] a[href], .platform-notice a[href], .faq-answer a[href], .blog a[href]')
+          : null;
+        if (!link) return;
+        var url = new URL(link.href, location.href);
+        if (url.hostname === 'checkout.dodopayments.com') {
+          applyReferral(link);
+          trackFunnelEvent('begin_checkout', link, url);
+        } else if (url.origin === location.origin && (url.pathname === '/download' || /^\/Mole-Setup(-arm64)?\.exe$/.test(url.pathname))) {
+          if (link.hasAttribute('data-download-trigger') && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) return;
+          trackFunnelEvent('file_download', link, url);
+        } else if (!trackPlatformSwitch(link, url)) {
+          trackFAQInternalLink(link, url);
+          trackBlogProductLink(link, url);
+        }
+      } catch (err) {}
+    }, true);
+  })();
+</script>
+<script src="/downloads.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mole.fit/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Releases",
+      "item": "https://mole.fit/releases"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="platform-notice" data-platform-notice="windows" hidden role="status"><p>Want to switch from the Mole Mac site to the Windows site?</p><div class="platform-notice-actions"><a href="/windows" data-platform-switch>Go to the Windows site</a><button type="button" data-platform-notice-dismiss aria-label="Don’t show again">Don’t show again</button></div></div>
+<main id="main-content" class="page" tabindex="-1">
+<div class="nav-wrap">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-head"><a class="nav-brand" href="/">
+      <img src="./img/mole-mark-de4ad137.png" width="26" height="26" alt="" decoding="async">
+      <b>Mole</b>
+    </a>
+    <div class="lang-switch plat-switch" data-plat-switch><button class="lang-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="platform-menu" aria-label="Choose a platform: Mac" data-plat-trigger><span class="plat-label">Mac</span></button><div class="lang-menu" id="platform-menu" aria-hidden="true" data-plat-menu><a href="/releases" class="active" aria-current="page">Mac</a><a href="/windows/releases">Windows</a></div></div></div>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#tested-apps">Tested apps</a>
+      <a href="/#voices">Testimonials</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#blog">Blog</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-search" type="button" data-search-open aria-label="Search" aria-haspopup="dialog" aria-controls="site-search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      </button>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="language-menu" aria-label="Choose a language" data-lang-trigger>
+          <svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span class="lang-current-code">EN</span>
+          <span class="lang-current-name">English</span>
+        </button>
+        <div class="lang-menu" id="language-menu" aria-hidden="true" data-lang-menu>
+          <a href="/releases" class="active" aria-current="page" data-lang-en><span class="lang-name">English</span><span class="lang-code">EN</span></a>
+          <a href="/zh/releases"  data-lang-zh><span class="lang-name">简体中文</span><span class="lang-code">中</span></a>
+          <a href="/tw/releases"  data-lang-tw><span class="lang-name">繁體中文</span><span class="lang-code">繁</span></a>
+          <a href="/ja/releases"  data-lang-ja><span class="lang-name">日本語</span><span class="lang-code">日</span></a>
+          <a href="/ko/releases"  data-lang-ko><span class="lang-name">한국어</span><span class="lang-code">한</span></a>
+          <a href="/fr/releases"  data-lang-fr><span class="lang-name">Français</span><span class="lang-code">FR</span></a>
+          <a href="/de/releases"  data-lang-de><span class="lang-name">Deutsch</span><span class="lang-code">DE</span></a>
+          <a href="/it/releases"  data-lang-it><span class="lang-name">Italiano</span><span class="lang-code">IT</span></a>
+          <a href="/es/releases"  data-lang-es><span class="lang-name">Español</span><span class="lang-code">ES</span></a>
+          <a href="/pt-br/releases" data-lang-pt-br><span class="lang-name">Português</span><span class="lang-code">PT</span></a>
+          <a href="/nl/releases" data-lang-nl><span class="lang-name">Nederlands</span><span class="lang-code">NL</span></a>
+        </div>
+      </div>
+      <!-- Two labels, one per width: the phone bar has room for the verb alone
+           and reuses the hero CTA's own string rather than minting a short key. -->
+      <a class="nav-buy js-buy" href="https://checkout.dodopayments.com/buy/pdt_0NeAQjL4YEqzkukadjRUT?redirect_url=https%3A%2F%2Fmole.fit%2Fpurchase" target="_blank" rel="noopener">Buy</a>
+      <a class="nav-download" href="/download" aria-label="Download">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.03 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+        <span>Download</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<!-- Site search. Lives above the Home marker so the same markup ships on the
+     landing page, the lean routes, and every blog page (build.py splits the
+     template at that marker). The index itself is fetched on first open. -->
+<div class="search-overlay" id="site-search" data-search hidden
+     data-search-index="/search-en.json" data-search-empty="Nothing found. Email hi@mole.fit and I will help.">
+  <div class="search-scrim" data-search-dismiss></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-field">
+      <svg class="search-field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input class="search-input" type="search" id="site-search-input" data-search-input
+             placeholder="Search help, docs, and articles" aria-label="Search"
+             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-autocomplete="list">
+      <button class="search-close" type="button" data-search-dismiss aria-label="Close search"><span aria-hidden="true">esc</span></button>
+    </div>
+    <ul class="search-results" id="site-search-results" role="listbox" aria-label="Search"></ul>
+    <p class="search-note" data-search-note>Help, documentation, releases, and articles.</p>
+  </div>
+</div>
+
+<div id="page-releases" class="legal" aria-hidden="false">
+  <h1 class="legal-title">Releases</h1>
+  <p class="meta">Mole iterates fast with long-term maintenance. The feature set stays restrained while each capability goes deeper, cleaning more thoroughly and inspecting more carefully.</p>
+
+  <h2 id="v1-18-0-preview-338">v1.18.0 Preview <span class="meta">build 338</span> <a class="release-dl" href="https://mole.fit/Mole-preview.dmg" download aria-label="Download Mole 1.18.0 Preview"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1zM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2z"/></svg><span>Download</span></a></h2>
+  <ol>
+    <li><b>Uninstall</b>: Choose Uninstall with Mole from Finder’s Services menu to open an app straight in Mole’s list, and its right-click menu in Mole can keep the app and clear only its data. Large folders such as WeChat’s are measured in full before the size is shown, data left by LazyCat, rekordbox, QwenWork, iStat Menus and six other apps is listed for review, and items Mole could never remove are no longer listed. Autodesk Fusion is now removed in full rather than only its launcher, OneDrive’s log folder goes with the app, Google Drive no longer keeps running after removal, and a system extension a removed app leaves running is shown with a way to remove it in System Settings.</li>
+    <li><b>Clean</b>: Caches of Feishu, DingTalk, WeChat’s built-in browser and Codex are covered, and caches of Discord, Slack, Steam, Figma and similar apps are kept while those apps are open. OrbStack, Apple’s container tool, Claude’s virtual machine for third-party providers and Draw Things models now show under Manage Separately, logs Mole cannot remove and background services whose app is still installed are no longer listed, and the scan progress keeps moving with an estimated percentage.</li>
+    <li><b>Permission prompts</b>: Scans no longer ask for an administrator password to install Xcode components, and without Full Disk Access neither Clean nor Analyze asks for access to Desktop, Documents or Downloads; Analyze marks those folders as needing access instead of stalling. After a Mole update, the administrator password is asked again only when the action itself changed.</li>
+    <li><b>Developer cleanup</b>: Copies of apps Xcode installed on an iPhone or iPad, node_modules in projects untouched for 90 days, caches and indexes of older JetBrains IDE versions, and iOS, watchOS, tvOS and visionOS device support per version are listed for review, along with Instruments session files left after quitting, the old pnpm store in your home folder and simulator runtimes unused for 60 days.</li>
+    <li><b>AI cleanup</b>: Cursor’s chat store is listed unchecked, noting that removing it clears all Cursor chats and signs you out. Comfy Desktop’s download cache, old LM Studio engines and the folder left after removing the app, abandoned Codex runtime installs and scratch from finished Claude Code background jobs are found too, with old engines and abandoned installs unchecked.</li>
+    <li><b>Updates</b>: Homebrew and App Store updates run faster in Mole: a running app stays open until the install step, Update All installs up to three App Store apps at once, and download progress shows behind a proxy. An app Mole closed for a Homebrew update reopens if the update does not land, App Store checks use your account’s region, bilibili updates from its official package, and Zed, Vorssaint and Folo updates are detected.</li>
+    <li><b>Disk analysis</b>: When the disk has grown by 1 GB or more since a map at least a day old, Analyze says so and names the folders and files that grew.</li>
+    <li><b>Menu bar and Status</b>: Menu bar readings take only the space they need, and stacked network rates stop shifting. The battery card shows the adapter’s watts, the menu bar panel’s battery rings include this Mac beside its accessories, and memory for system processes such as WindowServer matches Activity Monitor.</li>
+    <li><b>License</b>: A Mac left on for weeks no longer shows a license issue after going offline, and when the license server cannot be reached Mole says the license returns once you are online instead of offering Reset, which used up another device slot.</li>
+    <li><b>Details</b>: Counters roll smoothly, the faintest grey text is easier to read, more so with Increase Contrast on, closing and reopening the window no longer leaves the old one using memory, VoiceOver and time trackers see which tab is open, startup items launched by scripts are named after their app, removing a backup copy no longer quits the installed app with the same ID or removes its Dock icon, uninstalling Android File Transfer no longer preselects Android Studio’s caches, and uptime no longer rounds up into the next day.</li>
+  </ol>
+
+<h2 id="v1-17-0">v1.17.0 <a class="codename" href="https://en.wikipedia.org/wiki/Vega" target="_blank" rel="noopener">Vega</a> <time class="meta" datetime="2026-10-18">2026-10-18</time></h2>
+  <ol>
+    <li><b>Clean</b>: Items in the Trash for over a day and rebuildable Safari and iWork caches are preselected, and selecting the Trash now empties all of it, including Xcode build folders moved there. Old wallpaper renders can be removed, and caches of WebKit-based apps such as Clicker for Netflix show their full size. Update packages that apps such as Notion leave behind after updating themselves are listed for review and go to the Trash. Speech models that WhisperKit apps keep in Documents are shown under Manage Separately. After a clean, the summary shows how many items went and what that space is worth as Mac storage.</li>
+    <li><b>Developer cleanup</b>: Rust targets, Xcode and SwiftPM build output, rustup toolchains nothing uses, the pnpm store and the uv cache now appear for review, and build folders nested deeper inside projects are found too. Unavailable simulators can be moved to the Trash even if they were signed into iCloud. Reviews with tens of thousands of items, such as an npm cache, stay responsive, and a crash while scanning Rust dependencies is fixed.</li>
+    <li><b>AI cleanup</b>: Worktrees untouched for two weeks, ones left in Claude Code scratch folders or a project’s build folder, idle Claude Code temporary files, Codex crash reports and expired sessions it compressed or split, and Copilot project caches are now found for review. AI tools from third-party Homebrew taps can be uninstalled. Images from Codex threads you already deleted are listed for review, and session sizes now include the history Codex and OpenCode keep in their databases.</li>
+    <li><b>Menu bar and Status</b>: The menu bar can add a third metric and show remaining battery or charging time. When memory is tight, forgotten dev servers, headless browsers and build daemons are listed so you can stop the ones you tick, and the process list can be searched with Command-F, naming the app behind each helper. Temperatures can show in Fahrenheit with one Terminal command listed in the Docs. Disk tiles show read and write speed while the disk is busy, uptime reads in days and hours, and the CPU column explains that one fully busy core counts as 100%.</li>
+    <li><b>Uninstall</b>: The Software tab no longer stalls on a Mac with hundreds of apps. Uninstalling Claude also removes the Claude Code it downloaded, and game libraries and compatibility bottles are kept. Once Mole’s helper is set up, uninstalling also removes app containers macOS blocks without Full Disk Access. Apps moved to another disk with AppPorts are listed once with their real size, and data Rex and RetainPDF leave behind is listed for review.</li>
+    <li><b>Updates</b>: iPhone and iPad apps no longer get iOS updates, and a cancelled update never installs a partial download. Cursor on Apple silicon, Discord, Signal, Raycast, Kaku and UU Remote now update inside Mole, and Sketch and Grok Bot updates are detected. Apps that update outside the App Store now update up to three at a time.</li>
+    <li><b>Disk analysis</b>: APFS clones no longer count their shared space more than once, large folders grow on the map as scanning goes on, and downloaded model folders can be moved to the Trash from the map. Hovering the map does far less work, which avoids a crash reported on a macOS 27.2 beta.</li>
+    <li><b>Fan and battery</b>: Cool speeds the fans up earlier as the Mac warms, and charging time counts to your charge limit, so with an 80% limit it shows the time to 80%.</li>
+    <li><b>Language</b>: Mole is now available in Dutch, in the app as well as on the website, Help and Docs.</li>
+    <li><b>Details</b>: Clicking the Dock icon right after closing the window brings it back instead of doing nothing for a few seconds. The planet no longer flashes magenta after switching desktops, the dark app icon matches macOS 27, activation says when the license server is busy instead of showing an HTTP error, and Doctor can open the operation log in Finder. With Stage Manager on, the window no longer widens a moment after it opens.</li>
+  </ol>
+
+<h2 id="v1-16-0">v1.16.0 <a class="codename" href="https://en.wikipedia.org/wiki/Orion_(constellation)" target="_blank" rel="noopener">Orion</a> <time class="meta" datetime="2026-10-12">2026-10-12</time></h2>
+  <ol>
+    <li><b>AI cleanup</b>: A new AI cleanup page in Clean gathers caches, old versions, stale sessions, finished worktrees and idle command-line tools from Claude Code, Codex, Cursor and others, lists sessions by the window you pick, keeps a recovery copy before deleting, and leaves data in use alone.</li>
+    <li><b>Clean</b>: System Data, app caches and logs are regrouped with what you can act on first, npm, Go, Xcode and Homebrew caches and uninstall leftovers are covered, space that cannot be confirmed stays out of the total, and you can pick which apps to quit when files are in use.</li>
+    <li><b>Uninstall</b>: Settings can preselect app data and turn on Quick uninstall, which finishes in the list with results in the footer, data other apps still use is kept, and apps with background processes, PlayCover iOS apps and Adobe Genuine Service now uninstall cleanly.</li>
+    <li><b>Disk analysis</b>: Files from 100 MB are listed by actual size, folders made mostly of cleanable items open Clean’s review directly, and folders hidden by missing disk access say why and open the setting in one click.</li>
+    <li><b>Updates and startup items</b>: Update sources are identified more accurately with fewer false prompts, you choose which running apps may quit before updating, Parallels Desktop updates through its official installer, and startup toggles match the system, including items with non-Latin names.</li>
+    <li><b>Fans and Battery Care</b>: Cool starts at 40% fan speed and follows CPU temperature, hands control back to macOS once the Mac cools down unless you turn that off, keeps fan presets with the window closed, asks for your password less often, and restores fans and charging more reliably on quit.</li>
+    <li><b>Status and the menu bar</b>: Memory pressure, per-core CPU load, app energy use and chip power are new, disk, battery and network readings are more accurate, the menu bar gains side-by-side and stacked layouts, new runners and still poses, and battery temperature and health return on macOS 27.</li>
+    <li><b>WiFi Low Latency</b>: Turn it on from the utility menu or the network card. AirDrop pauses meanwhile, and everything returns to normal when you turn it off, the Mac sleeps, Mole quits or the network changes.</li>
+    <li><b>Parallels disk space</b>: Clean can reclaim unused space inside the disks of shut-down Parallels virtual machines, keeping the machines and their files.</li>
+    <li><b>Faster scans</b>: Clean, Installed Apps and AI cleanup repeat less work, long cache and session lists expand and select faster, Analyze reuses sizes it already measured, and Mole does less in the background while its window is hidden.</li>
+    <li><b>Settings and interface</b>: Settings puts common actions first, a native app menu and shortcuts for the main window and fans are new, fonts, icons, menus and dialogs match across pages, and result details mark done, skipped and failed items with one set of colors.</li>
+    <li><b>Screen tools</b>: Keep Screen On survives Mole updates, closing the lid without an external display turns the screen off, lid-closed sleep is turned back off if another tool re-enables it, and logging out or restarting during Clean Screen is no longer blocked.</li>
+  </ol>
+
+<h2 id="v1-15-0">v1.15.0 <a class="codename" href="https://en.wikipedia.org/wiki/Beehive_Cluster" target="_blank" rel="noopener">Beehive</a> <time class="meta" datetime="2026-09-26">2026-09-26</time></h2>
+  <ol>
+    <li><b>Uninstall</b>: I spent a lot of time personally testing and inspecting <a href="https://mole.fit/tested-apps">709 apps</a>, improving leftover cleanup for apps that are difficult to uninstall so it is clearer what will be removed and fewer leftovers remain afterward.</li>
+    <li><b>Review before deleting</b>: The Uninstall list shows Library data over 1 GB, with chat history, virtual machines and clipboard history unchecked by default, browser data individually selectable, and data used by other installed apps preserved.</li>
+    <li><b>App updates</b>: Version detection and update status are more accurate, with fewer duplicate or incorrect prompts, no packages from the wrong vendor or for the wrong Mac, support for beta-to-stable upgrades, and a fix for failed UU Remote downloads.</li>
+    <li><b>Startup</b>: Entries are grouped by app into login and background items, switches reflect their actual state, obsolete items can be removed, and enterprise management software stays protected.</li>
+    <li><b>Clean</b>: Expanded cleanup covers old Homebrew packages, rebuildable simulator data, NuGet and iCloud Drive caches, while preserving personal data, files in use and snapshots during backups.</li>
+    <li><b>Optimize</b>: Repair Universal Clipboard, eject leftover installer disk images and move obsolete background items to Trash, with a fix for VPN extensions disconnecting during optimization.</li>
+    <li><b>Analyze</b>: Mounted folders are no longer counted twice, virtual machine images count toward their actual disk usage, and hovering over Used explains why file totals can be larger.</li>
+    <li><b>Status</b>: Processes are grouped by app with combined memory and CPU usage, sorted by memory by default and expandable for details, and the fan card no longer jumps when switching modes.</li>
+    <li><b>Menu bar</b>: Disk cards prioritize free space, memory cards show swap on hover, temperatures follow the selected unit and the runner can change direction, with improved microphone alerts, macOS 27 icons and lower resource use for animations and hidden windows.</li>
+    <li><b>Battery Care</b>: A temporary hardware detection failure no longer disables Battery Care, which resumes automatically when control is restored.</li>
+    <li><b>Diagnostics and controls</b>: Diagnostic results open the relevant page or permission settings, app search recognizes names in different languages, ⌘1 through ⌘5 switch tabs, VoiceOver and panel closing work better, and uninstalling or optimizing waits for an active cleanup to finish.</li>
+    <li><b>Beta updates</b>: Enable Beta Updates in Settings to receive future Preview versions, with the option enabled by default in Preview builds.</li>
+  </ol>
+
+<h2 id="v1-14-0">v1.14.0 <a class="codename" href="https://en.wikipedia.org/wiki/Pleiades" target="_blank" rel="noopener">Pleiades</a> <time class="meta" datetime="2026-09-13">2026-09-13</time></h2>
+  <ol>
+    <li><b>Software updates</b>: Apps downloaded from their websites can now update inside Mole, Homebrew-installed apps update to the right build for this Mac, and a newer build of the same version is detected. Mole asks before quitting a running app and reopens it once the update is installed; an app that cannot be updated tells you why and reuses a finished download instead of fetching it again. ChatGPT and App Store apps transferred to another developer now update normally, and Parallels hands over to its own updater.</li>
+    <li><b>Update All</b>: App Store and Sparkle updates run at the same time, a pending purchase no longer holds up the rest, and the list and counts stay put while the batch runs. One failed or cancelled update does not affect the others, you can retry any time, and the quit prompts, incomplete-check notice and Homebrew repair guidance are clearer.</li>
+    <li><b>Uninstall</b>: Duplicate apps are no longer listed twice, leftover detection is more complete, files left by bundled helpers and older versions are found, and Unity's data folder is listed for your review. Leftovers are listed by path with app and leftover sizes shown separately, empty temporary folders are marked Empty, browser personal data has to be selected by hand, and sensitive data or files another app still uses are never removed. The cleanup prompt after an uninstall elsewhere waits for leftovers to settle and explains sizes and skips.</li>
+    <li><b>Clean</b>: New cleanup for QQ, Feishu, Lark, PyInstaller, automated Chrome, rebuildable SwiftPM and Cargo caches, and older Autodesk Fusion versions, while QQ chats and media, deployment keys and Git-tracked files are always kept. Apps holding a cache can be quit right from Clean and the affected items refresh in place, with no rescan. Slow folders no longer stall the scan, Never Clean can be undone reliably, and AirDrop and running login services are left alone.</li>
+    <li><b>Analyze</b>: Large and developer folders open faster, folders full of one file type are listed by date, and map colors and hover details are easier to read.</li>
+    <li><b>Status</b>: Apple silicon temperatures are steadier, menu-bar temperature and fan speed refresh every second, and free disk space is accurate in Status and the menu bar. Processes can be sorted, the health score says what it deducted, and a low Bluetooth battery alerts you without opening the panel, whether the menu-bar icon is static or animated.</li>
+    <li><b>Keep Screen On</b>: Sessions pause at 20% battery, resume once plugged in, and an unlimited session survives a restart.</li>
+    <li><b>Background use</b>: Hidden windows release graphics memory within a minute, Status refreshes less while another app is in front, and Mole checks for its own updates less often.</li>
+    <li><b>Activation and devices</b>: Simpler first-run and purchase screens show terms and pricing at a glance, Return activates a key, activated devices can be managed, and light mode no longer flashes white at launch.</li>
+    <li><b>Interface</b>: Controls, menu animations and pointer feedback are consistent, wide-window layouts and minimized-window restoration are better, Clean buttons stay visible on small screens, repeated password prompts are fewer, and startup items can be retried when they fail to load.</li>
+    <li><b>Language and compatibility</b>: Brazilian Portuguese is added, and with the language set to automatic the first launch after updating follows the Mac's preferred language while manual choices stay. Intel Macs on the legacy Metal compatibility layer show static planets to avoid a reported startup crash.</li>
+
+
+  </ol>
+<h2 id="v1-13-0">v1.13.0 <a class="codename" href="https://en.wikipedia.org/wiki/Phoenix_(constellation)" target="_blank" rel="noopener">Phoenix</a> <time class="meta" datetime="2026-08-29">2026-08-29</time></h2>
+  <ol>
+    <li><b>Software updates</b>: Chrome, WhatsApp, and Brave can now update inside Mole when a compatible package is available. Mole verifies the download before replacing the installed app, verified website packages never join Update All without confirmation, and installer handoffs stay explicit.</li>
+    <li><b>Update reliability</b>: App Store and installer updates remain pending until the app on disk changes. Update All refreshes the list so completed apps are not downloaded again after another update fails. Homebrew retries only unfinished items, with ordinary apps first, hidden updates near the bottom, and Homebrew last. Mole also recognizes Universal Purchase Mac updates such as MindNode without treating their iOS deployment target as a macOS requirement, and avoids false updates caused by Craft's iPhone/iPad release, Atlas prereleases, staged ChatGPT builds, and R's formatted bundle version.</li>
+    <li><b>Uninstall</b>: Shared media is shown for review without being preselected. Removing package-installed apps also clears their installers and background updaters, preserves unrelated Homebrew apps, and closes running apps cleanly. If an app is restored or reinstalled while its leftovers are being removed, Mole stops before touching the new installation.</li>
+    <li><b>Clean and Optimize</b>: WeChat, ChatGPT, browser, and Helium caches can clear without quitting their apps. Xcode device logs are covered, home-level dependency folders are no longer mistaken for one project, and every reviewed cache is checked again for path changes and active use before deletion. System-service cleanup preserves bundled helpers and anything still referenced by a launch item. Clean offers Scan Again after a scan, while system repairs leave Dock, iCloud, Safari, usage history, managed fonts, and active VPN tunnels alone.</li>
+    <li><b>Status and Analyze</b>: CPU core groups, memory use, and system health now follow macOS definitions; disk figures follow free-space changes, and snapshot cleanup reports real reclaimed space. Process details identify their service and startup source, aliases remain visible in Analyze, and the menu bar panel fits a 13-inch screen.</li>
+    <li><b>Battery and everyday tools</b>: Battery Care resumes charging correctly, Charge to 100% is reliable, and fan presets recover when macOS takes control. Clean Screen adds a persistent Never mode, while timed Keep Screen On sessions restore the right mode and remaining time.</li>
+    <li><b>Result details</b>: Clean, Uninstall, and Optimize now share the same result layout with readable grouped reasons, consistent status marks, localized labels, and details after every completed run.</li>
+    <li><b>Onboarding and interface</b>: Mole’s app icon, in-app mark, favicon, and website navigation now share the refreshed mole identity. Fresh installs open without a white flash, and the first-run screen keeps permission, trial, purchase, and license choices compact and aligned in every language. Startup matches the row height, section spacing, and content alignment of Updates and Uninstall. Refresh controls, text sizes, and update metadata have been adjusted, while startup-item removal, Analyze trash actions, and process termination share consistent confirmation dialogs with clearer actions, outcomes, recovery details, and failure messages.</li>
+    <li><b>Reliability</b>: Closing the main window with Command-W now keeps Mole in the Dock in normal mode. In menu-bar-only mode, an open window remains reachable through Command-Tab and returns to the menu bar after closing. Activation, system-service startup status, duplicate leftovers, dialog hover isolation, and tab-bar alignment are also fixed. Thanks to 38.5 for thoughtful suggestions on Mole's security and activation experience.</li>
+  </ol>
+<h2 id="v1-12-1">v1.12.1 <a class="codename" href="https://en.wikipedia.org/wiki/Proxima_Centauri" target="_blank" rel="noopener">Proxima</a> <time class="meta" datetime="2026-08-07">2026-08-07</time></h2>
+  <ol>
+    <li><b>Efficiency</b>: Background sampling wakes less often, menu-bar CPU usage no longer increases over long sessions, and long-list scrolling is smoother.</li>
+    <li><b>Clean</b>: cleanup reaches more apps, including JianyingPro, Dia, and Zed, along with outdated caches. It marks cloud-synced files, reports the space actually reclaimed, and no longer stalls on stubborn folders. Chat history, local models, install data, and active builds stay protected, and the review list reveals files in Finder.</li>
+    <li><b>Software updates</b>: App Store apps update inside Mole when that can finish safely, Homebrew shows real progress and batch updates survive slow networks, and direct installs such as ChatGPT and Chrome hand new releases to their own updater. When macOS blocks a replacement, the row says why and opens the right setting, and a dismissed update notice applies to one build only.</li>
+    <li><b>Uninstall</b>: stable and beta copies protect each other's data, remnants a reinstall would rebuild come pre-selected, and only chosen login items stop. When another task keeps Mole busy, clicking Remove says so instead of doing nothing.</li>
+    <li><b>Battery</b>: Battery Care tops up to 100% on demand, the card shows live power draw, real health, and the heaviest consumer, and accessory names no longer duplicate.</li>
+    <li><b>Menu bar</b>: the runner cast is redrawn pixel-crisp from the open-source RunCat Neo gallery with thanks to Takuto Nakamura, every runner's pace tracks real load, and network speed stays accurate under TUN proxies.</li>
+    <li><b>Interface</b>: launch and tab switches no longer flash, buttons answer every press, temperatures default to Celsius, and the health score now counts drive SMART failures and long uptime. VoiceOver no longer lands on blank separator stops, and dual-display Macs no longer end up with two Mole windows.</li>
+    <li><b>Settings</b>: a new Open Source Licenses panel shows every bundled notice, and rows, dividers, and descriptions read cleaner.</li>
+    <li><b>Fixes</b>: scanning no longer asks Macs without developer tools to install them, stopping a process from the menu bar panel keeps the panel open, Doctor and Settings scroll bars follow your macOS setting at the panel edge, and on Intel or low-power Macs the planet animation pauses while Mole is in the background.</li>
+  </ol>
+
+<h2 id="v1-11-0">v1.11.0 <a class="codename" href="https://en.wikipedia.org/wiki/Crab_Nebula" target="_blank" rel="noopener">Crab Nebula</a> <time class="meta" datetime="2026-07-19">2026-07-19</time></h2>
+  <ol>
+    <li><b>Clean</b>: a new Uninstalled App Leftovers section clears data left behind by removed apps, without mistaking apps on external drives for leftovers, and AI-tool cleanup now covers Grok while chat history stays untouched.</li>
+    <li><b>Memory</b>: a few minutes after the window is tucked into the menu bar, Mole releases the window's memory and trims icon caches, keeping background usage light.</li>
+    <li><b>Storage</b>: Purgeable Space reclaims what macOS reserves for local backups, UTM and Tart virtual-machine caches join the cleanup, and root-owned Trash apps like iMovie and GarageBand delete after a one-time admin approval.</li>
+    <li><b>Activation reliability</b>: a genuine copy is no longer flagged as unofficial when macOS stamps its own marks inside the app, so Clean no longer locks up, a state even reinstalling couldn't fix.</li>
+    <li><b>Network speed</b>: in the menu bar and Status, network speed reads the physical interface instead of the tunnel, so a VPN or TUN-mode proxy no longer skews it high or low.</li>
+    <li><b>Menu bar</b>: a new Both style shows the runner beside a compact two-line metrics band with live speeds and tighter lines; when Mole starts at login, opening it from the menu bar brings up the window right away.</li>
+    <li><b>Software updates</b>: Homebrew updates show download progress and size instead of "Preparing", batch upgrades track each package with the real failure reason, the update dot can be dismissed for the current version, and in-app updates recover on their own when leftover files block the install.</li>
+    <li><b>Software</b>: apps on external drives no longer show stale last-used dates, and system-installed apps uninstall correctly on accounts whose home folder differs from the user name.</li>
+    <li><b>Optimize</b>: a new step finds hidden preferences left by old tuning apps, such as a disabled App Nap or skipped disk-image verification, and removes only those so macOS returns to its safe defaults.</li>
+    <li><b>Interface</b>: the hero planet no longer blinks or lingers across scans and tab switches, selection bars and filter menus gained hover feedback and VoiceOver labels, and copy was revised across all nine interface languages.</li>
+  </ol>
+
+<h2 id="v1-10-0">v1.10.0 <a class="codename" href="https://en.wikipedia.org/wiki/Andromeda_Galaxy" target="_blank" rel="noopener">Andromeda</a> <time class="meta" datetime="2026-07-11">2026-07-11</time></h2>
+  <ol>
+    <li><b>Menu bar and Keep Screen On</b>: the always-on menu bar uses less power while Runner still follows real load, the menu bar icon no longer flickers or rebuilds itself on multi-display setups, compact metrics and paired-device batteries take less space, text and images stay sharp after display-scale changes, and three directly selectable Keep Screen On modes cover display, closed-lid tasks, or both.</li>
+    <li><b>Status and accessory batteries</b>: per-process CPU and GPU usage now follow live Activity Monitor-style sampling, Apple silicon can separate performance and efficiency cores, battery probes run independently so one slow device cannot block the rest, accented names stay visible, charging uses a clearer Mac-style ring, and process explanations retry and scroll cleanly.</li>
+    <li><b>Analyze</b>: whole-disk maps appear within seconds, large-folder areas stay steady while sizes converge, very large lists scroll more smoothly, Finder-style back and forward gestures work, and returning to a folder preserves its expansion and exact viewport position.</li>
+    <li><b>Software and Startup</b>: Intel-only apps are marked for Rosetta, the Software tab opens to prepared results, dead background registrations from removed apps are pruned instead of becoming inert rows, and disabling an app stops all of its matched login helpers.</li>
+    <li><b>Software updates</b>: Universal Purchase iOS records and leftover Electron template feeds no longer become Mac updates, 1Password detection works again, vendor-specific version formatting such as AdGuard VPN no longer creates permanent phantom rows, verified replacements stay bound to the same app, and App Store updates that cannot finish in-app converge into one App Store Updates action without blocking Update All.</li>
+    <li><b>Clean</b>: review remains smooth with hundreds of files in one category, Select All is easier to reach, preset choices stay stable while items change, and Chinese cache labels preserve product names while Traditional Chinese uses Taiwan vocabulary.</li>
+    <li><b>Uninstall</b>: leftover checklists appear immediately and fill sizes in the background, Mole does not prompt again for apps it just removed, grouped rows end cleanly, and vendor-reinstalled apps with stale or missing Homebrew casks fall back to a normal uninstall.</li>
+    <li><b>Notifications</b>: Mole warns once when startup disk space runs low and the alert opens Clean directly, Bluetooth accessories low on battery alert once per episode instead of on every reconnect and clear once charging starts, and privacy alert settings now explain how to stop alerts for a single app.</li>
+    <li><b>Reliability and activation</b>: helper recovery can reconnect an existing signed fan and battery service, fan control re-registers it when macOS drops the launch record, brief post-install signature failures recover instead of locking the app as unofficial, and license checks identify network failures more clearly.</li>
+  </ol>
+
+<h2 id="v1-9-0">v1.9.0 <a class="codename" href="https://en.wikipedia.org/wiki/Mizar" target="_blank" rel="noopener">Mizar</a> <time class="meta" datetime="2026-06-30">2026-06-30</time></h2>
+  <ol>
+    <li><b>Menu bar</b>: a native right-click menu opens any feature in one click, and a setting can swap what the left and right clicks do. The runner can track live CPU as RunCat, Keep Screen On adds a coffee-cup badge, mounted drives gain an Eject All action, the title can show used swap as an optional second reading, and Command-Q quits like a normal Mac app.</li>
+    <li><b>Menu bar reliability</b>: the icon no longer vanishes after a Control Center rewrite or collapses into an invisible slot, and a slow network drive no longer delays the right-click menu. Row actions stay steady while they run, the window reopens from the menu bar after a real close, and the icon comes back when macOS parks it off-screen.</li>
+    <li><b>Status and battery</b>: the Network tile opens a detail card with your public IP, location, and ISP, and a paired iPhone or iPad shows its level, charging state, and model beside the Mac. Battery health follows the capacity macOS reports, Intel Macs read CPU proximity temperature, live numbers stop flickering, and Mole suggests a restart when a system process holds a core busy after long uptime.</li>
+    <li><b>Trash and uninstall</b>: dragging an app to the Trash can clear its leftovers from a small popup, and Homebrew receipt cleanup keeps a later reinstall from being blocked. Uninstall now reaches more privileged helpers, sibling identifiers, and Darwin caches, and protected processes hide their terminate action.</li>
+    <li><b>Software updates</b>: Homebrew apps from custom taps and metadata-only casks stay visible, and a slow silent download no longer drops a cask update. Renamed Mac App Store apps can update in place, and a verified Sparkle or Electron replacement must keep the same bundle identifier before Mole swaps it. Opening Updates now clearly shows it is checking while it scans and finishes the first scan faster, so an unfinished scan no longer appears to have no updates, and hover hints in the Software list appear without the old delay.</li>
+    <li><b>Clean</b>: AI coding-tool caches can be cleared while their settings and state stay protected, caches that are system or root-owned and cannot be removed are no longer offered, and repeated disk-capacity probes are throttled so they stop flooding the log.</li>
+    <li><b>License and permissions</b>: activation reuses this Mac's existing license slot instead of minting a duplicate, and the Full Disk Access reopen prompt now stays inside the permission banner.</li>
+    <li><b>Settings</b>: a helper management entry can reinstall or remove the signed fan and battery helper, system battery charge limits are handled cleanly, and a cooling preset holds until you choose Auto or quit.</li>
+    <li><b>Analyze and support</b>: picking Analyze from the menu bar starts the disk scan right away, in-app support routes through the diagnostics bundle, and the thermal probe keys line up with the app's own SMC reader. Disk analysis also uses larger, easier-to-read text.</li>
+  </ol>
+
+<h2 id="v1-8-0">v1.8.0 <a class="codename" href="https://en.wikipedia.org/wiki/4_Vesta" target="_blank" rel="noopener">Vesta</a> <time class="meta" datetime="2026-06-22">2026-06-22</time></h2>
+  <ol>
+    <li><b>Battery Care</b>: a new power tool for supported MacBooks. While Mole is running it holds charging near 80% and resumes below 75%, so the battery spends less time sitting at a full charge. Battery Care and fan control share a single signed helper, so one admin approval is enough for both.</li>
+    <li><b>Fan control</b>: presets on Apple silicon no longer depend on a sudoers setup, and Mole now returns to Auto reliably after a failure, a relaunch, or a helper update.</li>
+    <li><b>Optimize</b>: the fixes you can see run first, covering Dock, input switching, iCloud Drive, AirDrop, Spotlight, and Notification Center, and the deeper maintenance that follows is grouped by startup, database, network and search, and system upkeep, so the outcome reads as a summary rather than a log.</li>
+    <li><b>Updates</b>: apps installed in external <code>Applications</code> folders now appear alongside everything else in the list and in update checks. Update All installs supported updates one at a time with live progress and cancels cleanly between apps, and App Store rows hide updates that require a newer macOS, holding until the version on disk has actually changed.</li>
+    <li><b>Status and the menu bar</b>: process rows appear sooner, GPU details load in the background, pinned processes stay in place, and battery health follows the capacity macOS reports. In the menu bar, network speed refreshes every second, the badge reflects the interface in use rather than a proxy placeholder, and new installs turn the runner on by default. Tapping a process also explains its origin more clearly, naming a shell or SSH session and warning when it is running from a deleted or replaced binary.</li>
+    <li><b>Clean</b>: scan sections appear the moment Clean opens, the completion totals stay steady instead of flickering at the end, and macOS wallpaper covers are kept safe from cleanup.</li>
+    <li><b>Uninstall</b>: removal details pre-scan as you hover, root-owned items remain in the list instead of quietly dropping out, and when every item is skipped Mole states it plainly rather than implying a clean sweep.</li>
+    <li><b>Analyze</b>: it opens on the whole-disk overview and draws the large treemaps first, filling in slower folder sizes in the background. App bundles now carry their real icons, long names shorten with a hover title, the smallest cells fold into Other, and very large flat folders collapse their long tail so the view never stalls.</li>
+    <li><b>Everyday tools</b>: Keep Screen On gains longer durations and keeps tasks alive with the lid closed, Clean Screen waits for the exit shortcut to be released before it resumes, a manual update refresh bypasses stale catalog caches, and skipping the intro no longer leaves Software on a single stale app cache.</li>
+    <li><b>Fit and finish</b>: keyboard focus stays visible, RunCat joins the runners, the planets track the display's refresh rate, Bluetooth battery accessories are grouped with clearer warnings, a slow Analyze scan shows a hint in a fixed spot, the app icon adapts to Dark Mode, diagnostics are easier to copy, and DMG downloads carry proper disk-image headers.</li>
+</ol>
+
+<h2 id="v1-7-1">v1.7.1 <a class="codename" href="https://en.wikipedia.org/wiki/Lyra" target="_blank" rel="noopener">Lyra</a> <time class="meta" datetime="2026-06-13">2026-06-13</time></h2>
+  <ol>
+    <li><b>Accessibility work guided by users with visual impairments</b>: this release follows feedback from Mole users with visual impairments, making more buttons, metrics, and states read correctly with VoiceOver, smoothing keyboard paths, respecting Reduce Motion, and carrying the same accessibility care to the website.</li>
+    <li><b>Status and the menu bar feel faster and steadier</b>: the dashboard opens from your last snapshot while fresh data loads, process rows appear sooner, power and temperature readings line up better, and hidden Dock mode, restart launch, right-click menus, popovers, fan presets, and background sampling all hold together more reliably.</li>
+    <li><b>Software management</b>: Electron apps can update inside Mole alongside Sparkle, Homebrew, and the App Store, website installers download once and reopen from the local package, update checks can be filtered by source, uninstall connects startup items and package receipts, and stale update rows or missing startup files no longer linger.</li>
+    <li><b>Cleanup review</b>: WeChat media caches, oversized active logs, Xcode device artifacts, orphaned system services, Sparkle leftovers, Spotlight remnants, Safari container cache, and project artifacts such as dist or build are easier to review, group, exclude, or keep out of future cleanups.</li>
+    <li><b>Privacy checks are quieter and more accurate</b>: camera and microphone use is detected as it starts, system voice services no longer trigger false microphone alerts, trusted apps can be muted, and calls you start in the frontmost app stay quiet.</li>
+    <li><b>License device management is easier</b>: device lists load faster, all devices can be released at once, and moving Macs or hitting the device limit can be handled in the app.</li>
+    <li><b>Analyze, Doctor, and Clean Screen are steadier</b>: disk analysis uses less CPU on many-core Macs, tiny treemap blocks fold into Other, Doctor reports include more system state with stricter Full Disk Access checks, and Clean Screen now exits only after a deliberate move-and-hold.</li>
+    <li><b>The planets look more natural</b>: Earth uses a remastered NASA Blue Marble texture with soft cloud cover, sunlight comes from one direction, the spin stays steady, and all planets render a little larger in their frame.</li>
+    <li><b>Fan control on Apple silicon</b>: fan presets now apply reliably on Apple silicon Macs, including M4-class machines where the system thermal controller had kept fan writes locked.</li>
+    <li><b>Menu bar and window fixes</b>: the menu bar icon is restored when Control Center drops it, the popover stays compact on shorter screens, and the window now supports the standard full-screen shortcut.</li>
+    <li><b>Clean refinements</b>: AI tool caches such as ChatGPT, Codex, and Antigravity can be cleaned again, and the review selection controls are clearer.</li>
+</ol>
+
+<h2 id="v1-6-2">v1.6.2 <a class="codename" href="https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula" target="_blank" rel="noopener">Cat's Eye</a> <time class="meta" datetime="2026-06-03">2026-06-03</time></h2>
+  <ol>
+    <li><b>Keep Screen On (new)</b>: keep your Mac awake from the menu bar, choose a duration, and let startup recovery stay silent instead of unexpectedly asking for admin permission.</li>
+    <li><b>Privacy Check (new)</b>: the menu bar popover shows camera or microphone use, with localized notifications so privacy activity is visible without opening the main window.</li>
+    <li><b>Clean Screen (new)</b>: turn the screen into a plain color so you can wipe the display and keyboard with a clean cloth, press Escape to exit, and optionally lock input.</li>
+    <li><b>Software updates cover more apps</b>: Software checks Mac App Store, Sparkle, Electron, Homebrew cask/formula, Homebrew catalog, and GitHub Releases fallback, with clearer progress and fewer false prompts from self-updating apps or locale-specific MAS states.</li>
+    <li><b>Uninstall finds far more leftovers</b>: residue detection now covers receipts, Launch Items, Group Containers, Darwin temporary caches, and more App Support traces; Clear Data keeps the app, and Full Disk Access checks for running apps, input methods, and Homebrew casks are steadier.</li>
+    <li><b>Project cleanup</b>: Mole finds large project folders such as <code>build</code>, <code>dist</code>, <code>target</code>, and <code>node_modules</code>, but leaves them unchecked for review; AI tool state stays protected, and Safari WebKitCache plus Zed stay review-only.</li>
+    <li><b>Analyze scans faster</b>: disk analysis uses faster concurrent sizing, cache reuse, and child-folder prewarming, so large folders open faster; near-equal folders read more clearly and tiny files fold into a tail summary.</li>
+    <li><b>Optimize stays inside safer boundaries</b>: VPN detection no longer depends only on <code>utun</code>; related optimizations are skipped when VPN, external audio, external displays, or Bluetooth keyboard and mouse devices are active.</li>
+    <li><b>Doctor reports are more complete</b>: diagnostics add display, external volume, network, and security context, so issue reports carry the details maintainers need.</li>
+    <li><b>Software list</b>: keeps uninstall sorting, refreshes newly installed apps with Command-R, and separates directly controlled, System Settings managed, and read-only startup items.</li>
+    <li><b>Stability and polish</b>: Status and menu bar readings now match more closely; Podman hints, completion summaries, right-click menus, hidden Dock, Command-Q, and menu bar panel ordering are steadier.</li>
+    <li><b>1.6.2 fixes</b>: switching to Software no longer hangs; uninstall expansion no longer blanks the list; background sampling, window wake-up, and microphone false positives keep tightening.</li>
+  </ol>
+  <p><b>Special thanks</b> to @_huawuque and @liujiayi1111 for testing Mole and surfacing many real-world experience issues before the stable release.</p>
+
+  <h2 id="v1-5-0">v1.5.0 <a class="codename" href="https://en.wikipedia.org/wiki/Sirius" target="_blank" rel="noopener">Sirius</a> <time class="meta" datetime="2026-05-23">2026-05-23</time></h2>
+  <ol>
+    <li><b>Menu bar runners</b>: choose a small moving companion in the menu bar, keep live metrics visible, use the right-click quick menu, and run Mole as a menu-bar-only app without a Dock icon.</li>
+    <li><b>Fan controls in Status</b>: supported Macs can switch fans between Auto, Cool, and Quiet, with live RPM and safer automatic restore behavior.</li>
+    <li><b>In-app app updates</b>: the Software tab can check and install updates from Sparkle, Homebrew Cask and Formula, and the Mac App Store, with clearer progress and explicit App Store handoff when needed.</li>
+    <li><b>Startup management</b>: review Login Items, Launch Agents, Launch Daemons, and background items from the Software tab, then disable or reveal them without hunting through System Settings.</li>
+    <li><b>Better uninstall coverage</b>: app search understands common aliases, leftovers include input methods, and WeChat Input Method plus Doubao Input Method can now be found and removed safely.</li>
+    <li><b>Safer cleanup</b>: log cleanup now accepts only real rotated logs, protects proxy and VPN app state, and only unlocks generic Application Support cache leaves when strong Chromium/Electron markers are present.</li>
+    <li><b>Analyze polish</b>: clearer disk labels, smoother drill-down breadcrumbs, and better prefetching make large folder maps easier to read.</li>
+    <li><b>License device management</b>: activation flows handle device switching and reclaim paths more clearly, so moving Mole to a new Mac needs less support back-and-forth.</li>
+    <li><b>Reliability fixes</b>: Homebrew cancellation now stops the child process, fan presets recover correctly across upgrades, Trash validation is stricter, and menu-bar-only mode guards against ghost states.</li>
+  </ol>
+
+  <h2 id="v1-4-1">v1.4.1 <a class="codename" href="https://en.wikipedia.org/wiki/Venus" target="_blank" rel="noopener">Venus</a> <time class="meta" datetime="2026-05-18">2026-05-18</time></h2>
+  <ol>
+    <li><b>Menu bar panel (new)</b>: live CPU, memory, and network speed in the menu bar, with an icon-only compact mode and a right-click quick menu.</li>
+    <li><b>Software update checks (new)</b>: Mole now watches for new versions of your apps across the App Store, Sparkle, and Electron, and flags unseen updates with a sidebar badge.</li>
+    <li><b>Status redesigned</b>: new battery and disk tiles. Battery shows health and the most power-hungry app, disk uses color to signal when space runs low, and network now draws dual up and down sparklines.</li>
+    <li><b>Clearer cleanup</b>: see the exact path and progress while scanning, results sorted by impact, a lifetime cleanup total on the completion screen, and items you can exclude for good.</li>
+    <li><b>Uninstall and Optimize</b>: sort the app list by name, size, or install date, uninstall apps on external drives, and clear leftover files scattered across the system, all with a single admin prompt.</li>
+    <li><b>Settings and window</b>: a Launch at Login toggle, native macOS fullscreen, and a wider default window that always stays within the visible screen.</li>
+    <li><b>More stable and secure</b>: new battery and high-CPU alerts in Doctor, trial and license data moved to the Keychain, 53 missing translations filled across nine languages, and background sampling pauses when the window is hidden.</li>
+    <li><b>Fixes and polish</b>: Optimize no longer restarts Bluetooth, so a connected wireless mouse or keyboard can't drop while it runs. Broken login-item cleanup now skips apps that live on an unplugged external drive. Licensing no longer shows a Keychain access prompt, and battery tile spacing and other small details are refined.</li>
+  </ol>
+
+  <h2 id="v1-3-0">v1.3.0 <a class="codename" href="https://en.wikipedia.org/wiki/Libra_(constellation)" target="_blank" rel="noopener">Libra</a> <time class="meta" datetime="2026-05-13">2026-05-13</time></h2>
+  <ol>
+    <li><b>Cleanup safety</b>: reclaimed space is now measured from the filesystem with hardlink-aware exclusive sizing. Sensitive remnants such as keychains and credentials stay visible for review instead of being silently hidden. Root-owned apps go through the recoverable Trash path.</li>
+    <li><b>Uninstall</b>: iOS wrapper apps and bilingual apps are now detected and removable. Dock ghosts, login items, and launch agents are cleaned in one pass with a single admin prompt.</li>
+    <li><b>Clean review</b>: results sorted by deletion impact (regenerable caches first, user-visible state last). Completion screen shows cumulative lifetime cleanup stats.</li>
+    <li><b>Status</b>: click any column header to sort the process list; click a row to pin it so it stays visible across refreshes.</li>
+    <li><b>Analyze</b>: narrow treemap cells now rotate labels vertically so directory names stay readable.</li>
+    <li><b>Doctor</b>: built-in diagnostic report from the Help menu covering permissions, system pressure, disk space, and operations logs.</li>
+    <li><b>Languages</b>: French and German across the Mac app and website, with localized screenshots.</li>
+  </ol>
+
+  <h2 id="v1-2-0">v1.2.0 <a class="codename" href="https://en.wikipedia.org/wiki/Polaris" target="_blank" rel="noopener">Polaris</a> <time class="meta" datetime="2026-05-11">2026-05-11</time></h2>
+  <ol>
+    <li>No more keychain password prompts on launch or passive license reads.</li>
+    <li>No more TCC dialogs when scanning without Full Disk Access.</li>
+    <li>Overlay panels no longer flash white on first render.</li>
+    <li>ESC key now reliably dismisses all overlays and cancels running operations.</li>
+    <li>Status dashboard uses less CPU.</li>
+    <li>Refined planet colors and accent palette.</li>
+  </ol>
+
+  <h2 id="v1-1-0">v1.1.0 <a class="codename" href="https://en.wikipedia.org/wiki/Halley%27s_Comet" target="_blank" rel="noopener">Halley</a> <time class="meta" datetime="2026-05-11">2026-05-11</time></h2>
+  <ol>
+    <li>System cache cleanup with admin privileges (1-3 GB typical).</li>
+    <li>Uninstall now auto-quits running apps and cleans up Dock and login items.</li>
+    <li>All 22 optimize tasks run (admin tasks via one-time auth).</li>
+    <li>50+ new app cache targets (Steam, Notion, IINA, Raycast, and more).</li>
+    <li>Homebrew cask --zap for thorough removal.</li>
+    <li>Root-owned app uninstall via Finder.</li>
+  </ol>
+
+  <h2 id="v1-0-0">v1.0.0 <a class="codename" href="https://en.wikipedia.org/wiki/Nova" target="_blank" rel="noopener">Nova</a> <time class="meta" datetime="2026-05-06">2026-05-06</time></h2>
+  <ol>
+    <li>Five tools in one app: Clean, Uninstall, Optimize, Analyze, Status.</li>
+    <li>Launch early-bird license: $9 during the launch window, 14-day refund.</li>
+    <li>Built-in license activation, two devices per key.</li>
+    <li>Conservative safety defaults: protected paths, full review before any cleanup, Trash by default for app uninstalls.</li>
+  </ol>
+
+</div>
+
+<!-- ============ Footer ============ -->
+<footer class="foot">
+  <div class="foot-top">
+    <div class="mark">
+      <p class="wm-name">Mole · 鼴</p>
+      <p class="wm-sub">Cleanup, software, and status for your Mac.</p>
+      <p class="wm-version"><a class="version-link has-update" data-version="v1.18.0 (338)" href="/releases" aria-label="See release notes">v1.18.0 (338) · Release notes</a></p>
+    </div>
+    <nav class="foot-cols" aria-label="Footer navigation">
+      <div class="foot-col">
+        <p class="foot-col-title">Product</p>
+        <a href="/mac-cleaner">Mac Cleaner</a>
+        <a href="/mac-app-uninstaller">App Uninstaller</a>
+        <a href="/mac-optimizer">Mac Optimizer</a>
+        <a href="/mac-disk-analyzer">Disk Analyzer</a>
+        <a href="/mac-system-monitor">System Monitor</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Support</p>
+        <a href="/help">Help</a>
+        <a href="/docs">Documentation</a>
+        <a href="/releases">Releases</a>
+        <a href="/blog">Blog</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Legal</p>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/refund">Refund Policy</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Resources</p>
+        <a href="/windows" data-foot-platform>For Windows</a>
+        <a href="https://github.com/tw93/Mole" target="_blank" rel="noopener">CLI Tool</a>
+        <a href="/affiliates">Affiliate Program</a>
+      </div>
+      <div class="foot-col">
+        <p class="foot-col-title">Connect</p>
+        <a href="https://x.com/HiTw93" target="_blank" rel="noopener">Twitter</a>
+        <a href="mailto:hi@mole.fit">hi@mole.fit</a>
+      </div>
+    </nav>
+  </div>
+  <div class="foot-bottom">
+    <p class="foot-official">Mole’s only official website <b>mole.fit</b> · Avoid installers from unknown sources</p>
+    <p class="ethos">The CLI stays free for terminal workflows.</p>
+  </div>
+</footer>
+
+</main>
+
+<script>
+function syncEyebrow(name) {
+  document.body.setAttribute('data-page', name);
+}
+// iOS browsers use a mix of the document root, body canvas, and theme-color for
+// the rubber-band and safe-area surfaces around the page. Match all three to
+// the footer while it is on screen, then return them to parchment everywhere
+// else. The body rule is mobile-only so desktop gutters never change color.
+var syncPageChrome = function(){};
+(function(){
+  var footer = document.querySelector('.foot');
+  var themeColor = document.querySelector('meta[name="theme-color"]');
+  if (!footer || !themeColor) return;
+  var root = document.documentElement;
+  var pageColor = getComputedStyle(document.body).backgroundColor;
+  var footerColor = getComputedStyle(footer).backgroundColor;
+
+  function applyFooterState(visible) {
+    root.classList.toggle('footer-in-view', visible);
+    document.body.classList.toggle('footer-in-view', visible);
+    themeColor.setAttribute('content', visible ? footerColor : pageColor);
+  }
+  function measureFooter() {
+    var rect = footer.getBoundingClientRect();
+    applyFooterState(rect.top < window.innerHeight && rect.bottom > 0);
+  }
+
+  syncPageChrome = measureFooter;
+  measureFooter();
+  if (typeof window.IntersectionObserver === 'function') {
+    var footerObserver = new IntersectionObserver(function(entries) {
+      // One observed element, so the LAST queued entry is the current state;
+      // entries[0] replayed the oldest transition when several coalesced.
+      applyFooterState(entries[entries.length - 1].isIntersecting);
+    });
+    footerObserver.observe(footer);
+  } else {
+    window.addEventListener('scroll', measureFooter, { passive: true });
+    window.addEventListener('resize', measureFooter);
+  }
+})();
+// While the hero's own Buy/Download pair is on screen, the nav shows only the
+// links (no doubled CTAs); the nav buttons appear once the hero CTA scrolls out.
+(function(){
+  var nav = document.querySelector('.site-nav');
+  var heroCta = document.querySelector('.hero-cta');
+  if (!nav || !heroCta) return;
+  if (typeof window.IntersectionObserver !== 'function') {
+    nav.classList.remove('hide-cta');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    // Same single-element rule as the footer observer: newest entry wins.
+    nav.classList.toggle('hide-cta', entries[entries.length - 1].isIntersecting);
+  }, { rootMargin: '-70px 0px 0px 0px' });
+  io.observe(heroCta);
+})();
+(function(){
+  var path = location.pathname.replace(/^\//, '').replace(/^\//, '').replace(/\/$/, '');
+  var legal = ['terms', 'privacy', 'refund', 'help', 'docs', 'releases', 'affiliates', 'mac-cleaner', 'mac-app-uninstaller', 'mac-optimizer', 'mac-disk-analyzer', 'mac-system-monitor', 'windows'];
+  var initial = legal.indexOf(path) !== -1 ? path : 'home';
+  syncEyebrow(initial);
+  syncLangSwitch(initial);
+})();
+function syncLangSwitch(name) {
+  if (document.getElementById('page-tested-apps')) return;
+  if (document.querySelector('.tested-guide')) return;
+  // Windows language links are rendered at build time and retain the page or article.
+  // Untranslated content uses its supported body language, never the home page.
+  // Rewriting these links here would discard that destination.
+  if (/^\/(?:(?:zh|tw|ja|ko|fr|de|it|es|pt-br|nl)\/)?windows\/./.test(location.pathname)) return;
+  // Blog language links are rendered to the matching article at build time.
+  // Keep those crawlable URLs instead of replacing them with landing-page URLs.
+  // A Traditional Chinese preference still controls the surrounding site chrome
+  // while the only Chinese article body remains accurately marked as zh-CN.
+  if (document.getElementById('page-blog') || document.getElementById('page-blogpost')) {
+    var saved = null;
+    try { saved = localStorage.getItem(MOLE_SITE_LANG_KEY); }
+    catch (error) {}
+    if (saved === 'tw') {
+      document.querySelectorAll(
+        '.nav-brand[href^="/zh/"], .nav-links a[href^="/zh/"], .foot a[href^="/zh/"]'
+      ).forEach(function(link) {
+        link.setAttribute('href', link.getAttribute('href').replace(/^\/zh(?=\/)/, '/tw'));
+      });
+    }
+    return;
+  }
+  var links = {
+    en: document.querySelector('[data-lang-en]'),
+    zh: document.querySelector('[data-lang-zh]'),
+    tw: document.querySelector('[data-lang-tw]'),
+    ja: document.querySelector('[data-lang-ja]'),
+    ko: document.querySelector('[data-lang-ko]'),
+    fr: document.querySelector('[data-lang-fr]'),
+    de: document.querySelector('[data-lang-de]'),
+    it: document.querySelector('[data-lang-it]'),
+    es: document.querySelector('[data-lang-es]'),
+    'pt-br': document.querySelector('[data-lang-pt-br]'),
+    nl: document.querySelector('[data-lang-nl]')
+  };
+  Object.keys(links).forEach(function(lang) {
+    if (!links[lang]) return;
+    if ((lang === 'pt-br' || lang === 'nl') && name !== 'home') return;
+    var p = MOLE_SITE_LANG_PREFIXES[lang];
+    links[lang].href = name === 'home' ? (p || '/') + (p ? '/' : '') : p + '/' + name;
+  });
+}
+(function(){
+  var switcher = document.querySelector('[data-lang-switch]');
+  if (!switcher) return;
+  var trigger = switcher.querySelector('[data-lang-trigger]');
+  if (!trigger) return;
+  var langLinks = Array.prototype.slice.call(switcher.querySelectorAll('.lang-menu a'));
+
+  function setOpen(open) {
+    switcher.classList.toggle('is-open', open);
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var menu = switcher.querySelector('[data-lang-menu]');
+    if (menu) menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+
+  function rememberLang(link) {
+    Object.keys(MOLE_SITE_LANG_PREFIXES).some(function(lang) {
+      if (!link.hasAttribute('data-lang-' + lang)) return false;
+      rememberSiteLang(lang);
+      return true;
+    });
+  }
+
+  trigger.addEventListener('click', function(event) {
+    event.stopPropagation();
+    setOpen(!switcher.classList.contains('is-open'));
+  });
+  trigger.addEventListener('keydown', function(event) {
+    if (event.key !== 'ArrowDown') return;
+    event.preventDefault();
+    setOpen(true);
+    if (langLinks[0]) langLinks[0].focus();
+  });
+
+  langLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      rememberLang(link);
+    });
+  });
+
+  switcher.addEventListener('focusout', function() {
+    window.setTimeout(function() {
+      if (!switcher.contains(document.activeElement)) setOpen(false);
+    }, 0);
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!switcher.contains(event.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      setOpen(false);
+      if (switcher.contains(document.activeElement)) trigger.focus();
+    }
+  });
+})();
+// The platform marker's menu opens on click as well as hover, like the language one.
+(function(){
+  var switcher = document.querySelector('[data-plat-switch]');
+  if (!switcher) return;
+  var trigger = switcher.querySelector('[data-plat-trigger]');
+  var menu = switcher.querySelector('[data-plat-menu]');
+  function setOpen(open) {
+    switcher.classList.toggle('is-open', open);
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+  trigger.addEventListener('click', function(event) {
+    event.stopPropagation();
+    setOpen(event.detail > 0 && window.matchMedia('(hover: hover)').matches
+      ? true : !switcher.classList.contains('is-open'));
+  });
+  switcher.addEventListener('mouseenter', function() {
+    if (window.matchMedia('(hover: hover)').matches) setOpen(true);
+  });
+  switcher.addEventListener('mouseleave', function() {
+    if (!menu.contains(document.activeElement)) setOpen(false);
+  });
+  switcher.addEventListener('focusout', function(event) {
+    if (!switcher.contains(event.relatedTarget)) setOpen(false);
+  });
+  document.addEventListener('click', function(event) {
+    if (!switcher.contains(event.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && switcher.classList.contains('is-open')) {
+      setOpen(false);
+      trigger.focus();
+    }
+  });
+})();
+(function(){
+  var gallery = document.querySelector('[data-gallery]');
+  if (!gallery) return;
+  var frame = gallery.querySelector('.gallery-frame');
+  var panels = Array.prototype.slice.call(gallery.querySelectorAll('.gallery-panel'));
+  var tabs = Array.prototype.slice.call(gallery.querySelectorAll('.gallery-tabs button'));
+  var title = gallery.querySelector('[data-gallery-title]');
+  var line = gallery.querySelector('[data-gallery-line]');
+  var caption = gallery.querySelector('.gallery-caption');
+  var AUTO_ADVANCE_DELAY = 6000;
+  var VIDEO_END_DELAY = 1200;
+  var index = 0;
+  var timer = null;
+  var pendingCaptionIndex = null;
+  var holdForVideo = false;
+  var requestedIndex = 0;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // A phone used to fetch every absolutely-positioned gallery screenshot on
+  // first paint: native lazy-loading treats them as near the viewport even
+  // while CSS hides them. The 6-second rotation then promoted a late screenshot
+  // to the LCP. Keep mobile user-controlled and arm each hidden panel only when
+  // it is selected; desktop keeps the existing rotation.
+  var autoAdvance = !reduceMotion && !window.matchMedia('(max-width: 880px)').matches;
+
+  function loadPanel(panel) {
+    if (!panel || panel.getAttribute('data-gallery-loaded') === 'true') {
+      return Promise.resolve();
+    }
+    if (panel._galleryLoadPromise) return panel._galleryLoadPromise;
+    var waiters = [];
+    Array.prototype.forEach.call(panel.querySelectorAll('source[data-srcset]'), function(source) {
+      source.srcset = source.getAttribute('data-srcset');
+      source.removeAttribute('data-srcset');
+    });
+    Array.prototype.forEach.call(panel.querySelectorAll('img[data-src]'), function(img) {
+      waiters.push(new Promise(function(resolve) {
+        img.addEventListener('load', resolve, { once: true });
+        img.addEventListener('error', resolve, { once: true });
+      }));
+      img.src = img.getAttribute('data-src');
+      img.removeAttribute('data-src');
+    });
+    var video = panel.querySelector('video');
+    if (video) {
+      var poster = video.getAttribute('data-poster');
+      if (poster) {
+        video.poster = poster;
+        video.removeAttribute('data-poster');
+        waiters.push(new Promise(function(resolve) {
+          var posterImage = new Image();
+          posterImage.onload = resolve;
+          posterImage.onerror = resolve;
+          posterImage.src = poster;
+        }));
+      }
+      Array.prototype.forEach.call(video.querySelectorAll('source[data-src]'), function(source) {
+        source.src = source.getAttribute('data-src');
+        source.removeAttribute('data-src');
+      });
+      video.load();
+    }
+    panel._galleryLoadPromise = Promise.all(waiters).then(function() {
+      panel.setAttribute('data-gallery-loaded', 'true');
+    });
+    return panel._galleryLoadPromise;
+  }
+
+  function renderCaption(targetIndex) {
+    var panel = panels[targetIndex];
+    if (!panel) return;
+    if (title) title.textContent = panel.dataset.title || '';
+    if (line) line.textContent = panel.dataset.line || '';
+  }
+
+  function markTabs(active) {
+    tabs.forEach(function(tab, i) {
+      var on = i === active;
+      tab.classList.toggle('is-active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+      tab.tabIndex = on ? 0 : -1;
+    });
+  }
+
+  // A click marks its tab at once, even while that screenshot is still loading, and switches
+  // with the quick dissolve; the rotation keeps the slow one.
+  function activate(next, quick) {
+    requestedIndex = next;
+    markTabs(next);
+    if (next === index) return;
+    if (quick) gallery.setAttribute('data-pace', 'quick');
+    else gallery.removeAttribute('data-pace');
+    var incoming = panels[next];
+    if (incoming && incoming.getAttribute('data-gallery-loaded') !== 'true') {
+      loadPanel(incoming).then(function() {
+        if (requestedIndex === next) activate(next, quick);
+      });
+      return;
+    }
+    var previous = index;
+    panels.forEach(function(panel) {
+      panel.classList.remove('was-active');
+    });
+    var outgoing = panels[previous];
+    if (outgoing && !reduceMotion) outgoing.classList.add('was-active');
+    index = next;
+    panels.forEach(function(panel, i) {
+      var active = i === index;
+      panel.classList.toggle('is-active', active);
+      panel.setAttribute('aria-hidden', active ? 'false' : 'true');
+      var vid = panel.querySelector('video');
+      if (vid) {
+        if (active && !reduceMotion) {
+          panel.classList.remove('show-still');
+          try { vid.currentTime = 0; } catch (e) {}
+          holdForVideo = true;
+          stop();
+          var p = vid.play();
+          if (p && p.catch) p.catch(function() {
+            holdForVideo = false;
+            panel.classList.add('show-still');
+            start();
+          });
+        } else {
+          vid.pause();
+          holdForVideo = false;
+          panel.classList.toggle('show-still', active && reduceMotion);
+        }
+      }
+    });
+    if (reduceMotion || !caption) {
+      renderCaption(index);
+      gallery.classList.remove('is-caption-out');
+    } else {
+      pendingCaptionIndex = index;
+      gallery.classList.add('is-caption-out');
+    }
+  }
+
+  panels.forEach(function(panel) {
+    function finishPanelTransition(event) {
+      if (event.propertyName === 'transform' && panel.classList.contains('was-active')) {
+        panel.classList.remove('was-active');
+      }
+    }
+    panel.addEventListener('transitionend', finishPanelTransition);
+    panel.addEventListener('transitioncancel', finishPanelTransition);
+  });
+  if (caption) {
+    function finishCaptionTransition(event) {
+      if (event.propertyName !== 'opacity' || !gallery.classList.contains('is-caption-out')) return;
+      renderCaption(pendingCaptionIndex === null ? index : pendingCaptionIndex);
+      pendingCaptionIndex = null;
+      gallery.classList.remove('is-caption-out');
+    }
+    caption.addEventListener('transitionend', finishCaptionTransition);
+    caption.addEventListener('transitioncancel', finishCaptionTransition);
+  }
+
+  function start(delay) {
+    if (!autoAdvance || timer || holdForVideo) return;
+    timer = window.setTimeout(function() {
+      timer = null;
+      activate((index + 1) % panels.length);
+      start();
+    }, typeof delay === 'number' ? delay : AUTO_ADVANCE_DELAY);
+  }
+
+  function stop() {
+    if (!timer) return;
+    window.clearTimeout(timer);
+    timer = null;
+  }
+
+  tabs.forEach(function(tab, i) {
+    // Hovering or pressing a tab starts its download, so the click rarely waits on the network.
+    tab.addEventListener('pointerenter', function() { loadPanel(panels[i]); });
+    tab.addEventListener('pointerdown', function() { loadPanel(panels[i]); });
+    tab.addEventListener('click', function() {
+      stop();
+      activate(i, true);
+      start();
+    });
+    tab.addEventListener('keydown', function(event) {
+      var next = null;
+      if (event.key === 'ArrowRight') next = (i + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === null) return;
+      event.preventDefault();
+      stop();
+      activate(next, true);
+      tabs[next].focus();
+      start();
+    });
+  });
+  if (frame) {
+    // Phones: a horizontal swipe on the screenshot moves to the next or previous panel, sliding in
+    // from the side the finger came from; the tabs and the tap halves keep working. The neighbours
+    // load only after the first touch, so the first paint still fetches one screenshot.
+    var touchX = null, touchY = null, swipedAt = 0, neighboursArmed = false;
+    frame.addEventListener('touchstart', function(event) {
+      if (event.touches.length !== 1) { touchX = null; return; }
+      touchX = event.touches[0].clientX;
+      touchY = event.touches[0].clientY;
+      if (!neighboursArmed) {
+        neighboursArmed = true;
+        loadPanel(panels[(index + 1) % panels.length]);
+        loadPanel(panels[(index - 1 + panels.length) % panels.length]);
+      }
+    }, { passive: true });
+    frame.addEventListener('touchend', function(event) {
+      if (touchX === null || !event.changedTouches.length) return;
+      var dx = event.changedTouches[0].clientX - touchX;
+      var dy = event.changedTouches[0].clientY - touchY;
+      touchX = null;
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      swipedAt = Date.now();
+      var forward = dx < 0;
+      var next = forward ? (index + 1) % panels.length : (index - 1 + panels.length) % panels.length;
+      if (!reduceMotion) {
+        gallery.setAttribute('data-swipe', forward ? 'next' : 'prev');
+        void frame.offsetWidth;
+      }
+      stop();
+      activate(next, true);
+      loadPanel(panels[(next + (forward ? 1 : -1) + panels.length) % panels.length]);
+      var strip = tabs[next] && tabs[next].parentNode;
+      if (strip && strip.scrollWidth > strip.clientWidth) {
+        var box = tabs[next].getBoundingClientRect(), stripBox = strip.getBoundingClientRect();
+        var left = strip.scrollLeft + box.left - stripBox.left - (strip.clientWidth - box.width) / 2;
+        strip.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    }, { passive: true });
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() { gallery.removeAttribute('data-swipe'); });
+    });
+    frame.addEventListener('click', function(event) {
+      if (Date.now() - swipedAt < 500) return;
+      gallery.removeAttribute('data-swipe');
+      var box = frame.getBoundingClientRect();
+      var next = event.clientX < box.left + box.width / 2
+        ? (index - 1 + panels.length) % panels.length
+        : (index + 1) % panels.length;
+      stop();
+      activate(next, true);
+      start();
+    });
+  }
+  var worldsVideo = gallery.querySelector('.gallery-video');
+  if (worldsVideo) {
+    worldsVideo.addEventListener('ended', function() {
+      var box = worldsVideo.closest('.gallery-panel-video');
+      if (box) box.classList.add('show-still'); // rest on the About art
+      holdForVideo = false;
+      start(VIDEO_END_DELAY);
+    });
+  }
+  gallery.addEventListener('mouseenter', stop);
+  gallery.addEventListener('mouseleave', start);
+  gallery.addEventListener('focusin', stop);
+  gallery.addEventListener('focusout', start);
+  // The pills never wrap. Above the phone breakpoint they sit beside the caption only when the
+  // longest caption of any panel fits next to the whole row, so switching panels never moves
+  // the layout; otherwise the gallery takes the stacked tablet layout (is-stacked).
+  var stackedQuery = window.matchMedia('(max-width: 880px)');
+  function fitTabs() {
+    if (!caption || !tabs.length) return;
+    if (stackedQuery.matches) { gallery.classList.remove('is-stacked'); return; }
+    var strip = tabs[0].parentNode;
+    var gap = parseFloat(getComputedStyle(strip).columnGap) || 0;
+    var row = tabs.reduce(function(sum, tab) { return sum + tab.getBoundingClientRect().width; }, 0) + gap * (tabs.length - 1);
+    var probe = caption.cloneNode(true);
+    probe.setAttribute('aria-hidden', 'true');
+    probe.style.cssText = 'position:absolute;left:0;top:0;width:max-content;visibility:hidden;pointer-events:none;white-space:nowrap';
+    gallery.appendChild(probe);
+    var probeTitle = probe.querySelector('.title'), probeLine = probe.querySelector('.line');
+    var widest = 0;
+    panels.forEach(function(panel) {
+      if (probeTitle) probeTitle.textContent = panel.dataset.title || '';
+      if (probeLine) probeLine.textContent = panel.dataset.line || '';
+      widest = Math.max(widest, probe.getBoundingClientRect().width);
+    });
+    gallery.removeChild(probe);
+    var columnGap = parseFloat(getComputedStyle(gallery).columnGap) || 0;
+    gallery.classList.toggle('is-stacked', widest + columnGap + row > gallery.clientWidth);
+  }
+  var fitFrame = 0;
+  function scheduleFit() {
+    if (fitFrame) return;
+    fitFrame = window.requestAnimationFrame(function() { fitFrame = 0; fitTabs(); });
+  }
+  fitTabs();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTabs);
+  window.addEventListener('resize', scheduleFit);
+  // Desktop fetches the other screenshots once the page has loaded and the browser is idle, so a
+  // click finds them ready; phones keep loading only what is selected (the LCP note above).
+  if (!stackedQuery.matches) {
+    var warmAll = function() {
+      var queue = panels.filter(function(panel) { return !panel.querySelector('video'); });
+      (function next() {
+        var panel = queue.shift();
+        if (panel) loadPanel(panel).then(next);
+      })();
+    };
+    var whenIdle = function() {
+      if (window.requestIdleCallback) window.requestIdleCallback(warmAll, { timeout: 3000 });
+      else window.setTimeout(warmAll, 1200);
+    };
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle, { once: true });
+  }
+  start();
+})();
+(function(){
+  // Build a sticky section index for the long-form Help and Docs pages from their h2
+  // headings. On a lean /seo route the page is in the tree at load, so the
+  // calls below build it immediately. On the home page it is an inert template
+  // until first navigation, so the same builder runs again on hydration; both
+  // paths are needed because only one of them fires per document.
+  function buildDocToc(pageId) {
+    var page = document.getElementById(pageId);
+    if (!page) return;
+    var body = page.querySelector('.doc-body');
+    var nav = page.querySelector('.doc-toc');
+    if (!body || !nav) return;
+    if (nav.dataset.tocReady === 'true') return;
+    var heads = Array.prototype.slice.call(body.querySelectorAll('h2'));
+    if (!heads.length) { nav.style.display = 'none'; return; }
+    nav.dataset.tocReady = 'true';
+    var prefix = pageId.replace('page-', '');
+    var links = [];
+    function setActiveLink(id) {
+      links.forEach(function(link) {
+        var active = link.getAttribute('href') === '#' + id;
+        link.classList.toggle('is-active', active);
+      });
+    }
+    heads.forEach(function(head, i) {
+      if (!head.id) head.id = prefix + '-s' + (i + 1);
+      var link = document.createElement('a');
+      link.href = '#' + head.id;
+      link.textContent = head.textContent;
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        setActiveLink(head.id);
+        head.scrollIntoView({ block: 'start', behavior: smooth ? 'smooth' : 'auto' });
+        history.replaceState(null, '', '#' + head.id);
+      });
+      nav.appendChild(link);
+      links.push(link);
+    });
+    setActiveLink(heads[0].id);
+    if (!('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries) {
+      var visible = entries.filter(function(entry) { return entry.isIntersecting; });
+      if (!visible.length) return;
+      visible.sort(function(a, b) {
+        return a.boundingClientRect.top - b.boundingClientRect.top;
+      });
+      setActiveLink(visible[0].target.id);
+    }, { rootMargin: '-12% 0px -80% 0px' });
+    heads.forEach(function(head) { observer.observe(head); });
+  }
+  buildDocToc('page-help');
+  buildDocToc('page-docs');
+
+  // Team purchase: a quantity stepper that only rewrites the static /buy/ href.
+  // No fetch, no session, nothing to expire. The metadata_* stamping still happens
+  // through the shared click handler in the head, so a bulk sale stays attributable.
+  (function initBulkPurchase() {
+    var block = document.querySelector('[data-bulk]');
+    if (!block) return;
+    var toggle = block.querySelector('[data-bulk-toggle]');
+    var panel = block.querySelector('.bulk-panel');
+    var countEl = block.querySelector('[data-bulk-count]');
+    var summary = block.querySelector('[data-bulk-summary]');
+    var link = block.querySelector('[data-bulk-link]');
+    var steps = Array.prototype.slice.call(block.querySelectorAll('[data-bulk-step]'));
+    if (!toggle || !panel || !countEl || !summary || !link) return;
+    var unit = Number(block.getAttribute('data-bulk-unit')) || 19;
+    var min = Number(block.getAttribute('data-bulk-min')) || 2;
+    var max = Number(block.getAttribute('data-bulk-max')) || 20;
+    var buy = block.getAttribute('data-bulk-buy') || link.href.split('?')[0];
+    var count = min;
+
+    // Chinese pages price the checkout in CNY for the same reason /api/checkout does:
+    // the feedback was "I assumed you don't take RMB", and seeing the local currency
+    // is what answers that on the first screen. The static link cannot carry the
+    // session's WeChat ordering, but the checkout page still offers it.
+    function checkoutURL(n) {
+      // showDiscounts=false hides the promo field. A percentage code multiplies with
+      // the quantity, so the same coupon that takes $4 off one license takes $380 off
+      // a hundred, and a 100%-off comp code would hand over the whole cart. Promos
+      // belong on the single-license button above, which is where they are advertised.
+      var url = buy + '?quantity=' + n + '&showDiscounts=false';
+      // Every key of the order shows on mole.fit/purchase, one row each, so a
+      // team buyer whose mail lands in spam still has them all.
+      url += '&redirect_url=' + encodeURIComponent('https://mole.fit/purchase');
+      // Simplified pages only (zh-CN). Traditional pages (zh-TW) show $19 and let
+      // Dodo pick the local currency, matching /api/checkout.
+      if (/^zh-(cn|hans)/i.test(document.documentElement.lang || '')) url += '&paymentCurrency=CNY';
+      return url;
+    }
+
+    // While the field has focus its own text is left alone: rewriting it mid-keystroke
+    // would fight the caret. Everything else still reflects the committed count.
+    function render(keepField) {
+      var amount = String(count * unit);
+      if (!keepField) countEl.value = String(count);
+      summary.textContent = (summary.getAttribute('data-tpl') || '')
+        .replace('{n}', String(count)).replace('{amount}', amount);
+      link.href = checkoutURL(count);
+      steps.forEach(function (step) {
+        var delta = Number(step.getAttribute('data-bulk-step'));
+        step.disabled = delta < 0 ? count <= min : count >= max;
+      });
+    }
+
+    // The line says the same thing in both states, so it never swaps text: it is
+    // the block's one explanation, and reading it should not depend on opening
+    // anything. Only its colour steps back once the panel is out.
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      panel.hidden = open;
+    });
+
+    steps.forEach(function (step) {
+      step.addEventListener('click', function () {
+        var next = count + Number(step.getAttribute('data-bulk-step'));
+        if (next < min || next > max) return;
+        count = next;
+        render();
+      });
+    });
+
+    // Typing 15 passes through 1, and 1 is below the floor; clamping on every
+    // keystroke would rewrite it to 2 and make the field impossible to use. So an
+    // in-range number takes effect live, anything else waits for blur.
+    countEl.addEventListener('input', function () {
+      var digits = countEl.value.replace(/\D+/g, '');
+      if (digits !== countEl.value) countEl.value = digits;
+      var next = Number(digits);
+      if (!digits || next < min || next > max) return;
+      count = next;
+      render(true);
+    });
+    countEl.addEventListener('blur', function () {
+      var next = Number(countEl.value.replace(/\D+/g, ''));
+      count = Math.min(max, Math.max(min, next || min));
+      render();
+    });
+    countEl.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); countEl.blur(); }
+    });
+
+    render();
+  })();
+
+  // Version dot: hide it once this exact version has been clicked (seen),
+  // remember the choice, and let a later version bump light it up again.
+  (function initVersionDot() {
+    // querySelectorAll, not querySelector: the dot now rides on two surfaces
+    // (the hero trust tag and the footer version link). With the singular form
+    // only the first one ever cleared, so clicking the hero tag left the footer
+    // dot burning for a version the visitor had already seen.
+    // The attribute is part of the selector, not an assumption: this loop reads
+    // data-version off the first match, so an element wearing only the class
+    // would hand it an empty version, and an empty version never gets written
+    // to localStorage, leaving every dot on the page permanently lit.
+    var links = document.querySelectorAll('.has-update[data-version]');
+    if (!links.length) return;
+    var v = links[0].getAttribute('data-version') || '';
+    function markSeen() {
+      for (var i = 0; i < links.length; i++) links[i].classList.add('seen');
+    }
+    try {
+      if (v && localStorage.getItem('mole-seen-version') === v) markSeen();
+    } catch (e) {}
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function() {
+        try { if (v) localStorage.setItem('mole-seen-version', v); } catch (e) {}
+        markSeen();
+      });
+    }
+  })();
+
+  // Testimonials wall: a row-major masonry. Cards fill the shortest column in
+  // order, so "show more" only APPENDS cards below and never reshuffles the ones
+  // already on screen (CSS multicolumn is column-major and would move them when
+  // the height changes). Collapsed, every column fills to ~one screen for an even
+  // bottom edge; each "show more" shows four times that height, and the button counts the
+  // cards still below the line. Without JS the CSS-columns fallback renders all
+  // cards.
+  (function initVoicesMasonry() {
+    var wall = document.querySelector('[data-quotes]');
+    var btn = document.querySelector('[data-quotes-more]');
+    if (!wall) return;
+    var started = false;
+
+    function start() {
+    if (started) return;
+    started = true;
+    var cards = Array.prototype.slice.call(wall.querySelectorAll('.quote-card'));
+    if (cards.length < 2) return;
+
+    var COL_W = 272, GAP = 12;      // must match .quotes CSS (column-width / gap)
+    var canCollapse = !!btn && cards.length > 10;
+    var expanded = !canCollapse;    // every card visible
+    var level = 0;                  // "show more" clicks since the last collapse
+    var STEP = 4;                   // each click shows four times the height
+    var more = btn ? (btn.getAttribute('data-more') || btn.textContent) : '';
+    var less = btn ? (btn.getAttribute('data-less') || more) : '';
+    var raf = 0, rzTimer = 0, lastN = 0;
+
+    function columnCount() {
+      var w = wall.clientWidth || wall.offsetWidth || COL_W;
+      return Math.max(1, Math.floor((w + GAP) / (COL_W + GAP)));
+    }
+
+    function layout() {
+      var n = columnCount();
+      lastN = n;
+      // 1-column mobile shows a shorter first screen so it never feels endless
+      var collapseAt = (n <= 1 ? 460 : 880) * Math.pow(STEP, level);
+      var i, j, k;
+      for (i = 0; i < cards.length; i++) {
+        if (cards[i].parentNode) cards[i].parentNode.removeChild(cards[i]);
+      }
+      wall.textContent = '';
+      wall.classList.add('is-masonry');
+      var cols = [], h = [];
+      for (i = 0; i < n; i++) {
+        var col = document.createElement('div');
+        col.className = 'quotes-col';
+        wall.appendChild(col);
+        cols.push(col); h.push(0);
+      }
+      // Every card is appended even while collapsed, and the overflow is hidden
+      // by maxHeight + `overflow: clip` below rather than by stopping here. The
+      // loop used to break at the collapse line, which left ~200 of the 216 cards
+      // detached from the DOM: the static HTML carried them, so a crawler that
+      // does not run JS saw them all, while a rendering one saw 17. The clip
+      // height is captured at the moment the line is first crossed, so the
+      // collapsed wall is pixel-identical to before; fill order is greedy and
+      // does not depend on how many cards come after, so the visible cards and
+      // their columns are unchanged.
+      var clipped = false;
+      var clipHeight = 0;
+      var tops = [];
+      for (j = 0; j < cards.length; j++) {
+        if (!expanded && !clipped && j > 0) {
+          var full = true;
+          for (k = 0; k < n; k++) { if (h[k] < collapseAt) { full = false; break; } }
+          if (full) {
+            clipped = true;
+            var cut = h[0];
+            for (k = 1; k < n; k++) { if (h[k] < cut) cut = h[k]; }
+            clipHeight = Math.max(0, cut - GAP);
+          }
+        }
+        var m = 0;
+        for (k = 1; k < n; k++) { if (h[k] < h[m]) m = k; }
+        cols[m].appendChild(cards[j]);
+        tops[j] = h[m];
+        h[m] += cards[j].offsetHeight + GAP;
+      }
+      // A larger step that no longer reaches the line has shown every card.
+      if (!expanded && !clipped && level > 0) expanded = true;
+      var below = 0;
+      if (clipped) {
+        for (j = 0; j < cards.length; j++) {
+          if (tops[j] + cards[j].offsetHeight > clipHeight) below++;
+        }
+      }
+      wall.classList.toggle('is-collapsed', !expanded && clipped);
+      // Columns overshoot the collapse line by whatever the last card is tall, so
+      // a collapsed wall used to end on a ragged edge with the button hanging off
+      // the tallest column. Cut every column at the shortest one and let the fade
+      // cover the seam: one flat bottom, no dead space beside the short columns.
+      if (!expanded && clipped) {
+        wall.style.maxHeight = clipHeight + 'px';
+      } else {
+        wall.style.maxHeight = '';
+      }
+      if (btn) {
+        btn.hidden = !canCollapse || (!expanded && !clipped);
+        btn.textContent = expanded ? less : more.replace('{n}', below);
+        btn.classList.toggle('is-expanded', expanded);
+        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      }
+    }
+
+    // Re-packing detaches every card, so for one committed layout the document
+    // is only as tall as the wall's own box: measured on a phone-width page,
+    // 49901px collapses to 6680px and the browser clamps the scroll offset from
+    // 46058 to 5837. Desktop Chrome restores it afterwards; a phone does not
+    // reliably, which is what read as the page yanking you back to the bottom
+    // every time you tried to scroll up through an expanded wall. Pin the wall's
+    // top across every automatic relayout, the same trick the button uses.
+    function pinnedLayout() {
+      var top = wall.getBoundingClientRect().top;
+      layout();
+      window.scrollBy(0, wall.getBoundingClientRect().top - top);
+    }
+
+    function relayout() {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(pinnedLayout);
+    }
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        if (expanded) {
+          expanded = false;
+          level = 0;
+        } else {
+          level += 1;
+        }
+        if (level > 0) {
+          // Keep the viewport where it is. Re-laying out the wall grows it below
+          // the fade, and browser scroll anchoring on the button would otherwise
+          // yank the view to the bottom. Pin the wall's top across the relayout so
+          // the user stays in place and scrolls down into the new cards themselves.
+          var top = wall.getBoundingClientRect().top;
+          layout();
+          window.scrollBy(0, wall.getBoundingClientRect().top - top);
+        } else {
+          layout();
+          var sec = wall.closest('section');
+          if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    layout();
+    // No per-image relayout. Every image in the wall reserves its own box before
+    // it loads (.quote-avatar 36px, .gh-av 24px, .video-thumb aspect-ratio 16/9),
+    // so a finished load cannot change a card's height and there is nothing to
+    // re-pack. The listeners date from before those sizes were fixed, and with
+    // 266 lazy images they had become 266 full rebuilds of 254 cards, fired one
+    // by one as the reader scrolled through the expanded wall. The window load
+    // below stays: web fonts land after the first pack and DO change heights.
+    window.addEventListener('load', relayout);
+    window.addEventListener('resize', function() {
+      if (rzTimer) clearTimeout(rzTimer);
+      rzTimer = setTimeout(function() {
+        if (columnCount() !== lastN) pinnedLayout();
+      }, 150);
+    });
+    }
+
+    // The static CSS columns are a complete fallback. Do the measured, 215-card
+    // reflow only once the wall is close enough to be seen. The immediate bounds
+    // check preserves direct #voices links and restored scroll positions.
+    if (!('IntersectionObserver' in window)) {
+      start();
+      return;
+    }
+    if (wall.getBoundingClientRect().top < window.innerHeight + 900) {
+      start();
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries) {
+      if (!entries.some(function(entry) { return entry.isIntersecting; })) return;
+      observer.disconnect();
+      start();
+    }, { rootMargin: '900px 0px' });
+    observer.observe(wall);
+  })();
+})();
+(function(){
+  // Keep the build-time counts as a complete first paint. A cached same-origin
+  // endpoint may replace them after load; a missing token or upstream outage
+  // leaves the static values untouched.
+  var stats = document.querySelectorAll('[data-community-stat]');
+  if (!stats.length || typeof window.fetch !== 'function') return;
+
+  function compactCount(value, sample) {
+    if (value === null || value === undefined || value === '') return null;
+    var number = Number(value);
+    if (!Number.isSafeInteger(number) || number < 0) return null;
+    if (number < 1000) return String(number);
+    var formatted = (number / 1000).toFixed(1).replace(/\.0$/, '');
+    var lang = (document.documentElement.lang || '').toLowerCase();
+    if (/^(de|es|fr|it|nl|pt-br)(-|$)/.test(lang)) formatted = formatted.replace('.', ',');
+    return formatted + (/k/.test(sample) ? 'k' : 'K');
+  }
+
+  function update(kind, value) {
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-community-stat="' + kind + '"]'),
+      function(element) {
+        var current = element.textContent || '';
+        var match = current.match(/\d+(?:[.,]\d+)?\s*[kK]?/);
+        if (!match) return;
+        var replacement = compactCount(value, match[0]);
+        if (replacement) element.textContent = current.replace(match[0], replacement);
+      }
+    );
+  }
+
+  function refreshStats() {
+    window.fetch('/api/community-stats', {
+      credentials: 'omit',
+      headers: { Accept: 'application/json' }
+    }).then(function(response) {
+      if (!response.ok) throw new Error('community stats unavailable');
+      return response.json();
+    }).then(function(data) {
+      update('github-stars', data.githubStars);
+      update('github-profile-stars', data.githubProfileStars);
+      update('github-profile-forks', data.githubProfileForks);
+      update('github-profile-followers', data.githubProfileFollowers);
+      update('x-followers', data.xFollowers);
+    }).catch(function() {});
+  }
+
+  // Build-time values remain visible and accurate enough for first paint. Avoid
+  // waking a cold API dependency until its contact cards are near the viewport.
+  var statSection = stats[0].closest('section') || stats[0];
+  if (!('IntersectionObserver' in window)
+      || statSection.getBoundingClientRect().top < window.innerHeight + 700) {
+    refreshStats();
+    return;
+  }
+  var statsObserver = new IntersectionObserver(function(entries) {
+    if (!entries.some(function(entry) { return entry.isIntersecting; })) return;
+    statsObserver.disconnect();
+    refreshStats();
+  }, { rootMargin: '700px 0px' });
+  statsObserver.observe(statSection);
+})();
+(function(){
+  // mailto: depends on the OS mail handler; when none is configured (or the
+  // handler is a browser with no mail setup) the click silently does nothing.
+  // Keep the default mailto behavior, but also copy the address and confirm
+  // with a toast so every Email click leaves something actionable.
+  var toast = null, hideTimer = 0;
+  function showToast(text) {
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'copy-toast';
+      toast.setAttribute('role', 'status');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = text;
+    toast.classList.add('is-visible');
+    if (hideTimer) clearTimeout(hideTimer);
+    hideTimer = setTimeout(function() {
+      toast.classList.remove('is-visible');
+    }, 2400);
+  }
+  document.addEventListener('click', function(event) {
+    var target = event.target;
+    var link = target && target.closest ? target.closest('a[href^="mailto:"]') : null;
+    if (!link) return;
+    var address = (link.getAttribute('href') || '').replace(/^mailto:/, '').split('?')[0];
+    if (!address || !(navigator.clipboard && navigator.clipboard.writeText)) return;
+    navigator.clipboard.writeText(address).then(function() {
+      showToast('Copied hi@mole.fit');
+    }).catch(function() {});
+  });
+})();
+</script>
+
+<script>
+// Site search. A buyer had to use the refund form to send a suggestion because
+// he could not find anything else on the site, and the answer was already on
+// /help. The index is a per-language JSON built by build.py from the same
+// rendered blocks the routes ship, fetched on FIRST OPEN only: no cost to a
+// visitor who never searches, and one small file for the one who does.
+(function () {
+  var overlay = document.querySelector('[data-search]');
+  if (!overlay) return;
+  var input = overlay.querySelector('[data-search-input]');
+  var list = overlay.querySelector('.search-results');
+  var note = overlay.querySelector('[data-search-note]');
+  var openers = document.querySelectorAll('[data-search-open]');
+  var hint = note ? note.textContent : '';
+  // Read off the DOM rather than interpolating into the script: one apostrophe
+  // in a future translation would end the JS string literal and take search
+  // down in that locale only, which no other locale's page could reveal.
+  var empty = overlay.getAttribute('data-search-empty') || '';
+  var indexPath = overlay.getAttribute('data-search-index') || '';
+  var records = null, loading = null, hits = [], active = -1, restoreFocus = null;
+  var SNIPPET = 130;
+
+  function fold(value) {
+    // Latin diacritics fold so "documentacion" finds "documentación"; CJK is
+    // untouched by NFD stripping, and lowercasing is safe for every script here.
+    return String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function load() {
+    if (records) return Promise.resolve(records);
+    if (loading) return loading;
+    loading = fetch(indexPath, { credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (data) {
+        records = (Array.isArray(data) ? data : []).map(function (r) {
+          return { t: r.t, b: r.b, u: r.u, g: r.g, ft: fold(r.t), fb: fold(r.b) };
+        });
+        return records;
+      })
+      .catch(function () { records = []; return records; });
+    return loading;
+  }
+
+  // Whitespace splits Latin queries into terms that must ALL match; a CJK query
+  // has no spaces and stays one term, which substring matching already handles.
+  function score(record, terms) {
+    var total = 0;
+    for (var i = 0; i < terms.length; i++) {
+      var term = terms[i];
+      var inTitle = record.ft.indexOf(term);
+      var inBody = record.fb.indexOf(term);
+      if (inTitle < 0 && inBody < 0) return 0;
+      if (inTitle === 0) total += 12;
+      else if (inTitle > 0) total += 8;
+      else total += inBody < 200 ? 3 : 2;
+    }
+    return total;
+  }
+
+  function snippet(record, terms) {
+    var at = -1;
+    for (var i = 0; i < terms.length && at < 0; i++) at = record.fb.indexOf(terms[i]);
+    if (at < 0) return record.b.slice(0, SNIPPET);
+    var start = Math.max(0, at - 40);
+    var text = record.b.slice(start, start + SNIPPET);
+    return (start > 0 ? '…' : '') + text + (start + SNIPPET < record.b.length ? '…' : '');
+  }
+
+  function setActive(next) {
+    var items = list.children;
+    if (!items.length) { active = -1; return; }
+    if (next < 0) next = items.length - 1;
+    if (next >= items.length) next = 0;
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.toggle('is-active', i === next);
+      items[i].setAttribute('aria-selected', i === next ? 'true' : 'false');
+    }
+    active = next;
+    input.setAttribute('aria-activedescendant', items[next].id);
+    items[next].scrollIntoView({ block: 'nearest' });
+  }
+
+  // GA4 enhanced measurement only catches site search that travels in the URL,
+  // and this search never navigates, so the property has recorded zero terms
+  // since launch. What a visitor searches for after arriving is the sharpest
+  // content-gap signal there is, and a query that returns nothing is the
+  // sharpest of all, so misses are reported too. Wait for a settled query,
+  // ignore IME composition states, and flush the final term before closing or
+  // following a result: one search should not become five prefixes in GA4.
+  var SEARCH_REPORT_DELAY = 2500;
+  var searchReportTimer = null;
+  var lastReportedSearch = '';
+  var composingSearch = false;
+  function clearSearchReportTimer() {
+    if (!searchReportTimer) return;
+    clearTimeout(searchReportTimer);
+    searchReportTimer = null;
+  }
+  function sendSearchReport(query) {
+    var term = String(query || '').trim().slice(0, 100);
+    if (!term || term === lastReportedSearch) return;
+    if (typeof window.gtag !== 'function') return;
+    lastReportedSearch = term;
+    try {
+      window.gtag('event', 'view_search_results', { search_term: term });
+    } catch (e) {}
+  }
+  function reportSearch(query) {
+    clearSearchReportTimer();
+    if (composingSearch) return;
+    var term = String(query || '').trim().slice(0, 100);
+    if (!term || term === lastReportedSearch) return;
+    searchReportTimer = setTimeout(function () {
+      searchReportTimer = null;
+      sendSearchReport(term);
+    }, SEARCH_REPORT_DELAY);
+  }
+  function flushSearchReport(query) {
+    clearSearchReportTimer();
+    if (!composingSearch) sendSearchReport(query);
+  }
+
+  function render(query) {
+    reportSearch(query);
+    var terms = fold(query).split(/\s+/).filter(Boolean);
+    list.textContent = '';
+    active = -1;
+    input.removeAttribute('aria-activedescendant');
+    if (!terms.length) {
+      hits = [];
+      input.setAttribute('aria-expanded', 'false');
+      note.textContent = hint;
+      note.hidden = false;
+      return;
+    }
+    hits = (records || [])
+      .map(function (r) { return { r: r, s: score(r, terms) }; })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 8);
+    input.setAttribute('aria-expanded', hits.length ? 'true' : 'false');
+    if (!hits.length) {
+      note.textContent = empty;
+      note.hidden = false;
+      return;
+    }
+    note.hidden = true;
+    hits.forEach(function (x, i) {
+      var li = document.createElement('li');
+      li.className = 'search-result';
+      li.id = 'site-search-hit-' + i;
+      li.setAttribute('role', 'option');
+      li.setAttribute('aria-selected', 'false');
+      var link = document.createElement('a');
+      link.href = x.r.u;
+      var group = document.createElement('span');
+      group.className = 'search-result-group';
+      group.textContent = x.r.g;
+      var title = document.createElement('span');
+      title.className = 'search-result-title';
+      title.textContent = x.r.t;
+      var body = document.createElement('span');
+      body.className = 'search-result-body';
+      body.textContent = snippet(x.r, terms);
+      link.appendChild(group);
+      link.appendChild(title);
+      link.appendChild(body);
+      link.addEventListener('click', function () { flushSearchReport(input.value); });
+      li.appendChild(link);
+      li.addEventListener('mouseenter', function () { setActive(i); });
+      list.appendChild(li);
+    });
+    setActive(0);
+  }
+
+  var searchInertSiblings = [];
+  function open() {
+    if (!overlay.hidden) return;
+    var downloadMenu = document.getElementById('download-menu');
+    if (downloadMenu && downloadMenu.open) {
+      var downloadTrigger = document.querySelector('[data-download-trigger][aria-expanded="true"]');
+      var downloadFocused = downloadMenu.contains(document.activeElement);
+      downloadMenu.close();
+      if (downloadFocused && downloadTrigger) downloadTrigger.focus({ preventScroll: true });
+    }
+    restoreFocus = document.activeElement;
+    overlay.hidden = false;
+    // The dialog is nested inside main; keep its ancestors accessible.
+    for (var branch = overlay; branch.parentElement; branch = branch.parentElement) {
+      Array.prototype.forEach.call(branch.parentElement.children, function (sibling) {
+        if (sibling !== branch && !sibling.inert) {
+          sibling.inert = true;
+          searchInertSiblings.push(sibling);
+        }
+      });
+      if (branch.parentElement === document.body) break;
+    }
+    document.documentElement.classList.add('search-open');
+    input.value = '';
+    render('');
+    input.focus();
+    load().then(function () { if (!overlay.hidden) render(input.value); });
+  }
+
+  function close() {
+    if (overlay.hidden) return;
+    flushSearchReport(input.value);
+    overlay.hidden = true;
+    searchInertSiblings.forEach(function (element) { element.inert = false; });
+    searchInertSiblings = [];
+    document.documentElement.classList.remove('search-open');
+    if (restoreFocus && restoreFocus.focus) restoreFocus.focus();
+    restoreFocus = null;
+  }
+
+  Array.prototype.forEach.call(openers, function (button) {
+    button.addEventListener('click', open);
+  });
+  Array.prototype.forEach.call(overlay.querySelectorAll('[data-search-dismiss]'), function (el) {
+    el.addEventListener('click', close);
+  });
+  input.addEventListener('compositionstart', function () {
+    composingSearch = true;
+    clearSearchReportTimer();
+  });
+  input.addEventListener('compositionend', function () {
+    composingSearch = false;
+    render(input.value);
+  });
+  input.addEventListener('input', function () { render(input.value); });
+
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowDown') { event.preventDefault(); setActive(active + 1); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); setActive(active - 1); }
+    else if (event.key === 'Enter') {
+      var current = list.children[active];
+      var link = current ? current.querySelector('a') : null;
+      if (link) {
+        event.preventDefault();
+        flushSearchReport(input.value);
+        window.location.href = link.href;
+      }
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !overlay.hidden) { event.preventDefault(); close(); return; }
+    if (event.key === 'Tab' && !overlay.hidden) {
+      var controls = overlay.querySelectorAll('input, button, a[href]');
+      var first = controls[0];
+      var last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+    if ((event.metaKey || event.ctrlKey) && (event.key === 'k' || event.key === 'K')) {
+      event.preventDefault();
+      overlay.hidden ? open() : close();
+      return;
+    }
+    // Bare "/" is a search shortcut only when the visitor is not already typing.
+    if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+    var el = document.activeElement;
+    var tag = el && el.tagName ? el.tagName.toLowerCase() : '';
+    if (tag === 'input' || tag === 'textarea' || tag === 'select' || (el && el.isContentEditable)) return;
+    event.preventDefault();
+    open();
+  });
+})();
+</script>
+</body>
+</html>

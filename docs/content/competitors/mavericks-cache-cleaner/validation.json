@@ -1,0 +1,20 @@
+{
+  "jobId": "research-mavericks-cache-cleaner",
+  "result": "passed-packet-integrity-drafting-remains-blocked",
+  "method": "Read-only Python json/pathlib/hashlib assertions; exit 0",
+  "checks": [
+    "research.json parses; all 11 source IDs are unique",
+    "All 6 claim records resolve source IDs and use valid evidence states",
+    "Three reused snapshots exist; supplied baseline hashes match actual bytes",
+    "Directory attribution and MCC excerpts occur verbatim in retained raw text",
+    "Selected Breathing Room original SHA-256 matches shared library and caption explicitly labels example data",
+    "Drafting blocked, publication ineligible and canonical ownership retained"
+  ],
+  "artifactSha256": {
+    "research.json": "a23bc06efa5a6102d488dac13ad9ac9059df3a5611d2bb16c5dcf906005d28fd",
+    "research.md": "1478e69f67506d33114bcf236db9602e6706fc49b253c59a62f17bf9e4488219"
+  },
+  "discoverySnapshotSha256": "23ddcfe407e2f5530a09e1c5030b54d0dc3e3d7c445256719c3ee26b0cbef1e0",
+  "notPerformed": ["native or competitor execution", "image download or competitor visual approval", "site check/build/test (no site changes)", "independent editorial review"],
+  "limitations": "Structural checks do not resolve missing Mavericks official identity/compatibility/availability evidence, alias status or screenshot rights. New official source excerpts are retained in research.json rather than raw page snapshots."
+}

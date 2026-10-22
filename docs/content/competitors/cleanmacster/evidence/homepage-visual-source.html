@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CleanMacster: the Mac cleaner that shows its work</title>
+  <meta name="description" content="CleanMacster finds system junk, app leftovers, duplicates and forgotten files on your Mac, shows you every one of them, and removes only what you approve. Pay once. macOS 14 or later.">
+  <link rel="canonical" href="https://cleanmacster.app/">
+  <meta name="theme-color" content="#f4f4f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141418" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CleanMacster">
+  <meta property="og:title" content="CleanMacster: the Mac cleaner that shows its work">
+  <meta property="og:description" content="Junk, leftovers, duplicates and forgotten files, each one listed with its size and location. You approve, CleanMacster cleans.">
+  <meta property="og:url" content="https://cleanmacster.app/">
+  <meta property="og:image" content="https://cleanmacster.app/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" as="image" href="/img/app-bg.webp">
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CleanMacster",
+    "operatingSystem": "macOS 14 or later",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://cleanmacster.app/",
+    "image": "https://cleanmacster.app/icon-512.png",
+    "description": "A Mac cleaner that lists every file it finds before removing anything."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12.5" rx="2"/><path d="M9 20h6M12 16.5V20"/></symbol>
+      <symbol id="i-orb" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8.5" opacity=".9"/><circle cx="9.5" cy="9" r="2.6" fill="#fff" opacity=".55"/></symbol>
+      <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V5.5a1.5 1.5 0 0 1 3 0V11m0-6.5a1.5 1.5 0 0 1 3 0V11m0-5a1.5 1.5 0 0 1 3 0v7.5c0 4-2.5 7-6.5 7-2.6 0-4.2-1.3-5.6-3.6L3.6 13a1.5 1.5 0 0 1 2.5-1.6L8 14"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor"><path d="M13.2 2.5 4.8 13.1c-.4.5 0 1.2.6 1.2h5.4l-1.2 7.2c-.1.6.7.9 1.1.4l8.4-10.6c.4-.5 0-1.2-.6-1.2h-5.4l1.2-7.2c.1-.6-.7-.9-1.1-.4Z"/></symbol>
+      <symbol id="i-apps" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.8 20 7.4v9.2l-8 4.6-8-4.6V7.4z"/><path d="m9.5 9.5 5 5m0-5-5 5" stroke-linecap="round"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h4.3l2 2h8.7A1.5 1.5 0 0 1 21 9.5v8A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z"/></symbol>
+      <symbol id="i-lens" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="11" cy="11" r="3.5"/><path d="m13.6 13.6 3 3" stroke-linecap="round"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 10a4.3 4.3 0 0 1-.5 8.5z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3 9 4.5-9 4.5-9-4.5z"/><path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m7 15 3.5-3.5 2.5 2.5L17 9"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a5.5 5.5 0 0 0-5.5 5.5v3.7L5 15.3c-.3.6.1 1.2.8 1.2h12.4c.7 0 1.1-.6.8-1.2l-1.5-3.1V8.5A5.5 5.5 0 0 0 12 3Zm-2.4 15a2.5 2.5 0 0 0 4.8 0z"/></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4m0 13.6v2.4M2.8 12h2.4m13.6 0h2.4M5.5 5.5l1.7 1.7m9.6 9.6 1.7 1.7m0-13-1.7 1.7m-9.6 9.6-1.7 1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 5 5.8v5.4c0 4.4 3 8 7 9.8 4-1.8 7-5.4 7-9.8V5.8z"/><path d="m9 12 2.2 2.2L15.5 10" stroke-linecap="round"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V4.5h5V7M6 7l1 13h10l1-13M10 11v5m4-5v5"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c3-6 7-10.5 14-14-1 6.5-5 11-11.5 12.5"/><path d="M5 19l4-4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 4.5c4.7 0 8.5 3.2 8.5 7.2s-3.8 7.2-8.5 7.2c-1.1 0-2.2-.2-3.2-.5L4.5 20l1.2-3.6c-1.4-1.3-2.2-2.9-2.2-4.7 0-4 3.8-7.2 8.5-7.2Z"/></symbol>
+      <symbol id="i-mail"viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+      <symbol id="i-bin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="4.5" rx="1.2"/><path d="M5 8.5V19a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19V8.5M10 12.5h4" stroke-linecap="round"/></symbol>
+      <symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="7" y="7" width="10" height="13" rx="5"/><path d="M9.5 7.5a2.5 2.5 0 0 1 5 0M12 11v9M3.5 13H7m10 0h3.5M4.5 8l2.8 1.6M19.5 8l-2.8 1.6M4.5 18.5l2.8-1.6m12.2 1.6-2.8-1.6"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0 5 5L20 12l-8.5 8.5a2.1 2.1 0 0 1-3-3L17 9l.5-.5a4 4 0 0 0-3-2Z"/><path d="M14.7 3.6a4 4 0 0 1 5.7 5.7"/></symbol>
+      <symbol id="i-power" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3.5V12M7.2 6.5a7 7 0 1 0 9.6 0"/></symbol>
+      <symbol id="i-gears" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="9" r="2.4"/><circle cx="16.5" cy="16" r="2"/><path d="M9 3.5v2m0 7v2M3.5 9h2m7 0h2M5.1 5.1l1.4 1.4m5 5 1.4 1.4m0-7.8-1.4 1.4m-5 5-1.4 1.4M16.5 11.5v1.5m0 6v1.5M12 16h1.5m6 0H21" stroke-linecap="round"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m7 7 10 10M17 7 7 17"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-6-6 6 6 6-6"/></symbol>
+      <symbol id="i-puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 8h3a2 2 0 1 1 4 0h3v3a2 2 0 1 1 0 4v4H5v-4a2 2 0 1 0 0-4z"/></symbol>
+      <symbol id="i-docs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="3" width="12" height="15" rx="2"/><path d="M16 21H6a2 2 0 0 1-2-2V7"/></symbol>
+      <symbol id="i-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="15.5" cy="9.5" r="1.6"/><path d="m3.5 17 5-5 4 4 2.5-2.5 5.5 5"/></symbol>
+      <symbol id="i-drive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="12" width="18" height="7.5" rx="2"/><path d="M5 12 7.5 5h9L19 12"/><circle cx="16.5" cy="15.8" r=".9" fill="currentColor"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></symbol>
+      <symbol id="i-film" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m10 9.5 4.5 2.5-4.5 2.5z" fill="currentColor"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3 8 4v10l-8 4-8-4V7z"/><path d="m4 7 8 4 8-4M12 11v10"/></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h1m3-5v10m4-13v16m4-11v6m4-4v2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c.4 4.6 2.9 7.1 7.5 7.5-4.6.4-7.1 2.9-7.5 7.5-.4-4.6-2.9-7.1-7.5-7.5 4.6-.4 7.1-2.9 7.5-7.5Zm6.5 11.5c.2 2.3 1.4 3.5 3.5 3.7-2.1.2-3.3 1.4-3.5 3.8-.2-2.4-1.4-3.6-3.5-3.8 2.1-.2 3.3-1.4 3.5-3.7Z"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9.5 3v3m5-3v3m-5 12v3m5-3v3M3 9.5h3m-3 5h3m12-5h3m-3 5h3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4v3.5H8"/><path d="M12 8v4.5l3 1.8"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="6.5" width="13" height="11" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1M4.5 12a7.5 7.5 0 0 1 13-5.1M17.5 3v4h-4M6.5 21v-4h4"/></symbol>
+      <symbol id="i-ban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="i-swift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7c4 3.5 8 6 11 7-3.5-3-6-6-7.5-8.5C10.5 8 14 11 17 12.5c.5-2.5-.2-5-2-7.5 3.5 2.2 5.5 6 4.5 10 1 1.3 1.2 2.6.8 3.3-.8-1-2-1.2-3.3-.8C13 19.5 7 18.5 4 14.5c3 1.5 6.5 2 9 1.2C9.5 14 6 11 4 7Z"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2.5 9.5a14 14 0 0 1 19 0M5.5 12.8a9.5 9.5 0 0 1 13 0M8.6 16a5 5 0 0 1 6.8 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></symbol>
+      <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="7" width="17" height="10" rx="2.5"/><path d="M22 10.5v3" stroke-linecap="round"/><rect x="5" y="9.5" width="9" height="5" rx="1" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-memory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 10.5v3m4-3v3m4-3v3M7 17v2.5m5-2.5v2.5m5-2.5v2.5"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6.5" y="5" width="4" height="14" rx="1.2"/><rect x="13.5" y="5" width="4" height="14" rx="1.2"/></symbol>
+      <symbol id="i-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6m2.5-8.5a7.5 7.5 0 0 1 0 11"/></symbol>
+      <symbol id="i-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="m16 9.5 5 5m0-5-5 5"/></symbol>
+      <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="/" aria-label="CleanMacster home">
+        <img src="/img/logo.webp" width="30" height="30" alt="">
+        <span>CleanMacster</span>
+      </a>
+      <div class="nav-links">
+        <a href="#tour">Tour</a>
+        <a href="#features">Features</a>
+        <a href="#safety">Safety</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/guides/">Guides</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-offer" href="#offer">Post on Reddit or X, get 100% back</a>
+        <a class="btn btn-primary" href="/download"><svg><use href="#i-apple"/></svg>Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badges">
+          <span class="pill"><span class="pill-tag">New</span>Version 1.0 for macOS 14 and later</span>
+          <span class="pill pill-good"><span class="pill-tag">Pay once</span><span><strong data-price="1">$9</strong> for 1 Mac, no subscription</span></span>
+        </div>
+        <h1 id="hero-title">The <span class="gradient-text">Mac cleaner</span> that shows its work.</h1>
+        <p class="hero-sub">Most cleaners hand you one big number and a button. <strong>CleanMacster hands you the list:</strong> every cache, leftover and duplicate, with its size and where it lives, before anything is removed.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#pricing">Get CleanMacster</a>
+          <a class="btn btn-secondary" href="#tour">Take the tour <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <p class="hero-meta">Requires macOS 14 Sonoma or later</p>
+
+        <div class="hero-stage">
+          <div class="promo-stage reveal">
+            <div class="promo-glow" aria-hidden="true"></div>
+            <figure class="promo" id="promo">
+              <!-- Video files are cached for a week: bump ?v= whenever they are replaced. -->
+              <video class="promo-video" id="promo-video" controls muted loop playsinline preload="none"
+                width="1920" height="1080" poster="/video/cleanmacster-demo-poster.jpg?v=6"
+                aria-label="CleanMacster in 40 seconds: a checkup, an app uninstall and the space map">
+                <source src="/video/cleanmacster-demo-720.mp4?v=6" type="video/mp4" media="(max-width: 720px)">
+                <source src="/video/cleanmacster-demo.webm?v=6" type="video/webm">
+                <source src="/video/cleanmacster-demo.mp4?v=6" type="video/mp4">
+              </video>
+              <div class="promo-controls" hidden>
+                <button class="promo-btn" type="button" data-promo-play aria-label="Pause video"><svg aria-hidden="true"><use href="#i-pause"/></svg></button>
+                <button class="promo-btn" type="button" data-promo-sound><svg aria-hidden="true"><use href="#i-muted"/></svg><span>Sound on</span></button>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App window -->
+    <section class="section section-app" id="app" aria-labelledby="app-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="app-title">Seven tools, <em>one window.</em></h2>
+          <p class="section-lede">Pick one to look around.</p>
+        </div>
+        <div class="hero-stage app-stage reveal">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="appwin" id="appwin" role="group" aria-label="Interactive preview of the CleanMacster window">
+            <div class="aw-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="aw-main">
+              <img class="aw-art aw-swap" id="aw-art" src="/img/art-checkup.webp" width="560" height="560" alt="Checkup illustration: a computer being wiped with a cloth">
+              <div class="aw-copy aw-swap" id="aw-copy">
+                <p class="aw-title" id="aw-title">Checkup</p>
+                <p class="aw-sub" id="aw-sub">A quick pass over the essentials: junk, tune-up and security in one go.</p>
+                <ul class="aw-feats" id="aw-feats">
+                  <li class="aw-feat"><i><svg><use href="#i-search"/></svg></i>Junk Scan</li>
+                  <li class="aw-feat"><i><svg><use href="#i-gear"/></svg></i>Tune-up</li>
+                  <li class="aw-feat"><i><svg><use href="#i-shield"/></svg></i>Security Check</li>
+                </ul>
+              </div>
+              <p class="aw-by" aria-hidden="true">by <img src="/img/logo.webp" width="20" height="20" alt=""><b>CleanMacster</b></p>
+              <button class="aw-scan" type="button" tabindex="-1" aria-hidden="true"><svg><use href="#i-search"/></svg>Scan</button>
+            </div>
+            <div class="aw-side">
+              <span class="aw-bell" aria-hidden="true"><svg><use href="#i-bell"/></svg></span>
+              <div class="aw-nav" id="aw-nav">
+                <button class="aw-item" type="button" data-module="checkup" aria-current="true"><svg><use href="#i-monitor"/></svg>Checkup</button>
+                <button class="aw-item" type="button" data-module="cleanup"><svg><use href="#i-orb"/></svg>Cleanup</button>
+                <button class="aw-item" type="button" data-module="protection"><svg><use href="#i-hand"/></svg>Protection</button>
+                <button class="aw-item" type="button" data-module="performance"><svg><use href="#i-bolt"/></svg>Performance</button>
+                <button class="aw-item" type="button" data-module="applications"><svg><use href="#i-apps"/></svg>Applications</button>
+                <button class="aw-item" type="button" data-module="clutter"><svg><use href="#i-folder"/></svg>Clutter</button>
+                <button class="aw-item" type="button" data-module="space-map"><svg><use href="#i-lens"/></svg>Space Map</button>
+              </div>
+              <div class="aw-nav aw-nav-bottom" aria-hidden="true">
+                <span class="aw-item aw-item-static"><svg><use href="#i-layers"/></svg>Tools</span>
+                <span class="aw-item aw-item-static"><svg><use href="#i-chart"/></svg>Activity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-strip" id="module-strip" aria-label="Pick a tool">
+          <button class="module-chip" type="button" data-module="checkup" aria-pressed="true"><img src="/img/art-checkup-sm.webp" width="28" height="28" alt="">Checkup</button>
+          <button class="module-chip" type="button" data-module="cleanup" aria-pressed="false"><img src="/img/art-cleanup-sm.webp" width="28" height="28" alt="">Cleanup</button>
+          <button class="module-chip" type="button" data-module="protection" aria-pressed="false"><img src="/img/art-protection-sm.webp" width="28" height="28" alt="">Protection</button>
+          <button class="module-chip" type="button" data-module="performance" aria-pressed="false"><img src="/img/art-performance-sm.webp" width="28" height="28" alt="">Performance</button>
+          <button class="module-chip" type="button" data-module="applications" aria-pressed="false"><img src="/img/art-applications-sm.webp" width="28" height="28" alt="">Applications</button>
+          <button class="module-chip" type="button" data-module="clutter" aria-pressed="false"><img src="/img/art-clutter-sm.webp" width="28" height="28" alt="">Clutter</button>
+          <button class="module-chip" type="button" data-module="space-map" aria-pressed="false"><img src="/img/art-space-map-sm.webp" width="28" height="28" alt="">Space Map</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scan demo -->
+    <section class="section" id="tour" aria-labelledby="tour-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="tour-title">Every gigabyte, <em>explained.</em></h2>
+          <p class="section-lede">A scan doesn't end with a mystery number. You see the files, where they live and why they're safe to remove.</p>
+        </div>
+
+        <div class="reveal">
+          <div class="scanbox" aria-live="polite">
+            <svg><use href="#i-search"/></svg>
+            <span class="sr-only">Example scan:</span>
+            <span class="scanbox-text" id="scan-text"></span>
+            <span class="scanbox-status" id="scan-status">Scanning…</span>
+          </div>
+          <div class="scan-understood" id="scan-where"></div>
+          <div class="scan-results" id="scan-results">
+            <div class="scan-results-head"><span>Found</span><span class="count" id="scan-count">0</span><span class="total" id="scan-total"></span></div>
+            <div class="file-grid" id="scan-grid"></div>
+          </div>
+          <div class="scan-presets" id="scan-presets" aria-label="Example scans"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / after -->
+    <section class="section" id="results" aria-labelledby="results-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="pill"><span class="pill-tag">Example</span>A 512 GB MacBook, one year in</span>
+          <h2 class="section-title" id="results-title" style="margin-top:20px">Before and after, <em>one click apart.</em></h2>
+          <p class="section-lede">Flip the switch to see what a first cleanup typically gives back on a well-used Mac.</p>
+        </div>
+        <div class="ba-wrap reveal">
+          <div class="segmented" role="group" aria-label="Show disk before or after cleaning">
+            <button type="button" data-ba="before" aria-pressed="true">Before</button>
+            <button type="button" data-ba="after" aria-pressed="false">After</button>
+          </div>
+        </div>
+        <div class="disk-card reveal" id="disk-card">
+          <div class="disk-top">
+            <span class="disk-icon"><svg><use href="#i-drive"/></svg></span>
+            <div>
+              <p class="disk-name">Macintosh HD</p>
+              <p class="disk-detail">512 GB · APFS</p>
+            </div>
+            <div class="disk-free"><b id="disk-free">41.2 GB</b><span>available</span></div>
+          </div>
+          <div class="disk-bar" id="disk-bar" aria-hidden="true">
+            <span data-seg="macos" style="--seg:#9b9ca8"></span>
+            <span data-seg="apps" style="--seg:var(--c-blue)"></span>
+            <span data-seg="docs" style="--seg:var(--c-amber)"></span>
+            <span data-seg="system" style="--seg:var(--c-violet)"></span>
+          </div>
+          <ul class="disk-legend">
+            <li style="--seg:#9b9ca8">macOS<b data-val="macos">24.0 GB</b></li>
+            <li style="--seg:var(--c-blue)">Applications<b data-val="apps">68.0 GB</b></li>
+            <li style="--seg:var(--c-amber)">Documents<b data-val="docs">186.0 GB</b></li>
+            <li style="--seg:var(--c-violet)">System Data<b data-val="system">192.8 GB</b></li>
+            <li style="--seg:var(--fill-strong)">Available<b data-val="free">41.2 GB</b></li>
+          </ul>
+          <p class="disk-note">Example numbers. What you get back depends on how you use your Mac.</p>
+        </div>
+
+        <div class="duo">
+          <article class="duo-card reveal">
+            <div class="duo-copy">
+              <span class="eyebrow"><span class="icon-tile" style="--tile:var(--c-violet)"><svg><use href="#i-monitor"/></svg></span>Checkup</span>
+              <h3 class="duo-title">Three scans. <em>One button.</em></h3>
+              <p>Checkup runs the junk scan, a tune-up and a security check side by side, then gathers everything into a single list for you to go through.</p>
+              <ul class="ticks">
+                <li>Results grouped into junk, tune-up and security</li>
+                <li>Uncheck anything you'd rather keep</li>
+                <li>Nothing is touched until you press Clean</li>
+              </ul>
+            </div>
+            <div class="duo-visual">
+              <div class="mini-window" aria-hidden="true">
+                <div class="mini-head"><span>Checkup results</span><span class="chip chip-accent">Ready</span></div>
+                <div class="mini-row"><span class="icon-tile" style="--tile:var(--c-green)"><svg><use href="#i-trash"/></svg></span><div><b>Junk</b><small>Caches, logs and leftovers</small></div><span class="val">21.4 GB</span></div>
+                <div class="mini-row"><span class="icon-tile" style="--tile:var(--c-orange)"><svg><use href="#i-bolt"/></svg></span><div><b>Tune-up</b><small>Maintenance tasks to run</small></div><span class="val">4 tasks</span></div>
+                <div class="mini-row"><span class="icon-tile" style="--tile:var(--c-blue)"><svg><use href="#i-shield"/></svg></span><div><b>Security</b><small>Known adware and background items</small></div><span class="val ok">No threats</span></div>
+                <div class="mini-foot"><span class="btn btn-secondary">Review</span><span class="btn btn-primary">Clean</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="duo-card reveal">
+            <div class="duo-copy">
+              <span class="eyebrow"><span class="icon-tile" style="--tile:var(--c-teal)"><svg><use href="#i-cpu"/></svg></span>Menu bar</span>
+              <h3 class="duo-title">Your Mac's vitals, <em>always in reach.</em></h3>
+              <p>A compact panel in the menu bar shows free space, memory pressure, processor load, network and battery, so you notice trouble without opening the app.</p>
+              <ul class="ticks">
+                <li>Free up memory or empty the Trash right from the panel</li>
+                <li>Eject external drives in one click</li>
+                <li>Optional alerts when free memory or space runs low</li>
+              </ul>
+            </div>
+            <div class="duo-visual">
+              <div style="width:100%;max-width:320px" aria-hidden="true">
+                <div class="menubar-strip"><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg><span class="mb-active"><svg><use href="#i-sparkle"/></svg></span><span>Fri 9:41</span></div>
+                <div class="mini-window" style="max-width:320px">
+                  <div class="mini-head"><span>Mac health: Good</span><span class="chip chip-accent">Free Up</span></div>
+                  <div class="vital" style="--tile:var(--c-violet)"><div class="vital-top"><b>Macintosh HD</b><span>94.6 GB available</span></div><div class="meter"><span style="--v:82%"></span></div></div>
+                  <div class="vital" style="--tile:var(--c-green)"><div class="vital-top"><b>Memory</b><span>Pressure 31%</span></div><div class="meter"><span style="--v:31%"></span></div></div>
+                  <div class="vital" style="--tile:var(--c-orange)"><div class="vital-top"><b>CPU</b><span>Load 18%</span></div>
+                    <svg class="spark" viewBox="0 0 120 30" preserveAspectRatio="none"><path d="M0 24 L10 22 L20 25 L30 18 L40 21 L50 12 L60 17 L70 15 L80 22 L90 14 L100 19 L110 16 L120 20" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg></div>
+                  <div class="vital" style="--tile:var(--c-blue)"><div class="vital-top"><b>Network</b><span>↓ 4.2 MB/s · ↑ 310 KB/s</span></div></div>
+                  <div class="vital" style="--tile:var(--c-amber)"><div class="vital-top"><b>Battery</b><span>86% · Good condition</span></div><div class="meter"><span style="--v:86%"></span></div></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbered features -->
+    <section class="section" id="features" aria-labelledby="features-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="features-title">Five scans that <em>do the heavy lifting.</em></h2>
+          <p class="section-lede">Each one says what it found and why it's there, so cleaning never feels like a leap of faith.</p>
+        </div>
+
+        <!-- 1 Junk -->
+        <article class="feature" aria-labelledby="f1-title">
+          <div class="feature-copy reveal">
+            <div class="feature-tag"><span class="feature-num">1</span><span class="eyebrow">Junk Cleanup</span></div>
+            <h3 class="feature-title" id="f1-title">Caches and logs, <em>gone for good.</em></h3>
+            <p>Apps write temporary files all day and rarely tidy up after themselves. CleanMacster finds them in your user and system folders, along with old Xcode data, unavailable simulators and full Trash bins on every drive.</p>
+            <ul class="ticks">
+              <li>Apps rebuild their caches whenever they need them</li>
+              <li>Anything that might hold personal data starts unchecked</li>
+              <li>Mail attachments are only offered when they can be downloaded again</li>
+            </ul>
+            <div class="feature-foot"><span class="chip">Part of Cleanup</span><span class="chip">Also runs in Checkup</span></div>
+          </div>
+          <div class="panel reveal" aria-hidden="true">
+            <div class="panel-head"><img src="/img/art-cleanup-sm.webp" alt="" width="44" height="44"><div><b>System Junk</b><small>6 groups found</small></div><span class="total">23.9 GB</span></div>
+            <div class="rows">
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Xcode build data</b><small>~/Library/Developer/Xcode/DerivedData</small></div><span class="row-size">11.8 GB</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>User cache files</b><small>~/Library/Caches</small></div><span class="row-size">4.2 GB</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Unavailable simulators</b><small>~/Library/Developer/CoreSimulator</small></div><span class="row-size">3.1 GB</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Trash on “Backup”</b><small>/Volumes/Backup/.Trashes</small></div><span class="row-size">2.3 GB</span></div>
+              <div class="row"><span class="check off"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Mail attachments</b><small>~/Library/Mail</small></div><span class="row-size">1.7 GB</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>System log files</b><small>/Library/Logs</small></div><span class="row-size">820 MB</span></div>
+            </div>
+            <div class="panel-foot"><span>22.2 GB selected</span><span class="btn btn-primary btn-sm">Clean</span></div>
+          </div>
+        </article>
+
+        <!-- 2 Applications -->
+        <article class="feature is-flipped" aria-labelledby="f2-title">
+          <div class="feature-copy reveal">
+            <div class="feature-tag"><span class="feature-num">2</span><span class="eyebrow">Applications</span></div>
+            <h3 class="feature-title" id="f2-title">Uninstall apps, <em>all of them.</em></h3>
+            <p>Dragging an app to the Trash leaves its preferences, caches and support files behind. CleanMacster removes the app together with everything it scattered around, and tracks down leftovers from apps you deleted long ago.</p>
+            <ul class="ticks">
+              <li>Apps and their files go to the Trash, so you can put them back</li>
+              <li>Points out apps you haven't opened in months</li>
+              <li>Checks whether newer versions of your apps are out</li>
+            </ul>
+            <div class="feature-foot"><span class="chip">Uninstaller</span><span class="chip">Updater</span><span class="chip">Leftovers</span></div>
+          </div>
+          <div class="panel reveal" aria-hidden="true">
+            <div class="panel-head"><img src="/img/art-applications-sm.webp" alt="" width="44" height="44"><div><b>Unused applications</b><small>Not opened in the last 6 months</small></div></div>
+            <div class="rows">
+              <div class="row"><span class="app-ico" style="--tile:var(--c-rose)">V</span><div class="row-main"><b>Video Converter</b><small>App 412 MB · support files 1.1 GB</small></div><span class="btn btn-secondary btn-sm">Uninstall</span></div>
+              <div class="row"><span class="app-ico" style="--tile:var(--c-blue)">P</span><div class="row-main"><b>Photo Studio Trial</b><small>App 286 MB · support files 640 MB</small></div><span class="btn btn-secondary btn-sm">Uninstall</span></div>
+              <div class="row"><span class="app-ico" style="--tile:var(--c-green)">M</span><div class="row-main"><b>Meeting Recorder</b><small>App 198 MB · support files 74 MB</small></div><span class="btn btn-secondary btn-sm">Uninstall</span></div>
+              <div class="row"><span class="app-ico" style="--tile:var(--c-amber)">G</span><div class="row-main"><b>Game Launcher</b><small>App 155 MB · support files 2.8 GB</small></div><span class="btn btn-secondary btn-sm">Uninstall</span></div>
+            </div>
+            <div class="panel-foot"><span><b style="color:var(--ink)">Leftovers</b> of 6 deleted apps are still here</span><span class="row-size">2.4 GB</span></div>
+          </div>
+        </article>
+
+        <!-- 3 Clutter -->
+        <article class="feature" aria-labelledby="f3-title">
+          <div class="feature-copy reveal">
+            <div class="feature-tag"><span class="feature-num">3</span><span class="eyebrow">Clutter</span></div>
+            <h3 class="feature-title" id="f3-title">Duplicates and <em>forgotten</em> files.</h3>
+            <p>Copies of the same video, bursts of near-identical photos and installers you opened once quietly fill a drive. Clutter finds them, groups them and suggests what can go.</p>
+            <ul class="ticks">
+              <li>Duplicates are matched by content with SHA-256, not by name</li>
+              <li>The oldest copy is kept unless you pick another</li>
+              <li>Libraries such as Photos and Music are left alone</li>
+            </ul>
+            <div class="feature-foot"><span class="chip">Duplicates</span><span class="chip">Similar images</span><span class="chip">Large &amp; old files</span><span class="chip">Downloads</span></div>
+          </div>
+          <div class="panel reveal" aria-hidden="true">
+            <div class="panel-head"><img src="/img/art-clutter-sm.webp" alt="" width="44" height="44"><div><b>Lisbon-trip.mov</b><small>3 identical copies, 1.9 GB each</small></div><span class="total">3.8 GB</span></div>
+            <div class="rows">
+              <div class="row"><span class="check off"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Movies</b><small>~/Movies/Lisbon-trip.mov</small></div><span class="badge-keep">Keep · oldest</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Downloads</b><small>~/Downloads/Lisbon-trip.mov</small></div><span class="row-size">1.9 GB</span></div>
+              <div class="row"><span class="check"><svg><use href="#i-check"/></svg></span><div class="row-main"><b>Desktop</b><small>~/Desktop/Export/Lisbon-trip.mov</small></div><span class="row-size">1.9 GB</span></div>
+            </div>
+            <div class="panel-foot" style="flex-direction:column;align-items:stretch">
+              <span><b style="color:var(--ink)">Similar images</b> · 4 shots of the same moment</span>
+              <div class="photo-strip">
+                <div class="photo" style="--p1:#ffd29d;--p2:#f28b6b;--p3:#3d6b4f"><span class="best">Keep</span></div>
+                <div class="photo dim" style="--p1:#ffcf99;--p2:#ee8a6c;--p3:#3b684d"></div>
+                <div class="photo dim" style="--p1:#fdd09a;--p2:#f0876a;--p3:#3f6e51"></div>
+                <div class="photo dim" style="--p1:#ffd49f;--p2:#f18d6d;--p3:#3c6a4e"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 Space Map -->
+        <article class="feature is-flipped" aria-labelledby="f4-title">
+          <div class="feature-copy reveal">
+            <div class="feature-tag"><span class="feature-num">4</span><span class="eyebrow">Space Map</span></div>
+            <h3 class="feature-title" id="f4-title">See where <em>your space went.</em></h3>
+            <p>A map of your drive where every bubble is a folder, sized by what it holds. Open any bubble to see what's inside and keep drilling down until you find the culprit.</p>
+            <ul class="ticks">
+              <li>Hidden files and folders are counted too</li>
+              <li>The biggest folders surface first</li>
+              <li>Select files right on the map and remove them</li>
+            </ul>
+            <div class="feature-foot"><span class="chip">Storage map</span><span class="chip">Hidden files</span><span class="chip">Biggest folders</span></div>
+          </div>
+          <div class="panel reveal" aria-hidden="true">
+            <div class="panel-head"><img src="/img/art-space-map-sm.webp" alt="" width="44" height="44"><div><b>Macintosh HD</b><small>Your home folder · 386 GB</small></div></div>
+            <div class="bubbles">
+              <div class="bubble" style="--tile:var(--c-violet);width:39%;aspect-ratio:1;left:2%;top:10%"><b>Library</b><span>142 GB</span></div>
+              <div class="bubble" style="--tile:var(--c-blue);width:30%;aspect-ratio:1;left:40%;top:2%"><b>Movies</b><span>96 GB</span></div>
+              <div class="bubble" style="--tile:var(--c-amber);width:24%;aspect-ratio:1;left:70%;top:20%"><b>Documents</b><span>58 GB</span></div>
+              <div class="bubble" style="--tile:var(--c-green);width:21%;aspect-ratio:1;left:44%;top:50%"><b>Downloads</b><span>41 GB</span></div>
+              <div class="bubble sm" style="--tile:var(--c-rose);width:16%;aspect-ratio:1;left:24%;top:64%"><b>Pictures</b><span>27 GB</span></div>
+              <div class="bubble sm" style="--tile:var(--c-orange);width:14%;aspect-ratio:1;left:68%;top:62%"><b>Music</b><span>14 GB</span></div>
+              <div class="bubble sm" style="--tile:var(--c-teal);width:11%;aspect-ratio:1;left:86%;top:76%"><b>.npm</b><span>8 GB</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 Protection -->
+        <article class="feature" aria-labelledby="f5-title">
+          <div class="feature-copy reveal">
+            <div class="feature-tag"><span class="feature-num">5</span><span class="eyebrow">Protection</span></div>
+            <h3 class="feature-title" id="f5-title">Adware out. <em>Privacy in.</em></h3>
+            <p>Checks for known adware families and unsigned programs running in the background, clears browsing traces, and shows which apps can use your camera, microphone, screen and files.</p>
+            <ul class="ticks">
+              <li>Works alongside macOS's built-in XProtect</li>
+              <li>Clears history and traces in eight browsers</li>
+              <li>Every app permission in one list</li>
+            </ul>
+            <div class="feature-foot"><span class="chip">Malware removal</span><span class="chip">Privacy</span><span class="chip">App permissions</span></div>
+          </div>
+          <div class="panel reveal" aria-hidden="true">
+            <div class="panel-head"><img src="/img/art-protection-sm.webp" alt="" width="44" height="44"><div><b>Protection</b><small>Scan finished</small></div></div>
+            <div class="status-hero"><span class="icon-tile"><svg><use href="#i-check"/></svg></span><div><b>No threats found</b><small>Launch agents, login items and apps checked</small></div></div>
+            <div class="rows">
+              <div class="row"><span class="icon-tile" style="--tile:var(--c-blue);width:36px;height:36px"><svg><use href="#i-eye"/></svg></span><div class="row-main"><b>Browsing history</b><small>Safari, Chrome, Firefox</small></div><span class="row-size">18,204 items</span></div>
+              <div class="row"><span class="icon-tile" style="--tile:var(--c-rose);width:36px;height:36px"><svg><use href="#i-cam"/></svg></span><div class="row-main"><b>Camera access</b><small>5 apps allowed</small></div><span class="btn btn-secondary btn-sm">Review</span></div>
+              <div class="row"><span class="icon-tile" style="--tile:var(--c-violet);width:36px;height:36px"><svg><use href="#i-monitor"/></svg></span><div class="row-main"><b>Screen recording</b><small>3 apps allowed</small></div><span class="btn btn-secondary btn-sm">Review</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Free up -->
+    <section class="section" aria-labelledby="freeup-title" style="padding:32px 0 48px">
+      <div class="container">
+        <div class="freeup reveal">
+          <div class="freeup-copy">
+            <span class="eyebrow"><span class="icon-tile" style="--tile:var(--c-green)"><svg><use href="#i-sparkle"/></svg></span>Cleanup + Clutter</span>
+            <h2 class="freeup-title" id="freeup-title">Free up <span class="nowrap"><span id="freeup-total">12.4</span> GB</span></h2>
+            <p>CleanMacster finds what you stopped noticing and tells you what it's worth. Tick what should go, keep the rest. Try it on this example.</p>
+            <p class="freeup-note">Example scan. Your numbers will depend on your Mac.</p>
+          </div>
+          <div class="freeup-list">
+            <div class="stack-bar" id="freeup-bar" aria-hidden="true"></div>
+            <div id="freeup-rows"></div>
+            <div class="fu-actions" aria-hidden="true"><span class="btn btn-primary">Clean selected</span><span class="btn btn-secondary">Review first</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything else -->
+    <section class="section" aria-labelledby="more-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="more-title">And <em>everything</em> else.</h2>
+          <p class="section-lede">Small tools that keep a Mac in shape, all in the same window.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-orange)"><svg><use href="#i-wrench"/></svg></span><h3>Maintenance tasks</h3><p>Free up RAM, flush the DNS cache, reindex Spotlight, speed up Mail and run the periodic maintenance scripts.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-violet)"><svg><use href="#i-power"/></svg></span><h3>Login items</h3><p>See what opens every time you log in and switch off what you don't need. The apps stay installed.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-blue)"><svg><use href="#i-gears"/></svg></span><h3>Background items</h3><p>Review the helpers and launch agents running behind the scenes, and who signed each one.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-green)"><svg><use href="#i-refresh"/></svg></span><h3>App updates</h3><p>A single list of the apps that have a newer version waiting, so you stop finding out by accident.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-teal)"><svg><use href="#i-clock"/></svg></span><h3>Time Machine snapshots</h3><p>Remove local snapshots that pile up on your drive. Your backups on the backup disk are not affected.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-indigo)"><svg><use href="#i-shield"/></svg></span><h3>Real-time protection</h3><p>While CleanMacster is open, it watches new launch agents, apps and downloads, and can notify you when something suspicious appears.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-rose)"><svg><use href="#i-ban"/></svg></span><h3>Ignore list</h3><p>Add a file or folder once and CleanMacster never scans or removes it again.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-amber)"><svg><use href="#i-eye"/></svg></span><h3>Dry run</h3><p>Curious but cautious? Turn on dry run and CleanMacster only logs what it would remove, changing nothing.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-green)"><svg><use href="#i-chart"/></svg></span><h3>Activity</h3><p>A running record of your cleanups and how much space each one gave back.</p></article>
+        </div>
+        <div class="works-with reveal">
+          <span class="label">Privacy cleanup works with</span>
+          <span class="chip">Safari</span><span class="chip">Chrome</span><span class="chip">Edge</span><span class="chip">Brave</span><span class="chip">Arc</span><span class="chip">Firefox</span><span class="chip">Opera</span><span class="chip">Vivaldi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="section" id="safety" aria-labelledby="safety-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="safety-title">Careful <em>by design.</em></h2>
+          <p class="section-lede">A cleaner should never be the reason you lose something that mattered.</p>
+        </div>
+        <div class="bento">
+          <article class="card bento-main reveal">
+            <span class="icon-tile" style="--tile:var(--c-indigo);width:48px;height:48px;border-radius:14px"><svg><use href="#i-lock"/></svg></span>
+            <h3>Your files stay <em>on your Mac.</em></h3>
+            <p>Every scan runs locally. There's no account, no cloud service and nothing to upload.</p>
+            <ul class="spec-list">
+              <li><svg><use href="#i-search"/></svg><div><b>Scanning</b><span>On your Mac, with nothing sent anywhere</span></div></li>
+              <li><svg><use href="#i-docs"/></svg><div><b>Duplicate matching</b><span>SHA-256 fingerprints, computed locally</span></div></li>
+              <li><svg><use href="#i-wifi"/></svg><div><b>Network</b><span>Only to look up newer versions of your apps</span></div></li>
+            </ul>
+          </article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-green)"><svg><use href="#i-check"/></svg></span><h3>You approve every file</h3><p>Each scan ends with a review. You see every item, where it lives and how big it is, then decide.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-rose)"><svg><use href="#i-ban"/></svg></span><h3>Key folders are off-limits</h3><p>/System, your Library, Documents and Downloads folders themselves are never removed, only files you pick inside them.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-amber)"><svg><use href="#i-trash"/></svg></span><h3>Trash first</h3><p>Apps, duplicates and clutter go to the Trash. One setting sends everything there instead of deleting.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-blue)"><svg><use href="#i-lock"/></svg></span><h3>Admin tasks are marked</h3><p>Anything that needs your administrator password says so up front, before you start.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-violet)"><svg><use href="#i-eye"/></svg></span><h3>Dry run anytime</h3><p>Log exactly what a cleanup would do without touching a single file.</p></article>
+          <article class="card reveal"><span class="icon-tile" style="--tile:var(--c-orange)"><svg><use href="#i-swift"/></svg></span><h3>Native to the Mac</h3><p>Built with Swift and SwiftUI for macOS 14 Sonoma and later. Light on memory, quick to open.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="pricing-title">Pay once. <em>Keep it.</em></h2>
+          <p class="section-lede">Every tool included. No subscription, no tiers, no upsells.</p>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-top">
+            <div><b>CleanMacster</b><small id="seat-label">Personal license for 1 Mac</small></div>
+            <span class="chip chip-good">Early-bird</span>
+          </div>
+          <div class="seats" role="group" aria-label="Number of Macs">
+            <button type="button" data-seats="1" aria-pressed="true">1 Mac</button>
+            <button type="button" data-seats="3" aria-pressed="false">3 Macs</button>
+            <button type="button" data-seats="5" aria-pressed="false">5 Macs</button>
+          </div>
+          <div class="price"><b id="price-amount">$9</b><s id="price-was" aria-label="Regular price $29">$29</s></div>
+          <p class="price-terms">One-time payment · no subscription</p>
+          <ul class="price-list">
+            <li><svg><use href="#i-check"/></svg>Pay once and keep it. No subscription.</li>
+            <li><svg><use href="#i-check"/></svg>License key delivered by email</li>
+            <li><svg><use href="#i-check"/></svg>Activate in one click</li>
+            <li><svg><use href="#i-check"/></svg>Move to a new Mac anytime with “Deactivate This Mac”</li>
+            <li><svg><use href="#i-check"/></svg>Free updates</li>
+            <li><svg><use href="#i-check"/></svg>Every feature included</li>
+          </ul>
+          <div class="price-actions">
+            <a class="btn btn-primary btn-block" id="buy-button" href="https://buy.polar.sh/polar_cl_oWsaGybpahaq1eCGk8tGUvLlzmjk80sqSw1Gg3Lu7lB">Buy CleanMacster · <span data-price-current>$9</span></a>
+            <a class="btn btn-outline btn-block" href="/download"><svg><use href="#i-apple"/></svg>Download for Mac</a>
+          </div>
+          <p class="price-foot" id="price-foot"><svg><use href="#i-lock"/></svg><span>Payments handled securely by Polar.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Post and get 100% back -->
+    <section class="section offer" id="offer" aria-labelledby="offer-title">
+      <div class="container">
+        <div class="offer-head reveal">
+          <h2 class="section-title" id="offer-title">Post on Reddit or X. <em>Get 100% back.</em></h2>
+          <p class="section-lede">Write a Reddit post, Reddit comment, tweet or reply about CleanMacster. When it hits 2,000 views, you get your whole purchase back.</p>
+          <p class="offer-scope">For CleanMacster purchases made on cleanmacster.app through Polar.</p>
+          <ul class="offer-kinds" aria-label="What counts">
+            <li class="chip">Reddit post<span>· Reddit</span></li>
+            <li class="chip">Reddit comment<span>· Reddit</span></li>
+            <li class="chip">Tweet<span>· X</span></li>
+            <li class="chip">Reply<span>· X</span></li>
+          </ul>
+        </div>
+
+        <div class="offer-body">
+          <ol class="offer-steps reveal">
+            <li>
+              <span class="offer-step-icon"><svg><use href="#i-pen"/></svg></span>
+              <div><h3>1. Write it</h3><p>Write about CleanMacster in your own words. Share how you use it, how much space it gave back, or answer someone looking for a Mac cleaner.</p></div>
+            </li>
+            <li>
+              <span class="offer-step-icon"><svg><use href="#i-chat"/></svg></span>
+              <div><h3>2. Post it</h3><p>Publish a public Reddit post, Reddit comment, tweet or reply on X. Include a link to cleanmacster.app or the full app name “CleanMacster”.</p></div>
+            </li>
+            <li>
+              <span class="offer-step-icon"><svg><use href="#i-mail"/></svg></span>
+              <div><h3>3. Send your claim</h3><p>Once it reaches 2,000 views, email us its link, a screenshot of the views, the email you bought with and your order ID.</p></div>
+            </li>
+          </ol>
+
+          <div class="offer-side reveal">
+            <div class="offer-card">
+              <p class="offer-card-kicker">2,000 views on one post, comment, tweet or reply</p>
+              <p class="offer-card-big">100% back</p>
+              <p class="offer-card-sub">Your full purchase price, refunded.</p>
+              <hr>
+              <p><b>Replying or commenting?</b> It only counts if your reply has a link to cleanmacster.app or the full app name “CleanMacster”.</p>
+              <p><b>On X,</b> impressions count as views, so the goal there is 2,000 impressions.</p>
+            </div>
+            <div class="offer-actions">
+              <a class="btn btn-primary" data-claim-link href="mailto:hello@cleanmacster.app?subject=100%25%20back%20claim"><svg><use href="#i-mail"/></svg>Email your claim</a>
+              <a class="offer-buy" href="#pricing">Get CleanMacster for Mac · from <span data-price="1">$9</span> USD</a>
+            </div>
+            <p class="offer-foot">Claims go to <a href="mailto:hello@cleanmacster.app?subject=100%25%20back%20claim" data-claim-link>hello@cleanmacster.app</a>. We review each one by hand and refund approved claims through Polar to your original payment method. You keep your CleanMacster license.</p>
+          </div>
+        </div>
+
+        <div class="offer-rules reveal">
+          <h3>A few simple rules</h3>
+          <ul>
+            <li>Every post, comment, tweet or reply must include a link to cleanmacster.app or the full app name “CleanMacster”.</li>
+            <li>Replies and comments only count if they contain that link or the full name “CleanMacster”. Just saying “this cleaner app” isn't enough.</li>
+            <li>Views must be organic. No bought views, bots, vote manipulation or paid promotion.</li>
+            <li>Follow each subreddit's rules. Posts or comments removed by moderators or as spam don't qualify.</li>
+            <li>Post as often as you like, but one post has to reach the milestone on its own. Views from different posts or platforms don't add up.</li>
+            <li>One refund per purchase.</li>
+            <li>The refund is what you actually paid after discounts. Free licenses have no cashback value.</li>
+            <li>Every claim is checked by a person, and that decision is final. We may change the program, but claims already sent are handled under the rules at the time you sent them.</li>
+            <li>You keep the rights to what you write. We may reshare it with credit, unless you tell us not to.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="faq-title">Good questions, <em>straight answers.</em></h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Which Macs does CleanMacster run on?<svg><use href="#i-plus"/></svg></summary>
+            <p>Any Mac running macOS 14 Sonoma or later.</p>
+          </details>
+          <details>
+            <summary>Is it safe to remove what it finds?<svg><use href="#i-plus"/></svg></summary>
+            <p>Every scan explains what it found before you clean. Protected system locations are never touched, items that may hold personal data start unchecked, and you can keep anything you like. If you'd rather watch first, turn on dry run and CleanMacster will only log what it would remove.</p>
+          </details>
+          <details>
+            <summary>Will it delete my files?<svg><use href="#i-plus"/></svg></summary>
+            <p>Only the ones you select. Apps, duplicates and other clutter are moved to the Trash, so you can put them back if you change your mind. There's also a setting that sends everything to the Trash instead of deleting it.</p>
+          </details>
+          <details>
+            <summary>Why does it ask for Full Disk Access?<svg><use href="#i-plus"/></svg></summary>
+            <p>macOS protects folders such as Mail and Safari data. Without Full Disk Access, CleanMacster can't measure those files or clean them. You can grant or revoke access at any time in System Settings › Privacy &amp; Security.</p>
+          </details>
+          <details>
+            <summary>Why does it sometimes ask for my administrator password?<svg><use href="#i-plus"/></svg></summary>
+            <p>A few maintenance tasks and system-wide background items can only be changed by an administrator. They're marked in the app, and you're asked before anything runs.</p>
+          </details>
+          <details>
+            <summary>Does CleanMacster collect any data?<svg><use href="#i-plus"/></svg></summary>
+            <p>No. Scans run on your Mac and there's no account. The app only goes online to check whether your apps have newer versions.</p>
+          </details>
+          <details>
+            <summary>Is it a subscription?<svg><use href="#i-plus"/></svg></summary>
+            <p>No. You pay once: <span data-price="1">$9</span> for one Mac, <span data-price="3">$19</span> for three or <span data-price="5">$29</span> for five.</p>
+          </details>
+          <details>
+            <summary>How do I get the app after buying?<svg><use href="#i-plus"/></svg></summary>
+            <p>The app is a free <a href="/download">download</a>, and scanning is free too. Cleaning needs a license: your key appears right after checkout and arrives by email. Paste it into CleanMacster to activate.</p>
+          </details>
+          <details id="refund-offer">
+            <summary>How does “Post on Reddit or X, get 100% back” work?<svg><use href="#i-plus"/></svg></summary>
+            <p>Buy CleanMacster, then write a public Reddit post, Reddit comment, tweet or reply about it that links to cleanmacster.app or names “CleanMacster”. When that one post reaches 2,000 views (impressions on X), email its link, a screenshot of the views, your order email and order ID to <a href="mailto:hello@cleanmacster.app?subject=100%25%20back%20claim">hello@cleanmacster.app</a>, and we refund the full price. You keep your license. One refund per purchase. <a href="#offer">See all the rules</a>.</p>
+          </details>
+          <details>
+            <summary>I have another question.<svg><use href="#i-plus"/></svg></summary>
+            <p>Write to <a href="mailto:hello@cleanmacster.app">hello@cleanmacster.app</a> and you'll hear back from the person who builds CleanMacster.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-art reveal" aria-hidden="true">
+          <img src="/img/art-cleanup-sm.webp" width="96" height="96" alt="" loading="lazy">
+          <img src="/img/art-clutter-sm.webp" width="96" height="96" alt="" loading="lazy">
+          <img src="/img/art-checkup-sm.webp" width="96" height="96" alt="" loading="lazy">
+          <img src="/img/art-performance-sm.webp" width="96" height="96" alt="" loading="lazy">
+          <img src="/img/art-protection-sm.webp" width="96" height="96" alt="" loading="lazy">
+        </div>
+        <h2 class="reveal" id="cta-title">Give your Mac <span class="gradient-text">room to breathe.</span></h2>
+        <p class="reveal">See how much space your first scan gives back.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-primary" href="#pricing">Get CleanMacster</a>
+          <a class="btn btn-secondary" data-send-link href="#"><svg><use href="#i-send"/></svg>Send me the link</a>
+        </div>
+        <p class="hero-meta">Requires macOS 14 Sonoma or later</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="/img/logo.webp" width="24" height="24" alt=""><span>© 2026 CleanMacster. Made for the Mac.</span></div>
+      <a class="footer-badge" href="https://launchstag.com/p/cleanmacster" target="_blank" rel="noopener">
+        <img src="https://launchstag.com/badge-light.svg" alt="Featured on Launchstag" width="198" height="62" />
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/guides/">Guides</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/affiliates/">Creators</a>
+        <a href="mailto:hello@cleanmacster.app">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7ac5335b63e24c3cbc31f2aca6031cba","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

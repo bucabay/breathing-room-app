@@ -1,0 +1,22 @@
+{
+  "jobId": "research-macsweep",
+  "result": "passed-structural-checks-with-evidence-blockers",
+  "command": "Read-only python3 JSON, SHA-256, PNG-header and claim-reference assertions; exit 0",
+  "checks": [
+    "research.json and source-excerpts.json parsed successfully",
+    "15 unique claims have source URLs, dates and intended locations; all source IDs resolve",
+    "8 product-matrix rows and both visual claim-reference lists resolve",
+    "3 source/discovery snapshot SHA-256 assertions match retained bytes; plus selected Breathing Room original SHA-256 matches",
+    "Breathing Room PNG header confirms 2940 x 3468",
+    "MacSweep original path/hash remain null; no third-party image downloaded",
+    "Both blockers and mandatory example-data caption preserved in handoff"
+  ],
+  "logCorrection": "Console summary labelled 4 hashes as source/discovery; actual assertions cover 3 source/discovery snapshots and 1 Breathing Room image. All 4 hash checks passed.",
+  "artifactSha256": {
+    "research.json": "ba5a3b39655931aaf145ba9c1b0146e1056b21667b51bf798877259e8877dcee",
+    "research.md": "f498d556256f7d6828a4355320811e58fc5a0fcde4276171e198168abde3baab",
+    "source-excerpts.json": "79ca914fe3a3e6de7136cf638cd779cc5d38170addda1b21c402278edde64abb"
+  },
+  "notPerformed": ["Native/installer execution", "Network/privacy audit", "Independent image pixel/rights review", "Effective purchase price verification", "Site build/test or browser rendering; no website edited", "Independent editorial scoring"],
+  "decision": "blocked; structural validity does not clear visual or price evidence gates"
+}

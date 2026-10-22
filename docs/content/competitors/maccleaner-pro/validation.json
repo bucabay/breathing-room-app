@@ -1,0 +1,19 @@
+{
+  "jobId": "research-maccleaner-pro",
+  "result": "research-files-validated; drafting-blocked",
+  "checks": [
+    {"check": "Python JSON/schema-reference assertions", "result": "passed", "detail": "research.json parses; 11 unique claims and 9 unique sources; all source, matrix and visual claim references resolve; each claim has URL, excerpt, date, scope and reviewer; canonical owner and blocked drafting state checked."},
+    {"check": "Baseline original SHA-256 verification", "result": "passed", "detail": "Official snapshot cb885d194540e701af9bb99582cc860381580472485114f30785911d5536cd9f and directory snapshot ee965812fed7ea272467dd7cc4ca06ca0fb97442a69cab49df19119704240f19 match bytes on disk."},
+    {"check": "Ten exact official-snapshot passage assertions", "result": "passed", "detail": "Bundle identity, macOS range, v4.0.4/update date, two-day trial, generic caches, three component names, confirmation wording and notarization statement found in retained official source text. Vendor claims only, not native tests."},
+    {"check": "Selected Breathing Room PNG", "result": "passed", "detail": "SHA-256 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a matches inventory; PNG IHDR 2940x3468 matches record. Image-capable read opened actual PNG and visible example-data labels/composer overlap were inspected."},
+    {"check": "Competitor image rights/download state", "result": "blocked-as-required", "detail": "Official image URLs identified in public HTML, but no publication permission established. Link-only record has null local original/hash; no competitor image bytes fetched or visually inspected. Does not satisfy on-page visual gate."},
+    {"check": "git diff --check -- docs/content/competitors/maccleaner-pro/", "result": "exit-0", "detail": "No tracked diff whitespace errors. Files are new/untracked, so a separate Python byte-line whitespace scan covered research.json and research.md; that scan passed with Markdown two-space breaks permitted."},
+    {"check": "git status --short limited to owned output paths", "result": "passed", "detail": "Reports new docs/content/competitors/maccleaner-pro/ folder. This check is not evidence about unrelated workers' changes."}
+  ],
+  "artifactSha256": {
+    "docs/content/competitors/maccleaner-pro/research.json": "96f41b32fc67bf85d22b9d43c4ff2e9dfa4d646535f927c99eb5b67625cd5c4c",
+    "docs/content/competitors/maccleaner-pro/research.md": "05e54860fbb8cc6f254094e0d246be77c06f0c38135c1f3fdcdf62184d3bcd74"
+  },
+  "notPerformed": ["Competitor image download/visual approval", "Native installation or cleanup testing", "Browser interaction", "Website changes/build/test", "Independent editorial or rendered review", "Queue/database mutation", "Publication/deployment"],
+  "diagnostic": "Identity, alias separation, documented capabilities, version/platform, pricing conditions and two distinct briefs retained. Critical blocker: permission for required competitor app screenshot publication is not established; terms require permission. Obtain applicable clearance or authorized policy decision, then retrieve and inspect original with hashes/provenance. No drafting authorized."
+}

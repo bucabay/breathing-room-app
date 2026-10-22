@@ -1,0 +1,436 @@
+{
+  "jobId": "research-maccare--mac-cleaner",
+  "executedAtUtc": "2026-10-21T21:34:08.711725+00:00",
+  "method": "Python JSON parsing, retained-source excerpt matching, reference/path/hash/PNG-header/visual-URL checks",
+  "results": [
+    {
+      "check": "source-exists-D1",
+      "outcome": "passed",
+      "detail": "docs/content/competitors/maccare--mac-cleaner/sources/baseline-directory.json"
+    },
+    {
+      "check": "baseline-hash-D1",
+      "outcome": "passed",
+      "detail": "3bac3e1367ac88b1ab6f04a5f1c3e3de93634b39cd1524965e8bf8ed57d8b4ff"
+    },
+    {
+      "check": "source-exists-O1",
+      "outcome": "passed",
+      "detail": "docs/content/competitors/maccare--mac-cleaner/sources/baseline-official.json"
+    },
+    {
+      "check": "baseline-hash-O1",
+      "outcome": "passed",
+      "detail": "a097e07af846798c7438fc4cb4fea928b264820ed3974c609d61a1d0d494ee0b"
+    },
+    {
+      "check": "source-exists-O2",
+      "outcome": "passed",
+      "detail": "docs/content/competitors/maccare--mac-cleaner/sources/official-visual-inspection.html"
+    },
+    {
+      "check": "source-exists-R1",
+      "outcome": "passed",
+      "detail": "docs/content/competitors/maccare--mac-cleaner/sources/release-v1.7.2.json"
+    },
+    {
+      "check": "source-exists-D2",
+      "outcome": "passed",
+      "detail": "docs/content/competitors/maccare--mac-cleaner/sources/listing-visual-inspection.json"
+    },
+    {
+      "check": "source-exists-B1",
+      "outcome": "passed",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source-exists-B2",
+      "outcome": "passed",
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "claim-source-MC01",
+      "outcome": "passed",
+      "detail": [
+        "D1",
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC01-0",
+      "outcome": "passed",
+      "detail": "Developed by\nMartin Wiederhold"
+    },
+    {
+      "check": "excerpt-MC01-1",
+      "outcome": "passed",
+      "detail": "Official Website\ngetmaccare.com"
+    },
+    {
+      "check": "claim-source-MC02",
+      "outcome": "passed",
+      "detail": [
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC02-0",
+      "outcome": "passed",
+      "detail": "macOS 14+ \u00b7 Intel + Apple Silicon"
+    },
+    {
+      "check": "claim-source-MC03",
+      "outcome": "passed",
+      "detail": [
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC03-0",
+      "outcome": "passed",
+      "detail": "Scans 8 junk categories in parallel: caches, logs, temp files, app remnants, duplicates, downloads, mail attachments, system junk."
+    },
+    {
+      "check": "excerpt-MC03-1",
+      "outcome": "passed",
+      "detail": "See exactly where your storage went with an interactive TreeMap."
+    },
+    {
+      "check": "excerpt-MC03-2",
+      "outcome": "passed",
+      "detail": "Removes apps along with all their hidden remnants: caches, preferences, containers, launch agents and logs."
+    },
+    {
+      "check": "excerpt-MC03-3",
+      "outcome": "passed",
+      "detail": "Manage Login Items, LaunchAgents and system daemons."
+    },
+    {
+      "check": "claim-source-MC04",
+      "outcome": "passed",
+      "detail": [
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC04-0",
+      "outcome": "passed",
+      "detail": "MacCare automatically detects your DAW and protects all audio-related files like plugins, sample libraries, presets and caches."
+    },
+    {
+      "check": "claim-source-MC05",
+      "outcome": "passed",
+      "detail": [
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC05-0",
+      "outcome": "passed",
+      "detail": "One scan. Two phases. Safe files are cleaned instantly. Then you review suggestions one by one with previews."
+    },
+    {
+      "check": "claim-source-MC06",
+      "outcome": "passed",
+      "detail": [
+        "O1",
+        "O2"
+      ]
+    },
+    {
+      "check": "excerpt-MC06-0",
+      "outcome": "passed",
+      "detail": "MacCare Pro\n$29\n/ year\n7-day free trial \u00b7 Cancel anytime"
+    },
+    {
+      "check": "excerpt-MC06-1",
+      "outcome": "passed",
+      "detail": "MacCare Lifetime\n$69\nonce\nOne payment. Updates forever."
+    },
+    {
+      "check": "excerpt-MC06-2",
+      "outcome": "passed",
+      "detail": "All future updates"
+    },
+    {
+      "check": "claim-source-MC07",
+      "outcome": "passed",
+      "detail": [
+        "O1",
+        "R1"
+      ]
+    },
+    {
+      "check": "excerpt-MC07-0",
+      "outcome": "passed",
+      "detail": "MacCare v1.7.2"
+    },
+    {
+      "check": "excerpt-MC07-1",
+      "outcome": "passed",
+      "detail": "https://github.com/MartinWiederhold/maccare-releases/releases/download/v1.7.2/MacCare-Installer.dmg"
+    },
+    {
+      "check": "claim-source-MC08",
+      "outcome": "passed",
+      "detail": [
+        "R1"
+      ]
+    },
+    {
+      "check": "excerpt-MC08-0",
+      "outcome": "passed",
+      "detail": "Safe Cleanup (the one-click Step 1) now has a strict guardrail: it only ever removes caches, logs and build artifacts from your own home folder."
+    },
+    {
+      "check": "excerpt-MC08-1",
+      "outcome": "passed",
+      "detail": "the Trash and Mail attachments are no longer eligible for automatic cleanup. Anything like that only appears in Step 2 (Suggestions), where you decide Keep or Delete per item."
+    },
+    {
+      "check": "claim-source-MC09",
+      "outcome": "passed",
+      "detail": [
+        "O1"
+      ]
+    },
+    {
+      "check": "excerpt-MC09-0",
+      "outcome": "passed",
+      "detail": "Every deleted file goes to Trash with full Put-Back support, never permanently removed."
+    },
+    {
+      "check": "excerpt-MC09-1",
+      "outcome": "passed",
+      "detail": "A small, always-visible disk space indicator in your menu bar. One click for a quick scan, plus your last cleanup stats at a glance."
+    },
+    {
+      "check": "claim-source-MC10",
+      "outcome": "passed",
+      "detail": [
+        "R1"
+      ]
+    },
+    {
+      "check": "excerpt-MC10-0",
+      "outcome": "passed",
+      "detail": "Universal binary (Apple Silicon + Intel). Notarized by Apple."
+    },
+    {
+      "check": "claim-source-MC11",
+      "outcome": "passed",
+      "detail": [
+        "O2"
+      ]
+    },
+    {
+      "check": "excerpt-MC11-0",
+      "outcome": "passed",
+      "detail": "MACBOOK MOCKUP"
+    },
+    {
+      "check": "excerpt-MC11-1",
+      "outcome": "passed",
+      "detail": "ANIMATED APP SCREENS (inside MacBook)"
+    },
+    {
+      "check": "claim-source-MC12",
+      "outcome": "passed",
+      "detail": [
+        "D2"
+      ]
+    },
+    {
+      "check": "excerpt-MC12-0",
+      "outcome": "passed",
+      "detail": "Cleanup view with color-coded risk classification per item (green = safe)"
+    },
+    {
+      "check": "claim-source-BR01",
+      "outcome": "passed",
+      "detail": [
+        "B1"
+      ]
+    },
+    {
+      "check": "excerpt-BR01-0",
+      "outcome": "passed",
+      "detail": "Breathing Room is a free, Apache-2.0 macOS maintenance **preview**"
+    },
+    {
+      "check": "claim-source-BR02",
+      "outcome": "passed",
+      "detail": [
+        "B1"
+      ]
+    },
+    {
+      "check": "excerpt-BR02-0",
+      "outcome": "passed",
+      "detail": "Exact native-verified actions are reviewed/authorized, then executed locally using constrained owning-tool commands or Trash moves."
+    },
+    {
+      "check": "matrix-references-macOS",
+      "outcome": "passed",
+      "detail": [
+        "MC02"
+      ]
+    },
+    {
+      "check": "matrix-references-version",
+      "outcome": "passed",
+      "detail": [
+        "MC07"
+      ]
+    },
+    {
+      "check": "matrix-references-licence",
+      "outcome": "passed",
+      "detail": [
+        "MC01"
+      ]
+    },
+    {
+      "check": "matrix-references-localHosted",
+      "outcome": "passed",
+      "detail": [
+        "MC02"
+      ]
+    },
+    {
+      "check": "matrix-references-scan",
+      "outcome": "passed",
+      "detail": [
+        "MC03"
+      ]
+    },
+    {
+      "check": "matrix-references-approval",
+      "outcome": "passed",
+      "detail": [
+        "MC05",
+        "MC08",
+        "MC09"
+      ]
+    },
+    {
+      "check": "matrix-references-audio",
+      "outcome": "passed",
+      "detail": [
+        "MC04"
+      ]
+    },
+    {
+      "check": "matrix-references-helperGrouping",
+      "outcome": "passed",
+      "detail": []
+    },
+    {
+      "check": "matrix-references-recurringGrowth",
+      "outcome": "passed",
+      "detail": [
+        "MC09"
+      ]
+    },
+    {
+      "check": "matrix-references-developerCaches",
+      "outcome": "passed",
+      "detail": [
+        "MC08"
+      ]
+    },
+    {
+      "check": "matrix-references-pricing",
+      "outcome": "passed",
+      "detail": [
+        "MC06"
+      ]
+    },
+    {
+      "check": "matrix-references-runtimeInstall",
+      "outcome": "passed",
+      "detail": [
+        "MC07",
+        "MC10"
+      ]
+    },
+    {
+      "check": "matrix-references-breathingRoom",
+      "outcome": "passed",
+      "detail": [
+        "BR01",
+        "BR02"
+      ]
+    },
+    {
+      "check": "breathing-room-original-sha256",
+      "outcome": "passed",
+      "detail": "072dd61b3a08989c981a4c512a9a1908bd39b02ea68a64f0767383f3ff88f236"
+    },
+    {
+      "check": "breathing-room-png-dimensions",
+      "outcome": "passed",
+      "detail": "2940 x 2220"
+    },
+    {
+      "check": "screenshot-url-provenance",
+      "outcome": "passed",
+      "detail": "https://img.alternativeto.net/s/618x394/avif/maccare--mac-cleaner_321715_full.png"
+    },
+    {
+      "check": "screenshot-url-provenance",
+      "outcome": "passed",
+      "detail": "https://img.alternativeto.net/s/618x394/avif/maccare--mac-cleaner_607801_full.png"
+    },
+    {
+      "check": "screenshot-url-provenance",
+      "outcome": "passed",
+      "detail": "https://img.alternativeto.net/s/618x394/avif/maccare--mac-cleaner_312071_full.png"
+    },
+    {
+      "check": "screenshot-url-provenance",
+      "outcome": "passed",
+      "detail": "https://img.alternativeto.net/s/618x394/avif/maccare--mac-cleaner_160312_full.png"
+    },
+    {
+      "check": "critical-gate-enforced",
+      "outcome": "passed",
+      "detail": "No draft permission; screenshot remains link-only"
+    },
+    {
+      "check": "no-third-party-images-downloaded",
+      "outcome": "passed",
+      "detail": "Only textual evidence retained"
+    },
+    {
+      "check": "release-version",
+      "outcome": "passed",
+      "detail": "v1.7.2 public metadata; no binary test"
+    },
+    {
+      "check": "html-mockup-not-screenshot",
+      "outcome": "passed",
+      "detail": "Homepage mockup excluded from required real-app visual"
+    }
+  ],
+  "fileSha256": {
+    "docs/content/competitors/maccare--mac-cleaner/sources/baseline-directory.json": "3bac3e1367ac88b1ab6f04a5f1c3e3de93634b39cd1524965e8bf8ed57d8b4ff",
+    "docs/content/competitors/maccare--mac-cleaner/sources/baseline-official.json": "a097e07af846798c7438fc4cb4fea928b264820ed3974c609d61a1d0d494ee0b",
+    "docs/content/competitors/maccare--mac-cleaner/sources/official-visual-inspection.html": "f99dc214be8c25923ad9d472419cf923ffe96862203c097e7be36e06d150a054",
+    "docs/content/competitors/maccare--mac-cleaner/sources/release-v1.7.2.json": "70b8e75285bffd4318408bdb3c793b98faf894749ef743164225ffbd8b6f63a2",
+    "docs/content/competitors/maccare--mac-cleaner/sources/listing-visual-inspection.json": "7397b1ead35424e7282de8e061ce2d83181478f406a343ea385da3dd2933d4c5",
+    "docs/content/capabilities.md": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+    "docs/content/screenshots.json": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+    "docs/content/competitors/maccare--mac-cleaner/research.json": "6cc71b977f089a1e5a25d6567add682917a3180fa159f61c940e2e3ec9220049",
+    "docs/content/competitors/maccare--mac-cleaner/research.md": "11f9fa19fe8a594db26629fe4d4ff7a86e4629a340007e64ee73296e8b8b29db"
+  },
+  "visualInspection": "Read actual existing Assistant plan review PNG with image-capable read tool; preview disclosure and example paths visible. No competitor image downloaded/read pending permission.",
+  "browser": "Owned tab 130 used for public listing DOM and closed. Existing tabs not inspected or changed.",
+  "notPerformed": [
+    "Native installation/execution",
+    "Cleanup or DAW tests",
+    "Screenshot rights clearance",
+    "Independent editorial review",
+    "Site build/tests: no website changes"
+  ]
+}

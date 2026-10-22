@@ -1,0 +1,91 @@
+{
+  "id": "roomy-for-mac",
+  "name": "Roomy for Mac",
+  "officialUrl": "https://roomymac.com/",
+  "officialName": "Roomy",
+  "finalUrl": "https://roomymac.com/",
+  "status": "verified",
+  "facts": [
+    {
+      "field": "officialName",
+      "value": "Roomy",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Roomy",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "coreFunction",
+      "value": "Roomy is a Mac cleaner app that finds caches, app leftovers, build data and forgotten files, tells you exactly what each one is, and removes only what you approve.",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Roomy is a Mac cleaner app that finds caches, app leftovers, build data and forgotten files, tells you exactly what each one is, and removes only what you approve.",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "supportedPlatforms",
+      "value": "macOS 14 Sonoma+; Apple silicon and Intel",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "macOS 14 Sonoma or later \u00b7 Apple silicon and Intel",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "pricing",
+      "value": "Free scans and 500 MB cleanup; Pro for 1 Mac; prices US dollars, tax included",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "Scan everything and clean up to 500 MB for free. Pro removes the limit on 1 Mac. Prices in US dollars, tax included.",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "pricing",
+      "value": "$4.99/month",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "$4.99/month. Renews automatically until you cancel.",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "pricing",
+      "value": "$29.99/year",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "$29.99/year. Renews automatically until you cancel.",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "pricing",
+      "value": "$59.99 one-time",
+      "sourceUrl": "https://roomymac.com/",
+      "excerpt": "One-time payment of $59.99. No subscription, never renews.",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "evidenceClass": "officially-documented"
+    }
+  ],
+  "aliases": [],
+  "blockers": [],
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/roomy-for-mac/about/",
+    "retrievedAt": "2026-10-21T19:05:44.499Z",
+    "excerpt": "Official Website\nroomymac.com",
+    "rawCapture": "docs/content/.runtime/verification-2/roomy-for-mac-directory.json",
+    "sha256": "f32ce8f5ef8245b50468e56a17e64d9b7d4725939fa709e10cf0f4764b79f151",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16"
+  },
+  "sources": [
+    {
+      "sourceUrl": "https://roomymac.com/",
+      "finalUrl": "https://roomymac.com/",
+      "retrievedAt": "2026-10-21T19:09:38.607606+00:00",
+      "rawCapture": "docs/content/.runtime/verification-2/roomy-for-mac-official.json",
+      "sha256": "5090a6510a28490b3deecdf22db38f91057c3406d9fa174f9302b08cdc58f18f",
+      "error": null
+    }
+  ],
+  "unverifiedFields": [
+    "license",
+    "availability"
+  ],
+  "scope": "Baseline documentary verification only; vendor safety/performance wording is attributed, not tested. Unlisted capabilities, prices, platforms and absence claims are unverified."
+}

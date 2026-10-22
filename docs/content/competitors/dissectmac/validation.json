@@ -1,0 +1,21 @@
+{
+  "jobId": "research-dissectmac",
+  "checkedOn": "2026-10-21",
+  "outcome": "research-files-valid; drafting-blocked",
+  "checks": [
+    {"check":"Python JSON parse, unique claim IDs, source references and matrix references","result":"passed","detail":"13 unique claims; all source IDs and matrix claim IDs resolve; every claim has an excerpt and conditions."},
+    {"check":"Python SHA-256 against retained source/discovery/preview bytes","result":"passed","detail":"6 hashes matched: official snapshot, capabilities register, screenshot library, discovery edge, directory snapshot and selected Space preview."},
+    {"check":"Python gate assertions","result":"passed","detail":"status blocked; draftingAllowed false; canonicalOwnerId dissectmac; B1 present; both competitor image records link-only with null local paths/hashes."},
+    {"check":"Official terms, pricing, privacy content reads","result":"completed","detail":"WebFetch retrieved substantive licence, sale/tax and telemetry text. This is documentation verification, not runtime testing."},
+    {"check":"Official image metadata in owned browser tab 97","result":"completed","detail":"Official treemap and uninstaller asset URLs and natural dimensions read at 2026-10-21T20:32:13.039Z. Only owned tab closed successfully. No existing tab contents inspected."},
+    {"check":"Plain Python homepage request for missing metadata","result":"failed-access","detail":"HTTP 403. No credential/cookie extraction or bypass attempted; authorized browser separately loaded public page."},
+    {"check":"Website build/test and native app testing","result":"not-run","detail":"Research-only owned files; website unchanged. No app install, scan or cleanup authorized."},
+    {"check":"Competitor image rights and independent visual review","result":"blocked","detail":"Public image URLs do not establish redistribution permission. No image download or publication approval."}
+  ],
+  "artifactSha256": {
+    "research.json":"1a6a53d292f26633035dbbcfd89022a10efb01da1aa5edd37e628c3343f3202d",
+    "research.md":"26444f95fae331bf6a4ac7e5db2880a465ee95faa374ea0faee2300042a265d5"
+  },
+  "publicationScore": null,
+  "independentReview": "pending"
+}

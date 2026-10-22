@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cache-out",
+  "productId": "cache-out",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "identity": {
+    "officialName": "Cache Out",
+    "homepage": "https://cacheout.app/",
+    "developer": "Jim Mitchell",
+    "canonicalOwnerId": "cache-out",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip as an alias: official identity is Cache Out by Jim Mitchell. No PowerMyMac relationship appears in the checked official sources; do not merge unrelated products on name similarity.",
+    "repository": null,
+    "repositoryStatus": "not verified; no repository linked from checked homepage, support, terms or privacy pages",
+    "classification": "adjacent",
+    "fit": "Mac browser-data cleanup overlaps storage maintenance, but is not documented as a general disk explorer, process monitor or developer-cache manager.",
+    "skipDecision": "Do not skip as irrelevant or dead: current official site offers version 1.5.3. Hold drafting for the blockers below, not for an alias or platform exclusion."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/cache-out/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:36.986Z",
+    "method": "Reused batch-1 verification and competitors.json; no directory refetch.",
+    "snapshotPath": "docs/content/.runtime/verification-1/cache-out-directory.json",
+    "sha256": "bfb078a18888fdb3ab743f8f1404684b5918e005f1ce0ad4ea2dd0d042a2466b",
+    "observedOfficialDestination": "https://cacheout.app/",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5", "retrievedAtUtc": "2026-10-21T18:36:40.113Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=4", "retrievedAtUtc": "2026-10-21T18:37:13.603Z"}
+    ],
+    "limitations": "Discovery edges reused from manifest; raw edge-page hashes not independently recovered. Directory is not feature proof."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Cache Out", "title": "Official homepage (reused baseline)",
+      "url": "https://cacheout.app", "finalUrl": "https://cacheout.app",
+      "retrievedAtUtc": "2026-10-21T19:08:10.339887+00:00", "updatedOn": null,
+      "scope": "Advertised version 1.5.3, macOS 26.2+, Apple Silicon and Intel",
+      "snapshotPath": "docs/content/.runtime/verification-1/cache-out-official.json",
+      "sha256": "bdcd31ce8cf84f986f8952f81304eb1a615b15103e4423a4c975dcf931c8fdcf",
+      "excerpt": "Free · macOS 26.2+ · Apple-notarized · v1.5.3; Requires macOS 26.2 or later · Apple Silicon & Intel"
+    },
+    {
+      "id": "S2", "publisher": "Jim Mitchell / Cache Out", "title": "Terms of Service",
+      "url": "https://cacheout.app/terms", "finalUrl": "https://cacheout.app/terms",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "updatedOn": "2026-06-29",
+      "scope": "App and website terms; excerpt retained here from WebFetch, precise request time not exposed",
+      "excerpt": "Cache Out is provided free of charge for both personal and commercial use. We grant you a personal, non-exclusive, non-transferable, revocable license to install and run the app on Macs you own or control. ... All rights not expressly granted are reserved. ... Deleting this data is permanent and cannot be undone. ... Jim Mitchell, the developer of Cache Out"
+    },
+    {
+      "id": "S3", "publisher": "Cache Out", "title": "Changelog",
+      "url": "https://cacheout.app/changelog", "finalUrl": "https://cacheout.app/changelog",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "updatedOn": "2026-10-20",
+      "scope": "Latest listed 1.5.3; historical entries 1.3.0 and 1.5.0; precise WebFetch time not exposed",
+      "excerpt": "Version 1.5.3 Latest October 20, 2026 ... Clearing history in Chrome-based browsers now also removes the encrypted copy of session data, so recently closed tabs and windows can no longer be restored. ... Version 1.3.0 June 10, 2026 ... New Preview before cleaning option: see exactly which files and download-history rows would be removed, and confirm, before anything is deleted. ... New Move to Trash instead of deleting option, so cleared files are recoverable. ... Version 1.5.0 ... New Reopen browsers after cleaning preference to relaunch the browsers Cache Out quit."
+    },
+    {
+      "id": "S4", "publisher": "Jim Mitchell / Cache Out", "title": "Privacy Policy",
+      "url": "https://cacheout.app/privacy", "finalUrl": "https://cacheout.app/privacy",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "updatedOn": "2026-05-28",
+      "scope": "Vendor policy, not network audit; precise WebFetch time not exposed",
+      "excerpt": "Cache Out is operated by Jim Mitchell, an independent developer based in California, USA. ... It has no servers, no user accounts, and no analytics. ... This check retrieves a small update feed from our update server. Like any web request, that connection involves your device's IP address and may include basic technical details (such as the app and macOS version) ... Automatic update checks can be disabled in the app."
+    },
+    {
+      "id": "S5", "publisher": "Cache Out", "title": "Support & FAQ",
+      "url": "https://cacheout.app/support", "finalUrl": "https://cacheout.app/support",
+      "retrievedAtUtc": "2026-10-21T20:10:20.957Z", "updatedOn": null,
+      "scope": "HTTP 200 public HTML, visible FAQ text; no script execution or account access",
+      "excerpt": "For each browser you can independently clear five kinds of data: cache, history, downloads (the download list, not your downloaded files), favicons, and cookies. ... It clears the browser's record of what you downloaded — your actual files in the Downloads folder are never touched. ... Clearing cookies will sign you out of websites ... Cache Out requires macOS 26.2 or later and runs natively on both Apple Silicon and Intel Macs."
+    },
+    {
+      "id": "S6", "publisher": "Cache Out", "title": "Homepage image/link metadata",
+      "url": "https://cacheout.app/", "finalUrl": "https://cacheout.app/",
+      "retrievedAtUtc": "2026-10-21T20:10:20.946Z", "updatedOn": null,
+      "scope": "HTTP 200 HTML fetched only to resolve missing visual provenance and repository links; existing homepage facts reused from S1",
+      "excerpt": "img class=hero-shot src=/assets/cacheout-window-140.webp width=1224 height=1125 alt=Cache Out app window showing browsers with cleanup options",
+      "repositoryLinksFound": []
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room programme", "title": "Current capability evidence register",
+      "url": "https://breathing-room.chatic.ai/", "releaseUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1",
+      "path": "docs/content/capabilities.md", "checkedOn": "2026-10-21",
+      "scope": "Reused same-day source and published-offer verification; no new runtime test",
+      "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised. ... Apple Development signed, not Developer ID signed or notarized ... Python 3.10+ ... AI Care ... $5 USD/month, $50 USD/year ... inventory, observation and mutations are implemented on the Mac ... assistant sends the question, conversation history and subsequent tool outputs"
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"Cache Out is Jim Mitchell's Mac browser-data cleaner at cacheout.app.","sources":["S1","S2","S4"],"passage":"Cache Out is operated by Jim Mitchell","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official documentation","scope":"identity","location":"lead and identity","reviewer":"research-cache-out worker"},
+    {"id":"C2","wording":"The site offers 1.5.3 for macOS 26.2 or later, Apple Silicon and Intel.","sources":["S1","S3","S5"],"passage":"Version 1.5.3 Latest October 20, 2026; macOS 26.2 or later","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published offer, not installed test","scope":"listed release only","location":"compatibility matrix","reviewer":"research-cache-out worker"},
+    {"id":"C3","wording":"Free for personal and commercial use under a restricted, non-transferable, revocable licence; donations optional.","sources":["S1","S2"],"passage":"provided free of charge for both personal and commercial use; personal, non-exclusive, non-transferable, revocable license; donations are entirely voluntary","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official terms","scope":"current offer, not perpetual price guarantee or open-source licence","location":"pricing/licence matrix","reviewer":"research-cache-out worker"},
+    {"id":"C4","wording":"Browser and data-type selections cover cache, history, download history, favicons and cookies, including multiple profiles.","sources":["S1","S5"],"passage":"toggle each one per browser; including multiple profiles; downloads (the download list, not your downloaded files)","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented behavior","scope":"Safari, Chrome, Firefox, Edge, Opera, Brave, Vivaldi, Arc, Orion, Dia, Zen, Helium, Wavebox; not a tested compatibility certification","location":"workflow and cleanup matrix","reviewer":"research-cache-out worker"},
+    {"id":"C5","wording":"The vendor documents local cleanup without accounts or analytics, with optional Sparkle update requests that expose IP/basic technical metadata.","sources":["S4"],"passage":"Automatic update checks can be disabled; IP address and ... app and macOS version","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor privacy policy, not audited","scope":"app policy; website hosting separately uses Cloudflare request information","location":"local/hosted matrix","reviewer":"research-cache-out worker"},
+    {"id":"C6","wording":"Full Disk Access is needed for protected browser data; the homepage advertises Apple notarization.","sources":["S1","S4"],"passage":"Cache Out needs Full Disk Access; Free, notarized by Apple","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor disclosure, no binary inspection","scope":"do not claim independently validated signing or bypass protections","location":"installation caveats","reviewer":"research-cache-out worker"},
+    {"id":"C7","wording":"The changelog documents optional preview/confirmation and Move to Trash settings introduced in 1.3.0.","sources":["S3"],"passage":"Preview before cleaning ... confirm ... New Move to Trash instead of deleting option","checkedOn":"2026-10-21","state":"verified","evidenceClass":"historical release documentation","scope":"current defaults and exact file/database recoverability not verified; terms conflict with blanket recovery claim","location":"approval matrix with caveat","reviewer":"research-cache-out worker"},
+    {"id":"C8","wording":"Download cleanup clears browser records, not files in Downloads; cookie clearing signs users out, and 1.5.3 history clearing can remove restorable Chromium sessions.","sources":["S5","S3"],"passage":"actual files in the Downloads folder are never touched; recently closed tabs and windows can no longer be restored","checkedOn":"2026-10-21","state":"verified","evidenceClass":"documented behavior","scope":"not independently executed","location":"workflow risks","reviewer":"research-cache-out worker"},
+    {"id":"C9","wording":"App/helper grouping, recurring-growth monitoring, developer caches, Python/runtime dependencies and source repository are not verified for Cache Out.","sources":["S1","S3","S5","S6"],"passage":"Checked materials focus on browser data; no supporting documentation retained for these dimensions.","checkedOn":"2026-10-21","state":"not-verified","evidenceClass":"bounded research unknown","scope":"never render as No or feature absence","location":"matrix unknown cells","reviewer":"research-cache-out worker"},
+    {"id":"C10","wording":"Breathing Room, which we build, is a macOS 13+ maintenance preview with local storage and grouped-process source implementations, not a verified Cache Out browser-data replacement.","sources":["BR1"],"passage":"Source implementation is not proof that every feature works in the distributed installer","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused source/published evidence","scope":"0.1.0-preview.1; no clean-machine/physical Intel runtime validation; Python 3.10+, Apple Development signed, not notarized","location":"comparison recommendation","reviewer":"research-cache-out worker"},
+    {"id":"C11","wording":"Breathing Room's local core is free; optional AI Care is advertised at $5 USD/month or $50 USD/year and hosted assistance needs authentication/internet.","sources":["BR1"],"passage":"Free core desktop app; $5 USD/month, $50 USD/year; assistant sends ... tool outputs","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused published offer and source","scope":"tax at checkout, renews until cancelled; allowances/enforcement not verified; website account gate differs from public GitHub releases","location":"pricing/privacy matrix","reviewer":"research-cache-out worker"}
+  ],
+  "matrix": {
+    "macOSCompatibility":["C2"], "licenceAndPricing":["C3"], "localVsHosted":["C5"],
+    "scanCleanupModel":["C4","C8"], "approvalControls":["C7"], "processHelperGrouping":["C9"],
+    "recurringGrowth":["C9"], "developerCaches":["C9"], "runtimeCaveats":["C9"],
+    "installation":["C6"], "breathingRoomBoundaries":["C10","C11"]
+  },
+  "visuals": [
+    {
+      "id":"cache-out-official-window", "productId":"cache-out", "view":"Browser cards and cleanup options (official HTML description; image not independently inspected)",
+      "kind":"official-asset", "sourcePageUrl":"https://cacheout.app/", "assetUrl":"https://cacheout.app/assets/cacheout-window-140.webp",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "discoveredAtUtc":"2026-10-21T20:10:20.946Z", "capturedBy":null,
+      "productVersion":null, "buildOrCommit":null, "osVersion":null, "dataMode":"vendor-illustration",
+      "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null,
+      "widthPx":1224, "heightPx":1125, "dimensionBasis":"homepage HTML attributes, not image bytes", "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Public official image reference only; terms reserve ungranted rights and no image reuse permission located. Not downloaded or embedded.","evidenceUrlOrPath":"https://cacheout.app/terms","credit":"Cache Out / Jim Mitchell"},
+      "caption":"Cache Out official app-window illustration. Source: Cache Out / Jim Mitchell; depicted version and capture date not verified. Link only pending reuse clearance.",
+      "alt":"Cache Out app window showing browsers with cleanup options (vendor description; pending visual review).",
+      "supportedClaimIds":["C4"], "limitations":["Filename 140 does not establish depicted version.","No asset bytes downloaded; no original hash can honestly be recorded.","Not approved to satisfy required on-page competitor visual gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null,
+      "capturedBy":"screenshot-library job, per docs/content/screenshots.json",
+      "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null,
+      "dataMode":"example", "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed by screenshot-library job","redactions":[]},
+      "reuse":{"status":"pending","basis":"App-owner-requested first-party UI capture; per-article context/third-party marks review remains pending.","evidenceUrlOrPath":"docs/content/screenshots.json","credit":"Breathing Room, which we build"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":["C10"], "limitations":["Retain example-data banner; do not present browser preview as release/runtime proof.","Hash verified in this job; previous library visual inspection reused, not repeated.","Choose readable contextual presentation during drafting and independently review."],
+      "review":{"status":"pending per-article independent review","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow":{"title":"Clear browser records without deleting downloaded files","slug":"browser-cache-history-download-list-mac","primaryIntent":"Understand cache versus history, cookies, session restore and downloaded-file storage across several Mac browsers","template":"how-to-guide, documentation-led decision checklist","outline":["Choose the problem: stale page, privacy records, or disk growth","Separate cache, cookies, history, download list and actual files","Check macOS 26.2+, browsers/profiles and Full Disk Access","Review scope before cleanup; documented preview/Trash options are not blanket undo","Expect sign-outs and session-history loss; avoid unsupported savings claims","Use storage inspection for files outside browser records"],"interaction":"Non-executing choice checklist: target data type, profile, session impact, permission and recovery uncertainty; no deletion button","wordCount":"900–1400 only if evidence earns it","links":["/comparisons/cache-out/","/comparisons/"],"gate":"blocked; no draft or site changes"},
+    "comparison":{"title":"Cache Out vs Breathing Room: browser records or Mac storage?","slug":"cache-out","primaryIntent":"Choose a browser-data utility versus broader Mac-maintenance preview","template":"concise comparison","outline":["Adjacent tools, not universal substitutes","Claim-linked matrix including unknowns","Choose Cache Out for documented multi-browser data controls and local-only policy","Consider Breathing Room, which we build, for storage investigation and grouped-process views with preview caveats","Pricing, permissions, Python, hosted AI and installation disclosures","Link to the distinct download-records workflow"],"prohibitedClaims":["Breathing Room clears all Cache Out browser data","Cache Out has no monitoring","Either app is faster/safer or frees a measured quantity","Either tool guarantees undo"],"gate":"blocked; no draft or site changes"}
+  },
+  "blockers": [
+    {"id":"B1","severity":"critical","diagnostic":"Official competitor app asset found, but no publication reuse licence/permission established. Link-only fallback does not satisfy required on-page visual gate.","resolution":"Obtain separately authorized image reuse clearance or explicit editorial policy decision, then permitted asset retrieval with original hash, visual/privacy review and provenance. Do not send permission requests in this job."},
+    {"id":"B2","severity":"critical for recovery recommendations","diagnostic":"Terms say deleting data is permanent; 1.3.0 changelog documents optional Move to Trash. Current defaults and database/session recovery coverage remain unverified.","resolution":"Resolve with current official version-specific documentation or separately authorized non-destructive evidence; until then no promise of undo or exact recoverability."}
+  ],
+  "unknowns": ["Official source repository not established; do not invent one.","Binary signing/notarization not independently inspected.","Competitor UI capture date/version and image reuse rights unknown.","No installs, native scans, cleanups, performance tests or network audit performed.","No SERP/keyword volume measurements; briefs are editorial intent proposals, not search-volume findings.","Independent article review and rendered visual QA belong to later stages."],
+  "validation": {"record":"validation.json","siteChecks":"Not applicable: no website records or assets changed.","browser":"Skill loaded; browser not needed for public document/HTML metadata checks. No Chrome session or profile touched."}
+}

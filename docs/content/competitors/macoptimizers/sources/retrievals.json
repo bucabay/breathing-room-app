@@ -1,0 +1,78 @@
+[
+  {
+    "id": "eula",
+    "url": "https://macoptimizers.informatiqueconnect.fr/eula.html",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/eula.html",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:23.984990+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/eula.html",
+    "sha256": "8252ff2f2f01ddc916d758d0532b3942b486b378b025025a026d5b7204f94f89"
+  },
+  {
+    "id": "premium",
+    "url": "https://macoptimizers.informatiqueconnect.fr/en/premium.html",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/en/premium.html",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:24.141933+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/premium.html",
+    "sha256": "59889ccb7666c67837ab4da4fa0d589282cf84965e6dc587759def4b8fb96a59"
+  },
+  {
+    "id": "legal",
+    "url": "https://macoptimizers.informatiqueconnect.fr/mentions-legales.html",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/mentions-legales.html",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:23.953704+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/legal.html",
+    "sha256": "917fc477737cdc120d1ac37be4cd07031dcb179c9bb87126d19d0b8fea09e107"
+  },
+  {
+    "id": "homepage-assets",
+    "url": "https://macoptimizers.informatiqueconnect.fr/en/",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/en/",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:24.089054+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/homepage-assets.html",
+    "sha256": "483f430e0a2d90ca673bdc9d76795f11a28379330991cd569c6b2b0c96a75ce3"
+  },
+  {
+    "id": "privacy",
+    "url": "https://macoptimizers.informatiqueconnect.fr/politique-confidentialite.html",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/politique-confidentialite.html",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:23.947470+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/privacy.html",
+    "sha256": "85914bfaa285cb6c6d43d6c09e1f6fbbcb15cffb8cad3c122639d60655e0a609"
+  },
+  {
+    "id": "pricing",
+    "url": "https://macoptimizers.informatiqueconnect.fr/api/premium/pricing.php",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/api/premium/pricing.php",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:33.889612+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/pricing.json",
+    "originalResponseSha256": "8a303c49ca3d0a7a057d8badd570c532c043fa9c6e6db98ec5d3974139cdebb4",
+    "sha256": "e0da2c537e0d7aa30c95f675a2253473fa58632c74e0b9bb952d34c7817e4e4c",
+    "edits": [
+      "Omitted unused ephemeral public form probe; remaining price fields unchanged. No authentication/cookies used."
+    ]
+  },
+  {
+    "id": "public-app-script",
+    "url": "https://macoptimizers.informatiqueconnect.fr/app.min.js?v=20260320.9",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/app.min.js?v=20260320.9",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:34.674117+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/public-app-script.js",
+    "sha256": "5147514535fe7ce660716f19e33dffb42e11f88e4dbf9d70614e24d97cf50fcb"
+  },
+  {
+    "id": "version",
+    "url": "https://macoptimizers.informatiqueconnect.fr/api/latest-version.php",
+    "finalUrl": "https://macoptimizers.informatiqueconnect.fr/api/latest-version.php",
+    "status": 200,
+    "retrievedAtUtc": "2026-10-21T21:37:48.638621+00:00",
+    "path": "docs/content/competitors/macoptimizers/sources/version.json",
+    "sha256": "3f75c8edb40b1f4c6e3c3dcb5c2b2fecd4a64109a660a8ccf8b2400a322ad041"
+  }
+]

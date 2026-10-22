@@ -1,0 +1,24 @@
+{
+  "id": "security",
+  "publisher": "TSOFT LLC / Roomy",
+  "title": "Security & Privacy",
+  "sourceUrl": "https://roomymac.com/security",
+  "finalUrl": "https://roomymac.com/security",
+  "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "retrievedOn": "2026-10-21",
+  "method": "WebFetch rendered Markdown, read in this job",
+  "publicationDate": null,
+  "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+  "excerpts": [
+    "Roomy contacts our server only to activate and check a Pro license, and to load current prices for its Plans screen.",
+    "Caches, logs and other rebuildable data are deleted, because apps recreate them.",
+    "Downloads, backups, archives, large files, duplicates and uninstalled apps go to the Trash, so you can put them back.",
+    "One setting sends everything to the Trash.",
+    "Roomy doesn\u2019t install launch agents, login items, system extensions or browser extensions.",
+    "Quit it and nothing of it keeps running.",
+    "Caches of apps that are open, macOS caches, unknown caches over 1 GB and app data are rated Review.",
+    "Device backups and Xcode archives are rated Caution.",
+    "None of them is ever preselected."
+  ],
+  "rawCapture": null
+}

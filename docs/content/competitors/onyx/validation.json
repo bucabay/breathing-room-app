@@ -1,0 +1,16 @@
+{
+  "jobId": "research-onyx",
+  "result": "structural-checks-passed-evidence-gates-blocked",
+  "checks": [
+    "Python json.loads successfully parsed research.json.",
+    "All 6 claim entries reference existing source IDs and contain checked dates and excerpt fields.",
+    "Reused discovery raw record SHA-256 matched both packet references: 408ae76b2dd2b1ebe5afb35a497ece1b0f7ba06dbe14bf485eb6285fa8b7717c.",
+    "Selected Space PNG SHA-256 matched 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a; PNG IHDR dimensions matched 2940 x 3468.",
+    "Selected actual PNG opened with image-capable read tool; example-data banners and overlapping composer inspected.",
+    "Confirmed no competitor asset URL/path invented; no third-party image downloaded.",
+    "Confirmed blocked status, draftingAllowed false, and two explicit blocking diagnostics.",
+    "Chrome connected successfully; created and used only owned tab 149, inspected timeout snapshot, then closed owned tab 149.",
+    "No site files changed; no site build, app runtime test, cleanup, install, signup or account action performed."
+  ],
+  "limitations": "Structural checks do not validate unavailable official facts or image rights. Independent review pending."
+}

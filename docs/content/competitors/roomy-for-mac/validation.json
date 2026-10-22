@@ -1,0 +1,160 @@
+{
+  "jobId": "research-roomy-for-mac",
+  "checkedAtUtc": "2026-10-21T22:06:26.732281+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Canonical identity and explicit non-alias skip decision",
+      "result": "passed"
+    },
+    {
+      "check": "All 22 claims have source URLs, excerpts, check dates and supported source IDs",
+      "result": "passed"
+    },
+    {
+      "check": "Every verified matrix cell maps to existing claim IDs; unknowns remain not verified",
+      "result": "passed"
+    },
+    {
+      "check": "Retained source hash: directory",
+      "result": "passed"
+    },
+    {
+      "check": "Retained source hash: homepage",
+      "result": "passed"
+    },
+    {
+      "check": "Retained source hash: br-register",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-1",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-2",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-3",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-4",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-5",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-6",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): baseline-7",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): review-workflow",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): developer-scope",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): duplicates",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): uninstaller",
+      "result": "passed"
+    },
+    {
+      "check": "Homepage excerpt matches retained current baseline (whitespace-normalized): billing-conditions",
+      "result": "passed"
+    },
+    {
+      "check": "Original image SHA-256: roomy-developer-cleanup",
+      "result": "passed"
+    },
+    {
+      "check": "Actual PNG signature: roomy-developer-cleanup",
+      "result": "passed"
+    },
+    {
+      "check": "PNG dimensions: roomy-developer-cleanup",
+      "result": "passed"
+    },
+    {
+      "check": "Alt text, caption and no invented publication asset: roomy-developer-cleanup",
+      "result": "passed"
+    },
+    {
+      "check": "Explicit official editorial reuse permission: roomy-developer-cleanup",
+      "result": "passed"
+    },
+    {
+      "check": "Original image SHA-256: roomy-clean-confirmation",
+      "result": "passed"
+    },
+    {
+      "check": "Actual PNG signature: roomy-clean-confirmation",
+      "result": "passed"
+    },
+    {
+      "check": "PNG dimensions: roomy-clean-confirmation",
+      "result": "passed"
+    },
+    {
+      "check": "Alt text, caption and no invented publication asset: roomy-clean-confirmation",
+      "result": "passed"
+    },
+    {
+      "check": "Explicit official editorial reuse permission: roomy-clean-confirmation",
+      "result": "passed"
+    },
+    {
+      "check": "Original image SHA-256: current-space-browser-preview",
+      "result": "passed"
+    },
+    {
+      "check": "Actual PNG signature: current-space-browser-preview",
+      "result": "passed"
+    },
+    {
+      "check": "PNG dimensions: current-space-browser-preview",
+      "result": "passed"
+    },
+    {
+      "check": "Alt text, caption and no invented publication asset: current-space-browser-preview",
+      "result": "passed"
+    },
+    {
+      "check": "Breathing Room example/native disclosure retained",
+      "result": "passed"
+    },
+    {
+      "check": "Distinct workflow/comparison primary intents",
+      "result": "passed"
+    },
+    {
+      "check": "Unknowns retained and publication not approved",
+      "result": "passed"
+    },
+    {
+      "check": "No unresolved critical research blockers",
+      "result": "passed"
+    }
+  ],
+  "manualChecks": [
+    "Opened and read both actual Roomy press PNGs and selected Breathing Room Space PNG.",
+    "Read official press/security/changelog/install/EULA pages; retained excerpts and explicit editorial reuse terms.",
+    "No app/site build, native runtime test, independent editorial approval or responsive rendering claimed."
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/roomy-for-mac/research.json": "fdb40a5fab88f703b4c0c90b858a4bbb25b6f14e40daa5e3bc743c14b823743f",
+    "docs/content/competitors/roomy-for-mac/research.md": "10ecc5621940efb9b20885b877fa72de40ac520603fd1edccd157c5497677a47"
+  }
+}

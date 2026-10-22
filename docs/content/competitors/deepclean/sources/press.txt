@@ -1,0 +1,89 @@
+Press Kit - DeepClean for macOS
+DeepClean
+Home
+Blog
+Features
+Scan Your Mac Free
+Press Resources
+Press Kit
+Everything you need to write about DeepClean
+About DeepClean
+The Developer's Disk Cleanup Utility
+DeepClean
+is a macOS disk cleanup utility built specifically for developers and power users. It scans 17 developer toolchains including Xcode, npm, Docker, Homebrew, JetBrains IDEs, Gradle, VS Code, pip, and more, surfacing caches and build artifacts that generic cleaners miss entirely. Beyond developer tools, DeepClean offers hash-based duplicate detection that catches renamed copies, a large file scanner with safety ratings (Safe / Review / Caution), smart junk detection across 8 categories, and a security health monitor covering Firewall, Gatekeeper, SIP, and Full Disk Access. All processing happens 100% on-device, so no data ever leaves your Mac. DeepClean is free to download and scan with, including 10 GB of cleanup; unlimited cleanup is a one-time purchase of $39 for one Mac with no subscription. It requires macOS 13 (Ventura) or later and is built with SwiftUI as a Universal app supporting both Apple Silicon and Intel Macs.
+At a Glance
+Quick Facts
+Price
+Free scan
+(10 GB cleanup included; unlimited cleanup $39 once)
+Platform
+macOS 13+
+(Ventura and later)
+Developer Tools Scanned
+17
+Architecture
+Universal
+(Apple Silicon + Intel)
+Category
+Utilities / Disk Cleanup
+Website
+deepclean.app
+Capabilities
+Key Features
+Developer Cache Scanner
+Scans 17 toolchains: Xcode, npm, Docker, Homebrew, CocoaPods, pip, Gradle, JetBrains, VS Code, Jupyter, Android Studio, and more.
+Smart Junk Detection
+Identifies 8 categories of reclaimable junk: system caches, app logs, temp files, broken symlinks, empty folders, browser caches, installer files, and saved app state.
+Hash-Based Duplicate Finder
+Finds true duplicates by file content hash, not just name. Catches renamed copies that other tools miss completely.
+Large File Scanner with Safety Ratings
+Surfaces your largest files with UTI-based safety classifications (Safe / Review / Caution) so you can delete with confidence.
+Security Health Monitor
+Checks Firewall, Gatekeeper, SIP, and Full Disk Access status. Flags orphaned LaunchAgents and iOS backup sprawl.
+Scan Cache + Delta Scan
+Caches scan results for instant data on launch. Delta scans validate cached items in seconds instead of re-scanning everything.
+100% On-Device Processing
+No telemetry, no cloud uploads, no accounts. Every file scan and hash runs locally on your Mac. Your data never leaves the machine.
+Brand Assets
+Logo and Colors
+Right-click and save to download
+Brand Colors
+Primary Blue
+#0A84FF
+Background
+#0F0F12
+Surface
+#1A1A20
+Text Primary
+#FAFAFA
+Typeface
+Aa
+Plus Jakarta Sans
+Primary typeface / Weights 400 - 800
+Screenshots
+App Screenshots
+High-resolution screenshots available upon request. Contact us for press-ready assets.
+Dashboard - Bento grid overview with disk usage and quick actions
+Developer Tools - 17 toolchain scanner
+Duplicate Finder - Hash-based detection
+Security Health - System status monitor
+Large Files - File scanner with safety ratings (Safe / Review / Caution)
+Get in Touch
+Press Contact
+Press Inquiries
+For review copies, interviews, or press questions:
+press@deepclean.app
+Website
+deepclean.app
+Review Licenses
+Free review licenses are available for journalists, bloggers, and app reviewers. Just reach out with your publication details.
+Free review license available upon request
+DeepClean
+Features
+Compare
+Safety
+Blog
+Press
+Privacy
+Terms
+© 2026 DeepClean. Built for macOS with care.

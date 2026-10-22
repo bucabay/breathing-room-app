@@ -1,0 +1,19 @@
+{
+  "jobId": "research-cocktail",
+  "checkedOn": "2026-10-21",
+  "method": "Read-only Python structural/hash/excerpt checks plus image-capable read inspection; no site or native tests",
+  "checks": [
+    {"check":"JSON structure and claim references","result":"pass","detail":"6 unique source IDs, 11 claims with source references, excerpts, check dates and HTTPS URLs."},
+    {"check":"Retained official and discovery snapshot SHA-256","result":"pass","detail":"Both source hashes match actual retained bytes, including batch-1 official hash."},
+    {"check":"S1-only claim excerpt matching","result":"pass-after-check-correction","detail":"Initial exact substring assertion failed on C02 because retained edition names and versions use line breaks. Re-ran with whitespace normalization only; all S1-only excerpt segments matched. No source facts or packet content altered to force a pass."},
+    {"check":"Selected Breathing Room asset","result":"pass","detail":"Actual PNG hash matches screenshots.json; PNG header confirms 2940x3468. Opened and visually inspected actual image using read tool."},
+    {"check":"Canonical identity and drafting/visual gates","result":"pass","detail":"canonicalOwnerId cocktail; separate edition drafts skipped; competitor asset link-only with null hash; blocked status and draftingAllowed false agree."},
+    {"check":"Additional official source reads","result":"pass","detail":"Maintain homepage and official previous-editions article successfully retrieved with read-only WebFetch. Current Cocktail page reused rather than re-fetched."},
+    {"check":"Competitor screenshot reuse and inspection","result":"blocked","detail":"No established reuse licence/permission; exact panel/version/visual review pending. No competitor image downloaded."},
+    {"check":"Marketing build/native/runtime/independent publication review","result":"not-run","detail":"Research-only files; no site edits, native execution or publication approval."}
+  ],
+  "artifactSha256": {
+    "research.json":"7a7b4be363dae47c80d9ad132c29cd8f06f13d50a48d9b72471035acc47f2078",
+    "research.md":"f8a75423e42aa3b51b7ec934cfe69efe9fa09c6a8a29d879a72b9650910b1bb5"
+  }
+}

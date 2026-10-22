@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "price_cents": 799,
+  "currency": "EUR",
+  "formatted_fr": "7,99 €",
+  "formatted_en": "€7.99",
+  "loyalty_probe_token": "[omitted public ephemeral form probe; never used]",
+  "loyalty_discount_enabled": true,
+  "loyalty_discount_type": "percent",
+  "loyalty_discount_percent": 25
+}

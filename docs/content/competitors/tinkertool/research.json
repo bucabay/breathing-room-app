@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-tinkertool",
+  "productId": "tinkertool",
+  "reviewedOn": "2026-10-22",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "reviewer": "scheduled research worker; documentary verification only, not independent publication review",
+  "timestampPolicy": "Retrieval times are actual UTC tool/host timestamps (October 21 UTC); job review date is October 22. No source date has been advanced to imply a new check.",
+  "ownership": "docs/content/competitors/tinkertool/ only, plus the explicitly required job receipt; no website changes",
+  "identity": {
+    "officialName": "TinkerTool",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "canonicalOwnerId": "tinkertool",
+    "homepage": "http://www.bresink.com/osx/TinkerTool.html",
+    "httpsEquivalent": "https://www.bresink.com/osx/TinkerTool.html",
+    "homepageEvidence": "baseline-official",
+    "officialRepository": null,
+    "repositoryStatus": "not verified; no official source repository established in checked official material; do not label open source",
+    "aliases": ["TinkerTool 11"],
+    "aliasDecision": {
+      "skipSeparateAliasDraft": true,
+      "scope": "TinkerTool 11 and historical TinkerTool generations belong to this product family; do not create version-name doorway articles.",
+      "sourceIds": ["matrix", "versions"],
+      "notAnAlias": "TinkerTool System is explicitly a different complementary application, not a paid tier of TinkerTool.",
+      "unrelatedAliasCaution": "PowerMyMac was an example in the task, not an evidenced alias of TinkerTool. No PowerMyMac equivalence is asserted."
+    },
+    "classification": "adjacent",
+    "classificationBasis": "Personal macOS preference interface versus storage investigation, reviewable cleanup and app activity. Useful distinction for Mac users, not a direct storage-cleaner replacement.",
+    "skipProduct": false,
+    "skipDecision": "Retain a conditional workflow/comparison brief; no dead-product or alias exclusion. Drafting remains blocked by screenshot rights.",
+    "platformFit": "Mac-native documented purpose; no Windows/Linux support or migration claim. macOS 27 naming below is the vendor's published label, not an independent Apple release verification."
+  },
+  "reuse": {
+    "baselineFile": "docs/content/verification/batch-2.json",
+    "baselineProductId": "tinkertool",
+    "reusedFacts": ["official identity", "homepage", "personal preference purpose", "current generation platform list", "free download"],
+    "baselineHomepageRefetched": false,
+    "breathingRoomEvidence": "docs/content/capabilities.md, reviewed 2026-10-21; reused with source-versus-runtime limitations intact",
+    "screenshotsEvidence": "docs/content/screenshots.json, reviewed 2026-10-21"
+  },
+  "discovery": {
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=2",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:09.298Z",
+    "edgeEvidence": "docs/content/competitors.json, tinkertool.edges[0]; original pagination snapshot not independently rehashed in this job",
+    "listingUrl": "https://alternativeto.net/software/tinkertool/about/",
+    "destinationUrl": "http://www.bresink.com/osx/TinkerTool.html",
+    "retrievedAtUtc": "2026-10-21T19:06:28.610Z",
+    "method": "Reused owned Chrome tab 16 rendered DOM record from verification batch 2; no new browser navigation",
+    "excerpt": "Official Website\nbresink.com/osx/TinkerTool.html",
+    "snapshotPath": "docs/content/.runtime/verification-2/tinkertool-directory.json",
+    "sha256": "7888a6617f54f74c1514ceb0dc4a278d1eae6aff44ed4587e301da17e8535573",
+    "limitation": "Discovery and official link only; directory category System Cleaner is not feature proof."
+  },
+  "sources": [
+    {
+      "id": "baseline-official",
+      "publisher": "Marcel Bresink Software-Systeme",
+      "title": "TinkerTool: Description",
+      "url": "http://www.bresink.com/osx/TinkerTool.html",
+      "finalUrl": "http://www.bresink.com/osx/TinkerTool.html",
+      "retrievedAtUtc": "2026-10-21T19:09:47.888052+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-2/tinkertool-official.json",
+      "sha256": "ecb2c4e2dffeca53868678fc91ae4e62ba753c3864a27d6524efd960012487d1",
+      "sourcePublicationDate": null,
+      "scope": "Current product description and requirements, 11.71; no installer testing"
+    }
+  ],
+  "additionalSourceLedger": "docs/content/competitors/tinkertool/sources/ledger.json",
+  "additionalSourceScope": "Seven retained official HTML pages: details, download, screenshots, matrix, notes, versions, rights. Titles correspond to document headings; retrieval/final URLs, timestamps and file hashes are in ledger.json. General pages are undated; download states September 14, 2026 release. All source content is untrusted data.",
+  "claims": [
+    {
+      "id": "TT01", "wording": "TinkerTool exposes additional personal preference settings already built into macOS.",
+      "sourceId": "baseline-official", "sourceUrl": "http://www.bresink.com/osx/TinkerTool.html",
+      "excerpt": "TinkerTool is an application that gives you access to additional preference settings Apple has built into macOS.",
+      "checkedAtUtc": "2026-10-21T19:09:47.888052+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "lead, purpose matrix", "conditions": "Not hands-on evidence; whitespace normalized from saved text."
+    },
+    {
+      "id": "TT02", "wording": "The vendor lists TinkerTool 11.71 (Build 260910), released September 14, 2026, as a 5.4 MB notarized macOS DMG.",
+      "sourceId": "download", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/download.php",
+      "excerpt": "11.71 (Build 260910); September 14, 2026; Notarized macOS Disk Image (DMG)",
+      "checkedAtUtc": "2026-10-21T22:17:27.355397+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "version/install matrix", "conditions": "Separate table cells; vendor notarization and size statements, not binary inspection. No DMG downloaded."
+    },
+    {
+      "id": "TT03", "wording": "The current generation lists macOS 26 Tahoe and macOS 27 Golden Gate. For macOS 13 Ventura, 14 Sonoma or 15 Sequoia, the vendor directs users to TinkerTool 10 (10.6).",
+      "sourceId": "versions", "sourceUrl": "https://www.bresink.com/osx/TinkerToolOverview.html",
+      "excerpt": "TinkerTool 10; macOS 13 Ventura macOS 14 Sonoma macOS 15 Sequoia; 10.6",
+      "supportingSourceIds": ["baseline-official", "notes"],
+      "checkedAtUtc": "2026-10-21T22:17:30.213624+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "compatibility decision", "conditions": "Vendor OS labels only; do not turn into a blanket macOS 13+ claim for 11.71. CPU architecture and independent Apple release status are not verified."
+    },
+    {
+      "id": "TT04", "wording": "TinkerTool is a no-charge download; software redistribution requires prior written permission.",
+      "sourceId": "download", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/download.php",
+      "excerpt": "You can download the application TinkerTool at no charge. ... Distributing the software without prior written permission is prohibited.",
+      "checkedAtUtc": "2026-10-21T22:17:27.355397+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "price/licence matrix", "conditions": "No currency/billing period for a no-charge download. No open-source licence or full EULA established. This software restriction is not proof of screenshot permission or prohibition."
+    },
+    {
+      "id": "TT05", "wording": "The vendor says changes affect the current user, need no administrative privileges, and can reset to Apple defaults or the pre-TinkerTool state.",
+      "sourceId": "baseline-official", "sourceUrl": "http://www.bresink.com/osx/TinkerTool.html",
+      "excerpt": "preference changes can only affect the current user. You don't need administrative privileges ... All preference settings changed by TinkerTool can be reset to Apple's defaults, or to the state that existed before using the tool.",
+      "checkedAtUtc": "2026-10-21T19:09:47.888052+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "scope/reset workflow", "conditions": "Not a safety guarantee or file backup. Privacy permission exceptions are documented separately in TT08."
+    },
+    {
+      "id": "TT06", "wording": "TinkerTool and TinkerTool System are separate complementary applications: personal preferences versus administrator-level settings affecting all users.",
+      "sourceId": "details", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/details.html",
+      "excerpt": "The tools do not share any duplicate settings or features, they complement one another.",
+      "checkedAtUtc": "2026-10-21T22:17:26.682789+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "identity distinction", "conditions": "See section What is the difference between TinkerTool and TinkerTool System? Do not import System cleanup features or prices."
+    },
+    {
+      "id": "TT07", "wording": "Documented Finder options include showing hidden/system files and suppressing creation of .DS_Store files on network volumes; available settings vary by OS version.",
+      "sourceId": "details", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/details.html",
+      "excerpt": "Enable the Finder to show hidden and system files; Disable the creation of hidden Finder .DS_Store files on network volumes",
+      "checkedAtUtc": "2026-10-21T22:17:26.682789+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "workflow explanation", "conditions": "Separate feature-table rows marked supported for listed 26/27 variants. Showing files does not authorize deleting them; preventing creation does not remove existing files."
+    },
+    {
+      "id": "TT08", "wording": "Some protected-app preferences require Full Disk Access; deleting TinkerTool does not undo changed preferences. The FAQ describes resetting settings and logging out/in.",
+      "sourceId": "notes", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/issues.html",
+      "excerpt": "Settings affecting critical areas, such as Time Machine, Mail, and Safari are disabled in TinkerTool until you confirm to macOS that the application can have Full Disk Access. ... Applications will respect their settings no matter if TinkerTool is on your disk or not.",
+      "checkedAtUtc": "2026-10-21T22:17:29.544332+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "permissions and rollback caveats", "conditions": "FAQ headings Will TinkerTool access any of my private files? and I used TinkerTool for a while... No settings changed or removal performed. Do not recommend broad permissions for the Finder workflow."
+    },
+    {
+      "id": "TT09", "wording": "Export/import can transfer eligible preference settings between accounts or computers; settings dependent on third-party applications are excluded from the stated transferable set.",
+      "sourceId": "details", "sourceUrl": "https://www.bresink.com/osx/0TinkerTool/details.html",
+      "excerpt": "export and import the settings, copying them to another user account or to a different computer. All settings which don't depend on the availability of third-party applications can be transferred.",
+      "checkedAtUtc": "2026-10-21T22:17:26.682789+00:00", "state": "verified", "evidenceClass": "officially-documented", "location": "competitor strengths", "conditions": "Documentation, not a migration test or full Mac backup."
+    },
+    {
+      "id": "BR01", "wording": "Breathing Room, which we build, is a free macOS 13+ maintenance preview; the identified 0.1.0-preview.1 release is Apple Development signed, not Developer ID signed or notarized, and discloses Python 3.10+ prerequisites.",
+      "sourceId": "br-capabilities", "sourceUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1",
+      "excerpt": "Published preview says Apple Development signed, not Developer ID signed or notarized. ... Python 3.10+ is a disclosed prerequisite for disk inventory and legacy scripts, not bundled.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-and-published-register", "location": "comparison/install caveats", "conditions": "Excerpt from capabilities.md lines 48–51 summarizing retained release inspection, not a direct quote of the public release. Universal installer advertised; physical Intel and clean-machine runtime unverified."
+    },
+    {
+      "id": "BR02", "wording": "Breathing Room source implements storage views, app/helper CPU-memory grouping, local activity history and constrained cleanup approvals; source presence does not establish installer parity or measured results.",
+      "sourceId": "br-capabilities", "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-register", "location": "purpose and capabilities matrix", "conditions": "capabilities.md lines 24–40 and cited source paths. Optional verified Ruff-cache automatic Trash mode and exact saved daily approvals prevent unconditional never-deletes-without-asking language."
+    },
+    {
+      "id": "BR03", "wording": "Optional hosted AI requires authentication/internet and can receive paths/process/storage context; advertised AI Care is $5 USD/month or $50 USD/year, renewing until cancelled, with applicable tax at checkout.",
+      "sourceId": "br-capabilities", "sourceUrl": "https://breathing-room.chatic.ai/#pricing",
+      "supportingUrls": ["https://breathing-room.chatic.ai/privacy/", "https://breathing-room.chatic.ai/download/"],
+      "excerpt": "Confirmed advertised $5 USD/month, $50 USD/year. ... Plans renew until cancelled; applicable tax shown at checkout.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-and-published-register", "location": "pricing/privacy matrix", "conditions": "capabilities.md lines 58–86. Free local capabilities are separate; paid quotas/entitlement enforcement and checkout operation not tested. Website download account gate differs from public GitHub release access."
+    }
+  ],
+  "breathingRoomSource": {
+    "id": "br-capabilities", "path": "docs/content/capabilities.md", "reviewedOn": "2026-10-21",
+    "scope": "Current reused first-party source/release/pricing register, not a new native app test. Refresh volatile facts within 30 days and before publication if stale."
+  },
+  "matrix": [
+    {"dimension": "Purpose", "tinkertool": "Personal macOS preference interface (TT01)", "breathingRoom": "Storage/activity/cleanup preview implementations (BR02)"},
+    {"dimension": "Platform/version", "tinkertool": "11.71 build 260910; macOS 26/27 vendor list; older OS requires other generation (TT02, TT03)", "breathingRoom": "0.1.0-preview.1 identified; macOS 13+, universal advertised but Intel untested (BR01)"},
+    {"dimension": "Price/licence", "tinkertool": "No-charge download, redistribution restricted; full licence/source repo unverified (TT04)", "breathingRoom": "Free Apache-2.0 desktop source; optional advertised AI Care recurring USD prices (BR03; capabilities.md licence row)"},
+    {"dimension": "Local/hosted", "tinkertool": "Documented personal preferences on Mac (TT01, TT05); network/update/telemetry behavior not verified", "breathingRoom": "Local inspection/execution; optional authenticated hosted AI receives context (BR02, BR03)"},
+    {"dimension": "Scan/cleanup", "tinkertool": "Documented task is preference changes, not demonstrated cleanup; storage-scanner/cache deletion capabilities not verified (TT01, TT06)", "breathingRoom": "Source storage discovery and constrained cleanup; no measured recovery results (BR02)"},
+    {"dimension": "Controls", "tinkertool": "Current-user preferences and reset; protected apps may require additional permission (TT05, TT08)", "breathingRoom": "Approval modes differ: interactive, optional verified Ruff automatic Trash, exact saved daily approvals (BR02)"},
+    {"dimension": "Helper grouping / recurring growth / developer caches", "tinkertool": "Not verified; do not render No checkmarks", "breathingRoom": "Source implementations; sampled attribution and adapter limitations (BR02)"},
+    {"dimension": "Runtime/install", "tinkertool": "Vendor describes notarized DMG; architecture/runtime dependencies not verified (TT02)", "breathingRoom": "Preview, not notarized, Python 3.10+, permission-limited inventories; hosted AI auth; daily care requires app running (BR01–BR03; capabilities.md daily runtime row)"}
+  ],
+  "visuals": [
+    {
+      "id": "tinkertool-official-finder", "productId": "tinkertool", "view": "Finder preferences", "kind": "official-asset",
+      "sourcePageUrl": "https://www.bresink.com/osx/0TinkerTool/screenshots.html",
+      "assetUrl": "https://www.bresink.com/osx/0TinkerTool/Images-en/1-Finder@2x.jpg",
+      "fallbackAssetUrl": "https://www.bresink.com/osx/0TinkerTool/Images-en/1-Finder.jpg",
+      "sourceExcerpt": "Settings for the Finder (macOS 26.0)",
+      "retrievedAtUtc": null, "sourcePageRetrievedAtUtc": "2026-10-21T22:17:28.125866+00:00",
+      "capturedAtUtc": null, "capturedBy": null, "productVersion": null, "osVersion": "macOS 26.0 per vendor caption", "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "declaredDisplaySize": [824, 668], "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Official visual URL verified in retained HTML; no image republication licence or permission established. Public access is not a reuse licence. No asset downloaded.", "evidenceUrlOrPath": "docs/content/competitors/tinkertool/sources/rights.html", "credit": "TinkerTool screenshot: Marcel Bresink Software-Systeme"},
+      "caption": "Official TinkerTool Finder-preferences illustration, captioned macOS 26.0 by the vendor; capture date and app version unknown. Not our hands-on test.",
+      "alt": "Vendor illustration of TinkerTool Finder preference controls on macOS 26.0.",
+      "supportedClaimIds": ["TT07"],
+      "limitations": ["URL and declared display dimensions verified from HTML only; image bytes not retrieved or visually reviewed.", "Not an image-gate pass: link-only until explicit rights clearance or authorized policy decision."],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "manifestPath": "docs/content/screenshots.json", "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "dataMode": "example", "osVersion": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party example UI capture as recorded in screenshots.json; third-party marks remain their owners' marks. Context-specific review remains pending.", "evidenceUrlOrPath": "docs/content/screenshots.json", "credit": "Breathing Room"},
+      "privacyReview": {"status": "reviewed-in-library", "redactions": []},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredLabels": ["Example data", "Browser preview", "Not a native scan or measured cleanup result"],
+      "limitations": ["Current to the library's source snapshot, not proof of binary parity or later source currentness.", "Keep the example-data banner visible; no relabeling as native or measured.", "Final responsive crop/legibility and independent per-page review remain pending."],
+      "review": {"status": "pending-per-page", "reviewer": null, "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search/reference", "primaryIntent": "Distinguish changing Finder visibility/network-folder preferences from reclaiming Mac storage.",
+      "title": "Showing hidden files is not a Mac cleanup plan",
+      "slug": "tinkertool-finder-preferences-versus-storage-cleanup",
+      "description": "TinkerTool changes personal Finder preferences; revealing hidden files does not make them disposable. Separate visibility changes from a storage investigation before choosing a tool.",
+      "outline": ["Official Finder visual after lead, only after rights clearance", "Choose the TinkerTool generation for your exact macOS version (TT02, TT03)", "Separate showing hidden files, preventing network .DS_Store creation and deleting existing data (TT07)", "Record/reset preference changes: removing the app is not rollback (TT05, TT08)", "If the question is disk growth, investigate storage owners rather than toggle Finder preferences (BR02, disclosed affiliation)", "Decision checklist and limitations, plus comparison/hub links"],
+      "interactionPass": "Planned non-mutating decision checklist: appearance/visibility -> OS-matched preferences; current disk usage -> inventory; recurring growth -> qualified activity investigation. No commands, cleanup execution, simulated measurements or settings changes.",
+      "doNotClaim": ["Hidden files are junk", "TinkerTool removes existing .DS_Store files", "Preference tweaks speed up a Mac", "A screenshot is measured savings", "We tested either product"]
+    },
+    "comparison": {
+      "track": "search/reference", "primaryIntent": "Choose personal macOS preference editing or storage/activity investigation, not a false like-for-like replacement.",
+      "title": "TinkerTool vs Breathing Room: different Mac jobs",
+      "slug": "tinkertool", "proposedRoute": "/comparisons/tinkertool/",
+      "description": "TinkerTool exposes personal macOS preferences. Breathing Room, which we build, is a storage and activity maintenance preview. Choose by the job, permissions and preview limits.",
+      "structure": ["Conclusion and adjacent-product label", "Two licensed product views with source/example captions", "Concise claim-linked matrix from this packet", "Choose TinkerTool for documented preference access/reset/export", "Consider Breathing Room for source-documented storage/activity workflows, with preview, Python, hosted AI and pricing caveats", "Link deeper workflow and /comparisons/; do not create duplicate alternatives route"],
+      "publicationState": "draft only after blocker resolved; independent review still required"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "tinkertoolAdvantages": ["No-charge documented preference tool (TT04)", "Current-user scope, reset and eligible export/import (TT05, TT09)", "Vendor describes a notarized DMG, unlike identified Breathing Room preview (TT02, BR01)"],
+    "tinkertoolTradeoffs": ["OS-generation-specific settings; do not assume one version works on all Macs (TT03)", "Changes persist after deleting the app; protected preferences can require permission (TT08)", "Different job from storage/activity investigation; do not borrow TinkerTool System features (TT01, TT06)"],
+    "breathingRoomAdvantages": ["Source-documented storage views and grouped app/activity context for the disk-investigation intent (BR02), not a measured superiority claim"],
+    "breathingRoomTradeoffs": ["Maintenance preview; binary/runtime validation incomplete, not notarized, Python prerequisites (BR01)", "Hosted authenticated AI and recurring paid AI Care are separate from free local inspection (BR03)", "No verified hidden-preference-editor replacement claim"]
+  },
+  "unknowns": [
+    {"field": "Image republication permission", "critical": true, "resolution": "Explicit licence/permission or separately authorized policy decision; do not send a request in this job."},
+    {"field": "Official source repository/full EULA", "critical": false, "treatment": "Do not call open source; report no-charge download and documented software redistribution restriction only."},
+    {"field": "TinkerTool architecture, runtime dependency list, update/network/telemetry behavior", "critical": false, "treatment": "Not verified; no all-offline, no-telemetry or universal-binary claims."},
+    {"field": "TinkerTool storage scans, developer-cache cleanup, helper grouping, recurring-growth monitoring", "critical": false, "treatment": "Not verified, not No; not needed to explain the documented preference task."},
+    {"field": "Native tests/performance/space reclaimed", "critical": false, "treatment": "None performed; no measured claims."}
+  ],
+  "gates": {
+    "criticalBlockers": ["Official Finder app screenshot source/asset URLs established, but third-party image reuse rights are not verified. Link-only does not satisfy EDITORIAL.md required on-page competitor visual. Do not draft until cleared or an explicit authorized policy decision is recorded."],
+    "independentReview": "pending future stage; no agents spawned",
+    "siteBuildTests": "not applicable: no site edits or drafts",
+    "browserQA": "not performed: research used retained records and read-only official HTTP pages",
+    "imageDownload": "none; no unclear-rights asset copied"
+  }
+}

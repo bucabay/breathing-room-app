@@ -1,0 +1,19 @@
+{
+  "jobId": "research-4ddig-mac-cleaner",
+  "checkedOn": "2026-10-21",
+  "researchJsonSha256": "f7d82845f6202603e0761a7a06ac7dc29901ee327775aac6871a020f1a6bc025",
+  "researchMarkdownSha256": "e831787b2a192736bd7bd49f15fccdc46a78cb43e9da3599bcf10ad6dd85c574",
+  "checks": [
+    {"check":"Python JSON parse and structural assertions","result":"pass","details":"research.json parsed; canonicalOwnerId is 4ddig-mac-cleaner, draftingAllowed false, explicit blocker present."},
+    {"check":"Source snapshot SHA-256 validation","result":"pass","details":"All six source-ledger snapshot paths exist and their actual SHA-256 values match the packet, including reused baseline and capabilities register."},
+    {"check":"Claim excerpt coverage","result":"pass","details":"All 14 claim excerpts were found as exact substrings in their declared retained source text; all checkedOn values are 2026-10-21. This checks retained support, not independent runtime truth."},
+    {"check":"Matrix reference integrity","result":"pass","details":"All 10 matrix rows checked; every populated claim ID resolves. Unsupported dimensions remain explicitly not verified."},
+    {"check":"Selected first-party PNG integrity","result":"pass","details":"Actual PNG SHA-256 matches 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a; PNG header confirms 2940 by 3468 pixels."},
+    {"check":"Visual inspection","result":"research-inspected-not-publication-approved","details":"Read actual Breathing Room Space PNG with image-capable tool; inspected exact public Cleamio guide app-UI asset in owned browser. Rejected homepage promotional/stylized images as substitutes. No third-party original downloaded into project; publication image gate blocked by rights."},
+    {"check":"Browser ownership","result":"pass","details":"Existing browser endpoint reachable; created and closed only owned tab 52. No recovery, sign-in, checkout or other consequential interaction performed."},
+    {"check":"Website build/runtime tests","result":"not-run-not-applicable-to-research-only-change","details":"No website edited. No installation, cleanup, native app execution or measured product outcome claimed."}
+  ],
+  "validationCommandOutcome": "Read-only Python validation exited 0 with sourceHashesChecked=6, claimsChecked=14, matrixRowsChecked=10, brPngHashAndDimensions=pass, blockGate=pass, errors=[].",
+  "publicationApproval": false,
+  "remainingBlocker": "Tenorshare official screenshot publication reuse lacks written permission or approved policy basis; link-only fallback does not pass the editorial image gate."
+}

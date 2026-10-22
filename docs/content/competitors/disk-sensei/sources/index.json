@@ -1,0 +1,556 @@
+[
+  {
+    "id": "store",
+    "url": "https://cindori.com/store/sensei",
+    "finalUrl": "https://cindori.com/store/sensei",
+    "retrievedAtUtc": "2026-10-21T22:05:59.813302+00:00",
+    "httpStatus": 200,
+    "sha256": "b1e6d717814225165834ed7f38f08ade87e5fd13a74b2ee614e40721a8eff5fb",
+    "snapshotPath": "sources/store.html",
+    "publicationDate": null
+  },
+  {
+    "id": "press",
+    "url": "https://cindori.com/press",
+    "finalUrl": "https://cindori.com/press",
+    "retrievedAtUtc": "2026-10-21T22:05:59.775830+00:00",
+    "httpStatus": 200,
+    "sha256": "4b9e5148fea37587212c9880bd7c91a62930839c5061f91a4325a39aabbebfdc",
+    "snapshotPath": "sources/press.html",
+    "publicationDate": null
+  },
+  {
+    "id": "older-versions",
+    "url": "https://cindori.com/support/sensei/general/download-older-sensei",
+    "finalUrl": "https://cindori.com/support/sensei/general/download-older-sensei",
+    "retrievedAtUtc": "2026-10-21T22:05:59.784745+00:00",
+    "httpStatus": 200,
+    "sha256": "8df878ff476b76007e5da5f72ec6d6160db59b598dc691b5d43ac90f4e8a3ffc",
+    "snapshotPath": "sources/older-versions.html",
+    "publicationDate": null
+  },
+  {
+    "id": "eula",
+    "url": "https://cindori.com/support/order/legal/license-agreement",
+    "finalUrl": "https://cindori.com/support/order/legal/license-agreement",
+    "retrievedAtUtc": "2026-10-21T22:05:59.875074+00:00",
+    "httpStatus": 200,
+    "sha256": "436183674024e92badb26e54f6330a26cfc273c252d4051a8f497e201c9cc7f2",
+    "snapshotPath": "sources/eula.html",
+    "publicationDate": null
+  },
+  {
+    "id": "release-1.6",
+    "url": "https://cindori.com/news/sensei-1.6",
+    "finalUrl": "https://cindori.com/news/sensei-1.6",
+    "retrievedAtUtc": "2026-10-21T22:06:00.438650+00:00",
+    "httpStatus": 200,
+    "sha256": "7b298eb1d1c21f61939a89f811874758d97c5bd2f3a34d0ab669ee5239d88334",
+    "snapshotPath": "sources/release-1.6.html",
+    "publicationDate": null
+  },
+  {
+    "id": "vendor-comparison",
+    "url": "https://cindori.com/reviews/stats-vs-sensei-mac-monitoring",
+    "finalUrl": "https://cindori.com/reviews/stats-vs-sensei-mac-monitoring",
+    "retrievedAtUtc": "2026-10-21T22:06:00.520597+00:00",
+    "httpStatus": 200,
+    "sha256": "512dfefcd2f7733bee5dcf2726deccbe43d01a7f8b87d9ab787eca647583b0ae",
+    "snapshotPath": "sources/vendor-comparison.html",
+    "publicationDate": null
+  },
+  {
+    "id": "about",
+    "url": "https://cindori.com/about",
+    "finalUrl": "https://cindori.com/about",
+    "retrievedAtUtc": "2026-10-21T22:06:00.497802+00:00",
+    "httpStatus": 200,
+    "sha256": "60c1fdf617db8f07a0eeed68163514ab6e2227cf5f6b5dd3ea6bc184b20e767d",
+    "snapshotPath": "sources/about.html",
+    "publicationDate": null
+  },
+  {
+    "id": "upgrade",
+    "url": "https://cindori.com/store/upgrade",
+    "finalUrl": "https://cindori.com/store/upgrade",
+    "retrievedAtUtc": "2026-10-21T22:06:00.503754+00:00",
+    "httpStatus": 200,
+    "sha256": "c6d3e201716ecaf5b4b72195849c3e05e74c0f5df3214e34f91311e5910a5759",
+    "snapshotPath": "sources/upgrade.html",
+    "publicationDate": null
+  },
+  {
+    "id": "press-kit",
+    "url": "https://cdn.cindori.com/apps/press/SenseiPressKit.zip",
+    "finalUrl": "https://cdn.cindori.com/apps/press/SenseiPressKit.zip",
+    "retrievedAtUtc": "2026-10-21T22:06:11.900452+00:00",
+    "httpStatus": 200,
+    "sha256": "83c376ff9c3128e9930d9ce25fd7e5e34f50ca7afd8a19696308a0cd6d1a3640",
+    "snapshotPath": "sources/SenseiPressKit.zip",
+    "publicationDate": null,
+    "members": [
+      {
+        "name": "Sensei Press Kit/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Press Release Monitor.pdf",
+        "bytes": 59247
+      },
+      {
+        "name": "Sensei Press Kit/.DS_Store",
+        "bytes": 8196
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Questions Ansers.pdf",
+        "bytes": 62196
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/._Questions Ansers.pdf",
+        "bytes": 1623
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Welcome.pdf",
+        "bytes": 44965
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/.DS_Store",
+        "bytes": 8196
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/Artwork/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Optimize/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Trim/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Clean/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Editor (Light).png",
+        "bytes": 4704401
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Editor (Light).png",
+        "bytes": 631
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Editor (editing).png",
+        "bytes": 3493610
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Editor (editing).png",
+        "bytes": 580
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Editor (Dark, Light).png",
+        "bytes": 4225068
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Editor (Dark, Light).png",
+        "bytes": 631
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Editor (Dark).png",
+        "bytes": 4819462
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Editor (Dark).png",
+        "bytes": 631
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Menu Bar (Dark).png",
+        "bytes": 2372383
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Menu Bar (Dark).png",
+        "bytes": 631
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Menu Bar Expanded.png",
+        "bytes": 2439189
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Menu Bar Expanded.png",
+        "bytes": 531
+      },
+      {
+        "name": "Sensei Press Kit/[NEW] Artwork Monitor/Menu Bar Sensors.png",
+        "bytes": 3687629
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/[NEW] Artwork Monitor/._Menu Bar Sensors.png",
+        "bytes": 621
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Optimize/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Optimize/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Trim/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Trim/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/Artwork/Dashboard/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Clean/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Clean/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-512@2x.png",
+        "bytes": 407420
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-512.png",
+        "bytes": 133614
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-128.png",
+        "bytes": 15983
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-256.png",
+        "bytes": 46627
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-256@2x.png",
+        "bytes": 132753
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/App Icon/AppIcon-128@2x.png",
+        "bytes": 47011
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/Artwork/Battery/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "name": "__MACOSX/Sensei Press Kit/Artwork/Graphics/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Web/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Hi-Res/",
+        "bytes": 0
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Web/Uninstaller Desktop Dark.png",
+        "bytes": 281891
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Web/Uninstaller Promo Dark.png",
+        "bytes": 356894
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Web/Uninstaller Intro Desktop Dark.png",
+        "bytes": 412716
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Hi-Res/Uninstaller Promo Dark Hi-Res.png",
+        "bytes": 5467502
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Hi-Res/Uninstaller Intro Desktop Dark Hi-Res.png",
+        "bytes": 7130022
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Uninstaller/Hi-Res/Uninstaller Desktop Dark Hi-Res.png",
+        "bytes": 4344122
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Optimize/Web/Optimize Desktop Dark.png",
+        "bytes": 168747
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Optimize/Hi-Res/Optimize Desktop Dark Hi-Res.png",
+        "bytes": 2378817
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Web/Storage Desktop Dark.png",
+        "bytes": 282682
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Web/Disk Health Desktop Dark.png",
+        "bytes": 268628
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Web/Disk Stats Desktop Dark.png",
+        "bytes": 269985
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Web/Benchmark Desktop Dark.png",
+        "bytes": 287062
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Hi-Res/Benchmark Desktop Dark Hi-Res.png",
+        "bytes": 4052840
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Hi-Res/Disk Health Desktop Dark Hi-Res.png",
+        "bytes": 3937346
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Hi-Res/Storage Desktop Dark Hi-Res.png",
+        "bytes": 4222684
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Storage/Hi-Res/Disk Stats Desktop Dark Hi-Res.png",
+        "bytes": 3974078
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Trim/Web/Trim Desktop Dark.png",
+        "bytes": 349300
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Trim/Hi-Res/Trim Desktop Dark Hi-Res.png",
+        "bytes": 4854707
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Promo Dark.png",
+        "bytes": 210688
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Window Dark.png",
+        "bytes": 102569
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Desktop Dark.png",
+        "bytes": 194833
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Desktop Light.png",
+        "bytes": 173645
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Promo Light.png",
+        "bytes": 194335
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Web/Dashboard Window Light.png",
+        "bytes": 93487
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Desktop Light Hi-Res.png",
+        "bytes": 2726619
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Promo Dark Hi-Res.png",
+        "bytes": 2578374
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Window Dark Hi-Res.png",
+        "bytes": 764350
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Desktop Dark Hi-Res.png",
+        "bytes": 2458006
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Window Light Hi-Res.png",
+        "bytes": 862113
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Dashboard/Hi-Res/Dashboard Promo Light Hi-Res.png",
+        "bytes": 2172349
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Clean/Web/Clean Desktop Dark.png",
+        "bytes": 283265
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Clean/Hi-Res/Clean Desktop Dark Hi-Res.png",
+        "bytes": 4037856
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/Web/Battery Desktop Dark.png",
+        "bytes": 265763
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Battery/Hi-Res/Battery Desktop Dark Hi-Res.png",
+        "bytes": 3919901
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/Web/Graphics Desktop Dark.png",
+        "bytes": 270919
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Graphics/Hi-Res/Graphics Desktop Dark Hi-Res.png",
+        "bytes": 3954621
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Web/Cooling Window Dark.png",
+        "bytes": 64893
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Web/Cooling Promo Dark.png",
+        "bytes": 246983
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Web/Cooling Desktop Dark.png",
+        "bytes": 266721
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Hi-Res/Cooling Desktop Dark Hi-Res.png",
+        "bytes": 3917903
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Hi-Res/Cooling Promo Dark Hi-Res.png",
+        "bytes": 2946593
+      },
+      {
+        "name": "Sensei Press Kit/Artwork/Cooling/Hi-Res/Cooling Window Dark Hi-Res.png",
+        "bytes": 502680
+      }
+    ],
+    "selectedAssets": [
+      {
+        "member": "Sensei Press Kit/Welcome.pdf",
+        "path": "sources/Welcome.pdf",
+        "sha256": "95bf1494ce75d68ab3f1821179f1ca7137997658b9f100e3d3a2d64dfcf879c8",
+        "bytes": 44965
+      },
+      {
+        "member": "Sensei Press Kit/Questions Ansers.pdf",
+        "path": "sources/Questions-Answers.pdf",
+        "sha256": "ba1525b3ab3d019d4ab6f87f51c2585a8cee4e7212fc9a4022ad1248a35dbbb9",
+        "bytes": 62196
+      },
+      {
+        "member": "Sensei Press Kit/Artwork/Clean/Web/Clean Desktop Dark.png",
+        "path": "assets/sensei-clean-original.png",
+        "sha256": "54335eb6ce95f3c50ec28ae9b853b0bafcbee3833ef4d1b0e8ed298969e33d15",
+        "bytes": 283265
+      },
+      {
+        "member": "Sensei Press Kit/Artwork/Storage/Web/Disk Health Desktop Dark.png",
+        "path": "assets/sensei-drive-health-original.png",
+        "sha256": "1b4a659f16736ae3a9abf7fb8c46a2bebb901275548a30f50c544cae6c257190",
+        "bytes": 268628
+      }
+    ]
+  }
+]

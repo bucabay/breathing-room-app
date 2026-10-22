@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-backapp",
+  "productId": "backapp",
+  "stage": "research",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "reviewer": "research-backapp worker; source inspection only, not independent publication reviewer",
+  "ownership": "docs/content/competitors/backapp/ only, plus required runtime receipt; no website edits",
+  "identity": {
+    "officialName": "BackApp",
+    "homepage": "https://backapp.developer.pm/",
+    "repository": "https://github.com/li-nd/BackApp",
+    "author": "Markus Lind / li-nd",
+    "canonicalOwnerId": "backapp",
+    "aliases": [],
+    "taglineNotSeparateProduct": "Backup your App / Get back your App",
+    "aliasSkipDecision": "do-not-skip-as-alias",
+    "aliasEvidence": "Reused official homepage identifies li-nd/BackApp and Markus Lind; repository README reciprocally links the homepage. NativePass text in the directory's WHAT IS BACKAPP section conflicts with its header and official sources: treat as erroneous directory copy, not evidence of an alias. No BackApp/PowerMyMac relationship established or suspected by the official sources checked.",
+    "classification": "adjacent",
+    "classificationReason": "Installed-app inventory, metadata snapshots and version comparison overlap app awareness, not the documented storage/cleanup and running-helper investigation job of Breathing Room. Complementary Mac tools, not interchangeable cleaners.",
+    "platformFit": "native macOS-only; no Windows/Linux support claimed",
+    "contentDecision": "retain distinct adjacent workflow brief; block drafting until installation-platform ambiguity is resolved",
+    "skipDecision": {"skip": false, "reason": "Live official docs, public release and useful distinct Mac inventory workflow; neither dead nor a verified alias. No doorway alternatives page."}
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "backapp",
+    "sha256": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "reusedFields": ["officialName", "officialUrl", "coreFunction", "platforms", "license", "availability", "discovery"],
+    "previousMissingField": "pricing",
+    "policy": "Did not refetch homepage or discovery listing. Retrieved missing official documentation, release, licensing and source evidence. Pinned raw copies retain exact evidence independently of rendered pages. No runtime testing."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/backapp/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:15.321Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/backapp-directory.json",
+    "sha256": "1f552a76ff26fbd3497de17dec7525e806a96fab2440bde6581d79036e3e470e",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=7",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:22.582Z",
+    "edgeSnapshotPath": "docs/content/.runtime/mole-7.json",
+    "edgeSha256": "0fedfd67b7bf4b9ca617163986a58d2f3227748232d233f72ace4bf3ff0f2c61",
+    "method": "Reused live-browser rendered discovery edge and baseline official-link resolution; listing URL deduplication is not vendor capability verification.",
+    "excludedEvidence": "NativePass/password-manager description is unrelated to official BackApp identity. Directory Free label alone is not official pricing verification."
+  },
+  "sourceLedgerFile": "docs/content/competitors/backapp/source-ledger.json",
+  "sourceLedgerNotes": "Ten retained public sources include exact final URLs, retrieval times, byte counts and SHA-256. Current docs/source pinned to ebf4502d32ebe5b801b00e86653a4dd2fb3ba201. Rendered install and usage pages were also read; raw copies preserve the supporting documentation. No source modification date invented.",
+  "reusedSources": [
+    {
+      "id": "baseline-home",
+      "url": "https://backapp.developer.pm/",
+      "finalUrl": "https://backapp.developer.pm/",
+      "publisher": "Markus Lind / li-nd",
+      "retrievedAtUtc": "2026-10-21T19:07:55.916176+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/backapp-official.json",
+      "sha256": "82f937e43aab55351ca4100e1f61da78713d2bb57aacfcf9a6e07c2c275ea611",
+      "excerpt": "a native macOS app to list installed applications, create snapshots of that set, compare them to the current machine, and share snapshots as JSON files."
+    },
+    {
+      "id": "br-capabilities",
+      "url": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "scope": "Same-day first-party capability register; its source references and public retrieval register are reused, not a new binary test."
+    },
+    {
+      "id": "br-screenshots",
+      "snapshotPath": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Current-source Breathing Room Apps browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    }
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "reviewer": "research-backapp worker", "evidenceClass": "official documentation/source, not observed application behavior"},
+  "claims": [
+    {"id":"B01","wording":"BackApp is Markus Lind's native macOS app-inventory and snapshot comparison app; official repository li-nd/BackApp.","sourceIds":["baseline-home","readme"],"excerpt":"List installed Mac apps, create snapshots, compare to your current machine, and share snapshot files.","locator":"README introduction, documentation links and License author","state":"verified","intendedLocation":"identity/lead"},
+    {"id":"B02","wording":"Documented installed-app discovery covers /Applications and ~/Applications; the System filter optionally includes /System/Applications and is off by default.","sourceIds":["usage"],"excerpt":"When you open BackApp, you see the list of apps discovered under `/Applications` and `~/Applications`.","locator":"Installed Apps / Filters","state":"verified","conditions":"Not a whole-disk inventory guarantee; optional System filter rescans.","intendedLocation":"workflow inventory boundary"},
+    {"id":"B03","wording":"BackApp documents named local JSON snapshots, comparison states Same version / Not installed / Different version, and JSON export/import to another Mac.","sourceIds":["usage"],"excerpt":"Snapshots are stored locally as JSON.","locator":"Create a snapshot / Compare to a snapshot / Export and import","state":"verified","conditions":"Different-version ordering only when versions are comparable; import assigns a new ID.","intendedLocation":"workflow and comparison matrix"},
+    {"id":"B04","wording":"A BackApp exported snapshot is an app-metadata inventory, not a copy of app binaries or personal documents.","sourceIds":["snapshot-model","usage"],"excerpt":"struct SnapshotExportFile: Codable","locator":"Snapshot.swift:31-44,68-75,112-121","state":"verified","conditions":"Inspected export schema contains bundle IDs, names, versions, categories, flags and device metadata. Do not extend this bounded schema finding into a claim about every app behavior or a tested restore.","intendedLocation":"backup warning"},
+    {"id":"B05","wording":"The install guide says the installed-app list works offline; optional app-detail App Store lookups use the network.","sourceIds":["install","usage"],"excerpt":"Network is used only for App Store lookup on the app detail screen; the installed-apps list works offline.","locator":"Install / Dependencies; Usage / App detail","state":"verified","conditions":"Attributed documentation statement, not a traffic audit or blanket privacy guarantee.","intendedLocation":"local/hosted row"},
+    {"id":"B06","wording":"Official install documentation describes Homebrew or GitHub ZIP distribution, not Mac App Store distribution, and says current builds are ad-hoc signed and not notarized.","sourceIds":["install"],"excerpt":"Current BackApp builds are **ad-hoc signed and not notarized**.","locator":"Install introduction / Notarization / Gatekeeper","state":"verified","conditions":"Vendor disclosure only; no binary signature inspection, installation, Gatekeeper changes or bypass advice.","intendedLocation":"installation caveats"},
+    {"id":"B07","wording":"Latest stable release metadata inspected identifies BackApp 1.0.0, tag v1.0.0, published August 24, 2026, with BackApp-1.0.0-macos.zip.","sourceIds":["release","cask"],"excerpt":"First release: browse installed apps, create snapshots, compare, import/export.","locator":"release tag_name/name/published_at/assets/body; cask version","state":"verified","conditions":"Release metadata, not downloaded ZIP contents. Project MARKETING_VERSION is 1.0; do not silently call it 1.0.0.","intendedLocation":"version row"},
+    {"id":"B08","wording":"The install guide requires macOS Tahoe or newer and the tap says :tahoe; inspected main and v1.0.0 source project configurations set MACOSX_DEPLOYMENT_TARGET = 26.2.","sourceIds":["install","cask","project","tagged-project"],"excerpt":"MACOSX_DEPLOYMENT_TARGET = 26.2;","locator":"project.pbxproj Debug and Release; install Homebrew section; cask depends_on","state":"verified","conditions":"These are separate documented/source requirements; do not collapse them into a verified minimum for the distributed ZIP.","intendedLocation":"platform row / blocker"},
+    {"id":"B09","wording":"The distributed BackApp ZIP's exact minimum macOS version and architecture coverage are not verified.","sourceIds":["release","install","project","tagged-project"],"excerpt":"Requires **macOS Tahoe** or newer (matches the app’s deployment target).","locator":"Install / Homebrew versus project target 26.2; release asset is merely named macos.zip","state":"not-verified","conditions":"Need release manifest or authorized nonexecuting binary metadata inspection. Do not claim all Tahoe releases, Intel or universal support.","intendedLocation":"platform warning"},
+    {"id":"B10","wording":"BackApp software and associated documentation are offered under MIT; preserve the copyright and permission notice when reproducing them.","sourceIds":["license"],"excerpt":"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files","locator":"LICENSE grant and notice condition","state":"verified","conditions":"Source/documentation permission does not prove future binary pricing, independent third-party icon rights or support commitments.","intendedLocation":"licence/pricing/visual credit"},
+    {"id":"B11","wording":"No official commercial-plan amount, billing period, trial or paid support terms were verified. Official docs link public GitHub releases and MIT source without advertising a price.","sourceIds":["baseline-home","readme","install","license","release"],"excerpt":"Or download a zip from [Releases]","locator":"README Install and License; bounded to pages inspected","state":"not-verified","conditions":"Do not turn directory Free into a verified $0 lifetime offer or equate MIT with an unlimited hosted-service entitlement.","intendedLocation":"pricing row, explicitly unknown"},
+    {"id":"R01","wording":"Breathing Room, which we build, has source implementations for storage views, app/helper CPU/memory grouping and reviewable cleanup; these are not BackApp-style exported app-set restore evidence.","sourceIds":["br-capabilities"],"excerpt":"Native sampling groups helpers through parent/app relationships and exposes CPU/memory.","locator":"capabilities.md:24-40","state":"verified","conditions":"Source-level implementation only, permission and attribution limits; no distributed-binary parity claim.","intendedLocation":"bounded recommendation and matrix"},
+    {"id":"R02","wording":"Breathing Room is identified in the same-day register as 0.1.0-preview.1, macOS 13+, advertised universal, with Python 3.10+ required and a non-notarized Apple Development-signed preview disclosure.","sourceIds":["br-capabilities"],"excerpt":"Apple Development signed, not Developer ID signed or notarized","locator":"capabilities.md:44-56,94-98","state":"verified","conditions":"Release disclosure, not our signature inspection. Physical Intel and clean-machine runtime validation remain incomplete; not production-ready.","intendedLocation":"installation caveats"},
+    {"id":"R03","wording":"The same-day register verifies the advertised free local core and optional AI Care at $5 USD/month or $50 USD/year, renewing until cancelled with applicable checkout tax; hosted AI requires internet and authentication.","sourceIds":["br-capabilities"],"excerpt":"$5 USD/month, $50 USD/year","locator":"capabilities.md:58-86,94-97","state":"verified","conditions":"Advertised terms, not successful billing or unlimited usage. Relevant question/history/tool outputs may reach hosted services. Website account gate differs from public GitHub downloads. Daily care needs app running and exact saved approvals; optional automatic Ruff mode is a separate narrow exception.","intendedLocation":"price, local/hosted and approval rows"}
+  ],
+  "productMatrix": [
+    {"dimension":"primary job","backapp":"Installed-app inventory and app-set snapshots","backappClaimIds":["B01","B03"],"breathingRoom":"Storage investigation and app/helper activity; complementary, not a replacement inventory guarantee","breathingRoomClaimIds":["R01"]},
+    {"dimension":"macOS","backapp":"macOS-only; docs Tahoe, source target 26.2; compiled minimum and architectures unverified","backappClaimIds":["B08","B09"],"breathingRoom":"Advertised 13+ universal preview; physical Intel untested","breathingRoomClaimIds":["R02"]},
+    {"dimension":"licence and pricing","backapp":"MIT source/docs; public release link; commercial amount/period not verified","backappClaimIds":["B10","B11"],"breathingRoom":"Apache-2.0 source; advertised free core, optional $5 USD/month or $50 USD/year AI Care","breathingRoomClaimIds":["R03"],"additionalEvidence":"capabilities.md:80 for Apache-2.0"},
+    {"dimension":"local versus hosted","backapp":"Documented local JSON/list; optional online App Store lookup","backappClaimIds":["B03","B05"],"breathingRoom":"Local inspection; authenticated hosted AI can receive relevant context/tool output","breathingRoomClaimIds":["R03"]},
+    {"dimension":"scan/cleanup model","backapp":"App-folder inventory; cleanup capability not verified","backappClaimIds":["B02"],"breathingRoom":"Storage discovery and exact approved action methods/paths; no guaranteed savings","breathingRoomClaimIds":["R01","R03"]},
+    {"dimension":"approval controls","backapp":"Snapshot creation/export/import documented; cleanup approval controls not verified","backappClaimIds":["B03"],"breathingRoom":"Default review; narrow optional Ruff automatic Trash mode; daily exact saved approvals","breathingRoomClaimIds":["R01","R03"]},
+    {"dimension":"running-helper grouping","backapp":"not verified","backappClaimIds":[],"breathingRoom":"Source-level app/helper CPU/memory grouping; inferred ownership and RSS overlap limits","breathingRoomClaimIds":["R01"]},
+    {"dimension":"recurring storage growth","backapp":"not verified; app-set snapshots are not storage-growth measurements","backappClaimIds":["B03","B04"],"breathingRoom":"Source activity/history and advertised AI Care growth investigation; not forensic attribution","breathingRoomClaimIds":["R01","R03"]},
+    {"dimension":"developer cache cleanup","backapp":"not verified","backappClaimIds":[],"breathingRoom":"Source adapters documented with tool/path compatibility caveats","breathingRoomClaimIds":["R01"],"additionalEvidence":"capabilities.md:28,117"},
+    {"dimension":"runtime/install caveats","backapp":"Docs say no Homebrew CLI prerequisites; ad-hoc signed, not notarized; exact compiled OS minimum blocked","backappClaimIds":["B06","B08","B09"],"breathingRoom":"Python 3.10+; preview not notarized; hosted AI account/network; app must run for daily care","breathingRoomClaimIds":["R02","R03"]}
+  ],
+  "visuals": [
+    {
+      "id":"backapp-snapshot-compare","productId":"backapp","view":"Snapshot comparison","kind":"official-asset",
+      "sourcePageUrl":"https://backapp.developer.pm/usage/#compare-to-a-snapshot",
+      "assetUrl":"https://backapp.developer.pm/screenshots/4-snapshot-compare.png",
+      "downloadedAssetUrl":"https://raw.githubusercontent.com/li-nd/BackApp/ebf4502d32ebe5b801b00e86653a4dd2fb3ba201/docs/screenshots/4-snapshot-compare.png",
+      "capturedAtUtc":null,"capturedBy":null,"retrievedAtUtc":"2026-10-21T20:02:33.366699+00:00",
+      "productVersion":null,"buildOrCommit":"Repository documentation at ebf4502d32ebe5b801b00e86653a4dd2fb3ba201; capture build unknown","osVersion":null,"dataMode":"vendor-illustration",
+      "originalPath":"docs/content/competitors/backapp/assets/snapshot-compare-original.png","originalSha256":"bccc25ed94e6163066d419db8ab943bd7d2f6846535aa181cd61f1ac641b6129",
+      "publishedPath":null,"publishedSha256":null,"widthPx":1347,"heightPx":908,"edits":[],
+      "privacyReview":{"status":"reviewed-public-asset","redactions":[],"notes":"Opened actual PNG: public app names, /Applications paths, generic MacBook Pro device name and snapshot date. No personal home path, account email, credentials or local machine inventory extracted."},
+      "reuse":{"status":"cleared","basis":"Official repository documentation image under root MIT licence including associated documentation files, with copyright and permission notice retained. Limited to rights the licensor grants; incidental third-party marks are not relicensed or endorsements.","evidenceUrlOrPath":"docs/content/competitors/backapp/sources/LICENSE.txt","credit":"BackApp screenshot © 2026 Markus Lind, MIT; include full retained MIT notice with any distributed image."},
+      "caption":"BackApp's official snapshot-comparison screenshot, supplied in its documentation. Shows Same version and Not installed states; not our test or a measured migration result. © 2026 Markus Lind, MIT.",
+      "alt":"BackApp snapshot comparison with installed-app version rows, missing-app indicators and source/status filters.",
+      "supportedClaimIds":["B03"],
+      "limitations":["Vendor capture time, OS and app build unknown; displayed snapshot date is not capture provenance.","Some displayed app names and paths appear illustrative or mismatched; do not use individual rows as forensic evidence.","Must carry MIT notice into website assets; no site asset published in this research job.","Target-page narrow-screen legibility and independent review remain pending."],
+      "review":{"status":"research-image-opened-and-read; independent target-page review pending","reviewer":"research-backapp worker","reviewedOn":"2026-10-21"}
+    },
+    {
+      "id":"current-apps-browser-preview","productId":"breathing-room","view":"Apps","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:59.096850+00:00","retrievedAtUtc":null,"capturedBy":"screenshot-library job per screenshots.json",
+      "productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/apps-preview-2026-10-21.png","originalSha256":"6bacc46187202835a29e24458383056e9cd55197bd53b0df2592e68c03c741d3",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":4440,"edits":[],
+      "privacyReview":{"status":"reviewed","redactions":[],"notes":"Actual PNG opened and read; example banner and built-in demo app/helper rows, not local observations."},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture with example disclosure; retain incidental third-party mark qualifications from screenshots.json.","evidenceUrlOrPath":"docs/content/screenshots.json#current-apps-browser-preview","credit":"Breathing Room current-source browser preview; example data."},
+      "caption":"Current-source Breathing Room Apps browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Apps browser preview with visible example-data banner and illustrative grouped app/helper CPU and memory rows.",
+      "supportedClaimIds":["R01"],"limitations":["Keep Interactive preview · example data banner and no-Mac-changes notice visible; do not cite CPU/RAM figures as measurements.","Current-source illustration, not current distributed-binary parity or native behavior evidence.","Full-height image needs a readable contextual crop or layout at draft stage; preserve disclosure and log new hash/edits."],
+      "review":{"status":"research-image-opened-and-read; independent target-page review pending","reviewer":"research-backapp worker","reviewedOn":"2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search/reference workflow, not replacement sales page",
+      "title":"Compare your installed Mac apps before and after a migration",
+      "slug":"compare-mac-app-inventories-before-after-migration",
+      "primaryIntent":"Make an app/version checklist across Macs without confusing metadata snapshots with app or document backups.",
+      "description":"BackApp documents JSON app inventories and missing/version-difference comparisons. Use them as a migration checklist, not a binary backup or proof that apps and their data were restored.",
+      "outline":["Lead with the inventory-versus-backup boundary and official comparison screenshot.","Define inventory scope: normal app folders and optional system inclusion; record permissions and app version context.","Describe documented named snapshot/export/import and comparison states, explicitly not a hands-on test.","Explain why Same version is not proof of data, settings, licence or runtime equivalence; review JSON device/app metadata before sharing.","Separate installed-app differences from running app/helper resource use; introduce the labeled Breathing Room example view.","Give a non-destructive decision checklist: missing app, different version, lost document, storage growth are different jobs.","Keep installation section blocked until compiled minimum OS is resolved; disclose both products' signing/runtime limits."],
+      "interactionPass":"Propose a static decision aid: need app/version list → inventory; need app binaries/documents/settings → independent backup plan; need current helper activity/storage investigation → separate maintenance workflow. No uploads, filesystem access or fake calculator.",
+      "internalLinks":["/comparisons/","/comparisons/backapp/"],
+      "advantages":["BackApp directly documents named JSON inventories and cross-Mac app/version comparison.","Its documented inventory workflow can operate locally; App Store detail lookup is optional online enrichment."],
+      "tradeOffs":["Snapshot schema is metadata, not a full backup or automated reinstall guarantee.","App-folder scope is bounded; version equality does not establish successful migration.","Compiled OS minimum/architectures unverified and signing caveat must remain visible."],
+      "recommendation":"At most one disclosed arc: Breathing Room, which we build, addresses storage and running-helper questions; choose BackApp for the documented inventory comparison job. Do not call one better overall."
+    },
+    "comparison": {
+      "track":"concise search/reference",
+      "title":"Breathing Room vs BackApp: activity or app inventory?",
+      "slug":"backapp",
+      "primaryIntent":"Choose a tool for installed-app history versus current storage/helper investigation; neither is presented as a universal substitute.",
+      "structure":["Conclusion: adjacent/complementary jobs with affiliation disclosure.","Concise claim-linked rows: purpose, inventory/export versus helper activity, local/network boundary, OS/version, licensing/pricing and install caveats.","Two actual product visuals with source credit, MIT notice and example labels.","When to choose BackApp; when source-level Breathing Room capabilities fit; when neither is a backup solution.","Link to distinct migration checklist workflow and hub; no separate near-duplicate alternatives route."],
+      "length":"Only as long as the decision requires; do not pad to a target.",
+      "pricingWording":"BackApp: MIT source/docs and public release link; no verified commercial amount or billing period. Breathing Room: same-day advertised free core, optional $5 USD/month or $50 USD/year AI Care with tax/renewal and hosted-account caveats.",
+      "publicationStatus":"draft only after blocker resolved; independent QA and website checks remain later-stage work"
+    }
+  },
+  "unknowns": [
+    {"field":"compiled minimum macOS","critical":true,"claimIds":["B08","B09"],"diagnostic":"Docs/cask say Tahoe but both inspected main and release-tag project targets say 26.2. ZIP minimum and architecture slices not inspected. Do not promise Tahoe 26.0 compatibility or Intel/universal availability.","resolution":"Obtain an explicit official release-specific supported-OS/architecture manifest or separately authorized nonexecuting inspection of the v1.0.0 release Info.plist and Mach-O metadata. This job authorizes image downloads, not downloading executables."},
+    {"field":"commercial pricing/paid support","critical":false,"claimIds":["B10","B11"],"diagnostic":"No official amount, period, trial, subscription or support terms verified. MIT source is not a binary pricing guarantee. Can remain explicitly unknown; omit cheapest/free-lifetime comparisons."},
+    {"field":"cleanup/helper/growth/cache capabilities in BackApp","critical":false,"diagnostic":"Not verified, not No. Do not force direct-competitor feature checkmarks."},
+    {"field":"hands-on performance, migration success, safety and savings","critical":false,"diagnostic":"No app run, installation, benchmark, cleanup, account or purchase performed. Omit all such claims."},
+    {"field":"vendor screenshot capture version/date","critical":false,"diagnostic":"Unknown; official documentation illustration only. No invented capture provenance."}
+  ],
+  "gates": {
+    "identity":"verified official identity; directory NativePass contamination excluded",
+    "alias":"canonicalOwnerId backapp; no verified duplicate alias",
+    "drafting":"blocked by compiled OS requirement ambiguity",
+    "researchVisuals":"Two real product views inspected; MIT notice retained and example labels required",
+    "renderedVisualApproval":"pending later independent target-page review; no crops or website assets created",
+    "publication":"not authorized; no draft, site build, schema score or independent approval claimed"
+  },
+  "safety": {"agentsSpawned":0,"browserInteractions":0,"credentialsRead":false,"executablesDownloaded":false,"appInstalledOrRun":false,"cleanupPerformed":false,"queueChanged":false,"websiteEdited":false,"committedPushedOrDeployed":false}
+}

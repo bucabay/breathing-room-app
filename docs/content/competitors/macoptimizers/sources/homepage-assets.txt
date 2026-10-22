@@ -1,0 +1,407 @@
+MacOptimizers: Clean, Repair and Optimize Your Mac
+MacOptimizers
+macOS Maintenance & Troubleshooting
+Functions
+Free
+Diagnostics
+Captures
+FAQ
+Premium
+Reviews
+Bug tracking
+Resources
+Guides
+Blog
+Documentation
+Contact
+Legal notices
+Native macOS app
+MacOptimizers, the macOS app to clean, repair and optimize your Mac
+with a native product built for download and daily use.
+Download MacOptimizers to reclaim disk space, remove duplicates, run guided diagnostics, then upgrade to Premium for advanced maintenance workflows.
+Compatible from macOS Ventura to Tahoe
+Ventura 13
+Sonoma 14
+Sequoia 15
+Tahoe 26
+Apple Silicon (M)
+Intel
+Download MacOptimizers
+★
+Skip Premium
+macOS download only (.dmg). To install, open this link from a Mac.
+Current version:
+...
+Downloads
+...
+☆☆☆☆☆
+0.0
+/5 ·
+0
+reviews
+❤️
+Do you like the app? Leave a review
+🐞
+Report a bug
+📌
+Bug tracking
+❓
+Documentation
+📰
+Blog
+✉️
+Contact
+🩺
+Actionable macOS diagnostics
+Shell tests, interpretation of feedback, progressive corrections and validation after each action.
+🧹
+Free macOS cleanup & system optimization
+Targeted removal of unnecessary data, RAM optimization and regular Mac maintenance with a free tool.
+♻️
+Recovery & user security
+Deleted file recovery, duplicate management, and guided actions to avoid errors.
+Transparency
+Free vs Premium
+MacOptimizers offers a free base for daily maintenance, and a lifetime Premium license (
+) for advanced functions.
+Free: Standard Cleanup, System Information, Duplicates and Uninstallation.
+Premium: Smart Sorting, Media Optimization, Security Scan antimalware, Recovery, Diagnostics, RAM Optimization and Advanced Cleaning.
+Premium license:
+lifetime, 1 Mac, no subscription.
+🎁
+Loyalty discount
+Already a customer? Enjoy
+on your 2
+nd
+Premium license by entering your email on the purchase page.
+Get the discount
+See Premium
+View the free version
+Available functions
+One app to clean and optimize your Mac
+Cleanup, macOS optimization, duplicate removal, diagnostics, and maintenance: the core tools to keep your Mac fast in one application.
+🧹
+Smart cleanup
+Scan caches, logs, unused languages, large files and application residues. Advanced cleaning in Premium.
+🧩
+Intelligent sorting
+Premium
+New
+Automatic classification of files by categories, predictions and destinations with control before moving.
+🖼️
+Media Optimization
+Premium
+New
+Compress, convert, process PDF, extract audio and extract video from URL with queue and global progress.
+🛡️
+Security Scan antimalware
+Premium
+New
+Intelligent antimalware analysis with potentially harmful unwanted item detection, quarantine and history.
+🔒
+Document Protection
+Premium
+New
+Encrypt or decrypt sensitive files on demand so private documents stay unreadable when locked.
+💻
+System Information
+CPU, GPU, RAM, temperatures, fans, and overall Mac health.
+🩺
+Guided diagnostics
+Premium
+Audio, Wi-Fi, Bluetooth, Disk, Finder, Spotlight, iCloud, USB and more.
+🛠️
+All actions
+Catalog of shell actions classified by risk: Safe, Advanced, Aggressive.
+🗑️
+Complete uninstallation
+Removing apps with caches, preferences, containers and residual files.
+📂
+Duplicate files
+Duplicate detection with secure selection of the file to keep.
+♻️
+File Recovery
+Premium
+Built-in deleted file recovery engine.
+⚡
+RAM Optimization
+Premium
+Memory analysis and targeted optimization of demanding processes.
+📜
+Execution logs
+Complete history of orders, outputs and action results.
+Smart cleanup
+Intelligent analysis of areas that swell over time and targeted cleaning to quickly recover disk space.
+New module
+Smart Sort: Automatically sort your Mac files and folders
+The module analyzes your source folders, applies predictions (native rules + personalized predictions + learned associations), enriches the results via Spotlight and offers a Mac file organization plan before execution.
+Choice of folders, exclusions, scan depth and sorting options.
+Source → destination preview, requalification of predictions and validation before organization.
+Multi-category scan: documents, images, videos, audio, archives and others.
+Unified prediction: learned associations, personalized predictions and weighted native rules.
+Additional analysis: Spotlight enrichment and PDF content analysis if necessary.
+Execution security: confirmation before moving, optional Finder tags and possible cancellation after organization.
+New Premium module
+Media Optimization: reduce file size, convert formats, and process media files
+The module brings together manual compression and conversion workflows, intelligent space-saving scanning, PDF processing (merger/optimization) and audio/video extraction with queue management.
+Video compression with gain estimation, quality profiles and batch processing.
+Image, video, audio and PDF conversion with advanced target-format settings.
+Batch compress: images, videos, audio, PDF with quality profiles (High, Balanced, Aggressive, Custom).
+Convert by file or in bulk: image/video/audio/PDF formats supported with advanced settings.
+Dedicated PDF processing: merging several PDFs, optional compression and choice of output file.
+Media extraction: extract audio from local video, or video/audio from URL with detailed progress.
+Robust queue: pending/in-progress/completed states, timer and overall progress + per file.
+New Premium module
+Security Scan antimalware: analyze files and detect unwanted potentially dangerous items
+The module runs an intelligent security analysis on key locations, displays findings by risk level, and then offers guided actions to isolate potentially dangerous items.
+Overview of the module with scan profile selection and quick access to results.
+Real-time scan steps with progress, detailed status and instant cancellation.
+Detailed findings, multi-selection, quarantine flow and security action history.
+Intelligent scan of the most sensitive Mac locations based on selected mode.
+Potentially harmful unwanted item detection with severity-based ranking.
+Guided post-scan actions: quarantine, controlled deletion, exclusion and review.
+Local history of scans and actions for clear security follow-up.
+New Premium module
+Document Protection: encrypt confidential files in a few clicks
+Document Protection lets you encrypt sensitive files so they stay unreadable until you unlock them.
+              You manage protected items from a dedicated library and decrypt only when you need to open a document in Finder.
+Dedicated library of protected files with locked/unlocked state tracking.
+Password confirmation and real-time progress during encryption.
+On-demand encryption for sensitive files with `.mcptcrypt` extension.
+Manual decryption only when you need to open a file from Finder.
+Password required for module access and each sensitive action.
+Local history of protected items to quickly find your documents.
+Troubleshooting engine
+Smart diagnostics powered by real shell output
+Each category launches precise tests, reads the command feedback, then offers progressive corrections. The app stops as soon as the problem is resolved.
+Guided repairs from soft to aggressive level with automatic retesting.
+Contextualized user questions when manual verification is necessary.
+Clear escalation to Apple support if not resolved after several attempts.
+🔊
+Audio & Network
+Sound test, audio output, daemon, Wi-Fi/Ethernet, DNS, DHCP and guided resets.
+🛜
+Bluetooth & Disk
+Module status, pairing, daemon restart, folder permissions, volume repair and rights.
+🚀
+Startup Finder checks
+Finder, Spotlight, Print, View, Crashes, Mail, Time Machine, iCloud, USB, Startup.
+Screenshots app
+Clean, fast, and easy-to-use interface
+‹
+New
+New
+New
+New
+New
+New
+New
+New
+New
+New
+›
+FAQ
+Frequently asked questions
+Is MacOptimizers compatible with Apple Silicon and Intel?
+Yes. The app works on Apple Silicon (M) chips and Intel Macs.
+What versions of macOS are supported?
+Ventura, Sonoma, Sequoia and Tahoe are supported.
+Is this a real macOS troubleshooting app?
+Yes. Diagnostics uses native macOS shell commands, sequential testing, and guided repairs. See also
+the Mac diagnostic guide
+.
+Can I recover deleted files?
+Yes. A dedicated recovery module allows you to analyze and then restore the files found.
+Can I remove duplicate files?
+Yes. The Duplicates section identifies groups and lets you choose which file to keep. See also
+the duplicate removal guide
+.
+How does Smart Sorting work?
+The module scans your folders, predicts categories (native + custom rules), suggests destinations, and only moves files after your validation. See also
+the Mac file sorting guide
+.
+What does Media Optimization include?
+The Premium module includes 5 modes:
+Compress
+,
+Convert
+,
+PDF Processing
+,
+Extract Audio
+, and
+Extract Video URL
+, with queue management and full progress tracking.
+What does the Security Scan antimalware module include?
+The Premium module analyzes your folders, detects potentially harmful unwanted items, and provides guided actions such as quarantine, detailed review and security history.
+What does Document Protection include?
+The Premium module encrypts and decrypts sensitive files on demand. As long as a file is encrypted, it stays unreadable until you unlock it with your password.
+Is the app free?
+Yes, a free version is available. Advanced features are included in the Premium lifetime license (
+live price
+).
+Download MacOptimizers
+Use the free version for everyday maintenance, then upgrade to lifetime Premium for advanced features.
+Download MacOptimizers now
+Current version:
+...
+Support & Quality
+Report a bug or request a feature
+Found a bug or have a feature idea? The wizard adapts the form based on your request type.
+Step 1/3 · Context
+Type of request
+Report a bug
+Improvement/feature request
+Affected category
+Choose…
+Smart cleanup
+System information
+Diagnostics
+All actions
+App uninstaller
+Duplicate files
+Smart sort
+Media optimization
+File Recovery
+RAM Optimization
+Security scan
+Document protection
+Commands
+Logs
+Updates
+Interface/display
+Installation / launch
+Other
+Specify the category
+Severity
+Choose…
+Blocking
+Important
+Minor
+Version of MacOptimizers
+macOS version
+Choose…
+Ventura 13
+Sonoma 14
+Sequoia 15
+Tahoe 26
+Other
+Mac architecture
+Choose…
+Apple Silicon (M chip)
+Intel
+I don't know
+Specify the version of macOS
+Short summary
+Description of the problem
+Steps to reproduce
+Observed result (optional)
+First name
+Email contact
+Name (optional)
+Screenshots (optional)
++
+Add captures
+Drag and drop your captures here or click to browse
+You can attach up to 2 images (20 MB max in total).
+No capture selected.
+Preparing to send…
+0%
+I accept the sending of this information for the processing of my bug report.
+The information is used only to analyze and correct the reported problem.
+Back
+Next
+Send report
+Press & Media
+MacOptimizers in the press
+Coverage and articles from tech media and partner publications.
+‹
+See the article
+See the article
+›
+Guides, comparisons & troubleshooting
+Need a guide before you download?
+The homepage presents the product. The resources below are for learning, comparing and troubleshooting before installation.
+Free macOS cleanup guide
+Step-by-step tutorial for cleaning a Mac without a subscription using the free features.
+View free guide
+Sorting Mac files
+Organize Documents, Images and other files without losing control.
+Read the guide
+Remove duplicates
+Identify true duplicates and delete securely.
+Read the guide
+Mac Diagnostics
+Run a diagnosis and apply priority corrections.
+Read the guide
+Uninstall a Mac app
+Remove an application and its residue (caches, preferences, containers).
+Read the guide
+Mac slow after update
+Quick checklist to regain fluidity after updating macOS.
+Read the guide
+Mac disk full
+Simple action plan to quickly reclaim space.
+Read the guide
+Mac media optimization
+Compress, convert, process PDF and extract audio/video while maintaining quality.
+Read the guide
+Protect sensitive documents
+Encrypt and decrypt private files to prevent unwanted access on your Mac.
+Read the guide
+Too many duplicate photos
+Clean up an overloaded photo library without deleting the right files.
+Read the guide
+Long-tail practical guides
+Pages targeted for specific problems encountered on macOS.
+Clean Safari cache
+Fix slow navigation and unstable pages.
+Read the guide
+Clear system cache
+Reclaim space through careful system cleaning.
+Read the guide
+Temporary files
+Delete unnecessary temporaries without risk.
+Read the guide
+Noisy fan
+Identify overheating and reduce noise.
+Read the guide
+RAM saturated
+Regain control of memory in 10 minutes.
+Read the guide
+Startup apps
+Speed ​​up macOS login.
+Read the guide
+Photo storage
+Optimize the photo library without losing useful images.
+Read the guide
+Slow finder
+Fix a Finder that responds poorly in large folders.
+Read the guide
+Slow spotlight
+Accelerate search and indexing macOS.
+Read the guide
+Full downloads
+Clean Downloads quickly and permanently.
+Read the guide
+Informatique Connect
+— Represented by Mr. GERAUD Anthony
+Phone:
+05 19 79 87 29
+· Email:
+contact [at] informatiqueconnect.fr
+SIRET number: 83760672200028 · VAT not applicable (art. 293 B CGI) · All rights reserved
+© 2026 MacOptimizers
+Compatible with macOS Ventura, Sonoma, Sequoia, Tahoe
+Apple Silicon & Intel
+Download MacOptimizers
+Legal notices
+Privacy Policy
+Terms of Sale (FR)
+Terms of use (CGU)
+User License Agreement (EULA)
+Guides and comparisons
+Free cleanup guide
+Official website:
+macoptimizers.informatiqueconnect.fr
+Informatique Connect — All rights reserved

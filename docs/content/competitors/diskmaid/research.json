@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-diskmaid",
+  "productId": "diskmaid",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "ownership": "docs/content/competitors/diskmaid/ only, plus required receipt; no website records/assets changed",
+  "identity": {
+    "name": "DiskMaid",
+    "officialHomepage": "https://nalarin.com/diskmaid",
+    "officialRepository": null,
+    "repositoryStatus": "No official repository linked in retained homepage/terms/store; existence not established, not proof no repository exists.",
+    "publisher": "Nalarin",
+    "seller": "PT KERJA AKAL DIGITAL",
+    "appStoreId": "6758129723",
+    "canonicalOwnerId": "diskmaid",
+    "aliases": [
+      {
+        "name": "DiskMaid: Clean Your Computer",
+        "state": "verified-store-title",
+        "evidence": "Retained homepage App Store ID matches linked store title."
+      }
+    ],
+    "historicalNameClues": [
+      {
+        "name": "MyMacMaid",
+        "state": "not-verified-as-former-product-name",
+        "evidence": "Legal paths /mymacmaid/ and store bundleId Nalarin.MyMacMaid; neither alone proves a separate/former app."
+      }
+    ],
+    "aliasSkipDecision": {
+      "skipSeparateDraft": false,
+      "reason": "DiskMaid canonical record retained; only one DiskMaid identity in manifest. Store subtitle is same app ID, not another draft. No PowerMyMac alias evidence; unrelated unresolved pair not investigated or merged.",
+      "skipAnyMyMacMaidDraftUntilResolved": true
+    },
+    "fit": "direct",
+    "fitReason": "Documented native Mac cleanup/storage workflow overlaps; this is not a Windows-tool replacement scenario.",
+    "platformFit": "Mac-to-Mac only; no Windows/Linux support claim"
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/diskmaid/about/",
+    "retrievedAt": "2026-10-21T19:06:45.421Z",
+    "observedOfficialLink": {
+      "text": "Official Website\nnalarin.com/diskmaid",
+      "url": "https://nalarin.com/diskmaid",
+      "title": "https://nalarin.com/diskmaid"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/diskmaid-directory.json",
+    "snapshotSha256": "f3b87349162548ffd63f69272cdb85acfc4899cf7952600e885a63b72f2dc48d",
+    "method": "Reused batch-1, no directory re-fetch",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+        "retrievedAt": "2026-10-21T18:36:45.366Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=7",
+        "retrievedAt": "2026-10-21T18:37:22.582Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "edgeProvenancePath": "docs/content/competitors.json"
+  },
+  "verificationReuse": {
+    "batchPath": "docs/content/verification/batch-1.json",
+    "recordId": "diskmaid",
+    "reusedFields": [
+      "identity",
+      "homepage",
+      "coreFunction",
+      "macOS design",
+      "free download CTA"
+    ],
+    "newChecks": [
+      "App Store version/OS/full-function purchase terms/seller",
+      "licence",
+      "privacy conflict",
+      "public screenshot locator"
+    ],
+    "datePolicy": "Same-day verified material reused; volatile offers refresh within 30 days and before publication."
+  },
+  "sources": [
+    {
+      "id": "discovery",
+      "url": "https://alternativeto.net/software/diskmaid/about/",
+      "finalUrl": "https://alternativeto.net/software/diskmaid/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:45.421Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/diskmaid-directory.json",
+      "sha256": "f3b87349162548ffd63f69272cdb85acfc4899cf7952600e885a63b72f2dc48d",
+      "publisher": "AlternativeTo",
+      "use": "Discovery only; Free tag does not establish free full functionality."
+    },
+    {
+      "id": "official",
+      "url": "https://nalarin.com/diskmaid",
+      "finalUrl": "https://nalarin.com/diskmaid",
+      "retrievedAtUtc": "2026-10-21T19:07:58.846206+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/diskmaid-official.json",
+      "sha256": "f89c0f95847c7784e9ad4d0b60a2a864b6f97013a90b744dfd0b97a83eebe57b",
+      "publisher": "Nalarin",
+      "use": "Reused current batch-1 record; vendor-documented capabilities, not measured results."
+    },
+    {
+      "id": "app-store",
+      "url": "https://apps.apple.com/us/app/id6758129723",
+      "finalUrl": "https://apps.apple.com/us/app/diskmaid-clean-your-computer/id6758129723?mt=12",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-10-21T20:31:37.349823+00:00",
+      "path": "sources/app-store.html",
+      "sha256": "8794fba2ea4e9bc5dcb4f934441cb906f06183c0cb3c6a53058c76c0f1940b59",
+      "purpose": "Missing terms/platform/availability/privacy evidence or exact official screenshot locators; not a repeat feature verification.",
+      "snapshotPath": "docs/content/competitors/diskmaid/sources/app-store.html",
+      "publisher": "Apple App Store / Nalarin",
+      "scope": "US storefront; version 1.6 dated 2026-06-01"
+    },
+    {
+      "id": "terms",
+      "url": "https://nalarin.com/mymacmaid/terms",
+      "finalUrl": "https://nalarin.com/mymacmaid/terms",
+      "checkedOn": "2026-10-21",
+      "retrievedAtUtc": null,
+      "method": "Successful WebFetch text; exact tool retrieval clock not provided. urllib retention request returned 403.",
+      "publisher": "Nalarin",
+      "publishedOrUpdatedOn": "2026-02-09"
+    },
+    {
+      "id": "privacy",
+      "url": "https://nalarin.com/mymacmaid/privacy",
+      "finalUrl": "https://nalarin.com/mymacmaid/privacy",
+      "checkedOn": "2026-10-21",
+      "retrievedAtUtc": null,
+      "method": "Successful WebFetch text; exact tool retrieval clock not provided. urllib retention request returned 403.",
+      "publisher": "Nalarin",
+      "publishedOrUpdatedOn": "2026-02-09"
+    },
+    {
+      "id": "br-capabilities",
+      "url": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "checkedOn": "2026-10-21",
+      "method": "Reuse same-day source and live-page verification register; no repeated public fetch.",
+      "publisher": "Breathing Room"
+    },
+    {
+      "id": "br-screenshots",
+      "url": "http://127.0.0.1:1431/",
+      "snapshotPath": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "checkedOn": "2026-10-21",
+      "publisher": "Breathing Room",
+      "scope": "Current-source browser preview, not native release evidence"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "DiskMaid is Nalarin’s Mac storage-cleanup app; its linked App Store name is DiskMaid: Clean Your Computer.",
+      "sourceIds": [
+        "app-store"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/id6758129723",
+      "excerpt": "DiskMaid: Clean Your Computer",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Homepage snapshot links App Store ID 6758129723; store developer Nalarin, seller PT KERJA AKAL DIGITAL. No installation performed.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "platform-version",
+      "wording": "The US listing shows version 1.6, dated June 1, 2026, requiring macOS 14.6 or later.",
+      "sourceIds": [
+        "app-store"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/id6758129723",
+      "excerpt": "Requires macOS 14.6 or later.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Version/date confirmed from HTML Version 1.6 and time datetime=2026-06-01. Architecture compatibility not established; no Windows support inferred.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "price",
+      "wording": "Free download with a Lifetime in-app purchase listed at $19.99 in the US storefront; the description says all described features require a one-time purchase.",
+      "sourceIds": [
+        "app-store"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/id6758129723",
+      "excerpt": "All features described above requires one time purchase",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "HTML In-App Purchases: Lifetime / $19.99. US dollar storefront display, not a checkout/tax/refund or entitlement test. Do not call the full cleaner free.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "license",
+      "wording": "The published terms grant a personal, non-exclusive, non-transferable licence on macOS devices.",
+      "sourceIds": [
+        "terms"
+      ],
+      "sourceUrl": "https://nalarin.com/mymacmaid/terms",
+      "excerpt": "We grant you a personal, non-exclusive, non-transferable license to use DiskMaid on your macOS devices in accordance with these terms.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Commercial licence terms; no open-source licence or public repository verified.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "scan",
+      "wording": "Nalarin documents Smart Scan for user caches, log files, local/external Trash and browser history/cache.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "User caches & log files\nLocal & external trash bins\nBrowser history & cache",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Vendor documentation, not tested removability, coverage, safety or speed.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "large-files",
+      "wording": "DiskMaid documents large/old file discovery and preview before deleting.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "Visual file size breakdown\nFind forgotten movies & installers\nPreview before deleting",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Large/old does not mean expendable; no workflow executed.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "duplicates",
+      "wording": "DiskMaid documents exact-duplicate detection using multi-stage hashing and smart selection.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "Our precise hashing algorithm\n                        finds exact duplicates, even with different filenames.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Vendor claim; no independent hash/collision, selection or recovery test. Do not equate duplicate bytes with disposable copies.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "uninstaller",
+      "wording": "DiskMaid documents app removal and searching for support files, preferences and caches left behind.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "Complete app removal\nDeep library folder scan\nClean zombie app data",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Not proof of complete removal for every app or privileged location.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "approval",
+      "wording": "Nalarin says DiskMaid shows what will be deleted before deletion.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "We show you exactly what will be deleted before it happens.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Vendor control claim, not proof of exact-method approval, Trash behavior or scheduled authority.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "history",
+      "wording": "The website labels an Activity History view as tracking and undoing past cleanups.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "Activity History\nTrack and undo past cleanups",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Recovery coverage, retention and irreversible exceptions unverified. Not proof of recurring-growth/process monitoring.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "developer",
+      "wording": "The App Store description includes intermediate build files and package-manager caches.",
+      "sourceIds": [
+        "app-store"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/id6758129723",
+      "excerpt": "Developer Files: Safely remove your intermediate build files and package manager caches.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Do not repeat safely as a verified safety claim. Exact tools, paths and rebuild costs not documented here; do not claim no developer support.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "local-scan",
+      "wording": "Nalarin describes scans as local; its privacy policy also discloses a device identifier for licence management.",
+      "sourceIds": [
+        "privacy"
+      ],
+      "sourceUrl": "https://nalarin.com/mymacmaid/privacy",
+      "excerpt": "The only information we collect is a unique device-level identifier.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Do not generalize local scans into zero network use or no data collection.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "privacy-conflict",
+      "wording": "The homepage says no usage tracking, while the App Store declares identifiers used to track users and identifiers not linked to identity.",
+      "sourceIds": [
+        "app-store"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/id6758129723",
+      "excerpt": "Data Used to Track You",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Unresolved developer-disclosure conflict. No network audit. Block blanket no-tracking/no-data-leaves claims.",
+      "state": "contradicted",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "sandbox",
+      "wording": "Nalarin describes the app as sandboxed.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://nalarin.com/diskmaid",
+      "excerpt": "Runs within the secure macOS sandbox, respecting your system's permissions.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Vendor disclosure only, not binary entitlement or permission-scope inspection.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room, which we build, is a macOS 13+ preview identified as 0.1.0-preview.1; its release discloses no Developer ID signing or notarization and Python 3.10+ for inventory.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Apple Development signed, not Developer ID signed or notarized",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "Reuse capabilities.md preview table and release URL https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1; source implementation is not distributed-binary QA.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "br-price-hosted",
+      "wording": "Breathing Room advertises free local tools and optional hosted AI Care at $5 USD/month or $50 USD/year; hosted assistance needs authentication/internet.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "$5 USD/month",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "capabilities.md pricing and local/hosted sections; not an account/payment/entitlement test; renewal and applicable taxes disclosed. Local inspection differs from hosted tool-output sharing.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    },
+    {
+      "id": "br-workflow",
+      "wording": "Breathing Room source implements category/app/project storage views, app/helper grouping, activity history and exact saved approvals for daily care while the app runs.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Daily care",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "documented-not-hands-on",
+      "scopeAndConditions": "capabilities.md matrix and approval exception: explicitly enabled automatic Ruff-cache Trash mode exists; never say every action always needs a new click. Sampled ownership is not forensic attribution.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-diskmaid worker; independent review pending"
+    }
+  ],
+  "productMatrix": {
+    "macOS": {
+      "value": "14.6+",
+      "claimIds": [
+        "platform-version"
+      ]
+    },
+    "licence": {
+      "value": "Personal, non-exclusive, non-transferable",
+      "claimIds": [
+        "license"
+      ]
+    },
+    "localHosted": {
+      "value": "Vendor says local scans; identifier disclosure and tracking conflict must be retained",
+      "claimIds": [
+        "local-scan",
+        "privacy-conflict"
+      ]
+    },
+    "scanCleanup": {
+      "value": "Caches/logs/Trash/browser data, large/old files, duplicates and app remnants documented",
+      "claimIds": [
+        "scan",
+        "large-files",
+        "duplicates",
+        "uninstaller"
+      ]
+    },
+    "approval": {
+      "value": "Pre-deletion visibility documented; exact mutation/recovery semantics not verified",
+      "claimIds": [
+        "approval",
+        "history"
+      ]
+    },
+    "developerCaches": {
+      "value": "Build files/package-manager caches documented; exact adapters not verified",
+      "claimIds": [
+        "developer"
+      ]
+    },
+    "pricing": {
+      "value": "Free download; Lifetime $19.99 US listing; described features require one-time purchase",
+      "claimIds": [
+        "price"
+      ]
+    },
+    "helperGrouping": {
+      "value": "not verified",
+      "claimIds": [],
+      "state": "not-verified"
+    },
+    "recurringGrowth": {
+      "value": "not verified; cleanup history is not evidence of growth monitoring",
+      "claimIds": [
+        "history"
+      ],
+      "state": "not-verified"
+    },
+    "runtimeInstall": {
+      "value": "Mac App Store; sandbox vendor disclosure; architecture, external runtime and permissions scope not verified",
+      "claimIds": [
+        "platform-version",
+        "sandbox"
+      ]
+    }
+  },
+  "visuals": [
+    {
+      "id": "diskmaid-app-store-screenshot-1",
+      "productId": "diskmaid",
+      "view": "App Store Mac app screenshot 1; actual pixels not reviewed",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://apps.apple.com/us/app/diskmaid-clean-your-computer/id6758129723?mt=12",
+      "assetUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/63/20/41/63204133-8086-c5ec-8332-09a21e2dc3af/01_a2d90c8b-e12d-491e-ad23-5dc633a14f18_App_Store_Screenshot_1.png/1286x804bb.webp",
+      "locator": "#product_media_mac_ source srcset; exact URL from public HTML, not inferred",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "sourcePageRetrievedAtUtc": "2026-10-21T20:31:37.349823+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending"
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "Authoritative store listing provides source link, not permission to copy. No reusable image licence or permission established; no image downloaded.",
+        "evidenceUrlOrPath": "https://nalarin.com/mymacmaid/terms",
+        "credit": "DiskMaid / Nalarin, via Apple App Store"
+      },
+      "caption": "DiskMaid vendor-supplied Mac screenshot on its App Store listing; linked reference only. Not our test or a measured cleanup result.",
+      "alt": "DiskMaid Mac app screenshot supplied by Nalarin on the App Store; detailed view description pending pixel review.",
+      "supportedClaimIds": [],
+      "limitations": [
+        "Exact URL retained, but image pixels, dimensions, version, capture date and privacy not verified.",
+        "No on-page embedding or hotlinking; rights gate remains blocked."
+      ],
+      "review": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ],
+      "productId": "breathing-room",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "reviewThisJob": "Opened and read actual PNG; visible Interactive preview · example data banner and no-Mac-change disclosure. No edits or copy.",
+      "requiredLabels": [
+        "Current-source browser preview",
+        "Example data only",
+        "Not a native scan, measured activity or cleanup result"
+      ],
+      "supportedClaimIds": [
+        "br-workflow"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact CPU architecture compatibility and required permissions",
+    "Actual cleanup/deletion/undo implementation and coverage",
+    "Official source repository and exact developer-cache adapters",
+    "Native/runtime behavior, benchmarks, measured savings and battery impact",
+    "Lifetime entitlement scope, checkout tax, regional availability, trial/free limits, current subscription SKU availability",
+    "Process/helper grouping and recurring-growth monitoring",
+    "Vendor screenshot capture date/version/pixels and reuse permission"
+  ],
+  "blockers": [
+    {
+      "id": "visual-rights",
+      "diagnostic": "Competitor app image URL found in App Store HTML, but reuse permission and pixel/privacy review absent. No permitted image downloaded. Required two-product on-page visual gate not met.",
+      "unblock": "Obtain documented permission/licence or explicit editorial policy approval via separately authorized work, then retrieve/hash original and visually/privacy review; do not send a permission request in this job."
+    },
+    {
+      "id": "privacy-conflict",
+      "diagnostic": "Official no-usage-tracking language conflicts with App Store tracking-identifiers disclosure; privacy policy admits device identifier collection.",
+      "unblock": "Keep conflict explicit and omit blanket privacy/safety conclusions; current vendor clarification or independent authorized audit is needed before a stronger privacy claim."
+    }
+  ],
+  "articleBrief": {
+    "track": "search/reference workflow",
+    "proposedSlug": "review-mac-app-remnants-and-duplicate-files",
+    "title": "Review Mac app remnants without deleting shared files",
+    "primaryIntent": "Decide what to retain when app leftovers and exact duplicate files appear in a Mac storage audit.",
+    "distinctAngle": "Separate app-related support data from original/shared files; exact duplicate content does not establish which copy should be removed. DiskMaid documents both remnants and hashing; Breathing Room is the alternate investigate-owner workflow, not a claimed duplicate finder.",
+    "outline": [
+      "Lead with retention-first decision and backups; top real product visual after lead when rights clear",
+      "App relationship versus identical contents: two different reasons a file appears",
+      "Review candidate path, active projects and backup/restore cost before selecting",
+      "Use documented DiskMaid preview/selection with paid-feature boundary; do not invent click steps",
+      "If source/ownership remains unclear, investigate rather than delete; bounded Breathing Room alternative and preview/runtime/hosted caveats",
+      "Record scan totals separately from actual available-space changes; no recovery guarantee"
+    ],
+    "interactionPass": "Handoff a local, non-scanning keep/investigate checklist: active app/project? sole original? shared/synced copy? backup? rebuild cost known? Any unknown means keep/investigate, not delete. No filesystem access, upload or fake savings calculation.",
+    "internalLinks": [
+      "/comparisons/",
+      "/comparisons/diskmaid/"
+    ],
+    "visualPlan": "Breathing Room Space preview directly after lead with example-data disclosure; DiskMaid app view later only after rights and pixel review."
+  },
+  "comparisonBrief": {
+    "proposedSlug": "diskmaid",
+    "title": "Breathing Room vs DiskMaid",
+    "primaryIntent": "Choose a Mac cleanup/storage approach, not a speed/safety winner.",
+    "rows": [
+      "macOS",
+      "licence",
+      "localHosted",
+      "scanCleanup",
+      "approval",
+      "developerCaches",
+      "pricing",
+      "helperGrouping",
+      "recurringGrowth",
+      "runtimeInstall"
+    ],
+    "conclusion": "DiskMaid documents App Store-distributed cleanup, duplicate detection and app-remnant removal; Breathing Room, which we build, offers a preview investigation/approval workflow with local tools and optional hosted AI. Choose by documented task and release caveats, not unsupported superiority.",
+    "linkToWorkflow": "/blog/review-mac-app-remnants-and-duplicate-files/",
+    "lengthPolicy": "Concise sourced matrix and decision criteria; do not duplicate workflow article or create alternatives doorway."
+  },
+  "advantagesAndTradeoffs": {
+    "diskmaid": [
+      "Documented exact-duplicate finder and app uninstaller/remnant workflow; neither is verified as equivalent in Breathing Room.",
+      "Mac App Store distribution and native SwiftUI positioning; this is not proof of faster/safer operation.",
+      "Purchase-gated described functionality, macOS 14.6+ requirement, unspecified adapters and unresolved privacy-disclosure conflict."
+    ],
+    "breathingRoom": [
+      "Source-documented owner/project views, grouped app/helper monitoring and reviewable saved approvals; source presence is not binary/runtime QA.",
+      "Free local tools versus optional paid hosted assistance; hosted tool data is not all-local processing.",
+      "Preview 0.1.0-preview.1, macOS 13+, Python 3.10+ inventory prerequisite, non-notarized release and physical-Intel validation limitations must be disclosed."
+    ]
+  },
+  "testing": {
+    "handsOnCompetitor": false,
+    "cleanupRun": false,
+    "browserUsed": false,
+    "imageDownloaded": false,
+    "siteChanged": false,
+    "independentReview": "pending",
+    "notes": "Research only. No build/test of unchanged website; no product, payment, safety or performance tests claimed."
+  },
+  "accessDiagnostics": {
+    "firstRetentionAttempt": "urllib App Store HTTP 403; later ordinary retry succeeded. No anti-bot bypass.",
+    "laterRetention": [
+      {
+        "id": "app-store",
+        "url": "https://apps.apple.com/us/app/id6758129723",
+        "finalUrl": "https://apps.apple.com/us/app/diskmaid-clean-your-computer/id6758129723?mt=12",
+        "httpStatus": 200,
+        "retrievedAtUtc": "2026-10-21T20:31:37.349823+00:00",
+        "path": "sources/app-store.html",
+        "sha256": "8794fba2ea4e9bc5dcb4f934441cb906f06183c0cb3c6a53058c76c0f1940b59",
+        "purpose": "Missing terms/platform/availability/privacy evidence or exact official screenshot locators; not a repeat feature verification."
+      },
+      {
+        "id": "terms",
+        "url": "https://nalarin.com/mymacmaid/terms",
+        "error": "HTTP Error 403: Forbidden",
+        "retrievedAtUtc": "2026-10-21T20:31:37.872272+00:00"
+      },
+      {
+        "id": "privacy",
+        "url": "https://nalarin.com/mymacmaid/privacy",
+        "error": "HTTP Error 403: Forbidden",
+        "retrievedAtUtc": "2026-10-21T20:31:38.414320+00:00"
+      },
+      {
+        "id": "official-visual-locators",
+        "url": "https://nalarin.com/diskmaid",
+        "error": "HTTP Error 403: Forbidden",
+        "retrievedAtUtc": "2026-10-21T20:31:38.949962+00:00"
+      }
+    ],
+    "fallback": "Terms/privacy successfully read with WebFetch; official capabilities retained from existing same-day snapshot. No browser/CDP/profile recovery needed."
+  }
+}

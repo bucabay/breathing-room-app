@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mangodisk",
+  "productId": "mangodisk",
+  "status": "blocked",
+  "stage": "research-only",
+  "checkedOn": "2026-10-22",
+  "timeBasis": "Local job date 2026-10-22; UTC clock at final source review was 2026-10-21T21:45:21.548571+00:00. New web reads preceded that check; exact individual retrieval timestamps were not exposed by WebFetch.",
+  "reviewer": "scheduled research-mangodisk worker; no independent review",
+  "ownership": "docs/content/competitors/mangodisk/ only, plus required job receipt; no website changes",
+  "identity": {
+    "officialName": "MangoDisk",
+    "homepage": "https://mangodisk.app/",
+    "repository": "https://github.com/harry0703/MangoDisk",
+    "repositoryOwner": "harry0703",
+    "canonicalOwnerId": "mangodisk",
+    "aliases": [],
+    "aliasDecision": "No verified alias; retain this distinct identity. Official homepage links harry0703/MangoDisk and that repository links the homepage. No evidence linking MangoDisk to iMyMac PowerMyMac or FoneDog/TechyCub; do not merge by category or shared features.",
+    "skipDecision": {"skip": false, "reason": "Active official downloads and repository release; directly relevant Mac storage/maintenance utility, not a dead listing or verified duplicate."},
+    "fit": "direct-overlap",
+    "fitReason": "Mac storage analysis, reviewable cleanup and developer/project cache discovery overlap. Optional AI explanation is guidance rather than delegated cleanup. Windows/Linux are MangoDisk platforms, not Breathing Room platforms.",
+    "sourceIds": ["S0", "S1", "S2", "S4"]
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/mangodisk/about/",
+    "retrievedAtUtc": "2026-10-21T19:09:20.763Z",
+    "officialLink": "https://mangodisk.app/",
+    "snapshotPath": "docs/content/.runtime/verification-1/mangodisk-directory.json",
+    "sha256": "910529d590f55abae7b4ed6193436885a6a74cf01152a19047c81ae442214385",
+    "method": "Reused batch-1 listing snapshot, not re-fetched. Snapshot says Harry added MangoDisk as an alternative to CleanMyMac and BleachBit. Original seed pagination traversal is not established by this per-product snapshot; no page number invented.",
+    "evidenceClass": "directory-discovery-only"
+  },
+  "sources": [
+    {"id":"S0","publisher":"MangoDisk","title":"Homepage, reused verified snapshot","url":"https://mangodisk.app","finalUrl":"https://mangodisk.app","retrievedAtUtc":"2026-10-21T19:09:33.992906+00:00","snapshotPath":"docs/content/.runtime/verification-1/mangodisk-official.json","sha256":"00d70322ed2fd21a11e80a8d5e1325d5eb78070d2d583067094d4d3925a561d5","excerpt":"Free & open source · No account required","scope":"Advertised offer, not tested installation; snapshot also links the official repository."},
+    {"id":"S1","publisher":"harry0703/MangoDisk","title":"Official README","url":"https://raw.githubusercontent.com/harry0703/MangoDisk/main/README.md","finalUrl":"https://raw.githubusercontent.com/harry0703/MangoDisk/main/README.md","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":null,"scope":"Mutable main documentation, not guaranteed v1.2.0 binary parity","excerpt":"MangoDisk is open source under the GNU General Public License v3.0. Third-party components remain subject to their respective licenses."},
+    {"id":"S2","publisher":"MangoDisk","title":"Download MangoDisk","url":"https://mangodisk.app/download","finalUrl":"https://mangodisk.app/download","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":null,"scope":"Advertised current downloads","excerpt":"1.2.0 Latest; Mac Universal (dmg); Mac CLI (.tar.gz); Windows (x64); Linux .deb (x64); Linux .deb (ARM64)"},
+    {"id":"S3","publisher":"MangoDisk","title":"Deep Cleanup","url":"https://mangodisk.app/docs/features/deep-clean","finalUrl":"https://mangodisk.app/docs/features/deep-clean","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":"2026-09-08","scope":"Documented workflow, results depend on OS/apps","excerpt":"Scanning does not delete files: you still select the results and confirm cleanup."},
+    {"id":"S4","publisher":"harry0703/MangoDisk via GitHub API","title":"Latest release metadata","url":"https://api.github.com/repos/harry0703/MangoDisk/releases/latest","finalUrl":"https://api.github.com/repos/harry0703/MangoDisk/releases/latest","releaseUrl":"https://github.com/harry0703/MangoDisk/releases/tag/v1.2.0","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":"2026-10-20T15:23:45Z","scope":"Release metadata only; no installer downloaded","excerpt":"tag_name: v1.2.0; name: MangoDisk 1.2.0; draft: false; prerelease: false; MangoDisk-1.2.0-macos.dmg"},
+    {"id":"S5","publisher":"MangoDisk","title":"AI explanations guide","url":"https://mangodisk.app/docs/ai","finalUrl":"https://mangodisk.app/docs/ai","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":"2026-09-11","scope":"Vendor documentation, not service/privacy audit","excerpt":"AI offers guidance only. It never cleans files or changes settings automatically. You decide whether to act."},
+    {"id":"S6","publisher":"harry0703/MangoDisk","title":"v1.2.0 LICENSE","url":"https://raw.githubusercontent.com/harry0703/MangoDisk/v1.2.0/LICENSE","finalUrl":"https://raw.githubusercontent.com/harry0703/MangoDisk/v1.2.0/LICENSE","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":null,"scope":"Tagged repository software licence; not an established grant for external CDN screenshots","excerpt":"GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"},
+    {"id":"S7","publisher":"MangoDisk","title":"Safe Cleanup and Privacy","url":"https://mangodisk.app/docs/safety","finalUrl":"https://mangodisk.app/docs/safety","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":"2026-08-30","scope":"Vendor-documented behavior; not hands-on testing","excerpt":"Large files, duplicate copies, and items removed from Disk Space Analysis are deleted permanently."},
+    {"id":"S8","publisher":"MangoDisk","title":"Terms of Service","url":"https://mangodisk.app/terms","finalUrl":"https://mangodisk.app/terms","checkedOn":"2026-10-22","retrievedAtUtc":null,"publicationDate":"2026-07-30","scope":"No explicit external image reuse grant found in returned terms","excerpt":"Source code made available in the MangoDisk repository is governed by the license included with that code."},
+    {"id":"B1","publisher":"Breathing Room programme","title":"Current capabilities evidence register","url":"https://breathing-room.chatic.ai/","localPath":"docs/content/capabilities.md","checkedOn":"2026-10-21","sha256":"cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613","excerpt":"Breathing Room is a free, Apache-2.0 macOS maintenance preview","scope":"Reused one-day-current code/public source verification with all caveats; not new runtime certification"}
+  ],
+  "claimPolicy": {"newSourceCheckDate":"2026-10-22","evidenceClass":"officially documented unless separately labeled","location":"Brief or comparison matrix as indicated; source IDs resolve exact URLs above","runtimeTestsPerformed":false,"noSourceSnapshotForNewReads":"WebFetch content inspected; per-claim excerpts retained here. Exact retrieval instants and full raw snapshots not retained for new reads."},
+  "claims": [
+    {"id":"C01","wording":"MangoDisk advertises a free, open-source app with no account required.","sourceIds":["S0"],"excerpt":"Free & open source · No account required","checkedOn":"2026-10-21","state":"verified","location":"pricing","conditions":"Advertised desktop offer; not unlimited free AI or an independently tested account flow."},
+    {"id":"C02","wording":"The repository identifies GNU GPL v3.0 licensing.","sourceIds":["S1","S6"],"excerpt":"MangoDisk is open source under the GNU General Public License v3.0","checkedOn":"2026-10-22","state":"verified","location":"licence","conditions":"Software; third-party licences still apply. No image/trademark licence inferred."},
+    {"id":"C03","wording":"Official download page and GitHub metadata identify version 1.2.0, published October 20, 2026, as a non-prerelease.","sourceIds":["S2","S4"],"excerpt":"tag_name: v1.2.0; prerelease: false; published_at: 2026-10-20T15:23:45Z","checkedOn":"2026-10-22","state":"verified","location":"version","conditions":"Latest observed, not binary verification; README main may differ."},
+    {"id":"C04","wording":"README requires macOS Monterey 12.5 or later; download page offers a universal Mac DMG and Mac CLI.","sourceIds":["S1","S2"],"excerpt":"Requirements: macOS Monterey 12.5 or later.","checkedOn":"2026-10-22","state":"verified","location":"platform/runtime","conditions":"Windows 10+ 64-bit also documented; Ubuntu 22.04+ x64/ARM64 recommended, other distributions depend on libraries/environment. No platform parity or machine testing claimed."},
+    {"id":"C05","wording":"Deep Cleanup documents developer tool caches, Xcode data, project build artifacts, AI models and unused container build caches.","sourceIds":["S3"],"excerpt":"developer tool caches, Xcode data, and project build artifacts","checkedOn":"2026-10-22","state":"verified","location":"workflow/developer caches","conditions":"Exact results depend on OS, installed apps and usage; not all selected automatically. No tested cache/version coverage."},
+    {"id":"C06","wording":"Custom Cleanup can filter named folders by file-name patterns, size and modification time; a scan still requires selection and confirmation before cleanup.","sourceIds":["S3"],"excerpt":"File name patterns; Size and modification time; Scanning does not delete files: you still select the results and confirm cleanup.","checkedOn":"2026-10-22","state":"verified","location":"workflow/approval controls","conditions":"A file-name match is not proof of disposability; source warns against broad rules in personal-data folders."},
+    {"id":"C07","wording":"Vendor docs say scan processing and cleanup history stay local, while optional AI explanations can send item metadata to a provider.","sourceIds":["S7","S5"],"excerpt":"Cleanup history is also stored locally. To explain what an item does ... the free service sends details such as its name, full path, and status through MangoDisk to the model provider.","checkedOn":"2026-10-22","state":"verified","location":"local/hosted","conditions":"Attributed documentation, not network audit. AI guide's server non-processing wording is not independently reconciled with through-MangoDisk routing; do not make absolute privacy/retention promises."},
+    {"id":"C08","wording":"AI explanations offer a free service with allowance/reset information in-app, or a custom OpenAI-compatible service billed by that provider; AI does not execute cleanup.","sourceIds":["S5"],"excerpt":"Check the app for your remaining allowance and reset time. Your provider handles billing; requests do not use your MangoDisk free allowance.","checkedOn":"2026-10-22","state":"verified","location":"pricing/AI","conditions":"Exact free daily quota not verified. Compatible local HTTP model endpoints documented. No key, account or service request used."},
+    {"id":"C09","wording":"Large-file, duplicate and Disk Space Analysis deletions are documented as permanent; Deep Cleanup and uninstall can also remove unrecoverable local data.","sourceIds":["S7"],"excerpt":"Deep Cleanup and App Uninstaller can also remove caches, settings, or local data that cannot be recovered.","checkedOn":"2026-10-22","state":"verified","location":"trade-offs","conditions":"Do not promise Trash recovery, safety, measured savings or reversibility."},
+    {"id":"C10","wording":"README documents treemap and sunburst storage views, duplicate cleanup, app uninstall, and resource/menu-bar monitoring since 1.1.1.","sourceIds":["S1"],"excerpt":"Switch between a treemap and a sunburst chart; Resource Usage and Memory Management: Available since version 1.1.1","checkedOn":"2026-10-22","state":"verified","location":"strengths/monitoring","conditions":"Do not claim MangoDisk lacks CPU/memory monitoring. Helper ownership grouping and recurring-growth investigation parity not verified."},
+    {"id":"B01","wording":"Breathing Room, which we build, is a macOS 13+ free Apache-2.0 preview; AI Care is advertised at $5 USD/month or $50/year, renewing until cancelled, with tax applicable at checkout.","sourceIds":["B1"],"excerpt":"macOS 13+; universal Apple Silicon/Intel installer advertised; $5 USD/month, $50 USD/year","checkedOn":"2026-10-21","state":"verified","location":"comparison caveats","conditions":"Reused capabilities register, not fresh service testing; source implementation differs from distributed-release certification. Apple Development signed, not Developer ID/notarized; Python 3.10+ required, physical Intel and clean-machine validation incomplete."},
+    {"id":"B02","wording":"Breathing Room source implements grouped app/helper monitoring, developer-cache discovery, local activity history and saved exact-approval daily care while the app runs; hosted AI requires internet/authentication and sends relevant data.","sourceIds":["B1"],"excerpt":"Saved approvals bind account, API origin, action method/path and native rule; new actions wait for review.","checkedOn":"2026-10-21","state":"verified","location":"decision criteria","conditions":"Source/documentation, not hands-on tests. Optional narrowly verified Ruff automatic Trash mode prevents blanket never-deletes-without-asking claims. Website download account gate differs from public GitHub releases."}
+  ],
+  "matrix": {
+    "macCompatibility":"C04", "licence":"C02", "localHosted":"C07", "scanCleanup":"C05/C06/C09", "approval":"C06", "developerCaches":"C05", "pricing":"C01/C08", "versionInstallation":"C03/C04",
+    "resourceMonitoring":"C10", "helperGrouping":"not verified", "recurringGrowthMonitoring":"not verified", "scheduledCleanup":"not verified", "exactRuntimePrerequisitesForBinary":"not verified beyond documented macOS minimum", "binarySigningNotarization":"not independently verified; README distinguishes official releases from unsigned/unnotarized local builds", "breathingRoom":"B01/B02"
+  },
+  "visuals": [
+    {
+      "id":"mangodisk-official-deep-cleanup", "productId":"mangodisk", "view":"Deep Cleanup", "kind":"official-asset",
+      "sourcePageUrl":"https://github.com/harry0703/MangoDisk/blob/main/README.md",
+      "assetUrl":"https://assets.mangodisk.app/images/screenshots/en/light-01-deep-cleanup.jpg",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,"dataMode":"unknown",
+      "originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":null,"heightPx":null,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"README embeds this external CDN app UI asset, but no explicit grant covering that asset was established. Repository software GPL and public availability are not presumed screenshot permission.","evidenceUrlOrPath":"https://mangodisk.app/terms","credit":"MangoDisk / harry0703; link to original README and image"},
+      "caption":"Official MangoDisk Deep Cleanup screenshot linked from its README. Vendor capture version, platform, date and data provenance not established; not our test result.",
+      "alt":"MangoDisk Deep Cleanup interface, as identified by the official README; image inspection pending.",
+      "supportedClaimIds":[],"limitations":["Image bytes not downloaded, opened or hashed because reuse permission remains unclear.","Official README identifies an app screenshot, not a landing-page image. Actual image contents, privacy and legibility remain unverified.","No remote-image hotlinking approval or on-page visual gate satisfaction inferred."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"manifestPath":"docs/content/screenshots.json",
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"capturedBy":"Prior screenshot-library job; identity not independently established here","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a","publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed-by-screenshot-library","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party example UI capture; preserve example banner and disclosure. Third-party marks not blanket licensed; page-level review pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":[],"limitations":["Selected from current-source library and hash verified; not a new native capture or latest binary certification.","Keep the example-data banner visible; independent target-page visual review remains pending."],
+      "review":{"status":"prior-library-review-only","reviewer":"screenshot-library job","reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search/reference", "proposedSlug":"review-mac-build-artifacts-with-mangodisk", "title":"Review Mac build artifacts before a MangoDisk cleanup",
+      "primaryIntent":"Decide whether a developer-cache/project-artifact result is rebuildable before confirming it, especially when using custom log rules.",
+      "description":"Use MangoDisk's documented scan and review flow to distinguish rebuildable project output from files you should keep. This is a source-based guide, not a hands-on cleanup test.",
+      "outline":["Open with decision: rebuild cost and ownership matter more than size; official app visual after lead once cleared","Standard Scan versus chosen disks: scope affects what appears (C05/C06)","Custom log patterns: a name/time match does not establish disposability (C06)","Review category, full path, app closure warnings, selected total and backup before confirmation (C06/C09)","Optional AI explains consequences, not personal-file value or cleanup authorization (C08)","Recurring investigations: bounded Breathing Room discussion with affiliation and preview/hosted caveats (B01/B02); current Space example preview as second visual"],
+      "interactionPass":"Plan a non-executing checklist: identify owner, source-versus-generated, ability/cost to rebuild, backup, affected apps, deletion method. Unknown answer means leave unselected. No filesystem access or deletion widget.",
+      "distinctness":"A pre-deletion decision workflow for project build output/custom rules, not an expanded generic feature comparison. No arbitrary code demo, claims of tested outcomes, padding or fabricated FAQ.",
+      "links":["/comparisons/mangodisk/","/comparisons/"],"status":"proposal-only-blocked"
+    },
+    "comparison": {
+      "proposedSlug":"mangodisk", "title":"MangoDisk vs Breathing Room: cleanup review or recurring care?",
+      "primaryIntent":"Choose between a broad scan/review utility and Breathing Room's preview investigation/saved-approval care model, without denying MangoDisk monitoring or AI.",
+      "matrixClaimIds":["C01","C02","C03","C04","C05","C06","C07","C08","C09","C10","B01","B02"],
+      "mangodiskAdvantages":["Documented macOS 12.5+ requirement and Windows/Linux distribution, unlike Mac-only Breathing Room","Explicit treemap/sunburst, duplicate and uninstall workflows in official documentation","Free desktop offer, inspectable GPL code, Mac CLI and optional provider-configurable AI explanations"],
+      "mangodiskTradeoffs":["Permanent deletion is documented for several views; backup and manual review matter","Exact free AI quota is not published in inspected guide; custom providers may charge","Helper grouping, recurring-growth and scheduled-approval parity not verified; unknown is not absence"],
+      "breathingRoomFit":"Editorial judgment: readers investigating recurring growth and saved exact approvals may consider Breathing Room, which we build, subject to preview, runtime, hosted-data and paid-service caveats. Not a measured superiority claim.",
+      "breathingRoomTradeoffs":["macOS 13+ only in verified register; Python 3.10+ dependency","Non-notarized preview; incomplete clean-machine/physical-Intel validation","Hosted AI requires internet/authentication; AI Care advertised subscription and app-running daily-care constraint"],
+      "status":"proposal-only-blocked"
+    }
+  },
+  "unknowns": [
+    {"field":"external screenshot rights/access/provenance","critical":true,"nextAction":"Establish an explicit asset licence/approved reuse basis or separately authorized permission; then retrieve original bytes, hash, inspect app UI/platform/privacy, retain caption and perform target-page visual review. Do not contact vendor in this job."},
+    {"field":"exact AI free quota, server retention/routing details","critical":false,"treatment":"Publish only documented allowance-in-app/provider-billing conditions; no universal offline/private/unlimited claim."},
+    {"field":"MangoDisk helper grouping, recurring-growth and scheduled cleanup parity","critical":false,"treatment":"Not verified; do not assert absence."},
+    {"field":"installer signing/notarization and actual machine compatibility","critical":false,"treatment":"No binary downloaded or run; avoid claims of tested signing, stability or security."},
+    {"field":"source main versus v1.2.0 feature parity","critical":false,"treatment":"Attribute mutable documentation; do not claim all main features demonstrated in release binary."}
+  ],
+  "draftGate": {"allowed":false,"blockers":["VISUAL-RIGHTS-01: official competitor app screenshot URL identified but external asset reuse basis, original bytes/hash and visual inspection remain unresolved; link-only fallback does not satisfy EDITORIAL.md on-page image gate."],"independentReview":"pending; no article drafted, score assigned or publication approved"},
+  "validation": {"checks":"See validation.json for executed structural/hash/source-reference checks.","siteBuild":"Not applicable: research-only owned folder; no website or native build run.","browser":"Skill loaded; browser not needed for official text reads. No tabs, profile recovery, cookies or hidden browser state accessed.","prohibitedActions":"No install, cleanup, signup, messaging, purchase, credential access, queue/database edits, commit, push or deployment."}
+}

@@ -1,0 +1,21 @@
+{
+  "id": "eula",
+  "publisher": "TSOFT LLC / Roomy",
+  "title": "End User License Agreement",
+  "sourceUrl": "https://roomymac.com/legal/eula",
+  "finalUrl": "https://roomymac.com/legal/eula",
+  "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "retrievedOn": "2026-10-21",
+  "method": "WebFetch rendered Markdown, read in this job",
+  "publicationDate": "2026-10-13",
+  "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+  "excerpts": [
+    "Last updated October 13, 2026",
+    "The Software is licensed, not sold.",
+    "Free version. You may use the Software without a license key to scan your Mac and to clean up to 500 MB in total.",
+    "For a Lifetime license, it lasts for the lifetime of the Roomy product, as described in our Terms of Service.",
+    "It works offline for up to 21 days between checks; after that, Pro pauses until the Software can reach our server again.",
+    "You are responsible for reviewing what you remove and for keeping backups"
+  ],
+  "rawCapture": null
+}

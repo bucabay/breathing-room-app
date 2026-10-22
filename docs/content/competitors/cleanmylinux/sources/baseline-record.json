@@ -1,0 +1,67 @@
+{
+  "id": "cleanmylinux",
+  "name": "CleanMyLinux",
+  "officialUrl": "https://cleanmylinux.com/",
+  "officialName": "CleanMyLinux",
+  "finalUrl": "https://www.cleanmylinux.com/",
+  "status": "verified",
+  "facts": [
+    {
+      "field": "officialName",
+      "value": "CleanMyLinux",
+      "sourceUrl": "https://www.cleanmylinux.com/",
+      "excerpt": "CleanMyLinux",
+      "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "coreFunction",
+      "value": "Clean caches, reset app states, and check for package updates with complete peace of mind.",
+      "sourceUrl": "https://www.cleanmylinux.com/",
+      "excerpt": "Clean caches, reset app states, and check for package updates with complete peace of mind.",
+      "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "supportedPlatforms",
+      "value": "Linux desktops",
+      "sourceUrl": "https://www.cleanmylinux.com/",
+      "excerpt": "designed exclusively for modern Linux desktops.",
+      "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "officially-documented"
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://www.cleanmylinux.com/",
+      "excerpt": "MIT License",
+      "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "officially-documented"
+    }
+  ],
+  "aliases": [],
+  "blockers": [],
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/cleanmylinux/about/",
+    "retrievedAt": "2026-10-21T19:07:32.207Z",
+    "excerpt": "Official Website\ncleanmylinux.com",
+    "rawCapture": "docs/content/.runtime/verification-2/cleanmylinux-directory.json",
+    "sha256": "50e8518d668c1edf0e75adc25b0d3cc449fed9e4b8254d1db8a134aa036ad25c",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16"
+  },
+  "sources": [
+    {
+      "sourceUrl": "https://cleanmylinux.com/",
+      "finalUrl": "https://www.cleanmylinux.com/",
+      "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+      "rawCapture": "docs/content/.runtime/verification-2/cleanmylinux-official.json",
+      "sha256": "25e5526250ed6853a635c8de4b75578539714541b430b0fce6b964d3286f06e5",
+      "error": null
+    }
+  ],
+  "unverifiedFields": [
+    "pricing",
+    "availability"
+  ],
+  "scope": "Baseline documentary verification only; vendor safety/performance wording is attributed, not tested. Unlisted capabilities, prices, platforms and absence claims are unverified."
+}

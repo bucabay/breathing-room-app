@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-trashpanda",
+  "stage": "research",
+  "status": "blocked",
+  "published": false,
+  "productId": "trashpanda",
+  "canonicalOwnerId": "trashpanda",
+  "identity": {
+    "officialName": "TrashPanda",
+    "homepage": "https://trashpandamacos.vercel.app/",
+    "repository": null,
+    "repositoryStatus": "not verified; no repository linked in retained homepage, downloads, terms or updates sources; this is not proof none exists",
+    "legalPublisher": "Terms identify the licensor as TrashPanda; legal individual/company identity not verified",
+    "aliases": [],
+    "aliasSkipDecision": "do-not-skip-as-alias: distinct official TrashPanda identity verified by directory-to-homepage edge and official legal/release pages; no verified alternate product brand in inspected sources",
+    "aliasLimitations": "No connection to PowerMyMac is established. Do not merge it with this product or invent an alias based on similar cleanup functionality.",
+    "fit": "direct",
+    "fitReason": "Mac storage inspection and previewed developer-cache cleanup overlap Breathing Room's Mac maintenance intent; Watchtower read-only security auditing is adjacent, not an equivalent monitoring feature.",
+    "skipDecision": "retain relevant distinct product; drafting blocked on screenshot reuse, not an excluded/dead-product decision"
+  },
+  "ownership": ["docs/content/competitors/trashpanda/"],
+  "datePolicy": "Preserve actual retrieval clock values. New retained responses were timestamped 2026-10-21 UTC although the session calendar says October 22. No original vendor screenshot capture date is inferred.",
+  "sources": [
+    {
+      "id": "S1", "publisher": "AlternativeTo", "title": "TrashPanda about-page discovery",
+      "url": "https://alternativeto.net/software/trashpanda/about/", "finalUrl": "https://alternativeto.net/software/trashpanda/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:35.020Z",
+      "path": "docs/content/.runtime/verification-2/trashpanda-directory.json",
+      "sha256": "8b45d9ee06ddc54dac93c50e23b3d26377cbc1e2488382d032f5555abcda9819",
+      "excerpt": "Official Website\ntrashpandamacos.vercel.app",
+      "scope": "Discovery only, reused batch-2 record; rendered DOM captured by earlier worker, not this worker"
+    },
+    {
+      "id": "S2", "publisher": "TrashPanda", "title": "Official homepage (reused verification)",
+      "url": "https://trashpandamacos.vercel.app/", "finalUrl": "https://trashpandamacos.vercel.app/",
+      "retrievedAtUtc": "2026-10-21T19:09:48.956261+00:00",
+      "path": "docs/content/.runtime/verification-2/trashpanda-official.json",
+      "sha256": "4f8ad50a6e3415838742769fc5e9fa8f6248e35fc95cffed7a6dd53785897277",
+      "scope": "Current verified batch-2 documentary facts and retained full page text; no needless homepage refetch. Outer file hash checked; embedded sha256 is not the file hash."
+    },
+    {
+      "id": "S3", "publisher": "TrashPanda", "title": "Downloads",
+      "url": "https://trashpandamacos.vercel.app/downloads", "finalUrl": "https://trashpandamacos.vercel.app/downloads",
+      "retrievedAtUtc": "2026-10-21T22:21:00.551384+00:00", "path": "sources/downloads.json", "rawPath": "sources/downloads.html",
+      "rawSha256": "e25cb169c4080c11d28e77f1b21f0e8dd9c8c22855cd04e7e511c3cb94381bb8", "scope": "Public offer only; no email submitted, package downloaded or installer executed"
+    },
+    {
+      "id": "S4", "publisher": "TrashPanda", "title": "Terms of Service",
+      "url": "https://trashpandamacos.vercel.app/terms", "finalUrl": "https://trashpandamacos.vercel.app/terms",
+      "retrievedAtUtc": "2026-10-21T22:21:01.553735+00:00", "sourceUpdated": "October 2025", "sourceEffective": "August 2025",
+      "path": "sources/terms.json", "rawPath": "sources/terms.html", "rawSha256": "34fdaabaa5e0901cb9b267f902dbab2d792b435c6c9b1be78cc8fce7cf7749ff", "scope": "Published licence and rights statements, not independent legal advice"
+    },
+    {
+      "id": "S5", "publisher": "TrashPanda", "title": "Updates",
+      "url": "https://trashpandamacos.vercel.app/updates", "finalUrl": "https://trashpandamacos.vercel.app/updates",
+      "retrievedAtUtc": "2026-10-21T22:21:02.559626+00:00", "path": "sources/updates.json", "rawPath": "sources/updates.html",
+      "rawSha256": "d357acf06198e3f1e3557a7945d43319587cff200e19d76dcaa2d8809d06fdea",
+      "sourceUpdated": "Anniversary header September 2026; timeline calls 4.0 August 2026; exact release date unresolved",
+      "scope": "4.0 feature documentation and official app UI image references, not binary verification"
+    },
+    {
+      "id": "S6", "publisher": "Breathing Room programme", "title": "Capabilities register",
+      "url": "https://breathing-room.chatic.ai/", "path": "docs/content/capabilities.md", "checkedDate": "2026-10-21",
+      "scope": "Reuse one-day-old source/public-page verification; underlying URLs and line citations preserved in register; no installer/runtime QA"
+    },
+    {
+      "id": "S7", "publisher": "Breathing Room programme", "title": "Screenshot library",
+      "path": "docs/content/screenshots.json", "checkedDate": "2026-10-21", "scope": "Selected first-party browser preview, not native evidence"
+    }
+  ],
+  "discovery": {
+    "seed": "https://alternativeto.net/software/cleanmymac/",
+    "listing": "https://alternativeto.net/software/trashpanda/about/",
+    "destination": "https://trashpandamacos.vercel.app/",
+    "sourceIds": ["S1"],
+    "method": "Reuse batch-2 verified directory edge; seed cleanmymac recorded in competitors.json. Exact seed pagination not in per-product capture, not reconstructed.",
+    "pagination": null
+  },
+  "claims": [
+    {"id":"C1","wording":"The official product is TrashPanda at trashpandamacos.vercel.app.","sources":["S1","S2"],"excerpt":"Official Website\ntrashpandamacos.vercel.app","checkedDate":"2026-10-21","state":"verified","evidenceClass":"documentary","location":"identity"},
+    {"id":"C2","wording":"TrashPanda advertises developer cleanup for Xcode, npm, Docker and Homebrew caches, with a preview before deletion.","sources":["S2"],"excerpt":"Safely sweep Xcode, npm, Docker, and Homebrew caches with a full preview before any file is deleted.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor-documented, not tested","location":"cleanup/developer matrix","conditions":"Do not adopt the vendor's safely claim or promise every cache version works."},
+    {"id":"C3","wording":"The download page identifies 4.1 Anniversary Edition as latest stable, requiring macOS 14.0+ (Sonoma).","sources":["S3"],"excerpt":"TrashPanda\n4.1\nAnniversary Edition\nTrashPanda-4.1.pkg\nmacOS\n14.0\n+ (\nSonoma\n)\nAvailable now\nLatest stable version (Recommended). Fixes the Watchtower READ-ONLY report.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"published offer","location":"version/platform/install matrix","conditions":"Homepage/updates highlight 4.0; do not call that latest. No installer validation."},
+    {"id":"C4","wording":"The site flags 4.0 as failing installation on some Intel Macs, and says 4.0.1 fixes Intel Mac installs.","sources":["S3"],"excerpt":"Previous 4.x build. Fixes Intel Mac installs.\nTrashPanda\n4.0","supportingExcerpt2":"Previous 4.x build. Known to fail installing on some Intel Macs.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor release caveat","location":"installation caveats","conditions":"No independent Intel test, architecture/signing/notarization certification or latest macOS validation."},
+    {"id":"C5","wording":"The homepage advertises $1.99 one-time with lifetime updates, not a subscription.","sources":["S2"],"excerpt":"$1.99 once\nNot a subscription. Buy it, keep it, get every future update at no extra cost.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"advertised price","location":"pricing matrix","conditions":"Dollar symbol only: currency code, tax, regional availability, checkout total, device count, refund and offer expiry not verified. $2.99 also appears beside $1.99; do not invent a discount percentage or permanent offer."},
+    {"id":"C6","wording":"TrashPanda documents a local/offline app without AI, accounts, telemetry or network code; its website separately uses Stripe and GoatCounter.","sources":["S2","S4","S5"],"excerpt":"No accounts, no telemetry, no network code.","supportingExcerpt2":"This website uses privacy-focused analytics (GoatCounter) and Stripe for payments","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor/policy assertion, not network audit","location":"local/hosted matrix","conditions":"Do not claim independently audited zero telemetry or apply app privacy wording to website purchase verification."},
+    {"id":"C7","wording":"The homepage documents dry-run by default, exact file-list/size preview, Move-to-Trash mode and opt-in permanent deletion.","sources":["S2"],"excerpt":"Every cleanup starts as a preview. You see the exact file list and the exact size before anything is touched.","supportingExcerpt2":"Move-to-Trash mode keeps deletions recoverable. Permanent delete is opt-in, never the default.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"approval matrix","conditions":"Not hands-on tested; do not promise recovery, risk-free deletion or immediate available-space gains."},
+    {"id":"C8","wording":"Watchtower is described as a read-only configuration audit, not antivirus; Downloads Detox groups the Downloads folder for review.","sources":["S5"],"excerpt":"Watchtower is not antivirus. Findings are evidence, not verdicts.","supportingExcerpt2":"Your Downloads folder, sorted into plain-English piles instead of one endless list.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor documentation for 4.0","location":"adjacent features/workflow brief","conditions":"Not proof of malware detection or ongoing CPU/helper/growth monitoring."},
+    {"id":"C9","wording":"The terms grant a limited non-exclusive, non-transferable, revocable licence for owned/controlled devices and personal/commercial use, with redistribution and source derivation restrictions.","sources":["S4"],"excerpt":"limited, non-exclusive, non-transferable, revocable license","supportingExcerpt2":"Install and use the Software on devices you own or control","checkedDate":"2026-10-21","state":"verified","evidenceClass":"published legal terms","location":"licence matrix","conditions":"Editorial classification proprietary; no verified public app repository. Do not infer unlimited seats."},
+    {"id":"C10","wording":"The re-download form requests the purchase email and says purchase verification uses Stripe.","sources":["S3"],"excerpt":"Enter your purchase information to download TrashPanda again. We'll verify your purchase with Stripe.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"observed public page text","location":"access/install matrix","conditions":"No form submitted, purchase verified, account created or binary downloaded."},
+    {"id":"C11","wording":"App/helper grouping, recurring storage-growth monitoring and exact runtime dependencies for TrashPanda are not verified.","sources":["S2","S3","S4","S5"],"excerpt":null,"checkedDate":"2026-10-21","state":"not-verified","evidenceClass":"research limitation","location":"matrix","conditions":"Never replace these unknowns with No; Watchtower is not evidence for these features."},
+    {"id":"C12","wording":"Breathing Room is a macOS 13+ Apache-2.0 preview; its documented free local capabilities are separate from authenticated hosted AI and advertised AI Care at $5 USD/month or $50 USD/year.","sources":["S6"],"excerpt":"Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"reused source/public-offer register","location":"Breathing Room matrix","conditions":"0.1.0-preview.1; Python 3.10+ prerequisite; Apple Development signed, not Developer ID signed/notarized per release. Physical Intel, clean-machine and binary parity unverified. Actual paid entitlement enforcement/AI quota not established."},
+    {"id":"C13","wording":"Breathing Room source implements grouped app monitoring, storage/activity history and developer-cache discovery; scheduled care reuses exact approvals while the app runs.","sources":["S6"],"excerpt":"Saved approvals bind account, API origin, action method/path and native rule; new actions wait for review.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"reused source inspection, not binary QA","location":"Breathing Room matrix/advantages","conditions":"Optional automatic verified Ruff-cache Trash mode qualifies blanket approval claims. Hosted investigations may send paths/process/storage data; no all-local-AI claim."},
+    {"id":"C14","wording":"Official release notes reference real product-view image assets, but reuse rights are not cleared.","sources":["S4","S5"],"excerpt":"The Software and all related materials are protected by copyright, trademark, and other intellectual property laws.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"rights limitation/documented image references","location":"visual gate","conditions":"Public availability is not permission. Link-only fallback; no competitor image downloaded or visually approved."}
+  ],
+  "matrix": {
+    "macOS": ["C3","C4","C12"], "license": ["C9","C12"], "localVsHosted": ["C6","C12","C13"],
+    "scanCleanup": ["C2","C7","C13"], "approvalControls": ["C7","C13"], "processHelperGrouping": ["C11","C13"],
+    "recurringGrowth": ["C11","C13"], "developerCaches": ["C2","C13"], "pricing": ["C5","C12"],
+    "installationRuntime": ["C3","C4","C10","C11","C12"], "securityAuditAdjacent": ["C8"]
+  },
+  "visuals": [
+    {
+      "id": "trashpanda-downloads-detox-official", "productId": "trashpanda", "kind": "official-asset", "view": "Downloads Detox",
+      "sourcePageUrl": "https://trashpandamacos.vercel.app/updates",
+      "assetUrl": "https://trashpandamacos.vercel.app/_next/image?url=%2Fv4%2Fscreens%2Fdownloads-detox.webp&w=3840&q=75",
+      "originalAssetUrl": "https://trashpandamacos.vercel.app/v4/screens/downloads-detox.webp",
+      "retrievedAtUtc": null, "sourceReferenceRetrievedAtUtc": "2026-10-21T22:21:02.559626+00:00", "capturedAtUtc": null, "capturedBy": null,
+      "productVersion": "4.0 release-note context; exact screenshot build not verified", "dataMode": "unknown",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "declaredHtmlDimensions": [1800,1520], "edits": [],
+      "reuse": {"status":"link-only","basis":"No explicit image reuse licence found; terms reserve related-material rights. No request sent.","evidenceUrlOrPath":"https://trashpandamacos.vercel.app/terms","credit":"TrashPanda, official release notes"},
+      "caption": "TrashPanda's official Downloads Detox product view in its 4.0 release notes. Vendor-provided image; no hands-on cleanup test. Linked only pending reuse clearance.",
+      "alt": "Official TrashPanda Downloads Detox product-view image linked from the release notes.",
+      "supportedClaimIds": ["C8","C14"], "privacyReview": {"status":"pending","redactions":[]},
+      "review": {"status":"pending","reviewer":null,"reviewedAtUtc":null},
+      "limitations": ["Image bytes not downloaded; no hash or visual inspection asserted.","HTML dimensions are not measured asset dimensions.","Link-only does not satisfy on-page screenshot gate."]
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "kind": "browser-preview", "view": "Space",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx":2940,"heightPx":3468,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "capturedBy":"Earlier screenshot-library worker",
+      "productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,
+      "dataMode":"example","edits":[],
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture as recorded in screenshots.json; third-party marks remain their owners' marks.","evidenceUrlOrPath":"docs/content/screenshots.json","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview with an example-data banner, storage categories and illustrative folder sizes.",
+      "privacyReview":{"status":"reviewed","redactions":[]},
+      "review":{"status":"research-inspected; independent page-context review pending","reviewer":"research-trashpanda worker","reviewedAtUtc":null},
+      "limitations":["Opened actual PNG in this job; example banners visible, assistant composer overlaps part of chart.","Current-source refers to recorded capture commit, not current native release or a fresh render today.","Keep example-data banner and caption; do not crop into purported measured results."]
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference", "title":"Review Downloads and developer caches as different cleanup decisions",
+      "slug":"review-downloads-and-developer-caches-on-mac",
+      "primaryIntent":"Decide which Downloads files to keep and which developer caches can be rebuilt without treating every large folder as disposable.",
+      "description":"Use a preview to separate personal downloads from rebuildable developer data. Compare TrashPanda's documented review tools with Breathing Room's source-backed investigation approach, without promising recovered space.",
+      "outline":["Start with the keep/rebuild/unknown decision, not a savings figure","Downloads Detox groups files but does not establish disposability","Review named developer caches, rebuild cost and ownership before approving","Distinguish Trash movement from available disk space","Choose a documented offline sweep or a preview investigation with hosted-AI caveats"],
+      "visualPlan":"After lead: rights-cleared Downloads Detox UI (currently blocked). Later: selected Space browser preview with example-data caption.",
+      "interactionHandoff":"Keep / rebuild with cost / investigate checklist. Inputs: personal original, backup, owning tool, regeneration cost. Unknown routes to investigate, never deletion. No filesystem access or fabricated byte savings.",
+      "internalLinksProposed":["/comparisons/","/comparisons/trashpanda/","/tools/"],
+      "limits":"Not a hands-on review/tutorial. No installer or cleanup was run; source citations adjacent to each product statement. Final title/slug uniqueness and specific tool routes require downstream site review."
+    },
+    "comparison": {
+      "title":"TrashPanda vs Breathing Room: offline cleanup or ongoing investigation",
+      "slug":"trashpanda", "primaryIntent":"Choose between documented offline preview-based cleanup and Breathing Room's maintenance preview/source-backed monitoring approach.",
+      "format":"Short conclusion, sourced matrix above, bounded recommendations, exact install/pricing caveats, workflow link. Unknown competitor cells stay not verified.",
+      "affiliation":"Breathing Room, which we build",
+      "trashpandaAdvantages":["Vendor documents offline/no-AI app without activation account; website purchase/re-download is separate.","Advertised one-time $1.99 with lifetime updates, rather than a hosted-care subscription; currency/tax conditions unresolved.","Documents preview, Trash mode, Downloads grouping and adjacent read-only Watchtower auditing."],
+      "breathingRoomAdvantages":["Source-backed grouped helper monitoring and activity/storage history suit investigations beyond a single cleanup; binary parity remains unverified.","Free local core and Apache-2.0 desktop source, with optional advertised hosted AI Care rather than a required separate app purchase."],
+      "tradeoffs":["TrashPanda: current line macOS 14+, proprietary terms, manual download flow and historical Intel install caveats; no independent safety/telemetry audit.","Breathing Room: macOS 13+ preview, Python 3.10+, not Developer ID signed/notarized per release, untested physical Intel/clean-machine behavior, hosted AI authentication/data-sharing and optional recurring cost.","No claim that TrashPanda lacks helper monitoring or growth tracking; those are unverified.","Neither product's documented preview guarantees risk-free cleanup, performance improvements or measured savings."]
+    }
+  },
+  "noncriticalUnknowns": ["Exact TrashPanda legal developer identity and public repository","Price currency code, taxes, offer duration, checkout total and device-count entitlement","Current installer signing/notarization, exact architecture/runtime dependencies and native behavior","Exact 4.0 release date; 4.1 publication date","Competitor process/helper grouping and recurring storage-growth capabilities","Screenshot build/capture date and whether its figures are illustrative"],
+  "blockers": [{"id":"B1","gate":"drafting/product-visual","diagnostic":"Official Downloads Detox app-view asset identified, but no image reuse permission established; terms reserve related-material rights. Asset is link-only and not downloaded or visually approved. Obtain an applicable public licence/permission or explicitly authorized policy decision, then retain original bytes/hash, inspect privacy/readability and approve page context. Do not send permission requests in this job."}],
+  "browserLog": {"ownedPageId":178,"initialUrl":"https://trashpandamacos.vercel.app/faq","observedUrl":"https://trashpandamacos.vercel.app/ru/faq","result":"FAQ loaded in Russian; English language selection did not change the observed URL/content. No FAQ answer claims derived; English public WebFetch FAQ exposed headings only. Owned tab closed. No other tab content inspected; no cookie/credential/storage extraction."},
+  "validationPolicy":"Research-only checks; no website changes, builds, cleanup, purchase, login, package install, commits, deployment or queue mutation. Independent editorial/native/browser publication review remains downstream."
+}

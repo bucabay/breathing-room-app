@@ -1,0 +1,26 @@
+{
+  "jobId": "research-agomo",
+  "result": "pass-for-research-skip-not-publication",
+  "checks": [
+    "Python JSON parse passed for research.json and both browser source captures.",
+    "All 12 claims have valid source IDs, HTTPS URLs, retained excerpts and actual check dates; all 11 matrix rows reference existing claims or explicitly preserve unknowns.",
+    "All five source ledger paths exist. Existing official snapshot and discovery capture SHA-256 match baseline batch-2 provenance; selected Breathing Room Space preview hash matches screenshots.json.",
+    "Official localized company history retains the Agomo beta-to-CCleaner Cloud launch passage. canonicalOwnerId agomo and alias skip decision are explicit.",
+    "Explicit platform/workflow skip, draftingAllowed false, link-only competitor visual and required example-data/non-native preview labels validated.",
+    "Official UI asset loaded at 795x498 and was visually inspected using a browser screenshot response. No competitor source image was saved or republished; rights remain uncleared.",
+    "Only newly created browser tab 194 was used and closed. No existing tab content was inspected.",
+    "A second dynamic count check corrected hardcoded descriptive count labels in the initial validation stdout: actual counts are 12 claims, 11 matrix rows, five sources and one inherited official snapshot hash plus the discovery hash. The original assertions all passed."
+  ],
+  "artifactSha256": {
+    "docs/content/competitors/agomo/research.json": "f47e0e5406563ee204b6bf5377c4ff392fc70ed75b0282bae5ceab2d5fcdc72c",
+    "docs/content/competitors/agomo/research.md": "92947a35d8d7610a05dc4453164a4a47f5cde78614673419dc88b4fe7442b291",
+    "docs/content/competitors/agomo/sources/homepage-visual-excerpt.md": "3b5b61110799cba5c231f86a372a0765b0e1a6af2d21539fa6fe0a69e0f22bc6",
+    "docs/content/competitors/agomo/sources/official-history.json": "c514894548f53e700d51b6805e3f9a78a6b84b36dafe138b86b52c9a7596f3da",
+    "docs/content/competitors/agomo/sources/official-visual-check.json": "0389a532883debdda84b031f65359d64c1cb96c9dbbb149343bb1d6ad6c47a4f"
+  },
+  "notPerformed": [
+    "No app/endpoint installation, cleanup, account creation, checkout or native runtime testing.",
+    "No marketing files changed; site check/build/test and rendered-page QA not applicable to this research-only skip.",
+    "No independent draft review or image republication clearance. No publication eligibility inferred."
+  ]
+}

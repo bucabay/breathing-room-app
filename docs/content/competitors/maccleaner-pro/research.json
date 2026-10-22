@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-maccleaner-pro",
+  "productId": "maccleaner-pro",
+  "canonicalOwnerId": "maccleaner-pro",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationEligible": false,
+  "sessionDate": "2026-10-22",
+  "clockNote": "Shell UTC clock returned 2026-10-21T21:33:12.324699+00:00 during this session. New fetches completed before that checkpoint; exact per-request timestamps were not returned by WebFetch. Do not substitute the session date for the retained baseline retrieval dates.",
+  "ownership": "Only docs/content/competitors/maccleaner-pro/ and the required attempt receipt; no website edits.",
+  "identity": {
+    "officialName": "MacCleaner Pro",
+    "vendor": "Nektony LLC",
+    "homepage": "https://nektony.com/mac-cleaner-pro",
+    "repository": null,
+    "repositoryStatus": "No official product source repository established in the checked sources; proprietary licence, not a claim that none exists.",
+    "classification": "direct-overlapping-mac-maintenance-suite",
+    "classificationEvidence": ["C01", "C03", "C04", "B01"],
+    "fit": "Direct overlap in Mac disk inspection, cache cleanup and maintenance; not feature-for-feature equivalence. Bundle-specific duplicate and uninstall workflows exceed the verified Breathing Room scope.",
+    "platformIntent": "Mac-native maintenance comparison; no Windows or Linux support claimed.",
+    "aliasSkipDecision": "do-not-skip-this-product",
+    "aliases": [
+      {"id": "mac-cleaner-pro", "name": "IUWEsoft Mac Cleaner Pro", "status": "distinct-product-not-alias", "decision": "Retain vendor-qualified identity; do not merge Nektony's suite with IUWEsoft's cleaner/shredder.", "sourceIds": ["A1"]},
+      {"id": "app-cleaner", "name": "Nektony App Cleaner & Uninstaller", "status": "bundle-component-not-whole-suite-alias", "decision": "No duplicate expanded suite article under the component name. This job owns the suite workflow only.", "sourceIds": ["A1", "S1"]}
+    ],
+    "excludedAliasCandidates": "PowerMyMac is not an alias candidate established for this product. The unrelated unresolved iMyMac/FoneDog case remains untouched.",
+    "deadProductDecision": "No dead-product skip: retained official page advertises a download and version; availability is documented, not installer-tested."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/maccleaner-pro/about/",
+    "officialDestination": "https://nektony.com/mac-cleaner-pro",
+    "retrievedAtUtc": "2026-10-21T19:08:52.120Z",
+    "method": "Reused verified rendered-directory snapshot; not fetched again.",
+    "snapshotPath": "docs/content/.runtime/verification-1/maccleaner-pro-directory.json",
+    "sha256": "ee965812fed7ea272467dd7cc4ca06ca0fb97442a69cab49df19119704240f19",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=2", "retrievedAtUtc": "2026-10-21T18:36:23.710Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=5", "retrievedAtUtc": "2026-10-21T18:37:15.718Z"}
+    ],
+    "edgeRegister": "docs/content/competitors.json",
+    "limitation": "Directory claims are discovery only, not primary proof of capabilities or offline operation."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Nektony", "title": "MacCleaner Pro",
+      "url": "https://nektony.com/mac-cleaner-pro", "finalUrl": "https://nektony.com/mac-cleaner-pro",
+      "retrievedAtUtc": "2026-10-21T19:09:38.949832+00:00", "checkDate": "2026-10-21",
+      "sourceUpdated": "2026-09-20", "scope": "Vendor's direct-distribution product page, v4.0.4; not binary validation.",
+      "snapshotPath": "docs/content/.runtime/verification-1/maccleaner-pro-official.json",
+      "sha256": "cb885d194540e701af9bb99582cc860381580472485114f30785911d5536cd9f",
+      "reuse": "Reused batch-1.json entry and original source text; no redundant feature re-research."
+    },
+    {
+      "id": "S2", "publisher": "Nektony", "title": "Choose MacCleaner Pro package option",
+      "url": "https://nektony.com/mac-cleaner-pro/buy", "finalUrl": "https://nektony.com/mac-cleaner-pro/buy",
+      "retrievedAtUtc": null, "retrievalCompletedByUtc": "2026-10-21T21:33:12.324699+00:00", "checkDate": "2026-10-21",
+      "sourceUpdated": null, "method": "Read-only WebFetch; missing exact price and plan conditions.",
+      "scope": "Public dollar-denominated offer, direct purchase, 1/2/5 Mac plans. No checkout opened, location/currency/tax total not established.",
+      "retainedExcerpts": ["Plan for 1 Mac $14.95/mo Billed $14.95 per month", "Plan for 1 Mac $3.33/mo Billed $39.95 per year", "Plan for 1 Mac $85.95 Billed $85.95", "Minor updates & bug fixed for free. Major upgrades at additional cost.", "Your subscription will remain active until the end of the current billing period."]
+    },
+    {
+      "id": "S3", "publisher": "Nektony LLC", "title": "Terms and Conditions",
+      "url": "https://nektony.com/terms-conditions", "finalUrl": "https://nektony.com/terms-conditions",
+      "retrievedAtUtc": null, "retrievalCompletedByUtc": "2026-10-21T21:33:12.324699+00:00", "checkDate": "2026-10-21",
+      "sourceUpdated": "2026-03-18", "scope": "Terms version 1.26.3; vendor policy, not an independent legal determination.",
+      "retainedExcerpts": ["All rights are reserved.", "You can view, print or download extracts of the Material for your own personal use but you cannot otherwise copy, edit, vary, reproduce, publish, display, distribute, store, transmit, commercially exploit, disseminate in any form whatsoever or use the Material without a permission.", "For one-time purchases, the license is granted on a perpetual basis for the specific Major Version of the Product purchased", "The number of devices on which the license can be used simultaneously cannot exceed the number specified in the purchased license.", "the subscription will automatically renew unless cancelled"]
+    },
+    {
+      "id": "S4", "publisher": "Nektony", "title": "Official product page public image markup",
+      "url": "https://nektony.com/mac-cleaner-pro", "finalUrl": "https://nektony.com/mac-cleaner-pro",
+      "retrievedAtUtc": null, "retrievalCompletedByUtc": "2026-10-21T21:33:12.324699+00:00", "checkDate": "2026-10-21",
+      "method": "One HTML retrieval specifically to identify missing official app-image asset URLs; scripts not executed, no cookie/session extraction.",
+      "retainedExcerpts": ["alt=\"maccleaner pro window\" width=\"952\" height=\"782\" data-lazy-src=\"https://nektony.com/wp-content/uploads/2025/10/maccleaner-pro-window-bg-1x.png\"", "src=\"https://nektony.com/wp-content/uploads/2025/10/maccleaner-pro-1-1x.png\" width=\"899\" height=\"566\" alt=\"HD clutter control\""],
+      "temporaryToolOutput": "/Users/gabe/.local/share/opencode/tool-output/tool_16061c563001CsW67V3xsqdVF3",
+      "limitation": "Tool output is not a durable owned snapshot. Exact relevant markup is retained here; image bytes not fetched or visually approved."
+    },
+    {
+      "id": "S5", "publisher": "Nektony", "title": "Legal / Trademarks",
+      "url": "https://nektony.com/legal", "finalUrl": "https://nektony.com/legal",
+      "relatedUrl": "https://nektony.com/trademarks", "checkDate": "2026-10-21",
+      "retrievedAtUtc": null, "retrievalCompletedByUtc": "2026-10-21T21:33:12.324699+00:00",
+      "retainedExcerpts": ["Terms", "Guidelines for proper use of Nektony LLC trademarks", "Do not change Nektony logo colors."],
+      "limitation": "Checked legal index and trademark page; neither supplied an affirmative app-screenshot publication grant. This is not a claim that no grant exists elsewhere."
+    },
+    {
+      "id": "A1", "publisher": "Breathing Room verification worker", "title": "Existing vendor-alias decisions",
+      "url": "https://nektony.com/mac-cleaner-pro", "additionalUrl": "https://www.iuwesoft.com/mac-cleaner-pro.html",
+      "path": "docs/content/verification/alias-decisions.json", "checkDate": "2026-10-21",
+      "retainedExcerpts": ["Nektony's App Cleaner & Uninstaller is a component offered in the MacCleaner Pro bundle, not an alias for the entire bundle.", "IUWEsoft's file cleaner/shredder and Nektony's MacCleaner Pro suite have separate current official identities."],
+      "limitation": "Reused verified decisions; the other products were not researched again or edited by this job."
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room capabilities worker", "title": "Current capabilities evidence register",
+      "path": "docs/content/capabilities.md", "url": "https://breathing-room.chatic.ai/", "checkDate": "2026-10-21",
+      "relatedUrls": ["https://breathing-room.chatic.ai/privacy/", "https://breathing-room.chatic.ai/download/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "scope": "Fresh existing source/published register; source implementation is not distributed-binary QA. This job read and reused it, not a new native test.",
+      "retainedExcerpts": ["Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.", "AI Care is advertised at $5 USD/month or $50 USD/year", "macOS 13+", "Apple Development signed, not Developer ID signed or notarized", "Python 3.10+", "App must remain running, optionally in menu bar."]
+    },
+    {
+      "id": "BR2", "publisher": "Breathing Room screenshot worker", "title": "Current-source browser screenshot inventory",
+      "path": "docs/content/screenshots.json", "url": "http://127.0.0.1:1431/", "checkDate": "2026-10-21",
+      "scope": "Existing October 21 source capture, not a current native scan or a new browser capture."
+    }
+  ],
+  "claimLedger": [
+    {"id": "C01", "wording": "Nektony describes MacCleaner Pro as a bundle of six Mac cleanup tools.", "state": "verified", "evidenceClass": "vendor-documented", "sourceIds": ["S1"], "sourceUrl": "https://nektony.com/mac-cleaner-pro", "excerpt": "A bundle of six professional tools for a deep Mac cleanup.", "checkedOn": "2026-10-21", "location": "Identity and comparison scope", "scope": "Do not treat each bundled tool as an alias of the suite.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C02", "wording": "The official product page identifies v4.0.4, updated September 20, 2026, and lists macOS 11.0–27.", "state": "verified", "evidenceClass": "vendor-documented", "sourceIds": ["S1"], "sourceUrl": "https://nektony.com/mac-cleaner-pro", "excerpt": "macOS 11.0-27\nLast updated: Sep. 20, 2026, v4.0.4\n2-day trial", "checkedOn": "2026-10-21", "location": "Compatibility and trial", "scope": "Buy page says 11.0+; preserve exact product-page range, not independent OS/architecture certification. Trial limits beyond duration unknown.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C03", "wording": "The suite advertises cache/log cleanup, disk usage analysis, duplicate tools and App Cleaner & Uninstaller.", "state": "verified", "evidenceClass": "vendor-documented", "sourceIds": ["S1"], "sourceUrl": "https://nektony.com/mac-cleaner-pro", "excerpt": "Clear caches and logs\nFull toolkit for a detailed Mac cleanup\nApp Cleaner & Uninstaller\nDuplicate File Finder\nDisk Space Analyzer", "checkedOn": "2026-10-21", "location": "Workflow and scope matrix", "scope": "Marketing documents availability, not tested results or equivalence to specific developer-cache adapters.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C04", "wording": "Nektony says MacCleaner Pro displays a confirmation window before cleaning files.", "state": "verified", "evidenceClass": "vendor-documented-not-observed", "sourceIds": ["S1"], "sourceUrl": "https://nektony.com/mac-cleaner-pro", "excerpt": "MacCleaner Pro always displays a confirmation window before cleaning up any files.", "checkedOn": "2026-10-21", "location": "Approval controls", "scope": "Do not turn this into a safety guarantee, exact path/method approval parity, or a statement about Trash versus permanent deletion.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C05", "wording": "The one-Mac public offer shows $14.95 monthly, $39.95 billed annually, or $85.95 one-time.", "state": "verified", "evidenceClass": "public-offer", "sourceIds": ["S2"], "sourceUrl": "https://nektony.com/mac-cleaner-pro/buy", "excerpt": "Plan for 1 Mac $14.95/mo Billed $14.95 per month; Plan for 1 Mac $3.33/mo Billed $39.95 per year; Plan for 1 Mac $85.95 Billed $85.95", "checkedOn": "2026-10-21", "location": "Pricing row", "scope": "Use dollar symbol as displayed, not an independently confirmed USD/tax-inclusive checkout amount. $3.33/mo is annual equivalent, not monthly billing. Region, taxes and final currency not verified.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C06", "wording": "Nektony's one-time licence covers the purchased major version; minor fixes are free and major upgrades may cost extra. Subscriptions renew unless cancelled.", "state": "verified", "evidenceClass": "published-licence-terms", "sourceIds": ["S2", "S3"], "sourceUrl": "https://nektony.com/terms-conditions", "excerpt": "For one-time purchases, the license is granted on a perpetual basis for the specific Major Version of the Product purchased; the subscription will automatically renew unless cancelled", "checkedOn": "2026-10-21", "location": "Licence and pricing conditions", "scope": "Proprietary rights reserved; no lifetime-all-future-versions claim. Buy FAQ says access lasts until billing period end after cancellation; no cancellation tested.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C07", "wording": "Nektony advertises Apple notarization for MacCleaner Pro.", "state": "verified", "evidenceClass": "vendor-documented-not-binary-inspected", "sourceIds": ["S1"], "sourceUrl": "https://nektony.com/mac-cleaner-pro", "excerpt": "Notarized by Apple", "checkedOn": "2026-10-21", "location": "Install caveats", "scope": "No signature, notarization ticket or malware audit performed; do not repeat vendor 'proven safe' language.", "reviewer": "research-maccleaner-pro"},
+    {"id": "C08", "wording": "No app-image publication permission was established; keep identified official image URLs link-only.", "state": "verified", "evidenceClass": "bounded-rights-review", "sourceIds": ["S3", "S4", "S5"], "sourceUrl": "https://nektony.com/terms-conditions", "excerpt": "you cannot otherwise ... publish, display, distribute ... the Material without a permission", "checkedOn": "2026-10-21", "location": "Visual gate", "scope": "Editorial gate decision, not legal advice. Public accessibility and attribution do not clear reuse. Do not download/publish under this packet.", "reviewer": "research-maccleaner-pro"},
+    {"id": "B01", "wording": "Breathing Room has source implementations for storage exploration, grouped CPU/memory inspection, activity history and constrained cleanup approval.", "state": "verified", "evidenceClass": "reused-source-inspection", "sourceIds": ["BR1"], "sourceUrl": "https://github.com/bucabay/breathing-room-app", "excerpt": "Source implementations for storage exploration, grouped app/process monitoring, reviewable cleanup, activity history", "checkedOn": "2026-10-21", "location": "Breathing Room comparison column", "scope": "capabilities.md lines 20–40, source not installer QA. Optional verified Ruff automatic mode qualifies blanket per-action approval language.", "reviewer": "research-maccleaner-pro"},
+    {"id": "B02", "wording": "Breathing Room is a free Apache-2.0 desktop preview; advertised AI Care is $5 USD/month or $50 USD/year, with authenticated hosted requests.", "state": "verified", "evidenceClass": "reused-source-and-published-register", "sourceIds": ["BR1"], "sourceUrl": "https://breathing-room.chatic.ai/", "excerpt": "free, Apache-2.0 macOS maintenance preview; Hosted AI assistance requires internet access and authentication; $5 USD/month or $50 USD/year", "checkedOn": "2026-10-21", "location": "Cost and local/hosted boundary", "scope": "No unlimited AI/free quota or subscription enforcement claim. Relevant paths/process/storage data can reach the service; not entirely offline.", "reviewer": "research-maccleaner-pro"},
+    {"id": "B03", "wording": "Breathing Room's identified preview is 0.1.0-preview.1, macOS 13+, with Python 3.10+ for inventory; published release discloses no Developer ID signing/notarization or completed clean-machine/physical-Intel QA.", "state": "verified", "evidenceClass": "reused-release-disclosure", "sourceIds": ["BR1"], "sourceUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1", "excerpt": "Apple Development signed, not Developer ID signed or notarized; Python 3.10+; macOS 13+", "checkedOn": "2026-10-21", "location": "Install and maturity caveats", "scope": "Universal installer advertised, not Intel runtime validation. Daily care requires running app and saved exact approvals; no bypass-security advice.", "reviewer": "research-maccleaner-pro"}
+  ],
+  "pricing": {
+    "sourceClaimIds": ["C05", "C06"], "currencyAsDisplayed": "$", "currencyCode": null,
+    "oneMac": {"monthly": "14.95 per month", "annual": "39.95 per year", "annualDisplayedMonthlyEquivalent": "3.33", "oneTime": "85.95"},
+    "twoMacs": {"monthly": "19.95", "annual": "53.28", "oneTime": "129.95"},
+    "fiveMacs": {"monthly": "29.95", "annual": "93.24", "oneTime": "199.95"},
+    "conditions": "Public plan cards, not transaction results. Subscription auto-renews; one-time major-version scope. Multi-Mac card excerpts are retained in research.md. Tax, local currency, sale duration and final checkout totals unknown. No 'cheaper' ranking across different licence models."
+  },
+  "matrix": [
+    {"dimension": "Platform/version", "competitorClaimIds": ["C02"], "breathingRoomClaimIds": ["B03"]},
+    {"dimension": "Licence and prices", "competitorClaimIds": ["C05", "C06"], "breathingRoomClaimIds": ["B02"]},
+    {"dimension": "Scan/cleanup model", "competitorClaimIds": ["C03", "C04"], "breathingRoomClaimIds": ["B01"]},
+    {"dimension": "Approval controls", "competitorClaimIds": ["C04"], "breathingRoomClaimIds": ["B01", "B03"]},
+    {"dimension": "Local/hosted", "competitor": "Mac app documented; offline completeness, telemetry and activation network requirements not verified. Do not reuse the directory's Works Offline tag as official proof.", "competitorClaimIds": ["C01"], "breathingRoomClaimIds": ["B02"]},
+    {"dimension": "Helper grouping", "competitor": "not verified", "competitorClaimIds": [], "breathingRoomClaimIds": ["B01"]},
+    {"dimension": "Recurring growth history", "competitor": "not verified", "competitorClaimIds": [], "breathingRoomClaimIds": ["B01", "B03"]},
+    {"dimension": "Developer caches", "competitor": "Generic caches documented; package-manager/cache-specific validation not verified.", "competitorClaimIds": ["C03"], "breathingRoomClaimIds": ["B01"], "breathingRoomNote": "capabilities.md developer adapters are source-level only; no compatibility benchmark."},
+    {"dimension": "Installation/runtime", "competitor": "Official download and vendor notarization statement; architecture, permissions, runtime dependencies and clean-machine behavior not verified.", "competitorClaimIds": ["C02", "C07"], "breathingRoomClaimIds": ["B03"]}
+  ],
+  "visuals": [
+    {
+      "id": "maccleaner-pro-official-window-link-only", "productId": "maccleaner-pro", "view": "Official MacCleaner Pro app-window image candidate", "kind": "official-asset",
+      "sourcePageUrl": "https://nektony.com/mac-cleaner-pro", "assetUrl": "https://nektony.com/wp-content/uploads/2025/10/maccleaner-pro-window-bg-1x.png",
+      "alternateAssetUrl": "https://nektony.com/wp-content/uploads/2025/10/maccleaner-pro-1-1x.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null, "buildOrCommit": null, "osVersion": null,
+      "dataMode": "vendor-illustration", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "htmlDeclaredDimensions": [952, 782], "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Permission not established. Terms reserve rights and require permission for publication; no image downloaded.", "evidenceUrlOrPath": "https://nektony.com/terms-conditions", "credit": "MacCleaner Pro interface image: Nektony. No affiliation or endorsement."},
+      "caption": "Official MacCleaner Pro app-window illustration linked from Nektony's product page. Vendor capture date/version and example values unverified; not our test.",
+      "alt": "Link to Nektony's official MacCleaner Pro app-window image.", "supportedClaimIds": ["C01"],
+      "limitations": ["Real app-UI candidate identified from official img markup, not a logo or landing-page capture. Bytes not fetched, so visual contents and dimensions not independently inspected.", "Link-only fallback does not satisfy the required on-page screenshot gate.", "Do not hotlink, crop, embed or claim v4.0.4 UI correspondence without clearance and visual review."],
+      "review": {"status": "blocked-rights-and-visual-inspection", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library worker (existing inventory)",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null,
+      "dataMode": "example", "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a", "publishedPath": null, "publishedSha256": null,
+      "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-example-data", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "First-party app-owner-requested example UI capture, as recorded in screenshots.json; page-specific review and any third-party marks still require care.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room current-source browser preview; example data."},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview with example storage categories and a visible example-data notice.",
+      "supportedClaimIds": ["B01"],
+      "limitations": ["Earlier capture of identified source commit, not proof of today's native build or distributed release.", "Keep Interactive preview · example data and the explanatory banner visible; no example GB values as measured savings.", "Floating composer overlaps the chart; contextual sizing/cropping needs later review without losing disclosures.", "No new browser or native capture was made."],
+      "review": {"status": "image-opened-and-read-by-research-worker; independent-page-review-pending", "reviewer": "research-maccleaner-pro", "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "title": "Separate duplicate files from rebuildable caches before a Mac cleanup",
+      "contentRecord": "website/src/content/blog/maccleaner-pro-mac-workflow.md",
+      "proposedSlug": "maccleaner-pro-mac-workflow", "track": "search-reference-workflow",
+      "primaryIntent": "Choose the appropriate review queue for duplicates, app leftovers and caches rather than deleting by size alone.",
+      "lead": "Use separate review steps for duplicate candidates, app leftovers and rebuildable caches. MacCleaner Pro documents separate tools for these jobs; a storage total alone is not permission to delete.",
+      "outline": ["Inventory first; keep originals and backups out of automatic decisions", "Map duplicate/folder review to the suite's Duplicate File Finder, app removal to App Cleaner & Uninstaller, and caches to its cleaner", "Explain that duplicate-looking content is not necessarily disposable; no automatic deletion instructions", "Contrast a one-time sorting job with investigating recurring growth, without asserting the competitor lacks monitoring", "Give a bounded choice: suite for documented duplicate/uninstall jobs, Breathing Room source preview for investigation with release and hosted caveats"],
+      "distinctness": "Suite-specific multi-tool triage workflow, not a reworded generic cleaner comparison or an App Cleaner uninstall tutorial.",
+      "visualPlan": "Cleared competitor app UI immediately after lead; later labeled Breathing Room Space preview. Currently blocked, do not replace competitor image with logo or generated UI.",
+      "interactionPass": "Draft-stage decision checklist: identify item type, confirm ownership/backup, estimate rebuild/download cost, inspect proposed action. No filesystem access, upload, deletions or fabricated savings.",
+      "evidenceBoundaries": "Planning brief only, not a tested tutorial. Do not invent button paths, duplicate-matching algorithms, Trash handling or measured performance. No FAQ unless real questions are sourced."
+    },
+    "comparison": {
+      "title": "Breathing Room vs MacCleaner Pro: investigation or cleanup toolkit?",
+      "contentRecord": "website/src/content/comparisons/maccleaner-pro.md", "proposedSlug": "maccleaner-pro",
+      "primaryIntent": "Concise choice between overlapping Mac maintenance products, not a second workflow article.",
+      "decision": "MacCleaner Pro has documented bundled duplicate and uninstall tools and a major-version one-time licence option. Breathing Room, which we build, is an open-source preview with source-level storage/activity investigation and optional hosted AI; it is not established here as a replacement for every suite tool.",
+      "matrixDimensions": ["C02/B03 compatibility", "C03/B01 task scope", "C04/B01 approval boundaries", "C05/C06/B02 licence and billing", "C07/B03 installation maturity", "Unknown competitor monitoring and offline limits"],
+      "linkPlan": ["Existing /comparisons/ hub", "Workflow counterpart only once its route exists", "An existing relevant storage/cache tool only after route verification; no invented URL"],
+      "disclosure": "Breathing Room, which we build; no independent review or hands-on product test claimed."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "competitorAdvantages": ["Documented bundle includes duplicate/folder and uninstall functions not established for Breathing Room (C03).", "One-time major-version purchase option alongside subscriptions (C05/C06).", "Vendor documents macOS 11.0–27 and notarization; Breathing Room identified preview is macOS 13+ and not notarized (C02/C07/B03)."],
+    "breathingRoomPotentialFit": ["Source-inspectable Apache-2.0 desktop and free local inspection offer (B01/B02).", "Source-level grouped process/activity and developer-cache investigation can fit recurring-growth questions; not proven superior or absent in competitor (B01)."],
+    "breathingRoomTradeoffs": ["Preview, Python prerequisite, incomplete installation/Intel QA and no notarization (B03).", "Hosted AI needs internet/authentication and can receive relevant metadata; paid AI Care is distinct from free local tools (B02).", "Daily care requires running app and saved exact approvals, with documented interactive automatic Ruff exception (B01/B03)."],
+    "prohibitedConclusions": ["No speed/safety/savings winner", "No all-offline or no-telemetry assertion", "No competitor feature absence inferred from missing evidence", "No lifetime future-upgrade entitlement", "No untested cleanup instructions or imagined screenshots"]
+  },
+  "unknowns": [
+    "Competitor exact CPU architecture coverage, runtime dependencies, permissions and clean-machine install behavior.",
+    "Competitor activation/offline limits, data collection/hosted processing and privacy details not reviewed; no privacy ranking allowed.",
+    "Competitor helper grouping, recurring-growth history, package-manager-specific cache rules and per-location approval semantics not verified.",
+    "Competitor two-day trial feature restrictions, final checkout currency/tax totals and future price duration.",
+    "Competitor official repository, image capture date/version/actual dimensions and screenshot publication permission.",
+    "Breathing Room distributed-release feature parity, AI quotas/entitlement enforcement and native measurements remain unverified in reused register."
+  ],
+  "blockers": [
+    {"id": "visual-rights", "severity": "critical", "diagnostic": "No permission/licence for publishing Nektony app images established. S3 reserves rights and requires permission; S4 only establishes official app-image URLs. No competitor image bytes downloaded or inspected. Link-only is a research fallback, not the two-product on-page visual gate.", "unblock": "Provide explicit written vendor/press screenshot reuse permission or an authoritative image licence applicable to this commercial comparison, or an explicitly authorized editorial/legal policy decision. Then retrieve permitted original, retain hash/provenance, inspect UI/privacy/version and plan readable rendering. Do not send a permission request from this job."}
+  ],
+  "observations": {"installedOrLaunchedCompetitor": false, "nativeTests": false, "cleanup": false, "browserUsed": false, "thirdPartyImageDownloads": 0, "accountsOrCheckout": false, "generatedUI": false},
+  "validationPlan": "Validate JSON parse, unique claims/source references, exact retained-source passages, baseline snapshot hashes, selected PNG hash/dimensions and owned diff whitespace. No website builds required because website untouched. Save actual outcomes in validation.json and attempt receipt; not an independent publication review."
+}

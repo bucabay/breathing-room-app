@@ -1,0 +1,83 @@
+# What is Noah?
+
+Noah is an AI desktop support app for Mac and Windows that diagnoses and fixes
+common computer problems in plain English. You describe what's wrong; Noah finds
+the cause, shows you exactly what it will do, and fixes it with your approval.
+Every change is logged.
+
+## What Noah does
+
+You type the problem the way you'd say it to a person ("my Mac is slow," "Wi-Fi
+keeps dropping on Zoom"). Noah runs a small set of audited diagnostic tools,
+names the actual cause — the runaway process, the stuck queue, the broken DNS —
+proposes a one-sentence fix, and runs it only after you approve. It then shows
+the result, before and after, in numbers.
+
+## What Noah can fix
+
+- A slow computer — freezes, spinning fan, lagging apps
+- Wi-Fi and internet problems — slow, dropping, failing on calls
+- Apps that keep crashing — quitting, freezing, won't open
+- Storage almost full — can't save, downloads piling up
+- Battery draining fast — dies mid-meeting, runs hot
+- Mic, camera, or audio not working in Zoom or Teams
+- Files that won't sync — iCloud, Dropbox, OneDrive stuck
+- Other software, configuration, and system-health issues
+
+If a problem is out of scope — a dead SSD, a recovery situation, an OS reinstall
+— Noah says so and points you to who can help. No bluffing.
+
+## What Noah does NOT do
+
+Noah is not a hardware repair service. For cracked screens, battery replacement,
+liquid damage, a dying SSD, or board-level repair, use Apple or a local repair
+provider. Noah handles software, configuration, performance, network, app, sync,
+and system-health issues — and tells you plainly when a problem is hardware so
+you know whether to book a repair appointment.
+
+## How Noah is different from a chatbot
+
+ChatGPT can suggest terminal commands. Noah inspects your machine, identifies the
+likely cause, proposes a safe fix, asks for approval, executes the fix, and
+records what changed. Every action is a hand-built tool with a fixed scope —
+Noah cannot run arbitrary shell or PowerShell.
+
+## How Noah is different from a local repair shop
+
+Use Noah first for software issues: a slow computer, app crashes, Wi-Fi,
+printers, updates, disk space, backups, and security checks. Use a local repair
+shop for physical damage, liquid damage, a broken screen, a failing battery, or
+board-level repair.
+
+## What Noah reads
+
+Only what the operating system exposes to any app: processes (the same list
+Activity Monitor or Task Manager shows), CPU and memory, free disk, network, and
+the system log. To find what's filling your disk it also checks file and folder
+sizes — on a Mac, macOS asks your permission first — but it doesn't open your
+files to read what's inside: names and sizes, not contents. No browser
+history. No passwords. No screen capture.
+
+## Safety
+
+Every change is logged. Destructive operations
+need a second confirmation. Noah never runs anything you haven't seen and
+approved.
+
+## Platforms
+
+- macOS 12+ — Apple Silicon and Intel
+- Windows 10+ — x64 and ARM64
+
+## Pricing
+
+Free to start. Download Noah and describe your first problem to see what it
+finds. Pricing is shown in the app, and nothing is charged until you choose to
+pay.
+
+## Links
+
+- Mac: https://onnoah.app/
+- Windows: https://onnoah.app/windows
+- Fix Library: https://onnoah.app/fix
+- Help & FAQ: https://onnoah.app/help

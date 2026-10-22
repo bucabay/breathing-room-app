@@ -1,0 +1,65 @@
+[
+  {
+    "id": "release",
+    "url": "https://api.github.com/repos/omlahore/RemoveMacAI/releases/latest",
+    "finalUrl": "https://api.github.com/repos/omlahore/RemoveMacAI/releases/latest",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:22.660919+00:00",
+    "path": "docs/content/competitors/removemacai/sources/release.json",
+    "sha256": "693aada7e3601acec0052ddf64ea0c4d21a26355e89dd81f30ef195e9bb03540"
+  },
+  {
+    "id": "readme-release",
+    "url": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:22.554213+00:00",
+    "path": "docs/content/competitors/removemacai/sources/README-v1.1.4.md",
+    "sha256": "9c2871916673c1daad50cae6598657967ac0dee3e2e3320b2a301230d7c2279a"
+  },
+  {
+    "id": "readme-main",
+    "url": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/README.md",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:22.576622+00:00",
+    "path": "docs/content/competitors/removemacai/sources/README-main.md",
+    "sha256": "7afd0f7dec0ed6b5ec4a1a0a62a366652ecc9f0e274b8442a8e8fa579bda0284"
+  },
+  {
+    "id": "license",
+    "url": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/LICENSE",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:22.590615+00:00",
+    "path": "docs/content/competitors/removemacai/sources/LICENSE.txt",
+    "sha256": "5c6315bfce06cc3b3d6c2eb9b044782c99756261368a1b718a44f6ef495477e7"
+  },
+  {
+    "id": "third-party",
+    "url": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/THIRD-PARTY-NOTICES.md",
+    "finalUrl": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/THIRD-PARTY-NOTICES.md",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:23.300440+00:00",
+    "path": "docs/content/competitors/removemacai/sources/THIRD-PARTY-NOTICES.md",
+    "sha256": "dbfcf4ef90b16a6b2531fe3f45298e027b73d68f6dd2f5ff09ce47b82e126949"
+  },
+  {
+    "id": "repo",
+    "url": "https://api.github.com/repos/omlahore/RemoveMacAI",
+    "finalUrl": "https://api.github.com/repos/omlahore/RemoveMacAI",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:23.390149+00:00",
+    "path": "docs/content/competitors/removemacai/sources/repo.json",
+    "sha256": "16d8b0e5866b38a2dfffd50f01ff73666ebb2b1ee27ac0a57c64a1adecd108ca"
+  },
+  {
+    "id": "competitor-ui",
+    "url": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/docs/screens/overview-light.webp",
+    "finalUrl": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/docs/screens/overview-light.webp",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:02:24.278885+00:00",
+    "path": "docs/content/competitors/removemacai/sources/overview-light-original.webp",
+    "sha256": "05593d2f6111898bd25395ced7228c33df8a186882f261ece3f73962d050a32b"
+  }
+]

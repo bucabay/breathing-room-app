@@ -1,0 +1,222 @@
+{
+  "jobId": "research-removemacai",
+  "checkedAtUtc": "2026-10-21T22:04:32.110824+00:00",
+  "checks": [
+    {
+      "check": "source-hash:release",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/release.json"
+    },
+    {
+      "check": "source-hash:readme-release",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/README-v1.1.4.md"
+    },
+    {
+      "check": "source-hash:readme-main",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/README-main.md"
+    },
+    {
+      "check": "source-hash:license",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/LICENSE.txt"
+    },
+    {
+      "check": "source-hash:third-party",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "check": "source-hash:repo",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/repo.json"
+    },
+    {
+      "check": "source-hash:competitor-ui",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/overview-light-original.webp"
+    },
+    {
+      "check": "source-hash:baseline-home",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-2/removemacai-official.json"
+    },
+    {
+      "check": "source-hash:discovery",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-2/removemacai-directory.json"
+    },
+    {
+      "check": "source-hash:br-capabilities",
+      "outcome": "pass",
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "claim-excerpt:identity",
+      "outcome": "pass",
+      "detail": "https://omlahore.github.io/RemoveMacAI/"
+    },
+    {
+      "check": "claim-excerpt:function",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:platform-release",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:platform-main",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/README.md"
+    },
+    {
+      "check": "claim-excerpt:price",
+      "outcome": "pass",
+      "detail": "https://omlahore.github.io/RemoveMacAI/"
+    },
+    {
+      "check": "claim-excerpt:license",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/LICENSE"
+    },
+    {
+      "check": "claim-excerpt:release",
+      "outcome": "pass",
+      "detail": "https://api.github.com/repos/omlahore/RemoveMacAI/releases/latest"
+    },
+    {
+      "check": "claim-excerpt:review",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:profile",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:trash-exceptions",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:timing",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:feature-loss",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:storage",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:background",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:local",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:install",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:sip",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/README.md"
+    },
+    {
+      "check": "claim-excerpt:pared",
+      "outcome": "pass",
+      "detail": "https://raw.githubusercontent.com/omlahore/RemoveMacAI/v1.1.4/THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "check": "claim-excerpt:br-offer",
+      "outcome": "pass",
+      "detail": "https://breathing-room.chatic.ai/"
+    },
+    {
+      "check": "claim-excerpt:br-caveats",
+      "outcome": "pass",
+      "detail": "https://breathing-room.chatic.ai/"
+    },
+    {
+      "check": "claim-excerpt:br-tools",
+      "outcome": "pass",
+      "detail": "https://breathing-room.chatic.ai/"
+    },
+    {
+      "check": "claim-excerpt:br-hosted",
+      "outcome": "pass",
+      "detail": "https://breathing-room.chatic.ai/"
+    },
+    {
+      "check": "claim-excerpt:br-approval",
+      "outcome": "pass",
+      "detail": "https://breathing-room.chatic.ai/"
+    },
+    {
+      "check": "matrix-claim-links",
+      "outcome": "pass",
+      "detail": "Every verified matrix cell maps to a retained claim."
+    },
+    {
+      "check": "visual-hash:removemacai-overview",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/removemacai/sources/overview-light-original.webp"
+    },
+    {
+      "check": "visual-provenance:removemacai-overview",
+      "outcome": "pass",
+      "detail": "Caption, alt, reuse basis; unpublished original."
+    },
+    {
+      "check": "visual-hash:current-space-browser-preview",
+      "outcome": "pass",
+      "detail": "docs/content/assets/breathing-room/space-preview-2026-10-21.png"
+    },
+    {
+      "check": "visual-provenance:current-space-browser-preview",
+      "outcome": "pass",
+      "detail": "Caption, alt, reuse basis; unpublished original."
+    },
+    {
+      "check": "br-png-dimensions",
+      "outcome": "pass",
+      "detail": "PNG header: 2940 x 3468."
+    },
+    {
+      "check": "competitor-image-dimensions",
+      "outcome": "pass",
+      "detail": "/Users/gabe/code/breathing-room-app/docs/content/competitors/removemacai/sources/overview-light-original.webp\n  pixelWidth: 2000\n  pixelHeight: 1400"
+    },
+    {
+      "check": "identity-and-gates",
+      "outcome": "pass",
+      "detail": "Canonical, adjacent and not approved for publication."
+    },
+    {
+      "check": "required-documents",
+      "outcome": "pass",
+      "detail": "Both research formats and distinct briefs present."
+    }
+  ],
+  "passed": 42,
+  "failed": 0,
+  "visualInspection": "Worker opened/read the actual official WebP and first-party PNG with image-capable read tool; separate independent publication review pending.",
+  "siteBuild": "Not run: no marketing files changed.",
+  "productRuntime": "Not run: no product code executed.",
+  "assemblyHistory": "Initial build-packet.py attempt failed KeyError products; corrected to existing records key and rerun successfully (23 claims/10 sources)."
+}

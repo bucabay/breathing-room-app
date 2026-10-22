@@ -1,0 +1,24 @@
+{
+  "jobId": "research-yosemite-cache-cleaner",
+  "result": "structural-and-provenance-checks-passed; drafting-blocked",
+  "checks": [
+    {"check": "Python JSON parse, unique ledger IDs, claim source-reference integrity, check dates/scopes/evidence classes", "outcome": "passed", "claims": 12, "sources": 11},
+    {"check": "SHA-256 of reused AlternativeTo and official Sequoia snapshot files against batch-2 records", "outcome": "passed; both match"},
+    {"check": "Selected Breathing Room PNG original SHA-256 and PNG-header dimensions against packet/shared manifest", "outcome": "passed; 2940x2220; 072dd61b3a08989c981a4c512a9a1908bd39b02ea68a64f0767383f3ff88f236"},
+    {"check": "Blocked drafting, self-owner/unresolved alias, link-only competitor visual, null downloaded competitor path, required example/native disclosure assertions", "outcome": "passed"},
+    {"check": "Actual Breathing Room plan-review PNG opened using image-capable read", "outcome": "completed; visible interactive-preview disclosure and example paths; not native measurement"},
+    {"check": "Targeted local README/native version configuration/billing configuration cross-check against fresh capability register", "outcome": "agrees on preview version 0.1.0-preview.1, macOS 13+, Python 3.10+, non-notarized disclosure and advertised USD AI Care prices; not runtime QA"},
+    {"check": "Official source text reads", "outcome": "completed homepage, Golden Gate product, download center, store, EULA and feature list; retained exact claim excerpts and conditions in packet; no installer, image or PDF download"},
+    {"check": "Ledger-count correction", "outcome": "initial validation success message hard-coded 12 sources incorrectly; explicit second Python assertion confirmed 12 claims and 11 sources. Original uniqueness and reference assertions passed."},
+    {"check": "Site build/tests and rendered browser QA", "outcome": "not run; no site changes or drafts, research-only scope. Independent publication review remains pending."}
+  ],
+  "artifactSha256": {
+    "research.json": "b4c1ff41f41b8708d4c68fcd3978fa3f428f01956171d49c88f9499f8bb5b777",
+    "research.md": "3233a7345db353a597ca9dd82b2346d9e935272200ce2750f90ebed0776ab0e6"
+  },
+  "blockers": [
+    "Legacy/current identity and unique canonical scope unresolved; official pointer is not historical version/feature/pricing equivalence.",
+    "Official screenshot link found but reuse basis and identity-specific visual review not cleared; link-only fallback does not pass on-page visual gate."
+  ],
+  "scope": "No site files, shared evidence, queue, database, other competitor folders or existing user changes edited. No agents spawned; no image download, cleanup, account creation, messages, purchase, credential access, commit, push or deployment."
+}

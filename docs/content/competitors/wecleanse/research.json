@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-wecleanse",
+  "productId": "wecleanse",
+  "status": "blocked",
+  "checkedAtUtc": "2026-10-21T22:22:38Z",
+  "dateNote": "UTC clock returned by date -u; session-local date is October 22, 2026.",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "discoveryName": "WeCleanse",
+    "officialName": null,
+    "listedHomepage": "https://www.minicreo.com/wecleanse/",
+    "verifiedHomepage": null,
+    "repository": null,
+    "repositoryStatus": "not-verified; no official repository established",
+    "canonicalOwnerId": "wecleanse",
+    "canonicalOwnerBasis": "Existing manifest routing ID only; not official identity or vendor ownership verification.",
+    "aliases": [],
+    "aliasStatus": "not-verified",
+    "aliasSkipDecision": "No verified alias skip. Do not merge with PowerMyMac or any other product without official evidence.",
+    "classification": "not-verified",
+    "candidateFit": "Directory suggests a Mac system cleaner and therefore possible direct storage-cleanup overlap; official evidence unavailable. No Windows/Linux support established.",
+    "decision": "hold-blocked",
+    "skipDecision": "Do not draft either page while evidence is missing. Do not label dead, irrelevant or an alias: failed transport does not establish those outcomes."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/wecleanse/about/",
+    "destinationUrl": "https://www.minicreo.com/wecleanse/",
+    "seedId": "cleanmymac",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=6",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:42.517Z",
+    "edgeRecord": "docs/content/competitors.json#/competitors (match id wecleanse; collection pointer not assumed)",
+    "retrievedAtUtc": "2026-10-21T19:06:42.203Z",
+    "method": "Reused owned Chrome tab 16 rendered-DOM record from verification batch 2; no directory refetch.",
+    "rawCapture": "docs/content/.runtime/verification-2/wecleanse-directory.json",
+    "sha256": "f82c600fce0d75b789a7e33cf00d1964df0be868503409d4e8962be1aced4af8",
+    "excerpt": "Official Website\nminicreo.com/wecleanse/",
+    "limitation": "Directory discovery is not official product verification."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/wecleanse/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:42.203Z",
+      "excerpt": "Official Website\nminicreo.com/wecleanse/",
+      "rawCapture": "docs/content/.runtime/verification-2/wecleanse-directory.json",
+      "sha256": "f82c600fce0d75b789a7e33cf00d1964df0be868503409d4e8962be1aced4af8",
+      "evidenceClass": "directory-discovery"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.minicreo.com/wecleanse/",
+      "retrievedAtUtc": "2026-10-21T19:09:50.677437+00:00",
+      "rawCapture": "docs/content/.runtime/verification-2/wecleanse-official.json",
+      "sha256": "13e8c5109bbd19135142750909002663c0e12ac81d5ac89cefbe57242c7ac633",
+      "error": "SSL: CERTIFICATE_VERIFY_FAILED; self-signed certificate",
+      "excerpt": null,
+      "evidenceClass": "access-failure"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.minicreo.com/wecleanse/",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "retrievedAtUtc": "2026-10-21T19:12:14.413Z",
+      "rawCapture": "docs/content/.runtime/verification-2/wecleanse-browser.json",
+      "sha256": "69d04b40b2fffdce775219f025d6b2d4bc182d8ad30e6395963be3e467571474",
+      "excerpt": "Your connection is not private; NET::ERR_CERT_AUTHORITY_INVALID",
+      "evidenceClass": "browser-access-failure-not-product-content"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.minicreo.com/wecleanse/",
+      "checkedAtUtc": "2026-10-21T22:22:38Z",
+      "method": "functions.webfetch; one new attempt for missing critical facts",
+      "error": "Transport error (GET https://www.minicreo.com/wecleanse/)",
+      "excerpt": null,
+      "finalUrl": null,
+      "evidenceClass": "access-failure"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.minicreo.com/mac-cleaner/best-free-mac-cleaner.html",
+      "checkedAtUtc": "2026-10-21T22:22:38Z",
+      "method": "Search lead followed with functions.webfetch; search snippet excluded as fact support",
+      "error": "Transport error (GET https://www.minicreo.com/mac-cleaner/best-free-mac-cleaner.html)",
+      "excerpt": null,
+      "finalUrl": null,
+      "evidenceClass": "access-failure"
+    },
+    {
+      "id": "BR1",
+      "path": "docs/content/capabilities.md",
+      "reviewedOn": "2026-10-21",
+      "urls": ["https://breathing-room.chatic.ai/", "https://breathing-room.chatic.ai/privacy/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "excerpt": "Free, Apache-2.0 macOS maintenance preview; AI Care $5 USD/month or $50 USD/year; hosted AI requires internet and authentication.",
+      "scope": "Reused current baseline, not fresh binary or hosted service testing; see register for claim-level code references and qualifications."
+    }
+  ],
+  "claims": [
+    {"id": "C1", "wording": "AlternativeTo links WeCleanse to minicreo.com/wecleanse/.", "state": "verified", "sourceIds": ["S1"], "checkedAtUtc": "2026-10-21T19:06:42.203Z", "evidenceClass": "directory-discovery", "intendedLocation": "research identity only", "excerpt": "Official Website\nminicreo.com/wecleanse/", "scope": "Not official ownership confirmation."},
+    {"id": "C2", "wording": "Official product content could not be verified in the retained TLS/browser attempts or the current webfetch attempt.", "state": "verified", "sourceIds": ["S2", "S3", "S4", "S5"], "checkedAtUtc": "2026-10-21T22:22:38Z", "evidenceClass": "access-observation", "intendedLocation": "research blocker", "excerpt": "NET::ERR_CERT_AUTHORITY_INVALID; Transport error", "scope": "Does not prove discontinuation or global unavailability."},
+    {"id": "C3", "wording": "Current version, official platforms, pricing and licence are not verified.", "state": "not-verified", "sourceIds": ["S2", "S3", "S4", "S5"], "checkedAtUtc": "2026-10-21T22:22:38Z", "evidenceClass": "evidence-gap", "intendedLocation": "comparison cells held", "excerpt": null, "scope": "Directory Free/Proprietary/Mac labels must not be promoted to current official facts."},
+    {"id": "BR-C1", "wording": "Breathing Room, which we build, is a maintenance preview, not a production-readiness or measured-savings claim.", "state": "verified", "sourceIds": ["BR1"], "checkedAtUtc": "2026-10-21", "evidenceClass": "reused-documentary-baseline", "intendedLocation": "future comparison caveat", "excerpt": "0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized", "scope": "macOS 13+, advertised universal build; physical Intel and clean-machine behavior unverified; Python 3.10+ prerequisite. Hosted AI sends relevant context to the service, requires authentication/internet. Free local tools and optional advertised $5 USD/month or $50 USD/year AI Care, renewals/tax conditions, no unlimited allowance established. Daily care needs the app running and exact saved approvals; optional narrow automatic Ruff mode must not be hidden."}
+  ],
+  "productMatrix": {
+    "officialIdentity": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "versionAndReleaseDate": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "macOSMinimumAndArchitectures": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "windowsLinux": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "licence": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "pricingCurrencyBillingTaxTrialDeviceCount": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "availabilityAndInstallSigningRuntime": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "localHostedPrivacy": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "scanCleanupModelAndApprovalControls": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "helperGrouping": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "recurringGrowth": {"value": null, "state": "not-verified", "claimId": "C3"},
+    "developerCaches": {"value": null, "state": "not-verified", "claimId": "C3"}
+  },
+  "visuals": [
+    {
+      "id": "wecleanse-app-ui-pending",
+      "productId": "wecleanse",
+      "kind": null,
+      "sourcePageUrl": "https://www.minicreo.com/wecleanse/",
+      "assetUrl": null,
+      "capturedAtUtc": null,
+      "productVersion": null,
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "reuse": {"status": "pending", "basis": null},
+      "review": {"status": "blocked"},
+      "limitations": ["Candidate source page only, inaccessible. No real app screenshot or asset URL verified. No image downloaded; public accessibility would not alone clear reuse rights."]
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "productVersion": null,
+      "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "edits": [],
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party UI capture under screenshots.json; third-party marks remain their owners' marks. Target-page independent review still pending."},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "review": {"status": "research-visually-inspected; publication-review-pending", "checkedAtUtc": "2026-10-21T22:22:38Z", "method": "Opened actual PNG with image-capable read; example-data banner visible. Floating composer overlaps part of chart."},
+      "limitations": ["Current-source status inherited from October 21 capture review, not a newly rendered/native release test.", "Keep both example-data disclosures visible. Do not use example sizes as measurements."]
+    }
+  ],
+  "briefs": {
+    "status": "conditional-only-not-ready-to-draft",
+    "workflow": {"title": "Investigate Mac System/Other storage before choosing a cleaner", "slug": "wecleanse-mac-workflow", "track": "search-reference", "intent": "Diagnose which storage is understood versus disposable; WeCleanse is a discovery lead, not a demonstrated solution.", "outline": ["Identify large categories without treating size as deletion permission", "Separate rebuildable caches from original data and backups", "Evaluate a cleaner only after verifying current compatibility, review controls and distribution", "Choose inspection versus cleanup based on evidence"], "interactionHandoff": "Non-destructive checklist: known owner, backup, rebuild cost, exact location, proposed method, approval. No simulated savings or invented scan.", "releaseCondition": "Obtain official product workflow documentation and Apple references before drafting general macOS steps; avoid a generic doorway page tied to an unverified product."},
+    "comparison": {"title": "Breathing Room vs WeCleanse: evidence and decision criteria", "slug": "wecleanse", "intent": "Concise product selection, separate from diagnostic workflow", "rows": ["Current availability and macOS support", "Scan and approval model", "Local versus hosted processing", "Activity/helper investigation", "Developer cache scope", "Price and installation caveats"], "releaseCondition": "Verify official identity, current offer, core workflow and cleared real competitor UI. Unknown cells are not negative features; do not declare a winner."},
+    "advantagesAndTradeoffs": {"wecleanse": "No current official advantage or limitation established; directory's free/lightweight wording is not verified price or benchmark.", "breathingRoom": "Source-backed inspection/grouped monitoring and review architecture may suit investigation, subject to preview/binary limitations. Hosted AI, Python requirement, non-notarized preview and untested Intel/clean-machine paths may make it unsuitable. No comparative superiority established.", "affiliationRequired": "Breathing Room, which we build"},
+    "internalLinkHandoff": ["/comparisons/ (verify route before draft)", "Workflow and comparison cross-link only after both exist; no assumed tools or duplicate alternatives page."]
+  },
+  "blockers": [
+    "B1: Listed official homepage fails transport; retained prior attempts identify certificate failure. Need securely reachable official identity/current product documentation; never bypass TLS warnings.",
+    "B2: No official current version, macOS requirements, price/licence conditions, availability, cleanup/review workflow or aliases established. Need primary-source passages, not search snippets or directory labels.",
+    "B3: No verified competitor app UI asset URL, capture provenance or reuse basis. Need permitted official/listing UI visual and documented reuse conditions; link-only fallback does not pass the publication image gate."
+  ],
+  "observations": "Documentary research only. No installation, native testing, cleanup, sign-in, credential access, messages, purchases, browser recovery, new browser tab, site edits or queue mutations.",
+  "validation": {"report": "validation.json", "independentReview": "pending", "siteBuild": "not applicable; no site files changed"}
+}

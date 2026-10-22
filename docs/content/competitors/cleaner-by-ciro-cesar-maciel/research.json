@@ -1,0 +1,918 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cleaner-by-ciro-cesar-maciel",
+  "productId": "cleaner-by-ciro-cesar-maciel",
+  "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "Cleaner by Ciro Cesar Maciel",
+    "homepage": "https://ciromaciel.click/tools/cleaner",
+    "repository": "https://github.com/ciro-maciel/cleaner",
+    "canonicalOwnerId": "cleaner-by-ciro-cesar-maciel",
+    "aliases": [
+      "Cleaner",
+      "ciro-cleaner (Homebrew cask identifier)"
+    ],
+    "aliasDecision": {
+      "skip": false,
+      "reason": "Own author domain links ciro-maciel/cleaner and repository links back, uses full name and lists this as its own Mac app. No verified alternate manifest identity; do not merge generic Cleaner names or infer a PowerMyMac relationship."
+    },
+    "classification": "direct-mac-cleanup-overlap",
+    "classificationReason": "Both address Mac storage inspection/reviewable cleanup; not full-suite interchangeability. Cleaner additionally documents uninstaller/startup tools; Breathing Room preview focuses on investigation and approved care."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/cleaner-by-ciro-cesar-maciel/about/",
+    "sourceId": "discovery",
+    "method": "Reused batch-1 official-link browser record and existing traversal edges; no directory refetch.",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+        "retrievedAt": "2026-10-21T18:36:45.366Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=6",
+        "retrievedAt": "2026-10-21T18:37:21.311Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "snapshotPath": "docs/content/.runtime/verification-1/cleaner-by-ciro-cesar-maciel-directory.json",
+    "sha256": "a51aab83edbf18f0530d0819a2a160f95ebbd6e4b732fc0826080e19612be557",
+    "exclusions": "No exclusion/dead-product/alias skip justified; a published release exists. Listing is discovery only."
+  },
+  "reusedBaseline": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "cleaner-by-ciro-cesar-maciel",
+    "originalStatus": "partial",
+    "originalUnverifiedFields": [
+      "availability"
+    ],
+    "result": "Reused current identity, platform, price, licence and core workflow. Filled repository/release/rights evidence; no homepage refetch."
+  },
+  "sources": [
+    {
+      "id": "official",
+      "url": "https://ciromaciel.click/tools/cleaner",
+      "finalUrl": "https://ciromaciel.click/tools/cleaner",
+      "retrievedAtUtc": "2026-10-21T19:07:59.396261+00:00",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "reused": true,
+      "snapshotPath": "docs/content/.runtime/verification-1/cleaner-by-ciro-cesar-maciel-official.json",
+      "sha256": "fabcbe13dfbcf884fbd84df1d96d85e63e4705ea5ff99fcf9027498506169f70",
+      "publisher": "Ciro Cesar Maciel",
+      "sourceDate": null
+    },
+    {
+      "id": "discovery",
+      "url": "https://alternativeto.net/software/cleaner-by-ciro-cesar-maciel/about/",
+      "finalUrl": "https://alternativeto.net/software/cleaner-by-ciro-cesar-maciel/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:46.325Z",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "reused": true,
+      "snapshotPath": "docs/content/.runtime/verification-1/cleaner-by-ciro-cesar-maciel-directory.json",
+      "sha256": "a51aab83edbf18f0530d0819a2a160f95ebbd6e4b732fc0826080e19612be557",
+      "publisher": "AlternativeTo",
+      "sourceDate": null
+    },
+    {
+      "id": "readme",
+      "url": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "retrievedAtUtc": "2026-10-21T20:15:48.532685+00:00",
+      "reused": false,
+      "snapshotPath": "docs/content/competitors/cleaner-by-ciro-cesar-maciel/sources/README.md",
+      "sha256": "1a38e31c77e48bb1e048cad61128ac6e086b5d5b8caf6f2f2aaf9def559ac9be",
+      "publisher": "Ciro Cesar Maciel",
+      "sourceDate": null,
+      "scope": "Repository commit 97a188398d18110a30d30a4bf9f57ad8843d5591; not binary validation"
+    },
+    {
+      "id": "notice",
+      "url": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/NOTICE",
+      "finalUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/NOTICE",
+      "retrievedAtUtc": "2026-10-21T20:15:49.372632+00:00",
+      "reused": false,
+      "snapshotPath": "docs/content/competitors/cleaner-by-ciro-cesar-maciel/sources/NOTICE",
+      "sha256": "32d5bc66be0b9c1043043fd6e2b9cb83697be8ea5c7911af5ce5ec3830735a81",
+      "publisher": "Ciro Cesar Maciel",
+      "sourceDate": null,
+      "scope": "Repository commit 97a188398d18110a30d30a4bf9f57ad8843d5591; not binary validation"
+    },
+    {
+      "id": "license",
+      "url": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/LICENSE",
+      "retrievedAtUtc": "2026-10-21T20:15:50.130156+00:00",
+      "reused": false,
+      "snapshotPath": "docs/content/competitors/cleaner-by-ciro-cesar-maciel/sources/LICENSE",
+      "sha256": "0a3da567db55b2631eb624a9a219c09361e791352bc6502f575c442cefe5c05d",
+      "publisher": "Ciro Cesar Maciel",
+      "sourceDate": null,
+      "scope": "Repository commit 97a188398d18110a30d30a4bf9f57ad8843d5591; not binary validation"
+    },
+    {
+      "id": "version",
+      "url": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/VERSION",
+      "finalUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/VERSION",
+      "retrievedAtUtc": "2026-10-21T20:15:50.994295+00:00",
+      "reused": false,
+      "snapshotPath": "docs/content/competitors/cleaner-by-ciro-cesar-maciel/sources/VERSION",
+      "sha256": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79",
+      "publisher": "Ciro Cesar Maciel",
+      "sourceDate": null,
+      "scope": "Repository commit 97a188398d18110a30d30a4bf9f57ad8843d5591; not binary validation"
+    },
+    {
+      "id": "release",
+      "url": "https://api.github.com/repos/ciro-maciel/cleaner/releases/latest",
+      "finalUrl": "https://api.github.com/repos/ciro-maciel/cleaner/releases/latest",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "retrievedAtUtc": null,
+      "retrievalDate": "2026-10-21",
+      "retrievalTimeNote": "WebFetch performed in this job; exact transport timestamp unavailable.",
+      "sourceDate": "2026-10-19T19:17:45Z",
+      "snapshotPath": "docs/content/competitors/cleaner-by-ciro-cesar-maciel/sources/release-excerpt.json",
+      "sha256": "94911e9aecdcb7695f811ab0831de890e6d8b353849d7482369cc5972c7b5ca2",
+      "retention": "Selected-response excerpt, not full raw response",
+      "publisher": "GitHub / Ciro Cesar Maciel"
+    },
+    {
+      "id": "br-register",
+      "url": null,
+      "finalUrl": null,
+      "retrievedAtUtc": null,
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "reused": true,
+      "sourceDate": "2026-10-21",
+      "publisher": "Breathing Room capability verification worker",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Existing primary-source inspection register, reused without claiming a new native test."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "Cleaner by Ciro Cesar Maciel is the official name; Cleaner is its short form.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "# Cleaner by Ciro Cesar Maciel",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Official linked repository at 97a188398d18110a30d30a4bf9f57ad8843d5591.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "platform",
+      "wording": "Cleaner supports Apple Silicon Macs with macOS 14 or newer; Intel is not supported in the documented edition.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "Ainda não. O Cleaner é feito para Mac com Apple Silicon (M1 ou mais novo) e macOS 14 ou mais novo.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Official FAQ; no Intel, Windows or Linux build inferred.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "price",
+      "wording": "Cleaner is offered free, without an account, under MIT.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "Grátis, sem conta e com licença MIT.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Public offer checked 2026-10-21; no subscription, checkout or installation tested. No currency conversion needed.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "license",
+      "wording": "The repository software and associated documentation carry MIT with notice-preservation conditions.",
+      "sourceIds": [
+        "license"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/LICENSE",
+      "supportingExcerpt": "The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Not blanket clearance for third-party art, fonts or maker marks; read NOTICE and README together.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "version",
+      "wording": "The repository VERSION file identifies 0.4.0.",
+      "sourceIds": [
+        "version"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/VERSION",
+      "supportingExcerpt": "0.4.0",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Pinned main commit 97a188398d18110a30d30a4bf9f57ad8843d5591; not proof latest vendor-blob DMG is byte-identical.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "availability",
+      "wording": "GitHub publishes Cleaner v0.4.0 dated October 19, 2026 with a named DMG asset.",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/ciro-maciel/cleaner/releases/latest",
+      "supportingExcerpt": "Cleaner-0.4.0-macos.dmg",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "published-release-metadata",
+      "state": "verified",
+      "scope": "Latest-release endpoint observed; metadata only, no download/install test.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "signing",
+      "wording": "The release publisher says the DMG is Developer ID signed and Apple notarized.",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/ciro-maciel/cleaner/releases/latest",
+      "supportingExcerpt": "signed with Developer ID and notarized by Apple.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "published-release-metadata",
+      "state": "verified",
+      "scope": "Attributed vendor disclosure only; no independent signature, stapling or Gatekeeper inspection.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "quarantine",
+      "wording": "Documented removal uses quarantine batches with original paths, one-click restore and automatic emptying after seven days.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "Removal moves items to a quarantine batch that remembers each original path. Restore is one click; after 7 days the batch empties itself.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Documented workflow, not tested recovery or a backup guarantee. Quarantine is not immediate reclaimed physical space.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "approval",
+      "wording": "The documented workflow shows item paths, sizes and rules; running-app items start deselected and moving requires a three-second hold.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "Cada item mostra a pasta, o tamanho e a regra que o trouxe. Desmarque o que quiser manter. Itens de apps abertos já vêm desmarcados.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Together with removal hold documented in README; no execution performed.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "hold",
+      "wording": "Removal requires holding for three seconds according to README.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "**Removal takes a 3-second hold.**",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Documented guard, not proof accidental actions are impossible.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "rules",
+      "wording": "Cleanup documents eight named rules for app caches, logs, Trash, old installers, Xcode, developer caches and Mail downloads.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "The other seven are `logs`, `trash`, `installers`, `xcode-derived-data`, `dev-caches`, `xcode-device-support` and `mail-downloads`.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "app-caches is the preceding example; source inspection not adapter testing; rule counts are date-specific.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "dev-caches",
+      "wording": "The homepage names npm, Bun, pnpm, Gradle and Cargo downloads among developer cleanup targets.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "pacotes baixados por npm, Bun, pnpm, Gradle e Cargo",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Vendor documentation only; compatibility with individual tool versions not tested.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "local",
+      "wording": "The vendor describes Cleaner as having no network code and no account or telemetry.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "Falar com a internet. Não há conta, telemetria nem envio de nada.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Attributed vendor claim, not a network audit; obtaining/updating the installer uses network access.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "permissions",
+      "wording": "A full scan requires optional Full Disk Access; without it Trash, Mail and containers are hidden.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "Without it, macOS hides the Trash, Mail and app containers, and Cleaner tells you so instead of pretending.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No permission granted or machine setting changed. Vendor says system item moves can require admin password.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "admin",
+      "wording": "The homepage says moving system items asks for an administrator password.",
+      "sourceIds": [
+        "official"
+      ],
+      "sourceUrl": "https://ciromaciel.click/tools/cleaner",
+      "supportingExcerpt": "Itens do sistema pedem a senha de administrador.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No credentials accessed or operation executed.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "uninstaller",
+      "wording": "The documented uninstaller lists size and last use and searches 38 leftover locations including package receipts.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "Lists apps with size and last use, then removes the app and its leftovers in 38 places, .pkg receipts included",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Vendor description, no completeness or safety guarantee.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "disk-map",
+      "wording": "The documented disk map measures a folder and lets the user descend into larger parts.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "Measures a whole folder in parallel and lets you walk into the biggest parts",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No scan benchmark or access-completeness test.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "startup",
+      "wording": "Startup controls are documented for LaunchAgents and LaunchDaemons without deleting their files.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "Turns LaunchAgents and LaunchDaemons on and off without deleting the file",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Documented only; no setting changed.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "monitor",
+      "wording": "Menu-bar monitoring documents CPU, memory, network, disk and battery.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "CPU, memory, network, disk and battery, live, plus how much you can free right now",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No app/helper grouping parity, recurring-growth history or measurement accuracy established.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "limits",
+      "wording": "The README explicitly lists no duplicate finder, malware scan or app updater.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "No duplicate finder, no malware scan and no app updater.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Vendor-stated limits at 97a188398d18110a30d30a4bf9f57ad8843d5591; not inferred from silence.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "languages",
+      "wording": "The documented interface follows the Mac language in English or Brazilian Portuguese.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "The interface is in English and Brazilian Portuguese, following the Mac's language.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No locale runtime testing.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "image-art",
+      "wording": "Official-build screen illustrations come from a licensed gallery and are not shipped with the source build.",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "supportingExcerpt": "The illustrations on each screen come from a licensed gallery and ship only in the official build;",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "Critical screenshot redistribution uncertainty; source builds use Tabler icons instead.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    },
+    {
+      "id": "image-mark",
+      "wording": "The logotype/maker mark is explicitly excluded from MIT.",
+      "sourceIds": [
+        "notice"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/NOTICE",
+      "supportingExcerpt": "It is the maker's mark and is not covered by the MIT License.",
+      "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented-vendor",
+      "state": "verified",
+      "scope": "No screenshot permission request authorized. Public display is not permission to republish.",
+      "intendedLocation": "workflow or comparison; cite beside claim",
+      "reviewer": "scheduled research worker; not independent publication approval"
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "macOS",
+      "value": "Apple Silicon M1+, macOS 14+; Intel explicitly unsupported",
+      "claimIds": [
+        "platform"
+      ]
+    },
+    {
+      "dimension": "pricing/licence",
+      "value": "Free, no account; MIT software/docs with third-party and mark exceptions",
+      "claimIds": [
+        "price",
+        "license",
+        "image-art",
+        "image-mark"
+      ]
+    },
+    {
+      "dimension": "operation",
+      "value": "Vendor describes local app with no network code or telemetry; installation uses downloads",
+      "claimIds": [
+        "local"
+      ]
+    },
+    {
+      "dimension": "scan/cleanup",
+      "value": "Rule-based candidate review, folder map, app uninstalling",
+      "claimIds": [
+        "rules",
+        "disk-map",
+        "uninstaller"
+      ]
+    },
+    {
+      "dimension": "approval/recovery",
+      "value": "Review selections, three-second hold, seven-day quarantine then emptying",
+      "claimIds": [
+        "approval",
+        "hold",
+        "quarantine"
+      ]
+    },
+    {
+      "dimension": "permissions",
+      "value": "Optional Full Disk Access for complete coverage; admin password for system item moves",
+      "claimIds": [
+        "permissions",
+        "admin"
+      ]
+    },
+    {
+      "dimension": "developer caches",
+      "value": "npm, Bun, pnpm, Gradle, Cargo named by homepage",
+      "claimIds": [
+        "dev-caches"
+      ]
+    },
+    {
+      "dimension": "monitoring",
+      "value": "Menu-bar CPU/memory/network/disk/battery; grouping and recurring growth not verified",
+      "claimIds": [
+        "monitor"
+      ]
+    },
+    {
+      "dimension": "installation/version",
+      "value": "Published GitHub v0.4.0; drag DMG app to Applications documented; signing/notarization vendor-reported",
+      "claimIds": [
+        "availability",
+        "version",
+        "signing"
+      ]
+    },
+    {
+      "dimension": "limits",
+      "value": "No duplicate finder, malware scan or app updater per README",
+      "claimIds": [
+        "limits"
+      ]
+    }
+  ],
+  "versionScope": {
+    "repositoryCommit": "97a188398d18110a30d30a4bf9f57ad8843d5591",
+    "repositoryVersion": "0.4.0",
+    "publishedRelease": {
+      "tag_name": "v0.4.0",
+      "name": "Cleaner by Ciro Cesar Maciel 0.4.0",
+      "published_at": "2026-10-19T19:17:45Z",
+      "draft": false,
+      "prerelease": false,
+      "target_commitish": "8cd67e36dc3794f308108be34ae85aa4afa729a2",
+      "html_url": "https://github.com/ciro-maciel/cleaner/releases/tag/v0.4.0",
+      "asset": {
+        "name": "Cleaner-0.4.0-macos.dmg",
+        "size": 2775786,
+        "vendorReportedSha256": "303991caf782308e4fda288db11f8adad9a87429da248d3164dcc65d9dfa8e0c",
+        "url": "https://github.com/ciro-maciel/cleaner/releases/download/v0.4.0/Cleaner-0.4.0-macos.dmg"
+      },
+      "bodyExcerpt": "Or download the .dmg and drag Cleaner to Applications: signed with Developer ID and notarized by Apple. Apple Silicon, macOS 14+.",
+      "retention": "Selected fields transcribed from actual WebFetch API response; binary not downloaded."
+    },
+    "warning": "Main README evidence and release metadata are separate scopes; no distributed binary parity certification."
+  },
+  "breathingRoom": {
+    "evidenceRegister": "docs/content/capabilities.md",
+    "checked": "2026-10-21",
+    "rule": "Reuse current primary-source register; source implementation is not proof of binary parity. Recheck affected primary claims before publication if changed/stale.",
+    "comparisonClaims": [
+      {
+        "id": "br-preview",
+        "wording": "0.1.0-preview.1, macOS 13+, universal Intel/Apple Silicon advertised; physical Intel/clean-machine execution unvalidated, not Developer ID signed or notarized.",
+        "registerSections": [
+          "Preview, installation and runtime caveats"
+        ],
+        "sourceUrls": [
+          "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+        ],
+        "localEvidence": [
+          "RELEASE_NOTES.md:3-15,43-46",
+          "src-tauri/tauri.conf.json:49-51"
+        ],
+        "sourceIds": [
+          "br-register"
+        ],
+        "supportingExcerpt": "Apple Development signed, not Developer ID signed or notarized",
+        "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+        "state": "verified-register-reuse",
+        "evidenceClass": "reused-source-and-published-documentation",
+        "limitations": "Full statement support is in the named register sections and primary file/URL references; not a new runtime observation."
+      },
+      {
+        "id": "br-price",
+        "wording": "Free Apache-2.0 core; optional AI Care $5 USD/month or $50 USD/year, renews until cancelled, applicable taxes at checkout; no unlimited allowance verified.",
+        "registerSections": [
+          "Pricing, access and paid-feature claims"
+        ],
+        "sourceUrls": [
+          "https://breathing-room.chatic.ai/#pricing",
+          "https://breathing-room.chatic.ai/checkout/monthly/"
+        ],
+        "localEvidence": [
+          "README.md:141-150",
+          "src/billing-config.json:4-7"
+        ],
+        "sourceIds": [
+          "br-register"
+        ],
+        "supportingExcerpt": "Plans renew until cancelled; applicable tax shown at checkout.",
+        "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+        "state": "verified-register-reuse",
+        "evidenceClass": "reused-source-and-published-documentation",
+        "limitations": "Full statement support is in the named register sections and primary file/URL references; not a new runtime observation."
+      },
+      {
+        "id": "br-care",
+        "wording": "Local inspection/execution with hosted authenticated AI; exact saved daily approvals require app running; optional automatic verified Ruff-cache Trash mode is an exception to blanket manual-approval language. Python 3.10+ needed for inventory, not bundled.",
+        "registerSections": [
+          "Approval exception",
+          "Local versus hosted boundary",
+          "Preview, installation and runtime caveats"
+        ],
+        "sourceUrls": [
+          "https://breathing-room.chatic.ai/privacy/",
+          "https://breathing-room.chatic.ai/download/"
+        ],
+        "localEvidence": [
+          "README.md:64-72,120-128",
+          "src-tauri/src/cleanup_session.rs:400,469-478",
+          "src/components/cleanup-assistant.tsx:198"
+        ],
+        "sourceIds": [
+          "br-register"
+        ],
+        "supportingExcerpt": "Python **3.10+** is a disclosed prerequisite for disk inventory and legacy scripts, not bundled.",
+        "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+        "state": "verified-register-reuse",
+        "evidenceClass": "reused-source-and-published-documentation",
+        "limitations": "Full statement support is in the named register sections and primary file/URL references; not a new runtime observation."
+      },
+      {
+        "id": "br-investigation",
+        "wording": "Source supports storage context, grouped app/helper CPU and memory, activity history and recurring-growth investigation; sampled/inferred observations do not prove exact file writers or measured savings.",
+        "registerSections": [
+          "Current capability matrix"
+        ],
+        "sourceUrls": [
+          "https://breathing-room.chatic.ai/"
+        ],
+        "localEvidence": [
+          "src-tauri/src/processes.rs:57-164",
+          "src-tauri/src/monitor.rs:12-25,218-230"
+        ],
+        "sourceIds": [
+          "br-register"
+        ],
+        "supportingExcerpt": "Native sampling groups helpers through parent/app relationships and exposes CPU/memory.",
+        "checkedAtUtc": "2026-10-21T20:16:55.732744+00:00",
+        "state": "verified-register-reuse",
+        "evidenceClass": "reused-source-and-published-documentation",
+        "limitations": "Full statement support is in the named register sections and primary file/URL references; not a new runtime observation."
+      }
+    ],
+    "evidenceClass": "reused-source-and-published register, not new runtime verification"
+  },
+  "visuals": [
+    {
+      "id": "cleaner-official-cleanup",
+      "productId": "cleaner-by-ciro-cesar-maciel",
+      "view": "Cleanup item/rule/size view",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/ciro-maciel/cleaner/blob/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+      "assetUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/docs/cleanup.webp",
+      "alternateAssetUrl": "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/docs/overview.webp",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": "97a188398d18110a30d30a4bf9f57ad8843d5591",
+      "osVersion": null,
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "MIT covers software/docs subject to notice, but README discloses licensed gallery art and NOTICE excludes maker mark. Image-specific redistribution clearance is not established.",
+        "evidenceUrlOrPath": [
+          "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/README.md",
+          "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/NOTICE",
+          "https://raw.githubusercontent.com/ciro-maciel/cleaner/97a188398d18110a30d30a4bf9f57ad8843d5591/LICENSE"
+        ],
+        "credit": "Cleaner by Ciro Cesar Maciel; official project screenshot."
+      },
+      "caption": "Official Cleaner Cleanup screenshot linked by its author. Illustrates documented items, rules and sizes; not our test or measured savings. Capture date and app build unknown.",
+      "alt": "Official Cleaner Cleanup view showing cleanup items, the rules that found them, and their sizes.",
+      "supportedClaimIds": [
+        "rules",
+        "approval"
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      },
+      "limitations": [
+        "Image URL verified from official README; image pixels not downloaded or visually inspected.",
+        "Unknown gallery-art and maker-mark redistribution terms block on-page reuse; link-only does not pass the visual gate."
+      ]
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ],
+      "productId": "breathing-room",
+      "selectedFor": "later figure: category size is not deletion permission",
+      "thisJobVisualReview": "Opened and read the actual PNG; example banner, Space categories and composer visible. No native test.",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null
+    }
+  ],
+  "briefs": {
+    "track": "search/LLM reference; Breathing Room editorial adaptation, not MailKite code-demo workflow",
+    "workflow": {
+      "title": "Reviewing Mac cleanup rules before a seven-day quarantine expires",
+      "slug": "cleaner-by-ciro-cesar-maciel-mac-workflow",
+      "primaryIntent": "Help Apple Silicon Mac owners distinguish a reviewable cleanup candidate, reversible quarantine and actual free-space recovery.",
+      "description": "Cleaner documents public cleanup rules and a seven-day quarantine. Use those boundaries to decide what to leave alone, what needs a rebuild plan, and when recurring-growth investigation is the more useful next step.",
+      "outline": [
+        "Top official Cleanup figure only after reuse clearance",
+        "Read the rule and exclusion, not just the size; close or defer active-project items",
+        "Plan restoration before quarantine expires; seven days is not a backup",
+        "Explain that on-volume quarantine retains data; do not calculate savings from candidate sizes",
+        "Contrast one-time review with recurring-growth investigation using labeled Space preview",
+        "Decision checklist and source-linked limits; one disclosed Breathing Room recommendation at most"
+      ],
+      "guardrails": [
+        "Documentation-led, not a tested tutorial; no removal commands or fabricated restoration experiment.",
+        "Do not repeat vendor language that every proposed cache is safe; rebuild costs and important data still require judgment.",
+        "No invented support question or forced FAQ."
+      ]
+    },
+    "comparison": {
+      "title": "Breathing Room vs Cleaner by Ciro Cesar Maciel",
+      "slug": "cleaner-by-ciro-cesar-maciel",
+      "primaryIntent": "Choose between a documented free local rule/quarantine workflow and a qualified preview with hosted investigation/approved care.",
+      "contents": [
+        "Concise claim-linked matrix above",
+        "Cleaner strengths: free/no-account documented offer, inspectable rules, quarantine, uninstaller/startup controls",
+        "Breathing Room fit: source-supported storage context, grouped helpers and recurring investigation; retain preview/hosted/paid/runtime caveats",
+        "Cleaner and Breathing Room limitations without inferred negative cells",
+        "Link to workflow and existing comparisons hub"
+      ],
+      "disclosure": "Breathing Room, which we build; no objective winner or measured superiority established."
+    },
+    "interactionPass": {
+      "proposed": "Non-executing decision checklist: supported Mac? known rebuild cost? backup for original data? restore before seven days? recurring growth?",
+      "scope": "Draft-stage handoff only; no runnable cleanup, no forced demo repo, no site changes."
+    },
+    "internalLinks": [
+      "/comparisons/"
+    ],
+    "linkPolicy": "Only hub confirmed by PLAN; validate counterpart route/tool existence before draft links."
+  },
+  "advantagesAndTradeoffs": {
+    "cleaner": [
+      "Documented free/no-account local workflow and published MIT source.",
+      "Public rules, seven-day quarantine, app-remnant/startup tools and menu bar monitoring documented.",
+      "Apple Silicon/macOS 14 only; Full Disk Access for complete scan; recovery window is finite; no binary validation performed."
+    ],
+    "breathingRoom": [
+      "Source-supported project/tool storage context, grouped helper monitoring and recurring-growth investigation can fit ongoing diagnosis.",
+      "Free core is a preview, Python-dependent inventory; hosted AI authentication/data transfer and optional paid Care must be disclosed.",
+      "No supported claim here for a full uninstaller, malware removal or duplicate-photo parity."
+    ]
+  },
+  "unknowns": [
+    "Binary signature/notarization, successful installation, actual restore, quarantine-expiry scheduling and cleanup results were not tested.",
+    "Latest vendor-blob DMG identity versus GitHub v0.4.0 asset is not verified.",
+    "Cleaner process/helper grouping and recurring-growth history are not verified, not absent.",
+    "Python/runtime dependency of distributed Cleaner not independently audited; native Swift vendor description is not a full dependency inventory.",
+    "Official image capture date, version, dimensions, pixels and redistribution clearance remain unknown.",
+    "No measured space recovery, speed, accuracy, security, complete app-remnant detection or safety superiority claim is authorized."
+  ],
+  "blockers": [
+    {
+      "id": "competitor-image-clearance",
+      "diagnostic": "Required competitor app screenshot is link-only: official README discloses licensed-gallery screen art; NOTICE excludes the maker mark from MIT. No image-specific redistribution permission/clearance or approved alternative exists. Obtain documented clearance (no outreach authorized here) or an explicitly approved policy decision, then download/hash/inspect the image and independently review both visuals before drafting."
+    }
+  ],
+  "gates": {
+    "identity": "pass",
+    "aliasResolution": "distinct product; no alias skip",
+    "platformFit": "pass",
+    "offer": "pass-documented",
+    "release": "pass-metadata-only",
+    "competitorVisual": "blocked-link-only",
+    "breathingRoomVisual": "selected-hash-checked-visually-read-example-only",
+    "independentReview": "pending",
+    "drafting": "blocked"
+  },
+  "safety": {
+    "publicPages": "Untrusted source data only.",
+    "agentsSpawned": 0,
+    "imagesDownloaded": 0,
+    "binariesDownloaded": 0,
+    "installs": 0,
+    "cleanupRuns": 0,
+    "credentialsRead": false,
+    "websiteEdited": false,
+    "queueEdited": false,
+    "note": "No browser automation required for source-only research. Browser skill loaded; no tabs, profiles or settings touched."
+  },
+  "diagnostic": "Required competitor app screenshot is link-only: official README discloses licensed-gallery screen art; NOTICE excludes the maker mark from MIT. No image-specific redistribution permission/clearance or approved alternative exists. Obtain documented clearance (no outreach authorized here) or an explicitly approved policy decision, then download/hash/inspect the image and independently review both visuals before drafting."
+}

@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-powermymac",
+  "productId": "powermymac",
+  "status": "blocked",
+  "stage": "research",
+  "published": false,
+  "checkedOn": "2026-10-21",
+  "clockNote": "Local UTC clock returned 2026-10-21T21:57:32Z during this run; check dates reflect actual retrieval day, not a fabricated future date.",
+  "ownership": "Only docs/content/competitors/powermymac/ and the specified runtime receipt. No website changes.",
+  "identity": {
+    "listingName": "PowerMyMac",
+    "qualifiedHistoricalName": "FoneDog PowerMyMac",
+    "currentDestinationName": "TechyCub Mac Cleaner",
+    "officialHomepage": "https://www.fonedog.com/powermymac/",
+    "officialFinalHomepage": "https://www.techycub.com/mac-cleaner/",
+    "officialRepo": null,
+    "repoState": "not verified; no public source repository established by inspected official pages",
+    "canonicalOwnerId": "powermymac",
+    "canonicalOwnerIdMeaning": "Editorial record owner for this FoneDog listing and its observed TechyCub destination; not a claim of binary equivalence or legal corporate identity.",
+    "publisher": "FoneDog Technology Limited is named on TechyCub terms/about; EULA instead says FoneDog Ltd., a Delaware corporation. Exact corporate relationship is not resolved.",
+    "aliases": ["FoneDog PowerMyMac", "PowerMyMac (FoneDog listing)"],
+    "aliasDecision": {
+      "candidateId": "imymac--cleaner",
+      "status": "not-merged",
+      "skipSeparateGenericPowerMyMacDraft": true,
+      "skipThisRecordAsVerifiedAlias": false,
+      "reason": "Listing points to FoneDog; FoneDog has a PowerMyMac guide and redirects its overview to TechyCub. iMyMac's separately verified page names PowerMyMac. No official cross-vendor equivalence statement found. Keep ownership separate; never transfer iMyMac price, screenshots or features here. No two generic same-title PowerMyMac pages.",
+      "currentDestinationDecision": "Any eventual comparison must be explicitly qualified as TechyCub Mac Cleaner / FoneDog destination, with an identity note. Historical rebrand date, continuity of binaries, licence migration and relationship to iMyMac remain unknown.",
+      "sources": ["D1", "O1", "I1", "N1", "N2", "N6"]
+    },
+    "fit": "direct-overlap-mac-cleanup",
+    "fitReason": "Vendor documents Mac junk scanning and selected removal; adjacent extras include duplicate/image finding and app uninstalling. Not a verified feature-for-feature substitute for Breathing Room.",
+    "platformIntent": "Mac cleanup and Mac replacement intent only. Generic Windows wording in the EULA does not establish a Windows edition.",
+    "deadProductDecision": "Do not label dead: current TechyCub offer and public download links exist. Old PowerMyMac binary availability and runtime support not tested."
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/powermymac/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:26.698Z",
+    "method": "Reused batch-2 rendered DOM capture from owned tab 16; no new directory fetch.",
+    "edge": "About-page Official Website link -> https://www.fonedog.com/powermymac/ -> observed TechyCub destination",
+    "seedAndPagination": "Per-item about-page edge retained; originating seed/pagination not encoded in reused per-item capture, not reconstructed.",
+    "snapshotPath": "docs/content/.runtime/verification-2/powermymac-directory.json",
+    "sha256": "3e94f19b5ecde0e9f09be6899e1b9bb1443b6fcf23449346982fda4e30f83198"
+  },
+  "sources": [
+    {
+      "id": "D1", "publisher": "AlternativeTo", "title": "PowerMyMac about page",
+      "url": "https://alternativeto.net/software/powermymac/about/", "finalUrl": "https://alternativeto.net/software/powermymac/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:26.698Z", "publicationDate": null,
+      "excerpt": "Official Website\nfonedog.com/powermymac/",
+      "snapshotPath": "docs/content/.runtime/verification-2/powermymac-directory.json",
+      "sha256": "3e94f19b5ecde0e9f09be6899e1b9bb1443b6fcf23449346982fda4e30f83198", "reused": true
+    },
+    {
+      "id": "O1", "publisher": "TechyCub / FoneDog", "title": "Mac Cleaner overview",
+      "url": "https://www.fonedog.com/powermymac/", "finalUrl": "https://www.techycub.com/mac-cleaner/",
+      "retrievedAtUtc": "2026-10-21T19:09:34.795936+00:00", "publicationDate": null,
+      "excerpt": "TechyCub Mac Cleaner helps free up disk space for Mac by scanning, identifying, and removing useless items.",
+      "snapshotPath": "docs/content/.runtime/verification-2/powermymac-official.json",
+      "sha256": "6fd3cedea0d57ed0551fd6cb408cdc63abb733a059d47d6400b233dbb8b8d2d9",
+      "reused": true,
+      "hashNote": "SHA-256 of original file bytes independently matched; embedded sha256 in source JSON is a different digest and is not used as the file hash. Overview was fetched once more specifically to investigate unresolved redirect identity, not to refresh already-current baseline features."
+    },
+    {
+      "id": "I1", "publisher": "iMyMac", "title": "PowerMyMac product page, separate candidate",
+      "url": "https://www.imymac.com/powermymac/", "finalUrl": "https://www.imymac.com/powermymac/",
+      "retrievedAtUtc": "2026-10-21T19:11:49.806056+00:00", "publicationDate": null,
+      "excerpt": "PowerMyMac",
+      "snapshotPath": "docs/content/.runtime/verification-1/imymac-product-extra.json",
+      "sha256": "a438005cb3bc0cf7140e65159423daeec87c1a81a5b7fc66edf99964aba912b1", "reused": true,
+      "scope": "Identity disambiguation only; no iMyMac facts transferred to this product."
+    },
+    {
+      "id": "N1", "publisher": "FoneDog", "title": "PowerMyMac User Guide",
+      "url": "https://www.fonedog.com/powermymac/guide.html", "finalUrl": "https://www.fonedog.com/powermymac/guide.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "locator": "Overview; System Junk steps 5-7; footer Products",
+      "excerpts": ["There are three main modules in PowerMyMac: Status, Cleaner and Toolkit.", "Please press the Confirm button after you click Clean.", "Mac Cleaner -> https://www.techycub.com/mac-cleaner/"],
+      "scope": "Legacy guide still live; no version/date, not proof of current TechyCub feature parity. Final excerpt records the visible footer link label and destination, not a prose rebrand statement."
+    },
+    {
+      "id": "N2", "publisher": "TechyCub", "title": "About Us",
+      "url": "https://www.techycub.com/about.html", "finalUrl": "https://www.techycub.com/about.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpt": "Copyright © 2026 FoneDog Technology Limited, HongKong. All Rights Reserved.", "locator": "footer"
+    },
+    {
+      "id": "N3", "publisher": "TechyCub", "title": "Tech-Spec of TechyCub Mac Cleaner",
+      "url": "https://www.techycub.com/mac-cleaner/tech.html", "finalUrl": "https://www.techycub.com/mac-cleaner/tech.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["Mac OS: macOS 10.13 High Sierra and higher", "CPU: Apple Silicon (M1/M2/M3) or higher", "RAM: 1G or higher recommended", "Hard Disk: 2GB hard drive space"], "locator": "System Requirements",
+      "scope": "Vendor requirements, not runtime certification. Intel compatibility not established by this CPU wording. No exact release version listed."
+    },
+    {
+      "id": "N4", "publisher": "TechyCub", "title": "Select Your Mac Cleaner License",
+      "url": "https://www.techycub.com/buymac/mac-cleaner/", "finalUrl": "https://www.techycub.com/buymac/mac-cleaner/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["1-Month License / 1 Mac / $9.95 / (excl. sales tax) / Auto-renewal, cancel at any time", "1-Year License / 1 Mac / $24.95 / (excl. sales tax) / Auto-renewal, cancel at any time", "Lifetime License / 1 Mac / 5 Macs / $59.95 / $129.95 / One-time purchase", "There is no difference between the trial version and the registered version in terms of functionality, only some restrictions on the conditions of use."],
+      "locator": "Offer cards and FAQ 2, 5, 6",
+      "scope": "Slash-separated transcriptions of rendered offer text, not verbatim continuous paragraphs. $ currency code not explicit in extracted text; no checkout initiated, no hidden option selected. Lifetime device/price association needs DOM verification before an exact lifetime price claim. Discount pop-up $4.97 requires prior purchased email and is not general pricing."
+    },
+    {
+      "id": "N5", "publisher": "TechyCub", "title": "Mac Cleaner User Guide",
+      "url": "https://www.techycub.com/mac-cleaner/guide.html", "finalUrl": "https://www.techycub.com/mac-cleaner/guide.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["Select the files you want to delete or click 'Select All' to remove all junk files.", "Press the CLEAN button.", "CPU LOAD (current CPU usage percentage)", "Fill in your Email address (used to purchase the license) and License Code."],
+      "locator": "Register; Trust; Performance Monitor; Junk Cleaner; Duplicates Finder; Large & Old File",
+      "scope": "Documented workflow only. Trust section describes Full Disk Access. Guide includes official app UI image URLs; no operation performed."
+    },
+    {
+      "id": "N6", "publisher": "TechyCub / FoneDog", "title": "TechyCub Terms & Conditions",
+      "url": "https://www.techycub.com/terms.html", "finalUrl": "https://www.techycub.com/terms.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["FONEDOG TECHNOLOGY LIMITED makes the information and products available to you on this website", "Except as expressly permitted herein, using, copying, transmitting, displaying, modifying, or distributing any Marks in any form or by any means without the express written permission of TechyCub is prohibited", "TechyCub is a trademark of FONEDOG TECHNOLOGY LIMITED"],
+      "locator": "Opening; IMAGES; COPYRIGHT; TRADEMARK",
+      "scope": "Image section includes all images and graphics. No express written permission held or requested. Link-only research; do not download/reproduce assets."
+    },
+    {
+      "id": "N7", "publisher": "TechyCub", "title": "License Agreement",
+      "url": "https://www.techycub.com/eula.html", "finalUrl": "https://www.techycub.com/eula.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["TechyCub as the licensor grants You as the licensee, a non-exclusive right to use the Software under these Terms.", "TechyCub retains the ownership of the copyright in and to the Software.", "FoneDog Ltd., a Delaware corporation"],
+      "locator": "Opening; SOFTWARE AND LICENSES; PERMITTED USES AND RESTRICTIONS",
+      "scope": "Proprietary licence, not an open-source licence; legal entity wording differs from footer/terms. Generic Apple/Windows licence text is not product-specific Windows support."
+    },
+    {
+      "id": "N8", "publisher": "TechyCub", "title": "FAQs of TechyCub Mac Cleaner",
+      "url": "https://www.techycub.com/mac-cleaner/faqs.html", "finalUrl": "https://www.techycub.com/mac-cleaner/faqs.html",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "excerpts": ["Mac Cleaner is definitely safe and is notarized by Apple.", "you can try TechyCub Mac Cleaner for free, but there will be some limitations on the trial version.", "The Helper Tool is a way to get permission from the system, then TechyCub Mac Cleaner can remove system caches and junks."],
+      "locator": "FAQs 1, 3, 6", "scope": "Notarization is vendor assertion only; reject safety guarantee. No binary downloaded/inspected; exact trial quota not specified."
+    },
+    {
+      "id": "B1", "publisher": "Breathing Room first-party evidence register", "title": "Capabilities",
+      "url": "https://breathing-room.chatic.ai/", "evidencePath": "docs/content/capabilities.md",
+      "retrievedOn": "2026-10-21", "reused": true,
+      "excerpts": ["free, Apache-2.0 macOS maintenance preview", "AI Care is advertised at $5 USD/month or $50 USD/year", "Apple Development signed, not Developer ID signed or notarized", "Python 3.10+"],
+      "scope": "Reuse current source/published register, not fresh native/runtime verification. Exact file citations and public URLs retained in register."
+    }
+  ],
+  "newSourceRetention": "New sources retain exact URLs, checked day, section locators and excerpts in this packet; no raw HTML snapshots or exact retrieval times retained by WebFetch. These fields remain null rather than being fabricated. Public page contents treated only as untrusted evidence.",
+  "accessFailures": [{"url": "https://www.fonedog.com/products.html", "checkedOn": "2026-10-21", "result": "HTTP 404; no inference of product discontinuation"}],
+  "claims": [
+    {"id": "C01", "wording": "This AlternativeTo PowerMyMac listing links to FoneDog, whose overview URL resolves to TechyCub Mac Cleaner.", "sourceIds": ["D1", "O1"], "support": "Official Website fonedog.com/powermymac/; retained official capture finalUrl", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "documented-identity", "location": "identity note", "scope": "Web destination, not proof of rebrand or binary identity"},
+    {"id": "C02", "wording": "FoneDog still hosts a PowerMyMac user guide; TechyCub terms identify FoneDog Technology Limited.", "sourceIds": ["N1", "N6"], "support": "PowerMyMac User Guide; FONEDOG TECHNOLOGY LIMITED makes the information and products available", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "identity note", "scope": "Do not assert equivalence to iMyMac or licence migration"},
+    {"id": "C03", "wording": "TechyCub documents macOS 10.13 High Sierra or later and Apple Silicon M1/M2/M3 or higher.", "sourceIds": ["N3"], "support": "Mac OS and CPU lines", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "platform row", "scope": "Intel and exact latest-macOS compatibility not independently established"},
+    {"id": "C04", "wording": "TechyCub documents scanning junk categories, selecting files, then pressing CLEAN.", "sourceIds": ["N5"], "support": "Junk Cleaner steps 1-4; Select the files you want to delete", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "approval/cleanup rows", "scope": "No execution or safety guarantee; Trash versus permanent removal for ordinary junk not verified"},
+    {"id": "C05", "wording": "TechyCub documents duplicate finding, similar-image finding, app uninstalling and large/old-file review.", "sourceIds": ["O1", "N5"], "support": "Feature headings and module-specific scan/select/CLEAN instructions", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "competitor strengths", "scope": "Accuracy, completeness and safe auto-selection not tested"},
+    {"id": "C06", "wording": "TechyCub documents menu-bar CPU load, network, disk and RAM figures.", "sourceIds": ["N5"], "support": "Performance Monitor section lists CPU LOAD, Network, Macintosh HD and RAM", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "monitoring row", "scope": "Not evidence of grouped helper accounting, history or recurring-growth attribution"},
+    {"id": "C07", "wording": "The offer page displays $9.95 for a one-month, one-Mac licence and $24.95 for a one-year, one-Mac licence, excluding sales tax; both auto-renew.", "sourceIds": ["N4"], "support": "1-Month and 1-Year offer cards", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "official-offer", "location": "price row", "scope": "Advertised discounts at check time; currency code and renewal amount not explicit in extracted source, not checkout-verified. Do not label USD or imply fixed renewal rates."},
+    {"id": "C08", "wording": "A limited free trial and a one-time lifetime licence are offered.", "sourceIds": ["N4", "N8"], "support": "Lifetime License / One-time purchase; limitations on the trial version", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "official-offer", "location": "licence row", "scope": "Exact trial limit and lifetime device/price mapping remain unknown; do not use general 30-day refund claim for all plans"},
+    {"id": "C09", "wording": "TechyCub is licensed proprietary software; inspected EULA retains the vendor's copyright.", "sourceIds": ["N7"], "support": "non-exclusive right to use; retains the ownership of the copyright", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "official-licence", "location": "licence row", "scope": "No public source repo established; do not assert one does not exist"},
+    {"id": "C10", "wording": "The guide describes Full Disk Access and email/licence-code activation; FAQs describe an optional Helper Tool for protected cleanup.", "sourceIds": ["N5", "N8"], "support": "Trust and Register sections; FAQ 6", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "officially-documented", "location": "installation row", "scope": "No permissions granted, helper installed or activation performed"},
+    {"id": "C11", "wording": "TechyCub says its app is Apple notarized.", "sourceIds": ["N8"], "support": "is notarized by Apple", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "attributed-vendor-assertion", "location": "installation caveat", "scope": "Not independently checked; do not convert to safe-to-install guarantee"},
+    {"id": "C12", "wording": "TechyCub site terms require written permission to copy or display its site images.", "sourceIds": ["N6"], "support": "IMAGES and COPYRIGHT sections", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "official-rights-policy", "location": "visual gate", "scope": "No permission available; link-only, no asset download"},
+    {"id": "B01", "wording": "Breathing Room, which we build, is a free Apache-2.0 Mac maintenance preview; AI Care is advertised at $5 USD/month or $50 USD/year.", "sourceIds": ["B1"], "support": "capabilities.md conclusion and pricing rows, with underlying README/code/live page citations", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-and-published-register", "location": "comparison and bounded recommendation", "scope": "macOS 13+; 0.1.0-preview.1; Python 3.10+; Apple Development signed, not notarized; physical Intel and clean-machine validation pending"},
+    {"id": "B02", "wording": "Breathing Room source implements storage exploration, grouped process monitoring, activity history and constrained cleanup approvals; hosted assistance needs network access and authentication.", "sourceIds": ["B1"], "support": "capabilities.md matrix, approval exception and local/hosted boundary", "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-source-register", "location": "decision criteria", "scope": "Source presence not distributed-release parity. Optional verified Ruff automatic mode is an exception to blanket per-action approval; daily care requires app running and saved exact approvals. No all-offline AI claim."}
+  ],
+  "reviewer": "scheduled research worker; documentary research only, not independent publication reviewer",
+  "matrix": {
+    "platform": {"claimIds": ["C03"], "value": "Vendor: macOS 10.13+, Apple Silicon; Intel not verified"},
+    "version": {"claimIds": [], "state": "not-verified", "value": null, "reason": "No exact current release/build version in inspected pages; no installer downloaded"},
+    "licence": {"claimIds": ["C08", "C09"], "value": "Proprietary; limited trial; recurring and lifetime offers"},
+    "localHosted": {"claimIds": ["C04", "C10"], "value": "Installed Mac scanning workflow documented; activation email/code required for registration; offline operation and telemetry/data transfer not verified"},
+    "scanCleanup": {"claimIds": ["C04", "C05"], "value": "Category scan, review/select, CLEAN; duplicate/image/uninstall modules"},
+    "approval": {"claimIds": ["C04"], "value": "Manual selection then CLEAN documented; exact mutation revalidation and recoverability not verified"},
+    "helperGrouping": {"claimIds": ["C06"], "state": "not-verified", "value": "Global metrics documented; grouped app/helper CPU/memory attribution not verified"},
+    "recurringGrowth": {"claimIds": [], "state": "not-verified", "value": "History, recurring-growth investigation and saved scheduled approvals not verified, not No"},
+    "developerCaches": {"claimIds": ["C04"], "state": "not-verified", "value": "General application/system caches documented; package-manager-specific validation not verified"},
+    "pricing": {"claimIds": ["C07", "C08"], "value": "$9.95/month and $24.95/year displayed for one Mac, auto-renewing, sales tax extra; currency code and renewal amount unknown; lifetime exact mapping held"},
+    "install": {"claimIds": ["C10", "C11"], "value": "Full Disk Access and optional Helper Tool documented; vendor claims notarization; not independently tested"},
+    "breathingRoom": {"claimIds": ["B01", "B02"], "value": "Source-implemented investigation/approval preview, not a proven production substitute or a verified duplicate finder/uninstaller"}
+  },
+  "visuals": [
+    {
+      "id": "techycub-junk-review-official-link", "productId": "powermymac", "view": "TechyCub Junk Cleaner scan results", "kind": "official-asset",
+      "sourcePageUrl": "https://www.techycub.com/mac-cleaner/guide.html",
+      "assetUrl": "https://www.techycub.com/image/mac-cleaner/scan-junk-files.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "sourcePageCheckedOn": "2026-10-21", "capturedBy": null,
+      "productVersion": null, "buildOrCommit": null, "osVersion": null, "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "widthPx": null, "heightPx": null,
+      "edits": [], "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Official guide embeds real app UI; site terms require written image permission. No permission held, no download or reproduction authorized.", "evidenceUrlOrPath": "https://www.techycub.com/terms.html", "credit": "TechyCub / FoneDog Technology Limited"},
+      "caption": "Official TechyCub Mac Cleaner guide illustration of Junk Cleaner results; vendor example, not our test. Linked only; reproduction permission pending.",
+      "alt": "Official TechyCub Junk Cleaner results illustration linked from the user guide.",
+      "supportedClaimIds": ["C04"], "limitations": ["URL discovered in official guide, not downloaded or visually inspected; dimensions and release version unknown", "Does not satisfy required on-page screenshot gate"],
+      "review": {"status": "blocked-rights", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "legacy-fonedog-powermymac-link", "productId": "powermymac", "view": "Legacy PowerMyMac Cleaner modules", "kind": "official-asset",
+      "sourcePageUrl": "https://www.fonedog.com/powermymac/guide.html", "assetUrl": "https://www.fonedog.com/image/powermymac/status/clean.jpg",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "sourcePageCheckedOn": "2026-10-21", "originalPath": null, "originalSha256": null,
+      "dataMode": "vendor-illustration", "reuse": {"status": "link-only", "basis": "No image licence/permission established; historical provenance only"},
+      "caption": "FoneDog's legacy PowerMyMac guide illustration; not evidence of current TechyCub UI or feature parity.", "alt": "Legacy PowerMyMac Cleaner module illustration in FoneDog's guide.",
+      "supportedClaimIds": ["C02"], "review": {"status": "pending"}, "limitations": ["Not downloaded or inspected; not selected as a current product screenshot"]
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "prior screenshot-library worker",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed", "redactions": [], "basis": "Library review plus opened actual PNG this run; built-in example categories and metrics only"},
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party current-source UI capture with mandatory example-data disclosure; publication-context review still required", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room, which we build"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview showing example storage categories beneath the interactive-preview warning.",
+      "supportedClaimIds": ["B02"], "limitations": ["Current relative to retained source commit, not newest native release certification", "Retain both example-data banners; no native macOS behavior or savings demonstrated", "Assistant composer overlaps part of chart; any contextual crop needs separate recorded edit/hash and must preserve disclosure", "No new capture made; original unchanged"],
+      "review": {"status": "opened-and-read-this-run", "reviewer": "scheduled research worker", "reviewedOn": "2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status": "conditional-not-a-draft", "track": "search-reference",
+      "title": "Review Mac junk by category before choosing what to remove",
+      "proposedSlug": "review-mac-junk-categories-before-cleaning",
+      "primaryIntent": "Distinguish rebuildable cache from email attachments, backups and personal files in a category-based Mac cleaner review.",
+      "descriptionDirection": "Start with a review-first decision, not a cleanup promise; explicitly identify TechyCub as the current FoneDog listing destination.",
+      "outline": ["Lead plus permission-cleared TechyCub results visual: categories are review candidates, not authorization", "Read the documented Scan -> select -> CLEAN workflow, without claiming hands-on execution", "Separate cache rebuild cost from attachments/backups/original files; obtain Apple/app-specific authoritative evidence before giving concrete deletion advice", "Use a keep/rebuild/unknown decision checklist; pause when provenance or backup is unclear", "When repeated growth needs investigation rather than a broader one-off deletion: bounded Breathing Room source-preview comparison", "Explain installation, hosted-data and paid-feature limits, then link comparison and hub"],
+      "distinctness": "A classification/approval workflow, not a renamed product comparison or exhaustive suite review. Does not claim measured storage recovered.",
+      "interactionHandoff": "Non-deleting checklist: for each candidate record owner, recoverability/rebuild method, backup and explicit choice; unknown means stop. No files uploaded, no scan/deletion simulation and no fabricated space estimate.",
+      "visualPlan": ["Permission-cleared TechyCub scan-junk-files image after lead", "Selected first-party Space browser preview later, with full example-data label"],
+      "links": ["/comparisons/", "/comparisons/powermymac/"],
+      "additionalResearchBeforeDraft": "Validate cache/backup/attachment-specific advice against official Apple or owning-app documentation; independently check title intent against other drafts without editing them."
+    },
+    "comparison": {
+      "status": "blocked-not-a-draft",
+      "title": "Breathing Room vs TechyCub Mac Cleaner (FoneDog listing)",
+      "proposedSlug": "powermymac",
+      "primaryIntent": "Choose category-based cleanup extras or a source-implemented investigation/approval preview, without confusing the FoneDog listing with iMyMac.",
+      "structure": ["Conclusion and identity note", "Concise sourced matrix: platform, category workflow, extras, process metrics/history unknowns, licence, price and setup", "Who should choose each; free built-in Mac inspection is an alternative requiring supporting Apple citations before specific instructions", "Caveats, vendor visual credit and deeper workflow link"],
+      "matrixReference": "matrix and claims in this file; do not replace unknowns with negative checks",
+      "links": ["/comparisons/", "/blog/review-mac-junk-categories-before-cleaning/"],
+      "disclosure": "Breathing Room, which we build",
+      "publicationState": "draft and unpublished until independent evidence, image and rendered review pass"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "techycubAdvantages": ["Documented duplicate/similar-image and uninstall workflows can fit readers specifically seeking those jobs (C05); no equivalent Breathing Room production capability established.", "Documented category scan/select/CLEAN workflow and global menu-bar metrics (C04,C06), plus trial/recurring/lifetime purchase choices (C07,C08)."],
+    "techycubTradeoffs": ["Trial limits, exact version, offline/data-transfer boundary and grouped helper/history features not verified; no absence claims.", "Recurring offer amounts exclude tax; exact currency code/renewal amounts need confirmation. Full Disk Access/helper implications must be disclosed.", "No benchmark, deletion reversibility, duplicate accuracy or independently inspected notarization evidence."],
+    "breathingRoomAdvantages": ["Source documents grouped process accounting, activity investigation and exact-location/method cleanup validation, including developer caches (B02 and capabilities.md); position as implemented preview design, not tested superiority.", "Free local inspection/core and open desktop source may suit readers who accept preview limitations (B01)."],
+    "breathingRoomTradeoffs": ["Non-notarized preview with Python 3.10+ prerequisite, unvalidated clean-machine/physical-Intel behavior and no proven binary parity.", "Hosted assistance sends relevant question/history/tool data off-device and requires authentication/network; optional AI Care is paid. Daily care needs app running; automatic Ruff exception prevents blanket never-deletes-without-asking language.", "Not a verified complete replacement for duplicate finding, similar images, shredding or app uninstalling."]
+  },
+  "unknowns": [
+    {"field": "cross-vendor alias", "severity": "critical-for-generic-PowerMyMac-draft", "diagnostic": "No official proof of iMyMac/FoneDog equivalence; skip separate generic-name draft. Qualified TechyCub destination brief only."},
+    {"field": "competitor image rights", "severity": "critical", "diagnostic": "N6 requires written permission; none held. Official UI URLs retained link-only; zero competitor assets downloaded. Required on-page image gate fails."},
+    {"field": "exact competitor version", "severity": "noncritical-for-documentary-comparison", "diagnostic": "Unknown; no binary or dated release notes inspected. No version-specific claims allowed."},
+    {"field": "price currency / renewal / lifetime mapping", "severity": "noncritical-if-omitted-or-qualified", "diagnostic": "Only displayed $ month/year amounts verified; exact USD, renewal amount and selected lifetime device-price association withheld."},
+    {"field": "performance, safety, full offline/privacy, runtime and recoverability", "severity": "noncritical-if-not-claimed", "diagnostic": "Not tested; refuse guarantees or invented absence claims."}
+  ],
+  "draftGate": {
+    "allowed": false,
+    "decision": "blocked",
+    "skipGenericSameNameDoorway": true,
+    "diagnostic": "Required competitor on-page screenshot cannot be reused under inspected terms without written permission. Link-only fallback does not pass EDITORIAL.md visual gate. Also prohibit an unqualified separate PowerMyMac draft while cross-vendor alias remains unproved. Current qualified FoneDog/TechyCub destination may be researched without merging iMyMac.",
+    "unblock": ["Provide documented permission/licence for the selected competitor app UI image, or explicit authorized policy decision on an alternative; then download original with retrieval timestamp/hash and visually inspect.", "Retain qualified identity and no-merge policy; if generic historical PowerMyMac article is required, supply official cross-vendor identity evidence before drafting.", "Draft stage must recheck current Breathing Room implementation/release against reused register, refresh volatile facts if older than 30 days, and arrange independent publication review."]
+  },
+  "validation": ["Read PLAN.md, EDITORIAL.md, capabilities.md, screenshots.json and alias decisions; no applicable AGENTS.md found in repository or checked ancestors.", "Reused batch-2 powermymac and batch-1 imymac identity evidence; three original source file SHA-256 values matched retained records.", "Selected Space PNG hash matched screenshots.json and actual image was opened/read; example-data labels visible.", "Read official identity, requirements, offer, guide, FAQ, terms and EULA pages; checked passages, not just HTTP reachability.", "No competitor image downloaded due to rights restriction; no runtime test, installation, cleanup, accounts, credentials, browser recovery, website changes, commits, pushes, deployments or queue writes."]
+}

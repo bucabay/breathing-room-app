@@ -1,0 +1,28 @@
+{
+  "jobId": "research-macfly-pro",
+  "status": "passed-structural-checks-research-remains-blocked",
+  "method": "Executed read-only Python json/hashlib/struct assertions against actual files; exit 0",
+  "checks": [
+    "All six source snapshot SHA-256 hashes match research.json",
+    "Seven unique claims have valid source IDs, URLs, excerpts, check dates, conditions, reviewers and locations",
+    "Selected Breathing Room PNG SHA-256 and 2940 x 3468 dimensions match library",
+    "Reused batch-1 blocked record and both original official snapshot hashes match",
+    "Retained page-3 discovery snapshot exists and contains macfly-pro",
+    "Draft/publication block, temporary skip, no alias merge, link-only competitor visual and example-data labels enforced",
+    "Both required research packets exist and research JSON parses",
+    "Actual existing Space PNG opened and read with image-capable read tool; preview/example-data banner and composer overlap observed",
+    "Owned Chrome tab 136 read public listing image metadata and closed; no existing tab inspected"
+  ],
+  "edgeSnapshotSha256": "1f866f623914a21a42b14cfdd2e96b69c70aad0fbfbcbde7e0563fa3374663d7",
+  "artifactSha256": {
+    "research.json": "67331b05a739c40e076a18c449208aa3c2f52dd9033d4a2285a03c923cabf37d",
+    "research.md": "a35ad8d9ca3e2fc968bf4f9a75f96806994dd9e2768400edf11d728a140a06c3",
+    "listing-visual-inspection.json": "84bdae0001ffff8f93f0385d2314d85fab8933bbce361e682c359d66050e946a"
+  },
+  "notRun": [
+    "Website check/build/test: no website changes",
+    "Native app, installer, cleanup and competitor pixel testing: not performed",
+    "Independent editorial/publication review: pending"
+  ],
+  "diagnostic": "Structural/provenance checks pass, but cannot supply absent current official facts or grant image reproduction rights. Drafting remains blocked."
+}

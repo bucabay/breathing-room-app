@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-avs-registry-cleaner",
+  "productId": "avs-registry-cleaner",
+  "canonicalOwnerId": "avs-registry-cleaner",
+  "status": "research-complete-skip-standalone-content",
+  "checkedOn": "2026-10-21",
+  "clockNote": "Machine UTC clock was 2026-10-21T22:28:24.749364+00:00; task-local date is October 22. Original verification dates are preserved, not refreshed by reuse.",
+  "ownership": "Only docs/content/competitors/avs-registry-cleaner/ and the explicitly requested runtime receipt. No website files changed.",
+  "identity": {
+    "officialName": "AVS Registry Cleaner",
+    "vendorBrand": "AVS4YOU",
+    "vendorLegalName": "Ascensio System SIA",
+    "homepage": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+    "vendorHomepage": "https://www.avs4you.com/",
+    "repository": null,
+    "repositoryState": "not-verified; no official source repository established, not a claim none exists",
+    "aliases": ["Free AVS Registry Cleaner", "AVS Free Registry Cleaner"],
+    "aliasEvidenceClaimIds": ["avs-identity"],
+    "aliasSkipDecision": "Name variants on the same official product page belong to avs-registry-cleaner; do not create separate drafts for those names. No PowerMyMac relationship is evidenced in this packet; do not merge unrelated brands.",
+    "classification": "platform-adjacent Windows utility; excluded from standalone Mac comparison drafting",
+    "classificationClaimIds": ["avs-platform", "avs-function"],
+    "maintainedOrDiscontinued": "not-verified; directory discontinued label conflicts with continued official download advertising, which is not evidence of active maintenance"
+  },
+  "decision": {
+    "action": "skip",
+    "skipStandaloneArticle": true,
+    "skipStandaloneComparison": true,
+    "reason": "The official page explicitly excludes Mac OS/Linux, and its distinguishing task is Windows registry maintenance. A directory relationship to CleanMyMac does not establish a distinct Mac reader job. No demonstrated product-specific migration demand was retained. Do not manufacture a registry-repair replacement page to satisfy post counts.",
+    "evidenceClaimIds": ["avs-platform", "avs-function"],
+    "draftAllowed": false,
+    "reconsiderOnlyIf": "Independent editorial evidence establishes a distinct Mac-migration intent not already served by a general Mac maintenance guide; resolve all visual and material evidence gates before drafting.",
+    "deadProductSkip": false,
+    "aliasProductSkip": false,
+    "scope": "Editorial relevance judgment, not a claim that AVS is dead or that no Mac user ever searches for it. Queue/database state unchanged."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/avs-registry-cleaner/about/",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:40.113Z",
+    "edgeRecord": "docs/content/competitors.json#avs-registry-cleaner.edges",
+    "method": "Reused existing rendered-listing traversal and batch-2 owned-tab official-link verification; no repeated directory request.",
+    "aboutRetrievedAtUtc": "2026-10-21T19:07:06.406Z",
+    "rawCapture": "docs/content/.runtime/verification-2/avs-registry-cleaner-directory.json",
+    "sha256": "e938011d277a0a106b1f9527cc87bbaeda93c16e3379d7928ec14a08c6025259",
+    "excerpt": "Official Website\navs4you.com/avs-registry-cleaner.aspx",
+    "limitation": "Discovery only. Original pagination raw snapshot/hash not independently located; edge metadata reused from manifest. Directory discontinued label is not official maintenance evidence."
+  },
+  "sources": [
+    {
+      "id": "official-baseline",
+      "publisher": "AVS4YOU",
+      "title": "Repair Windows registry with AVS Free Registry Cleaner.",
+      "url": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+      "finalUrl": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+      "retrievedAtUtc": "2026-10-21T19:09:53.843740+00:00",
+      "sourceUpdatedOn": null,
+      "rawCapture": "docs/content/.runtime/verification-2/avs-registry-cleaner-official.json",
+      "sha256": "ca216b11edef7c1999329cb9682da59fd80f232ad3cfcf3f9497a87938c75a77",
+      "reuseRecord": "docs/content/verification/batch-2.json#avs-registry-cleaner",
+      "scope": "Official documentary claims, version 4.2.2.295 advertised; no executable downloaded or tested. Additional claims extracted from the already-retained full text."
+    },
+    {
+      "id": "official-visual-html",
+      "publisher": "AVS4YOU",
+      "url": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+      "finalUrl": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+      "retrievedOnUtc": "2026-10-21",
+      "retrievedAtUtc": null,
+      "sourceUpdatedOn": null,
+      "rawCapture": "docs/content/competitors/avs-registry-cleaner/evidence/official-visual-page.html",
+      "scope": "One targeted HTML request to discover missing exact screentour image URLs; not a gratuitous recheck of verified platform/pricing facts. Exact tool retrieval second unavailable."
+    },
+    {
+      "id": "eula",
+      "publisher": "Ascensio System SIA",
+      "title": "END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ASCENSIO SYSTEM SIA",
+      "url": "https://www.avs4you.com/license-agreement.aspx",
+      "finalUrl": "https://www.avs4you.com/license-agreement.aspx",
+      "retrievedOnUtc": "2026-10-21",
+      "retrievedAtUtc": null,
+      "sourceUpdatedOn": null,
+      "scope": "Generic AVS4YOU EULA. Does not settle free-product exceptions or grant verified editorial image reuse rights.",
+      "excerpt": "AVS4YOU Software is licensed on a per computer basis. Each license purchased is bound to one particular computer ... Any rights not expressly granted herein are reserved."
+    },
+    {
+      "id": "br-capabilities",
+      "publisher": "Breathing Room research register",
+      "url": "https://breathing-room.chatic.ai/",
+      "evidencePath": "docs/content/capabilities.md",
+      "checkedOn": "2026-10-21",
+      "scope": "Reuse current first-party source and public-page review with its limitations; no fresh native or installer test. Public release evidence is v0.1.0-preview.1, distinct from current-source UI."
+    }
+  ],
+  "claims": [
+    {"id":"avs-identity","wording":"AVS Registry Cleaner is also styled Free AVS Registry Cleaner and AVS Free Registry Cleaner on its official AVS4YOU page.","state":"verified","evidenceClass":"officially-documented","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Repair Windows registry with AVS Free Registry Cleaner. ... Free AVS Registry Cleaner","checkedOn":"2026-10-21","location":"identity / comparison lead","conditions":"Same page and download identity, not separate products.","reviewer":"scheduled research worker"},
+    {"id":"avs-function","wording":"AVS documents scanning registry categories including uninstalled entries, shared DLLs, COM/ActiveX and file extensions, plus temporary Internet and trash-file cleanup.","state":"verified","evidenceClass":"officially-documented","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Scan different registry categories like uninstalled entries, shared DLL's, COM/ActiveX and file extensions. Clean out temporary Internet files, corrupted applications, and trash files.","checkedOn":"2026-10-21","location":"workflow distinction / matrix","conditions":"Vendor-documented scope, not observed effectiveness or speedup.","reviewer":"scheduled research worker"},
+    {"id":"avs-platform","wording":"The official download panel lists Windows 11, 10, 8.1, 8, 7, Vista and XP and explicitly says no Mac OS/Linux support.","state":"verified","evidenceClass":"officially-documented","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Platforms: Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)","checkedOn":"2026-10-21","location":"lead / platform matrix / skip decision","conditions":"Advertised support; compatibility on these systems was not tested. No Wine/virtualization claims.","reviewer":"scheduled research worker"},
+    {"id":"avs-version","wording":"The official page advertises version 4.2.2.295 and a 9.22 MB download.","state":"verified","evidenceClass":"officially-documented","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"File Size: 9.22 MB Current Version: 4.2.2.295","checkedOn":"2026-10-21","location":"version note","conditions":"No release date, installer version inspection, download-size measurement or maintenance inference.","reviewer":"scheduled research worker"},
+    {"id":"avs-free","wording":"The product page advertises AVS Registry Cleaner as free; exact free licence and activation exceptions remain unresolved.","state":"verified","evidenceClass":"officially-documented-with-conflict","sourceIds":["official-baseline","eula"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Free AVS Registry Cleaner ... By clicking the Download button you agree to our End User License Agreement","checkedOn":"2026-10-21","location":"pricing matrix","conditions":"No currency/billing period applies to the advertised free label. Generic EULA discusses purchased per-computer subscriptions; do not infer free lifetime/commercial use, no-account access or paid upgrade price.","reviewer":"scheduled research worker"},
+    {"id":"avs-controls","wording":"AVS documents backup and scheduled scans with selected file categories.","state":"verified","evidenceClass":"officially-documented","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Backup the files for maximum safety. Schedule time and select file categories for scanning. Save all crucial registry entries.","checkedOn":"2026-10-21","location":"controls matrix","conditions":"Do not repeat maximum safety as fact. Backup restore success and per-action cleanup approval are not verified; scan scheduling is not recurring-growth monitoring.","reviewer":"scheduled research worker"},
+    {"id":"avs-install","wording":"The product page carries an administrative-installation and Internet-activation footnote.","state":"verified","evidenceClass":"officially-documented-with-scope-warning","sourceIds":["official-baseline"],"sourceUrl":"https://www.avs4you.com/avs-registry-cleaner.aspx","excerpt":"Administrative permissions for program installation and Internet connection for activation.","checkedOn":"2026-10-21","location":"install caveats","conditions":"Technical block also contains video/CD requirements, apparently shared boilerplate. Applicability to this free product is not independently verified; do not transplant those media requirements as product-specific facts.","reviewer":"scheduled research worker"},
+    {"id":"avs-licence","wording":"The linked generic AVS4YOU EULA is restrictive commercial software licensing, not evidence of an open-source licence.","state":"verified","evidenceClass":"officially-documented","sourceIds":["eula"],"sourceUrl":"https://www.avs4you.com/license-agreement.aspx","excerpt":"You may not ... Reverse engineer, decompile, disassemble or make derivative works based on AVS4YOU Software ... Any rights not expressly granted herein are reserved.","checkedOn":"2026-10-21","location":"licence caveat","conditions":"Exact Registry Cleaner free-product exceptions and image permission remain not verified.","reviewer":"scheduled research worker"},
+    {"id":"br-scope","wording":"Breathing Room, which we build, is a macOS maintenance preview with storage exploration and app/process monitoring; it is not a Windows registry-repair replacement.","state":"verified","evidenceClass":"reused-first-party-register-plus-editorial-boundary","sourceIds":["br-capabilities"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"Breathing Room is a free, Apache-2.0 macOS maintenance preview ... Source implementation is not proof that every feature works in the distributed installer.","checkedOn":"2026-10-21","location":"disclosed decision / matrix","conditions":"macOS 13+, universal installer advertised; physical Intel and clean-machine runtime unverified. Version 0.1.0-preview.1 release is Apple Development signed, not Developer ID signed or notarized. Python 3.10+ prerequisite, inventories permission-limited.","reviewer":"scheduled research worker"},
+    {"id":"br-pricing-hosted","wording":"The local desktop core is advertised free; optional hosted AI Care is advertised at $5 USD/month or $50 USD/year.","state":"verified","evidenceClass":"reused-first-party-register","sourceIds":["br-capabilities"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"AI Care is advertised at $5 USD/month or $50 USD/year ... Hosted AI assistance requires internet access and authentication","checkedOn":"2026-10-21","location":"pricing / privacy caveat","conditions":"Recurring until cancelled, applicable tax at checkout. No unlimited AI allowance verified. Relevant paths/process/storage information may reach hosted service; not entirely offline. Website download has account gate; public GitHub releases separately accessible. Daily care requires app running and saved exact approvals; optional automatic verified Ruff-cache mode qualifies approval promises.","reviewer":"scheduled research worker"}
+  ],
+  "matrix": [
+    {"dimension":"platform","avs":"Windows only; explicit no Mac OS/Linux support","avsClaimIds":["avs-platform"],"breathingRoom":"macOS preview, not Windows registry repair","brClaimIds":["br-scope"]},
+    {"dimension":"scan / cleanup","avs":"Registry categories and temporary/trash files documented","avsClaimIds":["avs-function"],"breathingRoom":"Storage exploration; reviewable source-implemented cleanup, release parity unverified","brClaimIds":["br-scope"],"brEvidence":"docs/content/capabilities.md:24-29"},
+    {"dimension":"approval controls","avs":"Backup and scan schedule documented; exact deletion approval not verified","avsClaimIds":["avs-controls"],"breathingRoom":"Reviewable actions, optional verified Ruff automatic mode, daily saved approvals","brClaimIds":["br-pricing-hosted"],"brEvidence":"docs/content/capabilities.md:36-42"},
+    {"dimension":"local / hosted","avs":"Windows desktop download documented; network/privacy behavior not verified","avsClaimIds":["avs-platform","avs-install"],"breathingRoom":"Local inspection, authenticated hosted AI with relevant tool data","brClaimIds":["br-pricing-hosted"]},
+    {"dimension":"licence / pricing","avs":"Advertised free; restrictive generic EULA, exact free exceptions unresolved","avsClaimIds":["avs-free","avs-licence"],"breathingRoom":"Apache-2.0 desktop source; free local core, optional $5 USD/month or $50 USD/year AI Care","brClaimIds":["br-scope","br-pricing-hosted"]},
+    {"dimension":"helper grouping / developer caches / recurring growth","avs":"not verified; not negative feature claims","avsClaimIds":[],"breathingRoom":"Source register documents grouping, cache adapters and local activity; hosted AI investigation advertised","brClaimIds":["br-scope","br-pricing-hosted"],"brEvidence":"docs/content/capabilities.md:25,28,30,76"}
+  ],
+  "visuals": [
+    {
+      "id": "avs-official-screentour-candidate",
+      "productId": "avs-registry-cleaner",
+      "kind": "official-asset",
+      "view": "Official registry_cleaner_slide1 screentour candidate; contents not visually inspected in this job",
+      "sourcePageUrl": "https://www.avs4you.com/avs-registry-cleaner.aspx",
+      "assetUrl": "https://www.avs4you.com/static/d00de4a45195c98b274db3be29d79524/b3d90/registry_cleaner_slide1.png",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "retrievedAtUtc": null,
+      "sourcePageCheckedOn": "2026-10-21",
+      "productVersion": null,
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "edits": [],
+      "reuse": {"status":"link-only","basis":"Official public screentour URL identified in HTML; no image reuse licence established. Public visibility is not permission. Do not download or embed pending clearance.","evidenceUrlOrPath":"https://www.avs4you.com/license-agreement.aspx","credit":"AVS4YOU / Ascensio System SIA"},
+      "caption": "Official AVS Registry Cleaner screentour (linked source; capture date/version unknown). Not our hands-on test.",
+      "alt": "AVS Registry Cleaner official screentour image; replace with view-specific description only after visual inspection.",
+      "privacyReview": {"status":"pending","redactions":[]},
+      "review": {"status":"pending","reviewer":null,"reviewedAtUtc":null},
+      "limitations": ["No competitor image downloaded or modified, therefore no original-image hash to invent.","A real official screentour source is identified, but visual contents and rights remain unapproved. Link-only does not satisfy on-page image gate."]
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "kind": "browser-preview",
+      "view": "Space",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "productVersion": null,
+      "osVersion": null,
+      "dataMode": "example",
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "reuse": {"status":"pending","basis":"Existing app-owner-requested first-party UI capture; publication-specific context and third-party marks require independent review.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredLabels": ["browser preview", "example data", "not a native scan or measured cleanup result"],
+      "privacyReview": {"status":"reviewed-in-shared-manifest","redactions":[]},
+      "review": {"status":"publication-context-pending","reviewer":null,"reviewedAtUtc":null},
+      "limitations": ["Existing source-render review reused; this worker checked bytes/hash, did not capture a new image or certify current native release.","Keep example-data banner visible. Do not imply screenshot numbers are measured gains."]
+    }
+  ],
+  "briefs": {
+    "status": "conditional-handoff-only; do not draft under current skip decision",
+    "workflow": {
+      "workingTitle": "Moving from a Windows registry cleaner to Mac storage inspection",
+      "proposedSlug": "windows-registry-cleaner-to-mac-storage-inspection",
+      "intent": "Mac-replacement intent only: a former Windows user identifies whether the actual problem is storage growth or app activity rather than assuming registry repair is the same job.",
+      "track": "search/reference",
+      "distinctness": "Task-triage checklist rather than an AVS feature matrix expanded into prose. No evidence of unique AVS-specific demand yet; prefer one general migration guide, not a product-name doorway.",
+      "outline": ["Establish operating system and actual symptom before selecting a tool.","Use official macOS storage guidance to distinguish storage categories and files worth inspecting; obtain Apple sources before writing procedural steps.","Inspect large locations without treating size as deletion permission; explain rebuild/download and backup costs.","Use app activity inspection for active CPU/memory concerns without claiming it proves ownership of writes.","Bounded disclosure: Breathing Room, which we build, is a macOS preview; it does not repair a Windows registry or diagnose a Windows VM."],
+      "interactionPass": "Read-only decision checklist: Windows registry task -> keep Windows troubleshooting separate; Mac storage growth -> inventory/review; Mac app activity -> inspect processes. No cleanup action, fake results or forced code demo.",
+      "visualPlan": "Current-source Space browser preview immediately after lead with required labels; a cleared and visually inspected official AVS UI later to explain the platform/task boundary. Current rights/access gate remains failed.",
+      "gates": ["Independent intent/deduplication review", "Official Apple sources for any macOS procedural advice", "Cleared competitor image plus inspection", "Independent evidence and rendered review"]
+    },
+    "comparison": {
+      "workingTitle": "AVS Registry Cleaner and Breathing Room address different platforms",
+      "proposedSlug": "avs-registry-cleaner",
+      "intent": "Concise platform/decision note, not a direct Windows replacement claim.",
+      "outline": ["Lead with AVS Windows-only platform versus Mac preview scope.","Use only claim-linked rows from this packet; mark missing capabilities not verified.","Explain AVS documented registry categories, backup and scheduled scans as its relevant scope, not tested recommendations.","Explain Breathing Room storage/app investigation fit, preview/Python/notarization/hosted/paid caveats and affiliation.","Link any future approved general Mac-migration workflow and comparisons hub, without creating duplicate alternatives routes."],
+      "publicationDecision": "Skip standalone comparison. A brief platform exclusion note in a future independently owned directory is more proportionate, but this worker makes no shared-site edits."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "avs": ["Documents Windows registry categories, backup and scheduled scans; relevant to that Windows-specific task, which Breathing Room is not positioned to replace.","Advertises a free download, but exact free activation/licence conditions are unresolved.","No Mac OS/Linux support explicitly documented; maintenance status and effectiveness unverified."],
+    "breathingRoom": ["Relevant source-implemented Mac storage exploration, helper grouping and activity workflows rather than registry repair.","Free local core and optional hosted AI Care have distinct data/account/cost boundaries.","Preview, Python prerequisite, non-notarized release, unverified clean-machine/Intel behavior and source-versus-binary parity limit any recommendation."],
+    "evidenceClaimIds": ["avs-platform","avs-function","avs-controls","avs-free","br-scope","br-pricing-hosted"],
+    "prohibitedClaims": ["faster / safer / better cleanup", "measured savings", "hands-on AVS test", "AVS discontinued as official fact", "Breathing Room Windows support", "all data stays local", "unknown competitor features are absent"]
+  },
+  "unknowns": [
+    "AVS active maintenance/discontinuation, release date, executable availability and actual installer version (not downloaded).",
+    "Exact free licence, activation, account, commercial-use and support conditions; generic paid-suite EULA conflict unresolved.",
+    "AVS exact deletion approvals, restore effectiveness, telemetry/hosted behavior, helper grouping, recurring-growth monitoring and developer-cache coverage.",
+    "Official source repository not established; no invented repository URL.",
+    "AVS screentour capture version/date, visual contents, privacy and reuse clearance."
+  ],
+  "draftBlockers": [
+    {"id":"editorial-skip","diagnostic":"Standalone Mac article/comparison not justified by retained intent evidence; requires explicit independent reconsideration, not a renamed template."},
+    {"id":"visual-rights","diagnostic":"No cleared competitor app UI asset. Official image URL is link-only and uninspected; resolve reuse permission/policy and visually inspect the original before any draft can pass image gate. No permission request authorized."},
+    {"id":"licence-scope","diagnostic":"Free product offer versus generic purchased per-computer EULA prevents unqualified licence/activation claims. Qualify advertisement or obtain product-specific official clarification without signups/messages."}
+  ],
+  "validation": {"nativeOrCompetitorTestingPerformed":false,"imageDownloads":0,"browserAutomationUsed":false,"websiteChanged":false,"queueChanged":false,"independentReview":"pending / no draft exists","checksPath":"docs/content/competitors/avs-registry-cleaner/validation.json"}
+}

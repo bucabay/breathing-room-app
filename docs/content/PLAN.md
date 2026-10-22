@@ -12,17 +12,17 @@ Source repositories:
 
 ## Ordered checklist
 
-- [ ] C01: Confirm the two published AlternativeTo relationships and save exact listing URLs, retrieval dates, and raw discovery provenance.
-- [ ] C02: Traverse both seeds' alternatives (including pagination), deduplicate products by canonical identity, classify direct/adjacent/irrelevant, and record excluded/dead products. Never fabricate names to reach 100.
-- [ ] C03: Verify Breathing Room's current capabilities against app code, README, release and pricing pages; separate shipped, preview, planned and paid features.
-- [ ] C04: Inspect MailKite/SendHog layout, content model, comparison tables, screenshot handling and SEO; record adaptation decisions.
-- [x] C05: Build `/blog/`, combined `/comparisons/` comparisons/alternatives hub, `/tools/` and individual routes, navigation and indexable static HTML. Initial foundation completed locally; no deployment or browser QA yet.
+- [x] C01: Confirm the two published AlternativeTo relationships and save exact listing URLs, retrieval dates, and raw discovery provenance. Live listing confirms CleanMyMac and Mole; see sources.md.
+- [ ] C02: Traversal and listing-URL deduplication complete: 19 pages, 113 CleanMyMac entries, 101 Mole entries, 150 competitor listing identities excluding ourselves. Official vendor-alias verification, direct/adjacent/platform classification and dead-product review remain per-item research. Never fabricate names to reach 100.
+- [x] C03: Verify Breathing Room's documented/source capabilities, release and pricing boundaries; see capabilities.md. Native binary behavior is not claimed tested.
+- [x] C04: Inspect MailKite/SendHog patterns; retain direct evidence-first voice, source ledgers and honest trade-offs. See reference-handoff.md and EDITORIAL.md.
+- [x] C05: Build `/blog/`, `/comparisons/`, separate `/alternatives/`, and `/tools/` with individual content routes, navigation and indexable static HTML. Tools includes both free utilities and neutral tool profiles; draft visibility fails closed across all four families.
 - [x] C06: Add validated content records, draft filtering, authorship, visible update dates, canonical URLs, Open Graph, Article/Breadcrumb schema, sitemap and RSS. Drafts must not leak into feeds/search. Initial check/build and 33 website tests pass; independently review before scaling.
-- [ ] C07: Capture a reusable current Breathing Room screenshot set: Space, Apps, Assistant plan review, Activity, menu bar and Daily care. Label example-data views; never present them as measured outcomes.
-- [ ] C08: Create the deduplicated competitor manifest and queue one research → draft → review chain per eligible product. Target >=100 distinct competitors only if discovery supports it; otherwise explicitly report the shortfall and propose genuinely distinct workflow posts to reach >=100 total blog posts.
+- [x] C07: Capture a reusable current-source browser screenshot set: Space, Apps, Assistant plan review, Activity, Activity panel and Daily care, plus Home. Seven PNGs were opened and visually inspected. Example data is explicitly labeled; native menu-bar behavior and measurements remain unverified. See screenshots.json and screenshot-review.md.
+- [x] C08: Materialize150 research chains with four individual page intents each (tool profile, comparison, alternatives, workflow blog), plus five roundups:605 nominal page targets and1371 execution jobs. Verified aliases/irrelevant products must be merged/skipped, not counted as distinct vendors or filler. Target >=100 real blog posts; report any verified shortfall rather than padding.
 - [ ] C09: Complete a three-competitor pilot; test evidence, imagery, SEO, readability and cross-linking before scaling.
 - [ ] C10: Process remaining competitors in relevance order, up to three independent jobs at once.
-- [ ] C11: Implement and test free, local-only tools (storage unit converter, cleanup planning estimator with assumptions, cache/rebuild checklist); no filesystem deletion, sensitive uploads or fake measured savings.
+- [x] C11: Implement/test storage unit converter, headroom planner and cache/rebuild checklist. Actual browser keyboard/responsive checks completed; no filesystem deletion, sensitive uploads or fake measured savings.
 - [ ] C12: Audit 100+ finished posts for broken links, duplicate intent, unsupported claims, missing images/alt text, mobile readability, schema and build correctness.
 - [ ] C13: Assemble release-ready site and deployment checklist. No automatic production deploy or git push in scheduled jobs.
 - [ ] C14: Refresh volatile pricing/availability at least every 30 days; change dateModified only after substantive review. Track indexed pages and qualified download clicks without promising rankings.
@@ -35,16 +35,17 @@ The machine queue is `queue.json`; live completion is recorded in the local SQLi
 | --- | --- | --- |
 | `/blog/<distinct-workflow-slug>/` | Help someone accomplish a real Mac task | One original post per competitor: an actual use case and evidence-based comparison, not a renamed template |
 | `/comparisons/<competitor>/` | Breathing Room vs that product | Concise fact matrix, decision criteria, honest strengths/limitations and links to the deeper post |
-| `/comparisons/` | Explore comparisons and alternatives | Combined hub initially; expand into filterable, linked catalogue grouped by job-to-be-done once products are verified |
-| `/alternatives/<competitor>/` (optional future) | Replacement options | Create only if distinct from comparison intent; otherwise use one canonical comparison, not duplicate doorway pages |
-| `/tools/<tool>/` | Solve a small problem now | Tested usable client-side utility, explanation, limitations and related guides |
+| `/comparisons/` | Explore direct comparisons | Searchable Breathing Room-versus-product decision pages |
+| `/alternatives/<competitor>/` | Replacement options | Several verified job-relevant options, not the head-to-head article repeated; document an exception if the intent cannot earn a useful page |
+| `/tools/<competitor>/` | Understand a product | Neutral sourced identity/platform/scope/profile with official links and bounded unknowns |
+| `/tools/storage-headroom/`, `/tools/storage-units/`, `/tools/cache-rebuild-checklist/` | Solve a small problem now | Working local-only utilities, separate from competitor profiles |
 
 ## Per-competitor definition of done
 
 1. Research packet: official product/docs/pricing/platform URLs, dated factual claims and the AlternativeTo discovery edge. A directory is discovery evidence, not proof a feature exists or is absent.
 2. Compare macOS compatibility, licence, local vs hosted operation, scan/cleanup model, approval controls, process/helper grouping, recurring-growth monitoring, developer caches, pricing and installation caveats where relevant. Unknown is **not verified**, never “No”. Do not call an adjacent product a direct substitute.
 3. Explain when Breathing Room fits and when the competitor is the better choice. Disclose “we build Breathing Room”. No “best”, performance, safety or savings claims without supporting evidence and conditions.
-4. Two useful visual elements minimum: a real Breathing Room view and a competitor app screenshot from the official site/authoritative listing (not merely a landing page). Save source URL, asset URL, capture date, caption, alt text and reuse/permission notes. No fabricated app UIs, stock photos or invented hands-on testing. If reuse rights or access are unclear, mark blocked or link the official visual; do not quietly waive the image gate.
+4. Use useful real/built visuals under the October22 EDITORIAL routeA/B policy. Prefer a labeled Breathing Room view plus a permitted competitor app screenshot. If screenshot reuse is restricted/unclear, use an original source-backed workflow/decision diagram and an attributed official image/guide link instead; explicitly identify it as a diagram, never fake app UI. Keep captions, alt text, source/provenance and rights records. Missing screenshot permission does not prevent source-backed internal drafting or the approved fallback, but never permits copying restricted imagery.
 5. State preview/notarization, Python/runtime, sign-in/hosted-agent and feature/pricing limitations accurately. The app README is the starting evidence, not a perpetual source of current truth.
 6. Write the conclusion first, then specifics. The description is the introduction; do not repeat it in the body. Plain language, short paragraphs, descriptive headings, no marketing filler. Length earned, typically 900–1,800 words for a substantive comparison post; do not pad.
 7. One unique primary intent/title/meta, contextual internal links to hub/comparison/tool, source links next to claims, author and reviewed date. Use schema only for visible content; no fabricated reviews, stars or FAQ questions.
@@ -54,8 +55,18 @@ The machine queue is `queue.json`; live completion is recorded in the local SQLi
 
 ## Scheduling and safety
 
-LaunchAgent runs a dispatcher every **600 seconds** while this Mac is awake and the user is logged in. The dispatcher admits at most **three** independent OpenCode sessions; dependent stages wait for receipts. It does not promise one finished article every ten minutes. Long jobs continue rather than overlap. Each invocation times out after 45 minutes; failed/interrupted jobs become blocked, not silently retried forever.
+LaunchAgent runs a watchdog every **600 seconds** while this Mac is awake and the user is logged in. It maintains **three persistent worker slots**; each immediately claims its next ready comparison task after completion. Dependent stages wait for validated receipts. Shared site builds are serialized by a resource lock. It does not promise one finished article every ten minutes. CLI stream failures/45-minute timeouts quarantine the slot as uncertain until its terminal receipt is reconciled, rather than duplicating a potentially live server agent. Blocked jobs are not silently retried forever.
 
 Shared site foundation, manifest expansion and publication work are serialized through dependencies. Parallel competitor jobs own separate competitor directories/files; they must not edit shared navigation, index files, queue or other workers' output. Public browser automation must load its browser skill and use owned tabs. Do not run desktop cleanup or purchase subscriptions for research. No account creation, competitor sign-ins, credentials extraction, emails, pushes or deployments without separate authorization.
 
 Controls and exact installation state are described in `AUTOMATION.md`. Runtime logs/receipts remain local under `.runtime/`. Infrastructure completion is checked separately from finished article count.
+
+## Five requested roundup articles
+
+- [ ] Top10 Mac cleaners in2026: choose by workflow (`top-10-mac-cleaners-2026`).
+- [ ] 7 free Mac cleanup options in2026 (`free-mac-cleaners-2026`).
+- [ ] 8 disk-space analyzers for Mac in2026 (`mac-disk-space-analyzers-2026`).
+- [ ] 7 Mac cleanup tools for developers in2026 (`mac-cleanup-tools-developers-2026`).
+- [ ] 7 open-source Mac maintenance tools in2026 (`open-source-mac-cleaners-2026`).
+
+These are distinct source-backed editorial shortlists, not invented benchmark rankings. Counts must match verified included options. Drafting is highest priority; independent claim/visual/rendered review precedes publication. Publication and deployment are separate states.

@@ -1,0 +1,147 @@
+{
+  "jobId": "research-radix",
+  "checkedAtUtc": "2026-10-21T22:05:21.643776+00:00",
+  "outcome": "passed",
+  "checks": [
+    {
+      "check": "identity-and-scope",
+      "passed": true,
+      "detail": "Distinct relevant Mac product; no alias/old-domain duplicate draft; only research output."
+    },
+    {
+      "check": "claim-ledger",
+      "passed": true,
+      "detail": "27 unique claim IDs with source references, excerpts, timestamps, states and scope."
+    },
+    {
+      "check": "source-hash:discovery",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/discovery-reused.json"
+    },
+    {
+      "check": "source-hash:homepage",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/homepage-reused.json"
+    },
+    {
+      "check": "source-hash:discovery-edge",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/discovery-edge-reused.json"
+    },
+    {
+      "check": "source-hash:repository-head",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/repository-head.json"
+    },
+    {
+      "check": "source-hash:readme",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/README.md"
+    },
+    {
+      "check": "source-hash:license",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/LICENSE.txt"
+    },
+    {
+      "check": "source-hash:release",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/sources/latest-release.json"
+    },
+    {
+      "check": "source-hash:radix-comparison-image",
+      "passed": true,
+      "detail": "docs/content/competitors/radix/assets/radix-scan-comparison-original.png"
+    },
+    {
+      "check": "source-hash:br-capabilities",
+      "passed": true,
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source-hash:br-readme",
+      "passed": true,
+      "detail": "README.md"
+    },
+    {
+      "check": "source-hash:br-release",
+      "passed": true,
+      "detail": "RELEASE_NOTES.md"
+    },
+    {
+      "check": "source-hash:br-config",
+      "passed": true,
+      "detail": "src-tauri/tauri.conf.json"
+    },
+    {
+      "check": "source-hash:br-pricing-config",
+      "passed": true,
+      "detail": "src/billing-config.json"
+    },
+    {
+      "check": "source-hash:br-screenshots",
+      "passed": true,
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "matrix-claim-resolution",
+      "passed": true,
+      "detail": "10 matrix rows resolve to retained claim IDs."
+    },
+    {
+      "check": "visual-integrity:radix-official-scan-comparison",
+      "passed": true,
+      "detail": "PNG 3024x1974, hash and dimensions match; image separately opened/read with image tool."
+    },
+    {
+      "check": "visual-provenance:radix-official-scan-comparison",
+      "passed": true,
+      "detail": "Source, caption, alt, reuse basis and claim mappings present; no published asset claimed."
+    },
+    {
+      "check": "visual-integrity:current-space-browser-preview",
+      "passed": true,
+      "detail": "PNG 2940x3468, hash and dimensions match; image separately opened/read with image tool."
+    },
+    {
+      "check": "visual-provenance:current-space-browser-preview",
+      "passed": true,
+      "detail": "Source, caption, alt, reuse basis and claim mappings present; no published asset claimed."
+    },
+    {
+      "check": "release-conditions",
+      "passed": true,
+      "detail": "Official retained API supports exact version, release state and architecture/OS conditions; not binary execution."
+    },
+    {
+      "check": "image-licence-chain",
+      "passed": true,
+      "detail": "Official README embeds retained image; full MIT copyright/permission/disclaimer retained; distribution requirement recorded."
+    },
+    {
+      "check": "preview-labels",
+      "passed": true,
+      "detail": "Selected October 21 current-source browser preview is explicitly example data, not native measurement."
+    },
+    {
+      "check": "unknowns-not-negative-features",
+      "passed": true,
+      "detail": "Unknown monitoring/adapters/signing are retained as not verified, not No."
+    },
+    {
+      "check": "briefs-and-handoff",
+      "passed": true,
+      "detail": "Separate workflow/comparison intents, affiliation, independent-review and unperformed-check boundaries present."
+    },
+    {
+      "check": "research-readiness",
+      "passed": true,
+      "detail": "Complete research packet does not claim draft or publication approval."
+    }
+  ],
+  "limitations": [
+    "Structural/provenance checks plus documentary and image inspection, not product runtime tests.",
+    "No website content changed; site builds and browser rendering QA not run.",
+    "Independent draft/publication review pending."
+  ]
+}

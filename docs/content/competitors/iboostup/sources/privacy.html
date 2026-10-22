@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Verifying Browser - /privacy</title> 
+<script type="aa96062cccdbbecfd5cd39d7-text/javascript">onload=()=>{x=new XMLHttpRequest;x.open('GET','/ver-load');x.send()}</script>
+
+<style>
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f5f7; 
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", system-ui, sans-serif;
+
+  color: #1d1d1f;
+}
+
+.card {
+  width: 460px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.08),
+    0 2px 10px rgba(0, 0, 0, 0.04);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card img {
+  height:64px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.12),
+    0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.bar{
+height:10px;
+background:rgba(255,255,255,.06);
+border-radius:999px;
+overflow:hidden;
+margin:18px 0;
+}
+
+.fill{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#5b7cff,#00d4ff);
+}
+
+small{
+color:#9fb0d9;
+font-family:monospace;
+}
+</style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DSHHZGNL5" type="aa96062cccdbbecfd5cd39d7-text/javascript"></script>
+		<script type="aa96062cccdbbecfd5cd39d7-text/javascript">
+		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+  		  gtag('js', new Date());
+		  gtag('config', 'G-8DSHHZGNL5');
+		</script>
+</head>
+
+<body>
+
+<div class="card">
+<img src="/img/icon.webp"><br />
+<h2>Verifying the device</h2>
+<p>Please wait while we validate your session.</p>
+
+<div class="bar"><div class="fill" id="f"></div></div>
+
+<tt><small id="s">initializing...</small></tt>
+</div>
+
+<script type="aa96062cccdbbecfd5cd39d7-text/javascript">
+
+const worker = new Worker(URL.createObjectURL(new Blob([`
+onmessage = async (e) => {
+
+const { nonce, ip, ua, gpu, d } = e.data;
+
+const target = "0".repeat(d);
+const enc = new TextEncoder();
+
+const hash = async (x) => {
+const b = await crypto.subtle.digest("SHA-256", enc.encode(x));
+return [...new Uint8Array(b)]
+.map(v => v.toString(16).padStart(2,"0"))
+.join("");
+};
+
+let i = 0;
+
+while(true){
+
+const r = await hash(nonce + ip + ua + gpu + i);
+
+if(i % 300 === 0){
+postMessage({i, r});
+}
+
+if(r.startsWith(target)){
+postMessage({done:true, i, gpu});
+break;
+}
+
+i++;
+}
+
+};
+`], {type:"application/javascript"})));
+
+let gpu = "unknown";
+
+try {
+const c = document.createElement("canvas").getContext("webgl");
+const ext = c.getExtension("WEBGL_debug_renderer_info");
+gpu = c.getParameter(ext.UNMASKED_RENDERER_WEBGL);
+} catch(e){}
+
+worker.postMessage({
+nonce: "7deb4d6fe4a36b93c7cc819dbeb42d9d",
+ip: "186.246.20.54",
+ua: navigator.userAgent,
+gpu,
+d: 3
+});
+
+worker.onmessage = async function (e) {
+
+if(e.data.i !== undefined){
+document.getElementById("s").textContent = e.data.r;
+document.getElementById("f").style.width =
+Math.min(95, Math.log10(e.data.i+1)*18)+"%";
+
+if(e.data.done){
+
+document.cookie =
+"pow=" + e.data.i +
+"; path=/; max-age=3600; SameSite=Lax";
+
+document.cookie =
+"pow_gpu=" + encodeURIComponent(e.data.gpu) +
+"; path=/; max-age=3600; SameSite=Lax";
+
+location.reload();
+
+ }
+}
+
+};
+
+</script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="aa96062cccdbbecfd5cd39d7-|49" defer></script><script>window.__CF$cv$params={r:'a4e3152b4d5f2996',t:'MTc5MjYxNTI4Mg==',u:'01a16032773d7141bedc36c6abf13327',ut:'xLvNYMKQPIsuQjTdSIQzSIgVze_HMjQggqvrhoNYTzg-1792615282-1.2.1.1-jE_.LXpixxF1Ztkz7r6m6oIjL2KRfL8P_HFwckkdn7T4NkjxRrnoZBEKjzsFvSJblG7xYFoMg7MHnG8a1XAl0kKMAuZouNC_qRCeSIokGnM',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"c9ad37779fcf40d2b52080aab49eeee9","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

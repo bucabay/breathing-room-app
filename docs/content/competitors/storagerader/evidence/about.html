@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="en" data-locale="en" data-page-template="about" data-rollout-wave="control"> <head><!-- Theme color: default matches the dark theme; the init script below
+         flips it to the light bg when the resolved theme is light. --><meta name="theme-color" content="#080c14"><!-- Anti-flash theme init: must be first --><script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+        var theme = stored || sys;
+        document.documentElement.setAttribute("data-theme", theme);
+        // Keep the browser UI (address bar) color in sync with the theme.
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f5f8fc" : "#080c14");
+        // Mark JS as active so scroll-reveal can hide content for animation.
+        // Without this class (no JS, or this script failing), all reveal
+        // targets stay at their visible resting state and never ship blank.
+        document.documentElement.classList.add("js");
+      })();
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About StorageRadar | Founder, Principles, And Contact</title><meta name="description" content="Vladimir Chemeris builds StorageRadar solo. Read how the app treats your data, why cleanup stays review-first, and where to reach him."><meta name="keywords" content="who makes StorageRadar, StorageRadar founder, Vladimir Chemeris, about StorageRadar, indie Mac developer, StorageRadar contact"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link rel="canonical" href="https://storageradar.app/about/"><meta name="generator" content="Astro v5.18.0"><!-- Open Graph --><meta property="og:title" content="About StorageRadar | Founder, Principles, And Contact"><meta property="og:description" content="Vladimir Chemeris builds StorageRadar solo. Read how the app treats your data, why cleanup stays review-first, and where to reach him."><meta property="og:type" content="website"><meta property="og:site_name" content="StorageRadar"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="pt_BR"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:url" content="https://storageradar.app/about/"><meta property="og:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta property="og:image:alt" content="About StorageRadar | Founder, Principles, And Contact preview"><link rel="alternate" hreflang="en" href="https://storageradar.app/about/"><link rel="alternate" hreflang="de" href="https://storageradar.app/de/about/"><link rel="alternate" hreflang="es" href="https://storageradar.app/es/about/"><link rel="alternate" hreflang="fr" href="https://storageradar.app/fr/about/"><link rel="alternate" hreflang="ja" href="https://storageradar.app/ja/about/"><link rel="alternate" hreflang="ko" href="https://storageradar.app/ko/about/"><link rel="alternate" hreflang="nl" href="https://storageradar.app/nl/about/"><link rel="alternate" hreflang="pt-BR" href="https://storageradar.app/pt-BR/about/"><link rel="alternate" hreflang="ru" href="https://storageradar.app/ru/about/"><link rel="alternate" hreflang="zh-Hans" href="https://storageradar.app/zh-Hans/about/"><link rel="alternate" hreflang="x-default" href="https://storageradar.app/about/"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="About StorageRadar | Founder, Principles, And Contact"><meta name="twitter:description" content="Vladimir Chemeris builds StorageRadar solo. Read how the app treats your data, why cleanup stays review-first, and where to reach him."><meta name="twitter:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta name="twitter:image:alt" content="About StorageRadar | Founder, Principles, And Contact preview"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="StorageRadar Blog" href="/rss.xml"><!-- Favicons --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="128x128" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-5QK60QWFV0"></script><script>(function(){const analyticsContext = {"locale":"en","page_template":"about","rollout_wave":"control"};
+const analyticsDebugLocalStorageKey = "storageradar:analytics-debug";
+const analyticsDebugQueryParam = "debugAnalytics";
+const canonicalUrl = "https://storageradar.app/about/";
+const gaMeasurementId = "G-5QK60QWFV0";
+const pageTitle = "About StorageRadar | Founder, Principles, And Contact";
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = window.gtag || function () {
+              window.dataLayer.push(arguments);
+            };
+            window.gtag("js", new Date());
+            window.gtag("config", gaMeasurementId, { send_page_view: false });
+
+            window.__storageradarAnalyticsContext = analyticsContext;
+
+            var debugEnabled = false;
+            try {
+              var searchParams = new URLSearchParams(window.location.search);
+              debugEnabled =
+                window.location.hostname === "localhost" ||
+                searchParams.get(analyticsDebugQueryParam) === "1" ||
+                window.localStorage.getItem(analyticsDebugLocalStorageKey) === "1";
+            } catch (_error) {
+              debugEnabled = false;
+            }
+
+            // Canonical origin + path keep page reports clean, while the visit's own query
+            // string stays: GA4 reads utm_* (session source / medium / campaign) and click
+            // IDs from page_location of the landing page_view. Canonical tags are unaffected.
+            var pageLocation = new URL(canonicalUrl);
+            pageLocation.search = window.location.search;
+
+            var pageViewPayload = {
+              locale: analyticsContext.locale,
+              page_template: analyticsContext.page_template,
+              rollout_wave: analyticsContext.rollout_wave,
+              page_location: pageLocation.href,
+              page_path: pageLocation.pathname,
+              page_title: pageTitle,
+            };
+
+            if (debugEnabled) {
+              console.info("[analytics] Applied locale-aware tracking config", analyticsContext);
+              console.debug("[analytics] page_view payload", pageViewPayload);
+            }
+
+            window.gtag("event", "page_view", pageViewPayload);
+          })();</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"StorageRadar","item":"https://storageradar.app/"},{"@type":"ListItem","position":2,"name":"About","item":"https://storageradar.app/about/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"About StorageRadar | Founder, Principles, And Contact","description":"Vladimir Chemeris builds StorageRadar solo. Read how the app treats your data, why cleanup stays review-first, and where to reach him.","url":"https://storageradar.app/about/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"StorageRadar","url":"https://storageradar.app/"},"mainEntity":{"@type":"Person","name":"Vladimir Chemeris","url":"https://storageradar.app/about/","jobTitle":"Founder, StorageRadar","description":"Vladimir Chemeris builds StorageRadar, a privacy-first macOS storage analysis app focused on review-first cleanup, developer storage, and before-and-after visibility.","sameAs":["https://x.com/vladimirchama","https://www.reddit.com/user/Designer_Age7745/"]}}</script><script type="module">const s="storageradar:utm",m=["utm_source","utm_medium","utm_campaign","utm_content"],a={producthunt:{utm_source:"producthunt",utm_campaign:"sr-ph-001"}},l=100,p=new Set(["youtube","youtube.com","youtu.be"]);function i(e){const t={};for(const n of m){const r=e(n);typeof r=="string"&&r.trim()&&(t[n]=r.trim().slice(0,l))}return Object.keys(t).length>0?t:null}function f(e){const t=new URLSearchParams(e);return i(n=>t.get(n))}function _(e){const t=f(e);if(t)return t;const n=new URLSearchParams(e).get("ref")?.trim().toLowerCase(),r=n&&Object.prototype.hasOwnProperty.call(a,n)?a[n]:null;return r?{...r}:null}function h(e){if(!e)return null;try{const t=JSON.parse(e.getItem(s)??"null");return!t||typeof t!="object"?null:i(n=>t[n])}catch{return null}}function A(e,t){const n=h(t);if(n)return n;const r=_(e);if(r&&t)try{t.setItem(s,JSON.stringify(r))}catch{}return r}function u(e){return e.toLowerCase().replace(/[^a-z0-9_-]+/g,"-").replace(/-{2,}/g,"-").replace(/^[-_]+|[-_]+$/g,"")}function g(e){const t=u(e?.utm_campaign??"");if(!t)return null;const n=(e?.utm_source??"").trim().toLowerCase(),r=p.has(n)?"yt":u(n);return(r?`${r}-${t}`:t).slice(0,40).replace(/[-_]+$/,"")||null}function d(e){const t=e.hostname;return(t==="gumroad.com"||t.endsWith(".gumroad.com"))&&e.pathname.startsWith("/l/")}function S(e,t){let n;try{n=new URL(e)}catch{return null}return n.protocol!=="https:"||!(n.hostname==="apps.apple.com"&&n.searchParams.get("ct")==="web")&&!d(n)?null:(n.searchParams.set("ct",t),n.href)}function P(){try{return window.sessionStorage}catch{return null}}function T(){const e=A(window.location.search,P()),t=g(e),n={ct:t??"web"};e?.utm_campaign&&(n.utm_campaign=e.utm_campaign);const r={utm:e,campaign:t,eventParams:n};return window.__storageradarAttribution=r,t&&document.querySelectorAll('a[href*="apps.apple.com"], a[href*="gumroad.com"]').forEach(o=>{const c=S(o.href,t);c&&(o.href=c,new URL(c).hostname==="apps.apple.com"&&(o.dataset.ct=t,o.dataset.ctLocked=""))}),r}T();</script><script src="/youtube-attribution.v1.js?v=b8869519ff10" defer></script><link rel="stylesheet" href="/_astro/_slug_.DhO0ya4m.css"></head> <body> <a href="#main" class="skip-link">Skip to content</a>  <header class="site-nav" id="site-nav"> <div class="container nav-inner"> <a href="/" class="nav-logo"> <svg class="logo-icon-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <nav class="nav-links" aria-label="Main navigation"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> </nav> <a href="/direct/" class="btn btn-outline btn-sm nav-cta nav-cta-direct" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false"> <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <details class="locale-switcher-menu" id="locale-switcher"> <summary class="locale-switcher-trigger"> <span class="locale-switcher-icon"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <line x1="2" y1="12" x2="22" y2="12"></line> <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path> </svg> </span> <span class="locale-switcher-value">English</span> <span class="locale-switcher-current-code">EN</span> <span class="locale-switcher-chevron"> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </span> </summary> <div class="locale-switcher-panel"> <ul class="locale-switcher-list"> <li> <a href="/about/" class="locale-switcher-option is-current" hreflang="en" data-locale="en" aria-current="true"> <span class="locale-option-name">English</span> <span class="locale-option-check"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </span> </a> </li><li> <a href="/de/about/" class="locale-switcher-option" hreflang="de" data-locale="de"> <span class="locale-option-name">Deutsch</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/es/about/" class="locale-switcher-option" hreflang="es" data-locale="es"> <span class="locale-option-name">Español</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/fr/about/" class="locale-switcher-option" hreflang="fr" data-locale="fr"> <span class="locale-option-name">Français</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ja/about/" class="locale-switcher-option" hreflang="ja" data-locale="ja"> <span class="locale-option-name">日本語</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ko/about/" class="locale-switcher-option" hreflang="ko" data-locale="ko"> <span class="locale-option-name">한국어</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/nl/about/" class="locale-switcher-option" hreflang="nl" data-locale="nl"> <span class="locale-option-name">Nederlands</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/pt-BR/about/" class="locale-switcher-option" hreflang="pt-BR" data-locale="pt-BR"> <span class="locale-option-name">Português (BR)</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ru/about/" class="locale-switcher-option" hreflang="ru" data-locale="ru"> <span class="locale-option-name">Русский</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/zh-Hans/about/" class="locale-switcher-option" hreflang="zh-Hans" data-locale="zh-Hans"> <span class="locale-option-name">简体中文</span> <span class="locale-option-check">  </span> </a> </li> </ul> </div> </details> <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle menu" aria-controls="nav-mobile-menu" aria-expanded="false"> <span></span> <span></span> <span></span> </button> </div> <div class="nav-mobile-menu" id="nav-mobile-menu"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> <a href="/direct/" class="btn btn-outline" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <div class="mobile-locale-divider"></div> <div class="mobile-locale-list"> <a href="/about/" class="mobile-locale-item is-current" hreflang="en" data-locale="en" aria-current="true"> <span>English</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </a><a href="/de/about/" class="mobile-locale-item" hreflang="de" data-locale="de"> <span>Deutsch</span>  </a><a href="/es/about/" class="mobile-locale-item" hreflang="es" data-locale="es"> <span>Español</span>  </a><a href="/fr/about/" class="mobile-locale-item" hreflang="fr" data-locale="fr"> <span>Français</span>  </a><a href="/ja/about/" class="mobile-locale-item" hreflang="ja" data-locale="ja"> <span>日本語</span>  </a><a href="/ko/about/" class="mobile-locale-item" hreflang="ko" data-locale="ko"> <span>한국어</span>  </a><a href="/nl/about/" class="mobile-locale-item" hreflang="nl" data-locale="nl"> <span>Nederlands</span>  </a><a href="/pt-BR/about/" class="mobile-locale-item" hreflang="pt-BR" data-locale="pt-BR"> <span>Português (BR)</span>  </a><a href="/ru/about/" class="mobile-locale-item" hreflang="ru" data-locale="ru"> <span>Русский</span>  </a><a href="/zh-Hans/about/" class="mobile-locale-item" hreflang="zh-Hans" data-locale="zh-Hans"> <span>简体中文</span>  </a> </div> </div> </header> <script>
+  document.querySelectorAll('.locale-switcher-option, .mobile-locale-item').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var loc = el.getAttribute('data-locale');
+      if (loc) localStorage.setItem('preferred-locale', loc);
+    });
+  });
+</script> <script type="module">const c=document.documentElement,d=document.querySelector('meta[name="theme-color"]'),i=t=>{d?.setAttribute("content",t==="light"?"#f5f8fc":"#080c14")},s=document.getElementById("theme-toggle"),a=t=>{s?.setAttribute("aria-pressed",t==="light"?"true":"false")};a(c.getAttribute("data-theme")||"dark");s&&s.addEventListener("click",()=>{const e=(c.getAttribute("data-theme")||(window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"))==="dark"?"light":"dark";c.setAttribute("data-theme",e),localStorage.setItem("theme",e),i(e),a(e)});window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",t=>{if(!localStorage.getItem("theme")){const e=t.matches?"dark":"light";c.setAttribute("data-theme",e),i(e),a(e)}});const m=document.getElementById("site-nav");window.addEventListener("scroll",()=>{m?.classList.toggle("scrolled",window.scrollY>40)},{passive:!0});const o=document.getElementById("nav-toggle"),r=document.getElementById("nav-mobile-menu");if(o&&r){const t=()=>{r.classList.remove("open"),o.setAttribute("aria-expanded","false")};o.addEventListener("click",()=>{const e=r.classList.toggle("open");o.setAttribute("aria-expanded",String(e))}),r.querySelectorAll("a").forEach(e=>{e.addEventListener("click",t)})}document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",e=>{const n=t.getAttribute("href");if(!n||n==="#"||!n.startsWith("#"))return;const l=document.querySelector(n);l&&(e.preventDefault(),l.scrollIntoView({behavior:"smooth",block:"start"}))})});</script> <main id="main" class="about-page"> <section class="page-hero"> <div class="container"> <div class="page-hero-inner"> <a href="/" class="back-link"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M19 12H5M12 5l-7 7 7 7"></path> </svg> Back to home </a> <div class="section-tag">About</div> <h1>The person behind StorageRadar</h1> <p class="page-hero-desc">One person designs, builds, and supports StorageRadar. This page says who that is, which rules the app follows, and how to reach him.</p> </div> </div> </section> <section class="about-body"> <div class="container"> <div class="about-layout"> <section class="about-section-block" id="founder"> <div class="section-tag">Founder</div> <h2>Vladimir Chemeris</h2> <p class="about-founder-role">Founder, StorageRadar</p> <p class="about-founder-bio">Vladimir Chemeris builds StorageRadar, a privacy-first macOS storage analysis app focused on review-first cleanup, developer storage, and before-and-after visibility.</p> <ul class="about-fact-list"> <li>He writes the code, ships the updates, and answers support mail himself.</li><li>StorageRadar sells as a one-time purchase on the Mac App Store and as a Direct build with its own license keys.</li><li>The app has been on the Mac App Store since April 2026.</li> </ul> </section> <section class="about-section-block" id="principles"> <div class="section-tag">Principles</div> <h2>Rules the app follows</h2> <p class="about-section-intro">Each rule here is checkable inside the app.</p> <div class="about-principle-list"> <article class="about-principle"> <h3>Review before removal</h3> <p>The app shows exact paths and sizes before each cleanup step, and a dry run previews what would change. You approve each removal.</p> </article><article class="about-principle"> <h3>Local by default</h3> <p>Scans run on your Mac, and storage data stays there. No account, no cloud sync.</p> </article><article class="about-principle"> <h3>One-time purchase</h3> <p>You buy the User or Developer unlock once. There is no subscription.</p> </article><article class="about-principle"> <h3>Developer-aware cleanup</h3> <p>Dev Cleanup groups Xcode, Docker, simulators, and package caches by ecosystem and risk.</p> </article><article class="about-principle"> <h3>Local AI access</h3> <p>A local, read-only MCP endpoint lets AI tools read scan results. It exposes no file contents and grants no write access.</p> </article> </div> </section> <section class="about-section-block" id="contact"> <h2>Contact and profiles</h2> <p class="about-section-intro">Support mail and press questions land in the same inbox, the founder&#39;s.</p> <div class="about-connect-box"> <ul> <li> <a href="https://x.com/vladimirchama" target="_blank" rel="me noreferrer">X (Twitter): @vladimirchama</a> </li> <li> <a href="https://apps.apple.com/us/app/storageradar-disk-space/id6759776887" target="_blank" rel="noreferrer"> Mac App Store listing </a> </li> <li> <a href="mailto:support@storageradar.app">Email: support@storageradar.app</a> </li> </ul> </div> </section> </div> </div> </section> </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div class="footer-brand"> <a href="/" class="nav-logo footer-logo"> <svg class="logo-icon-svg" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <p class="footer-tagline"> Privacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control. </p> </div> <div class="footer-cols"> <div class="footer-col"> <h3>Product</h3> <a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#access">App Store &amp; Direct</a><a href="/direct/">Direct build</a> </div><div class="footer-col"> <h3>Info</h3> <a href="/blog/">Blog</a><a href="/support/">Support</a><a href="/about/">About</a><a href="/compare/">Compare</a><a href="/privacy/">Privacy</a><a href="/#faq">FAQ</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP Docs</a> </div> </div> </div> <div class="footer-bottom"> <p>© 2026 StorageRadar. All rights reserved.</p> <p class="footer-made">Made for Mac</p> </div> </div> </footer> <script>(function(){const APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8";
+const CAPTURE_ROUTES = {"beta":"/beta/","launch":"/launch/"};
+const ANALYTICS_CTA_LOCATIONS = ["hero","pricing","download_section","blog_cta","nav","direct_page","beta_page","launch_page","safe_to_delete"];
+const ANALYTICS_EVENTS = {"ctaClick":"cta_click","formView":"form_view","formSubmitStart":"form_submit_start","formSubmitSuccess":"form_submit_success","formSubmitError":"form_submit_error","quizStart":"quiz_start","quizComplete":"quiz_complete"};
+const ANALYTICS_REQUIRED_PARAMS = ["locale","page_template","rollout_wave"];
+const ANALYTICS_STORE_INTENTS = ["app_store","direct_download","gumroad_core","gumroad_developer","gumroad_upgrade"];
+const ANALYTICS_DEBUG_LOCAL_STORAGE_KEY = "storageradar:analytics-debug";
+const ANALYTICS_DEBUG_QUERY_PARAM = "debugAnalytics";
+const DIRECT_DOWNLOAD_URL = "https://releases.storageradar.app/latest.dmg";
+const DIRECT_PAGE_PATH = "/direct/";
+const GUMROAD_CORE_URL = "https://chamav.gumroad.com/l/storageradar-core";
+const GUMROAD_DEVELOPER_URL = "https://chamav.gumroad.com/l/storageradar-developer";
+const GUMROAD_UPGRADE_URL = "https://chamav.gumroad.com/l/storageradar-upgrade-core-developer";
+
+  const normalizeInternalPath = (pathname) => {
+    if (!pathname || pathname === "/") return "/";
+    const [pathOnly, hash = ""] = pathname.split("#", 2);
+    const normalizedPath = pathOnly.startsWith("/") ? pathOnly : `/${pathOnly}`;
+    if (/\.[a-z0-9]+$/i.test(normalizedPath)) {
+      return `${normalizedPath}${hash ? `#${hash}` : ""}`;
+    }
+    const withTrailingSlash = normalizedPath.endsWith("/")
+      ? normalizedPath
+      : `${normalizedPath}/`;
+    return `${withTrailingSlash}${hash ? `#${hash}` : ""}`;
+  };
+
+  const localizeInternalPath = (pathname, locale) => {
+    if (
+      !pathname ||
+      pathname.startsWith("http://") ||
+      pathname.startsWith("https://") ||
+      pathname.startsWith("mailto:") ||
+      pathname.startsWith("tel:") ||
+      pathname.startsWith("#")
+    ) {
+      return pathname;
+    }
+
+    const normalizedPath = normalizeInternalPath(pathname);
+    if (!locale || locale === "en") {
+      return normalizedPath;
+    }
+
+    if (normalizedPath === "/") {
+      return `/${locale}/`;
+    }
+
+    return `/${locale}${normalizedPath}`;
+  };
+
+  const CTA_URLS = {
+    beta: {
+      url: CAPTURE_ROUTES.beta,
+      intent: "beta",
+      external: false,
+    },
+    launch: {
+      url: CAPTURE_ROUTES.launch,
+      intent: "launch",
+      external: false,
+    },
+    appStore: {
+      url: APP_STORE_URL,
+      intent: "app_store",
+      external: true,
+    },
+    directInfo: {
+      url: DIRECT_PAGE_PATH,
+      intent: "direct_info",
+      external: false,
+    },
+    directDownload: {
+      url: DIRECT_DOWNLOAD_URL,
+      intent: "direct_download",
+      external: true,
+    },
+    pricingInfo: {
+      url: "#pricing",
+      intent: "pricing_info",
+      external: false,
+    },
+    gumroadCore: {
+      url: GUMROAD_CORE_URL,
+      intent: "gumroad_core",
+      external: true,
+    },
+    gumroadDeveloper: {
+      url: GUMROAD_DEVELOPER_URL,
+      intent: "gumroad_developer",
+      external: true,
+    },
+    gumroadUpgrade: {
+      url: GUMROAD_UPGRADE_URL,
+      intent: "gumroad_upgrade",
+      external: true,
+    },
+  };
+  const ALLOWED_LOCATIONS = new Set(ANALYTICS_CTA_LOCATIONS);
+  const REQUIRED_CONTEXT_PARAMS = new Set(ANALYTICS_REQUIRED_PARAMS);
+  const STORE_INTENTS = new Set(ANALYTICS_STORE_INTENTS);
+
+  // Campaign of the visit (src/lib/attribution.ts, set before any click): `ct` and
+  // utm_campaign. An App Store click reports the token its link actually carries.
+  const getStoreCampaignParams = (link, intent) => {
+    const params = { ...(window.__storageradarAttribution?.eventParams ?? {}) };
+    if (intent === "app_store") {
+      try {
+        const ct = new URL(link.href).searchParams.get("ct");
+        if (ct) params.ct = ct;
+      } catch (_error) {
+        // Keep the session token.
+      }
+    }
+    return params;
+  };
+
+  const isDebugEnabled = () => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      return (
+        window.location.hostname === "localhost" ||
+        searchParams.get(ANALYTICS_DEBUG_QUERY_PARAM) === "1" ||
+        window.localStorage.getItem(ANALYTICS_DEBUG_LOCAL_STORAGE_KEY) === "1"
+      );
+    } catch (_error) {
+      return false;
+    }
+  };
+
+  const getSharedAnalyticsContext = () => {
+    const sharedContext = window.__storageradarAnalyticsContext ?? {};
+    const root = document.documentElement;
+    return {
+      locale: sharedContext.locale ?? root.dataset.locale ?? "en",
+      page_template:
+        sharedContext.page_template ?? root.dataset.pageTemplate ?? "generic",
+      rollout_wave:
+        sharedContext.rollout_wave ?? root.dataset.rolloutWave ?? "control",
+    };
+  };
+
+  const track = (eventName, params) => {
+    const payload = {
+      ...getSharedAnalyticsContext(),
+      ...params,
+    };
+
+    if (isDebugEnabled()) {
+      console.debug("[analytics] CTA payload", payload);
+    }
+
+    for (const requiredParam of REQUIRED_CONTEXT_PARAMS) {
+      if (!payload[requiredParam]) {
+        if (isDebugEnabled()) {
+          console.error(`[analytics] Missing required CTA param: ${requiredParam}`);
+        }
+        return;
+      }
+    }
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, payload);
+    }
+  };
+
+  document.querySelectorAll("[data-cta]").forEach((btn) => {
+    if (!(btn instanceof HTMLAnchorElement)) return;
+    const ctaType = btn.dataset.cta;
+    const config = ctaType ? CTA_URLS[ctaType] : null;
+    if (config?.url) {
+      const locale = getSharedAnalyticsContext().locale;
+      const targetUrl = config.external ? config.url : localizeInternalPath(config.url, locale);
+      btn.href = targetUrl;
+      if (config.external) {
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
+      btn.addEventListener("click", () => {
+        const location = ALLOWED_LOCATIONS.has(btn.dataset.ctaLocation)
+          ? btn.dataset.ctaLocation
+          : "unknown";
+        const optionalParams = {};
+        if (btn.dataset.ctaTier) {
+          optionalParams.tier = btn.dataset.ctaTier;
+        }
+        if (btn.dataset.ctaSection) {
+          optionalParams.section = btn.dataset.ctaSection;
+        }
+        if (btn.dataset.ctaCardPosition) {
+          const cardPosition = Number(btn.dataset.ctaCardPosition);
+          optionalParams.card_position = Number.isFinite(cardPosition)
+            ? cardPosition
+            : btn.dataset.ctaCardPosition;
+        }
+        track(ANALYTICS_EVENTS.ctaClick, {
+          intent: config.intent,
+          location,
+          // External links report their live href, which carries the campaign token.
+          target: config.external ? btn.href : targetUrl,
+          ...optionalParams,
+          ...(STORE_INTENTS.has(config.intent) ? getStoreCampaignParams(btn, config.intent) : {}),
+        });
+      });
+    } else {
+      if (btn.getAttribute("href") === "#") {
+        btn.addEventListener("click", (e) => e.preventDefault());
+      }
+    }
+  });
+})();</script>  <script type="module">console.log("%c StorageRadar ","background:#06b6d4;color:#080c14;font-weight:800;font-size:14px;padding:4px 10px;border-radius:4px;font-family:monospace",`
+Built with Astro 5. Offline-first, no account, no cloud sync.
+Curious about the MCP integration? storageradar.app/mcp`);const a=document.querySelectorAll("[data-animate], [data-animate-wipe]");if(a.length){const e=new IntersectionObserver(t=>{t.forEach(o=>{o.isIntersecting&&(o.target.classList.add("visible"),e.unobserve(o.target))})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});a.forEach(t=>e.observe(t))}</script> <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"a5de247158bf4ebba310307900a1026c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body> </html>

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mackeeper",
+  "productId": "mackeeper",
+  "status": "blocked",
+  "checkedOn": "2026-10-22",
+  "timeNote": "Session date is October 22; host UTC evidence/check clock reported 2026-10-21T21:38:00.630168+00:00 after the four new WebFetch calls. Exact per-call retrieval seconds were not exposed. New source records use this shared post-retrieval recording time, not an invented fetch timestamp.",
+  "reviewer": "scheduled research-mackeeper worker; no independent publication review",
+  "ownership": "Only docs/content/competitors/mackeeper/ and the required receipt; no website edits",
+  "identity": {
+    "officialName": "MacKeeper",
+    "homepage": "https://mackeeper.com/",
+    "vendor": "Clario Tech FZCO",
+    "canonicalOwnerId": "mackeeper",
+    "aliases": [],
+    "aliasDecision": "Retain one MacKeeper identity. No verified alias requiring a separate-row skip or merge was found in its baseline record. PowerMyMac is an unresolved cross-vendor group in shared verification, not an evidenced alias of MacKeeper; do not merge or draft it in this job.",
+    "aliasSkipDecision": "not-applicable-no-verified-alias",
+    "productSkipDecision": "do-not-skip-relevant-live-product; drafting blocked by evidence/visual gates",
+    "repoUrl": null,
+    "repoStatus": "No official public product-source repository established in checked sources. Proprietary licensing is verified; this is not proof no repository exists.",
+    "classification": "direct-storage-cleanup-overlap; adjacent-security-and-privacy-suite",
+    "classificationBasis": "Official Mac maintenance and cleanup offering overlaps the Mac storage job; antivirus/VPN/breach monitoring are a broader suite, not established Breathing Room replacements.",
+    "platformIntent": "Mac-to-Mac storage decision; no invented Windows support. EULA mobile-platform language is not evidence of desktop feature parity."
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/mackeeper/about/",
+    "retrievedAtUtc": "2026-10-21T19:09:05.937Z",
+    "observedOfficialDestination": "https://mackeeper.com/?cmpid=627b660e1b910300011dd553&pubid=629f84374714f70001b2368b",
+    "canonicalDestination": "https://mackeeper.com/",
+    "snapshotPath": "docs/content/.runtime/verification-1/mackeeper-directory.json",
+    "sha256": "60bda585224e96f6dbee0e985ef16677f8e71b28785e38ea94230c0668c406be",
+    "method": "Reused retained live rendered listing; no new directory fetch",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=2", "retrievedAtUtc": "2026-10-21T18:36:23.710Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=3", "retrievedAtUtc": "2026-10-21T18:37:11.107Z"}
+    ],
+    "edgeRegister": "docs/content/competitors.json#mackeeper",
+    "limitation": "Discovery relationships, ratings and directory feature lists are not product capability verification."
+  },
+  "reuse": {
+    "baseline": "docs/content/verification/batch-1.json#mackeeper",
+    "baselineSha256AtRead": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "reusedFields": ["officialName", "officialUrl", "coreFunction", "platforms", "pricing", "availability", "discovery"],
+    "newFetchReasons": ["Missing proprietary licence/activation and renewal conditions", "Missing cleanup feature and official app-image provenance", "Version-specific platform detail from linked full requirements", "Image reuse terms"],
+    "notRefetched": ["homepage", "AlternativeTo discovery", "Breathing Room public offer/release already checked in capabilities.md"],
+    "newSourceRetention": "Exact excerpts and locators below; full new HTTP bodies were not saved. snapshotPath/hash are null where unavailable, not fabricated."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "MacKeeper / Clario", "title": "MacKeeper homepage retained official snapshot",
+      "url": "https://mackeeper.com/", "finalUrl": "https://mackeeper.com/",
+      "retrievedAtUtc": "2026-10-21T19:09:39.498931+00:00", "publishedOrUpdatedOn": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/mackeeper-official.json",
+      "sha256": "49adaa2c2d8e67a7a2c5fa70ef5c62869759f021821f1755e18ccf04d06b3fc8",
+      "scope": "Public Mac offer; footer identifies 7.8, Sep 2026",
+      "excerpts": ["MacKeeper is an all-in-one Mac maintenance app which includes cleaning, security, optimization and privacy features.", "macOS 10.15 or later, 100 MB of space", "7.8, Sep, 2026", "Starting at $10.95/month", "Clario Tech FZCO", "Control key protection and performance tools from MacKeeper’s Dashboard in the menu bar."]
+    },
+    {
+      "id": "S2", "publisher": "MacKeeper / Clario", "title": "MacKeeper End User License Agreement",
+      "url": "https://mackeeper.com/eula/", "finalUrl": "https://mackeeper.com/eula/",
+      "retrievedAtUtc": null, "recordedAfterRetrievalAtUtc": "2026-10-21T21:38:00.630168+00:00", "checkedOn": "2026-10-22", "publishedOrUpdatedOn": "2026-10-14",
+      "snapshotPath": null, "sha256": null, "scope": "Proprietary software; desktop/mobile distinctions; direct recurring subscriptions",
+      "excerpts": [
+        {"locator": "1 INTRODUCTION", "text": "MacKeeper Software (the “Software”) provided by Clario Tech FZCO"},
+        {"locator": "2.1 Definition", "text": "Company's proprietary software applications for the macOS operating system"},
+        {"locator": "2.3 Functionality / Safe Cleanup", "text": "Removes junk files, logs, caches, mail attachments, and localization files; provides timely reminders for periodic cleanups."},
+        {"locator": "2.3 Functionality", "text": "Note: An active and stable Internet connection is required for certain features to function properly."},
+        {"locator": "2.3 Platform availability", "text": "Not all features are available on every platform."},
+        {"locator": "2.5 VPN", "text": "Each user account has a monthly VPN data limit of 500 GB"},
+        {"locator": "3.1 License Scope", "text": "solely for your personal, non-commercial purposes"},
+        {"locator": "3.1 License Scope", "text": "You may evaluate the Software with a one-time free fix per feature (excluding VPN); continued use requires a paid license."},
+        {"locator": "3.2 Online Activation", "text": "Activation requires an internet connection and the submission of personal information"},
+        {"locator": "4.1 Intellectual Property", "text": "All rights not expressly granted to you under this Agreement are reserved by the Company."},
+        {"locator": "5.1 Subscription and Renewal", "text": "Subscriptions are billed in advance on a recurring basis (monthly, annually, or as otherwise indicated) and will automatically renew at the end of each billing period unless cancelled prior to renewal."},
+        {"locator": "5.2 Promotional Discounts", "text": "Discounts may apply only to the initial subscription term unless explicitly stated otherwise and will not automatically carry over to renewals."},
+        {"locator": "14 Termination", "text": "Uninstalling the Software or deleting the Mobile App does not cancel your Subscription or stop recurring payments."}
+      ]
+    },
+    {
+      "id": "S3", "publisher": "MacKeeper / Clario", "title": "Mac cleaner",
+      "url": "https://mackeeper.com/cleaning/", "finalUrl": "https://mackeeper.com/cleaning/",
+      "retrievedAtUtc": null, "recordedAfterRetrievalAtUtc": "2026-10-21T21:38:00.630168+00:00", "checkedOn": "2026-10-22", "publishedOrUpdatedOn": null,
+      "snapshotPath": null, "sha256": null, "scope": "Mac marketing page; 7.8 footer, image version unknown",
+      "excerpts": [
+        {"locator": "Explore our Mac cleaning software / Safe Cleanup", "text": "Delete logs, caches, mail attachments, and localization languages."},
+        {"locator": "Safe Cleanup", "text": "Receive timely reminders when it’s time to clean up again."},
+        {"locator": "Duplicates Finder", "text": "Go further and remove similar-looking photos, only keeping the best shots."},
+        {"locator": "Smart Uninstaller", "text": "Easily uninstall apps you don’t use and their digital leftovers."},
+        {"locator": "footer requirements/version", "text": "System Requirements: macOS 10.15 or later, 100 MB of space"},
+        {"locator": "footer version", "text": "Latest Software Version: 7.8, Sep, 2026"},
+        {"locator": "Safe Cleanup image", "text": "Mac cleaner interface shows MacKeeper Safe cleanup feature", "assetUrl": "https://static-cdn.mackeeper.com/mk-site/images/cleaning/cleaner-one-v2.png"}
+      ],
+      "excludedClaims": "Do not repeat vendor average 7.5GB, faster/safer cleanup, detection-rate or maximum-speed claims as our measurements. No Apple future-version marketing list copied as independently verified compatibility."
+    },
+    {
+      "id": "S4", "publisher": "MacKeeper Help Center", "title": "System requirements",
+      "url": "https://mackeeper.com/help/mackeeper-system-requirements/", "finalUrl": "https://mackeeper.com/help/mackeeper-system-requirements/",
+      "retrievedAtUtc": null, "recordedAfterRetrievalAtUtc": "2026-10-21T21:38:00.630168+00:00", "checkedOn": "2026-10-22", "publishedOrUpdatedOn": null,
+      "snapshotPath": null, "sha256": null, "scope": "Explicitly MacKeeper 5/6, not verified for 7.8",
+      "excerpts": ["MacKeeper 5 for MacOS 10.11-10.12", "MacKeeper 6 for MacOS 10.13+", "64-bit Intel-based processor, Apple M1, or newer", "2 gigabytes (GB)", "113 megabytes (MB)"]
+    },
+    {
+      "id": "S5", "publisher": "MacKeeper / Clario", "title": "Terms and Conditions",
+      "url": "https://mackeeper.com/terms-conditions/", "finalUrl": "https://mackeeper.com/terms-conditions/",
+      "retrievedAtUtc": null, "recordedAfterRetrievalAtUtc": "2026-10-21T21:38:00.630168+00:00", "checkedOn": "2026-10-22", "publishedOrUpdatedOn": "2021-02-26",
+      "snapshotPath": null, "sha256": null, "scope": "Website and account terms, not image reuse permission",
+      "excerpts": [
+        {"locator": "USER CONDUCT", "text": "copying, distributing, or disclosing any part of the MacKeeper Website in any medium, including without limitation by any automated or non-automated \"scraping\""},
+        {"locator": "USER CONDUCT", "text": "using any automated system, including without limitation \"robots,\" \"spiders,\" \"offline readers,\" etc., to access the MacKeeper Website"},
+        {"locator": "COPYRIGHT AND RESTRICTIONS", "text": "All rights that are not specifically granted by Clario are reserved by Clario."}
+      ],
+      "handling": "No competitor image downloaded. No further vendor crawling or browser workaround undertaken after reading these terms. Permission or explicitly approved alternative reuse basis required; no permission request sent."
+    },
+    {
+      "id": "BR1", "publisher": "Breathing Room project", "title": "Capabilities evidence register and current local cross-check",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": "https://breathing-room.chatic.ai/",
+      "retrievedAtUtc": null, "checkedOn": "2026-10-22", "publishedOrUpdatedOn": null,
+      "snapshotPath": "docs/content/capabilities.md", "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reused October 21 public/source verification; README 44-158, RELEASE_NOTES 1-48, native config and billing config independently reread this job. Not fresh public retrieval or binary testing.",
+      "excerpts": ["Source implementation is not proof that every feature works in the distributed installer.", "Hosted AI assistance requires internet access and authentication", "AI Care is advertised at **$5 USD/month or $50 USD/year**"],
+      "localEvidence": ["README.md:59-72,76-100,102-128,141-157", "RELEASE_NOTES.md:1-46", "src-tauri/tauri.conf.json:3-5,49-51", "src/billing-config.json:5-7", "docs/content/capabilities.md:24-42,58-86"],
+      "publicReleaseUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"MacKeeper is Clario Tech FZCO's proprietary Mac maintenance suite.","sources":["S1","S2"],"support":"S1 identity/core function; S2 sections 1 and 2.1","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"Mac desktop, not a hands-on review","location":"identity and comparison lead"},
+    {"id":"C2","wording":"The official marketing footer identifies 7.8, September 2026, with macOS 10.15+ and 100 MB of space.","sources":["S1","S3"],"support":"version and system requirements footer excerpts","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"Attributed marketing statement only; exact install requirements disputed by Help; no binary verified","location":"version/platform note"},
+    {"id":"C3","wording":"The Help requirements list MacKeeper 5 for 10.11–10.12, 6 for 10.13+, 2 GB RAM and 113 MB, and Intel or Apple M1/newer.","sources":["S4"],"support":"System requirements OS/CPU/RAM/disk passages","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"Version-specific older documentation, not proof for 7.8","location":"requirements conflict note"},
+    {"id":"C4","wording":"Official marketing advertises pricing starting at $10.95/month.","sources":["S1"],"support":"Starting at $10.95/month","checkedOn":"2026-10-22","evidenceClass":"documented-vendor-reused-current","state":"verified","scope":"Starting offer only; currency code, exact bill, number of Macs, taxes, introductory duration and renewal price not verified. Do not annualize or rank as cheaper.","location":"pricing matrix"},
+    {"id":"C5","wording":"The EULA allows a one-time free fix per feature excluding VPN; continued use requires a paid licence, and subscriptions renew unless cancelled.","sources":["S2"],"support":"3.1, 5.1 and 5.2 excerpts","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"Direct offer terms; promotional and store purchase conditions can differ; no entitlement tested","location":"pricing caveats"},
+    {"id":"C6","wording":"Safe Cleanup is documented for logs, caches, mail attachments and localization files, with periodic reminders.","sources":["S2","S3"],"support":"S2 2.3 Safe Cleanup and S3 Safe Cleanup excerpts","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"No measured recovery, risk-free assertion or automatic recurring-deletion inference","location":"workflow categories"},
+    {"id":"C7","wording":"MacKeeper advertises duplicate/similar-photo finding and app uninstalling with leftovers.","sources":["S3"],"support":"Duplicates Finder and Smart Uninstaller excerpts","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"No accuracy test or completeness guarantee","location":"competitor strengths"},
+    {"id":"C8","wording":"Some MacKeeper features require internet; licence activation requires internet and personal information.","sources":["S2"],"support":"2.3 and 3.2 excerpts","checkedOn":"2026-10-22","evidenceClass":"documented-vendor","state":"verified","scope":"Not an audited data-flow account; do not call entire suite offline","location":"local/hosted matrix"},
+    {"id":"C9","wording":"Detailed MacKeeper per-file approvals, exclusions, removal/Trash/recovery semantics and unattended cleanup rules are not verified.","sources":["S2","S3"],"support":"Checked category descriptions do not establish these details","checkedOn":"2026-10-22","evidenceClass":"research-limit","state":"not-verified","scope":"No negative feature claim","location":"approval matrix"},
+    {"id":"C10","wording":"MacKeeper's helper grouping, recurring storage-growth attribution and package-manager-specific cache cleanup are not verified.","sources":["S1","S2","S3"],"support":"Checked broad suite/category descriptions do not establish these capabilities; reminders are not growth attribution","checkedOn":"2026-10-22","evidenceClass":"research-limit","state":"not-verified","scope":"Do not publish No cells","location":"comparison matrix"},
+    {"id":"C11","wording":"Breathing Room 0.1.0-preview.1 is a free macOS 13+ preview with Python 3.10+ required for inventory/legacy scripts, Apple Development signed but not Developer ID signed or notarized.","sources":["BR1"],"support":"RELEASE_NOTES 1-10,32-46; README 59-72; native config 4,50","checkedOn":"2026-10-22","evidenceClass":"local-source-and-reused-public-disclosure","state":"verified","scope":"Release disclosure, not fresh signature/runtime testing; physical Intel and clean-machine validation remain unverified","location":"Breathing Room caveats"},
+    {"id":"C12","wording":"Breathing Room has documented storage views, grouped app/helpers, reviewable cleanup and saved-approval daily care; hosted agent requests require authentication/internet, and daily care requires the app running.","sources":["BR1"],"support":"README 76-128 and capabilities matrix/approval exception","checkedOn":"2026-10-22","evidenceClass":"source-documentation","state":"verified","scope":"No distributed-binary parity certification; optional verified Ruff automatic mode must qualify blanket approval wording; sampled I/O not forensic attribution","location":"comparison and trade-offs"},
+    {"id":"C13","wording":"Breathing Room's free local tools and advertised optional AI Care at $5 USD/month or $50 USD/year are distinct offers.","sources":["BR1"],"support":"README 141-150, billing config currency/monthlyAmount/annualAmount; reused public register","checkedOn":"2026-10-22","evidenceClass":"documented-offer","state":"verified","scope":"No separate app purchase; no unlimited-AI or entitlement test; renewal/tax details in capabilities register; no comparative price winner","location":"pricing matrix"},
+    {"id":"C14","wording":"An official Safe Cleanup app-interface image is linked on MacKeeper's cleaning page, but reuse permission is not established.","sources":["S3","S5","S2"],"support":"S3 image URL/alt; S5 User Conduct/Copyright; S2 4.1 rights reserved","checkedOn":"2026-10-22","evidenceClass":"official-asset-reference-and-rights-review","state":"verified","scope":"Link-only, not downloaded or visually approved; does not pass on-page image gate","location":"visual manifest"},
+    {"id":"C15","wording":"Exact current MacKeeper 7.8 installation requirements remain unresolved across the marketing and linked Help sources.","sources":["S1","S3","S4"],"support":"100 MB/10.15+ and 7.8 marketing versus 113 MB and 5/6-version Help text","checkedOn":"2026-10-22","evidenceClass":"source-conflict","state":"not-verified","scope":"May describe both attributed statements but do not silently assign older requirements to 7.8","location":"platform gate"}
+  ],
+  "matrix": [
+    {"dimension":"macOS/version","mackeeperClaims":["C2","C3","C15"],"breathingRoomClaims":["C11"],"note":"Exact MacKeeper 7.8 requirements unresolved"},
+    {"dimension":"licence","mackeeperClaims":["C1","C5"],"breathingRoomClaims":["C11"],"note":"BR Apache-2.0 source in BR1 release notes; hosted service not included"},
+    {"dimension":"local/hosted","mackeeperClaims":["C8"],"breathingRoomClaims":["C12"],"note":"Neither whole suite described as all-offline"},
+    {"dimension":"scan/cleanup model","mackeeperClaims":["C6","C7"],"breathingRoomClaims":["C12"],"note":"Documented workflows, no measured results"},
+    {"dimension":"approval/removal semantics","mackeeperClaims":["C9"],"breathingRoomClaims":["C12"],"note":"No safety winner; retain BR Ruff automatic-mode exception"},
+    {"dimension":"process/helper grouping","mackeeperClaims":["C10"],"breathingRoomClaims":["C12"],"note":"MacKeeper not verified, not No"},
+    {"dimension":"recurring storage growth","mackeeperClaims":["C10","C6"],"breathingRoomClaims":["C12"],"note":"Cleanup reminders do not prove write attribution or growth history"},
+    {"dimension":"developer caches","mackeeperClaims":["C10"],"breathingRoomClaims":["C12"],"note":"BR1 source register names npm/uv/pip/pnpm/Go/Bun/Yarn; installed tool/native validation required, no universal compatibility claim"},
+    {"dimension":"pricing","mackeeperClaims":["C4","C5"],"breathingRoomClaims":["C13"],"note":"Not an equivalent-plan savings calculation"},
+    {"dimension":"runtime/install caveats","mackeeperClaims":["C3","C8","C15"],"breathingRoomClaims":["C11","C12"],"note":"MacKeeper exact runtime beyond documented activation/older requirements not verified; no installs performed"}
+  ],
+  "visuals": [
+    {
+      "id":"mackeeper-safe-cleanup-official-link", "productId":"mackeeper", "view":"Safe Cleanup", "kind":"official-asset",
+      "sourcePageUrl":"https://mackeeper.com/cleaning/", "assetUrl":"https://static-cdn.mackeeper.com/mk-site/images/cleaning/cleaner-one-v2.png",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"vendor-illustration", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null, "widthPx":null, "heightPx":null, "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"No explicit redistribution permission established; rights reserved and website copying restrictions in S5. Public accessibility is not permission.","evidenceUrlOrPath":"https://mackeeper.com/terms-conditions/","credit":"MacKeeper / Clario Tech FZCO"},
+      "caption":"MacKeeper's official Safe Cleanup interface illustration. Linked from the vendor; version, capture date and results are not independently verified.",
+      "alt":"Official MacKeeper Safe Cleanup interface illustration, linked rather than reproduced.",
+      "supportedClaimIds":["C6","C14"],
+      "limitations":["Only source-page image reference read; asset bytes not downloaded or opened", "Not hands-on testing or a verified current 7.8 screenshot", "Required on-page image gate remains blocked"],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null, "capturedBy":"screenshot-library job; reused, not captured by this worker",
+      "productVersion":null, "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null, "dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-example-data","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party browser capture per screenshots.json; third-party marks not blanket licensed; per-page review pending","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview showing example storage categories and a visible example-data notice.",
+      "supportedClaimIds":["C12"],
+      "limitations":["Current-source status inherited from screenshot-library snapshot, not newest binary certification", "Retain Interactive preview · example data and browser-preview banner", "Floating assistant overlaps chart; choose readable context without removing disclosures", "No invented capture, measurement or saving"],
+      "review":{"status":"opened-and-read-this-job; independent target-page review pending","reviewer":"research-mackeeper worker","reviewedOn":"2026-10-22"}
+    }
+  ],
+  "briefs": {
+    "article": {
+      "track":"search-reference-workflow", "slug":"separate-mac-cleanup-from-security-maintenance", "title":"Separate Mac storage cleanup from security maintenance",
+      "primaryIntent":"Help a MacKeeper user distinguish cache/log cleanup, app removal and duplicate/photo review from antivirus/VPN upkeep before replacing a suite.",
+      "leadDirection":"A storage-maintenance replacement is not automatically a replacement for MacKeeper's security and privacy services. Choose the job first, then review what each change removes.",
+      "outline":["Top visual: permitted MacKeeper Safe Cleanup image once rights cleared", "List the job: disk categories versus security/privacy services", "Review caches, logs, attachments and languages separately; size is not deletion consent", "Separate duplicate/photo review and app uninstalling from generic cache removal", "Inspect ownership, permissions and rebuild/download cost; no claim of MacKeeper per-file controls until documented", "Choose a storage investigation preview or retain broader suite functions; disclose Breathing Room, which we build", "Record outcomes without equating Trash moves and available-space change"],
+      "distinctness":"Not a renamed feature matrix or generic MacKeeper alternative list; a suite-unbundling and deletion-decision workflow, not a tested click-by-click tutorial.",
+      "interactionHandoff":"Static decision checklist: task type, desired outcome, originals/backups, reversibility, tool needed. Never scan or delete files from article. Include Not verified branch for unsupported controls.",
+      "linksPlanned":["/comparisons/", "/comparisons/mackeeper/"],
+      "toolLinkPolicy":"Link a relevant local cache/rebuild checklist only if the responsible tool job confirms its route and tests; do not invent a live tool.",
+      "status":"brief-only-blocked-no-draft"
+    },
+    "comparison": {
+      "slug":"mackeeper", "title":"Breathing Room vs MacKeeper: storage investigation or a maintenance suite?",
+      "primaryIntent":"Concise Mac storage decision with honest broader-suite boundary.",
+      "structure":["Answer and affiliation", "Direct storage overlap / adjacent security scope", "Claim-linked matrix from this packet", "Pricing and release caveats", "Choose-by-job conclusion and workflow article link"],
+      "advantages":{
+        "mackeeper":["Documented duplicate/similar-photo and leftover-app removal", "Broader documented security/privacy suite; do not imply BR replaces antivirus or VPN", "Vendor-documented commercial suite rather than our unvalidated production-readiness claim"],
+        "breathingRoom":["Source-documented storage ownership views and app/helper CPU/memory grouping", "Reviewable cleanup and exact saved-approval daily-care architecture, with Ruff exception", "Free local tools and Apache-2.0 desktop source; optional hosted care distinct"]
+      },
+      "tradeOffs":["MacKeeper exact current install requirements conflict across official pages", "MacKeeper starting-price marketing does not establish total or renewal bill", "BR is an unnotarized preview requiring Python for inventory; Intel/clean-machine and binary parity not certified", "BR hosted assistance sends relevant tool context and requires sign-in/internet; not entirely offline", "No benchmark, safety, savings, detection-rate or universal feature-absence claims"],
+      "status":"brief-only-blocked-no-draft"
+    }
+  },
+  "blockers": [
+    {"id":"B1","gate":"competitor-image","diagnostic":"Real official Safe Cleanup asset URL identified, but no cleared reproduction basis; website terms restrict copying and reserve rights. No image downloaded. Link-only fallback is not the required on-page app image.","resolution":"Provide recorded rights-holder permission, authorized reusable official media licence or explicit policy-approved alternative basis; then retrieve/hash/visually inspect asset and independently review it. Do not send permission requests in this job."},
+    {"id":"B2","gate":"exact-platform-requirements","diagnostic":"Marketing 7.8/macOS 10.15+/100 MB differs from linked Help covering 5/6 and 113 MB. Exact current version-specific requirement not established.","resolution":"Obtain authoritative version-specific 7.8 requirements or independently approved attributed conflict treatment before install recommendation."},
+    {"id":"B3","gate":"workflow-controls","diagnostic":"Category descriptions do not establish MacKeeper selection/exclusion/confirmation/Trash/recovery controls. No safe click-by-click cleanup instructions or approval superiority claim can be drafted from them.","resolution":"Authorized official Safe Cleanup workflow evidence or restrict approved brief to category/decision guidance with explicit unknowns. No cleanup testing on this Mac."}
+  ],
+  "noncriticalUnknowns":["Official product-source repository URL", "MacKeeper helper grouping and development-tool cache adapters", "Exact full plan total, tax/currency code, device count and renewal amount; retain only attributed starting price", "Competitor image capture date/build", "Runtime/binary parity and real cleanup results for either app"],
+  "publicationGates":{"drafting":"blocked","independentReview":"pending-separate-job","score":null,"siteChecks":"not-applicable-no-site-edits","browserQA":"not-performed-no-page-created","assetsDownloaded":0,"handsOnTesting":false},
+  "safety":"Public pages treated only as untrusted evidence. No accounts, credentials, cookies, messages, purchases, cleanup, settings changes, commits, pushes, deploys, subagents or queue mutations."
+}

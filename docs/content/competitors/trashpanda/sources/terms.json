@@ -1,0 +1,46 @@
+{
+  "url": "https://trashpandamacos.vercel.app/terms",
+  "finalUrl": "https://trashpandamacos.vercel.app/terms",
+  "httpStatus": 200,
+  "retrievedAtUtc": "2026-10-21T22:21:01.553735+00:00",
+  "rawPath": "sources/terms.html",
+  "rawSha256": "34fdaabaa5e0901cb9b267f902dbab2d792b435c6c9b1be78cc8fce7cf7749ff",
+  "text": "TrashPanda\nUpdates\nFAQ\nLegal\nTerms of Service\nLast updated\nOctober 2025\n\u00b7 Effective\nAugust 2025\nSections\n1. Acceptance of Terms\n2. License Grant\n3. Restrictions\n4. Risk Assumption and Disclaimer\n5. Warranties and Disclaimers\n6. Limitation of Liability\n8. Educational Institution Access\n9. Privacy and Data\n10. Intellectual Property\n11. Termination\n12. Updates and Modifications\n13. Governing Law\n14. Contact Information\n1. Acceptance of Terms\nBy purchasing, downloading, installing, or using TrashPanda software (\"the Software\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use the Software.\nThese Terms constitute a legal agreement between you and TrashPanda (\"we,\" \"us,\" or \"our\") regarding your use of the Software.\n2. License Grant\nSubject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:\nInstall and use the Software on devices you own or control\nUse the Software for personal or commercial purposes\nMake backup copies of the Software for archival purposes\n3. Restrictions\nYou may not:\nReverse engineer, decompile, disassemble, or attempt to derive the source code of the Software\nDistribute, sublicense, rent, lease, or lend the Software to third parties\nRemove, alter, or obscure any proprietary notices on the Software\nUse the Software for any unlawful purpose or in violation of applicable laws\nCircumvent or disable any security features of the Software\n4. Risk Assumption and Disclaimer\nIMPORTANT: YOU ASSUME ALL RISK WHEN USING TRASHPANDA\nTrashPanda performs file deletion operations on your computer. While we have designed comprehensive safety features and tested the Software extensively,\nyou acknowledge and agree that you use the Software entirely at your own risk.\nThe Software is designed to identify and remove temporary files, caches, and other data that is generally safe to delete. However:\nYou are responsible for reviewing all cleanup operations before proceeding\nYou should use the dry-run preview feature to understand what will be deleted\nYou should only select cleanup categories you understand\nYou should maintain regular backups of important data\nWe strongly recommend starting with \"Easy Mode\" for the safest experience\n5. Warranties and Disclaimers\nTHE SOFTWARE IS PROVIDED \"AS IS\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT\nWARRANTIES THAT THE SOFTWARE WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED\nWARRANTIES REGARDING THE ACCURACY OR RELIABILITY OF RESULTS\nWe do not warrant that the Software will meet your requirements or that its operation will be error-free. Your use of the Software is at your sole discretion and risk.\n6. Limitation of Liability\nTO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE FOR ANY:\nINDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES\nDAMAGES FOR LOSS OF PROFITS, REVENUE, DATA, OR USE\nDAMAGES RESULTING FROM DATA LOSS, SYSTEM CORRUPTION, OR BUSINESS INTERRUPTION\nDAMAGES ARISING FROM YOUR USE OR INABILITY TO USE THE SOFTWARE\nOUR TOTAL LIABILITY TO YOU FOR ALL DAMAGES SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE.\n8. Educational Institution Access\nTrashPanda may be available at no cost to verified educational institutions. Such access is subject to:\nVerification of educational institution status\nUse solely for educational or administrative purposes within the institution\nCompliance with the institution's IT policies and procedures\nThese Terms of Service (excluding payment-related provisions)\n9. Privacy and Data\nYour privacy is important to us. Our collection and use of information is governed by our\nPrivacy Policy\n. Key points:\nThe Software operates entirely locally on your device\nNo file contents or personal data are transmitted to our servers\nThis website uses privacy-focused analytics (GoatCounter) and Stripe for payments\nYou retain all rights to your data and files\n10. Intellectual Property\nThe Software and all related materials are protected by copyright, trademark, and other intellectual property laws. We retain all right, title, and interest in the Software.\n11. Termination\nThis license is effective until terminated. We may terminate your license immediately if you breach these Terms. Upon termination, you must cease all use of the Software and destroy all copies.\n12. Updates and Modifications\nWe may update these Terms from time to time. Significant changes will be communicated through our website or app updates. Continued use of the Software after changes constitutes acceptance of the new Terms.\n13. Governing Law\nThese Terms are governed by and construed in accordance with the laws of the jurisdiction where TrashPanda is registered, without regard to conflict of law principles.\n14. Contact Information\nFor questions about these Terms, please contact us through our\nsupport page\n.\nLast Updated:\nOctober 2025\nEffective Date:\nAugust 2025\n\u00a9 2025 TrashPanda. All rights reserved.\nPrivacy Policy\nTerms of Service\nSupport\nTerms of Service | TrashPanda",
+  "images": [
+    {
+      "alt": "TrashPanda",
+      "loading": "lazy",
+      "width": "28",
+      "height": "28",
+      "decoding": "async",
+      "data-nimg": "1",
+      "class": "rounded-md",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=%2Ftrashpanda.png&w=32&q=75 1x, /_next/image?url=%2Ftrashpanda.png&w=64&q=75 2x",
+      "src": "/_next/image?url=%2Ftrashpanda.png&w=64&q=75"
+    }
+  ],
+  "links": [
+    "/",
+    "/updates",
+    "/faq",
+    "#acceptance",
+    "#license-grant",
+    "#restrictions",
+    "#risk",
+    "#warranties",
+    "#liability",
+    "#educational",
+    "#privacy-and-data",
+    "#intellectual-property",
+    "#termination",
+    "#updates",
+    "#governing-law",
+    "#contact",
+    "/privacy",
+    "/support",
+    "/privacy",
+    "/terms",
+    "/support"
+  ]
+}

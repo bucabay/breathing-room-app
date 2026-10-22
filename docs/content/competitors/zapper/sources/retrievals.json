@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.maczapper.com/press",
+    "finalUrl": "https://www.maczapper.com/press",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAtUtc": "2026-10-21T21:29:11.910643+00:00",
+    "path": "docs/content/competitors/zapper/sources/press.html",
+    "sha256": "d012e78dd04c0b34d4568835f2450997b72edce640faf93cb4ec6f010d195858",
+    "bytes": 53839
+  },
+  {
+    "url": "https://www.maczapper.com/screenshot-results.png",
+    "finalUrl": "https://www.maczapper.com/screenshot-results.png",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "retrievedAtUtc": "2026-10-21T21:29:12.874796+00:00",
+    "path": "docs/content/competitors/zapper/assets/maczapper-scan-results-original.png",
+    "sha256": "68a032ff14fa00b7763ef56117525e9c563e5bb906f70da546faf7c5e2a3db72",
+    "bytes": 267444
+  }
+]

@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacCare | Free Up Storage & Speed Up Your Mac</title>
+    <meta name="description" content="MacCare cleans up to 20GB of junk from your Mac in minutes. Free up storage, speed up your Mac, remove old caches and duplicates safely. 3x cheaper than CleanMyMac. Apple-notarized, 7-day free trial.">
+    <meta name="keywords" content="mac cleaner, cleanmymac alternative, free up mac storage, speed up mac, mac cleanup tool, mac junk cleaner, mac storage full, clear mac cache">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://www.getmaccare.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.getmaccare.com/">
+    <meta property="og:title" content="MacCare | Free Up Storage & Speed Up Your Mac">
+    <meta property="og:description" content="Remove up to 20GB of hidden junk. Speed up your Mac in under 2 minutes. 3x cheaper than CleanMyMac. 7-day free trial.">
+    <meta property="og:site_name" content="MacCare">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MacCare | Free Up Storage & Speed Up Your Mac">
+    <meta name="twitter:description" content="Remove up to 20GB of hidden junk. Speed up your Mac in under 2 minutes. 3x cheaper than CleanMyMac.">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MacCare",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Mac cleaner that removes junk files, caches, and duplicates safely. Features Audio Producer Mode, risk-classified cleanup, and visual disk mapping.",
+        "url": "https://www.getmaccare.com",
+        "downloadUrl": "https://github.com/MartinWiederhold/maccare-releases/releases/download/v1.7.2/MacCare-Installer.dmg",
+        "fileSize": "1.3MB",
+        "offers": {
+            "@type": "Offer",
+            "price": "29.00",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "47"
+        }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-deep: #0B0518;
+            --bg-mid: #150D2E;
+            --bg-card: rgba(255,255,255,0.04);
+            --bg-card-hover: rgba(255,255,255,0.07);
+            --accent-pink: #D946EF;
+            --accent-pink-hi: #F472B6;
+            --accent-magenta: #A21CAF;
+            --accent-purple: #7C3AED;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255,255,255,0.65);
+            --text-tertiary: rgba(255,255,255,0.4);
+            --green: #4ADE80;
+            --yellow: #FACC15;
+            --orange: #FB923C;
+            --red: #EF4444;
+            --blue: #3B82F6;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ═══ AMBIENT BACKGROUND ═══ */
+        .ambient-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .ambient-bg .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+        .ambient-bg .orb-1 {
+            width: 600px; height: 600px;
+            background: var(--accent-magenta);
+            top: -200px; right: -100px;
+            animation-delay: 0s;
+        }
+        .ambient-bg .orb-2 {
+            width: 500px; height: 500px;
+            background: var(--accent-purple);
+            bottom: 20%; left: -150px;
+            animation-delay: -7s;
+        }
+        .ambient-bg .orb-3 {
+            width: 400px; height: 400px;
+            background: var(--accent-pink);
+            top: 50%; right: 10%;
+            animation-delay: -14s;
+            opacity: 0.15;
+        }
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -40px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        /* ═══ NAV ═══ */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            background: rgba(11,5,24,0.7);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        .nav-logo .sparkle { font-size: 24px; }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-magenta));
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-weight: 600 !important;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(217,70,239,0.3);
+        }
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 100px;
+            padding: 4px 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .lang-btn {
+            padding: 3px 10px;
+            border-radius: 100px;
+            border: none;
+            background: transparent;
+            color: var(--text-tertiary);
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: all 0.2s;
+        }
+        .lang-btn.active {
+            background: rgba(255,255,255,0.12);
+            color: white;
+        }
+
+        /* ═══ HERO ═══ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 24px 80px;
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(217,70,239,0.12);
+            border: 1px solid rgba(217,70,239,0.25);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--accent-pink-hi);
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        .hero h1 {
+            font-size: clamp(44px, 7vw, 80px);
+            font-weight: 700;
+            letter-spacing: -0.035em;
+            line-height: 1.05;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--accent-pink-hi), var(--accent-pink), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-sub {
+            font-size: clamp(17px, 2.2vw, 20px);
+            color: var(--text-secondary);
+            max-width: 580px;
+            margin-bottom: 48px;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-magenta));
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: var(--font-body);
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(217,70,239,0.25);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(217,70,239,0.4);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 36px;
+            background: rgba(255,255,255,0.06);
+            color: var(--text-primary);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: var(--font-body);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.2);
+        }
+        .hero-meta {
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--text-tertiary);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        /* ═══ MACBOOK MOCKUP ═══ */
+        .macbook-container {
+            max-width: 980px;
+            margin: -10px auto 0;
+            padding: 0 24px;
+            animation: fadeInUp 1s ease-out 0.5s both;
+            perspective: 1200px;
+        }
+        .macbook {
+            position: relative;
+        }
+        /* Screen bezel */
+        .macbook-screen {
+            background: #1a1a1a;
+            border-radius: 16px 16px 0 0;
+            padding: 12px 12px 0 12px;
+            position: relative;
+            box-shadow: 0 -2px 20px rgba(0,0,0,0.3);
+        }
+        /* Webcam notch */
+        .macbook-screen::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px; height: 6px;
+            background: #333;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px #444;
+        }
+        /* The actual screen content */
+        .macbook-display {
+            background: linear-gradient(170deg, #0f0720, #1A0B2E, #2D1B4E);
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+            aspect-ratio: 16 / 10;
+            position: relative;
+        }
+        /* Bottom hinge/base */
+        .macbook-base {
+            background: linear-gradient(180deg, #2a2a2a, #1a1a1a);
+            height: 14px;
+            border-radius: 0 0 8px 8px;
+            position: relative;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+        }
+        .macbook-base::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 80px; height: 4px;
+            background: #333;
+            border-radius: 0 0 4px 4px;
+        }
+        /* Bottom lip/desk shadow */
+        .macbook-shadow {
+            height: 20px;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, transparent 70%);
+            margin-top: -2px;
+        }
+        /* Glow behind laptop */
+        .macbook-glow {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; height: 80%;
+            background: radial-gradient(ellipse, rgba(217,70,239,0.12) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(40px);
+        }
+
+        /* ═══ ANIMATED APP SCREENS (inside MacBook) ═══ */
+        .screen-carousel { width: 100%; height: 100%; position: relative; }
+        .app-screen {
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            display: grid;
+            grid-template-columns: 130px 1fr;
+            font-size: 10px;
+            opacity: 0;
+            animation: screenCycle 16s ease-in-out infinite;
+        }
+        .screen-1 { animation-delay: 0s; }
+        .screen-2 { animation-delay: 4s; }
+        .screen-3 { animation-delay: 8s; }
+        .screen-4 { animation-delay: 12s; }
+
+        @keyframes screenCycle {
+            0% { opacity: 0; }
+            3% { opacity: 1; }
+            23% { opacity: 1; }
+            27% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        /* Sidebar */
+        .app-sidebar {
+            background: rgba(0,0,0,0.3);
+            padding: 12px 8px;
+            border-right: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            overflow: hidden;
+        }
+        .app-brand {
+            font-size: 11px;
+            color: white;
+            padding: 4px 6px 10px;
+            line-height: 1.3;
+        }
+        .sb {
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: rgba(255,255,255,0.55);
+            font-size: 9.5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .sb.active {
+            background: rgba(217,70,239,0.2);
+            color: white;
+        }
+        .sb.dim { opacity: 0.4; }
+
+        /* Main area */
+        .app-main {
+            padding: 10px 14px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .sc-header {
+            font-size: 10px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 8px;
+        }
+
+        /* ── Screen 1: Smart Care Landing (simple, centered) ── */
+        .sc-landing-simple {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .sc-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            gap: 6px;
+        }
+        .sc-big-title {
+            font-size: 22px;
+            font-weight: 300;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+        .sc-big-desc {
+            font-size: 9px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 10px;
+        }
+        .sc-features-row {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+        .sc-feat-pill {
+            font-size: 8px;
+            color: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 3px 8px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sc-big-scan { margin: 4px 0; }
+        .sc-big-scan-btn {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-magenta));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            gap: 2px;
+            box-shadow: 0 6px 40px rgba(217,70,239,0.5), 0 0 80px rgba(217,70,239,0.15);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .sc-sparkle { font-size: 16px; }
+        .sc-bottom-badge {
+            font-size: 8px;
+            color: var(--green);
+            padding: 4px 0;
+            opacity: 0.7;
+        }
+
+        /* ── Screen 2: Scanning ── */
+        .sc-scanning {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            gap: 8px;
+        }
+        .scanning-circle {
+            position: relative;
+            width: 90px; height: 90px;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+        }
+        .scanning-ring {
+            position: absolute; top: 0; left: 0;
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            border: 2px solid rgba(217,70,239,0.15);
+            border-top: 2px solid var(--accent-pink);
+            border-right: 2px solid var(--accent-pink);
+            animation: spin 1.5s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .scanning-icon { font-size: 28px; margin-bottom: 2px; }
+        .scanning-label { font-size: 9px; color: rgba(255,255,255,0.6); }
+        .scanning-info { font-size: 9px; color: rgba(255,255,255,0.4); }
+        .scanning-size { font-size: 18px; font-weight: 700; color: white; }
+
+        /* ── Screen 3: Results ── */
+        .sc-results { flex: 1; display: flex; flex-direction: column; }
+        .res-headline { font-size: 11px; color: white; font-weight: 400; margin-bottom: 8px; line-height: 1.3; }
+        .res-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin-bottom: 4px;
+        }
+        .res-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 8px 6px;
+            position: relative;
+        }
+        .res-card.off { opacity: 0.5; }
+        .rc-check {
+            position: absolute; top: 5px; left: 5px;
+            width: 12px; height: 12px; border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.2);
+            font-size: 8px; display: flex; align-items: center; justify-content: center;
+        }
+        .rc-check.on { background: var(--accent-pink); border-color: var(--accent-pink); color: white; }
+        .rc-icon { text-align: right; font-size: 16px; margin-bottom: 6px; }
+        .rc-val { font-size: 11px; font-weight: 700; color: white; margin-bottom: 2px; line-height: 1.2; }
+        .rc-lbl { font-size: 8px; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+        .rc-btn {
+            font-size: 8px; color: white;
+            background: rgba(255,255,255,0.08);
+            padding: 2px 8px; border-radius: 10px;
+            display: inline-block;
+        }
+        .res-execute {
+            margin: 6px auto 0;
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-magenta));
+            color: white; font-size: 10px; font-weight: 600;
+            padding: 6px 20px; border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(217,70,239,0.35);
+        }
+
+        /* ── Screen 4: Bereinigung ── */
+        .sc-cleanup { flex: 1; display: flex; flex-direction: column; font-size: 9px; }
+        .sc-header .apm-badge {
+            font-size: 8px;
+            background: rgba(217,70,239,0.12);
+            border: 1px solid rgba(217,70,239,0.25);
+            color: var(--accent-pink-hi);
+            padding: 1px 8px;
+            border-radius: 20px;
+            margin-left: 6px;
+        }
+        .cl-sub { font-size: 9px; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+        .cl-filter {
+            display: flex; gap: 2px; margin-bottom: 8px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 6px; padding: 2px;
+        }
+        .clf {
+            font-size: 8px; padding: 3px 8px; border-radius: 4px;
+            color: rgba(255,255,255,0.5); white-space: nowrap;
+        }
+        .clf.active { background: rgba(255,255,255,0.1); color: white; }
+        .cl-list { flex: 1; overflow: hidden; }
+        .cl-group { font-size: 9px; font-weight: 600; color: white; padding: 3px 0; display: flex; justify-content: space-between; }
+        .cl-size { color: var(--accent-pink); font-weight: 600; }
+        .cl-item {
+            display: flex; align-items: center; gap: 5px;
+            padding: 2px 0; color: rgba(255,255,255,0.65);
+            font-size: 8.5px;
+        }
+        .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+        .dot.green { background: var(--green); }
+        .dot.yellow { background: var(--yellow); }
+        .dot.orange { background: var(--orange); }
+        .dot.red { background: var(--red); }
+        .cl-sz { margin-left: auto; color: rgba(255,255,255,0.35); font-size: 8px; }
+        .cl-footer {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 5px 0 0; font-size: 8px; color: rgba(255,255,255,0.4);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 4px;
+        }
+        .cl-trash-btn {
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-magenta));
+            color: white; padding: 3px 12px; border-radius: 12px;
+            font-size: 8px; opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .app-screen { grid-template-columns: 1fr; }
+            .app-sidebar { display: none; }
+            .macbook-screen { padding: 8px 8px 0; }
+            .res-grid { grid-template-columns: repeat(2, 1fr); }
+            .sc-landing { grid-template-columns: 1fr; }
+            .sc-laptop-icon { display: none; }
+        }
+
+        /* ═══ FEATURES ═══ */
+        .section {
+            padding: 120px 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-pink);
+            margin-bottom: 16px;
+        }
+        .section-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        .section-desc {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 64px;
+            line-height: 1.6;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+        .feature-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(217,70,239,0.15);
+            transform: translateY(-4px);
+        }
+        .feature-icon {
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ═══ AUDIO PRODUCER SECTION ═══ */
+        .audio-section {
+            padding: 120px 24px;
+            position: relative;
+        }
+        .audio-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(217,70,239,0.08), rgba(124,58,237,0.08));
+            border: 1px solid rgba(217,70,239,0.15);
+            border-radius: 24px;
+            padding: 64px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .audio-content .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(217,70,239,0.15);
+            padding: 4px 14px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-pink-hi);
+            margin-bottom: 24px;
+        }
+        .audio-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+            line-height: 1.15;
+        }
+        .audio-content p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+        .protected-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .protected-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 12px 16px;
+        }
+        .protected-item .shield {
+            width: 32px; height: 32px;
+            background: rgba(74,222,128,0.12);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        /* ═══ COMPARISON ═══ */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 48px;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .comparison-table th {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-tertiary);
+        }
+        .comparison-table th:nth-child(2) { color: var(--accent-pink); }
+        .comparison-table td { font-size: 15px; }
+        .comparison-table td:first-child { color: var(--text-secondary); }
+        .comparison-table .check { color: var(--green); font-size: 18px; }
+        .comparison-table .cross { color: var(--red); font-size: 18px; opacity: 0.5; }
+        .comparison-table .highlight-col {
+            background: rgba(217,70,239,0.04);
+        }
+
+        /* ═══ PRICING ═══ */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 880px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+        .pricing-card {
+            background: linear-gradient(170deg, rgba(217,70,239,0.06), rgba(124,58,237,0.04));
+            border: 1px solid rgba(217,70,239,0.2);
+            border-radius: 24px;
+            padding: 48px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-card.featured {
+            border: 2px solid var(--accent-pink);
+            box-shadow: 0 0 40px rgba(217,70,239,0.15);
+        }
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 200px; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-pink), transparent);
+        }
+        .pricing-badge {
+            display: inline-block;
+            align-self: center;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.06);
+            color: var(--text-secondary);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .pricing-badge.pink {
+            background: rgba(217,70,239,0.12);
+            color: var(--accent-pink);
+            border-color: rgba(217,70,239,0.4);
+        }
+        .pricing-card .btn-primary { margin-top: auto; }
+        .pricing-amount {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin: 24px 0 4px;
+        }
+        .pricing-amount span { font-size: 20px; font-weight: 400; color: var(--text-secondary); }
+        .pricing-period {
+            color: var(--text-tertiary);
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 36px;
+        }
+        .pricing-features li {
+            padding: 10px 0;
+            font-size: 15px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* ═══ FOOTER ═══ */
+        footer {
+            padding: 64px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        footer p {
+            color: var(--text-tertiary);
+            font-size: 13px;
+        }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--text-primary); }
+
+        /* ═══ ANIMATIONS ═══ */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ═══ RESPONSIVE ═══ */
+        @media (max-width: 768px) {
+            nav { padding: 12px 20px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .nav-links .lang-toggle { display: flex; }
+            .nav-cta { display: none !important; }
+            .audio-inner { grid-template-columns: 1fr; padding: 32px 24px; }
+            .window-mockup { grid-template-columns: 1fr; }
+            .mockup-sidebar { display: none; }
+            .comparison-table { font-size: 13px; }
+            .comparison-table th, .comparison-table td { padding: 10px 8px; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card { padding: 32px 24px; }
+            .hero-actions { display: none !important; }
+            .mobile-notice { display: block !important; }
+        }
+        @media (min-width: 769px) {
+            .mobile-notice { display: none !important; }
+        }
+        .mobile-notice {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+    <a href="#" class="nav-logo">
+        <span class="sparkle">✦</span> MacCare
+    </a>
+    <div class="nav-links">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#audio" data-i18n="nav_pro">Pro Features</a>
+        <a href="#compare" data-i18n="nav_compare">Compare</a>
+        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <div class="lang-toggle">
+            <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+            <button class="lang-btn" id="btn-de" onclick="setLang('de')">DE</button>
+        </div>
+        <a href="https://github.com/MartinWiederhold/maccare-releases/releases/download/v1.7.2/MacCare-Installer.dmg" class="nav-cta" data-i18n="nav_download">Download Free Trial</a>
+    </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+    <div class="hero-badge" data-i18n="hero_badge">✦ The Mac cleaner Power Users trust · Apple-notarized · 7-day free trial</div>
+    <h1><span data-i18n="hero_h1a">More storage.</span> <span class="gradient-text" data-i18n="hero_h1b">Faster Mac.</span></h1>
+    <p class="hero-sub" data-i18n="hero_sub">MacCare finds and removes up to 20 GB of hidden junk like old caches, broken logs and forgotten duplicates. Your Mac runs faster with more free space, in under 2 minutes.</p>
+    <div class="hero-actions">
+        <a href="https://github.com/MartinWiederhold/maccare-releases/releases/download/v1.7.2/MacCare-Installer.dmg" class="btn-primary" data-i18n="hero_cta">⬇ Download Free Trial</a>
+        <a href="#features" class="btn-secondary" data-i18n="hero_secondary">See Features →</a>
+    </div>
+    <p class="hero-meta" data-i18n="hero_meta">macOS 14+ · Intel + Apple Silicon · 1.3 MB · Free trial, no payment required · Apple-notarized</p>
+    <div class="mobile-notice">💻 MacCare is a macOS desktop app. Visit this page on your Mac to download.</div>
+</section>
+
+<!-- ═══ MACBOOK MOCKUP ═══ -->
+<div class="macbook-container">
+    <div class="macbook-glow"></div>
+    <div class="macbook">
+        <div class="macbook-screen">
+            <div class="macbook-display">
+                <!-- 4 screens that crossfade -->
+                <div class="screen-carousel">
+
+                    <!-- SCREEN 1: Smart Care Landing — big centered scan button -->
+                    <div class="app-screen screen-1">
+                        <div class="app-sidebar">
+                            <div class="app-brand">✦ <strong>MacCare</strong><br><span style="font-size:8px;opacity:0.5;">System-Pflege</span></div>
+                            <div class="sb active"data-i18n="m_smartcare">✦ Smart Care</div>
+                            <div class="sb"data-i18n="m_cleanup">🗑 Cleanup</div>
+                            <div class="sb"data-i18n="m_protection">🛡 Protection</div>
+                            <div class="sb"data-i18n="m_performance">⚡ Performance</div>
+                            <div class="sb"data-i18n="m_apps">📦 Apps</div>
+                            <div class="sb"data-i18n="m_clutter">📁 My Clutter</div>
+                            <div class="sb"data-i18n="m_diskmap">🔍 Disk Map</div>
+                            <div class="sb dim"data-i18n="m_cloud">☁ Cloud Cleanup</div>
+                            <div class="sb dim"data-i18n="m_tools">🔧 My Tools</div>
+                            <div class="sb dim"data-i18n="m_activity">📊 Activity</div>
+                        </div>
+                        <div class="app-main sc-landing-simple">
+                            <div class="sc-header"data-i18n="m_sc_title">Smart Care</div>
+                            <div class="sc-center">
+                                <div class="sc-big-title">Smart Care</div>
+                                <div class="sc-big-desc"data-i18n="m_sc_desc">Quick maintenance for the essentials.</div>
+                                <div class="sc-features-row">
+                                    <div class="sc-feat-pill"><span style="color:var(--accent-pink);">⚡</span> Schneller Scan</div>
+                                    <div class="sc-feat-pill"><span style="color:var(--blue);">⚙</span> Systemtuning</div>
+                                    <div class="sc-feat-pill"><span style="color:var(--accent-purple);">🛡</span> Sicherheitsprüfung</div>
+                                </div>
+                                <div class="sc-big-scan">
+                                    <div class="sc-big-scan-btn">
+                                        <span class="sc-sparkle">✦</span>
+                                        <span data-i18n="m_sc_scan">Scan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sc-bottom-badge"data-i18n="m_sc_status">🟢 System OK</div>
+                        </div>
+                    </div>
+
+                    <!-- SCREEN 2: Scanning -->
+                    <div class="app-screen screen-2">
+                        <div class="app-sidebar">
+                            <div class="app-brand">✦ <strong>MacCare</strong><br><span style="font-size:8px;opacity:0.5;">System-Pflege</span></div>
+                            <div class="sb active"data-i18n="m_smartcare">✦ Smart Care</div>
+                            <div class="sb"data-i18n="m_cleanup">🗑 Cleanup</div>
+                            <div class="sb"data-i18n="m_protection">🛡 Protection</div>
+                            <div class="sb"data-i18n="m_performance">⚡ Performance</div>
+                            <div class="sb"data-i18n="m_apps">📦 Apps</div>
+                            <div class="sb"data-i18n="m_clutter">📁 My Clutter</div>
+                            <div class="sb"data-i18n="m_diskmap">🔍 Disk Map</div>
+                            <div class="sb dim"data-i18n="m_cloud">☁ Cloud Cleanup</div>
+                            <div class="sb dim"data-i18n="m_tools">🔧 My Tools</div>
+                            <div class="sb dim"data-i18n="m_activity">📊 Activity</div>
+                        </div>
+                        <div class="app-main sc-scanning">
+                            <div class="sc-header">Smart Care</div>
+                            <div class="scanning-circle">
+                                <div class="scanning-ring"></div>
+                                <div class="scanning-icon">💻</div>
+                                <div class="scanning-label"data-i18n="m_scanning">Scanning...</div>
+                            </div>
+                            <div class="scanning-info"data-i18n="m_preparing">Preparing modules...</div>
+                            <div class="scanning-size">4,53 GB</div>
+                        </div>
+                    </div>
+
+                    <!-- SCREEN 3: Results -->
+                    <div class="app-screen screen-3">
+                        <div class="app-sidebar">
+                            <div class="app-brand">✦ <strong>MacCare</strong><br><span style="font-size:8px;opacity:0.5;">System-Pflege</span></div>
+                            <div class="sb active"data-i18n="m_smartcare">✦ Smart Care</div>
+                            <div class="sb"data-i18n="m_cleanup">🗑 Cleanup</div>
+                            <div class="sb"data-i18n="m_protection">🛡 Protection</div>
+                            <div class="sb"data-i18n="m_performance">⚡ Performance</div>
+                            <div class="sb"data-i18n="m_apps">📦 Apps</div>
+                            <div class="sb"data-i18n="m_clutter">📁 My Clutter</div>
+                            <div class="sb"data-i18n="m_diskmap">🔍 Disk Map</div>
+                            <div class="sb dim"data-i18n="m_cloud">☁ Cloud Cleanup</div>
+                            <div class="sb dim"data-i18n="m_tools">🔧 My Tools</div>
+                            <div class="sb dim"data-i18n="m_activity">📊 Activity</div>
+                        </div>
+                        <div class="app-main sc-results">
+                            <div class="sc-header">Smart Care</div>
+                            <div class="res-headline"><span data-i18n="m_res_headline">Your tasks are ready.</span><br><span style="opacity:0.5;font-size:10px;"><span data-i18n="m_res_sub">Here's what we found:</span></span></div>
+                            <div class="res-grid">
+                                <div class="res-card"><div class="rc-check on">✓</div><div class="rc-icon">🗑</div><div class="rc-val" data-i18n="m_res_junkval">4.53 GB of<br>Junk</div><div class="rc-lbl" data-i18n="m_res_junk">Cleanup</div><div class="rc-btn" data-i18n="m_res_check">Review</div></div>
+                                <div class="res-card"><div class="rc-check on">✓</div><div class="rc-icon">🛡</div><div class="rc-val" data-i18n="m_res_secval">1 Threat</div><div class="rc-lbl" data-i18n="m_res_security">Security</div><div class="rc-btn" data-i18n="m_res_check">Review</div></div>
+                                <div class="res-card"><div class="rc-check on">✓</div><div class="rc-icon">⚡</div><div class="rc-val" data-i18n="m_res_startval">1 Startup Item</div><div class="rc-lbl" data-i18n="m_res_startup">Performance</div><div class="rc-btn" data-i18n="m_res_check">Review</div></div>
+                                <div class="res-card off"><div class="rc-check"></div><div class="rc-icon">📦</div><div class="rc-val" data-i18n="m_res_appsval">23 installed</div><div class="rc-lbl" data-i18n="m_res_apps">Apps</div><div class="rc-btn" data-i18n="m_res_check">Review</div></div>
+                                <div class="res-card off"><div class="rc-check"></div><div class="rc-icon">📁</div><div class="rc-val" data-i18n="m_res_clutterval">Not yet checked</div><div class="rc-lbl" data-i18n="m_res_clutter">My Clutter</div><div class="rc-btn" data-i18n="m_res_check">Review</div></div>
+                            </div>
+                            <div class="res-execute"data-i18n="m_res_execute">▶ Execute</div>
+                        </div>
+                    </div>
+
+                    <!-- SCREEN 4: Bereinigung with Filter-Bar -->
+                    <div class="app-screen screen-4">
+                        <div class="app-sidebar">
+                            <div class="app-brand">✦ <strong>MacCare</strong><br><span style="font-size:8px;opacity:0.5;">System-Pflege</span></div>
+                            <div class="sb"data-i18n="m_smartcare">✦ Smart Care</div>
+                            <div class="sb active"data-i18n="m_cleanup">🗑 Cleanup</div>
+                            <div class="sb"data-i18n="m_protection">🛡 Protection</div>
+                            <div class="sb"data-i18n="m_performance">⚡ Performance</div>
+                            <div class="sb"data-i18n="m_apps">📦 Apps</div>
+                            <div class="sb"data-i18n="m_clutter">📁 My Clutter</div>
+                            <div class="sb"data-i18n="m_diskmap">🔍 Disk Map</div>
+                            <div class="sb dim"data-i18n="m_cloud">☁ Cloud Cleanup</div>
+                            <div class="sb dim"data-i18n="m_tools">🔧 My Tools</div>
+                            <div class="sb dim"data-i18n="m_activity">📊 Activity</div>
+                        </div>
+                        <div class="app-main sc-cleanup">
+                            <div class="sc-header"><span data-i18n="m_cl_title">Cleanup</span> <span class="apm-badge">🎵 Audio Producer Mode</span></div>
+                            <div class="cl-sub" data-i18n="m_cl_sub">109 Items · 4.53 GB total</div>
+                            <div class="cl-filter">
+                                <span class="clf active"data-i18n="m_cl_f1">Safe only</span>
+                                <span class="clf"data-i18n="m_cl_f2">Also low impact</span>
+                                <span class="clf"data-i18n="m_cl_f3">All incl. risky</span>
+                            </div>
+                            <div class="cl-list">
+                                <div class="cl-group"data-i18n="m_cl_group">User Caches <span class="cl-size">402,4 MB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> com.apple.appleaccountd <span class="cl-sz">393 KB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> familycircled <span class="cl-sz">168 KB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> com.apple.helpd <span class="cl-sz">16,8 MB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> com.apple.dt.Xcode <span class="cl-sz">2,7 MB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> GeoServices <span class="cl-sz">41,9 MB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> com.mockmaster <span class="cl-sz">22,1 MB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> com.apple.storekitagent <span class="cl-sz">893 KB</span></div>
+                                <div class="cl-item"><span class="dot green"></span> PassKit <span class="cl-sz">5 MB</span></div>
+                            </div>
+                            <div class="cl-footer"data-i18n="m_cl_footer">0 selected · 0 KB <span class="cl-trash-btn"data-i18n="m_cl_trash">🗑 Move to Trash</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="macbook-base"></div>
+        <div class="macbook-shadow"></div>
+    </div>
+</div>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="section reveal" id="features">
+    <div class="section-label" data-i18n="feat_label">Features</div>
+    <h2 class="section-title"><span data-i18n="feat_title">Everything to keep<br>your Mac running fast.</span></h2>
+    <p class="section-desc"data-i18n="feat_desc">MacCare scans 8 categories of system junk, finds duplicates, manages startup items and shows exactly where your storage went. Built-in safety makes sure nothing important gets deleted.</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(217,70,239,0.12);">🧹</div>
+            <h3 data-i18n="feat_1_title">Junk Scanner</h3>
+            <p data-i18n="feat_1_desc">Scans 8 junk categories in parallel: caches, logs, temp files, app remnants, duplicates, downloads, mail attachments, system junk.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(59,130,246,0.12);">🗺</div>
+            <h3 data-i18n="feat_2_title">Visual Disk Map</h3>
+            <p data-i18n="feat_2_desc">See exactly where your storage went with an interactive TreeMap. Click into folders, color-coded by file type, with protected paths clearly marked.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(74,222,128,0.12);">🛡</div>
+            <h3 data-i18n="feat_3_title">Safety Guard</h3>
+            <p data-i18n="feat_3_desc">A built-in whitelist protects your Documents, Photos, Music, Mail and SSH keys. Every deleted file goes to Trash with full Put-Back support, never permanently removed.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(251,146,60,0.12);">📦</div>
+            <h3 data-i18n="feat_4_title">Complete Uninstaller</h3>
+            <p data-i18n="feat_4_desc">Removes apps along with all their hidden remnants: caches, preferences, containers, launch agents and logs. Finds what Finder misses.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(250,204,21,0.12);">⚡</div>
+            <h3 data-i18n="feat_5_title">Startup Optimizer</h3>
+            <p data-i18n="feat_5_desc">Manage Login Items, LaunchAgents and system daemons. Toggle items on or off with impact indicators to keep your Mac booting fast.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(244,114,182,0.12);">📊</div>
+            <h3 data-i18n="feat_6_title">Menu Bar Monitor</h3>
+            <p data-i18n="feat_6_desc">A small, always-visible disk space indicator in your menu bar. One click for a quick scan, plus your last cleanup stats at a glance.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background: rgba(139,92,246,0.12);">🔍</div>
+            <h3 data-i18n="feat_7_title">Smart Cleanup</h3>
+            <p data-i18n="feat_7_desc">One scan. Two phases. Safe files are cleaned instantly. Then you review suggestions one by one with previews.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ AUDIO PRODUCER MODE (Feature Highlight) ═══ -->
+<section class="audio-section reveal" id="audio">
+    <div class="audio-inner">
+        <div class="audio-content">
+            <div class="badge"data-i18n="audio_badge">🎵 For Creative Professionals</div>
+            <h2data-i18n="audio_title">Audio Producer Mode</h2>
+            <p data-i18n="audio_p1">Use Logic Pro, Ableton or Pro Tools? MacCare automatically detects your DAW and protects all audio-related files like plugins, sample libraries, presets and caches. No other cleaner does this.</p>
+            <p data-i18n="audio_p2">One toggle. Total protection. Clean your Mac without fear of breaking your setup.</p>
+        </div>
+        <div class="protected-list">
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item1">Logic Pro: Plugins, Preferences & Caches</span></div>
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item2">Native Instruments: Kontakt, Komplete</span></div>
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item3">Soundtoys, Waves, FabFilter: Effects & Presets</span></div>
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item4">AudioUnitCache: No more plugin re-validation</span></div>
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item5">Ableton, Cubase, Pro Tools: Settings & Data</span></div>
+            <div class="protected-item"><div class="shield">🔒</div><span data-i18n="audio_item6">All Sample Libraries: NI, Spectrasonics, Steinberg</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ COMPARISON ═══ -->
+<section class="section reveal" id="compare">
+    <div class="section-label" data-i18n="cmp_label">Comparison</div>
+    <h2 class="section-title"data-i18n="cmp_title">MacCare vs CleanMyMac X</h2>
+    <p class="section-desc"data-i18n="cmp_desc">Same power. More safety. One-third the price.</p>
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th class="highlight-col">MacCare</th>
+                <th>CleanMyMac X</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Junk Cleanup</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Disk Visualization</td><td class="highlight-col"><span class="check">✓</span> TreeMap</td><td><span class="check">✓</span> Space Lens</td></tr>
+            <tr><td>App Uninstaller</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Startup Optimizer</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Menu Bar Monitor</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Risk Classification per Item</td><td class="highlight-col"><span class="check">✓</span> 🟢🟡🟠🔴</td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Audio Producer Mode</td><td class="highlight-col"><span class="check">✓</span> 🎵</td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Safety Whitelist</td><td class="highlight-col"><span class="check">✓</span> Hardcoded</td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Put-Back from Trash</td><td class="highlight-col"><span class="check">✓</span> Full support</td><td>Partial</td></tr>
+            <tr><td>Cleanup Activity Log</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Confirm Dialog with Risk</td><td class="highlight-col"><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Price</td><td class="highlight-col" style="color: var(--green); font-weight: 700;">$29/year</td><td style="color: var(--text-tertiary);">$89/year</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="reveal" id="newsletter" style="padding: 60px 24px; text-align: center;">
+  <div style="max-width: 520px; margin: 0 auto; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px 32px;">
+    <div style="font-size: 28px; margin-bottom: 8px;">📬</div>
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;" data-i18n="nl_title">Mac cleanup tips, straight to your inbox</h3>
+    <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 24px;" data-i18n="nl_desc">Weekly tips to keep your Mac fast. Plus MacCare updates and deals. Unsubscribe anytime.</p>
+    <a href="https://maccare.beehiiv.com" target="_blank"
+       style="display: inline-flex; align-items: center; gap: 8px;
+       padding: 14px 32px; border-radius: 100px; border: none;
+       background: linear-gradient(135deg, #D946EF, #A21CAF);
+       color: white; font-family: 'DM Sans', sans-serif;
+       font-size: 15px; font-weight: 600; text-decoration: none;" data-i18n="nl_btn">
+       Subscribe to Newsletter →
+    </a>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="section reveal" id="pricing">
+    <div class="section-label" data-i18n="price_label">Pricing</div>
+    <h2 class="section-title"data-i18n="price_title">Simple, fair pricing.</h2>
+    <p class="section-desc"data-i18n="price_desc">No tricks. Try free for 7 days, then choose your plan.</p>
+    <div class="pricing-grid">
+        <!-- Annual -->
+        <div class="pricing-card">
+            <div class="pricing-badge" data-i18n="price_annual_badge">Most flexible</div>
+            <div class="section-label" style="margin-top:16px" data-i18n="price_annual_name">MacCare Pro</div>
+            <div class="pricing-amount">$29 <span data-i18n="price_annual_period">/ year</span></div>
+            <p class="pricing-period" data-i18n="price_annual_trial">7-day free trial · Cancel anytime</p>
+            <ul class="pricing-features">
+                <li data-i18n="price_f1">All features included</li>
+                <li data-i18n="price_f2">Audio Producer Mode</li>
+                <li data-i18n="price_f3">Unlimited scans & cleanups</li>
+                <li data-i18n="price_f4">Menu Bar Monitor</li>
+                <li data-i18n="price_f5">TreeMap Disk Visualization</li>
+                <li data-i18n="price_f6">Complete App Uninstaller</li>
+                <li data-i18n="price_f7">Activity Log</li>
+                <li data-i18n="price_f8">All future updates</li>
+            </ul>
+            <a href="https://buy.stripe.com/14A8wJ07KaBR3aodZves000" class="btn-primary" style="width: 100%; justify-content: center;" id="download" data-i18n="price_annual_cta" target="_blank">⬇ Start Free Trial</a>
+            <p style="margin-top: 16px; font-size: 13px; color: var(--text-tertiary);" data-i18n="price_annual_sub">7-day free trial · Cancel anytime</p>
+        </div>
+        <!-- Lifetime -->
+        <div class="pricing-card featured">
+            <div class="pricing-badge pink" data-i18n="price_lifetime_badge">Best value</div>
+            <div class="section-label" style="margin-top:16px" data-i18n="price_lifetime_name">MacCare Lifetime</div>
+            <div class="pricing-amount">$69 <span data-i18n="price_lifetime_period">once</span></div>
+            <p class="pricing-period" data-i18n="price_lifetime_sub">One payment. Updates forever.</p>
+            <ul class="pricing-features">
+                <li data-i18n="price_f1">All features included</li>
+                <li data-i18n="price_f2">Audio Producer Mode</li>
+                <li data-i18n="price_f3">Unlimited scans & cleanups</li>
+                <li data-i18n="price_f4">Menu Bar Monitor</li>
+                <li data-i18n="price_f5">TreeMap Disk Visualization</li>
+                <li data-i18n="price_f6">Complete App Uninstaller</li>
+                <li data-i18n="price_f7">Activity Log</li>
+                <li data-i18n="price_f8">All future updates</li>
+                <li data-i18n="price_f9">No recurring payments, ever</li>
+            </ul>
+            <a href="https://buy.stripe.com/7sY6oB6w8bFV5iwbRnes001" class="btn-primary" style="width: 100%; justify-content: center;" data-i18n="price_lifetime_cta" target="_blank">⬇ Buy Lifetime</a>
+            <p style="margin-top: 16px; font-size: 13px; color: var(--text-tertiary);" data-i18n="price_lifetime_sub">One payment. Updates forever.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+    <p style="margin-bottom: 8px;">
+        <a href="#features">Features</a> · <a href="#audio">Pro Features</a> · <a href="#compare">Compare</a> · <a href="#pricing">Pricing</a>
+    </p>
+    <p>© 2026 Martin Wiederhold. <span data-i18n="footer_copy">MacCare is not affiliated with Apple Inc. or MacPaw.</span></p>
+</footer>
+
+<!-- ═══ SCROLL REVEAL + i18n ═══ -->
+<script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ═══ INTERNATIONALIZATION ═══
+    const translations = {
+        en: {
+            // Nav
+            nav_features: "Features", nav_pro: "Pro Features", nav_compare: "Compare",
+            nav_pricing: "Pricing", nav_download: "Download Free Trial",
+            nl_title: "Mac cleanup tips, straight to your inbox",
+            nl_desc: "Weekly tips to keep your Mac fast. Plus MacCare updates and deals. Unsubscribe anytime.",
+            nl_btn: "Subscribe to Newsletter →",
+            // Hero
+            hero_badge: "✦ The Mac cleaner Power Users trust · Apple-notarized · 7-day free trial",
+            hero_h1a: "More storage.", hero_h1b: "Faster Mac.",
+            hero_sub: "MacCare finds and removes up to 20 GB of hidden junk like old caches, broken logs and forgotten duplicates. Your Mac runs faster with more free space, in under 2 minutes.",
+            hero_cta: "⬇ Download Free Trial", hero_secondary: "See Features →",
+            hero_meta: "macOS 14+ · Intel + Apple Silicon · 1.3 MB · Free trial, no payment required · Apple-notarized",
+            // Mockup Screen 1
+            m_smartcare: "Smart Care", m_cleanup: "Cleanup", m_protection: "Protection",
+            m_performance: "Performance", m_apps: "Apps", m_clutter: "My Clutter",
+            m_diskmap: "Disk Map", m_cloud: "Cloud Cleanup", m_tools: "My Tools", m_activity: "Activity",
+            m_sc_title: "Smart Care",
+            m_sc_desc: "Quick maintenance for the essentials.",
+            m_sc_feat1: "Quick Scan", m_sc_feat2: "System Tuning", m_sc_feat3: "Security Check",
+            m_sc_scan: "Scan", m_sc_status: "🟢 System OK",
+            // Mockup Screen 2
+            m_scanning: "Scanning...", m_preparing: "Preparing modules...",
+            // Mockup Screen 3
+            m_res_headline: "Your tasks are ready.",
+            m_res_sub: "Here's what we found:",
+            m_res_junk: "Junk", m_res_security: "Security", m_res_startup: "Startup",
+            m_res_apps: "Apps", m_res_clutter: "Clutter",
+            m_res_junkval: "4.53 GB of<br>Junk", m_res_secval: "1 Threat",
+            m_res_startval: "1 Startup Item", m_res_appsval: "23 installed",
+            m_res_clutterval: "Not yet checked",
+            m_res_check: "Review", m_res_execute: "▶ Execute",
+            // Mockup Screen 4
+            m_cl_title: "Cleanup", m_cl_sub: "109 Items · 4.53 GB total",
+            m_cl_f1: "Safe only", m_cl_f2: "Also low impact", m_cl_f3: "All incl. risky",
+            m_cl_group: "User Caches", m_cl_footer: "0 selected · 0 KB",
+            m_cl_trash: "🗑 Move to Trash",
+            // Features
+            feat_label: "Features",
+            feat_title: "Everything to keep<br>your Mac running fast.",
+            feat_desc: "MacCare scans 8 categories of system junk, finds duplicates, manages startup items and shows exactly where your storage went. Built-in safety makes sure nothing important gets deleted.",
+            feat_1_title: "Junk Scanner", feat_1_desc: "Scans 8 junk categories in parallel: caches, logs, temp files, app remnants, duplicates, downloads, mail attachments, system junk.",
+            feat_2_title: "Visual Disk Map", feat_2_desc: "See exactly where your storage went with an interactive TreeMap. Click into folders, color-coded by file type, with protected paths clearly marked.",
+            feat_3_title: "Safety Guard", feat_3_desc: "A built-in whitelist protects your Documents, Photos, Music, Mail and SSH keys. Every deleted file goes to Trash with full Put-Back support, never permanently removed.",
+            feat_4_title: "Complete Uninstaller", feat_4_desc: "Removes apps along with all their hidden remnants: caches, preferences, containers, launch agents and logs. Finds what Finder misses.",
+            feat_5_title: "Startup Optimizer", feat_5_desc: "Manage Login Items, LaunchAgents and system daemons. Toggle items on or off with impact indicators to keep your Mac booting fast.",
+            feat_6_title: "Menu Bar Monitor", feat_6_desc: "A small, always-visible disk space indicator in your menu bar. One click for a quick scan, plus your last cleanup stats at a glance.",
+            feat_7_title: "Smart Cleanup", feat_7_desc: "One scan. Two phases. Safe files are cleaned instantly. Then you review suggestions one by one with previews.",
+            // Audio section
+            audio_badge: "🎵 For Creative Professionals",
+            audio_title: "Audio Producer Mode",
+            audio_p1: "Use Logic Pro, Ableton or Pro Tools? MacCare automatically detects your DAW and protects all audio-related files like plugins, sample libraries, presets and caches. No other cleaner does this.",
+            audio_p2: "One toggle. Total protection. Clean your Mac without fear of breaking your setup.",
+            audio_item1: "Logic Pro: Plugins, Preferences & Caches",
+            audio_item2: "Native Instruments: Kontakt, Komplete",
+            audio_item3: "Soundtoys, Waves, FabFilter: Effects & Presets",
+            audio_item4: "AudioUnitCache: No more plugin re-validation",
+            audio_item5: "Ableton, Cubase, Pro Tools: Settings & Data",
+            audio_item6: "All Sample Libraries: NI, Spectrasonics, Steinberg",
+            // Comparison
+            cmp_label: "Comparison", cmp_title: "MacCare vs CleanMyMac X",
+            cmp_desc: "Same power. More safety. One-third the price.",
+            cmp_feature: "Feature", cmp_price: "Price",
+            cmp_junk: "Junk Cleanup", cmp_disk: "Disk Visualization",
+            cmp_uninstall: "App Uninstaller", cmp_startup: "Startup Optimizer",
+            cmp_menubar: "Menu Bar Monitor", cmp_risk: "Risk Classification per Item",
+            cmp_audio: "Audio Producer Mode", cmp_whitelist: "Safety Whitelist",
+            cmp_putback: "Put-Back from Trash", cmp_log: "Cleanup Activity Log",
+            cmp_confirm: "Confirm Dialog with Risk",
+            // Pricing
+            price_label: "Pricing", price_title: "Simple, fair pricing.",
+            price_desc: "No tricks. Try free for 7 days, then choose your plan.",
+            price_plan: "MacCare Pro", price_period: "7-day free trial · Cancel anytime",
+            price_f1: "All features included", price_f2: "Audio Producer Mode",
+            price_f3: "Unlimited scans & cleanups", price_f4: "Menu Bar Monitor",
+            price_f5: "TreeMap Disk Visualization", price_f6: "Complete App Uninstaller",
+            price_f7: "Activity Log", price_f8: "All future updates",
+            price_f9: "No recurring payments, ever",
+            price_annual_badge: "Most flexible", price_annual_name: "MacCare Pro",
+            price_annual_period: "/ year", price_annual_trial: "7-day free trial · Cancel anytime",
+            price_annual_cta: "⬇ Start Free Trial",
+            price_annual_sub: "7-day free trial · Cancel anytime",
+            price_lifetime_badge: "Best value", price_lifetime_name: "MacCare Lifetime",
+            price_lifetime_period: "once", price_lifetime_sub: "One payment. Updates forever.",
+            price_lifetime_cta: "⬇ Buy Lifetime",
+            price_cta: "⬇ Start Free Trial",
+            price_meta: "Apple-notarized · macOS 14+ · 1.3 MB",
+            // Footer
+            footer_copy: "MacCare is not affiliated with Apple Inc. or MacPaw."
+        },
+        de: {
+            nav_features: "Funktionen", nav_pro: "Pro-Funktionen", nav_compare: "Vergleich",
+            nav_pricing: "Preise", nav_download: "Kostenlos testen",
+            nl_title: "Mac-Aufräum-Tipps direkt ins Postfach",
+            nl_desc: "Wöchentliche Tipps für einen schnellen Mac. Plus MacCare-Updates und Angebote. Jederzeit abbestellbar.",
+            nl_btn: "Newsletter abonnieren →",
+            hero_badge: "✦ Der Mac-Cleaner dem Power-User vertrauen · Apple-notarisiert · 7 Tage kostenlos",
+            hero_h1a: "Mehr Speicher.", hero_h1b: "Schnellerer Mac.",
+            hero_sub: "MacCare findet und entfernt bis zu 20 GB versteckten Datenmüll wie alte Caches, fehlerhafte Logs und vergessene Duplikate. Dein Mac läuft schneller mit mehr freiem Speicher, in unter 2 Minuten.",
+            hero_cta: "⬇ Kostenlos testen", hero_secondary: "Funktionen ansehen →",
+            hero_meta: "macOS 14+ · Intel + Apple Silicon · 1,3 MB · Keine Zahlung während Testphase · Apple-notarisiert",
+            // Mockup
+            m_smartcare: "Smart Care", m_cleanup: "Bereinigung", m_protection: "Schutz",
+            m_performance: "Leistung", m_apps: "Programme", m_clutter: "Mein Krempel",
+            m_diskmap: "Dateilupe", m_cloud: "Cloud-Bereinigung", m_tools: "Meine Tools", m_activity: "Meine Aktivität",
+            m_sc_title: "Smart Care",
+            m_sc_desc: "Schnelle Wartung für die wichtigste Pflege.",
+            m_sc_feat1: "Schneller Scan", m_sc_feat2: "Systemtuning", m_sc_feat3: "Sicherheitsprüfung",
+            m_sc_scan: "Scannen", m_sc_status: "🟢 System OK",
+            m_scanning: "Scanne...", m_preparing: "Bereite Module vor...",
+            m_res_headline: "Ihre Aufgaben sind bereit zur Ausführung.",
+            m_res_sub: "Das haben wir gefunden:",
+            m_res_junk: "Bereinigung", m_res_security: "Schutz", m_res_startup: "Leistung",
+            m_res_apps: "Programme", m_res_clutter: "Mein Krempel",
+            m_res_junkval: "4,53 GB an<br>Datenmüll", m_res_secval: "1 Gefahr",
+            m_res_startval: "1 Startup-Item", m_res_appsval: "23 installiert",
+            m_res_clutterval: "Noch nicht geprüft",
+            m_res_check: "Prüfen", m_res_execute: "▶ Ausführen",
+            m_cl_title: "Bereinigung", m_cl_sub: "109 Einträge · 4,53 GB gesamt",
+            m_cl_f1: "Nur sichere", m_cl_f2: "Auch geringe Auswirkung", m_cl_f3: "Alle inkl. riskante",
+            m_cl_group: "User-Caches", m_cl_footer: "0 ausgewählt · 0 KB",
+            m_cl_trash: "🗑 In Papierkorb",
+            // Features
+            feat_label: "Funktionen",
+            feat_title: "Alles, damit dein<br>Mac schnell bleibt.",
+            feat_desc: "MacCare scannt 8 Kategorien von Datenmüll, findet Duplikate, verwaltet Startup-Items und zeigt genau, wohin dein Speicher verschwunden ist. Eingebaute Sicherheit sorgt dafür, dass nichts Wichtiges gelöscht wird.",
+            feat_1_title: "Junk Scanner", feat_1_desc: "Scannt 8 Junk-Kategorien parallel: Caches, Logs, Temp-Dateien, App-Reste, Duplikate, Downloads, Mail-Anhänge, System-Junk.",
+            feat_2_title: "Visuelle Speicherkarte", feat_2_desc: "Sieh genau, wohin dein Speicher verschwunden ist, mit einer interaktiven TreeMap. Klick dich in Ordner rein, farbcodiert nach Dateityp, geschützte Pfade klar markiert.",
+            feat_3_title: "Sicherheits-Guard", feat_3_desc: "Eine feste Whitelist schützt deine Dokumente, Fotos, Musik, Mail und SSH-Schlüssel. Jede gelöschte Datei landet im Papierkorb mit voller Zurücklegen-Funktion, nie dauerhaft entfernt.",
+            feat_4_title: "Vollständiger Deinstaller", feat_4_desc: "Entfernt Apps mit all ihren versteckten Resten: Caches, Einstellungen, Container, Launch Agents und Logs. Findet was Finder übersieht.",
+            feat_5_title: "Startup-Optimierer", feat_5_desc: "Verwalte Login-Items, LaunchAgents und System-Daemons. Schalte Items an oder aus mit Auswirkungs-Indikatoren, damit dein Mac schnell startet.",
+            feat_6_title: "Menüleisten-Monitor", feat_6_desc: "Eine kleine, immer sichtbare Speicherplatzanzeige in deiner Menüleiste. Ein Klick für den Schnell-Scan, dazu deine letzten Bereinigungsstatistiken auf einen Blick.",
+            feat_7_title: "Smart Cleanup", feat_7_desc: "Ein Scan. Zwei Phasen. Sichere Dateien werden sofort bereinigt. Dann prüfst du Vorschläge einzeln mit Vorschau.",
+            // Audio
+            audio_badge: "🎵 Für kreative Profis",
+            audio_title: "Audio Producer Mode",
+            audio_p1: "Du nutzt Logic Pro, Ableton oder Pro Tools? MacCare erkennt automatisch deine DAW und schützt alle Audio-bezogenen Dateien wie Plugins, Sample-Libraries, Presets und Caches. Kein anderer Cleaner macht das.",
+            audio_p2: "Ein Schalter. Totaler Schutz. Reinige deinen Mac ohne Angst, dein Setup zu zerstören.",
+            audio_item1: "Logic Pro: Plugins, Einstellungen & Caches",
+            audio_item2: "Native Instruments: Kontakt, Komplete",
+            audio_item3: "Soundtoys, Waves, FabFilter: Effekte & Presets",
+            audio_item4: "AudioUnitCache: Nie wieder Plugin-Neuvalidierung",
+            audio_item5: "Ableton, Cubase, Pro Tools: Settings & Daten",
+            audio_item6: "Alle Sample Libraries: NI, Spectrasonics, Steinberg",
+            // Comparison
+            cmp_label: "Vergleich", cmp_title: "MacCare vs CleanMyMac X",
+            cmp_desc: "Gleiche Power. Mehr Sicherheit. Ein Drittel des Preises.",
+            cmp_feature: "Funktion", cmp_price: "Preis",
+            cmp_junk: "Junk-Bereinigung", cmp_disk: "Speicher-Visualisierung",
+            cmp_uninstall: "App-Deinstaller", cmp_startup: "Startup-Optimierer",
+            cmp_menubar: "Menüleisten-Monitor", cmp_risk: "Risiko-Klassifizierung pro Eintrag",
+            cmp_audio: "Audio Producer Mode", cmp_whitelist: "Sicherheits-Whitelist",
+            cmp_putback: "Zurücklegen aus Papierkorb", cmp_log: "Bereinigungs-Aktivitätslog",
+            cmp_confirm: "Bestätigungsdialog mit Risiko",
+            // Pricing
+            price_label: "Preise", price_title: "Einfach, fair.",
+            price_desc: "Keine Tricks. 7 Tage kostenlos testen, dann Plan wählen.",
+            price_plan: "MacCare Pro", price_period: "7 Tage kostenlos · Jederzeit kündbar",
+            price_f1: "Alle Funktionen inklusive", price_f2: "Audio Producer Mode",
+            price_f3: "Unbegrenzte Scans & Bereinigungen", price_f4: "Menüleisten-Monitor",
+            price_f5: "TreeMap Speicher-Visualisierung", price_f6: "Vollständiger App-Deinstaller",
+            price_f7: "Aktivitäts-Log", price_f8: "Alle zukünftigen Updates",
+            price_f9: "Keine wiederkehrenden Zahlungen, niemals",
+            price_annual_badge: "Am flexibelsten", price_annual_name: "MacCare Pro",
+            price_annual_period: "/ Jahr", price_annual_trial: "7 Tage kostenlos · Jederzeit kündbar",
+            price_annual_cta: "⬇ Kostenlos testen",
+            price_annual_sub: "7 Tage kostenlos · Jederzeit kündbar",
+            price_lifetime_badge: "Bestes Angebot", price_lifetime_name: "MacCare Lifetime",
+            price_lifetime_period: "einmalig", price_lifetime_sub: "Eine Zahlung. Updates für immer.",
+            price_lifetime_cta: "⬇ Lifetime kaufen",
+            price_cta: "⬇ Kostenlos testen",
+            price_meta: "Apple-notarisiert · macOS 14+ · 1,3 MB",
+            footer_copy: "MacCare ist nicht mit Apple Inc. oder MacPaw verbunden."
+        }
+    };
+
+    let currentLang = 'en';
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+        document.documentElement.lang = lang;
+
+        // Update all data-i18n elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translations[lang][key];
+                } else {
+                    el.innerHTML = translations[lang][key];
+                }
+            }
+        });
+
+        // Save preference
+        localStorage.setItem('maccare-lang', lang);
+    }
+
+    // Auto-detect language from browser or saved preference
+    (function() {
+        const saved = localStorage.getItem('maccare-lang');
+        if (saved) { setLang(saved); return; }
+        const browserLang = navigator.language || navigator.userLanguage;
+        if (browserLang && browserLang.startsWith('de')) { setLang('de'); }
+    })();
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

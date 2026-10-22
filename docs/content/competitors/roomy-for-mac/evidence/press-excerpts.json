@@ -1,0 +1,20 @@
+{
+  "id": "press",
+  "publisher": "TSOFT LLC / Roomy",
+  "title": "Press kit",
+  "sourceUrl": "https://roomymac.com/press",
+  "finalUrl": "https://roomymac.com/press",
+  "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "retrievedOn": "2026-10-21",
+  "method": "WebFetch rendered Markdown, read in this job",
+  "publicationDate": null,
+  "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+  "excerpts": [
+    "Use them freely in articles, reviews and videos about Roomy.",
+    "Taken from the app on a real Mac, with personal file and app names blurred.",
+    "Screenshots may be cropped, resized and annotated.",
+    "Roomy is an independent app by TSOFT LLC, not affiliated with or endorsed by Apple Inc.",
+    "1.0.0, released October 13, 2026"
+  ],
+  "rawCapture": null
+}

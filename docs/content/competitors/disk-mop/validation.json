@@ -1,0 +1,28 @@
+{
+  "jobId": "research-disk-mop",
+  "checkedOn": "2026-10-21",
+  "result": "structural-checks-pass; drafting-evidence-gates-blocked",
+  "checks": [
+    "PASS: Python json.loads parsed research.json; status blocked and draftingAllowed false",
+    "PASS: canonicalOwnerId disk-mop and explicit no-alias/no-dead-product-skip decision present",
+    "PASS: all 11 claims have valid source IDs, URLs, excerpts, checked dates, states and evidence classes",
+    "PASS: all five cited source snapshot/register paths and retained discovery snapshot exist",
+    "PASS: reused official snapshot SHA-256 matches batch-1 register",
+    "PASS: selected Breathing Room PNG SHA-256 matches screenshots.json",
+    "PASS: retained live DOM contains 17.91 and 19.90, licence transfer wording, v1.0.31 and macOS 12+",
+    "PASS: retained video metadata contains exact official Overview video and poster URLs",
+    "PASS: competitor visual is link-only with null downloaded/published paths",
+    "PASS: owned Chrome tab93 closed; existing tabs were not used"
+  ],
+  "hashes": {
+    "docs/content/competitors/disk-mop/research.json": "70357124949a87e0953a8bb018c59e2d8c4be8171dbe34f62ce0b1708b338577",
+    "docs/content/competitors/disk-mop/research.md": "eefa3a9b05f32d29a5c2a1ae11c0a099b97e7bf69d2921105826cd21acea9376",
+    "docs/content/competitors/disk-mop/sources/privacy-excerpts.md": "5381d50828aece645201a0c98ef4eb1839afa947dcbb6f2e872950f6cf77505e",
+    "docs/content/competitors/disk-mop/sources/homepage-browser.json": "bcbb23a28e7c520eeab0045da6a5f70cff92aaf3d2e46059ec54a966927bf2a2",
+    "docs/content/.runtime/verification-1/disk-mop-directory.json": "567ddfd58f6d48633170be878129574b0371180b8080d3f4e279d79ef23783a3",
+    "docs/content/.runtime/verification-1/disk-mop-official.json": "e2587c2ce75a25e23fcb291db391b724499713e1e26e813aa14080df60315dc4",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+  },
+  "notPerformed": ["Native/competitor app tests or installation", "Image download or redistribution", "Independent image/editorial review", "Checkout or licence activation", "Website check/build/test: no site changes", "Queue/database updates"],
+  "blockers": ["Competitor visual reuse and actual image/platform/build review unresolved; link-only is not a passed image gate", "Exact current payable price/currency/tax conditions unresolved across baseline, live panel and FAQ"]
+}

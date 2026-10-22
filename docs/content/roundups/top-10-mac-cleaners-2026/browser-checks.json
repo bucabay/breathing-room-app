@@ -1,0 +1,16 @@
+{
+  "kind": "isolated-review-fixture-not-production-layout",
+  "pageId": 208,
+  "url": "file:///Users/gabe/code/breathing-room-app/docs/content/roundups/top-10-mac-cleaners-2026/review.html",
+  "capturedArticleSha256": "42642063e24a9c7524fb4e5bb3a5bcfdd514b8ad1d310dd339bd292d22f4749d",
+  "snapshotQualification": "Six screenshots precede final wording/date-provenance correction; see draft-handoff.md. Final fixture regenerated but not independently approved.",
+  "viewports": [390, 768, 1440],
+  "height": 900,
+  "themes": ["light", "dark"],
+  "resultsAllSix": {"h1": 1, "selectionHeadings": 10, "imagesLoaded": 2, "imageIntrinsicWidths": [640, 2940], "documentHorizontalOverflow": false},
+  "tableOverflow": {"390": "contained horizontal scroll", "768": false, "1440": false},
+  "tableFocus": {"tabIndex": 0, "focusSucceeded": true, "fullKeyboardE2E": false},
+  "screenshotsOpenedAndRead": ["390-light.png", "390-dark.png", "768-light.png", "768-dark.png", "1440-light.png", "1440-dark.png"],
+  "independentApproval": false,
+  "productionLayoutChecked": false
+}

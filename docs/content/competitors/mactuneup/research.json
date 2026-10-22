@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mactuneup",
+  "productId": "mactuneup",
+  "status": "blocked",
+  "reviewedOnLocal": "2026-10-22",
+  "sourceCheckDateUtc": "2026-10-21",
+  "reviewer": "scheduled research-mactuneup worker; not independent editorial approval",
+  "published": false,
+  "ownership": ["docs/content/competitors/mactuneup/"],
+  "identity": {
+    "officialName": "macTuneUp",
+    "publisher": "Macware, Inc.",
+    "canonicalOwnerId": "mactuneup",
+    "vendorHomepage": "https://macwareinc.com/",
+    "linkedProductHomepage": "https://macwareinc.com/products/mactuneup/",
+    "linkedProductHomepageStatus": "HTTP 404; not a usable current product page",
+    "historicalHomepage": "http://www.macwareinc.com/products/MacTuneUp/overview.html",
+    "repository": null,
+    "repositoryStatus": "not verified; no repository asserted",
+    "aliases": ["MacTuneUp", "macTuneUp", "macTuneup"],
+    "aliasEvidenceClaimIds": ["M01", "M03"],
+    "aliasSkipDecision": "Capitalization variants stay with mactuneup; no separate drafts. No verified cross-product alias or relationship to PowerMyMac. Do not merge with it or transfer its facts.",
+    "classification": "historically-direct-current-fit-unresolved",
+    "classificationReason": "Historical official cleaning and scheduling overlap with Mac maintenance. Current availability and modern macOS compatibility are not established.",
+    "platformIntent": "Mac owner checking a legacy MacTuneUp installer; no Windows/Linux support asserted",
+    "skipDecision": {
+      "skipDrafting": true,
+      "permanentExclusion": false,
+      "verifiedDead": false,
+      "reason": "Current compatibility, availability, pricing/licence and required app UI reuse evidence missing. Broken product page does not prove discontinuation. Hold rather than generate a doorway comparison."
+    }
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "mactuneup",
+    "status": "blocked",
+    "verifiedFactsReused": [],
+    "explanation": "Read corresponding blocked record before new research; it contains no verified material facts. Reused discovery and failed legacy URL without refetching them. Batch-2 search supplied no corresponding MacTuneUp record.",
+    "breathingRoomRegister": "docs/content/capabilities.md",
+    "breathingRoomRegisterCheckedOn": "2026-10-21",
+    "screenshotRegister": "docs/content/screenshots.json"
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/mactuneup/about/",
+    "retrievedAtUtc": "2026-10-21T19:09:17.553Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/mactuneup-directory.json",
+    "sha256": "696514d76345158ab05af0d33bbc27ca8bed93a327c66c93ae8764e06a96ffc0",
+    "excerpt": "Developed by\nMacWare",
+    "observedOfficialUrl": "http://www.macwareinc.com/products/MacTuneUp/overview.html",
+    "method": "reused baseline rendered-directory snapshot and manifest edges; directory is discovery, not capability proof",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5", "retrievedAtUtc": "2026-10-21T18:36:40.113Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=8", "retrievedAtUtc": "2026-10-21T18:37:24.218Z"}
+    ]
+  },
+  "sources": [
+    {"id": "S0", "publisher": "baseline worker", "title": "Legacy official URL access failure", "url": "http://www.macwareinc.com/products/MacTuneUp/overview.html", "finalUrl": null, "retrievedAtUtc": "2026-10-21T19:09:28.444802+00:00", "snapshotPath": "docs/content/.runtime/verification-1/mactuneup-official.json", "sha256": "370e7ccc1e2e206e8d4e2868f82dccde380a53e5cff1150cab2e66839af77884", "excerpt": "HTTP Error 404: Not Found", "scope": "access failure only"},
+    {"id": "S1", "publisher": "Macware, Inc.", "title": "Macware homepage", "url": "https://www.macwareinc.com", "finalUrl": "https://macwareinc.com/", "retrievedAtUtc": "2026-10-21T21:43:46.012Z", "snapshotPath": "docs/content/competitors/mactuneup/sources/homepage.json", "sha256": "2da55c46f9a51616e37c1551f89e4f9451bad4df7e4bfd19dc445908b97dbf00", "publishedAt": null, "excerpt": "macTuneUp\nclean your mac", "scope": "vendor identity and outbound product link; presence not successful product access"},
+    {"id": "S2", "publisher": "Macware, Inc.", "title": "Linked product page access failure", "url": "https://macwareinc.com/products/mactuneup/", "finalUrl": null, "checkedOnUtc": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch", "excerpt": "StatusCode: non 2xx status code (404 GET https://macwareinc.com/products/mactuneup/)", "scope": "tool access failure; exact retrieval timestamp not exposed; not proof of product discontinuation"},
+    {"id": "S3", "publisher": "Macware, Inc.", "title": "Press 2013 Macware Releases New Version 7.0 of macTuneUp", "url": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "finalUrl": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "retrievedAtUtc": "2026-10-21T21:43:48.335Z", "snapshotPath": "docs/content/competitors/mactuneup/sources/release-2013.json", "sha256": "cfaec10b5284e103ea9b8e015464cd21997198c78f2625d9f97b3d57243d28da", "publishedAt": "2013-05-16", "dateline": "2013-05-06", "scope": "historical version 7.0 vendor announcement; not current platform, offer or performance evidence"},
+    {"id": "S4", "publisher": "Macware, Inc.", "title": "Download MacTuneUp v7", "url": "https://macwareinc.com/download-mactuneupv7", "finalUrl": "https://macwareinc.com/download-mactuneupv7/", "retrievedAtUtc": "2026-10-21T21:43:49.677Z", "snapshotPath": "docs/content/competitors/mactuneup/sources/download-v7.json", "sha256": "60fdd63c6b96f7a03d47dec87f88d440681f1f0426c880b5c975db1b9aba7b02", "publishedAt": null, "scope": "public instructions only; no code entered, download attempted or installer executed"},
+    {"id": "S5", "publisher": "Macware, Inc.", "title": "Public media search: mactuneup", "url": "https://macwareinc.com/wp-json/wp/v2/media?search=mactuneup&per_page=30", "finalUrl": "https://macwareinc.com/wp-json/wp/v2/media?search=mactuneup&per_page=30", "checkedOnUtc": "2026-10-21", "retrievedAtUtc": null, "snapshotPath": "docs/content/competitors/mactuneup/sources/official-media.json", "sha256": "368e7838a406c3216fb5d0e49460c5b15db0aeb5783b7895c76f44c68a3bbe78", "scope": "15 public metadata entries; exact request time unavailable; upload dates/filenames do not prove current support or image rights"},
+    {"id": "S6", "publisher": "Macware, Inc.", "title": "macTuneup tag archive", "url": "https://macwareinc.com/tag/mactuneup", "finalUrl": null, "checkedOnUtc": "2026-10-21", "excerpt": "Press 2013 Macware Releases New Version 7.0 of macTuneUp", "scope": "discovery of official release permalink; no new current facts"},
+    {"id": "S7", "publisher": "Softonic", "title": "MacTuneUp screenshot-source lead", "url": "https://mac-tuneup.en.softonic.com/mac", "finalUrl": null, "checkedOnUtc": "2026-10-21", "excerpt": "StatusCode: non 2xx status code (406 GET https://mac-tuneup.en.softonic.com/mac)", "scope": "access failure only; not used as product evidence"},
+    {"id": "B1", "publisher": "Breathing Room", "title": "Capabilities evidence register", "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedOnUtc": "2026-10-21", "method": "reuse yesterday's source/public-page verification; no needless refetch", "scope": "source implementation and published preview caveats, not binary runtime QA"},
+    {"id": "B2", "publisher": "Breathing Room", "title": "Screenshot library", "url": "http://127.0.0.1:1431/", "localPath": "docs/content/screenshots.json", "checkedOnUtc": "2026-10-21", "scope": "recorded current-source browser captures; not native observations"}
+  ],
+  "claims": [
+    {"id": "M01", "wording": "Macware's homepage identifies macTuneUp as a Mac cleaning product and links its product page.", "state": "verified", "evidenceClass": "observed-public-page", "sourceIds": ["S1"], "sourceUrl": "https://macwareinc.com/", "excerpt": "macTuneUp\nclean your mac", "checkedOnUtc": "2026-10-21", "scope": "page text/link only", "intendedLocation": "identity and eligibility", "unresolved": "Current sales and support are not established."},
+    {"id": "M02", "wording": "The official homepage's linked product URL returned HTTP 404 during research.", "state": "verified", "evidenceClass": "access-observation", "sourceIds": ["S2"], "sourceUrl": "https://macwareinc.com/products/mactuneup/", "excerpt": "404 GET https://macwareinc.com/products/mactuneup/", "checkedOnUtc": "2026-10-21", "scope": "single read failure, not a discontinuation claim", "intendedLocation": "availability caveat", "unresolved": "No official discontinuation or successor statement found in sources checked."},
+    {"id": "M03", "wording": "Macware announced macTuneUp 7.0 in May 2013.", "state": "verified", "evidenceClass": "historical-vendor-documentation", "sourceIds": ["S3"], "sourceUrl": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "excerpt": "OMAHA, NE – May 6, 2013 – Macware ... has released to the public today ... macTuneUp(TM) 7.0", "checkedOnUtc": "2026-10-21", "scope": "dateline May 6; displayed post date May 16; historical version only", "intendedLocation": "version evidence", "unresolved": "Latest version unknown."},
+    {"id": "M04", "wording": "The 2013 version 7.0 announcement described language-file removal, unwanted-app removal and an automatic scheduling tool.", "state": "verified", "evidenceClass": "historical-vendor-claim", "sourceIds": ["S3"], "sourceUrl": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "excerpt": "completely removes unwanted apps, guts unnecessary language files ... New scheduling tool allows for automatic cleaning of your system", "checkedOnUtc": "2026-10-21", "scope": "not hands-on verification, recommendation or current behavior", "intendedLocation": "historical overlap/trade-offs", "unresolved": "Current implementation and approval semantics unknown."},
+    {"id": "M05", "wording": "The 2013 announcement referred to Mountain Lion and OS versions going back to 10.6.8.", "state": "verified", "evidenceClass": "historical-vendor-documentation", "sourceIds": ["S3"], "sourceUrl": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "excerpt": "Although macTuneUp utilizes the advances of Mountain Lion ... operating systems that go back to 10.6.8", "checkedOnUtc": "2026-10-21", "scope": "historical compatibility statement, not today's supported minimum or upper bound", "intendedLocation": "platform boundary", "unresolved": "Modern macOS and Apple Silicon support unknown; Big Sur media filename alone is insufficient."},
+    {"id": "M06", "wording": "The May 2013 announcement advertised a regular $39.99 USD price and a 50% new-release offer.", "state": "verified", "evidenceClass": "historical-vendor-offer", "sourceIds": ["S3"], "sourceUrl": "https://macwareinc.com/press-2013-macware-releases-new-version-7-0-mactuneup/", "excerpt": "special new release offer of 50% off the regular price of $39.99 USD (or equivalent amount in other currencies)", "checkedOnUtc": "2026-10-21", "scope": "historical only; not a current price, subscription, tax or device-count claim", "intendedLocation": "stale-price warning only", "unresolved": "Current offer and licence conditions unknown."},
+    {"id": "M07", "wording": "The public v7 download instructions request a Download card code and name MacTuneUpv7.0.1.dmg after pre_setup.app.", "state": "verified", "evidenceClass": "observed-public-instructions", "sourceIds": ["S4"], "sourceUrl": "https://macwareinc.com/download-mactuneupv7", "excerpt": "Enter Password to Download ... enter code from your Download card ... Double click on pre_setup.app ... Now double click on MacTuneUpv7.0.1.dmg", "checkedOnUtc": "2026-10-21", "scope": "instructions only, not executed or recommended; no gated download attempted", "intendedLocation": "access and exact-version caveat", "unresolved": "Installer availability, signatures, current support and latest version unknown."},
+    {"id": "M08", "wording": "Current MacTuneUp pricing, licence terms, release and platform compatibility are not verified.", "state": "not-verified", "evidenceClass": "research-gap", "sourceIds": ["S0", "S2", "S3", "S4"], "sourceUrl": "https://macwareinc.com/products/mactuneup/", "excerpt": "404; available official release evidence is historical", "checkedOnUtc": "2026-10-21", "scope": "unknown, never an absent-feature claim", "intendedLocation": "all current matrix cells", "unresolved": "Critical drafting blocker."},
+    {"id": "B01", "wording": "Breathing Room's October 21 register documents source-level storage views, grouped monitoring and developer-cache discovery; distributed binary parity is unverified.", "state": "verified", "evidenceClass": "reused-source-verification", "sourceIds": ["B1"], "sourceUrl": "https://github.com/bucabay/breathing-room-app", "excerpt": "Source implementation is not proof that every feature works in the distributed installer.", "checkedOnUtc": "2026-10-21", "scope": "capabilities.md rows Space, Apps and Developer/builder cleanup; not fresh runtime tests", "intendedLocation": "conditional comparison brief", "unresolved": "Independent release QA remains pending."},
+    {"id": "B02", "wording": "The identified Breathing Room preview is 0.1.0-preview.1, advertised for macOS 13+ with a universal installer, and discloses Python 3.10+ and lack of Developer ID signing/notarization.", "state": "verified", "evidenceClass": "reused-published-and-source-verification", "sourceIds": ["B1"], "sourceUrl": "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1", "excerpt": "Apple Development signed, not Developer ID signed or notarized", "checkedOnUtc": "2026-10-21", "scope": "capabilities.md Preview, installation and runtime caveats; no binary/signature inspection here; physical Intel and clean-machine limits", "intendedLocation": "comparison caveats", "unresolved": "Not certified newest across every channel."},
+    {"id": "B03", "wording": "Breathing Room's registered offer separates free local capabilities from authenticated hosted AI and advertised AI Care at $5 USD/month or $50 USD/year.", "state": "verified", "evidenceClass": "reused-published-offer", "sourceIds": ["B1"], "sourceUrl": "https://breathing-room.chatic.ai/#pricing", "excerpt": "$5 USD/month, $50 USD/year ... Plans renew until cancelled; applicable tax shown at checkout.", "checkedOnUtc": "2026-10-21", "scope": "capabilities.md pricing and hosted-boundary sections; not unlimited entitlement or payment testing; free desktop source Apache-2.0", "intendedLocation": "comparison offer and privacy caveats", "unresolved": "Exact AI allowance and backend enforcement unverified."},
+    {"id": "B04", "wording": "Breathing Room's approval model includes exact saved approvals for daily care and a narrow optional automatic verified Ruff-cache mode.", "state": "verified", "evidenceClass": "reused-source-verification", "sourceIds": ["B1"], "sourceUrl": "https://github.com/bucabay/breathing-room-app", "excerpt": "Automatically move verified Ruff lint caches to Trash.", "checkedOnUtc": "2026-10-21", "scope": "capabilities.md Approval exception; do not generalize to never deletes without asking; app-running constraint applies to daily care", "intendedLocation": "approval row", "unresolved": "Not end-to-end runtime certification."}
+  ],
+  "productMatrix": {
+    "macOS": {"value": "Current minimum/maximum and architectures not verified; historical 7.0 statement only", "claimIds": ["M05", "M08"]},
+    "version": {"value": "7.0 historical announcement; 7.0.1 in public download instructions; latest unknown", "claimIds": ["M03", "M07"]},
+    "licence": {"value": "Current official terms not verified; directory labels commercial/proprietary", "claimIds": ["M08"]},
+    "pricing": {"value": "Current amount/currency/billing/device count/trial/tax/refund not verified", "claimIds": ["M06", "M08"]},
+    "localHosted": {"value": "Desktop install instructions observed; data flow and network dependencies not verified", "claimIds": ["M07", "M08"]},
+    "scanCleanupModel": {"value": "Historical cleanup/removal vendor descriptions; current model not verified", "claimIds": ["M04", "M08"]},
+    "approvalControls": {"value": "Not verified", "claimIds": ["M08"]},
+    "helperGrouping": {"value": "Not verified", "claimIds": ["M08"]},
+    "recurringGrowth": {"value": "Not verified; historical scheduling is not growth monitoring", "claimIds": ["M04", "M08"]},
+    "developerCaches": {"value": "Not verified", "claimIds": ["M08"]},
+    "runtimeInstall": {"value": "Download-card code and pre-setup instructions only; signatures, notarization, runtime and current installation compatibility not verified", "claimIds": ["M07", "M08"]}
+  },
+  "visuals": [
+    {
+      "id": "mactuneup-app-ui-unresolved", "productId": "mactuneup", "view": null, "kind": null,
+      "sourcePageUrl": "https://macwareinc.com/wp-json/wp/v2/media?search=mactuneup&per_page=30", "assetUrl": null,
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null, "dataMode": "unknown",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "reuse": {"status": "pending", "basis": "No real app screenshot with cleared rights established. No competitor image downloaded.", "evidenceUrlOrPath": "sources/official-media.json"},
+      "limitations": ["Critical image gate blocked, not waived.", "Public manual PDF is an uninspected lead, not an approved screenshot.", "Icons, packaging and clock illustration are not app views."],
+      "review": {"status": "blocked", "reviewer": null}
+    },
+    {
+      "id": "rejected-schedule-graphic", "productId": "mactuneup", "view": "clock/calendar illustration, not app UI", "kind": "official-asset",
+      "sourcePageUrl": "https://macwareinc.com/mactuneup-control-schedule-graphic/",
+      "assetUrl": "https://macwareinc.com/wp-content/uploads/2020/09/macTuneUp-control-schedule-graphic.jpg",
+      "checkedOnUtc": "2026-10-21", "capturedAtUtc": null, "capturedBy": null, "productVersion": null, "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "widthPx": 727, "heightPx": 711,
+      "edits": [], "reuse": {"status": "link-only", "basis": "No republication permission established; viewed remotely only."},
+      "caption": "Macware's scheduling illustration, not a MacTuneUp app screenshot.", "alt": "Illustrated clock with a June 16 calendar page.",
+      "limitations": ["Read actual remote image through an owned-tab screenshot; not saved as a product asset.", "Dimensions are public media metadata; capture/version unknown."],
+      "review": {"status": "rejected-not-app-ui", "reviewer": "research worker", "checkedOnUtc": "2026-10-21"}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "capturedBy": "screenshot-library worker per screenshots.json",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-example-data", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party example UI per screenshots.json; no blanket third-party trademark licence or endorsement.", "evidenceUrlOrPath": "docs/content/screenshots.json", "credit": "Breathing Room"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": ["B01"], "limitations": ["Keep example-data banner visible.", "Capture-source currentness only, not latest binary parity or native measurement.", "Final page privacy, rights and legibility review pending; no published derivative."],
+      "review": {"status": "research-visually-inspected-and-hash-verified", "reviewer": "research worker", "checkedOnUtc": "2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "article": {"status": "blocked-conditional-only", "title": "Before reusing an old MacTuneUp installer, verify what it supports", "slug": "check-mactuneup-installer-compatibility", "track": "search-reference", "primaryIntent": "Existing MacTuneUp owner evaluating legacy installer evidence on a present-day Mac", "detailPath": "research.md#conditional-workflow-article-brief--not-authorization-to-draft", "interaction": "Stop-and-verify decision checklist; no installation, uploads, credentials or cleanup"},
+    "comparison": {"status": "blocked-conditional-only", "title": "Breathing Room and MacTuneUp: current preview versus legacy maintenance evidence", "slug": "mactuneup", "primaryIntent": "Concise current suitability decision, without treating historical functions as current", "detailPath": "research.md#conditional-concise-comparison-brief"},
+    "advantagesTradeoffs": {"evidenceClaimIds": ["M04", "M08", "B01", "B02", "B03", "B04"], "breathingRoomFit": "Source-documented storage/process/developer investigation, with preview, runtime, hosted-data and optional-paid-service caveats.", "macTuneUpFit": "Historical app/language removal and scheduling descriptions may be relevant to existing owners; no current recommendation possible.", "limits": "No benchmarks, binary feature-parity certification, superiority or missing-feature negatives. Disclose we build Breathing Room."}
+  },
+  "blockers": [
+    {"id": "current-product-evidence", "severity": "critical", "diagnostic": "Official linked product page 404; only historical release/OS/price statements and a code-gated v7 download page available. Current release, supported OS/architecture, availability, licence and pricing/access conditions not verified.", "resolution": "Public official current documentation or explicit official discontinuation/successor evidence; do not treat stale offers as current."},
+    {"id": "competitor-app-ui-rights", "severity": "critical", "diagnostic": "No inspected real MacTuneUp app UI image with cleared reuse. Official clock illustration, packaging and icons do not meet gate.", "resolution": "Exact real screenshot source/asset, version/provenance limitations, and permission/licence or explicit approved editorial policy decision."}
+  ],
+  "noncriticalUnknowns": ["Official public repository", "Exact historical capture dates and image authors", "Current helper grouping, growth monitoring, developer cache handling and approval controls; unknown is not No"],
+  "safety": {"installedOrRanCompetitor": false, "cleanupPerformed": false, "signupsPurchasesMessages": false, "credentialAccess": false, "gatedDownloadBypassed": false, "thirdPartyImagesDownloaded": false, "siteEdits": false, "queueMutation": false, "agentsSpawned": false, "ownedBrowserTab": 139, "ownedBrowserTabClosed": true, "browserRecoveryNeeded": false},
+  "validationPath": "docs/content/competitors/mactuneup/validation.json",
+  "independentReview": "pending; not a publishable draft"
+}

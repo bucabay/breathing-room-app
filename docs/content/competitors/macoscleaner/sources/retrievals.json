@@ -1,0 +1,42 @@
+[
+  {
+    "id": "readme",
+    "url": "https://raw.githubusercontent.com/AlexTkDev/MacOSCleaner/d834666d2279160b01bb24cc236eaa7aedc5d629/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/AlexTkDev/MacOSCleaner/d834666d2279160b01bb24cc236eaa7aedc5d629/README.md",
+    "retrievedAtUtc": "2026-10-21T21:39:24.058511+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/macoscleaner/sources/readme.txt",
+    "sha256": "ea7f94ff4c1fecaee9db86db558475c782fdcbc46f4ca41f4c20aa3f431fc435",
+    "bytes": 12527
+  },
+  {
+    "id": "license",
+    "url": "https://raw.githubusercontent.com/AlexTkDev/MacOSCleaner/d834666d2279160b01bb24cc236eaa7aedc5d629/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/AlexTkDev/MacOSCleaner/d834666d2279160b01bb24cc236eaa7aedc5d629/LICENSE",
+    "retrievedAtUtc": "2026-10-21T21:39:25.281998+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/macoscleaner/sources/license.txt",
+    "sha256": "6533f7da2635e452d9f8e73726e37e6533efdf7e1c2f6995d64c7f42a9e48eb5",
+    "bytes": 33482
+  },
+  {
+    "id": "release-2.3.0",
+    "url": "https://api.github.com/repos/AlexTkDev/MacOSCleaner/releases/tags/2.3.0",
+    "finalUrl": "https://api.github.com/repos/AlexTkDev/MacOSCleaner/releases/tags/2.3.0",
+    "retrievedAtUtc": "2026-10-21T21:39:26.075660+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/macoscleaner/sources/release-2.3.0.json",
+    "sha256": "38ae7c78fad953c0e225972a381a11bac4c61e114facff46a7721631025ee7c3",
+    "bytes": 8569
+  },
+  {
+    "id": "screenshot-index",
+    "url": "https://api.github.com/repos/AlexTkDev/MacOSCleaner/contents/assets/screenshots?ref=d834666d2279160b01bb24cc236eaa7aedc5d629",
+    "finalUrl": "https://api.github.com/repos/AlexTkDev/MacOSCleaner/contents/assets/screenshots?ref=d834666d2279160b01bb24cc236eaa7aedc5d629",
+    "retrievedAtUtc": "2026-10-21T21:39:26.944077+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/macoscleaner/sources/screenshot-index.json",
+    "sha256": "9f0717e30b5c18a5db13e2d71d818ed7d10384cd602bbd26cf9d4d6c517c6cbd",
+    "bytes": 21001
+  }
+]

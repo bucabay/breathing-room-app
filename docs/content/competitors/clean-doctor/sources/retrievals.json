@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mac-store",
+    "url": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026?platform=mac",
+    "finalUrl": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026?platform=mac",
+    "retrievedAtUtc": "2026-10-21T22:33:17.913440+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/clean-doctor/sources/mac-store.html",
+    "sha256": "4aade5faf1800366a589fe26c800ba281f3a33488d556811bd72589755900e8e",
+    "textPath": "docs/content/competitors/clean-doctor/sources/mac-store.txt"
+  },
+  {
+    "id": "developer-home",
+    "url": "http://www.elinapp.com",
+    "finalUrl": "http://www.elinapp.com",
+    "retrievedAtUtc": "2026-10-21T22:33:18.316087+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/clean-doctor/sources/developer-home.html",
+    "sha256": "ff878f5ea78eeb31bea238f1822616286db19ea1f963fba293faeb1dc036ab19",
+    "textPath": "docs/content/competitors/clean-doctor/sources/developer-home.txt"
+  },
+  {
+    "id": "terms",
+    "url": "http://www.elinapp.com/terms_clean_doctor.html",
+    "finalUrl": "http://www.elinapp.com/terms_clean_doctor.html",
+    "retrievedAtUtc": "2026-10-21T22:33:18.718092+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/clean-doctor/sources/terms.html",
+    "sha256": "78078e5994e0307c0db1ae26f6e1e99840a3fb2cb28e64721baafae269403fb8",
+    "textPath": "docs/content/competitors/clean-doctor/sources/terms.txt"
+  }
+]

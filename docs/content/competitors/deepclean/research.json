@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-deepclean",
+  "productId": "deepclean",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationApproved": false,
+  "reviewer": "scheduled research worker; source inspection only, not independent publication review",
+  "identity": {
+    "officialName": "DeepClean",
+    "homepage": "https://deepclean.app/",
+    "canonicalOwnerId": "deepclean",
+    "repositoryUrl": null,
+    "repositoryStatus": "No official public code repository established in homepage, about, press or legal sources. Not proof none exists.",
+    "publisher": "Official about page describes an independent small team and names Nathan Bateman as blog writer/editor; legal entity not established.",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip DeepClean as an alias. No verified alias or redirect to PowerMyMac, iMyMac or TechyCub was found; those unrelated queue records were not researched here.",
+    "similarNameDecision": {
+      "candidateId": "deepcleanmac",
+      "state": "distinct-current-offerings-no-alias-verified",
+      "evidence": "Reused batch-1 official records distinguish DeepClean at deepclean.app (macOS 13+, $39 once) from DeepCleanMac at deepcleanmac.com (macOS 14+, yearly/lifetime offers). Neither retained official page establishes a same-product relationship. Domain-qualify names and do not transfer claims or merge merely on spelling. Common legal ownership remains unknown.",
+      "sourceIds": ["baseline-home", "baseline-deepcleanmac"]
+    },
+    "classification": "direct",
+    "classificationBasis": "Both document Mac storage inspection and reviewable cleanup with developer-artifact scope; this is workflow overlap, not feature parity or a measured ranking.",
+    "platformFit": "Native macOS utility; no Windows or Linux replacement claim is needed or supported.",
+    "skip": false,
+    "sourceIds": ["baseline-home", "about", "terms"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/deepclean/about/",
+    "retrievedAtUtc": "2026-10-21T19:06:16.366Z",
+    "method": "Reused batch-1 browser-rendered directory snapshot and official-link verification; revisited only for missing screenshot metadata in owned Chrome tab 87.",
+    "snapshotPath": "docs/content/.runtime/verification-1/deepclean-directory.json",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=4", "retrievedAtUtc": "2026-10-21T18:36:37.538Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=3", "retrievedAtUtc": "2026-10-21T18:37:11.107Z"}
+    ],
+    "edgeRegister": "docs/content/competitors.json: deepclean.edges; no fresh traversal performed",
+    "limitations": "Directory claims are discovery data, not feature verification. Its old $25-$35 range and no-telemetry wording must not override current official terms/privacy. Plain HTTP retrieval of listing returned 403; existing authorized Chrome read succeeded, no bypass or cookie extraction."
+  },
+  "sources": [
+    {"id": "baseline-home", "publisher": "DeepClean", "title": "DeepClean: See What's Inside System Data on Your Mac", "url": "https://deepclean.app", "finalUrl": "https://deepclean.app", "retrievedAtUtc": "2026-10-21T19:08:12.712053+00:00", "snapshotPath": "docs/content/.runtime/verification-1/deepclean-official.json", "sha256": "a4ace2c162cac1754bf639ffcab062f7180bf3e74890a491f8bba8132334b973", "scope": "Reused current batch-1 official text; not re-fetched; publication/update date unknown"},
+    {"id": "baseline-deepcleanmac", "publisher": "DeepCleanMac", "title": "DeepCleanMac official homepage", "url": "https://deepcleanmac.com", "finalUrl": "https://deepcleanmac.com", "snapshotPath": "docs/content/.runtime/verification-1/deepcleanmac-official.json", "metadataSource": "docs/content/verification/batch-1.json:deepcleanmac", "scope": "Reused only for similar-name resolution, not this product's feature matrix"},
+    {"id": "about", "publisher": "DeepClean", "title": "About", "url": "https://deepclean.app/about", "archiveRecord": "sources/retrievals.json#about", "publicationDate": null},
+    {"id": "terms", "publisher": "DeepClean", "title": "Terms of Use", "url": "https://deepclean.app/terms", "archiveRecord": "sources/retrievals.json#terms", "publicationDate": "2026-10-17"},
+    {"id": "privacy", "publisher": "DeepClean", "title": "Privacy Policy", "url": "https://deepclean.app/privacy", "archiveRecord": "sources/retrievals.json#privacy", "publicationDate": "2026-09-11"},
+    {"id": "download", "publisher": "DeepClean", "title": "Download and install", "url": "https://deepclean.app/download", "archiveRecord": "sources/retrievals.json#download", "publicationDate": null},
+    {"id": "press", "publisher": "DeepClean", "title": "Press Kit", "url": "https://deepclean.app/press/", "archiveRecord": "sources/retrievals.json#press", "publicationDate": null},
+    {"id": "developer-tools", "publisher": "DeepClean", "title": "Developer Tools", "url": "https://deepclean.app/features/developer-tools", "archiveRecord": "sources/retrievals.json#developer-tools", "publicationDate": null},
+    {"id": "listing-visual", "publisher": "AlternativeTo", "title": "DeepClean listing image metadata", "url": "https://alternativeto.net/software/deepclean/about/", "snapshotPath": "sources/listing-visual-dom.json", "scope": "Read-only live DOM metadata; asset not downloaded and UI not independently tested"},
+    {"id": "br-capabilities", "publisher": "Breathing Room programme", "url": "https://github.com/bucabay/breathing-room-app", "snapshotPath": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "scope": "Reused same-day source/release/public-page register, not new native validation"},
+    {"id": "br-visuals", "publisher": "Breathing Room programme", "url": "http://127.0.0.1:1431/", "snapshotPath": "docs/content/screenshots.json", "checkedOn": "2026-10-21", "scope": "Existing first-party current-source browser preview, example data"}
+  ],
+  "claimPolicy": "Each claim checked 2026-10-21 by this research worker; verified means supported as documented vendor behavior, never measured or independently audited. Excerpts below map to exact source URLs through source IDs. sources/retrievals.json supplies actual fresh retrieval times, final URLs and original HTML hashes. All feature claims scope to public documentation accompanying the advertised 1.3.11 download, not verified binary behavior.",
+  "claims": [
+    {"id": "D01", "wording": "DeepClean documents macOS 13 Ventura or later on Apple Silicon and Intel.", "sourceIds": ["baseline-home"], "excerpt": "Requires macOS 13 Ventura or later. Apple Silicon and Intel.", "state": "verified", "location": "platform row", "evidenceClass": "vendor documentation"},
+    {"id": "D02", "wording": "Unlimited cleanup is advertised at $39 once for one Mac, without a subscription; currency code and taxes are not explicit in checked text.", "sourceIds": ["baseline-home", "terms"], "excerpt": "Unlimited cleanup is a one-time purchase of $39 for one Mac. There is no subscription.", "state": "verified", "location": "pricing row", "conditions": "Personal non-transferable license; major-version updates only; optional future paid major upgrades. Do not call lifetime updates or verified USD/tax-inclusive pricing.", "evidenceClass": "published offer"},
+    {"id": "D03", "wording": "Terms specify a lifetime total of 10 GB moved to Trash per installation for free, but the homepage also says first gigabyte; actual allowance is unresolved.", "sourceIds": ["terms", "baseline-home"], "excerpt": "That allowance is a lifetime total per installation, not per scan, and it does not expire.", "conflictingExcerpt": "Download, scan, and clean your first gigabyte without signing up for anything.", "state": "contradicted", "location": "free tier and limitation", "evidenceClass": "conflicting official documentation"},
+    {"id": "D04", "wording": "The official install page advertises DeepClean 1.3.11; binary size, signatures, notarization and runtime behavior were not independently checked.", "sourceIds": ["download", "baseline-home"], "excerpt": "Download DeepClean 1.3.11", "state": "verified", "location": "version/install note", "conditions": "Existing homepage links https://deepclean.app/DeepClean-1.3.11.dmg; do not fetch installer or bypass download verification.", "evidenceClass": "published download offer"},
+    {"id": "D05", "wording": "The website download modal asks for email verification; no account, email submission or download was attempted.", "sourceIds": ["download", "privacy"], "excerpt": "Enter your email and we'll send a 6-digit code. Verify it to start the download.", "state": "verified", "location": "access caveat", "conditions": "Do not repeat no email needed: policy later contains conflicting no-email free-scan wording. Website download and in-app scanning are different stages.", "evidenceClass": "published flow"},
+    {"id": "D06", "wording": "DeepClean documents selection before removal, Trash-first movement and Delete History; Caution entries are excluded from bulk selection.", "sourceIds": ["baseline-home"], "excerpt": "Nothing is deleted until you select it, and Caution items are never included in bulk selection.", "supportingExcerpt": "Removed items go to the Trash rather than being erased, and Delete History records what moved and when.", "state": "verified", "location": "approval/cleanup rows", "conditions": "Vendor workflow, not safety certification; Trash is not immediate free-space recovery or guaranteed restoration.", "evidenceClass": "vendor documentation"},
+    {"id": "D07", "wording": "The developer page documents Xcode, Node package managers, Cargo, Python caches, Docker, Gradle/Maven and other toolchains.", "sourceIds": ["developer-tools"], "excerpt": "pip / Poetry / uv / Ruff", "supportingExcerpt": "Global npm cache, Yarn offline mirror, pnpm content-addressable store, and Bun install cache. All four Node.js package managers in one scan.", "state": "verified", "location": "developer caches row", "conditions": "Do not adopt typical recovered-GB figures, complete coverage, cache disposability or scan speed as tested facts.", "evidenceClass": "vendor documentation"},
+    {"id": "D08", "wording": "The privacy policy describes local file scanning but networked license activation, updates and optional usage events; blanket no-telemetry/offline claims conflict with it.", "sourceIds": ["privacy", "about", "press"], "excerpt": "The only network traffic the app generates goes to our own server: license activation, update checks, optional setup-link confirmation, and a small number of usage events", "conflictingExcerpt": "No telemetry, no cloud uploads, no accounts.", "state": "verified", "location": "local/hosted and privacy caveat", "conditions": "Attribute to policy; not a traffic audit. Policy additionally covers user-written support chat and periodic license revalidation with an unspecified offline grace period. Do not imply every network operation is optional.", "evidenceClass": "published policy with source conflict"},
+    {"id": "D09", "wording": "Full Disk Access is requested for the documented scan; the install guide anticipates a macOS cannot-check warning.", "sourceIds": ["download"], "excerpt": "DeepClean asks for Full Disk Access when it first opens", "state": "verified", "location": "install caveat", "conditions": "Not a signature inspection. Do not reproduce Gatekeeper bypass instructions or change permissions/settings in research. Python/runtime prerequisites beyond macOS not verified.", "evidenceClass": "vendor install documentation"},
+    {"id": "D10", "wording": "DeepClean is licensed software, not source-code ownership; no open-source grant was established.", "sourceIds": ["terms"], "excerpt": "The software itself remains the property of DeepClean; the license gives you the right to use it, not ownership of the code.", "state": "verified", "location": "license row", "evidenceClass": "published legal terms"},
+    {"id": "D11", "wording": "The official press kit says high-resolution screenshots are available on request; no app-screenshot republication permission is supplied there.", "sourceIds": ["press"], "excerpt": "High-resolution screenshots available upon request. Contact us for press-ready assets.", "state": "verified", "location": "visual gate", "conditions": "Do not contact press in this job. Icon download language is not app-UI reuse permission.", "evidenceClass": "published press resources"},
+    {"id": "B01", "wording": "Breathing Room, which we build, is a macOS 13+ maintenance preview; the published 0.1.0-preview.1 release discloses Apple Development signing, not Developer ID signing or notarization, Python 3.10+ inventory prerequisites and untested physical Intel runtime.", "sourceIds": ["br-capabilities"], "excerpt": "Published preview says Apple Development signed, not Developer ID signed or notarized", "state": "verified", "location": "Breathing Room install row", "evidenceClass": "reused same-day capability register; sections Preview, installation and runtime caveats"},
+    {"id": "B02", "wording": "Breathing Room has documented source implementations for storage views, app/helper CPU/memory grouping, sampled activity history, developer cleanup and exact saved daily approvals while running; this does not prove distributed-binary parity.", "sourceIds": ["br-capabilities"], "excerpt": "Source implementation is not proof that every feature works in the distributed installer.", "state": "verified", "location": "comparison and bounded advantage", "evidenceClass": "reused source register; Current capability matrix and Approval exception"},
+    {"id": "B03", "wording": "Breathing Room advertises a free local desktop core and optional hosted AI Care at $5 USD/month or $50 USD/year; hosted requests require authentication/internet and can send relevant inspection context.", "sourceIds": ["br-capabilities"], "excerpt": "Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.", "state": "verified", "location": "pricing/local-hosted rows", "conditions": "Website account gate differs from public GitHub release download. No tested subscription activation, unlimited-AI entitlement or runtime guarantee.", "evidenceClass": "reused same-day published pricing/privacy and source register"}
+  ],
+  "productMatrix": {
+    "macOS": "D01", "license": "D10", "localHosted": "D08", "scanCleanup": "D06", "approvalControls": "D06", "developerCaches": "D07", "pricing": "D02", "freeAllowance": "D03", "version": "D04", "installation": "D05, D09",
+    "processHelperGrouping": {"state": "not-verified", "value": null},
+    "recurringGrowthMonitoring": {"state": "not-verified", "value": null},
+    "runtimeDependencies": {"state": "not-verified", "value": "Beyond published macOS requirement, not established"},
+    "signingNotarization": {"state": "not-verified", "value": null},
+    "refunds": {"state": "verified", "sourceIds": ["terms"], "excerpt": "refund requests are reviewed case by case", "conditions": "BeatPath 30-day text on the same page names another product and must not become a DeepClean guarantee."}
+  },
+  "visuals": [
+    {
+      "id": "deepclean-developer-listing-ui", "productId": "deepclean", "view": "Developer Tools", "kind": "listing-asset",
+      "sourcePageUrl": "https://alternativeto.net/software/deepclean/about/",
+      "assetUrl": "https://img.alternativeto.net/s/618x394/avif/deepclean_736755_full.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null,
+      "dataMode": "unknown", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": 309, "heightPx": 197, "dimensionBasis": "Loaded browser image naturalWidth/naturalHeight in retained DOM; image file not downloaded", "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Public listing image is a source reference, not a republication license. No explicit reuse permission located; press page requests contact for app screenshots.", "evidenceUrlOrPath": "https://deepclean.app/press/", "credit": "DeepClean via AlternativeTo; no endorsement implied"},
+      "caption": "DeepClean Developer Tools image on its AlternativeTo listing; vendor/listing illustration, version and original capture date unknown. Linked source only pending reuse permission; not our test.",
+      "alt": "DeepClean Developer Tools listing image showing toolchain cache rows with sizes and ratings.",
+      "supportedClaimIds": ["D07"],
+      "limitations": ["Listing alt text identifies app view, not independently inspected original asset", "No invented UI, asset download, pixel alteration or measured-results claim", "Does not satisfy required on-page visual gate until rights and independent visual inspection are complete"],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "Prior screenshot-library job; reused, not recaptured here",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-in-library; article-context-review-pending", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party current-source UI capture per screenshot library. Preserve example-data banner and caption; no blanket third-party trademark license.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room current-source browser preview"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": ["B02"],
+      "limitations": ["Existing current-source capture, not proof of native behavior or distributed release parity", "Preserve visible example banner; inspect readable context before publication", "Third-party marks remain their owners' marks"],
+      "review": {"status": "library-reviewed; independent page-context review pending", "reviewer": null, "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference",
+      "title": "Review developer storage by rebuild cost, not just folder size",
+      "slug": "review-developer-storage-by-rebuild-cost",
+      "primaryIntent": "Help Mac developers distinguish regenerable caches from environments, Docker data and valuable local artifacts before approving cleanup; use DeepClean's documented ratings as an example, not as proof of disposability.",
+      "distinctAngle": "A review worksheet mapping detected category to owning tool, local-only state, backup and rebuild/download cost; not another generic System Data removal checklist.",
+      "outline": ["Conclusion: review recovery cost before selecting a large row", "Top visual: DeepClean Developer Tools source once rights cleared", "Separate caches from environments, databases and locally authored data", "Use Safe/Review/Caution as prompts, not deletion authority", "Read the proposed scope and preserve a recovery path", "Later visual: labeled Breathing Room Space example and its different investigation model", "Choose a one-off scan or investigate recurring growth; unknown competitor monitoring stays unknown"],
+      "interactionPass": "Handoff a local-only review worksheet: category, owning tool, rebuild method, required downloads, backup status and user decision. No filesystem scan, delete action, upload or invented savings estimate.",
+      "links": ["/comparisons/deepclean/", "/comparisons/", "/tools/"],
+      "constraints": "Do not execute cleanup commands, claim Apple category accounting completeness, repeat typical savings, or prescribe Docker volume/cache deletion. Apple/tool-specific removal guidance needs separate primary-source verification before drafting. Link targets require future site-job validation."
+    },
+    "comparison": {
+      "title": "Breathing Room vs DeepClean: cache review or ongoing investigation",
+      "slug": "deepclean",
+      "primaryIntent": "Choose between DeepClean's documented rated, Trash-first developer-storage cleanup and Breathing Room's preview inspection/activity/hosted-assistance workflow.",
+      "matrixClaimIds": ["D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09", "D10", "B01", "B02", "B03"],
+      "outline": ["Conclusion with affiliation and direct-but-not-equivalent scope", "Concise source-linked platform, license, price, cleanup, developer-cache and local/hosted matrix", "When DeepClean's one-time license and rated manual review fit", "When Breathing Room's preview investigation model fits, with hosted and install caveats", "Unknowns, visual credit and deeper workflow link"],
+      "links": ["/blog/review-developer-storage-by-rebuild-cost/", "/comparisons/"],
+      "constraints": "No winner ticks for undocumented competitor monitoring/helper features. No duplicate /alternatives/ route. Description is the introduction; do not repeat it in the body."
+    }
+  },
+  "advantagesAndTradeoffs": [
+    {"product": "DeepClean", "judgment": "A documented one-time, per-Mac license and explicit rated selection/Trash history can fit occasional developer cleanup without a recurring app subscription.", "claimIds": ["D02", "D06", "D07"], "limits": "Major-version update scope; networked activation; conflicting free allowance; no hands-on validation or guarantee of safe removal."},
+    {"product": "Breathing Room", "judgment": "Breathing Room, which we build, may fit readers who want source-documented helper grouping, activity context and exact saved daily approvals rather than only a point-in-time storage list.", "claimIds": ["B01", "B02", "B03"], "limits": "Preview, Python requirement, no Developer ID/notarization, hosted authenticated AI and optional recurring AI Care. No claim that DeepClean lacks these features or that Breathing Room is safer/faster."}
+  ],
+  "unknowns": ["Exact DeepClean legal owner and public repository", "DeepClean app signature/notarization and exact extra runtime requirements", "DeepClean process-helper grouping and recurring-growth monitoring", "Currency code, tax, discounts and verified checkout/refund execution", "Actual scan coverage, performance, savings and distributed-version behavior", "Listing asset capture date, app version, original dimensions and reuse rights", "Precise offline license grace period"],
+  "blockers": [
+    {"id": "visual-rights", "severity": "critical", "diagnostic": "Real app-UI asset URL found, but publication reuse basis not established; official press kit requests contact for screenshots. No download or contact authorized. Link-only reference does not satisfy EDITORIAL.md visual gate.", "unblock": "Owner-supplied explicit screenshot license/permission or approved policy decision plus independent asset inspection."},
+    {"id": "free-allowance", "severity": "critical-for-unqualified-pricing-draft", "diagnostic": "Homepage first-gigabyte statement conflicts with homepage pricing and terms' lifetime-total 10 GB per installation. Terms document intended offer, not tested enforcement.", "unblock": "Obtain authoritative version-specific clarification or independently approve a draft that explicitly discloses conflict and omits a definite free entitlement."},
+    {"id": "privacy-conflict", "severity": "critical-for-blanket-privacy-claim", "diagnostic": "About/press says no telemetry/no cloud; privacy describes first-party usage events, activation, updates and support messaging. Download needs email verification despite no-email wording elsewhere.", "unblock": "Use qualified, attributed policy wording and disclose source conflicts; never describe wholly offline/no network/no telemetry/no email."}
+  ],
+  "checks": {
+    "nativeTesting": "not performed", "cleanup": "not performed", "installerDownload": "not performed", "thirdPartyImageDownload": "not performed; rights unclear", "sourceHtmlArchives": "six public official pages retained with hashes", "browser": "Existing authorized Chrome available; owned tab 87 opened for listing image metadata and closed. Pre-existing tabs not inspected or navigated.", "siteChecks": "not applicable: no site changes", "independentReview": "pending; no score awarded", "validationFile": "validation.json"
+  }
+}

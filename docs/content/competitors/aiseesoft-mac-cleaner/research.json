@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-aiseesoft-mac-cleaner",
+  "productId": "aiseesoft-mac-cleaner",
+  "stage": "research",
+  "status": "blocked",
+  "checkedOn": "2026-10-21",
+  "published": false,
+  "ownership": {
+    "directory": "/Users/gabe/code/breathing-room-app/docs/content/competitors/aiseesoft-mac-cleaner",
+    "siteEdits": false
+  },
+  "identity": {
+    "officialName": "Aiseesoft Mac Cleaner",
+    "vendor": "Aiseesoft Studio",
+    "homepage": "https://www.aiseesoft.com/mac-cleaner/",
+    "repository": null,
+    "repositoryStatus": "not verified; none identified in inspected official pages",
+    "canonicalOwnerId": "aiseesoft-mac-cleaner",
+    "aliases": [
+      "Mac Cleaner (Aiseesoft-branded short form)"
+    ],
+    "aliasSkipDecision": {
+      "skip": false,
+      "reason": "Distinct Aiseesoft official identity and official-linked discovery record; no evidence connecting this product to PowerMyMac, iMyMac or TechyCub. Do not invent cross-vendor equivalence from generic cleaner names. Unresolved PowerMyMac records in alias-decisions.json are outside this owned product."
+    },
+    "classification": "direct",
+    "fit": "Mac storage scanning and user-selected cleanup overlap; broader utilities differ. Not feature-for-feature equivalence.",
+    "platformFit": "Mac tool; no Windows support claim. Generic Windows option in custom-licence form is not product compatibility evidence."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=3",
+        "retrievedAt": "2026-10-21T18:36:26.872Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=8",
+        "retrievedAt": "2026-10-21T18:37:24.218Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "baselineRecordPath": "docs/content/verification/batch-1.json",
+    "retainedRecordPath": "docs/content/competitors/aiseesoft-mac-cleaner/baseline-reused.json",
+    "method": "Reused official-link and listing evidence, no directory re-fetch.",
+    "snapshotSourceId": "directory"
+  },
+  "sources": [
+    {
+      "id": "official-home",
+      "url": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "retrievedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-official.json",
+      "sha256": "5f96f325d42f311820f3723c7ff29e7855963e937eec4f0cfb5ef07547aa83ce",
+      "reused": true,
+      "publicationDate": null,
+      "scope": "Public vendor documentation"
+    },
+    {
+      "id": "directory",
+      "url": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+      "finalUrl": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+      "retrievedAtUtc": "2026-10-21T19:04:53.433Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-directory.json",
+      "sha256": "cc9ac03be0d9a65bcdbdd96ba01b0058c8c75c23a6a0c325c9151f8e3cc713b0",
+      "reused": true,
+      "publicationDate": null,
+      "scope": "Discovery only"
+    },
+    {
+      "id": "guide",
+      "url": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "retrievedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+      "httpStatus": 200,
+      "snapshotPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/guide.html",
+      "sha256": "806e47e49a0e5324df1f43e0d67d42e2786b010eab1226c6cd0860d9296972fb",
+      "textPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/guide.txt",
+      "textSha256": "1b660fe0edd9041e385a4405b6d8c5cb833b0824b05aa20a7a252dbb4615885f",
+      "publicationDate": null,
+      "scope": "Unversioned public vendor documentation",
+      "reused": false
+    },
+    {
+      "id": "purchase",
+      "url": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "finalUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "retrievedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "httpStatus": 200,
+      "snapshotPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/purchase.html",
+      "sha256": "df7fbc77bb9278f60ac0531e30fa662e884cac4ddff3f944117f99adbc89229a",
+      "textPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/purchase.txt",
+      "textSha256": "e426766af915910a8d62d18ed5a3fd8c632e19c541366a92063714be0546d0e9",
+      "publicationDate": null,
+      "scope": "Unversioned public vendor documentation",
+      "reused": false
+    },
+    {
+      "id": "br-capabilities",
+      "url": "https://breathing-room.chatic.ai/",
+      "finalUrl": "https://breathing-room.chatic.ai/",
+      "retrievedAtUtc": null,
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reused same-day first-party evidence register; its cited code/release/public sources distinguish implementation and published behavior. Not re-fetched here."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "Official product name: Aiseesoft Mac Cleaner.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Aiseesoft Mac Cleaner",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Aiseesoft Studio branded product. No official public source repository identified in checked pages; repo unknown, not proven nonexistent.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "workflow",
+      "wording": "The guide documents Large & Old Files: Scan, View or Rescan, review/select, then Clean.",
+      "sourceIds": [
+        "guide"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "excerpt": "After a while, those your selected large and old files are deleted from your Mac.",
+      "checkedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Unversioned guide, not executed. No guaranteed recovery or undo established.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "age-size-buckets",
+      "wording": "The guide lists >100 MB, 5 MB to 100 MB, >1 Year and >30 days categories.",
+      "sourceIds": [
+        "guide"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "excerpt": "> 100 MB",
+      "checkedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Other three literal labels retained in guide.txt lines 48\u201352. Categories are discovery aids, not permission to erase. No assumption that age means unused.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "cleaner-categories",
+      "wording": "Vendor lists system, photo, email, Trash, large/old, duplicate and iTunes cleanup categories.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Remove the local copies of your email downloaded and attachments to free up more Mac storage.",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Do not recommend removing sole originals, mail attachments or backups without independent review.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "uninstaller",
+      "wording": "Vendor advertises an uninstaller and related-file removal.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Remove your applications along with all related files from your Mac easily.",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Vendor documentation, not an independent completeness test. Malware protection or detection quality not verified.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "system-status",
+      "wording": "Vendor advertises CPU, memory and disk usage monitoring.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "It monitors the disk utilization, battery, memory performance as well as CPU usage, so that you can fix it efficiently if anything goes wrong.",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "System monitoring is documented; helper grouping, historical growth and per-file writer attribution remain unknown.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "platform-conflict",
+      "wording": "Mac product with conflicting vendor compatibility statements; exact supported range not verified.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "macOS 27 Golden Gate/macOS Tahoe/macOS Sequoia/macOS Sonoma/macOS Big Sur/macOS Catalina/macOS Mojave/macOS High Sierra/macOS Sierra",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Same homepage also says Mac OS X 10.7 or higher and compatible with macOS Sequoia and before. Do not normalize the unusual macOS 27 Golden Gate string into an endorsed Apple release or certify compatibility.",
+      "state": "contradicted",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "architecture",
+      "wording": "Vendor lists Intel Core i5 1.4 GHz or above and Apple M-series chips (including M5).",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "1.4GHz dual-core Intel Core i5 or above and Apple M-series chips (including M5)",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Advertised requirements only. Universal binary, native architecture, notarization and installation not tested.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "monthly",
+      "wording": "Purchase page displays $9.98 for 1 month on 1 Mac, with $19.95 crossed out.",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "excerpt": "1-Month/1 Mac\n$9.98\n$19.95",
+      "checkedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Dollar-denominated advertised promotion; cleaner price currency code, taxes, renewal price and cleaner auto-renewal are not explicitly established by this passage. Do not equate download with free unrestricted cleanup.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "annual",
+      "wording": "Purchase page displays $27 for 1 year on 1 Mac, with $45 crossed out.",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "excerpt": "1-Year/1 Mac\n$27.00\n$45.00",
+      "checkedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Promotional displayed dollar price. Tax, currency code and subsequent cleaner renewal terms unknown; checkout was not opened.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "lifetime",
+      "wording": "Purchase page labels lifetime 1-Mac and 5-Mac options, displaying $48 and $99.95 respectively.",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "excerpt": "Lifetime/ 1 Mac\nLifetime/ 5 Macs",
+      "checkedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Prices retained at purchase.txt lines 51 and 56, with $80/$249.75 comparison prices. No guarantee lifetime covers future major releases or services.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "bundle-renewal",
+      "wording": "The purchase page discloses a seven-day Mac Blu-ray Player trial renewing monthly at US$31.20 unless cancelled before renewal.",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "excerpt": "When you purchase Aiseesoft Mac Cleaner, you also gain 7-day free access to Aiseesoft Mac Blu-ray Player. After the trial, the subscription will automatically renew monthly with US$31.20. You have the option to cancel at any time before the renewal takes place.",
+      "checkedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Separate bundled product, not the cleaner monthly price. Default selection, opt-out, actual charged total and cancellation execution not tested.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "refund",
+      "wording": "Purchase-page refund wording specifies lifetime licences with a quality problem within 30 days.",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+      "excerpt": "We support 30-day refunds for lifetime licenses when there is a quality problem.",
+      "checkedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Homepage/guide use a broader quality-problem guarantee. Do not promise an unconditional refund or extend this scope to every plan.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "availability",
+      "wording": "Official page links a public Mac DMG download.",
+      "sourceIds": [
+        "official-home"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Free Download",
+      "checkedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "https://download.aiseesoft.com/mac/mac-cleaner.dmg is linked; binary not downloaded, installed, versioned or tested. Trial duration and cleanup quota not verified.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "copyright",
+      "wording": "Official guide reserves copyright to Aiseesoft Studio; screenshot reuse permission is not established.",
+      "sourceIds": [
+        "guide"
+      ],
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "excerpt": "Copyright \u00a9 2026 Aiseesoft Studio. All rights reserved.",
+      "checkedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+      "evidenceClass": "documented-vendor-behavior-not-hands-on",
+      "scope": "Public asset URL is not a reuse licence; link-only until permission or approved legal/policy basis is retained.",
+      "state": "verified",
+      "reviewer": "scheduled-research-worker; independent review pending",
+      "intendedLocation": "workflow article or comparison matrix"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a macOS 13+ preview, identified as 0.1.0-preview.1; published release discloses Apple Development signing, not Developer ID signing or notarization, Python 3.10+ prerequisite and untested physical Intel behavior.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-first-party-source-and-published-register-not-runtime-test",
+      "scope": "Capabilities register lines 44\u201356 and public preview release https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1. Not a binary/runtime certification.",
+      "state": "verified",
+      "reviewer": "baseline capabilities worker; independent article review pending",
+      "intendedLocation": "comparison and qualified recommendation"
+    },
+    {
+      "id": "br-model",
+      "wording": "Source supports storage owner/project views, grouped app/helper CPU and memory sampling, activity history and constrained cleanup approvals.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Native sampling groups helpers through parent/app relationships and exposes CPU/memory.",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-first-party-source-and-published-register-not-runtime-test",
+      "scope": "Register lines 22\u201340; ordinary actions require approval, optional automatic verified Ruff-cache Trash mode is an exception. App must remain running for daily care; saved approvals are exact method/path rules, not blanket authority.",
+      "state": "verified",
+      "reviewer": "baseline capabilities worker; independent article review pending",
+      "intendedLocation": "comparison and qualified recommendation"
+    },
+    {
+      "id": "br-pricing",
+      "wording": "Free local app; optional advertised AI Care is $5 USD/month or $50 USD/year.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "**$5 USD/month**, **$50 USD/year**",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-first-party-source-and-published-register-not-runtime-test",
+      "scope": "Register lines 70\u201386; renewing plans, applicable checkout tax. Quotas/paid enforcement and actual payment unverified. Website download account gate differs from public GitHub release access.",
+      "state": "verified",
+      "reviewer": "baseline capabilities worker; independent article review pending",
+      "intendedLocation": "comparison and qualified recommendation"
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Hosted assistance requires authentication and internet and may send relevant paths/process/storage data to the service.",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Hosted AI assistance requires internet access and authentication",
+      "checkedOn": "2026-10-21",
+      "evidenceClass": "reused-first-party-source-and-published-register-not-runtime-test",
+      "scope": "Register lines 58\u201368; do not describe all-local AI, zero retention or every cleanup flow as offline/free.",
+      "state": "verified",
+      "reviewer": "baseline capabilities worker; independent article review pending",
+      "intendedLocation": "comparison and qualified recommendation"
+    }
+  ],
+  "versionAndPlatform": {
+    "exactVersion": null,
+    "versionStatus": "not verified; guide/home/purchase unversioned, installer not inspected",
+    "supportedRange": "unresolved conflicting vendor claims",
+    "conflictClaimId": "platform-conflict",
+    "runtimeRequirements": "Vendor advertises Intel/M-series, 2 GB disk and 1 GB RAM; binary/runtime QA not performed",
+    "signingNotarization": "not verified",
+    "trialLimits": "not verified"
+  },
+  "licence": {
+    "model": "Commercial paid licence offers verified; directory calls proprietary. Exact EULA and redistribution/source licence not verified.",
+    "sourceClaimIds": [
+      "annual",
+      "monthly",
+      "lifetime"
+    ],
+    "openSource": "not verified, never inferred from missing repo"
+  },
+  "pricing": {
+    "offersClaimIds": [
+      "monthly",
+      "annual",
+      "lifetime"
+    ],
+    "currency": "Displayed $ for cleaner; ISO currency not explicit in retained price labels. Bundle explicitly US$.",
+    "materialConditionsClaimIds": [
+      "bundle-renewal",
+      "refund"
+    ],
+    "tax": "not verified",
+    "cleanerRenewal": "not verified",
+    "checkoutTested": false,
+    "refreshBy": "2026-11-20"
+  },
+  "matrix": [
+    {
+      "dimension": "macOS compatibility",
+      "competitor": "Conflicting documented range; no certified range/version",
+      "claimIds": [
+        "platform-conflict",
+        "architecture"
+      ],
+      "breathingRoomClaimIds": [
+        "br-preview"
+      ]
+    },
+    {
+      "dimension": "licence/pricing",
+      "competitor": "Paid monthly/yearly/lifetime offers; EULA unknown",
+      "claimIds": [
+        "monthly",
+        "annual",
+        "lifetime",
+        "bundle-renewal",
+        "refund"
+      ],
+      "breathingRoomClaimIds": [
+        "br-pricing"
+      ]
+    },
+    {
+      "dimension": "scan/approval model",
+      "competitor": "Guide: Scan, View, select, Clean; undo/recovery unknown",
+      "claimIds": [
+        "workflow",
+        "age-size-buckets"
+      ],
+      "breathingRoomClaimIds": [
+        "br-model"
+      ]
+    },
+    {
+      "dimension": "local/hosted",
+      "competitor": "Guide describes installed Mac scanning; telemetry, activation and offline completeness not verified",
+      "claimIds": [
+        "workflow"
+      ],
+      "breathingRoomClaimIds": [
+        "br-hosted"
+      ]
+    },
+    {
+      "dimension": "monitoring/helper grouping",
+      "competitor": "CPU/memory/disk advertised; helper grouping and history not verified",
+      "claimIds": [
+        "system-status"
+      ],
+      "breathingRoomClaimIds": [
+        "br-model"
+      ]
+    },
+    {
+      "dimension": "recurring growth/developer caches",
+      "competitor": "Not verified; do not write No",
+      "claimIds": [],
+      "breathingRoomClaimIds": [
+        "br-model"
+      ],
+      "state": "not-verified"
+    },
+    {
+      "dimension": "installation/runtime caveats",
+      "competitor": "DMG linked, exact build/trial/runtime/signing unknown",
+      "claimIds": [
+        "availability",
+        "architecture",
+        "platform-conflict"
+      ],
+      "breathingRoomClaimIds": [
+        "br-preview"
+      ]
+    },
+    {
+      "dimension": "broader utilities",
+      "competitor": "Uninstaller, duplicate and similar-photo cleanup advertised; no independent results",
+      "claimIds": [
+        "uninstaller",
+        "cleaner-categories"
+      ],
+      "breathingRoomClaimIds": [],
+      "breathingRoom": "Equivalent duplicate/photo/uninstaller capability not established by capabilities register"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "aiseesoft-large-old-review",
+      "productId": "aiseesoft-mac-cleaner",
+      "view": "Large & Old Files selection",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+      "assetUrl": "https://www.aiseesoft.com/images/mac-cleaner/clean-large-old-files.jpg",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "assetLinkObservedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "No public reuse permission established; all rights reserved footer. No image bytes downloaded.",
+        "evidenceUrlOrPath": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+        "credit": "Aiseesoft Studio, official Mac Cleaner guide"
+      },
+      "caption": "Aiseesoft\u2019s official guide illustrates selecting large and old files before Clean. Vendor illustration; app version and capture date unknown. Link only, not approved for republication.",
+      "alt": "Official Aiseesoft Mac Cleaner guide image of the Large & Old Files results and selection view.",
+      "supportedClaimIds": [
+        "workflow",
+        "age-size-buckets"
+      ],
+      "limitations": [
+        "Real app-UI asset linked by official guide, not a landing-page screenshot. Asset not downloaded or visually inspected; vendor version/currentness unknown. Cannot satisfy on-page visual gate yet."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library worker; reused manifest",
+      "productVersion": "current-source browser UI, not binary certification",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "br-model"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Keep visible Interactive preview / example data banner; not a native scan, measured activity or cleanup outcome. Contextual/mobile review remains pending."
+      ],
+      "review": {
+        "status": "research-inspected-not-publication-approved",
+        "reviewer": "scheduled-research-worker",
+        "reviewedOn": "2026-10-21"
+      }
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search/reference",
+      "title": "Review large and old Mac files without treating age as permission to delete",
+      "slug": "review-large-old-mac-files-aiseesoft",
+      "primaryIntent": "Use Aiseesoft\u2019s size/age categories as a review queue, distinguishing archived originals from reproducible data before any cleanup.",
+      "descriptionDirection": "Answer first: a size or age bucket narrows inspection; it does not establish that a file is disposable. Describe documented controls, not a tested cleanup result.",
+      "sections": [
+        "Read the size and age buckets as filters, not a deletion verdict",
+        "Follow the documented Scan \u2192 View \u2192 select workflow, stopping before Clean for review",
+        "Check ownership, backup and rebuild/download cost for each candidate",
+        "Distinguish a one-off file inventory from investigating recurring growth",
+        "Choose the documented utility or the qualified Breathing Room preview for the actual task"
+      ],
+      "claimIds": [
+        "workflow",
+        "age-size-buckets",
+        "cleaner-categories",
+        "br-model",
+        "br-preview",
+        "br-hosted"
+      ],
+      "visualPlan": "Official Large & Old Files UI after the lead only once rights clear; current-source Breathing Room Space example preview later with full caption.",
+      "interactionPass": "Handoff a non-mutating decision checklist: know owner? sole original? backup verified? reproducible? current project dependency? Any unknown means keep/investigate, not delete. No invented scan, savings or checkbox that authorizes machine changes.",
+      "internalLinks": [
+        "/comparisons/",
+        "/comparisons/aiseesoft-mac-cleaner/"
+      ],
+      "draftAllowed": false
+    },
+    "comparison": {
+      "title": "Breathing Room vs Aiseesoft Mac Cleaner",
+      "slug": "aiseesoft-mac-cleaner",
+      "primaryIntent": "Choose between category-based Mac cleanup and storage-owner/activity investigation with a preview caveat.",
+      "format": "Concise sourced matrix, one disclosed recommendation arc, installation/hosted/pricing caveats and link to workflow article.",
+      "internalLinks": [
+        "/comparisons/",
+        "/blog/review-large-old-mac-files-aiseesoft/"
+      ],
+      "draftAllowed": false
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "aiseesoftAdvantages": [
+      "Documents selectable large/old-file size and age categories and broader duplicate/photo/uninstaller utilities; potentially useful for a one-off review. Vendor-described, not hands-on verified."
+    ],
+    "aiseesoftTradeoffs": [
+      "Compatibility wording conflicts; exact version, recovery semantics, trial limits and offline/telemetry behavior unknown.",
+      "Promotional prices must include separate bundled player renewal warning and qualified refund language."
+    ],
+    "breathingRoomAdvantages": [
+      "Breathing Room, which we build, has source-supported owner/project exploration, app/helper grouping and activity history; useful when the question is what keeps growing, not merely which file is old."
+    ],
+    "breathingRoomTradeoffs": [
+      "Non-notarized preview with Python prerequisite and incomplete native/release QA; hosted AI needs authentication/internet and optional AI Care is paid.",
+      "No equivalent duplicate-photo utility or complete uninstaller verified; no blanket claim of safety, privacy or superior performance."
+    ]
+  },
+  "unknowns": [
+    "Exact Aiseesoft app version and current UI parity",
+    "Precise supported macOS range",
+    "Cleaner currency code, tax and future renewal price/mechanism",
+    "Trial duration/cleanup quota, EULA, activation requirements",
+    "Offline operation, telemetry, developer caches, helper grouping and recurring history",
+    "Trash vs permanent removal per module, undo/recovery, signing/notarization"
+  ],
+  "blockers": [
+    {
+      "id": "visual-rights",
+      "severity": "critical",
+      "diagnostic": "Official app-UI asset located but no reuse basis established. Link-only is research fallback, not the required on-page image. No download permitted under current evidence.",
+      "resolution": "Retain permission or approved legal/policy reuse basis, then acquire original with hash, inspect UI/privacy/currentness and independently review responsive rendering."
+    },
+    {
+      "id": "compatibility-conflict",
+      "severity": "critical-for-installation-recommendations",
+      "diagnostic": "Same official homepage says OS X 10.7+, Sequoia and before, and a different tech-spec list including macOS 27 Golden Gate. Exact supported build/range unresolved.",
+      "resolution": "Obtain version-specific authoritative compatibility evidence; until then omit installation advice and explicitly retain conflict."
+    }
+  ],
+  "accessFailures": [
+    {
+      "url": "https://www.aiseesoft.com/company/terms-of-use.html",
+      "result": "HTTP 404 via WebFetch",
+      "checkedOn": "2026-10-21"
+    },
+    {
+      "url": "https://www.aiseesoft.com/company/license.html",
+      "result": "HTTP 404 via WebFetch",
+      "checkedOn": "2026-10-21"
+    },
+    {
+      "url": "https://www.aiseesoft.com/mac-cleaner/reference.html",
+      "result": "HTTP 404 via WebFetch; official tech specs are homepage anchor, already retained",
+      "checkedOn": "2026-10-21"
+    }
+  ],
+  "review": {
+    "independentReviewer": null,
+    "score": null,
+    "draftingAllowed": false,
+    "publicationAllowed": false,
+    "reason": "Research packet retained; missing critical visual evidence blocks drafting. No article authored or site changed."
+  },
+  "safety": {
+    "installedOrTestedCompetitor": false,
+    "cleanupRun": false,
+    "browserUsed": false,
+    "credentialsRead": false,
+    "imageBytesDownloaded": false,
+    "queueChanged": false
+  }
+}

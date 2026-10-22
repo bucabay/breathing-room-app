@@ -1,0 +1,144 @@
+{
+  "jobId": "research-puremac",
+  "validatedAtUtc": "2026-10-21T22:01:46.015186+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "JSON packet parses; 23 uniquely identified sourced claims",
+      "result": "pass"
+    },
+    {
+      "check": "Every claim has an existing source, URL, excerpt, check date, scope and state",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash baseline",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash discovery",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash latest-release",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash license",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash project",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash homepage",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash screenshots-tree",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash commit",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash cleaning-engine",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash image-license",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash space-explorer",
+      "result": "pass"
+    },
+    {
+      "check": "Source hash br-register",
+      "result": "pass"
+    },
+    {
+      "check": "Visual original hash puremac-space-explorer",
+      "result": "pass"
+    },
+    {
+      "check": "Visual dimensions puremac-space-explorer",
+      "result": "pass"
+    },
+    {
+      "check": "Visual provenance and disclosure puremac-space-explorer",
+      "result": "pass"
+    },
+    {
+      "check": "Visual original hash current-space-browser-preview",
+      "result": "pass"
+    },
+    {
+      "check": "Visual dimensions current-space-browser-preview",
+      "result": "pass"
+    },
+    {
+      "check": "Visual provenance and disclosure current-space-browser-preview",
+      "result": "pass"
+    },
+    {
+      "check": "MIT notice retained",
+      "result": "pass"
+    },
+    {
+      "check": "Distinct identity and no alias doorway",
+      "result": "pass"
+    },
+    {
+      "check": "Two existing discovery edges retained",
+      "result": "pass"
+    },
+    {
+      "check": "Conflict scoped and publication not approved",
+      "result": "pass"
+    },
+    {
+      "check": "Markdown packet and two distinct briefs retained",
+      "result": "pass"
+    },
+    {
+      "check": "Version/platform fields checked in retained config",
+      "result": "pass"
+    },
+    {
+      "check": "Stable release and two installer links retained",
+      "result": "pass"
+    }
+  ],
+  "visualInspection": "Both actual PNGs opened and read with image-capable tool; sample/example data labels recorded. Not independent publication review.",
+  "notRun": [
+    "Native installation/runtime, cleanup and binary signature tests: outside authorized documentary research.",
+    "Website check/build/test: no website files changed.",
+    "Browser interaction: not needed; retained source and public read-only HTTP used."
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/puremac/assets/space-explorer-original.png": "739c0d02239cd73e69d67db79fb6f9a95da52aa0ce402a4ddb59889afe4c4ec1",
+    "docs/content/competitors/puremac/build-packet.py": "56afe60cd77464dcf6f5f552095a9298a7ee74af33b3f642b68519772c0471a7",
+    "docs/content/competitors/puremac/research.json": "541267d8f50b47fbc82144a123755d88bdd459a448a5dd9c7e3e8d94729f7d47",
+    "docs/content/competitors/puremac/research.md": "60fe6e4c6a180e310a6980631725896c50161dc70c56588021b761086fee9b05",
+    "docs/content/competitors/puremac/sources/cleaning-engine.meta.json": "dc24f0728ce15f9e57df92a105ce24cedee0d94009d5fd736e06cdc7f9a61737",
+    "docs/content/competitors/puremac/sources/cleaning-engine.txt": "c8f726e85fd06a8d007a371df782f36b3a7ba61bef6d604544aa04f9293002f2",
+    "docs/content/competitors/puremac/sources/commit.meta.json": "6824349aa9b0b2aabe51fcc9f4f8bbafc479d0831d3c69ffee6293f2f866fe98",
+    "docs/content/competitors/puremac/sources/commit.txt": "b3b6ce42807b480279f7ec19ba4fe7f17ad53ef18dd8d15c94bb462f5e422c9f",
+    "docs/content/competitors/puremac/sources/homepage.meta.json": "ff0bca89ca7e9ee2ca35b698e3dca91173cd18bd7a6a7a5871b5ee40235ec3df",
+    "docs/content/competitors/puremac/sources/homepage.txt": "ea33814a599903bfb678ee60f53032817ba5ca20af438dbdabab817e516615cf",
+    "docs/content/competitors/puremac/sources/image-license.meta.json": "7419003d3a5d97a6d352f3c4109dee25d40b1921af1381365e57ed1626fe4a7e",
+    "docs/content/competitors/puremac/sources/image-license.txt": "88258dee1e1b9ced27bfbe7c40b3374ac1900adc82c427f71459a3d1e0976e2f",
+    "docs/content/competitors/puremac/sources/latest-release.meta.json": "e89cf45024d8a46fdb42de78c5cfc0e1edaee7ae823ef0e813e4a1ad2826a77c",
+    "docs/content/competitors/puremac/sources/latest-release.txt": "7e5b339d765bb17d30c0551452def25781e715ed680be29ba8c034eb1943059c",
+    "docs/content/competitors/puremac/sources/license.meta.json": "62f405365aa55d7fd78ee06dc51fbc8842503fd6ca75dcef8a4372ea71140ed4",
+    "docs/content/competitors/puremac/sources/license.txt": "88258dee1e1b9ced27bfbe7c40b3374ac1900adc82c427f71459a3d1e0976e2f",
+    "docs/content/competitors/puremac/sources/project.meta.json": "2e3e41471c3821d419f441ad10ba1d9ca34a0699ea3df1e9f0815cf4cef81847",
+    "docs/content/competitors/puremac/sources/project.txt": "548cf6b95aaf41063f74a61af45c18dbba24ccdc482df8e8eafbe1e68ca5c488",
+    "docs/content/competitors/puremac/sources/screenshots-tree.meta.json": "4ff0fb45712e01153f459c45a0fd88792761ea005f617c9388739e760cd938e5",
+    "docs/content/competitors/puremac/sources/screenshots-tree.txt": "197bfa410bfa1137381985f7e91641fcb9d56b15ebd1a8b14618ee546ce01cd9",
+    "docs/content/competitors/puremac/sources/space-explorer.meta.json": "8d526d129f6f49bdbdba49bede0c11b44616a57b7cba93bdf18e515d4060472e"
+  }
+}

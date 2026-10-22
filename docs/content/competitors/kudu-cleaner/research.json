@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-kudu-cleaner",
+  "stage": "research",
+  "status": "complete-with-bounded-unknowns",
+  "published": false,
+  "checkedOnUtc": "2026-10-21",
+  "scheduledLocalDate": "2026-10-22",
+  "reviewer": "scheduled research worker; independent publication reviewer pending",
+  "identity": {
+    "id": "kudu-cleaner",
+    "officialName": "Kudu",
+    "publisher": "Advent Development, Inc.",
+    "homepage": "https://usekudu.com",
+    "repository": "https://github.com/AdventDevInc/kudu",
+    "observedMainCommit": "69faec34a31999fe23ea822430af0b8b9c19c09a",
+    "canonicalOwnerId": "kudu-cleaner",
+    "aliases": ["Kudu", "kudu-cleaner (directory identifier)"],
+    "aliasSkipDecision": "do-not-skip; one canonical product, no separate alias draft",
+    "aliasEvidence": "Directory links usekudu.com; retained homepage links adventdevinc/kudu; repo README links back to usekudu.com. Optional Kudu Cloud belongs to this product. No inspected official identity evidence links PowerMyMac; do not assign that unrelated suspected alias.",
+    "classification": "direct-macos-maintenance-overlap",
+    "fit": "Mac cleanup, local storage history and scheduling overlap; broader cross-platform suite is not identical to Breathing Room.",
+    "skip": false
+  },
+  "ownership": ["docs/content/competitors/kudu-cleaner/"],
+  "baselineReuse": {
+    "record": "docs/content/verification/batch-1.json#kudu-cleaner",
+    "reusedFields": ["officialName", "officialUrl", "platforms", "desktop pricing", "license", "availability", "discovery"],
+    "reason": "Same-day verified facts; no homepage or directory refetch needed. Additional conditions checked only where missing."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/kudu-cleaner/about/",
+    "retrievedAtUtc": "2026-10-21T19:08:11.700Z",
+    "observedDestination": "https://usekudu.com/",
+    "excerpt": "Official Website\nusekudu.com",
+    "snapshotPath": "docs/content/.runtime/verification-1/kudu-cleaner-directory.json",
+    "sha256": "2f54fd5aec8e5fd7b3f03ac802d512d3ffc4224d54038217c0682191e8c6b1eb",
+    "edges": [
+      {"seedUrl":"https://alternativeto.net/software/cleanmymac/","edgeUrl":"https://alternativeto.net/software/cleanmymac/","retrievedAtUtc":"2026-10-21T18:36:14.532Z"},
+      {"seedUrl":"https://alternativeto.net/software/mole/","edgeUrl":"https://alternativeto.net/software/mole/","retrievedAtUtc":"2026-10-21T18:37:03.597Z"}
+    ],
+    "method": "Reused manifest live-browser-rendered-listing edges and baseline directory snapshot; no new traversal."
+  },
+  "sourceLedger": {
+    "baseline-home": {
+      "publisher": "Kudu / Advent Development",
+      "url": "https://usekudu.com",
+      "finalUrl": "https://usekudu.com",
+      "retrievedAtUtc": "2026-10-21T19:09:28.445397+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/kudu-cleaner-official.json",
+      "sha256": "84c3e7371f50efc5441cf9ab19082f275a57df0d74916de64c5aa8d7238c7fd8",
+      "excerpt": "Kudu clears out junk, tightens your privacy, and keeps your apps up to date across 25+ tools for Windows, macOS, and Linux. Free and open source.\nFree forever · No account needed · Windows 10/11, macOS 12+, Linux\nRules are plain JSON that anyone can review or contribute to.",
+      "locator": "hero, cleaner coverage, GitHub links and publisher footer"
+    },
+    "additionalOfficialSources": {
+      "path": "docs/content/competitors/kudu-cleaner/research-notes.json#/sourceChecks",
+      "publisher": "Kudu / Advent Development",
+      "method": "Read-only webfetch; supporting excerpts retained rather than full page snapshots",
+      "checkedOnUtc": "2026-10-21",
+      "retrievedAtUtc": null,
+      "timestampLimit": "Exact per-request wall-clock not exposed by webfetch; do not invent seconds. All requests completed in this run before 2026-10-21T21:24:22Z.",
+      "sourcePublicationDate": "Unknown except download release date and safety review date explicitly recorded in excerpts"
+    },
+    "repo-license": {
+      "url": "https://raw.githubusercontent.com/AdventDevInc/kudu/main/LICENSE",
+      "retrievedAtUtc": "2026-10-21T21:23:12.945698+00:00",
+      "snapshotPath": "docs/content/competitors/kudu-cleaner/sources/repo-license.txt",
+      "sha256": "25ffd176698d9f5cdebe9d8376a35b91a41aaef4dbac75c18d42730a71739a01",
+      "excerpt": "MIT License\nCopyright (c) 2026 Advent Development Inc\nPermission is hereby granted ... of this software and associated documentation files ... to use, copy, modify, merge, publish, distribute ...\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+    },
+    "breathing-room-register": {
+      "path": "docs/content/capabilities.md",
+      "checkedOnUtc": "2026-10-21",
+      "basis": "Reused current source/publication register, not new binary testing",
+      "publicUrls": ["https://breathing-room.chatic.ai/", "https://breathing-room.chatic.ai/privacy/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "excerpt": "Free, Apache-2.0 macOS maintenance preview. AI Care $5 USD/month or $50 USD/year. macOS 13+; Python 3.10+. Apple Development signed, not Developer ID signed or notarized. Hosted reasoning requires authentication/internet. Source presence is not distributed-binary parity."
+    }
+  },
+  "claimLedger": {
+    "path": "docs/content/competitors/kudu-cleaner/research-notes.json#/claims",
+    "sourceResolution": "sourceIds resolve to research-notes.json sourceChecks.id or this sourceLedger key",
+    "checkedOnUtcForEachClaim": "2026-10-21",
+    "stateForEachClaim": "verified-as-documented-with-stated-scope",
+    "evidenceClassForEachClaim": "official vendor documentation, not hands-on observation",
+    "reviewerForEachClaim": "scheduled research worker",
+    "limitations": "Exact wording includes unknown qualifications; no absent-feature inference. Claims depend on mutable vendor documentation and need freshness review within 30 days/before publication."
+  },
+  "productMatrix": [
+    {"dimension":"macOS/version/architecture","claimIds":["K02"],"value":"3.10.0 offered; macOS 12+, Apple silicon and Intel"},
+    {"dimension":"licence/desktop cost","claimIds":["K03"],"value":"MIT; $0 desktop, no account"},
+    {"dimension":"optional paid service","claimIds":["K04","K09"],"value":"Cloud Basic $5 / Pro $9 USD/device/month base rates; volume conditions apply"},
+    {"dimension":"local/hosted","claimIds":["K09"],"value":"Local core; network-enabled features and optional operational-data Cloud link"},
+    {"dimension":"scan/cleanup/approval/recovery","claimIds":["K05","K07","K10"],"value":"Interactive review/exclusions/receipts; automatic scheduling is distinct; no blanket deleted-file restoration"},
+    {"dimension":"monitor/helper grouping","claimIds":["K08"],"value":"Per-process documented; helper aggregation and Mac sensor parity not verified"},
+    {"dimension":"recurring growth","claimIds":["K06"],"value":"Free local folder snapshots and growth alerts; up to 90 days / 250 MB"},
+    {"dimension":"developer caches","claimIds":["K11"],"value":"JSON rules/developer apps advertised; exact Mac rules not audited"},
+    {"dimension":"scheduler","claimIds":["K07"],"value":"Free desktop; conditions; app must run; supported tasks only"},
+    {"dimension":"runtime/signing","claimIds":["K02"],"value":"Advertised packages only; independent signature/notarization and external-runtime prerequisites not verified"}
+  ],
+  "visuals": [
+    {
+      "id": "kudu-official-readme-demo-frame",
+      "productId": "kudu-cleaner",
+      "kind": "official-asset",
+      "view": "Windows Dashboard; first frame of README demo",
+      "sourcePageUrl": "https://github.com/AdventDevInc/kudu/blob/main/README.md",
+      "assetUrl": "https://raw.githubusercontent.com/AdventDevInc/kudu/main/resources/kudu-animated.gif",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "retrievedAtUtc": "2026-10-21T21:23:14.519169+00:00",
+      "productVersion": null,
+      "osVersion": "Windows appearance; exact OS version unknown",
+      "dataMode": "unknown",
+      "originalPath": "docs/content/competitors/kudu-cleaner/assets/kudu-animated-original.gif",
+      "originalSha256": "0af219da0a16f26cf6c4cd5f8969cc41b89cd94c63118c29bcc6a0d2e89af75a",
+      "derivativePath": "docs/content/competitors/kudu-cleaner/assets/kudu-demo-first-frame.png",
+      "derivativeSha256": "05e2b633fe6bfafd9f566d43250755a6b09a7184d58534bdaaac129beb3850fa",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2687,
+      "heightPx": 1639,
+      "edits": ["sips extracted first GIF frame to PNG; no crop, retouch or value/label changes"],
+      "privacyReview": {"status":"first-frame-reviewed","redactions":[],"notes":"Visible vendor UI/drives, no personal account shown. Other animation frames not cleared for publication."},
+      "reuse": {"status":"cleared","basis":"Repository MIT covers software and associated documentation; README embeds this exact repo asset as Kudu Demo. Include full retained MIT notice with distributed derivative. No blanket website-image or trademark licence inferred.","evidenceUrlOrPath":"docs/content/competitors/kudu-cleaner/sources/repo-license.txt","credit":"Kudu / Advent Development Inc., MIT licence; no endorsement implied"},
+      "caption": "Kudu's official README demo, Windows Dashboard (version and capture date unknown). Vendor-displayed figures have not been independently measured; this is not the current Mac interface or our test result.",
+      "alt": "Kudu Windows Dashboard from its official README demo, with a health panel, space and file counters and drive bars.",
+      "supportedClaimIds": ["K01"],
+      "limitations": ["Illustrates product identity/UI only, not current Mac steps or performance", "Only extracted first frame approved for research use; no animation-wide privacy review"],
+      "review": {"status":"opened-and-visually-read-for-research","reviewer":"scheduled worker","reviewedOnUtc":"2026-10-21","independentPublicationReview":"pending"}
+    },
+    {
+      "id":"current-space-browser-preview",
+      "productId":"breathing-room",
+      "kind":"browser-preview",
+      "sourceManifest":"docs/content/screenshots.json#current-space-browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/",
+      "assetUrl":null,
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "dataMode":"example",
+      "widthPx":2940,
+      "heightPx":3468,
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview with visible example-data disclosures and illustrative storage categories.",
+      "reuse":{"status":"cleared-for-first-party-example-ui","basis":"Existing app-owner-requested capture and manifest; third-party marks remain their owners' marks"},
+      "review":{"status":"opened-and-visually-read-for-research","reviewedOnUtc":"2026-10-21","independentPublicationReview":"pending"},
+      "limitations":["Existing current-source render, not newly captured or distributed-native verification","Preserve visible example-data banner; no measured-savings implication","Source/asset web URLs not applicable to retained local capture beyond manifest preview URL"],
+      "edits":[],
+      "publishedPath":null,
+      "publishedSha256":null
+    }
+  ],
+  "alternateLinkOnlyVisual": {
+    "sourcePageUrl":"https://usekudu.com/features/system-cleaner",
+    "assetUrl":"https://usekudu.com/img/screenshots/cleaner.png",
+    "observedImageUrl":"https://usekudu.com/_next/image?url=%2Fimg%2Fscreenshots%2Fcleaner.png&w=3840&q=75&dpl=dpl_Ciy3bKonN4T86n49FtLXhiDEC1ik",
+    "caption":"Vendor-labeled Kudu 3.0 Cleaner, dark mode, sample scan data; platform not verified.",
+    "reuse":{"status":"link-only","basis":"Website-image republication licence not established. Not downloaded; repository MIT not extended to website images."}
+  },
+  "briefs": {
+    "path":"docs/content/competitors/kudu-cleaner/research.md",
+    "workflowSlug":"track-mac-cache-growth-before-scheduling-cleanup",
+    "comparisonSlug":"kudu-cleaner",
+    "track":"search/reference",
+    "interaction":"Non-executing ownership/backup/exclusion/rebuild/snapshot decision checklist; no deletion, signup or pretend scan",
+    "affiliationDisclosure":"Breathing Room, which we build"
+  },
+  "conflictsResolved": [
+    "Free forever describes desktop, not optional Cloud.",
+    "Generic approval marketing does not override documented automatic scheduling.",
+    "Ordinary cache cleaning and opt-in privacy traces differ; do not conflate.",
+    "README local wording qualified by official safety/network disclosure.",
+    "Main-only custom folder documentation excluded from 3.10.0 recommendations pending release mapping."
+  ],
+  "unknowns": ["Kudu binary/runtime/notarization independently untested", "Exact Mac sensors and app-helper grouping", "Per-rule Mac developer-cache coverage", "Demo capture version/date and metric provenance", "Cloud tax/refund/discount checkout terms", "Main custom-folder feature release inclusion", "Breathing Room distributed binary parity and clean-machine/physical-Intel execution remain unverified"],
+  "draftingGate": {"status":"ready-for-bounded-documentation-based-draft","criticalEvidenceBlockers":[],"conditions":["Use extracted frame only, with MIT notice and Windows/unknown-version caption", "Exclude unknown features from asserted facts", "Retain BR preview/Python/notarization/hosted/paid/approval caveats", "No claims of hands-on tests, superior safety/speed or measured savings"]},
+  "publicationGate": {"status":"pending-independent-review","score":null,"required":["Independent claim/rights/context review", "Responsive visual readability and contextual asset review", "Route/link checks and actual site check/build/tests on future changed drafts"]},
+  "actionsNotPerformed": ["No native app launch/install/cleanup", "No browser session, cookies or credentials read", "No signups/purchases/messages", "No site changes, queue/database mutation, commits/pushes/deployments"]
+}

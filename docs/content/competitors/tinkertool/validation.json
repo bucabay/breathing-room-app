@@ -1,0 +1,200 @@
+{
+  "jobId": "research-tinkertool",
+  "checkedAtUtc": "2026-10-21T22:19:18.449386+00:00",
+  "checks": [
+    {
+      "check": "source hash details",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/details.html"
+    },
+    {
+      "check": "source hash download",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/download.html"
+    },
+    {
+      "check": "source hash screenshots",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/screenshots.html"
+    },
+    {
+      "check": "source hash matrix",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/matrix.html"
+    },
+    {
+      "check": "source hash notes",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/notes.html"
+    },
+    {
+      "check": "source hash versions",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/versions.html"
+    },
+    {
+      "check": "source hash rights",
+      "outcome": "pass",
+      "detail": "docs/content/competitors/tinkertool/sources/rights.html"
+    },
+    {
+      "check": "baseline official hash",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-2/tinkertool-official.json"
+    },
+    {
+      "check": "baseline discovery hash",
+      "outcome": "pass",
+      "detail": "docs/content/.runtime/verification-2/tinkertool-directory.json"
+    },
+    {
+      "check": "claim source resolves TT01",
+      "outcome": "pass",
+      "detail": "baseline-official"
+    },
+    {
+      "check": "claim supporting phrases TT01",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT02",
+      "outcome": "pass",
+      "detail": "download"
+    },
+    {
+      "check": "claim supporting phrases TT02",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT03",
+      "outcome": "pass",
+      "detail": "versions"
+    },
+    {
+      "check": "claim supporting phrases TT03",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT04",
+      "outcome": "pass",
+      "detail": "download"
+    },
+    {
+      "check": "claim supporting phrases TT04",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT05",
+      "outcome": "pass",
+      "detail": "baseline-official"
+    },
+    {
+      "check": "claim supporting phrases TT05",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT06",
+      "outcome": "pass",
+      "detail": "details"
+    },
+    {
+      "check": "claim supporting phrases TT06",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT07",
+      "outcome": "pass",
+      "detail": "details"
+    },
+    {
+      "check": "claim supporting phrases TT07",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT08",
+      "outcome": "pass",
+      "detail": "notes"
+    },
+    {
+      "check": "claim supporting phrases TT08",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves TT09",
+      "outcome": "pass",
+      "detail": "details"
+    },
+    {
+      "check": "claim supporting phrases TT09",
+      "outcome": "pass",
+      "detail": "All selected material supporting phrases found"
+    },
+    {
+      "check": "claim source resolves BR01",
+      "outcome": "pass",
+      "detail": "br-capabilities"
+    },
+    {
+      "check": "reused BR register excerpt BR01",
+      "outcome": "pass",
+      "detail": "Register wording matched after whitespace/Markdown-bold normalization; public pages not re-fetched"
+    },
+    {
+      "check": "claim source resolves BR02",
+      "outcome": "pass",
+      "detail": "br-capabilities"
+    },
+    {
+      "check": "reused BR register excerpt BR02",
+      "outcome": "pass",
+      "detail": "Register wording matched after whitespace/Markdown-bold normalization; public pages not re-fetched"
+    },
+    {
+      "check": "claim source resolves BR03",
+      "outcome": "pass",
+      "detail": "br-capabilities"
+    },
+    {
+      "check": "reused BR register excerpt BR03",
+      "outcome": "pass",
+      "detail": "Register wording matched after whitespace/Markdown-bold normalization; public pages not re-fetched"
+    },
+    {
+      "check": "selected preview hash",
+      "outcome": "pass",
+      "detail": "docs/content/assets/breathing-room/space-preview-2026-10-21.png"
+    },
+    {
+      "check": "competitor asset URL derived from official HTML",
+      "outcome": "pass",
+      "detail": "https://www.bresink.com/osx/0TinkerTool/Images-en/1-Finder@2x.jpg"
+    },
+    {
+      "check": "honest rights block",
+      "outcome": "pass",
+      "detail": "No competitor image downloaded; drafting blocked"
+    },
+    {
+      "check": "briefs distinct",
+      "outcome": "pass",
+      "detail": "Workflow and concise comparison have distinct intents"
+    }
+  ],
+  "passed": 37,
+  "failed": 0,
+  "notPerformed": [
+    "Site builds/tests (no site edits)",
+    "Native app execution",
+    "Browser visual QA",
+    "Competitor image download or visual inspection"
+  ],
+  "initialCheckNote": "Initial 35 pass / 2 fail: reused Breathing Room excerpt substring checks did not strip Markdown bold delimiters. Rechecked the same excerpts after normalizing bold markup, without changing claim wording."
+}

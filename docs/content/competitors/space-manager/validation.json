@@ -1,0 +1,24 @@
+{
+  "jobId": "research-space-manager",
+  "result": "passed-structural-checks-with-editorial-blocker",
+  "method": "Read-only Python standard-library assertions executed against written packet and retained source files",
+  "checks": [
+    "research.json parsed successfully",
+    "23 claim IDs unique; every source reference resolves; verified claims have supporting excerpts",
+    "Every productMatrix claim reference resolves",
+    "Official snapshot SHA-256 matches registered 23d9c29d3043504f03028f858de72f68af651af5719e91a53061983efca9fe0e",
+    "Discovery snapshot SHA-256 matches registered aac63daf70bae8b2973cdcb01ebb2cfe6546db44b70548fb5cb93bed3849c567",
+    "Selected Breathing Room PNG SHA-256 matches 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a; PNG header dimensions match 2940x3468",
+    "Canonical owner space-manager and verified spelling-alias separate-draft skip assertions pass",
+    "Blocked, draftingAllowed=false and published=false assertions pass",
+    "Competitor visual remains link-only without a downloaded path; only research.json and research.md existed in owned directory before this validation log was added",
+    "Required current-source example-data preview caption occurs verbatim in research.md"
+  ],
+  "publicSourceChecks": [
+    "Reused complete current official text and baseline verification without needlessly refreshing facts",
+    "Targeted public homepage HTML retrieval for missing image URLs returned HTTP 200 and unchanged final URL",
+    "Read official Terms, EULA and moving guide; retained supporting excerpts and screenshot-version conflict"
+  ],
+  "notPerformed": ["Native competitor testing", "Cleanup or moves", "Image download or independent competitor image review", "Site build/tests or browser rendering", "Independent editorial approval"],
+  "blocker": "VISUAL-RIGHTS: no established republication licence/permission for required competitor app screenshot; link-only research fallback does not satisfy EDITORIAL.md on-page visual gate."
+}

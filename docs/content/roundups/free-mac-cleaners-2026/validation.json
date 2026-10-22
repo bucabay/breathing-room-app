@@ -1,0 +1,29 @@
+{
+  "checkedAtUtc": "2026-10-21T22:50:04.465Z",
+  "checks": [
+    "Actual site content schema: PASS",
+    "Review/unpublished flags: PASS",
+    "Actual isPublished excludes record: PASS",
+    "Exactly seven numbered selections: PASS",
+    "Two figures with top visual: PASS",
+    "No placeholder markers: PASS",
+    "Internal links resolve to existing tool page sources: PASS",
+    "Asset paths exist: PASS",
+    "First-party original SHA-256 matches library: PASS",
+    "Astro Satteri Markdown renders table and two figures: PASS"
+  ],
+  "bodyWhitespaceWords": 1692,
+  "descriptionCharacters": 159,
+  "sources": 10,
+  "hashes": {
+    "article": "fb30d69d8e9a244158d6de5e24c556b36d15277034e3cdf128e7d262ae8ffe27",
+    "diagram": "fa6b9dfea1ed2dee5e7d91861433d670cea7f2d6c6c6ebae4ba8796feeb563b7",
+    "preview": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+  },
+  "pending": [
+    "Full site check/build/tests not run: shared outputs forbidden by this task",
+    "Independent factual/editorial review",
+    "Production layout, canonical/social/schema and feed exclusion review",
+    "Responsive readability fixture inspection is not production layout approval"
+  ]
+}

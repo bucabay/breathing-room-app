@@ -1,0 +1,62 @@
+[
+  {
+    "id": "about",
+    "url": "https://deepclean.app/about",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711425+00:00",
+    "finalUrl": "https://deepclean.app/about",
+    "httpStatus": 200,
+    "snapshotPath": "sources/about.html",
+    "sha256": "775524c8929477c768f25a6e448eb315e2d3aab8d204ad586c19943d233fa06d",
+    "textPath": "sources/about.txt"
+  },
+  {
+    "id": "terms",
+    "url": "https://deepclean.app/terms",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711590+00:00",
+    "finalUrl": "https://deepclean.app/terms",
+    "httpStatus": 200,
+    "snapshotPath": "sources/terms.html",
+    "sha256": "a2f72a07a60940e41c57dc88e8450b77101198cd820d0a98a6be39e69713b845",
+    "textPath": "sources/terms.txt"
+  },
+  {
+    "id": "privacy",
+    "url": "https://deepclean.app/privacy",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711655+00:00",
+    "finalUrl": "https://deepclean.app/privacy",
+    "httpStatus": 200,
+    "snapshotPath": "sources/privacy.html",
+    "sha256": "1b84c504e735aca9f727139ca4d60faed91baa1e31f23e55d69c5832261d436b",
+    "textPath": "sources/privacy.txt"
+  },
+  {
+    "id": "download",
+    "url": "https://deepclean.app/download",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711695+00:00",
+    "finalUrl": "https://deepclean.app/download",
+    "httpStatus": 200,
+    "snapshotPath": "sources/download.html",
+    "sha256": "823a3e7c68f6591a892c3dc6a94653122c612f290dc4bdcb036633b2a9785cb5",
+    "textPath": "sources/download.txt"
+  },
+  {
+    "id": "press",
+    "url": "https://deepclean.app/press/",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711728+00:00",
+    "finalUrl": "https://deepclean.app/press/",
+    "httpStatus": 200,
+    "snapshotPath": "sources/press.html",
+    "sha256": "c0fa0946cd0bb93f94f8536b2580771b6ee43377a7133b824010b162ed6bccb0",
+    "textPath": "sources/press.txt"
+  },
+  {
+    "id": "developer-tools",
+    "url": "https://deepclean.app/features/developer-tools",
+    "retrievedAtUtc": "2026-10-21T20:22:30.711758+00:00",
+    "finalUrl": "https://deepclean.app/features/developer-tools",
+    "httpStatus": 200,
+    "snapshotPath": "sources/developer-tools.html",
+    "sha256": "c854123220bd3b8357211ae0731ec8ce0510c91e7e9b2c638498c572278bca18",
+    "textPath": "sources/developer-tools.txt"
+  }
+]

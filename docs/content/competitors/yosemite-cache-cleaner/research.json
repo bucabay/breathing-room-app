@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-yosemite-cache-cleaner",
+  "stage": "research",
+  "status": "blocked",
+  "checkedAtUtc": "2026-10-21T22:05:59Z",
+  "dateNote": "Environment calendar says October 22; actual shell UTC clock returned October 21 at 22:05:59Z. New check dates use that observed UTC date. Exact WebFetch retrieval seconds were not exposed and are not invented.",
+  "ownership": "docs/content/competitors/yosemite-cache-cleaner/ only, plus the explicitly required job receipt; no marketing files changed",
+  "identity": {
+    "id": "yosemite-cache-cleaner",
+    "discoveryName": "Sequoia Cache Cleaner",
+    "officialVendor": "Northern Softworks",
+    "officialLegacyHomepage": "https://www.northernsoftworks.com/sequoiacachecleaner.html",
+    "currentDestinationName": "Golden Gate Cache Cleaner",
+    "currentDestinationHomepage": "https://www.northernsoftworks.com/goldengatecachecleaner.html",
+    "repository": null,
+    "repositoryState": "not-verified; proprietary licence does not itself prove no public repository exists",
+    "canonicalOwnerId": "yosemite-cache-cleaner",
+    "canonicalOwnerBasis": "Retain existing competitors.json owner. No verified same-product alias permits reassignment to mavericks-cache-cleaner. This field is packet-local and does not mutate the manifest.",
+    "classification": "direct-workflow-overlap; legacy-identity-blocked",
+    "classificationReason": "The current official destination documents cache cleaning and Mac maintenance, overlapping storage maintenance. Its antivirus, customization and emergency-media scope is broader; Breathing Room is not established as a substitute for those functions. Historical Sequoia scope is not verified.",
+    "platformFit": "Mac-oriented maintenance comparison; no Windows edition or Breathing Room Windows support established. Scanning Windows malware is not evidence of running on Windows.",
+    "aliases": [
+      {"name": "Yosemite Cache Cleaner", "state": "not-verified", "basis": "Discovery URL slug only; not proof of a historical rename."},
+      {"name": "Sequoia Cache Cleaner", "state": "verified-directory-name-only", "sourceIds": ["D1"]},
+      {"name": "Golden Gate Cache Cleaner", "state": "verified-official-destination-not-historical-equivalence", "sourceIds": ["L1", "O1"]},
+      {"id": "mavericks-cache-cleaner", "state": "unresolved-generation-relationship", "sourceIds": ["A1"], "decision": "Do not merge or draft duplicate OS-name pages; no same-version equivalence proven."}
+    ],
+    "aliasSkipDecision": {
+      "verifiedAlias": false,
+      "skipAsVerifiedAlias": false,
+      "skipSeparateLegacyDraft": true,
+      "decision": "Hold separate Sequoia/Yosemite article and comparison. Official pointer establishes a destination, not a verified alias or discontinuation. Resolve historical/current editorial identity before drafting; do not substitute Golden Gate claims into Sequoia cells.",
+      "candidateCurrentIdentityId": "golden-gate-cache-cleaner",
+      "candidateOwnerAssigned": false
+    }
+  },
+  "discovery": {
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=5",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:15.718Z",
+    "edgeEvidence": "docs/content/competitors.json entry yosemite-cache-cleaner.edges[0]",
+    "listingUrl": "https://alternativeto.net/software/yosemite-cache-cleaner/about/",
+    "destinationUrl": "https://www.northernsoftworks.com/sequoiacachecleaner.html",
+    "sourceId": "D1",
+    "method": "Reused existing rendered-page discovery record, not a new AlternativeTo fetch.",
+    "limitations": "Retained directory JSON records title and official link only. Directory feature prose is not used to verify product capabilities. No independent new pagination traversal performed."
+  },
+  "sources": [
+    {
+      "id": "D1", "publisher": "AlternativeTo", "title": "Sequoia Cache Cleaner about page",
+      "url": "https://alternativeto.net/software/yosemite-cache-cleaner/about/",
+      "finalUrl": "https://alternativeto.net/software/yosemite-cache-cleaner/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:56.760Z",
+      "snapshotPath": "docs/content/.runtime/verification-2/yosemite-cache-cleaner-directory.json",
+      "sha256": "266a88270bd27400d38da4c69247f3c663fb826ca160e1f39ebfa8006fefd352",
+      "excerpt": "Sequoia Cache Cleaner: MacOS utility automating maintenance, malware scans, cache and memory | AlternativeTo; Official Website → https://www.northernsoftworks.com/sequoiacachecleaner.html",
+      "scope": "Discovery identity/link only; reused batch-2.json record"
+    },
+    {
+      "id": "L1", "publisher": "Northern Softworks", "title": "Legacy Sequoia destination notice",
+      "url": "https://www.northernsoftworks.com/sequoiacachecleaner.html",
+      "finalUrl": "https://www.northernsoftworks.com/sequoiacachecleaner.html",
+      "retrievedAtUtc": "2026-10-21T19:09:40.688244+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-2/yosemite-cache-cleaner-official.json",
+      "sha256": "2a380e68a3f3ab4fe675aa5e7e380e5cd6dba04cd21a9bc565e5492ab5a63006",
+      "excerpt": "Click the link to go to Golden Gate Cache Cleaner .",
+      "scope": "Pointer, not HTTP redirect or historical feature equivalence. Snapshot links include HTTPS Golden Gate navigation URL and an HTTP body link. Reused without refetch. A later batch browser attempt reached chrome-error://chromewebdata/; does not negate retained successful text."
+    },
+    {
+      "id": "A1", "publisher": "Breathing Room verification programme", "title": "Existing alias decision and Mavericks baseline",
+      "url": null, "path": "docs/content/verification/alias-decisions.json",
+      "relatedPath": "docs/content/verification/batch-1.json",
+      "checkedOn": "2026-10-21",
+      "excerpt": "Legacy listing/generation names and vendor pointer do not establish identical versions, historical feature parity or discontinuation.",
+      "scope": "Existing unresolved alias gate; batch-1 retained a 404 for the Mavericks URL, not proof that Sequoia or Golden Gate is dead."
+    },
+    {
+      "id": "O0", "publisher": "Northern Softworks", "title": "Official homepage",
+      "url": "https://www.northernsoftworks.com/", "finalUrl": "https://www.northernsoftworks.com/",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "retrievalMethod": "read-only WebFetch; exact seconds unavailable",
+      "excerpt": "All of our software is free to download and try out with no obligation to buy. ... Golden Gate Cache Cleaner ... [image alt] GGCC for macOS screenshot [image URL] images/GGCCscreenshot.png",
+      "scope": "Current advertised destination and visual link; trial duration and rights not established; no hands-on test", "publicationDate": null
+    },
+    {
+      "id": "O1", "publisher": "Northern Softworks", "title": "Golden Gate Cache Cleaner Maintenance Utility for macOS",
+      "url": "https://www.northernsoftworks.com/goldengatecachecleaner.html", "finalUrl": "https://www.northernsoftworks.com/goldengatecachecleaner.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "retrievalMethod": "read-only WebFetch; exact seconds unavailable",
+      "excerpts": [
+        "GGCC Documents and the GGCC Engine maintain system health by providing full automation of common maintenance chores including virus scanning of internet downloads.",
+        "Requirements: Universal Binary requires macOS 10.4 - 27.0",
+        "Download Golden Gate Cache Cleaner 27.0.1 (433.4 Mb)",
+        "GGCC ... ships with the powerful ClamAV antivirus built in."
+      ],
+      "scope": "Current destination only. Broad vendor requirements, not tested compatibility. Body also contains Tahoe and Big Sur wording; do not generalize all functions across versions. No installer downloaded.", "publicationDate": null
+    },
+    {
+      "id": "O2", "publisher": "Northern Softworks", "title": "Download Center",
+      "url": "https://www.northernsoftworks.com/download.html", "finalUrl": "https://www.northernsoftworks.com/download.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "excerpt": "Use of all software from Northern Softworks is subject to license terms. ... Golden Gate Cache Cleaner → downloads/nscc.dmg",
+      "scope": "Advertised download link exists; installer reachability, binary integrity and Sequoia installer availability not verified."
+    },
+    {
+      "id": "O3", "publisher": "Northern Softworks", "title": "Northern Softworks Store",
+      "url": "https://www.northernsoftworks.com/store.html", "finalUrl": "https://www.northernsoftworks.com/store.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "excerpts": [
+        "Golden Gate Cache Cleaner $9.99 Golden Gate Cache Cleaner for Macintosh",
+        "Golden Gate Cache Cleaner Upgrade Requires Tahoe Cache Cleaner serial number $7.99",
+        "Promotional Bundle ... $14.99 Golden Gate Cache Cleaner and HostsWard Internet Security Bundle",
+        "Scroll down to view all single user license options.",
+        "All orders are processed manually. Please allow up to a day for delivery."
+      ],
+      "scope": "Current Golden Gate advertised dollar amounts only. Currency code, tax-inclusive total, promotion expiry, renewal/major-upgrade entitlements and Sequoia prices unverified. No checkout opened."
+    },
+    {
+      "id": "O4", "publisher": "Northern Softworks", "title": "Northern Softworks License Terms",
+      "url": "https://www.northernsoftworks.com/EULA.html", "finalUrl": "https://www.northernsoftworks.com/EULA.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "excerpts": [
+        "This Software including all screens, logos, documentation, and displays is Copyright by Northern Softworks.",
+        "Developer hereby grants to Licensee a non-exclusive, limited license to Install and use the Software in machine-readable form on a single personal computer.",
+        "Licensee shall not reverse engineer, modify, copy, duplicate, reproduce, license or sublicense the Software ... without the prior written consent of Developer."
+      ],
+      "scope": "Proprietary software licence; no screenshot republication permission established. No legal fair-use determination made."
+    },
+    {
+      "id": "O5", "publisher": "Northern Softworks", "title": "Golden Gate Cache Cleaner Features",
+      "url": "https://www.northernsoftworks.com/cachecleanerfeatures.html", "finalUrl": "https://www.northernsoftworks.com/cachecleanerfeatures.html",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "excerpts": [
+        "Powerful macOS X system cache cleaning options.",
+        "Clean Internet browser caches.",
+        "Easy to use process manager.",
+        "CacheCleaner Engine for fully automatic maintenance.",
+        "Universal Binary for PPC, Intel or Apple Silicon Macs."
+      ],
+      "scope": "Vendor-listed functions, not validated results or instructions to execute. Legacy OS 9/prebindings/lookupd items make per-OS availability uncertain. No helper grouping or package-manager cache equivalence established."
+    },
+    {
+      "id": "B1", "publisher": "Breathing Room programme", "title": "Current capability register",
+      "url": "https://breathing-room.chatic.ai/", "path": "docs/content/capabilities.md",
+      "checkedOn": "2026-10-21", "originalReviewOn": "2026-10-21",
+      "excerpt": "free, Apache-2.0 macOS maintenance preview ... Hosted AI assistance requires internet access and authentication ... $5 USD/month or $50 USD/year",
+      "scope": "Reuse fresh source/published verification, including privacy page and v0.1.0-preview.1 release; not new public retrievals. Targeted local checks: README.md, src-tauri/tauri.conf.json and src/billing-config.json agree on material version/runtime/pricing caveats. Source presence is not release runtime parity."
+    },
+    {
+      "id": "B2", "publisher": "Breathing Room programme", "title": "Screenshot library",
+      "url": null, "path": "docs/content/screenshots.json", "checkedOn": "2026-10-21",
+      "excerpt": "Current-source Breathing Room Assistant plan review browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "scope": "Current-source browser illustration at recorded commit; not current native capture or binary parity. Actual PNG opened during this job."
+    }
+  ],
+  "claims": [
+    {"id": "C01", "wording": "The AlternativeTo Sequoia record uses a Yosemite slug and points to Northern Softworks' Sequoia URL.", "sourceIds": ["D1"], "checkedOn": "2026-10-21", "evidenceClass": "directory-discovery", "state": "verified", "scope": "Listing identity only", "location": "identity note"},
+    {"id": "C02", "wording": "The retained official Sequoia URL asks visitors to go to Golden Gate Cache Cleaner.", "sourceIds": ["L1"], "checkedOn": "2026-10-21", "evidenceClass": "officially-documented", "state": "verified", "scope": "Not proof of rename, discontinuation or historical feature parity", "location": "identity note"},
+    {"id": "C03", "wording": "Northern Softworks currently advertises Golden Gate Cache Cleaner 27.0.1 and a Universal Binary requirement of macOS 10.4–27.0.", "sourceIds": ["O1"], "checkedOn": "2026-10-21", "evidenceClass": "vendor-documented-not-tested", "state": "verified", "scope": "Golden Gate only; do not attach to Sequoia. Range and version repeated literally, not independently validated or evidence that every feature works on every OS", "location": "destination sidebar only"},
+    {"id": "C04", "wording": "The current destination documents cache cleaning, ClamAV integration and an engine for automated maintenance.", "sourceIds": ["O1", "O5"], "checkedOn": "2026-10-21", "evidenceClass": "vendor-documented-not-tested", "state": "verified", "scope": "Not evidence of malware efficacy, speedups, safety or historical Sequoia parity", "location": "destination scope note"},
+    {"id": "C05", "wording": "The Golden Gate store lists $9.99 single-user registration and a $7.99 upgrade requiring a Tahoe Cache Cleaner serial number.", "sourceIds": ["O3"], "checkedOn": "2026-10-21", "evidenceClass": "advertised-offer", "state": "verified", "scope": "Dollar currency code and tax total unverified. Not Sequoia pricing, a lifetime-upgrades promise or a completed purchase", "location": "destination pricing note"},
+    {"id": "C06", "wording": "Northern Softworks permits free download and evaluation; exact evaluation duration is not verified.", "sourceIds": ["O0", "O2"], "checkedOn": "2026-10-21", "evidenceClass": "advertised-offer", "state": "verified", "scope": "No installation or evaluation performed", "location": "access note"},
+    {"id": "C07", "wording": "Northern Softworks reserves copyright in software screens and provides a limited single-computer software licence.", "sourceIds": ["O4"], "checkedOn": "2026-10-21", "evidenceClass": "official-terms", "state": "verified", "scope": "No image reuse clearance inferred", "location": "visual ledger"},
+    {"id": "C08", "wording": "The official homepage links an image labeled GGCC for macOS screenshot at images/GGCCscreenshot.png.", "sourceIds": ["O0"], "checkedOn": "2026-10-21", "evidenceClass": "official-asset-reference", "state": "verified", "scope": "Asset not downloaded or visually inspected; exact UI view/version and reuse permission remain unknown", "location": "visual ledger"},
+    {"id": "C09", "wording": "Breathing Room is a free macOS 13+ preview with Python 3.10+ required for inventory/legacy scripts; the identified preview is not Developer ID signed or notarized.", "sourceIds": ["B1"], "checkedOn": "2026-10-21", "evidenceClass": "source-and-reused-release-disclosure", "state": "verified", "scope": "0.1.0-preview.1; Apple Silicon/Intel advertised, physical Intel and clean-machine QA incomplete; no signature inspection", "location": "comparison caveats"},
+    {"id": "C10", "wording": "Breathing Room's hosted AI needs authentication and internet; optional AI Care is advertised at $5 USD/month or $50 USD/year.", "sourceIds": ["B1"], "checkedOn": "2026-10-21", "evidenceClass": "source-and-reused-public-offer", "state": "verified", "scope": "Free local tools distinguished from hosted service. Relevant paths/process/storage context may reach service and Cloudflare Workers AI. Quotas, paid enforcement and payment not tested", "location": "comparison operation/pricing"},
+    {"id": "C11", "wording": "Breathing Room source implements exact-action review and saved daily-care approvals; optional narrowly verified Ruff Trash moves are an exception to ordinary interactive approval.", "sourceIds": ["B1", "B2"], "checkedOn": "2026-10-21", "evidenceClass": "source-inspection-and-example-ui", "state": "verified", "scope": "Not a safety guarantee. Daily care needs app running; source supports npm/uv/pip/pnpm/Go/Bun/Yarn discovery but adapter compatibility and distributed binary parity are not certified", "location": "comparison approval/developer workflow"},
+    {"id": "C12", "wording": "Sequoia and Golden Gate are identical versions with the same features, pricing and current availability.", "sourceIds": ["L1", "A1"], "checkedOn": "2026-10-21", "evidenceClass": "unresolved", "state": "not-verified", "scope": "Prohibited publication claim; official pointer is insufficient", "location": "identity blocker"}
+  ],
+  "claimLedgerDefaults": {"reviewer": "scheduled research worker (not independent reviewer)", "supportingPassages": "Exact retained excerpts in referenced source IDs", "publicationApproval": false},
+  "productMatrix": [
+    {"dimension": "Official identity", "sequoia": "Directory name plus official destination notice only", "claimIds": ["C01", "C02", "C12"]},
+    {"dimension": "Exact version/macOS/architectures", "sequoia": "not verified", "currentDestination": "27.0.1; vendor says macOS 10.4–27.0 Universal Binary, PPC/Intel/Apple Silicon", "claimIds": ["C03"], "sourceIds": ["O5"]},
+    {"dimension": "Licence", "sequoia": "Historical version-specific licence not verified", "currentDestination": "Northern Softworks proprietary limited software licence", "claimIds": ["C07"]},
+    {"dimension": "Local/hosted", "sequoia": "not verified", "currentDestination": "Mac app documented; network/telemetry/account requirements not verified", "sourceIds": ["O1", "O2"]},
+    {"dimension": "Scan/cleanup", "sequoia": "not verified", "currentDestination": "Vendor lists system/browser cache cleaning and antivirus; not tested", "claimIds": ["C04"]},
+    {"dimension": "Approval controls", "sequoia": "not verified", "currentDestination": "Automation documented; exact-path approval/revalidation/reversal not verified", "claimIds": ["C04"]},
+    {"dimension": "Process/helper grouping", "sequoia": "not verified", "currentDestination": "Process manager listed; helper grouping not verified", "sourceIds": ["O5"]},
+    {"dimension": "Recurring growth monitoring", "sequoia": "not verified", "currentDestination": "not verified; automation is not proof of growth tracking"},
+    {"dimension": "Developer package-manager caches", "sequoia": "not verified", "currentDestination": "not verified; generic cache cleaning does not establish npm/uv/etc support"},
+    {"dimension": "Pricing", "sequoia": "not verified", "currentDestination": "$9.99 single-user; $7.99 Tahoe-serial upgrade; currency code/tax and future upgrades unverified", "claimIds": ["C05"]},
+    {"dimension": "Runtime/install caveats", "sequoia": "not verified", "currentDestination": "Download/evaluation advertised; permissions, runtimes, OS-specific exclusions and actual binary signing not independently checked", "claimIds": ["C06"]},
+    {"dimension": "Breathing Room boundary", "breathingRoom": "Free local maintenance preview; optional authenticated hosted AI Care; source-level capabilities not binary certification", "claimIds": ["C09", "C10", "C11"]}
+  ],
+  "visuals": [
+    {
+      "id": "northern-softworks-current-official-screenshot-link", "productId": "golden-gate-cache-cleaner",
+      "view": "Vendor-labeled GGCC app screenshot; precise view not inspected", "kind": "official-asset",
+      "sourcePageUrl": "https://www.northernsoftworks.com/", "assetUrl": "https://www.northernsoftworks.com/images/GGCCscreenshot.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null,
+      "dataMode": "unknown", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Official public screenshot link; no republication permission established. EULA reserves screens copyright. Public availability is not a licence; do not download or embed without clearance.", "evidenceUrlOrPath": "https://www.northernsoftworks.com/EULA.html", "credit": "Northern Softworks; Golden Gate Cache Cleaner"},
+      "caption": "Official Golden Gate Cache Cleaner screenshot linked by Northern Softworks. Not our test and not verified as Sequoia UI.",
+      "alt": "Link to Northern Softworks' official Golden Gate Cache Cleaner app screenshot.",
+      "supportedClaimIds": ["C08"],
+      "limitations": ["Not downloaded; hashes and dimensions intentionally null", "Not visually inspected; does not pass app-view review", "Current Golden Gate image cannot silently stand in for Sequoia", "Link-only fallback does not satisfy required on-page competitor visual gate"],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-assistant-review-browser-preview", "productId": "breathing-room", "view": "Assistant plan review", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "capturedAtUtc": "2026-10-21T19:07:38.214447+00:00", "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job per shared manifest", "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/assistant-review-preview-2026-10-21.png",
+      "originalSha256": "072dd61b3a08989c981a4c512a9a1908bd39b02ea68a64f0767383f3ff88f236",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 2220, "edits": [],
+      "privacyReview": {"status": "reviewed-example-only", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "Shared manifest: app-owner-requested first-party UI capture, with required example-data disclosures; third-party marks remain their owners' marks. Page-context independent review still required.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-assistant-review-browser-preview", "credit": "Breathing Room"},
+      "caption": "Current-source Breathing Room Assistant plan review browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Assistant plan review browser preview with illustrative example cleanup locations and explicit no-Mac-inspection disclosure.",
+      "supportedClaimIds": ["C11"],
+      "limitations": ["Keep interactive-preview/no-Mac-inspection disclosure visible", "Example 2.9 GB and location sizes are not measured savings", "Current-source as of captured commit, not distributed-release/native QA", "No fresh capture, crop or published derivative created"],
+      "review": {"status": "opened-and-read-this-job; independent-publication-review-pending", "reviewer": "scheduled research worker", "reviewedOn": "2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "state": "conditional-research-briefs-not-drafts",
+    "workflowArticle": {
+      "track": "search/reference",
+      "proposedTitle": "Check the cache-cleaner generation before planning Mac maintenance",
+      "proposedSlug": "check-cache-cleaner-generation-before-mac-maintenance",
+      "primaryIntent": "Help a Mac owner arriving from a Sequoia/Yosemite Cache Cleaner listing identify the current vendor destination, check OS/version scope, and distinguish a maintenance task from an unsupported blanket cleanup promise.",
+      "distinctValue": "Legacy discovery-name and current-download reconciliation, followed by task-specific cache/maintenance selection. Not another generic alternatives list or a renamed product matrix.",
+      "leadDirection": "The old Sequoia link leads to a Golden Gate notice. Confirm the version and desired task before interpreting today's features or prices as historical Sequoia facts.",
+      "outline": ["Show the recorded identity chain and its limits", "Separate cache inspection from antivirus, OS tweaks and emergency-media work", "Confirm OS-specific feature support instead of treating a broad compatibility range as universal parity", "Use an ownership/rebuild-cost/approval checklist before any cleanup", "Choose bounded inspection versus broader maintenance scope; disclose Breathing Room affiliation and preview limitations"],
+      "interactionHandoff": "Read-only decision checklist: listing name → official current product → OS/version verified? → task category → approval/rebuild cost known? Unknown answers stop the recommendation. No filesystem access, cleanup command or signup.",
+      "visualPlan": "Top: rights-cleared generation-specific official app UI, not a landing page. Later: selected Breathing Room plan-review example with required disclosure. Competitor image gate currently blocked.",
+      "internalLinkPlan": ["/comparisons/", "/comparisons/yosemite-cache-cleaner/ only if identity gate approves that route", "Relevant cache/rebuild checklist tool only after its real route and implementation are verified"],
+      "constraints": ["Do not draft until identity and visual gates pass", "No invented historical rename chain", "No executable destructive examples", "No hands-on or recovered-space claims", "Recheck uniqueness against other generation jobs before draft"]
+    },
+    "comparison": {
+      "proposedTitle": "Breathing Room and Sequoia Cache Cleaner: verify the product first",
+      "proposedSlug": "yosemite-cache-cleaner",
+      "primaryIntent": "A concise, identity-qualified choice between Mac inspection/review and the vendor's documented maintenance scope; not antivirus or Windows replacement claims.",
+      "structure": ["Identity notice first", "Sourced operation/approval/platform/licence/price matrix with unknown cells", "When each documented workflow fits", "Preview/runtime/hosted-data caveats", "Link to distinct workflow guide and comparison hub"],
+      "decision": "Do not emit a standalone legacy comparison while identity is unresolved; if a single Golden Gate family page is authorized later, choose one canonical route rather than OS-name doorway pages.",
+      "disclosure": "Breathing Room, which we build",
+      "notAReplacementFor": ["Documented antivirus functions", "Emergency-media creation", "Historical Mac support outside Breathing Room's advertised macOS 13+ range"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "evidenceClass": "bounded-editorial-judgment-based-on-documented-scope; no testing",
+    "currentDestinationAdvantages": ["Vendor lists broader maintenance functions including ClamAV and emergency-media workflows; feature availability depends on OS and is not tested here.", "Advertised $9.99 single-user registration provides a non-subscription-looking purchase option, but billing recurrence and future upgrades are not verified; do not call it lifetime.", "Vendor advertises older Mac/OS support beyond Breathing Room's macOS 13+ requirement; broad range is not independent validation."],
+    "breathingRoomAdvantages": ["Source-backed exact-action review and saved approvals make a concrete inspection/review workflow to illustrate, not evidence of superiority or safety.", "Source-backed developer-cache discovery and local activity/helper views may fit a developer investigation; corresponding competitor capabilities are unknown, not absent."],
+    "breathingRoomTradeoffs": ["Non-notarized preview with incomplete clean-machine/physical-Intel testing and Python prerequisite.", "Hosted AI requires authentication/internet and shares relevant context; optional AI Care has recurring advertised fees.", "Not established as antivirus, emergency-media creator or a replacement for every documented Northern Softworks task."],
+    "competitorTradeoffs": ["Legacy identity unresolved; current page includes mixed-generation wording and legacy function listings.", "Exact-path approvals, growth monitoring, hosted-data behavior and developer-tool cache adapters not verified.", "Screenshot republication not cleared; no UI or efficacy testing performed."],
+    "claimIds": ["C02", "C03", "C04", "C05", "C07", "C09", "C10", "C11", "C12"]
+  },
+  "unknowns": {
+    "critical": ["Verified relationship and unique publishable scope among Yosemite, Sequoia, Golden Gate and the candidate Mavericks record", "A rights-cleared real app UI image matching the chosen product identity, with visual review"],
+    "noncriticalIfExplicitlyUnknown": ["Historical Sequoia version/price/platform requirements and current separate download availability", "Public source repository", "Exact trial duration", "Dollar currency code/tax-inclusive price and future-major-upgrade terms", "Per-OS availability of old maintenance functions", "Telemetry/network/account behavior", "Exact approval/recovery semantics", "Helper grouping, growth history and specific developer-cache support", "Hands-on measurements, installer signature checks and binary parity"],
+    "rule": "Noncritical unknowns may remain only if not needed for the chosen recommendation and never rendered as No. Historical facts become critical if a historical Sequoia comparison is selected."
+  },
+  "gates": {
+    "draftingAllowed": false,
+    "publicationAllowed": false,
+    "blockers": [
+      {"id": "identity", "diagnostic": "Official Sequoia pointer verifies Golden Gate destination, not historical equivalence. Resolve one canonical editorial identity/scope; do not assign Mavericks ownership or duplicate legacy-name drafts from shared vendor alone."},
+      {"id": "competitor-visual", "diagnostic": "Official asset URL found, but screenshot reuse permission and identity/view/version not cleared. Keep link-only; acquire authorized permission/licence or an explicitly approved policy decision and inspect the matching app visual before drafting."}
+    ],
+    "independentReview": "pending separate stage; no score awarded",
+    "siteChecks": "not applicable: no site files or drafts changed",
+    "safety": "Read-only documentary research only; no browser session, installation, cleanup, accounts, messages, checkout, credentials, commits, pushes, deployment or queue mutation. No third-party image bytes downloaded."
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Error when scanning</title>
+<link rel="stylesheet" type="text/css" href="../pintail-mallard-C.css">
+<script type="text/javascript" src="../highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="../yelp.js"></script>
+</head>
+<body>
+<header class="gnome-header"><nav><div class="pagewide">
+<a id="home-link" class="gnome-navbar-brand" href="../index.html" title="Go to home page"><h1>GNOME Help</h1></a><details class="gnome-langs gnome-langs-wide"><summary title="Change language" aria-label="Change language"><span class="gnome-langs-current">en</span></summary><ul>
+<li><a href="problem-permissions.html.ca">català</a></li>
+<li><a href="problem-permissions.html.cs">čeština</a></li>
+<li><a href="problem-permissions.html.da">dansk</a></li>
+<li><a href="problem-permissions.html.de">Deutsch</a></li>
+<li><a href="problem-permissions.html" aria-current="true">English</a></li>
+<li><a href="problem-permissions.html.es">español</a></li>
+<li><a href="problem-permissions.html.eu">euskara</a></li>
+<li><a href="problem-permissions.html.fr">français</a></li>
+<li><a href="problem-permissions.html.gl">galego</a></li>
+<li><a href="problem-permissions.html.hr">hrvatski</a></li>
+<li><a href="problem-permissions.html.id">Indonesia</a></li>
+<li><a href="problem-permissions.html.it">italiano</a></li>
+<li><a href="problem-permissions.html.hu">magyar</a></li>
+<li><a href="problem-permissions.html.nl">Nederlands</a></li>
+<li><a href="problem-permissions.html.nb">norsk bokmål</a></li>
+<li><a href="problem-permissions.html.nn">norsk nynorsk</a></li>
+<li><a href="problem-permissions.html.pl">polski</a></li>
+<li><a href="problem-permissions.html.pt">português</a></li>
+<li><a href="problem-permissions.html.pt_BR">português (Brasil)</a></li>
+<li><a href="problem-permissions.html.sl">slovenščina</a></li>
+<li><a href="problem-permissions.html.fi">suomi</a></li>
+<li><a href="problem-permissions.html.sv">svenska</a></li>
+<li><a href="problem-permissions.html.tr">Türkçe</a></li>
+<li><a href="problem-permissions.html.el">Ελληνικά</a></li>
+<li><a href="problem-permissions.html.bg">български</a></li>
+<li><a href="problem-permissions.html.ru">русский</a></li>
+<li><a href="problem-permissions.html.sr">српски</a></li>
+<li><a href="problem-permissions.html.uk">українська</a></li>
+<li><a href="problem-permissions.html.kk">қазақ тілі</a></li>
+<li><a href="problem-permissions.html.ko">한국어</a></li>
+<li><a href="problem-permissions.html.zh_CN">中文 (简体, 中国)</a></li>
+</ul></details>
+</div></nav></header><main><aside class="sidebar sidebar-left"><div class="sidebar-contents"><div class="inner">
+<div class="title"><h2><span class="title">Contents</span></h2></div>
+<div class="region"><div class="contents"><ul>
+<li class="links"><a href="../baobab/index.html" title="Disk Usage Analyzer help">Disk Usage Analyzer</a></li>
+<li class="links"><a href="../baobab/introduction.html" title="Introduction">Introduction</a></li>
+<li class="links"><ul>
+<li class="links links-head">Scan</li>
+<li class="links"><a href="../baobab/scan-folder.html" title="Scan a folder">Scan a folder</a></li>
+<li class="links"><a href="../baobab/scan-remote.html" title="Scan a remote folder">Scan a remote folder</a></li>
+<li class="links"><a href="../baobab/scan-file-system.html" title="Scan the file system">Scan the file system</a></li>
+<li class="links"><a href="../baobab/scan-home.html" title="Scan your Home folder">Scan your <span class="file">Home</span> folder</a></li>
+</ul></li>
+<li class="links"><ul>
+<li class="links links-head">Preferences</li>
+<li class="links"><a href="../baobab/pref-view-chart.html" title="Different chart views">Different chart views</a></li>
+</ul></li>
+<li class="links"><ul>
+<li class="links links-head">Common problems and questions</li>
+<li class="links"><a href="../baobab/problem-permissions.html" title="Error when scanning">Error when scanning</a></li>
+<li class="links"><a href="../baobab/question-trash.html" title="How do I delete a folder?">How do I delete a folder?</a></li>
+<li class="links"><a href="../baobab/question-open-folder.html" title="How do I open a folder?">How do I open a folder?</a></li>
+<li class="links"><a href="../baobab/problem-slow-scan.html" title="Scanning is slow">Scanning is slow</a></li>
+</ul></li>
+</ul></div></div>
+</div></div></aside><aside class="sidebar sidebar-right"></aside><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="../index.html">GNOME</a> » <a class="trail" href="../baobab/index.html" title="Disk Usage Analyzer help">Disk Usage Analyzer</a> › <a class="trail" href="../baobab/index.html#problems" title="Common problems and questions">Common problems and questions</a> » </div></div></div></header><article><div class="hgroup pagewide"><h1 class="title"><span class="title">Error when scanning</span></h1></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">When scanning you might see a message <span class="gui">Could not scan /… or some of the
+  folders it contains</span> at the top of <span class="app">Disk Usage Analyzer</span> window.
+  This error appears because you don't have the required permissions to access
+  some files due to restrictions set on the target system. The files you can't
+  access won't be used to compute the <span class="link"><a href="../baobab/pref-view-chart.html" title="Different chart views">chart</a></span>
+  representing the disk usage, hence the result reported may be wrong.</p>
+<p class="p">Not having access to all files and directories is perfectly common though,
+  so there is nothing you can do about this error.</p>
+<div class="note" title="Note">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" d="m4 3h16c0.554 0 1 0.446 1 1v11h-6v6h-11c-0.554 0-1-0.446-1-1v-16c0-0.554 0.446-1 1-1z"></path>
+  <path class="yelp-svg-fill" d="m17 16h4l-5 5v-4c0-0.554 0.446-1 1-1z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents">
+<p class="p"><span class="app">Disk Usage Analyzer</span> uses command
+  <span class="cmd">du</span> to create the detailed view of the use of storage, and needs
+  you have read permission on files and execute permission of directories.</p>
+<p class="p">On the other hand, filesystem disk usage uses the command <span class="cmd">df</span>
+  which relies on the filesystem and not on file permissions.</p>
+</div></div></div>
+</div>
+</div>
+<section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="../baobab/index.html#problems" title="Common problems and questions">Common problems and questions</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="copyrights"><div class="copyright">© 2014 Baptiste Mille-Mathias</div></div>
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Baptiste Mille-Mathias</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">Creative Commons</span></div>
+<div class="contents"><p class="p">This work is licensed under a
+  <span class="link"><a href="http://creativecommons.org/licenses/by-sa/3.0/" title="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-ShareAlike 3.0 Unported License</a></span>.</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "depflush-license",
+    "url": "https://raw.githubusercontent.com/cypriennkeneng/depflush/main/LICENSE",
+    "retrievedAtUtc": null,
+    "checkedOn": "2026-10-22",
+    "note": "Retained in initial collection; exact retrieval instant not saved.",
+    "path": "sources/depflush-license.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "id": "mac-sai-license",
+    "url": "https://raw.githubusercontent.com/iliyami/MacSai/main/LICENSE",
+    "retrievedAtUtc": null,
+    "checkedOn": "2026-10-22",
+    "note": "Retained in initial collection; exact retrieval instant not saved.",
+    "path": "sources/mac-sai-license.txt",
+    "sha256": "2f3ff9183d4dce8ba6f81a6be99b402fcde91b4e4d7f2be5a1dec357769f84fc"
+  },
+  {
+    "id": "app-eraser-license",
+    "url": "https://raw.githubusercontent.com/davunt/app-eraser/main/LICENSE",
+    "retrievedAtUtc": null,
+    "checkedOn": "2026-10-22",
+    "note": "Retained in initial collection; exact retrieval instant not saved.",
+    "path": "sources/app-eraser-license.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "id": "app-eraser-package",
+    "url": "https://raw.githubusercontent.com/davunt/app-eraser/main/package.json",
+    "retrievedAtUtc": null,
+    "checkedOn": "2026-10-22",
+    "note": "Retained in initial collection; exact retrieval instant not saved.",
+    "path": "sources/app-eraser-package.txt",
+    "sha256": "72af509811da6b65694890c3cc79b13cf26d87fb8f60d9e0609b6862b4652e9a"
+  },
+  {
+    "id": "commons-clause",
+    "url": "https://commonsclause.com/",
+    "retrievedAtUtc": null,
+    "checkedOn": "2026-10-22",
+    "note": "Retained in initial collection; exact retrieval instant not saved.",
+    "path": "sources/commons-clause.txt",
+    "sha256": "cbe974904942fc88a9445c25adb00166d9cb585b99e8023ab2419fcc16ec2e54"
+  },
+  {
+    "id": "open-source-definition",
+    "url": "https://opensource.org/osd",
+    "error": "HTTP Error 403: Forbidden",
+    "checkedOn": "2026-10-22"
+  }
+]

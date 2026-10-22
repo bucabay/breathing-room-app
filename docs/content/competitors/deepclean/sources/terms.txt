@@ -1,0 +1,72 @@
+Terms of Use | DeepClean
+DeepClean
+Features
+Blog
+Pricing
+Scan Your Mac Free
+Legal
+Terms of Use
+These terms govern your purchase and use of DeepClean, a disk cleanup utility for macOS. They are written to be read, not skimmed past. By purchasing, downloading, or using DeepClean you agree to them. Effective October 17, 2026.
+Free use
+You may download and use DeepClean without a license key. The free tier includes the full scan, all results and safety ratings, and moving up to 10 GB of files in total to the Trash. That allowance is a lifetime total per installation, not per scan, and it does not expire. Moving more than that to the Trash requires a license. We may change what the free tier includes for future versions, but not what an already-purchased license includes.
+License grant
+When you buy DeepClean you receive a license key and a personal, non-exclusive, non-transferable license to use unlimited cleanup on one Mac ($39).
+Activation limits are enforced by our license server. You can move an activation to a different Mac at any time by deactivating the old machine from the app's license settings. The software itself remains the property of DeepClean; the license gives you the right to use it, not ownership of the code.
+One-time purchase
+DeepClean is sold as a
+one-time purchase
+, not a subscription. There are no recurring charges. Your purchase includes the app as delivered plus updates we make available for the major version you bought. If a future paid major version is released, upgrading is optional; your existing version keeps working under this license.
+Payments are processed by Razorpay, a third-party payment processor. Your license key is emailed to the address you provide at checkout. Keep it safe; it is your proof of purchase and what you need to reinstall or switch Macs.
+Acceptable use
+You agree not to:
+Share, resell, or publish your license key, or activate it on more Macs than your license allows.
+Circumvent, disable, or interfere with the license activation system or the free-tier allowance.
+Reverse engineer, decompile, or modify the app, except where applicable law expressly permits it despite this restriction.
+Use the app to interfere with systems or data you do not own or have permission to manage.
+Disclaimer of warranties
+DeepClean is a disk cleanup tool. It
+deletes files at your direction
+: every scan produces a list, and nothing is removed until you review and approve it. You are responsible for reviewing what you approve for deletion and for maintaining
+backups of your data
+(Time Machine or otherwise) before performing cleanup operations.
+The app is provided
+"as is" and "as available"
+, without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be error-free, that it will identify every file safely, or that any particular amount of disk space will be recovered. Some jurisdictions do not allow the exclusion of certain warranties, so parts of this section may not apply to you.
+Limitation of liability
+To the maximum extent permitted by law, DeepClean and the people who build it are not liable for any indirect, incidental, special, consequential, or exemplary damages, including loss of data, loss of profits, or business interruption, arising from your use of or inability to use the app, even if advised of the possibility of such damages. To the maximum extent permitted by law, our total liability for any claim relating to the app is limited to the amount you paid for your license. Nothing in these terms excludes liability that cannot be excluded under applicable law.
+Refunds
+For DeepClean, we do not publish a blanket refund guarantee. If something is wrong, email
+support@deepclean.app
+and describe the problem;
+refund requests are reviewed case by case
+, and we will always try to fix the underlying issue first. Requests are handled by the same small team that builds the app.
+BeatPath subscriptions come with a 30-day money-back guarantee.
+If BeatPath isn't right for you, email
+support@deepclean.app
+within 30 days of your first payment for a full refund, no questions asked.
+Termination
+We may revoke a license key if it is obtained fraudulently, subject to a payment chargeback, or used in violation of these terms (for example, a key shared publicly or activated far beyond its limit). A revoked key will no longer validate or activate. You may stop using the app at any time; deactivating your Macs from the license settings frees your activations.
+Changes to these terms
+If these terms change, we will update this page and the effective date at the top. Continued use of the app after a change takes effect constitutes acceptance of the updated terms. These terms were last updated on
+October 17, 2026
+.
+Contact
+Questions about these terms
+support@deepclean.app
+For how we handle data, see the
+privacy policy
+. For what the product is and who builds it, see the
+about page
+.
+Pay once, own it
+DeepClean is a one-time purchase with per-Mac activation you control. Scan locally, review everything, delete only what you approve.
+Scan Your Mac Free
+DeepClean
+Features
+Blog
+Pricing
+About
+Privacy
+Terms
+Contact
+© 2026 DeepClean

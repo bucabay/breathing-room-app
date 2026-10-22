@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Download — AmpleCapacity</title><meta name="description" content="Download AmpleCapacity for Mac. The scan is free and complete. Pay once to clear what it finds."><link rel="stylesheet" href="pages.css">
+<style>
+  main{padding-bottom:10px}
+  .hero{padding:30px 0 0}
+  .hero h1{max-width:17ch;font-size:clamp(40px,6vw,68px);line-height:1}
+  .hero .lede{max-width:56ch;margin-top:22px}
+  .seats{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;padding:7px 15px 7px 11px;border-radius:999px;
+    background:rgba(212,255,89,.09);border:1px solid rgba(212,255,89,.30);color:#e9ffb0;font-size:12.5px;font-weight:600;letter-spacing:.01em}
+  .seats i{width:7px;height:7px;border-radius:999px;background:var(--lime);box-shadow:0 0 0 4px rgba(212,255,89,.16);font-style:normal}
+
+  .shot{margin:48px 0 0;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.14);
+    box-shadow:0 50px 90px -50px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.04) inset;background:#0d201c}
+  .shot img{display:block;width:100%;height:auto}
+  .shot-note{margin:14px 0 0;color:#8fa9a1;font-size:13px}
+
+  .band{margin:58px 0 0;padding:26px 0;border-top:1px solid rgba(255,255,255,.11);border-bottom:1px solid rgba(255,255,255,.11);
+    display:flex;flex-wrap:wrap;gap:16px 42px}
+  .band div{display:flex;align-items:center;gap:11px;color:#b2c8c0;font-size:14px}
+  .band svg{flex:0 0 auto;color:var(--lime)}
+
+  .herogrid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:start}
+  .reassure{margin:22px 0 0;color:#8fa9a1;font-size:14px;line-height:1.6;max-width:52ch}
+  .pair{display:grid;grid-template-columns:1fr;margin:58px 0 0;align-items:start}
+  .deal{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pair h2{margin:0 0 10px;color:#f8fff9;font-size:27px;letter-spacing:-.022em;line-height:1.12}
+  .pair .sub{margin:0 0 26px;color:#b2c8c0;font-size:15.5px;line-height:1.65;max-width:46ch}
+  .deal{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+  .deal li{padding:19px 22px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.11)}
+  .deal h3{margin:0 0 6px;color:#f8fff9;font-size:15.5px;letter-spacing:-.014em}
+  .deal p{margin:0;color:#b2c8c0;font-size:14.5px;line-height:1.62}
+  .deal .ask{background:rgba(212,255,89,.07);border-color:rgba(212,255,89,.26)}
+  .deal .ask h3{color:#e9ffb0}
+
+  .card{padding:30px 30px 26px;border-radius:22px;background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -52px rgba(0,0,0,.85)}
+  .card h2{margin:0 0 6px;font-size:22px;color:#f8fff9;letter-spacing:-.02em}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .go{width:100%;margin-top:6px;padding:0 24px;height:52px;border-radius:999px;border:0;cursor:pointer;font:inherit;font-size:15.5px;
+    font-weight:700;letter-spacing:-.012em;color:#0f2923;background:var(--lime);transition:transform .12s,filter .16s}
+  .go:hover:not(:disabled){filter:brightness(1.06)}
+  .go:active:not(:disabled){transform:translateY(1px)}
+  .go:disabled{opacity:.5;cursor:default}
+  .golink{display:flex;align-items:center;justify-content:center;text-decoration:none;margin-top:0}
+  .keybox{margin:20px 0 0;padding:16px 17px;border-radius:16px;background:rgba(9,26,22,.5);border:1px solid rgba(255,255,255,.14)}
+  .keyhead{color:#a9c6bc;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:9px}
+  .keybox code{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.65;
+    color:#e9ffb0;word-break:break-all;user-select:all}
+  .copy{margin-top:12px;width:100%;height:38px;border-radius:999px;cursor:pointer;font:inherit;font-size:13px;font-weight:600;
+    color:#dff3ea;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);transition:background .15s}
+  .copy:hover{background:rgba(255,255,255,.14)}
+  .keynote{margin:12px 0 0;color:#8fa9a1;font-size:12.5px;line-height:1.55}
+  .fine{margin:14px 0 0;color:#8fa9a1;font-size:12.5px;line-height:1.6;text-align:center}
+  .fine a{color:#b2c8c0}
+
+  .steps{margin:62px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .steps div{padding:20px 20px 22px;border-radius:16px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.035)}
+  .steps b{display:block;color:#7fb3a2;font-size:11.5px;font-weight:700;letter-spacing:.09em;margin-bottom:9px}
+  .steps h4{margin:0 0 6px;color:#f8fff9;font-size:15px;letter-spacing:-.012em}
+  .steps p{margin:0;color:#b2c8c0;font-size:14px;line-height:1.6}
+
+  .close{margin:56px 0 0;padding:30px 34px;border-radius:20px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+  .close h2{margin:0 0 10px;color:#f8fff9;font-size:20px;letter-spacing:-.018em}
+  .close p{margin:0;color:#b2c8c0;font-size:15px;line-height:1.7;max-width:74ch}
+  .close a{color:var(--lime)}
+  @media (max-width:900px){.herogrid{grid-template-columns:1fr;gap:32px}.deal{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:560px){.row{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.band{gap:14px 26px}}
+  .offer{display:inline-block;margin:20px 0 0;padding:11px 16px;border-radius:12px;background:#edf1ff;border:1px solid #c9d4ee;color:#3157cf;font-size:15px;font-weight:600;line-height:1.45}
+  .offer b{letter-spacing:.05em}
+  .offer-card{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;width:100%;margin:12px 0 0;text-align:center}
+  .offer-tag{flex:0 0 auto;padding:3px 10px;border-radius:999px;background:#3157cf;color:#fff;font-size:13px;font-weight:800}
+</style><link rel="canonical" href="https://amplecapacity.com/download.html"><meta property="og:type" content="website"><meta property="og:site_name" content="AmpleCapacity"><meta property="og:url" content="https://amplecapacity.com/download.html"><meta property="og:title" content="Download &mdash; AmpleCapacity"><meta property="og:description" content="Download AmpleCapacity for Mac. The scan is free and complete. Pay once to clear what it finds."><meta property="og:image" content="https://amplecapacity.com/og.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Download &mdash; AmpleCapacity"><meta name="twitter:description" content="Download AmpleCapacity for Mac. The scan is free and complete. Pay once to clear what it finds."><meta name="twitter:image" content="https://amplecapacity.com/og.jpg"><script defer data-website-id="dfid_aqTHiJpYkum46FE3xxTqL" data-domain="amplecapacity.com" src="https://datafa.st/js/script.js"></script></head>
+<body class="beta">
+<header class="bar"><div class="wrap"><a class="brand" href="/"><span class="brand-mark">A</span>AmpleCapacity</a><nav><a href="/">Product</a><a href="/pricing.html">Pricing</a><a href="/contact.html">Contact</a></nav></div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div class="herogrid">
+    <div>
+      <p class="seats"><i></i>The scan is free &middot; clearing is a one-time payment</p>
+      <h1>See what your Mac can give back, before you pay a thing.</h1>
+      <p class="lede">AmpleCapacity finds the files on your Mac that your own tools can make again: build caches, container disks, model weights. It explains every one of them in plain words, and moves nothing you have not agreed to. You pay only if you want it to clear what it found.</p>
+      <p class="reassure">Scan this Mac and read every result without an account or a card. When you want it to clear what it found, the app offers a licence: <b>$49.99</b> for Developer, <b>$24.99</b> for Everyday. One payment, no subscription.</p>
+    </div>
+  <div class="card">
+    <h2>Download it</h2>
+    <a class="go golink" id="getBtn" href="/downloads/AmpleCapacity.zip" download>Download for Mac &middot; 6 MB</a>
+    <p class="offer offer-card"><span class="offer-tag">20% off</span><span>Code <b>OCTOBER20</b> at checkout, until 31 October</span></p>
+    <p class="keynote" style="margin:12px 0 0">Had the free test build? It stopped on 7 October. Download this one; the published test key does not unlock it.</p>
+
+    <p class="fine">Nothing is ever deleted outright: anything you clear goes to a vault and comes back for seven days. <a href="/pricing.html">See pricing</a>.</p>
+  </div>
+  </div>
+
+  <div class="shot"><img src="screens/results-live.jpg" alt="The AmpleCapacity results screen, showing reclaimable space grouped by kind." loading="lazy" width="1800" height="1063"></div>
+  <p class="shot-note">A real scan, on a real Mac. Nothing here is a mock-up.</p>
+</section>
+
+<div class="band">
+  <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Signed and notarised by Apple</div>
+  <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10"/><path d="m8 9 4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Nothing is deleted &mdash; it goes to a vault</div>
+  <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/><path d="m4 4 16 16"/></svg>No account, no telemetry, no tracking</div>
+</div>
+
+<section class="pair">
+  <div>
+    <h2>What you pay for</h2>
+    <p class="sub">Looking costs nothing. Clearing is what the licence is for.</p>
+    <ul class="deal">
+      <li><h3>One payment, no subscription</h3><p>$49.99 for Developer, covering three Macs you own. $24.99 for Everyday, covering five devices in your household. Pay once. There is no trial that quietly becomes a bill.</p></li>
+      <li><h3>Your results are yours</h3><p>The scan reads and nothing else. Anything you choose to clear goes to a vault and can be put back. The app never sends anything about your files anywhere.</p></li>
+      <li class="ask"><h3>Tell us what it got wrong</h3><p>If it ever offers something it should have left alone, write to us with a screenshot. <strong>That single answer is worth more to us than any other.</strong></p></li>
+      <li><h3>Look first, then decide</h3><p>All sales are final, which is why the scan is free and complete: it shows you exactly what the app would clear on your Mac before you spend anything.</p></li>
+    </ul>
+  </div>
+
+</section>
+
+<div class="steps">
+  <div><b>01</b><h4>Download and open it</h4><p>Unzip, drag it to Applications, open it from there.</p></div>
+  <div><b>02</b><h4>Scan</h4><p>macOS asks for disk access. The scan only reads, and it says so before it asks.</p></div>
+  <div><b>03</b><h4>Buy, if it is worth it</h4><p>A panel appears after the results. Pay there, then paste the key from your confirmation email.</p></div>
+  <div><b>04</b><h4>Tell me what it got wrong</h4><p>Especially anything it offered that it should have left alone.</p></div>
+</div>
+
+<section class="close">
+  <h2>Where to write</h2>
+  <p>Everything goes to one address: <a href="mailto:hello@amplecapacity.com">hello@amplecapacity.com</a>.<br>
+  Questions before you buy, licence keys, billing, or a file it offered that it should not have &mdash; all of it. A person reads that address.</p>
+</section>
+</main>
+
+<footer class="site-foot"><div class="wrap"><div class="foot-links"><a href="/pricing.html">Pricing</a><a href="/terms.html">Terms of service</a><a href="/privacy.html">Privacy policy</a><a href="/refunds.html">Refunds &amp; cancellation</a><a href="/contact.html">Contact</a></div><p class="foot-note">Questions: <a href="mailto:hello@amplecapacity.com">hello@amplecapacity.com</a></p></div></footer>
+
+<script>
+(function () {
+  var copyBtn = document.getElementById("copyBtn");
+  if (!copyBtn) return;
+  copyBtn.addEventListener("click", function () {
+    var key = document.getElementById("key").textContent.trim();
+    navigator.clipboard.writeText(key).then(
+      function () { copyBtn.textContent = "Copied"; setTimeout(function () { copyBtn.textContent = "Copy the key"; }, 2200); },
+      function () { copyBtn.textContent = "Select it and copy by hand"; }
+    );
+  });
+})();
+</script>
+<script>(function(){if(Date.now()<Date.UTC(2026,10,1))return;document.querySelectorAll('.offer').forEach(function(el){el.remove();});})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"116bbbb50aee4e948c66c23827e6bc0c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

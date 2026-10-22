@@ -1,0 +1,19 @@
+{
+  "sourcePageUrl": "https://supasecret.com/",
+  "checkedOnUtc": "2026-10-21",
+  "method": "Chrome DevTools read-only document.images inspection in worker-owned tab 166",
+  "purpose": "Discover missing app-UI asset; not refetch baseline product claims",
+  "result": {
+    "url": "https://supasecret.com/",
+    "title": "Space Hunter - macOS Disk Space Cleaner & Monitoring | supasecret.com",
+    "images": [
+      {"alt":"Space Hunter macOS app logo - macOS disk space monitoring application","src":"https://static.supasecret.com/static/space_hunter.png","width":392,"height":392},
+      {"alt":"Space Hunter macOS application interface showing disk space analysis and cleanup categories","src":"https://static.supasecret.com/static/app/app.webp","width":1140,"height":768},
+      {"alt":"application leftovers","src":"https://static.supasecret.com/static/app/nine_folders.png","width":917,"height":797},
+      {"alt":"Developer tools","src":"https://static.supasecret.com/static/app/dev.png","width":917,"height":839}
+    ],
+    "repositoryLinks": []
+  },
+  "retention": "Transcribed structured tool result, not raw HTML or an image download. No competitor bytes stored; no original asset SHA-256 available.",
+  "rights": "Link-only; written permission required under official terms section 7 and not obtained."
+}

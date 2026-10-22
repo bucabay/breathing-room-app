@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-shiny--mac-app",
+  "productId": "shiny--mac-app",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "checkedAtUtc": "2026-10-21T22:07:25.909559+00:00",
+  "calendarNote": "Session date is October 22 locally; actual tool clock and retrieval date are October 21 UTC. Existing verification timestamps are preserved, not refreshed by reuse.",
+  "ownership": "Only this competitor folder and the specifically requested runtime receipt; no website changes.",
+  "identity": {
+    "officialName": "Shiny",
+    "listingName": "Shiny - Mac App",
+    "homepage": "https://www.theodorehq.com/shiny/",
+    "vendor": "TJH/CO LIMITED trading as THEODORE HQ",
+    "repository": null,
+    "repositoryStatus": "Not verified; no official repository link identified in the inspected homepage links. This is not proof none exists.",
+    "canonicalOwnerId": "shiny--mac-app",
+    "aliases": ["Shiny - Mac App"],
+    "aliasSkipDecision": "Do not skip as alias: the directory's Shiny - Mac App resolves to the official Shiny page. No second canonical product or verified PowerMyMac relationship appears in the baseline/alias records. PowerMyMac's separate unresolved identity is not this job's scope.",
+    "classification": "adjacent",
+    "platformFit": "Mac-native adjacent utility: memory pressure and background apps, not a like-for-like storage-cleanup replacement.",
+    "reasonClaimIds": ["C01", "C02", "C03"],
+    "deadOrIrrelevantSkip": false,
+    "decision": "Retain for a distinct RAM-versus-storage workflow, but block drafting pending evidence gates. Do not create duplicate alias or doorway pages."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/shiny--mac-app/about/",
+    "destinationUrl": "https://www.theodorehq.com/shiny/",
+    "retrievedAtUtc": "2026-10-21T19:05:59.410Z",
+    "method": "Reused baseline's owned Chrome tab 16 rendered about-page DOM; not re-fetched by this job.",
+    "excerpt": "Official Website\ntheodorehq.com/shiny/",
+    "rawCapture": "docs/content/.runtime/verification-2/shiny--mac-app-directory.json",
+    "sha256": "03bf01ad1fafd4283e550522d0f268249a66c10c591cbdd6b3747049b93c5cde",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5", "retrievedAtUtc": "2026-10-21T18:36:40.113Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=4", "retrievedAtUtc": "2026-10-21T18:37:13.603Z"}
+    ],
+    "edgeEvidence": "docs/content/competitors.json, product shiny--mac-app; retained listing snapshot above covers the about-page destination, not full seed-page bodies."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "THEODORE HQ", "title": "Shiny: One-Tap Memory Cleanup for Mac",
+      "url": "https://www.theodorehq.com/shiny/", "finalUrl": "https://www.theodorehq.com/shiny/",
+      "retrievedAtUtc": "2026-10-21T19:09:41.364523+00:00", "updatedOn": null,
+      "scope": "Current public marketing/FAQ, not installed-app testing",
+      "snapshotPath": "docs/content/.runtime/verification-2/shiny--mac-app-official.json",
+      "snapshotSha256": "b3ab9aa09aed002eb108149340e551ecc9f22309efb0ea750c9f2dcc3c7784d1",
+      "reuse": "Reused batch-2.json first. The snapshot's own sha256 field differs from the complete-file hash; this ledger records the independently checked complete-file hash matching batch-2."
+    },
+    {
+      "id": "S2", "publisher": "THEODORE HQ", "title": "Download Shiny",
+      "url": "https://www.theodorehq.com/shiny/download.html", "finalUrl": "https://www.theodorehq.com/shiny/download.html",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "updatedOn": null,
+      "scope": "Read-only WebFetch public download page; no installer downloaded. Exact retrieval second not retained.",
+      "excerpts": ["Notarized by Apple v1.0.43 9.6 MB", "On first launch, Shiny asks for your licence key.", "Stored locally on your Mac; no account, no sign-in."],
+      "downloadAssetUrl": "https://www.theodorehq.com/shiny/downloads/Shiny-latest.dmg",
+      "warning": "The public page displays Order confirmed 30 April 2026 even without a purchase. This is page copy, not evidence that any order was placed."
+    },
+    {
+      "id": "S3", "publisher": "THEODORE HQ", "title": "Terms",
+      "url": "https://www.theodorehq.com/shiny/terms.html", "finalUrl": "https://www.theodorehq.com/shiny/terms.html",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "updatedOn": "2026-10-09",
+      "scope": "Public licence/refund/tax conditions, not legal advice or purchase testing",
+      "excerpts": [
+        "Shiny is made and sold by TJH/CO LIMITED, a company registered in England and Wales (company number 16589593), trading as THEODORE HQ.",
+        "a non-exclusive, non-transferable licence to install and use it on up to three Macs that you personally own or use.",
+        "The licence is yours forever for the major version you bought (e.g. 1.x), including all minor and bug-fix updates.",
+        "If we ever release a paid major version (2.0, 3.0), you'll be offered an upgrade at a fair existing-customer price; you are never required to upgrade.",
+        "If Shiny isn't right for you, email support@theodorehq.com within 14 days of buying and we'll refund you in full.",
+        "Polar.sh is the merchant of record for your purchase. They calculate, collect, and remit any sales tax, VAT, or GST that applies in your country."
+      ]
+    },
+    {
+      "id": "S4", "publisher": "THEODORE HQ", "title": "Homepage HTML visual and currency inspection",
+      "url": "https://www.theodorehq.com/shiny/", "finalUrl": "https://www.theodorehq.com/shiny/",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "updatedOn": null,
+      "scope": "Additional HTML retrieval specifically for missing visual provenance and currency; baseline capabilities not needlessly re-researched.",
+      "excerpts": [
+        "\"price\": \"4.99\", \"priceCurrency\": \"USD\"",
+        "<video class=\"demo-video\" id=\"demoVideo\" src=\"assets/shiny-demo.mp4\" poster=\"assets/shiny-demo-poster.jpg\" preload=\"metadata\" playsinline></video>",
+        "\"name\": \"Shiny for macOS - Product Demo\"",
+        "\"description\": \"A walkthrough of Shiny, the one-tap memory cleanup app for Mac: how Polish frees memory, the Sneaky Apps background-item manager, the menu-bar gauge, and customisation.\"",
+        "© 2026 THEODORE HQ. All Rights Reserved."
+      ],
+      "limitations": "HTML hero popover and feature cards are web demonstrations, not native screenshots. og-image.jpg being marked screenshot in metadata does not establish its actual contents or permission."
+    },
+    {
+      "id": "S5", "publisher": "Apple", "title": "View memory usage in Activity Monitor on Mac",
+      "url": "https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac",
+      "finalUrl": "https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "updatedOn": null,
+      "scope": "Default guide selected macOS 27 Golden Gate; version selector also lists macOS 13–26. No local app launched.",
+      "excerpts": [
+        "Memory pressure is determined by the amount of free memory, swap rate, wired memory, and file cached memory.",
+        "Cached Files: The size of files cached by the system into unused memory to improve performance.",
+        "Swap Used: The amount of space being used on your startup disk to swap unused files to and from RAM."
+      ]
+    },
+    {
+      "id": "S6", "publisher": "Breathing Room first-party evidence register", "title": "Capabilities and screenshot inventory",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": "https://breathing-room.chatic.ai/",
+      "checkedOn": "2026-10-21", "scope": "Reused current capabilities.md and screenshots.json, not a new release audit",
+      "localPaths": ["docs/content/capabilities.md", "docs/content/screenshots.json"],
+      "excerpts": ["Breathing Room is a free, Apache-2.0 macOS maintenance preview", "AI Care is advertised at $5 USD/month or $50 USD/year", "Python 3.10+ is a disclosed prerequisite for disk inventory and legacy scripts, not bundled.", "Apple Development signed, not Developer ID signed or notarized"]
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"Shiny is THEODORE HQ's menu-bar memory utility for Mac.","sourceIds":["S1","S3"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"Shiny, the one-tap memory cleanup app for Mac, lives quietly in your menu bar.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"identity and comparison lead","conditions":"Documentary identity, not hands-on experience."},
+    {"id":"C02","wording":"The vendor specifies macOS 13 Ventura or newer, Apple Silicon and Intel, using one Universal binary.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"Shiny needs macOS 13 (Ventura) or newer, on Apple Silicon (M1, M2, M3, M4) or Intel. ... Shiny is a Universal binary","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"platform matrix","conditions":"No installation or hardware compatibility test performed. No Windows/Linux support inferred."},
+    {"id":"C03","wording":"Shiny says it does not index your disk and cannot fix slowness caused by a full disk or ageing hardware.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"it doesn't index your disk. ... If it's slow from a full disk or aging hardware, Shiny can't fix that.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","location":"scope distinction","conditions":"Supports adjacent classification, not proof that every undocumented storage feature is absent."},
+    {"id":"C04","wording":"Polish is documented to free inactive memory, refresh stale DNS lookups and optionally close hidden apps without open windows.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"Shiny frees the inactive memory apps no longer need, refreshes stale DNS lookups, and, if you've asked it to, closes hidden apps with no open windows.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"workflow matrix","conditions":"No measured speed, memory recovery or safety claim."},
+    {"id":"C05","wording":"Auto-polish is documented as off by default, pressure-triggered when enabled, at most once per five minutes, skipping the memory clear during audio playback.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"It's off by default. With it on, Shiny polishes by itself while your Mac is under memory pressure, at most once every five minutes, and it skips the memory clear while audio is playing.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"automation matrix","conditions":"Not storage-growth monitoring or saved per-path cleanup approval."},
+    {"id":"C06","wording":"Sneaky Apps may move a startup entry chosen by the user; the vendor documents Undo.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"The one thing it moves is a startup entry you choose to set aside in Sneaky Apps, and Undo puts it back.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"approval and caveats","conditions":"Do not repeat unconditional never touches files marketing; do not test by disabling startup items."},
+    {"id":"C07","wording":"The advertised price is $4.99 once; official offer metadata specifies USD, and the personal licence covers up to three personally used Macs.","sourceIds":["S1","S3","S4"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"One-time. $4.99 once, on up to three Macs, forever.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"advertised-offer","location":"pricing matrix","conditions":"Tax depends on country and final checkout price; no checkout opened or purchase tested. Future-major-update entitlement is disputed separately in C08."},
+    {"id":"C08","wording":"All future updates are included forever.","sourceIds":["S1","S3"],"sourceUrl":"https://www.theodorehq.com/shiny/terms.html","excerpt":"Homepage: Your $4.99 covers all future updates of Shiny. Terms: The licence is yours forever for the major version you bought (e.g. 1.x) ... If we ever release a paid major version (2.0, 3.0)","checkedOn":"2026-10-21","state":"contradicted","evidenceClass":"official-source-conflict","location":"blocked pricing entitlement row","conditions":"Do not assert all future major releases are free. Require official reconciliation or independent editorial approval of explicitly conflict-qualified wording; no contact sent."},
+    {"id":"C09","wording":"The public download page labels the available version v1.0.43, 9.6 MB, and notarized by Apple.","sourceIds":["S2"],"sourceUrl":"https://www.theodorehq.com/shiny/download.html","excerpt":"Notarized by Apple v1.0.43 9.6 MB","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-download-label","location":"version/install matrix","conditions":"Mutable Shiny-latest.dmg link; binary size, signatures, notarization ticket and actual running version not independently inspected. No unsupported Gatekeeper bypass advice."},
+    {"id":"C10","wording":"The vendor documents update checks and Polar licence checks, including up to seven days offline between checks.","sourceIds":["S1"],"sourceUrl":"https://www.theodorehq.com/shiny/","excerpt":"an update check with theodorehq.com about once an hour while Shiny is open, and a license check with Polar when you activate and each time Shiny launches. It keeps working offline for up to 7 days between checks.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","location":"local/hosted matrix","conditions":"No telemetry is a vendor assertion, not a traffic audit. Do not call it wholly network-free or promise indefinite offline licensing."},
+    {"id":"C11","wording":"A licence key is required on first launch; the download page says no account/sign-in.","sourceIds":["S2"],"sourceUrl":"https://www.theodorehq.com/shiny/download.html","excerpt":"On first launch, Shiny asks for your licence key. ... no account, no sign-in.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"install caveats","conditions":"Not a free trial assertion; no first-launch or activation test."},
+    {"id":"C12","wording":"Apple describes memory pressure as combining free memory, swap rate, wired memory and file cached memory; cached files use otherwise unused memory to improve performance.","sourceIds":["S5"],"sourceUrl":"https://support.apple.com/guide/activity-monitor/view-memory-usage-actmntr1004/mac","excerpt":"Memory pressure is determined by the amount of free memory, swap rate, wired memory, and file cached memory.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-platform-documentation","location":"workflow diagnosis","conditions":"Used for a read-only Activity Monitor decision aid, not evidence that memory purging helps any particular Mac."},
+    {"id":"C13","wording":"Breathing Room is a free macOS maintenance preview; optional hosted AI Care is advertised at $5 USD/month or $50 USD/year.","sourceIds":["S6"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"Breathing Room is a free, Apache-2.0 macOS maintenance preview ... AI Care is advertised at $5 USD/month or $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-first-party-register","location":"comparison pricing/caveats","conditions":"macOS 13+, Python 3.10+ disk inventory prerequisite; Apple Development signed, not Developer ID signed/notarized; physical Intel and clean-machine tests unverified. Hosted AI needs internet/authentication and may receive relevant paths/process/storage data. Source implementation is not release-binary parity proof."},
+    {"id":"C14","wording":"Breathing Room source implements app/helper CPU-memory grouping and storage exploration; its browser preview illustrates these with example data.","sourceIds":["S6"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"Native sampling groups helpers through parent/app relationships and exposes CPU/memory. ... Browser preview ... demo data and example outcomes","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-preview-register","location":"comparison workflow","conditions":"Sampling/inferred ownership and shared RSS limit accounting. No hands-on results or automatic RAM-boosting parity implied."}
+  ],
+  "matrix": {
+    "macOS": {"claimIds":["C02","C09"],"value":"macOS 13+, Universal Apple Silicon/Intel; advertised v1.0.43"},
+    "licence": {"claimIds":["C07","C08"],"value":"Paid personal non-transferable licence, three personally used Macs; future-major entitlement conflict blocks an unqualified lifetime-updates row"},
+    "localHosted": {"claimIds":["C10","C11"],"value":"Local utility with network update/licence checks; key activation; seven-day offline interval documented"},
+    "scanCleanup": {"claimIds":["C03","C04"],"value":"Memory/background-app workflow; vendor says no disk indexing, not full-disk-space remediation"},
+    "approval": {"claimIds":["C04","C05","C06"],"value":"Click Polish; optional Auto-polish off by default; optional hidden-app closure; startup-entry Undo documented"},
+    "helperGrouping": {"claimIds":["C04"],"value":"Names memory-using apps; exact app/helper aggregation algorithm and CPU accounting not verified"},
+    "recurringGrowth": {"claimIds":[],"value":"Not verified; Auto-polish is not evidence of storage history or recurring disk-growth investigation"},
+    "developerCaches": {"claimIds":[],"value":"Not verified; do not invent package-manager cache support or unsupported negative claim"},
+    "pricing": {"claimIds":["C07","C08"],"value":"$4.99 USD advertised once, local taxes via Polar; future major upgrades disputed"},
+    "runtimeInstall": {"claimIds":["C09","C11"],"value":"Direct DMG, Applications install, key activation; external runtime requirement not verified"},
+    "breathingRoom": {"claimIds":["C13","C14"],"value":"Free maintenance preview plus optional hosted paid AI Care; retain runtime, signing, data-sharing and source-versus-release caveats"}
+  },
+  "visuals": [
+    {
+      "id":"shiny-official-demo-link-only","productId":"shiny--mac-app","view":"Vendor walkthrough of Polish, Sneaky Apps, menu-bar gauge and customisation",
+      "kind":"official-asset","sourcePageUrl":"https://www.theodorehq.com/shiny/",
+      "assetUrl":"https://www.theodorehq.com/shiny/assets/shiny-demo-poster.jpg",
+      "relatedVideoAssetUrl":"https://www.theodorehq.com/shiny/assets/shiny-demo.mp4",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"sourcePageCheckedOn":"2026-10-21","capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,"dataMode":"unknown",
+      "originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":null,"heightPx":null,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official public demo link, not a screenshot republication licence; footer reserves rights and no image permission was established.","evidenceUrlOrPath":"https://www.theodorehq.com/shiny/terms.html","credit":"Shiny / THEODORE HQ"},
+      "caption":"Official Shiny demonstration on THEODORE HQ's website. Vendor material, not our hands-on test; linked rather than reproduced.",
+      "alt":"Link to THEODORE HQ's Shiny product walkthrough.","supportedClaimIds":["C01","C04"],
+      "limitations":["Exact public poster/video URLs found in official HTML, but asset pixels not retrieved or visually approved. A real native app screenshot and capture provenance remain unverified.","Do not substitute the CSS/HTML hero demo, logo or metadata social image for an actual app screenshot.","No third-party image downloaded because reuse permission is unresolved. Link-only fallback does not satisfy on-page screenshot gate."],
+      "review":{"status":"blocked","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-apps-browser-preview","productId":"breathing-room","view":"Apps with expanded Google Chrome helper group","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:59.096850+00:00","capturedBy":"Prior screenshot-library job; reused inventory provenance",
+      "productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/apps-preview-2026-10-21.png","originalSha256":"6bacc46187202835a29e24458383056e9cd55197bd53b0df2592e68c03c741d3",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":4440,"edits":[],
+      "privacyReview":{"status":"reviewed-example-data","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; third-party marks remain their owners' marks; no blanket trademark permission inferred.","evidenceUrlOrPath":"docs/content/screenshots.json","credit":"Breathing Room, which we build"},
+      "caption":"Current-source Breathing Room Apps browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Apps browser preview using example data, showing an expanded Chrome helper group and memory/CPU columns.",
+      "supportedClaimIds":["C14"],"limitations":["Keep both visible example-data banners and the caption. Never present the example numbers as measurements.","Current-source at recorded capture commit, not proof of current distributed-release parity. No native test performed.","Full-height image needs a legibility/layout pass; floating composer covers part of one row. Any future crop must retain disclosure and have separately recorded hashes."],
+      "review":{"status":"visually-inspected-this-research-run; independent-context-review-pending","reviewer":"research worker (not independent publication reviewer)","reviewedOnUtc":"2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference","title":"Before pressing Polish: separate Mac memory pressure from a full disk",
+      "slug":"mac-memory-pressure-before-shiny-polish","primaryIntent":"Diagnose whether a sluggish Mac calls for RAM/background-app attention or storage investigation before choosing a utility.",
+      "leadDirection":"Choose the diagnostic path before a cleanup button. Shiny targets memory/background activity; do not treat its output as disk space recovered.",
+      "sections":["Use Activity Monitor Memory Pressure, Cached Files and Swap Used rather than treating all occupied RAM as waste (C12).","Map documented Polish, optional Auto-polish and Sneaky Apps actions to that diagnosis (C04–C06); do not execute changes during research.","When a full disk is the problem, switch to storage investigation rather than expecting Shiny to fix it (C03).","Compare read-only app/helper investigation in Breathing Room, which we build, with Shiny's narrower action workflow (C13–C14).","List licence conflict, online checks, preview caveats and built-in Activity Monitor as the no-purchase diagnostic path."],
+      "interactionPass":"A non-destructive decision checklist: memory pressure concern / full-disk concern / uncertain; link to Apple's guide and explain what each signal means. No auto-close or filesystem deletion controls; no arbitrary code tutorial.",
+      "visualPlan":"After lead: approved real Shiny app view, pending; later: selected labeled Breathing Room Apps example preview. Link the official demo while blocked, not as a replacement for the required image.",
+      "internalLinks":["/comparisons/","/comparisons/shiny--mac-app/"],
+      "status":"brief-only-blocked-no-draft"
+    },
+    "comparison": {
+      "title":"Breathing Room vs Shiny: storage investigation or memory Polish?","slug":"shiny--mac-app",
+      "primaryIntent":"Choose between adjacent Mac workflows, not a universal cleaner winner.",
+      "rows":["Purpose and platform (C01–C03)","Documented action and opt-in automation (C04–C06)","Price, three-Mac licence and unresolved major-update promise (C07–C08)","Download version and activation/network caveats (C09–C11)","Breathing Room free preview, hosted paid AI and grouped monitoring boundaries (C13–C14)"],
+      "shinyAdvantages":"Documented compact menu-bar workflow, optional pressure-triggered action, three personal Macs for an advertised one-time fee; vendor publishes notarization claim. None are independently tested outcomes.",
+      "shinyTradeoffs":"Not a full-disk remedy per vendor; licence-check/offline conditions; major-update entitlement conflict; no verified evidence for storage-growth investigation or developer-cache tooling.",
+      "breathingRoomAdvantages":"Source-backed storage exploration and grouped app/helper inspection address a different diagnostic task, with free local core documented in the current register.",
+      "breathingRoomTradeoffs":"Preview, not Developer ID signed/notarized in current release disclosure; Python 3.10+ disk inventory requirement; limited binary/hardware validation; hosted AI requires account/internet, shares relevant diagnostic context and has an optional recurring paid offer. No measured superiority or RAM-purge parity established.",
+      "disclosure":"Breathing Room, which we build",
+      "workflowLink":"/blog/mac-memory-pressure-before-shiny-polish/",
+      "status":"brief-only-blocked-no-draft"
+    }
+  },
+  "unknowns": ["Official source repository and source licence, if any", "Actual binary integrity/signing/notarization and runtime behavior", "Competitor screenshot pixels, capture version/date and permission", "Exact helper CPU/RSS accounting", "Storage history, developer-cache adapters and external runtime requirements", "Checkout tax total, purchase/activation/refund operation and any trial terms", "Benchmarks, actual savings, battery effects and speedups"],
+  "blockers": [
+    {"id":"B1","severity":"critical","diagnostic":"Required real competitor app screenshot not cleared: only official demo/poster URLs established, no verified pixels/capture provenance or reuse licence. Public availability and All Rights Reserved do not permit assumed republication.","resolution":"Obtain independently verified actual-app visual and explicit applicable reuse basis; retain original bytes/hash, privacy review, alt/caption and contextual visual approval. No unauthorized permission request sent."},
+    {"id":"B2","severity":"critical","diagnostic":"Official homepage promises all future updates, while terms section 2 permits paid future major versions. An unqualified lifetime updates/pricing recommendation is unsupported.","resolution":"Official public reconciliation or independent policy decision approving conspicuous conflict-qualified terms wording; do not invent an entitlement or silently choose favorable copy."}
+  ],
+  "validation": {"performed":["Read PLAN.md, EDITORIAL.md, capabilities.md, screenshots.json; no applicable AGENTS.md found in app tree or checked ancestors.","Reused batch-2 baseline and raw discovery/official snapshots; verified both file SHA-256 values against ledger.","Read official download, terms, homepage HTML for missing evidence, plus Apple's Activity Monitor guide.","Opened and read actual first-party Apps PNG; SHA-256 matches screenshots.json."],"notPerformed":["No native testing, installation, cleanup, activation, accounts, purchases, messages or credential access.","No competitor image download or browser cookie extraction.","No site changes; site build/test/browser QA not applicable to this research-only packet.","No independent review, score or publication approval."]}
+}

@@ -1,0 +1,15 @@
+{
+  "jobId": "research-powermymac",
+  "result": "passed-structural-checks-with-drafting-blocked",
+  "checkedOn": "2026-10-21",
+  "checks": [
+    {"name": "Python JSON parsing and reference assertions", "result": "pass", "detail": "12 unique source IDs, 14 unique claim IDs, 12 matrix rows, 3 visual records; all claim-source, matrix-claim and visual-claim references resolve. Claims have support, check date and scope."},
+    {"name": "Reused original file SHA-256 verification", "result": "pass", "detail": "Three retained directory/official/iMyMac identity snapshot byte hashes match batch records; all referenced snapshot paths exist."},
+    {"name": "First-party image byte hash and PNG dimensions", "result": "pass", "detail": "Space preview hash matches screenshots.json and packet; PNG header is 2940x3468. Actual PNG opened and read separately; example-data warnings visible."},
+    {"name": "Publication and alias safety assertions", "result": "pass", "detail": "Draft gate false; unpublished; canonicalOwnerId powermymac; skipSeparateGenericPowerMyMacDraft true; competitor asset link-only with null original path/hash; no PNG downloaded into owned directory."},
+    {"name": "Research JSON/Markdown whitespace", "result": "pass", "detail": "No unintended trailing whitespace; intentional Markdown two-space line breaks accepted."},
+    {"name": "Official-source passage inspection", "result": "completed", "detail": "Read guide, requirements, pricing conditions, FAQ, terms and EULA. Image permission absent; generic Windows EULA language not treated as platform support. products.html failed HTTP 404 and is explicitly logged."}
+  ],
+  "notPerformed": ["Competitor asset download/visual inspection: permission not established", "Competitor runtime or native testing, installer download or cleanup", "Website build/tests or browser rendering: no site edits", "Independent editorial/publication review"],
+  "blockingDiagnostic": "TechyCub site terms require written permission to reproduce site images. None held; official app UI URL retained link-only, which fails required on-page competitor screenshot gate. Unqualified generic PowerMyMac drafting is separately prohibited while iMyMac/FoneDog equivalence is unproved."
+}

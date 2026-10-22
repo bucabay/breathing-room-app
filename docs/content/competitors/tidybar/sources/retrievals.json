@@ -1,0 +1,66 @@
+[
+  {
+    "id": "press",
+    "url": "https://tidy.bar/press",
+    "finalUrl": "https://tidy.bar/press",
+    "retrievedAtUtc": "2026-10-21T22:17:09.608530+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/press.html",
+    "sha256": "15407ccf7dce0d32e56fb9e61f19f77ea009903abbcb909fc08d2f7e6b301bf6"
+  },
+  {
+    "id": "changelog",
+    "url": "https://tidy.bar/changelog",
+    "finalUrl": "https://tidy.bar/changelog",
+    "retrievedAtUtc": "2026-10-21T22:17:10.440186+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/changelog.html",
+    "sha256": "8b47860e3ca36fa696dcabdb155933be991f0a136bf5c017255e48658c83c732"
+  },
+  {
+    "id": "privacy",
+    "url": "https://tidy.bar/privacy",
+    "finalUrl": "https://tidy.bar/privacy",
+    "retrievedAtUtc": "2026-10-21T22:17:11.208618+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/privacy.html",
+    "sha256": "32e64203ef450cba9b09f720cae44cfc445141cd69f6229a9da3e5c3d31c38c0"
+  },
+  {
+    "id": "terms",
+    "url": "https://tidy.bar/terms",
+    "finalUrl": "https://tidy.bar/terms",
+    "retrievedAtUtc": "2026-10-21T22:17:11.948312+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/terms.html",
+    "sha256": "3d958414b8da2e7d38a95c1ccd36a0e42c44dfd844540a8881377322232a2e0b"
+  },
+  {
+    "id": "impressum",
+    "url": "https://tidy.bar/impressum",
+    "finalUrl": "https://tidy.bar/impressum",
+    "retrievedAtUtc": "2026-10-21T22:17:12.761437+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/impressum.html",
+    "sha256": "64c8348bb456b85e9656aaaa4b60853131040f1489939f4c6ac9e37c8c9bdad4"
+  },
+  {
+    "id": "project-cleanup-asset",
+    "url": "https://tidy.bar/shots/project-cleanup.webp",
+    "finalUrl": "https://tidy.bar/shots/project-cleanup.webp",
+    "retrievedAtUtc": "2026-10-21T22:17:13.630755+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/assets/project-cleanup-original.webp",
+    "sha256": "16ebb2588012869f8e62c006fd9179def25e84276b6bd213aa8c4fa260912daa",
+    "bytes": 95314
+  },
+  {
+    "id": "developer-guide",
+    "url": "https://tidy.bar/guides/delete-node-modules-safely",
+    "finalUrl": "https://tidy.bar/guides/delete-node-modules-safely",
+    "retrievedAtUtc": "2026-10-21T22:17:26.211800+00:00",
+    "httpStatus": 200,
+    "path": "docs/content/competitors/tidybar/sources/developer-guide.html",
+    "sha256": "01c7ec16117eb461c151083a1873de5b9bba1f1fa8cf0261921532b8dff162e5"
+  }
+]

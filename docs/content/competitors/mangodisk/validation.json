@@ -1,0 +1,16 @@
+{
+  "jobId": "research-mangodisk",
+  "checkedOn": "2026-10-22",
+  "checks": [
+    {"check":"Python JSON parse and claim/source integrity assertions","result":"passed","detail":"12 actual claims resolve to 10 unique sources; every claim has excerpt, check date and conditions. First command's hard-coded summary incorrectly printed 13 claims; follow-up count verified 12. Assertions themselves passed."},
+    {"check":"SHA-256 provenance assertions","result":"passed","detail":"Directory snapshot, reused official snapshot, capabilities register and selected current Space PNG match the recorded four hashes."},
+    {"check":"Draft/alias/visual boundary assertions","result":"passed","detail":"canonicalOwnerId=mangodisk; blocked status and draftGate.allowed=false; competitor reuse=link-only with null original hash; Breathing Room example-data caption retained."},
+    {"check":"Official source content review via WebFetch","result":"completed","detail":"README, download, latest release API, Deep Cleanup, AI, tagged GPL licence, safety and terms read. No executable commands in source content were run. New full raw responses/timestamps not retained; URLs/excerpts/date and limits recorded."},
+    {"check":"Website build/tests and browser/native QA","result":"not-run-not-applicable","detail":"Research-only packet, no website edits, no executable tutorial or native test. No publication or runtime certification inferred."}
+  ],
+  "artifactHashes": {
+    "research.json": "dacf1d5c0a9c01a97aebd00a653687f490f928b052859efe6f17f8e71bd9932a",
+    "research.md": "fa896c2fc7cbe291dde5cfb014f28c196af0f995e270ac155ecf07883be1eda2"
+  },
+  "blockingDiagnostic": "VISUAL-RIGHTS-01: external official MangoDisk screenshot identified but image reuse basis not established; no competitor image downloaded or fabricated. Drafting remains blocked until permitted original retrieval/hash/inspection and visual clearance."
+}

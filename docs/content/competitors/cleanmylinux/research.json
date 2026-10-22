@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cleanmylinux",
+  "productId": "cleanmylinux",
+  "officialName": "CleanMyLinux",
+  "canonicalOwnerId": "cleanmylinux",
+  "vendor": "Better Linux",
+  "homepage": "https://www.cleanmylinux.com/",
+  "repository": "https://github.com/Better-Linux/CleanMyLinux",
+  "aliases": [],
+  "aliasDecision": {
+    "skipSeparateDraft": false,
+    "status": "distinct-official-identity-verified",
+    "rationale": "Official site and repository reciprocally identify CleanMyLinux / Better Linux. No verified alternate product identity; CleanMyMac and PowerMyMac are not inferred aliases from naming similarity."
+  },
+  "classification": "adjacent-platform-specific",
+  "platformFit": "Linux-to-Mac replacement intent only; not a same-platform substitute or Linux-capable Breathing Room.",
+  "decision": {
+    "researchStatus": "complete-with-bounded-unknowns",
+    "skip": false,
+    "drafting": "eligible-only-for-bounded-Mac-transition-brief",
+    "publicationApproved": false,
+    "criticalBlockers": [],
+    "blockedClaims": [
+      "Exact minimum Linux binary compatibility: README distro table conflicts with GLIBC 2.39 warning.",
+      "Any runtime, performance, savings, stable-release, complete-offline, or feature-parity claim without new evidence."
+    ],
+    "diagnostic": "Identity, platform, release metadata and two authentic visual sources established. Unknown commercial terms and minimum Linux compatibility are explicitly excluded from recommendation claims; do not draft a Linux installation guide."
+  },
+  "timePolicy": "Actual retrieval timestamps are UTC from tools/system clock (2026-10-21); local scheduled date is October 22. Do not invent later retrieval dates.",
+  "researchedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+  "sourceCommit": "02de64d1168e06820a4e280971b49175bdc31307",
+  "release": {
+    "tag": "v1.0.0-beta.2",
+    "publishedAtUtc": "2026-05-25T05:19:04Z",
+    "apiPrereleaseFlag": false,
+    "labelPolicy": "Preserve beta in version name; false API prerelease flag does not certify production stability.",
+    "url": "https://github.com/Better-Linux/CleanMyLinux/releases/tag/v1.0.0-beta.2",
+    "assets": [
+      {
+        "name": "cleanmylinux-1.0.0-beta.2-1.x86_64.rpm",
+        "url": "https://github.com/Better-Linux/CleanMyLinux/releases/download/v1.0.0-beta.2/cleanmylinux-1.0.0-beta.2-1.x86_64.rpm",
+        "vendorDigest": "sha256:e075da995e484e00f223e538d860930f7c0d22b0c9d17165fee54b7341681f09",
+        "downloaded": false
+      },
+      {
+        "name": "cleanmylinux_1.0.0-beta.2_amd64.AppImage",
+        "url": "https://github.com/Better-Linux/CleanMyLinux/releases/download/v1.0.0-beta.2/cleanmylinux_1.0.0-beta.2_amd64.AppImage",
+        "vendorDigest": "sha256:7748fba2c95669ec2ffac67180101acda20b4dc7239461d374427280c4ac2b43",
+        "downloaded": false
+      },
+      {
+        "name": "cleanmylinux_1.0.0-beta.2_amd64.deb",
+        "url": "https://github.com/Better-Linux/CleanMyLinux/releases/download/v1.0.0-beta.2/cleanmylinux_1.0.0-beta.2_amd64.deb",
+        "vendorDigest": "sha256:5d0bdfa8fcf2ab2335259c6e6d731140ebf6da441b89b8620b8419a4ea054259",
+        "downloaded": false
+      },
+      {
+        "name": "SHA256SUMS",
+        "url": "https://github.com/Better-Linux/CleanMyLinux/releases/download/v1.0.0-beta.2/SHA256SUMS",
+        "vendorDigest": "sha256:a00ccf45d7b0cea88066ee1d1643eff883a0f81a70aec072711ba1fa547098a7",
+        "downloaded": false
+      }
+    ]
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/cleanmylinux/about/",
+    "retrievedAt": "2026-10-21T19:07:32.207Z",
+    "excerpt": "Official Website\ncleanmylinux.com",
+    "rawCapture": "docs/content/.runtime/verification-2/cleanmylinux-directory.json",
+    "sha256": "50e8518d668c1edf0e75adc25b0d3cc449fed9e4b8254d1db8a134aa036ad25c",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "ownedRetainedCopy": "sources/baseline-directory.json",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=4",
+        "retrievedAt": "2026-10-21T18:36:37.538Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=3",
+        "retrievedAt": "2026-10-21T18:37:11.107Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "commit.json",
+      "publisher": "Better Linux / GitHub",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/commits/main",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/commits/main",
+      "retrievedAtUtc": "2026-10-21T22:36:20.404189+00:00",
+      "httpStatus": 200,
+      "path": "sources/commit.json",
+      "sha256": "8d33ce32486f1b3533fcada84548a6605ee1d10515bc8bedb065819fc2348ab6"
+    },
+    {
+      "id": "README.md",
+      "publisher": "Better Linux / GitHub",
+      "url": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "retrievedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "httpStatus": 200,
+      "path": "sources/README.md",
+      "sha256": "017b4c1d8331264d0ac2afde7e3bbc777bea68cf1789fba6d932372e9d3cb0c2"
+    },
+    {
+      "id": "LICENSE",
+      "publisher": "Better Linux / GitHub",
+      "url": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "retrievedAtUtc": "2026-10-21T22:36:22.149377+00:00",
+      "httpStatus": 200,
+      "path": "sources/LICENSE",
+      "sha256": "337b679f614e0b7e253736c4a518dd22703fcef756e8fcec04173cf17661c734"
+    },
+    {
+      "id": "release.json",
+      "publisher": "Better Linux / GitHub",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "retrievedAtUtc": "2026-10-21T22:36:23.102836+00:00",
+      "httpStatus": 200,
+      "path": "sources/release.json",
+      "sha256": "660fd5eaf7fe22a425064fc2af57ed5a8ddc66b207959ac1c5d889a00421ed12"
+    },
+    {
+      "id": "tree.json",
+      "publisher": "Better Linux / GitHub",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/git/trees/02de64d1168e06820a4e280971b49175bdc31307?recursive=1",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/git/trees/02de64d1168e06820a4e280971b49175bdc31307?recursive=1",
+      "retrievedAtUtc": "2026-10-21T22:36:24.195761+00:00",
+      "httpStatus": 200,
+      "path": "sources/tree.json",
+      "sha256": "6e992b264e95f1499d55b4637b1694bf9c0ca25c842023a1d3818319283ee068"
+    },
+    {
+      "id": "baseline-home",
+      "publisher": "Better Linux",
+      "url": "https://cleanmylinux.com/",
+      "finalUrl": "https://www.cleanmylinux.com/",
+      "retrievedAtUtc": "2026-10-21T19:10:00.951723+00:00",
+      "path": "sources/baseline-official.json",
+      "sha256": "25e5526250ed6853a635c8de4b75578539714541b430b0fce6b964d3286f06e5",
+      "reusedFrom": "docs/content/verification/batch-2.json#cleanmylinux"
+    },
+    {
+      "id": "discovery",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/cleanmylinux/about/",
+      "retrievedAtUtc": "2026-10-21T19:07:32.207Z",
+      "path": "sources/baseline-directory.json",
+      "sha256": "50e8518d668c1edf0e75adc25b0d3cc449fed9e4b8254d1db8a134aa036ad25c",
+      "evidenceClass": "discovery-only"
+    },
+    {
+      "id": "br-capabilities",
+      "publisher": "Breathing Room",
+      "url": "https://breathing-room.chatic.ai/",
+      "path": "docs/content/capabilities.md",
+      "retrievedAtUtc": "2026-10-21",
+      "scope": "Reused same-day public release/pricing/privacy review, not newly fetched or runtime-tested."
+    },
+    {
+      "id": "br-README.md",
+      "publisher": "Breathing Room",
+      "url": "https://github.com/bucabay/breathing-room-app",
+      "localSourcePath": "README.md",
+      "path": "sources/br-README.md",
+      "retrievedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "sha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f",
+      "scope": "Current working-tree source; not a release-binary certification."
+    },
+    {
+      "id": "br-src-tauri/tauri.conf.json",
+      "publisher": "Breathing Room",
+      "url": "https://github.com/bucabay/breathing-room-app",
+      "localSourcePath": "src-tauri/tauri.conf.json",
+      "path": "sources/br-src-tauri-tauri.conf.json",
+      "retrievedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "sha256": "6e3f8a23846b64f1b8eacfc14ef19bd1528669b2bf5bcc86886d82b1f8001636",
+      "scope": "Current working-tree source; not a release-binary certification."
+    },
+    {
+      "id": "br-src/billing-config.json",
+      "publisher": "Breathing Room",
+      "url": "https://github.com/bucabay/breathing-room-app",
+      "localSourcePath": "src/billing-config.json",
+      "path": "sources/br-src-billing-config.json",
+      "retrievedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "sha256": "537168c749b07d9797a243cd6cfb68b6fd4e735d397773d297605c85f1de65e9",
+      "scope": "Current working-tree source; not a release-binary certification."
+    },
+    {
+      "id": "br-src/components/cleanup-assistant.tsx",
+      "publisher": "Breathing Room",
+      "url": "https://github.com/bucabay/breathing-room-app",
+      "localSourcePath": "src/components/cleanup-assistant.tsx",
+      "path": "sources/br-src-components-cleanup-assistant.tsx",
+      "retrievedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "sha256": "2697b22501fb621dc0cf7e3b0f5a2136870357045e3ea4efc065bd5f33ade700",
+      "scope": "Current working-tree source; not a release-binary certification."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "CleanMyLinux is a Better Linux project; the official site links the Better-Linux/CleanMyLinux repository.",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://cleanmylinux.com/",
+      "excerpt": "View on GitHub \u2192 https://github.com/Better-Linux/CleanMyLinux",
+      "locator": "links[2] and footer \u00a9 2026 Better Linux",
+      "checkedAtUtc": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": null,
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "platform",
+      "wording": "CleanMyLinux is designed exclusively for Linux desktops, not a native Mac replacement on the same OS.",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://cleanmylinux.com/",
+      "excerpt": "designed exclusively for modern Linux desktops.",
+      "locator": "text footer",
+      "checkedAtUtc": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "No macOS or Windows support is inferred from Tauri.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "scope",
+      "wording": "The homepage advertises cache cleaning, app resets and package-update checks.",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://cleanmylinux.com/",
+      "excerpt": "Clean caches, reset app states, and check for package updates with complete peace of mind.",
+      "locator": "text footer",
+      "checkedAtUtc": "2026-10-21T19:10:00.951723+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Attribute to vendor. Do not repeat safety, speed or risk-free wording as tested fact.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "license",
+      "wording": "The repository is MIT licensed, with copyright/permission-notice retention required.",
+      "sourceIds": [
+        "LICENSE"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "excerpt": "Copyright (c) 2026 Better Linux\nPermission is hereby granted, free of charge",
+      "locator": "lines 1\u201313",
+      "checkedAtUtc": "2026-10-21T22:36:22.149377+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Licence covers software and associated documentation; not an endorsement or trademark licence.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "apps",
+      "wording": "The README documents application discovery, disk-usage analysis, uninstallation and app resetting under completed Phase 2.",
+      "sourceIds": [
+        "README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "excerpt": "Per-application disk usage analysis (binary size + local caches + configurations).",
+      "locator": "Project Roadmap / Phase 2, lines 92\u201396",
+      "checkedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Current main documentation, not proof of feature parity in beta.2 binary.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "updates",
+      "wording": "The README documents APT, Pacman, DNF, Flatpak and Snap update management.",
+      "sourceIds": [
+        "README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "excerpt": "Native Packages: Support for Debian/Ubuntu (`APT`), Arch Linux (`Pacman`), and Fedora/Red Hat (`DNF`).",
+      "locator": "Universal Updates, lines 47\u201350",
+      "checkedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "No update executed. No claim this updates every app or fixes every package.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "auth",
+      "wording": "The README says the GUI runs unprivileged and requests PolicyKit authentication for administrative tasks.",
+      "sourceIds": [
+        "README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "excerpt": "The main graphical interface runs entirely as a standard unprivileged user.",
+      "locator": "Uncompromising Security, line 53",
+      "checkedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Authentication design is not a guarantee against destructive actions or per-path cleanup approval.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "roadmap",
+      "wording": "The README places junk cleaning in Current Focus and disk analysis/real-time resource monitors in later roadmap phases.",
+      "sourceIds": [
+        "README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "excerpt": "Phase 3: System Junk Cleaner (Current Focus)",
+      "locator": "Project Roadmap, lines 97\u2013108",
+      "checkedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Do not treat roadmap as shipped, or claim these capabilities are absent; release packaging already exists despite a later packaging roadmap item.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "compatibility-conflict",
+      "wording": "Exact minimum binary-compatible Linux distribution versions are unresolved.",
+      "sourceIds": [
+        "README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "excerpt": "Ubuntu | `22.04 LTS` ... GLIBC version older than `2.39` ... pre-compiled binary will fail to launch.",
+      "locator": "Supported Distributions, lines 25\u201336",
+      "checkedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "not-verified",
+      "conditions": "The listed older distro minimums and GLIBC requirement are not reconciled. Do not recommend a specific minimum or certify installation. Arch is explicitly not tested yet.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "version",
+      "wording": "The GitHub latest-release endpoint returns v1.0.0-beta.2, published May 25, 2026.",
+      "sourceIds": [
+        "release.json"
+      ],
+      "sourceUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "excerpt": "\"tag_name\": \"v1.0.0-beta.2\"; \"published_at\": \"2026-05-25T05:19:04Z\"; \"prerelease\": false",
+      "locator": "tag_name/published_at/prerelease",
+      "checkedAtUtc": "2026-10-21T22:36:23.102836+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Version name says beta even though GitHub prerelease flag is false. Do not call this production-stable.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "downloads",
+      "wording": "Public release metadata lists x86_64 RPM, amd64 AppImage and amd64 DEB downloads.",
+      "sourceIds": [
+        "release.json"
+      ],
+      "sourceUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "excerpt": "cleanmylinux-1.0.0-beta.2-1.x86_64.rpm; cleanmylinux_1.0.0-beta.2_amd64.AppImage; cleanmylinux_1.0.0-beta.2_amd64.deb; SHA256SUMS",
+      "locator": "assets[].name/browser_download_url",
+      "checkedAtUtc": "2026-10-21T22:36:23.102836+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Only metadata retrieved; no executables downloaded, installed or checksum-tested. No ARM/macOS/Windows support inferred.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "pricing",
+      "wording": "MIT permission is granted free of charge and public release download links are listed; no commercial price or plan was verified.",
+      "sourceIds": [
+        "LICENSE"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "excerpt": "Permission is hereby granted, free of charge",
+      "locator": "lines 5\u201310",
+      "checkedAtUtc": "2026-10-21T22:36:22.149377+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Licence permission is not a $0 commercial offer or guarantee of support, lifetime updates or hosted entitlement. \u201cPremium\u201d is not a price.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-install",
+      "wording": "Breathing Room is a non-notarized macOS 13+ preview requiring Python 3.10+ for disk inventory; physical Intel runtime testing remains unverified.",
+      "sourceIds": [
+        "br-README.md"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "The preview is not notarized. ... macOS 13 or later ... Python 3.10+ ... release has not been runtime-tested on physical Intel hardware.",
+      "locator": "lines 59\u201372",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Published release caveats reused from capabilities.md; no new installation or binary test.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-version",
+      "wording": "Current Breathing Room config identifies 0.1.0-preview.1.",
+      "sourceIds": [
+        "br-src-tauri/tauri.conf.json"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "\"version\": \"0.1.0-preview.1\"",
+      "locator": "line 4",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Source config, not a latest-channel guarantee.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-workflow",
+      "wording": "Breathing Room documents Space inventory, grouped Apps CPU/memory and Activity investigation.",
+      "sourceIds": [
+        "br-README.md"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Use Apps to inspect CPU and memory use across an app and its helpers.",
+      "locator": "lines 76\u201384,102\u2013118",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Inventories may be partial; sampled I/O and path ownership are not proof a process wrote a particular file.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-price",
+      "wording": "Breathing Room advertises a free core app and optional AI Care at $5 USD/month or $50 USD/year.",
+      "sourceIds": [
+        "br-README.md"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "AI Care is optional: $5 USD/month or $50 USD/year.",
+      "locator": "lines 141\u2013150",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Same-day public pricing reused from capabilities.md: recurring, cancelable, applicable tax at checkout; no unlimited-AI promise. Legacy appAmount field is not a purchase offer.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Agent-assisted workflows need authentication and a hosted service connection, unlike local storage/process tools.",
+      "sourceIds": [
+        "br-README.md"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Agent-assisted workflows require an authenticated hosted service connection.",
+      "locator": "lines 64\u201370,143\u2013145",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Relevant paths/process/storage/tool data can leave the Mac per public privacy policy in capabilities.md. Never describe all AI as offline.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    },
+    {
+      "id": "br-approval",
+      "wording": "Ordinary cleanup requires action review, but optional automatic verified Ruff-cache mode must be disclosed.",
+      "sourceIds": [
+        "br-src/components/cleanup-assistant.tsx"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Automatically move verified Ruff lint caches to Trash",
+      "locator": "line 198",
+      "checkedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+      "evidenceClass": "documented-not-hands-on",
+      "state": "verified",
+      "conditions": "Do not claim blanket \u201cnever changes anything without asking each time\u201d. Scheduled care reuses exact prior approvals, must remain running; README lines 120\u2013128.",
+      "intendedLocation": "Brief and comparison matrix",
+      "reviewer": "research-cleanmylinux worker; independent review pending"
+    }
+  ],
+  "matrix": {
+    "platform": {
+      "cleanmylinux": "Linux desktops; exclusive official positioning",
+      "claims": [
+        "platform",
+        "downloads"
+      ],
+      "breathingRoomClaims": [
+        "br-install"
+      ]
+    },
+    "licence": {
+      "cleanmylinux": "MIT",
+      "claims": [
+        "license"
+      ],
+      "breathingRoom": "Apache-2.0 desktop source, per capabilities.md; hosted service distinct"
+    },
+    "operation": {
+      "cleanmylinux": "Desktop app / native package tools documented; comprehensive network/telemetry model not verified",
+      "claims": [
+        "auth",
+        "updates"
+      ],
+      "breathingRoomClaims": [
+        "br-hosted"
+      ]
+    },
+    "scanCleanup": {
+      "cleanmylinux": "App management documented; cache-cleaner scope/current release parity unresolved",
+      "claims": [
+        "apps",
+        "scope",
+        "roadmap"
+      ],
+      "breathingRoomClaims": [
+        "br-workflow",
+        "br-approval"
+      ]
+    },
+    "approval": {
+      "cleanmylinux": "PolicyKit for admin actions documented; exact-location cleanup approval not verified",
+      "claims": [
+        "auth"
+      ],
+      "breathingRoomClaims": [
+        "br-approval"
+      ]
+    },
+    "helperGrouping": {
+      "cleanmylinux": "not verified",
+      "claims": [
+        "roadmap"
+      ],
+      "breathingRoomClaims": [
+        "br-workflow"
+      ]
+    },
+    "recurringGrowth": {
+      "cleanmylinux": "not verified; later monitoring roadmap is not an absence claim",
+      "claims": [
+        "roadmap"
+      ],
+      "breathingRoomClaims": [
+        "br-workflow"
+      ]
+    },
+    "developerCaches": {
+      "cleanmylinux": "Specific npm/pnpm/uv/etc adapter support not verified",
+      "claims": [
+        "scope"
+      ],
+      "breathingRoom": "Source-level cache discovery recorded in capabilities.md; not universal runtime certification"
+    },
+    "pricing": {
+      "cleanmylinux": "MIT free-of-charge permission; public assets; commercial price/conditions not verified",
+      "claims": [
+        "pricing",
+        "downloads"
+      ],
+      "breathingRoomClaims": [
+        "br-price"
+      ]
+    },
+    "installation": {
+      "cleanmylinux": "x86 Linux release formats observed; distro/GLIBC minimum conflict; no executable test",
+      "claims": [
+        "downloads",
+        "compatibility-conflict"
+      ],
+      "breathingRoomClaims": [
+        "br-install",
+        "br-version"
+      ]
+    }
+  },
+  "visuals": [
+    {
+      "id": "cleanmylinux-applications-preview",
+      "productId": "cleanmylinux",
+      "view": "Applications start screen",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/Better-Linux/CleanMyLinux/blob/02de64d1168e06820a4e280971b49175bdc31307/README.md#preview",
+      "assetUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/public/image.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T22:36:41.301561+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": "02de64d1168e06820a4e280971b49175bdc31307",
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": "assets/cleanmylinux-official-preview.png",
+      "originalSha256": "91146332b2b472ee548644c36add50181379375f0c4be360488f99e7fa858104",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1194,
+      "heightPx": 797,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "redactions": [],
+        "notes": "No account, filenames or inventory results visible."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Repository README documentation image under root MIT LICENSE; retain complete copyright and permission notice in sources/LICENSE; no trademark endorsement inferred.",
+        "evidenceUrlOrPath": "sources/LICENSE",
+        "credit": "CleanMyLinux / Better Linux. Copyright (c) 2026 Better Linux. MIT License; include complete licence notice."
+      },
+      "caption": "CleanMyLinux official repository preview of the Applications screen. Vendor-provided image; app version, capture date and OS are not supplied. No scan or cleanup was performed for this article.",
+      "alt": "CleanMyLinux Applications start screen with app-management description and a Scan button.",
+      "supportedClaimIds": [
+        "apps"
+      ],
+      "limitations": [
+        "No results shown; not proof of scan accuracy, safety, performance or release-version parity.",
+        "Do not label the generic window controls as evidence of Windows support."
+      ],
+      "review": {
+        "status": "research-visual-inspected",
+        "reviewer": "research-cleanmylinux worker",
+        "reviewedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+        "notes": "Opened actual 1194\u00d7797 PNG with image read tool: Applications title, sidebar app icon, settings and Scan button; no fabricated UI."
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "kind": "browser-preview",
+      "sourceManifest": "docs/content/screenshots.json",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "dataMode": "example",
+      "actualNativeScan": false,
+      "reuse": {
+        "status": "cleared-first-party-context",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred."
+      },
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "review": {
+        "status": "research-visual-inspected",
+        "reviewedAtUtc": "2026-10-21T22:38:41.170197+00:00",
+        "notes": "Opened actual PNG; visible Interactive preview \u00b7 example data and no-Mac-changes banner. Keep these labels. Tall full image needs responsive/contextual treatment; independent page review pending."
+      },
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ]
+    }
+  ],
+  "briefs": {
+    "article": {
+      "track": "search-reference",
+      "title": "Moving from Linux app cleanup to Mac storage review",
+      "slug": "linux-app-cleanup-to-mac-storage-review",
+      "intent": "Help a CleanMyLinux user moving to a Mac separate package/app removal, app reset, rebuildable cache and original project data before choosing a workflow.",
+      "outline": [
+        "Start with the target OS, not a list of interchangeable cleaners",
+        "Separate uninstalling an app from resetting its local state",
+        "Review project data and cache rebuild costs on the Mac",
+        "Inspect a Mac inventory before authorizing changes",
+        "Choose Linux package management or Mac investigation according to the machine"
+      ],
+      "openingBoundary": "CleanMyLinux is for Linux. Breathing Room, which we build, is a Mac preview, not a port of its uninstaller/updater.",
+      "interactionHandoff": "A non-destructive decision checklist: target OS \u2192 package/app removal vs storage investigation \u2192 original vs rebuildable data \u2192 review permission and rebuild cost. No deletion buttons or invented savings.",
+      "visualOrder": [
+        "Official CleanMyLinux Applications start screen immediately after lead",
+        "Current-source Breathing Room Space example-data view beside inventory discussion"
+      ],
+      "notAllowed": [
+        "Linux command transplantation to macOS",
+        "Claiming Breathing Room replaces APT/DNF/Flatpak/Snap updating",
+        "Invented macOS/Windows CleanMyLinux build",
+        "Untested installation instructions",
+        "Measured savings from sample figures"
+      ]
+    },
+    "comparison": {
+      "title": "CleanMyLinux vs Breathing Room: Linux and Mac roles",
+      "slug": "cleanmylinux",
+      "intent": "Short OS-first decision, not a universal winner table.",
+      "rows": [
+        "platform",
+        "licence",
+        "operation",
+        "scanCleanup",
+        "approval",
+        "helperGrouping",
+        "recurringGrowth",
+        "developerCaches",
+        "pricing",
+        "installation"
+      ],
+      "linkToArticle": "/blog/linux-app-cleanup-to-mac-storage-review/",
+      "links": [
+        "/comparisons/",
+        "/tools/"
+      ],
+      "linkPolicy": "Verify counterpart/tool routes at drafting; no invented specific tool route.",
+      "conclusion": "Stay with a Linux-native package workflow on Linux. On a Mac, evaluate a Mac storage/process workflow separately, including preview and hosted-service caveats."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "cleanmylinux": [
+      "Documented Linux package/app management across native formats, Flatpak and Snap; useful when that is the actual job.",
+      "MIT source and public beta download metadata can be inspected without an account.",
+      "Not a native Mac choice; unresolved distro minimums, beta naming and source/release feature boundaries must remain visible."
+    ],
+    "breathingRoom": [
+      "Documented Mac storage exploration and grouped process/activity investigation; a different job from Linux package updating.",
+      "Free local core with optional paid hosted AI Care; neither all-local AI nor unlimited AI.",
+      "Non-notarized preview, Python prerequisite, untested physical Intel execution and incomplete clean-machine/binary parity evidence limit recommendations."
+    ]
+  },
+  "unknowns": [
+    "CleanMyLinux commercial prices, paid services/support and guarantees",
+    "CleanMyLinux ARM support and exact tested distro/GLIBC matrix",
+    "CleanMyLinux full network/telemetry behavior, per-path approval and developer-cache adapters",
+    "CleanMyLinux screenshot capture date, app build and OS",
+    "Source roadmap versus beta binary feature parity",
+    "Native runtime outcomes for either product"
+  ],
+  "validation": {
+    "handsOnTests": false,
+    "browserSessionUsed": false,
+    "siteChanged": false,
+    "independentReview": "pending separate stage",
+    "checksLog": "validation.json"
+  }
+}

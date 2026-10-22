@@ -1,0 +1,18 @@
+{
+  "checkedAtUtc": "2026-10-21T22:53:44.215Z",
+  "schema": "pass: current field shape",
+  "draftState": "review/unpublished",
+  "shortlistCount": 7,
+  "figureCount": 2,
+  "bodyWhitespaceWords": 1697,
+  "descriptionCharacters": 160,
+  "sourceCount": 9,
+  "markdownRender": "pass: installed Astro Satteri; seven numbered sections and comparison table",
+  "articleSha256": "21b1f53e27b0184292b3fc08c0e56c00682266e5d05ac8c2c637314012645efc",
+  "assets": {
+    "/assets/roundups/mac-cleanup-tools-developers-2026/owner-before-size.svg": "65fef4413887cf28b605c0f01d34bd506a288b9263222533566328a836c96cc6",
+    "/assets/roundups/mac-cleanup-tools-developers-2026/breathing-room-space-preview.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+  },
+  "sharedBuild": "not run: prohibited shared output",
+  "independentReview": "pending"
+}

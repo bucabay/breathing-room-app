@@ -1,0 +1,43 @@
+{
+  "jobId": "research-mactuneup",
+  "status": "pass-structural-only; critical evidence gates blocked",
+  "checkedOnUtc": "2026-10-21",
+  "reviewedOnLocal": "2026-10-22",
+  "command": "python3 docs/content/competitors/mactuneup/validate.py",
+  "exitCode": 0,
+  "results": {
+    "jsonParsing": "pass",
+    "sourceSnapshotHashes": 5,
+    "discoverySnapshotHashes": 1,
+    "selectedPreviewHashes": 1,
+    "claimSourceMappings": 12,
+    "matrixClaimMappings": 11,
+    "publicMediaEntries": 15,
+    "numericAndInstallerExcerpts": "pass",
+    "domFinalUrlsAndTimestamps": "pass",
+    "blockedDraftingInvariants": "pass"
+  },
+  "visualInspection": [
+    "Opened actual existing Breathing Room Space PNG using image-capable read: example-data disclosure, Space navigation, category view and assistant overlay present. Hash matches screenshots.json. No native results inferred.",
+    "Opened official schedule-graphic URL in owned Chrome tab 139 and read browser screenshot: clock and June 16 calendar, not app UI. Rejected for required competitor screenshot gate.",
+    "Owned Chrome tab 139 created at about:blank, used only for public Macware sources, then closed. No recovery, unrelated-tab inspection, sign-in, gate submission or download bypass."
+  ],
+  "sourceChecks": [
+    "Reused batch-1 mactuneup blocked record and its directory/error snapshots before new research; did not re-fetch the already-recorded failed legacy URL.",
+    "Official root, public v7 download page and 2013 release retrieved and retained as DOM text/link/image-source records; HTTPS product destination returned 404.",
+    "Official media JSON retained byte-for-byte from WebFetch output and SHA-256 checked; 15 metadata entries parsed, not 15 inspected app screenshots.",
+    "Historical $39.99 USD, 50%, 7.0, 10.6.8 and v7.0.1 installer references checked in retained matching-context source text. Not promoted to current pricing or compatibility.",
+    "Softonic source lead returned 406; no content or screenshot evidence inferred."
+  ],
+  "artifactSha256": {
+    "research.json": "22ca303c5c68e0f404519643a72af7145c526ab60adc0f60fcaf536197ec5e4e",
+    "research.md": "0b5df7509d5317c03a4fdeea7abc920949be12b9a39ec7baad6b9d23300b5508"
+  },
+  "notPerformed": [
+    "No site check/build/test or rendered-article QA: no site files or drafts changed.",
+    "No native installation, cleanup, benchmark, signing inspection, payment or account-level testing.",
+    "No third-party image download or publication; original/published hashes for missing competitor UI remain null.",
+    "No independent editorial approval, score, commit, push, deployment, agent delegation or queue/database mutation."
+  ],
+  "blockingDiagnostic": "Current MacTuneUp release/platform/licence/pricing/access evidence and a real competitor app screenshot with reuse basis remain missing. Keep drafting blocked; no verified discontinuation or cross-product alias."
+}

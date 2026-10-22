@@ -1,0 +1,19 @@
+{
+  "jobId": "research-intego-washing-machine",
+  "validationRunOn": "2026-10-22",
+  "evidenceCheckedOn": "2026-10-21",
+  "method": "Executed read-only Python JSON, path, SHA-256 and source-text assertions; inspected actual first-party PNG with image-capable read tool.",
+  "checks": [
+    {"check": "research.json parses; research.md exists", "result": "pass"},
+    {"check": "All six retained source paths exist and match recorded SHA-256", "result": "pass"},
+    {"check": "All 12 claim records reference declared sources and retain excerpts, conditions and intended locations", "result": "pass"},
+    {"check": "Manual text contains macOS 10.13, 1.5 GB, 30 days, Clean and Tidy, Caches and NetUpdate in inspected source", "result": "pass"},
+    {"check": "Release text contains 10.9.28, March 24th 2026 and macOS Tahoe", "result": "pass"},
+    {"check": "Pricing source contains $90.99, $129.99, every 2 years and SmartClean; recorded as ONE context only", "result": "pass"},
+    {"check": "Migration source explicitly includes Washing Machine and ineligibility language", "result": "pass"},
+    {"check": "Selected Space preview SHA-256 matches inventory; actual PNG read and example labels inspected", "result": "pass"},
+    {"check": "Competitor visual is link-only with null local path; blocked packet has two precise blockers", "result": "pass"}
+  ],
+  "notPerformed": ["Native app execution or cleanup", "Third-party image download or republication", "Independent editorial review", "Site edits, site build/tests or rendered-draft QA"],
+  "outcome": "Evidence packet retained; drafting blocked by competitor image reuse rights and current standalone X9 offer uncertainty. Structural checks do not establish publication approval."
+}

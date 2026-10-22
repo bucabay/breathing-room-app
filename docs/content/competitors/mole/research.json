@@ -1,0 +1,1068 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mole",
+  "productId": "mole",
+  "canonicalOwnerId": "mole",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "stage": "research",
+  "published": false,
+  "identity": {
+    "name": "Mole",
+    "publisher": "Tw93",
+    "homepage": "https://mole.fit/",
+    "repository": "https://github.com/tw93/Mole",
+    "repositoryScope": "Free CLI only; not source for proprietary native Mac app",
+    "aliases": [
+      "Mole for Mac",
+      "Mole CLI",
+      "mo"
+    ],
+    "aliasDecision": "Keep one Mole packet; do not make separate doorway articles for the CLI/native app or mo command. Not an alias skip of this product.",
+    "skip": false,
+    "aliasSkipDecision": "No separate aliases drafted; canonical Mole remains eligible.",
+    "powerMyMac": "No evidence in checked Mole sources identifies PowerMyMac as an alias. Do not merge or draft that separate queue item here.",
+    "excludedLookalikes": [
+      "molemac.com",
+      "moleapp.net",
+      "molefit.com",
+      "community Windows app at mole.bluecatbot.com"
+    ],
+    "fit": "direct Mac maintenance overlap",
+    "fitReason": "Mac cleanup, disk analysis, monitoring and developer artifacts overlap; native and CLI workflows/prices/platform floors differ.",
+    "platformIntent": "Compare Mac workflows. Official native Windows edition is separate; no Windows support is implied for Breathing Room."
+  },
+  "reuseFirst": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "mole",
+    "result": "Reused current homepage, repository and discovery snapshots. Native licence resolved from already-retained repository License section; no refetch.",
+    "batch2": "No corresponding Mole record needed."
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/mole/about/",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:14.532Z",
+    "aboutRetrievedAtUtc": "2026-10-21T19:04:48.234Z",
+    "officialDestination": "https://mole.fit/?atp=alternativeto",
+    "sourceId": "directory",
+    "manifestPath": "docs/content/competitors.json",
+    "method": "reused live-browser-rendered manifest edge and verification snapshot; no directory refetch"
+  },
+  "versions": {
+    "nativePreview": "1.18.0 (338)",
+    "latestNonPreviewEntryObserved": "1.17.0 Vega, 2026-10-18",
+    "cliStable": null,
+    "cliScope": "retained default-branch README, not pinned-release parity",
+    "breathingRoom": "0.1.0-preview.1; current-source screenshot differs from tagged release"
+  },
+  "sources": [
+    {
+      "id": "directory",
+      "publisher": "AlternativeTo",
+      "url": "https://alternativeto.net/software/mole/about/",
+      "finalUrl": "https://alternativeto.net/software/mole/about/",
+      "retrievedAtUtc": "2026-10-21T19:04:48.234Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/mole-directory.json",
+      "sha256": "909c6f4bdbda6cf9d63d2e69b6f8dcea3a5af595116fe8add4d0bc3c72ec574c",
+      "method": "reused existing verification-1 snapshot; not fetched again",
+      "publicationDate": null,
+      "scope": "directory discovery only"
+    },
+    {
+      "id": "homepage",
+      "publisher": "Tw93 / Mole",
+      "url": "https://mole.fit",
+      "finalUrl": "https://mole.fit",
+      "retrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/mole-official.json",
+      "sha256": "1709f0a8c98d72ad173cfd13001cd2641920bf816c4b6d0246c1ea92432f246e",
+      "method": "reused existing verification-1 snapshot; not fetched again",
+      "publicationDate": null,
+      "scope": "mutable official page / repository default-branch documentation; not runtime testing"
+    },
+    {
+      "id": "repository",
+      "publisher": "Tw93 / Mole",
+      "url": "https://github.com/tw93/Mole",
+      "finalUrl": "https://github.com/tw93/Mole",
+      "retrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/mole-cli-extra.json",
+      "sha256": "6a64af1a2dc2f97f33f053905c36bd03e673544f15eca9ccc21fd57de037d126",
+      "method": "reused existing verification-1 snapshot; not fetched again",
+      "publicationDate": null,
+      "scope": "mutable official page / repository default-branch documentation; not runtime testing"
+    },
+    {
+      "id": "terms",
+      "publisher": "Tw93 / Mole",
+      "url": "https://mole.fit/terms",
+      "finalUrl": "https://mole.fit/terms",
+      "retrievedAtUtc": "2026-10-21T19:18:19.892031+00:00",
+      "snapshotPath": "docs/content/competitors/mole/sources/terms.html",
+      "sha256": "3bef977267b89e26b89d0c24117263f7c2b42f86ad1e004d75ed5b734c9ac21d",
+      "publicationDate": "October 2026",
+      "method": "public unauthenticated HTTPS GET; retained HTML",
+      "scope": "vendor documentation; some docs explicitly describe Preview-only features"
+    },
+    {
+      "id": "docs",
+      "publisher": "Tw93 / Mole",
+      "url": "https://mole.fit/docs",
+      "finalUrl": "https://mole.fit/docs",
+      "retrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "snapshotPath": "docs/content/competitors/mole/sources/docs.html",
+      "sha256": "d2df4a2cbc200b3a3689bcddb33f8054bc480b8619f1c87dcf031c042a2c7690",
+      "publicationDate": "October 2026",
+      "method": "public unauthenticated HTTPS GET; retained HTML",
+      "scope": "vendor documentation; some docs explicitly describe Preview-only features"
+    },
+    {
+      "id": "releases",
+      "publisher": "Tw93 / Mole",
+      "url": "https://mole.fit/releases",
+      "finalUrl": "https://mole.fit/releases",
+      "retrievedAtUtc": "2026-10-21T19:18:20.198013+00:00",
+      "snapshotPath": "docs/content/competitors/mole/sources/releases.html",
+      "sha256": "d5b4db1e2c2809a3c18723e73463c467b160d23d3a15cf98e1e74c43ccbdd97d",
+      "publicationDate": null,
+      "method": "public unauthenticated HTTPS GET; retained HTML",
+      "scope": "vendor documentation; some docs explicitly describe Preview-only features"
+    },
+    {
+      "id": "visual-source",
+      "publisher": "Tw93 / Mole",
+      "url": "https://mole.fit/mac-cleaner",
+      "finalUrl": "https://mole.fit/mac-cleaner",
+      "retrievedAtUtc": "2026-10-21T19:18:20.107167+00:00",
+      "snapshotPath": "docs/content/competitors/mole/sources/visual-source.html",
+      "sha256": "622e533f4edbb68ec3153e0a0de2ac6cf1e4dbfcda194360662fac39cd51d6da",
+      "publicationDate": null,
+      "method": "public unauthenticated HTTPS GET; retained HTML",
+      "scope": "vendor documentation; some docs explicitly describe Preview-only features"
+    },
+    {
+      "id": "breathing-room",
+      "publisher": "Breathing Room first-party evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "finalUrl": null,
+      "retrievedAtUtc": null,
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "method": "reused same-day source/code/public-offer verification; no redundant live retrieval",
+      "scope": "0.1.0-preview.1 public offer versus local source implementation; not binary parity"
+    },
+    {
+      "id": "retry-cli-tree",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://api.github.com/repos/tw93/Mole/git/trees/main?recursive=1",
+      "finalUrl": "https://api.github.com/repos/tw93/Mole/git/trees/main?recursive=1",
+      "retrievedAtUtc": "2026-10-21T19:51:55.444052+00:00",
+      "sha256": "43745ba8f17d2b176686fa1ac6c6ee96ff2d320018c92be335186ceced5dd27e",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-tree.json",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-README.md",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/README.md",
+      "retrievedAtUtc": "2026-10-21T19:52:01.768181+00:00",
+      "sha256": "2e41b675ac665b0a4f1cb9bc5f891b42ebd1870d619d9323384d81ac59dc9179",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-README.md",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-LICENSE",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/LICENSE",
+      "retrievedAtUtc": "2026-10-21T19:52:01.957500+00:00",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-LICENSE",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-mole",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/mole",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/mole",
+      "retrievedAtUtc": "2026-10-21T19:52:01.757093+00:00",
+      "sha256": "5d50dd4bdaeb3457a7328f290ca8428f9b7b6098e280c7071da7f3dd35477589",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-mole",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-lib-core-common.sh",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/common.sh",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/common.sh",
+      "retrievedAtUtc": "2026-10-21T19:52:08.738321+00:00",
+      "sha256": "f1ec6ed3ef3ace93a5445d54e8f91fae8270b6ca324ef1ba4ebb8f9a27202a8e",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-lib-core-common.sh",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-lib-core-commands.sh",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/commands.sh",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/commands.sh",
+      "retrievedAtUtc": "2026-10-21T19:52:09.664441+00:00",
+      "sha256": "de8a04ebc1883f3821038058559465dfbb349e35183df6dca7999665f3265af6",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-lib-core-commands.sh",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-lib-core-base.sh",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/base.sh",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/base.sh",
+      "retrievedAtUtc": "2026-10-21T19:52:16.227730+00:00",
+      "sha256": "158a0c873462e64bbf84a96fcfffb939c6cfb702b905ce797a5879491e253200",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-lib-core-base.sh",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-lib-core-help.sh",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/help.sh",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/help.sh",
+      "retrievedAtUtc": "2026-10-21T19:52:17.141670+00:00",
+      "sha256": "e1d7ca32ddaf35aa3c6a279745f57f90c659a412c1fda56be34a4489325db029",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-lib-core-help.sh",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    },
+    {
+      "id": "retry-cli-lib-core-log.sh",
+      "publisher": "Tw93 / Mole GitHub repository",
+      "url": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/log.sh",
+      "finalUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/log.sh",
+      "retrievedAtUtc": "2026-10-21T19:52:18.350863+00:00",
+      "sha256": "48177f980d03b36373a6775a51ad7f03b1cecf37b220358cd4f8cde4074982f6",
+      "snapshotPath": "docs/content/competitors/mole/sources/cli-lib-core-log.sh",
+      "publicationDate": null,
+      "scope": "CLI visual-rights / capture feasibility only; pinned tree 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "method": "public unauthenticated GET; source retained and read, not executed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "Mole at mole.fit and tw93/Mole are the native-app and CLI product family maintained by Tw93.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "This repo is the free open-source CLI",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Repository links Mole for Mac; homepage links this same repository. CLI is not the native app source.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "official-domain",
+      "wording": "Use mole.fit, not similarly named third-party domains.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "molemac.com\n,\nmoleapp.net\nand\nmolefit.com\nare not Mole",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Explicit publisher disambiguation; do not merge community products.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-license",
+      "wording": "Mole for Mac is proprietary; GPL-3.0 describes the CLI, not the native app.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "is a separate proprietary app",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "License section names Mole for Mac immediately before this passage. Resolves batch nativeAppLicense unknown.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-license",
+      "wording": "The CLI is free, open source and GPL-3.0 licensed.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "is free, open source, and GPL-3.0 licensed",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "CLI only; native Mac app terms are separate.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-platform",
+      "wording": "The native Mac app advertises macOS 14+.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://mole.fit",
+      "excerpt": "macOS 14+",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Native app; architecture/signing not independently established.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-platform",
+      "wording": "The Mac CLI documents macOS 12+ and Intel/Apple Silicon support.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "Mole requires macOS 12 or newer and supports both Intel and Apple Silicon Macs.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Default-branch README; no installed version tested.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-price",
+      "wording": "The Mac app advertises $19 once, no subscription, covering two Macs; Windows is sold separately.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://mole.fit",
+      "excerpt": "Covers 2 Macs, Windows sold separately",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Homepage Pricing also says '$', '19', 'Pay once, no subscription.' Currency code, tax and regional totals not verified; do not label USD as established.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-terms",
+      "wording": "Current retail licences are perpetual, non-transferable and allow two same-platform devices at once.",
+      "sourceIds": [
+        "terms"
+      ],
+      "sourceUrl": "https://mole.fit/terms",
+      "excerpt": "you receive a non-exclusive, non-transferable, perpetual license",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:19.892031+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Terms October 2026; activation cap and same-platform transfer/deactivation conditions apply.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-trial",
+      "wording": "Scanning is free; each named paid tool works twice before requiring a licence.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "each paid tool (Clean, Software, Optimize, and moving items to Trash in Analyze) works twice for free",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Not a timed free trial. Actual activation was not tested.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "refund",
+      "wording": "The homepage advertises a 14-day refund, requested by email with Payment ID; completion deactivates the key.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://mole.fit",
+      "excerpt": "within 14 days of purchase with your Payment ID for a full refund",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Vendor offer only; no refund requested or tested.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "preview-version",
+      "wording": "Release notes label v1.18.0 build 338 as Preview; v1.17.0 Vega is dated 2026-10-18.",
+      "sourceIds": [
+        "releases"
+      ],
+      "sourceUrl": "https://mole.fit/releases",
+      "excerpt": "v1.18.0 Preview",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.198013+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Do not call homepage footer v1.18.0 stable. No installer downloaded or executed.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "docs-preview",
+      "wording": "Some documented features are Preview-only pending the next release.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "Some features on this page are in the",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Opening notice links Preview build; fine-grained current stable parity must be checked before detailed claims.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-clean",
+      "wording": "Clean lists caches, developer/AI data, leftovers and System Data for review; Manage Separately excludes backups, iCloud files, VMs and models from the cleanup total.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "The Manage Separately group lists backups, local iCloud files, virtual machines and models, outside the cleanup total.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Vendor docs, potentially mixed stable/Preview; not a guarantee that every personal file is protected.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-delete",
+      "wording": "Mole's caches are permanently deleted by default, with an option to use Trash.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "Caches are permanently deleted by default, with a Trash option in Settings",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Do not generalize review-before-delete to reversibility; snapshot release and unified-log removal are separate risks.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-analyze",
+      "wording": "Analyze's Move to Trash context action moves an item immediately; already-trashed items ask before permanent deletion.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "moves the item right away, like Finder",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Analyze differs from Clean/Uninstall full-list confirmation. No action performed.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-rebuild",
+      "wording": "Package caches and generated build output are review-only by default in the Mac app.",
+      "sourceIds": [
+        "docs"
+      ],
+      "sourceUrl": "https://mole.fit/docs",
+      "excerpt": "Review-only items stay unselected until you confirm",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.061025+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Docs may include Preview features; do not copy CLI purge behavior to the native app.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-delete",
+      "wording": "The CLI README says clean, purge and installer delete permanently; uninstall, analyze and slim use Trash by default after confirmation.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "delete permanently",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Safety section; clean also empties ~/.Trash by default unless protected. These are documented claims, not tests.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-purge",
+      "wording": "CLI purge finds rebuildable project artifacts; recently active or unverified activity items start unselected.",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/tw93/Mole",
+      "excerpt": "Artifacts with file activity in the last 7 days, or activity Mole cannot verify, are unselected by default.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:11:47.874518+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "README default branch; exact stable CLI version not verified. Rebuild may require time/network.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-local",
+      "wording": "Mole says scans and cleanup stay on the Mac without uploading files/results.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://mole.fit",
+      "excerpt": "Scans and cleanup stay on your Mac; files and results are never uploaded.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Attributed vendor statement, not a network audit; activation/update network calls exist.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "activation-network",
+      "wording": "Mole licence activation and update checks require network destinations documented in its FAQ.",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://mole.fit",
+      "excerpt": "allow mole.fit, cdn.tw93.fun, and live.dodopayments.com",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:07:54.089035+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Do not claim the entire native app is network-free.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-on-demand",
+      "wording": "The Clean page says it does not send scheduled cleanup reminders or keep scanning the disk in the background.",
+      "sourceIds": [
+        "visual-source"
+      ],
+      "sourceUrl": "https://mole.fit/mac-cleaner",
+      "excerpt": "Mole does not send scheduled cleanup reminders or keep scanning your disk in the background.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.107167+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Clean workflow only; not absence of all monitoring or scan refresh features.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-growth-preview",
+      "wording": "Preview 1.18 notes describe growth since an older Analyze map, including named growing files/folders.",
+      "sourceIds": [
+        "releases"
+      ],
+      "sourceUrl": "https://mole.fit/releases",
+      "excerpt": "When the disk has grown by 1 GB or more since a map at least a day old",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.198013+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "v1.18.0 Preview only; invalidates blanket 'Mole has no growth tracking' wording.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "native-grouping",
+      "wording": "Release 1.15 notes describe app grouping with combined CPU/memory and expandable details.",
+      "sourceIds": [
+        "releases"
+      ],
+      "sourceUrl": "https://mole.fit/releases",
+      "excerpt": "Processes are grouped by app with combined memory and CPU usage",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:18:20.198013+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Published changelog behavior, not independently observed; never claim grouping is unique to Breathing Room.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "breathing-preview",
+      "wording": "Breathing Room is a free Apache-2.0 maintenance preview; source implementation is not proof of distributed feature parity.",
+      "sourceIds": [
+        "breathing-room"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": null,
+      "evidenceClass": "first-party evidence-register reuse",
+      "state": "verified",
+      "scope": "Same-day capability register; version 0.1.0-preview.1; macOS 13+, universal advertised, physical Intel untested.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "breathing-price",
+      "wording": "Breathing Room's local core is free; optional hosted AI Care is advertised at $5 USD/month or $50 USD/year.",
+      "sourceIds": [
+        "breathing-room"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "$5 USD/month or $50 USD/year",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": null,
+      "evidenceClass": "first-party evidence-register reuse",
+      "state": "verified",
+      "scope": "Published offer, not paid entitlement enforcement; limits and checkout completion unverified.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "breathing-caveats",
+      "wording": "Breathing Room's preview requires Python 3.10+ for inventory and is not Developer ID signed or notarized.",
+      "sourceIds": [
+        "breathing-room"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Python **3.10+**",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": null,
+      "evidenceClass": "first-party evidence-register reuse",
+      "state": "verified",
+      "scope": "Release says Apple Development signed; do not advise bypassing protections. Authenticated hosted AI sends relevant data off-device.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "breathing-care",
+      "wording": "Breathing Room source daily care uses saved exact approvals while the app runs; optional interactive Ruff automation is a separate exception.",
+      "sourceIds": [
+        "breathing-room"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "only remembered exact approvals are eligible",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": null,
+      "evidenceClass": "first-party evidence-register reuse",
+      "state": "verified",
+      "scope": "Source-confirmed, not binary/runtime test; daily care is advertised within paid AI Care.",
+      "intendedLocation": "comparison matrix / workflow article",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-visual-reference",
+      "wording": "The official CLI README references docs/img/big-mole.png as Mole cleanup results.",
+      "sourceIds": [
+        "retry-cli-README.md"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/README.md",
+      "excerpt": "<img src=\"./docs/img/big-mole.png\" alt=\"Mole cleanup results\" width=\"1000\" />",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:52:01.768181+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Pinned README identifies the candidate; image bytes not retrieved, inspected or licensed by inference.",
+      "intendedLocation": "research visual provenance",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-help-startup",
+      "wording": "The inspected CLI loads common.sh before dispatching --help; common.sh invokes temporary-directory preparation.",
+      "sourceIds": [
+        "retry-cli-lib-core-common.sh"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/common.sh",
+      "excerpt": "prepare_mole_tmpdir > /dev/null",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:52:08.738321+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "Read alongside pinned entrypoint sources before main; base.sh preparation can reach guarded stale-temp pruning. Not an execution observation.",
+      "intendedLocation": "research capture feasibility",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    },
+    {
+      "id": "cli-prune-path",
+      "wording": "Temporary-directory preparation can reach a guarded stale-file deletion routine before help dispatch.",
+      "sourceIds": [
+        "retry-cli-lib-core-base.sh"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/lib/core/base.sh",
+      "excerpt": "prune_stale_mole_temp_files \"$MOLE_RESOLVED_TMPDIR\"",
+      "checkedOn": "2026-10-21",
+      "sourceRetrievedAtUtc": "2026-10-21T19:52:16.227730+00:00",
+      "evidenceClass": "official documented behavior / offer, not hands-on observation",
+      "state": "verified",
+      "scope": "base.sh lines 1230–1262 and 1297–1358: pruning restricted to dedicated Mole cache/temp roots; do not imply every help invocation deletes files. No scripts run.",
+      "intendedLocation": "research capture feasibility",
+      "reviewer": "research-mole worker; independent editorial review pending"
+    }
+  ],
+  "matrix": [
+    {
+      "dimension": "macOS / runtime / installation",
+      "claimIds": [
+        "native-platform",
+        "cli-platform",
+        "breathing-caveats"
+      ]
+    },
+    {
+      "dimension": "licence / pricing / trial",
+      "claimIds": [
+        "native-license",
+        "cli-license",
+        "native-price",
+        "native-terms",
+        "native-trial",
+        "refund",
+        "breathing-price"
+      ]
+    },
+    {
+      "dimension": "local versus hosted",
+      "claimIds": [
+        "native-local",
+        "activation-network",
+        "breathing-caveats"
+      ]
+    },
+    {
+      "dimension": "scan and cleanup model",
+      "claimIds": [
+        "native-clean",
+        "cli-purge",
+        "breathing-preview"
+      ]
+    },
+    {
+      "dimension": "approval / deletion",
+      "claimIds": [
+        "native-delete",
+        "native-analyze",
+        "cli-delete",
+        "breathing-care"
+      ]
+    },
+    {
+      "dimension": "helper grouping",
+      "claimIds": [
+        "native-grouping"
+      ]
+    },
+    {
+      "dimension": "recurring growth / care",
+      "claimIds": [
+        "native-on-demand",
+        "native-growth-preview",
+        "breathing-care"
+      ]
+    },
+    {
+      "dimension": "developer caches / rebuilding",
+      "claimIds": [
+        "native-rebuild",
+        "cli-purge"
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "mole-clean-official",
+      "productId": "mole",
+      "view": "Native Clean tab",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://mole.fit/mac-cleaner",
+      "assetUrl": "https://mole.fit/img/en/clean.jpg",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "sourcePageRetrievedAtUtc": "2026-10-21T19:18:20.107167+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2584,
+      "heightPx": 1741,
+      "dimensionBasis": "official img HTML attributes; not decoded image dimensions",
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "No screenshot reuse permission found. Terms reserve Tw93's content rights; public visibility is not a licence.",
+        "evidenceUrlOrPath": "https://mole.fit/terms",
+        "credit": "Mole / Tw93; official Clean-tab visual (link only)"
+      },
+      "caption": "Mole's official Clean-tab visual. Vendor illustration; version and capture date not supplied. No measured result from our testing.",
+      "alt": "Mole Clean tab with Earth, the space a scan found and a button to review results.",
+      "supportedClaimIds": [
+        "native-clean"
+      ],
+      "limitations": [
+        "Exact source img and responsive WebP references found in retained HTML; asset not downloaded or visually approved.",
+        "Link-only fallback does not meet the on-page screenshot gate."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ],
+      "productId": "breathing-room",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "selectedPurpose": "Later figure: category/owner exploration before removal decisions",
+      "requiredLabels": [
+        "Current-source browser preview",
+        "Example data only",
+        "Not a native scan, measured activity or cleanup result"
+      ],
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room (which we build)"
+      },
+      "researchVisualInspection": "Opened actual PNG with image-capable read tool in research-mole: visible example-data banner, categories, project/development row and partly overlapping assistant composer. No native results inferred. Keep banner visible and choose a readable contextual presentation.",
+      "review": {
+        "status": "pending per-article review",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "mole-cli-official-candidate",
+      "productId": "mole",
+      "view": "CLI cleanup results, as named by README; image uninspected",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/tw93/Mole/blob/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/README.md",
+      "assetUrl": "https://raw.githubusercontent.com/tw93/Mole/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/docs/img/big-mole.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": "84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "upstreamGitBlobSha1": "5b7e0bea82ad2d298a34fc44655634782b4e5b14",
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "Repository GPL-3.0 statement establishes CLI licensing, not explicit scope for this image. No asset-specific permission located in inspected README, LICENSE or tree paths. Do not download or publish by inference.",
+        "evidenceUrlOrPath": "https://github.com/tw93/Mole/blob/84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5/README.md#license",
+        "credit": "Mole CLI / Tw93; official repository README visual (link only)"
+      },
+      "caption": "Official Mole CLI README visual, labeled cleanup results by its publisher. Version, capture date and image contents not independently verified; not our test result.",
+      "alt": null,
+      "altDiagnostic": "Publication alt text requires permitted image retrieval and actual visual inspection; README alt alone is not an independent image description.",
+      "supportedClaimIds": [
+        "cli-visual-reference"
+      ],
+      "limitations": [
+        "Candidate reference only, not an approved app screenshot.",
+        "Upstream Git blob SHA-1 is not a downloaded original SHA-256.",
+        "GPL code licence not assumed to cover image; native app rights remain separate."
+      ],
+      "review": {
+        "status": "blocked pending rights and visual inspection",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    }
+  ],
+  "unknowns": [
+    "Native price currency code, tax and regional totals",
+    "Native CPU architecture floor, installer notarization/signing and exact runtime prerequisite policy",
+    "CLI newest stable version and default-branch-to-release feature parity",
+    "Per-feature stable versus Preview native parity",
+    "Mole diagnostic/telemetry scope beyond attributed local scan statement",
+    "Independent permission, privacy and contextual visual approval"
+  ],
+  "blockers": [
+    {
+      "id": "competitor-image-rights",
+      "severity": "critical-drafting-gate",
+      "diagnostic": "Native Clean image still rights-blocked. Retry found official CLI big-mole.png reference but no asset-specific licence scope; GPL code licence alone is not clearance. Neither CLI command on PATH; --help startup has temp preparation/pruning and exit cleanup hooks, so a genuine non-mutating capture was not established. No images downloaded or third-party code executed.",
+      "resolution": "Resolve exact CLI image permission and inspect permitted bytes, or independently establish an authorized genuine non-mutating CLI capture and output reuse basis. See retryInvestigation. Required competitor-app image gate remains unwaived."
+    }
+  ],
+  "blockedClaims": [
+    "No native feature is described as tested or certified safe; no performance/storage savings measured.",
+    "Do not call 1.18.0 stable or publish granular Preview behavior as 1.17 behavior.",
+    "Do not claim Mole lacks grouped processes or growth comparison.",
+    "Do not call the paid native app GPL/free, or a $19 licence unlimited-device/cross-platform.",
+    "Do not publish a runnable CLI tutorial without authorized independent reproduction."
+  ],
+  "briefs": {
+    "workflow": {
+      "title": "Before purging Mac build artifacts: review rebuild cost, age and removal method",
+      "slug": "review-mac-build-artifacts-before-purging",
+      "track": "search/reference workflow",
+      "primaryIntent": "Decide which developer build artifacts to remove without confusing dependency downloads, generated output and project state.",
+      "description": "Use Mole's distinct CLI purge and native Clean workflows to plan artifact removal, checking rebuild cost and permanent deletion versus Trash. This is documented workflow analysis, not a cleanup test.",
+      "outline": [
+        "Top official Mole Clean visual after lead, only once rights clear",
+        "Separate package caches, generated output, downloaded dependencies and original project state",
+        "Read CLI purge selection/age and permanent-deletion boundaries; do not execute examples",
+        "Contrast native review-only candidates and flag Preview-specific additions",
+        "Check backup, active work, reproducibility, bandwidth and removal destination before approval",
+        "Later current-source Breathing Room Space preview, labeled example data",
+        "Choose a terminal workflow or an inspection/care preview with disclosed runtime, hosted AI and signing caveats"
+      ],
+      "interactionPass": "Hand off a static decision checklist: generated vs original; lockfile and sources available; active project; offline rebuild possible; Trash vs permanent. It must not imply a browser tool scanned files.",
+      "links": [
+        "/comparisons/mole/",
+        "/comparisons/",
+        "/tools/"
+      ],
+      "length": "Earned; roughly 900–1500 words, no padding or invented FAQ",
+      "retryScope": "If CLI image rights clear, narrow to documented CLI purge artifact review; keep native Clean only as a distinctly labeled paid edition/context note, not a capability demonstrated by CLI visual. Existing draft gate remains blocked."
+    },
+    "comparison": {
+      "title": "Breathing Room vs Mole: native app, CLI and care workflows",
+      "slug": "mole",
+      "primaryIntent": "Choose a Mac maintenance workflow, not an assertion that every edition is interchangeable.",
+      "structure": [
+        "Conclusion and affiliation: Breathing Room, which we build",
+        "Separate native Mole $19/two-Mac perpetual offer and free GPL CLI",
+        "Concise sourced platform, approval/removal, disk analysis, process grouping, growth and hosted-boundary matrix",
+        "Preview/runtime and installation caveats on both sides",
+        "Who should choose Mole; who may prefer Breathing Room; workflow link"
+      ],
+      "workflowLink": "/blog/review-mac-build-artifacts-before-purging/",
+      "cliOnlyAlternative": "Breathing Room vs Mole CLI: artifact review and removal choices. Scope all Mole feature rows to retained CLI README; paid native $19/two-Mac offer is context, not CLI pricing or demonstrated GUI capability. No separate doorway page; use canonical mole slug."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "mole": [
+      "Free inspectable CLI for terminal-oriented users; GPL does not extend to the native app.",
+      "Native app offers app update/uninstall, disk analysis and system monitoring; pricing is one-time for two Macs rather than a subscription.",
+      "Mole already documents helper grouping and Preview growth comparison; do not invent a feature gap.",
+      "Deletion modes vary: default cache removal and CLI purge can be permanent; review is not guaranteed reversibility."
+    ],
+    "breathingRoom": [
+      "May fit owners who want source-implemented ownership/category views, local history and exact-approval daily care; binary parity remains unverified.",
+      "Free local core with optional paid authenticated hosted AI, not entirely offline assistance.",
+      "Preview lacks Developer ID signing/notarization and clean-machine/physical-Intel validation; Python 3.10+ prerequisite matters.",
+      "No benchmark evidence establishes safer/faster cleanup or higher space recovery than Mole."
+    ]
+  },
+  "execution": {
+    "handsOnTesting": false,
+    "cleanupPerformed": false,
+    "accountsOrPayments": false,
+    "browserUsed": false,
+    "browserReason": "Read-only official GitHub tree/source inspection was sufficient for retry feasibility; no browser capture, cookie access or Chrome recovery needed.",
+    "imageDownloads": 0,
+    "siteEdits": false,
+    "independentReview": "pending separate stage",
+    "siteBuilds": "not applicable: no marketing files changed"
+  },
+  "retryInvestigation": {
+    "requestedByUser": true,
+    "checkedOn": "2026-10-21",
+    "revision": "84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5",
+    "scope": "Reuse existing packet and investigate CLI visual rights or genuine non-mutating capture, not repeat native asset request.",
+    "officialAssetRoute": "Pinned README links big-mole.png; tree has GPL LICENSE but no image-specific licence/permission file identified. Root GPL and image co-location alone are not treated as clearance. No image bytes fetched.",
+    "captureRoute": "command -v mo and command -v mole returned no path (shell exit 1). Entrypoint and startup sources read only. Before --help dispatch, common.sh invokes prepare_mole_tmpdir and entrypoint installs cleanup_temp_files trap. base.sh can probe/write temporary roots and prune old files in its dedicated cache/temp root. A complete non-mutating execution path has not been established; no install, command execution, fabricated terminal rendering or extracted-help substitute used.",
+    "captureLimitations": "This is a source-level rejection of an unaudited live capture, not proof a specially reviewed isolated run is impossible. Remaining transitive modules, environment, approved execution surface and capture-output rights need review; do not bypass init or stub output and label it genuine UI.",
+    "decision": "Retain critical image gate. CLI-only framing remains an option only after permitted actual CLI image/capture and inspection; do not use a CLI image as evidence of paid native capabilities.",
+    "neededEvidenceOrDecision": [
+      "Published image-specific licence or retained owner permission covering docs/img/big-mole.png at 84dc779dc651ff1f0509a2054b6e25b8fb5d2ac5, including reproduction scope and attribution/redistribution conditions; then permitted download, SHA-256, decode, privacy and visual review.",
+      "Alternatively, an independently audited, explicitly authorized no-install/no-cleanup capture path for genuine CLI UI, plus an established reuse basis for captured output; retain exact version/OS/procedure/raw capture and inspect actual image. No authorization to change safety constraints is presumed.",
+      "Native Clean image remains link-only unless permission specifically covers https://mole.fit/img/en/clean.jpg. No outreach authorized."
+    ]
+  }
+}

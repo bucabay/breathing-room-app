@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download and Install DeepClean for Mac</title>
+    <meta name="description" content="Download DeepClean for macOS 13 or later and install it in two minutes: open the .dmg, drag to Applications, allow it to open, and grant Full Disk Access.">
+    <meta name="theme-color" content="#0A0A0C">
+    <meta property="og:title" content="Download and Install DeepClean for Mac">
+    <meta property="og:description" content="Install DeepClean in two minutes: open the .dmg, drag to Applications, allow it to open, and grant Full Disk Access. Free scan with 10 GB of cleanup included.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deepclean.app/download">
+    <meta property="og:image" content="https://deepclean.app/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Download and Install DeepClean for Mac">
+    <meta name="twitter:description" content="Install DeepClean in two minutes: open the .dmg, drag to Applications, allow it to open, and grant Full Disk Access.">
+    <meta name="twitter:image" content="https://deepclean.app/og-card.png">
+    <link rel="canonical" href="https://deepclean.app/download">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="DeepClean-Icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to install DeepClean on a Mac",
+      "description": "Install DeepClean, a macOS storage cleanup app, from the downloaded disk image and allow it to open.",
+      "totalTime": "PT2M",
+      "supply": [{"@type": "HowToSupply", "name": "A Mac running macOS 13 Ventura or later"}],
+      "tool": [{"@type": "HowToTool", "name": "DeepClean.dmg"}],
+      "step": [
+        {"@type": "HowToStep", "position": 1, "name": "Open the disk image", "text": "Double-click DeepClean.dmg in your Downloads folder. A window opens with the DeepClean icon, an Applications shortcut, and a short Read Me First note."},
+        {"@type": "HowToStep", "position": 2, "name": "Drag DeepClean to Applications", "text": "Drag the DeepClean icon onto the Applications folder in the same window. That is the whole install; you can eject the disk image afterwards."},
+        {"@type": "HowToStep", "position": 3, "name": "Allow it to open", "text": "On macOS 15 and later, click Done on the warning, open System Settings, Privacy & Security, scroll to Security, click Open Anyway and confirm. On macOS 13 or 14, right-click DeepClean in Applications, choose Open, then click Open in the dialog."},
+        {"@type": "HowToStep", "position": 4, "name": "Grant Full Disk Access", "text": "On first launch DeepClean asks for Full Disk Access so it can scan the caches, logs, and developer folders that make up System Data. Click the button in the app to open System Settings, add DeepClean to the list, and switch it on."}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://deepclean.app/"},
+        {"@type": "ListItem", "position": 2, "name": "Download", "item": "https://deepclean.app/download"}
+      ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0A0A0C; --bg-1: #0F0F12; --surface: #17171C; --surface-2: #1E1E24;
+            --line: rgba(255,255,255,0.08); --line-soft: rgba(255,255,255,0.05); --line-strong: rgba(255,255,255,0.14);
+            --text: #F5F5F7; --text-2: #A3A3AC; --text-3: #6F6F78;
+            --blue: #0A84FF; --blue-hover: #2F93FF; --review: #F0B052;
+            --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+            --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font); color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; line-height: 1.5; overflow-x: hidden; }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+        .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+        .skip-link { position: absolute; left: 16px; top: -60px; z-index: 2000; background: var(--blue); color: #fff; padding: 10px 16px; border-radius: 10px; font-weight: 600; font-size: 14px; transition: top 0.2s; }
+        .skip-link:focus { top: 16px; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: 64px; display: flex; align-items: center; background: rgba(10,10,12,0.78); -webkit-backdrop-filter: saturate(160%) blur(18px); backdrop-filter: saturate(160%) blur(18px); border-bottom: 1px solid var(--line-soft); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; position: relative; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; }
+        .nav-logo img { width: 28px; height: 28px; border-radius: 7px; }
+        .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+        .nav-links a { display: inline-flex; align-items: center; height: 36px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 500; color: var(--text-2); transition: color 0.2s, background 0.2s; }
+        .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+        .nav-links .nav-cta { margin-left: 10px; color: #fff; background: var(--blue); font-weight: 600; padding: 0 16px; }
+        .nav-links .nav-cta:hover { background: var(--blue-hover); color: #fff; }
+        .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; margin-right: -10px; background: none; border: none; cursor: pointer; padding: 10px; border-radius: 10px; }
+        .nav-hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text-2); border-radius: 2px; }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font); font-weight: 600; font-size: 15px; line-height: 1; border: 1px solid transparent; cursor: pointer; padding: 0 22px; height: 46px; border-radius: 12px; transition: background 0.2s var(--ease), border-color 0.2s, box-shadow 0.25s var(--ease), transform 0.25s var(--ease); white-space: nowrap; }
+        .btn svg { width: 16px; height: 16px; }
+        .btn-primary { color: #fff; background: var(--blue); box-shadow: 0 1px 0 rgba(255,255,255,0.12) inset, 0 6px 18px rgba(10,132,255,0.22); }
+        .btn-primary:hover { background: var(--blue-hover); transform: translateY(-1px); }
+        .btn-lg { height: 52px; padding: 0 28px; font-size: 16px; border-radius: 14px; }
+
+        /* Page: one 760px reading column, 8px spacing scale, steps as a timeline. */
+        .page-hero { padding: 136px 0 48px; text-align: center; }
+        .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px; }
+        h1 { font-size: clamp(34px, 4.4vw, 52px); font-weight: 700; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; max-width: 760px; margin: 0 auto; }
+        .lede { font-size: 17px; line-height: 1.6; color: var(--text-2); max-width: 540px; margin: 20px auto 0; text-wrap: balance; }
+        .hero-actions { margin-top: 32px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .meta { margin-top: 16px; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 20px; font-size: 13px; color: var(--text-3); list-style: none; }
+
+        .overview { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; list-style: none; counter-reset: ov; }
+        .overview a { display: flex; align-items: center; gap: 10px; height: 100%; padding: 12px 14px; border-radius: 12px; background: var(--bg-1); border: 1px solid var(--line-soft); font-size: 13.5px; font-weight: 500; line-height: 1.3; color: var(--text-2); transition: border-color 0.2s, color 0.2s, background 0.2s; }
+        .overview a:hover { color: var(--text); border-color: var(--line-strong); background: var(--surface); }
+        .overview a::before { counter-increment: ov; content: counter(ov); flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: var(--blue); background: rgba(10,132,255,0.14); }
+
+        .steps { position: relative; max-width: 760px; margin: 0 auto; padding: 56px 0 24px; }
+        .step { position: relative; display: grid; grid-template-columns: 40px 1fr; gap: 24px; padding-bottom: 48px; scroll-margin-top: 88px; }
+        .step:not(:last-child)::before { content: ""; position: absolute; left: 19.5px; top: 48px; bottom: 8px; width: 1px; background: linear-gradient(var(--line-strong), var(--line-soft)); }
+        .num { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 15px; color: var(--blue); background: rgba(10,132,255,0.12); border: 1px solid rgba(10,132,255,0.32); }
+        .step-body { min-width: 0; padding-top: 6px; }
+        .step h2 { font-size: 22px; font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; margin-bottom: 8px; scroll-margin-top: 96px; }
+        .step p { font-size: 16px; line-height: 1.65; color: var(--text-2); max-width: 62ch; text-wrap: pretty; }
+        .step p + p { margin-top: 12px; }
+        .step strong { color: var(--text); font-weight: 600; }
+        .tag { display: inline-block; margin-left: 8px; padding: 3px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.01em; color: var(--review); background: rgba(240,176,82,0.12); vertical-align: 3px; }
+        code { font-family: var(--mono); font-size: 0.86em; color: var(--text); background: var(--surface-2); padding: 2px 7px; border-radius: 6px; border: 1px solid var(--line-soft); white-space: nowrap; }
+
+        /* Small schematic panels: what the person will see on screen. */
+        .figure { margin-top: 20px; padding: 20px; border-radius: 16px; background: var(--bg-1); border: 1px solid var(--line); }
+        .figure figcaption { margin-top: 14px; font-size: 13px; line-height: 1.5; color: var(--text-3); }
+        .drag { display: flex; align-items: center; justify-content: center; gap: 24px; padding: 8px 0; }
+        .drag-item { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12.5px; color: var(--text-2); }
+        .drag-item img, .drag-item .folder { width: 56px; height: 56px; }
+        .drag-item img { border-radius: 13px; }
+        .folder { color: #5AB0FF; }
+        .drag-arrow { width: 64px; height: 16px; color: var(--text-3); }
+        .sys-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 16px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; color: var(--text); }
+        .sys-label { display: block; margin-bottom: 8px; font-size: 12px; font-weight: 600; color: var(--text-3); }
+        .sys-btn { flex: none; padding: 6px 12px; border-radius: 7px; font-size: 13px; font-weight: 600; background: var(--surface-2); border: 1px solid var(--line-strong); color: var(--text); box-shadow: 0 0 0 3px rgba(10,132,255,0.35); }
+        .sys-app { display: flex; align-items: center; gap: 10px; }
+        .sys-app img { width: 24px; height: 24px; border-radius: 6px; }
+        .toggle { flex: none; width: 38px; height: 22px; border-radius: 999px; background: var(--blue); position: relative; box-shadow: 0 0 0 3px rgba(10,132,255,0.25); }
+        .toggle::after { content: ""; position: absolute; top: 2px; right: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff; }
+
+        .os-switch { display: inline-flex; margin-top: 20px; padding: 3px; border-radius: 10px; background: var(--bg-1); border: 1px solid var(--line); gap: 2px; }
+        .os-switch button { font-family: var(--font); font-size: 13.5px; font-weight: 600; color: var(--text-2); background: none; border: 0; padding: 8px 14px; border-radius: 8px; cursor: pointer; transition: background 0.2s, color 0.2s; }
+        .os-switch button[aria-selected="true"] { color: var(--text); background: var(--surface-2); box-shadow: 0 1px 2px rgba(0,0,0,0.4); }
+        .os-panel { margin-top: 16px; }
+        .os-panel[hidden] { display: none; }
+        .os-panel h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+        .actions { margin-top: 8px; padding-left: 0; list-style: none; counter-reset: act; display: flex; flex-direction: column; gap: 10px; }
+        .actions li { counter-increment: act; position: relative; padding-left: 32px; font-size: 16px; line-height: 1.55; color: var(--text-2); }
+        .actions li::before { content: counter(act); position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: var(--text-2); background: var(--surface-2); border: 1px solid var(--line); }
+        .note { margin-top: 20px; display: flex; gap: 12px; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); font-size: 14.5px; line-height: 1.6; color: var(--text-2); }
+        .note svg { flex: none; width: 18px; height: 18px; margin-top: 2px; color: var(--text-3); }
+        .note strong { color: var(--text); }
+        .why { margin-top: 12px; border-radius: 12px; border: 1px solid var(--line-soft); }
+        .why summary { list-style: none; cursor: pointer; padding: 12px 16px; font-size: 14.5px; font-weight: 600; color: var(--text-2); display: flex; align-items: center; justify-content: space-between; gap: 12px; border-radius: 12px; }
+        .why summary::-webkit-details-marker { display: none; }
+        .why summary::after { content: ""; width: 8px; height: 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s var(--ease); }
+        .why[open] summary::after { transform: rotate(225deg) translateY(-2px); }
+        .why summary:hover { color: var(--text); }
+        .why summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+        .why p { padding: 0 16px 16px; font-size: 14.5px; }
+        .privacy-line { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; font-size: 14.5px; line-height: 1.6; color: var(--text-3); }
+        .privacy-line svg { flex: none; width: 16px; height: 16px; margin-top: 3px; }
+
+        .help { max-width: 760px; margin: 0 auto 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .card { padding: 24px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); scroll-margin-top: 88px; }
+        .card-wide { grid-column: 1 / -1; }
+        .card h2 { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px; }
+        .card p, .card li { font-size: 14.5px; line-height: 1.6; color: var(--text-2); }
+        .card p + p { margin-top: 10px; }
+        .card strong { color: var(--text); font-weight: 600; }
+        .card a:not(.btn) { color: var(--text); border-bottom: 1px solid var(--line-strong); transition: border-color 0.2s; }
+        .card a:not(.btn):hover { border-color: var(--text-2); }
+        .card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+        .card .btn { margin-top: 16px; height: 42px; font-size: 14px; }
+        [data-setup-container]:not([hidden]) + .connect-fallback { display: none; }
+        .connect-fallback { margin-top: 10px; color: var(--text-3) !important; }
+        .os-switch[hidden] { display: none; }
+        .help-title { grid-column: 1 / -1; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 0; }
+
+        .footer { border-top: 1px solid var(--line-soft); background: var(--bg-1); padding: 36px 0; }
+        .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--text-3); }
+        .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-3); transition: color 0.2s; }
+        .footer-links a:hover { color: var(--text); }
+
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.62); z-index: 2000; align-items: center; justify-content: center; padding: 20px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+        .modal-overlay.open { display: flex; }
+        .modal { position: relative; width: 100%; max-width: 440px; max-height: calc(100vh - 40px); overflow-y: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 32px 30px 30px; box-shadow: 0 30px 90px rgba(0,0,0,0.6); }
+        .modal-close { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; background: none; border: none; color: var(--text-3); cursor: pointer; border-radius: 8px; }
+        .modal-close:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+        .modal-close svg { width: 18px; height: 18px; }
+        .modal h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
+        .modal-intro { font-size: 14px; line-height: 1.6; color: var(--text-2); margin-bottom: 22px; }
+        .field { margin-bottom: 14px; }
+        .field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--text-2); margin-bottom: 6px; }
+        .field input { width: 100%; padding: 12px 14px; font-size: 15px; font-family: var(--font); color: var(--text); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; outline: none; }
+        .field input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(10,132,255,0.18); }
+        .field input.error { border-color: #F26D63; }
+        .field-error { font-size: 12.5px; color: #F26D63; margin: -6px 0 12px; }
+        .modal .btn { width: 100%; }
+        .btn .btn-spinner { display: none; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.6s linear infinite; }
+        .btn.loading { pointer-events: none; opacity: 0.75; }
+        .btn.loading .btn-spinner { display: inline-block; }
+        .btn.loading .btn-label { display: none; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .checkout-note { font-size: 12.5px; line-height: 1.55; color: var(--text-3); margin-top: 14px; text-align: center; }
+        .modal-success { display: none; text-align: center; padding: 10px 0; }
+        .modal-success.show { display: block; }
+        .modal-success .ok { width: 52px; height: 52px; margin: 0 auto 14px; border-radius: 50%; background: rgba(52,201,122,0.13); color: #34C97A; display: flex; align-items: center; justify-content: center; }
+        .modal-success .ok svg { width: 24px; height: 24px; }
+        .modal-success h4 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+        .modal-success p { color: var(--text-2); font-size: 14px; line-height: 1.6; }
+        .success-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+        .btn-secondary { color: var(--text); background: rgba(255,255,255,0.05); border-color: var(--line); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: var(--line-strong); }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: calc(100% + 8px); left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 2px; padding: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+            .nav-links.open { display: flex; }
+            .nav-links li a { display: flex; height: 46px; padding: 0 14px; font-size: 16px; border-radius: 10px; }
+            .nav-links .nav-cta { margin: 6px 0 0; justify-content: center; }
+            .nav-hamburger { display: flex; }
+            .page-hero { padding: 108px 0 36px; }
+            .lede { font-size: 16px; }
+            .overview { grid-template-columns: 1fr 1fr; }
+            .steps { padding-top: 40px; }
+            .step { grid-template-columns: 32px 1fr; gap: 16px; padding-bottom: 40px; }
+            .step:not(:last-child)::before { left: 15.5px; top: 40px; }
+            .num { width: 32px; height: 32px; font-size: 14px; }
+            .step-body { padding-top: 3px; }
+            .step h2 { font-size: 20px; }
+            .step p, .actions li { font-size: 15.5px; }
+            .step:not(:last-child)::before { display: none; }
+            .step-body > :not(h2) { margin-left: -48px; }
+            .figure { padding: 16px; }
+            .os-switch { display: flex; }
+            .os-switch[hidden] { display: none; }
+            .os-switch button { flex: 1; padding: 8px 6px; }
+            .drag { gap: 14px; }
+            .help { grid-template-columns: 1fr; margin-bottom: 72px; }
+            .card { padding: 20px; }
+            .footer-inner { justify-content: center; text-align: center; }
+        }
+    </style>
+    <script src="/scripts/download-setup.js"></script>
+        <!-- BEGIN DEEPCLEAN ANALYTICS (auto-injected) -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HS13FXWGJB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HS13FXWGJB');
+      document.addEventListener('click', function(e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href$=".dmg"]');
+        if (a) gtag('event', 'download_dmg', { link_url: a.href, page_path: location.pathname, location: a.getAttribute('data-track-location') || '' });
+      });
+    </script>
+    <!-- END DEEPCLEAN ANALYTICS -->
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <nav class="nav" aria-label="Main">
+        <div class="container nav-inner">
+            <a href="/" class="nav-logo"><img src="DeepClean-Icon.png" alt="DeepClean" width="28" height="28">DeepClean</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/#how-it-works">How it works</a></li>
+                <li><a href="/#safety">Safety</a></li>
+                <li><a href="/#developers">For developers</a></li>
+                <li><a href="/#download">Pricing</a></li>
+                <li><a href="#verify-email" class="nav-cta" data-download-gate data-track="homepage_primary_cta_clicked" data-track-location="download-page-nav">Scan Your Mac Free</a></li>
+            </ul>
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <header class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Download and install</p>
+                <h1>Two minutes from download to your first scan.</h1>
+                <p class="lede">The scan is free and includes 10 GB of cleanup. No account, no card.</p>
+                <div class="hero-actions">
+<a href="#verify-email" class="btn btn-primary btn-lg" data-download-gate data-track="homepage_primary_cta_clicked" data-track-location="download-page-hero"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download DeepClean 1.3.11</a>
+                </div>
+                <ul class="meta" aria-label="Download details">
+                    <li>5 MB</li>
+                    <li>macOS 13 Ventura or later</li>
+                    <li>Apple Silicon and Intel</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav aria-label="Install steps">
+                <ol class="overview">
+                    <li><a href="#s1">Open the .dmg</a></li>
+                    <li><a href="#s2">Drag to install</a></li>
+                    <li><a href="#s3">Allow it to open</a></li>
+                    <li><a href="#s4">Grant access</a></li>
+                </ol>
+            </nav>
+
+            <div class="steps">
+                <section class="step" aria-labelledby="s1">
+                    <div class="num" aria-hidden="true">1</div>
+                    <div class="step-body">
+                        <h2 id="s1">Open the disk image</h2>
+                        <p>Double-click <code>DeepClean-1.3.11.dmg</code> in your Downloads folder. A window opens with DeepClean, an Applications shortcut, and a short Read Me First note.</p>
+                    </div>
+                </section>
+
+                <section class="step" aria-labelledby="s2">
+                    <div class="num" aria-hidden="true">2</div>
+                    <div class="step-body">
+                        <h2 id="s2">Drag DeepClean to Applications</h2>
+                        <p>Drop the DeepClean icon onto the Applications folder in that window and wait for the copy to finish. That is the whole install.</p>
+                        <figure class="figure">
+                            <div class="drag" aria-hidden="true">
+                                <div class="drag-item"><img src="DeepClean-Icon.png" alt="" width="56" height="56">DeepClean</div>
+                                <svg class="drag-arrow" viewBox="0 0 64 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h58M53 2l7 6-7 6" stroke-dasharray="4 4"/></svg>
+                                <div class="drag-item"><svg class="folder" viewBox="0 0 56 56" fill="none"><path d="M6 15a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V15z" fill="currentColor" opacity=".9"/><path d="M6 21h44" stroke="#0A0A0C" stroke-opacity=".25"/><path d="M22 36l6-8 6 8M25 32h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Applications</div>
+                            </div>
+                            <figcaption>Afterwards you can eject the disk image and delete the .dmg file.</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="step" aria-labelledby="s3">
+                    <div class="num" aria-hidden="true">3</div>
+                    <div class="step-body">
+                        <h2 id="s3">Allow it to open the first time<span class="tag">Once only</span></h2>
+                        <p>Open DeepClean from Applications. macOS will say it cannot check the app. That is expected for apps from outside the App Store, and here is how to get past it.</p>
+
+                        <div class="os-switch" role="tablist" aria-label="Your macOS version" hidden>
+                            <button type="button" role="tab" id="tab-new" aria-controls="os-new" aria-selected="true">macOS 15 or later</button>
+                            <button type="button" role="tab" id="tab-old" aria-controls="os-old" aria-selected="false" tabindex="-1">macOS 13 or 14</button>
+                        </div>
+
+                        <div class="os-panel" id="os-new" role="tabpanel" aria-labelledby="tab-new">
+                            <h3 class="os-heading">macOS 15 Sequoia and later</h3>
+                            <ol class="actions">
+                                <li>Click <strong>Done</strong> on the message.</li>
+                                <li>Open <strong>System Settings</strong> and choose <strong>Privacy &amp; Security</strong>.</li>
+                                <li>Scroll down to <strong>Security</strong> and click <strong>Open Anyway</strong> next to DeepClean.</li>
+                                <li>Confirm with your password or Touch ID.</li>
+                            </ol>
+                            <figure class="figure">
+                                <span class="sys-label" aria-hidden="true">System Settings › Privacy &amp; Security › Security</span>
+                                <div class="sys-row" aria-hidden="true"><span>“DeepClean” was blocked to protect your Mac.</span><span class="sys-btn">Open Anyway</span></div>
+                                <figcaption>Not there? The button only shows for about an hour after macOS blocks the app. Open DeepClean again, then come back to this screen.</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="os-panel" id="os-old" role="tabpanel" aria-labelledby="tab-old">
+                            <h3 class="os-heading">macOS 13 Ventura and macOS 14 Sonoma</h3>
+                            <ol class="actions">
+                                <li>In Applications, right-click (or Control-click) DeepClean.</li>
+                                <li>Choose <strong>Open</strong> from the menu.</li>
+                                <li>Click <strong>Open</strong> in the dialog that appears.</li>
+                            </ol>
+                        </div>
+
+                        <details class="why">
+                            <summary>Why does macOS warn me?</summary>
+                            <p>DeepClean needs Full Disk Access to look inside the folders that make up System Data, and App Store apps are not allowed to ask for that. So DeepClean is distributed directly, and macOS asks you to confirm the first time. You do not need to change your Mac's security settings for other apps, and we recommend you do not.</p>
+                        </details>
+                    </div>
+                </section>
+
+                <section class="step" aria-labelledby="s4">
+                    <div class="num" aria-hidden="true">4</div>
+                    <div class="step-body">
+                        <h2 id="s4">Grant Full Disk Access and scan</h2>
+                        <p>DeepClean asks for Full Disk Access when it first opens, so it can scan the caches, logs, and developer folders behind System Data. Click the button in the app, switch DeepClean on in the list, and the scan starts on its own.</p>
+                        <figure class="figure">
+                            <span class="sys-label" aria-hidden="true">System Settings › Privacy &amp; Security › Full Disk Access</span>
+                            <div class="sys-row" aria-hidden="true"><span class="sys-app"><img src="DeepClean-Icon.png" alt="" width="24" height="24">DeepClean</span><span class="toggle"></span></div>
+                        </figure>
+                        <p class="privacy-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Everything happens on your Mac. File names, paths, and contents never leave it.</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="help" aria-label="More help">
+                <h2 class="help-title">If you need more</h2>
+                <div class="card">
+                    <h2>Something not working?</h2>
+                    <ul>
+                        <li><strong>Download did not start:</strong> use the link in your download email.</li>
+                        <li><strong>No Open Anyway button:</strong> open DeepClean once more, then check Privacy &amp; Security again.</li>
+                        <li><strong>Still stuck:</strong> email <a href="mailto:support@deepclean.app">support@deepclean.app</a> with your macOS version and what you see. A real person replies.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Already bought DeepClean?</h2>
+                    <p>Click <strong>Unlock</strong> in the sidebar, choose <strong>I have a license key</strong>, and paste the key from your email.</p>
+                    <p>Bought it here with DeepClean open? <strong>Activate in DeepClean</strong> on the receipt page fills it in for you.</p>
+                </div>
+                <div class="card card-wide" id="connect">
+                    <h2>Connect your download (optional)</h2>
+                    <p>Link your download email to usage statistics from your Mac, so we can see where setup gets stuck. File names and contents are never included, and the app asks before connecting.</p>
+                    <div data-setup-container hidden>
+                        <a data-setup-link class="btn btn-secondary">Open DeepClean and connect</a>
+                    </div>
+                    <p class="connect-fallback">To connect, open this page in the browser you downloaded with, or use the setup link in your download email.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; 2026 DeepClean. Built for macOS with care.</span>
+            <nav class="footer-links" aria-label="Footer"><a href="/">Home</a><a href="/#download">Pricing</a><a href="/blog/">Blog</a><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+        </div>
+    </footer>
+    <!-- DOWNLOAD MODAL: email, verification code, then the DMG starts -->
+    <div class="modal-overlay" id="downloadModal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="dl-title">
+            <button class="modal-close" type="button" data-close-modal aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+            <div id="dl-form">
+                <h3 id="dl-title">Get DeepClean for Mac</h3>
+                <p class="modal-intro">Enter your email and we'll send a 6-digit code. Verify it to start the download.</p>
+                <div class="field">
+                    <label for="dl-email">Email</label>
+                    <input type="email" id="dl-email" placeholder="you@example.com" autocomplete="email" inputmode="email">
+                </div>
+                <div id="dl-email-error" class="field-error" hidden>Please enter a valid email address.</div>
+                <button type="button" id="dl-submit" class="btn btn-primary btn-lg"><span class="btn-spinner"></span><span class="btn-label">Email me a code</span></button>
+                <p class="checkout-note">5 MB · macOS 13 or later · No card. We only email you about DeepClean, and you can ask us to remove your address at any time. <a href="/privacy" style="color:var(--text-2);border-bottom:1px solid var(--line-strong)">Privacy</a></p>
+            </div>
+            <div id="dl-verification" hidden>
+                <h3>Check your inbox</h3>
+                <p class="modal-intro">Enter the 6-digit code sent to <strong id="dl-code-destination"></strong>. It expires in 10 minutes.</p>
+                <div class="field"><label for="dl-code">Verification code</label><input type="text" id="dl-code" placeholder="000000" autocomplete="one-time-code" inputmode="numeric" maxlength="6"></div>
+                <div id="dl-code-error" class="field-error" hidden></div>
+                <button type="button" id="dl-verify" class="btn btn-primary btn-lg"><span class="btn-spinner"></span><span class="btn-label">Verify &amp; download</span></button>
+                <div class="success-actions"><button type="button" id="dl-resend" class="btn btn-secondary">Resend code</button><button type="button" id="dl-change-email" class="btn btn-secondary">Change email</button></div>
+            </div>
+            <div id="dl-success" class="modal-success">
+                <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <h4 id="dl-success-title">Your download has started.</h4>
+                <div id="dl-install-next" hidden>
+                <ol style="text-align:left;padding-left:24px;line-height:1.7">
+                    <li>Open the DeepClean disk image from Downloads.</li>
+                    <li>Drag DeepClean to Applications, then open it.</li>
+                    <li>Run a scan and choose up to 10 GB to clean free.</li>
+                </ol>
+                <p>macOS may ask you to allow DeepClean to open. <a href="/download#s3">See first-launch steps</a>.</p>
+                <div data-setup-container hidden style="margin:16px 0;border-top:1px solid var(--line);padding-top:16px">
+                    <p><strong>Help improve setup (optional)</strong></p>
+                    <p>After installing, connect your download email to usage milestones from this Mac. File names and contents stay on your Mac. The app asks for your consent.</p>
+                    <a data-setup-link class="btn btn-secondary">Open DeepClean and connect</a>
+                    <p style="font-size:13px">You can do this later using the link in your download email.</p>
+                </div>
+                </div>
+                <p id="dl-success-message">The install steps are also on their way to your inbox.</p>
+                <div class="success-actions">
+                    <button type="button" id="dl-retry" class="btn btn-secondary">Download again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var t = document.getElementById('nav-toggle'), l = document.getElementById('nav-links');
+        t.addEventListener('click', function () { var o = !l.classList.contains('open'); l.classList.toggle('open', o); t.setAttribute('aria-expanded', o ? 'true' : 'false'); t.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); });
+
+        // macOS version switch. Without JS both versions stay visible, stacked.
+        (function () {
+            var bar = document.querySelector('.os-switch');
+            var tabs = [].slice.call(bar.querySelectorAll('[role="tab"]'));
+            function select(tab, focus) {
+                tabs.forEach(function (t) {
+                    var on = t === tab;
+                    t.setAttribute('aria-selected', on ? 'true' : 'false');
+                    t.tabIndex = on ? 0 : -1;
+                    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+                });
+                if (focus) tab.focus();
+            }
+            tabs.forEach(function (tab, i) {
+                tab.addEventListener('click', function () { select(tab); });
+                tab.addEventListener('keydown', function (e) {
+                    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+                    e.preventDefault();
+                    select(tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length], true);
+                });
+            });
+            document.querySelectorAll('.os-heading').forEach(function (h) { h.hidden = true; });
+            bar.hidden = false;
+            select(tabs[0]);
+        })();
+
+    </script>
+    <script src="/scripts/download-gate.js"></script>
+<script src="/scripts/journey.js" defer></script>
+</body>
+</html>

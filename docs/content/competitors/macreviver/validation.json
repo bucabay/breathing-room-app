@@ -1,0 +1,18 @@
+{
+  "jobId": "research-macreviver",
+  "result": "passed-research-integrity-checks-not-drafting-gates",
+  "method": "Executed read-only Python assertions after writing research.json and research.md",
+  "checks": {
+    "sourceSnapshotSha256Matches": 11,
+    "newOfficialResponsesHttp200": 9,
+    "discoverySnapshotSha256Match": true,
+    "selectedBreathingRoomImageSha256Match": true,
+    "claimSourceReferencesValid": 12,
+    "materialSourceTextAssertionsPassed": 6,
+    "explicitBlockingGatesPreserved": 3,
+    "competitorImageLinkOnlyAndNullOriginalHash": true,
+    "researchMarkdownExists": true
+  },
+  "notPerformed": ["Native installation or cleanup", "Installer download or binary verification", "Competitor image download or visual approval", "Browser interaction", "Marketing site checks/build/tests because no site files changed", "Independent editorial review"],
+  "outcome": "Research packet retained. Drafting blocked on current compatibility, current price conditions and competitor image reuse rights."
+}

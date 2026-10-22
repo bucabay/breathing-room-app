@@ -1,0 +1,11 @@
+uid=57_0 RootWebArea "Privacy error" url="chrome-error://chromewebdata/"
+  uid=57_1 heading "Your connection is not private" level="1"
+  uid=57_2 "Attackers might be trying to steal your information from "
+  uid=57_3 "www.minicreo.com"
+  uid=57_4 " (for example, passwords, messages, or credit cards). "
+  uid=57_5 link "Learn more about this warning" url="chrome-error://chromewebdata/#"
+  uid=57_7 button "NET::ERR_CERT_AUTHORITY_INVALID" expandable
+  uid=57_8 link "Turn on enhanced protection" url="chrome-error://chromewebdata/#"
+  uid=57_10 " to get Chrome's highest level of security"
+  uid=57_11 button "Back to safety"
+  uid=57_12 button "Advanced" expandable

@@ -1,0 +1,55 @@
+{
+  "commit": "e320bd6a02217a454fa39796387449211ffd4c01",
+  "sources": [
+    {
+      "id": "repository-head",
+      "url": "https://api.github.com/repos/colinvkim/Radix/commits/main",
+      "finalUrl": "https://api.github.com/repos/colinvkim/Radix/commits/main",
+      "retrievedAtUtc": "2026-10-21T22:02:15.645767+00:00",
+      "httpStatus": 200,
+      "path": "sources/repository-head.json",
+      "sha256": "a92051b489b575f9ad06166b2302ed02834e419a998722ec6cbd422e915a8513",
+      "bytes": 30554
+    },
+    {
+      "id": "readme",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "retrievedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "httpStatus": 200,
+      "path": "sources/README.md",
+      "sha256": "a6246e6ab032a637fc064bb88a0847944befe9b1231c372db6e23bb2db55525b",
+      "bytes": 7910
+    },
+    {
+      "id": "license",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+      "retrievedAtUtc": "2026-10-21T22:02:17.192531+00:00",
+      "httpStatus": 200,
+      "path": "sources/LICENSE.txt",
+      "sha256": "d42aa2173a26d9e31bfe08408108f457b7bec66173591f037f7f60867faf52ab",
+      "bytes": 1066
+    },
+    {
+      "id": "release",
+      "url": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "finalUrl": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "retrievedAtUtc": "2026-10-21T22:02:17.974639+00:00",
+      "httpStatus": 200,
+      "path": "sources/latest-release.json",
+      "sha256": "cd86a735e6f8bac58151df8c6caba1e442512858464e03e5189d13a4783f0cdd",
+      "bytes": 12126
+    },
+    {
+      "id": "radix-comparison-image",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/docs/images/radix-scan-comparison.png",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/docs/images/radix-scan-comparison.png",
+      "retrievedAtUtc": "2026-10-21T22:02:19.198536+00:00",
+      "httpStatus": 200,
+      "path": "assets/radix-scan-comparison-original.png",
+      "sha256": "81dc1eba56c260ca3d943adc01949e7e68635308657c343b56deda8b57a82fc4",
+      "bytes": 368841
+    }
+  ]
+}

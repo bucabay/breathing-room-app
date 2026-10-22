@@ -1,0 +1,773 @@
+{
+  "checkedAtUtc": "2026-10-22T11:46:09.782903+00:00",
+  "command": "python3 docs/content/competitors/avg-pc-tuneup/validate.py",
+  "passed": true,
+  "checks": [
+    {
+      "check": "source-path:discovery",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-2/avg-pc-tuneup-directory.json"
+    },
+    {
+      "check": "source-hash:discovery",
+      "passed": true,
+      "detail": "87f6fdc74f503c90235a1537505341ac49f93dea815051a3ccd3c5a31ae31bb5"
+    },
+    {
+      "check": "source-path:pc",
+      "passed": true,
+      "detail": "docs/content/.runtime/verification-2/avg-pc-tuneup-official.json"
+    },
+    {
+      "check": "source-hash:pc",
+      "passed": true,
+      "detail": "b22e50d717af7204fcebda2cfca7deef4e5dd61e96357abdcba535a70fa37f97"
+    },
+    {
+      "check": "source-path:mac",
+      "passed": true,
+      "detail": "docs/content/competitors/avg-pc-tuneup/sources/mac-official.json"
+    },
+    {
+      "check": "source-path:faq",
+      "passed": true,
+      "detail": "docs/content/competitors/avg-pc-tuneup/sources/support-excerpts.json"
+    },
+    {
+      "check": "source-path:guide",
+      "passed": true,
+      "detail": "docs/content/competitors/avg-pc-tuneup/sources/support-excerpts.json"
+    },
+    {
+      "check": "source-path:install",
+      "passed": true,
+      "detail": "docs/content/competitors/avg-pc-tuneup/sources/support-excerpts.json"
+    },
+    {
+      "check": "source-path:requirements",
+      "passed": true,
+      "detail": "docs/content/competitors/avg-pc-tuneup/sources/support-excerpts.json"
+    },
+    {
+      "check": "source-path:br",
+      "passed": true,
+      "detail": "docs/content/capabilities.md"
+    },
+    {
+      "check": "source-path:br-visuals",
+      "passed": true,
+      "detail": "docs/content/screenshots.json"
+    },
+    {
+      "check": "claim-sources:identity",
+      "passed": true,
+      "detail": [
+        "discovery",
+        "pc"
+      ]
+    },
+    {
+      "check": "claim-excerpt:identity",
+      "passed": true,
+      "detail": "Official Website\navg.com/avg-pctuneup"
+    },
+    {
+      "check": "claim-excerpt:identity",
+      "passed": true,
+      "detail": "AVG TuneUp for PC"
+    },
+    {
+      "check": "claim-excerpt:identity",
+      "passed": true,
+      "detail": "Also available for"
+    },
+    {
+      "check": "claim-state:identity",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:windows-scope",
+      "passed": true,
+      "detail": [
+        "pc"
+      ]
+    },
+    {
+      "check": "claim-excerpt:windows-scope",
+      "passed": true,
+      "detail": "Speed up your Windows PC"
+    },
+    {
+      "check": "claim-excerpt:windows-scope",
+      "passed": true,
+      "detail": "Clean your registry the easy way"
+    },
+    {
+      "check": "claim-excerpt:windows-scope",
+      "passed": true,
+      "detail": "Optimize your PC with Sleep Mode"
+    },
+    {
+      "check": "claim-excerpt:windows-scope",
+      "passed": true,
+      "detail": "Update apps and programs automatically"
+    },
+    {
+      "check": "claim-state:windows-scope",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-cleanup",
+      "passed": true,
+      "detail": [
+        "faq",
+        "guide"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-cleanup",
+      "passed": true,
+      "detail": "After the scan completes, you can review the amount of space taken up by unnecessary files and select which files you want to remove from your Mac."
+    },
+    {
+      "check": "claim-excerpt:mac-cleanup",
+      "passed": true,
+      "detail": "Select none: Deselects all listed file categories. You can then manually select the file categories you want to clean."
+    },
+    {
+      "check": "claim-state:mac-cleanup",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-duplicates",
+      "passed": true,
+      "detail": [
+        "faq",
+        "guide"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-duplicates",
+      "passed": true,
+      "detail": "Find duplicates detects multiple files with identical content."
+    },
+    {
+      "check": "claim-excerpt:mac-duplicates",
+      "passed": true,
+      "detail": "Keep oldest: Automatically selects the newest version of each file for removal."
+    },
+    {
+      "check": "claim-excerpt:mac-duplicates",
+      "passed": true,
+      "detail": "Keep newest: Automatically selects the oldest version of each file for removal."
+    },
+    {
+      "check": "claim-excerpt:mac-duplicates",
+      "passed": true,
+      "detail": "Select none: Deselects all files and allows you to manually select files for removal."
+    },
+    {
+      "check": "claim-state:mac-duplicates",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-photos",
+      "passed": true,
+      "detail": [
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-photos",
+      "passed": true,
+      "detail": "Analyze photos detects photos that are blurry, badly lit, or similar."
+    },
+    {
+      "check": "claim-state:mac-photos",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-apps-startup",
+      "passed": true,
+      "detail": [
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-apps-startup",
+      "passed": true,
+      "detail": "Uninstall apps allows you to easily find and remove applications from your Mac that you no longer use."
+    },
+    {
+      "check": "claim-excerpt:mac-apps-startup",
+      "passed": true,
+      "detail": "Review the list of applications, launch agents, and launch daemons."
+    },
+    {
+      "check": "claim-state:mac-apps-startup",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-automatic-browser",
+      "passed": true,
+      "detail": [
+        "guide"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-automatic-browser",
+      "passed": true,
+      "detail": "Click the panel for a browser to review and adjust the items that AVG TuneUp has permission to remove during each scan."
+    },
+    {
+      "check": "claim-excerpt:mac-automatic-browser",
+      "passed": true,
+      "detail": "The selected website is now excluded from cookie clearing."
+    },
+    {
+      "check": "claim-state:mac-automatic-browser",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-monitoring",
+      "passed": true,
+      "detail": [
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-monitoring",
+      "passed": true,
+      "detail": "Scanning: Specify scan options for Cleaning clutter, Finding duplicates, Finding photos, and Uninstalling apps, or allow System Monitor."
+    },
+    {
+      "check": "claim-excerpt:mac-monitoring",
+      "passed": true,
+      "detail": "Notify me when my disk space is less than: Tick or untick this option to enable or disable notifications about the amount of free disk space on your Mac."
+    },
+    {
+      "check": "claim-state:mac-monitoring",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-trash",
+      "passed": true,
+      "detail": [
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-trash",
+      "passed": true,
+      "detail": "Trash: Enable to automatically delete files from the Trash after a specific time."
+    },
+    {
+      "check": "claim-state:mac-trash",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-paid",
+      "passed": true,
+      "detail": [
+        "install",
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-paid",
+      "passed": true,
+      "detail": "AVG TuneUp Premium for Mac is a paid app that requires a subscription to use."
+    },
+    {
+      "check": "claim-excerpt:mac-paid",
+      "passed": true,
+      "detail": "If you installed AVG TuneUp but you have not subscribed to or activated the app following your subscription purchase, the application runs in scan-only mode and cannot clean anything."
+    },
+    {
+      "check": "claim-state:mac-paid",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-price-observed",
+      "passed": true,
+      "detail": [
+        "mac"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-price-observed",
+      "passed": true,
+      "detail": "1 device\n$\n69.99"
+    },
+    {
+      "check": "claim-excerpt:mac-price-observed",
+      "passed": true,
+      "detail": "10 devices\nSAVE 59%\n$\n34.99\n84.99"
+    },
+    {
+      "check": "claim-excerpt:mac-price-observed",
+      "passed": true,
+      "detail": "Savings compared to renewal price $84.99/year."
+    },
+    {
+      "check": "claim-state:mac-price-observed",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:trial-conflict",
+      "passed": true,
+      "detail": [
+        "pc",
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:trial-conflict",
+      "passed": true,
+      "detail": "Try it free for 7 days"
+    },
+    {
+      "check": "claim-excerpt:trial-conflict",
+      "passed": true,
+      "detail": "(no credit card needed)"
+    },
+    {
+      "check": "claim-excerpt:trial-conflict",
+      "passed": true,
+      "detail": "A payment method is required to sign up for a free trial. When the trial ends, your paid subscription starts, unless it has been canceled before."
+    },
+    {
+      "check": "claim-state:trial-conflict",
+      "passed": true,
+      "detail": "contradicted"
+    },
+    {
+      "check": "claim-sources:mac-version-requirements",
+      "passed": true,
+      "detail": [
+        "requirements"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-version-requirements",
+      "passed": true,
+      "detail": "AVG TuneUp 4.x for Mac"
+    },
+    {
+      "check": "claim-excerpt:mac-version-requirements",
+      "passed": true,
+      "detail": "Intel based Mac with 64-bit processor or Apple silicon chip (M1)"
+    },
+    {
+      "check": "claim-excerpt:mac-version-requirements",
+      "passed": true,
+      "detail": "512 MB RAM or above (1 GB RAM or higher preferred)"
+    },
+    {
+      "check": "claim-excerpt:mac-version-requirements",
+      "passed": true,
+      "detail": "750 MB free space on the hard disk"
+    },
+    {
+      "check": "claim-excerpt:mac-version-requirements",
+      "passed": true,
+      "detail": "Internet connection to download, activate, and maintain application updates"
+    },
+    {
+      "check": "claim-state:mac-version-requirements",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-os-conflict",
+      "passed": true,
+      "detail": [
+        "pc",
+        "mac",
+        "requirements"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-os-conflict",
+      "passed": true,
+      "detail": "MacOS 10.10 (Mavericks) or above"
+    },
+    {
+      "check": "claim-excerpt:mac-os-conflict",
+      "passed": true,
+      "detail": "MacOS 10.12 (Sierra) or above"
+    },
+    {
+      "check": "claim-excerpt:mac-os-conflict",
+      "passed": true,
+      "detail": "Apple macOS 10.13.x (High Sierra)"
+    },
+    {
+      "check": "claim-state:mac-os-conflict",
+      "passed": true,
+      "detail": "contradicted"
+    },
+    {
+      "check": "claim-sources:mac-install",
+      "passed": true,
+      "detail": [
+        "install",
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-install",
+      "passed": true,
+      "detail": "Double-click the downloaded setup file avgtuneup.dmg."
+    },
+    {
+      "check": "claim-excerpt:mac-install",
+      "passed": true,
+      "detail": "AVG TuneUp is now installed, but some components may not fully function until you restart your Mac."
+    },
+    {
+      "check": "claim-excerpt:mac-install",
+      "passed": true,
+      "detail": "Each time you remove files, photos, or applications using AVG TuneUp, you are asked to authorize the cleaning process by entering the password that you use when you start your Mac."
+    },
+    {
+      "check": "claim-state:mac-install",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:mac-local-hosted",
+      "passed": true,
+      "detail": [
+        "install",
+        "requirements",
+        "faq"
+      ]
+    },
+    {
+      "check": "claim-excerpt:mac-local-hosted",
+      "passed": true,
+      "detail": "Double-click the downloaded setup file avgtuneup.dmg."
+    },
+    {
+      "check": "claim-excerpt:mac-local-hosted",
+      "passed": true,
+      "detail": "Internet connection to download, activate, and maintain application updates"
+    },
+    {
+      "check": "claim-excerpt:mac-local-hosted",
+      "passed": true,
+      "detail": "Activate AVG TuneUp using the activation code from your order confirmation email."
+    },
+    {
+      "check": "claim-excerpt:mac-local-hosted",
+      "passed": true,
+      "detail": "Privacy: Manage which app-usage data you want to share."
+    },
+    {
+      "check": "claim-state:mac-local-hosted",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:personal-use",
+      "passed": true,
+      "detail": [
+        "mac"
+      ]
+    },
+    {
+      "check": "claim-excerpt:personal-use",
+      "passed": true,
+      "detail": "For personal and family use only. Not for business or commercial use."
+    },
+    {
+      "check": "claim-state:personal-use",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:br-preview",
+      "passed": true,
+      "detail": [
+        "br"
+      ]
+    },
+    {
+      "check": "claim-excerpt:br-preview",
+      "passed": true,
+      "detail": "Preview build for testing and development. Not a production-ready release."
+    },
+    {
+      "check": "claim-excerpt:br-preview",
+      "passed": true,
+      "detail": "Python 3.10+"
+    },
+    {
+      "check": "claim-excerpt:br-preview",
+      "passed": true,
+      "detail": "not Developer ID signed or notarized"
+    },
+    {
+      "check": "claim-state:br-preview",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:br-offer",
+      "passed": true,
+      "detail": [
+        "br"
+      ]
+    },
+    {
+      "check": "claim-excerpt:br-offer",
+      "passed": true,
+      "detail": "The core app is free to download and use."
+    },
+    {
+      "check": "claim-excerpt:br-offer",
+      "passed": true,
+      "detail": "AI Care is optional: $5 USD/month or $50 USD/year."
+    },
+    {
+      "check": "claim-excerpt:br-offer",
+      "passed": true,
+      "detail": "Agent-assisted workflows require an authenticated hosted service connection."
+    },
+    {
+      "check": "claim-state:br-offer",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:br-workflow",
+      "passed": true,
+      "detail": [
+        "br"
+      ]
+    },
+    {
+      "check": "claim-excerpt:br-workflow",
+      "passed": true,
+      "detail": "Review each proposed action's location, method, size, explanation, and rebuild or download cost."
+    },
+    {
+      "check": "claim-excerpt:br-workflow",
+      "passed": true,
+      "detail": "These are observations, not a complete audit trail."
+    },
+    {
+      "check": "claim-state:br-workflow",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:br-approvals",
+      "passed": true,
+      "detail": [
+        "br"
+      ]
+    },
+    {
+      "check": "claim-excerpt:br-approvals",
+      "passed": true,
+      "detail": "Scheduled care cleans only exact locations and methods you previously approved"
+    },
+    {
+      "check": "claim-excerpt:br-approvals",
+      "passed": true,
+      "detail": "Breathing Room must remain running."
+    },
+    {
+      "check": "claim-excerpt:br-approvals",
+      "passed": true,
+      "detail": "Automatically move verified Ruff lint caches to Trash."
+    },
+    {
+      "check": "claim-state:br-approvals",
+      "passed": true,
+      "detail": "verified"
+    },
+    {
+      "check": "claim-sources:unknown-specialties",
+      "passed": true,
+      "detail": [
+        "faq",
+        "guide",
+        "br"
+      ]
+    },
+    {
+      "check": "claim-state:unknown-specialties",
+      "passed": true,
+      "detail": "not-verified"
+    },
+    {
+      "check": "matrix-refs:Platform and fit",
+      "passed": true,
+      "detail": [
+        "identity",
+        "windows-scope",
+        "br-preview"
+      ]
+    },
+    {
+      "check": "matrix-refs:Version/runtime",
+      "passed": true,
+      "detail": [
+        "mac-version-requirements",
+        "mac-os-conflict",
+        "br-preview"
+      ]
+    },
+    {
+      "check": "matrix-refs:Licence/use",
+      "passed": true,
+      "detail": [
+        "mac-paid",
+        "personal-use",
+        "br-preview"
+      ]
+    },
+    {
+      "check": "matrix-refs:Local/hosted",
+      "passed": true,
+      "detail": [
+        "mac-local-hosted",
+        "br-offer"
+      ]
+    },
+    {
+      "check": "matrix-refs:Scan and cleanup",
+      "passed": true,
+      "detail": [
+        "mac-cleanup",
+        "mac-duplicates",
+        "mac-photos",
+        "br-workflow",
+        "unknown-specialties"
+      ]
+    },
+    {
+      "check": "matrix-refs:Approval and automation",
+      "passed": true,
+      "detail": [
+        "mac-cleanup",
+        "mac-automatic-browser",
+        "mac-trash",
+        "br-approvals"
+      ]
+    },
+    {
+      "check": "matrix-refs:Apps/helpers",
+      "passed": true,
+      "detail": [
+        "mac-apps-startup",
+        "unknown-specialties",
+        "br-workflow"
+      ]
+    },
+    {
+      "check": "matrix-refs:Recurring growth",
+      "passed": true,
+      "detail": [
+        "mac-monitoring",
+        "unknown-specialties",
+        "br-approvals",
+        "br-workflow"
+      ]
+    },
+    {
+      "check": "matrix-refs:Developer caches",
+      "passed": true,
+      "detail": [
+        "unknown-specialties",
+        "br-workflow"
+      ]
+    },
+    {
+      "check": "matrix-refs:Price/trial",
+      "passed": true,
+      "detail": [
+        "mac-paid",
+        "mac-price-observed",
+        "trial-conflict",
+        "br-offer"
+      ]
+    },
+    {
+      "check": "matrix-refs:Install caveats",
+      "passed": true,
+      "detail": [
+        "mac-install",
+        "br-preview"
+      ]
+    },
+    {
+      "check": "br-visual-hash",
+      "passed": true,
+      "detail": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+    },
+    {
+      "check": "br-visual-dimensions",
+      "passed": true,
+      "detail": [
+        2940,
+        3468
+      ]
+    },
+    {
+      "check": "br-example-label",
+      "passed": true,
+      "detail": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "check": "avg-real-asset-dom",
+      "passed": true,
+      "detail": "https://static2.avg.com/10005021/web/i/page/avg-tuneup-for-mac-v2/media-clutter-3.png"
+    },
+    {
+      "check": "rights-gate-honest",
+      "passed": true,
+      "detail": "No third-party downloadable original or publication clearance claimed"
+    },
+    {
+      "check": "canonical-owner",
+      "passed": true,
+      "detail": "Alias drafts suppressed under one owner"
+    },
+    {
+      "check": "blocked-state",
+      "passed": true,
+      "detail": "Image reuse blocks drafting; claim-specific OS/trial conditions retained"
+    },
+    {
+      "check": "json-parse",
+      "passed": true,
+      "detail": "research.json, mac-official.json and support-excerpts.json parsed"
+    }
+  ],
+  "artifactSha256": {
+    "docs/content/competitors/avg-pc-tuneup/alternatives-handoff.md": "fbf141b4f9b6a1e4a2b5713f268a951bb11d364ef8ed6e602fe8df245f145818",
+    "docs/content/competitors/avg-pc-tuneup/comparison-handoff.md": "051e3f2717e96263a30bd3ad06a67abdbb3835581506cac3166d8ec58de16a83",
+    "docs/content/competitors/avg-pc-tuneup/research.json": "eeb61fadb03d62f6f136e133978d98fcd7be5d8bf716c3121aa48aa4ff3361d7",
+    "docs/content/competitors/avg-pc-tuneup/research.md": "da0ae7d4e8b06c3679fa77ed42d827ac453fd51eaade59238b91efd7ec24584d",
+    "docs/content/competitors/avg-pc-tuneup/sources/mac-official.json": "d4881c9b06f8d9c076a61bbb3ef303d2ca169a1af5bde1df8a8954d43da392da",
+    "docs/content/competitors/avg-pc-tuneup/sources/support-excerpts.json": "025429c17e8168a57ae352b1f71e503b8e299dc196cc2a5b5a93b6d6bde3ece6",
+    "docs/content/competitors/avg-pc-tuneup/tool-handoff.md": "5171a708aa3448334ecf5d03d66908a3bdeb880d9845a780b8b4916990a41a1f",
+    "docs/content/competitors/avg-pc-tuneup/validate.py": "bbf4249a1a01c5a2535d820e6909e99fd40d1aa698cd27943898608c19e26d15"
+  },
+  "limitations": "Structural integrity and retained-excerpt matching, not independent fact/rights/native QA. Website unchanged; site builds not applicable."
+}

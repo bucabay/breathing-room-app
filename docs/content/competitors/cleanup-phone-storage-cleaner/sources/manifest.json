@@ -1,0 +1,29 @@
+[
+  {
+    "id": "apple",
+    "url": "https://apps.apple.com/us/app/cleanup-phone-storage-cleaner/id1510944943",
+    "finalUrl": "https://apps.apple.com/us/app/cleanup-phone-storage-cleaner/id1510944943",
+    "retrievedAtUtc": "2026-10-21T22:37:06.270423+00:00",
+    "httpStatus": 200,
+    "path": "sources/apple.html",
+    "sha256": "bdc7c331bf8117f8a17f1e976b597c1e7fd88e6a676dc454633bc9f471ae4eb6"
+  },
+  {
+    "id": "terms",
+    "url": "https://cleanup.photos/terms",
+    "finalUrl": "https://cleanup.photos/terms",
+    "retrievedAtUtc": "2026-10-21T22:37:06.837080+00:00",
+    "httpStatus": 200,
+    "path": "sources/terms.html",
+    "sha256": "e03502ad242f7148c5758305a20ef3c2b33976b774459ed0d393f51f4dc6cae4"
+  },
+  {
+    "id": "product-site",
+    "url": "https://cleanupapp.co/",
+    "finalUrl": "https://cleanupapp.co/",
+    "retrievedAtUtc": "2026-10-21T22:37:07.257505+00:00",
+    "httpStatus": 200,
+    "path": "sources/product-site.html",
+    "sha256": "e02758984335e733681df64d5ab7eaaa37510bcbe7ba00a71d5337150f6f5ffa"
+  }
+]

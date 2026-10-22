@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-hidden-file-cleaner",
+  "productId": "hidden-file-cleaner",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationEligible": false,
+  "identity": {
+    "officialName": "Hidden File Cleaner",
+    "publisher": "Idol Software",
+    "homepage": "https://hiddenfilecleaner.app/",
+    "repository": null,
+    "repositoryStatus": "No official source repository established in inspected homepage, EULA, privacy policy or baseline listing. Not proof none exists.",
+    "canonicalOwnerId": "hidden-file-cleaner",
+    "aliases": [],
+    "aliasDecision": "No alternate product identity evidenced. Keep this canonical owner; do not merge with PowerMyMac. No source inspected links those identities.",
+    "skipDecision": {"skip": false, "reason": "Relevant distinct Mac utility; no dead-product or alias evidence. Hold drafts for the visual-rights gate, not an identity skip."},
+    "classification": "adjacent",
+    "classificationReason": "Mac metadata cleanup for external/shared drives and ZIP archives differs from broad storage investigation and app/process activity. Breathing Room metadata-cleaner parity is not verified.",
+    "platformIntent": "Mac workflow; no Windows or Linux executable support claimed. Cross-platform drive sharing does not establish cross-platform app support.",
+    "version": null,
+    "versionStatus": "Exact current build/version and release date not established; avoid version-specific installation recommendations.",
+    "availability": "Official page offers a seven-day trial and its public client download component advertises a universal DMG. Installer not downloaded, installed or tested."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/hidden-file-cleaner/about/",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=8",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:51.480Z",
+    "method": "Reuse competitors.json live-browser-rendered edge and batch-1 official/link verification; no directory refetch.",
+    "listingRetrievedAtUtc": "2026-10-21T19:07:19.757Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/hidden-file-cleaner-directory.json",
+    "snapshotSha256": "24793b2a6992252dd6f1b34c0c8b0e70926dd69e997fd39a469a6decda38690f",
+    "edgeSnapshotStatus": "Edge provenance reused from shared manifest; no separate edge raw snapshot located in this task."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Idol Software", "title": "Hidden File Cleaner homepage (baseline)",
+      "url": "https://hiddenfilecleaner.app", "finalUrl": "https://hiddenfilecleaner.app",
+      "retrievedAtUtc": "2026-10-21T19:08:06.305968+00:00", "publishedOn": null,
+      "snapshotPath": "docs/content/.runtime/verification-1/hidden-file-cleaner-official.json",
+      "snapshotSha256": "06149f4e0e945b9d9adf9209812c8f01177aeb5af00df7d5c42b7b44965db574",
+      "reuse": "Read original snapshot and batch-1 record; current same-day facts reused."
+    },
+    {
+      "id": "S2", "publisher": "Idol Software", "title": "End User License Agreement",
+      "url": "https://hiddenfilecleaner.app/eula", "finalUrl": "https://hiddenfilecleaner.app/eula",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOn": "2024-04-04",
+      "method": "Read-only WebFetch; retained supporting excerpts in claim ledger, not a raw full-page snapshot."
+    },
+    {
+      "id": "S3", "publisher": "Idol Software", "title": "Privacy Policy",
+      "url": "https://hiddenfilecleaner.app/privacy-policy", "finalUrl": "https://hiddenfilecleaner.app/privacy-policy",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOn": "2024-04-04",
+      "method": "Read-only WebFetch; retained supporting excerpts, vendor policy not an independent privacy audit."
+    },
+    {
+      "id": "S4", "publisher": "Idol Software", "title": "Homepage HTML visual and download discovery",
+      "url": "https://hiddenfilecleaner.app/", "finalUrl": "https://hiddenfilecleaner.app/",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null,
+      "purpose": "Targeted missing screenshot and download provenance; not a needless baseline price/platform refresh.",
+      "excerpt": "Screenshot of Hidden File Cleaner; /cdn-cgi/image/width=2048,onerror=redirect/screenshot_lightmode.png; /cdn-cgi/image/width=2048,onerror=redirect/screenshot_darkmode.png",
+      "rawToolOutputPath": "/Users/gabe/.local/share/opencode/tool-output/tool_1603010f50013015YnvWy7AyzH"
+    },
+    {
+      "id": "S5", "publisher": "Idol Software", "title": "Public homepage client download component",
+      "url": "https://hiddenfilecleaner.app/_next/static/chunks/app/(pages)/(home)/page-17c33a0374582068.js",
+      "finalUrl": "https://hiddenfilecleaner.app/_next/static/chunks/app/(pages)/(home)/page-17c33a0374582068.js",
+      "retrievedOn": "2026-10-21", "retrievedAtUtc": null,
+      "excerpt": "Compatible with macOS 14 Sonoma and all later versions.; Hidden File Cleaner only works on macOS desktop computers.; https://updates.hiddenfilecleaner.app/latest.dmg; Download (Universal)",
+      "method": "Read public linked JavaScript as text only; did not execute it, access cookies or fetch the installer."
+    },
+    {
+      "id": "S6", "publisher": "Breathing Room", "title": "Current capability and screenshot registers",
+      "url": "https://breathing-room.chatic.ai/", "checkedOn": "2026-10-21",
+      "localEvidence": ["docs/content/capabilities.md", "docs/content/screenshots.json"],
+      "method": "Reuse same-day source/published evidence; no new native or website tests."
+    }
+  ],
+  "claims": [
+    {"id":"H1","wording":"Hidden File Cleaner is a Mac app published under the Idol Software name.","sourceIds":["S1"],"sourceUrl":"https://hiddenfilecleaner.app","excerpt":"Hidden File Cleaner is a Mac app that ensures annoying hidden files don't clutter your drives.; © 2026 Idol Software","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"identity"},
+    {"id":"H2","wording":"The advertised requirement is macOS 14+; the download component calls the installer Universal.","sourceIds":["S1","S5"],"sourceUrl":"https://hiddenfilecleaner.app/","excerpt":"macOS 14+; Download (Universal)","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Exact binary version, architectures and successful execution not independently inspected.","location":"platform/install matrix"},
+    {"id":"H3","wording":"The homepage advertises $8.99 per licence as a one-time payment with free updates, and a seven-day trial with no credit card required.","sourceIds":["S1"],"sourceUrl":"https://hiddenfilecleaner.app#pricing","excerpt":"$ 8.99 /license One-time payment No monthly fees Free updates; Try it for free for 7 days! No credit card required.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"advertised-offer","conditions":"Dollar symbol only: currency code, tax, regional checkout total, refund terms, trial restrictions and activation not verified. No checkout visited. Do not rewrite as USD or a tested purchase.","location":"pricing"},
+    {"id":"H4","wording":"The vendor documents metadata cleanup including .DS_Store, .fseventsd, .Spotlight-V100, .Trashes, .apdisk and AppleDouble files, with ZIP support.","sourceIds":["S1"],"sourceUrl":"https://hiddenfilecleaner.app#faq","excerpt":"Hidden File Cleaner removes unnecessary macOS metadata files, including .DS_Store, .fseventsd, .Spotlight-V100, .Trashes, .apdisk, and ._ (AppleDouble) files.; It even works on ZIP archives!","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented-not-tested","conditions":"Do not repeat blanket nonessential/safe claims or infer every dotfile is removable.","location":"workflow/scope matrix"},
+    {"id":"H5","wording":"The vendor advertises a pre-cleaning preview, a Finder context-menu action, and optional continuous or one-time cleanup of selected locations.","sourceIds":["S1"],"sourceUrl":"https://hiddenfilecleaner.app#features","excerpt":"Preview exactly what will be removed before cleaning; right clicking and selecting 'Clean with Hidden File Cleaner'; Choose to run continuous cleanup or one-time cleaning.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented-not-tested","conditions":"No cleanup run. Do not infer per-action approval for continuous mode, Trash semantics or recoverability.","location":"approval/workflow matrix"},
+    {"id":"H6","wording":"The vendor says it merges AppleDouble metadata into originals and pauses Spotlight indexing for the drive when cleaning .Spotlight-V100.","sourceIds":["S1"],"sourceUrl":"https://hiddenfilecleaner.app#faq","excerpt":"it properly merges the metadata back into the original files, just like the official dot_clean command-line tool; it pauses Spotlight indexing for that drive","checkedOn":"2026-10-21","state":"verified","evidenceClass":"attributed-vendor-mechanism","conditions":"Implementation, restore behavior and device compatibility untested; not a preservation guarantee.","location":"workflow mechanism"},
+    {"id":"H7","wording":"The EULA grants a purchased personal, non-exclusive, non-transferable licence for use on your own computers for personal or professional purposes and prohibits redistribution, resale, sublicensing, modification and reverse engineering.","sourceIds":["S2"],"sourceUrl":"https://hiddenfilecleaner.app/eula","excerpt":"personal, non-exclusive, non-transferable license ... on your own computers for your own personal or professional purposes. You may not redistribute, resell, sublicense, modify, or reverse engineer the Software.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-legal-terms","conditions":"No numeric device allowance inferred. EULA also provides software as-is without warranty.","location":"licence matrix"},
+    {"id":"H8","wording":"The privacy policy says filesystem data stays local and the app can work offline once activated; it also discloses in-app Google Analytics, Firebase Crashlytics and Lemon Squeezy licence management.","sourceIds":["S3"],"sourceUrl":"https://hiddenfilecleaner.app/privacy-policy","excerpt":"All filesystem data remains strictly on your local computer; Within the Hidden File Cleaner app: We use Google Analytics; we use Firebase Crashlytics; Once activated, Hidden File Cleaner can be used completely offline.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-policy-not-audit","conditions":"Not a no-telemetry claim. Do not treat filesystem-content handling or provider retention as independently audited.","location":"local/hosted matrix"},
+    {"id":"B1","wording":"Breathing Room, which we build, is a macOS 13+ preview with storage views and grouped app/process monitoring; its current-source illustrations contain example data.","sourceIds":["S6"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"capabilities.md: macOS 13+; 0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized; screenshots.json: Example data only; not a native scan, measured activity or cleanup result.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","conditions":"Python 3.10+ prerequisite; clean-machine and physical Intel runtime unverified; source implementation does not establish distributed feature parity.","location":"comparison/installation"},
+    {"id":"B2","wording":"Breathing Room advertises a free local core and optional authenticated hosted AI Care at $5 USD/month or $50 USD/year.","sourceIds":["S6"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"capabilities.md: $5 USD/month, $50 USD/year; Plans renew until cancelled; applicable tax shown at checkout; authenticated hosted reasoning","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-published-offer-and-source-register","conditions":"Hosted assistance may send relevant paths/process/storage data. AI quotas and paid-entitlement enforcement unverified. Direct GitHub release downloads differ from the website account gate.","location":"pricing/privacy comparison"}
+  ],
+  "matrix": [
+    {"dimension":"macOS/installation","competitor":"macOS 14+; advertised universal DMG; binary not tested","claimIds":["H2"],"breathingRoom":"macOS 13+ preview, Python 3.10+, signing/notarization and runtime caveats","breathingRoomClaimIds":["B1"]},
+    {"dimension":"licence/pricing","competitor":"Restricted purchased licence; advertised $8.99 one-time, currency code/tax not verified","claimIds":["H3","H7"],"breathingRoom":"Free Apache-2.0 desktop source/core; optional recurring hosted AI Care","breathingRoomClaimIds":["B1","B2"]},
+    {"dimension":"local/hosted","competitor":"Policy says local filesystem data/offline after activation; telemetry disclosed","claimIds":["H8"],"breathingRoom":"Local inspection versus authenticated hosted AI; not all offline","breathingRoomClaimIds":["B2"]},
+    {"dimension":"scan/cleanup and approvals","competitor":"Metadata/ZIP cleanup, preview, Finder action and optional continuous mode","claimIds":["H4","H5","H6"],"breathingRoom":"Broader storage investigation, reviewable exact actions; optional narrowly restricted automatic Ruff mode and saved daily approvals, per capabilities.md","breathingRoomClaimIds":["B1"],"breathingRoomEvidenceLocator":"docs/content/capabilities.md:24-40"},
+    {"dimension":"helper grouping","competitor":"not verified","claimIds":[],"breathingRoom":"Implemented grouped app/helper CPU/memory sampling, not a forensic audit","breathingRoomClaimIds":["B1"],"breathingRoomEvidenceLocator":"docs/content/capabilities.md:25,54"},
+    {"dimension":"recurring growth","competitor":"Continuous metadata cleanup documented; historical growth attribution not verified","claimIds":["H5"],"breathingRoom":"Local sampled activity/history and advertised AI investigation; runtime limitations","breathingRoomClaimIds":["B1","B2"],"breathingRoomEvidenceLocator":"docs/content/capabilities.md:30-32,76"},
+    {"dimension":"developer caches/runtime","competitor":"Cache adapters and runtime dependencies not verified; metadata focus does not prove absence","claimIds":["H4"],"breathingRoom":"Source includes named package/build cache queries; tools/path validation required, not universal compatibility","breathingRoomClaimIds":["B1"],"breathingRoomEvidenceLocator":"docs/content/capabilities.md:28,51"}
+  ],
+  "visuals": [
+    {
+      "id":"hidden-file-cleaner-official-light", "productId":"hidden-file-cleaner", "view":"Official app UI screenshot, light mode", "kind":"official-asset",
+      "sourcePageUrl":"https://hiddenfilecleaner.app/#features", "assetUrl":"https://hiddenfilecleaner.app/screenshot_lightmode.png",
+      "pageAssetUrl":"https://hiddenfilecleaner.app/cdn-cgi/image/width=2048,onerror=redirect/screenshot_lightmode.png",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"sourcePageCheckedOn":"2026-10-21","capturedBy":null,"productVersion":null,
+      "dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "widthPx":null,"heightPx":null,"htmlDeclaredWidth":968,"htmlDeclaredHeight":470,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Public official screenshot reference, not a republication licence. Homepage reserves all rights; EULA does not grant image reuse. No permitted download/republication basis established.","evidenceUrlOrPath":"https://hiddenfilecleaner.app/eula","credit":"Hidden File Cleaner / Idol Software"},
+      "caption":"Official Hidden File Cleaner app screenshot linked from the vendor's feature section. Version and vendor capture date unknown; not our hands-on test.",
+      "alt":"Official Hidden File Cleaner app screenshot (light mode); follow the vendor link to view.",
+      "supportedClaimIds":["H4","H5"],"limitations":["Asset not downloaded or visually inspected; UI details not used as claim evidence.","HTML image dimensions are not measured asset dimensions.","Link-only fallback does not satisfy the required on-page competitor visual gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"dataMode":"example",
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","productVersion":null,"osVersion":null,"edits":[],
+      "reuse":{"status":"cleared","basis":"Reuse screenshot-library app-owner-requested first-party UI capture with required disclosure; third-party app marks remain their owners' marks.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "privacyReview":{"status":"reviewed-in-library","redactions":[]},
+      "limitations":["Current-source render at recorded commit, not distributed-release/native behavior evidence.","Keep example-data banner and caption. Target-page crop/readability needs independent review."],
+      "review":{"status":"library-reviewed-target-page-pending","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "unknowns": ["Exact competitor version/build/release date and binary signing/notarization", "Official source repository", "Competitor price currency code, taxes, checkout total, refund terms and exact activation/device limits", "Runtime dependencies/permissions, deletion recovery and continuous-mode approval details", "Measured resource use, cleanup outcomes and real device compatibility", "Competitor helper grouping, growth attribution and developer-cache capabilities"],
+  "blockers": [
+    {"id":"visual-rights","severity":"critical","diagnostic":"Official real-app screenshot URLs identified, but no explicit reuse permission/licence established. Asset remains link-only, undownloaded and unreviewed. Required competitor on-page image gate is unsatisfied.","resolution":"Obtain documented image reuse permission or an explicitly approved editorial rights basis; then download permitted original, hash, inspect privacy/UI, and review responsive placement. No permission request sent."}
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference", "proposedSlug":"mac-drive-metadata-cleanup-before-sharing", "title":"Before sharing a Mac drive: review metadata, not every hidden file",
+      "primaryIntent":"Choose a metadata-specific cleanup workflow for a shared external drive or ZIP without confusing it with reclaiming Mac disk space.",
+      "lead":"Proposed conclusion: a targeted metadata cleaner addresses drive-sharing clutter; a broad storage investigation answers a different question. Neither size nor a leading dot grants permission to delete.",
+      "sections":["Define the receiving-device problem without claiming a reproduced compatibility failure", "Vendor-documented file types and AppleDouble/Spotlight handling, with attribution", "Select locations and review the preview; distinguish optional continuous mode from a one-off pass", "Separate metadata housekeeping from storage capacity and app-growth investigation", "Choose a specialist or broader preview with honest privacy, runtime and cost boundaries"],
+      "visualPlan":"After lead: official competitor app image only once rights cleared. Later: selected Breathing Room Space example-data preview.",
+      "interactionHandoff":"Non-mutating decision checklist: receiving-device clutter vs low Mac free space; selected shared location vs whole system; metadata preservation/backup needs; one-time vs continuous mode. Output bounded guidance, never delete files or estimate savings.",
+      "additionalEvidenceBeforeTutorial":"If adding executable commands, verify Apple documentation and retain safe reproduction evidence separately; do not copy vendor claims into a tested tutorial.",
+      "internalLinks":["/comparisons/", "/comparisons/hidden-file-cleaner/"],
+      "status":"brief-only-blocked-not-a-draft"
+    },
+    "comparison": {
+      "proposedSlug":"hidden-file-cleaner", "title":"Hidden File Cleaner vs Breathing Room: metadata or storage investigation?",
+      "primaryIntent":"Decide between adjacent Mac utilities, not assert a drop-in replacement.",
+      "structure":["Concise scoped answer and disclosure: Breathing Room, which we build", "Sourced matrix: OS, job, approval modes, local/hosted boundary, licence/cost and installation caveats", "Choose Hidden File Cleaner for its documented metadata/ZIP/Finder workflow", "Consider Breathing Room for broader storage/app investigation if preview/runtime constraints are acceptable", "Unknowns, date and link to distinct workflow article"],
+      "advantages":["Hidden File Cleaner documents a specialist metadata/ZIP workflow, Finder action, optional continuous cleanup, one-time pricing and offline use after activation.","Breathing Room source provides broader storage views, helper grouping and activity investigation; free local core and optional hosted AI are separate."],
+      "tradeoffs":["Competitor feature/resource promises are untested vendor statements, not guaranteed data preservation or zero CPU use.","Breathing Room is not a verified substitute for metadata/ZIP cleanup; preview is not notarized, needs Python 3.10+ and has unverified clean-machine/Intel behavior.","Hosted AI is not entirely local/offline and AI Care is recurring rather than a one-time competitor licence."],
+      "status":"brief-only-blocked-not-a-draft"
+    }
+  },
+  "researchMethods": {"handsOnTesting":false,"cleanupPerformed":false,"accountsOrCheckoutUsed":false,"browserUsed":false,"imageDownloads":0,"siteEdits":false,"queueEdits":false,"independentReview":"pending separate stage","freshness":"Refresh volatile facts within 30 days and before publication if stale."},
+  "validation": ["10 Python structural/provenance checks passed; see validation.json. No site or native tests performed."]
+}

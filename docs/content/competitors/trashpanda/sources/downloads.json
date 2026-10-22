@@ -1,0 +1,42 @@
+{
+  "url": "https://trashpandamacos.vercel.app/downloads",
+  "finalUrl": "https://trashpandamacos.vercel.app/downloads",
+  "httpStatus": 200,
+  "retrievedAtUtc": "2026-10-21T22:21:00.551384+00:00",
+  "rawPath": "sources/downloads.html",
+  "rawSha256": "e25cb169c4080c11d28e77f1b21f0e8dd9c8c22855cd04e7e511c3cb94381bb8",
+  "text": "TrashPanda\nUpdates\nFAQ\nRe-download TrashPanda\nEnter your purchase information to download TrashPanda again. We'll verify your purchase with Stripe.\nDownload by email\nEnter the email address you used when purchasing TrashPanda.\nDownload TrashPanda\nReleases\nThe 4.x line requires macOS 14. Check the badge before installing.\nTrashPanda\n4.1\nAnniversary Edition\nTrashPanda-4.1.pkg\nmacOS\n14.0\n+ (\nSonoma\n)\nAvailable now\nLatest stable version (Recommended). Fixes the Watchtower READ-ONLY report.\nPrevious releases (\n4\n)\nTrashPanda\n4.0.1\nAnniversary Edition\nTrashPanda-4.0.1.pkg\nmacOS\n14.0\n+ (\nSonoma\n)\nPrevious\nPrevious 4.x build. Fixes Intel Mac installs.\nTrashPanda\n4.0\nAnniversary Edition\nTrashPanda-4.0.pkg\nmacOS\n14.0\n+ (\nSonoma\n)\nPrevious\nPrevious 4.x build. Known to fail installing on some Intel Macs.\nTrashPanda\n3.0\nTrashPanda-3.0.pkg\nmacOS\n13.0\n+ (\nVentura\n)\nPrevious\nPrevious stable version\nTrashPanda\n2.0\nTrashPanda-2.0.pkg\nmacOS\n13.0\n+ (\nVentura\n)\nPrevious\nOlder stable version\nVerify your download\nAfter downloading, you can verify the integrity of the file by checking its MD5 checksum.\nTrashPanda 4.1 (Anniversary Edition) - PKG\ne12d9ff6e5ea2be2f8f2947e6b35fc44\nmd5 ~/Downloads/\nTrashPanda-4.1.pkg\nChecksums for previous releases (\n4\n)\nTrashPanda 4.0.1 (Anniversary Edition) - PKG\nd07d8ca0b49183357a354842e4698a62\nmd5 ~/Downloads/\nTrashPanda-4.0.1.pkg\nTrashPanda 4.0 (Anniversary Edition) - PKG\n6bbbdb44d6b048beb64bf84cfbe35169\nmd5 ~/Downloads/\nTrashPanda-4.0.pkg\nTrashPanda 3.0 (Previous Release) - PKG\n32c9d75dedd48d34eeeda8356b45b41b\nmd5 ~/Downloads/\nTrashPanda-3.0.pkg\nTrashPanda 2.0 (Older Release) - PKG\ne27f202f910c8b035e5b46d6b8808aba\nmd5 ~/Downloads/\nTrashPanda-2.0.pkg\nHow to verify:\nOpen Terminal\nCopy and run the command above for your downloaded version\nCompare the output with the MD5 hash shown\nIf the checksums match, your download is verified and safe to install.\nLost your purchase information? Need help?\n\ud83d\udce7 Contact Support\n\ud83c\udfe0 Back to Home\nDownload TrashPanda for macOS | TrashPanda",
+  "images": [
+    {
+      "alt": "TrashPanda",
+      "loading": "lazy",
+      "width": "28",
+      "height": "28",
+      "decoding": "async",
+      "data-nimg": "1",
+      "class": "rounded-md",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=%2Ftrashpanda.png&w=32&q=75 1x, /_next/image?url=%2Ftrashpanda.png&w=64&q=75 2x",
+      "src": "/_next/image?url=%2Ftrashpanda.png&w=64&q=75"
+    },
+    {
+      "alt": "TrashPanda Mac cleaner app icon",
+      "loading": "lazy",
+      "width": "44",
+      "height": "44",
+      "decoding": "async",
+      "data-nimg": "1",
+      "class": "shrink-0",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=%2Ftrashpanda.png&w=48&q=75 1x, /_next/image?url=%2Ftrashpanda.png&w=96&q=75 2x",
+      "src": "/_next/image?url=%2Ftrashpanda.png&w=96&q=75"
+    }
+  ],
+  "links": [
+    "/",
+    "/updates",
+    "/faq",
+    "/support",
+    "/"
+  ]
+}

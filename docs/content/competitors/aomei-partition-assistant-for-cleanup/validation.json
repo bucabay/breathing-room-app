@@ -1,0 +1,68 @@
+{
+  "jobId": "research-aomei-partition-assistant-for-cleanup",
+  "checkedAtUtc": "2026-10-21T22:28:20.361009+00:00",
+  "checks": [
+    {
+      "check": "research.json parses; blocked research, unpublished",
+      "outcome": "passed"
+    },
+    {
+      "check": "all claim source IDs resolve",
+      "outcome": "passed"
+    },
+    {
+      "check": "all matrix claim references resolve",
+      "outcome": "passed"
+    },
+    {
+      "check": "original retained hash: docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-directory.json",
+      "outcome": "passed"
+    },
+    {
+      "check": "original retained hash: docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-directory.json",
+      "outcome": "passed"
+    },
+    {
+      "check": "original retained hash: docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-browser.json",
+      "outcome": "passed"
+    },
+    {
+      "check": "selected Breathing Room PNG original hash",
+      "outcome": "passed"
+    },
+    {
+      "check": "selected Breathing Room PNG dimensions",
+      "outcome": "passed"
+    },
+    {
+      "check": "required example-data caption retained",
+      "outcome": "passed"
+    },
+    {
+      "check": "official screenshot URL occurs on retained homepage or linked free-page source",
+      "outcome": "passed"
+    },
+    {
+      "check": "price duration conflict retained in actual HTML",
+      "outcome": "passed"
+    },
+    {
+      "check": "no competitor image downloaded",
+      "outcome": "passed"
+    },
+    {
+      "check": "canonical owner and alias skip decision present",
+      "outcome": "passed"
+    },
+    {
+      "check": "research brief, tradeoff and visual sections exist",
+      "outcome": "passed"
+    },
+    {
+      "check": "homepage snapshot complete and retained",
+      "outcome": "passed"
+    }
+  ],
+  "homepageSha256": "05bd43a3c56c545da6c53af3a36c3d1c9a62f2017fe0f033a143d2fdfed9b06b",
+  "scope": "Research consistency checks only. No site tests, browser render, native tests, independent editorial approval or screenshot permission inferred."
+}

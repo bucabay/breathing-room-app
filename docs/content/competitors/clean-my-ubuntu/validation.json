@@ -1,0 +1,22 @@
+{
+  "jobId": "research-clean-my-ubuntu",
+  "status": "passed-research-scope",
+  "reviewer": "scheduled research worker; not independent publication reviewer",
+  "claimReviewer": "All claim entries were checked by this research worker against retained passages; inherited source dates remain unchanged.",
+  "checks": [
+    {"check":"Python standard-library structural assertions","result":"passed, exit 0","details":"research.json parses; 12 unique claims have source IDs, URLs, excerpts, dates, scope conditions and evidence classes; all matrix and visual claim references resolve."},
+    {"check":"Image provenance and PNG headers","result":"passed","details":"Both selected original files match expected SHA-256 and width/height; competitor 1024x768, Breathing Room 2940x3468. Original competitor image unchanged."},
+    {"check":"Inherited raw-capture integrity","result":"passed","details":"Official snapshot SHA-256 9705f730010d92fb86acf72cdca6b8f7fb7ab1e710d44c1e7062390593b302fb and directory snapshot 55ec97e6e46ec34ecafa034d59e4681edaf22e41361c863cd77cdfcf7dc0bfd5 match batch-2."},
+    {"check":"Visual inspection","result":"passed for research only","details":"Opened and read both actual PNGs using image-capable read tool. Competitor is app UI, not landing page; Breathing Room retains visible example-data disclosures. No native or performance test inferred."},
+    {"check":"Official missing-fact reads","result":"completed with recorded limitations","details":"Licence, changelog, privacy and official PPA retrieved and passages read. Latest GitHub release API, v1.1.1 tag page and screenshot-specific README returned 404 and are retained as access failures. PPA availability is supported independently; no dead-product assertion."},
+    {"check":"Identity/platform/nonpublication assertions","result":"passed","details":"Canonical owner clean-my-ubuntu, alias skip false, platform-adjacent fit and Mac-migration-only brief; published false; no critical evidence gap for bounded documentary scope."}
+  ],
+  "snapshotHashes": {
+    "research.json": "3417fd397ae4cd054f519b8718fc9919bf527f1f9611ffd64255408d9f36a7c7",
+    "research.md": "11ed9ca7d047b54a726a73514b471339044d50a565e91df884aed9743d9817fc",
+    "assets/desktop-1-results-original.png": "75faa23f0e07bf65e47d440b34e227f8d781f2517d11456c824b0521e0b45919",
+    "assets/LICENSE-Clean-My-Ubuntu.txt": "dbe3561907c02352bceadac3fe6a06299c15d59616b42de39396b003ff103cc6"
+  },
+  "notPerformed": ["Installation or cleanup", "Competitor runtime tests", "Breathing Room native/binary parity tests", "Website edits/builds/tests", "Browser interactions", "Independent publication review"],
+  "outcome": "Research-only packet complete; bounded draft may proceed. Publication and installation recommendations remain subject to specified independent and missing-evidence gates."
+}

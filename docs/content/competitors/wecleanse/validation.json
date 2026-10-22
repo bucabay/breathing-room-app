@@ -1,0 +1,20 @@
+{
+  "jobId": "research-wecleanse",
+  "result": "passed-structural-checks; research-remains-blocked",
+  "method": "Executed read-only Python assertions against saved artifacts and retained baseline captures.",
+  "checks": [
+    "research.json parses; status blocked and draftingAllowed false",
+    "All three retained baseline source SHA-256 hashes match actual capture bytes",
+    "Selected Breathing Room PNG SHA-256 and 2940x3468 PNG dimensions match manifest",
+    "Every claim source ID resolves",
+    "All unsupported product matrix cells remain not-verified",
+    "Competitor asset URL remains null; Breathing Room caption includes Example data only",
+    "research.md exists; actual PNG opened and visually inspected"
+  ],
+  "artifactSha256": {
+    "research.json": "b8f7af5ba7aed0bfd6c2be091b28cb1775b78557adfdbd164075dac3481c3d35",
+    "research.md": "66a09bab5a3bdc2b2b71d16599755e3e81c3261722fb5444d71acd4e04b19069"
+  },
+  "notPerformed": ["Product execution or cleanup", "Site build/tests: no site edits", "Independent publication review", "New browser interaction"],
+  "diagnostic": "Validation confirms honest blocked handoff and retained provenance, not official product facts or publication readiness."
+}

@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-clean-my-ubuntu",
+  "productId": "clean-my-ubuntu",
+  "status": "research-complete",
+  "published": false,
+  "researchDateUtc": "2026-10-21",
+  "dateNote": "New retrievals occurred at 22:33–22:35 UTC on October 21 according to tool/system timestamps; local task date is October 22. Inherited checks retain their original times.",
+  "identity": {
+    "name": "Clean My Ubuntu",
+    "publisher": "HomieLab",
+    "homepage": "https://github.com/homielab/clean-my-ubuntu",
+    "repository": "https://github.com/homielab/clean-my-ubuntu",
+    "canonicalOwnerId": "clean-my-ubuntu",
+    "aliases": ["cmu"],
+    "aliasDecision": "cmu is the documented terminal command for this same product, not a separate app. No verified PowerMyMac alias relationship; do not merge identities on name similarity. Official README explicitly calls this independent of MacPaw/CleanMyMac.",
+    "aliasSkipDecision": "do-not-skip-as-alias",
+    "classification": "platform-adjacent",
+    "fit": "Ubuntu cleanup utility with overlapping storage/developer-cache jobs; not a verified macOS app or same-platform substitute. Only a Linux-to-Mac workflow replacement intent is eligible.",
+    "publicationDecision": "conditional-proceed-mac-replacement-intent-only",
+    "skip": false,
+    "sourceClaimIds": ["C01", "C02", "C03"]
+  },
+  "ownership": {
+    "onlyDirectory": "docs/content/competitors/clean-my-ubuntu/",
+    "websiteFilesChanged": [],
+    "receiptException": "docs/content/.runtime/research-clean-my-ubuntu.1792622014146998000.receipt.json"
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/clean-my-ubuntu/about/",
+    "destinationUrl": "https://github.com/homielab/clean-my-ubuntu",
+    "retrievedAtUtc": "2026-10-21T19:07:27.752Z",
+    "method": "Reused verification batch-2: owned Chrome tab 16 rendered about-page DOM; not newly browsed.",
+    "snapshotPath": "docs/content/.runtime/verification-2/clean-my-ubuntu-directory.json",
+    "sha256": "55ec97e6e46ec34ecafa034d59e4681edaf22e41361c863cd77cdfcf7dc0bfd5",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7", "retrievedAtUtc": "2026-10-21T18:36:45.366Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=8", "retrievedAtUtc": "2026-10-21T18:37:24.218Z"}
+    ],
+    "edgeBasis": "Existing competitors.json edges reused; about-page raw snapshot and hash checked; seed pages not refetched. Discovery is not feature verification."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "HomieLab / GitHub",
+      "title": "Official repository and rendered README",
+      "url": "https://github.com/homielab/clean-my-ubuntu",
+      "finalUrl": "https://github.com/homielab/clean-my-ubuntu",
+      "retrievedAtUtc": "2026-10-21T19:09:58.582484+00:00",
+      "reusedFrom": "docs/content/verification/batch-2.json#clean-my-ubuntu",
+      "snapshotPath": "docs/content/.runtime/verification-2/clean-my-ubuntu-official.json",
+      "sha256": "9705f730010d92fb86acf72cdca6b8f7fb7ab1e710d44c1e7062390593b302fb",
+      "hashNote": "Hash of complete retained JSON file, verified in this job. Its internal sha256 field is not the file hash.",
+      "scope": "README on main as previously retrieved, not a pinned release or tested executable",
+      "publicationDate": null
+    },
+    {
+      "id": "S02",
+      "publisher": "HomieLab",
+      "title": "MIT licence",
+      "url": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/LICENSE",
+      "checkedDateUtc": "2026-10-21",
+      "method": "Read-only WebFetch; full text retained as assets/LICENSE-Clean-My-Ubuntu.txt",
+      "excerpt": "Copyright (c) 2026 HomieLab. Permission is hereby granted ... to deal in the Software without restriction ... The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+      "scope": "Repository software and associated documentation; preserve notice with repository screenshot; no trademark endorsement inferred"
+    },
+    {
+      "id": "S03",
+      "publisher": "HomieLab",
+      "title": "Changelog",
+      "url": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/CHANGELOG.md",
+      "finalUrl": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/CHANGELOG.md",
+      "checkedDateUtc": "2026-10-21",
+      "method": "Read-only WebFetch; relevant passages retained in claims",
+      "publicationDate": "2026-10-17",
+      "scope": "Documentation of 1.1.1 and earlier changes, not proof of downloadable GitHub release"
+    },
+    {
+      "id": "S04",
+      "publisher": "HomieLab",
+      "title": "Privacy policy",
+      "url": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/docs/PRIVACY.md",
+      "finalUrl": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/docs/PRIVACY.md",
+      "checkedDateUtc": "2026-10-21",
+      "publicationDate": "2026-10-13",
+      "method": "Read-only WebFetch; relevant passages retained in claims",
+      "scope": "Publisher statements, not independent network audit"
+    },
+    {
+      "id": "S05",
+      "publisher": "HomieLab / Launchpad",
+      "title": "Clean My Ubuntu PPA",
+      "url": "https://launchpad.net/~homielab/+archive/ubuntu/clean-my-ubuntu",
+      "finalUrl": "https://launchpad.net/~homielab/+archive/ubuntu/clean-my-ubuntu",
+      "checkedDateUtc": "2026-10-21",
+      "method": "Read-only WebFetch; relevant passages retained in claims",
+      "scope": "Published package listing, Noble; no download, installation or signature verification"
+    },
+    {
+      "id": "S06",
+      "publisher": "Breathing Room programme",
+      "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "localPath": "docs/content/capabilities.md",
+      "checkedDateUtc": "2026-10-21",
+      "method": "Reused current same-day register; exact source passages/URLs are retained there. No needless public refetch.",
+      "scope": "Source implementation and advertised preview; not release binary parity or hands-on testing"
+    },
+    {
+      "id": "S07",
+      "publisher": "Breathing Room programme",
+      "title": "Screenshot library",
+      "localPath": "docs/content/screenshots.json",
+      "checkedDateUtc": "2026-10-21",
+      "scope": "Current-source browser preview at commit 54828ac3170b45861aee70861dd0b9c658ed7e51, example data only"
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"Clean My Ubuntu is HomieLab's independent Ubuntu cleanup project; cmu is its terminal app/command.","sourceIds":["S01"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu","excerpt":"It's a desktop app and a terminal app (cmu) that share one engine. ... MIT © 2026 HomieLab ... Clean My Ubuntu is an independent open-source project, not affiliated with MacPaw or CleanMyMac.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"identity, introduction","conditions":"Not a PowerMyMac alias claim; no exhaustive all-brand alias search asserted."},
+    {"id":"C02","wording":"The desktop app requires Ubuntu 24.04+; Ubuntu 22.04 uses the terminal app from the app grid.","sourceIds":["S01"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#install","excerpt":"On Ubuntu 22.04 the app grid opens the terminal app (the desktop app needs 24.04+).","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"platform matrix","conditions":"Do not expand into certified support for all Linux distributions or macOS/Windows. Architectures not verified."},
+    {"id":"C03","wording":"It is free and MIT-licensed; the optional Ko-fi contribution is not a verified paid tier.","sourceIds":["S01","S02"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#support","excerpt":"Clean My Ubuntu is free and always will be. If it saved you some space (or some time), you can buy me a coffee on Ko-fi ... License MIT","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"pricing/licence","conditions":"Publisher offer, not purchase test or guarantee of future terms; no invented currency or subscription."},
+    {"id":"C04","wording":"Normal desktop cleanup is Scan, deselect items to keep, then Clean; locked items use Ubuntu's password dialog.","sourceIds":["S01"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#use-it","excerpt":"press Scan, untick anything you want to keep, press Clean. Items with a 🔒 need your password (the standard Ubuntu dialog); everything else runs as you.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"workflow/approval matrix","conditions":"Not an unconditional confirmation guarantee: documented --clean --yes and automatic cleaning can run without an interactive confirmation."},
+    {"id":"C05","wording":"Documented developer targets include npm, pnpm, pip, Go, Cargo and Docker; downloaded AI models are separate choices, never preselected or automatically cleaned.","sourceIds":["S01","S03"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#what-it-cleans","excerpt":"npm, Yarn, pnpm, Bun, pip, Go, Cargo, Gradle, Maven, Conda; Docker images, build cache, containers and volumes (each separately) ... each Ollama, Hugging Face and LM Studio model on its own — never pre-selected, never cleaned automatically","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"developer workflow","conditions":"Do not equate models, logs, histories, volumes and caches; no universal disposable-data claim or measured speed."},
+    {"id":"C06","wording":"The terminal app documents folder-size browsing, duplicates, uninstalling and a system overview with free-space history.","sourceIds":["S01"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#what-it-cleans","excerpt":"More tools in the terminal app: Uninstaller ... System Overview — storage, free-space history ... Space Lens (browse folders by size), Large & Old Files ... Duplicates, Startup Items and Settings.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"competitor strengths","conditions":"Do not attribute all these tools to the GTK desktop UI or claim Breathing Room has matching tools."},
+    {"id":"C07","wording":"Automatic cleaning is documented with daily, weekly or monthly scheduling and limited targets; it does not automatically empty Trash or clean browsers/apps.","sourceIds":["S01","S03"],"sourceUrl":"https://github.com/homielab/clean-my-ubuntu#automatic-cleaning","excerpt":"runs a weekly (or daily, monthly) clean of user and developer junk ... It never empties the Trash, never touches browsers or apps, never needs your password","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"recurrence/approval matrix","conditions":"Documented systemd user timer, not tested execution. Notification numbers in README are examples."},
+    {"id":"C08","wording":"The publisher says scanning and cleaning records stay local, while update checks/downloads contact GitHub and system maintenance tools may go online.","sourceIds":["S04"],"sourceUrl":"https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/docs/PRIVACY.md","excerpt":"scan results, sizes and file lists are shown to you and never sent anywhere ... Once a day while you use the app ... Reads the latest version number from raw.githubusercontent.com ... Never happens when installed as a package. ... Like any web request, GitHub sees your IP address ... Maintenance → Update everything runs apt update.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"publisher-policy-not-audit","location":"local/hosted matrix","conditions":"Do not promise zero network use or independently audited privacy."},
+    {"id":"C09","wording":"Launchpad currently lists clean-my-ubuntu 1.1.1-0ppa1 for Noble and reports a successful build.","sourceIds":["S05"],"sourceUrl":"https://launchpad.net/~homielab/+archive/ubuntu/clean-my-ubuntu","excerpt":"Published in: Any series Noble ... clean-my-ubuntu 1.1.1-0ppa1 ... HomieLab (2026-10-16) ... Successfully built","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"official-package-listing","location":"version/availability","conditions":"No package installed, binary validated or architecture support inferred. Launchpad warns of unsupported packages from this untrusted PPA."},
+    {"id":"C10","wording":"The changelog documents upstream 1.1.1 dated October 17, 2026, including avoiding Podman initialization during scans.","sourceIds":["S03"],"sourceUrl":"https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/CHANGELOG.md","excerpt":"## [1.1.1] — 2026-10-17 ... Scanning no longer runs Podman for people who have it installed but never used it ... 1.1.1 is the first GitHub release with the 1.1.0 features (1.1.0's release build stopped at the tests).","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"version note","conditions":"Changelog assertion only: GitHub latest API and tag page returned 404 in this job. PPA upload date is October 16; do not collapse these channel dates into a verified release chronology."},
+    {"id":"B01","wording":"Breathing Room, which we build, is a free macOS 13+ maintenance preview; AI Care is advertised at $5 USD/month or $50 USD/year, renewing until cancelled with applicable tax at checkout.","sourceIds":["S06"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"capabilities.md:7: free, Apache-2.0 macOS maintenance preview ... AI Care ... $5 USD/month or $50 USD/year; :49 macOS 13+; :75 Plans renew until cancelled; applicable tax shown at checkout.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","location":"comparison and affiliation","conditions":"Identified preview 0.1.0-preview.1; advertised universal installer, physical Intel untested. Not Developer ID signed/notarized; Python 3.10+ required and not bundled. No certified current-binary parity."},
+    {"id":"B02","wording":"Breathing Room source supports storage views, grouped app/helper CPU/memory, activity history and constrained cleanup; hosted AI requires authentication and network access.","sourceIds":["S06"],"sourceUrl":"https://breathing-room.chatic.ai/privacy/","excerpt":"capabilities.md:24–32: Space, Apps, cleanup and Activity source implementations; :62 assistant sends question, conversation history and subsequent tool outputs; :64 relevant paths/process/storage data can reach the service and Cloudflare Workers AI.","checkedDateUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-register","location":"Mac decision criteria","conditions":"Source support is not hands-on release testing. Default interactive approval, optional narrow automatic Ruff-cache mode, and scheduled exact saved approvals differ. Daily care requires running app; sampled ownership is not forensic attribution."}
+  ],
+  "productMatrix": {
+    "platform": {"claimIds":["C02"],"value":"Ubuntu desktop 24.04+; terminal includes 22.04. macOS/Windows not verified."},
+    "licencePricing": {"claimIds":["C03"],"value":"MIT; publisher says free; optional donations."},
+    "versionAvailability": {"claimIds":["C09","C10"],"value":"PPA Noble 1.1.1-0ppa1 listed; upstream 1.1.1 documented; GitHub release availability not verified."},
+    "localHosted": {"claimIds":["C08"],"value":"Publisher describes local processing with network exceptions; not audited."},
+    "scanCleanup": {"claimIds":["C04","C05","C06"],"value":"Desktop and terminal share engine; package/system and user/developer targets; additional terminal tools."},
+    "approval": {"claimIds":["C04","C07"],"value":"Interactive review, plus explicit unattended CLI/scheduler modes. Not never-deletes-without-asking in all modes."},
+    "helperGrouping": {"claimIds":[],"value":"not verified"},
+    "recurringGrowth": {"claimIds":["C06","C07"],"value":"Free-space history and scheduled cleaning documented; per-app recurring-growth attribution not verified."},
+    "developerCaches": {"claimIds":["C05"],"value":"Multiple package/build caches; exact installed-tool/runtime compatibility not tested."},
+    "runtimeInstall": {"claimIds":["C02","C04","C09"],"value":"Ubuntu PPA/.deb/script routes documented; system actions can require password. Exact dependency and architecture matrix not verified; no install commands executed."},
+    "breathingRoom": {"claimIds":["B01","B02"],"value":"macOS preview only in this comparison; optional hosted paid AI, Python and signing caveats mandatory."}
+  },
+  "visuals": [
+    {
+      "id": "clean-my-ubuntu-desktop-results",
+      "productId": "clean-my-ubuntu",
+      "view": "Desktop Smart Scan results",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/homielab/clean-my-ubuntu",
+      "assetPageUrl": "https://github.com/homielab/clean-my-ubuntu/blob/main/docs/screenshots/desktop-1-results.png",
+      "assetUrl": "https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/docs/screenshots/desktop-1-results.png",
+      "retrievedAtUtc": "2026-10-21T22:34:09.110097+00:00",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "unknown",
+      "originalPath": "docs/content/competitors/clean-my-ubuntu/assets/desktop-1-results-original.png",
+      "originalSha256": "75faa23f0e07bf65e47d440b34e227f8d781f2517d11456c824b0521e0b45919",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1024,
+      "heightPx": 768,
+      "edits": [],
+      "privacyReview": {"status":"reviewed","redactions":[],"notes":"Opened actual PNG: generic system rows only; no visible account or private home paths."},
+      "reuse": {"status":"cleared","basis":"Repository documentation image linked in official README; repository MIT licence expressly includes associated documentation. Preserve full HomieLab copyright and permission notice alongside copied asset; no screenshot-specific conflicting notice found in checked sources. Not a trademark endorsement or blanket rights warranty.","evidenceUrlOrPath":"https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/LICENSE","retainedNoticePath":"docs/content/competitors/clean-my-ubuntu/assets/LICENSE-Clean-My-Ubuntu.txt","credit":"Clean My Ubuntu screenshot © 2026 HomieLab, MIT licence."},
+      "caption": "Clean My Ubuntu's official desktop Smart Scan screenshot. Figures are the publisher's displayed data, not our measurements or verified savings. © 2026 HomieLab; MIT licence.",
+      "alt": "Clean My Ubuntu Smart Scan results with selectable old Snap revisions and log categories, lock icons and a Clean button.",
+      "supportedClaimIds": ["C04"],
+      "limitations": ["Unknown vendor capture date, version, OS build and data provenance.","Do not cite displayed 15.1 GB, 0.5 s or free-space figures as tested performance or recovery.","Independent publication-context and responsive visual review still required."],
+      "review": {"status":"research-visually-inspected","reviewer":"scheduled research worker","reviewedDateUtc":"2026-10-21"}
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "productVersion": null,
+      "osVersion": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "dataMode": "example",
+      "reuse": {"status":"cleared","basis":"Inherited app-owner-requested first-party UI capture; no blanket licence to third-party marks or endorsement inferred.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview"},
+      "privacyReview": {"status":"reviewed","redactions":[],"notes":"Example-data banners visible; opened and read actual PNG again in this job."},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview showing storage categories and visible example-data disclosure.",
+      "edits": [],
+      "supportedClaimIds": ["B02"],
+      "limitations": ["Current-source status is inherited from screenshot library, not newly rendered or verified against a later release.","Not native macOS or binary feature-parity evidence.","Retain both example-data labels; full-page image needs contextual layout/crop review without hiding disclosures."],
+      "review": {"status":"research-visually-inspected","reviewer":"scheduled research worker","reviewedDateUtc":"2026-10-21"}
+    }
+  ],
+  "accessFailures": [
+    {"url":"https://api.github.com/repos/homielab/clean-my-ubuntu/releases/latest","checkedDateUtc":"2026-10-21","result":"404 from WebFetch","effect":"Do not claim verified latest GitHub release or binary download."},
+    {"url":"https://github.com/homielab/clean-my-ubuntu/releases/tag/v1.1.1","checkedDateUtc":"2026-10-21","result":"404 from WebFetch","effect":"Conflicts with changelog release wording; preserve distinction from successfully listed PPA. Not proof of dead project."},
+    {"url":"https://raw.githubusercontent.com/homielab/clean-my-ubuntu/main/docs/screenshots/README.md","checkedDateUtc":"2026-10-21","result":"404 from WebFetch","effect":"No screenshot-specific README available at guessed path. Use actual root MIT licence, not inferred permission from public access."}
+  ],
+  "unknowns": [
+    "Actual runtime, install success, architecture support, dependencies and binary provenance not tested.",
+    "Current GitHub release API/tag accessibility remains unresolved; no latest-binary recommendation permitted.",
+    "PPA upload date October 16 versus changelog date October 17: channel dates differ; exact chronology unknown.",
+    "Competitor helper/process grouping and app-level write attribution not verified; never render these as No.",
+    "Screenshot capture date/build and whether figures are illustrative or native are unknown.",
+    "Breathing Room runtime/binary parity, hosted entitlements/AI allowances and independent publication QA remain unverified as described in capabilities.md."
+  ],
+  "briefs": {
+    "workflow": {
+      "proposedTitle": "Moving an Ubuntu developer cleanup workflow to a Mac",
+      "proposedSlug": "ubuntu-to-mac-developer-cleanup-workflow",
+      "primaryIntent": "A Clean My Ubuntu user switching to macOS needs to separate reusable package caches from models, app data and system-specific maintenance.",
+      "track": "workflow-reference",
+      "descriptionDirection": "Keep the review-first habit, not Ubuntu's system commands. Explain how to inspect a Mac's storage and decide what can be rebuilt before choosing any cleanup action.",
+      "outline": ["Answer first: migrate the decision process, not APT/Snap/journal commands; disclose we build Breathing Room.","Show official Clean My Ubuntu Smart Scan visual and label publisher numbers as untested.","Map categories: package caches, old logs, downloaded models, Docker volumes and personal/project data; do not treat these as interchangeable junk.","Inspect storage owners and folder context in the Mac preview; show Space with example-data disclosures.","Build a keep/rebuild/review checklist: who owns it, can it be regenerated, what download cost, what data would be lost, and which approval applies?", "State platform, Python, preview signing, paid hosted AI and scheduled-runtime boundaries; recommend neither app for an unsupported OS.","Link comparison/hub and any existing tested tool only after routes are verified."]
+    },
+    "comparison": {
+      "proposedTitle": "Clean My Ubuntu and Breathing Room: choosing for your operating system",
+      "proposedSlug": "clean-my-ubuntu-vs-breathing-room",
+      "primaryIntent": "Concise platform-first decision for an Ubuntu user now using a Mac, not two apps competing on one OS.",
+      "matrixClaimIds": ["C02","C03","C04","C05","C06","C07","C08","C09","B01","B02"],
+      "conclusion": "For Ubuntu, Clean My Ubuntu documents Ubuntu-native package/log and terminal workflows. For a Mac, consider Breathing Room, which we build, only if its preview, Python and hosted-AI conditions fit. These are not interchangeable installers.",
+      "length": "Concise; do not expand the matrix into a duplicate workflow post."
+    },
+    "interactionPass": "Hand off a static platform-first decision aid: Ubuntu → official Ubuntu utility docs; Mac → inspect/rebuild/review checklist and preview caveats; other OS → no verified recommendation. Then classify a candidate as regenerable cache, retained model/data, or unknown requiring owner review. No deletion, upload or invented numeric estimator.",
+    "truthfulAdvantages": {
+      "competitor": ["Free MIT project with documented desktop and terminal workflows on Ubuntu.","Ubuntu package/system targets plus additional terminal uninstaller/duplicates tools.","Documented local processing and no-account policy, qualified by network exceptions.","Documented scheduling and free-space history; do not imply Breathing Room alone offers recurrence."],
+      "breathingRoom": ["Mac-oriented storage inspection, grouped helpers and sampled activity source implementations; fit for the Mac side of a migration, not an Ubuntu replacement binary.","Documented constrained native cleanup and saved-approval design, with narrow automatic Ruff exception disclosed."],
+      "tradeoffs": ["Competitor macOS support is not verified; Ubuntu commands are not Mac instructions.","Breathing Room is a non-notarized preview requiring Python 3.10+; physical Intel and clean-machine validation remain pending.","Breathing Room hosted assistant needs authentication/network; optional AI Care is recurring paid service, unlike competitor's advertised free local utility.","No comparative speed, safety, space-recovered or hands-on outcome claims supported."]
+    }
+  },
+  "draftGate": {
+    "status": "ready-for-bounded-draft-not-publication",
+    "criticalResearchBlockers": [],
+    "prohibitedUntilResolved": ["Latest GitHub release/download recommendation", "Measured safety, speed, savings or binary parity", "Non-Ubuntu competitor compatibility", "Unqualified never-deletes-without-asking claim"],
+    "requiredLater": ["Recheck volatile facts after 30 days or before publication if stale", "Independent claim and rights review", "App/source/release delta review for any new installation recommendation", "Responsive rendered visual review", "Draft-only website check/build/test if site content is later authorized"],
+    "skipIf": "If drafting cannot retain a distinct Linux-to-Mac workflow intent, skip this pair rather than produce generic doorway content."
+  },
+  "method": {
+    "handsOnTesting": false,
+    "browserUsedThisJob": false,
+    "skillsLoaded": ["blog-factcheck", "browser-automation"],
+    "notes": "Public pages treated as untrusted source data. No accounts, messages, purchases, installs, cleanup, credentials, deployment, queue changes or subagents. Existing verified records reused first. Publication scores not awarded by research worker."
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="en" data-locale="en" data-page-template="privacy" data-rollout-wave="control"> <head><!-- Theme color: default matches the dark theme; the init script below
+         flips it to the light bg when the resolved theme is light. --><meta name="theme-color" content="#080c14"><!-- Anti-flash theme init: must be first --><script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+        var theme = stored || sys;
+        document.documentElement.setAttribute("data-theme", theme);
+        // Keep the browser UI (address bar) color in sync with the theme.
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f5f8fc" : "#080c14");
+        // Mark JS as active so scroll-reveal can hide content for animation.
+        // Without this class (no JS, or this script failing), all reveal
+        // targets stay at their visible resting state and never ship blank.
+        document.documentElement.classList.add("js");
+      })();
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StorageRadar Privacy Policy | App Store Privacy URL</title><meta name="description" content="StorageRadar privacy policy for the macOS app: local storage data, privacy-safe analytics, diagnostics, purchase flows, retention, and user controls."><meta name="keywords" content="StorageRadar privacy policy, StorageRadar app privacy, macOS app privacy policy, App Store privacy URL, StorageRadar analytics and diagnostics"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link rel="canonical" href="https://storageradar.app/privacy/"><meta name="generator" content="Astro v5.18.0"><!-- Open Graph --><meta property="og:title" content="StorageRadar Privacy Policy | App Store Privacy URL"><meta property="og:description" content="StorageRadar privacy policy for the macOS app: local storage data, privacy-safe analytics, diagnostics, purchase flows, retention, and user controls."><meta property="og:type" content="website"><meta property="og:site_name" content="StorageRadar"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="pt_BR"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:url" content="https://storageradar.app/privacy/"><meta property="og:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta property="og:image:alt" content="StorageRadar Privacy Policy | App Store Privacy URL preview"><link rel="alternate" hreflang="en" href="https://storageradar.app/privacy/"><link rel="alternate" hreflang="de" href="https://storageradar.app/de/privacy/"><link rel="alternate" hreflang="es" href="https://storageradar.app/es/privacy/"><link rel="alternate" hreflang="fr" href="https://storageradar.app/fr/privacy/"><link rel="alternate" hreflang="ja" href="https://storageradar.app/ja/privacy/"><link rel="alternate" hreflang="ko" href="https://storageradar.app/ko/privacy/"><link rel="alternate" hreflang="nl" href="https://storageradar.app/nl/privacy/"><link rel="alternate" hreflang="pt-BR" href="https://storageradar.app/pt-BR/privacy/"><link rel="alternate" hreflang="ru" href="https://storageradar.app/ru/privacy/"><link rel="alternate" hreflang="zh-Hans" href="https://storageradar.app/zh-Hans/privacy/"><link rel="alternate" hreflang="x-default" href="https://storageradar.app/privacy/"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="StorageRadar Privacy Policy | App Store Privacy URL"><meta name="twitter:description" content="StorageRadar privacy policy for the macOS app: local storage data, privacy-safe analytics, diagnostics, purchase flows, retention, and user controls."><meta name="twitter:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta name="twitter:image:alt" content="StorageRadar Privacy Policy | App Store Privacy URL preview"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="StorageRadar Blog" href="/rss.xml"><!-- Favicons --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="128x128" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-5QK60QWFV0"></script><script>(function(){const analyticsContext = {"locale":"en","page_template":"privacy","rollout_wave":"control"};
+const analyticsDebugLocalStorageKey = "storageradar:analytics-debug";
+const analyticsDebugQueryParam = "debugAnalytics";
+const canonicalUrl = "https://storageradar.app/privacy/";
+const gaMeasurementId = "G-5QK60QWFV0";
+const pageTitle = "StorageRadar Privacy Policy | App Store Privacy URL";
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = window.gtag || function () {
+              window.dataLayer.push(arguments);
+            };
+            window.gtag("js", new Date());
+            window.gtag("config", gaMeasurementId, { send_page_view: false });
+
+            window.__storageradarAnalyticsContext = analyticsContext;
+
+            var debugEnabled = false;
+            try {
+              var searchParams = new URLSearchParams(window.location.search);
+              debugEnabled =
+                window.location.hostname === "localhost" ||
+                searchParams.get(analyticsDebugQueryParam) === "1" ||
+                window.localStorage.getItem(analyticsDebugLocalStorageKey) === "1";
+            } catch (_error) {
+              debugEnabled = false;
+            }
+
+            // Canonical origin + path keep page reports clean, while the visit's own query
+            // string stays: GA4 reads utm_* (session source / medium / campaign) and click
+            // IDs from page_location of the landing page_view. Canonical tags are unaffected.
+            var pageLocation = new URL(canonicalUrl);
+            pageLocation.search = window.location.search;
+
+            var pageViewPayload = {
+              locale: analyticsContext.locale,
+              page_template: analyticsContext.page_template,
+              rollout_wave: analyticsContext.rollout_wave,
+              page_location: pageLocation.href,
+              page_path: pageLocation.pathname,
+              page_title: pageTitle,
+            };
+
+            if (debugEnabled) {
+              console.info("[analytics] Applied locale-aware tracking config", analyticsContext);
+              console.debug("[analytics] page_view payload", pageViewPayload);
+            }
+
+            window.gtag("event", "page_view", pageViewPayload);
+          })();</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"StorageRadar","item":"https://storageradar.app/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://storageradar.app/privacy/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"StorageRadar Privacy Policy | App Store Privacy URL","description":"StorageRadar privacy policy for the macOS app: local storage data, privacy-safe analytics, diagnostics, purchase flows, retention, and user controls.","url":"https://storageradar.app/privacy/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"StorageRadar","url":"https://storageradar.app/"},"dateModified":"2026-03-25"}</script><script type="module">const s="storageradar:utm",m=["utm_source","utm_medium","utm_campaign","utm_content"],a={producthunt:{utm_source:"producthunt",utm_campaign:"sr-ph-001"}},l=100,p=new Set(["youtube","youtube.com","youtu.be"]);function i(e){const t={};for(const n of m){const r=e(n);typeof r=="string"&&r.trim()&&(t[n]=r.trim().slice(0,l))}return Object.keys(t).length>0?t:null}function f(e){const t=new URLSearchParams(e);return i(n=>t.get(n))}function _(e){const t=f(e);if(t)return t;const n=new URLSearchParams(e).get("ref")?.trim().toLowerCase(),r=n&&Object.prototype.hasOwnProperty.call(a,n)?a[n]:null;return r?{...r}:null}function h(e){if(!e)return null;try{const t=JSON.parse(e.getItem(s)??"null");return!t||typeof t!="object"?null:i(n=>t[n])}catch{return null}}function A(e,t){const n=h(t);if(n)return n;const r=_(e);if(r&&t)try{t.setItem(s,JSON.stringify(r))}catch{}return r}function u(e){return e.toLowerCase().replace(/[^a-z0-9_-]+/g,"-").replace(/-{2,}/g,"-").replace(/^[-_]+|[-_]+$/g,"")}function g(e){const t=u(e?.utm_campaign??"");if(!t)return null;const n=(e?.utm_source??"").trim().toLowerCase(),r=p.has(n)?"yt":u(n);return(r?`${r}-${t}`:t).slice(0,40).replace(/[-_]+$/,"")||null}function d(e){const t=e.hostname;return(t==="gumroad.com"||t.endsWith(".gumroad.com"))&&e.pathname.startsWith("/l/")}function S(e,t){let n;try{n=new URL(e)}catch{return null}return n.protocol!=="https:"||!(n.hostname==="apps.apple.com"&&n.searchParams.get("ct")==="web")&&!d(n)?null:(n.searchParams.set("ct",t),n.href)}function P(){try{return window.sessionStorage}catch{return null}}function T(){const e=A(window.location.search,P()),t=g(e),n={ct:t??"web"};e?.utm_campaign&&(n.utm_campaign=e.utm_campaign);const r={utm:e,campaign:t,eventParams:n};return window.__storageradarAttribution=r,t&&document.querySelectorAll('a[href*="apps.apple.com"], a[href*="gumroad.com"]').forEach(o=>{const c=S(o.href,t);c&&(o.href=c,new URL(c).hostname==="apps.apple.com"&&(o.dataset.ct=t,o.dataset.ctLocked=""))}),r}T();</script><script src="/youtube-attribution.v1.js?v=b8869519ff10" defer></script><link rel="stylesheet" href="/_astro/_slug_.DhO0ya4m.css"></head> <body> <a href="#main" class="skip-link">Skip to content</a>  <header class="site-nav" id="site-nav"> <div class="container nav-inner"> <a href="/" class="nav-logo"> <svg class="logo-icon-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <nav class="nav-links" aria-label="Main navigation"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> </nav> <a href="/direct/" class="btn btn-outline btn-sm nav-cta nav-cta-direct" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false"> <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <details class="locale-switcher-menu" id="locale-switcher"> <summary class="locale-switcher-trigger"> <span class="locale-switcher-icon"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <line x1="2" y1="12" x2="22" y2="12"></line> <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path> </svg> </span> <span class="locale-switcher-value">English</span> <span class="locale-switcher-current-code">EN</span> <span class="locale-switcher-chevron"> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </span> </summary> <div class="locale-switcher-panel"> <ul class="locale-switcher-list"> <li> <a href="/privacy/" class="locale-switcher-option is-current" hreflang="en" data-locale="en" aria-current="true"> <span class="locale-option-name">English</span> <span class="locale-option-check"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </span> </a> </li><li> <a href="/de/privacy/" class="locale-switcher-option" hreflang="de" data-locale="de"> <span class="locale-option-name">Deutsch</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/es/privacy/" class="locale-switcher-option" hreflang="es" data-locale="es"> <span class="locale-option-name">Español</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/fr/privacy/" class="locale-switcher-option" hreflang="fr" data-locale="fr"> <span class="locale-option-name">Français</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ja/privacy/" class="locale-switcher-option" hreflang="ja" data-locale="ja"> <span class="locale-option-name">日本語</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ko/privacy/" class="locale-switcher-option" hreflang="ko" data-locale="ko"> <span class="locale-option-name">한국어</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/nl/privacy/" class="locale-switcher-option" hreflang="nl" data-locale="nl"> <span class="locale-option-name">Nederlands</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/pt-BR/privacy/" class="locale-switcher-option" hreflang="pt-BR" data-locale="pt-BR"> <span class="locale-option-name">Português (BR)</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ru/privacy/" class="locale-switcher-option" hreflang="ru" data-locale="ru"> <span class="locale-option-name">Русский</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/zh-Hans/privacy/" class="locale-switcher-option" hreflang="zh-Hans" data-locale="zh-Hans"> <span class="locale-option-name">简体中文</span> <span class="locale-option-check">  </span> </a> </li> </ul> </div> </details> <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle menu" aria-controls="nav-mobile-menu" aria-expanded="false"> <span></span> <span></span> <span></span> </button> </div> <div class="nav-mobile-menu" id="nav-mobile-menu"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> <a href="/direct/" class="btn btn-outline" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <div class="mobile-locale-divider"></div> <div class="mobile-locale-list"> <a href="/privacy/" class="mobile-locale-item is-current" hreflang="en" data-locale="en" aria-current="true"> <span>English</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </a><a href="/de/privacy/" class="mobile-locale-item" hreflang="de" data-locale="de"> <span>Deutsch</span>  </a><a href="/es/privacy/" class="mobile-locale-item" hreflang="es" data-locale="es"> <span>Español</span>  </a><a href="/fr/privacy/" class="mobile-locale-item" hreflang="fr" data-locale="fr"> <span>Français</span>  </a><a href="/ja/privacy/" class="mobile-locale-item" hreflang="ja" data-locale="ja"> <span>日本語</span>  </a><a href="/ko/privacy/" class="mobile-locale-item" hreflang="ko" data-locale="ko"> <span>한국어</span>  </a><a href="/nl/privacy/" class="mobile-locale-item" hreflang="nl" data-locale="nl"> <span>Nederlands</span>  </a><a href="/pt-BR/privacy/" class="mobile-locale-item" hreflang="pt-BR" data-locale="pt-BR"> <span>Português (BR)</span>  </a><a href="/ru/privacy/" class="mobile-locale-item" hreflang="ru" data-locale="ru"> <span>Русский</span>  </a><a href="/zh-Hans/privacy/" class="mobile-locale-item" hreflang="zh-Hans" data-locale="zh-Hans"> <span>简体中文</span>  </a> </div> </div> </header> <script>
+  document.querySelectorAll('.locale-switcher-option, .mobile-locale-item').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var loc = el.getAttribute('data-locale');
+      if (loc) localStorage.setItem('preferred-locale', loc);
+    });
+  });
+</script> <script type="module">const c=document.documentElement,d=document.querySelector('meta[name="theme-color"]'),i=t=>{d?.setAttribute("content",t==="light"?"#f5f8fc":"#080c14")},s=document.getElementById("theme-toggle"),a=t=>{s?.setAttribute("aria-pressed",t==="light"?"true":"false")};a(c.getAttribute("data-theme")||"dark");s&&s.addEventListener("click",()=>{const e=(c.getAttribute("data-theme")||(window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"))==="dark"?"light":"dark";c.setAttribute("data-theme",e),localStorage.setItem("theme",e),i(e),a(e)});window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",t=>{if(!localStorage.getItem("theme")){const e=t.matches?"dark":"light";c.setAttribute("data-theme",e),i(e),a(e)}});const m=document.getElementById("site-nav");window.addEventListener("scroll",()=>{m?.classList.toggle("scrolled",window.scrollY>40)},{passive:!0});const o=document.getElementById("nav-toggle"),r=document.getElementById("nav-mobile-menu");if(o&&r){const t=()=>{r.classList.remove("open"),o.setAttribute("aria-expanded","false")};o.addEventListener("click",()=>{const e=r.classList.toggle("open");o.setAttribute("aria-expanded",String(e))}),r.querySelectorAll("a").forEach(e=>{e.addEventListener("click",t)})}document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",e=>{const n=t.getAttribute("href");if(!n||n==="#"||!n.startsWith("#"))return;const l=document.querySelector(n);l&&(e.preventDefault(),l.scrollIntoView({behavior:"smooth",block:"start"}))})});</script> <main id="main" class="privacy-policy-page"> <section class="page-hero"> <div class="container"> <div class="page-hero-inner"> <a href="/" class="back-link"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M19 12H5M12 5l-7 7 7 7"></path> </svg> Back to StorageRadar </a> <div class="section-tag">Privacy Policy</div> <h1>StorageRadar keeps core storage data on your Mac.</h1> <p class="page-hero-desc">This policy explains what StorageRadar stores locally, when limited data may leave your Mac, how analytics and diagnostics behave, and what controls you have in Settings.</p> <div class="privacy-policy-meta">Last updated: March 25, 2026</div> </div> </div> </section> <section class="privacy-policy-body"> <div class="container"> <div class="privacy-policy-layout"> <div class="privacy-policy-notice"> <strong>Privacy-by-default summary</strong> <p>StorageRadar does not require a StorageRadar account for core app usage, does not offer cloud sync for scan data, and is designed so that scan paths, file metadata, reports, cleanup history, and MCP access stay local unless a clearly scoped remote feature is used.</p> </div> <section class="privacy-policy-section"> <h2>Scope</h2> <p>This privacy policy describes the StorageRadar macOS app and the limited companion services used by the app when it is distributed through Apple platforms.</p><p>StorageRadar is designed around local-first storage analysis. Core scan data, cleanup history, reports, and related metadata are meant to stay on your Mac rather than in a cloud account.</p>   </section><section class="privacy-policy-section"> <h2>What stays on your Mac</h2> <p>StorageRadar stores its core working data locally in Application Support and local preferences. The app does not require a StorageRadar account and does not provide cloud sync for scans, snapshots, reports, or cleanup history.</p> <ul class="privacy-policy-list"> <li>Scan sessions, indexes, and node metadata</li><li>Reports snapshots and local diff artifacts</li><li>Operation log history for cleanup actions</li><li>Local usage counters and some UI preferences</li><li>MCP configuration, path policy, and other app-specific local settings</li> </ul> <div class="privacy-policy-subsections"> <div class="privacy-policy-subsection"> <h3>Primary local stores</h3> <p>StorageRadar uses local storage under ~/Library/Application Support/StorageRadar/, including IndexStore/, ReportsStore/, and operation-log.json.</p> </div><div class="privacy-policy-subsection"> <h3>Local preferences</h3> <p>The app also uses local preference storage for appearance and language choices, selected tabs, filter drafts, local usage metrics, Disk Map parameters, MCP configuration, and related device-level settings.</p> </div> </div> </section><section class="privacy-policy-section"> <h2>Data that may leave your Mac</h2> <p>StorageRadar keeps its core storage analysis local, but some limited remote services can be involved depending on the feature you use or the settings you keep enabled.</p>  <div class="privacy-policy-subsections"> <div class="privacy-policy-subsection"> <h3>Privacy-safe product analytics</h3> <p>StorageRadar can send low-cardinality product event summaries to Aptabase. According to the current app documentation and shipping settings copy, this analytics delivery is enabled by default and can be turned off in Settings.</p><p>Remote analytics is intentionally minimized and does not include scan paths, file names, bundle identifiers, snapshot labels, raw scan payloads, MCP secrets, or raw error text.</p> </div><div class="privacy-policy-subsection"> <h3>Diagnostics and user-initiated feedback</h3> <p>StorageRadar can send crash diagnostics, manual test errors, and in-app feedback to Sentry. Current app documentation indicates that Sentry delivery is enabled by default and can be turned off in Settings.</p><p>Scan files are not attached automatically. In-app feedback is an explicit user action rather than a hidden background upload.</p> </div><div class="privacy-policy-subsection"> <h3>Purchases and restore</h3> <p>If you buy or restore a StorageRadar unlock, Apple purchase systems such as StoreKit are involved. StorageRadar uses those flows to determine entitlement state, while Apple&#39;s handling of payment and store account information is governed by Apple&#39;s own policies.</p><p>StorageRadar does not require you to create a separate app account to use core features.</p> </div><div class="privacy-policy-subsection"> <h3>Local-only MCP integration</h3> <p>StorageRadar&#39;s MCP integration is designed to stay local on 127.0.0.1 and read-only. It does not provide remote cloud processing, file-content access, delete operations, or move operations.</p> </div> </div> </section><section class="privacy-policy-section"> <h2>Permissions and filesystem access</h2> <p>StorageRadar may request macOS permissions that are relevant to storage analysis and cleanup workflows, such as access needed to inspect protected folders or app-related locations.</p><p>These permissions are used to improve local coverage on your Mac. They do not change the product&#39;s local-first design, and blocked paths are surfaced explicitly when access is incomplete.</p>   </section><section class="privacy-policy-section"> <h2>Retention, deletion, and your choices</h2> <p>Because StorageRadar stores its core data locally and does not require an account, the main privacy controls are available directly on your Mac through the app and through local file removal.</p> <ul class="privacy-policy-list"> <li>You can turn off privacy-safe product analytics in Settings to stop new analytics delivery.</li><li>You can turn off Sentry diagnostics and feedback delivery in Settings to stop new Sentry delivery.</li><li>You can clear the local operation log and reset local usage metrics in Settings.</li><li>You can delete snapshots in Reports &amp; Access → Snapshots and clear local analytics fallback data from Settings where available.</li><li>For complete local data removal, uninstall the app and remove the StorageRadar Application Support folder from your Mac.</li> </ul> <div class="privacy-policy-subsections"> <div class="privacy-policy-subsection"> <h3>Important limitation</h3> <p>Turning off analytics or diagnostics stops new delivery. It does not retroactively erase information that may already have been processed by the relevant provider before you disabled the setting.</p><p>Because StorageRadar does not maintain a required user account for core app usage, we generally do not have a customer profile that maps your local scan history to an online identity.</p> </div> </div> </section><section class="privacy-policy-section"> <h2>No advertising profile or cloud workspace</h2> <p>StorageRadar is not built around advertising profiles, cross-service tracking, or a hosted cloud workspace for your scans and cleanup history.</p><p>The app&#39;s core value proposition is local review-first analysis on your Mac, not remote storage of your filesystem activity.</p>   </section><section class="privacy-policy-section"> <h2>Email updates and the StorageRadar website</h2> <p>If you choose to subscribe to product update emails on the StorageRadar website, we collect the email address you submit, along with the page source and your selected site language, so we can send you release notes and occasional product updates. This is optional and separate from using the StorageRadar app — you can download and use StorageRadar without subscribing.</p><p>These email subscriptions are processed by Resend, our email service provider, which stores the contact and handles delivery and unsubscribe requests on our behalf. Every email includes an unsubscribe link, and you can ask us to delete your contact at any time. We do not sell email addresses or use them for anything other than StorageRadar product updates.</p>   </section> <section class="privacy-policy-section" id="contact"> <h2>Contact</h2> <p>If you have privacy questions about StorageRadar, or if you need help understanding which local controls apply to your setup, contact us at the address below.</p> <div class="privacy-policy-contact"> <p> <strong>Email:</strong> <a href="mailto:support@storageradar.app">support@storageradar.app</a> </p> <p> <strong>Website:</strong> <a href="https://storageradar.app">https://storageradar.app</a> </p> </div> <p class="privacy-policy-note">If your data practices change, this page should be updated before the matching App Store privacy metadata is published for a new version.</p> </section> </div> </div> </section> </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div class="footer-brand"> <a href="/" class="nav-logo footer-logo"> <svg class="logo-icon-svg" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <p class="footer-tagline"> Privacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control. </p> </div> <div class="footer-cols"> <div class="footer-col"> <h3>Product</h3> <a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#access">App Store &amp; Direct</a><a href="/direct/">Direct build</a> </div><div class="footer-col"> <h3>Info</h3> <a href="/blog/">Blog</a><a href="/support/">Support</a><a href="/about/">About</a><a href="/compare/">Compare</a><a href="/privacy/">Privacy</a><a href="/#faq">FAQ</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP Docs</a> </div> </div> </div> <div class="footer-bottom"> <p>© 2026 StorageRadar. All rights reserved.</p> <p class="footer-made">Made for Mac</p> </div> </div> </footer> <script>(function(){const APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8";
+const CAPTURE_ROUTES = {"beta":"/beta/","launch":"/launch/"};
+const ANALYTICS_CTA_LOCATIONS = ["hero","pricing","download_section","blog_cta","nav","direct_page","beta_page","launch_page","safe_to_delete"];
+const ANALYTICS_EVENTS = {"ctaClick":"cta_click","formView":"form_view","formSubmitStart":"form_submit_start","formSubmitSuccess":"form_submit_success","formSubmitError":"form_submit_error","quizStart":"quiz_start","quizComplete":"quiz_complete"};
+const ANALYTICS_REQUIRED_PARAMS = ["locale","page_template","rollout_wave"];
+const ANALYTICS_STORE_INTENTS = ["app_store","direct_download","gumroad_core","gumroad_developer","gumroad_upgrade"];
+const ANALYTICS_DEBUG_LOCAL_STORAGE_KEY = "storageradar:analytics-debug";
+const ANALYTICS_DEBUG_QUERY_PARAM = "debugAnalytics";
+const DIRECT_DOWNLOAD_URL = "https://releases.storageradar.app/latest.dmg";
+const DIRECT_PAGE_PATH = "/direct/";
+const GUMROAD_CORE_URL = "https://chamav.gumroad.com/l/storageradar-core";
+const GUMROAD_DEVELOPER_URL = "https://chamav.gumroad.com/l/storageradar-developer";
+const GUMROAD_UPGRADE_URL = "https://chamav.gumroad.com/l/storageradar-upgrade-core-developer";
+
+  const normalizeInternalPath = (pathname) => {
+    if (!pathname || pathname === "/") return "/";
+    const [pathOnly, hash = ""] = pathname.split("#", 2);
+    const normalizedPath = pathOnly.startsWith("/") ? pathOnly : `/${pathOnly}`;
+    if (/\.[a-z0-9]+$/i.test(normalizedPath)) {
+      return `${normalizedPath}${hash ? `#${hash}` : ""}`;
+    }
+    const withTrailingSlash = normalizedPath.endsWith("/")
+      ? normalizedPath
+      : `${normalizedPath}/`;
+    return `${withTrailingSlash}${hash ? `#${hash}` : ""}`;
+  };
+
+  const localizeInternalPath = (pathname, locale) => {
+    if (
+      !pathname ||
+      pathname.startsWith("http://") ||
+      pathname.startsWith("https://") ||
+      pathname.startsWith("mailto:") ||
+      pathname.startsWith("tel:") ||
+      pathname.startsWith("#")
+    ) {
+      return pathname;
+    }
+
+    const normalizedPath = normalizeInternalPath(pathname);
+    if (!locale || locale === "en") {
+      return normalizedPath;
+    }
+
+    if (normalizedPath === "/") {
+      return `/${locale}/`;
+    }
+
+    return `/${locale}${normalizedPath}`;
+  };
+
+  const CTA_URLS = {
+    beta: {
+      url: CAPTURE_ROUTES.beta,
+      intent: "beta",
+      external: false,
+    },
+    launch: {
+      url: CAPTURE_ROUTES.launch,
+      intent: "launch",
+      external: false,
+    },
+    appStore: {
+      url: APP_STORE_URL,
+      intent: "app_store",
+      external: true,
+    },
+    directInfo: {
+      url: DIRECT_PAGE_PATH,
+      intent: "direct_info",
+      external: false,
+    },
+    directDownload: {
+      url: DIRECT_DOWNLOAD_URL,
+      intent: "direct_download",
+      external: true,
+    },
+    pricingInfo: {
+      url: "#pricing",
+      intent: "pricing_info",
+      external: false,
+    },
+    gumroadCore: {
+      url: GUMROAD_CORE_URL,
+      intent: "gumroad_core",
+      external: true,
+    },
+    gumroadDeveloper: {
+      url: GUMROAD_DEVELOPER_URL,
+      intent: "gumroad_developer",
+      external: true,
+    },
+    gumroadUpgrade: {
+      url: GUMROAD_UPGRADE_URL,
+      intent: "gumroad_upgrade",
+      external: true,
+    },
+  };
+  const ALLOWED_LOCATIONS = new Set(ANALYTICS_CTA_LOCATIONS);
+  const REQUIRED_CONTEXT_PARAMS = new Set(ANALYTICS_REQUIRED_PARAMS);
+  const STORE_INTENTS = new Set(ANALYTICS_STORE_INTENTS);
+
+  // Campaign of the visit (src/lib/attribution.ts, set before any click): `ct` and
+  // utm_campaign. An App Store click reports the token its link actually carries.
+  const getStoreCampaignParams = (link, intent) => {
+    const params = { ...(window.__storageradarAttribution?.eventParams ?? {}) };
+    if (intent === "app_store") {
+      try {
+        const ct = new URL(link.href).searchParams.get("ct");
+        if (ct) params.ct = ct;
+      } catch (_error) {
+        // Keep the session token.
+      }
+    }
+    return params;
+  };
+
+  const isDebugEnabled = () => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      return (
+        window.location.hostname === "localhost" ||
+        searchParams.get(ANALYTICS_DEBUG_QUERY_PARAM) === "1" ||
+        window.localStorage.getItem(ANALYTICS_DEBUG_LOCAL_STORAGE_KEY) === "1"
+      );
+    } catch (_error) {
+      return false;
+    }
+  };
+
+  const getSharedAnalyticsContext = () => {
+    const sharedContext = window.__storageradarAnalyticsContext ?? {};
+    const root = document.documentElement;
+    return {
+      locale: sharedContext.locale ?? root.dataset.locale ?? "en",
+      page_template:
+        sharedContext.page_template ?? root.dataset.pageTemplate ?? "generic",
+      rollout_wave:
+        sharedContext.rollout_wave ?? root.dataset.rolloutWave ?? "control",
+    };
+  };
+
+  const track = (eventName, params) => {
+    const payload = {
+      ...getSharedAnalyticsContext(),
+      ...params,
+    };
+
+    if (isDebugEnabled()) {
+      console.debug("[analytics] CTA payload", payload);
+    }
+
+    for (const requiredParam of REQUIRED_CONTEXT_PARAMS) {
+      if (!payload[requiredParam]) {
+        if (isDebugEnabled()) {
+          console.error(`[analytics] Missing required CTA param: ${requiredParam}`);
+        }
+        return;
+      }
+    }
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, payload);
+    }
+  };
+
+  document.querySelectorAll("[data-cta]").forEach((btn) => {
+    if (!(btn instanceof HTMLAnchorElement)) return;
+    const ctaType = btn.dataset.cta;
+    const config = ctaType ? CTA_URLS[ctaType] : null;
+    if (config?.url) {
+      const locale = getSharedAnalyticsContext().locale;
+      const targetUrl = config.external ? config.url : localizeInternalPath(config.url, locale);
+      btn.href = targetUrl;
+      if (config.external) {
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
+      btn.addEventListener("click", () => {
+        const location = ALLOWED_LOCATIONS.has(btn.dataset.ctaLocation)
+          ? btn.dataset.ctaLocation
+          : "unknown";
+        const optionalParams = {};
+        if (btn.dataset.ctaTier) {
+          optionalParams.tier = btn.dataset.ctaTier;
+        }
+        if (btn.dataset.ctaSection) {
+          optionalParams.section = btn.dataset.ctaSection;
+        }
+        if (btn.dataset.ctaCardPosition) {
+          const cardPosition = Number(btn.dataset.ctaCardPosition);
+          optionalParams.card_position = Number.isFinite(cardPosition)
+            ? cardPosition
+            : btn.dataset.ctaCardPosition;
+        }
+        track(ANALYTICS_EVENTS.ctaClick, {
+          intent: config.intent,
+          location,
+          // External links report their live href, which carries the campaign token.
+          target: config.external ? btn.href : targetUrl,
+          ...optionalParams,
+          ...(STORE_INTENTS.has(config.intent) ? getStoreCampaignParams(btn, config.intent) : {}),
+        });
+      });
+    } else {
+      if (btn.getAttribute("href") === "#") {
+        btn.addEventListener("click", (e) => e.preventDefault());
+      }
+    }
+  });
+})();</script>  <script type="module">console.log("%c StorageRadar ","background:#06b6d4;color:#080c14;font-weight:800;font-size:14px;padding:4px 10px;border-radius:4px;font-family:monospace",`
+Built with Astro 5. Offline-first, no account, no cloud sync.
+Curious about the MCP integration? storageradar.app/mcp`);const a=document.querySelectorAll("[data-animate], [data-animate-wipe]");if(a.length){const e=new IntersectionObserver(t=>{t.forEach(o=>{o.isIntersecting&&(o.target.classList.add("visible"),e.unobserve(o.target))})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});a.forEach(t=>e.observe(t))}</script> <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"a5de247158bf4ebba310307900a1026c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body> </html>

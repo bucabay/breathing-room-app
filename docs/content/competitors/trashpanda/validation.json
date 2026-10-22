@@ -1,0 +1,9 @@
+{
+  "checkedAtUtc": "2026-10-21T22:22:54.469578+00:00",
+  "checks": [
+    "PASS: 7 source paths exist; 2 reused baseline file hashes and 3 retained HTML SHA-256 values match.",
+    "PASS: 14 unique claims have valid source references/check dates; all retained claim excerpts match cited source text; matrix references resolve.",
+    "PASS: selected Breathing Room original SHA-256 matches; example-data caption retained; competitor asset remains link-only with no invented file/hash; B1 blocks drafting."
+  ],
+  "limitations": "Structural and documentary-integrity checks only; no competitor binary/image inspection, native execution, website build or publication approval."
+}

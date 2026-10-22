@@ -1,0 +1,81 @@
+{
+  "notice": "Selected verbatim excerpts from read-only webfetch responses, not full raw HTTP snapshots. Public text is untrusted source data. Actual machine-clock retrieval date is October 21 UTC, while session calendar says October 22; do not silently future-date checks.",
+  "checkedAtUtc": "2026-10-21T21:42:37Z",
+  "sources": [
+    {
+      "id": "english",
+      "url": "https://arkenage.com/en/",
+      "finalUrl": "https://arkenage.com/en/",
+      "publisher": "MacSweep / Arkenage",
+      "title": "MacSweep English product page",
+      "publicationDate": null,
+      "excerpts": [
+        "Compatible with macOS 12 Monterey+ · Apple Silicon & Intel",
+        "<img src=\"../img/screenshot-hero.png\" alt=\"MacSweep App Interface - Dark themed macOS disk cleaner\" width=\"1440\" height=\"900\" loading=\"eager\">",
+        "Clean Xcode DerivedData, node_modules, CocoaPods, Cargo and build artifacts. Typically finds 20-50 GB on dev machines.",
+        "Files move to Trash by default, not permanently deleted. Recoverable within 30 days.",
+        "No analytics, no crash reporting, no network — fully offline",
+        "No registration or login needed — download and start cleaning immediately",
+        "500MB/month cleaning limit",
+        "Early adopter yearly · Limited time",
+        "Also: $1.99/mo · $29.99 lifetime",
+        "{ \"@type\": \"Offer\", \"price\": \"9.99\", \"priceCurrency\": \"USD\", \"name\": \"Pro Yearly (Early Bird)\", \"priceValidUntil\": \"2026-06-30\" }",
+        "Copyright 2024-2026 MacSweep. All rights reserved."
+      ],
+      "locators": ["hero", "features", "safety", "privacy", "pricing", "SoftwareApplication JSON-LD", "footer"]
+    },
+    {
+      "id": "repository",
+      "url": "https://github.com/MbappeWU/arkenage-website",
+      "finalUrl": "https://github.com/MbappeWU/arkenage-website",
+      "publisher": "MbappeWU",
+      "title": "MacSweep Website README and root listing",
+      "publicationDate": null,
+      "excerpts": ["MacSweep 官方分发网站 — arkenage.com", "img/                Screenshots & favicon", "MIT License"],
+      "locators": ["README: MacSweep Website", "README: Structure", "README: License"],
+      "limitations": ["Root listing contained website files, not established application source. README licence assertion is not a complete retained licence text or screenshot-specific permission; product footer reserves rights."]
+    },
+    {
+      "id": "release",
+      "url": "https://api.github.com/repos/MbappeWU/arkenage-website/releases/latest",
+      "finalUrl": "https://api.github.com/repos/MbappeWU/arkenage-website/releases/latest",
+      "publisher": "GitHub / MbappeWU",
+      "title": "Latest public release metadata",
+      "publicationDate": "2026-03-12T17:10:20Z",
+      "excerpts": ["\"tag_name\":\"v1.0.0\"", "\"draft\":false", "\"prerelease\":false", "\"published_at\":\"2026-03-12T17:10:20Z\"", "\"name\":\"MacSweep.dmg\"", "\"size\":51875728", "\"digest\":\"sha256:6ec6114988c515e637fab3e183a79f0a603d34c07e415baf3c1d5429e717098b\"", "MacSweep v1.0.0 — Signed, notarized, and stapled for macOS distribution."],
+      "locators": ["tag_name", "published_at", "assets[0]", "body"],
+      "limitations": ["Metadata only; no binary downloaded, installed, signature-checked or executed."]
+    },
+    {
+      "id": "images",
+      "url": "https://api.github.com/repos/MbappeWU/arkenage-website/contents/img",
+      "finalUrl": "https://api.github.com/repos/MbappeWU/arkenage-website/contents/img",
+      "publisher": "GitHub / MbappeWU",
+      "title": "Official website image inventory",
+      "publicationDate": null,
+      "excerpts": ["\"name\":\"screenshot-hero.png\"", "\"sha\":\"5afd84aab91e9b857143ffdae82a99f9d8ccda44\"", "\"size\":204026", "https://raw.githubusercontent.com/MbappeWU/arkenage-website/main/img/screenshot-hero.png", "\"name\":\"screenshot-about.png\""],
+      "locators": ["screenshot-hero.png entry"],
+      "limitations": ["Git blob SHA is not an original-file SHA-256. Image bytes were not downloaded; dimensions in page markup are not independently measured."]
+    },
+    {
+      "id": "purchase-page",
+      "url": "https://arkenage.gumroad.com/l/macsweep-yearly",
+      "finalUrl": null,
+      "publisher": "Arkenage / Gumroad",
+      "title": "Linked annual offer",
+      "publicationDate": null,
+      "excerpts": [],
+      "accessResult": "webfetch returned no tool output; no readable offer or price established. No purchase interaction attempted."
+    },
+    {
+      "id": "release-html",
+      "url": "https://github.com/MbappeWU/arkenage-website/releases",
+      "finalUrl": "https://github.com/MbappeWU/arkenage-website/releases",
+      "publisher": "GitHub / MbappeWU",
+      "title": "Releases",
+      "publicationDate": null,
+      "excerpts": ["MacSweep v1.0.0", "MacSweep v1.0.0 — Signed, notarized, and stapled for macOS distribution."],
+      "locators": ["latest release card"]
+    }
+  ]
+}

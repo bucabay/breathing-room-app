@@ -1,0 +1,82 @@
+About DeepClean
+DeepClean
+Features
+Blog
+Pricing
+Scan Your Mac Free
+About
+Privacy-first disk cleanup for Mac.
+DeepClean is an independent macOS utility focused on one thing: giving you an honest view of what is on your disk, and letting you clean it up without paying a subscription or handing over your data. This page covers what the product does, how it works, and the principles behind the decisions.
+Why DeepClean exists
+Most Mac cleanup tools have at least one of three problems:
+They charge by subscription
+, often $99 a year, for features most people use twice a year.
+They delete files opaquely
+under names like "Smart Cleanup," sometimes removing things the user did not authorize.
+They are Electron apps
+that consume more RAM than they free, and they often phone home with telemetry about what they scan.
+DeepClean was built to avoid all three. It is native, it is transparent about every file it flags, and it runs entirely on your machine with no cloud component.
+What DeepClean does
+DeepClean is a macOS disk cleanup utility for Apple Silicon (and still runs on macOS 13 and later on Intel). It finds:
+System and application caches that have grown unchecked
+Old iPhone and iPad backups (often 20-50 GB each)
+Time Machine local snapshots that hold deleted files
+Developer artifacts: Xcode DerivedData, simulators, Docker images, node_modules, pip/gradle/npm caches, Ollama models
+Duplicate files detected by content hash, not by name
+Large files you forgot about
+Orphaned data from apps you uninstalled
+The "System Data" bucket that macOS does not let you inspect in Settings
+Every scan produces a list. You review the list. Nothing is deleted until you approve it.
+Principles
+Nothing leaves your Mac
+Everything runs on-device. No cloud, no analytics, no file names or paths sent anywhere.
+You see everything
+No "Smart Cleanup." Every file flagged for removal is shown to you first.
+Pay once, own forever
+Download free, scan everything, and clean up to 10 GB without paying. Unlimited cleanup is a one-time purchase of $39. Free updates within your major version, discounted upgrades after. No subscription, no trial countdown, no upsells.
+Native SwiftUI
+Built for Apple Silicon. Uses around 50 MB of RAM. Feels like an app Apple would ship.
+Who this is for
+DeepClean is for people who want to understand what is on their Mac, not just make the storage number go up. That is usually:
+Developers whose project folders and tooling caches consume 50-200 GB
+Photographers, video editors, and designers with large working archives
+Anyone on a 128 GB or 256 GB Mac who is constantly hitting the "almost full" warning
+People who prefer owning software rather than renting it
+People who do not want a cleanup tool sending their file index to a server in another country
+Who it is not for
+If you want a one-click "optimize my Mac" button that handles everything without showing you what is happening, DeepClean is not the tool for you. CleanMyMac and its peers do that well. DeepClean is the opposite: it shows you everything and asks before it acts.
+How DeepClean is built
+DeepClean is an independent, small-team project. There is no venture capital backing, no analytics vendor, no third-party data pipeline. The app is written in native SwiftUI. All scans are performed on-device using Apple's filesystem APIs. The app is free to download and scan with; unlimited cleanup is sold as a one-time purchase through a standard payment processor, and the money is what funds ongoing development.
+Support questions and bug reports go directly to the team that writes the code. Updates ship when there is something to ship, not on a marketing schedule.
+Who writes for DeepClean
+The DeepClean
+blog
+is written and edited by
+Nathan Bateman
+. Nathan handles the research, drafting, and publishing of posts on macOS storage, system internals, and developer cleanup.
+Posts are grounded in the same engineering work that produces the app itself: digging through macOS internals, reading Apple's release notes, measuring what actually accumulates on real Macs, and reproducing the issues users report. If anything in a post is inaccurate, we want to know. Email corrections or questions to the address below and we will update the post.
+Contact
+Get in touch
+support@deepclean.app
+For app support, feature requests, or bug reports, email is the fastest channel. You will get a real response from the team, not a ticket-tracking bot.
+The rest of the site
+Blog
+: 40+ guides on Mac storage, cleanup, and developer disk space
+Comparisons
+: how DeepClean stacks up against CleanMyMac, DaisyDisk, and others
+Features
+: a quick overview of what DeepClean does
+Download and pricing
+: free scan with 10 GB of cleanup included; unlimited cleanup is $39 one-time
+Try DeepClean
+See exactly what is on your Mac's disk and get your space back without handing over your data or your credit card every month.
+Scan Your Mac Free
+DeepClean
+Features
+Blog
+Pricing
+About
+Privacy
+Terms
+Contact
+© 2026 DeepClean

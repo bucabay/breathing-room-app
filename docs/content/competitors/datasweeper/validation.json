@@ -1,0 +1,30 @@
+{
+  "jobId": "research-datasweeper",
+  "checkedOn": "2026-10-21",
+  "result": "research-structure-pass; drafting-blocked",
+  "method": "Read-only Python json/pathlib/hashlib structural and source-excerpt assertions executed against saved files.",
+  "checks": [
+    "PASS: research.json parses; research.md and app-store-browser.json exist.",
+    "PASS: four source hashes match retained homepage, App Store snapshot, capability register and screenshot library.",
+    "PASS: discovery snapshot SHA-256 matches.",
+    "PASS: selected current-source Breathing Room Space PNG SHA-256 matches original library record.",
+    "PASS: 13 claim source references/check dates and 9 matrix-row claim references resolve.",
+    "PASS: 14 homepage/store supporting excerpts across DS02/03/04/05/06/08/09 match retained text after whitespace normalization. Initial output label incorrectly said 18; follow-up programmatic count confirms 14. Assertions themselves passed for all 14.",
+    "PASS: retained official texts contain homepage Version 1.1 and store Version 1.0.8 / macOS 26.2+ conflict.",
+    "PASS: canonicalOwnerId=datasweeper, skipAsAlias=false, status=blocked, draftingAllowed=false and published=false.",
+    "PASS: B1/B2 blockers retained; third-party screenshot is link-only with null original path; no third-party image downloaded.",
+    "PASS: public App Store content read in owned Chrome tab 86, retained and tab closed; no unrelated tab content read."
+  ],
+  "artifactSha256": {
+    "research.json": "e3cd6784dd899bef127a627f324888d23fd584cc183bc87b07129bcb642fab51",
+    "research.md": "b9a86d1391bac3a13a30f180dfcddc82536d0e5b149b09f4949fbc94256f2a29",
+    "app-store-browser.json": "e6bbdfc99e7b5d8eddc9995d3631406affbfa4fdbfc771d2c86dc1e29366487b"
+  },
+  "notPerformed": [
+    "Native installation, runtime tests, network audit, cleanup or measured savings",
+    "Screenshot visual/content review or third-party reuse approval",
+    "Site check/build/test: no marketing files changed",
+    "Independent article review or publication approval"
+  ],
+  "diagnostic": "Research structure and evidence-reference checks pass. Drafting remains blocked by official version/platform mismatch and unresolved competitor screenshot reuse/content review."
+}

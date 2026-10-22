@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-zapper",
+  "status": "research-complete",
+  "checkedAtUtc": "2026-10-21T21:30:39.910822+00:00",
+  "dateNote": "UTC retrieval timestamps come from the actual system clock; local task date is October 22. Do not relabel October 21 UTC fetches.",
+  "ownership": [
+    "docs/content/competitors/zapper/"
+  ],
+  "identity": {
+    "id": "zapper",
+    "officialName": "Mac Zapper",
+    "homepage": "https://www.maczapper.com/",
+    "officialRepository": null,
+    "exactVersion": null,
+    "canonicalOwnerId": "zapper",
+    "aliases": [
+      "Zapper (window/download name)"
+    ],
+    "aliasDecision": "retain-distinct-product; no alias skip",
+    "aliasEvidence": [
+      "Z1",
+      "Z9"
+    ],
+    "distinctFrom": "AppZapper: corresponding baseline entry points to https://appzapper.com, not maczapper.com.",
+    "powerMyMac": "No PowerMyMac alias is indicated by retained Mac Zapper official material; do not merge or borrow its facts.",
+    "developer": "CappyAI is attributed only by AlternativeTo; official legal entity not verified.",
+    "classification": "adjacent-mac",
+    "classificationReason": "Focused app-uninstallation workflow overlaps storage cleanup, not a verified replacement for general storage investigation, process monitoring or recurring care.",
+    "skipDecision": {
+      "skip": false,
+      "reason": "Active official product and downloadable press assets; distinct Mac app with relevant cleanup decision intent."
+    }
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/zapper/about/",
+    "retrievedAt": "2026-10-21T19:08:30.250Z",
+    "observedOfficialLink": {
+      "text": "Official Website\nmaczapper.com/",
+      "url": "https://www.maczapper.com/",
+      "title": "https://www.maczapper.com/"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/zapper-directory.json",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:45.366Z",
+    "sha256": "28995e375ece82c661bd80174aafc274dee69f2e0d762501d7665216e2438021",
+    "method": "Reuse retained live-browser listing and manifest edge; no directory refetch"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "Mac Zapper",
+      "title": "Official homepage (reused baseline)",
+      "url": "https://www.maczapper.com/",
+      "finalUrl": "https://www.maczapper.com/",
+      "retrievedAtUtc": "2026-10-21T19:09:33.753966+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/zapper-official.json",
+      "sha256": "054c1708264cf3e287235be8bce36f29c18d01a86d029887613da40d0a00efed",
+      "publicationDate": null,
+      "scope": "Vendor documentation; not runtime testing"
+    },
+    {
+      "id": "S2",
+      "publisher": "AlternativeTo",
+      "title": "Mac Zapper listing (discovery only)",
+      "url": "https://alternativeto.net/software/zapper/about/",
+      "finalUrl": "https://alternativeto.net/software/zapper/about/",
+      "retrievedAtUtc": "2026-10-21T19:08:30.250Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/zapper-directory.json",
+      "sha256": "28995e375ece82c661bd80174aafc274dee69f2e0d762501d7665216e2438021",
+      "publicationDate": "2026-10-18",
+      "scope": "Directory identity/discovery; not official capability proof"
+    },
+    {
+      "id": "S3",
+      "publisher": "Mac Zapper",
+      "title": "Press kit",
+      "url": "https://www.maczapper.com/press",
+      "finalUrl": "https://www.maczapper.com/press",
+      "retrievedAtUtc": "2026-10-21T21:29:11.910643+00:00",
+      "snapshotPath": "docs/content/competitors/zapper/sources/press.html",
+      "sha256": "d012e78dd04c0b34d4568835f2450997b72edce640faf93cb4ec6f010d195858",
+      "publicationDate": null,
+      "scope": "Official description and editorial asset provision"
+    },
+    {
+      "id": "S4",
+      "publisher": "Breathing Room",
+      "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "retrievedAtUtc": null,
+      "checkedDate": "2026-10-21",
+      "scope": "Reused source/published evidence; contains exact source locations and public URLs; no new runtime validation"
+    },
+    {
+      "id": "S5",
+      "publisher": "Breathing Room",
+      "title": "Current-source screenshot inventory",
+      "url": "http://127.0.0.1:1431/",
+      "snapshotPath": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "retrievedAtUtc": null,
+      "checkedDate": "2026-10-21",
+      "scope": "Browser preview with example data only"
+    }
+  ],
+  "claims": [
+    {
+      "id": "Z1",
+      "wording": "The official public name is Mac Zapper; its download is named Zapper.dmg.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Mac Zapper",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Official homepage title and retained link to https://www.maczapper.com/Zapper.dmg; screenshot window also says Zapper.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z2",
+      "wording": "Mac Zapper requires macOS 15 (Sequoia) or later.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Mac Zapper requires macOS 15 (Sequoia) or later.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Vendor-documented, not independently tested",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z3",
+      "wording": "Advertised price: one-time $14.99 for up to 3 Macs, including future updates; scanning is free and removal requires a licence.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Scan apps for free — pay to zap",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Pricing section also says Activate on up to 3 Macs / All future updates included / 30-day money-back guarantee. Dollar currency code, taxes, checkout total and refund details not verified; do not label USD or promise a refund was tested.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z4",
+      "wording": "The documented workflow starts by dropping an .app onto the window or using Browse.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Drag any .app onto Mac Zapper's window. Or hit Browse to find it.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Vendor-documented, not independently tested",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z5",
+      "wording": "The vendor documents scanning 11 Library directories and moving files to Trash rather than permanently deleting them.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Mac Zapper scans 11 Library directories to find and remove every leftover.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Trash behavior separately supported by Files move to Trash. Do not repeat every leftover as completeness proof, or equate selected size with recovered space.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z6",
+      "wording": "The vendor says it scans Caches, Preferences, Application Support, Containers and other locations, with bundle-ID/word-boundary matching.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Searches Caches, Preferences, Application Support, Containers, and 7 more directories — concurrently.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Group Containers and LaunchAgents also described on homepage. No accuracy/speed benchmark or false-positive guarantee established.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z7",
+      "wording": "The vendor says scans work without Full Disk Access but some sandboxed containers may be inaccessible.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "Without it, some sandboxed app containers in ~/Library/Containers may not be accessible.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Vendor-documented, not independently tested",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z8",
+      "wording": "The vendor describes a native Swift 6 / SwiftUI app with zero third-party dependencies.",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/press"
+      ],
+      "excerpt": "Built natively in Swift 6 with strict concurrency and SwiftUI, Mac Zapper has zero third-party dependencies.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Implementation claim by vendor; no source or binary audit, architecture support or signing assessment.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z9",
+      "wording": "An official press kit provides an app scan-results screenshot for coverage.",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/press"
+      ],
+      "excerpt": "Resources for journalists, bloggers, and content creators covering Mac software.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Assets section labels Screenshot — scan results / Scan results showing leftover files. Narrow editorial provision, not an open licence or blanket trademark permission.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z10",
+      "wording": "Exact release version, architecture support, signing/notarization and official repository are not verified.",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrls": [
+        "https://www.maczapper.com/"
+      ],
+      "excerpt": "",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "unknown",
+      "scope": "No versioned release/source link identified in retained official homepage or press kit. No binary downloaded or installed.",
+      "state": "not-verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "Z11",
+      "wording": "AlternativeTo labels Mac Zapper proprietary/commercial; official licence terms remain unverified.",
+      "sourceIds": [
+        "S2"
+      ],
+      "sourceUrls": [
+        "https://alternativeto.net/software/zapper/about/"
+      ],
+      "excerpt": "Proprietary and Commercial product.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Attributed directory classification only, not an official EULA or source licence.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "B1",
+      "wording": "Breathing Room has source implementations for storage exploration, grouped app/process monitoring and activity history; release parity is not established.",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/"
+      ],
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Capabilities register sections Current capability matrix and Preview caveats; exact local code references retained there.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "B2",
+      "wording": "Breathing Room is a free macOS 13+ preview; the reviewed release is 0.1.0-preview.1, Apple Development signed, not Developer ID signed or notarized, with Python 3.10+ required for inventory.",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/"
+      ],
+      "excerpt": "Apple Development signed, not Developer ID signed or notarized",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Published release disclosure reused from 2026-10-21, not independent binary verification. Universal installer advertised, physical Intel untested.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "B3",
+      "wording": "Breathing Room advertises optional AI Care at $5 USD/month or $50 USD/year; hosted AI needs authentication and internet access.",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/"
+      ],
+      "excerpt": "$5 USD/month",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Renewing plans; applicable tax at checkout. Local core is free. Hosted requests can include relevant paths, process/storage data and tool results; not entirely offline.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    },
+    {
+      "id": "B4",
+      "wording": "Default interactive cleanup is reviewed; optional automatic verified Ruff-cache Trash moves and exact saved approvals for daily care require separate explanation.",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrls": [
+        "https://breathing-room.chatic.ai/"
+      ],
+      "excerpt": "Automatically move verified Ruff lint caches to Trash.",
+      "checkedDate": "2026-10-21",
+      "evidenceClass": "documented",
+      "scope": "Daily care requires app running and reuses exact approvals; never imply every future action always asks, or general permanent-deletion authority.",
+      "state": "verified",
+      "intendedLocation": "comparison matrix / workflow",
+      "reviewer": "research-zapper worker; not independent publication approval"
+    }
+  ],
+  "productMatrix": {
+    "platform": [
+      "Z2",
+      "B2"
+    ],
+    "pricing": [
+      "Z3",
+      "B3"
+    ],
+    "licence": [
+      "Z11",
+      "B2"
+    ],
+    "localHosted": {
+      "zapper": "Native app documented; complete offline/no-tracking/network policy not verified",
+      "breathingRoom": [
+        "B1",
+        "B3"
+      ]
+    },
+    "scanCleanup": [
+      "Z4",
+      "Z5",
+      "Z6",
+      "B1",
+      "B4"
+    ],
+    "approvalControls": {
+      "zapper": "Screenshot visibly shows selection checkboxes; runtime approval/revalidation not tested",
+      "breathingRoom": [
+        "B4"
+      ]
+    },
+    "helperGrouping": {
+      "zapper": "not verified",
+      "breathingRoom": [
+        "B1"
+      ]
+    },
+    "recurringGrowth": {
+      "zapper": "not verified",
+      "breathingRoom": [
+        "B1",
+        "B3"
+      ]
+    },
+    "developerCaches": {
+      "zapper": "App-associated Caches documented (Z6); owning-tool cache adapters not verified",
+      "breathingRoom": "Source catalogue includes npm/uv/pip/pnpm/Go/Bun/Yarn; capabilities.md lines 28, 51, 117; not all versions tested"
+    },
+    "runtimeInstall": [
+      "Z7",
+      "Z8",
+      "Z10",
+      "B2"
+    ]
+  },
+  "visuals": [
+    {
+      "id": "zapper-scan-results",
+      "productId": "zapper",
+      "view": "Firefox scan results and selected files",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://www.maczapper.com/press",
+      "assetUrl": "https://www.maczapper.com/screenshot-results.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T21:29:12.874796+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": "docs/content/competitors/zapper/assets/maczapper-scan-results-original.png",
+      "originalSha256": "68a032ff14fa00b7763ef56117525e9c563e5bb906f70da546faf7c5e2a3db72",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1096,
+      "heightPx": 1102,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "redactions": [],
+        "diagnostic": "Only generic application/Library paths visible; no personal account or home directory name."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Official press kit expressly offers resources and downloadable screenshots for journalists/bloggers/content creators covering the product. Use only with contextual product coverage and credit, without implying endorsement. This is an editorial-use provision, not an open licence.",
+        "evidenceUrlOrPath": "https://www.maczapper.com/press",
+        "credit": "Mac Zapper official press kit"
+      },
+      "caption": "Mac Zapper scan-results screenshot supplied in its official press kit. Vendor illustration; shown file sizes are not our measurements or recovered disk space.",
+      "alt": "Mac Zapper window showing Firefox.app and related Application Support, cache and preference entries with selection checkboxes and a Zap button.",
+      "supportedClaimIds": [
+        "Z1",
+        "Z4",
+        "Z5",
+        "Z9"
+      ],
+      "limitations": [
+        "Original capture date, app version and OS are unknown.",
+        "Screenshot demonstrates visible controls, not successful cleanup or correctness of matching.",
+        "Firefox marks belong to their owners; no endorsement inferred."
+      ],
+      "review": {
+        "status": "visually-inspected-for-research",
+        "reviewer": "research-zapper worker",
+        "reviewedAtUtc": "2026-10-21T21:30:39.910822+00:00"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job (reused record)",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room current-source browser preview"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "B1"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Keep visible example-data banner; no native evidence or cleanup measurements. Current-source means recorded commit, not unverified latest HEAD."
+      ],
+      "review": {
+        "status": "visually-inspected-for-research",
+        "reviewer": "research-zapper worker",
+        "reviewedAtUtc": "2026-10-21T21:30:39.910822+00:00"
+      }
+    }
+  ],
+  "briefPath": "docs/content/competitors/zapper/research.md",
+  "observations": {
+    "handsOnTesting": false,
+    "competitorInstalled": false,
+    "cleanupPerformed": false,
+    "browserUsed": false,
+    "note": "Public HTTP reads and original asset inspection only; no login, cookies, account, purchase or destructive action."
+  },
+  "unknowns": [
+    "Exact Mac Zapper app version/build and release history",
+    "Official source repository and EULA; directory proprietary label is not a vendor licence",
+    "Intel/Apple Silicon compatibility and signing/notarization",
+    "Dollar currency code, taxes and detailed refund conditions",
+    "Offline/network/telemetry policy, helper grouping and recurring-growth functionality",
+    "Runtime accuracy, false positives, complete matching, undo behavior and recovered space"
+  ],
+  "draftingGate": {
+    "status": "ready-with-bounded-claims",
+    "criticalBlockers": [],
+    "conditions": [
+      "Do not publish unsupported unknown fields as negatives or facts.",
+      "Recheck volatile offers within 30 days and before release if stale.",
+      "If prescribing installation, obtain exact current release/architecture/signing evidence first; current brief does not prescribe installation.",
+      "Retain original screenshot and press-kit evidence; independent per-page visual/rights/context review remains required."
+    ]
+  },
+  "publicationGate": {
+    "status": "draft-only",
+    "independentReview": "pending",
+    "siteChecks": "not applicable at research stage; no website edited",
+    "score": null
+  }
+}

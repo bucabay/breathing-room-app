@@ -1,0 +1,1039 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-radix",
+  "stage": "research",
+  "status": "complete-research-only",
+  "assembledAtUtc": "2026-10-21T22:05:20.133185+00:00",
+  "datePolicy": "Machine retrieval clock is 2026-10-21 UTC (local job date October 22); timestamps record actual clock, not an invented later check date. Baseline source checks retain their original times.",
+  "ownership": "Only docs/content/competitors/radix/ plus required runtime receipt; no website records changed.",
+  "identity": {
+    "id": "radix",
+    "officialName": "Radix",
+    "publisher": "Colin Kim",
+    "canonicalOwnerId": "radix",
+    "canonicalHomepage": "https://tryradix.app/",
+    "officialRepository": "https://github.com/colinvkim/Radix",
+    "formerHomepage": "https://radix.colinkim.dev/",
+    "aliases": [
+      {
+        "value": "radix.colinkim.dev",
+        "kind": "former homepage, same product",
+        "evidenceClaimIds": [
+          "identity"
+        ]
+      }
+    ],
+    "aliasDecision": {
+      "skipSeparateDraft": false,
+      "decision": "Keep radix as its own canonical product; consolidate former and current domains. No evidence relates this product to PowerMyMac or the unrelated Radix UI library. No separate old-domain draft.",
+      "sourceIds": [
+        "discovery",
+        "homepage",
+        "readme"
+      ]
+    },
+    "classification": "direct-storage-workflow-overlap",
+    "classificationReason": "Both inspect macOS storage and support review-led cleanup; Radix is a focused disk visualizer/snapshot comparator, not an established substitute for every Breathing Room activity/hosted-care workflow.",
+    "platformFit": "Native Mac intent; no invented Windows/Linux support or non-Mac replacement framing.",
+    "skipDecision": {
+      "skip": false,
+      "reason": "Official live Mac product, distinct identity, concrete storage-growth workflow and licensed official app visual available."
+    }
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/radix/about/",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=4",
+    "retrievedAtUtc": "2026-10-21T18:37:13.603Z",
+    "method": "Reused live-browser rendered listing record and about-page snapshot from batch-2; not re-fetched.",
+    "sourceIds": [
+      "discovery-edge",
+      "discovery"
+    ],
+    "rawCapturePath": "sources/discovery-edge-reused.json",
+    "rawSha256": "26c4fe7f7dac297350644d323feed4cf1053eb94ced3155bb7624aed7d947453",
+    "directoryLimit": "Discovery only, not feature verification."
+  },
+  "reusedVerification": {
+    "path": "docs/content/verification/batch-2.json",
+    "recordId": "radix",
+    "factsReused": [
+      "officialName",
+      "coreFunction",
+      "supportedPlatforms",
+      "pricing"
+    ],
+    "additionalChecksReason": "Baseline lacked exact licence, release/architecture, workflow-level claim support and image asset/rights. Repository docs and release API fill those gaps without re-fetching current homepage facts."
+  },
+  "sources": [
+    {
+      "id": "discovery",
+      "publisher": "AlternativeTo",
+      "title": "discovery",
+      "url": "https://alternativeto.net/software/radix/about/",
+      "finalUrl": "https://alternativeto.net/software/radix/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:36.572Z",
+      "reusedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "originalPath": "docs/content/.runtime/verification-2/radix-directory.json",
+      "snapshotPath": "sources/discovery-reused.json",
+      "sha256": "19207b259e6fef7004e37baedaf0ae9486731ad58a1a7186daff1eed8a95dc9d",
+      "publicationDate": null,
+      "scope": "Existing verified baseline; not re-fetched"
+    },
+    {
+      "id": "homepage",
+      "publisher": "Colin Kim / Radix",
+      "title": "homepage",
+      "url": "https://radix.colinkim.dev/",
+      "finalUrl": "https://tryradix.app/",
+      "retrievedAtUtc": "2026-10-21T19:09:38.009021+00:00",
+      "reusedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "originalPath": "docs/content/.runtime/verification-2/radix-official.json",
+      "snapshotPath": "sources/homepage-reused.json",
+      "sha256": "64ec7ecb755b0b2c6f9f0650ad9605eda97042151272ebf6e75cc0810d0e02b8",
+      "publicationDate": null,
+      "scope": "Existing verified baseline; not re-fetched"
+    },
+    {
+      "id": "discovery-edge",
+      "publisher": "AlternativeTo",
+      "title": "discovery-edge",
+      "url": "https://alternativeto.net/software/mole/?p=4",
+      "finalUrl": "https://alternativeto.net/software/mole/?p=4",
+      "retrievedAtUtc": "2026-10-21T18:37:13.603Z",
+      "reusedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "originalPath": "docs/content/.runtime/mole-4.json",
+      "snapshotPath": "sources/discovery-edge-reused.json",
+      "sha256": "26c4fe7f7dac297350644d323feed4cf1053eb94ced3155bb7624aed7d947453",
+      "publicationDate": null,
+      "scope": "Existing verified baseline; not re-fetched"
+    },
+    {
+      "id": "repository-head",
+      "url": "https://api.github.com/repos/colinvkim/Radix/commits/main",
+      "finalUrl": "https://api.github.com/repos/colinvkim/Radix/commits/main",
+      "retrievedAtUtc": "2026-10-21T22:02:15.645767+00:00",
+      "httpStatus": 200,
+      "path": "sources/repository-head.json",
+      "sha256": "a92051b489b575f9ad06166b2302ed02834e419a998722ec6cbd422e915a8513",
+      "bytes": 30554,
+      "publisher": "Colin Kim / official Radix repository",
+      "snapshotPath": "sources/repository-head.json",
+      "publicationDate": null,
+      "scope": "Pinned main documentation/image, except mutable latest-release API; not execution evidence"
+    },
+    {
+      "id": "readme",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "retrievedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "httpStatus": 200,
+      "path": "sources/README.md",
+      "sha256": "a6246e6ab032a637fc064bb88a0847944befe9b1231c372db6e23bb2db55525b",
+      "bytes": 7910,
+      "publisher": "Colin Kim / official Radix repository",
+      "snapshotPath": "sources/README.md",
+      "publicationDate": null,
+      "scope": "Pinned main documentation/image, except mutable latest-release API; not execution evidence"
+    },
+    {
+      "id": "license",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+      "retrievedAtUtc": "2026-10-21T22:02:17.192531+00:00",
+      "httpStatus": 200,
+      "path": "sources/LICENSE.txt",
+      "sha256": "d42aa2173a26d9e31bfe08408108f457b7bec66173591f037f7f60867faf52ab",
+      "bytes": 1066,
+      "publisher": "Colin Kim / official Radix repository",
+      "snapshotPath": "sources/LICENSE.txt",
+      "publicationDate": null,
+      "scope": "Pinned main documentation/image, except mutable latest-release API; not execution evidence"
+    },
+    {
+      "id": "release",
+      "url": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "finalUrl": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "retrievedAtUtc": "2026-10-21T22:02:17.974639+00:00",
+      "httpStatus": 200,
+      "path": "sources/latest-release.json",
+      "sha256": "cd86a735e6f8bac58151df8c6caba1e442512858464e03e5189d13a4783f0cdd",
+      "bytes": 12126,
+      "publisher": "Colin Kim / official Radix repository",
+      "snapshotPath": "sources/latest-release.json",
+      "publicationDate": "2026-09-20T02:18:13Z",
+      "scope": "Pinned main documentation/image, except mutable latest-release API; not execution evidence"
+    },
+    {
+      "id": "radix-comparison-image",
+      "url": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/docs/images/radix-scan-comparison.png",
+      "finalUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/docs/images/radix-scan-comparison.png",
+      "retrievedAtUtc": "2026-10-21T22:02:19.198536+00:00",
+      "httpStatus": 200,
+      "path": "assets/radix-scan-comparison-original.png",
+      "sha256": "81dc1eba56c260ca3d943adc01949e7e68635308657c343b56deda8b57a82fc4",
+      "bytes": 368841,
+      "publisher": "Colin Kim / official Radix repository",
+      "snapshotPath": "assets/radix-scan-comparison-original.png",
+      "publicationDate": null,
+      "scope": "Pinned main documentation/image, except mutable latest-release API; not execution evidence"
+    },
+    {
+      "id": "br-capabilities",
+      "publisher": "Breathing Room first-party repository",
+      "title": "docs/content/capabilities.md",
+      "url": null,
+      "finalUrl": null,
+      "path": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    },
+    {
+      "id": "br-readme",
+      "publisher": "Breathing Room first-party repository",
+      "title": "README.md",
+      "url": null,
+      "finalUrl": null,
+      "path": "README.md",
+      "sha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    },
+    {
+      "id": "br-release",
+      "publisher": "Breathing Room first-party repository",
+      "title": "RELEASE_NOTES.md",
+      "url": null,
+      "finalUrl": null,
+      "path": "RELEASE_NOTES.md",
+      "sha256": "409e10e9dd37c065add6072bacc1887cf78238601f403d963bbca28585a2a1cc",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    },
+    {
+      "id": "br-config",
+      "publisher": "Breathing Room first-party repository",
+      "title": "src-tauri/tauri.conf.json",
+      "url": null,
+      "finalUrl": null,
+      "path": "src-tauri/tauri.conf.json",
+      "sha256": "6e3f8a23846b64f1b8eacfc14ef19bd1528669b2bf5bcc86886d82b1f8001636",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    },
+    {
+      "id": "br-pricing-config",
+      "publisher": "Breathing Room first-party repository",
+      "title": "src/billing-config.json",
+      "url": null,
+      "finalUrl": null,
+      "path": "src/billing-config.json",
+      "sha256": "537168c749b07d9797a243cd6cfb68b6fd4e735d397773d297605c85f1de65e9",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    },
+    {
+      "id": "br-screenshots",
+      "publisher": "Breathing Room first-party repository",
+      "title": "docs/content/screenshots.json",
+      "url": null,
+      "finalUrl": null,
+      "path": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "retrievedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "publicationDate": null,
+      "scope": "Local documentary recheck; public page checks reused from capabilities dated 2026-10-21"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "Radix is Colin Kim’s macOS disk-space analyzer; the former radix.colinkim.dev homepage redirects to tryradix.app, which links colinvkim/Radix.",
+      "intendedLocation": "Identity and lead",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://radix.colinkim.dev/",
+      "supportingExcerpt": "Radix; © 2026 Colin Kim; View on GitHub → https://github.com/colinvkim/Radix",
+      "checkedAtUtc": "2026-10-21T19:09:38.009021+00:00",
+      "scope": "Redirect and links retained in reused homepage JSON; repository README links back to tryradix.app.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "macos",
+      "wording": "Radix requires macOS Sonoma 14 or later.",
+      "intendedLocation": "Compatibility row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Radix requires **macOS Sonoma 14 or later**.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "README Installation; no Windows or Linux support claimed.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "release",
+      "wording": "The latest-release API returned Radix v1.8.0, published September 20, 2026, with a universal Intel/Apple silicon macOS 14.0+ download.",
+      "intendedLocation": "Version and installation caveat",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "supportingExcerpt": "Download [Radix v1.8.0 for macOS 14.0+ (universal binary for Intel and Apple silicon systems)]",
+      "checkedAtUtc": "2026-10-21T22:02:17.974639+00:00",
+      "scope": "API tag_name=v1.8.0, draft=false, prerelease=false; binary not downloaded or tested; latest is check-specific.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "free",
+      "wording": "The official site advertises Radix as open source and free forever.",
+      "intendedLocation": "Pricing row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://radix.colinkim.dev/",
+      "supportingExcerpt": "Download Radix today and reclaim your disk space. Open source and free forever.",
+      "checkedAtUtc": "2026-10-21T19:09:38.009021+00:00",
+      "scope": "Advertised public offer, no checkout tested; no currency or billing period applies to this free offer. Not a guarantee of future pricing.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "license",
+      "wording": "Radix and its associated repository documentation are offered under the MIT licence, copyright 2026 Colin Kim; copies must retain the copyright and permission notice.",
+      "intendedLocation": "Licence and screenshot credit",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "license"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+      "supportingExcerpt": "Copyright (c) 2026 Colin Kim\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files",
+      "checkedAtUtc": "2026-10-21T22:02:17.192531+00:00",
+      "scope": "Full notice and disclaimer retained in sources/LICENSE.txt; no blanket trademark or third-party rights inferred.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "local",
+      "wording": "The vendor says scans and saved results stay local and no account is required.",
+      "intendedLocation": "Local/hosted row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "homepage"
+      ],
+      "sourceUrl": "https://radix.colinkim.dev/",
+      "supportingExcerpt": "Scans and saved results stay local, with no account required.",
+      "checkedAtUtc": "2026-10-21T19:09:38.009021+00:00",
+      "scope": "Vendor documentation, not network or privacy audit; do not expand to no network traffic, telemetry or update checks.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "maps",
+      "wording": "Radix documents sunburst and treemap views, hover inspection and double-click folder drill-down.",
+      "intendedLocation": "Storage model row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Switch between **sunburst** and **treemap** views to understand how space is distributed. Hover over an item to inspect it, then double-click a folder to drill deeper.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Pinned main README Highlights; no speed benchmark or binary parity test.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "search",
+      "wording": "Radix documents sortable browsing, scan/focus search, kind/allocated-size filtering and Quick Look.",
+      "intendedLocation": "Workflow: inspect a changed folder",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Use the sortable file browser to inspect items, search the current focus or the entire scan, and filter by item kind or allocated size. Preview files with Quick Look",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Pinned main README Browse and Search; not hands-on testing.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "compare",
+      "wording": "Radix documents comparing two scans for files and folders that grew, shrank, appeared or disappeared.",
+      "intendedLocation": "Primary workflow and comparison row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Compare two scans to see which files and folders grew, shrank, appeared, or disappeared.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Snapshots are comparisons at scan times, not proof of which process wrote a file.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "snapshots",
+      "wording": "Completed Radix scans can be exported as .radixscan snapshots and reopened read-only.",
+      "intendedLocation": "Workflow: retain baseline",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Export completed scans as compact, losslessly compressed `.radixscan` snapshots and reopen them later as read-only results.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Documented snapshot behavior; scan coverage, target and time must be considered when interpreting changes.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "review",
+      "wording": "Radix lets users collect items in a Discard Pile and review them before deciding whether to move anything to Trash.",
+      "intendedLocation": "Approval controls row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Add items from the disk map, file browser, or inspector to the **Discard Pile**. Review everything together before deciding whether to move anything to the Trash.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Documented review UI, not a safety guarantee. Do not treat a large or growing location as disposable.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "permissions",
+      "wording": "Radix may need Full Disk Access for some folders and reports skipped files caused by permissions.",
+      "intendedLocation": "Coverage limitation",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "For some folders, the app may require **Full Disk Access**. Radix detects when files are skipped due to permissions",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "No settings changed. A partial scan is not proof that missing entries were deleted.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "clone-warning",
+      "wording": "Radix v1.8.0 release notes explain that deleting an APFS clone may free less space than expected.",
+      "intendedLocation": "Workflow: distinguish size from free space",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "release"
+      ],
+      "sourceUrl": "https://api.github.com/repos/colinvkim/Radix/releases/latest",
+      "supportingExcerpt": "why deleting a clone may free less space than expected",
+      "checkedAtUtc": "2026-10-21T22:02:17.974639+00:00",
+      "scope": "Vendor release explanation, not independent filesystem validation. No savings calculation.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "install",
+      "wording": "Radix documents Homebrew cask installation or downloading a release and dragging it into Applications.",
+      "intendedLocation": "Installation row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "brew install --cask radix\nDownload the latest version from [Releases]",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "No install executed; code-building Xcode 26/Swift 6.2 prerequisites are not end-user runtime prerequisites. Signing/notarization status not verified.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a free macOS 13+ preview, version 0.1.0-preview.1; its release notes disclose Apple Development signing, no Developer ID signing or notarization, and untested physical Intel execution.",
+      "intendedLocation": "Breathing Room caveat block",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-release"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Universal installer for Apple Silicon and Intel Macs, macOS 13 or later.\nApple Development signed, **not Developer ID signed or notarized**.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "Local RELEASE_NOTES.md #Breathing Room 0.1.0-preview.1; public-release check already retained in capabilities. Not a new binary-signature inspection.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-runtime",
+      "wording": "Breathing Room discloses unbundled Python 3.10+ for disk inventory/legacy scripts and internet plus sign-in for hosted agent features.",
+      "intendedLocation": "Runtime and hosted boundary",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Python 3.10+ ... Python is not bundled; Internet access and sign-in for hosted agent features.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Requirements; public GitHub downloads do not require a Breathing Room account; website download registration is separate.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-price",
+      "wording": "Breathing Room’s core app is free; optional AI Care is advertised at $5 USD/month or $50 USD/year.",
+      "intendedLocation": "Price row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "**AI Care is optional: $5 USD/month or $50 USD/year.**",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Free app and optional AI Care and config amounts match; public offer checked 2026-10-21 in capabilities. Renewing subscription, applicable checkout tax; allowance and entitlement enforcement unverified. No separate app purchase inferred from legacy appAmount.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-space",
+      "wording": "Breathing Room documents category, app/tool, project, folder and large-file storage views; inventories can be partial or cached.",
+      "intendedLocation": "Storage model row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "explore its category, app/tool, project, folder, and large-file views. ... A previous inventory can appear while a new scan runs",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Understand your storage; source/release evidence, not native results from this worker.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-activity",
+      "wording": "Breathing Room documents app/helper CPU and memory views and sampled activity history; ownership is inferred and sampled I/O does not prove a particular writer.",
+      "intendedLocation": "Monitoring row and decision boundary",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Events may be coalesced or missed, ownership is inferred from paths, and sampled I/O does not prove which process wrote a particular file.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Investigate busy apps and recurring growth; not forensic attribution or a speedup claim.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-approval",
+      "wording": "Breathing Room documents reviewing exact cleanup locations and methods; an optional narrowly verified Ruff-cache automatic mode qualifies any blanket approval promise.",
+      "intendedLocation": "Approval controls row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Explicit optional automatic Ruff mode ... Automatically move verified Ruff lint caches to Trash.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "capabilities Approval exception records inspected code; do not claim unconditional never-deletes-without-asking. Daily care reuses exact saved approvals while app runs.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Breathing Room AI requests can send questions and relevant tool output, including paths and storage information, to its hosted service.",
+      "intendedLocation": "Local/hosted row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "AI-assisted requests use the configured hosted service and can include your question and relevant tool output, including file paths and storage information.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Privacy and safety boundaries; local inspection does not mean entirely offline AI.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-license",
+      "wording": "Breathing Room’s desktop source is Apache-2.0; the website and hosted service implementation are not included in that public app source.",
+      "intendedLocation": "Licence row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-release"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Apache-2.0 app source with a NOTICE and preserved Seal MIT attribution.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "RELEASE_NOTES.md What is included and final source-scope disclosure. Not a hosted-service entitlement or trademark licence.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-dev",
+      "wording": "Breathing Room’s inspected source includes discovery for several developer caches, including npm, uv, pip, pnpm, Go, Bun and Yarn; compatible tools and native path/method validation are required.",
+      "intendedLocation": "Developer-cache row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Discovery includes queries for npm, uv, pip, pnpm, Go build/module, Bun and Yarn caches, plus project markers and generated directories.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "Source-level capability register, not cross-machine validation or guarantee a folder is disposable.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "br-daily",
+      "wording": "Breathing Room daily care reuses saved exact approvals while the app remains running; newly discovered locations wait for review.",
+      "intendedLocation": "Recurring growth and daily care row",
+      "state": "verified",
+      "evidenceClass": "officially-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": null,
+      "supportingExcerpt": "Scheduled care cleans only exact locations and methods you\npreviously approved; newly discovered locations wait for review.",
+      "checkedAtUtc": "2026-10-21T22:05:20.133185+00:00",
+      "scope": "README Set up daily care; busy/low-battery conditions can defer. No wake-after-quit promise.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "unknown-radix-monitoring",
+      "wording": "Radix continuous recurring-growth monitoring and app/helper CPU or memory grouping: not verified.",
+      "intendedLocation": "Unknowns/matrix",
+      "state": "not-verified",
+      "evidenceClass": "research-gap",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Checked README Highlights, More Features, Privacy & Permissions and Installation; these sections do not establish this claim.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Limited documentation check; missing evidence is not feature absence. Do not publish a No checkmark.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "unknown-radix-dev",
+      "wording": "Radix package-manager-specific developer-cache cleanup adapters: not verified.",
+      "intendedLocation": "Unknowns/matrix",
+      "state": "not-verified",
+      "evidenceClass": "research-gap",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Checked README Highlights, More Features, Privacy & Permissions and Installation; these sections do not establish this claim.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Limited documentation check; missing evidence is not feature absence. Do not publish a No checkmark.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    },
+    {
+      "id": "unknown-radix-signing",
+      "wording": "Radix Developer ID signing, notarization, clean-machine behavior and independent runtime dependencies: not verified.",
+      "intendedLocation": "Unknowns/matrix",
+      "state": "not-verified",
+      "evidenceClass": "research-gap",
+      "sourceIds": [
+        "readme"
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/README.md",
+      "supportingExcerpt": "Checked README Highlights, More Features, Privacy & Permissions and Installation; these sections do not establish this claim.",
+      "checkedAtUtc": "2026-10-21T22:02:16.403985+00:00",
+      "scope": "Limited documentation check; missing evidence is not feature absence. Do not publish a No checkmark.",
+      "reviewer": "research-radix worker; documentary review only",
+      "unresolvedQuestions": []
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "macOS / architecture",
+      "radixClaimIds": [
+        "macos",
+        "release"
+      ],
+      "breathingRoomClaimIds": [
+        "br-preview"
+      ]
+    },
+    {
+      "dimension": "licence / cost",
+      "radixClaimIds": [
+        "license",
+        "free"
+      ],
+      "breathingRoomClaimIds": [
+        "br-price",
+        "br-license"
+      ]
+    },
+    {
+      "dimension": "local / hosted / account",
+      "radixClaimIds": [
+        "local"
+      ],
+      "breathingRoomClaimIds": [
+        "br-hosted",
+        "br-runtime"
+      ]
+    },
+    {
+      "dimension": "storage exploration",
+      "radixClaimIds": [
+        "maps",
+        "search"
+      ],
+      "breathingRoomClaimIds": [
+        "br-space"
+      ]
+    },
+    {
+      "dimension": "change over time",
+      "radixClaimIds": [
+        "compare",
+        "snapshots"
+      ],
+      "breathingRoomClaimIds": [
+        "br-activity"
+      ]
+    },
+    {
+      "dimension": "cleanup / approval",
+      "radixClaimIds": [
+        "review"
+      ],
+      "breathingRoomClaimIds": [
+        "br-approval"
+      ]
+    },
+    {
+      "dimension": "app and helper grouping",
+      "radixClaimIds": [
+        "unknown-radix-monitoring"
+      ],
+      "breathingRoomClaimIds": [
+        "br-activity"
+      ]
+    },
+    {
+      "dimension": "continuous recurring growth",
+      "radixClaimIds": [
+        "unknown-radix-monitoring"
+      ],
+      "breathingRoomClaimIds": [
+        "br-activity",
+        "br-daily"
+      ]
+    },
+    {
+      "dimension": "developer-cache methods",
+      "radixClaimIds": [
+        "unknown-radix-dev"
+      ],
+      "breathingRoomClaimIds": [
+        "br-dev"
+      ]
+    },
+    {
+      "dimension": "installation / runtime / permissions",
+      "radixClaimIds": [
+        "install",
+        "permissions",
+        "unknown-radix-signing"
+      ],
+      "breathingRoomClaimIds": [
+        "br-preview",
+        "br-runtime"
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "radix-official-scan-comparison",
+      "productId": "radix",
+      "view": "Storage Changes / saved scan comparison",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/colinvkim/Radix/blob/e320bd6a02217a454fa39796387449211ffd4c01/README.md#compare-scans-over-time",
+      "assetUrl": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/docs/images/radix-scan-comparison.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T22:02:19.198536+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": "e320bd6a02217a454fa39796387449211ffd4c01",
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": "docs/content/competitors/radix/assets/radix-scan-comparison-original.png",
+      "originalSha256": "81dc1eba56c260ca3d943adc01949e7e68635308657c343b56deda8b57a82fc4",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 3024,
+      "heightPx": 1974,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed-for-research",
+        "redactions": [],
+        "diagnostic": "Officially published image shows author username colin and Library paths; no credentials, account tokens or file contents visible. Not our machine. Independent publication review remains required."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "Repository documentation image embedded by README under root MIT licence covering associated documentation files. No image-specific exception appears in inspected README/LICENSE. Retain full copyright, permission and disclaimer with distributed asset; no trademark endorsement inferred.",
+        "evidenceUrlOrPath": "https://raw.githubusercontent.com/colinvkim/Radix/e320bd6a02217a454fa39796387449211ffd4c01/LICENSE",
+        "noticePath": "docs/content/competitors/radix/sources/LICENSE.txt",
+        "credit": "Radix screenshot © 2026 Colin Kim, MIT License."
+      },
+      "caption": "Official Radix scan-comparison screenshot, supplied in its repository documentation. Figures are vendor illustration, not our scan, a benchmark, or measured cleanup results. The visible warning notes unreadable locations; missing entries are not necessarily deleted.",
+      "alt": "Radix Storage Changes window comparing earlier and later scans, with folder-level increases and decreases and a limited-coverage warning.",
+      "supportedClaimIds": [
+        "compare",
+        "permissions"
+      ],
+      "limitations": [
+        "Vendor capture date, app version and OS version are unknown; repository commit pins the image, not the depicted binary.",
+        "Keep the coverage warning readable; do not quote screenshot totals as independently verified savings.",
+        "Full 3024-pixel-wide UI needs a readable full-size link or contextual crop at draft stage; no alteration performed."
+      ],
+      "review": {
+        "status": "research-image-opened-and-read",
+        "reviewer": "research-radix worker",
+        "reviewedAtUtc": "2026-10-21T22:05:20.133185+00:00"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job (per registry)",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview",
+        "credit": "Breathing Room first-party browser preview; example data."
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "br-space"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Keep both visible example-data labels. Current-source means the October 21 capture at its recorded commit, not independently verified newest HEAD or distributed release."
+      ],
+      "review": {
+        "status": "research-image-opened-and-read",
+        "reviewer": "research-radix worker",
+        "reviewedAtUtc": "2026-10-21T22:05:20.133185+00:00"
+      }
+    }
+  ],
+  "versionPolicy": {
+    "radixLatestPublished": "v1.8.0",
+    "radixPublishedAt": "2026-09-20T02:18:13Z",
+    "radixDocsCommit": "e320bd6a02217a454fa39796387449211ffd4c01",
+    "radixBinaryTested": false,
+    "breathingRoomDocumentedPreview": "0.1.0-preview.1",
+    "breathingRoomBinaryTested": false,
+    "limitations": "Main README and screenshot are source-documentation evidence, not a claim that every main change is in the release. Release notes independently document scan comparisons, Discard Pile and universal macOS 14+ availability. Never label unversioned vendor screenshot v1.8.0."
+  },
+  "articleBrief": {
+    "track": "search/reference workflow",
+    "primaryIntent": "Compare two Mac storage scans to investigate where space went, without confusing missing files or changed allocation with cleanup savings.",
+    "title": "Find what grew on your Mac with saved Radix scans",
+    "slug": "compare-mac-storage-growth-with-radix-snapshots",
+    "description": "Use Radix’s documented snapshot comparison to narrow a storage-growth investigation, check scan coverage, and review files before deciding what to remove. This is a documentation-led guide, not a hands-on benchmark.",
+    "distinctFromComparison": "A before/after investigation and coverage checklist, not a feature-matrix expansion.",
+    "outline": [
+      "Start with the changed-folder question, not the largest-file question. Put the official scan-comparison visual after the lead.",
+      "Keep a baseline scan for a chosen folder or volume; label time, target and exclusions.",
+      "Compare a later scan with that baseline; inspect grew/shrank/appeared/disappeared entries and confirm coverage before interpreting missing items.",
+      "Search and inspect the changed branch; use Quick Look and Finder context without assuming cache or personal-file removability.",
+      "Review candidates in Discard Pile; back up originals, consider rebuild costs and separate Trash moves from free-space changes.",
+      "When periodic scans answer the question, stay with Radix; if activity context is needed, introduce Breathing Room, which we build, with preview/hosted limitations. Show the labeled Space browser preview here."
+    ],
+    "interactionPass": {
+      "decisionAid": "Read-only coverage checklist: same target? comparable exclusions? unreadable locations? APFS shared allocation? ownership and rebuild cost understood? If not, investigate before cleanup.",
+      "implementation": "Handoff only; research stage creates no website widget or executable cleanup example."
+    },
+    "internalLinkIntent": [
+      "/comparisons/radix/",
+      "/comparisons/",
+      "Existing relevant storage-unit tool only after its actual route is verified"
+    ],
+    "avoid": [
+      "No terminal commands or runnable cleanup tutorial",
+      "No performance, safety or savings claims",
+      "No fabricated scan timing, output or native test",
+      "No invented FAQ or separate alternatives doorway"
+    ]
+  },
+  "comparisonBrief": {
+    "title": "Breathing Room vs Radix: ongoing context or saved-scan comparison",
+    "slug": "radix",
+    "routeIntent": "/comparisons/radix/",
+    "primaryIntent": "Choose a documented Mac storage workflow, not declare a universal winner.",
+    "lead": "Radix fits visual exploration and comparing saved scans. Breathing Room, which we build, adds documented app/helper and activity context, but remains a non-notarized preview and uses a hosted connection for AI features.",
+    "sections": [
+      "Concise sourced matrix using claim IDs above",
+      "When Radix is enough",
+      "When Breathing Room activity context is relevant",
+      "Runtime, privacy, pricing and unknowns",
+      "Link to the distinct snapshot-investigation article"
+    ],
+    "requiredDisclosures": [
+      "We build Breathing Room",
+      "Documentation review, not hands-on tests",
+      "Exact OS, preview, Python and hosted/account boundaries",
+      "Vendor screenshot versus first-party example-data preview"
+    ]
+  },
+  "advantagesAndTradeoffs": {
+    "radixAdvantages": [
+      {
+        "text": "Documented sunburst/treemap visualization and portable read-only snapshots for explicit scan-to-scan comparison.",
+        "claimIds": [
+          "maps",
+          "compare",
+          "snapshots"
+        ]
+      },
+      {
+        "text": "Advertised free, local, no-account workflow; MIT-licensed source.",
+        "claimIds": [
+          "free",
+          "local",
+          "license"
+        ]
+      }
+    ],
+    "radixTradeoffs": [
+      {
+        "text": "Requires macOS 14+, and permissions can limit scan coverage. A snapshot difference is not process-level attribution.",
+        "claimIds": [
+          "macos",
+          "permissions",
+          "compare"
+        ]
+      },
+      {
+        "text": "Continuous activity/helper tracking and developer-specific cleanup methods remain not verified; do not present them as absent.",
+        "claimIds": [
+          "unknown-radix-monitoring",
+          "unknown-radix-dev"
+        ]
+      }
+    ],
+    "breathingRoomAdvantages": [
+      {
+        "text": "Documented app/helper CPU/memory and activity context complement a storage investigation; local tools are free.",
+        "claimIds": [
+          "br-activity",
+          "br-price"
+        ]
+      }
+    ],
+    "breathingRoomTradeoffs": [
+      {
+        "text": "Non-notarized preview with Python prerequisite, physical Intel validation limits, hosted AI/account boundary and optional recurring AI Care pricing.",
+        "claimIds": [
+          "br-preview",
+          "br-runtime",
+          "br-hosted",
+          "br-price"
+        ]
+      }
+    ]
+  },
+  "unknowns": [
+    "Radix screenshot app/OS version, capture date and actual measurement inputs.",
+    "Radix binary signing/notarization, independent installation/runtime behavior and network behavior.",
+    "Radix continuous monitoring, helper grouping and developer-cache adapters; no negative feature claims permitted.",
+    "Breathing Room binary parity, clean-machine and physical Intel testing, hosted entitlement/allowance enforcement."
+  ],
+  "gates": {
+    "criticalResearchBlockers": [],
+    "draftingDecision": "Proceed only with the bounded documentation-led briefs and retained caveats; no blocked unknown may be promoted to fact.",
+    "publicationStatus": "not-approved",
+    "requiredLater": [
+      "Independent claim and visual review of exact draft/assets",
+      "Preserve full MIT notice with competitor visual and adjacent credit",
+      "Readable responsive screenshot treatment with coverage/example labels intact",
+      "Site check/build/test and browser QA only in a separately owned drafting/review job",
+      "Recheck volatile pricing/availability within 30 days and before release if stale"
+    ]
+  },
+  "validation": {
+    "performed": [
+      "Parsed retained public sources and original baseline snapshots",
+      "Verified baseline outer-file SHA-256 before reusing records",
+      "Opened and read both actual product images",
+      "Verified selected first-party image matches screenshot registry hash",
+      "Rechecked current local Breathing Room README, release notes, native config and billing config"
+    ],
+    "notPerformed": [
+      "Native testing, installation, cleanup, benchmarks, account or payment flows",
+      "Website changes, site builds, browser automation or independent editorial review"
+    ],
+    "logPath": "docs/content/competitors/radix/validation.json"
+  }
+}

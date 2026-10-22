@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-columnfit",
+  "productId": "columnfit",
+  "checkedOn": "2026-10-21",
+  "status": "complete-exclusion-research",
+  "identity": {
+    "officialName": "ColumnFit",
+    "canonicalOwnerId": "columnfit",
+    "homepage": "https://github.com/firatcam/ColumnFit",
+    "repository": "https://github.com/firatcam/ColumnFit",
+    "publisherHandle": "firatcam",
+    "verifiedAliases": [],
+    "aliasDecision": "No alias established in the reused directory or official source. Not a verified alias of PowerMyMac. Skip is for relevance, not deduplication.",
+    "classification": "excluded-irrelevant-finder-automation",
+    "platformFit": "Mac-native utility, but its documented job is Finder column sizing rather than storage investigation, cleanup or app/process monitoring.",
+    "directFit": false,
+    "adjacentFit": "Only broad macOS file-management adjacency; insufficient overlap to justify a replacement comparison."
+  },
+  "decision": {
+    "action": "skip",
+    "reasonCode": "irrelevant-workflow",
+    "reason": "Official documentation describes automatic resizing of newly opened Finder columns. A crowd-sourced Mole alternatives edge does not establish maintenance-tool substitutability. Do not manufacture a Breathing Room replacement intent.",
+    "supportingClaimIds": ["CF01", "CF02", "CF06", "BR01"],
+    "draftAllowed": false,
+    "publicationEligible": false,
+    "nextStageInstruction": "Record an exclusion handoff only; no workflow article or comparison page. Reopen only with evidence of a relevant overlapping job and separately satisfied visual gates.",
+    "criticalEvidenceMissingForExclusion": [],
+    "hypotheticalDraftBlockers": ["No justified replacement/comparison intent", "No verified competitor app-UI asset URL or reuse clearance"],
+    "notDeadProductClaim": true
+  },
+  "method": {
+    "reusedFirst": "docs/content/verification/batch-1.json product columnfit",
+    "batchSha256": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "newNetworkFetches": 0,
+    "reason": "Same-day verified identity/platform/function plus the retained full official README are sufficient to decide exclusion. Missing pricing/release/image details do not affect that decision.",
+    "handsOnTests": false,
+    "browserUsed": false,
+    "instructionsChecked": "PLAN.md, EDITORIAL.md, capabilities.md, screenshots.json; no AGENTS.md found in app tree or checked ancestors. Loaded blog and browser-automation skills and adapted MailKite contract.",
+    "scope": "Only this competitor packet and the required runtime receipt; no site or shared manifest edits."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/columnfit/about/",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=8",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:24.218Z",
+    "edgeRecord": "docs/content/competitors.json product columnfit.edges[0]",
+    "listingRetrievedAtUtc": "2026-10-21T19:06:03.864Z",
+    "rawSnapshotPath": "docs/content/.runtime/verification-1/columnfit-directory.json",
+    "rawSnapshotSha256": "91744050a3631da29fb6a2360cf203cab592aa5549d636b608436ac8cd4580ad",
+    "limitation": "Seed pagination provenance reused from manifest, not independently revisited; directory establishes discovery and official link, not capability or performance."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "firatcam",
+      "title": "ColumnFit repository README",
+      "url": "https://github.com/firatcam/ColumnFit",
+      "finalUrl": "https://github.com/firatcam/ColumnFit",
+      "retrievedAtUtc": "2026-10-21T19:08:02.170933+00:00",
+      "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/.runtime/verification-1/columnfit-official.json",
+      "sha256": "f5ba5838e2d876793ced391983add11a7438834c4705a51ad08d78a8686a0d8d",
+      "publishedOrUpdatedAt": null,
+      "scope": "Mutable main README; mentions ColumnFit-1.3.0.zip, not independently verified release or binary."
+    },
+    {
+      "id": "S2",
+      "publisher": "AlternativeTo",
+      "title": "ColumnFit About",
+      "url": "https://alternativeto.net/software/columnfit/about/",
+      "finalUrl": "https://alternativeto.net/software/columnfit/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:03.864Z",
+      "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/.runtime/verification-1/columnfit-directory.json",
+      "sha256": "91744050a3631da29fb6a2360cf203cab592aa5549d636b608436ac8cd4580ad",
+      "publishedOrUpdatedAt": "2026-10-21",
+      "scope": "Discovery and official identity link; crowdsourced."
+    },
+    {
+      "id": "S3",
+      "publisher": "Breathing Room programme",
+      "title": "Current same-day capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "evidencePath": "docs/content/capabilities.md",
+      "reviewedOn": "2026-10-21",
+      "scope": "Reuse register and its source pointers; no new runtime or public-page test."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CF01", "wording": "ColumnFit's official homepage and source repository are firatcam/ColumnFit on GitHub.",
+      "sourceIds": ["S1", "S2"], "sourceUrl": "https://alternativeto.net/software/columnfit/about/",
+      "excerpt": "Official Website\ngithub.com/firatcam/ColumnFit", "checkedOn": "2026-10-21",
+      "state": "verified", "evidenceClass": "documented-identity", "location": "identity/exclusion", "reviewer": "research-columnfit"
+    },
+    {
+      "id": "CF02", "wording": "The author describes a menu-bar app that automatically right-sizes a newly opened Finder Column View column when a folder is selected with the mouse or arrow keys.",
+      "sourceIds": ["S1"], "sourceUrl": "https://github.com/firatcam/ColumnFit#columnfit",
+      "excerpt": "A tiny menu bar app that automatically\nright-sizes the newly opened column\nin Finder's Column View — every time you select a folder, with the mouse\nor\nthe arrow keys.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "classification/decision", "reviewer": "research-columnfit"
+    },
+    {
+      "id": "CF03", "wording": "The README lists macOS 13 Ventura and later, Apple Silicon and Intel, and MIT licensing.",
+      "sourceIds": ["S1"], "sourceUrl": "https://github.com/firatcam/ColumnFit#columnfit",
+      "excerpt": "13 Ventura and later\n(Apple Silicon & Intel)\nMenu bar only, no Dock icon · no network access · no telemetry\nLanguages: English (default), Deutsch, Türkçe, Français, Español\nMIT licensed",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "platform/license", "reviewer": "research-columnfit", "conditions": "No architecture, OS compatibility or network audit performed. Licence text not separately fetched."
+    },
+    {
+      "id": "CF04", "wording": "The retained installation instructions name ColumnFit-1.3.0.zip and require Accessibility permission for Finder interaction.",
+      "sourceIds": ["S1"], "sourceUrl": "https://github.com/firatcam/ColumnFit#install",
+      "excerpt": "ColumnFit-1.3.0.zip\nfrom the\nlatest Releases\npage and move\nColumnFit.app\nto\n/Applications",
+      "additionalExcerpt": "permission to ColumnFit. This permission is required for Finder interaction.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "version/install-caveats", "reviewer": "research-columnfit", "conditions": "README filename only; latest release, binary signing/notarization and successful installation not verified. Do not republish protection-bypass advice."
+    },
+    {
+      "id": "CF05", "wording": "The author says the resize handle can vary by macOS version/display scaling and provides calibration.",
+      "sourceIds": ["S1"], "sourceUrl": "https://github.com/firatcam/ColumnFit#notes--limitations",
+      "excerpt": "The resize handle's exact position can differ slightly between macOS versions and display scaling; that is what the calibration panel is for.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "trade-offs", "reviewer": "research-columnfit"
+    },
+    {
+      "id": "CF06", "wording": "The author limits operation to when Finder is frontmost.",
+      "sourceIds": ["S1"], "sourceUrl": "https://github.com/firatcam/ColumnFit#notes--limitations",
+      "excerpt": "Finder must be the frontmost app; ColumnFit does nothing in the background.",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "workflow boundary", "reviewer": "research-columnfit", "conditions": "Refers to documented Finder-resizing behavior, not a process audit."
+    },
+    {
+      "id": "BR01", "wording": "Breathing Room is a macOS maintenance preview with documented storage investigation, grouped monitoring and approval-based cleanup workflows; this is a different job from Finder column sizing.",
+      "sourceIds": ["S3"], "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance **preview**",
+      "checkedOn": "2026-10-21", "state": "verified", "evidenceClass": "reused-capabilities-register-plus-editorial-fit-judgment", "location": "exclusion rationale", "reviewer": "research-columnfit",
+      "conditions": "Register separates source from distributed runtime. Version 0.1.0-preview.1, macOS 13+, Python 3.10+ prerequisite; Apple Development signed, not Developer ID signed/notarized. Hosted authenticated AI is not offline; free local core, advertised AI Care USD 5/month or USD 50/year with renewal/tax conditions. Do not infer Finder automation support."
+    }
+  ],
+  "matrix": {
+    "macOS": {"value": "13+; Apple Silicon and Intel documented", "claimIds": ["CF03"]},
+    "license": {"value": "MIT documented", "claimIds": ["CF03"]},
+    "localHosted": {"value": "README says no network access or telemetry, not independently audited", "claimIds": ["CF03"]},
+    "coreWorkflow": {"value": "Finder column resizing", "claimIds": ["CF02", "CF06"]},
+    "scanCleanupModel": {"value": "not verified; not the documented job", "claimIds": ["CF02"]},
+    "cleanupApprovals": {"value": "not verified; do not confuse Accessibility grant with cleanup approval", "claimIds": ["CF04"]},
+    "helperGrouping": {"value": "not verified", "claimIds": []},
+    "recurringGrowth": {"value": "not verified", "claimIds": []},
+    "developerCaches": {"value": "not verified", "claimIds": []},
+    "pricing": {"value": "not verified from an official offer; directory says free, baseline left pricing unverified", "claimIds": []},
+    "version": {"value": "1.3.0 filename in README only; exact current release not verified", "claimIds": ["CF04"]},
+    "runtimeInstall": {"value": "Accessibility permission; calibration may be needed; binary trust status not verified", "claimIds": ["CF04", "CF05"]}
+  },
+  "visuals": {
+    "competitor": {
+      "productId": "columnfit", "kind": "not-obtained", "sourcePageUrl": "https://github.com/firatcam/ColumnFit",
+      "assetUrl": null, "originalPath": null, "originalSha256": null, "capturedAtUtc": null, "retrievedAtUtc": null,
+      "reuse": {"status": "pending", "basis": "No real app-UI asset or image-specific rights established. MIT software wording is not blanket screenshot/trademark clearance."},
+      "knownNonQualifyingAsset": "https://github.com/firatcam/ColumnFit/blob/main/assets/icon-1024.png",
+      "limitations": ["Repository snapshot links an icon, not a qualifying app screenshot.", "No image downloaded; no claim that a screenshot does not exist.", "Excluded product needs no published visual. If reopened, resolve exact official/listing UI asset and rights before drafting."]
+    },
+    "breathingRoom": {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "widthPx": 2940, "heightPx": 3468, "dataMode": "example", "edits": [],
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "reuse": {"status": "cleared", "basis": "Existing screenshots.json: app-owner-requested first-party UI capture with required example-data disclosure. Third-party marks remain their owners' marks; context review still pending."},
+      "selectionStatus": "Reference selected and hash verified; not copied or published for this excluded product",
+      "limitations": ["Existing current-source capture, not a new capture or distributed native release test.", "Keep example banner and caption. No measured savings or runtime claims.", "Independent target-page visual/privacy review pending if reused."]
+    }
+  },
+  "briefs": {
+    "workflow": {
+      "status": "not-commissioned-excluded",
+      "candidateIntent": "Read long filenames while navigating Finder Column View without repeatedly resizing columns.",
+      "candidateTitle": "Right-size Finder columns while navigating long filenames",
+      "distinctness": "A genuine Finder-navigation workflow, distinct from storage investigation, but outside this maintenance comparison programme.",
+      "outlineIfSeparatelyCommissioned": ["Explain column clipping versus storage size", "Document column-resizing behavior and Accessibility boundary", "Explain calibration and frontmost-Finder limits"],
+      "doNotDraft": "No Breathing Room replacement arc or new site slug. Separate editorial authorization and UI visual rights required."
+    },
+    "comparison": {
+      "status": "skip-no-comparable-job",
+      "intent": "Determine whether a file-navigation nuisance or storage investigation is the actual problem.",
+      "conclusion": "These documented workflows differ. Use the official ColumnFit project for the Finder-sizing question; do not recommend Breathing Room as its substitute.",
+      "format": "Internal exclusion note only, not an indexed versus page.",
+      "interactionPass": "A navigation-versus-storage decision checklist would clarify scope, but a standalone competitor landing page would add no justified replacement value. No implementation authorized."
+    }
+  },
+  "advantagesAndTradeoffs": [
+    {"product": "columnfit", "type": "documented-strength", "text": "Targets automatic sizing during mouse/keyboard Finder navigation.", "claimIds": ["CF02"]},
+    {"product": "columnfit", "type": "documented-tradeoff", "text": "Requires Accessibility; Finder must be frontmost; display geometry may need calibration.", "claimIds": ["CF04", "CF05", "CF06"]},
+    {"product": "breathing-room", "type": "editorial-fit-not-superiority", "text": "Relevant to a different job: storage and app-activity investigation. Disclose 'Breathing Room, which we build' in any future recommendation; preview/runtime/hosted limitations apply.", "claimIds": ["BR01"]}
+  ],
+  "unknowns": [
+    "Current exact release/build, release asset availability and binary signature/notarization not independently verified.",
+    "Official price/offer conditions not verified; directory free claim not promoted to an official pricing fact.",
+    "No real competitor app screenshot URL or reuse grant established.",
+    "No verified aliases, runtime benchmarks, cleanup capabilities, process monitoring or cache support; unknown is not No."
+  ],
+  "handoff": "Completed evidence-backed exclusion research. Downstream stages should acknowledge skip without drafting or publication. Noncritical price/release/visual unknowns do not block exclusion; they would block affected claims or required visuals if the product were reintroduced."
+}

@@ -1,0 +1,18 @@
+{
+  "checkedAtUtc": "2026-10-21T20:16:59.895194+00:00",
+  "status": "passed-structural-checks-research-still-blocked",
+  "checks": [
+    "PASS: explicit blocked drafting gate, distinct canonical identity and no alias skip.",
+    "PASS: all 8 retained source/register SHA-256 values match actual files.",
+    "PASS: 23 competitor claims and 4 reused Breathing Room register excerpts match retained text, with URLs and check timestamps.",
+    "PASS: 10 matrix rows resolve to claim IDs.",
+    "PASS: official Cleanup image reference exists in README; no downloaded image/hash invented; selected first-party preview hash and example/native labels verified.",
+    "PASS: version scope, distinct briefs, interaction handoff, unknowns and blocking diagnostic present."
+  ],
+  "limitations": [
+    "Competitor screenshot pixels/rights not approved.",
+    "No native runtime or binary testing.",
+    "No site content changed: site checks/build/tests not run or claimed.",
+    "Initial collector excerpt assertion failed for curly apostrophe; exact-source correction passed on rerun."
+  ]
+}

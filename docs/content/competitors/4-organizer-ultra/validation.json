@@ -1,0 +1,21 @@
+{
+  "jobId": "research-4-organizer-ultra",
+  "result": "research-structure-passes-drafting-blocked",
+  "checks": [
+    {"check":"Python JSON parsing, unique IDs and references","result":"pass; 13 claim IDs reference 10 source IDs; matrix references resolve"},
+    {"check":"Baseline raw file-byte SHA-256","result":"pass; directory and official homepage raw files match batch-2 ledger"},
+    {"check":"Selected Breathing Room PNG","result":"pass; file-byte hash matches screenshots.json; actual image opened and example-data banner inspected"},
+    {"check":"Retained public browser DOM","result":"pass; app-image URL and 1280x701 dimensions present; saved DOM hash matches research source ledger"},
+    {"check":"Rights-gate consistency","result":"pass; research JSON and Markdown both block drafting under B01; no competitor PNG/WebP files in owned folder"},
+    {"check":"Final edited JSON","result":"pass; parses with 13 claims, 10 sources and B01; guide DOM hash verified after final edit"},
+    {"check":"git diff --check -- docs/content/competitors/4-organizer-ultra","result":"exit 0; limited coverage because folder is untracked"},
+    {"check":"Browser ownership","result":"owned tab 180 opened, public DOM inspected, then tab 180 closed; no profile restart or pre-existing tab interaction"},
+    {"check":"Site build/native runtime/independent review","result":"not performed; no site changes or runtime claims, independent review remains pending"}
+  ],
+  "artifactSha256": {
+    "research.json": "b7540f8d261a4872d21dc1765d4665c36c6aba27e4b042adc9e8153d561da873",
+    "research.md": "c711dc022e9598cee80e2ece663bc43afdaba35c7496dfbb58118313b735e8e7",
+    "official-guide-dom.json": "f03636b3bf4e85a66875bb6ab3a763c197caecb60d69ecbca01130cfd3ee2781"
+  },
+  "blockingDiagnostic": "Official app screenshots identified but copying/republishing permission not established; site terms reserve rights. Link-only fallback is not on-page image-gate satisfaction. Require separately authorized permission or explicit alternative policy decision before drafting."
+}

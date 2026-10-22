@@ -1,0 +1,105 @@
+{
+  "url": "https://static.abelssoft.de/storage/uploads/2022/09/26/washandgo_uid_6331676654c8a.zip",
+  "finalUrl": "https://static.abelssoft.de/storage/uploads/2022/09/26/washandgo_uid_6331676654c8a.zip",
+  "retrievedAtUtc": "2026-10-21T22:21:34.918292+00:00",
+  "sha256": "44306d3332c013b9e625fcd8f1f9a442145acd7e5308e1f5e5b59d71c4704623",
+  "bytes": 2900623,
+  "members": [
+    {
+      "name": "washandgo/~WRL3399.tmp",
+      "bytes": 129024
+    },
+    {
+      "name": "washandgo/boxshots/",
+      "bytes": 0
+    },
+    {
+      "name": "washandgo/boxshots/leftside.png",
+      "bytes": 1849588
+    },
+    {
+      "name": "washandgo/logo/",
+      "bytes": 0
+    },
+    {
+      "name": "washandgo/logo/washandgo22.png",
+      "bytes": 18596
+    },
+    {
+      "name": "washandgo/screenshots/",
+      "bytes": 0
+    },
+    {
+      "name": "washandgo/screenshots/EN_Automation.PNG",
+      "bytes": 56301
+    },
+    {
+      "name": "washandgo/screenshots/EN_Backups.PNG",
+      "bytes": 35319
+    },
+    {
+      "name": "washandgo/screenshots/EN_CleaningOptions.PNG",
+      "bytes": 68731
+    },
+    {
+      "name": "washandgo/screenshots/EN_CleaningResults.PNG",
+      "bytes": 48281
+    },
+    {
+      "name": "washandgo/screenshots/EN_Dashboard.PNG",
+      "bytes": 99639
+    },
+    {
+      "name": "washandgo/screenshots/EN_Scan.PNG",
+      "bytes": 43082
+    },
+    {
+      "name": "washandgo/screenshots/EN_ScanResult.PNG",
+      "bytes": 40507
+    },
+    {
+      "name": "washandgo/screenshots/EN_Tools.PNG",
+      "bytes": 43284
+    },
+    {
+      "name": "washandgo/screenshots/old/",
+      "bytes": 0
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_Automation.PNG",
+      "bytes": 89141
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_Backups.PNG",
+      "bytes": 71369
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_CleaningOptions.PNG",
+      "bytes": 98768
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_CleaningResult.PNG",
+      "bytes": 83831
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_Dashboard.PNG",
+      "bytes": 92586
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_Scan.png",
+      "bytes": 131965
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_ScanResult.PNG",
+      "bytes": 72238
+    },
+    {
+      "name": "washandgo/screenshots/old/EN_Tools.PNG",
+      "bytes": 74390
+    },
+    {
+      "name": "washandgo/washandgo-press release.doc",
+      "bytes": 125440
+    }
+  ]
+}

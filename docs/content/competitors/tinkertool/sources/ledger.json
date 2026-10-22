@@ -1,0 +1,79 @@
+[
+  {
+    "id": "details",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/0TinkerTool/details.html",
+    "finalUrl": "https://www.bresink.com/osx/0TinkerTool/details.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:26.682789+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/details.html",
+    "sha256": "d220228a3acd6b44a8c4f25d52de4e1405e151ff7124886b3e95156c3f8b2de4"
+  },
+  {
+    "id": "download",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/0TinkerTool/download.php",
+    "finalUrl": "https://www.bresink.com/osx/0TinkerTool/download.php",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:27.355397+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/download.html",
+    "sha256": "e9b24b3517b4cf91b5f00287f0b97c5e3efcb4db5ef9f454fe779b1f70231a81"
+  },
+  {
+    "id": "screenshots",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/0TinkerTool/screenshots.html",
+    "finalUrl": "https://www.bresink.com/osx/0TinkerTool/screenshots.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:28.125866+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/screenshots.html",
+    "sha256": "6a01e6e6a10ba8bf4a82e984b29804e0e32c5ffdfd1589592fe5175404c88401"
+  },
+  {
+    "id": "matrix",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/TinkerToolProductsMatrix.html",
+    "finalUrl": "https://www.bresink.com/osx/TinkerToolProductsMatrix.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:28.832087+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/matrix.html",
+    "sha256": "efb3096409b92d05b61f1052d6dd9c66e512a30957cbc5d6ff43654332eb9d40"
+  },
+  {
+    "id": "notes",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/0TinkerTool/issues.html",
+    "finalUrl": "https://www.bresink.com/osx/0TinkerTool/issues.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:29.544332+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/notes.html",
+    "sha256": "fbd6e12a14d3adf09338bb79f4d44a1706953a4ce2aa825bb15553b5a085359f"
+  },
+  {
+    "id": "versions",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/osx/TinkerToolOverview.html",
+    "finalUrl": "https://www.bresink.com/osx/TinkerToolOverview.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:30.213624+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/versions.html",
+    "sha256": "ff6b07955c28999c2274e6a2d4936588a3a2a3770c49d3a82d4ff91868be86eb"
+  },
+  {
+    "id": "rights",
+    "publisher": "Marcel Bresink Software-Systeme",
+    "url": "https://www.bresink.com/info.html",
+    "finalUrl": "https://www.bresink.com/info.html",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T22:17:30.837807+00:00",
+    "sourcePublicationDate": null,
+    "snapshotPath": "docs/content/competitors/tinkertool/sources/rights.html",
+    "sha256": "b096106d4d11b7c40bc9a090440cb3266d15376ff04dd5cdd791914f9d294b92"
+  }
+]

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-app-eraser",
+  "productId": "app-eraser",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationAllowed": false,
+  "identity": {
+    "officialName": "App Eraser",
+    "publisher": "davunt / David H (repository owner / package author)",
+    "homepage": "https://github.com/davunt/app-eraser",
+    "repository": "https://github.com/davunt/app-eraser",
+    "canonicalOwnerId": "app-eraser",
+    "aliases": [],
+    "aliasDecision": "retain-distinct-product; no verified alias requiring a skip",
+    "aliasEvidence": ["baseline", "package"],
+    "aliasBoundary": "No evidence connecting this davunt repository to PowerMyMac. Do not conflate products with a generic app-erasing function; no global claim that aliases cannot exist.",
+    "classification": "adjacent",
+    "classificationReason": "Mac app-removal and related-file review, not a verified replacement for storage history, grouped process monitoring or hosted maintenance investigations. Overlaps the deliberate-cleanup reader job only.",
+    "platformFit": "macOS-native intent; no Windows/Linux support established",
+    "skipDecision": {"skip": false, "reason": "Relevant distinct Mac app-removal utility with a public release. Publication is blocked on evidence/visual gates, not skipped as dead or alias."}
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/app-eraser/about/",
+    "retrievedAtUtc": "2026-10-21T19:04:59.358Z",
+    "method": "reuse-existing-browser-rendered-directory-snapshot",
+    "snapshotPath": "docs/content/.runtime/verification-1/app-eraser-directory.json",
+    "sha256": "a433be65dafc0f28ab10823f67cca985e9d511627bdb717a4060ab5fd894697f",
+    "officialLinkExcerpt": "Official Website\ngithub.com/davunt/app-eraser",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=3", "retrievedAtUtc": "2026-10-21T18:36:26.872Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=2", "retrievedAtUtc": "2026-10-21T18:37:09.298Z"}
+    ],
+    "edgeEvidencePath": "docs/content/competitors.json#app-eraser.edges",
+    "edgeRawSnapshot": null,
+    "limitations": "Exact edge pagination/times reused from manifest; no independent edge raw-response hash established in this job. Directory claims such as No Tracking are not promoted to verified product facts. Directory snapshot hash covers the entire retained JSON, including page chrome."
+  },
+  "sources": [
+    {
+      "id": "baseline", "publisher": "davunt via GitHub", "title": "App Eraser repository and README",
+      "url": "https://github.com/davunt/app-eraser", "finalUrl": "https://github.com/davunt/app-eraser",
+      "retrievedAtUtc": "2026-10-21T19:08:11.248136+00:00", "checkedOn": "2026-10-21", "publicationDate": null,
+      "scope": "Published README, not binary testing",
+      "snapshotPath": "docs/content/.runtime/verification-1/app-eraser-official.json",
+      "sha256": "f6c463ec08db4da0f7f2800d3ac2b389a782163865acabe212759dcf1cce7200",
+      "reusedFrom": "docs/content/verification/batch-1.json#app-eraser",
+      "excerpts": [
+        "App Eraser helps remove unwanted macOS applications and any related files that they leave behind.",
+        "App Eraser is a Free and Open Source macOS app removal tool.",
+        "Enable Finder access in the Automation section. This allows App Eraser to move files to trash",
+        "Enable the folders you want to allow App Eraser to search in Files and Folders",
+        "App Eraser gets the name and bundle ID for the app you select to remove",
+        "Only files with a score greater than the threshold are deemed to be related to the app"
+      ]
+    },
+    {
+      "id": "release", "publisher": "davunt via GitHub REST API", "title": "Latest published App Eraser release metadata",
+      "url": "https://api.github.com/repos/davunt/app-eraser/releases/latest", "finalUrl": "https://api.github.com/repos/davunt/app-eraser/releases/latest",
+      "humanUrl": "https://github.com/davunt/app-eraser/releases/tag/1.0.0",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "publicationDate": "2023-12-05T13:53:54Z", "scope": "Latest-release endpoint returned HTTP 200; release metadata only",
+      "snapshotPath": null, "sha256": null,
+      "excerpts": ["\"tag_name\":\"1.0.0\"", "\"draft\":false", "\"prerelease\":false", "\"name\":\"App.Eraser-1.0.0-universal.dmg\"", "* added \"view in finder\" button to file list", "* files that contain app bunldeID are automatically selected"],
+      "downloadUrl": "https://github.com/davunt/app-eraser/releases/download/1.0.0/App.Eraser-1.0.0-universal.dmg",
+      "limitations": "Full response read in tool output; only excerpts retained. Exact retrieval clock was not recorded. Installer was not downloaded, launched or checksum-verified; listed asset is not proof of modern macOS runtime compatibility or notarization."
+    },
+    {
+      "id": "tree", "publisher": "davunt via GitHub REST API", "title": "Repository tree including official screenshot",
+      "url": "https://api.github.com/repos/davunt/app-eraser/git/trees/main?recursive=1", "finalUrl": "https://api.github.com/repos/davunt/app-eraser/git/trees/main?recursive=1",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "scope": "main resolved to commit 1b801bb3db4de54233d788e5f5866ce4f30f5da4; not independently mapped to tag",
+      "excerpts": ["\"sha\":\"1b801bb3db4de54233d788e5f5866ce4f30f5da4\"", "\"path\":\"assets/img/appScreenshot.png\"", "\"sha\":\"ff270f764b2c704c7b9074d63c1f91a9d02a9acb\"", "\"size\":549160"],
+      "snapshotPath": null, "sha256": null,
+      "limitations": "Excerpts retained from successful public response; screenshot blob SHA is Git SHA-1, not an original-file SHA-256."
+    },
+    {
+      "id": "license", "publisher": "davunt repository", "title": "Root LICENSE",
+      "url": "https://raw.githubusercontent.com/davunt/app-eraser/main/LICENSE", "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/main/LICENSE",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null, "scope": "Repository licence text; conflicts with package metadata",
+      "excerpts": ["GNU GENERAL PUBLIC LICENSE", "Version 3, 29 June 2007", "You may convey verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice;"],
+      "snapshotPath": null, "sha256": null,
+      "limitations": "Read publicly without credentials. GPL source licensing is not inferred to clear every screenshot element, third-party mark or standalone image use."
+    },
+    {
+      "id": "package", "publisher": "davunt repository", "title": "package.json",
+      "url": "https://raw.githubusercontent.com/davunt/app-eraser/main/package.json", "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/main/package.json",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "scope": "main package metadata; not installer entitlement/runtime inspection",
+      "excerpts": ["\"name\": \"app-eraser\"", "\"version\": \"1.0.0\"", "\"author\": \"David H\"", "\"license\": \"ISC\"", "\"productName\": \"App Eraser\"", "\"appId\": \"com.apperaser.app\"", "\"electron\": \"^22.2.0\"", "\"node\": \"18.14.0\""],
+      "snapshotPath": null, "sha256": null,
+      "limitations": "Development requirements are not end-user prerequisites. No scripts or downloaded code were executed. Licence conflict remains unresolved."
+    },
+    {
+      "id": "controller", "publisher": "davunt repository", "title": "App-selection and deletion controller",
+      "url": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/src/main/controller.js",
+      "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/src/main/controller.js",
+      "retrievedAtUtc": "2026-10-21T19:58:28.740796+00:00", "checkedOn": "2026-10-21", "publicationDate": null,
+      "scope": "Pinned source, not a hands-on observation",
+      "snapshotPath": "docs/content/competitors/app-eraser/sources/controller.json", "textSha256": "6a7709c8ff2c7230aea1f08aa97c723298e8f35d65201f7e0b05c61cee9ab992",
+      "excerpts": ["const getSelectedFiles = () => [...document.querySelectorAll('input[name=checkbox]:checked')].map(", "checkbox.checked = true;", "shell.showItemInFolder(filePath);", "`${selectedFiles.length} files will be moved to trash`", "if (confirmDialogResp.response === 0) {", "closeRunningApplication();"]
+    },
+    {
+      "id": "view", "publisher": "davunt repository", "title": "Related-file discovery implementation",
+      "url": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/src/main/index.js",
+      "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/src/main/index.js",
+      "retrievedAtUtc": "2026-10-21T19:58:28.359262+00:00", "checkedOn": "2026-10-21", "publicationDate": null,
+      "scope": "Pinned source; matching heuristic, not ownership proof",
+      "snapshotPath": "docs/content/competitors/app-eraser/sources/view.json", "textSha256": "ded41c04c9e71bc1963b08ae3be8d6b18165a4db574ea5730b371419b29473f0",
+      "excerpts": ["if (strippedFileName.includes(replaceSpaceCharacters(bundleId))) return true;", "return score / strippedFileName.length > scoreThreshold;", "const directoryFiles = await Promise.allSettled(directoryFilesPromiseArr);", "if (dir.status === 'fulfilled') {"]
+    },
+    {
+      "id": "locations", "publisher": "davunt repository", "title": "Configured search locations",
+      "url": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/utils/pathLocations.js",
+      "finalUrl": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/utils/pathLocations.js",
+      "retrievedAtUtc": "2026-10-21T19:58:28.370939+00:00", "checkedOn": "2026-10-21", "publicationDate": null,
+      "scope": "Configured paths, not guaranteed accessible coverage",
+      "snapshotPath": "docs/content/competitors/app-eraser/sources/locations.json", "textSha256": "418e5839726801df21a64f76c9740b6c5c2749d8c7c028d45714a16f6c09d8b5",
+      "excerpts": ["`${homedir}/Library/Application Support`,", "`${homedir}/Library/Group Containers`,", "`${homedir}/Library/Caches`,", "'/Library/LaunchDaemons',"]
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room evidence register", "title": "Current capabilities and preview boundaries",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": null,
+      "localEvidencePath": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "scope": "Reuse same-day source and public-page verification; not new native tests",
+      "excerpts": ["AI Care is advertised at **$5 USD/month or $50 USD/year**", "Python **3.10+**", "Apple Development signed, not Developer ID signed or notarized", "macOS 13+", "0.1.0-preview.1"],
+      "supportingUrls": ["https://breathing-room.chatic.ai/#pricing", "https://breathing-room.chatic.ai/privacy/", "https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],
+      "limitations": "Follow exact source ranges and per-claim boundaries in capabilities.md; source feature presence is not distributed-binary parity."
+    },
+    {
+      "id": "br-visual", "publisher": "Breathing Room screenshot library", "title": "Current-source Space browser preview",
+      "url": "http://127.0.0.1:1431/", "finalUrl": null,
+      "localEvidencePath": "docs/content/screenshots.json#current-space-browser-preview", "checkedOn": "2026-10-21", "retrievedAtUtc": null,
+      "scope": "Existing current-source capture, opened and read again in this research job",
+      "excerpts": ["Interactive preview · example data", "This browser preview uses example data. Actions never change your Mac."]
+    }
+  ],
+  "claims": [
+    {"id": "AE-01", "wording": "App Eraser is davunt's macOS app-removal utility, hosted at github.com/davunt/app-eraser.", "sourceIds": ["baseline", "package"], "checkedOn": "2026-10-21", "evidenceClass": "documented", "state": "verified", "location": "identity / lead", "conditions": "Not PowerMyMac; no separate vendor homepage verified."},
+    {"id": "AE-02", "wording": "The official repository describes App Eraser as free and open source.", "sourceIds": ["baseline"], "checkedOn": "2026-10-21", "evidenceClass": "documented-offer", "state": "verified", "location": "pricing row", "conditions": "No paid plan, currency, subscription or trial condition verified; do not invent them."},
+    {"id": "AE-03", "wording": "The latest-release endpoint lists 1.0.0, published December 5, 2023, with App.Eraser-1.0.0-universal.dmg.", "sourceIds": ["release"], "checkedOn": "2026-10-21", "evidenceClass": "published-metadata", "state": "verified", "location": "availability / install row", "conditions": "Asset listed, not downloaded; universal filename/build intent is not physical Intel/Apple Silicon runtime verification. Old release date does not by itself establish abandonment."},
+    {"id": "AE-04", "wording": "The README documents matching app names and bundle IDs against candidate filenames.", "sourceIds": ["baseline", "view"], "checkedOn": "2026-10-21", "evidenceClass": "documented-and-source", "state": "verified", "location": "workflow mechanism", "conditions": "Heuristic relation, not proof a file is disposable; pinned main source not established as exact release source."},
+    {"id": "AE-05", "wording": "Inspected source presents checked file candidates, a Finder reveal action and a confirmation before moving selected files to Trash.", "sourceIds": ["controller", "release"], "checkedOn": "2026-10-21", "evidenceClass": "source-inspection", "state": "verified", "location": "approval row / review checklist", "conditions": "All listItem checkboxes initialize checked in inspected source. Do not imply uncertain items are unselected by default or claim this workflow was run."},
+    {"id": "AE-06", "wording": "The README documents Finder Automation permission for Trash moves and Files and Folders access for searches.", "sourceIds": ["baseline"], "checkedOn": "2026-10-21", "evidenceClass": "documented", "state": "verified", "location": "installation caveats", "conditions": "Historical System Preferences wording; no permission changes performed. Do not repeat instructions to bypass security warnings."},
+    {"id": "AE-07", "wording": "The configured search locations include user Library application support, containers, caches and preferences; actual coverage depends on access.", "sourceIds": ["locations", "view", "baseline"], "checkedOn": "2026-10-21", "evidenceClass": "source-inspection", "state": "verified", "location": "coverage limitation", "conditions": "Configured locations are not a complete filesystem inventory. Promise.allSettled processing checks fulfilled reads; no measured recall established."},
+    {"id": "AE-08", "wording": "The inspected move-to-Trash path first attempts to quit the selected app.", "sourceIds": ["controller"], "checkedOn": "2026-10-21", "evidenceClass": "source-inspection", "state": "verified", "location": "workflow caution", "conditions": "Save work first as editorial advice. No quit/cleanup action was executed."},
+    {"id": "AE-09", "wording": "The repository displays GPL-3.0 and contains GPL v3 text, but package.json declares ISC.", "sourceIds": ["baseline", "license", "package"], "checkedOn": "2026-10-21", "evidenceClass": "conflicting-published-metadata", "state": "verified", "location": "licence row / rights gate", "conditions": "Conflict itself verified; definitive uniform licence and screenshot permissions remain unresolved. Do not silently adopt either declaration."},
+    {"id": "AE-10", "wording": "The project uses Electron; package metadata pins development Node 18.14.0 and declares Electron ^22.2.0.", "sourceIds": ["baseline", "package"], "checkedOn": "2026-10-21", "evidenceClass": "source-metadata", "state": "verified", "location": "runtime row if useful", "conditions": "Development configuration only, not an instruction to install Node or Volta to use the DMG. Exact bundled runtime unverified."},
+    {"id": "AE-U1", "wording": "Minimum supported macOS version and present-day tested compatibility", "sourceIds": ["baseline", "package", "release"], "checkedOn": "2026-10-21", "evidenceClass": "unknown", "state": "not-verified", "location": "platform row", "conditions": "No exact vendor minimum established; do not derive one from a dependency or Mojave-named icon guard. Not verified on macOS 26."},
+    {"id": "AE-U2", "wording": "Current signing/notarization and installer execution", "sourceIds": ["baseline", "release"], "checkedOn": "2026-10-21", "evidenceClass": "unknown", "state": "not-verified", "location": "install row", "conditions": "README discusses unidentified-developer errors, not a contemporary binary signature audit; no install recommendation contingent on bypassing protections."},
+    {"id": "AE-U3", "wording": "End-to-end offline operation, absence of telemetry, account requirements and complete data-retention behavior", "sourceIds": ["baseline", "package"], "checkedOn": "2026-10-21", "evidenceClass": "unknown", "state": "not-verified", "location": "local/hosted row", "conditions": "Local filesystem code and author privacy rationale do not establish no network access or tracking. Directory labels are insufficient. No sign-in performed."},
+    {"id": "AE-U4", "wording": "Grouped helper monitoring, recurring-growth history and developer-cache management", "sourceIds": ["baseline", "view", "locations"], "checkedOn": "2026-10-21", "evidenceClass": "unknown", "state": "not-verified", "location": "scope rows", "conditions": "General app-related cache search is not package-manager cleanup; no unsupported negative feature checkmarks."},
+    {"id": "BR-01", "wording": "Breathing Room, which we build, is a free macOS 13+ maintenance preview; the identified release is 0.1.0-preview.1, with Python 3.10+ disclosed and no Developer ID signing or notarization in the reviewed release.", "sourceIds": ["br-capabilities"], "checkedOn": "2026-10-21", "evidenceClass": "reused-source-and-release-verification", "state": "verified", "location": "comparison caveats", "conditions": "Universal installer advertised; clean-machine and physical Intel runtime remain unverified. Do not claim a production-ready installer."},
+    {"id": "BR-02", "wording": "Storage exploration and grouped CPU/memory inspection exist in Breathing Room source; hosted AI requires internet and authentication. AI Care is advertised at $5 USD/month or $50 USD/year.", "sourceIds": ["br-capabilities"], "checkedOn": "2026-10-21", "evidenceClass": "reused-source-and-published-offer", "state": "verified", "location": "scope / pricing / privacy rows", "conditions": "Paid quotas and server entitlement enforcement unverified; tax at checkout, auto-renewing until cancelled. Exact approvals constrain daily care while app runs; optional automatic verified Ruff-cache mode is an exception to blanket ask-first wording. Not proof of release parity or measured savings."},
+    {"id": "BR-03", "wording": "The selected Breathing Room Space image is a current-source browser preview with example data, not native measurements.", "sourceIds": ["br-visual"], "checkedOn": "2026-10-21", "evidenceClass": "existing-capture-visually-reinspected", "state": "verified", "location": "figure caption", "conditions": "Keep visible example-data notices; source commit/capture are not distributed-release runtime evidence."}
+  ],
+  "productMatrix": [
+    {"dimension": "macOS", "value": "Documented Mac utility; minimum/current OS compatibility not verified", "claimIds": ["AE-01", "AE-U1"]},
+    {"dimension": "release/architecture", "value": "1.0.0 listed universal DMG, 2023-12-05; no binary QA", "claimIds": ["AE-03"]},
+    {"dimension": "licence", "value": "Conflicting GPL-3.0 repository / ISC package declarations", "claimIds": ["AE-09"]},
+    {"dimension": "pricing", "value": "Described as free; no paid offer verified", "claimIds": ["AE-02"]},
+    {"dimension": "local/hosted", "value": "Local file discovery/Trash path inspected; full network/privacy behavior not verified", "claimIds": ["AE-04", "AE-05", "AE-U3"]},
+    {"dimension": "scan/cleanup", "value": "App name/bundle-ID matching in configured locations", "claimIds": ["AE-04", "AE-07"]},
+    {"dimension": "approval controls", "value": "Checked candidate list, Finder reveal, confirmation before selected Trash moves", "claimIds": ["AE-05", "AE-08"]},
+    {"dimension": "process/helper grouping", "value": "not verified", "claimIds": ["AE-U4"]},
+    {"dimension": "recurring growth", "value": "not verified", "claimIds": ["AE-U4"]},
+    {"dimension": "developer caches", "value": "App-related Library caches included; owning-tool/package-manager cleanup not verified", "claimIds": ["AE-07", "AE-U4"]},
+    {"dimension": "runtime/install", "value": "Electron project; documented Finder/folder permissions; exact bundled runtime/signing not verified", "claimIds": ["AE-06", "AE-10", "AE-U2"]}
+  ],
+  "visuals": [
+    {
+      "id": "app-eraser-official-app-screenshot", "productId": "app-eraser", "view": "README-linked application screenshot (visual contents/version pending inspection)", "kind": "official-asset",
+      "sourcePageUrl": "https://github.com/davunt/app-eraser#readme",
+      "assetPageUrl": "https://github.com/davunt/app-eraser/blob/1b801bb3db4de54233d788e5f5866ce4f30f5da4/assets/img/appScreenshot.png",
+      "assetUrl": "https://raw.githubusercontent.com/davunt/app-eraser/1b801bb3db4de54233d788e5f5866ce4f30f5da4/assets/img/appScreenshot.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null,
+      "buildOrCommit": "1b801bb3db4de54233d788e5f5866ce4f30f5da4 (repository containing asset, not verified capture build)", "osVersion": null,
+      "dataMode": "unknown", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "gitBlobSha1": "ff270f764b2c704c7b9074d63c1f91a9d02a9acb", "widthPx": null, "heightPx": null, "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Official README links repository appScreenshot.png; repository says GPL-3.0 while package metadata says ISC. No screenshot-specific grant or asset coverage resolved. Public accessibility is not permission. Do not download/publish until reuse is cleared.", "evidenceUrlOrPath": "https://github.com/davunt/app-eraser/blob/main/LICENSE", "credit": "App Eraser / davunt; third-party marks remain their owners' marks."},
+      "caption": "Official App Eraser screenshot linked from the project README. Capture date, app version and OS are not verified; not our hands-on test.",
+      "alt": "Link to the App Eraser project's official application screenshot; visual description pending inspection.",
+      "supportedClaimIds": [], "limitations": ["Not downloaded or visually approved; exact visual contents and privacy review pending.", "A link is a research fallback, not satisfaction of the required on-page app-view gate.", "Git blob SHA-1 is not an original image SHA-256."],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library job (inherited record)",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-example-data", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "Inherited first-party app-owner-requested UI capture, example-data disclosure required; no third-party mark endorsement or blanket image licence inferred.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space browser preview with visible example-data notices, category chart and folder-size list.",
+      "supportedClaimIds": ["BR-03"],
+      "limitations": ["Local original reused, not a new capture or public image download.", "Keep example-data banner visible; assistant composer overlaps part of chart.", "Current-source at recorded capture commit, not proof of distributed-release parity or measurements.", "Target-page legibility and independent review remain pending."],
+      "review": {"status": "visually-reinspected-research-only", "reviewer": "research-app-eraser worker", "reviewedOn": "2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference", "intent": "Review an app-uninstaller's name/bundle-ID matches before deciding what belongs in Trash",
+      "title": "Review App Eraser’s related-file matches before removing a Mac app",
+      "slug": "review-app-eraser-related-file-matches",
+      "description": "App Eraser finds related-file candidates by app name and bundle ID. Review those matches, permission limits and shared data before removal; use storage investigation for a different question.",
+      "outline": ["Lead with the distinction between removing an unwanted app and explaining disk growth; official competitor app view immediately after lead when cleared.", "Explain filename matching and its uncertainty, with source citations rather than a fabricated scan.", "Decision checklist: save work, inspect checked candidates and Finder locations, keep uncertain/shared data, distinguish Trash moves from newly available space. No removal performed by this job.", "Explain permission-limited search and unknown modern compatibility without suggesting security bypasses.", "Later Space preview with example-data caption: storage investigation is a separate reader job, not proof of uninstall completeness.", "One bounded recommendation with 'Breathing Room, which we build'; prefer App Eraser for focused review of app-related files, preview investigation for broader storage questions subject to release caveats."],
+      "interactionPass": "Plan a non-executing decision checklist: known app-related item / uncertain or shared item / storage growth unrelated to app removal. No simulated filesystem scan, savings calculator or deletion control.",
+      "mustNotClaim": ["All traces removed", "Risk-free cleanup", "Measured disk savings", "App Eraser has no monitoring", "Breathing Room is a full app uninstaller", "No data ever leaves either app"],
+      "pendingEvidence": "Competitor visual clearance and inspection required before drafting; use Apple/vendor documentation before adding general uninstall or Trash semantics as sourced macOS facts."
+    },
+    "comparison": {
+      "track": "search-reference", "intent": "Choose focused app removal versus broader Mac storage/process investigation",
+      "title": "Breathing Room vs App Eraser: investigation or app removal?", "slug": "app-eraser",
+      "description": "App Eraser targets unwanted Mac apps and related-file candidates. Breathing Room is a maintenance preview for storage and activity investigation. The jobs overlap, but they are not interchangeable.",
+      "structure": ["Answer-first adjacent-tool decision, affiliation disclosed", "Concise sourced matrix using claim IDs: reader job, scan method, selection/approval, OS/release, licence conflict, price and hosted boundaries", "When App Eraser fits / when Breathing Room fits / when neither has enough current installation evidence", "Link to distinct match-review workflow and /comparisons/ hub"],
+      "requiredVisuals": ["app-eraser-official-app-screenshot", "current-space-browser-preview"],
+      "internalLinks": ["/blog/review-app-eraser-related-file-matches/", "/comparisons/"],
+      "linkStatus": "Proposed routes, not created or asserted live; verify at drafting stage.",
+      "publicationState": "draft-only when unblocked; no site record created"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "appEraserAdvantages": ["Free, focused Mac app-removal offer (AE-01, AE-02).", "Inspectable name/bundle-ID discovery plus checked candidate review and Finder reveal (AE-04, AE-05)."],
+    "appEraserTradeoffs": ["Matching names does not establish that shared or personal data is disposable; candidates initialize checked (AE-04, AE-05).", "Permissions constrain discovery, modern OS minimum/runtime and current signing remain unverified (AE-06, AE-U1, AE-U2).", "Published licence declarations disagree, and screenshot reuse is not cleared (AE-09)."],
+    "breathingRoomAdvantages": ["Source implements broader storage exploration and grouped process inspection (BR-02); editorial fit for investigating where space goes, not a verified replacement for app uninstalling."],
+    "breathingRoomTradeoffs": ["Preview release caveats, Python prerequisite and lack of notarization; no clean-machine/physical Intel runtime proof (BR-01).", "Hosted AI requires authentication/internet and can send relevant investigation data; optional recurring AI Care costs money (BR-02).", "Full app-removal completeness and measured savings not established; do not promise them."]
+  },
+  "blockers": [
+    {"id": "VISUAL-RIGHTS", "critical": true, "diagnostic": "Official appScreenshot.png identified but not downloaded or visually reviewed because standalone image reuse basis is unresolved. Root GPL-3.0 text/GitHub declaration conflicts with ISC package metadata; no screenshot-specific grant verified. Link-only does not pass the required competitor app-view gate.", "unblock": "Obtain existing public asset-specific permission/licence evidence or an explicitly approved editorial rights decision; then retrieve permitted original, retain SHA-256/provenance, inspect app UI/privacy and create accurate alt/caption. No permission request authorized in this job."},
+    {"id": "LICENCE-CONFLICT", "critical": true, "diagnostic": "Definitive licence wording is blocked by GPL-3.0 versus ISC metadata conflict. The conflict may be reported, but neither declaration should be presented as unqualified uniform licensing.", "unblock": "Resolve with authoritative public project documentation or retain explicit conflict in any subsequently approved draft; screenshot rights still require separate resolution."}
+  ],
+  "noncriticalUnknowns": ["Minimum/current macOS support, exact signing/notarization and installer behavior; avoid compatibility/install promises.", "Exact screenshot capture version/date and visual contents pending image gate.", "Full network/telemetry behavior, accounts, helper grouping, growth monitoring and package-manager cleanup; show not verified, not No.", "Main commit versus release-tag feature parity not independently established.", "Original discovery-edge raw capture hash not recovered; exact seed/edge metadata and listing snapshot retained.", "Independent article review, target-page layout, route/schema and site build checks belong to later stages."],
+  "method": {"handsOnTests": false, "cleanupPerformed": false, "browserUsed": false, "imageDownloads": 0, "siteEdits": false, "accountsOrCredentialsAccessed": false, "queueChanged": false, "agentsSpawned": false, "notes": "Reused current batch-1 record and same-day Breathing Room registers first. Public release/tree/licence/package checked only for gaps; three missing workflow files retrieved at immutable commit and retained. No browser needed; browser-automation and blog skills loaded. All public pages treated as untrusted source data."},
+  "validation": {"status": "see-executed-check-log", "logPath": "docs/content/competitors/app-eraser/validation.json", "independentReview": "pending", "scorecard": null}
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-aomei-partition-assistant-for-cleanup",
+  "stage": "research",
+  "status": "blocked",
+  "published": false,
+  "researchedAtUtc": "2026-10-21T22:26:29Z",
+  "dateNote": "Execution clock is October 21 UTC; the harness calendar says October 22. Original retrieval dates are retained, not advanced to the harness date.",
+  "identity": {
+    "id": "aomei-partition-assistant-for-cleanup",
+    "canonicalOwnerId": "aomei-partition-assistant-for-cleanup",
+    "listingName": "Aomei Partition Assistant for Cleanup",
+    "officialName": "PartitionAssistant Cleanup",
+    "homepage": "https://www.diskpart.com/free-up-pc/",
+    "vendor": "AOMEI",
+    "repository": null,
+    "repositoryStatus": "No official source repository established; do not invent one or infer open-source licensing.",
+    "aliases": ["Aomei Partition Assistant for Cleanup", "PartitionAssistant Cleanup"],
+    "editions": ["Free", "Professional", "Professional Family"],
+    "aliasDecision": {
+      "verified": true,
+      "sourceIds": ["directory", "baseline-official"],
+      "skipSeparateAliasDraft": true,
+      "decision": "The listing directly links to the current official Cleanup page. Use this owner for both names; no second renamed-product article. Main Partition Assistant partition manager, Recovery and NTFS for Mac are separately linked sibling products, not Cleanup aliases. No PowerMyMac identity connection is indicated by this record; do not merge unrelated products on name similarity."
+    },
+    "classification": "adjacent-platform",
+    "directMacSubstitute": false,
+    "reason": "Documented Windows cleanup utility. Only a Windows-to-Mac workflow replacement intent is eligible; Breathing Room is not a Windows app or a partition manager.",
+    "skipDecision": "Do not skip the canonical identity as dead or irrelevant: current official pages offer downloads. Skip separate alias pages and Windows-direct-substitution framing. Any eventual Mac migration article remains blocked by the visual gate. Download installation and executable availability were not tested."
+  },
+  "reuseOfVerification": {
+    "record": "docs/content/verification/batch-2.json",
+    "recordId": "aomei-partition-assistant-for-cleanup",
+    "reusedFacts": ["identity", "homepage", "Windows platforms", "freeware offer", "documented function"],
+    "method": "Read the existing baseline and its complete retained browser text first. Expanded claims, pricing and workflow from that current retained source without re-fetching those facts. One homepage HTML retrieval was needed for missing screenshot URLs, terms links and structured metadata; it exposed a price-duration conflict."
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/aomei-partition-assistant-for-cleanup/about/",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=9",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:55.151Z",
+    "edgeSource": "docs/content/competitors.json, this product's edges",
+    "retrievedAtUtc": "2026-10-21T19:06:59.101Z",
+    "excerpt": "Official Website\ndiskpart.com/free-up-pc/",
+    "rawCapture": "docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-directory.json",
+    "sha256": "39125149016fb17edef73a1ebdc0682e7fac5889df32b9d37e262433554e2463",
+    "method": "Reused owned-Chrome-tab rendered about-page DOM from batch 2; listing discovery is not feature evidence."
+  },
+  "sources": [
+    {
+      "id": "directory", "publisher": "AlternativeTo", "title": "Aomei Partition Assistant for Cleanup",
+      "url": "https://alternativeto.net/software/aomei-partition-assistant-for-cleanup/about/",
+      "finalUrl": null, "retrievedAtUtc": "2026-10-21T19:06:59.101Z",
+      "rawCapture": "docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-directory.json",
+      "sha256": "39125149016fb17edef73a1ebdc0682e7fac5889df32b9d37e262433554e2463",
+      "excerpt": "Official Website\ndiskpart.com/free-up-pc/", "scope": "Discovery only"
+    },
+    {
+      "id": "baseline-official", "publisher": "AOMEI", "title": "Best PC Cleaner Software to Save Disk Space | PartitionAssistant Cleanup",
+      "url": "https://www.diskpart.com/free-up-pc/", "finalUrl": "https://www.diskpart.com/free-up-pc/",
+      "retrievedAtUtc": "2026-10-21T19:15:02.866Z",
+      "rawCapture": "docs/content/.runtime/verification-2/aomei-partition-assistant-for-cleanup-browser.json",
+      "sha256": "9691d787cc60714f4be41d07487521cdbc9c01a8dcdaab05096c9360004ac923",
+      "scope": "Official visible product, workflow and offer text; no binary testing; version unspecified",
+      "publicationDate": null
+    },
+    {
+      "id": "official-html", "publisher": "AOMEI", "title": "Cleanup homepage HTML",
+      "url": "https://www.diskpart.com/free-up-pc/", "finalUrl": null,
+      "checkedAtUtc": "2026-10-21T22:26:29Z", "retrievalTimePrecision": "Session check time, not exact HTTP completion time",
+      "rawCapture": "docs/content/competitors/aomei-partition-assistant-for-cleanup/sources/homepage.html",
+      "sha256": "05bd43a3c56c545da6c53af3a36c3d1c9a62f2017fe0f033a143d2fdfed9b06b",
+      "scope": "Public HTML retrieved to identify missing screenshot assets, rights link and metadata; final redirect URL not separately reported by WebFetch",
+      "publicationDate": null
+    },
+    {
+      "id": "free-page", "publisher": "AOMEI", "title": "FREE PC Cleaner Software to Free Up Disk Space",
+      "url": "https://www.diskpart.com/free-up-pc/pc-cleaner-free.html", "finalUrl": null,
+      "checkedAtUtc": "2026-10-21T22:26:29Z",
+      "excerpt": "Review and Take Action ... Once the scan is complete, review the listed items. Click 'Clean Now' to remove the detected junk files and free up space.",
+      "scope": "Free edition description and official step-image references; no exact free quota established", "publicationDate": null
+    },
+    {
+      "id": "terms", "publisher": "AOMEI", "title": "Terms of Use",
+      "url": "https://www.diskpart.com/terms.html", "finalUrl": null,
+      "checkedAtUtc": "2026-10-21T22:26:29Z",
+      "excerpt": "This Website and all the images ... are only for your personal and non-commercial use ... Any use of the Content on any other website or networked computer environment for any purpose is prohibited.",
+      "scope": "Website image reuse, not a software EULA; no commercial screenshot permission established", "publicationDate": null
+    },
+    {
+      "id": "download-failure", "publisher": "AOMEI", "url": "https://www.diskpart.com/free-up-pc/download.html",
+      "checkedAtUtc": "2026-10-21T22:26:29Z", "error": "WebFetch: Request timed out", "scope": "Exact current version remains unknown; no installer requested"
+    },
+    {
+      "id": "br-capabilities", "path": "docs/content/capabilities.md", "reviewedOn": "2026-10-21",
+      "scope": "Current shared source/public-release verification reused, not repeated native testing. Includes exact code and public source URLs for every capability."
+    },
+    {
+      "id": "br-screenshots", "path": "docs/content/screenshots.json", "reviewedOn": "2026-10-21",
+      "scope": "Current-source browser previews only, with illustrative example data, source commit and retained hashes"
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"The listing resolves by its official link to AOMEI's PartitionAssistant Cleanup.","state":"verified","sourceIds":["directory","baseline-official"],"excerpt":"Official Website\ndiskpart.com/free-up-pc/; PartitionAssistant Cleanup; © 2009-2026 AOMEI.","checkedOn":"2026-10-21","evidenceClass":"documented","location":"identity/lead"},
+    {"id":"C02","wording":"The vendor documents Windows 11, 10, 8.1/8, 7 and Windows Server support; a macOS Cleanup edition is not established.","state":"verified","sourceIds":["baseline-official"],"excerpt":"Work seamlessly on Windows 11/10/8/7 and Windows Server. ... Windows 11, 10, 8.1/8, 7","checkedOn":"2026-10-21","evidenceClass":"documented","conditions":"No compatibility testing. Do not confuse the separately linked NTFS for Mac product with Cleanup.","location":"platform matrix"},
+    {"id":"C03","wording":"The documented cleanup categories are junk files, large files and duplicates; large-file sorting supports size, date or type.","state":"verified","sourceIds":["baseline-official"],"excerpt":"Detect and remove temporary files, system caches, log files ... Sort files by size, date, or type. ... Preview before deletion for total control.","checkedOn":"2026-10-21","evidenceClass":"documented","conditions":"Duplicate-preview wording is vendor documentation, not observed matching accuracy or guaranteed recoverability.","location":"workflow/matrix"},
+    {"id":"C04","wording":"The vendor's junk-file workflow is Scan Now, review listed items, then Clean Now.","state":"verified","sourceIds":["baseline-official","free-page"],"excerpt":"Click 'Scan Now' ... Once the scan is complete, review the listed items. Click 'Clean Now' ... Then click 'OK'.","checkedOn":"2026-10-21","evidenceClass":"documented","conditions":"Not a hands-on test; exact deletion method, backup and undo behavior not verified.","location":"approval matrix"},
+    {"id":"C05","wording":"A free download is offered alongside Professional and Professional Family paid plans; exact free cleaning quotas are not verified.","state":"verified","sourceIds":["baseline-official","free-page"],"excerpt":"Download Freeware ... Professional ... Professional Family","checkedOn":"2026-10-21","evidenceClass":"advertised-offer","conditions":"Freeware does not mean all features are unlimited or open source.","location":"pricing matrix"},
+    {"id":"C06","wording":"Visible homepage pricing advertises Professional for 2 computers at $19.95 per year and Professional Family for 5 computers at $39.95 per year, billed yearly.","state":"verified","sourceIds":["baseline-official"],"excerpt":"One license for 2 computers ... 1 Year $19.95 ... Billed $19.95 every year ... One license for 5 computers ... 1 Year $39.95 ... Billed $39.95 every year","checkedOn":"2026-10-21","evidenceClass":"advertised-offer","conditions":"USD identified in official HTML offer metadata for Professional. Dollar-denominated English-page Family offer; currency settlement/tax/region/renewal checkout not tested. Promotional displayed prices, not guarantees. No coupons applied.","location":"pricing matrix"},
+    {"id":"C07","wording":"Do not publish a $49.95 lifetime claim: visible copy says 3 Years while embedded offer metadata says Lifetime License.","state":"contradicted","sourceIds":["baseline-official","official-html"],"excerpt":"3 Years $49.95; metadata: name Lifetime License, priceCurrency USD, price 49.95","checkedOn":"2026-10-21","evidenceClass":"source-conflict","conditions":"Family visible three-year price is $99.95; three-year billing language exists in HTML. Omit disputed duration from public comparison pending vendor clarification; no purchase or messages authorized.","location":"pricing exclusions"},
+    {"id":"C08","wording":"The homepage FAQ metadata says cleanup works offline and internet is required for downloads and updates.","state":"verified","sourceIds":["official-html"],"excerpt":"An internet connection is only required for downloading the software and updates. All cleanup and optimization features work offline.","checkedOn":"2026-10-21","evidenceClass":"vendor-statement","conditions":"Not a network/privacy audit; no inference about telemetry, activation or all data remaining local.","location":"local/hosted matrix"},
+    {"id":"C09","wording":"Website image terms do not grant this commercial comparison permission to republish the official screenshot.","state":"verified","sourceIds":["terms"],"excerpt":"only for your personal and non-commercial use ... Any use ... on any other website ... is prohibited.","checkedOn":"2026-10-21","evidenceClass":"documented-rights-restriction","conditions":"Link-only reference. No downloaded competitor image and no legal exception presumed.","location":"visual gate"},
+    {"id":"BR01","wording":"Breathing Room, which we build, is a macOS 13+ maintenance preview; the identified release is 0.1.0-preview.1, Apple Development signed, not Developer ID signed or notarized, and requires Python 3.10+ for disk inventory/legacy scripts.","state":"verified","sourceIds":["br-capabilities"],"excerpt":"capabilities.md lines 48–55: version, universal architecture, signing disclosure, Python prerequisite and example-data boundary","checkedOn":"2026-10-21","evidenceClass":"reused-source-and-release-verification","conditions":"Not runtime validation; physical Intel/clean-machine behavior untested; no Windows replacement installer.","location":"BR caveats"},
+    {"id":"BR02","wording":"The free local desktop preview includes storage inspection and grouped app/process monitoring. Optional hosted AI Care is advertised at $5 USD/month or $50 USD/year, renews until cancelled and may include tax at checkout.","state":"verified","sourceIds":["br-capabilities"],"excerpt":"capabilities.md lines 24–32, 74–79: free local capabilities, paid advertised offer, sign-in and direct-public-release distinctions","checkedOn":"2026-10-21","evidenceClass":"reused-source-and-published-offer","conditions":"AI requires authentication/internet; relevant paths/process/storage data may reach hosted services. No end-to-end entitlement test or unlimited allowance established. Website download account gate differs from public GitHub downloads.","location":"BR pricing/privacy matrix"},
+    {"id":"BR03","wording":"Source supports constrained local cleanup approvals, developer-cache discovery and activity history; daily care uses exact saved approvals while the app runs.","state":"verified","sourceIds":["br-capabilities"],"excerpt":"capabilities.md lines 27–40: approvals, developer caches, activity, running-app scheduler; optional automatic mode for verified Ruff lint caches","checkedOn":"2026-10-21","evidenceClass":"reused-source-inspection","conditions":"Source is not distributed-binary parity proof. Optional automatic Ruff mode prevents an unconditional never-deletes-without-asking claim. Trash movement is not immediate space recovery. Grouping and sampled I/O are not complete causal attribution.","location":"BR workflow matrix"}
+  ],
+  "productMatrix": {
+    "macOSCompatibility": {"claimIds":["C02"],"value":"Windows documented; Mac Cleanup version not established; adjacent-platform comparison only"},
+    "license": {"claimIds":["C05","C09"],"value":"Freeware download plus paid commercial editions. Website says software is copyrighted and governed by accompanying EULA. Exact software licence permissions not verified; no open-source claim."},
+    "localHosted": {"claimIds":["C08"],"value":"Vendor says offline cleanup; network/telemetry/activation behavior not verified"},
+    "scanCleanup": {"claimIds":["C03"],"value":"Junk, large-file and duplicate cleanup documented; not partition resizing"},
+    "approval": {"claimIds":["C04"],"value":"Review-before-Clean-Now documented; exact deletion/undo semantics unknown"},
+    "processHelperGrouping": {"claimIds":[],"value":"not verified"},
+    "recurringGrowth": {"claimIds":[],"value":"not verified; unattributed vendor testimonial about scheduling is not feature proof"},
+    "developerCaches": {"claimIds":[],"value":"Specific package-manager/rebuild-aware adapters not verified; generic application caches do not prove them"},
+    "pricing": {"claimIds":["C05","C06","C07"],"value":"Free download plus yearly paid offers; free quotas unknown; disputed $49.95 duration excluded"},
+    "version": {"claimIds":[],"value":null,"status":"not verified; download page timed out; no exact release guessed"},
+    "platformDetails": {"claimIds":["C02"],"value":"Homepage metadata additionally lists Server 2022/2019/2016/2012/2008; architecture and hardware requirements not verified"},
+    "installation": {"claimIds":[],"value":"Official public .exe download linked, not retrieved or executed. Admin privileges, runtime requirements, signature, activation and uninstall behavior not verified."}
+  },
+  "visuals": [
+    {
+      "id":"competitor-review-step","productId":"aomei-partition-assistant-for-cleanup","view":"Vendor-described review-and-clean step",
+      "kind":"official-asset","sourcePageUrl":"https://www.diskpart.com/free-up-pc/pc-cleaner-free.html",
+      "assetUrl":"https://www.diskpart.com/resource/images/free-up-pc_thanks-install-free/step2-EN@2x.png",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"capturedBy":null,"productVersion":null,
+      "dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "widthPx":null,"heightPx":null,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Vendor website terms restrict commercial/other-site use; no permission established. No image bytes downloaded.","evidenceUrlOrPath":"https://www.diskpart.com/terms.html","credit":"AOMEI / PartitionAssistant Cleanup"},
+      "caption":"Official PartitionAssistant Cleanup review-step illustration. Vendor image; not our test, measured result or evidence of current version. Open the official guide to view it.",
+      "alt":"Link to AOMEI's PartitionAssistant Cleanup review-and-clean step image.",
+      "supportedClaimIds":["C04"],
+      "limitations":["Asset URL found in official free-edition page, not guessed.","Image itself not fetched or visually inspected because reuse is not cleared. UI identity/legibility and privacy approval remain pending; a page reference does not satisfy the required on-page screenshot gate."],
+      "review":{"status":"blocked-rights","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00",
+      "capturedBy":"Prior screenshot-library worker; inherited provenance, not recaptured in this job",
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","productVersion":null,"osVersion":null,
+      "dataMode":"example","originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"inherited-reviewed","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party example UI capture per screenshot register; third-party marks remain their owners' marks, no endorsement or blanket trademark licence inferred.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":["BR02"],
+      "limitations":["Keep the example-data banner visible.","Current as of the retained source render, not evidence of current distributed-binary parity or native testing.","No new crop or website asset created; publication-context/mobile review still required."],
+      "review":{"status":"inherited-library-review; target-page review pending","evidence":"docs/content/screenshots.json"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference",
+      "title":"Moving a Windows cleanup routine to Mac: separate junk, large files and duplicates",
+      "slug":"move-windows-cleanup-routine-to-mac",
+      "intent":"Help a former PartitionAssistant Cleanup user translate three cleanup categories into a deliberate Mac review workflow, not install a Windows utility on macOS.",
+      "description":"Carry over the review habit, not Windows-specific cleanup rules. Separate rebuildable caches from large originals and suspected duplicates before choosing a Mac tool.",
+      "outline":["Platform boundary first; do not confuse Cleanup with partition management or NTFS for Mac","Use the vendor's three categories as questions, not deletion permission","Review cache rebuild costs separately from irreplaceable videos, installers and backups","Duplicate detection is a separate requirement: Breathing Room parity not established","Show the first-party Space example with disclosure; official competitor review image only after permission","Bounded recommendation: Breathing Room, which we build, for documented Mac storage inspection; stay with Windows tools on Windows"],
+      "distinctValue":"A category-to-review decision aid: cache -> identify owner/rebuild cost; large original -> check backup/need; suspected duplicate -> establish identity/retention before any removal. No automatic deletion, benchmarks or screenshots disguised as measured output.",
+      "internalLinks":["/comparisons/","/comparisons/aomei-partition-assistant-for-cleanup/","/tools/"],
+      "interactionHandoff":"A non-mutating checklist asking OS, file type, backup status and rebuild cost; no filesystem access. All route availability needs checking by the drafting job.",
+      "status":"blocked; brief only, no article drafted"
+    },
+    "comparison": {
+      "title":"PartitionAssistant Cleanup and Breathing Room: Windows cleanup or Mac inspection?",
+      "slug":"aomei-partition-assistant-for-cleanup",
+      "intent":"Concise platform-qualified decision, not a head-to-head Windows replacement or partition-tool comparison.",
+      "rows":["Supported OS", "Junk/large/duplicate model", "Review and deletion semantics", "Local versus hosted data boundary", "Developer cache specificity", "Monitoring", "Annual offers and preview/runtime caveats"],
+      "verdict":"Choose for the operating system and actual task. AOMEI documents Windows junk/large/duplicate cleanup; Breathing Room documents a Mac preview with storage inspection and grouped app monitoring. Neither is established as the other's feature-complete replacement.",
+      "disclosure":"Breathing Room, which we build",
+      "status":"blocked pending competitor screenshot rights; no website record created"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "competitorAdvantages":[{"judgment":"Documented junk, large-file and duplicate categories give Windows users an explicit cleanup workflow.","claimIds":["C02","C03","C04"]},{"judgment":"Vendor documents offline cleanup, unlike the hosted AI portion of Breathing Room.","claimIds":["C08","BR02"],"boundary":"Not a privacy superiority claim; free local Breathing Room functions are distinct from hosted AI."}],
+    "competitorTradeoffs":[{"judgment":"Windows documentation does not establish a Mac Cleanup app; free quotas and exact current version remain unknown.","claimIds":["C02","C05"]},{"judgment":"Some price-duration copy conflicts; no free/unlimited or lifetime recommendation is justified.","claimIds":["C05","C07"]}],
+    "breathingRoomAdvantages":[{"judgment":"For a Mac migration, source-documented Space views, grouped helpers and developer-cache discovery may fit inspection and repeat-growth investigation.","claimIds":["BR01","BR02","BR03"],"boundary":"Not proof AOMEI lacks these functions and not binary parity QA."}],
+    "breathingRoomTradeoffs":[{"judgment":"Preview installation caveats, unnotarized distribution, Python prerequisite and hosted-AI data/account/cost boundaries must remain visible.","claimIds":["BR01","BR02","BR03"]},{"judgment":"Do not promise duplicate-finder, partition-management or Windows feature parity.","claimIds":["C02","C03","BR01"],"boundary":"Those Breathing Room capabilities were not established by the reused evidence."}]
+  },
+  "unknowns": ["Exact competitor release/build and architecture", "Free-edition quotas and exact EULA permissions", "Activation/admin/runtime/signature requirements", "Undo/Trash/permanent-delete semantics", "Helper grouping, recurring-growth and specific developer-cache adapters", "Network/telemetry audit and privacy behavior", "Actual checkout currency/taxes/region/renewal conditions", "Resolution of 3-year versus lifetime metadata conflict", "Screenshot author/version/capture date and commercial reuse permission"],
+  "draftGate": {
+    "allowed": false,
+    "blockers": [{"id":"visual-rights","severity":"critical","diagnostic":"Required competitor app UI image has no commercial reuse permission. AOMEI terms restrict images to personal/non-commercial use and prohibit other-site reuse. Link-only official image is research fallback, not satisfaction of PLAN/EDITORIAL on-page visual gate.","resolution":"Obtain separately authorized permission or a specifically cleared authoritative screenshot source/policy decision. Then retrieve, hash, inspect and review the image. This worker must not send permission messages."}],
+    "conditionalBlockers": ["Any exact $49.95 duration/lifetime claim is blocked by source conflict; omit it or independently resolve before use."],
+    "noncriticalUnknownPolicy":"Version and untested feature cells can remain explicitly not verified; do not turn them into negatives or publish installation steps requiring them.",
+    "independentReview":"Pending separately assigned draft/review stage; no score granted"
+  },
+  "execution": {"browserUsed":false,"competitorImageDownloaded":false,"handsOnProductTests":false,"cleanupRun":false,"siteEdited":false,"queueChanged":false,"agentsSpawned":false,"safety":"Read-only public research; no accounts, credentials, messages, purchase, commit, push or deployment."}
+}

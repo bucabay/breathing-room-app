@@ -1,0 +1,50 @@
+{
+  "commit": "02de64d1168e06820a4e280971b49175bdc31307",
+  "sources": [
+    {
+      "id": "commit.json",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/commits/main",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/commits/main",
+      "retrievedAtUtc": "2026-10-21T22:36:20.404189+00:00",
+      "httpStatus": 200,
+      "path": "sources/commit.json",
+      "sha256": "8d33ce32486f1b3533fcada84548a6605ee1d10515bc8bedb065819fc2348ab6"
+    },
+    {
+      "id": "README.md",
+      "url": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/README.md",
+      "retrievedAtUtc": "2026-10-21T22:36:21.294024+00:00",
+      "httpStatus": 200,
+      "path": "sources/README.md",
+      "sha256": "017b4c1d8331264d0ac2afde7e3bbc777bea68cf1789fba6d932372e9d3cb0c2"
+    },
+    {
+      "id": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/Better-Linux/CleanMyLinux/02de64d1168e06820a4e280971b49175bdc31307/LICENSE",
+      "retrievedAtUtc": "2026-10-21T22:36:22.149377+00:00",
+      "httpStatus": 200,
+      "path": "sources/LICENSE",
+      "sha256": "337b679f614e0b7e253736c4a518dd22703fcef756e8fcec04173cf17661c734"
+    },
+    {
+      "id": "release.json",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/releases/latest",
+      "retrievedAtUtc": "2026-10-21T22:36:23.102836+00:00",
+      "httpStatus": 200,
+      "path": "sources/release.json",
+      "sha256": "660fd5eaf7fe22a425064fc2af57ed5a8ddc66b207959ac1c5d889a00421ed12"
+    },
+    {
+      "id": "tree.json",
+      "url": "https://api.github.com/repos/Better-Linux/CleanMyLinux/git/trees/02de64d1168e06820a4e280971b49175bdc31307?recursive=1",
+      "finalUrl": "https://api.github.com/repos/Better-Linux/CleanMyLinux/git/trees/02de64d1168e06820a4e280971b49175bdc31307?recursive=1",
+      "retrievedAtUtc": "2026-10-21T22:36:24.195761+00:00",
+      "httpStatus": 200,
+      "path": "sources/tree.json",
+      "sha256": "6e992b264e95f1499d55b4637b1694bf9c0ca25c842023a1d3818319283ee068"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://api.github.com/repos/tw93/Mole/git/trees/main?recursive=1",
+  "finalUrl": "https://api.github.com/repos/tw93/Mole/git/trees/main?recursive=1",
+  "retrievedAtUtc": "2026-10-21T19:51:55.444052+00:00",
+  "path": "docs/content/competitors/mole/sources/cli-tree.json",
+  "sha256": "43745ba8f17d2b176686fa1ac6c6ee96ff2d320018c92be335186ceced5dd27e"
+}

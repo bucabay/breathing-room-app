@@ -1,0 +1,45 @@
+{
+  "id": "cleanmylinux",
+  "retrievedAt": "2026-10-21T19:10:00.951723+00:00",
+  "discoveryUrl": "https://alternativeto.net/software/cleanmylinux/about/",
+  "url": "https://cleanmylinux.com/",
+  "finalUrl": "https://www.cleanmylinux.com/",
+  "httpStatus": 200,
+  "title": "CleanMyLinux | Premium System Maintenance App",
+  "text": "CleanMyLinux | Premium System Maintenance App\nCleanMy\nLinux\nRepository\nSafely Tune Up Your Linux\nIt's time to\nevolve\nLinux.\nMost Linux cleaners are risky and can break your system files. CleanMyLinux is different. Built with Rust, it lets you easily manage your apps, safely scan for leftover junk, and keep your desktop running fast - without breaking anything.\nDownload for Linux\nView on GitHub\nCleanMy\nLinux\nA beautifully tuned, safe system optimization utility designed exclusively for modern Linux desktops. Clean caches, reset app states, and check for package updates with complete peace of mind.\n\u00a9 2026 Better Linux. Distributed under the\nMIT License\n.\nGitHub\nReleases\nCode of Conduct\nSecurity",
+  "links": [
+    {
+      "text": "Repository",
+      "href": "https://github.com/Better-Linux/CleanMyLinux"
+    },
+    {
+      "text": "Download for Linux",
+      "href": "https://github.com/Better-Linux/CleanMyLinux/releases/latest"
+    },
+    {
+      "text": "View on GitHub",
+      "href": "https://github.com/Better-Linux/CleanMyLinux"
+    },
+    {
+      "text": "MIT License",
+      "href": "https://github.com/Better-Linux/CleanMyLinux/blob/main/LICENSE"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/Better-Linux/CleanMyLinux"
+    },
+    {
+      "text": "Releases",
+      "href": "https://github.com/Better-Linux/CleanMyLinux/releases"
+    },
+    {
+      "text": "Code of Conduct",
+      "href": "https://www.cleanmylinux.com/CODE_OF_CONDUCT.md"
+    },
+    {
+      "text": "Security",
+      "href": "https://www.cleanmylinux.com/SECURITY.md"
+    }
+  ],
+  "sha256": "8c64d89a3c9a456f1fe358e8b22a3b7d7ca5dad1bae6d912c7c4284ffaaa5ce9"
+}

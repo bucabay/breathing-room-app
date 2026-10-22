@@ -1,0 +1,23 @@
+{
+  "jobId": "research-spacehunter",
+  "result": "research-structure-passed; drafting-blocked",
+  "checks": [
+    "Python parsed research.json and visual-discovery.json and confirmed research.md exists.",
+    "8 unique source IDs; all 13 claim records resolve source IDs and include wording, URL, excerpt, checked date, evidence class, scope, state and intended location.",
+    "Four reused source-file SHA-256 values matched actual baseline/discovery/capabilities/screenshots file bytes.",
+    "Selected Breathing Room PNG SHA-256 matched manifest; PNG header matched 2940 x 3468 dimensions; required example-data caption present.",
+    "12 retained official baseline version/platform/quota/developer-category strings matched the existing official capture. Initial printed count of 13 was corrected by a second executed check to 12; all assertions passed.",
+    "Official competitor image asset URL matches retained owned-tab DOM discovery; link-only rights, null image-byte hashes and blocked draft gate are consistent.",
+    "Canonical owner is spacehunter; relevant product retained, duplicate alias spelling skipped.",
+    "Selected actual Breathing Room PNG opened and visually read; example-data banner, categories and composer overlap noted.",
+    "New public purchase/legal/privacy contents read; specific $39 USD one-device current-major-version offer and permission restriction retained as attributed evidence.",
+    "Only created browser tab 166 was inspected and then successfully closed. Existing listener/profile left unchanged."
+  ],
+  "artifactSha256": {
+    "research.json": "51896fa868376984e246b2cf12b88be5099fa6a4351d4f187afc95fab37f977d",
+    "research.md": "d259bb80eff96a0442a5ef423e2fb510e10ea98e5e2508f6712696300542b05a",
+    "visual-discovery.json": "384959205f614f2fa2eb62932ea9449498e0383e518880198431a9d9308d7e1e"
+  },
+  "notPerformed": ["Competitor image download or visual/privacy approval", "Independent editorial review", "Native installation, cleanup or performance tests", "Website build/check/test, because no website files changed", "Signups, purchases, messages, credential access, queue edits, commits, pushes or deployment"],
+  "blockingDiagnostic": "Space Hunter's official UI asset exists, but vendor terms section 7 requires explicit written permission; none obtained. Link-only source does not satisfy required on-page competitor visual. Drafting remains blocked pending authorized permission/alternative policy decision and independent image review."
+}

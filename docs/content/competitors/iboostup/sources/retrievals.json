@@ -1,0 +1,48 @@
+[
+  {
+    "id": "homepage",
+    "url": "https://www.iboostup.com/",
+    "retrievedAtUtc": "2026-10-21T20:41:24.123324+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "faq",
+    "url": "https://www.iboostup.com/faq",
+    "retrievedAtUtc": "2026-10-21T20:41:24.123579+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "download",
+    "url": "https://www.iboostup.com/download",
+    "retrievedAtUtc": "2026-10-21T20:41:24.123643+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "eula",
+    "url": "https://www.iboostup.com/eula",
+    "retrievedAtUtc": "2026-10-21T20:41:24.123685+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "screenshots",
+    "url": "https://www.iboostup.com/screenshots",
+    "retrievedAtUtc": "2026-10-21T20:41:24.552425+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "tos",
+    "url": "https://www.iboostup.com/tos",
+    "retrievedAtUtc": "2026-10-21T20:41:24.553314+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "privacy",
+    "url": "https://www.iboostup.com/privacy",
+    "finalUrl": "https://www.iboostup.com/privacy",
+    "retrievedAtUtc": "2026-10-21T20:41:24.566819+00:00",
+    "status": 200,
+    "snapshotPath": "docs/content/competitors/iboostup/sources/privacy.html",
+    "sha256": "84334675492f6c0fd4d4e36d142dd7df26c274852c1e889912f79692908b730b",
+    "deviceChallenge": true
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-iboostup",
+  "productId": "iboostup",
+  "checkedOn": "2026-10-21",
+  "stage": "research",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "ownership": "docs/content/competitors/iboostup/ only, plus the required job receipt; no website edits",
+  "identity": {
+    "officialName": "iBoostUp",
+    "vendor": "iBoostUp Pty Ltd",
+    "homepage": "https://www.iboostup.com/",
+    "repositoryUrl": null,
+    "repositoryStatus": "No official source repository established; do not invent one or infer that none exists.",
+    "canonicalOwnerId": "iboostup",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip: the official homepage identifies iBoostUp, its vendor and download. No verified alias or equivalence to PowerMyMac was found in these sources. PowerMyMac is an unrelated unresolved identity candidate in batch-2, not a name to attach to iBoostUp.",
+    "classification": "direct-overlap-mac-maintenance",
+    "classificationBasis": "Official Disk Usage and Quick Clean workflows overlap Mac storage inspection/cleanup. Broader security/optimization modules are adjacent capabilities, not established Breathing Room equivalents.",
+    "identityClaimIds": ["I01", "I02"],
+    "skip": false,
+    "availability": "Official public website offers a direct Mac download; installer not downloaded, installed or tested. Not dead based on the checked official pages."
+  },
+  "reuse": {
+    "baselinePath": "docs/content/verification/batch-1.json",
+    "baselineRecordId": "iboostup",
+    "baselineState": "blocked; facts empty; HTTP homepage 403",
+    "baselineOfficialSnapshot": "docs/content/.runtime/verification-1/iboostup-official.json",
+    "baselineOfficialSha256": "00cb3e0334828f858b97afd14e30c58759dcfcc32f0a8a438709d2d4601b5c6f",
+    "reasonForNewRetrieval": "No verified material product facts existed. Checked HTTPS official pages to fill those gaps, not to redo current verified research.",
+    "otherBaseline": "batch-2 has no iBoostUp record; its PowerMyMac identity uncertainty was not resolved or modified by this job."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/iboostup/about/",
+    "destinationUrl": "http://www.iboostup.com/",
+    "retrievedAtUtc": "2026-10-21T19:07:23.859Z",
+    "method": "Reused corresponding batch-1 rendered directory capture; no new AlternativeTo fetch",
+    "snapshotPath": "docs/content/.runtime/verification-1/iboostup-directory.json",
+    "sha256": "ae852b68da9d8dd0acc15eb1e86cc24e0a960825c01ca91190bcd40b11f6b734",
+    "excerpt": "Official Website\niboostup.com/",
+    "edge": "AlternativeTo about-page official website link to HTTP vendor homepage; independently read HTTPS vendor homepage",
+    "seedPagination": "Not established in the reused per-product record; no invented page number or upstream seed edge",
+    "limitations": "Directory tags (including Works Offline, No Tracking and origin United Kingdom) are discovery data, not product facts. Official vendor identifies an Australian company and describes cloud features."
+  },
+  "sources": [
+    {"id":"S1","publisher":"iBoostUp Pty Ltd","title":"iBoostUp homepage","url":"https://www.iboostup.com/","finalUrl":"https://www.iboostup.com/","checkedOn":"2026-10-21","retrievedAtUtc":null,"method":"WebFetch markdown; actual readable page content inspected","publicationDate":null,"scope":"Mac direct-download offer, v26.11; general feature catalogue may lag current availability","retainedEvidence":"Claim-level verbatim excerpts below; full WebFetch response retained in tool history, not a local raw HTML snapshot"},
+    {"id":"S2","publisher":"iBoostUp Pty Ltd","title":"Frequently Asked Questions","url":"https://www.iboostup.com/faq","finalUrl":"https://www.iboostup.com/faq","checkedOn":"2026-10-21","retrievedAtUtc":null,"method":"WebFetch markdown; actual readable content inspected","publicationDate":"2026-10-20","scope":"Mac direct and App Store channels; historical notices remain on page","retainedEvidence":"Claim excerpts below; distinguish current notice from older feature catalogue"},
+    {"id":"S3","publisher":"iBoostUp Pty Ltd","title":"Download iBoostUp Free","url":"https://www.iboostup.com/download","finalUrl":"https://www.iboostup.com/download","checkedOn":"2026-10-21","retrievedAtUtc":null,"method":"WebFetch markdown; content inspected","publicationDate":null,"scope":"Direct Mac download 26.11, release date 19 Oct 2026","retainedEvidence":"Claim excerpts below"},
+    {"id":"S4","publisher":"iBoostUp Pty Ltd","title":"End User License Agreement","url":"https://www.iboostup.com/eula","finalUrl":"https://www.iboostup.com/eula","checkedOn":"2026-10-21","retrievedAtUtc":null,"method":"WebFetch markdown; EULA text inspected","publicationDate":null,"scope":"Published EULA, not legal advice or a screenshot republication licence","retainedEvidence":"Claim excerpts below"},
+    {"id":"S5","publisher":"iBoostUp Pty Ltd","title":"iBoostUp Screenshots","url":"https://www.iboostup.com/screenshots","finalUrl":"https://www.iboostup.com/screenshots","checkedOn":"2026-10-21","retrievedAtUtc":null,"method":"WebFetch markdown; image references inspected, not image pixels","publicationDate":null,"scope":"Vendor-hosted app screenshots; version/capture date unknown","excerpt":"![iBoostUp disk usage screen](/img/screenshot_du.png)"},
+    {"id":"S6","publisher":"iBoostUp Pty Ltd","title":"Terms of Service / Privacy access attempts","urls":["https://www.iboostup.com/tos","https://www.iboostup.com/privacy"],"checkedOn":"2026-10-21","method":"WebFetch returned device verification interstitials, not policy content","excerpt":"Verifying the device / Please wait while we validate your session.","state":"not-verified","localAttemptLog":"sources/retrievals.json"},
+    {"id":"BR1","publisher":"Breathing Room internal evidence register","url":"https://breathing-room.chatic.ai/","checkedOn":"2026-10-21","localPath":"docs/content/capabilities.md","scope":"Reuse same-day code and published-offer verification; no new native runtime testing","supportingPublicUrls":["https://breathing-room.chatic.ai/#pricing","https://breathing-room.chatic.ai/privacy/","https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"],"limitations":"Local source HEAD differs from release tag; capability existence does not certify binary behavior."}
+  ],
+  "sourceAccessNotes": {
+    "timestamps": "WebFetch did not expose exact retrieval timestamps; checkedOn is actual check date, not an invented capture time. Separately timestamped urllib attempts are not the successful WebFetch retrievals.",
+    "rawCaptureAttempt": "sources/retrievals.json records six HTTP 403 responses and a 200 privacy device challenge. No browser cookies, alternate profile, challenge bypass or credentials used. privacy.html is a challenge snapshot, NOT policy evidence.",
+    "browser": "Browser-automation skill loaded; browser interaction not needed for readable WebFetch sources. No browser launched, recovered or existing tabs inspected."
+  },
+  "claims": [
+    {"id":"I01","wording":"iBoostUp is offered by iBoostUp Pty Ltd, an Australian registered company founded in 2010.","sourceIds":["S1"],"url":"https://www.iboostup.com/","excerpt":"iBoostUp is brought to you by iBoostUp Pty Ltd, an Australian registered company founded in 2010.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"identity/intro","conditions":"Company registration not independently audited; use attribution."},
+    {"id":"I02","wording":"The direct Mac download page advertises version 26.11, released 19 October 2026, macOS 10.11+ and native Apple Silicon support.","sourceIds":["S3"],"url":"https://www.iboostup.com/download","excerpt":"Version: 26.11 / Released: 19 Oct, 2026 / Supports macOS 10.11+ / Natively supports Apple Silicon Processors.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"version/platform","conditions":"Quoted segments separated by slashes; not installer inspection. FAQ legacy section separately directs 10.10/10.11 users to a legacy build; compatibility conflict must be disclosed, not resolved by assumption. Exact Intel architecture support not independently established."},
+    {"id":"I03","wording":"Quick Clean is advertised free; optional features can be purchased in-app.","sourceIds":["S1"],"url":"https://www.iboostup.com/","excerpt":"iBoostUp is completely free to download & use. Optional features can be purchased in-app. / iBoostUp's Quick Clean has always been legitimately free!","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"pricing","conditions":"Do not call every module free. Exact current optional-feature prices, periods, device counts, tax and renewal amounts unverified; no checkout opened."},
+    {"id":"I04","wording":"iBoostUp documents a Disk Usage view with optional removal and a Quick Clean workflow for temporary files.","sourceIds":["S1","S2"],"url":"https://www.iboostup.com/","excerpt":"Disk Usage allows you to easily discover what's taking up space on your Mac, you can optionally remove these files and folders to regain disk space.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"scan/cleanup matrix","conditions":"Not a measured recovery result or safety certification; no app execution."},
+    {"id":"I05","wording":"The FAQ describes reviewing Quick Clean results via More Information and says Duplicate File Finder removals can be recovered from Trash.","sourceIds":["S2"],"url":"https://www.iboostup.com/faq#6","excerpt":"you are given the opportunity to review files detected for removal by clicking \"More Information\" on the results screen. / If you've inadvertently removed a file using Duplicate File Finder you can simply recover it from the Trash.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"review/undo matrix","conditions":"Do not generalize Duplicate Finder Trash behavior to every cleaner. FAQ acknowledges files stored in temporary/system-cache locations may be removed."},
+    {"id":"I06","wording":"Direct-download and App Store paid purchases do not interoperate; the App Store edition is sandboxed and asks for access before a scan.","sourceIds":["S2"],"url":"https://www.iboostup.com/faq#masvswww","excerpt":"if you install from the App Store it won't recognize your previous purchase from www.iboostup.com and vice versa / the App Store version of iBoostUp is sandboxed and prompts you for access before running a scan.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"channel/install caveats","conditions":"Channel feature parity not established. Do not move licence entitlements between stores."},
+    {"id":"I07","wording":"Spyware Doctor uses cloud logic; the FAQ says app file metadata is sent to its cloud.","sourceIds":["S2"],"url":"https://www.iboostup.com/faq#detections","excerpt":"We do this by a combination of heuristics, traditional signature scanning and logic deployed to the cloud. / we only ever send app file metadata to the Spyware Doctor cloud.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"local/hosted","conditions":"Vendor description, not traffic/privacy audit. Never call entire suite offline. Privacy policy content inaccessible in this job."},
+    {"id":"I08","wording":"The published EULA is a proprietary licence, not an open-source grant.","sourceIds":["S4"],"url":"https://www.iboostup.com/eula","excerpt":"The SOFTWARE is licensed, not sold. / All rights not expressly granted are reserved by iBoostUp. / You may not reverse engineer, decompile, or disassemble the SOFTWARE","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-licence","location":"licence","conditions":"Summarizes licence character only, not legal advice. Download-package redistribution provision is not screenshot republication permission."},
+    {"id":"I09","wording":"Do not recommend File Shredder as currently available: the FAQ says it was temporarily withdrawn.","sourceIds":["S1","S2"],"url":"https://www.iboostup.com/faq","excerpt":"To prevent further disruption to our business and customers, the shredder function has been temporarily withdrawn while the matter is addressed.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-notice","location":"feature conflict","conditions":"22 April 2025 notice remains in FAQ updated 20 October 2026; homepage still lists File Shredder. Current availability unresolved; omit positive availability claim."},
+    {"id":"I10","wording":"Website purchases are charged in USD or JPY; App Store purchases use the Apple account currency.","sourceIds":["S2"],"url":"https://www.iboostup.com/faq#19","excerpt":"When making a purchase on our website you will be charged in USD or JPY. App Store purchases will be charged using the currency set in your Apple account.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","location":"pricing conditions","conditions":"No exact amount verified; FAQ links cancellation instructions but does not establish all current billing terms."},
+    {"id":"B01","wording":"Breathing Room, which we build, is a free Apache-2.0 macOS maintenance preview with optional hosted AI Care advertised at $5 USD/month or $50 USD/year.","sourceIds":["BR1"],"url":"https://breathing-room.chatic.ai/#pricing","excerpt":"Breathing Room is a free, Apache-2.0 macOS maintenance preview / AI Care is advertised at $5 USD/month or $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","location":"comparison/pricing/disclosure","conditions":"capabilities.md lines 7-9, 74-80. Renewing plans, checkout tax; paid allowances and server entitlement enforcement unverified. Free local tools are not equivalent to unrestricted hosted AI."},
+    {"id":"B02","wording":"Breathing Room source includes app/helper grouping, activity history and developer-cache discovery; hosted assistance requires authentication and internet.","sourceIds":["BR1"],"url":"https://github.com/bucabay/breathing-room-app","excerpt":"Native sampling groups helpers through parent/app relationships and exposes CPU/memory. / Authenticated hosted reasoning can request native inspection and start disk discovery.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-register","location":"comparison/decision criteria","conditions":"capabilities.md matrix and hosted-boundary sections; implementation evidence, not binary/hands-on certification. Exact-location approvals; opt-in narrowly verified automatic Ruff Trash mode is an exception to blanket approval language."},
+    {"id":"B03","wording":"Breathing Room 0.1.0-preview.1 is advertised for macOS 13+, needs Python 3.10+ for inventory/legacy scripts, and is not Developer ID signed or notarized.","sourceIds":["BR1"],"url":"https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1","excerpt":"Apple Development signed, not Developer ID signed or notarized / Python 3.10+ / Physical Intel behavior remains explicitly untested.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-release-register","location":"install caveats","conditions":"Universal installer advertised, clean-machine and physical Intel runtime validation pending. Do not advise disabling Gatekeeper. Daily care requires app running and saved exact approvals."}
+  ],
+  "matrix": [
+    {"dimension":"macOS/version","iboostup":"Vendor: 26.11; macOS 10.11+, Apple Silicon native; legacy FAQ conflicts for 10.11","claimIds":["I02"],"breathingRoomClaimIds":["B03"]},
+    {"dimension":"licence","iboostup":"Proprietary EULA; official repo not established","claimIds":["I08"],"breathingRoomClaimIds":["B01"]},
+    {"dimension":"local/hosted","iboostup":"Mac app; Spyware Doctor includes cloud logic/metadata","claimIds":["I07"],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"scan/cleanup","iboostup":"Disk Usage optional removal; free Quick Clean","claimIds":["I03","I04"],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"approval/recovery","iboostup":"More Information review; Duplicate Finder Trash recovery, not suite-wide undo","claimIds":["I05"],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"process/helper grouping","iboostup":"not verified","claimIds":[],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"recurring-growth monitoring","iboostup":"not verified","claimIds":[],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"developer-cache adapters","iboostup":"not verified","claimIds":[],"breathingRoomClaimIds":["B02"]},
+    {"dimension":"pricing","iboostup":"Quick Clean free; optional IAP; exact premium amount/term not verified","claimIds":["I03","I10"],"breathingRoomClaimIds":["B01"]},
+    {"dimension":"channel/runtime/install","iboostup":"App Store sandbox/access prompt; channel purchases not interchangeable; native runtime/signing not tested","claimIds":["I06"],"breathingRoomClaimIds":["B03"]}
+  ],
+  "visuals": [
+    {"id":"iboostup-disk-usage-official","productId":"iboostup","view":"Disk Usage","kind":"official-asset","sourcePageUrl":"https://www.iboostup.com/screenshots","assetUrl":"https://www.iboostup.com/img/screenshot_du.png","capturedAtUtc":null,"retrievedAtUtc":null,"checkedOn":"2026-10-21","capturedBy":null,"productVersion":null,"dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"edits":[],"reuse":{"status":"link-only","basis":"Public screenshot reference is not a reuse licence. Footer reserves all rights; EULA reserves ungranted rights and does not grant independent screenshot republication. Permission or an explicitly approved editorial policy decision required.","evidenceUrlOrPath":"https://www.iboostup.com/eula","credit":"iBoostUp / iBoostUp Pty Ltd"},"caption":"Official iBoostUp Disk Usage screenshot. Vendor-provided illustration; version and capture date not stated; not our test results.","alt":"Vendor-linked screenshot of iBoostUp Disk Usage; inspect the actual image before finalizing descriptive alt text.","supportedClaimIds":["I04"],"review":{"status":"pending","reason":"Exact image link verified in official page; image not downloaded or pixel-inspected because reuse not cleared."},"limitations":["Link-only fallback does not satisfy required on-page competitor image gate.","No image hashes invented for an undownloaded asset."]},
+    {"id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview","sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","capturedBy":"Earlier screenshot-library job; reused manifest provenance","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example","originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a","publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],"privacyReview":{"status":"reviewed","redactions":[],"basis":"Reused screenshot manifest and actual image read in this job; built-in example data, no native inventory."},"reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; third-party marks remain their owners' marks; context review still required","evidenceUrlOrPath":"docs/content/screenshots.json"},"caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.","alt":"Breathing Room Space browser preview showing example storage categories and visible example-data banners.","supportedClaimIds":[],"review":{"status":"research-inspected","checkedOn":"2026-10-21","reviewer":"research-iboostup worker (not independent publication reviewer)"},"limitations":["Keep Interactive preview · example data and browser-preview warning visible.","Floating assistant overlaps the chart; narrower contextual rendering requires separate review.","Current-source illustration, not current native/distributed-release verification; no performance or savings evidence."]}
+  ],
+  "workflowArticleBrief": {
+    "track":"search-reference",
+    "primaryIntent":"Decide which iBoostUp distribution to use and how to review a cleanup without confusing channel permissions, licence restoration and file recovery.",
+    "title":"Before an iBoostUp cleanup: check the edition and review the files",
+    "slug":"iboostup-cleanup-editions-file-review",
+    "description":"Check iBoostUp's download channel, scan permissions and file-review options before cleanup. Its two Mac editions do not share paid purchases, and recovery differs by tool.",
+    "distinctValue":"Channel-aware decision checklist, not a generic alternative list or expanded feature table.",
+    "outline":["Choose the download channel before relying on an existing purchase (I06)","Separate Disk Usage inspection from Quick Clean removal (I03-I05)","Review the file list; do not extend Duplicate Finder Trash recovery to every module (I05)","Treat cloud-backed security separately from disk cleanup (I07)","When ongoing storage investigation fits better: one disclosed Breathing Room recommendation with preview/runtime/hosted caveats (B01-B03)"],
+    "interactionPass":"Handoff a non-mutating checklist: existing paid purchase channel -> same channel; need only inspect -> Disk Usage; considering removal -> review exact files and backup/rebuild consequences. No cleanup execution, login, cookies or upload required.",
+    "visualPlan":"After lead: official iBoostUp Disk Usage app screenshot only once cleared. Later: selected Breathing Room Space example preview with full disclosure. No generated app UI.",
+    "links":["/comparisons/","/comparisons/iboostup/"],
+    "scope":"Documented workflow, not hands-on tutorial. Verify any extra macOS/backup advice against Apple sources during drafting. No terminal cleanup commands."
+  },
+  "comparisonBrief": {
+    "title":"Breathing Room vs iBoostUp: storage investigation or a utility suite",
+    "slug":"iboostup",
+    "primaryIntent":"Choose a Mac storage/maintenance approach, not compare untested speed or savings.",
+    "lead":"iBoostUp documents free Quick Clean and a broader utility catalogue; Breathing Room, which we build, focuses on storage investigation and app/activity context in a maintenance preview. Neither documentation set proves superior safety or measured performance.",
+    "matrixDimensions":["platform/release caveats","licence and channels","cleanup/review/recovery","local versus hosted","price and unknown premium terms","helper/activity/developer workflows"],
+    "iboostupAdvantages":["Documented Quick Clean free workflow (I03)","Documented Duplicate Finder, cookie manager and uninstaller catalogue; do not claim equivalent Breathing Room tools or all-free access (S1)","Separate direct/App Store choice documented with concrete permission/licence caveats (I06)"],
+    "iboostupTradeoffs":["Paid entitlements do not transfer between channels (I06)","Cloud-backed Spyware Doctor means not all functionality is offline (I07)","Feature catalogue contains a withdrawn-shredder conflict; no current availability promise (I09)","Exact premium cost and oldest-version compatibility unresolved"],
+    "breathingRoomAdvantages":["Inspectable Apache-2.0 desktop source and documented helper/activity context (B01-B02)","Developer-cache discovery and exact-location/method approval architecture documented at source level (B02)"],
+    "breathingRoomTradeoffs":["Non-notarized preview, Python prerequisite and incomplete clean-machine/Intel validation (B03)","Hosted authenticated assistance sends relevant context; not all-local AI (B02)","Optional AI Care recurring price; no universal lower-cost claim (B01)"],
+    "links":["/comparisons/","/blog/iboostup-cleanup-editions-file-review/"],
+    "restrictions":"Unknown iBoostUp grouping/monitoring/cache-adapter cells must read not verified, never No. No Windows parity claim: this packet covers the Mac edition; vendor Windows link is not researched."
+  },
+  "unknowns": [
+    "Exact optional-feature price, billing period, device limit, tax and renewal terms; no verified amount or universal cheaper claim",
+    "Exact current macOS 10.11 compatibility: homepage/download minimum versus FAQ legacy direction; do not recommend installation on legacy Macs without resolution",
+    "Current availability of File Shredder, contradicted by catalogue versus FAQ withdrawal; exclude positive availability claim",
+    "Official source repository, current Intel binary architecture details and signing/notarization status",
+    "Privacy policy full content and runtime transmission/retention behavior",
+    "iBoostUp helper grouping, recurring-growth history, developer-specific cache adapters and background automation controls",
+    "Competitor screenshot pixel contents/version/capture date and republication permission"
+  ],
+  "blockers": [
+    {"id":"VISUAL-RIGHTS","severity":"critical","diagnostic":"Official app screenshot source and exact asset URL identified, but no republication permission or approved policy basis established. Asset remains link-only, undownloaded and unreviewed. Required on-page competitor app visual gate fails; drafting must remain blocked.","resolution":"Provide permitted vendor media/licence evidence or an explicitly approved editorial reuse decision, then retrieve the permitted asset, retain original hash/provenance, inspect pixels/privacy and approve final caption/alt."},
+    {"id":"LEGACY-COMPATIBILITY","severity":"scoped","diagnostic":"Do not recommend current build installation on macOS 10.11: current download states 10.11+, FAQ sends 10.10/10.11 users to legacy build.","resolution":"Resolve with current official compatibility guidance or explicitly exclude legacy installation recommendations."}
+  ],
+  "validation": {
+    "nativeTests":"Not performed; no installer, app launch, cleanup, purchases, accounts or settings changes.",
+    "siteChecks":"Not applicable to research-only owned files; no website edits/build/deployment.",
+    "independentReview":"Pending separate review stage; no quality score or publication approval awarded."
+  }
+}

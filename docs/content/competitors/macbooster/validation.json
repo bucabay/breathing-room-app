@@ -1,0 +1,17 @@
+{
+  "jobId": "research-macbooster",
+  "scope": "Research packet validation, not site/runtime/publication QA",
+  "checks": [
+    {"check": "Python JSON parse and unique source/claim IDs", "outcome": "passed: 8 source IDs and 15 claim IDs"},
+    {"check": "Claim source references, mandatory evidence fields, matrix and visual claim references", "outcome": "passed: all references resolve"},
+    {"check": "SHA-256 of inherited official and directory snapshots, capabilities register and selected preview", "outcome": "passed: all match retained hashes"},
+    {"check": "Canonical identity, alias decision and draft blockers", "outcome": "passed: macbooster retained distinctly; alias skip false; drafting false; B1/B2 recorded"},
+    {"check": "Preview disclosure and image-download boundary", "outcome": "passed: example-data/non-native caption present; no PNG/JPG downloaded to owned folder; competitor image path/hash null"},
+    {"check": "Read-only official evidence retrieval", "outcome": "completed: both purchase pages, FAQ, manual, EULA, cleaning HTML and terms inspected; offer conflicts and absent image reuse permission retained, not resolved by assumption"}
+  ],
+  "artifactHashes": {
+    "research.json": "74d569c2eb4cb777cc7cee4f06e321220598c70856695b2e964dcd59369a48cc",
+    "research.md": "5109c2da46853716e9342ae613de586b8c820e53db87e19f6555da0ee0d543f4"
+  },
+  "notPerformed": ["Native or installer execution", "Cleanup or settings changes", "Screenshot republication or asset download", "Checkout, account creation, sign-in or vendor contact", "Site edits/builds", "Independent editorial approval", "Queue/database changes", "Commits, pushes or deployments"]
+}

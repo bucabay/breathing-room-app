@@ -1,0 +1,266 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Changelog — Noah</title>
+<meta name="description" content="What changed in Noah — one short note a week.">
+<link rel="canonical" href="https://onnoah.app/changelog/">
+<meta property="og:type" content="website"><meta property="og:title" content="Changelog — Noah">
+<meta property="og:description" content="What changed in Noah — one short note a week."><meta property="og:url" content="https://onnoah.app/changelog/">
+<meta property="og:image" content="https://onnoah.app/noah-og.jpg"><meta property="og:site_name" content="Noah">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Changelog — Noah">
+<meta name="twitter:description" content="What changed in Noah — one short note a week."><meta name="twitter:image" content="https://onnoah.app/noah-og.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+--page:#ece8df;--page-2:#f4f0e6;
+--ink:#2a251f;--ink-2:rgba(60,50,40,.82);--mute:rgba(60,50,40,.6);
+--line:rgba(60,50,40,.1);--line-2:rgba(60,50,40,.16);
+--card:#fff;--card-cream:rgba(255,255,255,.6);--text-2:#3d4f6f;
+--aurora:linear-gradient(135deg,#2563eb 0%,#4f46e5 50%,#7c3aed 100%);
+--indigo:#4f46e5;--radius-sm:12px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--page);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--indigo);text-decoration:none}a:hover{text-decoration:underline}
+strong{color:var(--ink);font-weight:600}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:100;background:rgba(236,232,223,.82);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-bottom:1px solid var(--line)}
+nav .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:16px;letter-spacing:-.015em}
+.logo-mark{width:30px;height:30px;flex:none;display:block}
+.nav-mid{display:flex;align-items:center;gap:24px;font-size:15px;color:var(--ink-2)}
+.nav-mid a{color:var(--ink-2)}.nav-mid a:hover{color:var(--ink);text-decoration:none}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--aurora);color:#fff;font-weight:600;border-radius:12px;padding:11px 20px;border:none;cursor:pointer;font-size:14px;font-family:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 8px 22px -6px rgba(99,102,241,.55),0 2px 4px rgba(0,0,0,.15);text-decoration:none}
+.btn:hover{text-decoration:none}
+.nav-dl{padding:8px 14px;font-size:13px;gap:7px}
+@media(max-width:900px){.hide-mobile{display:none}}
+header.hero{padding:52px 0 8px}
+h1{font-weight:700;font-size:clamp(30px,4.4vw,40px);line-height:1.1;letter-spacing:-.03em;margin:0 0 10px}
+.sub{color:var(--text-2);font-size:16px;max-width:56ch}
+.now{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin:22px 0 8px;padding:14px 18px;background:var(--card-cream);border:1px solid var(--line);border-radius:var(--radius-sm);font-size:14px;color:var(--text-2)}
+.now b{font-family:ui-monospace,'JetBrains Mono',monospace;font-weight:500;color:var(--ink);font-size:15px}
+.now .lab{color:var(--mute);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+main section{padding:8px 0 40px}
+.rel{border-top:1px solid var(--line);padding:26px 0 4px}
+.rel:first-of-type{border-top:none}
+.date{font-family:ui-monospace,'JetBrains Mono',monospace;font-size:13px;color:var(--mute);letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.date .vtag{color:var(--indigo);background:rgba(79,70,229,.07);border:1px solid rgba(79,70,229,.2);border-radius:5px;padding:0 6px;font-size:11.5px;font-weight:500}
+.rel h2{font-size:19px;font-weight:600;letter-spacing:-.015em;margin:4px 0 12px;color:var(--ink)}
+.rel ul{list-style:none;padding:0;margin:0}
+.rel li{position:relative;padding-left:20px;margin:0 0 11px;color:var(--text-2);font-size:15.5px}
+.rel li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--indigo);opacity:.55}
+.plat{display:inline-block;font-family:ui-monospace,'JetBrains Mono',monospace;font-size:11px;font-weight:500;color:var(--indigo);background:rgba(79,70,229,.08);border:1px solid rgba(79,70,229,.22);border-radius:5px;padding:0 6px;margin-right:7px;vertical-align:1px}
+.note{color:var(--mute);font-size:13.5px;border-top:1px solid var(--line);padding-top:18px;margin-top:8px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:13.5px}
+footer .wrap{max-width:1180px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+</style><script src="/analytics.js"></script></head>
+<body>
+<nav><div class="wrap"><a href="/" class="logo"><img class="logo-mark" src="/noah-icon.svg" alt="Noah" width="30" height="30">Noah</a><div class="nav-mid hide-mobile"><a href="/#talk">See it work</a><a href="/#what">What I fix</a><a href="/#price">Pricing</a><a href="/#faq">FAQ</a><a href="/fix/">Fix Library</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a></div><a class="btn nav-dl" href="/get-started/?p=mac&amp;via=changelog-nav">Download</a></div></nav>
+
+<main class="wrap">
+<header class="hero">
+<h1>Changelog</h1>
+<p class="sub">What changed in Noah — one short note a week.</p>
+<div class="now"><span><span class="lab">Current</span> <b id="ver">—</b></span><span><span class="lab">Released</span> <b id="pub">—</b></span><span><span class="lab">Runs on</span> <b>macOS 12+ · Windows</b></span></div>
+</header>
+
+<section>
+
+<article class="rel">
+<div class="date">2026-08-24 <span class="vtag">v1.41.0</span></div>
+<h2>Startup items you can act on</h2>
+<ul>
+<li>Ask what runs at login and Noah gives you a list you can act on, instead of a description to read through.</li>
+<li>Anything Noah removes goes to your Trash, so you can put it back.</li>
+<li>Storage checks say what they could not see, rather than implying a complete picture.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-08-17 <span class="vtag">v1.39.0</span></div>
+<h2>Windows out of beta</h2>
+<ul>
+<li><span class="plat">Windows</span> Noah is out of beta, and better at working out what is slowing a PC down.</li>
+<li>Moving and deleting files is checked before and verified afterwards.</li>
+<li><strong>Continue</strong> picks up the conversation you left.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-08-10 <span class="vtag">v1.36.0</span></div>
+<h2>Clearer about admin access</h2>
+<ul>
+<li>Noah warns you before a step that needs your admin password, and never approves one on your behalf.</li>
+<li>What Noah has learned about your machine follows you to a wiped or replaced Mac.</li>
+<li>A reply that fails partway through says so instead of arriving as silence.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-08-03 <span class="vtag">v1.32.0</span></div>
+<h2>Restarts, and updates that land on their own</h2>
+<ul>
+<li>A restart Noah asked for is recognised when you come back, so the conversation carries on where it stopped.</li>
+<li>Updates install themselves the next time you open Noah, rather than waiting for a click.</li>
+<li><span class="plat">Windows</span> One installer covers both installing and updating.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-07-27 <span class="vtag">v1.30.1</span></div>
+<h2>Windows sees every installed app</h2>
+<ul>
+<li><span class="plat">Windows</span> The app inventory now covers Store apps, per-user installs and the Start menu.</li>
+<li><span class="plat">Windows</span> Windows users stopped being told Noah was looking at &ldquo;your Mac&rdquo;.</li>
+<li>Upgrading takes one step from inside the app.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-07-20 <span class="vtag">v1.25.0</span></div>
+<h2>Uninstalling, properly</h2>
+<ul>
+<li>Noah can uninstall an app rather than just moving it to the Trash.</li>
+<li>Removals are staged so they can be undone, and the space is genuinely reclaimed.</li>
+<li>A suggested restart is one tap, and so is opening the Trash.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-07-13 <span class="vtag">v1.21.0</span></div>
+<h2>Permission prompts that explain themselves</h2>
+<ul>
+<li>Noah tells you why it wants a folder before macOS asks you to allow it.</li>
+<li>One command stopped setting off three separate permission prompts.</li>
+<li>When the service behind Noah is down it says so calmly, instead of failing in a way you have to decode.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-07-06 <span class="vtag">v1.16.1</span></div>
+<h2>Every conversation keeps its place</h2>
+<ul>
+<li>Conversations are properly separate — each keeps its own messages, progress and cards.</li>
+<li>Reopening an old one restores what Noah showed you, not just the text.</li>
+<li>Noah shows its working as it goes, and asks before a new chat discards a fix in progress.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-06-29 <span class="vtag">v1.11.0</span></div>
+<h2>A face of its own</h2>
+<ul>
+<li>A new logo and a redrawn identity, in light and dark.</li>
+<li>Anyone already paying can manage their billing from inside the app.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-06-22 <span class="vtag">v1.7.0</span></div>
+<h2>Preview and stable</h2>
+<ul>
+<li>Two update channels — Preview for early builds, stable for everyone else.</li>
+<li>Noah knows your model and disk, so advice fits the machine in front of you.</li>
+<li>Fixes for known problems update on their own, with no new download.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-06-15 <span class="vtag">v1.4.0</span></div>
+<h2>Safety becomes a mechanism, not a promise</h2>
+<ul>
+<li>Noah refuses to touch keychains, credentials and system security, however the command is written.</li>
+<li>Every action Noah runs and every approval you give is written to a log you can read.</li>
+<!-- price-lint-ok(noah-pass): a changelog records what shipped; this really did, and stays true about the past. -->
+<li>The one-time Fix Pass appears next to the subscription.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-06-08 <span class="vtag">v1.2.1</span></div>
+<h2>Diagnosis before anything else</h2>
+<ul>
+<li>Noah opens with a real look at your Mac instead of a form.</li>
+<li>A slow Mac is diagnosed in one pass rather than a dozen separate probes.</li>
+<li>Destructive commands can no longer slip past the approval step.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-05-18 <span class="vtag">v1.0.6</span></div>
+<h2>1.0</h2>
+<ul>
+<li>Noah reaches 1.0.</li>
+<li>A permission macOS has denied is recognised and explained, instead of failing quietly.</li>
+<li>The header is cleared out; update controls move into Settings.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-05-04 <span class="vtag">v0.20.3</span></div>
+<h2>A design system, and a clearer bill</h2>
+<ul>
+<li>Consistent type, colour and cards throughout the app.</li>
+<li>Findings and steps render as structured cards rather than loose text.</li>
+<li>Billing tells a paid trial from a renewal, and existing subscribers have a way back in.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-04-27 <span class="vtag">v0.19.2</span></div>
+<h2>Sign in, subscribe, start</h2>
+<ul>
+<li>Sign-in, subscriptions and billing arrive in the app.</li>
+<!-- price-lint-ok(no-email-needed): a changelog records what shipped; on 2026-04-27 this was true. An email has been required since 2026-08-21 (ONN-815). -->
+<li>A trial starts on the device — no email needed.</li>
+<li>Onboarding opens with something to pick instead of an empty screen.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-03-16 <span class="vtag">v0.18.0</span></div>
+<h2>Approvals you can read</h2>
+<ul>
+<li>The approval prompt says in plain language why Noah wants to run something.</li>
+<li>Consecutive steps of a known fix run without asking again each time.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-03-09 <span class="vtag">v0.14.1</span></div>
+<h2>Playbooks</h2>
+<ul>
+<li>Noah follows written procedures for known problems, pausing where it needs you.</li>
+<li>Answers arrive as structured cards rather than parsed text.</li>
+<li>Disk scans step around protected folders instead of failing on them.</li>
+</ul>
+</article>
+
+<article class="rel">
+<div class="date">2026-03-02 <span class="vtag">v0.12.0</span></div>
+<h2>The first Noah</h2>
+<ul>
+<li>Describe a problem in plain English; Noah investigates and proposes a fix.</li>
+<li>Nothing runs without your approval, and anything risky is explained first.</li>
+<li>Sessions are kept, so you can look back at what changed.</li>
+</ul>
+</article>
+
+</section>
+</main>
+
+<footer><div class="wrap"><div>© Noah — your computer, fixed in plain English.</div><div><a href="/">Home</a> · <a href="/fix/">Fix Library</a> · <a href="/blog/">Blog</a> · <a href="/changelog/">Changelog</a> · <a href="/compare/noah-vs-cleanmymac/">Noah vs CleanMyMac</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></div></div></footer>
+
+<script>
+// The live version is read from the release channel, never typed into this page.
+(function(){
+  fetch('/desktop/release-state.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(j){
+    if(!j||!j.version)return;
+    document.getElementById('ver').textContent='v'+j.version;
+    if(j.pub_date){
+      var d=new Date(j.pub_date);
+      if(!isNaN(d))document.getElementById('pub').textContent=d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+    }
+  }).catch(function(){});
+})();
+</script>
+</body></html>

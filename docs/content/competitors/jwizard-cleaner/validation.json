@@ -1,0 +1,284 @@
+{
+  "jobId": "research-jwizard-cleaner",
+  "checkedAtUtc": "2026-10-21T21:23:29.566414+00:00",
+  "checks": [
+    {
+      "check": "unique source and claim IDs",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: mac-webfetch-version",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: mac",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: mac-faq",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: privacy",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: refund",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: uninstaller",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: baseline-home",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: discovery",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: br-capabilities",
+      "passed": true
+    },
+    {
+      "check": "source exists/hash: br-readme",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: identity",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: identity",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: identity",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: platform",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: platform",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: platform",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: version",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: version",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: version",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: xcode",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: xcode",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: xcode",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: scan",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: scan",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: scan",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: approval",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: approval",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: approval",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: uninstall",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: uninstall",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: uninstall",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: extras",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: extras",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: extras",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: term",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: term",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: term",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: price",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: price",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: price",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: privacy",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: privacy",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: privacy",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: refund",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: refund",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: refund",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: license",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: license",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: license",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: br-platform",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: br-platform",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: br-platform",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: br-cost",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: br-cost",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: br-cost",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: br-controls",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: br-controls",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: br-controls",
+      "passed": true
+    },
+    {
+      "check": "source refs and URL: br-preview",
+      "passed": true
+    },
+    {
+      "check": "literal excerpt retained: br-preview",
+      "passed": true
+    },
+    {
+      "check": "claim has scope/date/state: br-preview",
+      "passed": true
+    },
+    {
+      "check": "canonical owner and no unsupported alias skip",
+      "passed": true
+    },
+    {
+      "check": "blocked state retained",
+      "passed": true
+    },
+    {
+      "check": "competitor link-only, no invented asset/hash",
+      "passed": true
+    },
+    {
+      "check": "Breathing Room original hash",
+      "passed": true
+    },
+    {
+      "check": "example/native labels retained",
+      "passed": true
+    },
+    {
+      "check": "two distinct briefs",
+      "passed": true
+    },
+    {
+      "check": "markdown handoff exists",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": "Structural/source excerpt checks only; not native tests, rights clearance, independent editorial approval or publication QA."
+}

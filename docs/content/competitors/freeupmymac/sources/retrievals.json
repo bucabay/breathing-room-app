@@ -1,0 +1,20 @@
+[
+  {
+    "id": "terms",
+    "url": "https://freeupmymac.com/legal-terms/terms-and-conditions",
+    "finalUrl": "https://freeupmymac.com/legal-terms/terms-and-conditions",
+    "retrievedAtUtc": "2026-10-21T20:39:41.771114+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/freeupmymac/sources/terms.html",
+    "sha256": "3d7b3709935b0ce4b3695e91f3081ec3e0159ffff913e12199e962e8b4457bc3"
+  },
+  {
+    "id": "privacy",
+    "url": "https://freeupmymac.com/legal-terms/privacy-policy",
+    "finalUrl": "https://freeupmymac.com/legal-terms/privacy-policy",
+    "retrievedAtUtc": "2026-10-21T20:39:42.840101+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/freeupmymac/sources/privacy.html",
+    "sha256": "36ba7a2aea9b9d6cb22e7cc23fffda71e0d5fb42d251656843e08901630bec15"
+  }
+]

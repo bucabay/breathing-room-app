@@ -1,0 +1,22 @@
+{
+  "jobId": "research-canta-1",
+  "result": "passed-for-research-exclusion-only",
+  "checks": [
+    "Python JSON parsing of research.json and README provenance: passed.",
+    "SHA-256 recomputation of reused official and directory snapshots: matched batch-2 register.",
+    "Retained README bytes matched source ledger and provenance SHA-256.",
+    "Selected Breathing Room Space preview file SHA-256 matched the packet and screenshots.json.",
+    "All six claim source IDs resolved; each claim has source URLs, excerpt and check date.",
+    "Retained README contains Android SDK scope, Shizuku-removal description, factory-reset warning, browser requirement and actual screenshot reference.",
+    "Skip decision, canonicalOwnerId, drafting prohibition and link-only image gate assertions: passed.",
+    "Scoped git status shows new owned competitor folder only; no pre-existing owned changes before work. No site edits performed."
+  ],
+  "artifactSha256": {
+    "research.json": "8837354d0c0b77af11210879a6283aabeba533a9f1a4a4a2a4cdb8993ec1521e",
+    "research.md": "ad8e279904e4558967c480405a4b7755e358905d2076af3c268d96f37b222571",
+    "sources/official-readme.md": "67cc4b435bf1985207aa620b16132b6f0cd3e1795e824459e052b26492f3b5d1",
+    "sources/official-readme.provenance.json": "6a0f89ce801f9d49d63396fe9005d51dd6091fd97c22ce0df6e0f69348ec59f2"
+  },
+  "notPerformed": ["Site build/tests: no site changes", "Native/runtime or cleanup testing", "Competitor image download or visual review", "Independent editorial review", "Browser interaction"],
+  "limitations": "Structural checks and documentary evidence support exclusion, not publication, complete product auditing or hands-on outcomes."
+}

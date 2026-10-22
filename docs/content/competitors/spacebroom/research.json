@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-spacebroom",
+  "productId": "spacebroom",
+  "canonicalOwnerId": "spacebroom",
+  "stage": "research",
+  "status": "blocked",
+  "published": false,
+  "reviewedOn": "2026-10-22",
+  "clockNote": "Scheduled editorial date is 2026-10-22; execution host UTC clock reports 2026-10-21T22:11:34.457525+00:00. Preserve actual source timestamps; do not represent the editorial date as a new source retrieval.",
+  "identity": {
+    "officialName": "SpaceBroom",
+    "homepage": "https://spacebroom.app/en/",
+    "publisher": "DIGITALPASSION Ltd.",
+    "publisherClaimId": "SB-02",
+    "repository": null,
+    "repositoryStatus": "No official public source repository established in the retained homepage links, terms or legal notice. Not a claim that none exists.",
+    "aliases": [],
+    "aliasDecision": {
+      "status": "no-alias-established",
+      "skipSeparateDraft": false,
+      "rationale": "Directory official link and official homepage identify SpaceBroom; official terms identify its licensor. Shared alias-decisions.json contains no SpaceBroom candidate. No evidence connects this product to PowerMyMac; that unrelated unresolved group must not be imported into this job.",
+      "sourceIds": ["D1", "S1", "S3", "S6"]
+    },
+    "fit": "direct",
+    "fitReason": "macOS disk exploration, reviewed cleanup and developer build/cache categories overlap Breathing Room's storage-maintenance intent. This does not imply feature parity in process monitoring or hosted assistance.",
+    "platformIntent": "Mac-to-Mac choice; no Windows or Linux support claim.",
+    "availability": "Official download endpoint returned HTTP 200 after redirect to a public DMG, HEAD only. No installer downloaded, installed or run.",
+    "version": null,
+    "versionScope": "Exact currently offered binary version and architectures not established. Homepage HTML comment mentions a version 1.0.0 notarization check dated 2026-10-19; that comment is not a release manifest or our binary verification. Version 1 is a licence-update entitlement, not proof of current binary version.",
+    "skipDecision": "Do not skip as dead, irrelevant or alias. Hold drafting for screenshot rights/access clearance."
+  },
+  "reuseFirst": {
+    "record": "docs/content/verification/batch-2.json#spacebroom",
+    "originalCheckedAtUtc": "2026-10-21T19:09:43.445295+00:00",
+    "reusedFields": ["officialName", "coreFunction", "supportedPlatforms", "pricing", "pricingScope", "discovery"],
+    "additionalResearchReason": "Licence/renewal detail, publisher, local/network boundary, official screenshot URLs and rights were missing. Homepage HTML was retrieved once to inspect image references and repository/rights links, not to needlessly refresh already-current pricing.",
+    "baselineIntegrity": "Both raw file hashes match batch-2.json. The official snapshot also contains its own sha256 property; file-byte hash, not that embedded property, is the integrity reference."
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/spacebroom/about/",
+    "retrievedAtUtc": "2026-10-21T19:06:12.533Z",
+    "destination": "https://spacebroom.app/en/",
+    "excerpt": "Official Website\nspacebroom.app/en/",
+    "method": "Reused owned Chrome DevTools rendered about-page record from verification batch 2, tab 16; no new directory request.",
+    "snapshotPath": "sources/discovery-baseline.json",
+    "sha256": "5915a437e1fdca701b4ae31b6ebead9f4907cbf3b43482e5d558762760487d8a",
+    "seedAndPagination": "Not contained in this per-item baseline capture. Exact listing-to-official edge is retained; no seed/page number invented."
+  },
+  "sources": [
+    {
+      "id": "D1", "publisher": "AlternativeTo", "title": "SpaceBroom about page, official-link extraction",
+      "url": "https://alternativeto.net/software/spacebroom/about/", "finalUrl": "https://alternativeto.net/software/spacebroom/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:12.533Z", "publicationDate": null,
+      "snapshotPath": "sources/discovery-baseline.json", "sha256": "5915a437e1fdca701b4ae31b6ebead9f4907cbf3b43482e5d558762760487d8a",
+      "scope": "Discovery only, not capability or reuse evidence."
+    },
+    {
+      "id": "S1", "publisher": "DIGITALPASSION Ltd.", "title": "SpaceBroom: Clean up your Mac and free up space",
+      "url": "https://spacebroom.app/en/", "finalUrl": "https://spacebroom.app/en/",
+      "retrievedAtUtc": "2026-10-21T19:09:43.445295+00:00", "publicationDate": null,
+      "snapshotPath": "sources/official-baseline.json", "sha256": "d759b6d349a19971a81ad3f5dc0dd2bbebabb05ec99e57e8024e91bd25b98151",
+      "scope": "Direct-distribution English homepage; vendor documentary statements, not hands-on observations."
+    },
+    {
+      "id": "S2", "publisher": "DIGITALPASSION Ltd.", "title": "SpaceBroom homepage HTML: image references and rights/repo-link inspection",
+      "url": "https://spacebroom.app/en/", "finalUrl": "https://spacebroom.app/en/",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "timestampNote": "WebFetch did not expose an exact retrieval time; retained before host-clock check at 22:11:34 UTC. Do not fabricate seconds.",
+      "snapshotPath": "sources/homepage-images.html", "sha256": "8ad20995a2841c06fec92a56a97998d4e17cd25054ee06556542cb519460c108", "scope": "Public HTML only, no image bytes or scripts executed. Retained baseline's embedded content hash matches this HTML; this is not the raw baseline JSON file hash."
+    },
+    {
+      "id": "S3", "publisher": "DIGITALPASSION Ltd.", "title": "Terms and licence",
+      "url": "https://spacebroom.app/en/terms", "finalUrl": "https://spacebroom.app/en/terms",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": "2026-10-16",
+      "snapshotPath": "sources/additional-excerpts.json", "sha256": "6d55a890f390519d755be779e17da9d3cfab38e8e9ed63804356faba1040787d", "scope": "English informational translation; German terms prevail. Retained excerpts, not full raw response."
+    },
+    {
+      "id": "S4", "publisher": "DIGITALPASSION Ltd.", "title": "AGB und Lizenz",
+      "url": "https://spacebroom.app/agb", "finalUrl": "https://spacebroom.app/agb",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": "2026-10-16",
+      "snapshotPath": "sources/additional-excerpts.json", "scope": "Binding German terms, sections 3, 5, 7, 9 cross-checked against English. Not legal advice."
+    },
+    {
+      "id": "S5", "publisher": "DIGITALPASSION Ltd.", "title": "Privacy policy",
+      "url": "https://spacebroom.app/en/privacy", "finalUrl": "https://spacebroom.app/en/privacy",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": "2026-10-20",
+      "snapshotPath": "sources/additional-excerpts.json", "scope": "English policy assertions, not network audit; German version binding and not fetched. Distinguish direct edition from described Mac App Store edition."
+    },
+    {
+      "id": "S6", "publisher": "DIGITALPASSION Ltd.", "title": "Legal notice",
+      "url": "https://spacebroom.app/en/imprint", "finalUrl": "https://spacebroom.app/en/imprint",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "snapshotPath": "sources/additional-excerpts.json", "scope": "Vendor identity, no image reuse grant found in checked notice."
+    },
+    {
+      "id": "S7", "publisher": "DIGITALPASSION Ltd.", "title": "Public download HEAD check",
+      "url": "https://spacebroom.app/download", "finalUrl": "https://spacebroom.app/SpaceBroom.dmg",
+      "retrievedOnUtc": "2026-10-21", "retrievedAtUtc": null, "publicationDate": null,
+      "snapshotPath": "sources/additional-excerpts.json", "scope": "HTTP 200; HEAD only; binary content, version, integrity, architecture and launch not checked."
+    },
+    {
+      "id": "B1", "publisher": "Breathing Room project", "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedOn": "2026-10-21",
+      "scope": "Reused one-day-current source/public-page verification; URLs and exact code locators in register. Not new runtime validation."
+    },
+    {
+      "id": "B2", "publisher": "Breathing Room project", "title": "Current-source screenshot inventory",
+      "url": "http://127.0.0.1:1431/", "localPath": "docs/content/screenshots.json", "checkedOn": "2026-10-21",
+      "scope": "Current-source browser preview with example data, not a current distributed-native screenshot. Selected original re-opened and hash-checked in this job."
+    }
+  ],
+  "claims": [
+    {"id":"SB-01","wording":"SpaceBroom is the product linked by the directory to spacebroom.app/en/.","sourceIds":["D1","S1"],"sourceUrl":"https://spacebroom.app/en/","excerpt":"SpaceBroom","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Identity/lead","scope":"Identity, not an endorsement"},
+    {"id":"SB-02","wording":"The official seller and licensor is DIGITALPASSION Ltd.","sourceIds":["S3","S6"],"sourceUrl":"https://spacebroom.app/en/terms","excerpt":"The seller and licensor is DIGITALPASSION Ltd.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"Identity","scope":"Vendor legal notice/terms, not corporate-registry audit"},
+    {"id":"SB-03","wording":"The direct edition requires macOS 14 Sonoma or later; one licence covers one Mac.","sourceIds":["S1","S3","S4"],"sourceUrl":"https://spacebroom.app/en/","excerpt":"On macOS 14 Sonoma or later. One licence covers one Mac.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Platform matrix","scope":"CPU architecture and exact binary version not verified"},
+    {"id":"SB-04","wording":"The website advertises €35/year, €3.50/month or €99 one-time, including VAT, for one Mac with no feature tiers.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#preis","excerpt":"€35 / year ... €3.50 / month ... €99 one-time ... One licence for one Mac, every feature with no tiers. Prices incl. VAT.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Pricing matrix","scope":"Direct website EUR offer, not App Store pricing or completed checkout; ellipses join separate pricing sections"},
+    {"id":"SB-05","wording":"Monthly subscriptions renew by the month; the annual plan has a one-year minimum and afterwards continues with one month's cancellation notice and pro-rata refund of unused paid time after termination.","sourceIds":["S1","S3","S4"],"sourceUrl":"https://spacebroom.app/en/terms","excerpt":"The yearly subscription has a minimum term of one year ... after that it continues for an indefinite period, is still billed yearly in advance and can be cancelled at any time with one month's notice.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"Pricing conditions","scope":"Terms §5; German binding text corroborates; do not simplify to annual renewal locked for another year"},
+    {"id":"SB-06","wording":"A one-time licence has no time limit and includes new version 1 features; version 2 may cost extra.","sourceIds":["S3","S4"],"sourceUrl":"https://spacebroom.app/en/terms","excerpt":"the one-time purchase includes all new features of version 1; a version 2 may cost extra.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"Pricing conditions","scope":"Terms §3 and §7; required conformity/security updates have separate statutory wording; not lifetime all-major-version upgrades"},
+    {"id":"SB-07","wording":"Scanning and reviewing are free; all features including cleanup have a seven-day trial once per Mac, without account or payment. Cleanup then needs a licence.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#fragen","excerpt":"Scanning and reviewing are free without a license. In the license window you start a trial once per Mac: for 7 days every feature is free, cleaning included, with no account and no payment. After that the app keeps scanning; to clean up you need a license.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Access matrix","scope":"Documented offer, not a trial we activated"},
+    {"id":"SB-08","wording":"Space Lens lists folders by size; double-click opens a deeper level and a confirmed right-click action moves items to Trash.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#space-lens","excerpt":"Every folder by size, with a bar for its share. ... A double-click goes deeper, a right-click moves them to the Trash once you confirm.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Workflow mechanism","scope":"Vendor-described interaction; not performed"},
+    {"id":"SB-09","wording":"SpaceBroom advertises system-junk, large/old-file, uninstaller and duplicate workflows, plus Xcode, node_modules, Docker and Homebrew cleanup categories.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#funktionen","excerpt":"Uninstaller with settings and leftovers. Large and old files, nothing preselected. ... And for developers: Xcode, node_modules, Docker, Homebrew.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Scope matrix","scope":"No adapter-level or per-category safety tests; do not equate listing with comprehensive support"},
+    {"id":"SB-10","wording":"The vendor says duplicates retain a copy and exclude projects, Git repositories and packages.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#funktionen","excerpt":"Duplicates. One copy always stays. ... Projects, Git repositories and packages are left alone.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"vendor-assertion-not-tested","location":"Workflow duplicate boundary","scope":"Exclusion behavior not tested; never recommend deleting originals solely because sizes match"},
+    {"id":"SB-11","wording":"The documented workflow requires confirmation and uses Trash where possible; explicitly permanent operations are exceptions, and restoring history requires an existing destination folder without a same-name replacement.","sourceIds":["S1","S3","S4"],"sourceUrl":"https://spacebroom.app/en/#sicherheit","excerpt":"You can put it back from the history as long as its folder still exists and nothing with the same name has taken its place. Anything permanent, the app tells you first.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"vendor-assertion-not-tested","location":"Approval/recovery matrix","scope":"Homepage FAQ names system-folder files and emptying Trash as permanent; terms §9 says where possible. No universal undo/safety claim."},
+    {"id":"SB-12","wording":"The vendor says the app works without Full Disk Access but reports areas it could not check.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#fragen","excerpt":"SpaceBroom works without it too, but then tells you which areas it could not check.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Install caveats","scope":"Not complete disk coverage or a request to change permissions in this job"},
+    {"id":"SB-13","wording":"The direct app's policy says findings remain on the Mac and network requests are limited to licence validation, app updates and checking updates for installed programs.","sourceIds":["S5"],"sourceUrl":"https://spacebroom.app/en/privacy","excerpt":"SpaceBroom has no account and sends no usage data. What the app finds on your Mac stays on your Mac. It connects to the internet in only three cases:","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"published-policy-not-audit","location":"Local/hosted matrix","scope":"Subsections name licence identifier/IP and update-related information; no entirely offline, no-network or independently audited privacy promise"},
+    {"id":"SB-14","wording":"The privacy policy describes a separate Mac App Store edition with Apple billing/updates, no Homebrew and folder-selection-limited reads.","sourceIds":["S5"],"sourceUrl":"https://spacebroom.app/en/privacy","excerpt":"This edition is updated through the App Store, so it does not ask our website for updates and does not use Homebrew.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"published-policy-not-audit","location":"Edition caveat","scope":"Policy description only; actual App Store availability, listing, version and prices not verified. Do not transfer direct-edition capabilities/pricing to this edition."},
+    {"id":"SB-15","wording":"The homepage claims Apple notarization and signing by DIGITALPASSION Ltd.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/","excerpt":"Notarized by Apple ... It is signed by DIGITALPASSION Ltd.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"vendor-assertion-not-tested","location":"Install comparison","scope":"No binary signature or notarization assessment performed; not a guarantee against data loss"},
+    {"id":"SB-16","wording":"The public download URL redirects to SpaceBroom.dmg and returned HTTP 200 to HEAD.","sourceIds":["S7"],"sourceUrl":"https://spacebroom.app/download","excerpt":"finalUrl: https://spacebroom.app/SpaceBroom.dmg; status: 200; Content-Length: 10169956","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"observed-http-metadata","location":"Availability","scope":"No payload retrieved; content length not a measured installed size; not installation/runtime proof"},
+    {"id":"SB-17","wording":"Official HTML references an app screenshot for Space Lens at /img/en/spacelens.webp, declared 1920 × 1344.","sourceIds":["S2"],"sourceUrl":"https://spacebroom.app/en/#space-lens","excerpt":"<img src=\"/img/en/spacelens.webp\" width=\"1920\" height=\"1344\" loading=\"lazy\" alt=\"Space Lens shows the folders in the home folder by size.\">","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"official-asset-reference","location":"Visual manifest","scope":"Reference only; asset bytes, actual dimensions, capture provenance, visual fidelity and reuse rights unverified"},
+    {"id":"SB-18","wording":"The official page says its XProtect-based check is not an antivirus replacement and supplies no real-time protection.","sourceIds":["S1"],"sourceUrl":"https://spacebroom.app/en/#fragen","excerpt":"No. SpaceBroom checks with the malware rules Apple ships with macOS and detects suspicious launch items. It offers no real-time protection; macOS itself does that with XProtect.","checkedAtUtc":"2026-10-21T19:09:43.445295+00:00","state":"verified","evidenceClass":"officially-documented","location":"Scope caveat","scope":"No malware-detection tests; avoid making this a security-product comparison"},
+    {"id":"BR-01","wording":"Breathing Room, which we build, is a free Apache-2.0 macOS 13+ maintenance preview; the identified preview is 0.1.0-preview.1 with Python 3.10+ prerequisites and published signing/notarization limitations.","sourceIds":["B1"],"sourceUrl":"https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1","excerpt":"Published preview says Apple Development signed, not Developer ID signed or notarized.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-release-register","location":"Comparison caveats","scope":"capabilities.md lines 44–56 and 98; universal advertised, physical Intel/clean-machine validation pending; source branch not proof of distributed feature parity"},
+    {"id":"BR-02","wording":"Breathing Room implements local storage and grouped process inspection and activity history; AI assistance requires authentication and hosted requests.","sourceIds":["B1"],"sourceUrl":"https://breathing-room.chatic.ai/privacy/","excerpt":"assistant sends the question, conversation history and subsequent tool outputs to /v1/assistant/message","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-policy-register","location":"Scope/privacy matrix","scope":"capabilities.md lines 20–34 and 58–68; sampling and inferred ownership are incomplete; no runtime/performance validation"},
+    {"id":"BR-03","wording":"Breathing Room advertises free local core tools and optional AI Care at $5 USD/month or $50 USD/year, renewing until cancelled with applicable tax at checkout.","sourceIds":["B1"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"Confirmed advertised $5 USD/month, $50 USD/year.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-published-offer-register","location":"Pricing matrix","scope":"capabilities.md lines 70–86; not unlimited AI, not payment test; do not compare EUR and USD totals as cheaper without exchange/tax basis"},
+    {"id":"BR-04","wording":"Breathing Room daily care runs while the app remains open and reuses exact saved approvals; optional automatic verified Ruff-cache Trash moves are a separate interactive mode.","sourceIds":["B1"],"sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"only remembered exact approvals are eligible.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-register","location":"Approval matrix","scope":"capabilities.md lines 32,36–42,53; no unconditional never-deletes-without-asking claim"},
+    {"id":"BR-05","wording":"Breathing Room's source discovery includes npm, uv, pip, pnpm, Go, Bun and Yarn cache queries and project/generated-directory markers, subject to installed tools and native validation.","sourceIds":["B1"],"sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"Discovery includes queries for npm, uv, pip, pnpm, Go build/module, Bun and Yarn caches, plus project markers and generated directories.","checkedOnUtc":"2026-10-21","state":"verified","evidenceClass":"reused-source-register","location":"Developer matrix","scope":"capabilities.md line 28; src-tauri/src/cleanup_discovery.rs:32–46 and cleanup_session.rs:216–274. No adapter certification across all versions."}
+  ],
+  "matrix": [
+    {"dimension":"macOS","spacebroom":{"claimIds":["SB-03"],"value":"14+; architectures not verified"},"breathingRoom":{"claimIds":["BR-01"],"value":"13+ preview; universal advertised, physical Intel untested"}},
+    {"dimension":"Licence/access","spacebroom":{"claimIds":["SB-04","SB-06","SB-07"],"value":"Commercial usage licence; free scanning, seven-day all-feature trial"},"breathingRoom":{"claimIds":["BR-01","BR-03"],"value":"Apache-2.0 desktop source, free core, separately priced hosted AI Care"}},
+    {"dimension":"Local/hosted","spacebroom":{"claimIds":["SB-13","SB-14"],"value":"Vendor policy: local findings, licence/update network requests; direct edition scope"},"breathingRoom":{"claimIds":["BR-02"],"value":"Local inspection; authenticated hosted AI sends relevant context/tool outputs"}},
+    {"dimension":"Scan and cleanup","spacebroom":{"claimIds":["SB-08","SB-09","SB-10"],"value":"Folder-size exploration, junk, duplicates, large/old files, uninstaller"},"breathingRoom":{"claimIds":["BR-02","BR-04"],"value":"Storage views and reviewable cleanup implementation; full uninstaller/duplicate finder not verified"}},
+    {"dimension":"Approval/recovery","spacebroom":{"claimIds":["SB-11"],"value":"Confirmation; Trash where possible, permanent exceptions, conditional restore"},"breathingRoom":{"claimIds":["BR-04"],"value":"Exact plan/method approvals, saved daily approvals; explicit optional automatic Ruff mode"}},
+    {"dimension":"Process/helper grouping","spacebroom":{"claimIds":[],"state":"not-verified","value":"Not verified; menu bar mention does not establish process/helper grouping"},"breathingRoom":{"claimIds":["BR-02"],"value":"Source implements grouped CPU/memory sampling; incomplete attribution"}},
+    {"dimension":"Recurring growth","spacebroom":{"claimIds":[],"state":"not-verified","value":"Not verified; history screenshot is not proof of recurring-growth monitoring"},"breathingRoom":{"claimIds":["BR-02","BR-03","BR-04"],"value":"Activity/history source; recurring investigation advertised with AI Care; app must run for daily care"}},
+    {"dimension":"Developer caches","spacebroom":{"claimIds":["SB-09","SB-10"],"value":"Xcode/node_modules/Docker/Homebrew advertised, duplicate exclusions documented"},"breathingRoom":{"claimIds":["BR-05","BR-04"],"value":"Developer discovery in capability register; adapter prerequisites/version limits, no universal compatibility guarantee"}},
+    {"dimension":"Price/renewal","spacebroom":{"claimIds":["SB-04","SB-05","SB-06","SB-07"],"value":"EUR 35/year, 3.50/month, 99 once; one Mac, VAT included; annual minimum/notice and v1 entitlement apply"},"breathingRoom":{"claimIds":["BR-03"],"value":"Free core; USD 5/month or 50/year optional AI Care; renewal/tax caveats"}},
+    {"dimension":"Install caveats","spacebroom":{"claimIds":["SB-12","SB-15","SB-16"],"value":"Public DMG endpoint; vendor notarization claim; permission-limited scans; exact version/runtime prerequisites unknown"},"breathingRoom":{"claimIds":["BR-01"],"value":"Python 3.10+, non-notarized preview disclosure; website account gate differs from public GitHub download"}}
+  ],
+  "visuals": [
+    {
+      "id":"spacebroom-space-lens-official-reference", "productId":"spacebroom", "view":"Space Lens folder-size browser", "kind":"official-asset",
+      "sourcePageUrl":"https://spacebroom.app/en/#space-lens", "assetUrl":"https://spacebroom.app/img/en/spacelens.webp",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"sourceReferenceCheckedOnUtc":"2026-10-21","capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,
+      "dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":null,"heightPx":null,
+      "declaredDimensions":{"width":1920,"height":1344,"basis":"HTML attributes only, not file inspection"},"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Official public image reference establishes origin, not reuse permission. No image licence/press grant established in checked homepage, terms or legal notice. Link only until explicit clearance; no permission request sent.","evidenceUrlOrPath":"sources/homepage-images.html","credit":"SpaceBroom / DIGITALPASSION Ltd."},
+      "caption":"SpaceBroom's official Space Lens illustration (linked at the vendor). Vendor-provided UI, not our hands-on test; version and example/real-data origin not established.",
+      "alt":"Official SpaceBroom Space Lens illustration, described by the vendor as folders in the home folder ordered by size.",
+      "supportedClaimIds":["SB-08","SB-17"],
+      "limitations":["Asset not downloaded or independently opened; actual image contents/dimensions and capture provenance remain pending.","Not usable as an on-page visual until reuse cleared and real asset visually inspected.","Do not infer measured storage, cleanup savings or exact app version from illustration."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,
+      "capturedBy":"screenshot-library job (inventory attribution)","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed-example-data","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture with required disclosures, per screenshots.json. Third-party marks retain their own rights; independent publication context review required.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room, which we build"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview with visible example-data warnings, storage categories and folder-navigation tabs.",
+      "supportedClaimIds":[],
+      "limitations":["Browser current-source illustration as of capture commit, not distributed-native release evidence.","Retain both example-data notices and caption; do not treat visible numbers as measurements.","Assistant composer overlaps part of the category chart; do not crop away disclosure to fix overlap.","App source is preview; first-party screenshot alone does not certify current native features."],
+      "review":{"status":"research-visual-inspection-only","reviewer":"research-spacebroom worker","reviewedOn":"2026-10-22","method":"Opened actual PNG with image-capable read tool; verified bytes against shared inventory. Independent page-context approval pending."}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference", "title":"Review project folders before cleaning developer storage with SpaceBroom", "slug":"spacebroom-mac-workflow",
+      "targetPath":"website/src/content/blog/spacebroom-mac-workflow.md",
+      "primaryIntent":"A developer on macOS 14+ wants to distinguish large project directories from explicitly reviewed cleanup categories, without treating every large folder as disposable.",
+      "descriptionDirection":"Use Space Lens for orientation, inspect a candidate's purpose and rebuild/backup cost, then review an explicit action. Duplicate exclusions and Trash exceptions matter more than an advertised total.",
+      "outline":["Conclusion: file size is a reason to investigate, not permission to remove","Top visual: rights-cleared Space Lens asset with vendor credit, no invented measured results","Follow the documented folder-size navigation; do not call this a hands-on walkthrough","Separate project originals, rebuildable caches and vendor duplicate exclusions","Check confirmation, permanent-action warning and conditional history restore","When a one-time cleanup tool fits, and when recurring-growth/process investigation may justify Breathing Room, which we build","Second visual: current-source Breathing Room Space preview with example-data caption; bounded preview/runtime/hosted caveats"],
+      "sourceClaimIds":["SB-08","SB-09","SB-10","SB-11","SB-12","BR-01","BR-02","BR-04"],
+      "interactionPass":"Plan a non-executing decision checklist: Is this original work? Is a current backup available? What is the rebuild/download cost? Is the action Trash or permanent? Is the location permission-limited? No filesystem access, uploads or delete buttons.",
+      "differentiation":"Project-preservation and restore-precondition workflow, not a renamed generic junk-cleaner comparison or the price matrix expanded into filler.",
+      "internalLinks":["/comparisons/","/comparisons/spacebroom/"],
+      "linkCaveat":"Counterpart route is planned, not yet verified as existing. Verify tool routes before adding any; no invented related-tool link.",
+      "readiness":"blocked by competitor visual clearance/inspection; no draft generated"
+    },
+    "comparison": {
+      "track":"search-reference", "title":"SpaceBroom vs Breathing Room: reviewed cleanup or recurring investigation", "slug":"spacebroom",
+      "targetPath":"website/src/content/comparisons/spacebroom.md",
+      "primaryIntent":"Choose between documented scan-and-confirm cleanup and a source-implemented Mac-maintenance preview with hosted assistance, without pretending every capability is equivalent.",
+      "leadDirection":"SpaceBroom documents a Mac cleanup suite, free scanning and commercial licences including a version-1 one-time option. Breathing Room, which we build, offers a free-core preview with grouped activity inspection and optional hosted AI Care; retain installation and data-sharing caveats.",
+      "sections":["Bounded conclusion and affiliation","Concise claim-linked matrix from this packet","SpaceBroom fit: folder navigation, duplicate/uninstaller workflow, no-account trial, version-1 one-time licence","Breathing Room fit: grouped process/activity investigation with source/release distinction","Pricing/licence and permissions, preview/Python, local-versus-hosted boundaries","Link to distinct project-folder workflow, not duplicate article body"],
+      "visualIds":["spacebroom-space-lens-official-reference","current-space-browser-preview"],
+      "internalLinks":["/comparisons/","/blog/spacebroom-mac-workflow/"],
+      "readiness":"blocked by competitor visual clearance/inspection; no draft generated"
+    }
+  },
+  "advantagesAndTradeoffs": [
+    {"product":"spacebroom","type":"advantage-for-fit","wording":"Documented duplicate/uninstaller and direct folder-navigation workflows, plus a one-time version-1 licence, may fit a bounded manual cleanup task.","claimIds":["SB-06","SB-08","SB-09","SB-10"],"evidenceClass":"editorial-judgment-from-documentation"},
+    {"product":"spacebroom","type":"tradeoff","wording":"macOS 14 minimum; cleanup paid after trial; annual minimum/notice terms and permanent-operation exceptions require attention. Process grouping and recurring-growth capabilities remain unverified, not absent.","claimIds":["SB-03","SB-05","SB-07","SB-11"],"evidenceClass":"editorial-judgment-from-documentation"},
+    {"product":"breathing-room","type":"advantage-for-fit","wording":"The source-implemented grouped process and activity views may better match a question about which app is active while storage changes, provided sampled/inferred attribution limits are understood.","claimIds":["BR-02"],"evidenceClass":"editorial-judgment-from-source-register"},
+    {"product":"breathing-room","type":"tradeoff","wording":"Preview release is not notarized, Python is required for inventory, physical Intel/clean-machine behavior is unverified, and authenticated hosted AI is neither entirely offline nor unlimited by evidence. Daily care requires the app to remain running.","claimIds":["BR-01","BR-02","BR-03","BR-04"],"evidenceClass":"editorial-judgment-from-source-register"}
+  ],
+  "unknowns": [
+    {"field":"Competitor screenshot reuse permission and visual inspection","critical":true,"resolution":"Obtain an existing explicit screenshot reuse licence, separately authorized permission, or an explicit approved editorial policy decision; then retrieve original bytes, hash, inspect actual UI/privacy/readability and retain source/credit. Public availability and app usage licence are insufficient."},
+    {"field":"Exact current SpaceBroom binary version, CPU architectures, runtime dependencies","critical":false,"resolution":"Omit exact version/architecture/runtime claims until official release manifest or permitted binary metadata establishes them. Do not derive from HTML comment or version-1 licence wording."},
+    {"field":"Official repository/source licence","critical":false,"resolution":"No public repository established; describe documented commercial usage terms, not open-source/closed-source absolutes."},
+    {"field":"Process/helper grouping and recurring-growth monitoring","critical":false,"resolution":"Mark not verified; no negative feature checkmarks."},
+    {"field":"Mac App Store listing/version/price/availability","critical":false,"resolution":"Only policy mentions established; comparison is direct website edition. Do not promise the App Store edition's availability or direct-edition Homebrew capability."},
+    {"field":"Vendor signing/notarization, cleanup safety, recovery and protection effectiveness","critical":false,"resolution":"Attribute documented claims; no runtime tests, benchmarks or binary inspection performed."},
+    {"field":"Independent editorial and rendered-page review","critical":false,"resolution":"Belongs to later review stage after visual blocker resolved. No score awarded here."}
+  ],
+  "gates": {
+    "identity":"pass-documentary", "alias":"pass-no-alias-established", "platformFit":"pass-direct-mac",
+    "pricingTerms":"pass-direct-website-documentary", "materialClaimCoverage":"pass-with-explicit-unknowns",
+    "competitorScreenshot":"blocked-rights-and-inspection", "breathingRoomScreenshot":"selected-hash-and-visual-checked-example-only",
+    "drafting":"blocked", "publication":"not-authorized",
+    "diagnostic":"Official Space Lens app-UI asset reference found, but no verified screenshot reuse grant in checked official sources; image not downloaded or independently inspected. EDITORIAL.md §104–148 requires clearance and real visual inspection before the required on-page screenshot gate can pass. No alias/dead-product skip applies."
+  },
+  "safety": {"agentsSpawned":0,"siteFilesChanged":false,"queueChanged":false,"competitorImagesDownloaded":0,"nativeTesting":false,"cleanup":false,"accountsOrPurchases":false,"browserUsedThisJob":false,"notes":"Public text/HTML and HEAD metadata only. No credentials, cookies, messages, commits, pushes or deployments."}
+}

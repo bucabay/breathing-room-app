@@ -1,0 +1,8 @@
+{
+  "url": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+  "finalUrl": "https://api.github.com/repos/jithin-sabu/purge-app/releases/latest",
+  "retrievedAtUtc": "2026-10-21T21:59:00.574613+00:00",
+  "httpStatus": 200,
+  "path": "docs/content/competitors/purge/sources/release-latest.json",
+  "sha256": "2d21c59682701e5e6184093b0fac30dfeea07ff5af748f65e327e1a3401821c5"
+}

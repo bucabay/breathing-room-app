@@ -1,0 +1,277 @@
+{
+  "jobId": "research-amplecapacity",
+  "checkedAtUtc": "2026-10-21T19:58:03.322841+00:00",
+  "checks": [
+    {
+      "check": "source hash: home",
+      "passed": true
+    },
+    {
+      "check": "source hash: download",
+      "passed": true
+    },
+    {
+      "check": "source hash: pricing",
+      "passed": true
+    },
+    {
+      "check": "source hash: privacy",
+      "passed": true
+    },
+    {
+      "check": "source hash: terms",
+      "passed": true
+    },
+    {
+      "check": "source hash: refunds",
+      "passed": true
+    },
+    {
+      "check": "source hash: contact",
+      "passed": true
+    },
+    {
+      "check": "baseline discovery hash",
+      "passed": true
+    },
+    {
+      "check": "claim IDs unique",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A01",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A01",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A01",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A02",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A02",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A02",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A03",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A03",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A03",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A04",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A04",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A04",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A05",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A05",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A05",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A06",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A06",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A06",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A07",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A07",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A07",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A08",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A08",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A08",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A09",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A09",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A09",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A10",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A10",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A10",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A11",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A11",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A11",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A12",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A12",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A12",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A13",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A13",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A13",
+      "passed": true
+    },
+    {
+      "check": "claim sources resolve: A14",
+      "passed": true
+    },
+    {
+      "check": "claim date/scope/URL: A14",
+      "passed": true
+    },
+    {
+      "check": "supporting excerpt present: A14",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: macOS",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: license",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: localHosted",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: scanCleanup",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: approval",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: helperGrouping",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: recurringGrowth",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: developerCaches",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: pricing",
+      "passed": true
+    },
+    {
+      "check": "matrix claims resolve: runtimeInstall",
+      "passed": true
+    },
+    {
+      "check": "selected preview original hash",
+      "passed": true
+    },
+    {
+      "check": "selected preview example/native labels",
+      "passed": true
+    },
+    {
+      "check": "uncleared competitor asset link-only, not downloaded",
+      "passed": true
+    },
+    {
+      "check": "blocked gates preserved",
+      "passed": true
+    },
+    {
+      "check": "canonical identity retained",
+      "passed": true
+    }
+  ],
+  "passed": 66,
+  "failed": 0,
+  "limitations": [
+    "Structural and retained-source checks, not independent editorial review or native product tests",
+    "No site changes, so no site build/test run",
+    "Competitor image not fetched: unclear reuse rights"
+  ]
+}

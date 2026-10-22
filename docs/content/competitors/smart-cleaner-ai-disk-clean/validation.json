@@ -1,0 +1,16 @@
+{
+  "checkedAtUtc": "2026-10-21T22:11:49.259136+00:00",
+  "status": "passed-packet-integrity-only",
+  "checks": [
+    "PASS: 6 retained source snapshot paths and SHA-256 hashes",
+    "PASS: 25 exact supporting excerpts, source references, URLs and check timestamps",
+    "PASS: matrix claim-reference integrity and unique claim IDs",
+    "PASS: selected Breathing Room PNG hash/disclosure; competitor link-only rights and null download provenance",
+    "PASS: explicit canonical owner/alias decision, two blockers and drafting/publication prohibition",
+    "PASS: both reused verification snapshots match original batch-2 SHA-256 values",
+    "PASS: human-readable research packet includes briefs and blocking diagnostic"
+  ],
+  "researchSha256": "b88c028e76f730fe64edf803921dfa9ff7bfc879dc0825ecf5c6cac8131e2062",
+  "markdownSha256": "9a7c533d9b9df44a763e0c98d7dcabb843951abf31f74d91a9dcaca8f4bc15b7",
+  "limitations": "Not product/runtime tests, rights clearance, independent review, site build or publication approval."
+}

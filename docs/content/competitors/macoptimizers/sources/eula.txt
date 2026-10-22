@@ -1,0 +1,127 @@
+Accord de licence utilisateur (EULA) | MacOptimizers
+MacOptimizers
+Maintenance & Dépannage macOS
+Fonctions
+Gratuit
+Diagnostics
+Captures
+FAQ
+Premium
+Suivi bugs
+Ressources
+Guides
+Blog
+Documentation
+Contact
+Mentions légales
+Licence logicielle
+Accord de licence utilisateur final (EULA)
+Le présent EULA encadre l'installation, l'activation et l'utilisation du logiciel MacOptimizers. Il complète les
+CGV
+pour la vente de la licence et ne réduit pas les droits impératifs dont bénéficie le consommateur au titre de la loi.
+Avertissement important: MacOptimizers peut effectuer des opérations irréversibles sur votre système (suppression de fichiers, fermeture d'applications, modifications de réglages). Il est fortement recommandé d'effectuer une sauvegarde Time Machine avant toute utilisation.
+1. Acceptation
+En installant, activant ou utilisant MacOptimizers, vous acceptez le présent EULA. Si vous n'acceptez pas ses termes, vous ne devez pas installer ni utiliser le logiciel.
+2. Licence d'utilisation
+Informatique Connect vous accorde une licence personnelle, révocable en cas de violation grave du présent EULA, non exclusive et non transférable, vous autorisant à utiliser MacOptimizers conformément à sa destination et à sa documentation.
+MacOptimizers propose une version gratuite et une licence Premium donnant accès aux fonctions avancées listées sur la page
+Premium
+. Sauf indication contraire, la licence Premium vendue sur le site est limitée à 1 Mac par clé de licence.
+La licence ne vous transfère aucun droit de propriété sur le logiciel, ses composants, ses bases de règles, ses éléments visuels ou sa marque.
+3. Utilisation à vos risques
+Le logiciel peut déclencher des opérations sensibles sur le système, notamment suppression de fichiers, maintenance, relance de services ou nettoyage ciblé.
+Certaines opérations sont irréversibles. Les sauvegardes préalables sont de votre responsabilité.
+L'application peut exécuter des commandes avec droits administrateur lorsque vous les validez explicitement.
+Vous devez utiliser le logiciel avec discernement et vérifier les éléments sélectionnés avant suppression, désinstallation, compression ou récupération.
+Les résultats de diagnostic, de détection, de tri, d'analyse, de récupération ou d'optimisation sont fournis à titre d'assistance technique et ne dispensent pas d'une validation humaine avant action.
+Le logiciel est fourni dans le cadre des garanties légales applicables, mais suppose une utilisation prudente, conforme aux instructions et à l'environnement techniquement pris en charge.
+MacOptimizers n'est ni un service de sauvegarde, ni un outil de conservation de preuve, ni une solution de cybersécurité certifiée au sens d'un produit de défense administré ou réglementé. Il peut aider à détecter ou traiter certains incidents, sans garantir l'absence totale de malware, la récupération de tous les fichiers supprimés ni la correction de toutes les anomalies système.
+4. Restrictions d'usage
+Il est interdit de contourner les mécanismes d'activation, de protection, de limitation de siège ou de vérification de licence.
+Il est interdit de redistribuer, revendre, sous-licencier, louer, prêter, partager publiquement ou exploiter commercialement la clé de licence sans accord écrit.
+Il est interdit de décompiler, désassembler ou tenter d'extraire le code source, sauf dans les limites strictement prévues par la loi.
+Il est interdit d'utiliser le logiciel dans un cadre illicite, malveillant ou trompeur.
+Il est interdit de modifier, neutraliser, détourner ou perturber les mécanismes de sécurité, de télémétrie contractuelle minimale, de contrôle d'intégrité, de liaison machine ou d'activation.
+Il est interdit d'utiliser le logiciel pour fournir un service industrialisé, mutualisé, en marque blanche, de support tiers rémunéré ou d'administration de parc sans autorisation écrite préalable.
+Il est interdit d'employer le logiciel pour analyser, traiter ou effacer les données d'un tiers sans base légale, mandat ou autorisation suffisante.
+5. Environnements non destinés et usages sensibles
+MacOptimizers n'est pas conçu pour les environnements critiques ou réglementés dans lesquels une erreur, un faux positif, un faux négatif, une suppression incorrecte, une indisponibilité ou une récupération incomplète pourrait exposer directement des personnes, des preuves ou des infrastructures à un risque majeur.
+Le logiciel n'est pas destiné au pilotage d'équipements médicaux, industriels, de sûreté, d'aviation, d'énergie, de transport, de contrôle d'accès, de justice numérique ou de conservation forensique.
+Les modules de récupération de données ne doivent pas être considérés comme un substitut à une politique de sauvegarde, d'archivage ou de continuité d'activité.
+Les modules de sécurité et d'antimalware ne constituent pas une garantie de détection exhaustive, d'éradication complète ou de conformité réglementaire d'un système.
+Si vous utilisez néanmoins le logiciel dans un contexte sensible, vous assumez la responsabilité d'encadrer cette utilisation par vos propres procédures de validation, sauvegarde, cloisonnement, journalisation et contrôle humain.
+6. Paiement, activation et révocation
+Les paiements Premium sont traités par Stripe et PayPal.
+Après paiement validé, une clé de licence est envoyée par email.
+L'activation Premium nécessite une vérification en ligne et une liaison de la clé à l'appareil.
+Une même clé ne peut être utilisée que dans la limite du nombre d'appareils autorisés par l'offre concernée.
+En cas de remboursement accepté, fraude, chargeback abusif, partage illicite, contournement technique ou violation grave du contrat, la licence Premium peut être suspendue ou révoquée.
+Le vendeur peut également suspendre temporairement l'activation, demander des justificatifs raisonnables ou refuser une réactivation lorsqu'un risque sérieux d'abus, d'usurpation, d'automatisation illicite ou de compromission est identifié.
+Les conditions commerciales, le droit de rétractation, les remboursements et les garanties légales applicables à la vente sont détaillés dans les
+CGV
+.
+7. Composants open source
+MacOptimizers intègre des composants open source:
+FFmpeg / FFprobe (LGPL v2.1+)
+ImageMagick (Apache 2.0)
+Ghostscript (AGPL v3)
+qpdf (Apache 2.0)
+Tesseract OCR (Apache 2.0)
+yt-dlp (The Unlicense)
+macmon (MIT)
+iStats (MIT)
+SwitchAudioSource (MIT)
+PhotoRec / TestDisk (GPL v2)
+whisper.cpp (MIT) — Copyright © Georgi Gerganov et contributeurs
+Les sources et notices de licence correspondantes sont disponibles via la page
+GPL / Sources
+et via le support officiel.
+8. Données
+MacOptimizers est conçu pour traiter l'essentiel des opérations localement sur la machine de l'utilisateur. Certaines données strictement nécessaires peuvent toutefois être traitées pour l'activation de licence, la vérification de statut, la sécurité, le support ou l'envoi volontaire de rapports. Les détails figurent dans la
+politique de confidentialité
+.
+9. Support, mises à jour et évolutions
+Le vendeur peut proposer des corrections, mises à jour, ajustements de compatibilité et évolutions fonctionnelles. Certaines versions peuvent devenir incompatibles avec des systèmes macOS trop anciens, des restrictions Apple nouvelles ou des environnements modifiés par des outils tiers.
+Le support est fourni dans une logique d'assistance raisonnable, sans engagement de délai de réponse contractuel particulier sauf stipulation contraire écrite.
+Le vendeur n'est pas tenu d'assurer le support de versions altérées, modifiées, reconditionnées, utilisées avec des outils de contournement, exécutées dans un environnement non pris en charge ou intégrées à des workflows tiers non documentés.
+10. Limitation de responsabilité
+Dans les limites autorisées par la loi, Informatique Connect ne pourra être tenue responsable des dommages indirects, pertes d'exploitation, pertes de chance ou pertes de données résultant d'une utilisation non conforme, d'une absence de sauvegarde, d'une incompatibilité extérieure au périmètre annoncé, d'un environnement tiers défaillant, d'un paramétrage décidé par l'utilisateur ou d'une validation par l'utilisateur d'une action qu'il n'a pas contrôlée suffisamment.
+Sans supprimer les garanties légales applicables, le vendeur ne garantit pas que les modules de récupération permettront de restaurer un fichier supprimé, que les modules de sécurité détecteront toute menace existante, ni que les modules d'optimisation supprimeront tout ralentissement dont l'origine est externe au logiciel.
+Cette limitation ne s'applique pas lorsque la loi interdit une telle exclusion, notamment en matière de garanties légales, de faute lourde, dolosive ou de dommage corporel.
+11. Évolutions du logiciel et du contrat
+L'éditeur peut modifier le logiciel et le présent EULA pour des motifs légitimes, notamment sécurité, conformité, correction d'erreur, évolution technique, ajout ou retrait de fonctionnalités. La version opposable est celle publiée sur cette page au moment concerné, sans effet rétroactif sur les droits impératifs déjà acquis.
+12. Garanties légales préservées
+Le présent EULA n'a pas pour objet ni pour effet de priver le client consommateur des garanties légales de conformité applicables aux contenus et services numériques ni de la garantie des vices cachés. En cas de contradiction avec une règle impérative, cette dernière prévaut.
+13. Contact éditeur
+Informatique Connect — Représentée par M. GERAUD Anthony
+N°SIRET: 83760672200028 · Téléphone:
+05 19 79 87 29
+· Email:
+contact@informatiqueconnect.fr
+14. Droit applicable
+Le présent EULA est soumis au droit français. Tout litige relève des juridictions françaises compétentes, sous réserve des dispositions impératives applicables au consommateur et du recours préalable éventuel à la médiation mentionnée dans les
+CGV
+.
+15. Mise à jour
+Version EULA: 2026-03-19.2.
+Informatique Connect
+— Représentée par M. GERAUD Anthony
+Téléphone:
+05 19 79 87 29
+· Email:
+contact@informatiqueconnect.fr
+N°SIRET: 83760672200028 · TVA non applicable (art. 293 B CGI) · Tous droits réservés
+© 2026 MacOptimizers
+Compatible macOS Ventura, Sonoma, Sequoia, Tahoe
+Apple Silicon & Intel
+Télécharger MacOptimizers
+Mentions légales
+Politique de confidentialité
+Conditions générales de vente
+Conditions d'utilisation (CGU)
+Accord de licence utilisateur (EULA)
+Guides et comparatifs
+Guide gratuit de nettoyage macOS
+Site officiel :
+macoptimizers.informatiqueconnect.fr
+Informatique Connect — Tous droits réservés

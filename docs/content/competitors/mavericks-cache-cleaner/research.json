@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mavericks-cache-cleaner",
+  "status": "blocked",
+  "stage": "research-only",
+  "recordedAtUtc": "2026-10-21T21:46:04Z",
+  "dateNote": "UTC machine clock at evidence recording; session calendar describes October 22. New WebFetch calls preceded this timestamp; exact individual retrieval seconds were not retained.",
+  "identity": {
+    "productId": "mavericks-cache-cleaner",
+    "discoveryName": "Mavericks Cache Cleaner",
+    "officialName": null,
+    "vendor": "Northern Softworks (directory attribution; current vendor site verified)",
+    "officialHomepage": "http://www.northernsoftworks.com/maverickscachecleaner.html",
+    "officialHomepageState": "HTTP 404 in reused baseline; HTTPS counterpart also returned 404 in this run",
+    "vendorHomepage": "https://www.northernsoftworks.com/",
+    "repository": null,
+    "repositoryState": "not verified; no source repository established",
+    "canonicalOwnerId": "mavericks-cache-cleaner",
+    "canonicalOwnerBasis": "Retain existing manifest ownership only; not proof of a current official identity or a verified merge.",
+    "aliases": [
+      {"name": "MCC", "state": "directory-attributed-only", "sourceId": "D1"},
+      {"name": "Yosemite / Sequoia Cache Cleaner", "relatedProductId": "yosemite-cache-cleaner", "state": "unresolved-generation-relationship", "sourceId": "B2"},
+      {"name": "Golden Gate Cache Cleaner", "state": "current-vendor-offering-not-verified-Mavericks-alias", "sourceIds": ["S1", "S2", "S4"]}
+    ],
+    "aliasSkipDecision": "Skip a separate Mavericks draft now. Do not merge into Yosemite/Sequoia or Golden Gate, transfer their capabilities, or create near-identical generation pages without official historical identity evidence. No PowerMyMac association is evidenced or asserted.",
+    "classification": "excluded-from-current-drafting-pending-legacy-evidence",
+    "fit": "Directory describes a Mac maintenance utility, suggesting cleanup overlap. Current direct-substitute scope cannot be verified. Golden Gate is a broader adjacent maintenance offering, not silently substituted for this task's product.",
+    "windowsSupport": "not verified; no Windows support claim or non-Mac replacement framing"
+  },
+  "decision": {
+    "action": "skip-separate-draft-pending-evidence",
+    "publicationEligible": false,
+    "draftingBlocked": true,
+    "confirmedDeadProduct": false,
+    "reason": "Broken legacy product URL plus no official Mavericks version, compatibility, price, availability or app UI provenance. A 404 does not prove discontinuation. Current vendor pages describe Golden Gate, not historical Mavericks equivalence.",
+    "unblockRequirements": [
+      "Official archival or release documentation establishing Mavericks identity, version-specific compatibility, availability and licence/pricing scope, or explicit official successor/alias evidence supporting a single canonical treatment.",
+      "Authentic Mavericks app UI source and reuse permission/policy clearance; Golden Gate screenshot is not Mavericks UI evidence.",
+      "Distinct current reader value sufficient to justify a standalone page rather than duplicate generation content."
+    ]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/mavericks-cache-cleaner/about/",
+    "seedId": "mole",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=5",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:15.718Z",
+    "method": "Reused manifest rendered-listing edge and baseline owned-browser about-page snapshot; no new directory fetch.",
+    "snapshotPath": "docs/content/.runtime/verification-1/mavericks-cache-cleaner-directory.json",
+    "snapshotHash": "See validation.json, calculated from existing bytes in this run",
+    "retrievedAtUtc": "2026-10-21T19:09:22.579Z"
+  },
+  "sources": [
+    {"id": "D1", "publisher": "AlternativeTo", "url": "https://alternativeto.net/software/mavericks-cache-cleaner/about/", "finalUrl": "https://alternativeto.net/software/mavericks-cache-cleaner/about/", "retrievedAtUtc": "2026-10-21T19:09:22.579Z", "reuse": "docs/content/verification/batch-1.json", "snapshotPath": "docs/content/.runtime/verification-1/mavericks-cache-cleaner-directory.json", "excerpt": "Developed by\nNorthern Softworks", "additionalExcerpt": "Mavericks Cache Cleaner is sometimes referred to as MCC.", "scope": "Discovery/attribution only; listing says last updated Feb 19, 2018, not current product verification."},
+    {"id": "B1", "publisher": "Baseline verification", "url": "http://www.northernsoftworks.com/maverickscachecleaner.html", "finalUrl": null, "retrievedAtUtc": "2026-10-21T19:09:30.273686+00:00", "snapshotPath": "docs/content/.runtime/verification-1/mavericks-cache-cleaner-official.json", "sha256": "d42ddd5fe37aae3f175193ab7ba7d370d7479126179db0113f633bb41bf13215", "excerpt": "HTTP Error 404: Not Found", "scope": "Reused failed access record, not a discontinuation announcement."},
+    {"id": "B2", "publisher": "Northern Softworks via baseline batch-2", "url": "https://www.northernsoftworks.com/sequoiacachecleaner.html", "finalUrl": "https://www.northernsoftworks.com/sequoiacachecleaner.html", "retrievedAtUtc": "2026-10-21T19:09:40.688244+00:00", "snapshotPath": "docs/content/.runtime/verification-2/yosemite-cache-cleaner-official.json", "sha256": "2a380e68a3f3ab4fe675aa5e7e380e5cd6dba04cd21a9bc565e5492ab5a63006", "excerpt": "Click the link to go to Golden Gate Cache Cleaner .", "scope": "Reused pointer only; does not establish Mavericks alias or historical feature parity."},
+    {"id": "S0", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/maverickscachecleaner.html", "finalUrl": null, "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch error", "excerpt": "StatusCode: non 2xx status code (404 GET https://www.northernsoftworks.com/maverickscachecleaner.html)", "scope": "HTTPS legacy access attempt only."},
+    {"id": "S1", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/", "finalUrl": "https://www.northernsoftworks.com/", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown; excerpts retained here, no raw HTML snapshot", "excerpt": "Be sure to download and give Golden Gate Cache Cleaner a try!", "scope": "Current vendor catalogue, not Mavericks identity proof."},
+    {"id": "S2", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/goldengatecachecleaner.html", "finalUrl": "https://www.northernsoftworks.com/goldengatecachecleaner.html", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown; excerpts retained here", "excerpt": "Requirements: Universal Binary requires macOS 10.4 - 27.0", "additionalExcerpts": ["Download Golden Gate Cache Cleaner 27.0.1 (433.4 Mb)", "GGCC Documents and the GGCC Engine maintain system health by providing full automation of common maintenance chores including virus scanning of internet downloads.", "ships with the powerful ClamAV antivirus built in"], "scope": "Vendor claims for Golden Gate only; page contains mixed Tahoe/Big Sur terminology. No installer or support-range test; do not normalize this into Mavericks facts."},
+    {"id": "S3", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/download.html", "finalUrl": "https://www.northernsoftworks.com/download.html", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown", "excerpt": "Use of all software from Northern Softworks is subject to license terms.", "additionalExcerpt": "Golden Gate Cache Cleaner", "scope": "Current Download Center links Golden Gate to downloads/nscc.dmg. No binary downloaded; omission does not prove Mavericks is unavailable everywhere."},
+    {"id": "S4", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/support.html", "finalUrl": "https://www.northernsoftworks.com/support.html", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown", "excerpt": "If you need older versions, choose one of these links:", "additionalExcerpts": ["Download Tahoe Cache Cleaner 26.6 (295.6 Mb) macOS X 10.4-26.6", "Download Sequoia Cache Cleaner 20.6 (285.4 Mb) macOS X 10.4-15.7", "Serial numbers for these versions are no longer issued. If you need to purchase a serial number, you will need to be using Golden Gate Cache Cleaner.", "Beta and Developer builds of macOS X are not supported."], "scope": "Explicit older-edition relationship covers Tahoe/Sequoia; does not mention or resolve Mavericks."},
+    {"id": "S5", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/store.html", "finalUrl": "https://www.northernsoftworks.com/store.html", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown", "excerpt": "Golden Gate Cache Cleaner $9.99", "additionalExcerpts": ["Golden Gate Cache Cleaner Upgrade Requires Tahoe Cache Cleaner serial number $7.99", "Please allow up to a day for delivery.", "Scroll down to view all single user license options."], "scope": "Current Golden Gate single-user advertised dollar prices only; currency code, checkout tax total and Mavericks price not established. Upgrade condition applies to Tahoe serial, not any older serial."},
+    {"id": "S6", "publisher": "Northern Softworks", "url": "https://www.northernsoftworks.com/EULA.html", "finalUrl": "https://www.northernsoftworks.com/EULA.html", "checkedAtUtc": "2026-10-21T21:46:04Z", "method": "WebFetch markdown", "excerpt": "This Software including all screens, logos, documentation, and displays is Copyright by Northern Softworks.", "additionalExcerpt": "Licensee shall not reverse engineer, modify, copy, duplicate, reproduce, license or sublicense the Software, or transfer or convey the Software or any right in the Software to anyone else without the prior written consent of Developer.", "scope": "Current vendor licence text; no affirmative public screenshot republication permission established. Not legal advice or proof of historical Mavericks EULA."},
+    {"id": "BR", "publisher": "Breathing Room evidence register", "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedDate": "2026-10-21", "method": "Reused current evidence, not re-fetched", "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance preview", "scope": "See register for claim-level code/public URLs, preview and hosted-service limitations. Not native testing."}
+  ],
+  "claims": [
+    {"id": "C1", "wording": "AlternativeTo lists Mavericks Cache Cleaner, attributes it to Northern Softworks and calls it MCC.", "sourceIds": ["D1"], "support": "D1 excerpts and snapshot", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "directory-attribution", "location": "identity only", "reviewer": "scheduled research worker"},
+    {"id": "C2", "wording": "The legacy Mavericks URL failed with 404; the current vendor site promotes Golden Gate Cache Cleaner.", "sourceIds": ["B1", "S0", "S1"], "support": "404 error and Golden Gate download invitation", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "documentary-access", "location": "research decision", "reviewer": "scheduled research worker", "conditions": "Does not establish discontinuation or rename."},
+    {"id": "C3", "wording": "Golden Gate is the same product as Mavericks with identical historical capabilities.", "sourceIds": ["B2", "S4"], "support": "Pointer and older versions do not establish Mavericks equivalence", "checkedDate": "2026-10-21", "state": "not-verified", "evidenceClass": "unresolved", "location": "prohibited draft assertion", "reviewer": "scheduled research worker"},
+    {"id": "C4", "wording": "The vendor advertises Golden Gate 27.0.1, a Universal Binary requirement of macOS 10.4–27.0, and a $9.99 single-user offer.", "sourceIds": ["S2", "S5"], "support": "S2 version/requirements and S5 price excerpts", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "vendor-documented-not-tested", "location": "successor-context only", "reviewer": "scheduled research worker", "conditions": "Not Mavericks pricing/support. Dollar currency code unverified. Mixed legacy page wording; no binary validation."},
+    {"id": "C5", "wording": "No affirmative screenshot republication permission was established in the checked sources.", "sourceIds": ["S6"], "support": "Screens copyrighted; reproduction restrictions", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "research-limitation", "location": "visual gate", "reviewer": "scheduled research worker"},
+    {"id": "C6", "wording": "Breathing Room is a macOS 13+ preview with local inspection, authenticated hosted assistance and advertised optional AI Care at $5 USD/month or $50 USD/year.", "sourceIds": ["BR"], "support": "capabilities.md rows 48–55, 60–79 and referenced public sources", "checkedDate": "2026-10-21", "state": "verified", "evidenceClass": "reused-documentary-register", "location": "conditional comparison brief", "reviewer": "scheduled research worker", "conditions": "0.1.0-preview.1 identified, not certified latest; Python 3.10+ disclosed, not bundled; Apple Development signed, not Developer ID/notarized per release disclosure; physical Intel and clean-machine validation pending. Source implementation is not release parity."}
+  ],
+  "productMatrix": {
+    "scope": "Mavericks Cache Cleaner only; never fill these from Golden Gate",
+    "macOSCompatibility": "not verified (directory says Mac only; C1)",
+    "versionAndArchitecture": "not verified",
+    "licence": "not verified officially for this edition (directory labels proprietary/commercial)",
+    "pricing": "not verified; no current Mavericks offer established",
+    "availability": "not verified; legacy page 404 is verified by C2, not proof of product death",
+    "localVersusHosted": "not verified",
+    "scanCleanupModel": "not verified officially for this edition",
+    "approvalControls": "not verified",
+    "helperGrouping": "not verified",
+    "recurringGrowthMonitoring": "not verified",
+    "developerCaches": "not verified",
+    "runtimeAndInstallCaveats": "not verified",
+    "licenceSourceConditions": "Current vendor EULA S6 is context, not proof of identical historical edition terms"
+  },
+  "visuals": [
+    {
+      "id": "mavericks-ui-unresolved", "productId": "mavericks-cache-cleaner", "view": "not established", "kind": null,
+      "sourcePageUrl": "https://alternativeto.net/software/mavericks-cache-cleaner/about/", "assetUrl": null,
+      "capturedAtUtc": null, "retrievedAtUtc": null, "originalPath": null, "originalSha256": null,
+      "reuse": {"status": "pending", "basis": "No authenticated Mavericks app screenshot asset and no reuse grant established."},
+      "review": {"status": "blocked"}, "limitations": ["No image downloaded. Listing snapshot text does not supply a verified Mavericks app UI asset."]
+    },
+    {
+      "id": "golden-gate-official-ui-link-only", "productId": "golden-gate-cache-cleaner", "view": "Vendor-labelled GGCC app screenshot; image itself not inspected", "kind": "official-asset",
+      "sourcePageUrl": "https://www.northernsoftworks.com/", "assetUrl": "https://www.northernsoftworks.com/images/GGCCscreenshot.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "sourcePageCheckedAtUtc": "2026-10-21T21:46:04Z", "dataMode": "unknown", "productVersion": null,
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "reuse": {"status": "link-only", "basis": "Vendor page publicly links screenshot; public access is not a reuse licence. S6 reserves screen copyright; no affirmative permission established.", "evidenceUrlOrPath": "https://www.northernsoftworks.com/EULA.html", "credit": "Northern Softworks"},
+      "caption": "Northern Softworks links a Golden Gate Cache Cleaner screenshot; this is not verified Mavericks Cache Cleaner UI.",
+      "alt": "Link to Northern Softworks' Golden Gate Cache Cleaner screenshot (not Mavericks).",
+      "review": {"status": "pending"}, "limitations": ["Not downloaded or visually inspected; no original hash claimed.", "Wrong edition for Mavericks screenshot gate.", "Link-only research fallback does not clear on-page visual gate."]
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "productVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party example UI capture per screenshots.json; third-party marks remain their owners' marks. Page-specific independent approval pending.", "evidenceUrlOrPath": "docs/content/screenshots.json"},
+      "privacyReview": {"status": "reviewed-in-reused-library", "redactions": []},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "review": {"status": "pending-page-specific-independent-review"},
+      "limitations": ["Current-source as of capture, not proof of distributed-release parity or later source changes.", "Keep example-data banner visible; do not present figures as measured savings.", "Library review reused; this worker verifies original hash, not new native or browser behavior."]
+    }
+  ],
+  "briefs": {
+    "workflowArticle": {
+      "status": "conditional-only-do-not-draft",
+      "track": "search-reference",
+      "proposedTitle": "An old Mavericks Cache Cleaner link stopped working: check the edition before replacing it",
+      "proposedSlug": "mavericks-cache-cleaner-edition-check",
+      "primaryIntent": "Help a Mac owner distinguish an old utility listing from currently documented editions before evaluating maintenance options.",
+      "outline": ["Lead with broken-link evidence and limits, not an invented discontinuation announcement.", "Identify installed edition and OS without running cleanup; require official archival support before advising compatibility.", "Separate current Golden Gate offer from historical Mavericks claims and serial eligibility.", "Choose by actual job: legacy maintenance, current storage inspection, or ongoing investigation; no automatic cache-deletion recipe.", "If evidence is resolved, show a compatibility/edition checklist and link concise comparison, hub and cache/rebuild checklist tool only when those routes exist."],
+      "interactionPass": "Conditional decision checklist: known edition? official OS range? supported serial? authentic UI/reuse rights? Unknown answer stops installation/replacement advice. No code demo or cleanup execution needed.",
+      "antiDoorwayRule": "Do not execute this brief unless archival evidence creates distinct reader value; otherwise fold the legacy-link caveat into one canonical family treatment under separately authorized work."
+    },
+    "comparison": {
+      "status": "blocked-not-a-draft", "proposedTitle": "Breathing Room and Mavericks Cache Cleaner: what is verified", "proposedSlug": "mavericks-cache-cleaner", "primaryIntent": "Edition-specific Mac maintenance decision, not a generic winner page.",
+      "requiredRows": ["version and OS", "current availability", "licence and pricing conditions", "inspection versus maintenance", "approval controls", "local/hosted boundary", "installation caveats"],
+      "conclusion": "No defensible current head-to-head is possible yet; Mavericks material cells remain not verified. Do not publish an empty matrix as a search landing page.",
+      "disclosure": "Breathing Room, which we build",
+      "crossLinks": ["/comparisons/ (verify route before use)", "conditional workflow counterpart only after approval"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "mavericks": "No current official capability advantage established; do not borrow newer edition claims or infer missing features.",
+    "currentVendorContext": "Golden Gate vendor documentation describes broader maintenance/ClamAV/automation scope and legacy OS coverage (S2), which may suit a different job than storage investigation. These are attributed vendor claims, not Mavericks facts, malware efficacy tests or safety endorsements.",
+    "breathingRoom": "Current register documents storage views, grouped app/process inspection, activity history and review architecture. This can fit ongoing investigation, but no superiority or savings benchmark was performed. Preview/notarization/Python/hosted-AI caveats in C6 are material; do not recommend it for old Mavericks OS installations because its disclosed requirement is macOS 13+.",
+    "unknowns": ["Mavericks exact release/version/OS/architecture", "Mavericks pricing and purchase availability", "historical official licence", "Mavericks-to-Golden-Gate identity or upgrade entitlement", "Mavericks authentic screenshot and reproduction rights", "Mavericks hosted/local behavior and detailed feature matrix", "Golden Gate displayed dollar currency code and checkout totals"]
+  },
+  "observations": {"handsOnTests": false, "installedProducts": false, "cleanupExecuted": false, "benchmarks": false, "binaryDownloaded": false, "thirdPartyImageDownloaded": false, "browserUsed": false},
+  "handoff": {"independentReview": "pending", "siteChanges": false, "queueChanges": false, "score": null, "diagnostic": "Critical Mavericks identity/compatibility/availability/visual evidence missing. Legacy URL 404 and current Golden Gate catalogue are documented without claiming verified alias or product death. Keep drafting blocked; do not generate a separate doorway page."}
+}

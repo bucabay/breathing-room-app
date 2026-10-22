@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elinasoft Technologies - Professional App Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h2>Elinasoft</h2>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home">首页</a></li>
+                    <li><a href="#products" class="nav-link" data-i18n="nav.products">产品</a></li>
+                    <li><a href="#platforms" class="nav-link" data-i18n="nav.platforms">平台</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">关于我们</a></li>
+                </ul>
+                <div class="language-selector" id="languageSelector">
+                    <button class="lang-button" id="langButton">
+                        <span class="lang-flag">🌐</span>
+                        <span class="lang-text">语言</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="#" data-lang="en">🇺🇸 English</a>
+                        <a href="#" data-lang="zh-CN">🇨🇳 简体中文</a>
+                        <a href="#" data-lang="zh-TW">🇭🇰 繁體中文</a>
+                        <a href="#" data-lang="ja">🇯🇵 日本語</a>
+                        <a href="#" data-lang="ko">🇰🇷 한국어</a>
+                        <a href="#" data-lang="de">🇩🇪 Deutsch</a>
+                        <a href="#" data-lang="fr">🇫🇷 Français</a>
+                        <a href="#" data-lang="it">🇮🇹 Italiano</a>
+                        <a href="#" data-lang="es">🇪🇸 Español</a>
+                        <a href="#" data-lang="pt">🇵🇹 Português</a>
+                        <a href="#" data-lang="ru">🇷🇺 Русский</a>
+                    </div>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">为您的数字生活提供专业解决方案</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Elinasoft Technologies 致力于开发高质量的跨平台应用程序</p>
+                <a href="#products" class="btn-primary" data-i18n="hero.button">探索我们的产品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 平台选择 -->
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <h2 class="section-title" data-i18n="platforms.title">支持多平台</h2>
+            <div class="platform-grid">
+                <div class="platform-card" data-platform="iphone">
+                    <div class="platform-icon">📱</div>
+                    <h3 data-i18n="platform.iphone">iPhone & iPad</h3>
+                    <p data-i18n="platform.iphone.desc">iOS应用</p>
+                </div>
+                <div class="platform-card" data-platform="mac">
+                    <div class="platform-icon">💻</div>
+                    <h3 data-i18n="platform.mac">Mac</h3>
+                    <p data-i18n="platform.mac.desc">macOS应用</p>
+                </div>
+                <div class="platform-card" data-platform="watch">
+                    <div class="platform-icon">⌚</div>
+                    <h3 data-i18n="platform.watch">Apple Watch</h3>
+                    <p data-i18n="platform.watch.desc">watchOS应用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title" data-i18n="products.title">我们的产品</h2>
+            <p class="section-subtitle" data-i18n="products.subtitle">点击任意应用卡片即可跳转到App Store查看详情</p>
+            
+            <!-- 最新发布 -->
+            <div class="product-category">
+                <h3 class="category-title" data-i18n="products.latest">最新发布</h3>
+                <div class="product-grid">
+                    <div class="product-card featured" data-app-id="6458537660">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">💾</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.ntfs.name">Pro NTFS Drive - NTFS Read & Write</h4>
+                            <p data-i18n="app.ntfs.desc">启用NTFS读写模式，完美支持Windows硬盘</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iPhone & iPad产品 -->
+            <div class="product-category">
+                <h3 class="category-title">
+                    <span class="category-icon">📱</span>
+                    <span data-i18n="products.iphone">iPhone & iPad</span>
+                </h3>
+                <div class="product-grid">
+
+                    <div class="product-card" data-app-id="802041071">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🏥</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.mobile.name">Mobile Doctor - Cleaner Master</h4>
+                            <p data-i18n="app.mobile.desc">手机与 Mac 设备管理、监控和清理工具</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="1543649099">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📋</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.clone.name">Clone My Data - Sync & Backup Data</h4>
+                            <p data-i18n="app.clone.desc">在手机和电脑上复制和同步数据</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="855008026">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🧹</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.aicleaner.name">AI Cleaner Max-Clean Up Device</h4>
+                            <p data-i18n="app.aicleaner.desc">Clean Up Phone,Tablet&Computer</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1414852845">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🎥</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.screenrecorder.name">Screen Recorder - RecordX</h4>
+                            <p data-i18n="app.screenrecorder.desc">Recording App, Voice Recorder</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1531637858">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🛡️</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.securityx.name">SecurityX - AD Blocker, Privacy+</h4>
+                            <p data-i18n="app.securityx.desc.short">保护您的手机和电脑安全</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="6742062980">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🎮</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.gamehub.name">Offline Gamehub</h4>
+                            <p data-i18n="app.gamehub.desc">Get ready for Offline GameHub - No WiFi Games: fun for all ages, and a mental workout too! This offline game collection is like an overflowing toy box packed with more than 11 unique minigames.</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="1544299999">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📷</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.codescanner.name">Code Scanner ALL -NFC, QR code</h4>
+                            <p data-i18n="app.codescanner.desc.short">A fast code scanning app</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1514162751">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">⚡</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.speedtest.name">Speed Test+ -HW Test,Toolbox</h4>
+                            <p data-i18n="app.speedtest.desc">CPU Dasher, Network Monitor</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1457833098">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📦</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.unzip.name">Unzip app - Pro Unarchiver</h4>
+                            <p data-i18n="app.unzip.desc">专业的压缩文件解压工具，支持zip、rar、7z等格式</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="881366728">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🔐</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.secretvault.name">Secret Video Vault-Fast Player</h4>
+                            <p data-i18n="app.secretvault.desc">Media Player, Video Cast to TV</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.iphone">iPhone</span>
+                                <span class="platform-badge" data-i18n="badge.ipad">iPad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mac产品 -->
+            <div class="product-category">
+                <h3 class="category-title">
+                    <span class="category-icon">💻</span>
+                    <span data-i18n="products.mac">Mac</span>
+                </h3>
+                <div class="product-grid">
+                    
+                    <div class="product-card" data-app-id="6458537660">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">💾</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.ntfs.name">Pro NTFS Drive - NTFS Read & Write</h4>
+                            <p data-i18n="app.ntfs.desc">启用NTFS读写模式，完美支持Windows硬盘</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="6742062980">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🎮</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.gamehub.name">Offline Gamehub</h4>
+                            <p data-i18n="app.gamehub.desc">Get ready for Offline GameHub - No WiFi Games: fun for all ages, and a mental workout too! This offline game collection is like an overflowing toy box packed with more than 11 unique minigames.</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="1543649099">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📋</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.clone.name">Clone My Data - Sync & Backup Data</h4>
+                            <p data-i18n="app.clone.desc">在手机和电脑上复制和同步数据</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="802041071">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🏥</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.mobile.name">Mobile Doctor - Cleaner Master</h4>
+                            <p data-i18n="app.mobile.desc">手机与 Mac 设备管理、监控和清理工具</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1531637858">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🛡️</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.securityx.name">SecurityX - AD Blocker, Privacy+</h4>
+                            <p data-i18n="app.securityx.desc.short">保护您的手机和电脑安全</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1414852845">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🎥</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.screenrecorder.name">Screen Recorder - RecordX</h4>
+                            <p data-i18n="app.screenrecorder.desc">Recording App, Voice Recorder</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="855008026">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🧹</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.aicleaner.name">AI Cleaner Max-Clean Up Device</h4>
+                            <p data-i18n="app.aicleaner.desc">Clean Up Phone,Tablet&Computer</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="6754097275">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🌐</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.openhub.name">OpenHub Browser-Browser Picker</h4>
+                            <p data-i18n="app.openhub.desc">Ad Blocker+, Menubar Browser</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="6740076698">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🔋</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.batterymonitor.name">Battery MonitorX-Health&Charge</h4>
+                            <p data-i18n="app.batterymonitor.desc">Monitor Battery,Protect Health</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1457833098">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📦</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.unzip.name">Unzip app - Pro Unarchiver</h4>
+                            <p data-i18n="app.unzip.desc.short">专业的压缩文件解压工具</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="6479181804">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">📹</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.screenhelper.name">Screen Recording Helper</h4>
+                            <p data-i18n="app.screenhelper.desc">A lite screen recording tool</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.mac">Mac</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple Watch产品 -->
+            <div class="product-category">
+                <h3 class="category-title">
+                    <span class="category-icon">⌚</span>
+                    <span data-i18n="products.watch">Apple Watch</span>
+                </h3>
+                <div class="product-grid">
+                    <div class="product-card" data-app-id="6742062980">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🎮</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.gamehub.name">Offline Gamehub</h4>
+                            <p data-i18n="app.gamehub.desc">Get ready for Offline GameHub - No WiFi Games: fun for all ages, and a mental workout too! This offline game collection is like an overflowing toy box packed with more than 11 unique minigames.</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.watch">Watch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-app-id="1531637858">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🛡️</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.securityx.name">SecurityX - AD Blocker, Privacy+</h4>
+                            <p data-i18n="app.securityx.desc.short">保护您的手机和电脑安全</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.watch">Watch</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-app-id="802041071">
+                        <div class="app-icon-wrapper">
+                            <div class="product-icon">🏥</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 data-i18n="app.mobile.name">Mobile Doctor - Cleaner Master</h4>
+                            <p data-i18n="app.mobile.desc">手机与 Mac 设备管理、监控和清理工具</p>
+                            <div class="product-platforms">
+                                <span class="platform-badge" data-i18n="badge.watch">Watch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">关于我们</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-i18n="about.company">Elinasoft Technologies</h3>
+                    <p data-i18n="about.desc1">我们是一家专注于开发高质量应用程序的科技公司，致力于为全球用户提供优秀的数字解决方案。</p>
+                    <p data-i18n="about.desc2">我们的产品涵盖安全保护、数据管理、文件处理等多个领域，支持iPhone、iPad、Mac和Apple Watch等多个平台。</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">19+</div>
+                            <div class="stat-label" data-i18n="about.stat1">优质产品</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label" data-i18n="about.stat2">支持平台</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label" data-i18n="about.stat3">用户满意度</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links">链接</h4>
+                    <ul>
+                        <li><a href="itms-apps://itunes.apple.com/developer/id380879676" target="_blank" data-i18n="footer.appstore">App Store</a></li>
+                        <li><a href="contact.html" data-i18n="footer.support">支持</a></li>
+                        <li><a href="privacy_policy.html" data-i18n="footer.privacy">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Elinasoft Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

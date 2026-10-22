@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Cache Cleaner for Mac (2026) | DeepClean</title>
+    <meta name="description" content="Clean developer caches from 17 toolchains on your Mac: Xcode, Homebrew, npm, Cargo, pip, Docker, Gradle, JetBrains, VS Code, and more. Recover 15-40GB.">
+    <meta property="og:title" content="Developer Cache Cleaner for Mac (2026) | DeepClean">
+    <meta property="og:description" content="Clean developer caches across 17 toolchains. Xcode, npm, Cargo, Docker, Gradle, and more. Recover 15-40GB of dev artifacts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deepclean.app/features/developer-tools">
+    <link rel="canonical" href="https://deepclean.app/features/developer-tools">
+    <meta property="og:image" content="https://deepclean.app/og-card.png">
+    <meta property="og:site_name" content="DeepClean">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../DeepClean-Icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Developer Cache Cleaner for Mac - 17 Toolchains",
+        "description": "Clean developer caches from 17 toolchains on your Mac.",
+        "url": "https://deepclean.app/features/developer-tools",
+        "publisher": {"@type": "Organization", "name": "DeepClean"},
+        "dateModified": "2026-04-06"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://deepclean.app/"},
+            {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://deepclean.app/features/"},
+            {"@type": "ListItem", "position": 3, "name": "Developer Tools", "item": "https://deepclean.app/features/developer-tools"}
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What developer caches can I safely delete on Mac?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeepClean scans 17 developer toolchains including Xcode DerivedData, npm/Yarn/pnpm caches, Homebrew, Docker, pip, Gradle, JetBrains, VS Code, Jupyter, and more. All developer caches are safe to delete and will be rebuilt automatically when needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much disk space do developer tools use on Mac?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Developers typically accumulate 15-40GB in caches alone. Xcode DerivedData can grow to 20GB+, npm cache to 5-10GB, Docker images to 10GB+, and Gradle/Maven caches to 2-10GB. DeepClean finds and safely removes all of these artifacts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I clean Xcode DerivedData?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeepClean automatically finds and safely removes DerivedData, module caches, archives, and documentation caches. You can also manually delete ~/Library/Developer/Xcode/DerivedData, but DeepClean additionally cleans simulator caches, device support files, and old archives that manual cleanup misses."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --blue: #0A84FF; --blue-hover: #409CFF; --blue-subtle: rgba(10,132,255,0.10);
+            --purple: #BF5AF2; --green: #30D158; --orange: #FF9F0A;
+            --red: #FF453A; --cyan: #64D2FF; --pink: #FF375F; --yellow: #FFD60A;
+            --bg-void: #09090B; --bg-primary: #0F0F12; --bg-secondary: #141418;
+            --bg-elevated: #1A1A20; --bg-surface: #222229;
+            --bg-surface-secondary: #2B2B33; --bg-surface-hover: #35353F;
+            --text-primary: #FAFAFA; --text-secondary: #A1A1AA; --text-tertiary: #71717A;
+            --border: #27272A; --border-subtle: rgba(255,255,255,0.06);
+            --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font); color: var(--text-primary); background: var(--bg-void); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        body::after { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); opacity: 0.02; pointer-events: none; z-index: 10000; mix-blend-mode: overlay; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; background: rgba(9,9,11,0.8); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--border-subtle); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; letter-spacing: -0.02em; }
+        .nav-logo img { width: 30px; height: 30px; border-radius: 7px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-cta { font-size: 13px !important; font-weight: 600 !important; color: white !important; background: var(--blue); padding: 7px 18px; border-radius: 8px; transition: all 0.3s var(--ease-out); }
+        .nav-cta:hover { background: var(--blue-hover); }
+        .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+        .nav-hamburger span { width: 20px; height: 1.5px; background: var(--text-secondary); border-radius: 2px; }
+
+        .feature-hero { padding: 140px 32px 80px; text-align: center; position: relative; overflow: hidden; }
+        .feature-hero::before { content: ''; position: absolute; top: 0; left: 50%; width: 800px; height: 500px; transform: translateX(-50%); background: radial-gradient(ellipse, rgba(100,210,255,0.08), transparent 70%); pointer-events: none; }
+        .feature-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); background: rgba(100,210,255,0.08); border: 1px solid rgba(100,210,255,0.15); padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
+        .feature-hero h1 { font-size: clamp(36px, 5.5vw, 56px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 20px; position: relative; }
+        .feature-hero p { font-size: 18px; line-height: 1.7; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; position: relative; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font); font-weight: 600; border: none; cursor: pointer; transition: all 0.3s var(--ease-out); text-decoration: none; }
+        .btn-primary { font-size: 15px; color: white; background: var(--blue); padding: 14px 30px; border-radius: 12px; }
+        .btn-primary:hover { background: var(--blue-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(10,132,255,0.3); }
+
+        /* TOOLS GRID */
+        .tools-section { padding: 80px 32px; background: var(--bg-primary); }
+        .section-header { text-align: center; margin-bottom: 56px; }
+        .section-overline { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.15; margin-bottom: 16px; }
+        .section-desc { font-size: 16px; line-height: 1.65; color: var(--text-secondary); max-width: 520px; margin: 0 auto; }
+
+        .tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1000px; margin: 0 auto; }
+        .tool-card { background: var(--bg-elevated); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 22px; transition: all 0.3s var(--ease-out); }
+        .tool-card:hover { border-color: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .tool-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+        .tool-icon { font-size: 20px; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: var(--bg-surface); flex-shrink: 0; }
+        .tool-name { font-size: 15px; font-weight: 700; }
+        .tool-card p { font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 10px; }
+        .tool-paths { font-family: var(--font-mono); font-size: 10px; color: var(--text-tertiary); line-height: 1.8; }
+        .tool-size { font-size: 12px; font-weight: 600; color: var(--cyan); margin-top: 8px; }
+
+        /* STATS BAR */
+        .stats-bar { padding: 56px 32px; background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+        .stats-grid { display: flex; justify-content: center; gap: 64px; flex-wrap: wrap; text-align: center; }
+        .stat-item .stat-value { font-size: 48px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; margin-bottom: 8px; }
+        .stat-item .stat-value .unit { font-size: 24px; font-weight: 600; color: var(--cyan); margin-left: 2px; }
+        .stat-item .stat-label { font-size: 13px; color: var(--text-secondary); }
+
+        /* CTA */
+        .feature-cta { padding: 80px 32px; background: var(--bg-primary); text-align: center; }
+        .cta-card { max-width: 700px; margin: 0 auto; padding: 56px 40px; background: var(--bg-elevated); border: 1px solid rgba(10,132,255,0.15); border-radius: 24px; position: relative; overflow: hidden; }
+        .cta-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(10,132,255,0.08), transparent 70%); pointer-events: none; }
+        .cta-card h2 { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 12px; position: relative; }
+        .cta-card p { font-size: 16px; color: var(--text-secondary); margin-bottom: 28px; position: relative; }
+
+        .footer { background: var(--bg-primary); padding: 40px 32px; border-top: 1px solid var(--border-subtle); }
+        .footer-inner { display: flex; align-items: center; justify-content: space-between; }
+        .footer-left { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; color: var(--text-tertiary); }
+        .footer-left img { width: 20px; height: 20px; border-radius: 5px; opacity: 0.6; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { font-size: 12px; color: var(--text-tertiary); transition: color 0.2s; }
+        .footer-links a:hover { color: var(--text-secondary); }
+        .footer-right { font-size: 12px; color: rgba(255,255,255,0.18); }
+
+        @media (max-width: 1024px) { .tool-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .nav-links { display: none; }
+            .nav-hamburger { display: flex; }
+            .feature-hero { padding: 100px 20px 48px; }
+            .tools-section { padding: 48px 20px; }
+            .tool-grid { grid-template-columns: 1fr; }
+            .stats-bar { padding: 40px 20px; }
+            .stats-grid { gap: 32px; }
+            .stat-item .stat-value { font-size: 36px; }
+            .feature-cta { padding: 48px 20px; }
+            .cta-card { padding: 36px 24px; }
+            .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+            .footer-links { justify-content: center; flex-wrap: wrap; gap: 16px; }
+        }
+    </style>
+            <!-- BEGIN DEEPCLEAN ANALYTICS (auto-injected) -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HS13FXWGJB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HS13FXWGJB');
+      document.addEventListener('click', function(e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href$=".dmg"]');
+        if (a) gtag('event', 'download_dmg', { link_url: a.href, page_path: location.pathname, location: a.getAttribute('data-track-location') || '' });
+      });
+    </script>
+    <!-- END DEEPCLEAN ANALYTICS -->
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="../" class="nav-logo"><img src="../DeepClean-Icon.png" alt="DeepClean" width="30" height="30">DeepClean</a>
+            <ul class="nav-links">
+                <li><a href="../#features">Features</a></li>
+                <li><a href="../blog/">Blog</a></li>
+                <li><a href="../#download">Pricing</a></li>
+                <li><a href="../#download" class="nav-cta">Scan Your Mac Free</a></li>
+            </ul>
+            <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="feature-badge">Developer Tools</div>
+        <h1>17 Developer Toolchains.<br>One Cleanup Scan.</h1>
+        <p>Xcode DerivedData, npm caches, Cargo registries, Docker images, Gradle builds. Developers carry 15 to 40 GB of reclaimable artifacts. DeepClean knows where all of them hide.</p>
+        <a href="../#download" class="btn btn-primary">Scan Your Mac Free</a>
+    </section>
+
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">17<span class="unit">+</span></div>
+                    <div class="stat-label">Developer toolchains scanned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">14</div>
+                    <div class="stat-label">Junk categories detected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">15-40<span class="unit">GB</span></div>
+                    <div class="stat-label">Typical space recovered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-overline">Supported Toolchains</div>
+                <h2 class="section-title">Every Tool, Every Cache</h2>
+                <p class="section-desc">DeepClean scans all major development ecosystems on macOS. Here is the complete list.</p>
+            </div>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F528;</div>
+                        <div class="tool-name">Xcode</div>
+                    </div>
+                    <p>DerivedData, archives, device support, simulator runtimes, module caches, and documentation caches. The single largest source of developer junk on most Macs.</p>
+                    <div class="tool-paths">~/Library/Developer/Xcode<br>~/Library/Developer/CoreSimulator</div>
+                    <div class="tool-size">Typical: 5 - 30 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F37A;</div>
+                        <div class="tool-name">Homebrew</div>
+                    </div>
+                    <p>Old formula versions, outdated cask downloads, and cached bottles. Running brew cleanup helps, but DeepClean catches what it misses.</p>
+                    <div class="tool-paths">~/Library/Caches/Homebrew<br>/usr/local/Cellar (old versions)</div>
+                    <div class="tool-size">Typical: 500 MB - 3 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F4E6;</div>
+                        <div class="tool-name">npm / Yarn / pnpm / Bun</div>
+                    </div>
+                    <p>Global npm cache, Yarn offline mirror, pnpm content-addressable store, and Bun install cache. All four Node.js package managers in one scan.</p>
+                    <div class="tool-paths">~/.npm, ~/.yarn, ~/.pnpm-store<br>~/.bun/install/cache</div>
+                    <div class="tool-size">Typical: 1 - 5 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F980;</div>
+                        <div class="tool-name">Cargo (Rust)</div>
+                    </div>
+                    <p>Registry source cache, compiled dependency artifacts, and git checkouts. The Cargo cache grows quickly with large dependency trees.</p>
+                    <div class="tool-paths">~/.cargo/registry<br>~/.cargo/git</div>
+                    <div class="tool-size">Typical: 2 - 8 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F40D;</div>
+                        <div class="tool-name">pip / Poetry / uv / Ruff</div>
+                    </div>
+                    <p>pip download cache, Poetry virtual environments cache, uv package cache, and Ruff linting cache. Covers the modern Python ecosystem.</p>
+                    <div class="tool-paths">~/Library/Caches/pip<br>~/Library/Caches/pypoetry</div>
+                    <div class="tool-size">Typical: 500 MB - 3 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F40B;</div>
+                        <div class="tool-name">Docker</div>
+                    </div>
+                    <p>Docker Desktop's disk image, dangling images, build cache, and unused volumes. Docker is often the second-largest consumer of developer disk space.</p>
+                    <div class="tool-paths">~/Library/Containers/com.docker.docker<br>~/.docker</div>
+                    <div class="tool-size">Typical: 5 - 30 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F418;</div>
+                        <div class="tool-name">Gradle / Maven / sbt / Ivy</div>
+                    </div>
+                    <p>Gradle build caches and wrapper distributions, Maven local repository, sbt compiled targets, and Ivy dependency cache.</p>
+                    <div class="tool-paths">~/.gradle/caches, ~/.m2/repository<br>~/.sbt, ~/.ivy2/cache</div>
+                    <div class="tool-size">Typical: 2 - 10 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F48E;</div>
+                        <div class="tool-name">CocoaPods</div>
+                    </div>
+                    <p>Pod spec repository cache and downloaded pod source files. The specs repo alone can be over 1 GB.</p>
+                    <div class="tool-paths">~/Library/Caches/CocoaPods<br>~/.cocoapods/repos</div>
+                    <div class="tool-size">Typical: 1 - 3 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x26A1;</div>
+                        <div class="tool-name">Swift Package Manager</div>
+                    </div>
+                    <p>Resolved package checkouts and build artifacts from SPM-based projects. Shared across all Xcode projects that use SPM.</p>
+                    <div class="tool-paths">~/Library/Developer/Xcode/DerivedData<br>~/Library/Caches/org.swift.swiftpm</div>
+                    <div class="tool-size">Typical: 500 MB - 2 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F5A5;</div>
+                        <div class="tool-name">JetBrains IDEs</div>
+                    </div>
+                    <p>IntelliJ IDEA, PyCharm, WebStorm, GoLand, and other JetBrains IDE caches and log files. Each IDE version maintains its own cache directory.</p>
+                    <div class="tool-paths">~/Library/Caches/JetBrains<br>~/Library/Logs/JetBrains</div>
+                    <div class="tool-size">Typical: 1 - 5 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F4DD;</div>
+                        <div class="tool-name">VS Code</div>
+                    </div>
+                    <p>Extension caches, cached data, cached extension manifests, and log files. VS Code's cache directories grow especially large with many installed extensions.</p>
+                    <div class="tool-paths">~/Library/Application Support/Code/Cache<br>.../CachedData, .../CachedExtensions</div>
+                    <div class="tool-size">Typical: 300 MB - 2 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F310;</div>
+                        <div class="tool-name">Go</div>
+                    </div>
+                    <p>Module download cache and build cache. Go's module system caches downloaded dependencies that can be safely removed.</p>
+                    <div class="tool-paths">~/go/pkg/mod/cache<br>~/Library/Caches/go-build</div>
+                    <div class="tool-size">Typical: 500 MB - 3 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F4D3;</div>
+                        <div class="tool-name">Jupyter / ML</div>
+                    </div>
+                    <p>Jupyter notebook data, HuggingFace model downloads, and PyTorch hub cache. ML model files can be especially large (hundreds of MB to several GB each).</p>
+                    <div class="tool-paths">~/Library/Jupyter<br>~/.cache/huggingface, ~/.cache/torch</div>
+                    <div class="tool-size">Typical: 1 - 20 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F4F1;</div>
+                        <div class="tool-name">Android Studio</div>
+                    </div>
+                    <p>Android build cache, emulator images, SDK components, and Android Studio IDE caches. The Android toolchain is notoriously storage-heavy.</p>
+                    <div class="tool-paths">~/.android/build-cache<br>~/Library/Android/sdk</div>
+                    <div class="tool-size">Typical: 3 - 15 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F48E;</div>
+                        <div class="tool-name">Ruby / Gems</div>
+                    </div>
+                    <p>RubyGems cache, old gem versions, and Bundler artifacts. Multiple Ruby version managers (rbenv, rvm) can each accumulate their own caches.</p>
+                    <div class="tool-paths">~/.gem, ~/Library/Caches/ruby<br>~/.rbenv, ~/.rvm</div>
+                    <div class="tool-size">Typical: 200 MB - 2 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x2699;&#xFE0F;</div>
+                        <div class="tool-name">Composer (PHP)</div>
+                    </div>
+                    <p>Composer package cache and downloaded vendor files. PHP developers using Composer accumulate dependency caches over time.</p>
+                    <div class="tool-paths">~/.composer/cache</div>
+                    <div class="tool-size">Typical: 200 MB - 1 GB</div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">&#x1F680;</div>
+                        <div class="tool-name">Flutter / Dart</div>
+                    </div>
+                    <p>Flutter SDK cache, Dart pub cache, and build outputs. The Flutter SDK itself can be several GB, and cached dependencies add more.</p>
+                    <div class="tool-paths">~/.pub-cache<br>~/flutter/bin/cache</div>
+                    <div class="tool-size">Typical: 1 - 4 GB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-cta">
+        <div class="cta-card">
+            <h2>Reclaim Your Developer Space</h2>
+            <p>One scan finds artifacts from every toolchain you use. Most developers recover 15 to 40 GB on their first cleanup.</p>
+            <a href="../#download" class="btn btn-primary">Scan Your Mac Free</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left"><img src="../DeepClean-Icon.png" alt="" width="20" height="20">DeepClean</div>
+            <div class="footer-links">
+                <a href="../#features">Features</a>
+                <a href="../blog/">Blog</a>
+                <a href="../press/">Press</a>
+                <a href="../#download">Pricing</a>
+                <a href="../about">About</a>
+                <a href="../privacy">Privacy</a>
+                <a href="../terms">Terms</a>
+                <a href="mailto:support@deepclean.app">Contact</a>
+            </div>
+            <div class="footer-right">&copy; 2026 DeepClean</div>
+        </div>
+    </footer>
+<script src="/scripts/journey.js" defer></script>
+</body>
+</html>

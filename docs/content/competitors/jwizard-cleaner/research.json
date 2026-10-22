@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-jwizard-cleaner",
+  "productId": "jwizard-cleaner",
+  "status": "blocked",
+  "stage": "research",
+  "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+  "dateNote": "Actual local/browser UTC retrieval clock is 2026-10-21; dates are retained, not advanced to the session's October 22 date.",
+  "ownership": [
+    "docs/content/competitors/jwizard-cleaner"
+  ],
+  "publicationEligible": false,
+  "draftingAllowed": false,
+  "identity": {
+    "officialName": "JWIZARD Cleaner for Mac",
+    "familyName": "JWIZARD Cleaner",
+    "homepage": "https://jwizard.com/",
+    "productUrl": "https://jwizard.com/cleaning-program-for-mac/",
+    "officialRepository": null,
+    "repositoryStatus": "Not established; no repository linked in checked official pages",
+    "canonicalOwnerId": "jwizard-cleaner",
+    "aliases": [
+      "JWIZARD Mac Cleaner",
+      "JWizard Cleaner"
+    ],
+    "aliasEvidenceClaimIds": [
+      "identity"
+    ],
+    "aliasSkipDecision": {
+      "skip": false,
+      "reason": "Same-brand Mac/family spelling variants share this canonical owner; no separate draft for a spelling or platform edition. No evidence links JWIZARD to PowerMyMac; no cross-product merge inferred."
+    },
+    "classification": "direct-mac-cleanup-overlap",
+    "reason": "Native Mac edition advertises cleanup and review controls; vendor family also has separate Windows/Android/iPhone editions. Breathing Room is not a Windows replacement.",
+    "vendorLegalIdentity": "Footer provides admin@familyshieldtechnologies.com; registered legal entity and ownership not independently established."
+  },
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-1.json",
+    "recordId": "jwizard-cleaner",
+    "record": {
+      "id": "jwizard-cleaner",
+      "name": "JWIZARD Cleaner",
+      "officialUrl": "https://jwizard.com/",
+      "officialFinalUrl": "https://jwizard.com/",
+      "officialName": "JWIZARD Cleaner",
+      "status": "partial",
+      "discovery": {
+        "sourceUrl": "https://alternativeto.net/software/jwizard-cleaner/about/",
+        "retrievedAt": "2026-10-21T19:08:05.344Z",
+        "observedOfficialLink": {
+          "text": "Official Website\njwizard.com/",
+          "url": "https://jwizard.com/",
+          "title": "https://jwizard.com/"
+        },
+        "snapshotPath": "docs/content/.runtime/verification-1/jwizard-cleaner-directory.json"
+      },
+      "facts": [
+        {
+          "field": "officialName",
+          "value": "JWIZARD Cleaner",
+          "sourceUrl": "https://jwizard.com/",
+          "finalUrl": "https://jwizard.com/",
+          "excerpt": "JWIZARD Cleaner",
+          "retrievedAt": "2026-10-21T19:09:28.444598+00:00"
+        },
+        {
+          "field": "coreFunction",
+          "value": "A powerful all-in-one Mac cleaner that removes junk files, uninstalls apps completely, frees up storage, and boosts your Mac's speed.",
+          "sourceUrl": "https://jwizard.com/",
+          "finalUrl": "https://jwizard.com/",
+          "excerpt": "A powerful all-in-one Mac cleaner that removes junk files, uninstalls apps completely, frees up storage, and boosts your Mac's speed.",
+          "retrievedAt": "2026-10-21T19:09:28.444598+00:00"
+        },
+        {
+          "field": "platforms",
+          "value": "JWIZARD Cleaner for Windows",
+          "sourceUrl": "https://jwizard.com/",
+          "finalUrl": "https://jwizard.com/",
+          "excerpt": "JWIZARD Cleaner for Windows",
+          "retrievedAt": "2026-10-21T19:09:28.444598+00:00"
+        },
+        {
+          "field": "platforms",
+          "value": "Mac, Windows, Android and iPhone product variants advertised.",
+          "sourceUrl": "https://jwizard.com/",
+          "finalUrl": "https://jwizard.com/",
+          "excerpt": "JWIZARD Cleaner for Mac The Complete Mac Cleaning Solution More details JWIZARD Cleaner for Windows A powerful PC cleaner More details Mobiles JWIZARD Cleaner for Android A reliable application for cleaning Android More details JWIZARD Cleaner for iPhone An efficient iPhone media cleaner",
+          "retrievedAt": "2026-10-21T19:09:28.444598+00:00"
+        }
+      ],
+      "aliases": [],
+      "blockers": [],
+      "sources": [
+        {
+          "sourceUrl": "https://jwizard.com/",
+          "finalUrl": "https://jwizard.com/",
+          "retrievedAt": "2026-10-21T19:09:28.444598+00:00",
+          "snapshotPath": "docs/content/.runtime/verification-1/jwizard-cleaner-official.json",
+          "sha256": "34987c0793cf1f0bbf0ca5f6cd3691c54edeea22ab18bb5cbda417d7a2f04623"
+        }
+      ],
+      "unverifiedFields": [
+        "license",
+        "pricing",
+        "availability"
+      ]
+    },
+    "policy": "Identity/homepage/family facts reused without refetching homepage or directory; new reads limited to missing Mac details and policy/visual evidence."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/jwizard-cleaner/about/",
+    "retrievedAt": "2026-10-21T19:08:05.344Z",
+    "observedOfficialLink": {
+      "text": "Official Website\njwizard.com/",
+      "url": "https://jwizard.com/",
+      "title": "https://jwizard.com/"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/jwizard-cleaner-directory.json",
+    "sha256": "427fe20e003645b5ceaa7e7305170015073f7f71c708d75efbd81c5492d062a9",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=4",
+        "retrievedAt": "2026-10-21T18:36:37.538Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=4",
+        "retrievedAt": "2026-10-21T18:37:13.603Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "method": "Retained live-browser directory discovery; not feature proof"
+  },
+  "sources": [
+    {
+      "id": "mac-webfetch-version",
+      "url": "https://jwizard.com/cleaning-program-for-mac/",
+      "finalUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "retrievedAtUtc": null,
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/mac-webfetch-version.json",
+      "sha256": "85651edfc50af17be8e53c7b13c810dcce26212b9edbc0dbdd310b37dd66bc3c",
+      "method": "Manually retained narrow WebFetch excerpt, not a full raw response"
+    },
+    {
+      "id": "mac",
+      "publisher": "JWIZARD Cleaner official website",
+      "title": "JWIZARD Cleaner: the all-in-one solution to clean and speed up your Mac",
+      "url": "https://jwizard.com/cleaning-program-for-mac/",
+      "finalUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "retrievedAtUtc": "2026-10-21T21:20:12.089Z",
+      "publicationDate": null,
+      "scope": "Mac desktop offer",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/mac-browser.json",
+      "sha256": "9c3bb951cfa45f030f8c9c9000aa6c55cbac651c2ea37ba303d931cf67ff2829",
+      "method": "Owned Chrome tab; visible DOM text, no cookies or hidden account data"
+    },
+    {
+      "id": "mac-faq",
+      "publisher": "JWIZARD Cleaner official website",
+      "title": "JWIZARD Cleaner: the all-in-one solution to clean and speed up your Mac",
+      "url": "https://jwizard.com/cleaning-program-for-mac/",
+      "finalUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "retrievedAtUtc": "2026-10-21T21:21:02.943Z",
+      "publicationDate": null,
+      "scope": "Mac desktop offer",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/mac-faq-browser.json",
+      "sha256": "4854b57ce92600015295f0c0658c92de07220224561685ffdfcab401f2874b73",
+      "method": "Owned Chrome tab; visible DOM text, no cookies or hidden account data"
+    },
+    {
+      "id": "privacy",
+      "publisher": "JWIZARD Cleaner official website",
+      "title": "JWIZARD Cleaner Privacy and Data Processing Policy",
+      "url": "https://jwizard.com/privacy-policy/",
+      "finalUrl": "https://jwizard.com/privacy-policy/",
+      "retrievedAtUtc": "2026-10-21T21:21:10.050Z",
+      "publicationDate": "2026-01-12",
+      "scope": "Vendor-wide policy; not a runtime audit",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/privacy-browser.json",
+      "sha256": "7a6d3383a82759e312658edfd8a45b1f158d20f57c02d71fa6ebe01628a01fec",
+      "method": "Owned Chrome tab; visible DOM text, no cookies or hidden account data"
+    },
+    {
+      "id": "refund",
+      "publisher": "JWIZARD Cleaner official website",
+      "title": "JWIZARD Cleaner refund policy — terms and conditions",
+      "url": "https://jwizard.com/refund-policy/",
+      "finalUrl": "https://jwizard.com/refund-policy/",
+      "retrievedAtUtc": "2026-10-21T21:21:10.267Z",
+      "publicationDate": "2026-01-12",
+      "scope": "Vendor-wide policy; not a runtime audit",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/refund-browser.json",
+      "sha256": "d814b67845e9fa601daffd610f0632f2f4f42a90d405799547898d4921deac4d",
+      "method": "Owned Chrome tab; visible DOM text, no cookies or hidden account data"
+    },
+    {
+      "id": "uninstaller",
+      "publisher": "JWIZARD Cleaner official website",
+      "title": "App cleaner and uninstaller for Mac: Get rid of unnecessary applications and their traces",
+      "url": "https://jwizard.com/mac-app-cleanup-and-removal/",
+      "finalUrl": "https://jwizard.com/mac-app-cleanup-and-removal/",
+      "retrievedAtUtc": "2026-10-21T21:21:10.478Z",
+      "publicationDate": null,
+      "scope": "Mac desktop offer",
+      "snapshotPath": "docs/content/competitors/jwizard-cleaner/sources/uninstaller-browser.json",
+      "sha256": "c8caf09c65ba7f726287fd631dc902a850af9cb73c980b65e9f6ec5092b85663",
+      "method": "Owned Chrome tab; visible DOM text, no cookies or hidden account data"
+    },
+    {
+      "id": "baseline-home",
+      "url": "https://jwizard.com/",
+      "finalUrl": "https://jwizard.com/",
+      "snapshotPath": "docs/content/.runtime/verification-1/jwizard-cleaner-official.json",
+      "sha256": "34987c0793cf1f0bbf0ca5f6cd3691c54edeea22ab18bb5cbda417d7a2f04623",
+      "retrievedAtUtc": "2026-10-21T19:09:28.444598+00:00",
+      "method": "Reused verified baseline"
+    },
+    {
+      "id": "discovery",
+      "url": "https://alternativeto.net/software/jwizard-cleaner/about/",
+      "finalUrl": "https://alternativeto.net/software/jwizard-cleaner/about/",
+      "snapshotPath": "docs/content/.runtime/verification-1/jwizard-cleaner-directory.json",
+      "sha256": "427fe20e003645b5ceaa7e7305170015073f7f71c708d75efbd81c5492d062a9",
+      "retrievedAtUtc": "2026-10-21T19:08:05.344Z",
+      "method": "Reused verified baseline"
+    },
+    {
+      "id": "br-capabilities",
+      "url": "https://breathing-room.chatic.ai/",
+      "finalUrl": "https://breathing-room.chatic.ai/",
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "retrievedAtUtc": "2026-10-21",
+      "method": "Reused verified baseline"
+    },
+    {
+      "id": "br-readme",
+      "url": "https://github.com/bucabay/breathing-room-app",
+      "finalUrl": "https://github.com/bucabay/breathing-room-app",
+      "snapshotPath": "README.md",
+      "sha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f",
+      "retrievedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "method": "Current local source read; not distributed-binary QA"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "JWIZARD Cleaner is the official product family at jwizard.com; compare its Mac edition here.",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://jwizard.com/",
+      "excerpt": "JWIZARD Cleaner for Mac",
+      "checkedAtUtc": "2026-10-21T19:09:28.444598+00:00",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "identity",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor documentation, not hands-on testing",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "platform",
+      "wording": "The Mac page lists macOS 12 and above.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "macOS 12 and above",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor documentation, not hands-on testing",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "version",
+      "wording": "The live browser page displays 1.15.2, 31 August 2026; a text-fetch representation displayed 1.12.2, 24 March 2025.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "1.15.2, 31 August 2026",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Display observation only. Do not certify latest downloadable binary; version conflict is retained, not silently resolved.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "xcode",
+      "wording": "The vendor advertises Xcode cache, temporary-file and old-build cleanup.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "Keep your Xcode workflow stable by removing its cache, temporary files, and old builds with JWIZARD Cleaner.",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "workflow brief",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor documentation, not hands-on testing",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "scan",
+      "wording": "The Mac page advertises Smart Scan plus system, browser, app and duplicate-file cleanup.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "Apply \"Smart Scan\" mode",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Capabilities advertised on this page; instant scans and performance gains not verified.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "approval",
+      "wording": "The vendor says it shows a preview and requests confirmation before deletion.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "You choose what to remove. JWIZARD Cleaner always shows you a preview and asks for confirmation before deleting anything.",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor documentation, not hands-on testing",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "uninstall",
+      "wording": "The documented Uninstaller workflow scans apps, lets users select them and provides a Delete action.",
+      "sourceIds": [
+        "uninstaller"
+      ],
+      "sourceUrl": "https://jwizard.com/mac-app-cleanup-and-removal/",
+      "excerpt": "Launch the application and open the \"Uninstaller\" section.",
+      "checkedAtUtc": "2026-10-21T21:21:10.478Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Do not repeat claims of removing every residual file, registry entries, zero risk or speedups as verified facts.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "extras",
+      "wording": "The Mac page also advertises login-item controls, device information and video compression.",
+      "sourceIds": [
+        "mac"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "LOGIN ITEMS",
+      "checkedAtUtc": "2026-10-21T21:20:12.089Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "No functional tests; no lossless-compression or boot-speed claims endorsed.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "term",
+      "wording": "The Mac FAQ describes a one-year licence with subscription options for 1, 2 or 5 Macs.",
+      "sourceIds": [
+        "mac-faq"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "The product license is valid for 1 year. Subscription options are available for use on 1, 2, or 5 Macs.",
+      "checkedAtUtc": "2026-10-21T21:21:02.943Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor documentation, not hands-on testing",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "price",
+      "wording": "Exact Mac subscription price, currency, taxes, renewal amount, cancellation and trial limits are not verified.",
+      "sourceIds": [
+        "mac-faq"
+      ],
+      "sourceUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "excerpt": "How long is the license valid?",
+      "checkedAtUtc": "2026-10-21T21:21:02.943Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "not-verified",
+      "evidenceClass": "unknown",
+      "conditions": "No purchase, checkout creation or download initiated. Do not call it free, lifetime, cheaper or a particular currency/amount.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "privacy",
+      "wording": "The policy describes device information, usage data including activations/crashes/scans/errors, and IP addresses.",
+      "sourceIds": [
+        "privacy"
+      ],
+      "sourceUrl": "https://jwizard.com/privacy-policy/",
+      "excerpt": "the User's device information, application usage data (activation, crashes, scans, errors), and IP address.",
+      "checkedAtUtc": "2026-10-21T21:21:10.050Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Vendor-wide policy, not observed telemetry; does not establish an all-offline Mac workflow or uploaded file contents.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "refund",
+      "wording": "Website refunds are conditional, not an unconditional 30-day guarantee: report problems within 72 hours, cooperate with support, and refund eligibility is limited to unresolved issues within 30 days.",
+      "sourceIds": [
+        "refund"
+      ],
+      "sourceUrl": "https://jwizard.com/refund-policy/",
+      "excerpt": "All problems and issues must be reported within 72 hours after purchase",
+      "checkedAtUtc": "2026-10-21T21:21:10.267Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Policy updated January 12, 2026; one refund/customer, exclusions and potential 9% deduction for other approved reasons. Store purchases follow store policy.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "license",
+      "wording": "AlternativeTo labels the product proprietary; an official source-code licence or public repository was not established in checked pages.",
+      "sourceIds": [
+        "discovery"
+      ],
+      "sourceUrl": "https://alternativeto.net/software/jwizard-cleaner/about/",
+      "excerpt": "Proprietary",
+      "checkedAtUtc": "2026-10-21T19:08:05.344Z",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "not-verified",
+      "evidenceClass": "unknown",
+      "conditions": "Directory label is discovery, not authoritative licence proof. No open-source claim or absence-of-repository claim.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "br-platform",
+      "wording": "Breathing Room is a macOS 13+ preview; Python 3.10+ is required for disk inventory and legacy scripts, and physical Intel runtime validation remains incomplete.",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Python 3.10+",
+      "checkedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Current README/source agrees with reused capabilities register; not installation testing.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "br-cost",
+      "wording": "Breathing Room's core app is free; optional AI Care is advertised at $5 USD/month or $50 USD/year; hosted agent workflows require sign-in and internet.",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "AI Care is optional: $5 USD/month or $50 USD/year.",
+      "checkedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Public-offer verification reused from capabilities.md dated 2026-10-21; entitlement limits, payment/activation not tested.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "br-controls",
+      "wording": "Breathing Room documents exact-location/method cleanup review, app/helper CPU/memory inspection and activity history; these are source/documentation claims, not certified release parity.",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "Review each proposed action's location, method, size, explanation, and rebuild or",
+      "checkedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Optional verified-Ruff automatic mode is an exception to universal per-action approval language; daily care reuses exact approvals and requires the app running. Sampled activity does not prove file authorship.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    },
+    {
+      "id": "br-preview",
+      "wording": "The preview is not notarized; do not recommend disabling Gatekeeper.",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "The preview is not notarized.",
+      "checkedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+      "intendedLocation": "comparison matrix",
+      "state": "verified",
+      "evidenceClass": "documented",
+      "conditions": "Capabilities register/public release further disclose Apple Development rather than Developer ID signing; no new binary signature inspection.",
+      "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)"
+    }
+  ],
+  "productMatrix": {
+    "macOS": "platform",
+    "versionDisplay": "version",
+    "license": "license",
+    "pricing": [
+      "term",
+      "price",
+      "refund"
+    ],
+    "localVsHosted": "privacy",
+    "scanCleanup": [
+      "scan",
+      "xcode",
+      "uninstall"
+    ],
+    "approval": "approval",
+    "otherUtilities": "extras",
+    "notVerified": [
+      "Mac architecture requirements",
+      "Installer signing/notarization",
+      "Runtime dependencies",
+      "Exact price/currency/tax/renewal/limits",
+      "Offline cleanup capability",
+      "CPU/memory helper grouping",
+      "Recurring-growth history/scheduler",
+      "Exact Xcode paths and rebuild behavior",
+      "npm/pnpm/uv cache coverage",
+      "Trash versus permanent deletion/rollback",
+      "Official source-code licence/repository"
+    ],
+    "unknownRule": "Unknown is not No. Browser/library/device information is not proof of helper grouping, history or scheduled growth monitoring."
+  },
+  "breathingRoomComparison": {
+    "claimIds": [
+      "br-platform",
+      "br-cost",
+      "br-controls",
+      "br-preview"
+    ],
+    "sourceRegister": "docs/content/capabilities.md",
+    "version": "0.1.0-preview.1",
+    "sourceConfigChecks": [
+      "README.md:45-164",
+      "src-tauri/tauri.conf.json:4,49-51",
+      "src/billing-config.json:5-8"
+    ],
+    "caveats": [
+      "Source implementation does not certify distributed-release parity.",
+      "Free local app is not entirely offline hosted AI.",
+      "App must run for scheduled care; optional Ruff auto-mode prevents a blanket never-deletes-without-asking claim.",
+      "Public GitHub download bypasses website registration, not macOS protections."
+    ]
+  },
+  "visuals": [
+    {
+      "id": "jwizard-mac-xcode-official",
+      "productId": "jwizard-cleaner",
+      "view": "Xcode cleanup vendor app illustration",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://jwizard.com/cleaning-program-for-mac/",
+      "assetUrl": "https://jwizard.com/images/mac/xcode-en.webp",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "retrievedAtUtc": null,
+      "sourcePageInspectedAtUtc": "2026-10-21T21:20:12.089Z",
+      "productVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "Public official app-illustration link; no licence/permission for republication established. Do not download, hotlink or publish until cleared.",
+        "evidenceUrlOrPath": "https://jwizard.com/cleaning-program-for-mac/",
+        "credit": "JWIZARD Cleaner"
+      },
+      "caption": "JWIZARD's official Xcode-cleanup illustration. Vendor-provided example; app version and capture date unknown; not our test result.",
+      "alt": "Official JWIZARD Cleaner Mac Xcode cleanup illustration, linked from the vendor page.",
+      "supportedClaimIds": [
+        "xcode"
+      ],
+      "limitations": [
+        "Source page and exact image URL verified in browser snapshot/a11y output; image pixels not independently inspected.",
+        "No asset downloaded because reuse permission is unresolved; no original hash invented.",
+        "A linked illustration does not satisfy the on-page image gate."
+      ],
+      "review": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "productVersion": null,
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "br-controls"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Current-source status refers to the October 21 capture, not proof of the latest distributed binary. Preserve both visible example-data banners."
+      ],
+      "review": {
+        "status": "research-inspected",
+        "reviewer": "research-jwizard-cleaner scheduled worker (not independent review)",
+        "reviewedAtUtc": "2026-10-21T21:23:27.699955+00:00",
+        "note": "PNG opened/read; example banners and Space categories visible; assistant composer overlaps chart. Page-context/mobile review remains pending."
+      }
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference",
+      "title": "Review Xcode cleanup candidates without confusing rebuildable files with project data",
+      "slug": "review-xcode-cleanup-candidates",
+      "primaryIntent": "Mac developers deciding what an Xcode cleanup scan authorizes, not a generic JWIZARD alternatives keyword page",
+      "outline": [
+        "Separate a vendor's Xcode category label from proof of a disposable path",
+        "Review candidate identity, current project use, rebuild/download cost and backups before approval",
+        "JWIZARD's documented Xcode category versus Breathing Room's exact-action review model",
+        "Do not claim path-specific Xcode advice or measured savings without separate evidence"
+      ],
+      "limitations": "Do not draft exact deletion instructions: JWIZARD's actual Xcode paths and Apple current documentation are not in this packet. No cleanup executed.",
+      "visualPlan": "Official JWIZARD Xcode app illustration after lead if rights cleared; labelled Breathing Room Space browser preview beside inventory-versus-permission explanation",
+      "interactionHandoff": "Non-mutating decision checklist: know the path/owner, preserve originals, understand rebuild cost, review method, approve deliberately. No filesystem access or automatic Delete button."
+    },
+    "comparison": {
+      "title": "Breathing Room vs JWIZARD Cleaner for Mac",
+      "slug": "jwizard-cleaner",
+      "primaryIntent": "Choose between documented Mac cleanup workflows and inspection needs",
+      "outline": [
+        "Conclusion with affiliation: Breathing Room, which we build",
+        "Concise matrix: platform, advertised cleanup scope, review controls, licence term and honestly unknown price",
+        "When JWIZARD's advertised Xcode/uninstaller/duplicate utilities fit",
+        "When Breathing Room's storage/activity inspection preview fits, with runtime/hosted/signing caveats",
+        "Link deeper workflow and /comparisons/ hub; no separate alternatives doorway"
+      ],
+      "gates": "Research blocked; no site records created; preserve draft/unpublished state at later stages"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "jwizard": [
+      "Advertises dedicated Mac Xcode, app-uninstaller, duplicate and video utilities; these are not certified equivalent Breathing Room features.",
+      "Documents macOS 12+ versus Breathing Room's 13+ requirement; no cross-version tests.",
+      "Documents preview/confirmation and 1/2/5-Mac annual licences; unknown price/rights/runtime details prevent stronger value or safety recommendations.",
+      "Conditional refund terms must not be presented as no-questions-asked."
+    ],
+    "breathingRoom": [
+      "Documented storage views, grouped app/helper sampling and activity history fit investigation; competitor equivalents remain unknown, not absent.",
+      "Free local core and optional advertised AI Care have explicit hosted/sign-in boundaries.",
+      "Non-notarized preview, Python dependency and incomplete Intel/installer validation are material trade-offs, not footnotes."
+    ]
+  },
+  "conflicts": [
+    {
+      "field": "Mac version",
+      "browser": "1.15.2, 31 August 2026",
+      "webfetch": "1.12.2, 24 March 2025",
+      "resolution": "Use only attributed live-browser display if needed. Latest downloadable artifact version remains unverified; no binary downloaded."
+    }
+  ],
+  "accessLog": [
+    {
+      "method": "Python urllib public HTTP",
+      "urls": [
+        "https://jwizard.com/cleaning-program-for-mac/",
+        "https://jwizard.com/privacy-policy/",
+        "https://jwizard.com/refund-policy/",
+        "https://jwizard.com/mac-app-cleanup-and-removal/"
+      ],
+      "result": "HTTP 403; no snapshots produced; no retries or cookie extraction. Public browser navigation separately worked."
+    },
+    {
+      "method": "Chrome DevTools",
+      "ownedPageIds": [
+        117,
+        119,
+        120,
+        121
+      ],
+      "result": "Visible pages read; licence FAQ expanded; no cookie consent, download, sign-in, checkout or other submissions"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "competitor-visual-rights",
+      "severity": "critical",
+      "diagnostic": "Exact official app illustration URL found, but no republication permission/licence established. Link-only fallback does not satisfy required on-page competitor visual; do not draft until rights/access/provenance are cleared or an explicit policy decision authorizes an alternative.",
+      "unblock": "Obtain independently verifiable permitted screenshot/reuse basis without unauthorized messaging; then retain original bytes/hash, dimensions, visual/privacy review and credit."
+    }
+  ],
+  "noncriticalUnknowns": [
+    "Exact competitor price can remain visibly not verified; prohibit cheaper/free/lifetime claims.",
+    "Latest downloadable version cannot be inferred from conflicting page representations.",
+    "Official repository and precise proprietary licence terms are not established.",
+    "Workflow brief needs Apple/path-level evidence before actionable Xcode deletion instructions."
+  ],
+  "validation": {
+    "nativeTests": "not performed",
+    "cleanup": "not performed",
+    "siteChecks": "not applicable: no marketing edits",
+    "independentReview": "pending",
+    "publicationScore": null
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-disk-mop",
+  "productId": "disk-mop",
+  "stage": "research",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationEligible": false,
+  "identity": {
+    "officialName": "Disk Mop",
+    "homepage": "https://diskmop.com/",
+    "developer": "Lova Software",
+    "developerEvidenceClaimId": "DM01",
+    "canonicalOwnerId": "disk-mop",
+    "aliases": [{"name": "DiskMop", "scope": "Vendor privacy policy uses this spelling for the iPhone edition; not a second desktop competitor."}],
+    "aliasDecision": "retain-distinct-product; no alias skip",
+    "aliasReason": "Baseline has no desktop alias candidate. Official Disk Mop branding and policy identify Lova Software. No evidence connects this product to either PowerMyMac record; do not merge by cleanup category or similar marketing.",
+    "repository": null,
+    "repositoryStatus": "not verified: policy mentions GitHub Releases but gives no repository URL; homepage links inspected contain no GitHub repository",
+    "classification": "direct-storage-cleanup-overlap",
+    "classificationBasis": "Advertised macOS disk analysis and cleanup overlap Breathing Room's storage-maintenance intent. Not evidence of parity for app/helper monitoring, hosted reasoning or recurring-growth attribution.",
+    "platformIntent": "Mac storage workflow; Disk Mop advertises a Mac edition. Breathing Room is not a Windows, Android or iPhone replacement.",
+    "skipDecision": {"skip": false, "reason": "Live official Mac download offer and relevant storage workflow; not dead or a verified duplicate. Draft remains blocked by evidence gates, not excluded as irrelevant."}
+  },
+  "ownership": {
+    "allowedFolder": "docs/content/competitors/disk-mop/",
+    "receipt": "docs/content/.runtime/research-disk-mop.1792614464671627000.receipt.json",
+    "websiteFilesChanged": [],
+    "queueModified": false
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/disk-mop/about/",
+    "retrievedAtUtc": "2026-10-21T19:06:41.986Z",
+    "observedOfficialLink": "https://diskmop.com/",
+    "snapshotPath": "docs/content/.runtime/verification-1/disk-mop-directory.json",
+    "method": "Reused batch-1 retained browser-rendered directory record; no new directory fetch",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=8", "retrievedAtUtc": "2026-10-21T18:36:51.480Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=8", "retrievedAtUtc": "2026-10-21T18:37:24.218Z"}
+    ],
+    "edgeRecordPath": "docs/content/competitors.json",
+    "limitations": "Directory is discovery only. Its $20 price and free-version statement do not override official pricing or establish trial limits. Edge provenance reused from manifest, not independently recrawled. Snapshot hashes are in validation.json."
+  },
+  "sources": [
+    {"id": "S1", "publisher": "Disk Mop", "title": "Disk Mop — Smart Disk Cleaner for Windows & Mac", "url": "https://diskmop.com", "finalUrl": "https://diskmop.com", "retrievedAtUtc": "2026-10-21T19:07:54.089574+00:00", "snapshotPath": "docs/content/.runtime/verification-1/disk-mop-official.json", "sha256": "e2587c2ce75a25e23fcb291db391b724499713e1e26e813aa14080df60315dc4", "reuseFrom": "docs/content/verification/batch-1.json", "scope": "Current baseline marketing claims; not binary tests", "publishedOn": null},
+    {"id": "S2", "publisher": "Disk Mop", "title": "Live homepage, licence FAQ and official Overview video metadata", "url": "https://diskmop.com/", "finalUrl": "https://diskmop.com/", "retrievedAtUtc": "2026-10-21T20:29:27.470Z", "snapshotPath": "docs/content/competitors/disk-mop/sources/homepage-browser.json", "method": "Owned Chrome tab 93, read-only DOM; licence FAQ opened and Overview enlarged", "scope": "Missing licence and visual evidence; incidental pricing discrepancy retained", "publishedOn": null},
+    {"id": "S3", "publisher": "Disk Mop / Lova Software", "title": "Privacy Policy", "url": "https://diskmop.com/privacy", "finalUrl": "https://diskmop.com/privacy", "retrievedOn": "2026-10-21", "retrievedAtUtc": null, "snapshotPath": "docs/content/competitors/disk-mop/sources/privacy-excerpts.md", "method": "WebFetch; selected exact excerpts retained, not full raw response", "publishedOrUpdatedOn": "2026-09-13", "scope": "Vendor policy, desktop/Android sections 1–6; iPhone is separately described"},
+    {"id": "S4", "publisher": "Breathing Room", "title": "Capabilities evidence register", "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "scope": "Same-day first-party source/published checks reused; distributed-binary parity unverified"},
+    {"id": "S5", "publisher": "Breathing Room", "title": "Current-source preview inventory", "url": "http://127.0.0.1:1431/", "localPath": "docs/content/screenshots.json", "checkedOn": "2026-10-21", "scope": "Existing first-party browser-preview capture, not a new native capture"}
+  ],
+  "claims": [
+    {"id": "DM01", "wording": "Disk Mop's official policy identifies Lova Software as its developer.", "state": "verified", "evidenceClass": "documented-vendor-identity", "sourceIds": ["S3"], "sourceUrl": "https://diskmop.com/privacy", "excerpt": "Disk Mop (\"we\", \"our\", \"the application\") is developed by Lova Software.", "checkedOn": "2026-10-21", "location": "identity and comparison lead"},
+    {"id": "DM02", "wording": "The official site advertises Disk Mop desktop v1.0.31 for macOS 12+ on Apple Silicon and Intel, with separate Mac and Intel download links.", "state": "verified", "evidenceClass": "vendor-offer-not-tested", "sourceIds": ["S1", "S2"], "sourceUrl": "https://diskmop.com/", "excerpt": "macOS\nv1.0.31 • ~93 MB • .dmg\nApple Notarized & Signed\nmacOS 12+ (Apple Silicon & Intel)", "checkedOn": "2026-10-21", "location": "platform row", "conditions": "No installer downloaded, signature/notarization audited or compatibility tested. Earlier baseline says ~80 MB; omit installer size from drafts."},
+    {"id": "DM03", "wording": "Disk Mop advertises disk analysis, files over 500 MB, SHA-256 duplicate detection and an interactive disk treemap.", "state": "verified", "evidenceClass": "vendor-documented-features", "sourceIds": ["S1"], "sourceUrl": "https://diskmop.com/#features", "excerpt": "Visually analyze disk usage. Instantly see which folders take up the most space. / Instantly detect files over 500 MB. / Find identical files using SHA-256. / Visualize your entire disk as an interactive treemap.", "checkedOn": "2026-10-21", "location": "workflow feature scope", "conditions": "General cross-platform page, not proof every function exists in Mac v1.0.31; no performance or safety endorsement."},
+    {"id": "DM04", "wording": "The vendor describes a select-then-clean workflow, alongside an automatic multi-task Speed Up option.", "state": "verified", "evidenceClass": "vendor-documented-workflow", "sourceIds": ["S1"], "sourceUrl": "https://diskmop.com/#features", "excerpt": "Choose what to delete and hit the clean button. / Runs all cleanup tasks automatically.", "checkedOn": "2026-10-21", "location": "approval row", "conditions": "Exact per-path revalidation, confirmation dialogs, Trash versus permanent deletion, exclusions and Mac-specific controls not verified; do not imply Breathing Room-equivalent approvals."},
+    {"id": "DM05", "wording": "The official licence FAQ describes a transferable lifetime licence for one computer without a subscription; the pricing panel includes free/lifetime updates and Windows & macOS.", "state": "verified", "evidenceClass": "vendor-offer", "sourceIds": ["S2"], "sourceUrl": "https://diskmop.com/#faq", "excerpt": "1 license = 1 computer. No subscription, no extra charges. If you change computers, you can transfer your license to the new one.", "checkedOn": "2026-10-21", "location": "licence row", "conditions": "No simultaneous two-device entitlement implied. Tax, refund, transfer procedure, activation limits and exact trial restrictions unknown. Dollar currency code not explicitly verified."},
+    {"id": "DM06", "wording": "An exact current payable Disk Mop price is unresolved.", "state": "contradicted", "evidenceClass": "source-conflict", "sourceIds": ["S1", "S2"], "sourceUrl": "https://diskmop.com/#pricing", "excerpt": "Baseline: $14.90 / $19.90 / 25% OFF one-time. Live panel: $17.91 / $19.90 / 10% OFF one-time. Live FAQ: Pay $19.90 once for lifetime access.", "checkedOn": "2026-10-21", "location": "pricing row", "conditions": "Do not publish any as guaranteed checkout total. Preserve both observations; do not assert cause, currency code, tax inclusion or promotional expiry. No checkout/sign-in attempted."},
+    {"id": "DM07", "wording": "Disk Mop's policy says desktop scanning, analysis and cleaning are local, with network access for licence validation and updates.", "state": "verified", "evidenceClass": "vendor-policy-not-audit", "sourceIds": ["S3"], "sourceUrl": "https://diskmop.com/privacy", "excerpt": "All scanning, analysis, and cleaning operations are performed locally on your device. / Your license key is verified against our licensing server (api.diskmop.com) / checks for new versions via GitHub Releases", "checkedOn": "2026-10-21", "location": "local/hosted row", "conditions": "Not a network audit or proof of indefinite offline activation. Website analytics separate from desktop policy. No broad independently verified privacy guarantee."},
+    {"id": "DM08", "wording": "Faster Boot and Service Manager descriptions explicitly reference Windows.", "state": "verified", "evidenceClass": "vendor-platform-scope", "sourceIds": ["S1"], "sourceUrl": "https://diskmop.com/#features", "excerpt": "Measure your real startup time with Windows' own records / Control Windows services that slow down your system.", "checkedOn": "2026-10-21", "location": "platform caveat", "conditions": "Do not promise these on Mac or invent Windows support for Breathing Room."},
+    {"id": "DM09", "wording": "Scheduled cleanup configuration is mentioned in the policy, but recurring-growth monitoring and app/helper grouping are not verified.", "state": "verified", "evidenceClass": "vendor-policy-with-explicit-unknowns", "sourceIds": ["S3"], "sourceUrl": "https://diskmop.com/privacy", "excerpt": "Scheduled cleanup configurations", "checkedOn": "2026-10-21", "location": "scheduling row", "conditions": "Configuration mention does not verify schedule behavior or Mac-specific execution. Unknown helper grouping, developer-cache adapters and historical growth remain unknown, not No."},
+    {"id": "BR01", "wording": "Breathing Room, which we build, is a macOS 13+ preview; free local storage/app inspection is distinct from authenticated hosted AI and advertised AI Care at $5 USD/month or $50 USD/year.", "state": "verified", "evidenceClass": "reused-first-party-source-and-published-register", "sourceIds": ["S4"], "sourceUrl": "https://breathing-room.chatic.ai/#pricing", "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised. / $5 USD/month, $50 USD/year", "checkedOn": "2026-10-21", "location": "comparison offer and recommendation", "conditions": "0.1.0-preview.1 identified, not certified latest across channels; Apple Development signed, not Developer ID signed/notarized; Python 3.10+ prerequisite; physical Intel and clean-machine testing incomplete; no Windows support established."},
+    {"id": "BR02", "wording": "Breathing Room source implements grouped helper monitoring, activity history, developer-cache discovery and daily care with exact saved approvals while the app runs.", "state": "verified", "evidenceClass": "reused-source-inspection-not-native-test", "sourceIds": ["S4"], "sourceUrl": "https://github.com/bucabay/breathing-room-app", "excerpt": "Native sampling groups helpers through parent/app relationships / Saved approvals bind account, API origin, action method/path and native rule", "checkedOn": "2026-10-21", "location": "workflow trade-off", "conditions": "Source implementation does not establish distributed-binary parity. Optional verified Ruff-cache automatic Trash mode qualifies general approval promises. Hosted requests may include paths, inventory and tool outputs. Trash moves are not immediately recovered capacity."}
+  ],
+  "matrix": {
+    "macCompatibility": {"claimIds": ["DM02", "BR01"]},
+    "licenceAndPrice": {"claimIds": ["DM05", "DM06", "BR01"], "softwareLicence": "Disk Mop source licence not verified; directory labels proprietary/commercial, official software EULA not found in inspected links. Breathing Room desktop Apache-2.0 per capabilities register, not a hosted-service entitlement."},
+    "localHosted": {"claimIds": ["DM07", "BR01", "BR02"]},
+    "scanCleanupApproval": {"claimIds": ["DM03", "DM04", "BR02"]},
+    "processHelperGrouping": {"diskMop": "not verified", "breathingRoomClaimId": "BR02"},
+    "recurringGrowth": {"diskMop": "not verified; scheduling is not growth attribution", "breathingRoomClaimId": "BR02"},
+    "developerCaches": {"diskMop": "not verified; homepage node_modules.old animation is not an adapter specification", "breathingRoomClaimId": "BR02"},
+    "runtimeAndInstall": {"diskMop": "DM02 vendor requirements; permissions, runtime dependencies and actual signatures not independently verified", "breathingRoomClaimId": "BR01"}
+  },
+  "visuals": [
+    {
+      "id": "disk-mop-official-overview-poster", "productId": "disk-mop", "view": "Overview video poster candidate", "kind": "official-asset", "sourcePageUrl": "https://diskmop.com/#features", "assetUrl": "https://diskmop.com/videos/overview/en.webp", "relatedVideoUrl": "https://diskmop.com/videos/overview/en.mp4", "retrievedAtUtc": "2026-10-21T20:29:27.470Z", "retrievalScope": "Public DOM asset URL only; no image bytes downloaded or republished", "capturedAtUtc": null, "capturedBy": null, "productVersion": null, "osVersion": null, "dataMode": "vendor-illustration", "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null, "widthPx": null, "heightPx": null, "edits": [],
+      "reuse": {"status": "link-only", "basis": "Official public video poster identified; no redistribution licence established. Footer says All rights reserved. Do not download/publish without clearance.", "evidenceUrlOrPath": "sources/homepage-browser.json", "credit": "Disk Mop / Lova Software"},
+      "caption": "Disk Mop's official Overview demonstration (external link). Vendor-provided illustration; platform, capture date and app build not independently verified.",
+      "alt": "Link to Disk Mop's official Overview app demonstration.", "supportedClaimIds": ["DM03"], "privacyReview": {"status": "pending", "redactions": []}, "review": {"status": "pending", "reviewer": null},
+      "limitations": ["Metadata identifies an app-demonstration candidate, not a visually approved on-page screenshot.", "Video HTML declares 1280 × 688; poster pixel dimensions not checked.", "No native test, measured savings or Mac UI parity inferred.", "Link-only fallback does not satisfy the required competitor on-page visual gate."]
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview", "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null, "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library job; reused inventory", "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "dataMode": "example", "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a", "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party current-source capture under screenshots.json disclosure policy; final placement and third-party marks require contextual review.", "evidenceUrlOrPath": "docs/content/screenshots.json", "credit": "Breathing Room"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.", "alt": "Breathing Room Space view rendered in a browser with illustrative example data.", "supportedClaimIds": ["BR02"], "privacyReview": {"status": "reviewed-in-reused-inventory", "redactions": []}, "review": {"status": "pending-target-page-review", "reviewer": null},
+      "limitations": ["Retain the Example data banner and supplied caption.", "Current-source browser illustration, not current distributed-release/native measurement.", "No copy, crop or publication performed by this job."]
+    }
+  ],
+  "briefs": {
+    "workflowArticle": {
+      "track": "search-reference", "proposedSlug": "review-large-files-and-duplicates-before-mac-cleanup", "title": "Review large files and duplicates before a Mac cleanup", "primaryIntent": "Separate a disk-map finding, a byte-identical duplicate candidate and actual deletion permission before a Mac cleanup.",
+      "description": "Use Disk Mop's advertised disk map and duplicate finder as discovery aids, then review ownership, backups and rebuild costs. A large file is not automatically disposable.",
+      "outline": ["Put a cleared real app visual directly after the lead; never restate the description", "Start with a disk map and choose one folder, not a whole-disk deletion target", "Treat the advertised 500 MB filter and SHA-256 matches as candidates, not deletion authority; path/reference context still matters", "Separate the vendor's choose-then-clean flow from automatic Speed Up; Mac controls need confirmation", "Use a keep / investigate / eligible-after-review checklist with original, duplicate and rebuildable-cache branches", "Explain when one-time duplicate/treemap tooling fits and when recurring app/growth investigation calls for a different workflow", "One disclosed Breathing Room recommendation with preview, Python, hosted-data and paid-care limitations"],
+      "distinctness": "Workflow is a file-decision checklist, not an expanded feature matrix or generic alternatives list. No claims that either product was run.",
+      "interactionHandoff": "Implement a local-only decision checklist for file ownership, backup, references and recreation/download cost. It must never inspect/delete files or calculate invented savings; optional states only, no server calls.",
+      "internalLinks": ["/comparisons/", "/comparisons/disk-mop/", "/tools/ (only a relevant existing tool after route verification)"], "status": "blocked-before-drafting"
+    },
+    "comparison": {
+      "proposedSlug": "disk-mop", "title": "Breathing Room vs Disk Mop for Mac storage decisions", "primaryIntent": "Choose between an advertised one-time disk/duplicate toolkit and a Mac preview focused on inspectable care and activity investigation.",
+      "rows": ["Advertised Mac minimum and versions", "Disk maps, large files and duplicate candidates", "Cleanup selection and automatic modes", "Local operations versus hosted requests", "App/helper grouping and recurring growth (unknown is not No)", "Licence scope and unresolved price", "Installation caveats and exact evidence class"],
+      "disclosure": "Breathing Room, which we build", "workflowLink": "/blog/review-large-files-and-duplicates-before-mac-cleanup/", "status": "blocked-before-drafting"
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "diskMop": ["Advertises a one-computer lifetime licence with updates rather than a subscription (DM05); do not use an unresolved price to claim cheaper.", "Advertises duplicate detection and treemap views (DM03); their exact Mac implementation and behavior remain untested.", "Vendor policy describes local scanning with licence/update network use (DM07); policy is not an independent traffic audit.", "Cross-platform availability does not mean desktop/mobile feature parity or a multi-device licence. Windows service/boot descriptions must not become Mac claims."],
+    "breathingRoom": ["Source-backed helper grouping, activity history and developer-cache investigation suit a recurring Mac investigation intent (BR02); source is not release-runtime QA.", "Free local inspection is distinct from hosted authenticated assistance and advertised paid AI Care (BR01).", "Preview lacks notarization and clean-machine/physical-Intel validation; Python 3.10+ is required for inventory. Not a substitute on Windows/mobile.", "Do not claim Breathing Room has a certified duplicate finder, is safer, recovers more capacity, or never deletes without a per-item prompt."]
+  },
+  "unknowns": ["Official source repository and source licence/EULA", "Exact Mac feature parity, cleanup confirmation and Trash/permanent-delete behavior", "Trial/free limits, tax, currency code, refund conditions and discount duration", "Measured speed/savings/security, notarization verification and installed behavior", "Competitor app/helper grouping, developer cache adapters and recurring growth attribution"],
+  "blockers": [
+    {"id": "B1", "gate": "competitor-visual", "diagnostic": "Only official Overview video/poster URLs identified; reuse permission and visual/platform/build review pending. No competitor image downloaded. Link-only fallback cannot satisfy required on-page screenshot gate.", "resolution": "Obtain authorized image-reuse evidence or an explicit editorial policy decision, then inspect a real app visual, preserve original bytes/hash and approve Mac/platform labeling. Do not send permission requests in this job."},
+    {"id": "B2", "gate": "material-pricing", "diagnostic": "Baseline $14.90 promotional offer differs from live $17.91 panel and $19.90 FAQ. Current payable amount, currency code and tax/offer conditions unresolved.", "resolution": "Reconcile official offer/FAQ with an authorized public price source; retain dated conditional wording. No signup, purchase or checkout action authorized here."}
+  ],
+  "method": {"handsOnTesting": false, "nativeAppLaunched": false, "cleanupRun": false, "competitorImagesDownloaded": false, "accountsUsed": false, "publicPagesTreatedAs": "untrusted source data", "browser": "Existing port9333 connection succeeded; owned tab93 only, no recovery or existing-tab inspection", "independentReview": "pending separate stage; no self-awarded quality score", "websiteBuild": "not applicable: research files only; no site edits"}
+}

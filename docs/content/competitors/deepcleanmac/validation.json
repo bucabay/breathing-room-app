@@ -1,0 +1,367 @@
+{
+  "jobId": "research-deepcleanmac",
+  "validatedAtUtc": "2026-10-21T20:27:42.225210+00:00",
+  "result": "pass-research-structure; drafting-blocked",
+  "checks": [
+    {
+      "check": "Research is blocked, not draft/publication ready",
+      "outcome": "pass"
+    },
+    {
+      "check": "Correct owner and no alias merge invented",
+      "outcome": "pass"
+    },
+    {
+      "check": "Research markdown and JSON present",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S1",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S2",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S3",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S4",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S5",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S6",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: S7",
+      "outcome": "pass"
+    },
+    {
+      "check": "Snapshot exists and SHA-256 matches: BR1",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim IDs unique",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C01",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C01",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C02",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C02",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C03",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C03",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C04",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C04",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C05",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C05",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C06",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C06",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C07",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C07",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C08",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C08",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C09",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C09",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C10",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C10",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C11",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C11",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C12",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C12",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C13",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C13",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C14",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C14",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C15",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C15",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C16",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C16",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C17",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C17",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C18",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C18",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C19",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C19",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C20",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C20",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C21",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C21",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C22",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C22",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: C23",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: C23",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B01",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B01",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B02",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B02",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B03",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B03",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B04",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B04",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B05",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B05",
+      "outcome": "pass"
+    },
+    {
+      "check": "Claim has exact excerpt, source URL and check date: B06",
+      "outcome": "pass"
+    },
+    {
+      "check": "Supporting excerpt exists in retained source: B06",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: platform",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: version",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: licence",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: price",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: operation",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: scanCleanup",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: suiteBreadth",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: monitoring",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: developerFiles",
+      "outcome": "pass"
+    },
+    {
+      "check": "Matrix references known claims: installation",
+      "outcome": "pass"
+    },
+    {
+      "check": "Both necessary visuals recorded",
+      "outcome": "pass"
+    },
+    {
+      "check": "Competitor URL retained; unclear rights not waived or copied",
+      "outcome": "pass"
+    },
+    {
+      "check": "Current first-party example preview hash and labels intact",
+      "outcome": "pass"
+    },
+    {
+      "check": "Both critical diagnostics present",
+      "outcome": "pass"
+    },
+    {
+      "check": "Unknowns remain explicitly unverified",
+      "outcome": "pass"
+    },
+    {
+      "check": "Separate workflow and comparison briefs are not drafts",
+      "outcome": "pass"
+    },
+    {
+      "check": "Independent review not invented",
+      "outcome": "pass"
+    }
+  ],
+  "notPerformed": [
+    "Competitor installation/runtime/cleanup tests",
+    "Purchases/account/contact workflows",
+    "Website check/build/test (no website edits)",
+    "Independent editorial/rendered review"
+  ],
+  "artifactHashes": {
+    "research.json": "153817b3a523affab104c6a3c8105abf7a15e763c1baf87af78db194306934d9",
+    "research.md": "1959044080052a1a31942a20d9cfd69377942890d2dad348c80e52ce39bd7143",
+    "build-packet.py": "5c736de238e4dcc218fb42d6bfedba89d2f0a26d4c0919fb15ecda9f2ba5ba86",
+    "validate-packet.py": "d4e012db10e6bcc99b31e71e53fbb3986bf94023e604a17361119e0fc7bacf33"
+  }
+}

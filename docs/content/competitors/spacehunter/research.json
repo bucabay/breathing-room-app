@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-spacehunter",
+  "productId": "spacehunter",
+  "stage": "research",
+  "status": "blocked",
+  "published": false,
+  "recordedAtUtc": "2026-10-21T22:10:30.314080+00:00",
+  "dateNote": "Session date is October 22 locally; actual machine UTC clock during evidence recording was October 21. New tool responses have no exact retrieval timestamps; recordedAtUtc is the subsequent recording time, not a fabricated request timestamp.",
+  "owner": "docs/content/competitors/spacehunter/",
+  "identity": {
+    "officialName": "Space Hunter",
+    "homepage": "https://supasecret.com/",
+    "publisher": "supasecret.com",
+    "canonicalOwnerId": "spacehunter",
+    "aliases": [{"name": "SpaceHunter", "kind": "listing-slug spelling", "separateProduct": false}],
+    "repository": {"url": null, "state": "not-verified", "reason": "No repository link in retained homepage links or owned-tab repository-link check; this does not prove no repository exists."},
+    "aliasDecision": {"skipSeparateAliasDraft": true, "skipThisProduct": false, "reason": "Directory's spacehunter identity links to supasecret.com, whose official Space Hunter page describes the same macOS cleaner. No PowerMyMac or other vendor alias is evidenced; do not create a second record for the slug spelling. This is not an exhaustive corporate-ownership investigation.", "sourceIds": ["directory", "official-baseline", "terms"]},
+    "classification": "direct",
+    "classificationReason": "Documented macOS storage cleanup and developer-cache overlap. Direct for that job, not established feature parity with app/helper accounting or hosted investigations.",
+    "platformIntent": "Mac storage maintenance; no Windows replacement or Windows support claim needed.",
+    "deadOrIrrelevant": false
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/spacehunter/about/",
+    "destinationUrl": "https://supasecret.com/",
+    "retrievedAtUtc": "2026-10-21T19:06:08.432Z",
+    "method": "Reuse batch-2 verified rendered about-page DOM; no directory refetch",
+    "rawCapture": "docs/content/.runtime/verification-2/spacehunter-directory.json",
+    "sha256": "8f4c4a24694aa7c68a89bf2fe4e89c2672c4ebdbdf4bc8cc9edf2d2316c387c0",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=9",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:55.151Z",
+    "edgeEvidence": "docs/content/competitors.json: spacehunter.edges; about-page raw capture above is retained; no independent raw page-9 hash established by this job"
+  },
+  "sources": [
+    {
+      "id": "directory", "publisher": "AlternativeTo", "title": "Space Hunter about listing", "url": "https://alternativeto.net/software/spacehunter/about/", "finalUrl": "https://alternativeto.net/software/spacehunter/about/", "retrievedAtUtc": "2026-10-21T19:06:08.432Z", "reused": true,
+      "excerpt": "Official Website\nsupasecret.com", "locator": "Official Website link", "scope": "Discovery only", "publicationDate": null,
+      "snapshotPath": "docs/content/.runtime/verification-2/spacehunter-directory.json", "sha256": "8f4c4a24694aa7c68a89bf2fe4e89c2672c4ebdbdf4bc8cc9edf2d2316c387c0"
+    },
+    {
+      "id": "official-baseline", "publisher": "supasecret.com", "title": "Space Hunter - macOS Disk Space Cleaner & Monitoring", "url": "https://supasecret.com/", "finalUrl": "https://supasecret.com/", "retrievedAtUtc": "2026-10-21T19:09:42.980072+00:00", "reused": true, "publicationDate": null,
+      "scope": "Official advertised version 1.3.1, not binary testing", "locator": "text field in retained baseline JSON",
+      "excerpt": "Version 1.3.1 • Compatible with macOS 14.6 and later • 14 MB",
+      "snapshotPath": "docs/content/.runtime/verification-2/spacehunter-official.json", "sha256": "db58e0031a2b608bfd0f88c83fd60f0b8483ade2a27c74bbc89a4c41241a3705",
+      "hashNote": "File-byte SHA-256 verified; embedded sha256 in that file is a different payload digest and is not used as its file hash."
+    },
+    {
+      "id": "purchase", "publisher": "supasecret.com", "title": "Space Hunter License", "url": "https://supasecret.com/spacehunter/purchase", "finalUrl": "https://supasecret.com/spacehunter/purchase", "retrievedAtUtc": null, "retrievedOnUtc": "2026-10-21", "reused": false, "method": "read-only WebFetch markdown", "publicationDate": null,
+      "scope": "Public offer; no checkout entered, no purchase or entitlement test", "locator": "Space Hunter License; System Requirements; Key Features",
+      "excerpts": ["One-time purchase, all updates within current major version", "$39 USD", "Single device license", "1 device activation", "All features included", "macOS 14.6+", "Apple Silicon", "Review what will be deleted before cleaning, with intelligent protection for important data", "Live disk space tracking with intelligent health indicators"],
+      "snapshotPath": null, "retention": "Selected exact excerpts retained here; full page not archived."
+    },
+    {
+      "id": "terms", "publisher": "supasecret.com", "title": "Terms of Service", "url": "https://supasecret.com/terms", "finalUrl": "https://supasecret.com/terms", "retrievedAtUtc": null, "retrievedOnUtc": "2026-10-21", "method": "read-only WebFetch markdown", "publicationDate": "2026-01-01", "scope": "Vendor legal terms, not independent legal advice", "locator": "Sections 2, 4, 5, 5A, 7",
+      "excerpts": ["Space Hunter is licensed, not sold.", "A non-exclusive, non-transferable license to use Space Hunter on your macOS devices", "Pay all applicable fees and taxes", "We offer a 30-day money-back guarantee for all purchases.", "Major version upgrades may require separate payment.", "All content, trademarks, logos, and intellectual property associated with Space Hunter and supasecret.com are owned by supasecret.com. You may not use our intellectual property without explicit written permission."],
+      "snapshotPath": null, "retention": "Selected exact excerpts retained here; no reuse permission was requested or obtained. Site also restricts automated scraping; no bulk harvesting or further crawl performed."
+    },
+    {
+      "id": "privacy", "publisher": "supasecret.com", "title": "Privacy Policy", "url": "https://supasecret.com/privacy", "finalUrl": "https://supasecret.com/privacy", "retrievedAtUtc": null, "retrievedOnUtc": "2026-10-21", "method": "read-only WebFetch markdown", "publicationDate": "2026-01-01", "scope": "Published policy only, no network/runtime audit", "locator": "Sections 2.2 and 2.3",
+      "excerpts": ["The application operates locally on your device, and file analysis happens entirely on your machine.", "Usage Analytics: We collect analytics data including IP addresses, country information, and usage patterns to understand how our services are used.", "License Validation Data: When Space Hunter validates your license, we log the validation request including timestamp and device information"],
+      "snapshotPath": null, "retention": "Policy wording is retained as attributed statements; bullet labels in WebFetch markdown have been flattened."
+    },
+    {
+      "id": "official-visual", "publisher": "supasecret.com", "title": "Homepage app image", "url": "https://supasecret.com/", "finalUrl": "https://supasecret.com/", "retrievedAtUtc": null, "retrievedOnUtc": "2026-10-21", "method": "Owned Chrome DevTools tab 166, read-only document.images and repository-link inspection", "publicationDate": null,
+      "scope": "Missing screenshot asset discovery only; baseline product facts not re-researched", "locator": "document.images second image",
+      "excerpt": "Space Hunter macOS application interface showing disk space analysis and cleanup categories",
+      "assetUrl": "https://static.supasecret.com/static/app/app.webp", "widthPx": 1140, "heightPx": 768,
+      "snapshotPath": "docs/content/competitors/spacehunter/visual-discovery.json"
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room programme", "title": "Capabilities evidence register", "url": "https://breathing-room.chatic.ai/", "finalUrl": null, "reused": true, "checkedOn": "2026-10-21", "scope": "Reusable source and published-page verification; not native execution", "snapshotPath": "docs/content/capabilities.md", "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "locator": "Current capability matrix; Preview installation and runtime caveats; Pricing; Public URL retrieval register",
+      "excerpts": ["macOS 13+; universal Apple Silicon/Intel installer advertised.", "Python 3.10+", "Apple Development signed, not Developer ID signed or notarized", "$5 USD/month", "$50 USD/year"],
+      "excerptNote": "Short exact substrings from the register; see linked file for full conditions and underlying source URLs. No public Breathing Room pages re-fetched."
+    },
+    {
+      "id": "br-visual", "publisher": "Breathing Room programme", "title": "Current-source Space browser preview", "url": "http://127.0.0.1:1431/", "finalUrl": null, "reused": true, "checkedOn": "2026-10-21", "scope": "First-party illustrative browser UI only", "snapshotPath": "docs/content/screenshots.json", "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c", "locator": "assets[id=current-space-browser-preview]", "excerpt": "Example data only; not a native scan, measured activity or cleanup result."
+    }
+  ],
+  "claims": [
+    {"id":"SH01","wording":"Space Hunter is supasecret.com's macOS menu-bar storage cleaner.","sourceIds":["official-baseline","directory"],"sourceUrl":"https://supasecret.com/","excerpt":"Space Hunter is a powerful yet simple macOS menu bar app","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"Identity and advertised purpose, not performance","location":"lead / identity"},
+    {"id":"SH02","wording":"The official homepage advertises version 1.3.1 for macOS 14.6 and later; the purchase page lists Apple Silicon.","sourceIds":["official-baseline","purchase"],"sourceUrl":"https://supasecret.com/spacehunter/purchase","excerpt":"Version 1.3.1 • Compatible with macOS 14.6 and later • 14 MB; Apple Silicon","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"No installer executed; Intel compatibility and signing/notarization not verified. 14 MB is vendor-listed, not measured.","location":"requirements matrix"},
+    {"id":"SH03","wording":"Free cleaning starts with a 10 GB lifetime quota.","sourceIds":["official-baseline"],"sourceUrl":"https://supasecret.com/","excerpt":"Start cleaning for free with 10GB of lifetime quota.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"Quota accounting, GB/GiB definition and behavior after exhaustion not verified; not 10 GB per month.","location":"pricing matrix"},
+    {"id":"SH04","wording":"The advertised licence is $39 USD one time for one device, with all features and updates within the current major version.","sourceIds":["purchase","terms"],"sourceUrl":"https://supasecret.com/spacehunter/purchase","excerpt":"One-time purchase, all updates within current major version; $39 USD; Single device license; All features included","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"Applicable taxes required by terms; checkout total not tested. Not lifetime access to every future major release; generic terms do not override the specific one-device offer.","location":"pricing matrix"},
+    {"id":"SH05","wording":"Space Hunter documents browser caches, logs, downloads, Time Machine local snapshots, developer caches and application leftovers as cleanup categories.","sourceIds":["official-baseline"],"sourceUrl":"https://supasecret.com/","excerpt":"Clear developer caches from Xcode, npm, Docker, Homebrew, and more. Find forgotten application leftovers from uninstalled apps and remove unused language files.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"Documented coverage, not proof of safe removability or exact adapter behavior. Homepage also names Yarn, Python virtual environments, Go, Rust, Gradle and Composer. No cleanup tested.","location":"workflow / cleanup matrix"},
+    {"id":"SH06","wording":"The vendor says users can review what will be deleted before cleaning.","sourceIds":["purchase"],"sourceUrl":"https://supasecret.com/spacehunter/purchase","excerpt":"Review what will be deleted before cleaning, with intelligent protection for important data","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","scope":"Exact-location approvals, Trash versus permanent deletion, restoration and scheduled approval rules not verified; do not promise safety.","location":"approval matrix"},
+    {"id":"SH07","wording":"Space Hunter advertises live disk-space tracking with health indicators.","sourceIds":["purchase"],"sourceUrl":"https://supasecret.com/spacehunter/purchase","excerpt":"Live disk space tracking with intelligent health indicators","checkedOn":"2026-10-21","state":"verified","evidenceClass":"officially-documented","scope":"Not proof of path-level growth history, writer attribution or grouped helper CPU/memory.","location":"monitoring matrix"},
+    {"id":"SH08","wording":"The privacy policy says file analysis is local, while analytics and licence-validation information are collected.","sourceIds":["privacy"],"sourceUrl":"https://supasecret.com/privacy","excerpt":"file analysis happens entirely on your machine; IP addresses, country information, and usage patterns; timestamp and device information","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-policy","scope":"Selected clauses joined, not a continuous quotation. No independent privacy audit or entirely-offline promise.","location":"local versus hosted matrix"},
+    {"id":"SH09","wording":"The vendor's terms require explicit written permission to use its intellectual property.","sourceIds":["terms"],"sourceUrl":"https://supasecret.com/terms","excerpt":"You may not use our intellectual property without explicit written permission.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-terms","scope":"No permission obtained. Record app image link only; no downloaded competitor asset or publication clearance.","location":"visual gate"},
+    {"id":"BR01","wording":"Breathing Room, which we build, is a free macOS maintenance preview with optional hosted AI Care advertised at $5 USD/month or $50 USD/year.","sourceIds":["br-capabilities"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"Breathing Room is a free, Apache-2.0 macOS maintenance preview; AI Care is advertised at $5 USD/month or $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-verification","scope":"Register conclusion paraphrased. Renewal and applicable tax; hosted AI requires authentication/internet and sends relevant context. No binary parity or entitlement test.","location":"bounded recommendation / price matrix"},
+    {"id":"BR02","wording":"The identified Breathing Room 0.1.0-preview.1 advertises macOS 13+, a universal installer and Python 3.10+; its published release is not Developer ID signed or notarized.","sourceIds":["br-capabilities"],"sourceUrl":"https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1","excerpt":"Apple Development signed, not Developer ID signed or notarized","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-verification","scope":"Physical Intel and clean-machine execution untested; updater signatures are not notarization. Website download has account gate, direct public release is separate. Do not bypass protections.","location":"installation caveats"},
+    {"id":"BR03","wording":"Breathing Room source implements storage views, grouped helper CPU/memory, local activity history and reviewable cleanup; saved daily approvals apply while the app runs.","sourceIds":["br-capabilities"],"sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"Source supports category, app/tool-owner, project, folder and large-file views.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-inspection","scope":"Register matrix supplies per-feature code citations. Not distributed-binary execution evidence. Optional automatic verified Ruff-cache Trash mode is an exception to per-action approval wording; sampled attribution and permissions have limits.","location":"workflow / comparison matrix"},
+    {"id":"BR04","wording":"The selected Breathing Room Space image is a current-source browser preview captured October 21, 2026 using example data.","sourceIds":["br-visual"],"sourceUrl":"http://127.0.0.1:1431/","excerpt":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"retained-first-party-browser-preview","scope":"Current-source at captured commit, not native/current-release verification. Actual PNG reopened; banner visible.","location":"second figure caption"}
+  ],
+  "matrix": {
+    "macOS": {"spacehunter":"SH02","breathingRoom":"BR02"},
+    "licence": {"spacehunter":"Commercial non-exclusive/non-transferable terms; SH04 and terms source","breathingRoom":"Apache-2.0 desktop source; BR01, not hosted-service entitlement"},
+    "localHosted": {"spacehunter":"SH08","breathingRoom":"BR01; local inspection plus authenticated hosted AI, not wholly offline"},
+    "scanCleanup": {"spacehunter":"SH05","breathingRoom":"BR03"},
+    "approval": {"spacehunter":"SH06; exact execution method not verified","breathingRoom":"BR03; optional automatic Ruff mode must be disclosed"},
+    "processHelperGrouping": {"spacehunter":"not verified","breathingRoom":"BR03; inferred/sample limitations"},
+    "recurringGrowth": {"spacehunter":"SH07 for live free-space tracking; path history not verified","breathingRoom":"BR03; not proof of writer for each file"},
+    "developerCaches": {"spacehunter":"SH05","breathingRoom":"BR03; capabilities register developer row documents npm/uv/pip/pnpm/Go/Bun/Yarn subject to installed tools and validation"},
+    "pricing": {"spacehunter":"SH03, SH04","breathingRoom":"BR01"},
+    "runtimeInstall": {"spacehunter":"SH02; runtime dependencies, signing, notarization and Intel not verified","breathingRoom":"BR02; Python prerequisite and preview limitations"}
+  },
+  "visuals": [
+    {
+      "id":"spacehunter-official-app","productId":"spacehunter","view":"Disk analysis and cleanup categories","kind":"official-asset","sourcePageUrl":"https://supasecret.com/","assetUrl":"https://static.supasecret.com/static/app/app.webp","capturedAtUtc":null,"retrievedAtUtc":null,"discoveredOnUtc":"2026-10-21","capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,"dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":1140,"heightPx":768,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"No written permission or public media licence established; official terms section 7 requires explicit written permission.","evidenceUrlOrPath":"https://supasecret.com/terms","credit":"Space Hunter / supasecret.com"},
+      "caption":"Space Hunter's official app-interface illustration, linked from supasecret.com. Vendor illustration; not our test or measured cleanup result. Capture date and app version unknown.",
+      "alt":"Space Hunter disk-space analysis and cleanup-category interface, as identified by the official homepage image.","supportedClaimIds":["SH01"],
+      "limitations":["Exact asset URL and dimensions read from official rendered DOM, not a landing-page screenshot or logo.","Image not downloaded, independently visually reviewed or approved for embedding. Rights block the required on-page competitor visual.","Original bytes/hash unavailable because no image download was permitted; never invent a hash."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview","sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"capturedBy":"screenshot-library job (reused manifest)","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example","originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a","publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed-example-data","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture; third-party marks remain their owners' marks; target-page context and independent review remain pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview with a visible example-data banner, storage categories and example folder sizes.","supportedClaimIds":["BR04"],
+      "limitations":["Not native macOS or distributed-release behavior evidence; preserve the example-data banner.","Full-page image is tall; legibility at narrow width needs target-page review; assistant composer overlaps chart. Do not relabel illustrative numbers as measurements.","Asset kept in shared library read-only, not duplicated or edited by this job."],
+      "review":{"status":"opened-and-read-for-research; independent-page-review-pending","reviewer":"research-spacehunter worker (not independent)","reviewedOnUtc":"2026-10-21"}
+    }
+  ],
+  "briefs": {
+    "article": {
+      "track":"search/reference workflow","title":"Review a developer-cache cleanup list before removing it","slug":"review-developer-cache-cleanup-spacehunter","primaryIntent":"Distinguish rebuildable caches from project inputs in a mixed developer cleanup list; Space Hunter supplies the concrete category context, not an invented hands-on result.",
+      "description":"Space Hunter documents package caches, Docker images and Python environments in its cleanup coverage. Review ownership, recovery cost and exact proposed paths before treating those categories as disposable.",
+      "sections":["Start with the actual category, owner and exact path, not an advertised GB total","Separate downloadable caches from project environments and retained images","Ask what must be rebuilt or downloaded and what is backed up","Review deletion method and approvals; where documentation stops, label unknown","Choose category cleanup or longer-running investigation with preview caveats"],
+      "evidenceBoundary":"No cleanup steps tested. Before publishing generic Docker/virtual-environment recovery advice, source applicable official tool documentation; do not translate vendor safety slogans into guarantees.",
+      "interactionPass":"A non-executing checklist: path/owner known? original or generated? recovery source available? rebuild cost acceptable? method/approval clear? Unknown returns investigate, never delete. No filesystem access, estimated savings or cleanup button.",
+      "visualPlacement":"Official Space Hunter UI immediately after lead only after rights clearance; labeled Breathing Room Space preview later when discussing investigation. Link-only fallback does not satisfy image gate.",
+      "links":["/comparisons/","/comparisons/spacehunter/"],
+      "distinctness":"Workflow is pre-cleanup classification and recovery planning; comparison below is a compact purchase/fit decision. Do not produce a third alternatives doorway."
+    },
+    "comparison": {
+      "title":"Breathing Room vs Space Hunter","slug":"spacehunter","primaryIntent":"Choose a Mac storage workflow by documented coverage, platform, licence and investigation needs.",
+      "lead":"Space Hunter documents category cleanup with a one-time, single-device Pro licence. Breathing Room, which we build, combines source-implemented storage and activity investigation in an explicitly limited preview with optional hosted AI Care.",
+      "rows":["macOS and architecture","preview/signing/runtime caveats","free cleaning quota versus free local capabilities","one-time major-version licence versus optional renewing AI Care","documented developer categories","review controls and unverified execution details","live free-space tracking versus source-implemented activity history","local analysis and network boundaries"],
+      "decision":"Prefer Space Hunter when its named categories and one-device major-version offer match the job, after checking paths and requirements. Consider Breathing Room for grouped app/activity investigation only with preview, Python, hosted-service and testing limitations understood.",
+      "links":["/comparisons/","/blog/review-developer-cache-cleanup-spacehunter/"],
+      "prohibitedFraming":["No blanket cheaper/faster/safer winner","No claim Space Hunter lacks monitoring or helper grouping","No perpetual future-major-updates claim","No Windows support","No benchmark or recovered-space claim"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "spacehunterAdvantages":[{"statement":"Documents broad named developer cleanup targets and app leftovers, useful for a category-focused pass.","claimIds":["SH05"],"class":"editorial-fit-judgment"},{"statement":"Offers one-time Pro pricing for a single device/current major version rather than an advertised recurring Pro plan.","claimIds":["SH04"],"class":"documented-offer"}],
+    "spacehunterTradeoffs":[{"statement":"Free cleaning has a lifetime quota; Pro has a one-device/current-major-version scope.","claimIds":["SH03","SH04"]},{"statement":"Purchase page lists macOS 14.6+ and Apple Silicon; Intel not verified.","claimIds":["SH02"]},{"statement":"Local analysis policy is not a no-network/no-analytics guarantee; exact deletion/recovery controls not verified.","claimIds":["SH06","SH08"]}],
+    "breathingRoomAdvantages":[{"statement":"Source-implemented grouped helper monitoring and local activity history can suit investigation before cleanup.","claimIds":["BR03"],"class":"editorial-fit-judgment; not binary runtime test"}],
+    "breathingRoomTradeoffs":[{"statement":"Non-notarized preview with Python prerequisite and untested clean-machine/physical-Intel behavior.","claimIds":["BR02"]},{"statement":"Optional hosted AI requires account/network and relevant context transfer; paid care renews, and app must run for daily care.","claimIds":["BR01","BR03"]}]
+  },
+  "unknowns": [
+    {"field":"Space Hunter repository/source availability","state":"not-verified","critical":false},
+    {"field":"Intel support, signing/notarization, extra runtimes and permission requirements","state":"not-verified","critical":false,"condition":"Do not recommend to Intel users or promise a particular install path without further evidence."},
+    {"field":"Exact Trash/permanent-delete semantics, restore controls, per-path approval and scheduled actions","state":"not-verified","critical":false,"condition":"Vendor review claim only; no equivalence to Breathing Room approval architecture."},
+    {"field":"Helper grouping, CPU/memory accounting, per-path recurring-growth history","state":"not-verified","critical":false,"condition":"Unknown, never No. Live free-space tracking is documented separately."},
+    {"field":"Quota accounting, post-quota behavior, checkout total/tax and activation/refund execution","state":"not-verified","critical":false},
+    {"field":"Competitor UI reuse permission and independent visual/privacy review","state":"blocked","critical":true},
+    {"field":"Hands-on app testing, exact distributed-binary parity and cleanup outcomes for either app","state":"not-performed","critical":false,"condition":"No performance, safety, savings or runtime claims permitted."}
+  ],
+  "draftGate": {
+    "allowed":false,"skipProduct":false,"skipAliasDraft":true,
+    "blockers":[{"id":"VISUAL-RIGHTS","diagnostic":"Official app UI found at https://static.supasecret.com/static/app/app.webp, but https://supasecret.com/terms section 7 requires explicit written permission. None obtained. Link-only source does not satisfy EDITORIAL.md's on-page competitor screenshot gate.","resolution":"An authorized human supplies permission/licence for this exact asset or an explicitly approved alternative image/policy decision; then independently inspect image/provenance/privacy and target rendering. Do not send a request from this job."}],
+    "futureGates":["Source additional official tool guidance before expanding workflow recovery advice","Refresh volatile facts within 30 days and before publication if stale","Independent current-draft evidence/visual review; no score assigned here","Site check/build/test and responsive light/dark review belong to later authorized stages; no site files edited"]
+  },
+  "workPerformed": {"baselineReused":true,"competitorInstalled":false,"nativeTests":false,"cleanup":false,"signups":false,"purchases":false,"messages":false,"credentialsRead":false,"imageDownloads":0,"siteEdits":false,"queueEdits":false,"agentsSpawned":0,"browser":"Existing listener used; only newly created tab 166 read. No recovery/profile changes."}
+}

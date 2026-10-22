@@ -1,0 +1,17 @@
+{
+  "tag_name": "v0.4.0",
+  "name": "Cleaner by Ciro Cesar Maciel 0.4.0",
+  "published_at": "2026-10-19T19:17:45Z",
+  "draft": false,
+  "prerelease": false,
+  "target_commitish": "8cd67e36dc3794f308108be34ae85aa4afa729a2",
+  "html_url": "https://github.com/ciro-maciel/cleaner/releases/tag/v0.4.0",
+  "asset": {
+    "name": "Cleaner-0.4.0-macos.dmg",
+    "size": 2775786,
+    "vendorReportedSha256": "303991caf782308e4fda288db11f8adad9a87429da248d3164dcc65d9dfa8e0c",
+    "url": "https://github.com/ciro-maciel/cleaner/releases/download/v0.4.0/Cleaner-0.4.0-macos.dmg"
+  },
+  "bodyExcerpt": "Or download the .dmg and drag Cleaner to Applications: signed with Developer ID and notarized by Apple. Apple Silicon, macOS 14+.",
+  "retention": "Selected fields transcribed from actual WebFetch API response; binary not downloaded."
+}

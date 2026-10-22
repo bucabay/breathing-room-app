@@ -1,0 +1,20 @@
+{
+  "jobId": "research-mac-sai",
+  "checkedOn": "2026-10-22",
+  "result": "structural-checks-pass; drafting-blocked",
+  "checks": [
+    "Python json.loads parsed research.json successfully.",
+    "All 11 claims reference existing source IDs and include excerpts/check dates; matrix claim references resolve.",
+    "Actual SHA-256 matches retained official snapshot, directory snapshot and selected Breathing Room original.",
+    "Five material README excerpt substrings matched retained official source text.",
+    "Canonical owner, alias decision, blocked drafting flag, link-only competitor asset and required example-data caption checked.",
+    "Read-only latest release API and LICENSE retrievals returned HTTP 200; actual response content inspected.",
+    "Owned browser tab 127 loaded official demo.png; actual viewport PNG opened and visually inspected; tab closed. Pre-existing tabs untouched."
+  ],
+  "artifacts": [
+    {"path": "docs/content/competitors/mac-sai/research.json", "sha256": "ffcdf8fd26f36d6d6ba827c04d7ef52bd00273c53ffcd13ce8ceb802832e9fac"},
+    {"path": "docs/content/competitors/mac-sai/research.md", "sha256": "07a1d6a9b46150e290bc9d6cb95a8b6b691c909276e03065927702be356e72d9"}
+  ],
+  "notPerformed": ["Native execution or cleanup", "Binary architecture/signature checks", "Image-rights clearance", "Independent publication review", "Site build/test: no site edits"],
+  "diagnostic": "Real product and documented offer established using reused baseline plus targeted release/licence checks. Required competitor visual remains link-only pending artwork reuse coverage; no drafting approval."
+}

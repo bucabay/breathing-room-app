@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-techtool-lite",
+  "productId": "techtool-lite",
+  "canonicalOwnerId": "techtool-lite",
+  "status": "blocked",
+  "stage": "research-only",
+  "checkedAtUtc": "2026-10-21T22:14:10.335051+00:00",
+  "editorialDate": "2026-10-22",
+  "dateNote": "UTC retrieval date is October 21; the job's local editorial date is October 22. Earlier verified facts retain their original check timestamps.",
+  "identity": {
+    "officialName": "Techtool Lite",
+    "vendor": "Micromat",
+    "homepage": "https://www.micromat.com/products/techtool-lite/",
+    "repository": null,
+    "repositoryStatus": "not-verified; no official source repository established in checked sources",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip as alias. Official evidence distinguishes Lite from Pro; techtool is the sibling Pro record, not this product's canonical owner. No PowerMyMac relationship is established or suggested by these sources.",
+    "classification": "adjacent",
+    "fitReason": "Mac diagnostics, internal-drive checks and system database/cache maintenance overlap maintenance intent, but are not interchangeable with storage-owner investigation or reviewable developer-cache cleanup.",
+    "platformFit": "Mac-native documented offering; no Windows/Linux support claimed",
+    "skipDecision": "Do not skip as dead, irrelevant or duplicate. Retain a narrowly differentiated diagnostics-versus-storage workflow, but block drafting on evidence gates."
+  },
+  "reuse": {
+    "baseline": "docs/content/verification/batch-2.json",
+    "baselineSha256": "fda272220e871a39a22b541175b42bcf6123a8af52c7e1a0a495e61bc3c3476f",
+    "aliasDecision": "docs/content/verification/alias-decisions.json",
+    "method": "Read corresponding verified record and retained official capture first. Reused current identity, free offer, platform baseline and Lite/Pro distinction without treating directory text as feature proof. Product page revisited only to resolve missing image URLs/lazy-loaded visuals; updates and terms checked for missing version/licence/rights evidence."
+  },
+  "discovery": {
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=3",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:11.107Z",
+    "listingUrl": "https://alternativeto.net/software/techtool-lite/about/",
+    "destinationUrl": "https://www.micromat.com/products/techtool-lite/",
+    "retrievedAtUtc": "2026-10-21T19:06:21.517Z",
+    "method": "Inherited rendered about-page DOM, owned verification tab 16; edge from competitors.json",
+    "excerpt": "Official Website\nmicromat.com/products/techtool-lite/",
+    "rawCapture": "docs/content/.runtime/verification-2/techtool-lite-directory.json",
+    "sha256": "d82cb9bc8965d4d419625f637433544f24f05bb39c78cc046c6bf594b19dfe90",
+    "limitations": "Original paginated edge raw snapshot not separately located; inherited manifest records the edge. Directory is discovery evidence only."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "Micromat", "title": "Techtool Lite",
+      "url": "https://www.micromat.com/products/techtool-lite/",
+      "finalUrl": "https://www.micromat.com/products/techtool-lite/",
+      "retrievedAtUtc": "2026-10-21T19:09:44.883851+00:00",
+      "publicationDate": null,
+      "scope": "Product page, free Lite offering; no explicit current version in body",
+      "rawCapture": "docs/content/.runtime/verification-2/techtool-lite-official.json",
+      "sha256": "e7e36cf2e0a8f62611aeeec44ea78a9da1de33298c1c141be11ab5547eb15848",
+      "hashNote": "Actual file SHA-256 matches batch record. Embedded sha256 field is a different digest and is not substituted for the file hash."
+    },
+    {
+      "id": "S2", "publisher": "Micromat", "title": "Techtool Lite 21.1.1 Released",
+      "url": "https://www.micromat.com/techtool-lite-21-1-1-released/",
+      "finalUrl": "https://www.micromat.com/techtool-lite-21-1-1-released/",
+      "retrievedAtUtc": "2026-10-21T22:14:10.335051+00:00",
+      "publicationDate": "2026-10-09",
+      "scope": "Version 21.1.1 release announcement; documentary evidence, not installer validation",
+      "excerpt": "Version 21.1.1; File Size: 19.0 MB; Release Date: 10/9/2026. Added compatibility with macOS 27 ‘Golden Gate’",
+      "rawCapture": null, "sha256": null,
+      "retention": "Supporting excerpts retained in this packet; webfetch response not saved as a raw snapshot."
+    },
+    {
+      "id": "S3", "publisher": "Micromat", "title": "Terms of Service & Sales",
+      "url": "https://www.micromat.com/terms-of-service/",
+      "finalUrl": "https://www.micromat.com/terms-of-service/",
+      "retrievedAtUtc": "2026-10-21T22:14:10.335051+00:00",
+      "publicationDate": null,
+      "excerpt": "Your use of Micromat-branded software is on the terms of the license in effect for the software at the time of purchase. ... Be certain to read the applicable license carefully before you install the software.",
+      "scope": "General terms, not verified Lite EULA or image republication permission", "rawCapture": null, "sha256": null
+    },
+    {
+      "id": "S4", "publisher": "Micromat", "title": "Techtool Lite image DOM inspection",
+      "url": "https://www.micromat.com/products/techtool-lite/",
+      "finalUrl": "https://www.micromat.com/products/techtool-lite/",
+      "retrievedAtUtc": "2026-10-21T22:14:05.439Z",
+      "publicationDate": null,
+      "method": "Owned Chrome tab 172; read public document images/currentSrc/data-src, then visually inspected viewport screenshots. Closed owned tab afterward.",
+      "excerpt": "Hero currentSrc: https://www.micromat.com/wp-content/uploads/2026/04/Techtool-Lite-Promo-2048x1418.png; lazy source: https://www.micromat.com/wp-content/uploads/2026/04/Techtool-Lite-Promo-1024x709.png",
+      "rawCapture": null, "sha256": null,
+      "limitations": "No image asset downloaded or licensed; viewport inspection is not a reusable app capture. Cache-rebuild and other small feature images are icons, not app screenshots."
+    },
+    {
+      "id": "S5", "publisher": "Breathing Room", "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/",
+      "localEvidence": "docs/content/capabilities.md",
+      "retrievedAtUtc": "2026-10-21",
+      "scope": "Reused source/public-page evidence register; no new native tests or release certification",
+      "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance preview ... Hosted AI assistance requires internet access and authentication ... $5 USD/month or $50 USD/year."
+    },
+    {
+      "id": "S6", "publisher": "Micromat", "title": "Updates",
+      "url": "https://www.micromat.com/support/updates/",
+      "finalUrl": "https://www.micromat.com/support/updates/",
+      "retrievedAtUtc": "2026-10-21T22:14:10.335051+00:00",
+      "publicationDate": null,
+      "excerpt": "Techtool Lite 21.1.1 Released — October 9, 2026",
+      "scope": "Current updates index links the version-specific announcement", "rawCapture": null, "sha256": null
+    }
+  ],
+  "claims": [
+    {"id":"C1","wording":"Micromat offers Techtool Lite, distinct from Techtool Pro.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Techtool Lite focuses on essential testing and maintenance. For volume repair, deeper diagnostics, external drive testing, and advanced tools, Techtool Pro gives you complete control.","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"identity and comparison lead","conditions":"Do not transfer Pro features or pricing to Lite."},
+    {"id":"C2","wording":"Techtool Lite is advertised as free.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Techtool Lite, the free new utility from Micromat","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"pricing row","conditions":"No paid Lite tier, trial expiration, device allowance, commercial-use rights or activation terms established; free price is not an open-source licence."},
+    {"id":"C3","wording":"The product page lists Apple Silicon and Intel Macs running macOS 13.5 Ventura through macOS 26 Tahoe.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Apple Silicon and Intel-based Macs; macOS 13.5 ‘Ventura’ through macOS 26 ‘Tahoe’","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"platform row","conditions":"Attribute to product page; not proof of latest-version upper bound or runtime testing. See conflict C7."},
+    {"id":"C4","wording":"Micromat documents internal-drive SMART, partition-map and volume-structure checks.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Check the health and structure of your Mac’s internal drive, including SMART health, partition map, and volume structures.","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"diagnostics section","conditions":"Testing is not volume repair; coverage and successful operation not independently tested."},
+    {"id":"C5","wording":"Micromat documents system-cache resets and rebuilding macOS databases.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Use Techtool Lite to reset system caches and rebuild important macOS databases","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"maintenance and cleanup row","conditions":"No exact database list, approval flow, developer-cache adapter list or measured responsiveness benefit verified."},
+    {"id":"C6","wording":"Micromat also documents memory and battery checks and viewing local-network devices and ports.","state":"verified","sourceIds":["S1"],"sourceUrl":"https://www.micromat.com/products/techtool-lite/","excerpt":"Quickly check your Mac’s memory for potential issues. ... Check the status of your Mac’s internal battery ... View devices on your local network and observe which ports they’re using.","checkedAtUtc":"2026-10-21T19:09:44.883851+00:00","evidenceClass":"officially-documented","location":"competitor advantages","conditions":"Do not conflate network-device monitoring with CPU/helper grouping or folder-growth attribution."},
+    {"id":"C7","wording":"Micromat's updates index identifies 21.1.1; its October 9 release note says it adds macOS 27 compatibility, while the product page still ends at macOS 26.","state":"verified","sourceIds":["S1","S2","S6"],"sourceUrl":"https://www.micromat.com/techtool-lite-21-1-1-released/","excerpt":"Version 21.1.1 ... Added compatibility with macOS 27 ‘Golden Gate’","checkedAtUtc":"2026-10-21T22:14:10.335051+00:00","evidenceClass":"officially-documented-conflict","location":"version/platform caveat","conditions":"Conflicting official compatibility statements; do not silently normalize to 13.5–27 or assert runtime support. 19.0 MB is vendor-listed size, not measured download size."},
+    {"id":"B1","wording":"Breathing Room, which we build, has source-supported storage views and grouped CPU/memory monitoring; source presence does not certify installer behavior.","state":"verified","sourceIds":["S5"],"sourceUrl":"https://breathing-room.chatic.ai/","excerpt":"Space: Source supports category, app/tool-owner, project, folder and large-file views. Apps: Native sampling groups helpers through parent/app relationships and exposes CPU/memory.","checkedAtUtc":"2026-10-21","evidenceClass":"reused-source-register","location":"comparison storage/monitoring rows","conditions":"capabilities.md cites space-view.tsx, api.ts, processes.rs and README; no new execution or binary parity claim."},
+    {"id":"B2","wording":"Breathing Room's identified 0.1.0-preview.1 requires macOS 13+ and Python 3.10+ for inventory; published preview is Apple Development signed, not Developer ID signed or notarized.","state":"verified","sourceIds":["S5"],"sourceUrl":"https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1","excerpt":"Apple Development signed, not Developer ID signed or notarized ... Python 3.10+ ... macOS 13+","checkedAtUtc":"2026-10-21","evidenceClass":"reused-published-release-register","location":"installation caveat","conditions":"Universal installer advertised; physical Intel/clean-machine behavior unvalidated. Do not recommend disabling protections."},
+    {"id":"B3","wording":"Breathing Room's local core is advertised free; optional hosted AI Care is $5 USD/month or $50 USD/year and requires internet/authentication.","state":"verified","sourceIds":["S5"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"$5 USD/month, $50 USD/year ... Plans renew until cancelled; applicable tax shown at checkout.","checkedAtUtc":"2026-10-21","evidenceClass":"reused-published-offer-register","location":"pricing/privacy rows","conditions":"Relevant question/history/tool outputs may reach hosted service; not entirely offline. Website account gate differs from public GitHub download. No unlimited allowance or entitlement enforcement verified."},
+    {"id":"B4","wording":"Breathing Room uses reviewable exact-location/method approvals; optional verified Ruff automatic mode is an exception, and daily care reuses saved approvals while the app runs.","state":"verified","sourceIds":["S5"],"sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"Default interactive investigation ... automatic to false ... Automatically move verified Ruff lint caches to Trash ... App must remain running","checkedAtUtc":"2026-10-21","evidenceClass":"reused-source-register","location":"approval/runtime caveat","conditions":"Architecture, not safety guarantee; bytes moved to Trash are not newly available disk space."}
+  ],
+  "matrix": [
+    {"dimension":"macOS/architecture","competitor":"Product page: Intel/Apple Silicon, 13.5–26; latest release-note claim conflicts","claimIds":["C3","C7"],"breathingRoom":"macOS 13+ universal preview; Intel untested","breathingRoomClaimIds":["B2"]},
+    {"dimension":"price/licence","competitor":"Advertised free; exact Lite EULA and redistribution terms not verified","claimIds":["C2"],"breathingRoom":"Free local core; optional recurring hosted AI Care; Apache-2.0 desktop source per capabilities register","breathingRoomClaimIds":["B3"]},
+    {"dimension":"scan/maintenance model","competitor":"Essential diagnostics and cache/database maintenance","claimIds":["C4","C5","C6"],"breathingRoom":"Storage exploration and reviewable maintenance, not established as hardware diagnostic replacement","breathingRoomClaimIds":["B1","B4"]},
+    {"dimension":"local/hosted","competitor":"Desktop Mac utility documented; fully offline operation, telemetry and data handling not verified","claimIds":["C3"],"breathingRoom":"Local inspection with optional authenticated hosted reasoning","breathingRoomClaimIds":["B3"]},
+    {"dimension":"approvals","competitor":"Not verified","claimIds":[],"breathingRoom":"Exact approvals with optional narrow Ruff exception","breathingRoomClaimIds":["B4"]},
+    {"dimension":"helper CPU/memory grouping","competitor":"Not verified; memory diagnostics are not process usage accounting","claimIds":["C6"],"breathingRoom":"Source-supported grouping, with inferred ownership limitations","breathingRoomClaimIds":["B1"]},
+    {"dimension":"recurring growth","competitor":"Not verified","claimIds":[],"breathingRoom":"Activity source support and advertised AI Care investigation; not a runtime-certified result","breathingRoomClaimIds":["B1","B3"]},
+    {"dimension":"developer caches","competitor":"Specific adapters not verified; do not infer from system cache resets","claimIds":["C5"],"breathingRoom":"Reviewable source architecture; adapter coverage must retain capabilities.md conditions","breathingRoomClaimIds":["B4"]},
+    {"dimension":"runtime/install","competitor":"Public DMG link observed; signing, notarization, permissions, helper install and activation not verified; installer not downloaded","claimIds":["C7"],"breathingRoom":"Preview/Python/notarization caveats; daily care requires running app","breathingRoomClaimIds":["B2","B4"]}
+  ],
+  "visuals": [
+    {
+      "id":"techtool-lite-official-ui", "productId":"techtool-lite", "view":"Tests overview in vendor promotional image", "kind":"official-asset",
+      "sourcePageUrl":"https://www.micromat.com/products/techtool-lite/",
+      "assetUrl":"https://www.micromat.com/wp-content/uploads/2026/04/Techtool-Lite-Promo-2048x1418.png",
+      "alternateAssetUrl":"https://www.micromat.com/wp-content/uploads/2026/04/Techtool-Lite-Promo-1024x709.png",
+      "capturedAtUtc":null,"retrievedAtUtc":"2026-10-21T22:14:05.439Z","capturedBy":null,
+      "productVersion":"Vendor image appears to show 21.0.9 (2539), not the 21.1.1 release; confirm original before publication",
+      "buildOrCommit":null,"osVersion":null,"dataMode":"vendor-illustration",
+      "originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "widthPx":null,"heightPx":null,"edits":[],
+      "privacyReview":{"status":"pending-original-review","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Public official visual may be linked; no republication licence or permission established. Product footer reserves all rights; terms do not establish image reuse permission.","evidenceUrlOrPath":"https://www.micromat.com/terms-of-service/","credit":"Techtool Lite interface image: Micromat"},
+      "caption":"Micromat's official Techtool Lite interface illustration; vendor example, not our hands-on test or the latest-version UI verification.",
+      "alt":"Techtool Lite Tests overview showing a diagnostic sidebar and Mac hardware summary.",
+      "supportedClaimIds":["C1","C4"],
+      "limitations":["Asset URL inspected in public DOM; image viewed in page viewport, not downloaded.","Vendor capture date, exact OS and original dimensions unknown; filename date is not capture evidence.","Feature thumbnails including cache-rebuild.png are icons and do not satisfy app UI gate.","No original or published bytes exist in this packet, so hashes are intentionally null."],
+      "review":{"status":"visually-inspected-on-official-page; reuse-blocked","reviewer":"research-techtool-lite worker","reviewedAtUtc":"2026-10-21T22:14:10.335051+00:00"}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"capturedBy":"screenshot-library job per screenshots.json",
+      "productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"example-only visually rechecked","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party example UI capture; preserve example-data labels, no blanket trademark licence inferred.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room browser preview"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":["B1"],
+      "limitations":["Local first-party file; no public asset URL assigned.","Source-render illustration, not current distributed-binary or native evidence.","Keep Interactive preview · example data and no-change warning visible; assistant overlaps chart labels.","Use a readable contextual presentation and independently review responsive rendering; do not quote sample numbers as measurements."],
+      "review":{"status":"opened-and-read; hash-matched; page-context approval pending","reviewer":"research-techtool-lite worker","reviewedAtUtc":"2026-10-21T22:14:10.335051+00:00"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "title":"Mac diagnostics or storage investigation? Choose the next check before resetting caches",
+      "slug":"mac-diagnostics-before-cache-reset",
+      "intent":"Triage a Mac maintenance question into hardware-health testing, system-service maintenance or storage-owner investigation without treating every symptom as a reason to clear caches.",
+      "track":"practical decision workflow, documentary not hands-on",
+      "outline":["Conclusion: diagnosis and storage accounting answer different questions","State the symptom and retain a backup before maintenance","Use Techtool Lite's documented internal-drive, memory or battery checks for diagnostic questions","Separate database/cache refresh from finding large or recurring folders","Use Breathing Room, which we build, only for the bounded storage/activity branch with preview and hosted-AI caveats","Record results and escalate unresolved diagnostic issues rather than promising a reset fixes them"],
+      "interaction":"Non-destructive three-branch checklist: hardware-health concern, database/service malfunction, or unexplained storage growth. It recommends an investigation category, not a diagnosis or automatic deletion.",
+      "visualPlacement":"After lead: Techtool Lite official UI only once rights cleared; later: selected Space example preview. Do not substitute icons for app view.",
+      "differentiation":"Not a Techtool Pro repair/recovery or external-drive article; no named database-reset tutorial without additional official procedure evidence."
+    },
+    "comparison": {
+      "title":"Breathing Room vs Techtool Lite: storage investigation or Mac diagnostics",
+      "slug":"techtool-lite",
+      "intent":"Choose complementary Mac maintenance workflows, not an all-purpose winner.",
+      "lead":"Techtool Lite documents essential Mac diagnostics and system maintenance; Breathing Room, which we build, focuses on storage and activity investigation in a preview. Neither documented role establishes replacement coverage for the other.",
+      "rows":["primary task","diagnostics versus storage views","cache-maintenance scope","platform/version conflict","approval and data-boundary unknowns","free offer versus optional hosted AI","installation caveats"],
+      "internalLinksPlanned":["/comparisons/","/blog/mac-diagnostics-before-cache-reset/","/tools/"],
+      "linkCaveat":"Proposed paths only; verify counterpart routes and choose an existing relevant tool before drafting."
+    },
+    "advantagesAndTradeoffs": {
+      "techtoolLite":["Documented internal-drive, memory and battery diagnostics suit health-check questions (C4/C6).","Advertised free (C2), but exact licence and offline/data boundaries remain unknown.","Lite/Pro distinction is explicit; do not present Lite as Pro volume-repair or external-drive coverage (C1)."],
+      "breathingRoom":["Source-supported storage-owner/category views and grouped CPU/memory suit investigation rather than hardware-test intent (B1).","Reviewable action architecture has a narrow optional Ruff exception, not an unconditional safety promise (B4).","Preview, Python and notarization limits matter; hosted AI has authentication/network/data-sharing and recurring-price boundaries (B2/B3)."],
+      "prohibitedInferences":["No speed, savings or safety winner","No claim Techtool Lite lacks monitoring or developer caches merely because unverified","No claim Breathing Room diagnoses hardware or repairs volumes","No all-offline or zero-telemetry claim for either product","No invented Windows support or hands-on test"]
+    }
+  },
+  "unknowns": ["Exact Lite EULA, device/commercial-use terms and source availability","Techtool Lite signing/notarization and permissions/helper installation requirements","Techtool Lite approval controls, detailed cache/database list, telemetry/offline behavior and recurring folder-growth support","Latest installer bytes/build, actual hardware/platform execution and download success","APFS-specific limitations beyond linked page; no repair tutorial authorized","Original competitor screenshot capture date/version confirmation, privacy and reuse rights"],
+  "blockers": [
+    {"id":"G1","severity":"critical","diagnostic":"Required competitor app UI identified and visually inspected, but republication rights are not established. Link-only does not satisfy on-page image gate; no competitor asset downloaded.","resolution":"Obtain documented reuse permission/licence or an explicitly approved editorial image policy decision through separately authorized work; then retain original bytes/hash and review image."},
+    {"id":"G2","severity":"critical-for-platform-recommendation","diagnostic":"Product page lists macOS 13.5–26, while official 21.1.1 release note claims macOS 27 compatibility. The maximum supported OS cannot be stated unqualified.","resolution":"Resolve official version-specific compatibility evidence before a platform recommendation, or independently approve a narrowly attributed conflict disclosure without asserting support."}
+  ],
+  "execution": {"nativeTests":false,"cleanup":false,"signups":false,"purchases":false,"messages":false,"credentialsRead":false,"websiteChanges":false,"queueChanges":false,"agentsSpawned":false,"downloads":[],"browser":"Existing endpoint worked. new_page navigation timed out at 10 seconds but created owned tab 172; read confirmed loaded official page. Only owned tab inspected/scrolled and closed. No profile recovery performed.","accessFailures":["Python urllib official product page returned HTTP 403; no circumvention attempted. Webfetch and normal public browser page loaded successfully."],"validation":"See validation.json for actual local checks; no site build required because no marketing files changed. Independent draft/site/runtime review remains pending."}
+}

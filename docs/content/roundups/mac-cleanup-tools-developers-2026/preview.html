@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex,nofollow"><title>Draft review: 7 Mac cleanup tools for developers in 2026</title><style>
+*{box-sizing:border-box}body{font:18px/1.65 system-ui;max-width:900px;margin:auto;padding:24px;color:#17283a;background:white}h1,h2,h3{line-height:1.25}a{color:#245bb1}img{max-width:100%;height:auto}figure{margin:24px 0}figure:first-of-type img{display:block;width:480px;margin:auto}figcaption{font-size:15px}table{display:block;overflow:auto;border-collapse:collapse;font-size:15px}td,th{min-width:150px;border:1px solid #8394a6;padding:10px;vertical-align:top}body.dark{color:#e7eef6;background:#101820}body.dark a{color:#9bc5ff}
+</style><body><p>Isolated draft fixture; not the marketing layout or publication approval.</p><h1>7 Mac cleanup tools for developers in 2026</h1><p>Choose Mac cleanup tools by file owner, rebuild cost and recurring growth. Seven documented developer options, with restoration costs and clear reasons to wait.</p><figure>
+  <img src="/assets/roundups/mac-cleanup-tools-developers-2026/owner-before-size.svg" alt="Decision diagram: identify the file owner, prove restoration, budget rebuild cost, review the removal method, then watch what grows back." width="480" height="800" />
+  <figcaption>Original decision aid synthesized from the official workflows below. This is a diagram, not app UI, a scan or a tested cleanup result. An unknown answer means keep the data and investigate.</figcaption>
+</figure>
+<p>A compiler output directory, a package download cache and a container volume deserve different decisions. The useful question isn’t just how large they are. It’s which tool owns them, what information exists only there, and what you’ll spend rebuilding or downloading them.</p>
+<p>This shortlist covers seven documented tools or owning-tool workflows. Selection is editorial, not a performance ranking. No cleanup commands were run for this article, and no recovered-space or speed claims are implied. Documentation was reviewed October 21–22, 2026. <strong>We build Breathing Room</strong>, included with its preview limitations rather than treated as the default winner.</p>
+<h2 id="match-the-tool-to-the-developer-job">Match the tool to the developer job</h2>
+<p>Use the owning tool when you already know the storage domain; use discovery when you don’t. The last column is the reason to pause, not an estimate of how much space you’ll recover.</p>
+<table>
+<thead>
+<tr>
+<th>Tool or workflow</th>
+<th>Select it for</th>
+<th>Documented boundary</th>
+<th>Cost or reason to wait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tw93/Mole">Mole CLI</a></td>
+<td>Reviewing generated artifacts across projects</td>
+<td>Purge selection accounts for recent or unverifiable activity; removal can be permanent</td>
+<td>Rebuilds and dependency downloads; inspect every selected path</td>
+</tr>
+<tr>
+<td><a href="https://depflush.com">Depflush</a></td>
+<td>Finding dormant dependency folders</td>
+<td>Project markers and configurable inactivity; Trash by default, permanent mode optional</td>
+<td>Local edits and unavailable dependencies can make restoration incomplete</td>
+</tr>
+<tr>
+<td><a href="https://docs.brew.sh/Manpage#cleanup-options-formulacask-">Homebrew</a></td>
+<td>Old package versions and downloads</td>
+<td>Cleanup has a dry-run; dependency autoremove is separate</td>
+<td>Lost old installations/downloads may matter to a retained environment</td>
+</tr>
+<tr>
+<td><a href="https://docs.npmjs.com/cli/v11/commands/npm-cache">npm cache workflow</a></td>
+<td>Distinguishing package-cache growth from corruption</td>
+<td>Verify checks integrity and garbage-collects; forced clean clears cache</td>
+<td>Subsequent fetches need time and package availability</td>
+</tr>
+<tr>
+<td><a href="https://docs.docker.com/engine/manage-resources/pruning/">Docker object cleanup</a></td>
+<td>Images, stopped containers and builder cache</td>
+<td>Object-specific pruning; volumes have separate rules</td>
+<td>Volumes and writable layers may contain unique state</td>
+</tr>
+<tr>
+<td><a href="https://doc.rust-lang.org/cargo/commands/cargo-clean.html">Cargo clean workflow</a></td>
+<td>Rust-generated target artifacts</td>
+<td>Package/profile scope and dry-run; default removes the entire target directory</td>
+<td>Next compilation must recreate removed output</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bucabay/breathing-room-app#readme">Breathing Room preview</a></td>
+<td>Connecting project storage with recurring growth</td>
+<td>Local inventories/activity; hosted assistance and exact-location care approvals</td>
+<td>Preview installation/runtime limits; paid AI Care is separate from free local tools</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-mole-cli-find-artifacts-across-a-project-collection">1. Mole CLI: find artifacts across a project collection</h3>
+<p>Choose Mole CLI when the problem is a collection of projects rather than one known cache. Its <a href="https://github.com/tw93/Mole">official README</a> documents purge for rebuildable project artifacts and leaves recent or unverifiable-activity candidates unselected. Those defaults narrow a review; they don’t prove that every candidate is reproducible.</p>
+<p>The CLI documents macOS 12+ on Intel and Apple Silicon and is GPL-3.0. Don’t confuse that with Mole for Mac, the separate proprietary native app, or transfer native-app defaults to CLI commands. The publisher’s <a href="https://mole.fit/mac-cleaner">official Clean-view guide</a> is a useful visual reference, not evidence of this article testing the app.</p>
+<p><strong>Don’t use it</strong> as unattended permission to purge every old project. CLI cleanup/purge can permanently delete data. Preserve source changes and establish the dependency/toolchain path before approving artifacts, especially before offline work.</p>
+<h3 id="2-depflush-review-dormant-dependencies-with-project-context">2. Depflush: review dormant dependencies with project context</h3>
+<p>Choose Depflush when dependency folders in inactive repositories are the identifiable problem. Its <a href="https://depflush.com#screenshots">official documentation and sample-data gallery</a> describe <code>node_modules</code> beside <code>package.json</code> and <code>vendor</code> beside <code>composer.lock</code>, with configurable inactivity. The activity check excludes dependency directories and other named generated/internal folders; inactivity isn’t simply a folder’s last modification date.</p>
+<p>The documented workflow previews items, paths and sizes, confirms the total, and defaults to Trash, with optional permanent deletion. It advertises a free app for macOS 14+ on Intel and Apple Silicon, while disclosing that it isn’t yet notarized. That’s a vendor disclosure, not our signature inspection.</p>
+<p><strong>Don’t use it</strong> when a dependency directory contains your only local patch or when restoration depends on a package source you can no longer access. A manifest or lockfile identifies intent; it doesn’t preserve every downloaded byte. Moving to Trash also isn’t immediate free-space recovery.</p>
+<h3 id="3-homebrew-let-the-package-manager-retire-its-own-files">3. Homebrew: let the package manager retire its own files</h3>
+<p>Choose Homebrew’s cleanup workflow for Homebrew-owned storage instead of manually removing directories inside its installation. The <a href="https://docs.brew.sh/Manpage#cleanup-options-formulacask-">brew manual’s cleanup section</a> documents outdated downloads, stale lock files and old installed formula versions, plus a dry-run that shows planned removals.</p>
+<p>Dependency retirement is a different decision. The <a href="https://docs.brew.sh/Manpage#autoremove---dry-run">autoremove section</a> targets formulae installed only as dependencies that are no longer needed, and has its own dry-run. Neither operation means “delete every tool I haven’t launched lately.”</p>
+<p><strong>Don’t use it</strong> to erase an installation history you still need for a build environment. Review proposed versions and dependencies against the work you actually maintain. Removing reusable downloads trades disk headroom for possible future downloads or builds; it doesn’t prevent the next installation from adding storage again.</p>
+<h3 id="4-npm-separate-cache-maintenance-from-project-dependencies">4. npm: separate cache maintenance from project dependencies</h3>
+<p>Choose npm’s cache workflow when the storage belongs to npm’s package cache, not as a substitute for reviewing a project’s <code>node_modules</code>. The <a href="https://docs.npmjs.com/cli/v11/commands/npm-cache">npm v11 cache documentation</a> says the cache is self-healing and that clearing it is normally unnecessary for corruption. Clean requires force; verify checks integrity and garbage-collects unneeded data.</p>
+<p>Verification is therefore maintenance, <strong>not a read-only inspection</strong>. Nothing here was executed. The same documentation says cache storage grows as new packages are installed and isn’t a reliable persistent package archive.</p>
+<p><strong>Don’t use forced cache clearing</strong> as a routine cure for unrelated build failures or immediately before work with limited connectivity. A successful future install may need the registry again. Diagnose whether your large directory is a shared cache, an installed dependency tree or generated output before choosing the operation.</p>
+<h3 id="5-docker-choose-the-object-type-before-choosing-prune">5. Docker: choose the object type before choosing prune</h3>
+<p>Choose Docker’s own object-aware workflow when images, stopped containers or builder cache account for the growth. Docker’s <a href="https://docs.docker.com/engine/manage-resources/pruning/">pruning guide</a> distinguishes all three from volumes. Image pruning defaults to dangling images; broader options change eligibility. Buildx pruning targets the selected builder, so multiple builders require deliberate scope.</p>
+<p>System prune combines several object classes and doesn’t include volumes by default. Stopped containers still have writable layers. “Stopped” and “unused” describe Docker relationships, not whether the contents matter to you.</p>
+<p><strong>Don’t use broad pruning</strong> before identifying local databases, unexported container changes and images that can’t be pulled again. Volume deletion can destroy data. Keep database backups separate from rebuildable image/cache decisions; don’t manually delete the Mac’s Docker disk image as a shortcut.</p>
+<h2 id="put-restoration-cost-ahead-of-the-cleanup-total">Put restoration cost ahead of the cleanup total</h2>
+<p>Before the remaining selections, write down the restoration path: source revision, dependency source, toolchain and expected interruption. If you cannot identify those, the item isn’t yet an approved cleanup candidate. This is a decision rule, not a promise that keeping a lockfile guarantees an identical rebuild.</p>
+<figure>
+  <a href="/assets/roundups/mac-cleanup-tools-developers-2026/breathing-room-space-preview.png"><img src="/assets/roundups/mac-cleanup-tools-developers-2026/breathing-room-space-preview.png" alt="Breathing Room Space browser preview with example storage categories and Projects and development; not measured developer storage." width="2940" height="3468" loading="lazy" /></a>
+  <figcaption>Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result. The project/category view illustrates discovery, not deletion eligibility. Open the full-size image to inspect labels. First-party capture; source correspondence rechecked October 22.</figcaption>
+</figure>
+<h3 id="6-cargo-remove-generated-rust-output-at-the-right-scope">6. Cargo: remove generated Rust output at the right scope</h3>
+<p>Choose Cargo’s clean workflow for Rust build output whose owner and restoration path are known. The <a href="https://doc.rust-lang.org/cargo/commands/cargo-clean.html">Cargo Book</a> states that the default removes the entire target directory, covering all workspace packages and dependencies when no packages are selected. It also documents package, profile and target-directory controls, plus dry-run and verbose review.</p>
+<p>That scope matters more than a large headline total. A configured target directory can differ from the familiar project-local path; confirm the actual destination before approving removal.</p>
+<p><strong>Don’t use a workspace-wide clean</strong> just because one output is stale or disk space is temporarily tight. Prefer the narrow scope matching the job. Removed compilation output must be regenerated, so an active project’s target directory can be expensive headroom to reclaim immediately before another build.</p>
+<h3 id="7-breathing-room-investigate-what-keeps-growing-back">7. Breathing Room: investigate what keeps growing back</h3>
+<p>Choose Breathing Room, which we build, when the unresolved job is finding owners and watching recurrence rather than issuing a known package-manager operation. Its <a href="https://github.com/bucabay/breathing-room-app#readme">README</a> describes storage by category, tool and project, plus free-space history, folder observations and sampled app activity. These observations aren’t a complete audit trail or proof of which process wrote a file.</p>
+<p>The local core is free; optional paid AI Care is distinct. Hosted assistance needs internet and sign-in and can send relevant paths and tool output to the service. It is not entirely offline AI. Scheduled care requires the app running and reuses exact approved locations/methods; new locations wait for review. An optional interactive Ruff-cache automatic mode is a separate boundary, not blanket deletion authority.</p>
+<p><strong>Don’t choose it</strong> if you require a production-ready, notarized utility. The identified <a href="https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1">0.1.0-preview.1 release</a> is Apple Development signed, not Developer ID signed or notarized. It advertises macOS 13+ universal support, but physical Intel and clean-machine validation remain incomplete. Inventory requires unbundled Python 3.10+, and permissions can limit coverage. Source implementations don’t certify every distributed-binary workflow. Public GitHub releases don’t require the website’s download account. Don’t disable system protections to install it.</p>
+<h2 id="keep-a-cleanup-decision-from-becoming-a-recurring-rebuild-tax">Keep a cleanup decision from becoming a recurring rebuild tax</h2>
+<p>Start with one owner and one understood restoration path. Review the exact location, removal method and whether the data contains anything unique. After an approved cleanup, compare available space separately from scanned size or bytes moved to Trash; don’t sum them as savings.</p>
+<p>If the same directory grows again, record the triggering build or install before repeating removal. npm’s documented cache growth, Cargo’s generated output and Docker’s explicit object retention explain why cleanup alone isn’t a retention policy. Keep useful working caches when their rebuild cost exceeds the headroom benefit. The live <a href="/tools/">storage tools hub</a> can help interpret capacity numbers, but its calculators don’t scan files or authorize deletion.</p>
+</body></html>

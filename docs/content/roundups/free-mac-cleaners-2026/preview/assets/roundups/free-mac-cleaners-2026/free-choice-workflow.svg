@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 980" width="600" height="980" role="img" aria-labelledby="title desc">
+  <title id="title">Choose a free Mac cleanup workflow</title>
+  <desc id="desc">Identify the task, verify the free edition, check account and runtime requirements, then review exact files and restoration cost. Unknown answers mean investigate, not delete.</desc>
+  <rect width="600" height="980" rx="24" fill="#101d32"/>
+  <g font-family="system-ui, sans-serif" fill="#f4f7ff">
+    <text x="32" y="52" font-size="28" font-weight="700">Free download ≠ free workflow</text>
+    <text x="32" y="88" font-size="21" fill="#c1d2ed">Decision aid · not app UI or test results</text>
+    <g fill="#1c304d" stroke="#6c94d4" stroke-width="2">
+      <rect x="28" y="122" width="544" height="158" rx="16"/>
+      <rect x="28" y="322" width="544" height="158" rx="16"/>
+      <rect x="28" y="522" width="544" height="158" rx="16"/>
+      <rect x="28" y="722" width="544" height="158" rx="16"/>
+    </g>
+    <g font-size="25" font-weight="700">
+      <text x="48" y="164">1 · Identify your task</text>
+      <text x="48" y="364">2 · Verify the edition</text>
+      <text x="48" y="564">3 · Check prerequisites</text>
+      <text x="48" y="764">4 · Review before removal</text>
+    </g>
+    <g font-size="23" fill="#e0eaff">
+      <text x="48" y="207">Known file → built-in review</text>
+      <text x="48" y="244">Unknown growth → investigate first</text>
+      <text x="48" y="407">Free CLI ≠ paid native app</text>
+      <text x="48" y="444">Free local core ≠ hosted AI service</text>
+      <text x="48" y="607">Account, macOS, runtime, permissions</text>
+      <text x="48" y="644">Preview and signing limits matter</text>
+      <text x="48" y="807">Exact path · backup · rebuild cost</text>
+      <text x="48" y="844">Trash ≠ immediately available space</text>
+    </g>
+    <g stroke="#9fc3ff" stroke-width="3" fill="none">
+      <path d="M300 287v27m-8-9 8 9 8-9"/>
+      <path d="M300 487v27m-8-9 8 9 8-9"/>
+      <path d="M300 687v27m-8-9 8 9 8-9"/>
+    </g>
+    <text x="32" y="928" font-size="23" fill="#a7e4cf">Unknown answer? Keep it and investigate.</text>
+    <text x="32" y="958" font-size="18" fill="#c1d2ed">Source-backed editorial synthesis · October 22, 2026</text>
+  </g>
+</svg>

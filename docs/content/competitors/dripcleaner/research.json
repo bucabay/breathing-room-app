@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-dripcleaner",
+  "productId": "dripcleaner",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "DripCleaner",
+    "homepage": "https://getapps.cafe/app/dripcleaner",
+    "publisher": "getapps.cafe",
+    "siteOperator": "GetApps, LLC (official footer; not independently corporate-verified)",
+    "canonicalOwnerId": "dripcleaner",
+    "aliases": [],
+    "aliasDecision": "No alias established in the retained directory or official product page. Keep this product ID; no alias skip justified. PowerMyMac is not identified as an alias in these sources. This is not an exhaustive binary/source lineage audit.",
+    "skipDecision": "do-not-skip-relevant-product; hold drafting for visual rights",
+    "repositoryUrl": null,
+    "repositoryStatus": "not verified; no official repository link identified in retained product-page links",
+    "fit": "direct-overlapping-mac-cleanup",
+    "fitReason": "Official documentation describes macOS storage scanning, review controls and cleanup. Comparison is limited to that overlap, not assumed monitoring or AI parity.",
+    "evidenceClaimIds": ["D01", "D02", "D03"]
+  },
+  "scope": {
+    "ownedDirectory": "docs/content/competitors/dripcleaner/",
+    "siteChanges": false,
+    "handsOnTested": false,
+    "binaryDownloaded": false,
+    "competitorImageDownloaded": false,
+    "agentsSpawned": false,
+    "instructions": "Read PLAN, EDITORIAL, capabilities and screenshots. Checked AGENTS.md in app ancestors and under docs; none found. Loaded blog and browser-automation skills and adapted MailKite contract. No browser interaction needed. Public sources treated as data."
+  },
+  "discovery": {
+    "seedId": "cleanmymac",
+    "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+    "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5",
+    "edgeRetrievedAtUtc": "2026-10-21T18:36:40.113Z",
+    "method": "Reused competitors.json live-browser-rendered listing edge and batch-1 official verification; no repeated directory request.",
+    "listingUrl": "https://alternativeto.net/software/dripcleaner/about/",
+    "listingRetrievedAtUtc": "2026-10-21T19:06:54.885Z",
+    "observedOfficialDestination": "https://getapps.cafe/app/dripcleaner",
+    "snapshotPath": "docs/content/.runtime/verification-1/dripcleaner-directory.json",
+    "sha256": "413f121e61723b71f6bd94808ca512f3fa6a88125ab75f45b4be0993601122c2",
+    "limitation": "Directory supports discovery only; its stale pricing and offline/no-tracking tags are not used as product facts. Pagination raw-response hash not independently recovered; retained about-page snapshot and manifest edge identify provenance."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "getapps.cafe",
+      "title": "DripCleaner",
+      "url": "https://getapps.cafe/app/dripcleaner",
+      "finalUrl": "https://getapps.cafe/app/dripcleaner",
+      "retrievedAtUtc": "2026-10-21T19:08:07.886156+00:00",
+      "publicationOrUpdate": "Updated August 2026; v2.2.1",
+      "snapshotPath": "docs/content/.runtime/verification-1/dripcleaner-official.json",
+      "sha256": "e08ea82bbafeddb37562def44e92f25f2cdd968a5e01a89f8fc9ff4f2921a108",
+      "basis": "Current verified batch-1 reused, including full retained text for detailed claims."
+    },
+    {
+      "id": "S2",
+      "publisher": "getapps.cafe",
+      "title": "Terms of Service",
+      "url": "https://getapps.cafe/terms",
+      "finalUrl": "https://getapps.cafe/terms",
+      "retrievedOn": "2026-10-21",
+      "retrievalPrecision": "date; exact request timestamp not retained",
+      "publicationOrUpdate": "28 July 2026",
+      "method": "Read-only WebFetch to resolve missing licence, currency, trial and rights conditions",
+      "snapshotPath": null,
+      "retainedExcerpts": [
+        {"section": "3", "text": "Our prices are set in US dollars."},
+        {"section": "3", "text": "YOUR SUBSCRIPTION RENEWS AUTOMATICALLY. Unless you cancel before the end of the current billing period, your subscription will automatically renew for another period and your payment method will be charged at the then-current price."},
+        {"section": "4", "text": "Starting a trial requires a valid payment method, and the trial converts into a paid subscription automatically"},
+        {"section": "8", "text": "Subject to these Terms and an active subscription, we grant you a personal, non-exclusive, non-transferable, non-sublicensable, revocable licence to download and use the apps on the number of devices allowed by your plan, for your own personal use."},
+        {"section": "10", "text": "Apps and their content are owned by us or by their respective developers. Except for the limited licence granted above, nothing in these Terms transfers any ownership or other rights to you. You agree not to use our branding without our prior written permission."}
+      ],
+      "limitation": "Subscription-oriented terms do not fully explain one-off entitlement/update rights. No screenshot republication licence found."
+    },
+    {
+      "id": "S3",
+      "publisher": "getapps.cafe",
+      "title": "DripCleaner public HTML screenshot metadata",
+      "url": "https://getapps.cafe/app/dripcleaner",
+      "finalUrl": "https://getapps.cafe/app/dripcleaner",
+      "retrievedOn": "2026-10-21",
+      "retrievalPrecision": "date; exact request timestamp not retained",
+      "method": "One targeted HTML request because baseline text omitted image URLs. Not a re-verification of all existing facts.",
+      "snapshotPath": null,
+      "retainedExcerpts": [
+        {"section": "SoftwareApplication JSON-LD", "text": "\"publisher\":{\"@type\":\"Organization\",\"name\":\"getapps.cafe\",\"url\":\"https://getapps.cafe\"}"},
+        {"section": "SoftwareApplication JSON-LD", "text": "\"softwareVersion\":\"2.2.1\",\"dateModified\":\"2026-08-28T04:27:34.128Z\",\"screenshot\":\"https://files.getapps.cafe/dripcleaner-getapps-cafe-9998ed798b40f12b.png\""},
+        {"section": "app-screenshots-track", "text": "<img src=\"https://files.getapps.cafe/dripcleaner-getapps-cafe-9998ed798b40f12b.png\" alt=\"DripCleaner screenshot 1\" loading=\"lazy\">"},
+        {"section": "footer", "text": "© 2026 GetApps, LLC · 34 Brier Ave, Wilmington, DE 19805"}
+      ]
+    },
+    {"id": "S4", "publisher": "Breathing Room", "url": "https://breathing-room.chatic.ai/", "localEvidencePath": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "basis": "Reuse same-day source/public offer register; public release and privacy references retained there. Not newly fetched or runtime-tested."},
+    {"id": "S5", "publisher": "Breathing Room", "localEvidencePath": "docs/content/screenshots.json", "checkedOn": "2026-10-21", "basis": "Reuse current-source screenshot inventory; selected original hash independently checked."}
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "reviewer": "research-dripcleaner worker", "scope": "DripCleaner official documentation v2.2.1; not independent runtime observation", "evidenceClass": "documented-vendor-claim"},
+  "claims": [
+    {"id": "D01", "state": "verified", "sourceIds": ["S1", "S3"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "DripCleaner is offered by getapps.cafe as a macOS system cleaner.", "excerpt": "DripCleaner is a system cleaner for macOS.", "location": "identity and comparison lead"},
+    {"id": "D02", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "The page advertises v2.2.1, updated August 2026, for macOS and Windows x64/arm64.", "excerpt": "Updated August 2026 · v2.2.1\nDownload for\nmacOS\nv2.2.1\nDownload for\nWindows\nWindows (x64)\nv2.2.1\nWindows (arm64)\nv2.2.1", "conditions": "macOS minimum version, Mac architecture and Windows feature parity not verified; Breathing Room is not offered as a Windows replacement", "location": "availability matrix"},
+    {"id": "D03", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "The vendor describes a scan, review, then clean workflow with checkboxes; some categories preselect items.", "excerpt": "every scan lists items with their size and a checkbox; safe categories pre-select for you, risky ones (your files, your apps) stay unchecked until you choose.", "conditions": "Do not adopt 'safe' as an independent finding or imply nothing is preselected.", "location": "workflow review checklist and approval row"},
+    {"id": "D04", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "The documented Space Lens is an exploration-only, folder-by-folder size view.", "excerpt": "Pure exploration - nothing here is deletable", "location": "workflow exploration section"},
+    {"id": "D05", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "System Junk is documented to group user/browser/developer caches, logs and crash reports; the page names DerivedData and build caches.", "excerpt": "System Junk\n- user caches, logs, crash reports, developer-tool caches, and per-browser caches", "conditions": "Exact adapters, versions, paths and rebuild costs not verified. Reject universal 'all safe to remove' marketing.", "location": "developer-cache matrix"},
+    {"id": "D06", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "Large & Old Files is documented to list files at least 100 MB in Downloads, Documents, Movies and Desktop, largest first.", "excerpt": "finds big files (≥ 100 MB) scattered across your personal folders - Downloads, Documents, Movies, Desktop - sorted largest first", "conditions": "Vendor does not define MB units here; large is not disposable.", "location": "workflow original-file review"},
+    {"id": "D07", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "The vendor lists an Uninstaller, mail attachment cache cleanup, Trash review and startup-extension review.", "excerpt": "Uninstaller\n- every installed app sorted by disk usage", "conditions": "Does not prove complete app-residue removal or successful uninstall; each additional category is documented in S1 Highlights.", "location": "competitor strengths"},
+    {"id": "D08", "state": "verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "The documented clean step uses Trash for items the vendor calls safe, with confirmation for permanent deletes.", "excerpt": "Safe items go to the Trash (reversible); permanent deletes always ask first.", "conditions": "Not a recovery guarantee or measurement of newly free disk space; no cleanup executed.", "location": "deletion-method row"},
+    {"id": "D09", "state": "verified", "sourceIds": ["S1", "S2"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "DripCleaner is advertised at US$19.99 once for one device; membership Solo Cup US$3.99/month for one device or US$1.99/month paid annually; Family Roast US$7.99/month for up to five devices or US$3.99/month paid annually.", "excerpt": "Solo Cup ($3.99/month, 1 device) and Family Roast ($7.99/month, up to 5 devices), or $1.99 and $3.99 a month paid annually", "conditions": "All menu apps included. Annual rates are monthly equivalents, not a monthly-billed $1.99 plan. Annual totals/checkout not independently verified. Taxes and currency conversion may apply. Do not promise lifetime updates.", "location": "pricing matrix"},
+    {"id": "D10", "state": "verified", "sourceIds": ["S1", "S2"], "sourceUrl": "https://getapps.cafe/terms", "wording": "Activation is documented to require getapps.cafe sign-in; the subscription licence is personal, non-transferable and revocable, dependent on an active subscription. A seven-day membership trial requires a payment method and converts automatically unless cancelled.", "excerpt": "Starting a trial requires a valid payment method, and the trial converts into a paid subscription automatically", "conditions": "Sign-in excerpt in S1: 'open it, and sign in once with your getapps.cafe account.' No signup, trial or purchase tested. One-off entitlement terms beyond one-device offer remain unclear.", "location": "licence, account and billing caveats"},
+    {"id": "D11", "state": "not-verified", "sourceIds": ["S1", "S2"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "Minimum macOS, Apple Silicon/Intel coverage, signing/notarization, extra runtimes, fully offline operation, telemetry, helper grouping and recurring-growth monitoring are not verified.", "excerpt": "Guided first run\n- a short intro walks you through what the app does and helps you grant the one permission it needs", "conditions": "Permission identity not specified in retained copy. Missing documentation is not proof of feature absence.", "location": "unknown matrix cells"},
+    {"id": "D12", "state": "not-verified", "sourceIds": ["S1"], "sourceUrl": "https://getapps.cafe/app/dripcleaner", "wording": "No evidence supports measured cleanup savings, speed, blanket safety or guaranteed unrecoverable shredding in this packet.", "excerpt": "DripCleaner overwrites it with zeros before deleting, so it can't be recovered", "conditions": "Retained to flag an unverified vendor guarantee, not for endorsement or a shredding tutorial. No destructive tests permitted.", "location": "editorial exclusion"},
+    {"id": "B01", "state": "verified", "sourceIds": ["S4"], "sourceUrl": "https://breathing-room.chatic.ai/", "wording": "Breathing Room, which we build, is a free Apache-2.0 macOS 13+ preview with optional advertised AI Care at US$5/month or US$50/year.", "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance preview", "conditions": "capabilities.md pricing and installation tables: 0.1.0-preview.1; universal installer advertised, physical Intel untested; Apple Development signed, not Developer ID/notarized; Python 3.10+ prerequisite. Source implementations are not binary parity certification.", "location": "disclosed comparison offer"},
+    {"id": "B02", "state": "verified", "sourceIds": ["S4"], "sourceUrl": "https://breathing-room.chatic.ai/privacy/", "wording": "Breathing Room local inspection differs from its authenticated hosted AI; source supports grouped processes, activity history and exact saved daily-care approvals while the app stays running.", "excerpt": "Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.", "conditions": "capabilities.md source matrix and boundary sections. Relevant paths/process/storage outputs may reach service. Optional narrowly verified Ruff automatic mode prevents unconditional 'never acts without asking' language. No native tests or measured results in this job.", "location": "monitoring/approval/privacy matrix"}
+  ],
+  "matrix": [
+    {"dimension": "macOS and availability", "dripcleanerClaimIds": ["D01", "D02", "D11"], "breathingRoomClaimIds": ["B01"]},
+    {"dimension": "licence, activation and pricing", "dripcleanerClaimIds": ["D09", "D10"], "breathingRoomClaimIds": ["B01", "B02"]},
+    {"dimension": "scan, exploration and cleanup approval", "dripcleanerClaimIds": ["D03", "D04", "D08"], "breathingRoomClaimIds": ["B02"]},
+    {"dimension": "developer caches", "dripcleanerClaimIds": ["D05"], "breathingRoomEvidence": "S4 current capability matrix: npm, uv, pip, pnpm, Go, Bun, Yarn source discovery; compatibility not universally tested"},
+    {"dimension": "local/hosted and helper grouping/recurring growth", "dripcleanerClaimIds": ["D11"], "breathingRoomClaimIds": ["B02"]},
+    {"dimension": "runtime and installation caveats", "dripcleanerClaimIds": ["D10", "D11"], "breathingRoomClaimIds": ["B01", "B02"]}
+  ],
+  "conflicts": [
+    {"subject": "pricing", "directoryExcerpt": "One time purchase that costs up to $5, and / or subscription ranging between $10 and $15 per month.", "resolution": "Use current official D09; directory numbers conflict and must not appear as current prices."},
+    {"subject": "one-off licence", "resolution": "Product page advertises one-device one-off purchase; older general terms describe active subscriptions. Attribute purchase offer to product page; do not invent perpetual updates/transfer rights. Not blocking a bounded pricing comparison."}
+  ],
+  "visuals": [
+    {
+      "id": "dripcleaner-official-screenshot-1",
+      "productId": "dripcleaner",
+      "view": "Official app screenshot 1; specific UI view not visually inspected",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://getapps.cafe/app/dripcleaner",
+      "assetUrl": "https://files.getapps.cafe/dripcleaner-getapps-cafe-9998ed798b40f12b.png",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "sourceMetadataCheckedOn": "2026-10-21",
+      "capturedBy": null,
+      "productVersion": null,
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": null,
+      "heightPx": null,
+      "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Official gallery and JSON-LD identify this as a screenshot, not merely an OG image. Terms section 10 reserves rights and provides no publication licence. No permission request authorized. Asset deliberately not downloaded or hotlinked into a page.", "evidenceUrlOrPath": "https://getapps.cafe/terms", "credit": "DripCleaner / getapps.cafe"},
+      "caption": "Official DripCleaner app screenshot supplied by getapps.cafe; linked for research only, version/capture date and image contents not independently verified.",
+      "alt": "DripCleaner official app screenshot (vendor gallery image 1; descriptive alt must follow permitted visual inspection).",
+      "supportedClaimIds": [],
+      "limitations": ["Image bytes not retrieved; no hash invented.", "Does not satisfy publication image gate until rights, real app-UI contents, privacy, version relevance and descriptive alt are reviewed."],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "kind": "browser-preview",
+      "view": "Space",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "sourceManifest": "docs/content/screenshots.json",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "dataMode": "example",
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "reuse": {"status": "cleared", "basis": "First-party app-owner-requested UI capture, per existing inventory; third-party marks remain their owners' marks, no endorsement or blanket trademark licence inferred.", "evidenceUrlOrPath": "docs/content/screenshots.json"},
+      "privacyReview": {"status": "reviewed-in-source-inventory", "redactions": []},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredLabels": ["Current-source browser preview", "Example data only", "Not native scan or measured results"],
+      "limitations": ["Reused library record, not a fresh native capture or distributed-binary test.", "Keep example banner visible. Review readable contextual crop and target-page rights/privacy independently."],
+      "review": {"status": "inventory-reviewed; per-article-review-pending"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference",
+      "title": "Review a Mac cleanup scan without treating every large file as junk",
+      "slug": "dripcleaner-mac-workflow",
+      "intent": "Use DripCleaner's exploration-only Space Lens versus its selectable cleanup categories to separate investigation from deletion approval.",
+      "conclusion": "Inspect categories and originals before approving cleanup; a reclaimable headline is not permission or measured recovered space.",
+      "sections": ["Top official DripCleaner app figure after lead, once cleared", "Start with Space Lens: explore without deletion controls (D04)", "Review Overview preselection category by category (D03)", "Treat large originals and developer caches differently (D05–D06)", "Understand Trash versus permanent deletion (D08); no shredding guarantee", "When the question is returning growth, consider monitoring rather than another scan; disclose Breathing Room affiliation and caveats (B01–B02)", "Current-source example-data Breathing Room Space figure and decision checklist"],
+      "interactionPass": "Hand off a non-destructive decision checklist: original file or regenerable cache; restore/rebuild source known; selected automatically or deliberately; Trash or permanent removal. It must not operate on files or estimate invented savings.",
+      "internalLinks": ["/comparisons/", "/comparisons/dripcleaner/"],
+      "status": "brief-only-blocked; verify counterpart route exists before drafting links"
+    },
+    "comparison": {
+      "title": "Breathing Room vs DripCleaner: cleanup review or ongoing investigation",
+      "slug": "dripcleaner",
+      "intent": "Concise Mac purchase/workflow decision, not a repeat of the scan-review article.",
+      "lead": "DripCleaner documents category-based cleanup and a one-device purchase option; Breathing Room, which we build, is a maintenance preview with local inspection and optional hosted AI. Neither source packet proves a speed or safety winner.",
+      "rows": ["Mac/version requirements", "Review/selection and deletion method", "Folder exploration and developer caches", "Activity/helper monitoring: unknown for DripCleaner", "Account/hosted boundary", "One-off versus subscription conditions", "Installation and preview limits"],
+      "internalLinks": ["/comparisons/", "/blog/dripcleaner-mac-workflow/"],
+      "visualRequirement": "Cleared real competitor app screenshot plus current-source labeled Breathing Room view; neither logos nor link-only visual satisfies the gate.",
+      "status": "brief-only-blocked"
+    }
+  },
+  "decisionGuidance": {
+    "competitorAdvantages": ["Documented one-device one-off offer for readers avoiding a recurring app subscription (D09; not a lifetime-update promise).", "Documented category-based scan review, exploration-only Space Lens and listed uninstaller (D03–D07), useful for a deliberate periodic tidy."],
+    "competitorTradeoffs": ["Activation requires an account; membership is recurring and trial needs payment method (D10).", "Minimum OS, Mac architectures, notarization and monitoring coverage remain not verified; not negative feature claims (D11).", "Safety, unrecoverable shredding and headline savings are not independently established (D12)."],
+    "breathingRoomFit": "If the task is recurring space-growth investigation with app/helper context, source implements activity/process views and optional hosted assistance (B02); keep preview, Python, authentication/data-sharing and runtime caveats visible.",
+    "breathingRoomTradeoffs": "Non-notarized preview; untested physical Intel/clean-machine behavior; Python 3.10+; optional AI needs account/internet and advertised payment; no certified binary parity or measured savings (B01–B02).",
+    "avoid": ["No unsupported 'best', safer/faster or savings claims.", "No all-offline or no-tracking assertions from directory tags.", "No Breathing Room Windows support implied by competitor downloads.", "No guarantee that every cache is disposable or zero overwrite ensures recovery prevention."]
+  },
+  "blockers": [
+    {"id": "VISUAL-RIGHTS", "critical": true, "diagnostic": "Official DripCleaner app screenshot URLs found, but no reuse permission established. Terms reserve content/branding rights. No competitor image downloaded. Link-only fallback is research evidence, not the required on-page competitor UI visual.", "unblock": "An independently verified vendor/rights-holder press licence or separately authorized permission, followed by permitted asset retrieval, original hash/dimensions and actual UI/privacy/legibility review. Do not contact anyone or start an account under this job."}
+  ],
+  "noncriticalUnknowns": ["Official repository and upstream lineage", "Exact minimum macOS, Mac architectures and signing/notarization", "Permission identity and runtime prerequisites", "Offline/hosted/telemetry behavior beyond documented account activation", "Helper grouping and recurring monitoring", "One-off update/transfer terms; annual total/checkout behavior", "Competitor screenshot capture date, depicted build and UI details"],
+  "validation": ["Baseline official SHA-256 matches batch-1 record exactly.", "Retained directory and selected first-party image SHA-256 computed from existing bytes.", "Public official terms read for missing licence/currency/trial/rights conditions; public HTML read once for image URLs.", "No image downloads, browser sessions, cleanup, signup, purchase, messages, commits, site changes or queue updates performed.", "Site checks/build/tests not applicable: research-only owned files, no marketing files changed. Independent article and rendered QA remain pending."]
+}

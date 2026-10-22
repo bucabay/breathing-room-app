@@ -1,0 +1,83 @@
+{
+  "jobId": "research-plumby",
+  "checkedAtUtc": "2026-10-21T21:58:27.051933+00:00",
+  "outcome": "passed-research-checks-with-explicit-blockers",
+  "checks": [
+    {
+      "check": "JSON parse and blocked gate",
+      "outcome": "passed",
+      "detail": "Research parses; both critical gates remain blocked."
+    },
+    {
+      "check": "Claim/source integrity",
+      "outcome": "passed",
+      "detail": "15 unique claim records have valid sources, excerpts, URLs and check dates."
+    },
+    {
+      "check": "Reused baseline raw SHA-256: docs/content/.runtime/verification-2/plumby-directory.json",
+      "outcome": "passed",
+      "detail": "55a050832e1b9306508a678b072d1572c315ac88a76139ec478f4b719d74751f"
+    },
+    {
+      "check": "Reused baseline raw SHA-256: docs/content/.runtime/verification-2/plumby-official.json",
+      "outcome": "passed",
+      "detail": "7d0cf29f00d22ff4e806dc77c9791c895232e1544aa1c710136cf4de52cb71aa"
+    },
+    {
+      "check": "Exact homepage conflict passage retained",
+      "outcome": "passed",
+      "detail": "Old verified source contains irreversible-backup wording; conflicting official pricing.md excerpt recorded in P08."
+    },
+    {
+      "check": "Copied public HTML original hash",
+      "outcome": "passed",
+      "detail": "b0105a3171e08d5da664197fefb2aaece5541912be45f4a684245a6178f1f4d8"
+    },
+    {
+      "check": "Official app asset markup",
+      "outcome": "passed",
+      "detail": "Public homepage identifies exact Overview asset and dimensions; not a decoded image inspection."
+    },
+    {
+      "check": "Public release metadata",
+      "outcome": "passed",
+      "detail": "1.18.1 is public page metadata only, not a downloaded/tested binary."
+    },
+    {
+      "check": "Inherited BR asset original SHA-256",
+      "outcome": "passed",
+      "detail": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+    },
+    {
+      "check": "Visual disclosure and rights gates",
+      "outcome": "passed",
+      "detail": "No competitor image downloaded; original/published hashes remain null; BR example-data label required."
+    },
+    {
+      "check": "Canonical identity",
+      "outcome": "passed",
+      "detail": "Separate identity retained; no alias merge or duplicate draft."
+    },
+    {
+      "check": "Owned folder file set",
+      "outcome": "passed",
+      "detail": "Only research packet and raw public HTML snapshot before generated validation log; no site edits."
+    }
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/plumby/research.json": "a7ff44aeb142c58f8457a2c25effe4e0b3dd7646918dd042027a7477535f7cc1",
+    "docs/content/competitors/plumby/research.md": "5162e6e9fab91229f794b1d0b9ba54296c2a8c5398132280c4672ef09d23567e",
+    "docs/content/competitors/plumby/sources/homepage-visual.html": "b0105a3171e08d5da664197fefb2aaece5541912be45f4a684245a6178f1f4d8"
+  },
+  "notRun": [
+    "native app/runtime tests",
+    "competitor install, scan or cleanup",
+    "marketing pnpm check/build/test (no site files changed)",
+    "browser rendering or independent publication review"
+  ],
+  "draftingAllowed": false,
+  "blockers": [
+    "backup-method-conflict",
+    "competitor-image-gate"
+  ]
+}

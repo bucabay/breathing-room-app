@@ -1,0 +1,20 @@
+{
+  "jobId": "research-maccleanse",
+  "result": "research-structure-checks-passed; drafting-blocked",
+  "checks": [
+    {"check":"Python json.loads of research.json, unique IDs and required claim fields","outcome":"pass: 7 sources, 15 claims; all source references resolve"},
+    {"check":"Product-matrix claim-reference validation","outcome":"pass: 10 rows; all referenced claims resolve; unknown competitor dimensions explicitly qualified"},
+    {"check":"hashlib.sha256 on retained discovery, CleanMyMac p4, Mole p5 and official baseline snapshots","outcome":"pass: all 4 files match recorded SHA-256 hashes"},
+    {"check":"hashlib.sha256 on selected existing Breathing Room Space PNG","outcome":"pass: 9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a matches screenshot library"},
+    {"check":"Whitespace-normalized baseline-only claim excerpts and supporting passages searched in original official text","outcome":"pass: all applicable excerpts found; not an independent truth or runtime test"},
+    {"check":"Draft/visual consistency assertions","outcome":"pass: status blocked, draftingAllowed false, competitor visual link-only, null downloaded image path and zero image downloads"},
+    {"check":"Official EULA, manual and legal page content inspection using read-only webfetch; targeted official HTML image-link inspection using urllib","outcome":"completed: proprietary licence, saved-preset distinction, approval-language conflict and explicit image-consent restriction documented"}
+  ],
+  "artifacts": [
+    {"path":"docs/content/competitors/maccleanse/research.json","bytes":32628,"sha256":"3d25de37693c24cbf01aaa8fa3a654c397fb82909e2f64ecebd4c02a6a3cc310"},
+    {"path":"docs/content/competitors/maccleanse/research.md","bytes":13638,"sha256":"dd4698b6222e82b0881ebfd842843666273a100ececad869048ecb83b999d3e7"}
+  ],
+  "notPerformed": ["Competitor image download or reproduction", "Fresh competitor-pixel or final-page visual approval", "Native app installation/testing or cleanup", "Browser interaction", "Checkout/account/credentials access", "Marketing build/check/test (no site edits)", "Independent editorial scoring or publication review"],
+  "blocker": "Official legal policy requires prior written consent for website-image reproduction. No consent exists; retained app-image links do not pass the mandatory on-page competitor visual gate. Drafting must remain blocked.",
+  "unblock": "Authorized rights evidence or an independently authorized compliant app-image source, followed by permitted image retrieval, original/published hashes, capture/version/privacy review and independent page review. No scheduled permission message authorized."
+}

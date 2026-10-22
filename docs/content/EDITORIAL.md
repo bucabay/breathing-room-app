@@ -2,6 +2,17 @@
 
 Editorial policy established 2026-10-21. This is a working standard, not publication approval for any article or verification of current product claims.
 
+## October22 execution update: drafts, rights-safe visuals and separate page intents
+
+This update controls where later sections imply that missing competitor-image permission prevents research handoff or drafting. The user requested individual tools, comparison and alternatives pages plus five roundup posts; work must produce actual useful content, not endlessly repeat the same research blocker.
+
+- **Research completion is an evidence handoff**, not publication approval. A retained source-cited packet can be handed to drafting while some prices, version details or screenshot permissions remain unknown. Keep the original blockers in the packet; do not rewrite them as verified. If a claim is unknown, omit it or explicitly state the bounded uncertainty. Do not recommend installation on an unverified OS or invent a price.
+- **Drafts may be created before all publication gates pass.** They stay `status: review`, `published: false`; missing assets/decisions go in a separate review handoff, not fabricated UI, invented facts or public placeholder pages. A prior `draftingAllowed:false` solely from the old image rule is historical, not a prohibition on this source-backed draft stage. Unknown official identity or too little real evidence still prevents substantive drafting.
+- **Two legitimate visual routes:** (A) current labeled first-party app view plus permitted competitor UI with provenance; or (B) current labeled first-party view plus an original, evidence-backed workflow/decision diagram, with an attributed text link to the competitor's official screenshot/guide when available. Route B must clearly say it is a diagram of documented behavior, not the competitor UI or our test. Never redraw a fake competitor app, bypass terms, hotlink restricted images or invent reuse permission. Neutral tool profiles may use a useful original decision aid rather than a decorative screenshot. The reviewer assesses whether the actual page is clear and properly evidenced, not whether a screenshot permission request was sent.
+- **Four distinct intents per eligible canonical product:** `/tools/<id>/` is a neutral factual profile with official links; `/comparisons/<id>/` is a sourced Breathing Room-versus-product decision; `/alternatives/<id>/` considers several genuinely relevant, verified replacements; `/blog/<workflow>/` teaches a concrete workflow. These are not four copies of a renamed template. Merge/skip verified aliases; if an intent cannot earn a useful page, document the exception rather than publishing doorway filler.
+- **User-requested roundups are honest editorial shortlists**, not benchmark leaderboards. Explain selection criteria, source dates, affiliation and limitations; no fabricated tests, stars, performance ranks or search-volume claims. Keep free core versus paid AI, open source versus Commons-Clause/source-available, and CLI versus native-app licences distinct.
+- Independent factual, visual, SEO and rendered-page review remains mandatory before publication. Permission blockers are not silently waived: restricted competitor images are omitted under the documented route-B alternative. Safety/runtime claims and unresolved material facts are never invented to fill a page or meet a count.
+
 ## Scope and precedence
 
 Write for Mac owners, developers, builders and creators trying to understand storage, investigate app activity and make deliberate maintenance decisions. Help readers even when they choose another app or built-in macOS tools.
@@ -103,7 +114,7 @@ Refresh volatile pricing, availability and comparison facts within 30 days and b
 
 ## Screenshot provenance schema and visual gate
 
-Every competitor article/comparison needs at least two useful visual elements: one real Breathing Room view and one competitor **app UI** image from its official site or an authoritative listing. A logo, landing-page capture, generic diagram or social cover alone does not satisfy either product-view requirement. Add diagrams/calculators only when useful. Other workflow articles still need two substantial real/built visuals, with relevant real app views where they demonstrate the workflow. No stock photos or fabricated/generated app UI.
+Every substantive competitor article/comparison needs useful real/built visuals under route A or B in the October22 update. Prefer a labeled Breathing Room view and a permitted competitor app UI image. When permission is unavailable, use a source-backed original workflow/decision diagram with an attributed official screenshot/guide link instead. A decorative logo/cover is not evidence, and a diagram must not impersonate app UI. Other workflow articles still need substantial useful real/built visuals. No stock photos or fabricated/generated app UI.
 
 At least one useful visual sits directly after the lead, and another supports a later idea. Visuals must be legible on narrow screens and in both themes; long diagrams should stack vertically instead of shrinking labels. Provide descriptive alt text, captions and adjacent source credit. Image dimensions and successful loads alone are not visual approval.
 
@@ -145,7 +156,7 @@ Use this record shape per screenshot (field specification, not evidence of an ac
 - For third-party assets, require exact source page URL, asset URL, actual retrieval time and reuse basis. Do not invent the vendor's capture date; leave it unknown and distinguish it from our retrieval time. `capturedBy` identifies the actual capturer if known, not the person who downloaded it.
 - Retain original and published asset hashes; log crop, resize and privacy redactions in `edits`. Do not alter app labels, numbers or outcomes. Avoid capturing private data in the first place; never copy sensitive paths, account details or tokens into public packets. Retain sensitive originals only within separately authorized private storage.
 - Reuse status is `cleared`, `pending`, `denied` or `link-only`. Public availability is not a reuse licence. Record licence/permission evidence, credit and conditions. Never send a permission request in a scheduled job without authorization.
-- Unclear access, rights or capture provenance blocks the screenshot gate. An attributed link to the official visual is an acceptable research fallback, **not** automatic satisfaction of the required on-page image gate. Keep the draft blocked pending rights/access or an explicitly approved policy decision; never quietly waive it.
+- Unclear access, rights or capture provenance blocks copying that screenshot, not source-backed drafting. Use route B from the October22 update where appropriate: an original documented-workflow visual plus an attributed official image/guide link, with explicit limitations. A bare link alone is not a visual. Record the chosen route for independent review; never imply permission or invent an app capture.
 - Earlier browser-preview Breathing Room images must say example data and earlier preview in captions. They are not current native evidence or measured savings. A current-native requirement cannot be satisfied by relabeling them.
 
 ## QA gate: at least 85/100, with no blockers
@@ -166,7 +177,7 @@ Award each subcriterion 0 to its stated maximum, with reasons, source/check refe
 
 - Unsupported material claim, invented result/experience, stale material pricing/availability, unresolved source conflict, or unknown competitor cell presented as “No.”
 - Undisclosed affiliation, misleading direct-substitute framing, or omission of a material preview, hosted-data, paid-feature, runtime or installation limitation.
-- Missing required product visuals, fabricated UI, unclear reuse rights, missing provenance/alt/caption, private information exposed, or example data presented as real measurement.
+- Missing useful visuals under either approved route, fabricated UI, copied imagery with unclear reuse rights, missing provenance/alt/caption, private information exposed, or example data presented as real measurement.
 - Unsafe advice or execution, claims of guaranteed safety/speed/savings, destructive testing or recommendations to bypass system protections.
 - Duplicated intro, absent top visual, under-illustration or illegible diagrams/tables that prevent the required reader experience.
 - Failed or unperformed required checks, broken material routes/assets, misleading schema/dates, draft leakage, nonfunctional tools, or a runnable tutorial without actual reproduction evidence.

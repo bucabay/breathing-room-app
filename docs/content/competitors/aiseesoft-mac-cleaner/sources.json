@@ -1,0 +1,52 @@
+[
+  {
+    "id": "official-home",
+    "url": "https://www.aiseesoft.com/mac-cleaner/",
+    "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+    "retrievedAtUtc": "2026-10-21T19:08:09.581052+00:00",
+    "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-official.json",
+    "sha256": "5f96f325d42f311820f3723c7ff29e7855963e937eec4f0cfb5ef07547aa83ce",
+    "reused": true,
+    "publicationDate": null,
+    "scope": "Public vendor documentation"
+  },
+  {
+    "id": "directory",
+    "url": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+    "finalUrl": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+    "retrievedAtUtc": "2026-10-21T19:04:53.433Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-directory.json",
+    "sha256": "cc9ac03be0d9a65bcdbdd96ba01b0058c8c75c23a6a0c325c9151f8e3cc713b0",
+    "reused": true,
+    "publicationDate": null,
+    "scope": "Discovery only"
+  },
+  {
+    "id": "guide",
+    "url": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+    "finalUrl": "https://www.aiseesoft.com/mac-cleaner/tutorial.html",
+    "retrievedAtUtc": "2026-10-21T19:54:50.795658+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/guide.html",
+    "sha256": "806e47e49a0e5324df1f43e0d67d42e2786b010eab1226c6cd0860d9296972fb",
+    "textPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/guide.txt",
+    "textSha256": "1b660fe0edd9041e385a4405b6d8c5cb833b0824b05aa20a7a252dbb4615885f",
+    "publicationDate": null,
+    "scope": "Unversioned public vendor documentation",
+    "reused": false
+  },
+  {
+    "id": "purchase",
+    "url": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+    "finalUrl": "https://www.aiseesoft.com/purchase/mac-cleaner.html",
+    "retrievedAtUtc": "2026-10-21T19:54:51.788339+00:00",
+    "httpStatus": 200,
+    "snapshotPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/purchase.html",
+    "sha256": "df7fbc77bb9278f60ac0531e30fa662e884cac4ddff3f944117f99adbc89229a",
+    "textPath": "docs/content/competitors/aiseesoft-mac-cleaner/sources/purchase.txt",
+    "textSha256": "e426766af915910a8d62d18ed5a3fd8c632e19c541366a92063714be0546d0e9",
+    "publicationDate": null,
+    "scope": "Unversioned public vendor documentation",
+    "reused": false
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-mint-dzg-studio-",
+  "productId": "mint-dzg-studio-",
+  "stage": "research",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "reviewer": "scheduled research worker; not independent publication reviewer",
+  "dateNote": "Programme date is 2026-10-22; new browser/system retrieval timestamps actually report 2026-10-21 UTC and are preserved without alteration.",
+  "identity": {
+    "officialName": "Mint",
+    "publisher": "DZG Studio LLC",
+    "homepage": "https://mintstorage.app/",
+    "canonicalOwnerId": "mint-dzg-studio-",
+    "aliases": ["Mint (DZG Studio)", "Mint: Disk Cleaner & Organizer", "Mint: File Organizer & Cleaner"],
+    "aliasEvidence": ["S1", "S4", "S5"],
+    "aliasSkipDecision": "Keep this one canonical product packet. App Store title variants retain the same app ID 6762415711 and DZG publisher; do not create separate articles for those names. No evidence connects Mint to PowerMyMac; no cross-product merge is warranted.",
+    "releaseRepository": "https://github.com/dzg-studio/mint-releases/releases",
+    "repositoryEvidence": "S6 official download-page links; release repository not independently inspected, not established as source code",
+    "sourceCodeRepository": null,
+    "fit": "direct-macos-storage-overlap-with-adjacent-file-organization",
+    "fitReason": "Documented disk scan, cleanup and developer-cache workflows overlap Breathing Room; folder organization and storage optimization extend beyond the verified Breathing Room capabilities. Not feature-equivalent.",
+    "skipProduct": false,
+    "deadProductEvidence": null
+  },
+  "discovery": {
+    "url": "https://alternativeto.net/software/mint-dzg-studio-/about/",
+    "retrievedAtUtc": "2026-10-21T19:09:24.711Z",
+    "method": "Reused batch-1 product and retained directory DOM; no repeat directory request",
+    "edge": "Directory Official Website link to https://mintstorage.app/",
+    "seedPagination": "Not retained in this individual baseline snapshot; do not invent pagination or a traversal seed.",
+    "snapshotPath": "docs/content/.runtime/verification-1/mint-dzg-studio--directory.json",
+    "sha256": "135c5e928b6bddbf4d1f3a161e3e8cc9edd769893341458e357beddced9f08ea"
+  },
+  "sources": [
+    {"id":"S1","publisher":"AlternativeTo","url":"https://alternativeto.net/software/mint-dzg-studio-/about/","finalUrl":"https://alternativeto.net/software/mint-dzg-studio-/about/","retrievedAtUtc":"2026-10-21T19:09:24.711Z","snapshotPath":"docs/content/.runtime/verification-1/mint-dzg-studio--directory.json","sha256":"135c5e928b6bddbf4d1f3a161e3e8cc9edd769893341458e357beddced9f08ea","scope":"Discovery and naming only; older directory pricing not current product proof","reused":true},
+    {"id":"S2","publisher":"Mint","url":"https://mintstorage.app/","finalUrl":"https://mintstorage.app/","retrievedAtUtc":"2026-10-21T19:09:32.900050+00:00","snapshotPath":"docs/content/.runtime/verification-1/mint-dzg-studio--official.json","sha256":"3af6579d7d01f4be414672d1ecc9476314b421f56b700167aea3ab7c9e6f2783","scope":"Vendor-documented workflows, not hands-on evidence","reused":true},
+    {"id":"S3","publisher":"Mint","url":"https://mintstorage.app/pricing/","finalUrl":"https://mintstorage.app/pricing/","retrievedAtUtc":"2026-10-21T19:11:49.806412+00:00","snapshotPath":"docs/content/.runtime/verification-1/mint-pricing-extra.json","sha256":"45173bdc9ff712a2724861be628bef6785fc552dfce3ec9431967fc329a48561","scope":"Direct edition pricing; do not apply to marketplaces","reused":true},
+    {"id":"S4","publisher":"Mint / DZG Studio LLC","url":"https://mintstorage.app/terms","finalUrl":"https://mintstorage.app/terms","retrievedAtUtc":"2026-10-21T21:47:14.047Z","snapshotPath":"docs/content/competitors/mint-dzg-studio-/sources/terms-browser.json","sha256":"8ac46173f39289acb30ef6e887e0e1f334f9bba0c354d1efb462a27de0954c30","publicationDate":"2026-10-17","scope":"Licence, version-dependent entitlements, publisher, analytics disclosures and asset rights"},
+    {"id":"S5","publisher":"Apple App Store / DZG Studio LLC","url":"https://apps.apple.com/us/app/mint-file-organizer-cleaner/id6762415711?mt=12","finalUrl":"https://apps.apple.com/us/app/mint-disk-cleaner-organizer/id6762415711?mt=12","retrievedAtUtc":"2026-10-21T21:47:03.856Z","snapshotPath":"docs/content/competitors/mint-dzg-studio-/sources/app-store-browser.json","sha256":"b0230d7bf0934821a7f99ff7a34972298c604e3cce5ab7aca48859c9c871da6d","scope":"US Mac App Store 1.0.84; not Direct entitlement evidence"},
+    {"id":"S6","publisher":"Mint","url":"https://mintstorage.app/download/","finalUrl":"https://mintstorage.app/download/","retrievedAtUtc":"2026-10-21T21:47:20.586Z","snapshotPath":"docs/content/competitors/mint-dzg-studio-/sources/download-browser.json","sha256":"639a902f55aa8110629783af679fe8a8dfb33375051e9d841fad41e55162699a","publicationDate":"Edition table says as of October 18, 2026","scope":"Direct 1.1.1; Setapp 1.0.83; App Store 1.0.84; vendor offer not binary verification"},
+    {"id":"S7","publisher":"Mint","url":"https://mintstorage.app/guides/disk/","finalUrl":"https://mintstorage.app/guides/disk/","retrievedAtUtc":"2026-10-21T21:46:54.110Z","snapshotPath":"docs/content/competitors/mint-dzg-studio-/sources/disk-browser.json","sha256":"e27c3b816aa6f97a3d06c95c0515f4938c65f9568b8deadc37056a0664b8a2de","scope":"Vendor guide with HTML UI illustration, zero image elements; not a verified native screenshot"},
+    {"id":"B1","publisher":"Breathing Room capability verification worker","url":"https://breathing-room.chatic.ai/","retrievedAtUtc":"2026-10-21; exact baseline retrieval time unavailable","snapshotPath":"docs/content/capabilities.md","scope":"Reuse current one-day-old source/public verification; no new runtime claims"},
+    {"id":"B2","publisher":"Breathing Room screenshot-library worker","url":"http://127.0.0.1:1431/","retrievedAtUtc":"2026-10-21 inventory review; capture time recorded in visual","snapshotPath":"docs/content/screenshots.json","scope":"Current-source browser example UI, not native measurements"}
+  ],
+  "claims": [
+    {"id":"C01","wording":"Mint is published by DZG Studio LLC.","sourceIds":["S4"],"excerpt":"Mint is published by DZG Studio LLC.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-terms","location":"identity"},
+    {"id":"C02","wording":"Mint is proprietary software, not verified open source.","sourceIds":["S4"],"excerpt":"Mint, including its name, logo, user interface design, source code, documentation, and all related materials, is the intellectual property of the Mint team","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-terms","conditions":"Non-exclusive, non-transferable, revocable use licence; no source-code licence established","location":"licence row"},
+    {"id":"C03","wording":"The official download offers macOS 14 or later and advertises Direct 1.1.1; the publisher's download description names Apple silicon and Intel.","sourceIds":["S6","S5"],"excerpt":"macOS 14 or later; Mint from our site Version 1.1.1","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Architecture statement read with WebFetch on download URL; not retained in browser DOM snapshot. App Store independently says macOS 14.0 or later. Hardware execution untested.","location":"requirements row"},
+    {"id":"C04","wording":"Direct offers unlimited free scans and memory release; from 1.0.96 cleanup, Optimize, uninstall and organizing share 1 GB weekly, including Auto Care, resetting Monday.","sourceIds":["S3","S4"],"excerpt":"From Direct 1.0.96, cleanup, Optimize, app uninstall and organizing share one free 1 GB a week, including Auto Care; it resets on Monday.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Setup actions do not count; post-setup actions count from first run in current terms. Memory continues when allowance exhausted. Not marketplace terms.","location":"pricing/free tier"},
+    {"id":"C05","wording":"Direct one-time pricing is $39.99 for one Mac plus $20 per additional Mac up to five; Rent to Own is four monthly payments of $9.99 ($39.96 before tax) for one Mac.","sourceIds":["S3","S4"],"excerpt":"A One-Time purchase includes every Mint 1.x release, and installed versions may be used indefinitely. Rent to Own ownership includes the same.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-offer","conditions":"Dollar currency code not explicit in retained sources: do not silently label USD. Later major release may be optional separate purchase. Rent to Own stops after fourth payment; early cancellation differs. Marketplaces separate; no purchase tested.","location":"pricing row"},
+    {"id":"C06","wording":"Mint groups disk findings into Optimizable, Safe to clean, Yours and Keep; the guide says a scan only reads and Yours waits for the user's decision.","sourceIds":["S2","S7"],"excerpt":"A scan only reads. Nothing changes until you press a button.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Category labels are not independent guarantees that all listed files are disposable","location":"workflow"},
+    {"id":"C07","wording":"Mint documents folder organization by source, type, date or topic, manual or scheduled while running, and storage changes over time.","sourceIds":["S2"],"excerpt":"Pick a folder and a template, and Auto Care sorts new files on your schedule while Mint is running.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Not hands-on validation; avoid implying no recurring-growth monitoring","location":"workflow and recurring-growth row"},
+    {"id":"C08","wording":"The edition table lists Xcode/Homebrew cleanup, memory release and uninstall for Direct/Setapp, not App Store; CLI/MCP/Raycast are Direct-only in that table.","sourceIds":["S6"],"excerpt":"Clean Xcode builds and Homebrew caches; CLI, MCP and Raycast for AI agents","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-edition-table","conditions":"Table versions Direct 1.1.1, Setapp 1.0.83, App Store 1.0.84, dated October 18; no integration executed","location":"edition comparison"},
+    {"id":"C09","wording":"Mint's terms describe local file analysis but also edition/version-dependent usage analytics; do not claim no telemetry.","sourceIds":["S4"],"excerpt":"The limited app-opened and setup signals described in the Privacy Policy continue when sharing is off.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-policy-not-audit","conditions":"Direct 1.0.76/Setapp 1.0.36 default sharing after disclosure; App Store separate choice. Privacy policy/backend not audited; external MCP client privacy remains unverified here.","location":"local/hosted boundary"},
+    {"id":"C10","wording":"The US App Store listing shows 1.0.84 and describes a different free tier from current Direct terms.","sourceIds":["S5","S4","S6"],"excerpt":"Version 1.0.84; Scanning and organizing your files by hand are free, with no limit.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"marketplace-listing","conditions":"Terms also describe hypothetical/edition 1.0.92 weekly limits. Do not assign those to the observed 1.0.84 listing. Regional IAP prices not verified.","location":"edition warning"},
+    {"id":"C11","wording":"Mint's download page advertises Apple notarization; this worker did not inspect a binary signature.","sourceIds":["S6"],"excerpt":"Notarized by Apple","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-disclosure-not-binary-test","location":"install caveat"},
+    {"id":"C12","wording":"Breathing Room is a macOS 13+ preview with a free local core and optional advertised AI Care at $5 USD/month or $50 USD/year.","sourceIds":["B1"],"excerpt":"The published preview explicitly lacks clean-machine and physical-Intel runtime validation, Developer ID signing, notarization","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","conditions":"0.1.0-preview.1; Python 3.10+; hosted AI needs internet/authentication and sends relevant tool context. Physical Intel untested; not production-ready. Price is an offer, not billing test.","location":"Breathing Room matrix and caveats"},
+    {"id":"C13","wording":"Breathing Room source implements grouped app/helper CPU-memory views, sampled activity and developer-cache discovery.","sourceIds":["B1"],"excerpt":"Native sampling groups helpers through parent/app relationships and exposes CPU/memory.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-inspection","conditions":"Not distributed-binary parity or forensic writer attribution. Saved exact approvals for Daily care; app must run. Optional narrowly verified Ruff automatic mode prevents an unconditional never-deletes-without-asking claim.","location":"comparison trade-offs"}
+  ],
+  "matrix": [
+    {"dimension":"macOS / versions / installation","mintClaimIds":["C03","C10","C11"],"breathingRoomClaimIds":["C12"]},
+    {"dimension":"licence","mintClaimIds":["C02"],"breathingRoom":"Apache-2.0 desktop source; not hosted service entitlement (B1)"},
+    {"dimension":"pricing and edition conditions","mintClaimIds":["C04","C05","C10"],"breathingRoomClaimIds":["C12"]},
+    {"dimension":"local versus hosted","mintClaimIds":["C09"],"breathingRoomClaimIds":["C12"]},
+    {"dimension":"scan / cleanup / approval model","mintClaimIds":["C06","C08"],"breathingRoomClaimIds":["C13"]},
+    {"dimension":"recurring growth / scheduling","mintClaimIds":["C07","C08"],"breathingRoomClaimIds":["C13"]},
+    {"dimension":"developer caches","mintClaimIds":["C08"],"breathingRoomClaimIds":["C13"]},
+    {"dimension":"app/helper CPU and memory grouping","mint":"not verified; memory release is not proof of process grouping","breathingRoomClaimIds":["C13"]},
+    {"dimension":"Mint exact cleanup approval schema / runtime dependencies","mint":"not verified beyond documented scan/read and review steps; do not infer no runtime requirements","mintClaimIds":["C06"]}
+  ],
+  "visuals": [
+    {
+      "id":"mint-app-store-map-candidate","productId":"mint-dzg-studio-","kind":"listing-asset","view":"Disk/storage map screenshot candidate",
+      "sourcePageUrl":"https://apps.apple.com/us/app/mint-disk-cleaner-organizer/id6762415711?mt=12",
+      "assetUrl":"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/93/7b/aa937b97-d99a-b203-ce92-dd6e79ab64a1/02-map.png/1286x804bb.webp",
+      "retrievedAtUtc":null,"sourcePageInspectedAtUtc":"2026-10-21T21:47:03.856Z","capturedAtUtc":null,"capturedBy":null,"productVersion":null,
+      "dataMode":"vendor-illustration","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "reuse":{"status":"link-only","basis":"Public App Store screenshot URL found; no reproduction licence established. Mint terms section 8 reserves UI/material rights and requires written permission for branding.","evidenceUrlOrPath":"https://mintstorage.app/terms","credit":"Mint / DZG Studio LLC via Apple App Store"},
+      "caption":"Mint storage-map image supplied on its App Store listing; version and capture date unknown. Vendor example, not our test.",
+      "alt":"Mint storage-map screenshot linked from the Mac App Store listing.",
+      "limitations":["Asset not downloaded or independently visually approved; source DOM reports displayed 643 by 402 pixels.","Not yet accepted as publication-ready real UI; image must be opened and reviewed after rights clearance.","Link-only research fallback does not satisfy on-page screenshot gate."],
+      "review":{"status":"pending"}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","kind":"browser-preview","view":"Space",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00",
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; no blanket third-party trademark licence","evidenceUrlOrPath":"docs/content/screenshots.json"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "limitations":["Current relative to October 21 source capture, not proof of today's native/release UI.","Keep example-data banner and caption visible; no measured savings.","Original hash verified in this job; visual/privacy review reused from inventory, page-context independent review pending."],
+      "review":{"status":"inventory-reviewed; publication-context-pending"}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"blocked-proposal-not-draft","track":"search-reference","title":"Before cleaning an AI workspace: separate rebuildable files from session history","slug":"review-ai-workspace-files-before-cleanup",
+      "primaryIntent":"Mac developers deciding what may be rebuilt versus what preserves an AI coding session; not a renamed Mint comparison",
+      "lead":"Do not treat an old worktree or agent session as disposable merely because the code is in Git. Classify ownership, active use and rebuild cost before approving changes.",
+      "sections":["Record the active project and session context without executing cleanup","Read Mint's four buckets as vendor classifications, not a guarantee","Separate build output, caches, worktrees and session history","Review one location and recovery path at a time","Choose file organization/storage optimization or app-activity investigation according to the job"],
+      "evidence":["C06","C07","C08","C12","C13"],
+      "additionalEvidenceRequired":"Any concrete Git/session-loss mechanism or executable procedure needs official tool documentation before drafting; current source only establishes Mint's attributed rationale.",
+      "interactionPass":"Hand off a static decision checklist: owner known? in use? reproducible? independent backup? exact proposed action understood? Unknown means stop/review, never auto-delete. No filesystem access or claimed recovered bytes.",
+      "visualPlacement":"Mint screenshot after lead only if cleared; Breathing Room Space preview beside the alternate investigation workflow with example-data labels.",
+      "links":["/comparisons/","/comparisons/mint-dzg-studio-/","/tools/"],
+      "disclosure":"Breathing Room, which we build"
+    },
+    "comparison": {
+      "status":"blocked-proposal-not-draft","title":"Breathing Room vs Mint: storage review or file organization?","slug":"mint-dzg-studio-",
+      "primaryIntent":"Concise Mac purchase/workflow decision, explicitly Direct versus marketplace editions",
+      "structure":["Conclusion and affiliation","Sourced version/edition matrix","Choose Mint for documented folder organization or identical-file optimization","Consider Breathing Room for its source-implemented app/helper and activity investigation with preview caveats","Pricing, analytics, installation and unresolved evidence","Link to deeper workflow guide"],
+      "mintAdvantages":["Documented file organization templates and optimization workflow (C06/C07)","Direct CLI/MCP/Raycast and Xcode/Homebrew cleanup (C08)","Vendor-advertised notarization versus Breathing Room's non-notarized preview disclosure (C11/C12); not a comparative binary test"],
+      "breathingRoomFit":["Source-implemented grouped app/helper activity and developer-cache investigation (C13); Mint grouping remains unknown, not absent","Free local source-available core with optional hosted AI offer (C12); do not claim cheaper or entirely offline AI"],
+      "tradeOffs":["Mint has version/channel-specific allowances and proprietary terms; local processing does not mean no analytics","Breathing Room is a preview with Python/runtime, signing and physical-Intel validation caveats; hosted AI requires authentication/internet","Neither vendor documentation nor example screenshots establish measured safety, speed or storage savings"],
+      "disclosure":"Breathing Room, which we build"
+    }
+  },
+  "unknowns": ["Mint source-code repository not established; release link is not source proof","Exact dollar currency code and regional marketplace prices","Mint helper grouping, precise cleanup validation implementation, binary signing and hands-on behavior","Setapp current listing independently unverified beyond official edition table","Screenshot capture date/version, reuse permission and visual content approval","Discovery seed/pagination absent from retained per-item snapshot"],
+  "blockers": [
+    {"id":"VISUAL-RIGHTS","severity":"critical","diagnostic":"No permitted competitor screenshot reproduction basis. Exact App Store candidate URL retained link-only; no asset downloaded. Required on-page real competitor UI gate remains unsatisfied.","resolution":"Authorized owner obtains permission or independently documents applicable reuse basis, then opens/reviews the actual asset and retains original/published hashes, provenance and privacy review. Do not send requests in this job."}
+  ],
+  "accessLog": ["Ordinary Python urllib request to official download page returned HTTP 403; stopped that request path. No bypass, cookie extraction or profile switch.","WebFetch terms/download text was read; download extraction was incomplete relative to browser DOM. Browser snapshot is the retained edition/version source; do not promote abbreviated extraction to full page evidence.","Existing Chrome endpoint available; only newly created tab 142 inspected/navigated, then closed. No recovery or profile launch needed.","No installs, cleanup, sign-in, purchase, messages, credentials, builds, queue mutations or site edits."],
+  "validation": {"publicationReview":"not performed; research only","siteChecks":"not applicable; no site files changed","packetChecks":"See validation.json for executed structural, hash, excerpt and receipt checks."}
+}

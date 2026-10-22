@@ -1,0 +1,62 @@
+[
+  {
+    "id": "readme",
+    "url": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/README.md",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:46.554098+00:00",
+    "path": "docs/content/competitors/dusty/sources/README-v2.1.0.md",
+    "sha256": "3eec057cd041497532c2f357a606e04f5af10862362bc42c40188340ff6a3704",
+    "bytes": 19424
+  },
+  {
+    "id": "license",
+    "url": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/LICENSE",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:47.496513+00:00",
+    "path": "docs/content/competitors/dusty/assets/DUSTY-LICENSE.txt",
+    "sha256": "938b5dfe0ae48ccf5d1a1ce27facc4dec34554a517ef963b13eecf4ccba36904",
+    "bytes": 1085
+  },
+  {
+    "id": "overview",
+    "url": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/docs/screenshots/overview.png",
+    "finalUrl": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/docs/screenshots/overview.png",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:49.076405+00:00",
+    "path": "docs/content/competitors/dusty/assets/dusty-overview-v2.1.0.png",
+    "sha256": "c3a3f43450b4552c2ed1c0c9d6ea645620d1135be51c92639573d365f97a089e",
+    "bytes": 2809404
+  },
+  {
+    "id": "renderer",
+    "url": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/Dusty/Dusty/Utilities/SnapshotRenderer.swift",
+    "finalUrl": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/Dusty/Dusty/Utilities/SnapshotRenderer.swift",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:50.074962+00:00",
+    "path": "docs/content/competitors/dusty/sources/SnapshotRenderer.swift",
+    "sha256": "31591b9693623a9ab7870cd4fb6c48af64818a36ca46974bb5be17996f1ddd28",
+    "bytes": 33715
+  },
+  {
+    "id": "release",
+    "url": "https://api.github.com/repos/yagcioglutoprak/dusty/releases/latest",
+    "finalUrl": "https://api.github.com/repos/yagcioglutoprak/dusty/releases/latest",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:50.944566+00:00",
+    "path": "docs/content/competitors/dusty/sources/release-latest.json",
+    "sha256": "2cbf65667100f5192a433593bd6b2b5d8e383babcd7bb43b6f7d8eb730aa7088",
+    "bytes": 9503
+  },
+  {
+    "id": "build",
+    "url": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/Dusty/project.yml",
+    "finalUrl": "https://raw.githubusercontent.com/yagcioglutoprak/dusty/5ae5210a84bee55603aba4f3858bedcba729b3e1/Dusty/project.yml",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T20:34:51.793928+00:00",
+    "path": "docs/content/competitors/dusty/sources/project.yml",
+    "sha256": "c887ab55419b1b121cd84457a730335f26efd9a6f6d66d211e3b973e2996d233",
+    "bytes": 1427
+  }
+]

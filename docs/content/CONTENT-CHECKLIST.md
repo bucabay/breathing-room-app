@@ -1,0 +1,156 @@
+# Competitor research checklist
+
+150 distinct AlternativeTo listing identities from the full CleanMyMac (113) and Mole (101) lists; 19 rendered pages traversed. Breathing Room excluded. This is a research backlog, not 150 verified vendors or publishable articles.
+
+Each item requires official-site identity/alias verification, platform fit, current evidence, screenshot provenance, original article/comparison drafts, and independent review. Merge aliases; use honest platform-replacement angles for non-Mac tools. The expansion job will create staged execution jobs after shared prerequisites pass.
+
+- [ ] [CleanMyMac](https://alternativeto.net/software/cleanmymac/about/) — `cleanmymac`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Mole](https://alternativeto.net/software/mole/about/) — `mole`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [4DDiG Mac Cleaner](https://alternativeto.net/software/4ddig-mac-cleaner/about/) — `4ddig-mac-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [AiKiller](https://alternativeto.net/software/aikiller/about/) — `aikiller`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Aiseesoft Mac Cleaner](https://alternativeto.net/software/aiseesoft-mac-cleaner/about/) — `aiseesoft-mac-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [AmpleCapacity](https://alternativeto.net/software/amplecapacity/about/) — `amplecapacity`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [App Cleaner & Uninstaller](https://alternativeto.net/software/app-cleaner/about/) — `app-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [App Eraser](https://alternativeto.net/software/app-eraser/about/) — `app-eraser`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [AppCleaner](https://alternativeto.net/software/appcleaner/about/) — `appcleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [AppVoid](https://alternativeto.net/software/appvoid/about/) — `appvoid`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [AppZapper](https://alternativeto.net/software/appzapper/about/) — `appzapper`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [BackApp](https://alternativeto.net/software/backapp/about/) — `backapp`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Baobab Disk Usage Analyzer](https://alternativeto.net/software/baobab/about/) — `baobab`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [BroomKit](https://alternativeto.net/software/broomkit/about/) — `broomkit`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [BuhoCleaner](https://alternativeto.net/software/buhocleaner/about/) — `buhocleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Bushfire](https://alternativeto.net/software/bushfire-app/about/) — `bushfire-app`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Cache Out](https://alternativeto.net/software/cache-out/about/) — `cache-out`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [CCleaner](https://alternativeto.net/software/ccleaner/about/) — `ccleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Clean Me](https://alternativeto.net/software/clean-me/about/) — `clean-me`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Cleaner by Ciro Cesar Maciel](https://alternativeto.net/software/cleaner-by-ciro-cesar-maciel/about/) — `cleaner-by-ciro-cesar-maciel`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Cleaner One Pro](https://alternativeto.net/software/cleaner-one-pro-mac/about/) — `cleaner-one-pro-mac`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [CleanGeeker](https://alternativeto.net/software/cleangeeker/about/) — `cleangeeker`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [CleanMacster](https://alternativeto.net/software/cleanmacster/about/) — `cleanmacster`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Cocktail](https://alternativeto.net/software/cocktail/about/) — `cocktail`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [ColumnFit](https://alternativeto.net/software/columnfit/about/) — `columnfit`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [DaisyDisk](https://alternativeto.net/software/daisydisk/about/) — `daisydisk`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [DataSweeper](https://alternativeto.net/software/datasweeper/about/) — `datasweeper`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [DeepClean](https://alternativeto.net/software/deepclean/about/) — `deepclean`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [DeepCleanMac](https://alternativeto.net/software/deepcleanmac/about/) — `deepcleanmac`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Depflush](https://alternativeto.net/software/depflush/about/) — `depflush`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Disk Diet](https://alternativeto.net/software/disk-diet/about/) — `disk-diet`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Disk Map](https://alternativeto.net/software/disk-map/about/) — `disk-map`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Disk Mop](https://alternativeto.net/software/disk-mop/about/) — `disk-mop`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [DiskFox](https://alternativeto.net/software/diskfox/about/) — `diskfox`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [DiskMaid](https://alternativeto.net/software/diskmaid/about/) — `diskmaid`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [DissectMac](https://alternativeto.net/software/dissectmac/about/) — `dissectmac`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [DripCleaner](https://alternativeto.net/software/dripcleaner/about/) — `dripcleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [DriveScape](https://alternativeto.net/software/drivescape/about/) — `drivescape`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Dusty](https://alternativeto.net/software/dusty/about/) — `dusty`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Dusty Storage](https://alternativeto.net/software/dusty-storage/about/) — `dusty-storage`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Flint - Cloud Cleaner](https://alternativeto.net/software/flint--cloud-cleaner/about/) — `flint--cloud-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [FreeUpMyMac](https://alternativeto.net/software/freeupmymac/about/) — `freeupmymac`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Hidden File Cleaner](https://alternativeto.net/software/hidden-file-cleaner/about/) — `hidden-file-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [iBoostUp](https://alternativeto.net/software/iboostup/about/) — `iboostup`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [iCloud Cleaner](https://alternativeto.net/software/icloud-cleaner/about/) — `icloud-cleaner`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [iMyMac - PowerMyMac](https://alternativeto.net/software/imymac--cleaner/about/) — `imymac--cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Intego Mac Washing Machine](https://alternativeto.net/software/intego-washing-machine/about/) — `intego-washing-machine`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [JunkYard Cleaner](https://alternativeto.net/software/junkyard-cleaner/about/) — `junkyard-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [JWIZARD Cleaner](https://alternativeto.net/software/jwizard-cleaner/about/) — `jwizard-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [KlarityDisk](https://alternativeto.net/software/klaritydisk/about/) — `klaritydisk`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Kudu](https://alternativeto.net/software/kudu-cleaner/about/) — `kudu-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Leaves](https://alternativeto.net/software/leaves/about/) — `leaves`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [LighterMac](https://alternativeto.net/software/lightermac/about/) — `lightermac`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Mac Cleaner Pro](https://alternativeto.net/software/mac-cleaner-pro/about/) — `mac-cleaner-pro`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Mac CleanUp Go](https://alternativeto.net/software/mac-cleanup-go/about/) — `mac-cleanup-go`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Mac Sai](https://alternativeto.net/software/mac-sai/about/) — `mac-sai`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Mac Zapper](https://alternativeto.net/software/zapper/about/) — `zapper`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacBooster](https://alternativeto.net/software/macbooster/about/) — `macbooster`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacCare - Mac Cleaner](https://alternativeto.net/software/maccare--mac-cleaner/about/) — `maccare--mac-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacClean](https://alternativeto.net/software/macclean/about/) — `macclean`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacCleaner Pro](https://alternativeto.net/software/maccleaner-pro/about/) — `maccleaner-pro`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacCleanse](https://alternativeto.net/software/maccleanse/about/) — `maccleanse`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacFlow](https://alternativeto.net/software/macflow-ai/about/) — `macflow-ai`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacFly Pro](https://alternativeto.net/software/macfly-pro/about/) — `macfly-pro`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacKeeper](https://alternativeto.net/software/mackeeper/about/) — `mackeeper`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacOptimizers](https://alternativeto.net/software/macoptimizers/about/) — `macoptimizers`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacOSCleaner](https://alternativeto.net/software/macoscleaner/about/) — `macoscleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacPilot](https://alternativeto.net/software/macpilot/about/) — `macpilot`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [MacReviver](https://alternativeto.net/software/macreviver/about/) — `macreviver`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacSweep](https://alternativeto.net/software/macsweep/about/) — `macsweep`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [MacTuneUp](https://alternativeto.net/software/mactuneup/about/) — `mactuneup`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MacWashing](https://alternativeto.net/software/macwashing/about/) — `macwashing`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [MangoDisk](https://alternativeto.net/software/mangodisk/about/) — `mangodisk`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Mavericks Cache Cleaner](https://alternativeto.net/software/mavericks-cache-cleaner/about/) — `mavericks-cache-cleaner`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Mint (DZG Studio)](https://alternativeto.net/software/mint-dzg-studio-/about/) — `mint-dzg-studio-`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Nix - The Mac Uninstaller](https://alternativeto.net/software/nix--the-mac-uninstaller/about/) — `nix--the-mac-uninstaller`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Noah](https://alternativeto.net/software/noah/about/) — `noah`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Omni Remover 3](https://alternativeto.net/software/omni-remover-3/about/) — `omni-remover-3`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [OnyX](https://alternativeto.net/software/onyx/about/) — `onyx`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Pangalin Space Manager](https://alternativeto.net/software/space-manager/about/) — `space-manager`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Pangalin Uninstaller](https://alternativeto.net/software/pangalin-uninstaller/about/) — `pangalin-uninstaller`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Pearcleaner](https://alternativeto.net/software/pearcleaner/about/) — `pearcleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Peel Cleaner](https://alternativeto.net/software/peel-cleaner/about/) — `peel-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Plumby](https://alternativeto.net/software/plumby/about/) — `plumby`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [PowerMyMac](https://alternativeto.net/software/powermymac/about/) — `powermymac`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [PureMac](https://alternativeto.net/software/puremac/about/) — `puremac`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Purge](https://alternativeto.net/software/purge/about/) — `purge`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Quitty](https://alternativeto.net/software/quitty/about/) — `quitty`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Radix](https://alternativeto.net/software/radix/about/) — `radix`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [RemoveMacAI](https://alternativeto.net/software/removemacai/about/) — `removemacai`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Roomy for Mac](https://alternativeto.net/software/roomy-for-mac/about/) — `roomy-for-mac`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Sensei](https://alternativeto.net/software/disk-sensei/about/) — `disk-sensei`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Sequoia Cache Cleaner](https://alternativeto.net/software/yosemite-cache-cleaner/about/) — `yosemite-cache-cleaner`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Shiny - Mac App](https://alternativeto.net/software/shiny--mac-app/about/) — `shiny--mac-app`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Smart Cleaner AI](https://alternativeto.net/software/smart-cleaner-ai-disk-clean/about/) — `smart-cleaner-ai-disk-clean`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Space Hunter](https://alternativeto.net/software/spacehunter/about/) — `spacehunter`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [SpaceBroom](https://alternativeto.net/software/spacebroom/about/) — `spacebroom`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [StorageRader](https://alternativeto.net/software/storagerader/about/) — `storagerader`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Techtool Lite](https://alternativeto.net/software/techtool-lite/about/) — `techtool-lite`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [TechTool Pro](https://alternativeto.net/software/techtool/about/) — `techtool`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [TidyBar](https://alternativeto.net/software/tidybar/about/) — `tidybar`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [TinkerTool](https://alternativeto.net/software/tinkertool/about/) — `tinkertool`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Trace for macOS](https://alternativeto.net/software/trace-for-macos/about/) — `trace-for-macos`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [TrashPanda](https://alternativeto.net/software/trashpanda/about/) — `trashpanda`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [WashAndGo](https://alternativeto.net/software/washandgo/about/) — `washandgo`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [WeCleanse](https://alternativeto.net/software/wecleanse/about/) — `wecleanse`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [4-Organizer Ultra](https://alternativeto.net/software/4-organizer-ultra/about/) — `4-organizer-ultra`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Acer Care Center](https://alternativeto.net/software/acer-care-center/about/) — `acer-care-center`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Aomei Partition Assistant for Cleanup](https://alternativeto.net/software/aomei-partition-assistant-for-cleanup/about/) — `aomei-partition-assistant-for-cleanup`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [AVG PC TuneUp](https://alternativeto.net/software/avg-pc-tuneup/about/) — `avg-pc-tuneup`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [AVS Registry Cleaner](https://alternativeto.net/software/avs-registry-cleaner/about/) — `avs-registry-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [BleachBit](https://alternativeto.net/software/bleachbit/about/) — `bleachbit`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Canta](https://alternativeto.net/software/canta-1/about/) — `canta-1`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [CCleaner Cloud](https://alternativeto.net/software/agomo/about/) — `agomo`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Clean Doctor](https://alternativeto.net/software/clean-doctor/about/) — `clean-doctor`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Clean My Ubuntu](https://alternativeto.net/software/clean-my-ubuntu/about/) — `clean-my-ubuntu`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Clean Sweep](https://alternativeto.net/software/clean-sweep/about/) — `clean-sweep`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [CleanMyLinux](https://alternativeto.net/software/cleanmylinux/about/) — `cleanmylinux`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Cleanup: Phone Storage Cleaner](https://alternativeto.net/software/cleanup-phone-storage-cleaner/about/) — `cleanup-phone-storage-cleaner`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Click&Clean](https://alternativeto.net/software/clickandclean/about/) — `clickandclean`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [DiskUsage](https://alternativeto.net/software/diskusage/about/) — `diskusage`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [EaseeControl](https://alternativeto.net/software/easeecontrol/about/) — `easeecontrol`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Eusing Cleaner](https://alternativeto.net/software/eusing-cleaner/about/) — `eusing-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Express Cleaner](https://alternativeto.net/software/express-cleaner-kit--clean-up/about/) — `express-cleaner-kit--clean-up`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Feex](https://alternativeto.net/software/feex/about/) — `feex`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [FileCleaner](https://alternativeto.net/software/filecleaner/about/) — `filecleaner`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Fortect](https://alternativeto.net/software/fortect/about/) — `fortect`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Glary Disk Cleaner](https://alternativeto.net/software/glary-disk-cleaner/about/) — `glary-disk-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [Glary Utilities](https://alternativeto.net/software/glary-utilities/about/) — `glary-utilities`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Keep-Only-Specified-Extensions](https://alternativeto.net/software/keep-only-specified-extensions/about/) — `keep-only-specified-extensions`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Moppy - PC Cleaner](https://alternativeto.net/software/moppy--pc-cleaner/about/) — `moppy--pc-cleaner`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [MyCleanPC](https://alternativeto.net/software/mycleanpc/about/) — `mycleanpc`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [optimizerDuck](https://alternativeto.net/software/optimizerduck/about/) — `optimizerduck`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [Outbyte PC Repair](https://alternativeto.net/software/outbyte-pc-repair/about/) — `outbyte-pc-repair`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [PASPAS](https://alternativeto.net/software/berkaygediz-paspas/about/) — `berkaygediz-paspas`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [PC BOOSTER and ANTIVIRUS](https://alternativeto.net/software/pc-booster-and-antivirus/about/) — `pc-booster-and-antivirus`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [PC Clean - Optimal Performance](https://alternativeto.net/software/pc-clean--optimal-performance/about/) — `pc-clean--optimal-performance`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [PC Tweaker](https://alternativeto.net/software/pc-tweaker/about/) — `pc-tweaker`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Photo Sweep & Clean](https://alternativeto.net/software/photo-sweep-and-clean/about/) — `photo-sweep-and-clean`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [PixWash](https://alternativeto.net/software/pixwash/about/) — `pixwash`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [QDirStat](https://alternativeto.net/software/qdirstat/about/) — `qdirstat`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Sifty](https://alternativeto.net/software/sifty/about/) — `sifty`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Sponge - Gallery Cleaner](https://alternativeto.net/software/sponge--gallery-cleaner/about/) — `sponge--gallery-cleaner`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [System Utilities](https://alternativeto.net/software/system-utilities/about/) — `system-utilities`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [TreeSize](https://alternativeto.net/software/treesize/about/) — `treesize`; seeds: mole; verify identity and distinct intent before drafting.
+- [ ] [Wayne's GoldCore](https://alternativeto.net/software/wayne-s-goldcore/about/) — `wayne-s-goldcore`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [WhaleClean](https://alternativeto.net/software/whaleclean/about/) — `whaleclean`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [WinCleanCat](https://alternativeto.net/software/wincleancat/about/) — `wincleancat`; seeds: cleanmymac, mole; verify identity and distinct intent before drafting.
+- [ ] [WinExt Free](https://alternativeto.net/software/winext-free/about/) — `winext-free`; seeds: cleanmymac; verify identity and distinct intent before drafting.
+- [ ] [WinTrim](https://alternativeto.net/software/wintrim/about/) — `wintrim`; seeds: cleanmymac; verify identity and distinct intent before drafting.

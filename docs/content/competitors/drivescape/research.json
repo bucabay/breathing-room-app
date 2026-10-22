@@ -1,0 +1,909 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-drivescape",
+  "productId": "drivescape",
+  "checkedAtUtc": "2026-10-21T20:37:33.646541+00:00",
+  "status": "blocked",
+  "stage": "research",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "DriveScape",
+    "homepage": "https://drivescape.dev/",
+    "publisher": "BrickLogic",
+    "repository": "https://github.com/BrickLogic/ChartyDriveReleases",
+    "repositoryType": "release binaries and issues, not app source",
+    "canonicalOwnerId": "drivescape",
+    "aliases": [],
+    "aliasDecision": {
+      "status": "keep-distinct",
+      "skipSeparateAliasDrafts": true,
+      "verifiedDuplicateIds": [],
+      "rationale": "Official press and repository identify DriveScape consistently. ChartyDriveReleases is the linked repository name, not verified as a separate product or former marketing name. PowerMyMac has no evidenced relationship; no merger or separate alias article authorised."
+    },
+    "classification": "direct-storage-cleanup-overlap",
+    "platformFit": "Mac eligible; macOS 11+ Apple Silicon. Broader app/process/AI workflows are adjacent, not feature-equivalent.",
+    "skipDecision": {
+      "skipProduct": false,
+      "reason": "Live official product and Mac storage/cleanup overlap verified; block drafting for rights rather than invent doorway content."
+    }
+  },
+  "ownership": [
+    "docs/content/competitors/drivescape/"
+  ],
+  "baselineReuse": {
+    "path": "docs/content/verification/batch-1.json",
+    "sha256": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "recordId": "drivescape",
+    "reusedFields": [
+      "officialName",
+      "officialUrl",
+      "platforms",
+      "pricing",
+      "availability",
+      "discovery"
+    ],
+    "newResearchReason": "Resolve missing licence conditions, exact Mac platform/version, repo identity and screenshot rights."
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/drivescape/about/",
+    "retrievedAt": "2026-10-21T19:06:58.765Z",
+    "observedOfficialLink": {
+      "text": "Official Website\ndrivescape.dev/",
+      "url": "https://drivescape.dev/",
+      "title": "https://drivescape.dev/"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/drivescape-directory.json",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=5",
+        "retrievedAt": "2026-10-21T18:36:40.113Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=4",
+        "retrievedAt": "2026-10-21T18:37:13.603Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "rawSnapshotSha256": "3f44d53fbaee6e52a84cb6d63f5a738561d9a0114ea3597435cf5659cf7c5931",
+    "method": "Reused same-day rendered discovery; owned Chrome tab inspected only for missing screenshot URLs after HTTP 403. No CAPTCHA bypass, cookies or hidden state extracted."
+  },
+  "sources": [
+    {
+      "id": "press",
+      "url": "https://drivescape.dev/press",
+      "retrievedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "finalUrl": "https://drivescape.dev/press",
+      "httpStatus": 200,
+      "sha256": "2f351124372574d2faaef77cd8ffaf6ad0198c5104406aa80f9c18b753e54537",
+      "images": [],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/press.html"
+    },
+    {
+      "id": "eula",
+      "url": "https://drivescape.dev/eula",
+      "retrievedAtUtc": "2026-10-21T20:35:10.999462+00:00",
+      "finalUrl": "https://drivescape.dev/eula",
+      "httpStatus": 200,
+      "sha256": "72a2c3138f7b0000c7b2a8cf06e4c9fd86361221aead66ad0490d1d7e377f9e9",
+      "images": [],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/eula.html"
+    },
+    {
+      "id": "changelog",
+      "url": "https://drivescape.dev/changelog",
+      "retrievedAtUtc": "2026-10-21T20:35:11.470991+00:00",
+      "finalUrl": "https://drivescape.dev/changelog",
+      "httpStatus": 200,
+      "sha256": "f1d16255527307681651504aa2f20475bd675859f47cfa112bc8fd9e7e228bfa",
+      "images": [],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/changelog.html"
+    },
+    {
+      "id": "privacy",
+      "url": "https://drivescape.dev/privacy",
+      "retrievedAtUtc": "2026-10-21T20:35:12.079333+00:00",
+      "finalUrl": "https://drivescape.dev/privacy",
+      "httpStatus": 200,
+      "sha256": "a37d5bc9d015de262bab1d9f0cc5b756e8a8f5c34c609ceeeb43c779373af7e5",
+      "images": [],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/privacy.html"
+    },
+    {
+      "id": "how-it-works",
+      "url": "https://drivescape.dev/en/how-it-works",
+      "retrievedAtUtc": "2026-10-21T20:35:12.647916+00:00",
+      "finalUrl": "https://drivescape.dev/en/how-it-works",
+      "httpStatus": 200,
+      "sha256": "23ffa0ec47e0aa76d80a7142a2d8be58a54c6e65f314422a0e1ceb367f038f72",
+      "images": [],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/how-it-works.html"
+    },
+    {
+      "id": "repository",
+      "url": "https://github.com/BrickLogic/ChartyDriveReleases",
+      "retrievedAtUtc": "2026-10-21T20:35:13.070195+00:00",
+      "finalUrl": "https://github.com/BrickLogic/ChartyDriveReleases",
+      "httpStatus": 200,
+      "sha256": "7f792cf8c44acbbc1d544fb1fa8d70eea3f67c1335ea8477cc0933ba55736926",
+      "images": [
+        {
+          "data-component": "Avatar",
+          "class": "mr-2 flex-shrink-0 prc-Avatar-Avatar-0xaUi",
+          "alt": "BrickLogic",
+          "data-square": "",
+          "width": "24",
+          "height": "24",
+          "style": "--avatarSize-regular:24px",
+          "src": "https://avatars.githubusercontent.com/u/61634811?s=60&v=4",
+          "data-testid": "github-avatar"
+        }
+      ],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/repository.html"
+    },
+    {
+      "id": "listing-visuals",
+      "url": "https://alternativeto.net/software/drivescape/about/",
+      "retrievedAtUtc": "2026-10-21T20:35:14.579612+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "release-latest",
+      "url": "https://api.github.com/repos/BrickLogic/ChartyDriveReleases/releases/latest",
+      "retrievedAtUtc": "2026-10-21T20:35:15.452192+00:00",
+      "finalUrl": "https://api.github.com/repos/BrickLogic/ChartyDriveReleases/releases/latest",
+      "httpStatus": 200,
+      "sha256": "497ef2dcedf29afc8e1c5095d57cadeecf716645e8506b5cd587b1c5a05d7411",
+      "tag": "v1.11.0",
+      "publishedAt": "2026-09-20T18:22:14Z",
+      "assets": [
+        "DriveScape.app.tar.gz",
+        "DriveScape.app.tar.gz.sig",
+        "DriveScape_1.11.0_aarch64.dmg"
+      ],
+      "snapshotPath": "docs/content/competitors/drivescape/sources/release-latest.json"
+    },
+    {
+      "id": "baseline-home",
+      "url": "https://drivescape.dev/",
+      "finalUrl": "https://drivescape.dev/",
+      "retrievedAtUtc": "2026-10-21T19:08:13.784526+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/drivescape-official.json",
+      "sha256": "c15477b8d71fa655aeec573a24b657f0614dd3319e554c67167d83619f480cbb",
+      "reuse": "Existing same-day verification; not re-fetched for already-verified facts."
+    },
+    {
+      "id": "baseline-directory",
+      "url": "https://alternativeto.net/software/drivescape/about/",
+      "finalUrl": "https://alternativeto.net/software/drivescape/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:58.765Z",
+      "snapshotPath": "docs/content/.runtime/verification-1/drivescape-directory.json",
+      "sha256": "3f44d53fbaee6e52a84cb6d63f5a738561d9a0114ea3597435cf5659cf7c5931",
+      "reuse": "Existing same-day verification; not re-fetched for already-verified facts."
+    },
+    {
+      "id": "br-capabilities",
+      "url": null,
+      "snapshotPath": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "checkedOn": "2026-10-21",
+      "reuse": "Same-day first-party evidence register; source implementation is not binary testing."
+    },
+    {
+      "id": "br-visuals",
+      "url": null,
+      "snapshotPath": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "checkedOn": "2026-10-21",
+      "reuse": "Same-day first-party evidence register; source implementation is not binary testing."
+    },
+    {
+      "id": "listing-visuals-browser.json",
+      "url": "https://alternativeto.net/software/drivescape/about/",
+      "snapshotPath": "docs/content/competitors/drivescape/sources/listing-visuals-browser.json",
+      "sha256": "5bc298fcf3e220498e0440b82b8580b6469261e53cbf89ddec303227a1cfe96b",
+      "retrievedAtUtc": "2026-10-21T20:37:33.646541+00:00",
+      "timestampNote": "Recorded at packet assembly after owned-tab DOM inspection; not vendor capture date."
+    },
+    {
+      "id": "listing-visuals-snapshot.txt",
+      "url": "https://alternativeto.net/software/drivescape/about/",
+      "snapshotPath": "docs/content/competitors/drivescape/sources/listing-visuals-snapshot.txt",
+      "sha256": "67efb17f466cbc411202cfefde8bd21a5ddff19970d18f6d6e5fc85427b1fb01",
+      "retrievedAtUtc": "2026-10-21T20:37:33.646541+00:00",
+      "timestampNote": "Recorded at packet assembly after owned-tab DOM inspection; not vendor capture date."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "DriveScape is published by BrickLogic (Vadym Kovalsky).",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "BrickLogic — Vadym Kovalsky, solo developer, Ukraine",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Official product identity; no relationship to PowerMyMac established.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "license",
+      "wording": "DriveScape is proprietary; its public repository hosts releases, not app source.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "“Open source” — it's proprietary; the releases repo on GitHub hosts binaries, not source.",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Do not infer open-source rights from GitHub availability.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "repo",
+      "wording": "The official release/issue repository is BrickLogic/ChartyDriveReleases.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/BrickLogic/ChartyDriveReleases",
+      "excerpt": "DriveScape — Releases & Issues",
+      "checkedAtUtc": "2026-10-21T20:35:13.070195+00:00",
+      "scope": "Official press kit links here; README links back to drivescape.dev. Repository spelling is not proof of a historical product rename.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "mac",
+      "wording": "DriveScape advertises macOS 11+ on Apple Silicon, not Intel Macs.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "macOS 11+ (Apple Silicon)",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Not runtime-tested; do not turn native cross-platform marketing into Intel support.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "other-platforms",
+      "wording": "DriveScape advertises Windows 10/11 x64 and Linux x64 AppImage builds.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "Windows 10/11 x64 (code-signed) · Linux x64 (AppImage)",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Advertised support only; latest GitHub release queried here lists Mac assets only. Windows/Linux current installer availability and parity unverified.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "version",
+      "wording": "The official changelog identifies v1.11.0, dated September 20, 2026, as latest.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "changelog"
+      ],
+      "sourceUrl": "https://drivescape.dev/changelog",
+      "excerpt": "v1.11.0 Latest 20 September 2026",
+      "checkedAtUtc": "2026-10-21T20:35:11.470991+00:00",
+      "scope": "GitHub latest-release API agrees: v1.11.0, published 2026-09-20T18:22:14Z; no binary installed.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "pricing",
+      "wording": "DriveScape Pro costs US$8 once for every machine the buyer owns or controls, for personal or business use.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "eula"
+      ],
+      "sourceUrl": "https://drivescape.dev/eula",
+      "excerpt": "DriveScape Pro is a one-time purchase of US$8",
+      "checkedAtUtc": "2026-10-21T20:35:10.999462+00:00",
+      "scope": "EULA sections 2, 5 and 7: perpetual current-major-version licence; future major versions may cost extra. Paddle handles taxes; tax-inclusive final total not checked.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "major-upgrades",
+      "wording": "The licence covers the current major version plus minor updates and bug fixes; future major versions may be sold separately.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "eula"
+      ],
+      "sourceUrl": "https://drivescape.dev/eula",
+      "excerpt": "A future major version may be offered as a separate purchase.",
+      "checkedAtUtc": "2026-10-21T20:35:10.999462+00:00",
+      "scope": "Do not promise all future versions for $8; marketing use-forever wording must carry this condition.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "free-trial",
+      "wording": "Scanning, sunburst, lists, Trends and duplicate finding remain free; Pro actions have a seven-day trial then an $8 unlock.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://drivescape.dev/",
+      "excerpt": "The entire visual side is\nfree forever\n: scanning, the sunburst, the largest-files lists, trends and the duplicate finder",
+      "checkedAtUtc": "2026-10-21T19:08:13.784526+00:00",
+      "scope": "Trial activation asks for email; no card/account advertised. Deduplication actions are paid after trial, unlike finding duplicates.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "trial-data",
+      "wording": "Requesting the trial sends an email address and a hash of a hardware identifier; the vendor uses these to enforce one trial per person/device.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "privacy"
+      ],
+      "sourceUrl": "https://drivescape.dev/privacy",
+      "excerpt": "the email address you enter, and a one-way cryptographic hash of a hardware identifier",
+      "checkedAtUtc": "2026-10-21T20:35:12.079333+00:00",
+      "scope": "Policy disclosure, not a privacy/network audit; do not equate no account with no data sent.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "local",
+      "wording": "DriveScape documents local scans and cleanup without an account or cloud AI.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "privacy"
+      ],
+      "sourceUrl": "https://drivescape.dev/privacy",
+      "excerpt": "All of that work happens locally, on your computer.",
+      "checkedAtUtc": "2026-10-21T20:35:12.079333+00:00",
+      "scope": "Vendor policy only. Launch-time licence checks transmit a token containing purchase email/order reference; update checks send version/OS/architecture; optional bug reports become public issues. Do not say zero network traffic.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "sunburst",
+      "wording": "DriveScape documents selecting a folder or disk, then exploring a clickable sunburst.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "how-it-works"
+      ],
+      "sourceUrl": "https://drivescape.dev/en/how-it-works",
+      "excerpt": "Click any ring to zoom in; the biggest wedges are the biggest space hogs.",
+      "checkedAtUtc": "2026-10-21T20:35:12.647916+00:00",
+      "scope": "Documented UI, not speed/completeness benchmark.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "approval",
+      "wording": "DriveScape documents staging/review, risk labels and a Trash-first cleanup workflow.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "how-it-works"
+      ],
+      "sourceUrl": "https://drivescape.dev/en/how-it-works",
+      "excerpt": "You confirm before anything happens.",
+      "checkedAtUtc": "2026-10-21T20:35:12.647916+00:00",
+      "scope": "No execution tested. Homepage also mentions optional permanent deletion with confirmation; do not state all actions are always reversible, or that emptying Trash preserves undo.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "dev",
+      "wording": "DriveScape documents identifying developer caches/build artifacts including node_modules, Docker, Xcode DerivedData and cargo/npm/pip.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "caches, build artifacts (node_modules, Xcode DerivedData, cargo/npm/pip)",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Risk tiers are vendor labels, not permission to delete personal data or guarantees that rebuilding succeeds.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "duplicates-sweep",
+      "wording": "DriveScape documents APFS-clone-aware duplicates, a leftovers uninstaller, Sweep Downloads triage and Trends.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "Includes a duplicate finder that understands APFS clones",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Feature documentation, not hands-on validation; uninstaller is macOS-only per same-day homepage/changelog.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "trends",
+      "wording": "DriveScape documents a snapshot for each scan and comparison with the previous scan.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "baseline-home"
+      ],
+      "sourceUrl": "https://drivescape.dev/",
+      "excerpt": "Every scan becomes a snapshot - see whether the disk is growing and what changed since last time.",
+      "checkedAtUtc": "2026-10-21T19:08:13.784526+00:00",
+      "scope": "Do not claim it lacks growth history. Background/continuous process ownership tracking is not established by this passage.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "shields",
+      "wording": "Shields is described as an optional subscription coming with DriveScape 2.0; its price is not yet announced.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "press"
+      ],
+      "sourceUrl": "https://drivescape.dev/press",
+      "excerpt": "optional subscription coming with DriveScape 2.0 - price announced at launch",
+      "checkedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+      "scope": "Planned, not verified shipped. Press boilerplate sounds present-tense; explicit Facts/FAQ release conditions take precedence. Exclude security comparisons from this Mac storage article.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "install",
+      "wording": "The official release README advertises a notarized Apple Silicon DMG.",
+      "state": "verified",
+      "evidenceClass": "vendor-documented",
+      "sourceIds": [
+        "repository"
+      ],
+      "sourceUrl": "https://github.com/BrickLogic/ChartyDriveReleases",
+      "excerpt": "macOS — notarized .dmg (Apple Silicon)",
+      "checkedAtUtc": "2026-10-21T20:35:13.070195+00:00",
+      "scope": "Vendor disclosure only: no signature/notarization inspection or installation. Press says direct-download only; Full Disk Access may be relevant, do not change permissions.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a macOS 13+ maintenance preview, identified as 0.1.0-preview.1, with Apple Silicon/Intel universal installer advertised.",
+      "state": "verified",
+      "evidenceClass": "reused-first-party-register",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised.",
+      "checkedAtUtc": "2026-10-21",
+      "scope": "Same-day evidence register: physical Intel and clean-machine runtime untested; Apple Development signed, not Developer ID signed or notarized; Python 3.10+ prerequisite. Source does not prove installer feature parity.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "br-workflow",
+      "wording": "Breathing Room source implements storage exploration, helper-grouped CPU/memory monitoring, activity history and approval-bound daily care.",
+      "state": "verified",
+      "evidenceClass": "reused-first-party-register",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "excerpt": "Source supports category, app/tool-owner, project, folder and large-file views.",
+      "checkedAtUtc": "2026-10-21",
+      "scope": "Source-level only; permission-limited inventories and inferred ownership. Daily care requires app running; exact saved approvals; optional narrowly verified Ruff automatic mode is an exception to blanket approval language.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "br-pricing-hosted",
+      "wording": "Breathing Room advertises a free core app and optional AI Care at $5 USD/month or $50 USD/year; AI uses authentication and a hosted service.",
+      "state": "verified",
+      "evidenceClass": "reused-first-party-register",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "excerpt": "Confirmed advertised $5 USD/month, $50 USD/year.",
+      "checkedAtUtc": "2026-10-21",
+      "scope": "Same-day register and cited live pages; renewals/tax apply. Hosted service allowance/enforcement not verified. Website download account gate differs from direct public GitHub downloads.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "br-license",
+      "wording": "Breathing Room desktop source is Apache-2.0; this does not licence its hosted service.",
+      "state": "verified",
+      "evidenceClass": "reused-first-party-register",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "excerpt": "Desktop source is Apache License 2.0 with NOTICE and preserved third-party attribution.",
+      "checkedAtUtc": "2026-10-21",
+      "scope": "No free hosted-service entitlement inferred.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    },
+    {
+      "id": "br-dev",
+      "wording": "Breathing Room source discovery includes npm, uv, pip, pnpm, Go, Bun and Yarn caches.",
+      "state": "verified",
+      "evidenceClass": "reused-first-party-register",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": null,
+      "excerpt": "Discovery includes queries for npm, uv, pip, pnpm, Go build/module, Bun and Yarn caches",
+      "checkedAtUtc": "2026-10-21",
+      "scope": "Source implementation only; installed tools, native path/method validation and permissions constrain availability.",
+      "intendedLocation": "comparison matrix",
+      "reviewer": "research-drivescape worker; not independent publication review"
+    }
+  ],
+  "productMatrix": {
+    "macOS compatibility": [
+      "mac",
+      "br-preview"
+    ],
+    "licence": [
+      "license",
+      "pricing",
+      "major-upgrades",
+      "br-license"
+    ],
+    "local versus hosted": [
+      "local",
+      "trial-data",
+      "br-pricing-hosted"
+    ],
+    "scan and cleanup": [
+      "sunburst",
+      "approval",
+      "br-workflow"
+    ],
+    "approval controls": [
+      "approval",
+      "br-workflow"
+    ],
+    "helper CPU/memory grouping": {
+      "drivescape": "not verified",
+      "breathingRoomClaimIds": [
+        "br-workflow"
+      ]
+    },
+    "recurring growth": [
+      "trends",
+      "br-workflow"
+    ],
+    "developer caches": [
+      "dev",
+      "br-dev"
+    ],
+    "pricing": [
+      "pricing",
+      "major-upgrades",
+      "free-trial",
+      "shields",
+      "br-pricing-hosted"
+    ],
+    "runtime/install caveats": [
+      "install",
+      "mac",
+      "other-platforms",
+      "br-preview"
+    ],
+    "duplicate finder and uninstaller": {
+      "drivescapeClaimIds": [
+        "duplicates-sweep"
+      ],
+      "breathingRoom": "not verified as equivalent in capability register"
+    }
+  },
+  "visuals": [
+    {
+      "id": "drivescape-listing-app-ui",
+      "productId": "drivescape",
+      "kind": "listing-asset",
+      "view": "Listing labels it DriveScape screenshot 1; exact view/version not independently visually reviewed",
+      "sourcePageUrl": "https://alternativeto.net/software/drivescape/about/",
+      "assetUrl": "https://img.alternativeto.net/s/618x394/avif/drivescape_348518_full.png",
+      "alternativeAssetUrls": [
+        "https://img.alternativeto.net/s/618x394/avif/drivescape_303678_full.png",
+        "https://img.alternativeto.net/s/618x394/avif/drivescape_261023_full.png"
+      ],
+      "capturedAtUtc": null,
+      "retrievedAtUtc": null,
+      "sourcePageInspectedAtUtc": "2026-10-21T20:37:33.646541+00:00",
+      "capturedBy": null,
+      "productVersion": null,
+      "dataMode": "unknown",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "No explicit screenshot republication licence established. Public availability and listing upload do not grant rights. Press kit supplies logo/social assets, not app screenshots or permission covering these listing assets. No image bytes downloaded.",
+        "evidenceUrlOrPath": "https://drivescape.dev/press",
+        "credit": "DriveScape / BrickLogic; screenshot reference via AlternativeTo"
+      },
+      "caption": "DriveScape app screenshot supplied on AlternativeTo. Vendor/listing image; version, capture date and example-versus-measured data are unverified. Link only pending reuse clearance.",
+      "alt": "DriveScape app screenshot linked from its AlternativeTo listing; view requires visual verification.",
+      "supportedClaimIds": [],
+      "limitations": [
+        "Not an approved on-page visual. No inferred screenshot rights, source dimensions, native capture or hands-on experience.",
+        "Homepage animated/example marketing UI and press logo/social card are not substitutes for a real app screenshot."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "sourcePath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "view": "Space",
+      "kind": "browser-preview",
+      "dataOrigin": "illustrative-example-data",
+      "actualNativeScan": false,
+      "capturedOn": "2026-10-21T19:06:45.416416+00:00",
+      "reviewedOn": "2026-10-21",
+      "currentness": "verified-current-source-render",
+      "sourceCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "sourceUrl": "http://127.0.0.1:1431/",
+      "reuseStatus": "first-party-example-ui-with-required-disclosure",
+      "width": 2940,
+      "height": 3468,
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuseBasis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+      "edits": [],
+      "visualReview": "Opened and read the actual PNG using the image-capable read tool; capture and disclosure text inspected, not inferred from file existence.",
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence."
+      ],
+      "productId": "breathing-room",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "review": {
+        "status": "research-visually-inspected",
+        "reviewer": "research-drivescape worker",
+        "reviewedAtUtc": "2026-10-21T20:37:33.646541+00:00"
+      },
+      "requiredLabels": [
+        "Current-source browser preview",
+        "Example data only",
+        "Not a native scan, measured activity or cleanup result"
+      ],
+      "visualDiagnostic": "Opened actual PNG: example-data banner visible, category and project views illustrated; floating composer overlaps chart. Keep disclosure; assess contextual crop and mobile readability in draft review."
+    }
+  ],
+  "briefs": {
+    "workflowArticle": {
+      "track": "search/LLM reference; workflow-first",
+      "status": "blocked-not-a-draft",
+      "title": "Review node_modules and build caches before reclaiming Mac storage",
+      "slug": "review-node-modules-build-caches-mac",
+      "primaryIntent": "Decide which generated project artifacts are rebuildable before using tiered cleanup, then check whether growth returns.",
+      "audience": "Apple Silicon Mac developers investigating project/build-cache growth; not a Windows replacement article.",
+      "distinctMechanism": "Use DriveScape risk-tiered staging and scan snapshots to distinguish project outputs, shared package stores and potentially irreplaceable Docker/virtual-environment data. Contrast Breathing Room owner/project views and ongoing investigation without claiming it implements the same sunburst or duplicate engine.",
+      "proposedLead": "Start by separating rebuildable project outputs from shared stores and original data. DriveScape documents a tiered, review-first workflow; labels and file sizes do not establish that a folder is disposable.",
+      "sections": [
+        "Locate a heavy project with a disk map; numbers in vendor demos are examples, not our results.",
+        "Classify project output versus shared store versus original data; check manifests, backups and rebuild/download cost.",
+        "Review exact locations and Trash versus permanent-delete behavior; do not execute cleanup for article research.",
+        "Re-scan to compare snapshots; history is not writer attribution.",
+        "Choose one-off visual cleanup or continuing app/activity investigation; disclose Breathing Room affiliation and preview/hosted caveats."
+      ],
+      "visualPlacement": [
+        "Cleared real DriveScape app UI immediately after lead; currently blocked.",
+        "Selected Breathing Room Space browser preview later, with example/native disclosure."
+      ],
+      "interactionPass": "Hand off a local checklist/decision aid: manifest present? backup? rebuild cost? shared store/volume? Answer unknown routes to review, never automatic deletion. No filesystem access or invented size estimates.",
+      "links": [
+        "/comparisons/",
+        "/comparisons/drivescape/",
+        "/tools/ (select an existing relevant tool only after route verification)"
+      ],
+      "avoid": [
+        "Measured scan speed/savings",
+        "All SAFE-tier files universally disposable",
+        "No DriveScape history",
+        "All Breathing Room data stays local",
+        "Universal Intel compatibility for DriveScape",
+        "Claims of testing either binary"
+      ]
+    },
+    "comparison": {
+      "status": "blocked-not-a-draft",
+      "title": "Breathing Room vs DriveScape: Mac storage workflows",
+      "slug": "drivescape",
+      "primaryIntent": "Choose between a documented sunburst/staged-cleanup workflow and a broader Mac maintenance preview with app/activity investigation.",
+      "format": "Concise conclusion, sourced matrix, when to choose each, preview/pricing/install caveats, deeper workflow link.",
+      "claimIds": [
+        "identity",
+        "license",
+        "repo",
+        "mac",
+        "other-platforms",
+        "version",
+        "pricing",
+        "major-upgrades",
+        "free-trial",
+        "trial-data",
+        "local",
+        "sunburst",
+        "approval",
+        "dev",
+        "duplicates-sweep",
+        "trends",
+        "shields",
+        "install",
+        "br-preview",
+        "br-workflow",
+        "br-pricing-hosted",
+        "br-license",
+        "br-dev"
+      ],
+      "matrix": {
+        "macOS compatibility": [
+          "mac",
+          "br-preview"
+        ],
+        "licence": [
+          "license",
+          "pricing",
+          "major-upgrades",
+          "br-license"
+        ],
+        "local versus hosted": [
+          "local",
+          "trial-data",
+          "br-pricing-hosted"
+        ],
+        "scan and cleanup": [
+          "sunburst",
+          "approval",
+          "br-workflow"
+        ],
+        "approval controls": [
+          "approval",
+          "br-workflow"
+        ],
+        "helper CPU/memory grouping": {
+          "drivescape": "not verified",
+          "breathingRoomClaimIds": [
+            "br-workflow"
+          ]
+        },
+        "recurring growth": [
+          "trends",
+          "br-workflow"
+        ],
+        "developer caches": [
+          "dev",
+          "br-dev"
+        ],
+        "pricing": [
+          "pricing",
+          "major-upgrades",
+          "free-trial",
+          "shields",
+          "br-pricing-hosted"
+        ],
+        "runtime/install caveats": [
+          "install",
+          "mac",
+          "other-platforms",
+          "br-preview"
+        ],
+        "duplicate finder and uninstaller": {
+          "drivescapeClaimIds": [
+            "duplicates-sweep"
+          ],
+          "breathingRoom": "not verified as equivalent in capability register"
+        }
+      },
+      "disclosure": "Breathing Room, which we build. Source/documentation comparison only; no hands-on competitor test.",
+      "links": [
+        "/comparisons/",
+        "/blog/review-node-modules-build-caches-mac/"
+      ],
+      "notAReplacementFor": "Do not imply Breathing Room runs on Windows/Linux or duplicates every DriveScape tool."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "drivescape": [
+      "Documented sunburst, clone-aware duplicates, Sweep and leftover-app cleanup; useful for one-off visual storage review.",
+      "US$8 current-major-version licence across owned/controlled machines; free visual exploration. Optional future Shields subscription is separate.",
+      "Apple Silicon only on Mac. Trial requires email and hashed device identifier. No independent performance, safety, install or privacy audit performed."
+    ],
+    "breathingRoom": [
+      "Source-level app/helper CPU/memory and local activity investigation may suit continuing maintenance; not proof a process wrote a particular file.",
+      "Free core with optional recurring AI Care; authenticated hosted reasoning is not fully offline.",
+      "Non-notarized preview with Python prerequisite and untested clean-machine/Intel behavior; not a production-readiness recommendation."
+    ]
+  },
+  "unknowns": [
+    "No distributed-binary tests, timing, recovered-space measurements, privacy audit or permissions changes performed.",
+    "DriveScape helper/process grouping and continuous background attribution not verified; do not mark No.",
+    "Latest GitHub release lists Mac-only assets; current Windows/Linux downloads and feature parity unverified.",
+    "No independent notarization/signature inspection for DriveScape.",
+    "Shields 2.0 availability and price unverified/planned; exclude from shipped-feature rows.",
+    "Final checkout tax-inclusive total, payment/activation/refund execution and future upgrade prices not tested.",
+    "Competitor screenshot version/date/rights and narrow-screen legibility pending.",
+    "Breathing Room source-versus-release feature parity remains unverified per same-day capabilities register."
+  ],
+  "sourceQualifications": [
+    "Marketing says use forever; EULA limits included upgrades to current major version. Preserve both scope and price.",
+    "Homepage says Trash-first but also optional permanent deletion. Describe default review/Trash flow, not guaranteed reversibility.",
+    "Press mentions Shields network downloads; privacy/EULA describe existing disk tools. Treat Shields as planned rather than silently importing future behavior.",
+    "Homepage numbers, scan animations, safety-verifier illustration and mock typical-cleaner comparison are marketing examples, not our tests."
+  ],
+  "blockers": [
+    {
+      "id": "competitor-visual-rights",
+      "severity": "critical",
+      "blocks": [
+        "drafting",
+        "publication"
+      ],
+      "diagnostic": "Real DriveScape screenshot URLs are recorded from the authoritative listing, but no explicit reuse basis, image-byte provenance, version or visual/privacy approval is established. Press kit contains logos/social card only. Link-only fallback does not satisfy EDITORIAL.md image gate.",
+      "resolution": "Obtain explicit authorised reuse permission/licence for a real app screenshot (with source/capture provenance), or an explicit policy decision permitting another approach. Do not contact vendor in this job. Then download only permitted asset bytes, hash originals, inspect UI/privacy and review captions."
+    }
+  ],
+  "independentReview": {
+    "status": "pending",
+    "score": null
+  },
+  "safety": {
+    "nativeAppLaunched": false,
+    "cleanupPerformed": false,
+    "imageBytesDownloaded": false,
+    "signupsPurchasesMessages": false,
+    "siteEdited": false,
+    "queueEdited": false,
+    "agentsSpawned": false
+  }
+}

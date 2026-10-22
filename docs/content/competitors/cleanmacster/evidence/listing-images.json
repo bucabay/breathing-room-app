@@ -1,0 +1,13 @@
+{
+  "sourcePageUrl": "https://alternativeto.net/software/cleanmacster/about/",
+  "checkedOn": "2026-10-21",
+  "recordedAtUtc": "2026-10-21T20:17:56Z",
+  "method": "chrome-devtools.evaluate_script public DOM document.images in owned tab 82",
+  "title": "CleanMacster: A Mac cleaner that shows you every cache, leftover and duplicate it finds, and | AlternativeTo",
+  "images": [
+    {"src":"https://img.alternativeto.net/s/618x394/avif/cleanmacster_188845_full.jpg","alt":"Checkup: junk, protection, performance, app updates and clutter in one scan","width":309,"height":197},
+    {"src":"https://img.alternativeto.net/s/618x394/avif/cleanmacster_711252_full.jpg","alt":"Cleanup: system junk, Xcode data and leftovers, each reviewed before removal","width":309,"height":197},
+    {"src":"https://img.alternativeto.net/s/618x394/avif/cleanmacster_691116_full.jpg","alt":"Space Map: see which folders take up your disk","width":309,"height":197}
+  ],
+  "limitations": "Only task-relevant public image metadata retained. No image files downloaded; no cookies, browser storage or hidden state read. Original version/capture/data/rights and visual/privacy review remain unverified."
+}

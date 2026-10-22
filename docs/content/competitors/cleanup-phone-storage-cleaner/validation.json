@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "correct job and canonical owner",
+      "passed": true
+    },
+    {
+      "check": "explicit skip and no drafting/publication",
+      "passed": true
+    },
+    {
+      "check": "all claims have dates, excerpts, source URLs and valid source IDs",
+      "passed": true
+    },
+    {
+      "check": "matrix claim references resolve",
+      "passed": true
+    },
+    {
+      "check": "source hash corporate",
+      "passed": true
+    },
+    {
+      "check": "source hash apple",
+      "passed": true
+    },
+    {
+      "check": "source hash terms",
+      "passed": true
+    },
+    {
+      "check": "source hash product-site",
+      "passed": true
+    },
+    {
+      "check": "reused discovery hash",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: Only for iPhone",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: Requires iOS 15.0 or later.",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: DEEP FLOW SOFTWARE SERVICES",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: 6.24.0",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: 2026-10-12",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: Data Used to Track You",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: $5.95",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: $7.39",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: $7.99",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: $9.99",
+      "passed": true
+    },
+    {
+      "check": "retained Apple evidence: $11.99",
+      "passed": true
+    },
+    {
+      "check": "public source contains exact asset URL: cleanup-official-similar-photos-link",
+      "passed": true
+    },
+    {
+      "check": "uncleared visual remains link-only: cleanup-official-similar-photos-link",
+      "passed": true
+    },
+    {
+      "check": "public source contains exact asset URL: cleanup-current-store-screenshot-link",
+      "passed": true
+    },
+    {
+      "check": "uncleared visual remains link-only: cleanup-current-store-screenshot-link",
+      "passed": true
+    },
+    {
+      "check": "first-party preview original hash",
+      "passed": true
+    },
+    {
+      "check": "first-party caption labels example/native limitations",
+      "passed": true
+    },
+    {
+      "check": "no image downloaded into owned folder",
+      "passed": true
+    }
+  ],
+  "limits": "Structural/source-byte checks only; no runtime, image-rights clearance, site build or independent publication review."
+}

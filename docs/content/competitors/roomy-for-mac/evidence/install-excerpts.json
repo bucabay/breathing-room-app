@@ -1,0 +1,19 @@
+{
+  "id": "install",
+  "publisher": "TSOFT LLC / Roomy",
+  "title": "Install Roomy",
+  "sourceUrl": "https://roomymac.com/help/install",
+  "finalUrl": "https://roomymac.com/help/install",
+  "checkedAtUtc": "2026-10-21T22:06:20.261812+00:00",
+  "retrievedOn": "2026-10-21",
+  "method": "WebFetch rendered Markdown, read in this job",
+  "publicationDate": null,
+  "scope": "Roomy 1.0.0 public documentation; vendor statements, not runtime verification",
+  "excerpts": [
+    "You don't need an account or a license to start: the free version scans your whole Mac and cleans up to 500 MB.",
+    "Roomy is sold directly by us, not through the Mac App Store or other download sites.",
+    "Full Disk Access is optional.",
+    "To update, quit Roomy, download the latest version from the download page, and drag it to Applications again."
+  ],
+  "rawCapture": null
+}

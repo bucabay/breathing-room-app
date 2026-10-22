@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-app-cleaner",
+  "productId": "app-cleaner",
+  "canonicalOwnerId": "app-cleaner",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "identity": {
+    "officialName": "App Cleaner & Uninstaller",
+    "vendor": "Nektony LLC",
+    "homepage": "https://nektony.com/mac-app-cleaner",
+    "repository": null,
+    "repositoryStatus": "No official public source repository established; proprietary license, not an open-source claim.",
+    "aliases": ["Nektony App Cleaner & Uninstaller", "App Cleaner and Uninstaller"],
+    "aliasSkipDecision": "Do not skip app-cleaner: distinct standalone product. MacCleaner Pro includes this component but is not its alias. Do not create separate drafts for spelling/vendor-prefix variants.",
+    "aliasEvidenceSourceIds": ["baseline", "directory", "buy"],
+    "powerMyMacDecision": "No relationship to PowerMyMac established or suggested by the corresponding records. The programme's separate PowerMyMac ambiguity is not an alias claim about this Nektony product; no other job researched or edited.",
+    "fit": "adjacent",
+    "fitReason": "Same Mac maintenance audience, partial overlap in app caches and review. Nektony documents a dedicated app-uninstall/update workflow; Breathing Room's current register does not establish full app-uninstaller parity. Not a drop-in substitute.",
+    "platformFit": "Native Mac intent; no Windows or Linux support asserted."
+  },
+  "reuseOfVerification": {
+    "record": "docs/content/verification/batch-1.json#app-cleaner",
+    "aliasRecord": "docs/content/verification/alias-decisions.json#app-cleaner",
+    "policy": "Reused same-day identity, platform, availability, bundle relationship and official text. Homepage re-read only to obtain absent image metadata, not to redo verified facts. Buy and terms pages fill missing price and license/rights details.",
+    "breathingRoomRegister": "docs/content/capabilities.md",
+    "breathingRoomScreenshots": "docs/content/screenshots.json"
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/app-cleaner/about/",
+    "retrievedAtUtc": "2026-10-21T19:04:56.720Z",
+    "officialDestinationUrl": "https://nektony.com/mac-app-cleaner",
+    "snapshotPath": "docs/content/.runtime/verification-1/app-cleaner-directory.json",
+    "hashRecord": "validation.json",
+    "method": "Reused retained live browser-rendered listing snapshot and competitors.json edges; no new directory fetch.",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=2", "retrievedAtUtc": "2026-10-21T18:36:23.710Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=3", "retrievedAtUtc": "2026-10-21T18:37:11.107Z"}
+    ],
+    "limitation": "Directory supports discovery and alias spelling, not product behavior or rights. Raw discovery response hashes are retained in validation.json; no new raw HTTP response claimed."
+  },
+  "sources": [
+    {
+      "id": "baseline", "publisher": "Nektony", "title": "App Cleaner & Uninstaller official product page",
+      "url": "https://nektony.com/mac-app-cleaner", "finalUrl": "https://nektony.com/mac-app-cleaner",
+      "retrievedAtUtc": "2026-10-21T19:08:06.750337+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/app-cleaner-official.json",
+      "sha256": "d8999e5bcbfd5d5ebc9314276f94f929e96bd1b66e816b804196a1f684a097ff",
+      "sourceUpdatedOn": "2026-09-20", "scope": "Vendor-published v10.0.1/macOS 11.0–27 offer, not installed runtime evidence."
+    },
+    {"id": "directory", "publisher": "AlternativeTo", "title": "App Cleaner & Uninstaller about", "url": "https://alternativeto.net/software/app-cleaner/about/", "finalUrl": "https://alternativeto.net/software/app-cleaner/about/", "retrievedAtUtc": "2026-10-21T19:04:56.720Z", "snapshotPath": "docs/content/.runtime/verification-1/app-cleaner-directory.json", "sourceUpdatedOn": "2026-10-09", "scope": "Discovery only"},
+    {"id": "buy", "publisher": "Nektony", "title": "Choose App Cleaner & Uninstaller subscription plan", "url": "https://nektony.com/mac-app-cleaner/buy", "finalUrl": "https://nektony.com/mac-app-cleaner/buy", "checkedOn": "2026-10-21", "retrievedAtUtc": "2026-10-21T19:58:13.272814+00:00", "method": "WebFetch text and read-only public HTML cross-check", "snapshotPath": null, "scope": "Direct website displayed dollar prices, not checkout totals; excerpts retained in claims"},
+    {"id": "terms", "publisher": "Nektony LLC", "title": "Terms and Conditions", "url": "https://nektony.com/terms", "finalUrl": "https://nektony.com/terms", "checkedOn": "2026-10-21", "retrievedAtUtc": null, "method": "WebFetch public text; exact tool retrieval time unavailable, not invented", "sourceUpdatedOn": "2026-03-18", "version": "1.26.3", "snapshotPath": null, "scope": "License and image rights; excerpts retained in claims"},
+    {"id": "image-metadata", "publisher": "Nektony", "title": "Official product image HTML metadata", "url": "https://nektony.com/mac-app-cleaner", "finalUrl": "https://nektony.com/mac-app-cleaner", "retrievedAtUtc": "2026-10-21T19:58:08.562820+00:00", "method": "Read-only public HTML img attribute extraction, no image binary downloaded", "excerpt": "src=https://nektony.com/wp-content/uploads/2026/09/uninstall-apps-completely-1x.png; alt=Applications tab; width=1160; height=768", "snapshotPath": null},
+    {"id": "br-register", "publisher": "Breathing Room project", "title": "Capabilities evidence register", "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedOn": "2026-10-21", "scope": "Reused source-level and published-offer research, not fresh native testing; public release https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1"}
+  ],
+  "claims": [
+    {"id": "C01", "wording": "Nektony's App Cleaner & Uninstaller is a separately offered component also included in MacCleaner Pro.", "sourceIds": ["baseline", "buy"], "excerpt": "App Cleaner & Uninstaller + 5 cleanup apps", "state": "verified", "evidenceClass": "vendor-documented", "location": "identity and comparison scope"},
+    {"id": "C02", "wording": "The vendor lists macOS 11.0–27 and v10.0.1, last updated September 20, 2026.", "sourceIds": ["baseline"], "excerpt": "macOS 11.0-27\nLast updated: Sep. 20, 2026, v.10.0.1", "state": "verified", "evidenceClass": "vendor-documented", "conditions": "Not binary/architecture compatibility tested; do not convert a published range into cross-version certification.", "location": "requirements"},
+    {"id": "C03", "wording": "Nektony says it identifies app caches, settings and support files by bundle ID and shows files and paths before removal.", "sourceIds": ["baseline"], "excerpt": "Remove apps with all their caches, settings and support files, found by bundle ID, not by name.\nSee every file and its exact path before anything is removed.", "state": "verified", "evidenceClass": "vendor-documented", "conditions": "No completeness, safety, false-positive or recovery test; not a guarantee of removing every remnant.", "location": "workflow and approval row"},
+    {"id": "C04", "wording": "The product page documents app updates, startup items, extensions and app network activity controls.", "sourceIds": ["baseline"], "excerpt": "See every available update in one place: apps from developer sites, the Mac App Store and Homebrew.\nWe spot updates. You choose when to install.\nMonitor app traffic in real time or over time to see which apps use the internet.", "state": "verified", "evidenceClass": "vendor-documented", "conditions": "Do not equate network activity with CPU/memory helper grouping or recurring disk-growth attribution.", "location": "competitor strengths"},
+    {"id": "C05", "wording": "The official page offers a two-day Pro trial without a card, then a Free version for scanning and finding leftovers manually.", "sourceIds": ["baseline"], "excerpt": "No card required\nBuy Now\nSubscription / One-time\nmacOS 11.0-27\nLast updated: Sep. 20, 2026, v.10.0.1\n2-day trial", "additionalExcerpt": "After the trial, you can continue using the Free version to scan your disk and find leftovers manually.", "state": "verified", "evidenceClass": "vendor-documented", "conditions": "No trial activation or free removal entitlement tested. Free Download does not mean perpetual free Pro.", "location": "pricing and limits"},
+    {"id": "C06", "wording": "For one Mac, the direct website displays $7.95/month, $14.95/year or $34.95 one-time.", "sourceIds": ["buy"], "excerpt": "For 1 MacFor 2 MacsFor 5 Macs ... App Cleaner & Uninstaller $7.95/month ... $14.95/year ... One-time purchase ... $34.95", "state": "verified", "evidenceClass": "published-offer", "conditions": "Dollar symbol as displayed; currency code, regional conversion, taxes and checkout total not established. Pricing tiers appear in 1/2/5-Mac order; public HTML cross-checked. Not a bundle price. Refresh within 30 days and before publication.", "location": "pricing row"},
+    {"id": "C07", "wording": "One-time licensing covers the purchased major version, with minor fixes included; major upgrades can cost extra. Subscriptions may auto-renew unless cancelled.", "sourceIds": ["terms", "buy"], "excerpt": "For one-time purchases, the license is granted on a perpetual basis for the specific Major Version of the Product purchased ... Minor updates and fixes within the same Major Version are provided free of charge.", "additionalExcerpt": "the subscription will automatically renew unless cancelled", "state": "verified", "evidenceClass": "published-terms", "conditions": "No purchase or cancellation tested; do not advertise all future upgrades as lifetime-free.", "location": "license conditions"},
+    {"id": "C08", "wording": "Nektony retains proprietary software/material rights; public image availability does not establish republication permission.", "sourceIds": ["terms"], "excerpt": "All rights are reserved. You can view, print or download extracts of the Material for your own personal use but you cannot otherwise copy, edit, vary, reproduce, publish, display, distribute, store, transmit, commercially exploit, disseminate in any form whatsoever or use the Material without a permission.", "state": "verified", "evidenceClass": "published-terms", "conditions": "No permission requested or obtained; no legal fair-use determination made.", "location": "visual rights blocker"},
+    {"id": "C09", "wording": "The vendor labels the app Notarized by Apple.", "sourceIds": ["baseline", "buy"], "excerpt": "Notarized by Apple", "state": "verified", "evidenceClass": "vendor-documented", "conditions": "Vendor assertion only, no signature/binary/notarization check.", "location": "installation caveat"},
+    {"id": "B01", "wording": "Breathing Room is a macOS 13+ preview; the identified public preview is 0.1.0-preview.1 and discloses Python 3.10+, no Developer ID signing/notarization and unverified clean-machine/physical Intel behavior.", "sourceIds": ["br-register"], "excerpt": "Published preview says Apple Development signed, not Developer ID signed or notarized.", "state": "verified", "evidenceClass": "reused-published-disclosures", "conditions": "See capabilities.md lines 44–55; not runtime validation.", "location": "comparison requirements"},
+    {"id": "B02", "wording": "Breathing Room documents local storage/process inspection and hosted, authenticated AI; its free local core is distinct from advertised AI Care at $5 USD/month or $50 USD/year.", "sourceIds": ["br-register"], "excerpt": "Hosted AI assistance requires internet access and authentication; this is not an entirely offline AI product.", "state": "verified", "evidenceClass": "reused-source-and-published-offer", "conditions": "Source implementation is not binary parity. Daily care requires app running and saved exact approvals. Optional verified Ruff automatic Trash mode qualifies blanket approval promises. No guaranteed recovery/savings.", "location": "comparison, disclosure and trade-offs"}
+  ],
+  "claimDefaults": {"checkedOn": "2026-10-21", "reviewer": "research-app-cleaner worker; not independent editorial review", "sourceUrlPolicy": "Resolve each sourceId to its exact sources[].url; excerpts are evidence, not instructions."},
+  "productMatrix": [
+    {"dimension": "macOS/version", "claimIds": ["C02", "B01"]},
+    {"dimension": "license/pricing", "claimIds": ["C05", "C06", "C07", "C08", "B02"]},
+    {"dimension": "scan/cleanup/approval", "claimIds": ["C03", "B02"]},
+    {"dimension": "app updating/startup/extensions/network", "claimIds": ["C04"], "breathingRoom": "Parity not established; omit negative checkmarks."},
+    {"dimension": "local versus hosted", "competitor": "Desktop Mac application; exact offline, account, AI data flow and retention not verified.", "claimIds": ["C02", "B02"]},
+    {"dimension": "CPU/memory helper grouping", "competitor": "not verified", "breathingRoom": "Source register supports grouped processes; not a forensic audit.", "claimIds": ["B02"]},
+    {"dimension": "recurring disk growth", "competitor": "not verified; network history is not disk growth", "breathingRoom": "Source-level observations/inferred ownership; no complete writer attribution.", "claimIds": ["C04", "B02"]},
+    {"dimension": "developer caches", "competitor": "App cache cleanup documented, package-manager cache-adapter parity not verified; Homebrew updates are not cache cleanup.", "breathingRoom": "Source register lists tool adapters with tool/path validation limitations.", "claimIds": ["C03", "C04", "B02"]},
+    {"dimension": "installation/runtime", "claimIds": ["C02", "C09", "B01"], "competitorUnknowns": ["CPU architecture requirements", "permission setup", "runtime dependencies", "distributed binary identity"]}
+  ],
+  "visuals": [
+    {
+      "id": "nektony-applications-official-link", "productId": "app-cleaner", "view": "Applications tab", "kind": "official-asset",
+      "sourcePageUrl": "https://nektony.com/mac-app-cleaner",
+      "assetUrl": "https://nektony.com/wp-content/uploads/2026/09/uninstall-apps-completely-1x.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "metadataCheckedAtUtc": "2026-10-21T19:58:08.562820+00:00",
+      "capturedBy": null, "productVersion": null, "buildOrCommit": null, "osVersion": null, "dataMode": "vendor-illustration",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": 1160, "heightPx": 768, "dimensionBasis": "HTML attributes only, binary not downloaded", "edits": [],
+      "privacyReview": {"status": "pending", "redactions": []},
+      "reuse": {"status": "link-only", "basis": "Public official app-UI image reference, no permission to copy/rehost established; terms reserve publication/display rights.", "evidenceUrlOrPath": "https://nektony.com/terms", "credit": "App Cleaner & Uninstaller image: Nektony"},
+      "caption": "Nektony's official Applications-tab illustration. Vendor-provided image, not our hands-on test; depicted version and example-data status unverified.",
+      "alt": "Nektony App Cleaner & Uninstaller Applications-tab illustration, linked from the official product page.",
+      "supportedClaimIds": ["C03"], "limitations": ["Asset bytes not fetched or visually reviewed; not approved for on-page reuse.", "No fabricated download hash or vendor capture date.", "A source link does not pass the mandatory on-page competitor screenshot gate."],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library job per shared manifest",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "privacyReview": {"status": "reviewed-in-shared-manifest", "redactions": []},
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party UI capture; third-party marks retain ownership, publication-context independent review pending.", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room current-source browser preview"},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": ["B02"], "limitations": ["Keep example-data banner visible.", "Current-source illustration, not distributed-release parity or native testing.", "Reuse existing original; do not relabel the legacy home screenshot as current."],
+      "review": {"status": "shared-library-reviewed; publication-context pending", "reviewer": "screenshot-library job", "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search/reference", "proposedSlug": "review-app-leftovers-before-uninstalling-mac", "title": "Review app leftovers before uninstalling a Mac app",
+      "primaryIntent": "Decide which app-associated files to keep before uninstalling, rather than treating all large app data as junk.",
+      "descriptionBrief": "Lead with the distinction between removing an app and reclaiming storage; paths and backups matter more than the advertised completeness claim. Vendor documentation, not a hands-on tutorial.",
+      "sections": ["Define the goal: uninstall, reset, update or investigate growth", "Read the proposed file paths and separate service files from original documents", "Use Nektony's documented bundle-ID/file-review workflow without promising completeness", "If the app is staying, investigate storage instead of uninstalling it", "Choose the narrower tool and preserve unknowns"],
+      "interactionPass": "Non-executing keep/reset/uninstall decision checklist. Never scan, remove files or invoke cleanup from an article. No invented results or arbitrary demo repo.",
+      "visualPlan": "Official Applications-tab image immediately after lead, only after rights approval; current-source Breathing Room Space example image later with full caption.",
+      "internalLinksProposed": ["/comparisons/", "/comparisons/app-cleaner/"],
+      "distinctFromBundle": "Focus app-associated file decisions, not MacCleaner Pro's whole-disk/duplicate toolkit; no duplicate alternatives route."
+    },
+    "comparison": {
+      "proposedSlug": "app-cleaner", "title": "Breathing Room vs Nektony App Cleaner & Uninstaller",
+      "primaryIntent": "Choose an app manager/uninstaller versus storage investigation and reviewable care, without claiming feature parity.",
+      "leadBrief": "Choose the documented Nektony workflow for uninstalling/updating apps; consider Breathing Room, which we build, for storage investigation if its preview/runtime and hosted-AI boundaries fit.",
+      "rows": ["job and scope", "macOS/version", "file review", "updates/startup", "local/hosted unknowns", "pricing and license conditions", "preview/install caveats"],
+      "internalLinksProposed": ["/comparisons/", "/blog/review-app-leftovers-before-uninstalling-mac/"],
+      "noClaims": ["best", "safer", "faster", "complete removal proven", "guaranteed savings", "Breathing Room is a full uninstaller", "competitor has no monitoring"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "competitorAdvantages": ["Documented dedicated uninstaller with proposed file/path review (C03).", "Documented app updater/startup/extension workflow (C04).", "One-time major-version license option alongside subscription (C06–C07).", "Vendor advertises macOS 11+ range and notarization, unlike Breathing Room's disclosed preview constraints (C02/C09/B01)."],
+    "competitorTradeoffs": ["Paid Pro after a short trial; Free scan is not unlimited free Pro removal (C05).", "One-time purchase does not include all future major upgrades (C07).", "Offline/AI/account/data flow and observed removal completeness not established."],
+    "breathingRoomAdvantages": ["Free local core and source-described storage/project/process inspection are relevant when keeping the app rather than uninstalling it (B02; capabilities.md).", "Open desktop source under Apache-2.0, not a claim that hosted services are free or open (capabilities.md lines 66/80)."],
+    "breathingRoomTradeoffs": ["Non-notarized macOS 13+ preview with Python/runtime and native-validation caveats (B01).", "Hosted authenticated AI and paid Care must not be called entirely offline/free (B02).", "No full uninstaller/update parity established; source presence does not certify the installed preview."]
+  },
+  "unknowns": [
+    {"field": "Competitor screenshot rights", "critical": true, "resolution": "Need documented permission/license or explicit approved policy decision plus actual asset retrieval/hash and visual/privacy review. No permission requests authorized."},
+    {"field": "Competitor exact currency code/tax/checkout totals", "critical": false, "resolution": "Use displayed dollar amounts with conditions, not USD or tax-inclusive guarantees; checkout not opened."},
+    {"field": "Competitor source repo, architecture, runtime, permissions, account/offline/AI data flow, recurrence and helper grouping", "critical": false, "resolution": "Mark not verified or omit affected claims; no unsupported negative cells."},
+    {"field": "Native testing/performance/deletion completeness", "critical": false, "resolution": "Not tested and not claimed; no installation or cleanup permitted."}
+  ],
+  "blockers": [{"id": "VISUAL-RIGHTS", "stage": "drafting", "diagnostic": "Official app-UI asset URL identified, but Nektony terms reserve republication rights. No reuse permission established; no image bytes downloaded. Link-only does not satisfy EDITORIAL.md mandatory on-page competitor image gate. Drafting remains blocked until permitted reuse and asset/visual review are documented."}],
+  "validationRecord": "docs/content/competitors/app-cleaner/validation.json",
+  "safety": "Research only; no site edits, downloads of restricted images, signups, credentials, cookie extraction, cleanup, installs, messages, commits, pushes, deployments, queue/database edits or agents. No browser session needed."
+}

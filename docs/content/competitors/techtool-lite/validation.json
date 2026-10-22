@@ -1,0 +1,27 @@
+{
+  "jobId": "research-techtool-lite",
+  "status": "passed-local-packet-checks-with-drafting-blockers",
+  "checks": [
+    "Python JSON parsing passed for research.json.",
+    "Canonical owner techtool-lite and blocked status assertions passed.",
+    "All 11 claims have wording, state, source URL, supporting excerpt, original check date, evidence class and conditions; source ID references resolve.",
+    "All claim references in 9 matrix rows resolve.",
+    "Retained official-source and directory file SHA-256 checks passed against inherited verification hashes.",
+    "Selected Breathing Room Space preview SHA-256 matches screenshots.json; opened and visually read actual PNG.",
+    "Both visual records have caption, alt text, reuse basis and limitations; competitor remains link-only with no saved original.",
+    "Explicit blockers and empty download list assertions passed.",
+    "Official product hero visually inspected in owned browser tab; feature thumbnails identified as icons, not app UI.",
+    "Official version announcement and updates index checked; product-page versus release-note platform discrepancy retained, not resolved by invention."
+  ],
+  "artifactHashes": {
+    "research.json": "752ef393c0ec20b9dc9b6fc5ade2d6a365f0c9dde5c53baa16bf05158fd823a4",
+    "research.md": "2f98d0d22d6931478e13a910e44bf280e9ef5a6a1bed1fdac4ca7df64209e5f4"
+  },
+  "notPerformed": [
+    "Native product execution, installer download or signature inspection",
+    "Image republication or original competitor asset download without rights",
+    "Marketing check/build/test: no marketing files changed",
+    "Independent editorial review, draft scoring or responsive page review"
+  ],
+  "diagnostic": "Local packet checks pass, but do not imply drafting clearance. Required competitor UI reuse rights are unresolved, and official compatibility statements differ."
+}

@@ -1,0 +1,26 @@
+{
+  "jobId": "research-washandgo",
+  "checkedAtUtc": "2026-10-21T22:24:43.772941+00:00",
+  "result": "pass-research-scope",
+  "method": "Executed read-only Python JSON/reference/hash/PNG-header/archive-member assertions against on-disk files; actual image content separately opened with the image-capable read tool.",
+  "checks": [
+    "Identity, canonical owner and explicit non-alias/non-direct framing parsed successfully",
+    "All 9 source snapshot SHA-256 values match existing bytes",
+    "Original page-5 discovery raw capture hash matches",
+    "All 12 claims and 8 matrix rows have valid source/claim references; unknowns explicit",
+    "Three original PNG hashes, signatures and dimensions pass; two extracted PNGs byte-identical to exact archive members; all captions/alt/reuse basis present",
+    "Research-ready and publication-unapproved gates remain separate; no queue mutation asserted",
+    "Actual PNG content inspected: WashAndGo Options and Dashboard, Breathing Room current-source Space browser preview",
+    "Owned Chrome tab 179 closed after official-source inspection; no pre-existing tab content inspected"
+  ],
+  "artifactHashes": {
+    "research.json": "678b9a4391fae1ef0680e3c8eff560c77a60980e1a1ce5d9ceba95d585921e2b",
+    "research.md": "b19e868887c5019949325f0fb00124fea4983848aa51bf23d57aa6ca654cdd22"
+  },
+  "notRun": [
+    "No site check/build/tests: no site content changed",
+    "No competitor or Breathing Room installation, execution, cleanup, recovery or benchmark",
+    "No independent publication review, article scoring or rendered-page responsive QA"
+  ],
+  "limitations": "These checks verify packet structure/provenance, not every possible product capability or successful native behavior. Noncritical unknowns remain explicit. Drafting readiness is limited to the recorded Mac-replacement intent and claim wording."
+}

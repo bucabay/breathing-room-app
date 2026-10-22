@@ -1,0 +1,68 @@
+[
+  {
+    "id": "license",
+    "sourceUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/LICENSE",
+    "retrievedAtUtc": "2026-10-21T20:12:46.194146+00:00",
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=utf-8",
+    "snapshotPath": "docs/content/competitors/clean-me/assets/Clean-Me-LICENSE.txt",
+    "sha256": "68f9fdb84444f7b3075ffcdeee6af5f64d25ce72711abd81994655f6780cedd7",
+    "bytes": 1073
+  },
+  {
+    "id": "release",
+    "sourceUrl": "https://api.github.com/repos/Kevin-De-Koninck/Clean-Me/releases/latest",
+    "finalUrl": "https://api.github.com/repos/Kevin-De-Koninck/Clean-Me/releases/latest",
+    "retrievedAtUtc": "2026-10-21T20:12:47.065745+00:00",
+    "httpStatus": 200,
+    "contentType": "application/json; charset=utf-8",
+    "snapshotPath": "docs/content/competitors/clean-me/sources/release.json",
+    "sha256": "2da1db3e405c5ceae8dd98205714df53cc486526033a77563a334b5bc137be4f",
+    "bytes": 3809
+  },
+  {
+    "id": "paths",
+    "sourceUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/Clean%20Me/Paths.swift",
+    "finalUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/Clean%20Me/Paths.swift",
+    "retrievedAtUtc": "2026-10-21T20:12:48.043164+00:00",
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=utf-8",
+    "snapshotPath": "docs/content/competitors/clean-me/sources/Paths.swift",
+    "sha256": "c253aee9b251f95b8caf245455599d66aea379669cd3d0d820feb46cebca2728",
+    "bytes": 3020
+  },
+  {
+    "id": "project",
+    "sourceUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/Clean%20Me.xcodeproj/project.pbxproj",
+    "finalUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/Clean%20Me.xcodeproj/project.pbxproj",
+    "retrievedAtUtc": "2026-10-21T20:12:48.770241+00:00",
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=utf-8",
+    "snapshotPath": "docs/content/competitors/clean-me/sources/project.pbxproj",
+    "sha256": "60b59d66c8aa0957473e88880ae0a1d194c99ed4fe86f24e20eb6da6353ca765",
+    "bytes": 20649
+  },
+  {
+    "id": "screenshot",
+    "sourceUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/resources/Cleam-Me-image1.png",
+    "finalUrl": "https://raw.githubusercontent.com/Kevin-De-Koninck/Clean-Me/bb6f0e031db28c037b1c95a1fec296fe68e132f5/resources/Cleam-Me-image1.png",
+    "retrievedAtUtc": "2026-10-21T20:12:49.543574+00:00",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "snapshotPath": "docs/content/competitors/clean-me/assets/clean-me-official-original.png",
+    "sha256": "895711d46c31155cfa71462639a6a1c5d11b40e9a9e04b8f07039c08f3ab9598",
+    "bytes": 611451
+  },
+  {
+    "id": "homebrew",
+    "sourceUrl": "https://formulae.brew.sh/api/cask/clean-me.json",
+    "finalUrl": "https://formulae.brew.sh/api/cask/clean-me.json",
+    "retrievedAtUtc": "2026-10-21T20:12:50.627581+00:00",
+    "httpStatus": 404,
+    "contentType": "text/html; charset=utf-8",
+    "snapshotPath": "docs/content/competitors/clean-me/sources/homebrew-response.txt",
+    "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368",
+    "bytes": 9379
+  }
+]

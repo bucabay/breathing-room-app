@@ -1,0 +1,49 @@
+{
+  "checkedAtUtc": "2026-10-21T20:24:50.709325+00:00",
+  "command": "python3 docs/content/competitors/deepclean/validate.py",
+  "outcome": "passed-structural-evidence-checks; drafting-still-blocked",
+  "checks": [
+    "about: original HTML SHA-256 matches retrieval register",
+    "terms: original HTML SHA-256 matches retrieval register",
+    "privacy: original HTML SHA-256 matches retrieval register",
+    "download: original HTML SHA-256 matches retrieval register",
+    "press: original HTML SHA-256 matches retrieval register",
+    "developer-tools: original HTML SHA-256 matches retrieval register",
+    "14 claim source mappings and 18 supporting/conflicting excerpts matched retained source text; whitespace/Markdown emphasis normalized",
+    "Selected current-source Breathing Room Space PNG SHA-256 matches screenshot library",
+    "Exact DeepClean Developer Tools asset URL present in retained live DOM metadata; no download/license inferred",
+    "Blocked drafting, canonical owner and link-only/no-downloaded-asset guards consistent",
+    "Required example-data/non-native caption labels retained",
+    "All existing owned JSON files parse"
+  ],
+  "artifactHashes": {
+    "validate.py": "5fa76b1469fff796adb9b7e06248b31d1a17b4e554fe70c415da545e83230e3a",
+    "research.md": "d3c0856239e3655d830132f567b6ab4fd32455a83079924ff240a0bd22cb6eba",
+    "research.json": "8ad5caffd999c90f7f36d4aba1cbd6bc1a9ea679dfcc95c4b5ab0ac370b66677",
+    "source-provenance.json": "097f5aed53cf2fbb84adbb640464ad4d05e865aa208172baf21be334b2e8b424",
+    "collect-sources.py": "23a690c4558e431b8c649a5807142b0c857effc9a78faf9e2e530edc99fe97e5",
+    "sources/press.html": "c0fa0946cd0bb93f94f8536b2580771b6ee43377a7133b824010b162ed6bccb0",
+    "sources/about.html": "775524c8929477c768f25a6e448eb315e2d3aab8d204ad586c19943d233fa06d",
+    "sources/developer-tools.html": "c854123220bd3b8357211ae0731ec8ce0510c91e7e9b2c638498c572278bca18",
+    "sources/terms.html": "a2f72a07a60940e41c57dc88e8450b77101198cd820d0a98a6be39e69713b845",
+    "sources/download.txt": "e5f8f2c55b9968cbe65535872b553d683079f2294ded4b908ca949e0eed97d2c",
+    "sources/terms.txt": "4ef37c0a52ed8ca9921d2b4aa409368f93bf42cc527608e032cf66b28bf98d02",
+    "sources/listing-visual-dom.json": "29088fbdea981117256e3540c12039c1c04a5fc526d4300ec5e7ebe4e50fc994",
+    "sources/about.txt": "ddacbe91a926f3ac5266c57d741bcaeaa7087f0ee328b32fd4fe02f71b09f70f",
+    "sources/developer-tools.txt": "acc83b0b3d279e1c75a6a2aafa41a2cab103a5e306049f7c05b05fae384b2318",
+    "sources/press.txt": "6e8566eec3c2d0195204c7b34306d819a2e8cf3b84e05bdce79d6424df5a21c4",
+    "sources/retrievals.json": "a3ab6c1a097e3cd5769d89f8f197ee9919fce712a53fc2d35308768caad3406c",
+    "sources/download.html": "823a3e7c68f6591a892c3dc6a94653122c612f290dc4bdcb036633b2a9785cb5",
+    "sources/privacy.txt": "0243391d00ebb4a10fc4a4a61e5a89d0bcd21e85b5e764447a33a99e95932318",
+    "sources/privacy.html": "1b84c504e735aca9f727139ca4d60faed91baa1e31f23e55d69c5832261d436b"
+  },
+  "notPerformed": [
+    "native tests",
+    "installer/image download",
+    "cleanup",
+    "permission request",
+    "site check/build/test",
+    "rendered-page QA",
+    "independent review"
+  ]
+}

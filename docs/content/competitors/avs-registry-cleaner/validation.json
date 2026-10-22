@@ -1,0 +1,20 @@
+{
+  "jobId": "research-avs-registry-cleaner",
+  "scope": "Research integrity and explicit editorial skip; not draft or publication approval",
+  "checks": [
+    {"check":"Python json.loads research.json","result":"passed"},
+    {"check":"10 unique claims; each source ID resolves and every claim has URL, excerpt, checked date, conditions and state","result":"passed"},
+    {"check":"Whole-file SHA-256 of both reused official/directory raw captures matches batch-2 values","result":"passed"},
+    {"check":"Selected current Space preview SHA-256 matches screenshot library","result":"passed"},
+    {"check":"Canonical owner, explicit skip action and draftAllowed false","result":"passed"},
+    {"check":"Exact competitor screentour asset path exists in retained official HTML","result":"passed"},
+    {"check":"Competitor image remains link-only with no downloaded original or invented image hash","result":"passed"}
+  ],
+  "artifacts": [
+    {"path":"docs/content/competitors/avs-registry-cleaner/research.json","sha256":"246dd15eee4683d36acb271115e0b2d33cdbc5329ab0f4bb9eeccb69b7e19f02"},
+    {"path":"docs/content/competitors/avs-registry-cleaner/research.md","sha256":"7fcfed43be698c96a4ac77cda1f0ae9de8015c35826011a6df82fb4b8dada102"},
+    {"path":"docs/content/competitors/avs-registry-cleaner/evidence/official-visual-page.html","sha256":"eb1869b9c18954cc585b74c28a0cd2bf6488deb956ea2179d662e385bb02f05b"}
+  ],
+  "notPerformed": ["Competitor installation/native or cleanup tests", "Competitor image download or visual approval", "Fresh browser/native screenshot capture", "Website build/check/test (no site changes)", "Independent editorial review"],
+  "result": "Research skip established. Any reconsidered drafting remains gated on distinct Mac intent, competitor image clearance/inspection and qualified licence claims."
+}

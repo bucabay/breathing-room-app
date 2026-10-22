@@ -1,0 +1,133 @@
+Privacy Policy | DeepClean
+DeepClean
+Features
+Blog
+Pricing
+Scan Your Mac Free
+Legal
+Privacy Policy
+DeepClean is built around a simple idea: your files are your business. This page describes exactly what data the website, the app's license system, and the app's usage events handle, what never leaves your Mac, and the choices you have. Effective September 11, 2026.
+The short version
+The DeepClean app scans your disk
+entirely on your Mac
+. File names, file paths, and file contents never leave your machine. The only network traffic the app generates goes to our own server: license activation, update checks, optional setup-link confirmation, and a small number of usage events (which step of the app you reached and coarse size ranges, never file details) that you can turn off from the DeepClean menu. There is no third-party analytics SDK in the app. The website uses Google Analytics and standard server logs like most websites do. We do not sell data, run ads, offer user accounts, or send newsletters.
+What we collect
+Website analytics
+The deepclean.app website uses
+Google Analytics 4
+(property
+G-HS13FXWGJB
+) to understand which pages people visit and where visitors come from. Google Analytics sets cookies and collects information such as pages viewed, approximate location derived from IP address, browser and device type, and referring site. We also record an event when someone clicks a download link. Google Analytics runs on the website only; the desktop app contains no third-party analytics.
+The website also loads fonts from
+Google Fonts
+(fonts.googleapis.com and fonts.gstatic.com). When your browser requests those font files, Google's servers see your IP address and standard request headers.
+Free downloads
+Before the free download starts, the website asks for your email address and sends a short-lived verification code. Verification requests and failed-attempt counts are retained temporarily for expiry and abuse prevention. After you verify, we store that address together with the country derived from your IP address, the IP address itself, the page and button you used to download, the referring site or campaign tags in the link you followed, your browser's language and timezone, and its user agent string. We use this to send you the download link and the install guide, to tell you about important DeepClean updates, to reply if you get in touch, and to count verified downloads by country. The list is stored in our own database, is never sold or shared, and you can ask us to delete your address at any time by emailing
+support@deepclean.app
+or replying to any email we send you.
+Optional setup connection:
+your download confirmation and email include a setup link valid for 7 days. If you open it after installing, DeepClean asks whether you want to connect that download email to usage milestones from this installation. Nothing is connected until you confirm, and usage statistics must be enabled. We store a hash of the setup token and the resulting download-to-install connection; the link does not grant a license or account access. We do not infer this connection from your IP address or browser. You can use the app without connecting, or ask us to remove the connection.
+If you confirm while offline, the app saves the setup request in a local file with restricted permissions and retries automatically, including after restarting, until it succeeds or expires. Turning off usage statistics discards any undelivered setup request. Browser milestone uploads are queued for up to 24 hours in the current tab; pending download milestones include their scoped download token so they can be attributed to the verified download.
+Server logs
+Our web server (nginx) keeps standard access logs: the IP address of the request, the page requested, the user agent string, and a timestamp. These logs are used for security, debugging, and abuse prevention.
+Optional usage events from the app
+First-party website milestones use a random browser-session identifier that expires after 24 hours to show page views and download or purchase clicks. Only page paths, button labels, campaign source, and the domain of the site that linked you here (for example, google.com) are included, never the full referring address, query string, or URL fragment. Email verification associates that browser session with the download record. We separately record when the browser receives the file, requests saving it, reports a download failure, or opens the optional setup link. Saving is not proof of installation. These browser events are retained for 30 days. Your browser remembers the optional setup link for up to 7 days so you can return to the install guide after installing.
+App milestones also include onboarding screens, skipped onboarding scans, permission settings opened, failed or cancelled scans, cleanup selection size ranges, cleanup failures, and activation failures. Upload health includes queue size, retry attempt count, and server receipt times. Health receipts are retained for 90 days; no file names, paths, contents, email addresses, or setup tokens are included in app health uploads. The DeepClean menu includes local delivery diagnostics.
+So we can tell whether the free scan is useful and where people get stuck, the app reports a short list of milestone events to our own server at
+api.deepclean.app
+: first open and subsequent app launches, permission prompt shown, already granted, newly granted or skipped, scan started or completed, results viewed, a free cleanup started or completed, the free allowance reached, a Show in Finder control clicked (whether it was locked or not), the unlock screen shown, a purchase button clicked, a license activated, and a paid cleanup completed. Each event carries:
+A random install identifier
+generated on your Mac the first time DeepClean runs. It is not derived from hardware, your name, or your email, and it is not the machine identifier used for license activation.
+Random event and launch-session identifiers and occurrence time
+, so retried uploads do not count twice, and whether this is a test build, so testing can be excluded from usage totals.
+Coarse ranges, never exact values
+: for example that a scan found "20 to 50 GB", or that a cleanup was "under 100 MB", and whether the scan took "under 30 seconds".
+Which screen or reason triggered the event
+(for example that the unlock screen was shown after a cleanup, or that Show in Finder was clicked on the Developer screen), which predefined category it belonged to (such as Xcode build data or browser caches, from a fixed list in the app), its Safe, Review, or Caution rating, whether you are on the free or paid tier, the app version, and the macOS version.
+Nothing about your files is included: no names, paths, folder names, app names, project names, or contents, and no per-file data of any kind. The events are stored in our own database, are not shared with anyone, and are used to understand app usage and checkout reliability. A purchase click may also carry the temporary checkout reference described below. You can turn usage events off at any time from the
+DeepClean menu > Share Usage Statistics
+; the app works identically either way.
+Unsent usage events are kept locally for up to 7 days, capped at 500 events, and retried when delivery fails. They are removed after the server acknowledges them. Turning off usage statistics clears the local pending queue and stops future delivery; it does not automatically delete records already received or a setup connection you previously confirmed. Contact us if you want those removed.
+License activation
+Unlimited cleanup is a paid license with per-Mac activation limits, and enforcing those limits requires a small amount of data. When you activate a license, the app sends the following to our license server at
+api.deepclean.app
+:
+Your license key
+A machine identifier
+derived from your Mac's hardware UUID (the IOPlatformUUID). This identifies the Mac for activation counting; it does not contain personal information by itself.
+Your Mac's computer name
+(the name shown in System Settings, for example "Priya's MacBook Pro"), so you can recognize which of your Macs is using an activation.
+The random install identifier
+described above, so we can tell which free installs went on to purchase without tying that to any file data.
+The server stores the license key, the email address the key was issued to, and an activation record (machine identifier, machine name, activation date) for each activated Mac. The app periodically revalidates the license by sending the key and machine identifier again, and works offline for a grace period between checks. The app also checks for updates by sending its version number to the same server. Your license is stored locally in the
+macOS Keychain
+on your Mac.
+Payments
+To understand where checkout stops working, we record checkout milestones on our own server: the checkout sheet shown, a payment form requested, a failure or dismissal, and the activation button clicked. These carry a random checkout reference and fixed status codes, never card details, file data, or the text of payment errors. Browser event collection for a reference expires after 24 hours. We retain its link to the payment order so purchases and license activations can be counted accurately. When checkout starts in a supported app version with usage statistics enabled, the reference also connects the app's purchase click to checkout; the app's permanent install identifier is not put in the browser URL. Turning off app usage statistics also disables this checkout telemetry for links opened by that app. Required payment and licensing records are still kept.
+Purchases are processed by
+Razorpay
+, a third-party payment processor. Your card or payment details go directly to Razorpay; DeepClean never sees or stores them. After a successful payment we receive your email address and payment reference IDs from Razorpay, which we use to generate your license key and email it to you. Razorpay's handling of your payment data is governed by Razorpay's own privacy policy.
+Support
+If you email
+support@deepclean.app
+or use a contact form, we receive the name, email address, and message you send, and we keep that correspondence so we can respond and follow up.
+Chat with Us (in-app chat):
+messages you write in the app's Chat with Us section are sent to our server at
+api.deepclean.app
+and emailed to our support inbox through our email provider Resend. Our replies are stored with the conversation so the app can show them. Each message includes your DeepClean and macOS version numbers. If usage statistics are on, the first message also includes the random install identifier described above, so we can see where setup got stuck. If you leave an email address in the chat, replies are also emailed to you and you can answer by email; you can remove it at any time. The app keeps a copy of the conversation and a random chat key on your Mac. The chat never sends file names, paths, or contents unless you type them yourself. We also count when the chat is opened and when a message is sent, never what it says. Email us to have a conversation deleted.
+What we do not collect
+No file data.
+The names, paths, and contents of files on your disk never leave your Mac. Scans, duplicate detection, and cleanup all run locally.
+No third-party analytics or crash reporting in the app.
+The only usage data the app sends is the anonymous milestone events listed above, to our own server, and you can switch them off.
+No user accounts.
+There is nothing to sign up for. The free scan needs no email or card, and if you buy, your license key is your proof of purchase.
+No newsletters and no ads.
+We email you your license key at purchase and reply when you write to us. That is it.
+No selling of data.
+We do not sell, rent, or trade any information we hold, to anyone, for any purpose.
+Cookies
+The only cookies on deepclean.app are those set by Google Analytics 4, used to distinguish visitors and sessions. We set no advertising cookies and no cookies of our own. You can block or delete cookies in your browser settings; the site works fine without them.
+Data retention
+License keys and activation records are kept for as long as the license is in service, because they are what allow you to reinstall and reactivate the app. Support correspondence is kept as long as it is useful for helping you. Server access logs and analytics data are retained on rolling schedules typical for those systems and are not kept indefinitely. If you want specific data about you removed, email us and we will review what we hold and respond.
+Your choices
+Opt out of Google Analytics
+with the browser
+opt-out add-on
+, a content blocker, or by disabling cookies for this site.
+Turn off usage events
+from the DeepClean menu (Share Usage Statistics). The random installation identifier is retained with the free cleanup allowance in Keychain as well as Application Support. Contact us to remove received tracking records or a confirmed setup connection.
+Deactivate a Mac
+at any time from the app's license settings, which removes that machine's activation record from our server.
+Leave the download list
+by replying to the download email or writing to
+support@deepclean.app
+; we delete the address and everything stored with it.
+Ask us anything
+about the data associated with your purchase, or ask for it to be corrected or deleted, by emailing
+support@deepclean.app
+. Note that deleting license records means the license can no longer be validated.
+Changes to this policy
+If this policy changes, we will update this page and the effective date at the top. Material changes will be noted here rather than buried. This policy was last updated on
+September 11, 2026
+, to describe checkout milestones, temporary checkout references, and how purchase clicks connect to payment and activation records.
+Contact
+Questions about your data
+support@deepclean.app
+Privacy questions go to the same inbox as everything else, and they are answered by the people who build the product. You can read more about how DeepClean is made on the
+about page
+, and the terms that govern your purchase on the
+terms of use page
+.
+Cleanup that stays on your Mac
+DeepClean scans your disk locally and shows you everything before it deletes anything. Free to scan; unlimited cleanup is a one-time purchase, no subscription.
+Scan Your Mac Free
+DeepClean
+Features
+Blog
+Pricing
+About
+Privacy
+Terms
+Contact
+© 2026 DeepClean

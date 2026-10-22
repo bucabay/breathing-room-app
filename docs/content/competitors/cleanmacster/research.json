@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cleanmacster",
+  "productId": "cleanmacster",
+  "checkedAtUtc": "2026-10-21T20:17:56Z",
+  "status": "blocked",
+  "stage": "research-only",
+  "published": false,
+  "ownership": "docs/content/competitors/cleanmacster/ only, plus required job receipt; no website changes",
+  "identity": {
+    "officialName": "CleanMacster",
+    "homepage": "https://cleanmacster.app/",
+    "canonicalOwnerId": "cleanmacster",
+    "aliases": [],
+    "aliasDecision": "No verified alias; retain independent identity. No evidence connects CleanMacster to PowerMyMac, iMyMac or TechyCub. Those other queue jobs are outside this scope.",
+    "aliasSkipDecision": "do-not-skip-as-alias",
+    "classification": "direct-mac-cleanup-overlap",
+    "classificationReason": "Documented local storage mapping, cache cleanup, application leftovers and review controls overlap Mac maintenance intent. This does not establish identical monitoring or AI functionality.",
+    "officialRepository": null,
+    "repositoryStatus": "not-verified; no repository linked in retained official homepage source",
+    "developerLegalIdentity": "not-verified; official branding and contact identify CleanMacster, not a verified legal entity or individual",
+    "platformFit": "Mac-native replacement/comparison intent; no Windows or Linux support claim",
+    "decision": "retain relevant product; block drafting on competitor image reuse/access approval, not an alias/dead-product skip",
+    "sourceIds": ["S1", "S2", "S3"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/cleanmacster/about/",
+    "retrievedAtUtc": "2026-10-21T19:05:56.546Z",
+    "snapshotPath": "docs/content/.runtime/verification-1/cleanmacster-directory.json",
+    "sha256": "630839484002b2d50b20ae2a99c2ce4236007d638dca5050bd5b4a2009a5a296",
+    "observedOfficialLink": "https://cleanmacster.app/",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=6", "retrievedAtUtc": "2026-10-21T18:36:42.517Z"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=6", "retrievedAtUtc": "2026-10-21T18:37:21.311Z"}
+    ],
+    "edgeProvenance": "Existing docs/content/competitors.json record; no traversal repeated. Listing establishes discovery, not capability verification."
+  },
+  "method": {
+    "baselineReused": "docs/content/verification/batch-1.json: cleanmacster and its retained official/directory snapshots; same-day evidence reused without refreshing established facts",
+    "newChecks": "Official terms and privacy for missing licensing/data conditions; homepage HTML specifically for visual URLs/repository links; owned browser tab 82 for listing image metadata after WebFetch 403",
+    "reviewer": "research-cleanmacster worker (source review, not independent publication reviewer)",
+    "handsOnTesting": false,
+    "binaryDownloaded": false,
+    "imageDownloads": 0,
+    "prohibitedActionsPerformed": false,
+    "freshness": "Review volatile prices/availability within 30 days and before publication if stale. Reused retrieval dates have not been reset.",
+    "untrustedSources": "Public content used solely as evidence; no page instructions followed."
+  },
+  "sources": [
+    {
+      "id": "S1", "publisher": "CleanMacster", "title": "CleanMacster: the Mac cleaner that shows its work",
+      "url": "https://cleanmacster.app", "finalUrl": "https://cleanmacster.app",
+      "retrievedAtUtc": "2026-10-21T19:08:00.543662+00:00", "publicationDate": null,
+      "scope": "Advertised version 1.0, macOS 14+, personal licence offer; vendor statements, not binary tests",
+      "snapshotPath": "docs/content/.runtime/verification-1/cleanmacster-official.json",
+      "sha256": "5a6acb5c6daa30aa10f6d5c4087848bab2ebe626b61dd93bc265de5976c004dd",
+      "excerpt": "Version 1.0 for macOS 14 and later; Every scan runs locally. There's no account, no cloud service and nothing to upload."
+    },
+    {
+      "id": "S2", "publisher": "AlternativeTo", "title": "CleanMacster listing",
+      "url": "https://alternativeto.net/software/cleanmacster/about/", "finalUrl": "https://alternativeto.net/software/cleanmacster/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:56.546Z", "publicationDate": null,
+      "scope": "Discovery only; screenshot metadata separately read in owned tab on check date",
+      "snapshotPath": "docs/content/.runtime/verification-1/cleanmacster-directory.json",
+      "sha256": "630839484002b2d50b20ae2a99c2ce4236007d638dca5050bd5b4a2009a5a296",
+      "excerpt": "Official Website: cleanmacster.app; Proprietary and Commercial product."
+    },
+    {
+      "id": "S3", "publisher": "CleanMacster", "title": "Terms of Use",
+      "url": "https://cleanmacster.app/terms", "finalUrl": "https://cleanmacster.app/terms",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": "2026-10-21T20:17:56Z", "timestampPrecision": "check-session time recorded after retrieval, not exact response arrival",
+      "publicationDate": "2026-10-17", "scope": "Licence, deletion mode, warranty and refund conditions",
+      "excerpt": "Buying CleanMacster gives you a personal, non-exclusive, non-transferable license to use the app on the number of Macs you paid for. The license does not expire. You may not resell, sublicense, reverse-engineer or redistribute the app. Some items are deleted rather than moved to the Trash unless you turn on “Move everything to the Trash instead of deleting” in Settings.",
+      "snapshotPath": null
+    },
+    {
+      "id": "S4", "publisher": "CleanMacster", "title": "Privacy Policy",
+      "url": "https://cleanmacster.app/privacy", "finalUrl": "https://cleanmacster.app/privacy",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": "2026-10-21T20:17:56Z", "timestampPrecision": "check-session time recorded after retrieval, not exact response arrival",
+      "publicationDate": "2026-10-21", "scope": "Published app/website/purchase policy; not network or backend audit",
+      "excerpt": "All scanning, duplicate matching and cleaning happen locally. The app connects to the internet only to look up whether newer versions of your installed apps exist (via Apple's public App Store lookup service). That request contains app identifiers, not your files or personal data.",
+      "additionalExcerpt": "When checkout opens, payments will be handled by a third-party payment provider acting as reseller. It will process your payment and contact details under its own privacy policy, and share with us only what we need to deliver your license and support you, such as your email address and order details.",
+      "snapshotPath": null
+    },
+    {
+      "id": "S5", "publisher": "CleanMacster", "title": "Homepage HTML visual inspection",
+      "url": "https://cleanmacster.app/", "finalUrl": "https://cleanmacster.app/",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": "2026-10-21T20:17:56Z", "timestampPrecision": "check-session time recorded after retrieval, not exact response arrival",
+      "publicationDate": null, "scope": "Image/video references, not a duplicate pricing verification",
+      "excerpt": "poster=\"/video/cleanmacster-demo-poster.jpg?v=6\"; aria-label=\"CleanMacster in 40 seconds: a checkup, an app uninstall and the space map\"; aria-label=\"Interactive preview of the CleanMacster window\"",
+      "snapshotPath": "docs/content/competitors/cleanmacster/evidence/homepage-visual-source.html"
+    },
+    {
+      "id": "S6", "publisher": "Breathing Room first-party evidence register", "title": "Capabilities",
+      "url": "https://breathing-room.chatic.ai/", "localPath": "docs/content/capabilities.md", "checkedOn": "2026-10-21",
+      "scope": "Reused same-day source/published distinction; not new binary testing",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "excerpt": "Breathing Room is a free, Apache-2.0 macOS maintenance preview. AI Care is advertised at $5 USD/month or $50 USD/year. Source implementation is not proof that every feature works in the distributed installer."
+    },
+    {
+      "id": "S7", "publisher": "Breathing Room screenshot library", "title": "Current-source Space browser preview",
+      "localPath": "docs/content/screenshots.json", "checkedOn": "2026-10-21",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "excerpt": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result."
+    },
+    {
+      "id": "S8", "publisher": "AlternativeTo", "title": "Listing DOM image metadata",
+      "url": "https://alternativeto.net/software/cleanmacster/about/", "finalUrl": "https://alternativeto.net/software/cleanmacster/about/",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": "2026-10-21T20:17:56Z", "timestampPrecision": "check-session time recorded after retrieval, not exact response arrival",
+      "scope": "Read-only public DOM in owned Chrome tab 82; no cookies/storage read",
+      "excerpt": "Cleanup: system junk, Xcode data and leftovers, each reviewed before removal",
+      "snapshotPath": "docs/content/competitors/cleanmacster/evidence/listing-images.json"
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"The official homepage identifies CleanMacster version 1.0 for macOS 14 Sonoma or later.","sourceIds":["S1"],"excerpt":"Version 1.0 for macOS 14 and later; Requires macOS 14 Sonoma or later","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"Homepage version label, not an installer build/hash or independently certified architecture compatibility","location":"identity/platform matrix"},
+    {"id":"C02","wording":"The advertised early-bird personal licence costs $9 USD for one Mac, $19 for three or $29 for five, as a one-time payment. Scanning is free; cleaning needs a licence.","sourceIds":["S1"],"excerpt":"Early-bird; No. You pay once: $9 for one Mac, $19 for three or $29 for five. The app is a free download, and scanning is free too. Cleaning needs a license.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-advertised-offer","scope":"USD indicated by homepage CTA; Polar checkout not opened; taxes/final charge/offer expiry not verified. Struck-through $29 is not the current one-Mac price. No cashback assumed.","location":"pricing matrix"},
+    {"id":"C03","wording":"Terms grant a personal, non-exclusive, non-transferable licence for the purchased Mac count, without expiry, and prohibit redistribution.","sourceIds":["S3"],"excerpt":"The license does not expire. You may not resell, sublicense, reverse-engineer or redistribute the app.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-terms","scope":"Not an open-source licence; no screenshot republication permission supplied","location":"licence matrix"},
+    {"id":"C04","wording":"The vendor says scans, duplicate matching and cleaning run locally, without an app account; its policy describes app-identifier lookups through Apple's public App Store service.","sourceIds":["S1","S4"],"excerpt":"All scanning, duplicate matching and cleaning happen locally. That request contains app identifiers, not your files or personal data.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-policy-not-audit","scope":"Not proof of network behavior; purchases process email/order details and website has separate Cloudflare/Google Fonts/creator-cookie disclosures","location":"local/hosted matrix"},
+    {"id":"C05","wording":"CleanMacster documents item review, a dry-run mode and an ignore list. Apps, duplicates and clutter go to Trash; some other items are deleted unless the all-to-Trash setting is enabled.","sourceIds":["S1","S3"],"excerpt":"You approve every file; Dry run anytime; Some items are deleted rather than moved to the Trash unless you turn on “Move everything to the Trash instead of deleting” in Settings.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"Review architecture is not guaranteed safety or restoration. No settings changed or cleanup attempted.","location":"workflow/control matrix"},
+    {"id":"C06","wording":"Documented cleanup includes caches/logs, Xcode data and unavailable simulators; Applications covers uninstalling and leftovers, Clutter covers duplicates, and Space Map shows folder size.","sourceIds":["S1"],"excerpt":"old Xcode data, unavailable simulators and full Trash bins on every drive; tracks down leftovers from apps you deleted long ago; Duplicates are matched by content with SHA-256, not by name","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"No removal coverage/safety benchmark, no inference that all package-manager caches are supported","location":"scan/model and developer-cache matrix"},
+    {"id":"C07","wording":"The vendor documents menu-bar metrics, background-item review, real-time protection while open, and cleanup Activity history.","sourceIds":["S1"],"excerpt":"A compact panel in the menu bar shows free space, memory pressure, processor load, network and battery; Review the helpers and launch agents running behind the scenes, and who signed each one; A running record of your cleanups and how much space each one gave back.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"Do not equate this with per-app CPU/helper grouping, folder-growth attribution or scheduled approved cleanup; those remain not verified for CleanMacster","location":"monitoring matrix"},
+    {"id":"C08","wording":"The FAQ says Full Disk Access is needed to measure/clean protected Mail and Safari data; some maintenance and system-wide background actions need administrator authorization.","sourceIds":["S1"],"excerpt":"Without Full Disk Access, CleanMacster can't measure those files or clean them. A few maintenance tasks and system-wide background items can only be changed by an administrator.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","scope":"No permissions granted; signing/notarization, installer size, exact architecture and runtime dependencies not verified","location":"installation caveats"},
+    {"id":"B01","wording":"Breathing Room, which we build, is a free Apache-2.0 macOS 13+ preview; the identified release is 0.1.0-preview.1. AI Care is advertised at $5 USD/month or $50 USD/year.","sourceIds":["S6"],"excerpt":"macOS 13+; Current identified version 0.1.0-preview.1; Apple Development signed, not Developer ID signed or notarized; $5 USD/month, $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-published-and-source-register","scope":"Price is subscription for advertised AI Care, not app purchase. Python 3.10+ required for inventory/legacy scripts; physical Intel/clean-machine validation incomplete. Not a recommendation to bypass protections.","location":"Breathing Room matrix/caveat"},
+    {"id":"B02","wording":"Breathing Room's source implements grouped helper/process sampling, local activity observations and exact approved cleanup; hosted AI uses authentication and network requests.","sourceIds":["S6"],"excerpt":"Native sampling groups helpers through parent/app relationships and exposes CPU/memory; assistant sends the question, conversation history and subsequent tool outputs to /v1/assistant/message","checkedOn":"2026-10-21","state":"verified","evidenceClass":"source-implementation-not-runtime-validation","scope":"Daily care needs app running and saved exact approvals. Explicit optional automatic Ruff-cache mode is an exception to blanket every-action approval claims. Source is not release-feature parity, sampled attribution is not forensic proof, free/paid entitlement allowances not verified.","location":"Breathing Room workflow/trade-offs"}
+  ],
+  "matrix": {
+    "macOS": {"cleanmacster":"14 Sonoma+; architecture not independently verified","claimIds":["C01"],"breathingRoomClaimIds":["B01"]},
+    "licence": {"cleanmacster":"Personal commercial non-expiring licence for paid Mac count","claimIds":["C03"],"breathingRoomClaimIds":["B01"]},
+    "localHosted": {"cleanmacster":"Vendor policy: local scan/cleaning; app-version lookups online; commerce separate","claimIds":["C04"],"breathingRoomClaimIds":["B02"]},
+    "scanCleanup": {"cleanmacster":"Cache/log, app/leftover, duplicate and folder-map workflows documented","claimIds":["C06"],"breathingRoomClaimIds":["B02"]},
+    "approval": {"cleanmacster":"Review, dry run, ignore list; Trash is not universal default","claimIds":["C05"],"breathingRoomClaimIds":["B02"]},
+    "helperGrouping": {"cleanmacster":"Background-helper list documented; grouped per-app CPU/memory not verified","claimIds":["C07"],"breathingRoomClaimIds":["B02"]},
+    "recurringGrowth": {"cleanmacster":"Cleanup history/real-time protection documented; storage-regrowth attribution and scheduled cleanup not verified","claimIds":["C07"],"breathingRoomClaimIds":["B02"]},
+    "developerCaches": {"cleanmacster":"Xcode data/unavailable simulators documented; npm/pnpm/uv adapter semantics not verified","claimIds":["C06"],"breathingRoomClaimIds":["B02"]},
+    "pricing": {"cleanmacster":"Free scanning, licensed cleaning; early-bird USD $9/1, $19/3, $29/5 Macs once","claimIds":["C02","C03"],"breathingRoomClaimIds":["B01"]},
+    "installRuntime": {"cleanmacster":"FDA/admin scope documented; exact binary build, signing, notarization and dependencies not verified","claimIds":["C01","C08"],"breathingRoomClaimIds":["B01"]}
+  },
+  "visuals": [
+    {
+      "id":"cleanmacster-cleanup-listing-ui", "productId":"cleanmacster", "view":"Cleanup: system junk, Xcode data and leftovers", "kind":"listing-asset",
+      "sourcePageUrl":"https://alternativeto.net/software/cleanmacster/about/",
+      "assetUrl":"https://img.alternativeto.net/s/618x394/avif/cleanmacster_711252_full.jpg",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"sourceMetadataCheckedOn":"2026-10-21","capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,
+      "dataMode":"unknown","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,
+      "widthPx":309,"heightPx":197,"dimensionsBasis":"naturalWidth/naturalHeight of the public DOM image; URL dimensions are not assumed actual bytes",
+      "edits":[],"privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Authoritative listing identifies an app screenshot; public availability is not permission. Official terms do not grant screenshot reuse; no download or rehosting authorized by evidence.","evidenceUrlOrPath":"https://cleanmacster.app/terms","credit":"CleanMacster screenshot via AlternativeTo; rights remain with their owners."},
+      "caption":"CleanMacster Cleanup app view linked from its AlternativeTo listing. Version, capture date and data origin are not verified; not our test or measured savings.",
+      "alt":"CleanMacster Cleanup screenshot listed as system junk, Xcode data and leftovers reviewed before removal.",
+      "supportedClaimIds":["C06"],"limitations":["Metadata-only identification; visual inspection, resolution, privacy and reuse approval pending.","Do not substitute the homepage's HTML/CSS interactive preview or artwork for a real app screenshot.","An attributed source link does not pass the required on-page competitor image gate."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,
+      "capturedBy":"screenshot-library job per shared manifest","productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,
+      "dataMode":"example","originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed-in-shared-manifest","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture, selected from current-source screenshot manifest; context-specific independent review still pending. Third-party marks remain their owners' marks.","evidenceUrlOrPath":"docs/content/screenshots.json","credit":"Breathing Room browser preview"},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds":[],"limitations":["Not native or distributed-release evidence; keep example-data banner visible.","Capture is current-source as of the shared library, not a claim that the distributed binary matches it.","No edits/copy to website made; original hash checked in this job."],
+      "review":{"status":"shared-library-reviewed; independent per-article review pending","reviewer":null,"reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"conditional-brief-only; do-not-draft-until-blocker-cleared",
+      "track":"search/reference",
+      "title":"Review a Mac cleanup by removal method, not just gigabytes",
+      "slug":"review-mac-cleanup-trash-versus-delete",
+      "primaryIntent":"Help Mac owners distinguish app leftovers, duplicates and rebuildable caches before approving cleanup, with CleanMacster's dry run and all-to-Trash setting as the concrete documented example.",
+      "descriptionDirection":"A review list is only useful if you know what will be removed and whether it goes to Trash. Separate vendor-documented controls from untested outcomes; never equate selected size with disk space recovered.",
+      "outline":[
+        "After the lead, show the cleared CleanMacster Cleanup app screenshot with version/data caveats, not homepage mock UI.",
+        "Inventory item, location and removal method: cache rebuild cost, app support data and personal duplicates need different decisions (C05-C06).",
+        "Explain the documented dry run and all-to-Trash switch; contrast with the direct-delete default exception in Terms (C05/S3). No cleanup instructions executed during research.",
+        "Treat Full Disk Access and admin prompts as scope changes, not proof an item is disposable (C08).",
+        "Use the current-source Breathing Room Space browser preview later, with example-data caption; explain investigation versus deletion without claiming native test results.",
+        "Offer one bounded, disclosed decision: CleanMacster for documented app/duplicate workflows and one-time licence; Breathing Room, which we build, for source-implemented app/helper/activity investigation, with preview/runtime/hosted-AI caveats (B01-B02)."
+      ],
+      "interactionHandoff":"A non-destructive checklist of item type, owner, backup/rebuild availability and removal method; no synthetic scanner, default winner or promised savings. Pending implementation in assigned draft scope.",
+      "internalLinkHandoff":["/comparisons/","/comparisons/cleanmacster/"],
+      "missingEvidenceRule":"Add an official Apple source before asserting general macOS Trash/free-space behavior or an executable step not supported by the retained vendor sources."
+    },
+    "comparison": {
+      "status":"conditional-brief-only; blocked",
+      "title":"Breathing Room vs CleanMacster: investigation or cleanup suite?",
+      "slug":"cleanmacster",
+      "primaryIntent":"Concise Mac buying/selection decision, not a second workflow article or duplicate alternatives doorway.",
+      "structure":["Conclusion and affiliation disclosure","Two real-product visual slots with honest data labels","Claim-linked matrix from this packet","Choose CleanMacster when its documented app/duplicate/cleanup workflow and perpetual Mac-count licence fit","Consider Breathing Room only with preview/Python/hosted-AI caveats for its source-implemented investigation model","Link to workflow and comparison hub"],
+      "linkToWorkflow":"/blog/review-mac-cleanup-trash-versus-delete/",
+      "prohibitedFraming":["No best/safest/faster winner","Do not call CleanMacster monitoring absent","Do not call either app's demo figures measured savings","Do not describe Breathing Room AI as offline or claim binary feature parity"]
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "cleanmacsterAdvantages":[{"judgment":"Documented suite includes app uninstall/leftovers, duplicate matching and dry run; useful if those are the primary reader jobs.","claimIds":["C05","C06"]},{"judgment":"One-time personal licence and free scanning avoid assuming a recurring cleaning subscription.","claimIds":["C02","C03"]},{"judgment":"Vendor's local-processing/no-account policy may fit users avoiding hosted AI; not an independent privacy audit.","claimIds":["C04"]}],
+    "cleanmacsterTradeoffs":[{"judgment":"Requires macOS 14+, commercial cleaning licence and review of actual removal method; not all categories default to Trash.","claimIds":["C01","C02","C05"]},{"judgment":"Recurring storage-growth attribution, per-app helper CPU grouping and exact package-manager adapters are not verified; do not turn these unknowns into feature-absence claims.","claimIds":["C06","C07"]}],
+    "breathingRoomFit":[{"judgment":"Source-implemented app/helper sampling and activity investigation provide a different maintenance angle, not proof of superior cleanup.","claimIds":["B02"]}],
+    "breathingRoomTradeoffs":[{"judgment":"Preview without Developer ID/notarization, Python prerequisite, incomplete clean-machine/Intel validation, hosted authenticated AI and optional recurring AI Care charge must remain visible.","claimIds":["B01","B02"]}]
+  },
+  "unknowns": [
+    "Exact CleanMacster installer build/hash and release changelog, architecture validation, signing/notarization and bundled runtime prerequisites.",
+    "Official public source repository and verified legal developer identity; absence is not claimed.",
+    "Checkout tax, final transaction amount, early-bird expiry, multi-Mac licence activation and refund outcome; no purchase attempted. Homepage says free updates but Terms permits feature changes; do not invent lifetime future-version entitlement.",
+    "Independent confirmation of deletion behavior, accuracy, security detection, privacy/network claims or recovered space; no hands-on tests.",
+    "Competitor screenshot reuse permission, original bytes/hash, capture date/version, data origin and visual/privacy review; this is the critical blocker.",
+    "CleanMacster recurring-growth attribution, grouped app CPU/memory sampling and package-manager cache adapters; no unsupported negative matrix entries.",
+    "Breathing Room current-binary feature parity and native validation remain limited as stated by capabilities.md."
+  ],
+  "gates": {
+    "identity": "pass-for-independent-product; no verified alias",
+    "relevance": "pass-direct-mac-maintenance-overlap",
+    "coreFactEvidence": "pass-for-attributed-documented-comparison-with-explicit-unknowns",
+    "competitorImage": "blocked-rights-and-visual-review",
+    "breathingRoomImage": "selected-current-source-example-preview; hash verified; per-article review pending",
+    "drafting": "blocked",
+    "publication": "not-authorized; no draft/build/independent review performed"
+  },
+  "blockers": [{"id":"VISUAL-01","critical":true,"diagnostic":"A real CleanMacster Cleanup app screenshot is identified by exact AlternativeTo source/asset URL, but no reuse licence/permission was established. It remains link-only, un-downloaded and not independently visually/privacy reviewed. Obtain explicit permitted reuse or an approved editorial policy decision, then retain original bytes/hash, inspect the image and review readable rendering. Neither a link nor homepage HTML mock UI passes the mandatory on-page competitor image gate."}],
+  "validation": ["Reused official snapshot SHA-256 equals batch-1 recorded hash.","Selected current-source Space PNG SHA-256 equals screenshots.json.","No competitor image downloaded; no fabricated screenshot/measurements.","No site files, shared programme state or other competitor folders edited."]
+}

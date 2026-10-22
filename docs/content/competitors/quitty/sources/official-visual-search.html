@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Quitty - macOS System Optimization and Cleanup Utility</title>
+    <meta name="title" content="Quitty - macOS System Optimization and Cleanup Utility">
+    <meta name="description" content="A comprehensive macOS utility for system maintenance, performance optimization, and storage management. Real-time monitoring, automated cleaning, and advanced tools in one unified interface.">
+    <meta name="keywords" content="macOS, system utility, optimization, cleanup, performance, storage management, task manager, activity monitor, duplicate finder, file manager, RAM booster, network monitoring, automation, open source, swiftui">
+    <meta name="theme-color" content="#000000">
+    <meta name="author" content="Aditya">
+    <link rel="canonical" href="https://github.com/iad1tya/Quitty">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/iad1tya/Quitty">
+    <meta property="og:title" content="Quitty - macOS System Optimization and Cleanup Utility">
+    <meta property="og:description" content="A comprehensive macOS utility for system maintenance, performance optimization, and storage management. Real-time monitoring, automated cleaning, and advanced tools in one unified interface.">
+    <meta property="og:image" content="https://quitty.iad1tya.cyou/graph.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/iad1tya/Quitty">
+    <meta property="twitter:title" content="Quitty - macOS System Optimization and Cleanup Utility">
+    <meta property="twitter:description" content="A comprehensive macOS utility for system maintenance, performance optimization, and storage management. Real-time monitoring, automated cleaning, and advanced tools in one unified interface.">
+    <meta property="twitter:image" content="https://quitty.iad1tya.cyou/graph.png">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MRN7739V8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MRN7739V8Q');
+</script>
+
+</head>
+<body class="dark-theme">
+
+    <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-content centered-nav">
+            <div class="logo-container">
+                <img src="favicon.png" alt="Quitty Logo" class="app-icon">
+                <span class="logo-text">Quitty</span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#features" class="nav-link mobile-link">Features</a>
+                <a href="#installation" class="nav-link mobile-link">Installation</a>
+                <a href="https://github.com/iad1tya/Quitty" target="_blank" class="nav-link github-btn mobile-link">
+                    <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg> GitHub
+                    <span class="github-star-badge"><i data-lucide="star" class="star-icon"></i><span class="github-stars-count">0</span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="iad1tya" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    <main class="relative-z">
+        <section class="hero section-spacing">
+            <div class="content-container flex-centered">
+                
+                <div class="hero-visual fade-in delay-1 mb-xl">
+                    <div class="hero-logo-container">
+                        <img src="favicon.png" alt="Quitty" width="120" height="120" class="hero-logo">
+                    </div>
+                </div>
+
+                <div class="hero-text-content fade-in-up delay-2">
+                    <h1 class="hero-title">
+                        Complete Mac optimization in one app.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Quitty is an all-in-one macOS utility for system maintenance, performance optimization, and storage management. Real-time monitoring, automated cleaning, and advanced tools through a single, unified interface.
+                    </p>
+
+                    
+                    <div class="hero-actions">
+                        <a href="https://github.com/iad1tya/Quitty/releases/latest" target="_blank" class="primary-btn download-latest-btn">
+                            <i data-lucide="download"></i> Download Quitty
+                        </a>
+                        <a href="#installation" class="secondary-btn">
+                            <i data-lucide="terminal"></i> View Setup Guide
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="features" class="features section-spacing bg-subtle">
+            <div class="content-container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">All-in-one macOS System Utility</h2>
+                    <p class="section-description centered-desc">Comprehensive system maintenance, performance optimization, and storage management through a single, unified interface.</p>
+                </div>
+
+                <div class="features-grid fade-in-up delay-1">
+                    <!-- System Dashboard -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/systemdashboard.png" alt="System Dashboard" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>System Dashboard</h3>
+                            <p>Live CPU, RAM, disk, and battery statistics with visual charts and graphs for system metrics. Smart recommendations for optimization and one-click access to all tools.</p>
+                        </div>
+                    </div>
+
+                    <!-- System Cleaning -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/systemcleaning.png" alt="System Cleaning" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>System Cleaning</h3>
+                            <p>Removes temporary files, caches, logs, and system junk. Trash manager across all volumes and user accounts with smart detection to identify only safe-to-delete files.</p>
+                        </div>
+                    </div>
+
+                    <!-- File Management -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/filemanagment.png" alt="File Management" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>File Management</h3>
+                            <p>Duplicate file finder with full-system scan support, large files scanner with detailed size analysis, and visual disk space map with interactive directory browsing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Performance Optimization -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/performance.png" alt="Performance Optimization" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Performance Optimization</h3>
+                            <p>RAM booster to free memory by terminating unnecessary processes, real-time CPU monitoring with per-process breakdown, and startup manager to control login items.</p>
+                        </div>
+                    </div>
+
+                    <!-- Network Monitoring -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/Network.png" alt="Network Monitoring" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Network Monitoring</h3>
+                            <p>Real-time upload and download speed tracking with per-application bandwidth usage and active connection analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Automation and Scheduling -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/automation.png" alt="Automation and Scheduling" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Automation and Scheduling</h3>
+                            <p>Task scheduler for cleaning and optimization routines with daily, weekly, and monthly recurrence options. Idle-time scheduling to minimize disruption.</p>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Tools -->
+                    <div class="feature-card glass-panel">
+                        <div class="feature-image">
+                            <img src="assets/uninstall.png" alt="Advanced Tools" width="500" height="350">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Advanced Tools</h3>
+                            <p>Full app uninstaller with leftover file detection, process manager for viewing and controlling running processes, and detailed hardware and software system information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation section-spacing">
+            <div class="content-container flex-centered">
+                <div class="installation-header fade-in-up text-center mb-xl">
+                    <h2 class="section-title">Get up and running.</h2>
+                    <p class="section-description centered-desc">Quick installation steps to get Quitty running on your Mac.</p>
+                    
+                    <div class="info-alert glass-panel mt-6 inline-alert">
+                        <div class="alert-icon"><i data-lucide="info"></i></div>
+                        <div class="alert-content text-left">
+                            <h4>Open Source & Safe</h4>
+                            <p>Quitty is completely safe, strictly open-source, and does absolutely zero data tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="installation-content fade-in-up delay-1 max-w-lg w-full">
+                    
+                    <div class="setup-blocks text-left">
+                        
+                        <div class="setup-block glass-panel mb-6 p-8">
+                            <h3 class="mb-5 block-title"><i data-lucide="download-cloud" class="inline-icon"></i> 1. Install via DMG</h3>
+                            <ol class="step-list">
+                                <li>
+                                    <div class="step-num">1</div>
+                                    <div class="step-text">Go to the <a href="https://github.com/iad1tya/Quitty/releases/latest" target="_blank">Releases page</a> and download <code>Quitty.dmg</code>.</div>
+                                </li>
+                                <li>
+                                    <div class="step-num">2</div>
+                                    <div class="step-text">Open the downloaded <code>.dmg</code> file.</div>
+                                </li>
+                                <li>
+                                    <div class="step-num">3</div>
+                                    <div class="step-text">Drag and drop <strong>Quitty.app</strong> into the Applications folder alias.</div>
+                                </li>
+                                <li>
+                                    <div class="step-num">4</div>
+                                    <div class="step-text">Launch Quitty from your Launchpad!</div>
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="setup-block glass-panel mb-6 p-8 warning-border">
+                            <h3 class="mb-2 block-title text-accent"><i data-lucide="shield-alert" class="inline-icon"></i> Xcode/Gatekeeper Blocked?</h3>
+                            <p class="text-sm mt-3 mb-4 text-secondary leading-relaxed">Because Quitty hasn't been signed with a $99/yr paid Apple Developer certificate, macOS Gatekeeper might block it from running the first time.</p>
+                            
+                            <p class="text-sm mb-3 text-primary">To bypass Gatekeeper securely:</p>
+                            <ol class="step-list">
+                                <li>
+                                    <div class="step-num bg-neutral">1</div>
+                                    <div class="step-text">Open the Terminal app (Cmd + Space -> type "Terminal").</div>
+                                </li>
+                                <li>
+                                    <div class="step-num bg-neutral">2</div>
+                                    <div class="step-text">Copy and paste this command:</div>
+                                </li>
+                            </ol>
+                            
+                            <div class="code-block-container mt-4">
+                                <div class="code-block">
+                                    <code>xattr -rd com.apple.quarantine /Applications/Quitty.app</code>
+                                </div>
+                                <button class="copy-btn" data-clipboard="xattr -rd com.apple.quarantine /Applications/Quitty.app" title="Copy to clipboard">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                            <p class="text-sm mt-4 text-success"><i data-lucide="check-circle-2"></i> You can now launch Quitty normally!</p>
+                        </div>
+                        
+                        <div class="setup-block glass-panel p-8">
+                            <h3 class="mb-4 block-title"><i data-lucide="code" class="inline-icon"></i> Option B: Build from Source</h3>
+                            <p class="text-sm mb-5 text-secondary">To build Quitty yourself, you'll need Xcode 14+ and macOS 14.6+.</p>
+                            
+                            <ol class="step-list">
+                                <li>
+                                    <div class="step-num">1</div>
+                                    <div class="step-text">Clone this repository:</div>
+                                    <div class="code-block-container mt-3 mb-5 w-full">
+                                        <div class="code-block">
+                                            <code>git clone https://github.com/iad1tya/Quitty.git</code>
+                                        </div>
+                                        <button class="copy-btn" data-clipboard="git clone https://github.com/iad1tya/Quitty.git" title="Copy to clipboard">
+                                            <i data-lucide="copy"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="step-num">2</div>
+                                    <div class="step-text">Open <code>Bye.xcodeproj</code> in Xcode.</div>
+                                </li>
+                                <li>
+                                    <div class="step-num">3</div>
+                                    <div class="step-text">Select your Mac as the destination.</div>
+                                </li>
+                                <li>
+                                    <div class="step-num">4</div>
+                                    <div class="step-text">Hit <strong>Cmd + R</strong> to build and run!</div>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta section-spacing bg-subtle">
+            <div class="content-container text-center">
+                <div class="cta-box glass-panel fade-in-up">
+                    <h2 class="cta-title">Take control of your Mac today.</h2>
+                    <p class="cta-desc">Free, open-source, and built to make your macOS experience better.</p>
+                    <div class="cta-actions justify-center mt-6">
+                        <a href="https://github.com/iad1tya/Quitty/releases/latest" target="_blank" class="primary-btn download-latest-btn">
+                            <i data-lucide="download"></i> Download directly
+                        </a>
+                        <a href="https://github.com/iad1tya/Quitty" target="_blank" class="secondary-btn">
+                            <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg> Star on GitHub
+                            <span class="github-star-badge"><i data-lucide="star" class="star-icon"></i><span class="github-stars-count">0</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer bg-main">
+        <div class="content-container flex-centered">
+            <div class="footer-content centered-footer">
+                <div class="footer-brand justify-center">
+                    <img src="favicon.png" alt="Quitty Logo" class="footer-icon">
+                    <span>Quitty</span>
+                </div>
+                <p class="footer-tagline mx-auto text-center">A comprehensive macOS utility for system maintenance, performance optimization, and storage management.</p>
+                <div class="footer-links flex-row justify-center mt-6">
+                    <a href="https://github.com/iad1tya/Quitty" target="_blank" class="footer-link">Source Code</a>
+                    <a href="https://x.com/xad1tya" target="_blank" class="footer-link">Twitter</a>
+                </div>
+                <p class="copyright text-center mt-6">&copy; 2026 Quitty. Open Source Software.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"871d944298dc49188cc678cd7871cc70","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

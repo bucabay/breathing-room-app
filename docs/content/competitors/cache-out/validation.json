@@ -1,0 +1,16 @@
+{
+  "jobId": "research-cache-out",
+  "checkedOn": "2026-10-21",
+  "method": "Read-only Python json/pathlib/hashlib assertions executed successfully, exit 0",
+  "results": [
+    "PASS: research.json parses; 11 unique claim IDs and 7 source IDs resolve.",
+    "PASS: required claim fields present; all matrix and visual claim references resolve.",
+    "PASS: reused official and directory snapshot SHA-256 values match original files.",
+    "PASS: selected current-source Space preview SHA-256 matches screenshots.json and actual PNG bytes.",
+    "PASS: canonicalOwnerId cache-out, blocked status, draftingAllowed false, competitor link-only reuse and null unacquired image hash asserted.",
+    "PASS: both distinct briefs and nonempty research.md present.",
+    "Official terms/changelog/privacy retrieved through WebFetch; support and homepage image/link metadata returned HTTP 200. These are document checks, not app tests."
+  ],
+  "notPerformed": ["Native app tests or cleanup", "Competitor image download/visual review", "Browser automation", "Website check/build/test: no site files changed", "Independent article or publication review"],
+  "outcome": "Research evidence retained; drafting blocked by image reuse gate and unresolved recovery-scope conflict."
+}

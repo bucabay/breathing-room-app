@@ -1,0 +1,339 @@
+{
+  "jobId": "research-cleanmymac",
+  "checkedAtUtc": "2026-10-21T19:51:29.273681+00:00",
+  "result": "passed-structural-and-evidence-checks; drafting-remains-blocked",
+  "checkCount": 74,
+  "checks": [
+    {
+      "check": "Unique source and claim IDs: 15 sources, 28 claims",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: homepage",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: discovery",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: press",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: press",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: smart-care",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: smart-care",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: purchase",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: purchase",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: whats-new",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: whats-new",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: eula",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: eula",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: powermymac",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: powermymac",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: purchase-options",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: purchase-options",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: editions",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: editions",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: missing-features",
+      "result": "passed"
+    },
+    {
+      "check": "Original public HTML SHA-256: missing-features",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: current-eula",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: br-capabilities",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: br-readme",
+      "result": "passed"
+    },
+    {
+      "check": "Source snapshot SHA-256: br-screenshots",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-identity",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-platform",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-home-version",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-version",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-price-teaser",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-purchase",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-renewal",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-one-time",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-editions",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-review",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-details",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-duplicates",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-xcode",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-monitoring",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-alias",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-legacy",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-fit",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-caveats",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-pricing",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-preview",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-approval",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-platform",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-local-hosted",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-license",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-activity",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: b-dev",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-lens",
+      "result": "passed"
+    },
+    {
+      "check": "Source-backed excerpt and check date: c-notarization",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: macOS/platform",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Licence/repository",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Local versus hosted",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Scan/cleanup/approval",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Storage inspection",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Process/helper grouping",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Recurring-growth monitoring",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Developer caches",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Pricing",
+      "result": "passed"
+    },
+    {
+      "check": "Matrix claim IDs resolve: Install/runtime",
+      "result": "passed"
+    },
+    {
+      "check": "Canonical owner and relevant-product decision",
+      "result": "passed"
+    },
+    {
+      "check": "Historical alias skip and PowerMyMac distinct identity",
+      "result": "passed"
+    },
+    {
+      "check": "Both distinct briefs present and drafting blocked",
+      "result": "passed"
+    },
+    {
+      "check": "Selected first-party PNG SHA-256 matches inventory",
+      "result": "passed"
+    },
+    {
+      "check": "Preview caption explicitly discloses example data and no native results",
+      "result": "passed"
+    },
+    {
+      "check": "Official competitor app asset URL appears in retained support HTML",
+      "result": "passed"
+    },
+    {
+      "check": "Uncleared competitor image is link-only, no invented capture/hash",
+      "result": "passed"
+    },
+    {
+      "check": "Store browser snapshot confirms human-verification gate",
+      "result": "passed"
+    },
+    {
+      "check": "Official media-kit access failure retained accurately",
+      "result": "passed"
+    },
+    {
+      "check": "Critical pricing and image blockers remain explicit",
+      "result": "passed"
+    },
+    {
+      "check": "Human-readable packet and source collector present",
+      "result": "passed"
+    }
+  ],
+  "artifactHashes": {
+    "docs/content/competitors/cleanmymac/build_packet.py": "904c52440916e39d29824b2842aa971163b73bbc3d580091abf40afd19ee1bbd",
+    "docs/content/competitors/cleanmymac/collect_sources.py": "dcff09ee4e4229923343d30d38ef8cc60726a7c8a957307bd4d5be6aa3beb326",
+    "docs/content/competitors/cleanmymac/research.json": "13720da6c11a13660e2652562703dd403a9117956f06ecb74d09342afffa3592",
+    "docs/content/competitors/cleanmymac/research.md": "2b7b871eaa68382c0e1e6cfab0e0f1266aa20b792ac716ee5b45537d3f1394f2",
+    "docs/content/competitors/cleanmymac/sources/current-eula.json": "e75be7d17a854f3b933c0d0d6f52e2dd907204d8c9dcdcdf733e1bb524a6167b",
+    "docs/content/competitors/cleanmymac/sources/editions.html": "ecf5c2c2d4c84e864f6a31518d5a7892f5f7be7c7571d321d1f8646232a6b2d9",
+    "docs/content/competitors/cleanmymac/sources/editions.json": "41e1e14a31d0b02ec31493cd8e1b585dc07b3bf737295c8ceaa413d214ccc487",
+    "docs/content/competitors/cleanmymac/sources/eula.html": "61d496af60d260ad592c6356b54bd47b51dd77563c00eca88c356df758952613",
+    "docs/content/competitors/cleanmymac/sources/eula.json": "60d640ae5b9639cad495c90b6de0284ad187c3b62f4061adf0c0399026538003",
+    "docs/content/competitors/cleanmymac/sources/media-kit-manifest.json": "227391c1ddf406d326a70916527eb5d5052dfa543ed94ce98888fa523441c7c8",
+    "docs/content/competitors/cleanmymac/sources/missing-features.html": "c9f2de60e80380658aaac1a894b326bc19f731cdf4c677f2806a947061780ad5",
+    "docs/content/competitors/cleanmymac/sources/missing-features.json": "c2a5973e96df2531a653b313ae41fb77ce86ac48b123f4cf3cafdbc7e0aa27d9",
+    "docs/content/competitors/cleanmymac/sources/powermymac.html": "488d0e82549e54d1026fc6b982073ac9f6aed5d18d0f22e571f0386d90b26a1c",
+    "docs/content/competitors/cleanmymac/sources/powermymac.json": "9abb93f40a11dafde0d02a06f3405ba0b49eefed62d9b874703325cab9ce6c86",
+    "docs/content/competitors/cleanmymac/sources/press.html": "572eedc7e749fec75c2481cb58bb8d0529dcb5ffcb2b81580dd921ee217ef16a",
+    "docs/content/competitors/cleanmymac/sources/press.json": "b72e6694cb227c82bfea6ce01bca8f12c34630053530caaf89c0cc30f2b29b17",
+    "docs/content/competitors/cleanmymac/sources/purchase-options.html": "46e9387bd04c95dfc109655db1bd40ef2cfa46f23bb699d4339bf8aaee1c0a67",
+    "docs/content/competitors/cleanmymac/sources/purchase-options.json": "558a793f2429b1a2f0cc6d828bb3c3d04671c6f8a06b26051015cdfe24bc7cc0",
+    "docs/content/competitors/cleanmymac/sources/purchase.html": "16e888e423a40c55e21eb8eb241e0de8d3c31f16b602440f300d392b4c0b9b84",
+    "docs/content/competitors/cleanmymac/sources/purchase.json": "ed064d731a58c7b59713bae1dd963a9ad7ec02c38adc935b4d263f52c7b35e96",
+    "docs/content/competitors/cleanmymac/sources/smart-care.html": "fa3370a4182735838bd1aa495ef19ce20d52db81f0d951509ee783fd8567df12",
+    "docs/content/competitors/cleanmymac/sources/smart-care.json": "9a8adb4397e2cc583d78356c3f268002bb4bb2d82265bd5e7b2d5896d8640415",
+    "docs/content/competitors/cleanmymac/sources/store-browser.txt": "fcbf6f02e7c8689b20f5f10e6df8a298ff22a66c37d504253962f0e14932fdac",
+    "docs/content/competitors/cleanmymac/sources/whats-new.html": "d6277a3f531374297d09f57df9727137ceaf087cc9a84c7f0aa4e4b54bd88ad4",
+    "docs/content/competitors/cleanmymac/sources/whats-new.json": "ce0f421be6fd56ebe91274b198083bea4a1835d9dfd9813920f98e3b343ee266",
+    "docs/content/competitors/cleanmymac/validate_packet.py": "f758a7cbf70da8cbe12e217dd0fac279662999fbfabf716c3782b7e8845695bb"
+  },
+  "notPerformed": [
+    "Native app/runtime testing",
+    "cleanup",
+    "site build/tests (no site edits)",
+    "independent rendered-page publication review"
+  ],
+  "browser": "Existing listener used, owned tab33 only; stopped at public store challenge and closed owned tab. No profile recovery needed."
+}

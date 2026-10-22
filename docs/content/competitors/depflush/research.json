@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-depflush",
+  "productId": "depflush",
+  "checkedOn": "2026-10-21",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "publicationApproved": false,
+  "identity": {
+    "officialName": "Depflush",
+    "homepage": "https://depflush.com",
+    "repository": "https://github.com/cypriennkeneng/depflush",
+    "publisher": "Web Loupe (Cyprien Nkeneng)",
+    "canonicalOwnerId": "depflush",
+    "aliases": [],
+    "aliasSkipDecision": "Do not skip: distinct official product with matching homepage/repository links. No verified current alias. Homepage changelog says New name: Depflush at 1.2.0 but does not name the earlier product; do not invent it or create earlier-name drafts.",
+    "classification": "direct-with-narrower-developer-cleanup-focus",
+    "fitReason": "Overlaps Mac storage inspection and reviewable cleanup; focuses on Docker, dormant dependencies, duplicate files and IDE caches rather than claiming equivalent investigation/process capabilities.",
+    "nonMacReplacementIntent": "not applicable; official macOS product",
+    "availability": "Official download offered; no installation or binary verification performed",
+    "sources": ["official", "repo"]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/depflush/about/",
+    "retrievedAtUtc": "2026-10-21T19:06:24.777Z",
+    "observedOfficialLink": "https://depflush.com/",
+    "snapshotPath": "docs/content/.runtime/verification-1/depflush-directory.json",
+    "sha256": "8fb7329ec9cffcc00dba58be5ffea9ca8417734026cac6643b27ed08f6b8bdfd",
+    "reusedRecord": "docs/content/verification/batch-1.json#depflush",
+    "manifest": "docs/content/competitors.json",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=8", "retrievedAtUtc": "2026-10-21T18:36:51.480Z", "method": "live-browser-rendered-listing; reused manifest"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=8", "retrievedAtUtc": "2026-10-21T18:37:24.218Z", "method": "live-browser-rendered-listing; reused manifest"}
+    ],
+    "limitations": "Directory establishes discovery only. No directory feature tags promoted to verified capabilities. Shared raw pagination provenance remains in competitors.json listingPages."
+  },
+  "sources": [
+    {
+      "id": "official", "publisher": "Web Loupe", "title": "Depflush – free Mac cleaner for developers",
+      "url": "https://depflush.com", "finalUrl": "https://depflush.com",
+      "retrievedAtUtc": "2026-10-21T19:08:07.885241+00:00", "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/.runtime/verification-1/depflush-official.json",
+      "sha256": "1391690e36c915571aa2b6c57475937d470b27f76226c774a3f53f8f83d5275c",
+      "scope": "Official advertised 1.3.1; changelog dates 1.3.1 to 4 Oct 2026; not a hands-on test",
+      "reuse": "Current batch-1 snapshot read in full; not re-fetched"
+    },
+    {
+      "id": "repo", "publisher": "cypriennkeneng / Web Loupe", "title": "Depflush repository README",
+      "url": "https://raw.githubusercontent.com/cypriennkeneng/depflush/main/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/cypriennkeneng/depflush/main/README.md",
+      "retrievedAtUtc": "2026-10-21T20:24:57.672827+00:00", "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/competitors/depflush/evidence/repository-readme.md",
+      "sha256": "ce22d0deaecbe64e0518e5a1830b7bd98ef231cf2fe07cd6e5601f7dfe3433df",
+      "scope": "Mutable main README; commit and publication date not established. Documentation evidence, not implementation audit."
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room programme", "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/", "retrievedAtUtc": null, "reviewedOn": "2026-10-21",
+      "snapshotPath": "docs/content/capabilities.md",
+      "scope": "Reused same-day register with source/code/release links; original public retrieval day 2026-10-21, exact time not recorded. Source implementation is distinct from distributed preview."
+    }
+  ],
+  "claims": [
+    {"id":"D01","wording":"Depflush advertises version 1.3.1 for macOS 14 or later, on Apple Silicon and Intel.","sourceId":"official","sourceUrl":"https://depflush.com","excerpt":"Version 1.3.1 · macOS 14 or later · Apple Silicon and Intel · Open source (GPL-3.0)","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Advertised version, not independently certified latest binary or runtime compatibility","location":"comparison requirements"},
+    {"id":"D02","wording":"The app is advertised as free with no account; donations are optional.","sourceId":"official","sourceUrl":"https://depflush.com#download","excerpt":"Free. No account, no upsell.","supportingExcerpt":"Price\nFree,\ndonations welcome","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"No payment or donation flow tested; no paid plan verified","location":"comparison pricing"},
+    {"id":"D03","wording":"Depflush publishes its source under GPL-3.0; its name and icon are excluded from that licence.","sourceId":"repo","sourceUrl":"https://github.com/cypriennkeneng/depflush#license","excerpt":"The source code is released under the [GNU General Public License v3.0](LICENSE).","supportingExcerpt":"They are not licensed under the GPL.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"repository-documentation","conditions":"Do not extend source-code licence to website screenshots or trademarks","location":"comparison licence"},
+    {"id":"D04","wording":"Dormant dependency discovery targets vendor next to composer.lock and node_modules next to package.json; the advertised default inactivity threshold is 12 months and is configurable.","sourceId":"official","sourceUrl":"https://depflush.com#finds","excerpt":"vendor folders next to a composer.lock and node_modules next to a package.json, in projects you haven't changed for 12 months. You choose the threshold.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"FAQ says vendor, node_modules, var and .git are ignored for inactivity. Reinstallation depends on registries, credentials and compatible tooling; no guaranteed recovery","location":"workflow project triage"},
+    {"id":"D05","wording":"The documented Docker view preselects rebuildable cache/registry images, but leaves locally built images, stopped containers and orphaned volumes unticked with warnings.","sourceId":"official","sourceUrl":"https://depflush.com#finds","excerpt":"Images you built yourself, stopped containers and orphaned volumes are listed with a warning and stay unticked.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Docker must run for inspection; do not delete Docker.raw or imply a guaranteed reduction","location":"workflow Docker distinction"},
+    {"id":"D06","wording":"Depflush documents item/path/size preview and confirmation, Trash by default, and optional permanent deletion in Settings.","sourceId":"official","sourceUrl":"https://depflush.com#safety","excerpt":"Every item is listed with its path and size. You confirm the total before anything happens.","supportingExcerpt":"Files go to the Trash, so you can put them back. Switch to permanent deletion in Settings when you want the space right away.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Not a safety guarantee; Trash bytes are not newly available disk space. No deletion performed","location":"workflow review and comparison approvals"},
+    {"id":"D07","wording":"The vendor says scan and cleanup run locally, without an account, analytics or network calls; it also documents communication with the local Docker installation.","sourceId":"official","sourceUrl":"https://depflush.com#faq","excerpt":"There is no account, no analytics and no crash reporting. The app only reads file sizes on your Mac and talks to your local Docker installation.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-assertion-not-network-audit","conditions":"Downloads, package restoration and registry pulls can require internet; do not claim all associated developer workflows are offline","location":"comparison local/hosted"},
+    {"id":"D08","wording":"Depflush documents a menu-bar free-space display and configurable low-space notifications, defaulting to 20 GB.","sourceId":"official","sourceUrl":"https://depflush.com","excerpt":"When it drops below the limit you set, 20 GB by default, you get a notification and can open the scan with one click.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Not proof of per-app historical growth attribution or tested notification delivery","location":"comparison monitoring"},
+    {"id":"D09","wording":"The official installation documentation says Depflush is not yet Apple-notarized; Full Disk Access is optional for Mail and iPhone backup size visibility.","sourceId":"official","sourceUrl":"https://depflush.com#download","excerpt":"Depflush is not yet notarized by Apple","supportingExcerpt":"Optional: grant Full Disk Access in Settings to see the size of Mail and iPhone backups as well.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-disclosure","conditions":"No binary signature inspected. Disclose warning; do not repeat protection-bypass instructions. Binary runtime requirements beyond macOS not verified","location":"comparison installation caveats"},
+    {"id":"D10","wording":"The vendor documents SHA-256 duplicate SQL-dump checking for dumps over 100 MB; exact duplicate photos/videos are separate from similar-photo detection.","sourceId":"official","sourceUrl":"https://depflush.com#finds","excerpt":"Dumps over 100 MB are compared by size, then by SHA-256.","supportingExcerpt":"It compares photos and videos in Pictures, Movies, Documents, Desktop and Downloads byte for byte, so only true copies are listed, never similar-looking pictures.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-documented","conditions":"Do not certify deletion safety or duplicate accuracy without testing","location":"workflow duplicate dump review"},
+    {"id":"D11","wording":"Depflush's official screenshots are labelled sample data.","sourceId":"official","sourceUrl":"https://depflush.com#screenshots","excerpt":"Safe items are ticked, anything you might still need is not, and each list says how to get it back. Sample data shown.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-disclosure","conditions":"Image capture date/version unknown; not our scan results","location":"visual caption"},
+    {"id":"D12","wording":"The official homepage links to cypriennkeneng/depflush; that repository links back to depflush.com and names Web Loupe (Cyprien Nkeneng).","sourceId":"repo","sourceUrl":"https://github.com/cypriennkeneng/depflush","excerpt":"Copyright © 2026 Web Loupe (Cyprien Nkeneng).","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-cross-links","conditions":"Official snapshot links corroborate repository identity; no current alias established","location":"identity"},
+    {"id":"B01","wording":"Breathing Room, which we build, is a macOS 13+ preview; the identified release is 0.1.0-preview.1, advertised universal, Apple Development signed but not Developer ID signed or notarized, with physical Intel/clean-machine validation incomplete.","sourceId":"br-capabilities","sourceUrl":"https://github.com/bucabay/breathing-room-app/releases/tag/v0.1.0-preview.1","excerpt":"Published preview says **Apple Development signed, not Developer ID signed or notarized**.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","conditions":"Register sections Preview, installation and runtime caveats and Unverified claims; not a new binary test","location":"comparison requirements and caveats"},
+    {"id":"B02","wording":"Breathing Room advertises a free local core and optional AI Care at $5 USD/month or $50 USD/year; hosted AI requires internet and authentication.","sourceId":"br-capabilities","sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"Confirmed advertised **$5 USD/month**, **$50 USD/year**.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-published-and-source-register","conditions":"Renewal until cancellation; applicable checkout tax. Quotas/entitlement enforcement unverified; hosted requests may include paths, process/storage data","location":"comparison pricing/local-hosted"},
+    {"id":"B03","wording":"Breathing Room source implements storage views, grouped helper CPU/memory, sampled activity and exact-action review; this is not distributed-binary parity evidence.","sourceId":"br-capabilities","sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"Source implementation is not proof that every feature works in the distributed installer.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-inspection","conditions":"Register Current capability matrix; do not promise attribution, speed or savings. Ruff automatic opt-in and daily exact approvals have different boundaries","location":"comparison qualified strengths"},
+    {"id":"B04","wording":"Breathing Room discloses Python 3.10+ for inventory/legacy scripts, running-app requirements for daily care, website account-gated downloads and ungated public GitHub release downloads.","sourceId":"br-capabilities","sourceUrl":"https://breathing-room.chatic.ai/download/","excerpt":"Python **3.10+** is a disclosed prerequisite for disk inventory and legacy scripts, not bundled.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-and-published-register","conditions":"Register Preview, installation and runtime caveats and Pricing/access. No account creation or end-to-end hosted testing performed","location":"comparison install/operation caveats"}
+  ],
+  "matrix": {
+    "macOSVersionArchitecture": ["D01", "B01"], "licence": ["D03"], "pricing": ["D02", "B02"],
+    "localHosted": ["D07", "B02"], "scanCleanup": ["D04", "D05", "D10", "B03"],
+    "approvalControls": ["D06", "B03"], "developerCaches": ["D04", "B03"],
+    "runtimeInstallation": ["D09", "B01", "B04"], "monitoring": ["D08", "B03"],
+    "helperGroupingDepflush": "not verified; not No",
+    "perAppRecurringGrowthDepflush": "not verified; low-space alert documented, not equivalent",
+    "schedulingDepflush": "not verified",
+    "dockerParityBreathingRoom": "not verified; do not imply equivalent Docker object-selection workflow"
+  },
+  "visuals": [
+    {
+      "id": "depflush-development-official", "productId": "depflush", "view": "Development: dormant dependencies and SQL dumps", "kind": "official-asset",
+      "sourcePageUrl": "https://depflush.com#screenshots", "assetUrl": "https://depflush.com/screenshots/development.webp",
+      "alternativeRepositoryAssetUrl": "https://raw.githubusercontent.com/cypriennkeneng/depflush/main/docs/screenshots/overview.png",
+      "capturedAtUtc": null, "retrievedAtUtc": null, "capturedBy": null, "productVersion": null,
+      "sourceLinkVerifiedAtUtc": "2026-10-21T19:08:07.885241+00:00", "dataMode": "example",
+      "originalPath": null, "originalSha256": null, "publishedPath": null, "publishedSha256": null,
+      "widthPx": null, "heightPx": null, "edits": [],
+      "reuse": {"status": "link-only", "basis": "Official publicly linked app UI; no permission for screenshot republication established. README grants source-code GPL rights and excludes name/icon; neither proves website-image rights.", "evidenceUrlOrPath": "docs/content/competitors/depflush/evidence/repository-readme.md", "credit": "Depflush / Web Loupe; official sample-data screenshot"},
+      "privacyReview": {"status": "pending", "redactions": []},
+      "caption": "Official Depflush Development screenshot with sample data, linked from the vendor; not our scan, benchmark or measured savings. Capture date and app build not verified.",
+      "alt": "Vendor-provided Depflush Development view illustrating dormant dependency folders and duplicate SQL dumps with sample data.",
+      "supportedClaimIds": ["D04", "D10", "D11"],
+      "limitations": ["No image bytes downloaded because reuse permission is unresolved", "Official text and asset link identify the app view; visual contents not independently opened in this job", "Link-only fallback does not satisfy on-page screenshot gate"],
+      "review": {"status": "pending", "reviewer": null, "reviewedAtUtc": null}
+    },
+    {
+      "id": "current-space-browser-preview", "productId": "breathing-room", "view": "Space", "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/", "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc": null, "capturedBy": "screenshot-library job; reused provenance",
+      "productVersion": null, "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion": null, "dataMode": "example",
+      "originalPath": "docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null, "publishedSha256": null, "widthPx": 2940, "heightPx": 3468, "edits": [],
+      "reuse": {"status": "cleared", "basis": "App-owner-requested first-party capture, inherited from screenshots.json; third-party marks remain their owners' marks", "evidenceUrlOrPath": "docs/content/screenshots.json#current-space-browser-preview", "credit": "Breathing Room current-source browser preview"},
+      "privacyReview": {"status": "reviewed-in-shared-library; context-review-pending", "redactions": []},
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": ["B03"],
+      "limitations": ["Keep example-data banner visible", "Source UI illustration, not release parity or a native measurement", "No new capture; placement/readability and third-party marks require independent per-page review"],
+      "review": {"status": "shared-library-reviewed; per-page-pending", "reviewer": "screenshot-library job", "reviewedAtUtc": null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track": "search-reference",
+      "title": "Dormant project or irreplaceable build? Review developer storage before cleanup",
+      "proposedSlug": "depflush-mac-workflow",
+      "primaryIntent": "Mac developer triage of old dependencies, Docker objects and SQL dumps before granting cleanup approval",
+      "leadDirection": "Treat untouched dependencies as rebuild candidates, not permission to remove every large developer folder. Confirm a working restoration path before approving anything.",
+      "outline": ["Show official sample-data Development view after lead only once rights are cleared", "Check project metadata, inactivity threshold and registry/tool availability", "Separate reproducible dependencies from local changes and unique SQL backups", "Distinguish registry Docker images/build cache from local images, containers and volumes", "Review path, size, selection and Trash/permanent-delete mode", "Choose a focused local cleaner or broader preview investigation with caveats; disclose affiliation"],
+      "interactionPass": "Hand off a non-mutating checklist: unique data? backed up? restorable version/source? rebuild/download cost? exact selection reviewed? No deletion commands or pretend scanner.",
+      "internalLinkHandoff": ["/comparisons/", "/comparisons/depflush/"],
+      "doNotClaim": ["Dependency restoration always succeeds", "Our first-run results", "Deletion improves performance", "Vendor example savings transfer to reader", "Breathing Room has equivalent Docker cleanup"],
+      "distinctness": "Workflow follows reversibility decisions across three developer artifact types; not a comparison table expanded into prose. No observed search-volume claim."
+    },
+    "comparison": {
+      "title": "Depflush vs Breathing Room for Mac developer storage",
+      "proposedSlug": "depflush",
+      "primaryIntent": "Choose focused local developer cleanup versus broader storage/activity preview investigation",
+      "structure": ["Conclusion with we build Breathing Room disclosure", "Concise sourced requirements, pricing, local/hosted, review, Docker/dependencies and monitoring matrix", "When Depflush fits; when the Breathing Room preview fits", "Installation/notarization/Python/hosted-data caveats", "Link workflow, hub and official downloads"],
+      "lengthPolicy": "Concise; no word-count padding or invented FAQ",
+      "advantagesDepflush": ["Free/no-account advertised offer", "Documented local developer-focused dependency, Docker and duplicate workflows", "GPL source available", "Configurable inactivity threshold and documented unticked risky Docker items"],
+      "tradeoffsDepflush": ["macOS 14+ versus Breathing Room's advertised 13+", "Not yet notarized per vendor", "Optional permanent deletion is less reversible than Trash", "Dependency rebuilds/registry availability can cost time or fail", "Helper grouping and per-app growth attribution not verified, not absent"],
+      "advantagesBreathingRoom": ["Source implements grouped helper CPU/memory and activity investigation in addition to storage views", "Advertised macOS 13+ and free local core", "Reviewable exact native actions and daily saved approvals with documented boundaries"],
+      "tradeoffsBreathingRoom": ["Preview, non-notarized, physical Intel/clean-machine validation incomplete", "Python 3.10+ inventory prerequisite", "Hosted AI requires authentication/network and may transmit relevant paths/process/storage data", "AI Care advertised at $5 USD/month or $50 USD/year; quotas/enforcement unverified", "Running app required for daily care; optional interactive Ruff automatic mode must not be hidden", "Source presence is not distributed-release runtime proof"]
+    }
+  },
+  "unknowns": ["Earlier name before 1.2.0", "Installed binary parity, signing verification and runtime behavior", "Depflush helper grouping, per-app recurring growth and scheduler", "Exact non-macOS runtime prerequisites for Depflush", "Independent privacy/network audit", "Competitor screenshot capture date/build, image rights and visual/privacy approval", "Breathing Room paid AI quotas/enforcement and full release parity"],
+  "blockers": [
+    {"id":"VISUAL-RIGHTS","severity":"critical-for-drafting","diagnostic":"No explicit reuse permission/licence established for official Depflush app screenshot. Public availability and GPL source-code licensing do not clear website app imagery. Official link retained; no image downloaded. Link-only does not pass required on-page image gate.","resolution":"Obtain separately authorized permission or documented screenshot-specific licence, or explicit editorial policy approval; then download original, hash, open/inspect and review privacy, caption, version and responsive use. Do not send permission requests in this job."}
+  ],
+  "validation": {"logPath":"docs/content/competitors/depflush/validation.json", "handsOnTesting":false,"cleanupPerformed":false,"browserUsed":false,"siteChanged":false,"independentReview":"pending"}
+}

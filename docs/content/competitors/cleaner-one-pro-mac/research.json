@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-cleaner-one-pro-mac",
+  "productId": "cleaner-one-pro-mac",
+  "stage": "research",
+  "status": "blocked",
+  "published": false,
+  "generatedAtUtc": "2026-10-21T20:19:03.953866+00:00",
+  "checkedOn": "2026-10-21",
+  "ownership": "Only docs/content/competitors/cleaner-one-pro-mac/ plus required runtime receipt; no website edits.",
+  "identity": {
+    "officialName": "Cleaner One Pro for Mac",
+    "vendor": "Trend Micro Incorporated",
+    "homepage": "https://cleanerone.trendmicro.com/",
+    "macProductUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+    "repo": null,
+    "repoStatus": "not verified",
+    "canonicalOwnerId": "cleaner-one-pro-mac",
+    "aliases": [
+      {
+        "name": "Trend Cleaner Pro",
+        "status": "verified-regional-alias",
+        "claimId": "regional-alias",
+        "skipSeparateDraft": true
+      }
+    ],
+    "aliasSkipDecision": "Do not draft separate Trend Cleaner Pro content. This Cleaner One Pro listing remains canonical and is not skipped. Cleaner One Lite/One are edition siblings, not proven aliases; Dr. Cleaner history unverified. No verified PowerMyMac relationship and no such candidate in this product's baseline; unrelated PowerMyMac jobs untouched.",
+    "classification": "direct",
+    "fitReason": "Native Mac storage visualization/cleanup overlaps Breathing Room; similar-photo/duplicate-file and startup/app-management scope is distinct from ongoing source-level activity/developer-cache investigation.",
+    "platforms": [
+      "macOS; official minimum 10.15",
+      "Separate Windows edition officially linked; not included in Mac comparison"
+    ],
+    "platformBoundary": "Breathing Room is a Mac replacement choice only; never invent Breathing Room Windows support. Do not inherit AlternativeTo Chrome OS/iOS/Chromecast tags as official compatibility.",
+    "skip": false
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/cleaner-one-pro-mac/about/",
+    "retrievedAt": "2026-10-21T19:05:48.182Z",
+    "observedOfficialLink": {
+      "text": "Official Website\ncleanerone.trendmicro.com/",
+      "url": "https://cleanerone.trendmicro.com/",
+      "title": "https://cleanerone.trendmicro.com/"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/cleaner-one-pro-mac-directory.json",
+    "snapshotSha256": "230c74db6c331ffac5b74e85a8cd495f98d795608defc8bcc590182141981dbb",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=3",
+        "retrievedAt": "2026-10-21T18:36:26.872Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "method": "Reused live-browser directory/edge records; directory proves discovery only."
+  },
+  "reusedVerification": {
+    "batchPath": "docs/content/verification/batch-1.json",
+    "productId": "cleaner-one-pro-mac",
+    "originalStatus": "partial",
+    "originalFacts": [
+      {
+        "field": "officialName",
+        "value": "Cleaner One Pro",
+        "sourceUrl": "https://cleanerone.trendmicro.com/",
+        "finalUrl": "https://cleanerone.trendmicro.com/",
+        "excerpt": "Cleaner One Pro",
+        "retrievedAt": "2026-10-21T19:08:12.982992+00:00"
+      },
+      {
+        "field": "coreFunction",
+        "value": "Visualize, manage, and free up your storage space.",
+        "sourceUrl": "https://cleanerone.trendmicro.com/",
+        "finalUrl": "https://cleanerone.trendmicro.com/",
+        "excerpt": "Visualize, manage, and free up your storage space.",
+        "retrievedAt": "2026-10-21T19:08:12.982992+00:00"
+      },
+      {
+        "field": "platforms",
+        "value": "Cleaner One Pro for Mac",
+        "sourceUrl": "https://cleanerone.trendmicro.com/",
+        "finalUrl": "https://cleanerone.trendmicro.com/",
+        "excerpt": "Cleaner One Pro for Mac",
+        "retrievedAt": "2026-10-21T19:08:12.982992+00:00"
+      },
+      {
+        "field": "availability",
+        "value": "Official public source offers a download/release link; binary not installed or tested.",
+        "sourceUrl": "https://cleanerone.trendmicro.com/",
+        "finalUrl": "https://cleanerone.trendmicro.com/",
+        "excerpt": "Free Download",
+        "retrievedAt": "2026-10-21T19:08:12.982992+00:00"
+      },
+      {
+        "field": "platforms",
+        "value": "Windows edition also documented.",
+        "sourceUrl": "https://cleanerone.trendmicro.com/",
+        "finalUrl": "https://cleanerone.trendmicro.com/",
+        "excerpt": "Cleaner One Pro for Windows",
+        "retrievedAt": "2026-10-21T19:08:12.982992+00:00"
+      }
+    ],
+    "originalOfficialSnapshot": {
+      "sourceUrl": "https://cleanerone.trendmicro.com/",
+      "finalUrl": "https://cleanerone.trendmicro.com/",
+      "retrievedAt": "2026-10-21T19:08:12.982992+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/cleaner-one-pro-mac-official.json",
+      "sha256": "eee436b0963e6fa056e6aaf9ba65335d24cd37be4869b69695893993e7fc674f"
+    },
+    "baselineSha256Matches": true,
+    "batch2": "Checked index/search; no corresponding Cleaner One Pro record required. Global PowerMyMac ambiguity does not establish an alias here."
+  },
+  "sources": [
+    {
+      "id": "edition-differences",
+      "publisher": "Trend Micro",
+      "title": "edition-differences",
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-apps-features/",
+      "finalUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-apps-features/",
+      "retrievedAtUtc": "2026-10-21T20:15:37.957774+00:00",
+      "snapshotPath": "sources/edition-differences.json",
+      "snapshotSha256": "1fe6c1838212906856fe6914ae474659af6f1ab8a8705b6dfe47707a0bae7ad4",
+      "rawSnapshotPath": "sources/edition-differences.html",
+      "rawSnapshotSha256": "50e56063abe320d6f517032b84ce533ae1517c0778b2edb78c61ae8f5daacdf0",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "faq",
+      "publisher": "Trend Micro",
+      "title": "faq",
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-pro-faq/",
+      "finalUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-pro-faq/",
+      "retrievedAtUtc": "2026-10-21T20:15:12.152523+00:00",
+      "snapshotPath": "sources/faq.json",
+      "snapshotSha256": "8bf81998ce8d02a3434a17752eb75f25b3f2f93526c0c43de60cd93d3ba53c04",
+      "rawSnapshotPath": "sources/faq.html",
+      "rawSnapshotSha256": "e2705f97be3ca6fec424f820c428b1de15bc1d8f01daa067bef7416b91827833",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "installation",
+      "publisher": "Trend Micro",
+      "title": "installation",
+      "sourceUrl": "https://helpcenter.trendmicro.com/en-us/article/TMKA-10020",
+      "finalUrl": "https://helpcenter.trendlife.com/en-us/article/TMKA-10020/",
+      "retrievedAtUtc": "2026-10-21T20:15:36.139816+00:00",
+      "snapshotPath": "sources/installation.json",
+      "snapshotSha256": "c7a9d14f13bafeb77fa0511a29c8c3e5e50c5cfcedc9086281566ad2dfc792d7",
+      "rawSnapshotPath": "sources/installation.html",
+      "rawSnapshotSha256": "22fa62c335b6da5e5e26fceadf09ceff90fd275f65f5089c89e003d6a5137f50",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "legal",
+      "publisher": "Trend Micro",
+      "title": "legal",
+      "sourceUrl": "https://www.trendmicro.com/en_us/about/legal.html",
+      "finalUrl": "https://www.trendmicro.com/en_us/about/legal.html",
+      "retrievedAtUtc": "2026-10-21T20:15:42.056623+00:00",
+      "snapshotPath": "sources/legal.json",
+      "snapshotSha256": "3e939bb9d4c240d118eb1f5fcd227d74303bb909d3e7346fe060d9e9fa3bb3fe",
+      "rawSnapshotPath": "sources/legal.html",
+      "rawSnapshotSha256": "6c79c94b9a89e21f9638bd53f1e59ee499ef70e44969d2ce3abd4d6383783df1",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "mac-product",
+      "publisher": "Trend Micro",
+      "title": "mac-product",
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "finalUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "retrievedAtUtc": "2026-10-21T20:15:09.202266+00:00",
+      "snapshotPath": "sources/mac-product.json",
+      "snapshotSha256": "7f4420318ad29bd6470955afaa5cffd226bfdcd3e3d682b3f23094a2e86d5fa2",
+      "rawSnapshotPath": "sources/mac-product.html",
+      "rawSnapshotSha256": "425aad4a89fa263b78eca470af8edae972767b8d2079a68f5e74f87536398831",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "purchase-observation",
+      "publisher": "Trend Micro",
+      "title": "Purchase Cleaner One Pro|Trend Micro",
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "finalUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "retrievedAtUtc": "2026-10-21T20:16:07.025Z",
+      "snapshotPath": "sources/purchase-observation.json",
+      "snapshotSha256": "db6841d95dcd005b16d6e7c2f916973dc2c3f3a5a10b525ccfd65ef9e41c328f",
+      "rawSnapshotPath": null,
+      "rawSnapshotSha256": null,
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "purchase",
+      "publisher": "Trend Micro",
+      "title": "purchase",
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "finalUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "retrievedAtUtc": "2026-10-21T20:15:10.674626+00:00",
+      "snapshotPath": "sources/purchase.json",
+      "snapshotSha256": "8579a56e8ff9b56d02701e869fd3a8110d71c3b5faafdf3ea73fdcbb22577ea3",
+      "rawSnapshotPath": "sources/purchase.html",
+      "rawSnapshotSha256": "42baffee89b7d0986ec27fb08b1a541f019181307a81c7d25d32181cd6b70c4a",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "renewal",
+      "publisher": "Trend Micro",
+      "title": "renewal",
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/how-do-i-cancel-automatic-renewal-subscription-for-cleaner-one-pro/",
+      "finalUrl": "https://cleanerone.trendmicro.com/blog/how-do-i-cancel-automatic-renewal-subscription-for-cleaner-one-pro/",
+      "retrievedAtUtc": "2026-10-21T20:15:39.269872+00:00",
+      "snapshotPath": "sources/renewal.json",
+      "snapshotSha256": "05130d773b28f3df214315944c0a9a51bfa790e1933a984ded42f10ca94795e4",
+      "rawSnapshotPath": "sources/renewal.html",
+      "rawSnapshotSha256": "2ddba4162c21154cc6cdaaa1eabf50947d730f8f5d2f84017031e1f74ca4afce",
+      "publicationDate": null,
+      "scope": "Public source text; vendor claims, not independently tested app behavior."
+    },
+    {
+      "id": "baseline-home",
+      "publisher": "Trend Micro",
+      "title": "baseline-home",
+      "sourceUrl": "https://cleanerone.trendmicro.com/",
+      "finalUrl": "https://cleanerone.trendmicro.com/",
+      "retrievedAtUtc": "2026-10-21T19:08:12.982992+00:00",
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "/Users/gabe/code/breathing-room-app/docs/content/.runtime/verification-1/cleaner-one-pro-mac-official.json",
+      "snapshotSha256": "eee436b0963e6fa056e6aaf9ba65335d24cd37be4869b69695893993e7fc674f",
+      "scope": "Reused current evidence; no redundant public refetch."
+    },
+    {
+      "id": "discovery",
+      "publisher": "AlternativeTo",
+      "title": "discovery",
+      "sourceUrl": "https://alternativeto.net/software/cleaner-one-pro-mac/about/",
+      "finalUrl": "https://alternativeto.net/software/cleaner-one-pro-mac/about/",
+      "retrievedAtUtc": "2026-10-21T19:05:48.182Z",
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "/Users/gabe/code/breathing-room-app/docs/content/.runtime/verification-1/cleaner-one-pro-mac-directory.json",
+      "snapshotSha256": "230c74db6c331ffac5b74e85a8cd495f98d795608defc8bcc590182141981dbb",
+      "scope": "Reused current evidence; no redundant public refetch."
+    },
+    {
+      "id": "br-capabilities",
+      "publisher": "Breathing Room",
+      "title": "br-capabilities",
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "finalUrl": "https://breathing-room.chatic.ai/",
+      "retrievedAtUtc": null,
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "/Users/gabe/code/breathing-room-app/docs/content/capabilities.md",
+      "snapshotSha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "scope": "Reused current evidence; no redundant public refetch."
+    },
+    {
+      "id": "br-readme",
+      "publisher": "Breathing Room",
+      "title": "br-readme",
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "finalUrl": "https://github.com/bucabay/breathing-room-app",
+      "retrievedAtUtc": null,
+      "checkedOn": "2026-10-21",
+      "snapshotPath": "/Users/gabe/code/breathing-room-app/README.md",
+      "snapshotSha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f",
+      "scope": "Reused current evidence; no redundant public refetch."
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "wording": "The official product is Trend Micro Cleaner One Pro for Mac.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Cleaner One Pro for Mac",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "identity and lead",
+      "conditions": "Mac edition; homepage identity reused from batch-1.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "regional-alias",
+      "wording": "Trend Micro says Cleaner One Pro is called Trend Cleaner Pro in some countries.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "installation"
+      ],
+      "sourceUrl": "https://helpcenter.trendmicro.com/en-us/article/TMKA-10020",
+      "excerpt": "In some countries, this software is called Trend Cleaner Pro",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "identity",
+      "conditions": "Regional name, not evidence that every historic Trend Cleaner or Dr. Cleaner edition is identical.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "compatibility",
+      "wording": "The official Mac product page specifies macOS 10.15 and later.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Compatibility: macOS 10.15 and later",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Vendor minimum, not tested macOS 26 support or architecture validation.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "processor",
+      "wording": "The purchase page specifies macOS 10.15 or higher and a 64-bit processor.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "excerpt": "Mac: MacOS 10.15 or higher, 64-bit processor",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Do not infer native Apple Silicon, Rosetta requirements or runtime dependencies.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "scan",
+      "wording": "The vendor documents Smart Scan and scanning to visualize storage usage.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Scan your Mac to visualize and analyze what's taking up your disk space.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Product-page capability, not execution evidence.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "duplicates",
+      "wording": "The vendor documents duplicate-file and similar-photo cleanup.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Get rid of duplicate files and similar photos",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "workflow article",
+      "conditions": "No matching-accuracy benchmark or guarantee that suggested items are disposable.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "startup",
+      "wording": "The vendor documents managing which startup items can open automatically.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Optimize your Mac's startup by managing which items can automatically open.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Not proof of faster boot times or a recurring-growth history feature.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "app-manager",
+      "wording": "The vendor documents app-file management by name, size or date and deleting unwanted apps.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Manage app files by name, size, or date.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Not proof of complete removal of every related file or safe deletion.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "shredder",
+      "wording": "A File Shredder is advertised.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "File Shredder",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Do not repeat impossible-to-recover marketing as proven secure erasure, especially on SSDs.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "vulnerability",
+      "wording": "The Mac product page advertises a vulnerability scanner.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "Keep your device safe from the latest threats with vulnerability scans and software updates.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Attributed advertised scope only; not proof of malware-removal coverage or a substitute for a dedicated antivirus.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "installation",
+      "wording": "Current official support documents Mac App Store and direct-download installation paths.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "installation"
+      ],
+      "sourceUrl": "https://helpcenter.trendmicro.com/en-us/article/TMKA-10020",
+      "excerpt": "You can install Cleaner One Pro on your Mac in two ways:",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Do not equate App Store edition feature/license parity with direct edition. No installer downloaded or run.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "annual",
+      "wording": "The purchase page offers a one-year subscription with 1-device and 5-device choices.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "purchase"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "excerpt": "One Year Subscription",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Device counts confirmed in purchase-browser.txt; not a lifetime or one-time licence.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "observed-prices",
+      "wording": "The rendered purchase page showed $19.99 for 1 device and $29.99 for 5 devices for the one-year subscription.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "purchase-observation"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-buy/",
+      "excerpt": "$19.99$24.99\nsaved $5.00\n50% off\nLicense For 5 Devices\n$29.99$59.99",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Observed public page only, English (United States) label. ISO currency, taxes, checkout total, eligibility and renewal amount not verified. Purchase link Locale=ru-ru; do not label universally USD or compare currency-adjusted costs.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "renewal",
+      "wording": "Official cancellation guidance describes automatic renewal; cancellation keeps access through the billing period.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "renewal"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/how-do-i-cancel-automatic-renewal-subscription-for-cleaner-one-pro/",
+      "excerpt": "Your subscription will remain active until the end of your current billing period.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Guidance is channel-specific. No cancellation/account workflow performed; renewal price not established.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "edition-boundary",
+      "wording": "An older official comparison distinguishes Cleaner One Lite, Cleaner One and Cleaner One Pro.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "edition-differences"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-apps-features/",
+      "excerpt": "What\u2019s the Difference Between Cleaner One Lite, Cleaner One and Cleaner One Pro?",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "identity caveat",
+      "conditions": "Historical page references Big Sur and separate distribution channels; do not copy old feature matrix as current edition parity.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "historical-monitor",
+      "wording": "The older official edition table includes a Network and CPU monitor row for Pro.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "edition-differences"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/blog/cleaner-one-apps-features/",
+      "excerpt": "Network and CPU monitor",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Historical table only, unversioned and Big Sur-era; not sufficient to prove current helper grouping. Never say competitor has no monitoring.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "copyright",
+      "wording": "The official product page reserves Trend Micro copyright.",
+      "state": "verified",
+      "evidenceClass": "vendor-published",
+      "sourceIds": [
+        "mac-product"
+      ],
+      "sourceUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "excerpt": "All rights reserved.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "visual rights",
+      "conditions": "No affirmative screenshot reuse licence found. Public availability is not permission.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-preview",
+      "wording": "Breathing Room is a macOS maintenance preview; source implementation is not proof of installer parity.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Source implementation is not proof that every feature works in the distributed installer.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Reuse capabilities register checked today; no native test performed.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-version",
+      "wording": "The current capability register identifies Breathing Room 0.1.0-preview.1 as an inspected published prerelease, not a certified newest version across every channel.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "`0.1.0-preview.1`",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Register identifies local app and release configuration; inspected release tag differs from local source HEAD. No installer executed.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-license",
+      "wording": "Breathing Room desktop source uses Apache License 2.0, with attribution obligations.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Desktop source is Apache License 2.0 with NOTICE and preserved third-party attribution.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Not a licence for the hosted service, website or all trademarks/images.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-install",
+      "wording": "Breathing Room requires macOS 13+ and discloses Python 3.10+; preview is not Developer ID signed or notarized.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Python **3.10+** is a disclosed prerequisite",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "See capabilities installation matrix for architecture, unsigned-release and Gatekeeper boundaries. Do not recommend bypassing protections.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-price",
+      "wording": "Breathing Room core is free; optional AI Care is advertised at $5 USD/month or $50 USD/year.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-readme"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app",
+      "excerpt": "**AI Care is optional: $5 USD/month or $50 USD/year.**",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Hosted plan, renewals/tax caveats from capabilities register; not a paid app licence or unlimited AI.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-hosted",
+      "wording": "Breathing Room hosted AI needs internet access and authentication, unlike its local inspection boundary.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Hosted AI assistance requires internet access and authentication",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Relevant inventory/tool output can be sent to hosted service; no all-offline/all-data-local assertion.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-approvals",
+      "wording": "Breathing Room source supports reviewable cleanup and exact saved approvals for daily care, with an explicit automatic Ruff-cache option.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "users can enable automatic Trash moves for narrowly verified Ruff caches during an investigation.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Default review is not an unconditional never-deletes-without-asking promise. Daily care needs app running.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-growth",
+      "wording": "Breathing Room source records activity/free-space history and samples process activity.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Source stores free-space samples, file/folder observations, app/process events and sampled I/O locally.",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Sampled/inferred attribution is not proof which app wrote a specific file; not binary runtime verification.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    },
+    {
+      "id": "br-dev",
+      "wording": "Breathing Room source includes developer-cache discovery for named package/build tools.",
+      "state": "verified",
+      "evidenceClass": "source-documented",
+      "sourceIds": [
+        "br-capabilities"
+      ],
+      "sourceUrl": "https://breathing-room.chatic.ai/",
+      "excerpt": "Discovery includes queries for npm, uv, pip, pnpm, Go build/module, Bun and Yarn caches",
+      "checkedOn": "2026-10-21",
+      "intendedLocation": "comparison matrix",
+      "conditions": "Tools must exist, location/method validation applies; no measured savings or universal adapter compatibility.",
+      "reviewer": "research-cleaner-one-pro-mac; not independent publication review"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "version",
+      "wording": "Current direct-distribution version/build and date",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Product/support pages inspected do not identify a direct binary version. No app installed. Scope article to documented workflow; no version-specific walkthrough."
+    },
+    {
+      "id": "license-repo",
+      "wording": "Exact applicable EULA and official source repository",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Commercial subscription established. Directory labels proprietary; legal index links multiple agreements without establishing exact app applicability. No official source repo established; do not assert no repo exists or apply a guessed licence."
+    },
+    {
+      "id": "offline",
+      "wording": "Cleaner One Pro local/hosted data flow and offline operation",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Desktop installation established; not proof of entirely offline operation, zero telemetry, or data retention. Omit privacy superiority claims."
+    },
+    {
+      "id": "approvals",
+      "wording": "Current per-item approval, undo/Trash behavior and automatic cleanup controls",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Vendor image has selection and Remove controls; no destructive action tested or current approval contract verified."
+    },
+    {
+      "id": "helper-grouping",
+      "wording": "Current process/helper grouping",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Older table mentions monitoring, not app/helper attribution. Unknown is not No."
+    },
+    {
+      "id": "growth",
+      "wording": "Current recurring-growth monitoring/history",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "No verified current source establishing this workflow. Do not claim absence."
+    },
+    {
+      "id": "developer",
+      "wording": "Specific developer-cache adapters",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "General junk cleaning is not evidence for npm/pnpm/Go validation or exact owning-tool commands."
+    },
+    {
+      "id": "runtime",
+      "wording": "Cleaner One Pro runtime dependencies, full disk permissions, signing/notarization, Apple Silicon execution",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Minimum OS/64-bit CPU documented, no binary/security inspection. No sign-in or trial/free-feature quota established."
+    },
+    {
+      "id": "currency-renewal",
+      "wording": "ISO currency, localized checkout tax/renewal price and first-term eligibility",
+      "state": "not-verified",
+      "critical": false,
+      "reason": "Browser en-us page shows dollar symbol but Purchase Now link Locale=ru-ru. Omit universal USD and cheaper claims; final offer not tested."
+    },
+    {
+      "id": "visual-rights",
+      "wording": "Republication rights for official Similar Photos app image",
+      "state": "not-verified",
+      "critical": true,
+      "reason": "Official app image identified and visually inspected, but all-rights-reserved source provides no verified affirmative licence. Link-only; not downloaded; drafting blocked by EDITORIAL visual gate."
+    }
+  ],
+  "productMatrix": [
+    {
+      "dimension": "platform and version",
+      "cleanerOnePro": [
+        "compatibility",
+        "processor",
+        "version"
+      ],
+      "breathingRoom": [
+        "br-preview",
+        "br-version",
+        "br-install"
+      ]
+    },
+    {
+      "dimension": "licence and repository",
+      "cleanerOnePro": [
+        "annual",
+        "license-repo"
+      ],
+      "breathingRoom": [
+        "br-license"
+      ],
+      "note": "BR Apache-2.0 desktop source documented in capabilities; hosted entitlement separate."
+    },
+    {
+      "dimension": "local/hosted and runtime",
+      "cleanerOnePro": [
+        "installation",
+        "offline",
+        "runtime"
+      ],
+      "breathingRoom": [
+        "br-hosted",
+        "br-install"
+      ]
+    },
+    {
+      "dimension": "scan/cleanup and approvals",
+      "cleanerOnePro": [
+        "scan",
+        "duplicates",
+        "app-manager",
+        "approvals"
+      ],
+      "breathingRoom": [
+        "br-approvals"
+      ]
+    },
+    {
+      "dimension": "helper grouping and recurring growth",
+      "cleanerOnePro": [
+        "historical-monitor",
+        "helper-grouping",
+        "growth"
+      ],
+      "breathingRoom": [
+        "br-growth"
+      ]
+    },
+    {
+      "dimension": "developer caches",
+      "cleanerOnePro": [
+        "developer"
+      ],
+      "breathingRoom": [
+        "br-dev"
+      ]
+    },
+    {
+      "dimension": "pricing",
+      "cleanerOnePro": [
+        "annual",
+        "observed-prices",
+        "renewal",
+        "currency-renewal"
+      ],
+      "breathingRoom": [
+        "br-price"
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "cleaner-one-pro-similar-photos",
+      "productId": "cleaner-one-pro-mac",
+      "view": "Similar Photos",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://cleanerone.trendmicro.com/cleaner-one-pro-for-mac/",
+      "assetUrl": "https://cleanerone.trendmicro.com/images/en-us/clean-duplicate-on-mac.webp",
+      "capturedAtUtc": null,
+      "retrievedAtUtc": "2026-10-21T20:16:10.361Z",
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 645,
+      "heightPx": 402,
+      "edits": [],
+      "downloaded": false,
+      "privacyReview": {
+        "status": "pending",
+        "redactions": [],
+        "note": "Public illustration; vendor blurred details. No private user data accessed; downstream publication review still required."
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "Official publicly accessible image; copyright reserved. No verified reproduction licence or permission. Link is research fallback only.",
+        "evidenceUrlOrPath": "sources/mac-product.json",
+        "credit": "Trend Micro, Cleaner One Pro for Mac"
+      },
+      "caption": "Trend Micro's official Cleaner One Pro for Mac Similar Photos illustration; version and capture date not provided. Linked reference only, not our app test or measured cleanup result.",
+      "alt": "Cleaner One Pro Similar Photos view grouping flower and landscape images with selection controls and a Remove button.",
+      "supportedClaimIds": [
+        "duplicates"
+      ],
+      "limitations": [
+        "Original bytes not downloaded because reuse rights are unverified; original/published hashes intentionally null.",
+        "645 \u00d7 402 vendor image; do not enlarge into evidence of readable fine UI detail or current binary behavior."
+      ],
+      "review": {
+        "status": "visually-inspected-link-only",
+        "reviewer": "research-cleaner-one-pro-mac",
+        "reviewedOn": "2026-10-21"
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job",
+      "productVersion": "current-source browser preview, not certified released binary",
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room, which we build; publication-specific review pending"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "requiredLabels": [
+        "Interactive preview \u00b7 example data",
+        "This browser preview uses example data. Actions never change your Mac."
+      ],
+      "supportedClaimIds": [
+        "br-preview"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Keep example-data labels visible. Source capture is not a new native/current-binary test. Figure needs readable context on mobile."
+      ],
+      "review": {
+        "status": "opened-and-read-this-job",
+        "reviewer": "research-cleaner-one-pro-mac",
+        "reviewedOn": "2026-10-21"
+      }
+    }
+  ],
+  "reproduction": {
+    "handsOnTest": false,
+    "installersDownloaded": false,
+    "cleanupExecuted": false,
+    "benchmarks": false,
+    "browser": "Owned Chrome pages 79 (purchase) and 80 (official image); both closed. Existing tabs were not read or interacted with. No recovery needed.",
+    "calculations": []
+  },
+  "workflowBrief": {
+    "track": "search-reference",
+    "title": "Review similar photos before removing them from your Mac",
+    "slug": "review-similar-photos-before-removing-mac",
+    "primaryIntent": "Help a Mac owner decide which visually similar photos to retain, rather than treating a detected group as disposable duplicates.",
+    "description": "Cleaner One Pro documents both duplicate files and similar-photo cleanup. Use its official illustration to explain a keep/review decision; distinguish that task from investigating why Mac storage keeps growing. No hands-on matching or deletion claims.",
+    "outline": [
+      "Lead with keep/review/stop decision; official Similar Photos UI immediately below lead only after rights cleared",
+      "Duplicate files and similar-looking photos are different review tasks; no unverified algorithm claims",
+      "Inspect each candidate's contents and provenance; stop when original/edit/library relationships are unclear",
+      "Separate selected file sizes from available space and do not invent storage recovery",
+      "If the problem is repeated growth instead, use a current-source Breathing Room Space example with explicit labels and disclose affiliation",
+      "Choose documented photo cleanup or preview investigation based on the actual job"
+    ],
+    "interactionPass": {
+      "decision": "A short no-files-uploaded keep/review/stop checklist",
+      "fields": [
+        "Is this merely similar-looking, or have you verified the contents?",
+        "Do you know which copy/edit is needed?",
+        "Is recovery/backup understood?"
+      ],
+      "result": "Any uncertainty means keep/review, not permission to delete.",
+      "implemented": false,
+      "handoff": "Implement only in separately owned draft/site stage after visual gate; no code required for conceptual comparison."
+    },
+    "links": [
+      "/comparisons/",
+      "/comparisons/cleaner-one-pro-mac/",
+      "/tools/"
+    ],
+    "boundaries": [
+      "Not an app tutorial validated against a versioned installation",
+      "No exact click sequence, deletion method, photo-library handling or matching accuracy asserted",
+      "Apple-specific library/backup advice requires targeted Apple sources before inclusion"
+    ]
+  },
+  "comparisonBrief": {
+    "title": "Breathing Room vs Cleaner One Pro for Mac",
+    "slug": "cleaner-one-pro-mac",
+    "primaryIntent": "Choose documented category/photo/startup cleaning versus a preview for storage/activity investigation.",
+    "length": "Concise sourced decision matrix, not a second expanded workflow article.",
+    "lead": "Cleaner One Pro documents duplicate/similar-photo tools, app management and startup-item control. Breathing Room, which we build, is a free macOS preview with source-level investigation and approval workflows; it is not a verified substitute for every Cleaner One Pro tool.",
+    "sections": [
+      "Who each fits",
+      "Claim-linked matrix including unknown cells",
+      "Preview/runtime/hosted and regional pricing caveats",
+      "When not to switch",
+      "Link to distinct photo-review workflow"
+    ],
+    "noDoorwayRule": "No additional Trend Cleaner Pro or generic alternatives page."
+  },
+  "advantagesAndTradeoffs": {
+    "cleanerOneProAdvantages": [
+      "Documented duplicate/similar-photo categories and startup/app management fit users seeking those specific workflows (duplicates/startup/app-manager).",
+      "Vendor minimum macOS 10.15 reaches earlier OS versions than BR's macOS 13 requirement; this is not a tested compatibility guarantee (compatibility/br-install)."
+    ],
+    "breathingRoomAdvantages": [
+      "Source-level activity/free-space history and developer-tool discovery suit investigating repeated growth; no unsupported absence claim about competitor (br-growth/br-dev).",
+      "Free local core and optional hosted AI pricing are explicit; no currency-adjusted cheaper claim (br-price)."
+    ],
+    "tradeoffs": [
+      "BR preview is not Developer ID signed/notarized and requires Python 3.10+ for inventory/legacy scripts; physical Intel and distributed parity unverified.",
+      "BR hosted AI sends relevant data and requires authentication/network; no offline-AI promise.",
+      "Cleaner One Pro current version, exact cleanup controls, developer adapters and local/hosted boundaries are not verified.",
+      "Competitor public image is link-only; price currency/locale/renewal terms need bounded wording or separate clarification.",
+      "No measured speed, safety, savings, secure-erasure or matching-accuracy comparisons."
+    ]
+  },
+  "draftingGate": {
+    "status": "blocked",
+    "blockers": [
+      "visual-rights: clear republication rights for the real Cleaner One Pro app image or obtain an explicitly authorized alternative/policy decision. Official link fallback does not meet required on-page competitor image gate."
+    ],
+    "noncriticalUnknownPolicy": "Keep listed unknowns explicit and omit unsupported comparisons. Version unknown blocks only version-specific walkthroughs; pricing ambiguity blocks universal USD/renewal/cheaper assertions, not identity research.",
+    "independentReview": "pending; no score or publication approval awarded",
+    "siteChecks": "Not applicable: no website records/assets edited; no build or deployment run."
+  }
+}

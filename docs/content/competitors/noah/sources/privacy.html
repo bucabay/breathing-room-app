@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Noah</title>
+  <meta name="description" content="Noah's privacy policy: what we collect, what we don't, and your rights.">
+  <link rel="canonical" href="https://onnoah.app/privacy/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0b0f14;
+      color: #e1e7ef;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #4fd1c5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 80px 24px 120px; }
+    h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
+    .meta { color: #8899aa; font-size: 14px; margin-bottom: 48px; }
+    h2 { font-size: 20px; font-weight: 600; margin-top: 40px; margin-bottom: 12px; color: #e1e7ef; }
+    p, ul { margin-bottom: 16px; color: #c5cdd6; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    strong { color: #e1e7ef; }
+    .nav-back { display: inline-block; margin-bottom: 32px; color: #8899aa; font-size: 14px; }
+  </style>
+<script src="/analytics.js"></script></head>
+<body>
+  <div class="wrap">
+    <a href="/" class="nav-back">← Back to Noah</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: September 12, 2026</p>
+
+    <p>This policy describes what Noah collects, what it doesn't, and how the information is used. We try to keep it short and plain.</p>
+
+    <h2>What Noah is</h2>
+    <p>Noah is a desktop app that helps you fix problems on your computer. You describe what's wrong, Noah diagnoses, shows a plan, and fixes it after you click "Please fix it". The Noah desktop app uses a small backend at <code>api.onnoah.app</code> for authentication, billing, and routing your conversations to an AI provider that generates Noah's responses.</p>
+
+    <h2>Your privacy in the Noah app</h2>
+    <ul>
+      <li><strong>Noah looks at your system, not inside your files.</strong> To find what's wrong, it checks things like disk space, startup items, and settings. To find what's filling your disk, it also checks file and folder sizes — on a Mac, macOS asks your permission first. But it doesn't open your documents, photos, or messages to read what's in them: <strong>names and sizes, not contents</strong>.</li>
+      <li><strong>Your conversations</strong> are sent to an AI provider to generate Noah's answers. We keep a record of them as your repair history, so we can support you and improve Noah's diagnoses.</li>
+      <li><strong>We use Stripe to process payments.</strong></li>
+      <li><strong>We collect usage analytics</strong> to improve Noah — which features you use, and whether a fix worked. On this website we also record how visitors navigate the pages, with anything typed into a form masked. This is separate from your conversations, and it never includes your files.</li>
+      <li><strong>Noah asks for your email address when you first use it, and it is required</strong> — that is how we can reach you about the computer it is working on. There is no password and no card.</li>
+      <li><strong>You're in control.</strong> Noah shows every change before it runs, you approve it, and every change is logged.</li>
+      <li><strong>Delete anytime</strong> — email <a href="/cdn-cgi/l/email-protection#432b262f2f2c032c2d2d2c222b6d223333"><span class="__cf_email__" data-cfemail="076f626b6b684768696968666f29667777">[email&#160;protected]</span></a>.</li>
+    </ul>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>A device ID</strong>, generated on your computer the first time you open Noah. It is what tells your computer apart from other people's, so Noah knows whose plan and whose history is whose. Your email address is attached to it. We never ask you for your name.</li>
+      <li><strong>Technical details about your computer</strong>, so a diagnosis fits your machine instead of a generic one — the things a technician asks before starting:
+        <ul>
+          <li>Mac or PC, and which chip it uses — Apple silicon, Intel, AMD or ARM</li>
+          <li>the model — a MacBook Air, an iMac, a Dell XPS, a hand-built desktop</li>
+          <li>the operating system and its version</li>
+          <li>the processor and how many cores it has</li>
+          <li>how much memory</li>
+          <li>disk size, and whether it is an SSD or a mechanical drive</li>
+          <li>the graphics</li>
+        </ul>
+        Plus a short status line: free disk space, whether a backup is set up, security posture, and how many startup items there are. The same symptom has a different cause on a 2019 iMac with a spinning drive than on a new laptop with an SSD, and this is how Noah tells them apart.</li>
+      <li><strong>Your email address.</strong> Noah asks for it during setup and needs it before it will answer your first question. It creates your profile and connects it to your computer, and it is how we reach you about a repair.</li>
+      <li><strong>A machine id.</strong> Noah sends an identifier built into your computer's hardware; we hash it the moment it arrives and keep only the hash. It lets Noah tell one of your own computers apart from another when you run Noah on more than one.</li>
+      <li><strong>Specific files, when a diagnosis needs one</strong> — a crash report, a system log, a settings file. Noah opens the named file, and what it reads becomes part of the conversation. It reads only from places a technician would look and never your whole library.</li>
+      <li><strong>The conversation you have with Noah</strong>, which is forwarded to our AI provider to generate diagnostic plans and responses. It can contain personal details: your computer's user name, where it appears in a file path, and anything you type. We keep these conversations as your repair history — see <a href="#data-retention">Data retention</a> below.</li>
+      <li><strong>Usage counters</strong>: the number of fixes you've run, used to enforce fair-use limits.</li>
+      <li><strong>Website analytics</strong>: the pages you view on onnoah.app, the elements you click, and a recording of how you moved through the site, with form values masked. Collected by PostHog.</li>
+      <li><strong>Request records</strong>: IP address, timestamp and user agent, recorded when Noah or this site contacts our backend, for debugging and to prevent abuse.</li>
+      <li><strong>Stripe payment data</strong>: handled by Stripe (<a href="https://stripe.com/privacy">stripe.com/privacy</a>). We never see or store your card number.</li>
+    </ul>
+
+    <h2>What we don't collect</h2>
+    <ul>
+      <li><strong>Your documents, photos or messages.</strong> Noah looks at your system the way a technician does — what is running, how much space is left, how big a folder has grown. It does not browse or upload your personal files, and to find what is filling your disk it reads names and sizes, not contents.</li>
+      <li>Your name, address, or phone number. Stripe may collect a billing address for tax purposes; we don't see it.</li>
+      <li>Your browsing on other websites. We see how you use onnoah.app itself — see <a href="#cookies">Cookies and analytics</a> — not where else you go.</li>
+      <li>What you type into other applications, or into form fields on our website: session recording masks those values before they leave your browser.</li>
+    </ul>
+
+    <h2>How we use the information</h2>
+    <ul>
+      <li>To run the service: route your conversations to our AI provider, enforce your plan and entitlement state, charge your card via Stripe.</li>
+      <li>To improve Noah: we analyse usage in aggregate, and we review individual conversations to find where Noah gave a wrong or unhelpful answer and to test changes to its prompts and quality checks before we release them. We do not use your conversations to build a profile of you, and we do not sell them or share them for advertising.</li>
+      <li>To prevent abuse: detect repeated free-tier sign-ups from the same source, brute-force attempts, and similar.</li>
+      <li>To advertise: when you visit <a href="https://onnoah.app">onnoah.app</a> from a Meta (Facebook/Instagram) ad, we may use Meta's Conversions API to send signals like "started" or "purchased" back to Meta so the ad system can find more people like you. These are sent from our server and include your IP address and user agent, a Meta cookie identifier, and — if you have paid — your email address in hashed form. Meta's own pixel also loads on our pages, as described under <a href="#cookies">Cookies and analytics</a>.</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <ul>
+      <li><strong>Our AI provider</strong> — receives your conversations to generate Noah's responses.</li>
+      <li><strong>Stripe</strong> — processes payments and stores card data.</li>
+      <li><strong>Resend</strong> — sends magic-link sign-in emails.</li>
+      <li><strong>Fly.io</strong> — hosts Noah's backend.</li>
+      <li><strong>Cloudflare</strong> — hosts this landing page, serves installer downloads, and stores our long-term archive of conversations and telemetry (Cloudflare R2).</li>
+      <li><strong>PostHog</strong> — receives the usage analytics described above.</li>
+      <li><strong>Meta</strong> — receives ad-conversion signals via Conversions API when you arrive from a Meta ad.</li>
+    </ul>
+
+    <h2 id="cookies">Cookies and analytics</h2>
+    <p>On <a href="https://onnoah.app">onnoah.app</a> we use cookies and similar technologies:</p>
+    <ul>
+      <li><strong>Our own cookies</strong>: <code>noah_v</code>, an opaque visitor identifier, and <code>noah_a</code>, which records how you first arrived (ad click identifier, campaign tags, referring site). Both last 90 days and are set by us.</li>
+      <li><strong>Analytics</strong>: PostHog, which records page views, clicks and a masked recording of your session.</li>
+      <li><strong>Meta</strong>: Meta's pixel loads on every visit and sets its own cookies (<code>_fbp</code>, and <code>_fbc</code> if you arrived from an ad).</li>
+    </ul>
+    <p>You can block or clear these in your browser. The Noah desktop app sets no cookies; it stores its analytics identifier locally on your machine.</p>
+
+    <h2 id="your-choices">Your choices</h2>
+    <ul>
+      <li><strong>Delete your data</strong>: email <a href="/cdn-cgi/l/email-protection#1d75787171725d727373727c75337c6d6d"><span class="__cf_email__" data-cfemail="f9919c959596b9969797969891d7988989">[email&#160;protected]</span></a>. We will delete the personal data we hold about you, or, where deletion is not possible — for example in backups and archives — anonymise it so that it no longer identifies you. Tell us the email tied to your account; if you never signed up, say so and we will explain what we need in order to find your records.</li>
+      <li><strong>Manage billing</strong>: from inside Noah → Settings → Billing, or directly in Stripe.</li>
+      <li><strong>Limit Meta tracking</strong>: our pages load Meta's pixel on every visit, which sets a Meta cookie. To prevent that, block <code>connect.facebook.net</code> in your browser or use content blocking. Arriving from a direct link rather than an ad also means we hold no ad-click identifier for you.</li>
+    </ul>
+    <p>Depending on where you live, you may also have the right to access the personal data we hold about you and receive a copy of it, to have inaccurate data corrected, to object to or restrict how we use it, and to withdraw consent where we rely on it. Email <a href="/cdn-cgi/l/email-protection#5a323f3636351a353434353b32743b2a2a"><span class="__cf_email__" data-cfemail="dfb7bab3b3b09fb0b1b1b0beb7f1beafaf">[email&#160;protected]</span></a> to exercise any of these. If you are in the UK, EU or Switzerland and you think we have handled your data wrongly, you may also complain to your national data protection authority.</p>
+
+    <h2 id="data-retention">Data retention</h2>
+    <p>We keep each kind of data for as long as it is needed for the purposes described in this policy:</p>
+    <ul>
+      <li><strong>Your conversations and repair history</strong> — while we provide Noah to you, and for our continuing review of the quality of its answers. These are not deleted on a fixed schedule.</li>
+      <li><strong>Your account and entitlement record</strong> — while your account is active, and for 90 days after cancellation for refund and dispute handling.</li>
+      <li><strong>Request records and service telemetry</strong> — while they remain useful for debugging, reliability and preventing abuse.</li>
+    </ul>
+    <p>You can ask us to delete your data at any time — see <a href="#your-choices">Your choices</a>.</p>
+
+    <h2>Security</h2>
+    <p>We use appropriate technical and organisational measures to protect your data: traffic to and from Noah is encrypted in transit, administrative access is restricted and individually credentialed, and payment card details never reach our servers. No service can promise perfect security, and we do not.</p>
+
+    <h2>Where your data is held</h2>
+    <p>We are based in the United States and your data is held and processed there, including by the providers listed under Third parties. If you use Noah from outside the United States, your data is transferred there. Data protection laws vary between countries, and US law may offer protections different from those where you live.</p>
+
+    <h2>Links to other sites</h2>
+    <p>Noah and this site link to pages we don't control. This policy doesn't cover them, and we aren't responsible for their privacy practices.</p>
+
+    <h2>Children</h2>
+    <p>Noah is not directed at children under 13 and we do not knowingly collect their data.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. Material changes will be announced on <a href="https://onnoah.app">onnoah.app</a>. Continued use after a change means you accept the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? <a href="/cdn-cgi/l/email-protection#c8a0ada4a4a788a7a6a6a7a9a0e6a9b8b8"><span class="__cf_email__" data-cfemail="a1c9c4cdcdcee1cecfcfcec0c98fc0d1d1">[email&#160;protected]</span></a>.</p>
+
+    <nav style="margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);font-size:14px;color:#8899aa">
+      <a href="/">Home</a> · <a href="/fix/">Fix Library</a> · <a href="/blog/">Blog</a> · <a href="/changelog/">Changelog</a> · <a href="/help">Help</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a>
+    </nav>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

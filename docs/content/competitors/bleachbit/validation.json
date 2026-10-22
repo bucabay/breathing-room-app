@@ -1,0 +1,34 @@
+{
+  "jobId": "research-bleachbit",
+  "checkedOn": "2026-10-21",
+  "method": "Read-only Python structural, reference, SHA-256, PNG-header and public-transfer checks; actual command completed with exit 0.",
+  "result": "pass",
+  "checks": {
+    "researchJsonParse": "pass",
+    "uniqueSources": 10,
+    "claimSourceReferencesChecked": 14,
+    "matrixRowsChecked": 8,
+    "sourceAndDiscoveryHashesMatched": 3,
+    "pngHashesAndDimensionsMatched": 2,
+    "publicTransferBase64MatchesOriginalPng": "pass",
+    "retainedOfficialScreenshotWaiverPresent": "pass",
+    "canonicalOwnerAndAliasDecision": "pass",
+    "draftGateAndSafetyFlags": "pass"
+  },
+  "reviewedImages": [
+    "docs/content/competitors/bleachbit/assets/bleachbit320_windows10_preview.png",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png"
+  ],
+  "imageReview": "Both actual PNGs opened/read using image-capable tool. Historical Windows/vendor-estimate labels and first-party browser/example-data labels required; no native runtime or savings conclusion.",
+  "hashes": {
+    "research.json": "640ec5339613b6b2b6eab08f3aa4c161fe909a3812da2695e93f14723582e868",
+    "research.md": "36d1e05791ecbed1868add5f2e85786dbf0dd1c517a016c594877cac9ca64b80",
+    "screenshots-page.json": "5a515f94d55fc3d634f7ee08c1528fb4c486be83bf066e02ed882750ab8bf77a",
+    "asset-transfer.json": "80b998f971fc53fb83f9508a95f5114f881c148c9ca7fcba2aae6a3f1d70c623",
+    "assets/bleachbit320_windows10_preview.png": "0bd0199226f2762eaa714c1aee603516ab3ad75a32d10f4937cd4e6678d39bbf"
+  },
+  "browser": "Used only owned tab191; public page and image GET with credentials omitted. Closed owned tab after research. Existing listener/profile unchanged; no other tabs inspected or navigated.",
+  "accessFailures": "Direct Python GET for original preview and newer preferences PNG each returned HTTP403. Normal public page access in Chrome succeeded; public same-origin preview PNG GET returned200, no cookies/private state extracted.",
+  "notPerformed": ["native tests", "cleanup", "installation", "site check/build/test (no site changes)", "independent publication review", "responsive rendered-page review"],
+  "scope": "Research packet verification only; not publication approval. Unknowns and release-version FAQ conflict retained."
+}

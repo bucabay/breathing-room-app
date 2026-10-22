@@ -1,0 +1,20 @@
+[
+  {
+    "id": "terms",
+    "url": "https://lightermac.com/terms",
+    "finalUrl": "https://lightermac.com/terms",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T21:25:56.929733+00:00",
+    "snapshotPath": "docs/content/competitors/lightermac/terms.html",
+    "sha256": "8adc39ecac8529e6dfcad12491c678207c964a981eb595304caddd30f94b80ca"
+  },
+  {
+    "id": "privacy",
+    "url": "https://lightermac.com/privacy-policy",
+    "finalUrl": "https://lightermac.com/privacy-policy",
+    "httpStatus": 200,
+    "retrievedAtUtc": "2026-10-21T21:25:57.576709+00:00",
+    "snapshotPath": "docs/content/competitors/lightermac/privacy.html",
+    "sha256": "d1fa1e53edbbe03196e78751d526741e06d2cad366c80e982faa9da3e6a797dd"
+  }
+]

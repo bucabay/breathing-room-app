@@ -1,0 +1,378 @@
+{
+  "checkedAtUtc": "2026-10-22T11:33:43.649777+00:00",
+  "status": "passed-structural-evidence-checks",
+  "checks": [
+    {
+      "name": "source-hash:edition-differences",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:edition-differences",
+      "passed": true
+    },
+    {
+      "name": "source-hash:faq",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:faq",
+      "passed": true
+    },
+    {
+      "name": "source-hash:installation",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:installation",
+      "passed": true
+    },
+    {
+      "name": "source-hash:legal",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:legal",
+      "passed": true
+    },
+    {
+      "name": "source-hash:mac-product",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:mac-product",
+      "passed": true
+    },
+    {
+      "name": "source-hash:purchase-observation",
+      "passed": true
+    },
+    {
+      "name": "source-hash:purchase",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:purchase",
+      "passed": true
+    },
+    {
+      "name": "source-hash:renewal",
+      "passed": true
+    },
+    {
+      "name": "raw-hash:renewal",
+      "passed": true
+    },
+    {
+      "name": "source-hash:baseline-home",
+      "passed": true
+    },
+    {
+      "name": "source-hash:discovery",
+      "passed": true
+    },
+    {
+      "name": "source-hash:br-capabilities",
+      "passed": true
+    },
+    {
+      "name": "source-hash:br-readme",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:identity",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:identity",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:regional-alias",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:regional-alias",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:compatibility",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:compatibility",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:processor",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:processor",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:scan",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:scan",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:duplicates",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:duplicates",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:startup",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:startup",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:app-manager",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:app-manager",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:shredder",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:shredder",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:vulnerability",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:vulnerability",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:installation",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:installation",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:annual",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:annual",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:observed-prices",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:observed-prices",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:renewal",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:renewal",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:edition-boundary",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:edition-boundary",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:historical-monitor",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:historical-monitor",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:copyright",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:copyright",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-preview",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-preview",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-version",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-version",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-license",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-license",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-install",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-install",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-price",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-price",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-hosted",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-hosted",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-approvals",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-approvals",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-growth",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-growth",
+      "passed": true
+    },
+    {
+      "name": "exact-normalized-excerpt:br-dev",
+      "passed": true
+    },
+    {
+      "name": "claim-scope:br-dev",
+      "passed": true
+    },
+    {
+      "name": "matrix-reference-integrity",
+      "passed": true
+    },
+    {
+      "name": "canonical-alias-decision",
+      "passed": true
+    },
+    {
+      "name": "baseline-hash",
+      "passed": true
+    },
+    {
+      "name": "discovery-hash",
+      "passed": true
+    },
+    {
+      "name": "discovery-edge",
+      "passed": true
+    },
+    {
+      "name": "competitor-link-only-no-download",
+      "passed": true
+    },
+    {
+      "name": "competitor-image-is-official-page-asset",
+      "passed": true
+    },
+    {
+      "name": "br-original-hash",
+      "passed": true
+    },
+    {
+      "name": "br-example-labels",
+      "passed": true
+    },
+    {
+      "name": "blocked-not-published",
+      "passed": true
+    },
+    {
+      "name": "critical-unknown-mapped",
+      "passed": true
+    },
+    {
+      "name": "distinct-brief-intents",
+      "passed": true
+    },
+    {
+      "name": "markdown-handoff",
+      "passed": true
+    }
+  ],
+  "passed": 84,
+  "failed": 0,
+  "artifactsSha256": {
+    "alternatives-handoff.md": "47a6216a5a112c66bc42ba9b1241840ecbc2d68be02c225932a398bb58ee123e",
+    "blog-handoff.md": "d6017f84b977fb8c0683689f8a2ce0319def3def92e358893721a593701b12da",
+    "blog-skip.md": "b8ba23475f55f885c3a7e032b6fce0e22ea8efc249005f850cd0d2bdc2d31690",
+    "build_packet.py": "d611d24dc592e07c2b25845a9ca4f3005f3089c8a02723e3831d519293a65b14",
+    "collect_sources.py": "24dbb5374e3008380e1543d9c39332b63c5df9c2ed71f42fb028c7a04e7c4b62",
+    "comparison-handoff.md": "4489a131380f83b912563a5f58d1582a028b968b271b24651105909effdda8df",
+    "research.json": "d451b62c9eac9f2d79f37d1369ea919054a4229b548c1689564ccc332adf0b94",
+    "research.md": "ab3652ffc47ff801cdc7fcb3019671711f7a4b0d072990a60477071cc11a6489",
+    "sources/edition-differences.html": "50e56063abe320d6f517032b84ce533ae1517c0778b2edb78c61ae8f5daacdf0",
+    "sources/edition-differences.json": "1fe6c1838212906856fe6914ae474659af6f1ab8a8705b6dfe47707a0bae7ad4",
+    "sources/faq.html": "e2705f97be3ca6fec424f820c428b1de15bc1d8f01daa067bef7416b91827833",
+    "sources/faq.json": "8bf81998ce8d02a3434a17752eb75f25b3f2f93526c0c43de60cd93d3ba53c04",
+    "sources/installation.html": "22fa62c335b6da5e5e26fceadf09ceff90fd275f65f5089c89e003d6a5137f50",
+    "sources/installation.json": "c7a9d14f13bafeb77fa0511a29c8c3e5e50c5cfcedc9086281566ad2dfc792d7",
+    "sources/legal.html": "6c79c94b9a89e21f9638bd53f1e59ee499ef70e44969d2ce3abd4d6383783df1",
+    "sources/legal.json": "3e939bb9d4c240d118eb1f5fcd227d74303bb909d3e7346fe060d9e9fa3bb3fe",
+    "sources/mac-product.html": "425aad4a89fa263b78eca470af8edae972767b8d2079a68f5e74f87536398831",
+    "sources/mac-product.json": "7f4420318ad29bd6470955afaa5cffd226bfdcd3e3d682b3f23094a2e86d5fa2",
+    "sources/purchase-browser.txt": "bc22dc13406d5c74f339c664142791b4c3f38b8d7192939e2db53a63114db84d",
+    "sources/purchase-observation.json": "db6841d95dcd005b16d6e7c2f916973dc2c3f3a5a10b525ccfd65ef9e41c328f",
+    "sources/purchase.html": "42baffee89b7d0986ec27fb08b1a541f019181307a81c7d25d32181cd6b70c4a",
+    "sources/purchase.json": "8579a56e8ff9b56d02701e869fd3a8110d71c3b5faafdf3ea73fdcbb22577ea3",
+    "sources/renewal.html": "2ddba4162c21154cc6cdaaa1eabf50947d730f8f5d2f84017031e1f74ca4afce",
+    "sources/renewal.json": "05130d773b28f3df214315944c0a9a51bfa790e1933a984ded42f10ca94795e4",
+    "sources/visual-observation.json": "85bd0b1b1aa3a8bff145977f8455712bdddd95ccd9b939e568b2a1a358b1683b",
+    "tool-handoff.md": "5ebc6448614c3487502de9b152bee2036b846fab21073704f1f660e5daeceb7e",
+    "validate_packet.py": "3188d5b647dfcc1bb92bbff38196f002e9f64edab9623cf405ee1c927bb5c38c"
+  },
+  "limitations": [
+    "No competitor/native execution, deletion, benchmark or installer verification.",
+    "Competitor screenshot rights unresolved: drafting remains blocked despite structural check pass.",
+    "No site edits; no site build/test or independent publication/visual score claimed."
+  ]
+}

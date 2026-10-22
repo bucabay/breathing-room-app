@@ -1,6 +1,25 @@
 # AlternativeTo source discovery
 
-Retrieved: **2026-10-21**. Job: `sources`. Status: **blocked**. These are research records, not publishable comparison claims.
+## Live browser discovery completed — 2026-10-21
+
+The approved browser profile was restored with the documented launcher from `/Users/gabe/code/indeed-apply/scripts/run_pipeline.py:39–49`, after confirming no listener existed on port 9333. The existing `~/.chrome-indeed-automation` profile was used; no new profile or job-application campaign was started. DevTools connected, and a new owned background tab was used. AlternativeTo showed the existing signed-in `bucabay` account; no login, contribution or account change was performed.
+
+**Confirmed relationships:** [Breathing Room's own listing](https://alternativeto.net/software/breathing-room/about/) states “bucabay added Breathing Room as alternative to CleanMyMac and Mole.” Its [two-item alternatives page](https://alternativeto.net/software/breathing-room/) confirms both. The prior DaisyDisk candidate was incorrect as a seed; DaisyDisk does appear downstream in Mole's list.
+
+| Confirmed seed | First page | Last page | Observed listing count |
+| --- | --- | --- | --- |
+| CleanMyMac | https://alternativeto.net/software/cleanmymac/ | https://alternativeto.net/software/cleanmymac/?p=10 | 113 |
+| Mole | https://alternativeto.net/software/mole/ | https://alternativeto.net/software/mole/?p=9 | 101 |
+
+Traversed all **19 pages** through observed next/pagination links in the rendered browser. Last pages had no next link. Deduplicated responsive duplicate cards and repeated products by exact listing URL: **151 identities including Breathing Room, 150 competitor listing identities after excluding our own product**. This is not a claim of 150 independent vendors, relevant Mac-native replacements, or publishable posts. Official-source verification, platform classification, screenshot permissions and vendor-alias review remain per-product research work. PowerMyMac / iMyMac - PowerMyMac is one suspected alias requiring review.
+
+`competitors.json` now contains the full discovery manifest, page URLs, retrieval timestamps, raw-capture SHA-256 hashes, rendered product excerpts, all seed edges, and explicit publication-ineligible states. `CONTENT-CHECKLIST.md` lists all 150 research items. Raw captures remain local under `.runtime/`; `scripts/build-alternative-manifest.py` checks page completeness/counts and regenerates the records from those captures. No capability, price, licence or platform assertion is approved solely from directory text.
+
+## Historical blocked attempt (superseded for browser access and seed discovery)
+
+The following records preserve the earlier failure evidence. They do not describe current browser access or current discovery counts.
+
+Retrieved: **2026-10-21**. Job: `sources`. Historical status: **blocked**. These are research records, not publishable comparison claims.
 
 ## Result
 

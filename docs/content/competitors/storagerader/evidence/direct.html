@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="en" data-locale="en" data-page-template="direct" data-rollout-wave="control"> <head><!-- Theme color: default matches the dark theme; the init script below
+         flips it to the light bg when the resolved theme is light. --><meta name="theme-color" content="#080c14"><!-- Anti-flash theme init: must be first --><script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+        var theme = stored || sys;
+        document.documentElement.setAttribute("data-theme", theme);
+        // Keep the browser UI (address bar) color in sync with the theme.
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f5f8fc" : "#080c14");
+        // Mark JS as active so scroll-reveal can hide content for animation.
+        // Without this class (no JS, or this script failing), all reveal
+        // targets stay at their visible resting state and never ship blank.
+        document.documentElement.classList.add("js");
+      })();
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Buy StorageRadar Direct — Mac Disk Space Analyzer</title><meta name="description" content="Buy StorageRadar Direct one-time: Core $9.99 or Developer $19.99. Download the DMG and try it free. License key by email — no Apple ID required. Disk space analyzer for devs and power users."><meta name="keywords" content="buy StorageRadar direct, StorageRadar Direct build, Mac disk space analyzer, one-time purchase mac app, Gumroad mac app, Core Developer license, no Apple ID mac app"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link rel="canonical" href="https://storageradar.app/direct/"><meta name="generator" content="Astro v5.18.0"><!-- Open Graph --><meta property="og:title" content="Buy StorageRadar Direct — Mac Disk Space Analyzer"><meta property="og:description" content="Buy StorageRadar Direct one-time: Core $9.99 or Developer $19.99. Download the DMG and try it free. License key by email — no Apple ID required. Disk space analyzer for devs and power users."><meta property="og:type" content="website"><meta property="og:site_name" content="StorageRadar"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="pt_BR"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:url" content="https://storageradar.app/direct/"><meta property="og:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta property="og:image:alt" content="Buy StorageRadar Direct — Mac Disk Space Analyzer preview"><link rel="alternate" hreflang="en" href="https://storageradar.app/direct/"><link rel="alternate" hreflang="de" href="https://storageradar.app/de/direct/"><link rel="alternate" hreflang="es" href="https://storageradar.app/es/direct/"><link rel="alternate" hreflang="fr" href="https://storageradar.app/fr/direct/"><link rel="alternate" hreflang="ja" href="https://storageradar.app/ja/direct/"><link rel="alternate" hreflang="ko" href="https://storageradar.app/ko/direct/"><link rel="alternate" hreflang="nl" href="https://storageradar.app/nl/direct/"><link rel="alternate" hreflang="pt-BR" href="https://storageradar.app/pt-BR/direct/"><link rel="alternate" hreflang="ru" href="https://storageradar.app/ru/direct/"><link rel="alternate" hreflang="zh-Hans" href="https://storageradar.app/zh-Hans/direct/"><link rel="alternate" hreflang="x-default" href="https://storageradar.app/direct/"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Buy StorageRadar Direct — Mac Disk Space Analyzer"><meta name="twitter:description" content="Buy StorageRadar Direct one-time: Core $9.99 or Developer $19.99. Download the DMG and try it free. License key by email — no Apple ID required. Disk space analyzer for devs and power users."><meta name="twitter:image" content="https://storageradar.app/social/storageradar-3-og.png"><meta name="twitter:image:alt" content="Buy StorageRadar Direct — Mac Disk Space Analyzer preview"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="StorageRadar Blog" href="/rss.xml"><!-- Favicons --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="128x128" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-5QK60QWFV0"></script><script>(function(){const analyticsContext = {"locale":"en","page_template":"direct","rollout_wave":"control"};
+const analyticsDebugLocalStorageKey = "storageradar:analytics-debug";
+const analyticsDebugQueryParam = "debugAnalytics";
+const canonicalUrl = "https://storageradar.app/direct/";
+const gaMeasurementId = "G-5QK60QWFV0";
+const pageTitle = "Buy StorageRadar Direct — Mac Disk Space Analyzer";
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = window.gtag || function () {
+              window.dataLayer.push(arguments);
+            };
+            window.gtag("js", new Date());
+            window.gtag("config", gaMeasurementId, { send_page_view: false });
+
+            window.__storageradarAnalyticsContext = analyticsContext;
+
+            var debugEnabled = false;
+            try {
+              var searchParams = new URLSearchParams(window.location.search);
+              debugEnabled =
+                window.location.hostname === "localhost" ||
+                searchParams.get(analyticsDebugQueryParam) === "1" ||
+                window.localStorage.getItem(analyticsDebugLocalStorageKey) === "1";
+            } catch (_error) {
+              debugEnabled = false;
+            }
+
+            // Canonical origin + path keep page reports clean, while the visit's own query
+            // string stays: GA4 reads utm_* (session source / medium / campaign) and click
+            // IDs from page_location of the landing page_view. Canonical tags are unaffected.
+            var pageLocation = new URL(canonicalUrl);
+            pageLocation.search = window.location.search;
+
+            var pageViewPayload = {
+              locale: analyticsContext.locale,
+              page_template: analyticsContext.page_template,
+              rollout_wave: analyticsContext.rollout_wave,
+              page_location: pageLocation.href,
+              page_path: pageLocation.pathname,
+              page_title: pageTitle,
+            };
+
+            if (debugEnabled) {
+              console.info("[analytics] Applied locale-aware tracking config", analyticsContext);
+              console.debug("[analytics] page_view payload", pageViewPayload);
+            }
+
+            window.gtag("event", "page_view", pageViewPayload);
+          })();</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"StorageRadar","item":"https://storageradar.app/"},{"@type":"ListItem","position":2,"name":"Direct build","item":"https://storageradar.app/direct/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Buy StorageRadar Direct — Mac Disk Space Analyzer","description":"Buy StorageRadar Direct one-time: Core $9.99 or Developer $19.99. Download the DMG and try it free. License key by email — no Apple ID required. Disk space analyzer for devs and power users.","url":"https://storageradar.app/direct/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"StorageRadar","url":"https://storageradar.app/"}}</script><script type="module">const s="storageradar:utm",m=["utm_source","utm_medium","utm_campaign","utm_content"],a={producthunt:{utm_source:"producthunt",utm_campaign:"sr-ph-001"}},l=100,p=new Set(["youtube","youtube.com","youtu.be"]);function i(e){const t={};for(const n of m){const r=e(n);typeof r=="string"&&r.trim()&&(t[n]=r.trim().slice(0,l))}return Object.keys(t).length>0?t:null}function f(e){const t=new URLSearchParams(e);return i(n=>t.get(n))}function _(e){const t=f(e);if(t)return t;const n=new URLSearchParams(e).get("ref")?.trim().toLowerCase(),r=n&&Object.prototype.hasOwnProperty.call(a,n)?a[n]:null;return r?{...r}:null}function h(e){if(!e)return null;try{const t=JSON.parse(e.getItem(s)??"null");return!t||typeof t!="object"?null:i(n=>t[n])}catch{return null}}function A(e,t){const n=h(t);if(n)return n;const r=_(e);if(r&&t)try{t.setItem(s,JSON.stringify(r))}catch{}return r}function u(e){return e.toLowerCase().replace(/[^a-z0-9_-]+/g,"-").replace(/-{2,}/g,"-").replace(/^[-_]+|[-_]+$/g,"")}function g(e){const t=u(e?.utm_campaign??"");if(!t)return null;const n=(e?.utm_source??"").trim().toLowerCase(),r=p.has(n)?"yt":u(n);return(r?`${r}-${t}`:t).slice(0,40).replace(/[-_]+$/,"")||null}function d(e){const t=e.hostname;return(t==="gumroad.com"||t.endsWith(".gumroad.com"))&&e.pathname.startsWith("/l/")}function S(e,t){let n;try{n=new URL(e)}catch{return null}return n.protocol!=="https:"||!(n.hostname==="apps.apple.com"&&n.searchParams.get("ct")==="web")&&!d(n)?null:(n.searchParams.set("ct",t),n.href)}function P(){try{return window.sessionStorage}catch{return null}}function T(){const e=A(window.location.search,P()),t=g(e),n={ct:t??"web"};e?.utm_campaign&&(n.utm_campaign=e.utm_campaign);const r={utm:e,campaign:t,eventParams:n};return window.__storageradarAttribution=r,t&&document.querySelectorAll('a[href*="apps.apple.com"], a[href*="gumroad.com"]').forEach(o=>{const c=S(o.href,t);c&&(o.href=c,new URL(c).hostname==="apps.apple.com"&&(o.dataset.ct=t,o.dataset.ctLocked=""))}),r}T();</script><script src="/youtube-attribution.v1.js?v=b8869519ff10" defer></script><link rel="stylesheet" href="/_astro/_slug_.DhO0ya4m.css">
+<style>.email-capture[data-astro-cid-x5owhrxq]{margin:0 auto;max-width:720px;padding:0 1.5rem}.email-capture--full[data-astro-cid-x5owhrxq]{margin-block:3rem}.email-capture--compact[data-astro-cid-x5owhrxq]{margin-block:1.5rem 0}.email-capture-inner[data-astro-cid-x5owhrxq]{border:1px solid var(--border, #d2d2d7);border-radius:16px;padding:1.75rem;background:var(--surface, #fff)}.email-capture-title[data-astro-cid-x5owhrxq]{margin:0 0 .5rem;font-size:1.25rem;line-height:1.3}.email-capture-desc[data-astro-cid-x5owhrxq]{margin:0 0 1.25rem;color:var(--text-muted, #6e6e73);font-size:.95rem;line-height:1.5}.email-capture-form[data-astro-cid-x5owhrxq]{display:flex;flex-direction:column;gap:.875rem}.email-capture-field[data-astro-cid-x5owhrxq]{display:flex;flex-direction:column;gap:.35rem}.email-capture-label[data-astro-cid-x5owhrxq]{font-size:.85rem;font-weight:600}.email-capture-field[data-astro-cid-x5owhrxq] input[data-astro-cid-x5owhrxq][type=email]{width:100%;box-sizing:border-box;padding:.7rem .85rem;font-size:1rem;border:1px solid var(--border, #d2d2d7);border-radius:10px;background:var(--surface, #fff);color:inherit}.email-capture-consent[data-astro-cid-x5owhrxq]{display:flex;align-items:flex-start;gap:.55rem;font-size:.85rem;line-height:1.45;color:var(--text-muted, #6e6e73)}.email-capture-consent[data-astro-cid-x5owhrxq] input[data-astro-cid-x5owhrxq]{margin-top:.2rem;flex:none}.email-capture-submit[data-astro-cid-x5owhrxq]{align-self:flex-start}.email-capture-error[data-astro-cid-x5owhrxq]{margin:0;color:#c0392b;font-size:.85rem}.email-capture--compact[data-astro-cid-x5owhrxq] .email-capture-inner[data-astro-cid-x5owhrxq]{padding:1.25rem}
+</style></head> <body> <a href="#main" class="skip-link">Skip to content</a>  <header class="site-nav" id="site-nav"> <div class="container nav-inner"> <a href="/" class="nav-logo"> <svg class="logo-icon-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <nav class="nav-links" aria-label="Main navigation"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> </nav> <a href="/direct/" class="btn btn-outline btn-sm nav-cta nav-cta-direct" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false"> <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <details class="locale-switcher-menu" id="locale-switcher"> <summary class="locale-switcher-trigger"> <span class="locale-switcher-icon"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <line x1="2" y1="12" x2="22" y2="12"></line> <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path> </svg> </span> <span class="locale-switcher-value">English</span> <span class="locale-switcher-current-code">EN</span> <span class="locale-switcher-chevron"> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </span> </summary> <div class="locale-switcher-panel"> <ul class="locale-switcher-list"> <li> <a href="/direct/" class="locale-switcher-option is-current" hreflang="en" data-locale="en" aria-current="true"> <span class="locale-option-name">English</span> <span class="locale-option-check"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </span> </a> </li><li> <a href="/de/direct/" class="locale-switcher-option" hreflang="de" data-locale="de"> <span class="locale-option-name">Deutsch</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/es/direct/" class="locale-switcher-option" hreflang="es" data-locale="es"> <span class="locale-option-name">Español</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/fr/direct/" class="locale-switcher-option" hreflang="fr" data-locale="fr"> <span class="locale-option-name">Français</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ja/direct/" class="locale-switcher-option" hreflang="ja" data-locale="ja"> <span class="locale-option-name">日本語</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ko/direct/" class="locale-switcher-option" hreflang="ko" data-locale="ko"> <span class="locale-option-name">한국어</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/nl/direct/" class="locale-switcher-option" hreflang="nl" data-locale="nl"> <span class="locale-option-name">Nederlands</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/pt-BR/direct/" class="locale-switcher-option" hreflang="pt-BR" data-locale="pt-BR"> <span class="locale-option-name">Português (BR)</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/ru/direct/" class="locale-switcher-option" hreflang="ru" data-locale="ru"> <span class="locale-option-name">Русский</span> <span class="locale-option-check">  </span> </a> </li><li> <a href="/zh-Hans/direct/" class="locale-switcher-option" hreflang="zh-Hans" data-locale="zh-Hans"> <span class="locale-option-name">简体中文</span> <span class="locale-option-check">  </span> </a> </li> </ul> </div> </details> <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle menu" aria-controls="nav-mobile-menu" aria-expanded="false"> <span></span> <span></span> <span></span> </button> </div> <div class="nav-mobile-menu" id="nav-mobile-menu"> <a href="/">Home</a><a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#faq">FAQ</a><a href="/blog/">Blog</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP</a> <a href="/direct/" class="btn btn-outline" data-cta="directInfo" data-cta-location="nav"> Buy Direct </a> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-cta="appStore" data-cta-location="nav"> App Store <span class="sr-only"> (opens in new tab)</span> </a> <div class="mobile-locale-divider"></div> <div class="mobile-locale-list"> <a href="/direct/" class="mobile-locale-item is-current" hreflang="en" data-locale="en" aria-current="true"> <span>English</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"> <polyline points="20 6 9 17 4 12"></polyline> </svg> </a><a href="/de/direct/" class="mobile-locale-item" hreflang="de" data-locale="de"> <span>Deutsch</span>  </a><a href="/es/direct/" class="mobile-locale-item" hreflang="es" data-locale="es"> <span>Español</span>  </a><a href="/fr/direct/" class="mobile-locale-item" hreflang="fr" data-locale="fr"> <span>Français</span>  </a><a href="/ja/direct/" class="mobile-locale-item" hreflang="ja" data-locale="ja"> <span>日本語</span>  </a><a href="/ko/direct/" class="mobile-locale-item" hreflang="ko" data-locale="ko"> <span>한국어</span>  </a><a href="/nl/direct/" class="mobile-locale-item" hreflang="nl" data-locale="nl"> <span>Nederlands</span>  </a><a href="/pt-BR/direct/" class="mobile-locale-item" hreflang="pt-BR" data-locale="pt-BR"> <span>Português (BR)</span>  </a><a href="/ru/direct/" class="mobile-locale-item" hreflang="ru" data-locale="ru"> <span>Русский</span>  </a><a href="/zh-Hans/direct/" class="mobile-locale-item" hreflang="zh-Hans" data-locale="zh-Hans"> <span>简体中文</span>  </a> </div> </div> </header> <script>
+  document.querySelectorAll('.locale-switcher-option, .mobile-locale-item').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var loc = el.getAttribute('data-locale');
+      if (loc) localStorage.setItem('preferred-locale', loc);
+    });
+  });
+</script> <script type="module">const c=document.documentElement,d=document.querySelector('meta[name="theme-color"]'),i=t=>{d?.setAttribute("content",t==="light"?"#f5f8fc":"#080c14")},s=document.getElementById("theme-toggle"),a=t=>{s?.setAttribute("aria-pressed",t==="light"?"true":"false")};a(c.getAttribute("data-theme")||"dark");s&&s.addEventListener("click",()=>{const e=(c.getAttribute("data-theme")||(window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"))==="dark"?"light":"dark";c.setAttribute("data-theme",e),localStorage.setItem("theme",e),i(e),a(e)});window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",t=>{if(!localStorage.getItem("theme")){const e=t.matches?"dark":"light";c.setAttribute("data-theme",e),i(e),a(e)}});const m=document.getElementById("site-nav");window.addEventListener("scroll",()=>{m?.classList.toggle("scrolled",window.scrollY>40)},{passive:!0});const o=document.getElementById("nav-toggle"),r=document.getElementById("nav-mobile-menu");if(o&&r){const t=()=>{r.classList.remove("open"),o.setAttribute("aria-expanded","false")};o.addEventListener("click",()=>{const e=r.classList.toggle("open");o.setAttribute("aria-expanded",String(e))}),r.querySelectorAll("a").forEach(e=>{e.addEventListener("click",t)})}document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",e=>{const n=t.getAttribute("href");if(!n||n==="#"||!n.startsWith("#"))return;const l=document.querySelector(n);l&&(e.preventDefault(),l.scrollIntoView({behavior:"smooth",block:"start"}))})});</script> <main id="main" class="direct-page"> <section class="page-hero direct-hero"> <div class="container"> <div class="page-hero-inner"> <a href="/" class="back-link"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M19 12H5M12 5l-7 7 7 7"></path> </svg> Back to StorageRadar </a> <div class="section-tag">Direct Build</div> <h1>Buy the Direct build — or download the DMG and try it first</h1> <p class="page-hero-desc">The Direct build is the disk space analyzer for developers and power users who want broader macOS access. Buy it directly on this page — your license key arrives by email — or download the DMG and try it first.</p> <div class="page-hero-actions"> <a href="#buy" class="btn btn-primary btn-lg" data-cta="directBuy" data-cta-location="direct_page"> Buy Direct </a> <a href="https://releases.storageradar.app/latest.dmg" class="btn btn-outline btn-lg" data-cta="directDownload" data-cta-location="direct_page"> Download the DMG </a> </div> <ul class="direct-trust"> <li class="direct-trust-item"> <svg class="direct-trust-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"> <polyline points="2.5,8 6.5,12 13.5,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline> </svg> <span class="direct-trust-label">One-time purchase</span> <span class="direct-trust-detail">Pay once, own it forever</span> </li><li class="direct-trust-item"> <svg class="direct-trust-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"> <polyline points="2.5,8 6.5,12 13.5,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline> </svg> <span class="direct-trust-label">14-day refund</span> <span class="direct-trust-detail">Full refund within 14 days, no questions</span> </li><li class="direct-trust-item"> <svg class="direct-trust-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"> <polyline points="2.5,8 6.5,12 13.5,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline> </svg> <span class="direct-trust-label">No Apple ID</span> <span class="direct-trust-detail">No Apple ID or account needed</span> </li><li class="direct-trust-item"> <svg class="direct-trust-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"> <polyline points="2.5,8 6.5,12 13.5,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline> </svg> <span class="direct-trust-label">Key by email</span> <span class="direct-trust-detail">License key sent to your inbox</span> </li><li class="direct-trust-item"> <svg class="direct-trust-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"> <polyline points="2.5,8 6.5,12 13.5,4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline> </svg> <span class="direct-trust-label">Offline activation</span> <span class="direct-trust-detail">Activate and run without internet</span> </li> </ul> </div> </div> </section> <section class="section direct-dev" id="developers"> <div class="container"> <div class="section-header"> <div class="section-tag">Built for developers</div> <h2>Reclaim the storage Xcode, Docker, and your toolchains hide</h2> <p>The Direct build runs outside the App Store sandbox, so it can scan and clean the developer caches a sandboxed app simply cannot reach — review-first, nothing deleted without your say.</p> </div> <div class="direct-step-grid"> <div class="direct-step direct-dev-path"> <code class="direct-dev-path-name">Xcode DerivedData</code> <p>Stale build indexes and module caches that regrow with every project</p> </div><div class="direct-step direct-dev-path"> <code class="direct-dev-path-name">CoreSimulator devices</code> <p>Old simulator runtimes and unavailable devices eating tens of GB</p> </div><div class="direct-step direct-dev-path"> <code class="direct-dev-path-name">Docker.raw</code> <p>The Docker Desktop disk image that quietly balloons over time</p> </div><div class="direct-step direct-dev-path"> <code class="direct-dev-path-name">node_modules · npm / pnpm / yarn caches</code> <p>Package caches and abandoned dependency trees across old projects</p> </div> </div> </div> </section> <section class="section direct-plans" id="buy"> <div class="container"> <div class="section-header"> <div class="section-tag">Buy Direct</div> <h2>Buy the Direct build — pay once, own it</h2> <p>Pay once, get the signed DMG and a license key by email — no Apple ID, no account on this site.</p> </div> <div class="pricing-grid direct-plan-grid direct-plan-grid--three"> <div class="pricing-card direct-plan-free" data-pricing-tier="free"> <div class="tier-name">Free</div> <div class="tier-price"> <span class="price-main">$0</span> </div> <p class="tier-desc">Try every workflow free — preview-first, no key needed</p> <div class="tier-features"> <div class="tier-feature-group tier-feature-group--included"> <div class="tier-feature-label">Included</div> <ul> <li class="inc">Deep storage scanning</li><li class="inc">Disk Map: treemap &amp; sunburst</li><li class="inc">Dry run &amp; pre-apply review</li><li class="inc">Local snapshots &amp; history</li><li class="inc">Read-only local MCP integration</li> </ul> </div> </div> <a href="https://releases.storageradar.app/latest.dmg" class="btn btn-outline btn-full" data-cta="directDownload" data-cta-location="direct_page"> Download the DMG </a> </div> <div class="pricing-card" data-pricing-tier="core">  <div class="tier-name">Core</div> <div class="tier-price"> <span class="price-main">$9.99</span> </div> <p class="tier-desc">Review-first disk space analyzer with the removal actions you control.</p> <div class="tier-features"> <div class="tier-feature-group tier-feature-group--included"> <div class="tier-feature-label">Included</div> <ul> <li class="inc">Everything in the free analyzer</li><li class="inc">Move to Trash with an undo window</li><li class="inc">Delete permanently when you choose</li><li class="inc">Disk Overview cleanup actions (Cleanup List → Move to Trash), incl. Duplicate Review</li><li class="inc">App Uninstaller — remove apps and leftovers</li> </ul> </div> </div> <a href="https://chamav.gumroad.com/l/storageradar-core" class="btn btn-primary btn-full gumroad-button" data-gum-intent="gumroadCore" data-gum-tier="core"> Buy Core — $9.99 </a> </div><div class="pricing-card featured" data-pricing-tier="developer"> <div class="tier-badge">Most popular</div> <div class="tier-name">Developer</div> <div class="tier-price"> <span class="price-main">$19.99</span> </div> <p class="tier-desc">Everything in Core plus ecosystem-aware dev cleanup and storage reports over time.</p> <div class="tier-features"> <div class="tier-feature-group tier-feature-group--included"> <div class="tier-feature-label">Included</div> <ul> <li class="inc">Everything in Core</li><li class="inc">Dev Cleanup — Xcode, Docker, caches, build artifacts</li><li class="inc">Ecosystem profiles (Xcode, npm, …)</li><li class="inc">Step-by-step pre-apply review</li><li class="inc">Reports: compare storage over time</li><li class="inc">Export to JSON / Markdown / CSV</li> </ul> </div> </div> <a href="https://chamav.gumroad.com/l/storageradar-developer" class="btn btn-primary btn-full gumroad-button" data-gum-intent="gumroadDeveloper" data-gum-tier="developer"> Buy Developer — $19.99 </a> </div> </div> <div class="direct-upgrade"> <span class="direct-upgrade-note">Already own Core Direct? Add the Developer features for the difference.</span> <a href="https://chamav.gumroad.com/l/storageradar-upgrade-core-developer" class="btn btn-outline btn-sm gumroad-button" data-gum-intent="gumroadUpgrade" data-gum-tier="developer"> Upgrade Core → Developer — $10 </a> </div> </div> </section> <section class="email-capture email-capture--full" data-capture-shell aria-labelledby="direct-email-capture-title" data-astro-cid-x5owhrxq> <div class="email-capture-inner" data-astro-cid-x5owhrxq> <div data-capture-panel="form" data-astro-cid-x5owhrxq> <h2 id="direct-email-capture-title" class="email-capture-title" data-astro-cid-x5owhrxq>Get StorageRadar release notes</h2> <p class="email-capture-desc" data-astro-cid-x5owhrxq>Drop your email to hear when new versions ship — what changed, what&#39;s fixed, what&#39;s faster. No spam, and the download above stays free without it.</p> <form id="direct-email-capture" class="email-capture-form" action="https://api.storageradar.app/subscribe" method="POST" data-astro-cid-x5owhrxq> <input type="hidden" name="source" value="direct_page" data-astro-cid-x5owhrxq> <input type="hidden" name="locale" value="en" data-astro-cid-x5owhrxq> <label class="email-capture-field" data-astro-cid-x5owhrxq> <span class="email-capture-label" data-astro-cid-x5owhrxq>Email address</span> <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required data-astro-cid-x5owhrxq> </label> <label class="email-capture-consent" data-astro-cid-x5owhrxq> <input type="checkbox" name="consent" value="on" required data-astro-cid-x5owhrxq> <span data-astro-cid-x5owhrxq>I agree to receive occasional StorageRadar product update emails. Unsubscribe anytime.</span> </label> <button type="submit" class="btn btn-primary email-capture-submit" data-astro-cid-x5owhrxq> Keep me posted </button> <p class="email-capture-error" data-capture-error hidden data-astro-cid-x5owhrxq> Something went wrong. Please check your email address and try again. </p> </form> </div> <div class="email-capture-success" data-capture-panel="success" hidden data-astro-cid-x5owhrxq> <h2 class="email-capture-title" data-astro-cid-x5owhrxq>You&#39;re on the list</h2> <p class="email-capture-desc" data-astro-cid-x5owhrxq>We&#39;ll email you when the next StorageRadar build is out — nothing more.</p> </div> </div> </section> <script>(function(){const formId = "direct-email-capture";
+const intent = "email_capture";
+const location = "direct_page";
+const target = "https://api.storageradar.app/subscribe";
+const ANALYTICS_EVENTS = {"ctaClick":"cta_click","formView":"form_view","formSubmitStart":"form_submit_start","formSubmitSuccess":"form_submit_success","formSubmitError":"form_submit_error","quizStart":"quiz_start","quizComplete":"quiz_complete"};
+const ANALYTICS_REQUIRED_PARAMS = ["locale","page_template","rollout_wave"];
+const ANALYTICS_DEBUG_LOCAL_STORAGE_KEY = "storageradar:analytics-debug";
+const ANALYTICS_DEBUG_QUERY_PARAM = "debugAnalytics";
+
+  (() => {
+    const form = document.getElementById(formId);
+    if (!(form instanceof HTMLFormElement)) return;
+
+    const shell = form.closest("[data-capture-shell]");
+    const formPanel = shell?.querySelector("[data-capture-panel='form']");
+    const successPanel = shell?.querySelector("[data-capture-panel='success']");
+    const errorBox = shell?.querySelector("[data-capture-error]");
+    const submitButton = form.querySelector("button[type='submit']");
+    const defaultErrorText = errorBox?.textContent?.trim() ?? "Submit failed.";
+    const requiredContextParams = new Set(ANALYTICS_REQUIRED_PARAMS);
+
+    const isDebugEnabled = () => {
+      try {
+        const searchParams = new URLSearchParams(window.location.search);
+        return (
+          window.location.hostname === "localhost" ||
+          searchParams.get(ANALYTICS_DEBUG_QUERY_PARAM) === "1" ||
+          window.localStorage.getItem(ANALYTICS_DEBUG_LOCAL_STORAGE_KEY) === "1"
+        );
+      } catch (_error) {
+        return false;
+      }
+    };
+
+    const getSharedAnalyticsContext = () => {
+      const sharedContext = window.__storageradarAnalyticsContext ?? {};
+      const root = document.documentElement;
+      return {
+        locale: sharedContext.locale ?? root.dataset.locale ?? "en",
+        page_template:
+          sharedContext.page_template ?? root.dataset.pageTemplate ?? "generic",
+        rollout_wave:
+          sharedContext.rollout_wave ?? root.dataset.rolloutWave ?? "control",
+      };
+    };
+
+    const track = (eventName, params) => {
+      const payload = {
+        ...getSharedAnalyticsContext(),
+        ...params,
+      };
+
+      if (isDebugEnabled()) {
+        console.debug("[analytics] Capture form payload", payload);
+      }
+
+      for (const requiredParam of requiredContextParams) {
+        if (!payload[requiredParam]) {
+          if (isDebugEnabled()) {
+            console.error(`[analytics] Missing required form param: ${requiredParam}`);
+          }
+          return;
+        }
+      }
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", eventName, payload);
+      }
+    };
+
+    track(ANALYTICS_EVENTS.formView, { intent, location, target });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      errorBox?.setAttribute("hidden", "");
+      if (errorBox instanceof HTMLElement) {
+        errorBox.textContent = defaultErrorText;
+      }
+
+      if (submitButton instanceof HTMLButtonElement) {
+        submitButton.disabled = true;
+      }
+
+      track(ANALYTICS_EVENTS.formSubmitStart, { intent, location, target });
+
+      const requiredGroups = Array.from(
+        form.querySelectorAll("[data-required-checkbox-group]")
+      );
+      for (const group of requiredGroups) {
+        const checkboxes = group.querySelectorAll("input[type='checkbox']");
+        const hasSelection = Array.from(checkboxes).some((checkbox) => checkbox.checked);
+        if (!hasSelection) {
+          track(ANALYTICS_EVENTS.formSubmitError, { intent, location, target });
+          if (errorBox instanceof HTMLElement) {
+            errorBox.textContent =
+              group.dataset.requiredMessage ??
+              "Please select at least one option before submitting.";
+            errorBox.removeAttribute("hidden");
+          }
+          if (submitButton instanceof HTMLButtonElement) {
+            submitButton.disabled = false;
+          }
+          group.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
+      }
+
+      try {
+        await fetch(form.action, {
+          method: form.method || "POST",
+          body: new FormData(form),
+          mode: "no-cors",
+        });
+
+        track(ANALYTICS_EVENTS.formSubmitSuccess, { intent, location, target });
+
+        if (formPanel instanceof HTMLElement) {
+          formPanel.hidden = true;
+        }
+
+        if (successPanel instanceof HTMLElement) {
+          successPanel.hidden = false;
+          successPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        form.reset();
+      } catch (_error) {
+        track(ANALYTICS_EVENTS.formSubmitError, { intent, location, target });
+        errorBox?.removeAttribute("hidden");
+
+        if (submitButton instanceof HTMLButtonElement) {
+          submitButton.disabled = false;
+        }
+      }
+    });
+  })();
+})();</script>  <section class="section direct-steps" id="how"> <div class="container"> <div class="section-header"> <h2>From checkout to activation in three steps</h2> </div> <div class="direct-step-grid"> <div class="direct-step"> <div class="direct-step-number">1</div> <h3>Buy on this page</h3> <p>Checkout opens right here via Gumroad — no Apple ID required.</p> </div><div class="direct-step"> <div class="direct-step-number">2</div> <h3>Get your license key by email</h3> <p>Your key is sent from licenses@storageradar.app within minutes after checkout. Check your spam folder if you don&#39;t see it.</p> </div><div class="direct-step"> <div class="direct-step-number">3</div> <h3>Activate in the Direct build</h3> <p>Open Settings → Purchases &amp; Updates, click Open Paywall, then use Paste Key → Activate License Key. The key is tied to your purchase, not an Apple ID.</p> </div> </div> </div> </section> <section class="section direct-boundaries" id="boundaries"> <div class="container"> <div class="direct-boundaries-inner"> <h2>What the Direct build does not do</h2> <ul class="direct-boundaries-list"> <li>It never asks you to sign in on this website.</li><li>Your purchase and license key never require an Apple ID.</li><li>It does not auto-delete anything — every removal is your decision.</li><li>It makes no performance or speed claims.</li> </ul> </div> </div> </section> <section class="section direct-faq" id="faq"> <div class="container"> <div class="section-header"> <h2>Direct purchase — questions</h2> </div> <div class="faq-list"> <div class="faq-item open"> <button class="faq-q" type="button" aria-expanded="true" aria-controls="direct-faq-answer-0" id="direct-faq-question-0"> How is the Direct build different from the App Store version? <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </button> <div class="faq-a" id="direct-faq-answer-0" role="region" aria-labelledby="direct-faq-question-0"> <div class="faq-a-inner"> <p>The Direct build gets broader macOS access for advanced and developer cleanup that sandboxing limits on the App Store. It&#39;s the same review-first disk space analyzer — bought outside the App Store and activated with a license key.</p> </div> </div> </div><div class="faq-item"> <button class="faq-q" type="button" aria-expanded="false" aria-controls="direct-faq-answer-1" id="direct-faq-question-1"> Do I need an Apple ID? <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </button> <div class="faq-a" id="direct-faq-answer-1" role="region" aria-labelledby="direct-faq-question-1"> <div class="faq-a-inner"> <p>No — the purchase and your license key never require an Apple ID or an account on this site.</p> </div> </div> </div><div class="faq-item"> <button class="faq-q" type="button" aria-expanded="false" aria-controls="direct-faq-answer-2" id="direct-faq-question-2"> How do I get my license key? <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </button> <div class="faq-a" id="direct-faq-answer-2" role="region" aria-labelledby="direct-faq-question-2"> <div class="faq-a-inner"> <p>Your key is emailed from licenses@storageradar.app within minutes after checkout. Check your spam folder if needed, then open Settings → Purchases &amp; Updates, click Open Paywall, and use Paste Key → Activate License Key.</p> </div> </div> </div><div class="faq-item"> <button class="faq-q" type="button" aria-expanded="false" aria-controls="direct-faq-answer-3" id="direct-faq-question-3"> Can I get a refund? <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </button> <div class="faq-a" id="direct-faq-answer-3" role="region" aria-labelledby="direct-faq-question-3"> <div class="faq-a-inner"> <p>Yes — you have 14 days from purchase to request a full refund through Gumroad.</p> </div> </div> </div><div class="faq-item"> <button class="faq-q" type="button" aria-expanded="false" aria-controls="direct-faq-answer-4" id="direct-faq-question-4"> I already bought on the App Store — do I pay again? <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <polyline points="6 9 12 15 18 9"></polyline> </svg> </button> <div class="faq-a" id="direct-faq-answer-4" role="region" aria-labelledby="direct-faq-question-4"> <div class="faq-a-inner"> <p>No — existing App Store customers can unlock the Direct build for free. See the crossgrade page for details.</p> </div> </div> </div> </div> <div class="direct-download-row"> <p> <strong>Direct DMG:</strong> <a href="https://releases.storageradar.app/latest.dmg">https://releases.storageradar.app/latest.dmg</a> </p> <p> <strong>App Store listing:</strong> <a href="https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8" target="_blank" rel="noopener noreferrer">https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&amp;ct=web&amp;mt=8</a> </p> <p> <a href="https://storageradar.app/crossgrade/">I already bought on the App Store — do I pay again?</a> </p> <p> <strong>Questions about Direct?</strong>
+Email <a href="mailto:support@storageradar.app">support@storageradar.app</a> </p> </div> </div> </section> </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div class="footer-brand"> <a href="/" class="nav-logo footer-logo"> <svg class="logo-icon-svg" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"> <circle cx="14" cy="14" r="12" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"></circle> <circle cx="14" cy="14" r="8" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"></circle> <circle cx="14" cy="14" r="4" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"></circle> <circle cx="14" cy="14" r="1.5" fill="#06b6d4"></circle> <line x1="14" y1="2" x2="14" y2="26" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> <line x1="2" y1="14" x2="26" y2="14" stroke="#06b6d4" stroke-width="0.75" opacity="0.2"></line> </svg> <span class="logo-text">StorageRadar</span> </a> <p class="footer-tagline"> Privacy-first macOS storage analysis and cleanup. Offline, deliberate, and under your control. </p> </div> <div class="footer-cols"> <div class="footer-col"> <h3>Product</h3> <a href="/#features">Features</a><a href="/#pricing">Pricing</a><a href="/#access">App Store &amp; Direct</a><a href="/direct/">Direct build</a> </div><div class="footer-col"> <h3>Info</h3> <a href="/blog/">Blog</a><a href="/support/">Support</a><a href="/about/">About</a><a href="/compare/">Compare</a><a href="/privacy/">Privacy</a><a href="/#faq">FAQ</a><a href="/changelog/">Changelog</a><a href="/mcp/">MCP Docs</a> </div> </div> </div> <div class="footer-bottom"> <p>© 2026 StorageRadar. All rights reserved.</p> <p class="footer-made">Made for Mac</p> </div> </div> </footer> <script>(function(){const APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6759776887?pt=128310960&ct=web&mt=8";
+const CAPTURE_ROUTES = {"beta":"/beta/","launch":"/launch/"};
+const ANALYTICS_CTA_LOCATIONS = ["hero","pricing","download_section","blog_cta","nav","direct_page","beta_page","launch_page","safe_to_delete"];
+const ANALYTICS_EVENTS = {"ctaClick":"cta_click","formView":"form_view","formSubmitStart":"form_submit_start","formSubmitSuccess":"form_submit_success","formSubmitError":"form_submit_error","quizStart":"quiz_start","quizComplete":"quiz_complete"};
+const ANALYTICS_REQUIRED_PARAMS = ["locale","page_template","rollout_wave"];
+const ANALYTICS_STORE_INTENTS = ["app_store","direct_download","gumroad_core","gumroad_developer","gumroad_upgrade"];
+const ANALYTICS_DEBUG_LOCAL_STORAGE_KEY = "storageradar:analytics-debug";
+const ANALYTICS_DEBUG_QUERY_PARAM = "debugAnalytics";
+const DIRECT_DOWNLOAD_URL = "https://releases.storageradar.app/latest.dmg";
+const DIRECT_PAGE_PATH = "/direct/";
+const GUMROAD_CORE_URL = "https://chamav.gumroad.com/l/storageradar-core";
+const GUMROAD_DEVELOPER_URL = "https://chamav.gumroad.com/l/storageradar-developer";
+const GUMROAD_UPGRADE_URL = "https://chamav.gumroad.com/l/storageradar-upgrade-core-developer";
+
+  const normalizeInternalPath = (pathname) => {
+    if (!pathname || pathname === "/") return "/";
+    const [pathOnly, hash = ""] = pathname.split("#", 2);
+    const normalizedPath = pathOnly.startsWith("/") ? pathOnly : `/${pathOnly}`;
+    if (/\.[a-z0-9]+$/i.test(normalizedPath)) {
+      return `${normalizedPath}${hash ? `#${hash}` : ""}`;
+    }
+    const withTrailingSlash = normalizedPath.endsWith("/")
+      ? normalizedPath
+      : `${normalizedPath}/`;
+    return `${withTrailingSlash}${hash ? `#${hash}` : ""}`;
+  };
+
+  const localizeInternalPath = (pathname, locale) => {
+    if (
+      !pathname ||
+      pathname.startsWith("http://") ||
+      pathname.startsWith("https://") ||
+      pathname.startsWith("mailto:") ||
+      pathname.startsWith("tel:") ||
+      pathname.startsWith("#")
+    ) {
+      return pathname;
+    }
+
+    const normalizedPath = normalizeInternalPath(pathname);
+    if (!locale || locale === "en") {
+      return normalizedPath;
+    }
+
+    if (normalizedPath === "/") {
+      return `/${locale}/`;
+    }
+
+    return `/${locale}${normalizedPath}`;
+  };
+
+  const CTA_URLS = {
+    beta: {
+      url: CAPTURE_ROUTES.beta,
+      intent: "beta",
+      external: false,
+    },
+    launch: {
+      url: CAPTURE_ROUTES.launch,
+      intent: "launch",
+      external: false,
+    },
+    appStore: {
+      url: APP_STORE_URL,
+      intent: "app_store",
+      external: true,
+    },
+    directInfo: {
+      url: DIRECT_PAGE_PATH,
+      intent: "direct_info",
+      external: false,
+    },
+    directDownload: {
+      url: DIRECT_DOWNLOAD_URL,
+      intent: "direct_download",
+      external: true,
+    },
+    pricingInfo: {
+      url: "#pricing",
+      intent: "pricing_info",
+      external: false,
+    },
+    gumroadCore: {
+      url: GUMROAD_CORE_URL,
+      intent: "gumroad_core",
+      external: true,
+    },
+    gumroadDeveloper: {
+      url: GUMROAD_DEVELOPER_URL,
+      intent: "gumroad_developer",
+      external: true,
+    },
+    gumroadUpgrade: {
+      url: GUMROAD_UPGRADE_URL,
+      intent: "gumroad_upgrade",
+      external: true,
+    },
+  };
+  const ALLOWED_LOCATIONS = new Set(ANALYTICS_CTA_LOCATIONS);
+  const REQUIRED_CONTEXT_PARAMS = new Set(ANALYTICS_REQUIRED_PARAMS);
+  const STORE_INTENTS = new Set(ANALYTICS_STORE_INTENTS);
+
+  // Campaign of the visit (src/lib/attribution.ts, set before any click): `ct` and
+  // utm_campaign. An App Store click reports the token its link actually carries.
+  const getStoreCampaignParams = (link, intent) => {
+    const params = { ...(window.__storageradarAttribution?.eventParams ?? {}) };
+    if (intent === "app_store") {
+      try {
+        const ct = new URL(link.href).searchParams.get("ct");
+        if (ct) params.ct = ct;
+      } catch (_error) {
+        // Keep the session token.
+      }
+    }
+    return params;
+  };
+
+  const isDebugEnabled = () => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      return (
+        window.location.hostname === "localhost" ||
+        searchParams.get(ANALYTICS_DEBUG_QUERY_PARAM) === "1" ||
+        window.localStorage.getItem(ANALYTICS_DEBUG_LOCAL_STORAGE_KEY) === "1"
+      );
+    } catch (_error) {
+      return false;
+    }
+  };
+
+  const getSharedAnalyticsContext = () => {
+    const sharedContext = window.__storageradarAnalyticsContext ?? {};
+    const root = document.documentElement;
+    return {
+      locale: sharedContext.locale ?? root.dataset.locale ?? "en",
+      page_template:
+        sharedContext.page_template ?? root.dataset.pageTemplate ?? "generic",
+      rollout_wave:
+        sharedContext.rollout_wave ?? root.dataset.rolloutWave ?? "control",
+    };
+  };
+
+  const track = (eventName, params) => {
+    const payload = {
+      ...getSharedAnalyticsContext(),
+      ...params,
+    };
+
+    if (isDebugEnabled()) {
+      console.debug("[analytics] CTA payload", payload);
+    }
+
+    for (const requiredParam of REQUIRED_CONTEXT_PARAMS) {
+      if (!payload[requiredParam]) {
+        if (isDebugEnabled()) {
+          console.error(`[analytics] Missing required CTA param: ${requiredParam}`);
+        }
+        return;
+      }
+    }
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, payload);
+    }
+  };
+
+  document.querySelectorAll("[data-cta]").forEach((btn) => {
+    if (!(btn instanceof HTMLAnchorElement)) return;
+    const ctaType = btn.dataset.cta;
+    const config = ctaType ? CTA_URLS[ctaType] : null;
+    if (config?.url) {
+      const locale = getSharedAnalyticsContext().locale;
+      const targetUrl = config.external ? config.url : localizeInternalPath(config.url, locale);
+      btn.href = targetUrl;
+      if (config.external) {
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
+      btn.addEventListener("click", () => {
+        const location = ALLOWED_LOCATIONS.has(btn.dataset.ctaLocation)
+          ? btn.dataset.ctaLocation
+          : "unknown";
+        const optionalParams = {};
+        if (btn.dataset.ctaTier) {
+          optionalParams.tier = btn.dataset.ctaTier;
+        }
+        if (btn.dataset.ctaSection) {
+          optionalParams.section = btn.dataset.ctaSection;
+        }
+        if (btn.dataset.ctaCardPosition) {
+          const cardPosition = Number(btn.dataset.ctaCardPosition);
+          optionalParams.card_position = Number.isFinite(cardPosition)
+            ? cardPosition
+            : btn.dataset.ctaCardPosition;
+        }
+        track(ANALYTICS_EVENTS.ctaClick, {
+          intent: config.intent,
+          location,
+          // External links report their live href, which carries the campaign token.
+          target: config.external ? btn.href : targetUrl,
+          ...optionalParams,
+          ...(STORE_INTENTS.has(config.intent) ? getStoreCampaignParams(btn, config.intent) : {}),
+        });
+      });
+    } else {
+      if (btn.getAttribute("href") === "#") {
+        btn.addEventListener("click", (e) => e.preventDefault());
+      }
+    }
+  });
+})();</script>  <script src="https://gumroad.com/js/gumroad.js" defer></script> <script type="module">const o=document.querySelectorAll(".direct-faq .faq-q"),c=()=>{o.forEach(e=>{const t=e.closest(".faq-item");e.setAttribute("aria-expanded",String(t?.classList.contains("open")??!1))})};o.forEach(e=>{e.addEventListener("click",()=>{const t=e.closest(".faq-item"),a=t.classList.contains("open");document.querySelectorAll(".direct-faq .faq-item.open").forEach(n=>n.classList.remove("open")),a||t.classList.add("open"),c()})});const r={gumroadCore:"gumroad_core",gumroadDeveloper:"gumroad_developer",gumroadUpgrade:"gumroad_upgrade"};document.querySelectorAll(".gumroad-button[data-gum-intent]").forEach(e=>{e.addEventListener("click",()=>{const t=document.documentElement,a=r[e.dataset.gumIntent??""]??"direct_download";typeof window.gtag=="function"&&window.gtag("event","cta_click",{locale:t.dataset.locale??"en",page_template:t.dataset.pageTemplate??"direct",rollout_wave:t.dataset.rolloutWave??"control",intent:a,location:"direct_page",tier:e.dataset.gumTier,target:e.href,...window.__storageradarAttribution?.eventParams??{}})})});</script>  <script type="module">console.log("%c StorageRadar ","background:#06b6d4;color:#080c14;font-weight:800;font-size:14px;padding:4px 10px;border-radius:4px;font-family:monospace",`
+Built with Astro 5. Offline-first, no account, no cloud sync.
+Curious about the MCP integration? storageradar.app/mcp`);const a=document.querySelectorAll("[data-animate], [data-animate-wipe]");if(a.length){const e=new IntersectionObserver(t=>{t.forEach(o=>{o.isIntersecting&&(o.target.classList.add("visible"),e.unobserve(o.target))})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});a.forEach(t=>e.observe(t))}</script> <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"a5de247158bf4ebba310307900a1026c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body> </html>

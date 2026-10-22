@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-maccleanse",
+  "productId": "maccleanse",
+  "stage": "research",
+  "status": "blocked",
+  "draftingAllowed": false,
+  "published": false,
+  "dateContext": {
+    "sessionDate": "2026-10-22",
+    "machineUtcObserved": "2026-10-21T21:34:26.876877+00:00",
+    "policy": "Original retrieval timestamps are preserved. New checks use the observed machine UTC date; no fabricated exact retrieval time."
+  },
+  "ownership": "Only docs/content/competitors/maccleanse/ and the specifically requested runtime receipt; no marketing edits.",
+  "identity": {
+    "name": "MacCleanse",
+    "vendor": "Koingo Software, Inc.",
+    "homepage": "https://www.koingosw.com/products/maccleanse/",
+    "repository": null,
+    "repositoryStatus": "No official source repository established in the inspected official product page, manual or EULA. Do not invent one or infer open-source licensing.",
+    "canonicalOwnerId": "maccleanse",
+    "aliases": ["MacCleanse 15"],
+    "aliasDecision": {
+      "skipAsAlias": false,
+      "state": "verified-self-owned-product",
+      "sourceIds": ["official-baseline", "eula"],
+      "reason": "MacCleanse 15 is the current major-version label for Koingo's MacCleanse, not a separate article identity. No PowerMyMac relationship is established; no cross-vendor alias is asserted. A testimonial saying MacClean is not evidence of an official alias."
+    },
+    "classification": "direct",
+    "classificationBasis": "Documented Mac storage cleanup, scan-result review and scheduling overlap Breathing Room's maintenance use case. MacCleanse also advertises app removal and history erasure; these are not automatically Breathing Room equivalents.",
+    "platformFit": "Mac-native comparison; no Windows or Linux support established. The vendor's site-wide phrase Windows (when applicable) does not establish a MacCleanse Windows edition.",
+    "skipDecision": "Do not skip as dead, irrelevant or alias. Retain one canonical product packet, but block drafting for the visual-rights gate."
+  },
+  "baselineReuse": {
+    "record": "docs/content/verification/batch-1.json#maccleanse",
+    "batch2": "Checked; no corresponding MacCleanse record.",
+    "policy": "Reused current baseline identity, feature, version, pricing and download evidence. Official homepage HTML fetched once only for missing asset URLs; not represented as a fresh full fact review.",
+    "corrections": [
+      "Optimized for macOS 26 Tahoe belongs to older version 14.5, not the current 15.0 release.",
+      "Retain numeric macOS 11 minimum from v15 requirements, but do not repeat the vendor's macOS 27 Golden Gate naming as independently verified Apple compatibility.",
+      "The uninitialized hidden ordering modal's $0.00 values are not product prices."
+    ]
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/maccleanse/about/",
+    "retrievedAtUtc": "2026-10-21T19:08:55.016Z",
+    "method": "Reuse retained live-browser-rendered discovery and observed Official Website link; no directory refetch.",
+    "snapshotPath": "docs/content/.runtime/verification-1/maccleanse-directory.json",
+    "sha256": "8a1384aa5db84a7183a68709d4fb9fd82e9d668dd2b97fa4a8df6313e1956267",
+    "observedOfficialDestination": "https://www.koingosw.com/products/maccleanse/",
+    "edges": [
+      {"seedUrl": "https://alternativeto.net/software/cleanmymac/", "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=4", "retrievedAtUtc": "2026-10-21T18:36:37.538Z", "snapshotPath": "docs/content/.runtime/cleanmymac-4.json", "sha256": "97cf2ad47a03bf07e5f613fe3b27a491f62862a705ff8989d492fc6abd5a8f53"},
+      {"seedUrl": "https://alternativeto.net/software/mole/", "edgeUrl": "https://alternativeto.net/software/mole/?p=5", "retrievedAtUtc": "2026-10-21T18:37:15.718Z", "snapshotPath": "docs/content/.runtime/mole-5.json", "sha256": "b7884d8cfbdef2531d65ec28a6cfea800a64eabc7d9df6a43d30dc1ec14c95eb"}
+    ],
+    "limitations": "Directory claims are discovery only, not feature, pricing, performance or image-reuse proof."
+  },
+  "sources": [
+    {
+      "id": "official-baseline", "publisher": "Koingo Software, Inc.", "title": "MacCleanse 15 product page",
+      "url": "https://www.koingosw.com/products/maccleanse/", "finalUrl": "https://www.koingosw.com/products/maccleanse/",
+      "retrievedAtUtc": "2026-10-21T19:09:36.012018+00:00", "checkedOn": "2026-10-21", "publishedOrUpdatedOn": null,
+      "scope": "Product overview, current v15.0 download, ordering table and v15.0 release notes; older editions separately labeled.",
+      "snapshotPath": "docs/content/.runtime/verification-1/maccleanse-official.json", "sha256": "5706b9283caefe616c82fbb8b000f728181f1337fd3bbecc8303bbe0c7d3bba7",
+      "access": "Retained official text inspected; no new feature/pricing fetch."
+    },
+    {
+      "id": "manual", "publisher": "Koingo Software, Inc.", "title": "MacCleanse Manual",
+      "url": "https://www.koingosw.com/products/maccleanse/manual.php", "finalUrl": "https://www.koingosw.com/products/maccleanse/manual.php",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": null,
+      "scope": "Undated manual, contains older OS references; current v15 UI parity is not established.",
+      "access": "Read-only webfetch succeeded in this job. Exact retrieval second and raw response hash were not retained; claim excerpts below retained.",
+      "snapshotPath": null
+    },
+    {
+      "id": "eula", "publisher": "Koingo Software, Inc.", "title": "Software License Agreement",
+      "url": "https://www.koingosw.com/enduserlicenseagreement.php", "finalUrl": "https://www.koingosw.com/enduserlicenseagreement.php",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": "1999-03-01",
+      "scope": "Site-wide EULA effective date says subject to revision; not a dated MacCleanse v15-specific contract.",
+      "access": "Read-only webfetch succeeded; excerpts retained below, exact retrieval second/raw response hash not retained.", "snapshotPath": null
+    },
+    {
+      "id": "legal", "publisher": "Koingo Software, Inc.", "title": "Legal Information / Ownership of Materials",
+      "url": "https://www.koingosw.com/legal.php", "finalUrl": "https://www.koingosw.com/legal.php",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": null,
+      "scope": "Explicit website-image reproduction restriction.",
+      "access": "Read-only webfetch succeeded; exact restriction quoted in C10; no permission request sent.", "snapshotPath": null
+    },
+    {
+      "id": "asset-discovery", "publisher": "Koingo Software, Inc.", "title": "Product page HTML screenshot links",
+      "url": "https://www.koingosw.com/products/maccleanse/", "finalUrl": "https://www.koingosw.com/products/maccleanse/",
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": null,
+      "scope": "One targeted urllib HTML request for missing screenshot URLs; no image bytes requested.",
+      "excerpt": "href=\"screenshots.carousel/full/1-cleanup.jpg\"; href=\"screenshots.carousel/full/2-appsuninstall.jpg\"; og:image:alt content=\"MacCleanse 15 screenshot\"",
+      "snapshotPath": null, "sha256": null,
+      "limitations": "HTML not retained as a raw file; exact link excerpts retained. Asset identity is vendor-supplied; actual image pixels and image version not visually reviewed."
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room", "title": "Current capability evidence register",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": null,
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": null,
+      "snapshotPath": "docs/content/capabilities.md", "scope": "Reuse yesterday's source/public-release and pricing review; not fresh binary testing. Local README requirements, native config version and billing amounts cross-checked in this job."
+    },
+    {
+      "id": "br-visual", "publisher": "Breathing Room", "title": "Screenshot library",
+      "url": "http://127.0.0.1:1431/", "finalUrl": null,
+      "checkedOn": "2026-10-21", "retrievedAtUtc": null, "publishedOrUpdatedOn": null,
+      "snapshotPath": "docs/content/screenshots.json", "scope": "Retained current-source Space browser preview, example data, not native behavior."
+    }
+  ],
+  "claims": [
+    {"id":"C01","wording":"MacCleanse is Koingo Software's Mac maintenance product; MacCleanse 15 is a version label of the same product.","sourceIds":["official-baseline","eula"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/","excerpt":"MacCleanse 15\nVersion 15.0","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Identity, not a separate vendor or PowerMyMac alias.","location":"identity / lead","reviewer":"research-maccleanse"},
+    {"id":"C02","wording":"The inspected official page offers MacCleanse for Mac version 15.0, released August 29, 2026, and specifies macOS 11 minimum in its v15 release requirements.","sourceIds":["official-baseline"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/#versionhistory","excerpt":"MacCleanse for Mac\nVersion 15.0\nReleased August 29, 2026\n11.0","supportingPassage":"This version requires at least macOS 11 (Big Sur from Fall 2020)","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Published offer, no binary/installation test; do not assert a verified latest Apple OS name or maximum.","location":"platform / version","reviewer":"research-maccleanse"},
+    {"id":"C03","wording":"Koingo describes current retail versions as Apple Silicon compatible, 64-bit and intentionally not sandboxed.","sourceIds":["official-baseline"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/#download","excerpt":"Apple Silicon\n, support\n64-bit\narchitecture","supportingPassage":"These retail versions of our apps are intentionally\nnot sandboxed","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","scope":"Site-wide retail statement; exact v15 Intel build architecture and Apple notarization not verified. Windows when applicable is not MacCleanse support.","location":"installation caveats","reviewer":"research-maccleanse"},
+    {"id":"C04","wording":"MacCleanse advertises histories, cookies, caches and logs cleanup, app uninstall/leftover scanning and duplicate-file identification.","sourceIds":["official-baseline"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/#features","excerpt":"Erase app & web histories, cookies, caches, logs, and auto-fill values","supportingPassage":"Remove apps and all their associated logs, caches, preferences and more.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","scope":"Documented features only, not validated coverage, completeness, recovered space or safety.","location":"feature matrix","reviewer":"research-maccleanse"},
+    {"id":"C05","wording":"The vendor documents scan-result review and daily, weekly or monthly recurring scans; custom configurations and inclusion/exclusion lists are advertised.","sourceIds":["official-baseline"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/","excerpt":"MacCleanse can be configured to run daily, weekly, or monthly on a recurring schedule","supportingPassage":"Detailed scan results also allow you to completely review what is to be removed prior to erasure.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"vendor-statement","scope":"Do not equate scan scheduling with measured recurring-growth history or claim approval is mandatory in all modes.","location":"review / recurring care","reviewer":"research-maccleanse"},
+    {"id":"C06","wording":"The undated manual distinguishes saved scan presets from selection in a particular results list.","sourceIds":["manual"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/manual.php","excerpt":"After a scan has been completed, checking and unchecking items in the results list WILL NOT affect the settings from the scan settings.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Useful workflow distinction; v15 click-path parity untested. Describe the documented principle, not a hands-on v15 tutorial.","location":"workflow article core","reviewer":"research-maccleanse"},
+    {"id":"C07","wording":"Never claim MacCleanse always prompts before erasing: the manual also documents an optional skip-to-erasing setting.","sourceIds":["manual"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/manual.php","excerpt":"enable the \"Skip right to erasing...\" checkbox","supportingPassage":"MacCleanse will NEVER remove files without prompting you and displaying a list of files flagged for removal first.","checkedOn":"2026-10-21","state":"contradicted","evidenceClass":"official-documentation-conflict","scope":"These passages conflict. Unconditional approval promise blocked; current setting defaults and v15 behavior unknown.","location":"approval trade-off","reviewer":"research-maccleanse"},
+    {"id":"C08","wording":"Solo pricing on the inspected page is $29.95 for this version only or $119 with lifetime updates; it also advertises $1.83 per month, one computer/user and five unique devices per year.","sourceIds":["official-baseline"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/#ordering","excerpt":"Solo\n$\n1\n.83\nPER MONTH\nNon-Subscription Options\n$119 for free lifetime updates\n$29\n.95\nfor this version only\n1\ncomputer/user\n5 unique devices per year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"published-offer","scope":"Dollar symbol only; currency code, exact annual charge, taxes, renewal and trial duration not established. Do not imply monthly billing from the monthly equivalent or use hidden $0.00 modal placeholders. Do not compare total cost until conditions verified.","location":"pricing matrix with footnote","reviewer":"research-maccleanse"},
+    {"id":"C09","wording":"MacCleanse is commercially licensed proprietary software under Koingo's EULA, not an established open-source product.","sourceIds":["eula","official-baseline"],"sourceUrl":"https://www.koingosw.com/enduserlicenseagreement.php","excerpt":"Koingo and/or its licensors retain ownership of the Koingo Software and reserve all rights not expressly granted to you.","supportingPassage":"You may not rent, lease, lend, sell, redistribute, or sublicense the Koingo Software.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-license","scope":"Legal characterization, not legal advice; site-wide EULA includes service/account and diagnostic-data provisions, so no all-offline or zero-telemetry assertion.","location":"licence / local-hosted boundary","reviewer":"research-maccleanse"},
+    {"id":"C10","wording":"Koingo explicitly requires prior written consent to reproduce images from its website.","sourceIds":["legal"],"sourceUrl":"https://www.koingosw.com/legal.php","excerpt":"The images from this site may not be reproduced in any form without the prior written consent of Koingo Software, Inc.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-rights-policy","scope":"No consent obtained or requested. Link-only research fallback does not pass on-page image gate.","location":"visual gate","reviewer":"research-maccleanse"},
+    {"id":"C11","wording":"The manual warns that large or old files are not necessarily disposable.","sourceIds":["manual"],"sourceUrl":"https://www.koingosw.com/products/maccleanse/manual.php","excerpt":"Just because a file hasn't been used in a while does not necessarily mean it's time to remove it.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"official-documentation","scope":"Use as a review principle; do not repeat the same manual's blanket all-caches-safe or guaranteed secure-erasure promises.","location":"workflow caution","reviewer":"research-maccleanse"},
+    {"id":"B01","wording":"Breathing Room is a macOS 13+ preview requiring Python 3.10+ for disk inventory/legacy scripts; the preview is not notarized and physical Intel runtime testing remains unverified.","sourceIds":["br-capabilities"],"sourceUrl":"https://github.com/bucabay/breathing-room-app#requirements","excerpt":"The preview is not notarized.","supportingPassage":"Python 3.10+ for disk inventory and legacy cleanup scripts.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"source-and-published-disclosure","scope":"README:59-72 and src-tauri/tauri.conf.json:4,49-50 rechecked locally; version 0.1.0-preview.1. No binary QA performed.","location":"comparison caveats","reviewer":"research-maccleanse"},
+    {"id":"B02","wording":"Breathing Room advertises a free local desktop core and optional AI Care at $5 USD/month or $50 USD/year; hosted features require internet and sign-in.","sourceIds":["br-capabilities"],"sourceUrl":"https://breathing-room.chatic.ai/#pricing","excerpt":"$5 USD/month or $50 USD/year","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-published-offer-and-local-config","scope":"Capability register pricing and src/billing-config.json amounts match. No purchase, entitlement or unlimited-use test; public direct GitHub download is not website account-gated.","location":"pricing / privacy","reviewer":"research-maccleanse"},
+    {"id":"B03","wording":"Breathing Room source implements storage views, grouped process sampling, developer-cache discovery and activity history; these are source-supported preview capabilities, not certified installer performance.","sourceIds":["br-capabilities"],"sourceUrl":"https://github.com/bucabay/breathing-room-app","excerpt":"Source implementation is not proof that every feature works in the distributed installer.","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-inspection","scope":"capabilities.md:24-34; distinguish sampled/inferred attribution from forensic proof and never promise complete helper accounting.","location":"comparison fit","reviewer":"research-maccleanse"},
+    {"id":"B04","wording":"Breathing Room daily care reuses exact saved approvals while the app runs; interactive investigation has an opt-in narrowly verified Ruff-cache automatic Trash mode.","sourceIds":["br-capabilities"],"sourceUrl":"https://github.com/bucabay/breathing-room-app#how-to-use-it","excerpt":"Explicit optional automatic Ruff mode","checkedOn":"2026-10-21","state":"verified","evidenceClass":"reused-source-inspection","scope":"capabilities.md:36-42,53; do not promise every removal always requires a fresh prompt. Trash moves are not measured available-space recovery.","location":"approval / scheduling matrix","reviewer":"research-maccleanse"}
+  ],
+  "productMatrix": [
+    {"dimension":"macOS/version","maccleanse":"15.0; published macOS 11 minimum; upper-version naming not independently verified","claimIds":["C02","C03"],"breathingRoom":"0.1.0-preview.1; macOS 13+; universal advertised, physical Intel untested","breathingRoomClaimIds":["B01"]},
+    {"dimension":"licence","maccleanse":"Commercial proprietary EULA","claimIds":["C09"],"breathingRoom":"Apache-2.0 desktop source per capability register; hosted service separate","breathingRoomClaimIds":["B03"]},
+    {"dimension":"local/hosted","maccleanse":"Installed Mac app; fully offline operation, activation requirements and product-specific telemetry not verified","claimIds":["C02","C09"],"breathingRoom":"Local tools; authenticated online hosted assistance","breathingRoomClaimIds":["B02","B03"]},
+    {"dimension":"scan/cleanup","maccleanse":"Vendor documents histories/caches/logs, app leftovers and duplicates","claimIds":["C04"],"breathingRoom":"Source-supported storage exploration and developer-cache discovery; do not infer matching uninstaller/duplicate features","breathingRoomClaimIds":["B03"]},
+    {"dimension":"approval","maccleanse":"Reviewable results; optional skip setting conflicts with unconditional prompt language","claimIds":["C05","C06","C07"],"breathingRoom":"Exact approvals with documented Ruff-mode exception","breathingRoomClaimIds":["B04"]},
+    {"dimension":"recurring care","maccleanse":"Daily/weekly/monthly scans and automatic cleanup advertised; recurring-growth history not verified","claimIds":["C05"],"breathingRoom":"Activity implementation; scheduled exact approvals while running","breathingRoomClaimIds":["B03","B04"]},
+    {"dimension":"CPU/memory helper grouping","maccleanse":"Not verified; extension/login-item management is not evidence of process sampling","claimIds":[],"breathingRoom":"Source-supported sampled process grouping, not forensic completeness","breathingRoomClaimIds":["B03"]},
+    {"dimension":"developer caches","maccleanse":"General cache cleanup advertised; npm/uv/pnpm/Go ownership-specific adapters not verified","claimIds":["C04"],"breathingRoom":"Source-supported owning-tool/cache discovery, compatibility caveats apply","breathingRoomClaimIds":["B03"]},
+    {"dimension":"pricing","maccleanse":"Solo $29.95 version-only / $119 lifetime updates; advertised $1.83/month equivalent, billing/currency conditions unresolved","claimIds":["C08"],"breathingRoom":"Free local core; AI Care $5 USD/month or $50 USD/year","breathingRoomClaimIds":["B02"]},
+    {"dimension":"runtime/install","maccleanse":"Retail non-sandboxed per vendor; runtime dependencies, signing/notarization and current Intel details not verified","claimIds":["C02","C03"],"breathingRoom":"Python 3.10+; non-notarized preview, permissions and clean-machine limitations","breathingRoomClaimIds":["B01"]}
+  ],
+  "visuals": [
+    {
+      "id":"maccleanse-official-cleanup-link","productId":"maccleanse","view":"Vendor-linked Cleanup app screenshot","kind":"official-asset",
+      "sourcePageUrl":"https://www.koingosw.com/products/maccleanse/",
+      "assetUrl":"https://www.koingosw.com/products/maccleanse/screenshots.carousel/full/1-cleanup.jpg",
+      "alternateAssetUrl":"https://www.koingosw.com/products/maccleanse/screenshots.carousel/full/2-appsuninstall.jpg",
+      "capturedAtUtc":null,"retrievedAtUtc":null,"assetLocatedOn":"2026-10-21","capturedBy":null,"productVersion":null,"buildOrCommit":null,"osVersion":null,
+      "dataMode":"unknown","originalPath":null,"originalSha256":null,"publishedPath":null,"publishedSha256":null,"widthPx":null,"heightPx":null,"edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"Explicit prior-written-consent requirement; no permission available. Image not downloaded.","evidenceUrlOrPath":"https://www.koingosw.com/legal.php","credit":"MacCleanse screenshot: Koingo Software, Inc. (link only; no reproduction authorized)."},
+      "caption":"Official MacCleanse Cleanup screenshot (external link). Vendor-supplied image; capture date, depicted version and data origin unverified. Not our hands-on test.",
+      "alt":"Official MacCleanse Cleanup app screenshot linked by Koingo; visual details pending permitted review.","supportedClaimIds":[],
+      "limitations":["Exact app-image link observed in official HTML; pixels not inspected.","Not a landing-page screenshot or invented UI.","No image bytes downloaded and no original hash can truthfully be supplied.","Link-only fallback does not satisfy required on-page competitor visual."],
+      "review":{"status":"pending","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview","productId":"breathing-room","view":"Space","kind":"browser-preview",
+      "sourcePageUrl":"http://127.0.0.1:1431/","assetUrl":null,"capturedAtUtc":"2026-10-21T19:06:45.416416+00:00","retrievedAtUtc":null,"capturedBy":"screenshot-library job (retained provenance)",
+      "productVersion":null,"buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51","osVersion":null,"dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png","originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null,"publishedSha256":null,"widthPx":2940,"heightPx":3468,"edits":[],
+      "privacyReview":{"status":"reviewed-in-library","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture, subject to required example-data disclosure and independent page review; third-party marks retain their owners' rights.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room current-source browser preview; example data."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space view rendered in a browser with illustrative example data.","supportedClaimIds":["B03"],
+      "limitations":["Preserve visible example-data banner.","Current at captured source commit, not a current native installer test.","Full-height image needs legibility review in final page; no crop made here.","Hash checked in this job; prior visual inspection reused, not falsely claimed as a new inspection."],
+      "review":{"status":"library-reviewed; independent-page-review-pending","reviewer":"screenshot-library","reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "track":"search-reference","title":"Keep a MacCleanse result selection separate from your saved cleanup preset",
+      "slug":"maccleanse-results-selection-versus-saved-presets","primaryIntent":"Understand why unchecking one scan result is not the same as changing what future scans target.",
+      "description":"MacCleanse's manual distinguishes one scan's selected results from its saved scan settings. Use that distinction to plan repeat maintenance without treating every large file as disposable; current v15 click paths remain untested.",
+      "outline":["Lead with the saved-preset versus one-run selection distinction (C06), then official visual if permission clears.","Separate scan scope, result selection and erasure; explain the undated manual boundary, not an invented tested tutorial.","Review history/cookie categories for data the reader wants to keep; no blanket caches-safe claim.","Check future schedule and saved scope separately; never promise universal prompting (C05-C07).","Use the vendor's Large and Old caution (C11) as a backup/rebuild-cost review checkpoint.","Later comparison: Breathing Room, which we build, uses exact saved daily approvals but has preview, hosted and Python caveats (B01-B04)."],
+      "interactionPass":"Propose a non-mutating checklist with three columns: saved scan scope / this run's selected results / scheduled authority. No deletion commands, filesystem access or settings writes. Not implemented during research.",
+      "visualPlacement":"Top: permission-cleared official Cleanup screenshot. Later: selected Breathing Room Space browser preview with full disclosure. Link-only is not a pass.",
+      "internalLinks":["/comparisons/","/comparisons/maccleanse/"],
+      "guardrails":"No invented cache sizes, savings or usage anecdotes; no automation script that runs cleanup; no modern secure-erasure guarantee; no subscription total-cost winner."
+    },
+    "comparison": {
+      "track":"search-reference","title":"Breathing Room vs MacCleanse: saved approvals or a cleanup suite?","slug":"maccleanse",
+      "primaryIntent":"Choose by workflow: history/app cleanup with documented MacCleanse presets versus source-supported preview storage/process investigation and exact saved daily approvals.",
+      "lead":"MacCleanse documents history cleanup, app removal and preset-based maintenance. Breathing Room, which we build, offers a different preview workflow around storage/process investigation and exact daily approvals. Neither is established here as safer, faster or a complete substitute for the other.",
+      "matrixDimensions":["version/platform","scan scope","result review and automation exceptions","recurrence","developer caches","process grouping","licence/pricing conditions","installation and hosted-data caveats"],
+      "linkToWorkflow":"/blog/maccleanse-results-selection-versus-saved-presets/",
+      "avoid":"No duplicate alternatives page, winner checkmarks, unknown-as-No cells, fake testing or image-gate waiver."
+    }
+  },
+  "advantagesAndTradeoffs": {
+    "maccleanseFits":["Readers wanting the vendor-documented combination of histories/cookies cleanup, app uninstall/leftovers, duplicates and configurable recurring scans (C04-C05).","Readers wanting advertised version-only or lifetime-update purchase options rather than assuming a subscription is mandatory (C08)."],
+    "maccleanseCautions":["Pricing conditions/currency and actual checkout totals are unresolved; no cross-product cost winner.","Undated manual describes optional skip-to-erasing while also promising prompts; do not flatten conflicting modes (C07).","Documented erasure is not automatically recoverable Trash movement; no secure-deletion guarantee or safety benchmark (C11).","Legacy PowerPC trimming and old OS names are not proof of useful modern storage savings."],
+    "breathingRoomFits":["Readers interested in source-supported storage ownership, grouped process/activity context and developer-cache discovery, accepting preview limitations (B01-B03).","Readers wanting a daily workflow based on exact saved approvals while the app remains running (B04)."],
+    "breathingRoomCautions":["Non-notarized preview, Python prerequisite and untested physical Intel behavior must remain prominent.","Hosted AI needs internet/authentication; relevant inspection context may leave the Mac; do not call it entirely offline.","Do not imply feature parity with MacCleanse's uninstaller, duplicate finder or history cleaning.","Optional automatic Ruff mode qualifies blanket approval statements; Trash moves do not prove reclaimed space."]
+  },
+  "unknowns": [
+    {"field":"MacCleanse image permission","critical":true,"diagnostic":"Explicit written-consent requirement; no consent, so no competitor image download/reproduction or drafting approval."},
+    {"field":"MacCleanse image capture/version/privacy","critical":true,"diagnostic":"Image URL located, but pixels/version/data/rights not reviewed. Review permitted original after permission; retain original/published hashes and captions before draft gate can pass."},
+    {"field":"MacCleanse subscription currency and billed total","critical":false,"diagnostic":"Dollar display and monthly equivalent retained; omit total-cost superiority, exact annual bill and currency code unless a further public official source verifies them."},
+    {"field":"MacCleanse current approval defaults","critical":false,"diagnostic":"Manual has contradictory prompting statements and an optional skip setting; only qualified documented reviewability allowed."},
+    {"field":"MacCleanse current Intel binary/signing/notarization/runtime/trial duration","critical":false,"diagnostic":"Not established; no installer downloaded or run."},
+    {"field":"MacCleanse helper grouping/developer-specific adapters/growth history/offline guarantees","critical":false,"diagnostic":"Not verified is not No. Do not infer absence or privacy guarantees."},
+    {"field":"Vendor OS naming","critical":false,"diagnostic":"v14.5 Tahoe and inconsistent macOS 11 Ventura table labels must not be applied to v15. Use numeric minimum from v15 notes; do not endorse macOS 27 Golden Gate assertion."}
+  ],
+  "reproduction": {"handsOnTestPerformed":false,"binaryDownloaded":false,"cleanupPerformed":false,"browserUsed":false,"imagesDownloaded":0,"calculationPerformed":false,"note":"Read-only source research only; no accounts, credentials, purchases, settings changes or browser profile recovery needed."},
+  "gates": {"identity":"pass","officialSourceEvidence":"pass-qualified","distinctIntent":"brief-only","competitorVisual":"blocked-prior-written-consent-required","breathingRoomVisual":"selected-hash-verified; final-page-review-pending","drafting":"blocked","independentReview":"pending-separate-stage","websiteBuildTests":"not-applicable-no-site-edits"},
+  "diagnostic":"Canonical Koingo MacCleanse retained as a direct Mac maintenance comparison, with reused baseline evidence and missing licence/manual/asset-source checks. Drafting is blocked: Koingo's legal policy requires prior written consent for image reproduction; no consent exists, no competitor image downloaded, and link-only provenance cannot satisfy the required on-page app visual."
+}

@@ -1,0 +1,154 @@
+uid=51_0 RootWebArea "‎Flint: Local Cloud Cleaner App - App Store" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12"
+  uid=51_1 navigation
+    uid=51_2 image "App Store"
+    uid=51_3 button "App Store" expandable
+    uid=51_4 generic haspopup="listbox"
+      uid=51_5 form
+        uid=51_6 "Search"
+        uid=51_7 searchbox "Search" autocomplete="list"
+    uid=51_8 button "Discover"
+    uid=51_9 button "Arcade"
+    uid=51_10 button "Create"
+    uid=51_11 button "Work"
+    uid=51_12 button "Play"
+    uid=51_13 button "Develop"
+    uid=51_14 button "Categories"
+    uid=51_15 button "Categories"
+    uid=51_16 button "Productivity"
+    uid=51_17 button "Utilities"
+    uid=51_18 button "Photo & Video"
+    uid=51_19 button "Games"
+    uid=51_20 button "Business"
+    uid=51_21 button "Education"
+    uid=51_22 button "Music"
+    uid=51_23 button "Social Networking"
+  uid=51_24 main
+    uid=51_25 heading "Flint: Local Cloud Cleaner" level="1"
+    uid=51_26 "Free up space from cloud files"
+    uid=51_27 "Only for Mac"
+    uid=51_28 "Free · In‑App Purchases"
+    uid=51_29 button "View in Mac App Store"
+    uid=51_30 button "Share"
+    uid=51_31 list
+      uid=51_32 link "AGE RATING 4+ Years" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12#information"
+      uid=51_36 link "CATEGORY Utilities" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12#information"
+      uid=51_39 link "DEVELOPER Oleksii Mazurenko" url="https://apps.apple.com/us/developer/oleksii-mazurenko/id1886860455?platform=mac"
+      uid=51_42 link "LANGUAGE EN English" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12#information"
+      uid=51_46 link "SIZE 3.3 MB" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12#information"
+    uid=51_50 region "Mac App Previews and Screenshots"
+      uid=51_51 button "Previous Page" disableable disabled
+      uid=51_52 list
+      uid=51_53 button "Next Page"
+      uid=51_54 "Mac"
+    uid=51_55 "Running out of disk space? Flint helps you understand exactly where your storage goes across cloud services and take back control. Flint scans your cloud storage folders and shows a clear visual breakdown of all files — what's stored locally on your Mac and what lives only in the cloud. With an interactive treemap, you can instantly spot the largest folders and files eating your disk space.
+
+KEY FEATURES
+
+• Interactive Treemap — visualize your entire storage structure at a glance. Click into folders to explore deeper levels.
+
+• Smart Filtering — search by name, filter by file type (photos, videos, documents, archives, audio), size, or sync status.
+
+• One-Click Cleanup — remove local copies of cloud files to free up disk space. Your files stay safely in the cloud and can be downloaded again anytime.
+
+• Multiple Storages — add iCloud Drive, Google Drive, OneDrive, Dropbox, or any folder on your Mac.
+
+• Real-Time Sync Status — see which files are downloaded, cloud-only, syncing, or uploading with clear status indicators.
+
+• Batch Operations — select multiple files and evict them all at once.
+
+• Sorting — sort files by size, name, or sync status in ascending or descending order.
+
+• Multilingual — available in 10 languages, including English, German, French, Spanish, Chinese, and Ukrainian.
+
+HOW IT WORKS
+
+1. Add your cloud storage folders (iCloud Drive, Google Drive, OneDrive, Dropbox, or any folder)
+2. Scan to see all files and their sync status
+3. Browse the treemap or file list to find large local files
+4. Remove local copies to reclaim disk space — files remain in the cloud
+
+Flint never deletes your files from the cloud. It only removes the local cached copies, just like Finder's "Remove Download" option — but for thousands of files at once.
+
+Privacy: Flint works entirely on your Mac. No data is sent to any server."
+    uid=51_56 button "more"
+    uid=51_57 region "Ratings & Reviews"
+      uid=51_58 heading "Ratings & Reviews" level="2"
+      uid=51_59 "This app hasn’t received enough ratings or reviews to display an overview."
+    uid=51_60 region "What’s New"
+      uid=51_61 button "What’s New"
+      uid=51_62 "A fresh new look for Flint.
+• New sidebar: see all your cloud storages at a glance and focus on one with a click.
+• Light and dark themes — switch anytime from the sidebar.
+• A clear headline shows how much space you can free on this Mac.
+• A cleaner storage map with rounded tiles and folder names.
+• Redesigned file list with a one-click Free up button on hover.
+• A floating bar for freeing up several items at once.
+• Refreshed purchase, storage and progress screens."
+      uid=51_63 button "more"
+      uid=51_64 "Version 1.37.0"
+      uid=51_65 "17m ago"
+    uid=51_66 region "App Privacy"
+      uid=51_67 button "App Privacy"
+        uid=51_68 link "App Privacy" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?mt=12#"
+      uid=51_69 "The developer, "
+      uid=51_70 "Oleksii Mazurenko"
+      uid=51_71 ", indicated that the app’s privacy practices may include handling of data as described below. For more information, see the "
+      uid=51_72 link "Developer’s Privacy Policy" url="https://www.oleksiimazurenko.link/en/flint/privacy"
+        uid=51_73 "developer’s privacy policy"
+      uid=51_74 "."
+    uid=51_75 heading "Data Not Collected" level="3"
+    uid=51_76 "The developer does not collect any data from this app."
+    uid=51_77 "Privacy practices may vary, for example, based on the features you use or your age. "
+    uid=51_78 link "Learn More" url="https://apps.apple.com/us/mac/story/id1538632801"
+    uid=51_80 region "Accessibility"
+      uid=51_81 heading "Accessibility" level="2"
+      uid=51_82 "The developer has not yet indicated which accessibility features this app supports. "
+      uid=51_83 link "Learn More" url="https://apps.apple.com/story/id1814164299"
+    uid=51_85 region "Information"
+      uid=51_86 heading "Information" level="2"
+      uid=51_87 "Seller"
+      uid=51_88 "Oleksii Mazurenko"
+      uid=51_89 "Size"
+      uid=51_90 "3.3 MB"
+      uid=51_91 "Category"
+      uid=51_92 "Utilities"
+      uid=51_93 "Compatibility"
+      uid=51_94 DisclosureTriangle "Requires macOS 14.0 or later." expandable
+      uid=51_95 "Languages"
+      uid=51_96 "English"
+      uid=51_97 "Age Rating"
+      uid=51_98 DisclosureTriangle "4+" expandable
+      uid=51_99 "In-App Purchases"
+      uid=51_100 DisclosureTriangle "Yes" expandable
+      uid=51_101 "Copyright"
+      uid=51_102 "© 2026 Oleksii Mazurenko"
+    uid=51_103 link "Developer Website ↗" url="https://www.oleksiimazurenko.dev/en/flint"
+    uid=51_106 link "Privacy Policy ↗" url="https://www.oleksiimazurenko.link/en/flint/privacy"
+  uid=51_108 button "United States"
+  uid=51_109 link "This page is available in Español (México)" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=es-MX"
+    uid=51_110 "Español (México)"
+  uid=51_111 link "This page is available in العربية" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=ar"
+    uid=51_112 "العربية"
+  uid=51_113 link "This page is available in Русский" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=ru"
+    uid=51_114 "Русский"
+  uid=51_115 link "This page is available in 简体中文" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=zh-Hans-CN"
+    uid=51_116 "简体中文"
+  uid=51_117 link "This page is available in Français (France)" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=fr-FR"
+    uid=51_118 "Français (France)"
+  uid=51_119 link "This page is available in 한국어" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=ko"
+    uid=51_120 "한국어"
+  uid=51_121 link "This page is available in Português (Brazil)" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=pt-BR"
+    uid=51_122 "Português (Brazil)"
+  uid=51_123 link "This page is available in Tiếng Việt" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=vi"
+    uid=51_124 "Tiếng Việt"
+  uid=51_125 link "This page is available in 繁體中文 (台灣)" url="https://apps.apple.com/us/app/flint-local-cloud-cleaner/id6760926077?l=zh-Hant-TW"
+    uid=51_126 "繁體中文 (台灣)"
+  uid=51_127 "Copyright © 2026"
+  uid=51_128 " "
+  uid=51_129 link "Apple Inc." url="https://www.apple.com/"
+  uid=51_131 " "
+  uid=51_132 "All rights reserved."
+  uid=51_133 link "Internet Service Terms" url="https://www.apple.com/legal/internet-services/"
+  uid=51_135 link "App Store & Privacy" url="https://www.apple.com/legal/privacy/data/en/app-store/"
+  uid=51_137 link "Cookie Warning" url="https://www.apple.com/privacy/use-of-cookies/"
+  uid=51_139 link "Support" url="https://support.apple.com/billing"

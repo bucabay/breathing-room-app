@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-clean-doctor",
+  "productId": "clean-doctor",
+  "canonicalOwnerId": "clean-doctor",
+  "status": "blocked",
+  "stage": "research-only",
+  "published": false,
+  "checkedAtUtc": "2026-10-21T22:33:18.718092+00:00",
+  "dateNote": "Retrieval timestamps are actual tool-host UTC clock values; do not replace with the session's calendar date.",
+  "ownership": "Only docs/content/competitors/clean-doctor/ plus the required job receipt; no website changes.",
+  "identity": {
+    "discoveryName": "Clean Doctor",
+    "officialName": "AI Cleaner Max-Clean Up Device",
+    "shortName": "AI Cleaner Max",
+    "officialHomepage": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026",
+    "developerHomepage": "http://www.elinapp.com",
+    "seller": "哲 魏",
+    "copyrightAttribution": "Copyright © 2025 Tiny1Cloud. All Rights Reserved.",
+    "officialRepository": null,
+    "repositoryStatus": "not verified; no repository identified in the checked official links; this is not proof none exists",
+    "stableExternalId": "apple-app:855008026",
+    "aliases": ["Clean Doctor", "Clean Doctor Pro", "AI Cleaner Max"],
+    "aliasEvidenceClaimIds": ["identity", "legacy-license"],
+    "aliasSkipDecision": {
+      "verified": true,
+      "skipSeparateAliasDrafts": true,
+      "skipThisOwner": false,
+      "reason": "The verified Clean Doctor destination retains Apple app ID 855008026 under AI Cleaner Max; current in-app purchase names still say Clean Doctor Pro. Keep this queue ID as the canonical owner and use the current product name in any eventual title. Do not create a second AI Cleaner Max or Clean Doctor Pro article. No relationship to PowerMyMac is evidenced or asserted."
+    },
+    "classification": "direct-mac-cleanup-overlap-with-adjacent-mobile-workflows",
+    "fitRationale": "The Mac-specific official description advertises junk/cache cleanup and app removal. Photo/contact cleanup is a different job from developer cache investigation and is not documented as Breathing Room parity.",
+    "deadProductDecision": "Do not mark dead solely from the directory's Discontinued flag or the age of version 7.7. Official US listing and vendor Mac product card remain publicly reachable; successful installation and ongoing support are untested."
+  },
+  "discovery": {
+    "listingUrl": "https://alternativeto.net/software/clean-doctor/about/",
+    "seedUrl": "https://alternativeto.net/software/mole/",
+    "edgeUrl": "https://alternativeto.net/software/mole/?p=6",
+    "edgeRetrievedAtUtc": "2026-10-21T18:37:21.311Z",
+    "edgeEvidence": "docs/content/competitors.json clean-doctor.edges[0]; reused, no directory re-fetch",
+    "officialDestination": "https://itunes.apple.com/us/app/clean-doctor-photo-cleaner/id855008026?mt=8&uo=4",
+    "sourceId": "directory",
+    "method": "Reused verified batch-2 record and retained rendered DOM discovery capture; directory is discovery evidence, not capability proof."
+  },
+  "sources": [
+    {
+      "id": "directory", "publisher": "AlternativeTo", "title": "Clean Doctor about listing",
+      "url": "https://alternativeto.net/software/clean-doctor/about/",
+      "finalUrl": "https://alternativeto.net/software/clean-doctor/about/",
+      "retrievedAtUtc": "2026-10-21T19:07:24.396Z", "reused": true,
+      "path": "docs/content/.runtime/verification-2/clean-doctor-directory.json",
+      "sha256": "e50ebb393f70ae3665af4840b9f01f03fc668346bef98c5143497426f5950dbc",
+      "excerpt": "Official Website\nitunes.apple.com/us/app/clean-doctor-ph...",
+      "scope": "Discovery link only; batch-2.json provides the verified reuse record."
+    },
+    {
+      "id": "baseline-store", "publisher": "Apple / developer listing", "title": "AI Cleaner Max-Clean Up Device",
+      "url": "https://itunes.apple.com/us/app/clean-doctor-photo-cleaner/id855008026?mt=8&uo=4",
+      "finalUrl": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026",
+      "retrievedAtUtc": "2026-10-21T19:09:57.320619+00:00", "reused": true,
+      "path": "docs/content/.runtime/verification-2/clean-doctor-official.json",
+      "sha256": "370993ca6797698cba91322b577e546fea106475957181d1884493d3ebeaeec4",
+      "excerpt": "AI Cleaner Max-Clean Up Device; Clean Doctor Pro - 1 Year",
+      "scope": "Default mobile-oriented US store view; do not transfer its whole feature list to Mac."
+    },
+    {
+      "id": "mac-store", "publisher": "Apple / developer listing", "title": "AI Cleaner Max Mac-specific store view",
+      "url": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026?platform=mac",
+      "finalUrl": "https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026?platform=mac",
+      "retrievedAtUtc": "2026-10-21T22:33:17.913440+00:00", "reused": false,
+      "path": "docs/content/competitors/clean-doctor/sources/mac-store.html",
+      "textPath": "docs/content/competitors/clean-doctor/sources/mac-store.txt",
+      "sha256": "4aade5faf1800366a589fe26c800ba281f3a33488d556811bd72589755900e8e",
+      "excerpt": "Junk Files Cleaner: Delete system junk, broken data, and caches.",
+      "scope": "US storefront, Mac-specific description, version 7.7 dated 12/12/2024; opened to fill missing Mac workflow and screenshot evidence, not to repeat baseline verification."
+    },
+    {
+      "id": "developer-home", "publisher": "Elinasoft Technologies", "title": "Elinasoft product catalogue",
+      "url": "http://www.elinapp.com", "finalUrl": "http://www.elinapp.com",
+      "retrievedAtUtc": "2026-10-21T22:33:18.316087+00:00", "reused": false,
+      "path": "docs/content/competitors/clean-doctor/sources/developer-home.html",
+      "textPath": "docs/content/competitors/clean-doctor/sources/developer-home.txt",
+      "sha256": "ff878f5ea78eeb31bea238f1822616286db19ea1f963fba293faeb1dc036ab19",
+      "excerpt": "AI Cleaner Max-Clean Up Device; Mac",
+      "locator": "Mac product card data-app-id=855008026",
+      "scope": "Linked official developer site; supports catalogue identity/platform, not tests or trademark ownership."
+    },
+    {
+      "id": "terms", "publisher": "Tiny1Cloud linked terms", "title": "Terms of Use and End User License Agreement",
+      "url": "http://www.elinapp.com/terms_clean_doctor.html", "finalUrl": "http://www.elinapp.com/terms_clean_doctor.html",
+      "retrievedAtUtc": "2026-10-21T22:33:18.718092+00:00", "publicationDate": "June 2020", "reused": false,
+      "path": "docs/content/competitors/clean-doctor/sources/terms.html",
+      "textPath": "docs/content/competitors/clean-doctor/sources/terms.txt",
+      "sha256": "78078e5994e0307c0db1ae26f6e1e99840a3fb2cb28e64721baafae269403fb8",
+      "excerpt": "These works and means of individualization may not be copied, reproduced, retransmitted, distributed, disseminated, sold, published, broadcasted or circulated whether in whole or in part, unless expressly permitted",
+      "scope": "Legacy mobile-app terms still linked by the current listing. Not reliable current pricing or Mac minimum-system evidence; no screenshot reuse grant established."
+    },
+    {
+      "id": "br-capabilities", "publisher": "Breathing Room project", "title": "Capabilities evidence register",
+      "url": "https://breathing-room.chatic.ai/", "finalUrl": "https://breathing-room.chatic.ai/",
+      "retrievedAtUtc": null, "checkedDate": "2026-10-21", "reused": true,
+      "path": "docs/content/capabilities.md",
+      "sha256": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+      "excerpt": "macOS 13+; universal Apple Silicon/Intel installer advertised. Physical Intel behavior remains explicitly untested.",
+      "scope": "Prior public offer/release verification, source-backed capabilities and qualifications; no repeated public fetch. Local README.md:45-157, src-tauri/tauri.conf.json and src/billing-config.json were cross-checked during this job."
+    },
+    {
+      "id": "br-screenshots", "publisher": "Breathing Room project", "title": "Screenshot inventory",
+      "url": "http://127.0.0.1:1431/", "finalUrl": "http://127.0.0.1:1431/",
+      "retrievedAtUtc": null, "checkedDate": "2026-10-21", "reused": true,
+      "path": "docs/content/screenshots.json",
+      "sha256": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c",
+      "excerpt": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "scope": "Existing October 21 source-render capture, not a new live browser session or distributed-binary test."
+    }
+  ],
+  "accessFailures": [{"url": "https://www.elinapp.com", "result": "WebFetch transport error; used the exact HTTP developer link supplied by Apple, without credentials or browser recovery."}],
+  "claims": [
+    {"id":"identity","wording":"The Clean Doctor listing now resolves to AI Cleaner Max under Apple app ID 855008026; its paid items retain the Clean Doctor Pro name.","sourceIds":["directory","baseline-store","mac-store"],"excerpt":"AI Cleaner Max-Clean Up Device; Clean Doctor Pro - 1 Year","checkedDate":"2026-10-21","state":"verified","evidenceClass":"documented-identity","location":"lead / naming note","conditions":"Same app ID, not a new product; no historical rebrand date asserted.","reviewer":"research-clean-doctor"},
+    {"id":"mac-cleanup","wording":"The vendor's Mac description advertises junk/cache cleanup, app removal, photo/video cleanup and contact/calendar/reminder tools.","sourceIds":["mac-store"],"excerpt":"Junk Files Cleaner: Delete system junk, broken data, and caches. - Uninstall apps: Find and delete unwanted apps completely.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"vendor-documented-not-tested","location":"workflow / matrix","conditions":"Do not adopt completely, AI, safety, speed or recovered-space promises as measured facts.","reviewer":"research-clean-doctor"},
+    {"id":"platform","wording":"The official compatibility detail lists macOS 10.15 or later; the developer catalogue has a Mac card for app ID 855008026.","sourceIds":["mac-store","developer-home"],"excerpt":"Mac\nRequires macOS 10.15 or later.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"requirements matrix","conditions":"Read the Mac detail, not the collapsed generic iOS heading. Intel/Apple Silicon binary architecture and actual installation are not verified. No Windows support claim.","reviewer":"research-clean-doctor"},
+    {"id":"version","wording":"The inspected Mac storefront displays version 7.7 dated December 12, 2024.","sourceIds":["mac-store"],"excerpt":"Version 7.7\n12/12/2024","checkedDate":"2026-10-21","state":"verified","evidenceClass":"officially-documented","location":"version note","conditions":"Store-displayed version only; no binary downloaded. Old date does not establish discontinuation.","reviewer":"research-clean-doctor"},
+    {"id":"pricing","wording":"The US store lists a free download with in-app purchases: Clean Doctor Pro $24.99/year, $7.99/month or $3.99/week.","sourceIds":["mac-store","baseline-store"],"excerpt":"Clean Doctor Pro - 1 Year\n$24.99\nClean Doctor Pro - 1 Week\n$3.99\nClean Doctor Pro - 1 Month\n$7.99","checkedDate":"2026-10-21","state":"verified","evidenceClass":"official-offer-not-purchased","location":"pricing matrix","conditions":"US storefront USD listed IAPs, not an in-app quote, tax-inclusive total, separate Mac entitlement or guaranteed future rate. Annual/monthly cards show Free Trial but duration and eligibility are unknown. Legacy June 2020 terms instead say starts at $7.99/week: conflict must be disclosed, not used as current pricing.","reviewer":"research-clean-doctor"},
+    {"id":"legacy-license","wording":"The linked Clean Doctor terms grant limited app use, reserve intellectual property rights, and do not grant editorial screenshot reproduction permission.","sourceIds":["terms"],"excerpt":"limited, non-exclusive, non-transferable; All rights not expressly granted herein are reserved.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"published-terms-not-legal-advice","location":"research visual gate","conditions":"Terms dated June 2020 and describe mobile devices. No open-source licence or image permission inferred; official repository not verified.","reviewer":"research-clean-doctor"},
+    {"id":"privacy","wording":"The listing's developer-provided privacy label says identifiers may be used to track users and identifiers may be collected without identity linkage.","sourceIds":["mac-store"],"excerpt":"Data Used to Track You; Identifiers; Data Not Linked to You; Identifiers","checkedDate":"2026-10-21","state":"verified","evidenceClass":"developer-disclosure-not-audit","location":"privacy caveat","conditions":"Apple says this information has not been verified by Apple. This is not evidence of actual network traffic or the architecture of AI processing.","reviewer":"research-clean-doctor"},
+    {"id":"unknown-controls","wording":"AI Cleaner Max's exact-location approvals, Trash/recovery behavior, local-versus-hosted AI boundary, helper grouping, developer-cache adapters and recurring-growth workflow are not verified.","sourceIds":["mac-store","baseline-store"],"excerpt":"Extras: Sound tone generator, Disk storage monitor","checkedDate":"2026-10-21","state":"not-verified","evidenceClass":"bounded-research-unknown","location":"matrix / trade-offs","conditions":"Disk storage monitor is advertised; do not convert missing details into no monitoring. No app run or destructive test performed.","reviewer":"research-clean-doctor"},
+    {"id":"br-fit","wording":"Breathing Room, which we build, documents storage exploration by category, app/tool, project, folder and large file, plus grouped app/helper CPU and memory and activity observations.","sourceIds":["br-capabilities"],"excerpt":"Source supports category, app/tool-owner, project, folder and large-file views.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"source-and-documentation-not-binary-test","location":"decision / matrix","conditions":"README.md:76-118 rechecked. Inventories can be partial and cached; sampled I/O is not definitive writer attribution. No duplicate-photo/contact parity established.","reviewer":"research-clean-doctor"},
+    {"id":"br-caveats","wording":"Breathing Room is a macOS 13+ preview, version 0.1.0-preview.1, with Python 3.10+ required for inventory; the preview is not notarized and physical Intel runtime validation is incomplete.","sourceIds":["br-capabilities"],"excerpt":"Apple Development signed, not Developer ID signed or notarized","checkedDate":"2026-10-21","state":"verified","evidenceClass":"documented-release-limits","location":"requirements / recommendation","conditions":"README.md:59-72 and native config rechecked. Source and distributed-release parity not certified; no Gatekeeper bypass advice.","reviewer":"research-clean-doctor"},
+    {"id":"br-pricing","wording":"Breathing Room's local core is free; optional AI Care is advertised at $5 USD/month or $50 USD/year. Hosted agent use needs internet and authentication.","sourceIds":["br-capabilities"],"excerpt":"AI Care is optional: $5 USD/month or $50 USD/year.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"documented-offer-and-source","location":"pricing / privacy matrix","conditions":"README.md:141-157 and billing config rechecked; prior live verification reused. Tax at checkout; renews until cancelled; no unlimited AI claim. Website download registration differs from ungated public GitHub releases. No payment tested.","reviewer":"research-clean-doctor"},
+    {"id":"br-approvals","wording":"Breathing Room documents review of exact actions; daily care reuses saved location/method approvals while the app remains running.","sourceIds":["br-capabilities"],"excerpt":"Explicit optional automatic Ruff mode; Scheduled care: only remembered exact approvals are eligible.","checkedDate":"2026-10-21","state":"verified","evidenceClass":"source-documented-not-execution-tested","location":"approval matrix","conditions":"README.md:86-100,120-128 rechecked. Include optional automatic verified Ruff-cache Trash exception; never promise every action always asks or that Trash immediately frees space. Hosted AI sends relevant paths/process/storage/tool data to the service; not all-offline.","reviewer":"research-clean-doctor"}
+  ],
+  "matrix": [
+    {"dimension":"Platform/version","competitor":"macOS 10.15+ listed; storefront 7.7 / December 12, 2024; architectures unverified","competitorClaimIds":["platform","version"],"breathingRoom":"macOS 13+ preview 0.1.0-preview.1; Python 3.10+; not notarized","breathingRoomClaimIds":["br-caveats"]},
+    {"dimension":"Workflow","competitor":"Mac junk/cache, app and photo/video/contact cleanup advertised","competitorClaimIds":["mac-cleanup"],"breathingRoom":"Storage exploration, app/helper metrics, reviewable cleanup and activity investigation; not a verified duplicate-photo/contact replacement","breathingRoomClaimIds":["br-fit","br-approvals"]},
+    {"dimension":"Licence/install","competitor":"Limited-use legacy proprietary terms; App Store listing reachable, runtime and architecture untested; repository not verified","competitorClaimIds":["legacy-license","platform"],"breathingRoom":"Apache-2.0 desktop source per evidence register; public release download or website account flow; preview caveats apply","breathingRoomClaimIds":["br-caveats","br-pricing"]},
+    {"dimension":"Approvals/recovery","competitor":"Not verified; one-click marketing does not establish deletion/recovery semantics","competitorClaimIds":["unknown-controls"],"breathingRoom":"Reviewed exact actions; optional verified Ruff automatic mode; saved daily approvals; app must run; Trash is not immediate free space","breathingRoomClaimIds":["br-approvals"]},
+    {"dimension":"Local/hosted/privacy","competitor":"Architecture not verified; developer label discloses identifier tracking/collection","competitorClaimIds":["privacy","unknown-controls"],"breathingRoom":"Local inspection/execution with authenticated hosted AI and relevant data transmission","breathingRoomClaimIds":["br-pricing","br-approvals"]},
+    {"dimension":"Monitoring/helper/developer detail","competitor":"Disk storage monitor advertised; recurring-growth details, app/helper grouping and named developer-cache adapters not verified","competitorClaimIds":["unknown-controls"],"breathingRoom":"Grouped apps/helpers and sampled activity documented; developer-cache adapters documented in capabilities register, not universally tested","breathingRoomClaimIds":["br-fit","br-approvals"]},
+    {"dimension":"Price","competitor":"US listed IAPs $24.99/year, $7.99/month, $3.99/week; legacy terms conflict; trial conditions unknown","competitorClaimIds":["pricing"],"breathingRoom":"Free local core; optional AI Care $5/month or $50/year USD; internet/sign-in for hosted agents","breathingRoomClaimIds":["br-pricing"]}
+  ],
+  "visuals": [
+    {
+      "id":"competitor-mac-store-screenshot-link", "productId":"clean-doctor", "view":"Official Mac App Previews and Screenshots, first screenshot candidate",
+      "kind":"listing-asset", "sourcePageUrl":"https://apps.apple.com/us/app/ai-cleaner-max-clean-up-device/id855008026?platform=mac",
+      "assetUrl":"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/60/98/2d609850-9740-4df9-79f7-36a4563bddde/3fc1420d-8249-4aee-baf9-442d9529b29e_Group_1.jpg/1286x804bb.webp",
+      "capturedAtUtc":null, "retrievedAtUtc":null, "sourcePageRetrievedAtUtc":"2026-10-21T22:33:17.913440+00:00", "capturedBy":null, "productVersion":null, "buildOrCommit":null, "osVersion":null,
+      "dataMode":"unknown", "originalPath":null, "originalSha256":null, "publishedPath":null, "publishedSha256":null, "widthPx":null, "heightPx":null, "edits":[],
+      "privacyReview":{"status":"pending","redactions":[]},
+      "reuse":{"status":"link-only","basis":"No permission obtained. Linked terms reserve graphic/UI rights and prohibit reproduction absent express permission. Public display is not a reuse licence.","evidenceUrlOrPath":"http://www.elinapp.com/terms_clean_doctor.html","credit":"AI Cleaner Max / seller 哲 魏; Tiny1Cloud copyright attribution; Apple App Store source."},
+      "caption":"Official AI Cleaner Max Mac screenshot, linked from the Apple App Store. Vendor-supplied illustration, not our hands-on test; version and capture date unknown.",
+      "alt":"Official AI Cleaner Max Mac app screenshot on the Apple App Store; inspect the linked image before writing a view-specific description.",
+      "supportedClaimIds":[],
+      "limitations":["Actual image bytes not downloaded or opened because permission was not established.","Candidate is in product_media_mac_ / Mac App Previews and Screenshots, not an icon or landing-page capture; exact depicted UI still needs permitted visual inspection.","1286x804 is a URL transform, not independently verified file dimensions.","Link-only fallback does not satisfy the on-page competitor image gate."],
+      "review":{"status":"blocked-rights-and-visual-inspection","reviewer":null,"reviewedAtUtc":null}
+    },
+    {
+      "id":"current-space-browser-preview", "productId":"breathing-room", "view":"Space", "kind":"browser-preview", "sourcePageUrl":"http://127.0.0.1:1431/", "assetUrl":null,
+      "capturedAtUtc":"2026-10-21T19:06:45.416416+00:00", "retrievedAtUtc":null, "capturedBy":"Prior screenshot-library worker per screenshots.json", "productVersion":null,
+      "buildOrCommit":"54828ac3170b45861aee70861dd0b9c658ed7e51", "osVersion":null, "dataMode":"example",
+      "originalPath":"docs/content/assets/breathing-room/space-preview-2026-10-21.png", "originalSha256":"9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath":null, "publishedSha256":null, "widthPx":2940, "heightPx":3468, "edits":[],
+      "privacyReview":{"status":"reviewed-example-data-only","redactions":[]},
+      "reuse":{"status":"cleared","basis":"App-owner-requested first-party UI capture per screenshots.json; no blanket third-party mark licence or endorsement inferred. Target-page independent review pending.","evidenceUrlOrPath":"docs/content/screenshots.json#current-space-browser-preview","credit":"Breathing Room, which we build."},
+      "caption":"Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt":"Breathing Room Space browser preview showing category and file-exploration tabs with illustrative example data.",
+      "requiredLabels":["Interactive preview · example data","This browser preview uses example data. Actions never change your Mac."],
+      "supportedClaimIds":["br-fit"],
+      "limitations":["Existing current-source October 21 render, not a new capture or current binary test.","Keep example-data banner visible; do not convert 82.4 GB images or other values into measured savings.","Floating composer obscures some category content; choose a readable contextual crop only with provenance and retained disclosures."],
+      "review":{"status":"opened-and-read-this-job; target-page-review-pending","reviewer":"research-clean-doctor","reviewedAtUtc":null}
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "status":"blocked-not-a-draft", "track":"search-reference", "slug":"clean-doctor-mac-junk-or-photo-library",
+      "title":"Clean Doctor on Mac: decide between junk files and photo-library cleanup",
+      "primaryIntent":"A Mac owner who remembers Clean Doctor needs to identify AI Cleaner Max and distinguish expendable cache investigation from original photo/video/contact cleanup.",
+      "conclusion":"Start with the data and device, not the one-click label. The current Mac listing covers both junk and personal-data tools; Breathing Room is a different investigation/review workflow, not a verified duplicate-media replacement.",
+      "outline":["Identify the same Apple app ID and select the Mac store view, not the phone description.","Separate system/cache candidates, unwanted apps, original media and contacts into different decisions.","Before changing anything, identify backup/sync consequences and the proposed action's recovery path; competitor deletion semantics remain unverified.","Choose photo/contact tools for that documented job; choose storage-by-project/app and activity investigation when that is the actual Mac problem, with the disclosed Breathing Room preview caveats.","Record free space separately from candidate sizes and Trash movements; no measured savings or speed claims."],
+      "visualPlacement":"Required competitor Mac UI immediately after lead once cleared and inspected; Breathing Room Space example-data preview beside the storage-investigation branch.",
+      "interactionPass":"A non-destructive decision aid: device = Mac/iPhone; target = originals/contacts or rebuildable cache/app data; known recovery path = yes/unknown. Unknown routes to stop and review, not deletion. No filesystem access or unsupported product feature assertions.",
+      "links":["/comparisons/","/comparisons/clean-doctor/"],
+      "boundary":"Provisional intent, not researched keyword demand or a runnable tutorial. Verify any Apple Photos/sync instructions against official Apple documentation before including procedural steps. No obligatory code demo."
+    },
+    "comparison": {
+      "status":"blocked-not-a-draft", "slug":"clean-doctor", "title":"Breathing Room vs AI Cleaner Max (formerly Clean Doctor)",
+      "primaryIntent":"Concise Mac workflow choice between the current app behind Clean Doctor and Breathing Room, not a second alias page.",
+      "structure":["Conclusion and same-ID naming note with affiliation disclosure.","Seven-row sourced matrix from this packet; label unverified fields explicitly.","When photo/video/contact tools fit; when storage/project/activity investigation fits.","Requirements, preview/hosted-data boundaries and conditional US pricing.","Link to distinct workflow article and comparisons hub."],
+      "advantages":["AI Cleaner Max documents photo/video/contact cleanup and a Mac app-removal tool; no comparable Breathing Room parity is established.","The listed macOS 10.15 minimum covers older systems than Breathing Room's documented macOS 13 minimum, subject to actual device compatibility.","Breathing Room documents project/app storage context, grouped helpers and reviewable exact actions; fit is editorial judgment, not demonstrated superiority."],
+      "tradeOffs":["Competitor approvals, recovery semantics, hosted AI architecture and detailed developer-cache handling remain unknown, not absent.","Breathing Room is a non-notarized preview requiring Python for inventory; hosted AI needs authentication/internet and optional AI Care is paid.","Price structures differ; do not call one categorically cheaper from weekly versus annual rates or assume identical entitlements."],
+      "links":["/comparisons/","/blog/clean-doctor-mac-junk-or-photo-library/"],
+      "disclosure":"Breathing Room, which we build. Neither competitor nor Breathing Room cleanup was executed for this research."
+    }
+  },
+  "unknowns": [
+    {"field":"competitor screenshot permission","critical":true,"diagnostic":"Linked restrictive terms and no express reuse permission; no downloaded asset or inspected UI. Need authorized permission/licensed visual and inspection, or an explicit policy decision by the owner; do not message vendor automatically."},
+    {"field":"competitor controls and runtime","critical":false,"diagnostic":"No installation or hands-on test. Limit eventual comparison to vendor-documented workflows, retain unknowns, and block any proposed deletion tutorial until approval/recovery behavior is documented."},
+    {"field":"pricing source conflict","critical":false,"diagnostic":"Legacy June 2020 terms say starts at $7.99/week versus current US store $3.99/week. State current listing prices conditionally, disclose legacy mismatch and verify actual in-app offer before purchase; never claim checkout validation or guaranteed trial duration."},
+    {"field":"architecture, repository, exact Mac trial/entitlement and AI data processing","critical":false,"diagnostic":"Not verified; omit unsupported claims, including offline AI and Windows support."},
+    {"field":"release support status","critical":false,"diagnostic":"Publicly reachable official listing is not proof of active maintenance or successful download; directory discontinued flag is not sufficient proof of death."}
+  ],
+  "gates": {
+    "draftingAllowed":false,
+    "publicationAllowed":false,
+    "blockers":["COMPETITOR_VISUAL_RIGHTS: linked terms reserve reproduction rights; no express permission or licensed app UI retained.","COMPETITOR_VISUAL_INSPECTION: official Mac screenshot URLs identified, but image bytes not downloaded/opened; no honest view-specific visual approval yet."],
+    "independentReview":"pending separate stage; no score awarded",
+    "siteChecks":"not applicable: no website content or assets changed",
+    "researchOutcome":"Evidence packet retained with useful scoped briefs; job blocked rather than passing the required competitor-visual gate."
+  }
+}

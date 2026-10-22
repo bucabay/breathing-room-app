@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "jobId": "research-smart-cleaner-ai-disk-clean",
+  "productId": "smart-cleaner-ai-disk-clean",
+  "status": "blocked",
+  "stage": "research",
+  "published": false,
+  "createdAtUtc": "2026-10-21T22:11:47.674477+00:00",
+  "dateNote": "Task context says October 22, 2026; retained browser and host clocks report October 21 UTC. Preserve actual UTC retrieval timestamps; do not relabel old verification as a new check.",
+  "identity": {
+    "officialName": "Smart Cleaner AI: Disk Clean",
+    "storeName": "Smart Cleaner AI - Disk Clean",
+    "developer": "DijitalWorlds / Cemal Hekimoglu",
+    "homepage": "https://dijitalworlds.com/maccleaner-ai/",
+    "appStoreId": "6764714299",
+    "officialRepository": null,
+    "repositoryStatus": "not verified; no repository link in checked official product/store links; not evidence that none exists",
+    "canonicalOwnerId": "smart-cleaner-ai-disk-clean",
+    "aliases": [
+      "Smart Cleaner AI",
+      "Smart Cleaner AI: Disk Clean",
+      "Smart Cleaner AI - Disk Clean"
+    ],
+    "aliasEvidence": "S1 links to S3's stable store ID; S3 links back to S1 homepage. Punctuation/short-title variants, not separate products.",
+    "aliasSkipDecision": "skip separate drafts for name variants; retain this canonical owner. No evidence connects this app to PowerMyMac; no merge and no research of that other queue job.",
+    "classification": "direct-mac-storage-review-and-cleanup-overlap",
+    "classificationBasis": [
+      "C03",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "fitLimit": "Direct storage workflow overlap, not demonstrated equivalence in ongoing monitoring, helper grouping or developer adapters. No Windows/Linux replacement claim.",
+    "skipDecision": {
+      "skipProduct": false,
+      "skipSeparateAliasDrafts": true,
+      "reason": "Live distinct official Mac product. Draft blocked on evidence, not dead/irrelevant/alias."
+    }
+  },
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/smart-cleaner-ai-disk-clean/about/",
+    "retrievedAt": "2026-10-21T19:06:04.077Z",
+    "excerpt": "Official Website\ndijitalworlds.com/maccleaner-ai/",
+    "rawCapture": "docs/content/.runtime/verification-2/smart-cleaner-ai-disk-clean-directory.json",
+    "sha256": "6df9d8602390d6f09873c576da574e57fe1766eab39bdc40fdcb81e154c63990",
+    "method": "Observed rendered about-page DOM, owned Chrome DevTools tab 16",
+    "edges": [
+      {
+        "seedId": "cleanmymac",
+        "seedUrl": "https://alternativeto.net/software/cleanmymac/",
+        "edgeUrl": "https://alternativeto.net/software/cleanmymac/?p=7",
+        "retrievedAt": "2026-10-21T18:36:45.366Z",
+        "evidenceType": "live-browser-rendered-listing"
+      },
+      {
+        "seedId": "mole",
+        "seedUrl": "https://alternativeto.net/software/mole/",
+        "edgeUrl": "https://alternativeto.net/software/mole/?p=8",
+        "retrievedAt": "2026-10-21T18:37:24.218Z",
+        "evidenceType": "live-browser-rendered-listing"
+      }
+    ],
+    "rawPath": "sources/baseline-directory.json",
+    "rawSha256": "6df9d8602390d6f09873c576da574e57fe1766eab39bdc40fdcb81e154c63990",
+    "upstreamEdgeNote": "Pagination edge provenance reused from competitors.json. Do not treat directory claims as verified product facts."
+  },
+  "reusedEvidence": [
+    "docs/content/verification/batch-2.json",
+    "docs/content/capabilities.md",
+    "docs/content/screenshots.json",
+    "docs/content/verification/alias-decisions.json"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "DijitalWorlds",
+      "title": "Smart Cleaner AI: Mac Disk Space Cleaner | DijitalWorlds",
+      "url": "https://dijitalworlds.com/maccleaner-ai/",
+      "finalUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "retrievedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "publicationOrUpdateDate": null,
+      "scope": "Reused current batch-2 official DOM; vendor descriptions, not tests",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/baseline-official.json",
+      "sha256": "d2cb3546005e7752ffe2c170cd0ba6768f61cbd2a7862016ba37dd192309ff6c",
+      "reusedFrom": "docs/content/.runtime/verification-2/smart-cleaner-ai-disk-clean-official.json",
+      "baselineHashVerified": true
+    },
+    {
+      "id": "S2",
+      "publisher": "AlternativeTo",
+      "title": "Smart Cleaner AI: Find duplicate, junk, large, and privacy files, manage apps and storage | AlternativeTo",
+      "url": "https://alternativeto.net/software/smart-cleaner-ai-disk-clean/about/",
+      "finalUrl": "https://alternativeto.net/software/smart-cleaner-ai-disk-clean/about/",
+      "retrievedAtUtc": "2026-10-21T19:06:04.077Z",
+      "publicationOrUpdateDate": null,
+      "scope": "Discovery only; no feature verification",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/baseline-directory.json",
+      "sha256": "6df9d8602390d6f09873c576da574e57fe1766eab39bdc40fdcb81e154c63990",
+      "reusedFrom": "docs/content/.runtime/verification-2/smart-cleaner-ai-disk-clean-directory.json",
+      "baselineHashVerified": true
+    },
+    {
+      "id": "S3",
+      "publisher": "Apple App Store / developer-supplied listing",
+      "title": "‎Smart Cleaner AI - Disk Clean App - App Store",
+      "url": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "finalUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "retrievedAtUtc": "2026-10-21T22:09:29.922Z",
+      "publicationOrUpdateDate": null,
+      "scope": "US storefront, displayed version 1.1.6; documentary availability and purchase terms only",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/app-store-dom.json",
+      "sha256": "4882a86f36990b7e1745afb785b4f2d1a5d6cf2c2f48a4b0fa097a1bfea6dd0f"
+    },
+    {
+      "id": "S4",
+      "publisher": "DijitalWorlds",
+      "title": "Smart Cleaner AI: Mac Disk Space Cleaner | DijitalWorlds",
+      "url": "https://dijitalworlds.com/maccleaner-ai/",
+      "finalUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "retrievedAtUtc": "2026-10-21T22:09:11.441Z",
+      "publicationOrUpdateDate": null,
+      "scope": "Targeted screenshot URL and permission-link discovery; not a baseline fact refresh",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/official-visual-dom.json",
+      "sha256": "3f9a2a16d9f34840c140783dca077e14ab0b9b3cb687b57a431aaf7b1690994a"
+    },
+    {
+      "id": "S5",
+      "publisher": "DijitalWorlds",
+      "title": "Website Terms of Service — Legal",
+      "url": "https://dijitalworlds.com/en/terms-of-service/",
+      "finalUrl": "https://dijitalworlds.com/terms-of-service/",
+      "retrievedAtUtc": "2026-10-21T22:09:16.277Z",
+      "publicationOrUpdateDate": "2026-10-18",
+      "scope": "Website asset reuse restrictions; not software EULA",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/website-terms-dom.json",
+      "sha256": "9688a27243dee1538bef948df06aa2ab2c83e110df35e324269fd0c5c30821b5"
+    },
+    {
+      "id": "S6",
+      "publisher": "Breathing Room (first party)",
+      "title": "README working-tree snapshot",
+      "url": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "finalUrl": null,
+      "retrievedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "publicationOrUpdateDate": null,
+      "scope": "Local source recheck; not current-binary runtime verification. Public offer independently checked in capabilities.md on 2026-10-21, reused without network refetch.",
+      "snapshotPath": "docs/content/competitors/smart-cleaner-ai-disk-clean/sources/breathing-room-readme.txt",
+      "sha256": "8431b6cc45320c3ad23948abfc59fcdb55faac70eab187b70687912473342e6f",
+      "originalPath": "README.md"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "wording": "The vendor identifies the app as Smart Cleaner AI: Disk Clean, by DijitalWorlds (Cemal Hekimoglu).",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "Developer\nDijitalWorlds (Cemal Hekimoglu)",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Vendor name and identity; store ID cross-link establishes punctuation variants as the same app.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C02",
+      "wording": "The official download link is Mac App Store ID 6764714299; the US listing is live and says Only for Mac.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Only for Mac",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Public listing availability only; no installation or region-wide availability test.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C03",
+      "wording": "The US listing requires macOS 14.6 or later.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Requires macOS 14.6 or later.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Do not imply Windows/Linux support.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C04",
+      "wording": "The vendor says it supports Apple Silicon and Intel Macs on macOS 14.6+.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "natively built for Apple silicon Macs and also runs on Intel Macs running macOS 14.6 or later.",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Vendor claim, not architecture or runtime test.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C05",
+      "wording": "The US App Store displays version 1.1.6, with the date label Sep 3.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Version 1.1.6\nSep 3",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Year is not shown in retained visible DOM; do not infer year or verify latest across channels.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C06",
+      "wording": "The app is free to download with in-app purchases; that does not mean all cleanup is free.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Free · In‑App Purchases",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "US storefront; no monetary amount exposed in the checked public listing.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C07",
+      "wording": "The listing offers auto-renewable Yearly Pro or one-time Lifetime Pro for supported cleanup actions.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Cleanup actions require either an auto-renewable Yearly Pro subscription or a one-time Lifetime Pro purchase.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Exact price, currency, tax, trial and discount unverified; never invent a dollar price.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C08",
+      "wording": "Yearly Pro renews unless cancelled at least 24 hours before period end; Lifetime Pro does not renew.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Yearly Pro renews automatically unless cancelled at least 24 hours before the end of the current subscription period.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Apple ID billing on confirmation; manage/cancel in App Store settings. Lifetime nonrenewal is separately stated in this same source.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C09",
+      "wording": "The vendor documents local disk scanning, AI categorization and cleanup without receiving files.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "Disk scanning, AI categorization, and cleanup happen locally on your Mac. DijitalWorlds does not operate scanning servers or receive your files.",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Attributed vendor privacy assertion; not a network audit or independent guarantee.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C10",
+      "wording": "The vendor says no app login or signup is required.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "Install, open, clean. No login, no email, no signup.",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Distinct from Apple ID requirements for App Store distribution/IAP.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C11",
+      "wording": "The listing documents explicit review/approval before selected items are moved to Trash.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "You always review and approve items before they are moved to the Trash.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Documented model only; not a blanket safety guarantee or proof every operation is reversible.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C12",
+      "wording": "The listing documents exact duplicate files and photos within selected accessible locations.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Find exact duplicate files and photos inside selected and accessible locations.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Do not extend to similar-photo grouping; website also says exact and similar, so use narrower exact-only wording.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C13",
+      "wording": "The vendor documents an interactive sunburst disk map.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "interactive sunburst map of folders and files.",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Do not claim completeness across inaccessible locations or speed.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C14",
+      "wording": "The vendor specifically documents Xcode DerivedData review and warns of rebuild/indexing costs.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S1"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "Developer Caches (Xcode DerivedData)\nRegenerates on Next Build",
+      "checkedAtUtc": "2026-10-21T19:09:42.371154+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "No measured 20+ GB recovery claim; source marketing figures are not tests.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C15",
+      "wording": "Whether full app uninstall is free or Pro-only is conflicted between official sources.",
+      "state": "contradicted",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Scanning, storage analysis, app uninstalling, login-item management, cloud-folder review, and AI-guided suggestions are free.",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "S1 says Removing apps with the uninstaller requires Pro. Do not choose the favorable version or publish an unqualified tier cell.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C16",
+      "wording": "The developer's App Store privacy declaration is Data Not Collected.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S3"
+      ],
+      "sourceUrl": "https://apps.apple.com/us/app/smart-cleaner-ai-disk-clean/id6764714299?mt=12",
+      "excerpt": "Data Not Collected",
+      "checkedAtUtc": "2026-10-21T22:09:29.922Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Developer self-report; Apple says practices can vary. Product policy fetch returned generic fallback; no independent privacy audit.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C17",
+      "wording": "Website terms require express prior written consent to republish site content, including images.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S5"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/en/terms-of-service/",
+      "excerpt": "You may not modify, reproduce, republish, distribute, transmit, or exploit any portion of the Site without our express prior written consent.",
+      "checkedAtUtc": "2026-10-21T22:09:16.277Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Commercial editorial image reuse not cleared; no permission request sent.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "C18",
+      "wording": "The official app UI asset URL is exposed as Smart Cleaner AI: Disk Clean dashboard.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S4"
+      ],
+      "sourceUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "excerpt": "Smart Cleaner AI: Disk Clean dashboard",
+      "checkedAtUtc": "2026-10-21T22:09:11.441Z",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "DOM image metadata only, not independent pixel inspection or version certification; link-only.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B01",
+      "wording": "Breathing Room is a testing/development preview, Apple Development signed, not Developer ID signed or notarized.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "**not Developer ID signed or notarized**",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "README source rechecked; reuse capabilities.md release verification. No installer/runtime test in this job.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B02",
+      "wording": "Breathing Room requires macOS 13+, Python 3.10+ for inventory/legacy scripts; physical Intel remains untested.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "**Python 3.10+** for disk inventory and legacy cleanup scripts.",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Universal installer advertised, not proof of execution on both architectures.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B03",
+      "wording": "Breathing Room's core local app is free; optional AI Care is advertised at $5 USD/month or $50 USD/year.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "**AI Care is optional: $5 USD/month or $50 USD/year.**",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Reused current published offer verification in capabilities.md; not checkout test, entitlement audit or unlimited-AI claim.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B04",
+      "wording": "Breathing Room's hosted agent needs internet/sign-in and may send paths and storage information; AI is not entirely offline.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "question and relevant tool output, including file paths and storage information.",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Source/privacy boundary; no backend audit.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B05",
+      "wording": "Breathing Room documents Space exploration, app/helper CPU/memory and Activity for recurring growth.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "Follow free-space history, observed file/folder changes, app starts, and sampled disk I/O to investigate recurring storage growth.",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Source implementations corroborated in capabilities.md; not proof of distributed-binary parity or complete writer attribution.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B06",
+      "wording": "Breathing Room daily care reuses exact saved locations/methods and requires the app running.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "Breathing Room must remain running.",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "New locations need review; optional narrow automatic Ruff-cache mode documented in capabilities.md prevents an unconditional never-auto-deletes claim.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    },
+    {
+      "id": "B07",
+      "wording": "Moving files to Trash is not immediate disk space recovery.",
+      "state": "verified",
+      "evidenceClass": "documented-not-tested",
+      "sourceIds": [
+        "S6"
+      ],
+      "sourceUrl": "https://github.com/bucabay/breathing-room-app/blob/main/README.md",
+      "excerpt": "Moving files to Trash is not the same as\nimmediately reclaiming disk space",
+      "checkedAtUtc": "2026-10-21T22:11:47.674477+00:00",
+      "reviewer": "scheduled research worker (not independent review)",
+      "scopeAndConditions": "Do not add sizes, cleanup outcomes and free-space deltas as savings.",
+      "intendedLocation": "comparison matrix and workflow evidence"
+    }
+  ],
+  "exactVersionAndPricing": {
+    "version": "1.1.6",
+    "channel": "US Mac App Store visible listing",
+    "versionDateLabel": "Sep 3",
+    "versionDateYear": null,
+    "minimumMacOS": "14.6",
+    "download": "Free with IAP",
+    "plans": [
+      "Yearly Pro auto-renewable",
+      "Lifetime Pro one-time"
+    ],
+    "amount": null,
+    "currency": null,
+    "trial": null,
+    "tax": null,
+    "priceUnknownTreatment": "Omit amounts or say not verified; refresh before publication without checkout/signup.",
+    "tierConflictClaimId": "C15",
+    "claimIds": [
+      "C03",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C15"
+    ]
+  },
+  "productMatrix": [
+    {
+      "dimension": "macOS / architecture",
+      "competitor": "macOS 14.6+; vendor says Intel and Apple Silicon",
+      "competitorClaimIds": [
+        "C03",
+        "C04"
+      ],
+      "breathingRoomClaimIds": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "dimension": "license / repo",
+      "competitor": "Software licence/EULA and public repository not verified; website copyright does not establish software licence",
+      "competitorClaimIds": [],
+      "breathingRoom": "Apache-2.0 desktop source per capabilities.md; hosted service not included"
+    },
+    {
+      "dimension": "local vs hosted / account",
+      "competitor": "Vendor says on-device, no app account",
+      "competitorClaimIds": [
+        "C09",
+        "C10",
+        "C16"
+      ],
+      "breathingRoomClaimIds": [
+        "B04"
+      ]
+    },
+    {
+      "dimension": "scan / approval / removal",
+      "competitor": "Exact duplicates, disk map and reviewed Trash moves; not tested",
+      "competitorClaimIds": [
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "breathingRoomClaimIds": [
+        "B05",
+        "B06",
+        "B07"
+      ]
+    },
+    {
+      "dimension": "app/helper grouping / recurring-growth monitoring",
+      "competitor": "not verified; do not write No",
+      "competitorClaimIds": [],
+      "breathingRoomClaimIds": [
+        "B05"
+      ]
+    },
+    {
+      "dimension": "developer caches",
+      "competitor": "Vendor documents Xcode DerivedData; package-manager adapter coverage not verified",
+      "competitorClaimIds": [
+        "C14"
+      ],
+      "breathingRoom": "Source adapter scope documented in capabilities.md; no cache compatibility test here"
+    },
+    {
+      "dimension": "pricing / app uninstall tier",
+      "competitor": "Free download; Yearly/Lifetime Pro; amounts unknown; uninstall tier conflict",
+      "competitorClaimIds": [
+        "C06",
+        "C07",
+        "C08",
+        "C15"
+      ],
+      "breathingRoomClaimIds": [
+        "B03"
+      ]
+    },
+    {
+      "dimension": "install/runtime",
+      "competitor": "Mac App Store; accessible-location permissions apply; no runtime test",
+      "competitorClaimIds": [
+        "C02",
+        "C03",
+        "C12"
+      ],
+      "breathingRoomClaimIds": [
+        "B01",
+        "B02",
+        "B04",
+        "B06"
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "competitor-official-dashboard",
+      "productId": "smart-cleaner-ai-disk-clean",
+      "view": "Dashboard (official DOM label)",
+      "kind": "official-asset",
+      "sourcePageUrl": "https://dijitalworlds.com/maccleaner-ai/",
+      "assetUrl": "https://dijitalworlds.com/images/maccleaner/v2/window-dashboard.webp",
+      "retrievedAtUtc": null,
+      "assetUrlObservedAtUtc": "2026-10-21T22:09:11.441Z",
+      "capturedAtUtc": null,
+      "capturedBy": null,
+      "productVersion": null,
+      "buildOrCommit": null,
+      "osVersion": null,
+      "dataMode": "vendor-illustration",
+      "originalPath": null,
+      "originalSha256": null,
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 1600,
+      "heightPx": 1210,
+      "dimensionsBasis": "naturalWidth/naturalHeight of loaded image in official page DOM; not pixel review",
+      "edits": [],
+      "privacyReview": {
+        "status": "pending",
+        "redactions": []
+      },
+      "reuse": {
+        "status": "link-only",
+        "basis": "Website terms section 3 restrict republication without written consent; no consent recorded.",
+        "evidenceUrlOrPath": "sources/website-terms-dom.json",
+        "credit": "DijitalWorlds / Cemal Hekimoglu"
+      },
+      "caption": "Official Smart Cleaner AI dashboard illustration from DijitalWorlds; app version, capture date and displayed data are not independently verified. Linked, not licensed for republication.",
+      "alt": "Official Smart Cleaner AI dashboard illustration, as labeled by the vendor.",
+      "supportedClaimIds": [
+        "C18"
+      ],
+      "limitations": [
+        "No image bytes downloaded; no original asset hash possible.",
+        "Not independently visually inspected; cannot certify genuine unmodified app capture.",
+        "Does not satisfy on-page visual gate."
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAtUtc": null
+      }
+    },
+    {
+      "id": "current-space-browser-preview",
+      "productId": "breathing-room",
+      "view": "Space",
+      "kind": "browser-preview",
+      "sourcePageUrl": "http://127.0.0.1:1431/",
+      "assetUrl": null,
+      "capturedAtUtc": "2026-10-21T19:06:45.416416+00:00",
+      "retrievedAtUtc": null,
+      "capturedBy": "screenshot-library job per screenshots.json",
+      "productVersion": null,
+      "buildOrCommit": "54828ac3170b45861aee70861dd0b9c658ed7e51",
+      "osVersion": null,
+      "dataMode": "example",
+      "originalPath": "/Users/gabe/code/breathing-room-app/docs/content/assets/breathing-room/space-preview-2026-10-21.png",
+      "originalSha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a",
+      "publishedPath": null,
+      "publishedSha256": null,
+      "widthPx": 2940,
+      "heightPx": 3468,
+      "edits": [],
+      "privacyReview": {
+        "status": "reviewed",
+        "diagnostic": "Only built-in example names and paths; no real account, local inventory or personal files captured."
+      },
+      "reuse": {
+        "status": "cleared",
+        "basis": "App-owner-requested first-party UI capture; third-party app marks remain their owners' marks, no endorsement or blanket trademark licence inferred.",
+        "evidenceUrlOrPath": "docs/content/screenshots.json",
+        "credit": "Breathing Room (which we build)"
+      },
+      "caption": "Current-source Breathing Room Space browser preview, captured October 21, 2026. Example data only; not a native scan, measured activity or cleanup result.",
+      "alt": "Breathing Room Space view rendered in a browser with illustrative example data.",
+      "supportedClaimIds": [
+        "B05"
+      ],
+      "limitations": [
+        "Browser-only current source, not a distributed-release or native macOS behavior test.",
+        "Floating assistant composer is part of the real UI and can overlap content in full-page captures; use contextual figures, not measurement evidence.",
+        "Current-source as of the October 21 capture, not guaranteed current release UI. Keep example banner visible; selected PNG opened/read in this research job."
+      ],
+      "review": {
+        "status": "research-visual-inspected-not-independent-publication-review",
+        "reviewer": "scheduled research worker",
+        "reviewedAtUtc": "2026-10-21T22:11:47.674477+00:00"
+      }
+    }
+  ],
+  "briefs": {
+    "workflow": {
+      "title": "Review Mac cleanup candidates before paying for removal",
+      "slug": "review-mac-cleanup-candidates-before-paying",
+      "track": "search-reference",
+      "primaryIntent": "Use Smart Cleaner AI's documented free scanning/maps to separate duplicates, rebuildable Xcode data and personal files before any paid removal decision.",
+      "outline": [
+        "Inventory first; scanning is not cleanup permission",
+        "Compare exact duplicates by location and purpose",
+        "Treat Xcode DerivedData as rebuildable, not cost-free",
+        "Check Pro conditions and the conflicting uninstall tier",
+        "Distinguish Trash moves from free-space recovery",
+        "Choose ongoing investigation when storage returns"
+      ],
+      "interactionHandoff": "Non-mutating checklist: need a duplicate review, cache review, uninstall, or recurring-growth investigation? Show relevant documented workflow and unknowns; no savings calculator or deletion controls.",
+      "visualPlan": "Official dashboard immediately after lead once rights/capture clear; disclosed BR Space example preview later. Keep both pending per-page independent review."
+    },
+    "comparison": {
+      "title": "Smart Cleaner AI vs Breathing Room: cleanup review or ongoing investigation?",
+      "slug": "smart-cleaner-ai-disk-clean",
+      "primaryIntent": "Concise Mac choice, not an alternatives doorway",
+      "rows": [
+        "macOS/runtime",
+        "local vs hosted",
+        "duplicate/map review",
+        "approval and Trash semantics",
+        "uninstall tier conflict",
+        "monitoring evidence",
+        "pricing conditions"
+      ],
+      "disclosure": "Breathing Room, which we build",
+      "crossLinks": [
+        "/comparisons/",
+        "/blog/review-mac-cleanup-candidates-before-paying/"
+      ],
+      "toolLink": "Only link an existing verified relevant tool; do not invent a route."
+    }
+  },
+  "truthfulAdvantagesAndTradeoffs": {
+    "competitorAdvantages": [
+      "Vendor-documented on-device workflow with no app account (C09/C10), unlike BR hosted AI (B04).",
+      "Documented exact duplicate finder and sunburst map (C12/C13); do not invent equivalent BR duplicate functionality.",
+      "Live Mac App Store distribution (C02) and yearly/lifetime choice (C07); no claim it is cheaper or safer."
+    ],
+    "competitorLimits": [
+      "macOS 14.6 minimum (C03).",
+      "Pro cleanup is not synonymous with free scanning (C06/C07).",
+      "Uninstall tier conflicts (C15); prices, monitoring/helper grouping and runtime outcomes unknown."
+    ],
+    "breathingRoomFit": [
+      "Recurring-growth investigation and app/helper context are source-documented (B05), not evidence the competitor lacks them.",
+      "Free local app and optional advertised AI Care (B03); not an all-free/all-local AI substitute."
+    ],
+    "breathingRoomLimits": [
+      "Non-notarized preview and Python requirement (B01/B02), no clean-machine or physical-Intel validation claimed.",
+      "Hosted AI/sign-in/data boundary (B04); app-running daily-care constraint (B06).",
+      "Do not claim duplicate-finder, full uninstaller, savings, speed or binary feature parity without new evidence."
+    ]
+  },
+  "unknowns": [
+    "Exact IAP amounts, currency, tax, trial/discount conditions",
+    "Version-date year and newest release across other channels",
+    "Software licence/EULA and repository",
+    "Actual image capture version/date and reuse permission",
+    "Independent app/network/runtime tests",
+    "Competitor process/helper grouping, recurring growth, other developer adapters"
+  ],
+  "accessDiagnostics": [
+    "WebFetch of app privacy, app terms and website terms returned generic DijitalWorlds Markdown fallback rather than requested policies; not used as policy evidence.",
+    "Owned Chrome tab 164 read actual website terms, then App Store DOM. No cookies, browser storage or hidden payload extraction. No controls submitted.",
+    "No image assets downloaded because commercial republication permission was not established. Website terms observed; stopped further vendor requests."
+  ],
+  "blockers": [
+    {
+      "id": "visual-rights",
+      "diagnostic": "Official dashboard URL identified but website terms restrict republication; no written consent. No licensed/cleared competitor UI asset or independent pixel/capture review. Link-only research fallback does not satisfy required on-page gate.",
+      "resolution": "Authorized owner supplies permission/appropriately licensed authentic app UI and provenance; do not send permission requests in this job."
+    },
+    {
+      "id": "uninstall-tier-conflict",
+      "diagnostic": "S1 vendor page says app removal requires Pro; S3 store description says app uninstalling is free. Cannot verify exact free/paid uninstall boundary.",
+      "resolution": "Obtain version-specific official clarification or permitted independent evidence before drafting this material pricing claim; do not silently prefer one source."
+    }
+  ],
+  "draftGate": {
+    "allowed": false,
+    "reason": "Critical visual evidence and material tier conflict unresolved",
+    "independentReview": "pending separate stage",
+    "score": null
+  },
+  "validation": {
+    "method": "validate-packet.py, outputs validation.json",
+    "siteChecks": "not run; no site content/assets changed",
+    "handsOnTests": "none; no app installation, scan, deletion, signup, purchase or hosted AI call"
+  }
+}

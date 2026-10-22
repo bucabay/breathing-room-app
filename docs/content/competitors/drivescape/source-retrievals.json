@@ -1,0 +1,96 @@
+[
+  {
+    "id": "press",
+    "url": "https://drivescape.dev/press",
+    "retrievedAtUtc": "2026-10-21T20:35:10.406893+00:00",
+    "finalUrl": "https://drivescape.dev/press",
+    "httpStatus": 200,
+    "path": "sources/press.html",
+    "sha256": "2f351124372574d2faaef77cd8ffaf6ad0198c5104406aa80f9c18b753e54537",
+    "images": []
+  },
+  {
+    "id": "eula",
+    "url": "https://drivescape.dev/eula",
+    "retrievedAtUtc": "2026-10-21T20:35:10.999462+00:00",
+    "finalUrl": "https://drivescape.dev/eula",
+    "httpStatus": 200,
+    "path": "sources/eula.html",
+    "sha256": "72a2c3138f7b0000c7b2a8cf06e4c9fd86361221aead66ad0490d1d7e377f9e9",
+    "images": []
+  },
+  {
+    "id": "changelog",
+    "url": "https://drivescape.dev/changelog",
+    "retrievedAtUtc": "2026-10-21T20:35:11.470991+00:00",
+    "finalUrl": "https://drivescape.dev/changelog",
+    "httpStatus": 200,
+    "path": "sources/changelog.html",
+    "sha256": "f1d16255527307681651504aa2f20475bd675859f47cfa112bc8fd9e7e228bfa",
+    "images": []
+  },
+  {
+    "id": "privacy",
+    "url": "https://drivescape.dev/privacy",
+    "retrievedAtUtc": "2026-10-21T20:35:12.079333+00:00",
+    "finalUrl": "https://drivescape.dev/privacy",
+    "httpStatus": 200,
+    "path": "sources/privacy.html",
+    "sha256": "a37d5bc9d015de262bab1d9f0cc5b756e8a8f5c34c609ceeeb43c779373af7e5",
+    "images": []
+  },
+  {
+    "id": "how-it-works",
+    "url": "https://drivescape.dev/en/how-it-works",
+    "retrievedAtUtc": "2026-10-21T20:35:12.647916+00:00",
+    "finalUrl": "https://drivescape.dev/en/how-it-works",
+    "httpStatus": 200,
+    "path": "sources/how-it-works.html",
+    "sha256": "23ffa0ec47e0aa76d80a7142a2d8be58a54c6e65f314422a0e1ceb367f038f72",
+    "images": []
+  },
+  {
+    "id": "repository",
+    "url": "https://github.com/BrickLogic/ChartyDriveReleases",
+    "retrievedAtUtc": "2026-10-21T20:35:13.070195+00:00",
+    "finalUrl": "https://github.com/BrickLogic/ChartyDriveReleases",
+    "httpStatus": 200,
+    "path": "sources/repository.html",
+    "sha256": "7f792cf8c44acbbc1d544fb1fa8d70eea3f67c1335ea8477cc0933ba55736926",
+    "images": [
+      {
+        "data-component": "Avatar",
+        "class": "mr-2 flex-shrink-0 prc-Avatar-Avatar-0xaUi",
+        "alt": "BrickLogic",
+        "data-square": "",
+        "width": "24",
+        "height": "24",
+        "style": "--avatarSize-regular:24px",
+        "src": "https://avatars.githubusercontent.com/u/61634811?s=60&v=4",
+        "data-testid": "github-avatar"
+      }
+    ]
+  },
+  {
+    "id": "listing-visuals",
+    "url": "https://alternativeto.net/software/drivescape/about/",
+    "retrievedAtUtc": "2026-10-21T20:35:14.579612+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "release-latest",
+    "url": "https://api.github.com/repos/BrickLogic/ChartyDriveReleases/releases/latest",
+    "retrievedAtUtc": "2026-10-21T20:35:15.452192+00:00",
+    "finalUrl": "https://api.github.com/repos/BrickLogic/ChartyDriveReleases/releases/latest",
+    "httpStatus": 200,
+    "path": "sources/release-latest.json",
+    "sha256": "497ef2dcedf29afc8e1c5095d57cadeecf716645e8506b5cd587b1c5a05d7411",
+    "tag": "v1.11.0",
+    "publishedAt": "2026-09-20T18:22:14Z",
+    "assets": [
+      "DriveScape.app.tar.gz",
+      "DriveScape.app.tar.gz.sig",
+      "DriveScape_1.11.0_aarch64.dmg"
+    ]
+  }
+]

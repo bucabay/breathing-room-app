@@ -1,0 +1,32 @@
+{
+  "checkedAtUtc": "2026-10-21T22:55:08.211Z",
+  "status": "passed-scoped-static-checks",
+  "schema": "Actual current site schema evaluated against parsed YAML; passed",
+  "shortlistRows": 7,
+  "bodyH2": 10,
+  "visualCount": 2,
+  "bodyWordCountApprox": 1520,
+  "titleCharacters": 43,
+  "descriptionCharacters": 157,
+  "internalLinks": [
+    "/tools/"
+  ],
+  "assets": [
+    {
+      "url": "/assets/roundups/open-source-mac-cleaners-2026/selection-workflow.svg",
+      "bytes": 2429,
+      "sha256": "733c39734614957e6eaac30aefe1d3acb4869b2adc6f751030f48ca9492244b3"
+    },
+    {
+      "url": "/assets/roundups/open-source-mac-cleaners-2026/breathing-room-space-preview.png",
+      "bytes": 587216,
+      "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+    }
+  ],
+  "articleSha256": "1afc3a6981145d32baf9133e23e99ef389aef999e5aa1c7ec803841564802e98",
+  "pending": [
+    "Shared pnpm check/build/test not run: no shared output authorized.",
+    "Independent claim review and six viewport/theme rendered-page reviews not performed.",
+    "Draft exclusion statically checked by status/published; built route/feed exclusion still pending."
+  ]
+}

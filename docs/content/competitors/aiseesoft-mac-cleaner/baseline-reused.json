@@ -1,0 +1,74 @@
+{
+  "id": "aiseesoft-mac-cleaner",
+  "name": "Aiseesoft Mac Cleaner",
+  "officialUrl": "https://www.aiseesoft.com/mac-cleaner/",
+  "officialFinalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+  "officialName": "Aiseesoft Mac Cleaner",
+  "status": "partial",
+  "discovery": {
+    "sourceUrl": "https://alternativeto.net/software/aiseesoft-mac-cleaner/about/",
+    "retrievedAt": "2026-10-21T19:04:53.433Z",
+    "observedOfficialLink": {
+      "text": "Official Website\naiseesoft.com/mac-cleaner/",
+      "url": "https://www.aiseesoft.com/mac-cleaner/",
+      "title": "https://www.aiseesoft.com/mac-cleaner/"
+    },
+    "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-directory.json"
+  },
+  "facts": [
+    {
+      "field": "officialName",
+      "value": "Aiseesoft Mac Cleaner",
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Aiseesoft Mac Cleaner",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00"
+    },
+    {
+      "field": "coreFunction",
+      "value": "Mac Cleaner is the best Mac space cleaning software to remove junk files, memory, virus, adware, malware, duplicated photos, and uninstall applications to free up storage and speed up Mac performance.",
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Mac Cleaner is the best Mac space cleaning software to remove junk files, memory, virus, adware, malware, duplicated photos, and uninstall applications to free up storage and speed up Mac performance.",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00"
+    },
+    {
+      "field": "platforms",
+      "value": "macOS 27 Golden Gate/macOS Tahoe/macOS Sequoia/macOS Sonoma/macOS Big Sur/macOS Catalina/macOS Mojave/macOS High Sierra/macOS Sierra",
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "macOS 27 Golden Gate/macOS Tahoe/macOS Sequoia/macOS Sonoma/macOS Big Sur/macOS Catalina/macOS Mojave/macOS High Sierra/macOS Sierra",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00"
+    },
+    {
+      "field": "pricing",
+      "value": "1 Year License $45.00 $27.00",
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "1 Year License $45.00 $27.00",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00"
+    },
+    {
+      "field": "availability",
+      "value": "Official public source offers a download/release link; binary not installed or tested.",
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "excerpt": "Free Download",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00"
+    }
+  ],
+  "aliases": [],
+  "blockers": [],
+  "sources": [
+    {
+      "sourceUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "finalUrl": "https://www.aiseesoft.com/mac-cleaner/",
+      "retrievedAt": "2026-10-21T19:08:09.581052+00:00",
+      "snapshotPath": "docs/content/.runtime/verification-1/aiseesoft-mac-cleaner-official.json",
+      "sha256": "5f96f325d42f311820f3723c7ff29e7855963e937eec4f0cfb5ef07547aa83ce"
+    }
+  ],
+  "unverifiedFields": [
+    "license"
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "release-latest.json",
+    "sourceUrl": "https://api.github.com/repos/2ykwang/mac-cleanup-go/releases/latest",
+    "finalUrl": "https://api.github.com/repos/2ykwang/mac-cleanup-go/releases/latest",
+    "retrievedAtUtc": "2026-10-21T21:26:55.512631+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/release-latest.json",
+    "sha256": "39993ec3b45734ff9c36d11d29bde7d62dc0e330b4ecb14fa7dfdf40393b570a",
+    "bytes": 7666
+  },
+  {
+    "id": "readme-v1.6.0.md",
+    "sourceUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/README.md",
+    "finalUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/README.md",
+    "retrievedAtUtc": "2026-10-21T21:26:56.292672+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/readme-v1.6.0.md",
+    "sha256": "61e91b26fc5852814a06d0d469ac26b8df67d661f33a005f4d7659e549129773",
+    "bytes": 6266
+  },
+  {
+    "id": "LICENSE-v1.6.0.txt",
+    "sourceUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/LICENSE",
+    "finalUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/LICENSE",
+    "retrievedAtUtc": "2026-10-21T21:26:57.002346+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/LICENSE-v1.6.0.txt",
+    "sha256": "1feb363bed4d3db80f42fdec28b127faf816c6dd19164f4acbfca48bad08a765",
+    "bytes": 1107
+  },
+  {
+    "id": "assets-tree.json",
+    "sourceUrl": "https://api.github.com/repos/2ykwang/mac-cleanup-go/git/trees/5344f5e9fd5c0a9253d3011f18a45359f3675f26",
+    "finalUrl": "https://api.github.com/repos/2ykwang/mac-cleanup-go/git/trees/5344f5e9fd5c0a9253d3011f18a45359f3675f26",
+    "retrievedAtUtc": "2026-10-21T21:26:57.864737+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/assets-tree.json",
+    "sha256": "e218ea2bb7c282b1bef0c7e82c5a774b282cb51ee62b0cf49ea174a3903dd009",
+    "bytes": 1544
+  },
+  {
+    "id": "build-v1.6.0.yaml",
+    "sourceUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/.goreleaser.yaml",
+    "finalUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/.goreleaser.yaml",
+    "retrievedAtUtc": "2026-10-21T21:26:58.676886+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/build-v1.6.0.yaml",
+    "sha256": "a1951663d928224c96ef3238cb7523c37c3ae43d8139d8b97e87ef78f751526d",
+    "bytes": 1167
+  },
+  {
+    "id": "go-v1.6.0.mod",
+    "sourceUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/go.mod",
+    "finalUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/v1.6.0/go.mod",
+    "retrievedAtUtc": "2026-10-21T21:26:59.454675+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/go-v1.6.0.mod",
+    "sha256": "e231c226905c8dcfa75c8d598be751e866542eaf8b26f4fac28453b08a872801",
+    "bytes": 1271
+  },
+  {
+    "id": "list_view-original.png",
+    "sourceUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/06cc1928d9d8cff2f377dd9fb825b0e9a4c6f541/assets/list_view.png",
+    "finalUrl": "https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/06cc1928d9d8cff2f377dd9fb825b0e9a4c6f541/assets/list_view.png",
+    "retrievedAtUtc": "2026-10-21T21:27:00.660354+00:00",
+    "snapshotPath": "docs/content/competitors/mac-cleanup-go/list_view-original.png",
+    "sha256": "3c7a79cf38c983bcd926cfbfd913cc52832763f10056a965cf071cb7e5d128e2",
+    "bytes": 864056
+  }
+]

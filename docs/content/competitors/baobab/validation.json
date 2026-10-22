@@ -1,0 +1,222 @@
+{
+  "jobId": "research-baobab",
+  "validatedAtUtc": "2026-10-21T20:10:13.926750+00:00",
+  "command": "python3 docs/content/competitors/baobab/validate-packet.py",
+  "checks": [
+    {
+      "check": "JSON packets parse; canonical identity and research-only gates consistent",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: gnome-visual-page",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: homebrew",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: gnome-contribute",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: trash-help",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: remote-help",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: permissions-help",
+      "outcome": "passed"
+    },
+    {
+      "check": "Retained original hash/bytes: scan-image",
+      "outcome": "passed"
+    },
+    {
+      "check": "Unique claim and source IDs",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: identity",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: repository",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: scan",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: distribution",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: mac-package",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: license",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: dependencies",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: trash",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: remote",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: permissions",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: image-license",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: br-scope",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: br-pricing",
+      "outcome": "passed"
+    },
+    {
+      "check": "Claim ledger support fields: br-hosted",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: macOS",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: licence/pricing",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: local/hosted",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: scan/cleanup model",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: approval controls",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: helper/process grouping",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: recurring-growth monitoring",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: developer-cache semantics",
+      "outcome": "passed"
+    },
+    {
+      "check": "Matrix claim references: runtime/install caveats",
+      "outcome": "passed"
+    },
+    {
+      "check": "Package version/licence/dependencies match retained distributor data",
+      "outcome": "passed"
+    },
+    {
+      "check": "Exact Mac and Linux bottle keys match record",
+      "outcome": "passed"
+    },
+    {
+      "check": "Official image URL and GPL app-content notice retained",
+      "outcome": "passed"
+    },
+    {
+      "check": "Official contribution page links canonical repository",
+      "outcome": "passed"
+    },
+    {
+      "check": "Supporting passage retained: trash-help.html / select Move to Trash",
+      "outcome": "passed"
+    },
+    {
+      "check": "Supporting passage retained: trash-help.html / empty the Trash",
+      "outcome": "passed"
+    },
+    {
+      "check": "Supporting passage retained: remote-help.html / accessible remotely",
+      "outcome": "passed"
+    },
+    {
+      "check": "Supporting passage retained: permissions-help.html / won't be used to compute the chart",
+      "outcome": "passed"
+    },
+    {
+      "check": "PNG bytes/dimensions/hash: baobab-official-scan",
+      "outcome": "passed"
+    },
+    {
+      "check": "Visual provenance, permission, caption and alt: baobab-official-scan",
+      "outcome": "passed"
+    },
+    {
+      "check": "PNG bytes/dimensions/hash: current-space-browser-preview",
+      "outcome": "passed"
+    },
+    {
+      "check": "Visual provenance, permission, caption and alt: current-space-browser-preview",
+      "outcome": "passed"
+    },
+    {
+      "check": "Reused verified baseline original hash matches batch register",
+      "outcome": "passed"
+    },
+    {
+      "check": "Corresponding batch-1 record reused",
+      "outcome": "passed"
+    },
+    {
+      "check": "Required first-party caption matches current inventory exactly",
+      "outcome": "passed"
+    }
+  ],
+  "checkCount": 47,
+  "referenceSha256": {
+    "docs/content/verification/batch-1.json": "e01f7e19307f67576e6c73f45139fdd081ad0f382d77da391be175b2974380fc",
+    "docs/content/.runtime/verification-1/baobab-official.json": "5e970c12b186cf78770c5258d7ecad9cb80eef0ed0a06a634a669978ab451066",
+    "docs/content/.runtime/verification-1/baobab-directory.json": "40691a5ad78f099ec4a1a884a0e14324ff66305ee17ef292cb825c2aab46f7df",
+    "docs/content/capabilities.md": "cfc30c88a94cbaea9e01d4fb5bde253911442993cda90dcb283d48445f4d4613",
+    "docs/content/screenshots.json": "d2a7a92350ba7e03edc8d80d171139e5f1cba470da5b3cbd531790de3aab974c"
+  },
+  "artifactSha256": {
+    "research.json": "5cfc6adceee036916f43378a84e138ac3de7e3ee5d16b78d8d40e36591746a8a",
+    "research.md": "96e2ec6ac6da3a1425794fe6ffc274ac9937d1493c750221ff645dfd9771b633",
+    "evidence-index.json": "e33c7fea0c948489805de20b51aa1404233034eb3b4274d5d1a0e0c69b1b41cc"
+  },
+  "assetSha256": {
+    "docs/content/competitors/baobab/evidence/scan-image.png": "17cb82c4744a88716fbde35ddca773724fd850b78477428ca61b61c91480ec50",
+    "docs/content/assets/breathing-room/space-preview-2026-10-21.png": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"
+  },
+  "manualVisualCheck": "Both PNGs opened and read using image-capable read tool on 2026-10-21; independent rendered-page review remains pending.",
+  "notPerformed": [
+    "Native app installation/testing",
+    "Cleanup",
+    "Site check/build/test (no site edits)",
+    "Browser automation",
+    "Independent publication review"
+  ],
+  "limitations": "Integrity and selected excerpt checks, not semantic proof of every claim or publication approval.",
+  "correctionHistory": "Initial local check failed because the scan-image height was entered as 710 instead of PNG-header 722. Corrected from original bytes; also corrected baseline parser key from products to records before successful rerun."
+}

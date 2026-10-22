@@ -1,0 +1,14 @@
+{
+  "id": "eula",
+  "sourceUrl": "https://www.imymac.com/license-agreement/",
+  "finalUrl": "https://www.imymac.com/license-agreement/",
+  "retrievedAtUtc": "2026-10-21T20:42:38.322756+00:00",
+  "httpStatus": 200,
+  "publisher": "iMyMac",
+  "sourcePublishedAt": null,
+  "snapshotPath": "docs/content/competitors/imymac--cleaner/sources/eula.html",
+  "sha256": "f796733299b0093972e26e62991eb723cf2d65ffb2fcb6f3e5a400e8111bbcf0",
+  "textPath": "docs/content/competitors/imymac--cleaner/sources/eula.txt",
+  "textSha256": "f2a797d83eceb72124f0675dde4f4eaf9983956e7399fb6250cab92ecc266498",
+  "method": "Public read-only HTTP GET; retained HTML for exact pricing/guide/rights evidence missing from baseline. No forms submitted."
+}

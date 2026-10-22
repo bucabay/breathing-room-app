@@ -1,0 +1,25 @@
+{
+  "jobId": "research-techtool",
+  "checkedOnUtc": "2026-10-21",
+  "method": "Executed read-only Python assertions against actual packet, retained official captures and first-party PNG; exit 0",
+  "checks": [
+    {"check": "Parse research.json; unique source/claim IDs; dated claim URLs/excerpts and resolved references", "result": "pass", "sources": 8, "claims": 14},
+    {"check": "Every product matrix row resolves to existing claim IDs on both sides", "result": "pass", "rows": 9},
+    {"check": "Actual source/discovery file SHA-256 compared with recorded hashes", "result": "pass", "comparisons": 5},
+    {"check": "Selected Breathing Room PNG bytes/hash/header dimensions/disclosure", "result": "pass", "dimensions": "2940x3468", "sha256": "9e3475d44a6387b2485dafe2e4284ca9d32fd9436d50b7f48906c044a5db743a"},
+    {"check": "Platform/model strings present in retained official source; localized numeric prices and conflicting 10% text present in live DOM", "result": "pass"},
+    {"check": "Exact competitor image URL occurs in captured official public image attributes", "result": "pass", "qualification": "Reference verification only, not an asset visual/rights pass"},
+    {"check": "Canonical owner, alias non-skip, blocked drafting/publication, link-only image/no invented image hash and unknown cells", "result": "pass"},
+    {"check": "Owned packet directory has no downloaded competitor PNG/JPG; research Markdown and JSON exist", "result": "pass"},
+    {"check": "Breathing Room image opened with image-capable read tool", "result": "pass-research-inspection", "qualification": "Example-data and browser-warning labels visible; target-page independent visual review pending"},
+    {"check": "Browser tab ownership", "result": "pass", "qualification": "Created/used/closed owned public Micromat tab 173; existing tabs listed as metadata only"}
+  ],
+  "notRun": [
+    "Competitor installation, native tests, scan, repair, cleanup, cart or checkout",
+    "Website check/build/test: no site files changed",
+    "Independent editorial scoring and rendered article QA: no drafts created",
+    "Competitor image download, visual approval or reproduction-rights clearance"
+  ],
+  "evidenceGate": "blocked",
+  "diagnostic": "Official competitor app-UI URL retained as link-only, with no established reproduction permission or inspected original image. Required on-page screenshot gate remains blocked. Local structural checks are not publication approval. Numeric competitor quote also remains restricted because currency code is unspecified and discount text conflicts with rendered amounts."
+}
