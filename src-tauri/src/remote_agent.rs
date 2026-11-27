@@ -53,6 +53,7 @@ fn error(status:u16,value:&Value)->String{
         "auth_not_configured"=>"The API's AnyOAuth login is not configured yet".into(),
         "login_expired"|"login_failed"=>"Sign-in expired or failed. Start sign-in again".into(),
         "daily_usage_limit"|"step_limit"=>"Agent usage limit reached; cached results remain available".into(),
+        "cleanup_limit_reached"=>"You've used all your cleanups this month. Get AI Care for 100 cleanups a month.".into(),
         "inference_unavailable"=>"Workers AI is temporarily unavailable or its allowance is exhausted".into(),
         "invalid_model_response"|"incomplete_model_response"|"invalid_candidate_selection"=>"The model could not complete its review. Start a new inspection; your files have not been changed.".into(),
         "step_failed_start_new_run"=>"The previous inference step failed. Start a new inspection".into(),
@@ -93,6 +94,14 @@ pub fn billing_status()->Result<Value,String>{
         if status==401&&attempt==0{creds=authenticated(&base,true)?;continue;}
         if status>=400{return Err(error(status,&value));}return Ok(value);
     }Err("Sign in again to check your subscription".into())
+}
+pub fn quota()->Result<Value,String>{
+    let base=base_url()?;let mut creds=authenticated(&base,false)?;
+    for attempt in 0..2{
+        let(status,value)=response(client()?.get(format!("{base}/v1/quota")).bearer_auth(&creds.access_token).send().map_err(|_|"Could not check your cleanup allowance")?)?;
+        if status==401&&attempt==0{creds=authenticated(&base,true)?;continue;}
+        if status>=400{return Err(error(status,&value));}return Ok(value);
+    }Err("Sign in again to check your cleanup allowance".into())
 }
 pub fn billing_portal()->Result<String,String>{
     let(_,value)=post(&base_url()?,"/v1/billing/portal",&json!({"mode":"live"}))?;

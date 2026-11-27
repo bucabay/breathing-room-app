@@ -13,7 +13,7 @@ pub(crate) fn open(home:&Path)->Result<Connection,String>{
     if let Ok(meta)=fs::symlink_metadata(&file){if meta.file_type().is_symlink()||meta.uid()!=unsafe{libc::getuid()}{return Err("Invalid runtime database".into());}}
     let db=Connection::open(&file).map_err(|e|e.to_string())?;
     fs::set_permissions(&file,fs::Permissions::from_mode(0o600)).map_err(|e|e.to_string())?;
-    db.busy_timeout(Duration::from_secs(5)).map_err(|e|e.to_string())?;
+    db.busy_timeout(Duration::from_secs(15)).map_err(|e|e.to_string())?;
     db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;
       CREATE TABLE IF NOT EXISTS agent_runs(id TEXT PRIMARY KEY,payload TEXT NOT NULL,owner_pid INTEGER NOT NULL,updated_at INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS agent_steps(run_id TEXT NOT NULL,step INTEGER NOT NULL,input_hash TEXT NOT NULL,reply TEXT NOT NULL,PRIMARY KEY(run_id,step));
@@ -94,7 +94,13 @@ pub(crate) fn step(home:&Path,run:&str,index:u64,input:&str)->Result<Option<Valu
     match row{Some((hash,text)) if hash==input=>serde_json::from_str(&text).map(Some).map_err(|_|"Invalid saved step".into()),Some(_)=>Err("Saved step input changed".into()),None=>Ok(None)}
 }
 pub(crate) fn save_step(home:&Path,run:&str,index:u64,input:&str,reply:&Value)->Result<(),String>{
-    let mut db=open(home)?;let tx=db.transaction().map_err(|e|e.to_string())?;
+    let mut db=open(home)?;
+    // Immediate, not deferred: this transaction reads (the idempotency check) and then
+    // writes. A deferred transaction that read first cannot upgrade to a writer once
+    // another connection commits, and SQLite fails that with SQLITE_BUSY immediately
+    // instead of waiting on the busy handler — surfaced to the user as "database is locked"
+    // while disk discovery is writing in its own connection.
+    let tx=db.transaction_with_behavior(rusqlite::TransactionBehavior::Immediate).map_err(|e|e.to_string())?;
     let existing:Option<(String,String)>=tx.query_row("SELECT input_hash,reply FROM agent_steps WHERE run_id=? AND step=?",params![run,index],|r|Ok((r.get(0)?,r.get(1)?))).optional().map_err(|e|e.to_string())?;
     if let Some((hash,text))=existing{if hash!=input||text!=reply.to_string(){return Err("A completed step cannot be overwritten".into());}return Ok(());}
     tx.execute("INSERT OR IGNORE INTO agent_steps VALUES(?,?,?,?)",params![run,index,input,reply.to_string()]).map_err(|e|e.to_string())?;
@@ -136,5 +142,37 @@ fn stats_at(home:&Path)->Result<Value,String>{
     #[test]fn all_agent_entry_points_share_the_same_active_run_claim(){let h=home();let value=json!({"status":"inspecting","model":"@cf/fixture"});create_run(&h,"manual",&value).unwrap();assert!(create_run(&h,"daily",&value).unwrap_err().contains("already running"));save_run(&h,"manual",&json!({"status":"review"})).unwrap();create_run(&h,"daily",&value).unwrap();assert!(create_run(&h,"another-manual",&value).is_err());fs::remove_dir_all(h).unwrap();}
     #[test]fn resume_claim_is_atomic_and_cannot_overlap_daily_or_manual_runs(){let h=home();save_run(&h,"interrupted",&json!({"status":"failed"})).unwrap();create_run(&h,"daily",&json!({"status":"inspecting"})).unwrap();assert!(claim_run(&h,"interrupted",&json!({"status":"inspecting"})).is_err());assert_eq!(load_run(&h,"interrupted").unwrap().unwrap()["status"],"failed");save_run(&h,"daily",&json!({"status":"done"})).unwrap();claim_run(&h,"interrupted",&json!({"status":"inspecting"})).unwrap();assert!(create_run(&h,"manual",&json!({"status":"inspecting"})).is_err());fs::remove_dir_all(h).unwrap();}
     #[test]fn tool_ids_cannot_be_reused_for_different_inputs(){let h=home();save_tool(&h,"run","call","same",&json!({"bytes":7})).unwrap();assert!(tool_result(&h,"run","call","changed").is_err());fs::remove_dir_all(h).unwrap();}
+    // Regression: a deferred transaction that reads before writing cannot upgrade once
+    // another connection commits (SQLITE_BUSY_SNAPSHOT, reported as "database is locked"
+    // without consulting the busy handler). The app always has such a writer: disk
+    // discovery, the monitor's own store, or a second UI request.
+    #[test]fn concurrent_conversation_steps_never_report_database_is_locked(){
+        let h=home();open(&h).unwrap();
+        let stop=std::sync::Arc::new(std::sync::atomic::AtomicBool::new(false));
+        let churn_home=h.clone();let flag=stop.clone();
+        let churn=std::thread::spawn(move||{
+            let mut committed=0usize;
+            while !flag.load(std::sync::atomic::Ordering::Relaxed){
+                let mut db=open(&churn_home).unwrap();
+                let tx=db.transaction_with_behavior(rusqlite::TransactionBehavior::Immediate).unwrap();
+                tx.execute("INSERT OR REPLACE INTO cache_entries VALUES('scan','{}',0,NULL)",[]).unwrap();
+                tx.commit().unwrap();committed+=1;
+                std::thread::sleep(Duration::from_millis(1));
+            }
+            committed
+        });
+        let writers:Vec<_>=(0..6).map(|worker|{let home=h.clone();std::thread::spawn(move||{
+            (0..25u64).for_each(|index|{
+                let reply=json!({"model":"deepseek-flash","usage":{"prompt_tokens":10,"completion_tokens":4},"eventId":format!("event-{worker}-{index}")});
+                save_step(&home,&format!("assistant-run-{worker}"),index,&format!("input-{worker}-{index}"),&reply).unwrap_or_else(|error|panic!("step {worker}/{index} failed: {error}"));
+            });
+        })}).collect();
+        for writer in writers{writer.join().unwrap();}
+        stop.store(true,std::sync::atomic::Ordering::Relaxed);
+        assert!(churn.join().unwrap()>0);
+        assert_eq!(step(&h,"assistant-run-5",24,"input-5-24").unwrap().unwrap()["model"],"deepseek-flash");
+        assert_eq!(stats_at(&h).unwrap()["requests"],150);
+        fs::remove_dir_all(h).unwrap();
+    }
     #[test]fn app_sessions_persist_are_origin_scoped_and_never_enter_sync(){let h=home();let value=json!({"accessToken":"fixture-only","account":{"subject":"fixture"}});auth_save(&h,"https://one.test",&value).unwrap();assert_eq!(auth_load(&h,"https://one.test").unwrap(),Some(value));assert!(auth_load(&h,"https://two.test").unwrap().is_none());let db=open(&h).unwrap();assert_eq!(db.query_row("SELECT COUNT(*) FROM sync_outbox",[],|row|row.get::<_,i64>(0)).unwrap(),0);drop(db);auth_clear(&h,"https://one.test").unwrap();assert!(auth_load(&h,"https://one.test").unwrap().is_none());fs::remove_dir_all(h).unwrap();}
 }

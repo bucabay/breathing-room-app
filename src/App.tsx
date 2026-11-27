@@ -10,15 +10,17 @@ import { CleanupAssistant } from "@/components/cleanup-assistant";
 import { TrashCleanupNotice } from "@/components/trash-cleanup-notice";
 import { ApprovedLocationsPreview,ApprovedLocationsScreen } from "@/components/approved-locations";
 import { AiCareCard } from "@/components/ai-care-card";
+import { CleanupQuotaBanner } from "@/components/cleanup-quota-banner";
 import { trashCompletion } from "@/lib/cleanup-results";
 import { SpaceView } from "@/components/space-view";
+import { RestartSpaceCard } from "@/components/restart-space";
 import type { SpaceTab } from "@/lib/space-view";
 import { LiveStatusBar } from "@/components/live-status";
 import { ActivityPage } from "@/components/activity-page";
 import { AppUpdates } from "@/components/app-updates";
 import { api, native } from "@/lib/api";
 import { buckets, defaultSettings, formatBytes, profileFocus,
-   type Capabilities, type CareEvent, type Page, type Profile, type Settings,
+   type Capabilities, type CareEvent, type Page, type Profile, type RestartSpace, type Settings,
   type StorageReport } from "@/lib/model";
 import { useTheme } from "@/hooks/use-theme";
 import { listen } from "@tauri-apps/api/event";
@@ -30,7 +32,7 @@ import { withCurrentDisk } from "@/lib/metrics-cache";
 import { memoryUsage } from "@/lib/memory";
 import type { DailyApproval,DailyNotification } from "@/lib/agent-cleanup";
 import billingConfig from "@/billing-config.json";
-import { stripeCheckoutUrl } from "@/lib/ai-care";
+import { stripeCheckoutUrl, type CleanupQuota } from "@/lib/ai-care";
 
 const aiCareCheckoutUrl = stripeCheckoutUrl(billingConfig.stripeSubscriptionUrl);
 const aiCareAnnualUrl = stripeCheckoutUrl(billingConfig.stripeAnnualUrl);
@@ -71,12 +73,13 @@ function App() {
   const memory = memoryUsage(liveStatus);
   const [metricsCollapsed, setMetricsCollapsed] = useState(false);
   const [collapsedOperation, setCollapsedOperation] = useState<string | null>(null);
-  const reviewWithAi = (scope = "") => { setCleanupDaily(false);setRequestedRunId("");setCleanupScope(scope); setPage("assistant"); if (!agentBlocked && !assistantBusy) setCleanupRequest(n => n + 1); };
+  const reviewWithAi = (scope = "") => { if (quotaBlocked) { setAiOpen(true); return; } setCleanupDaily(false);setRequestedRunId("");setCleanupScope(scope); setPage("assistant"); if (!agentBlocked && !assistantBusy) setCleanupRequest(n => n + 1); };
   const [volumeBusy, setVolumeBusy] = useState(false);
   const volumeRequested = useRef(false);
   const [overviewReport, setReport] = useState<StorageReport | null>(null);
   const [volumeReport, setVolumeReport] = useState<StorageReport | null>(null);
   const [volumeCacheReady, setVolumeCacheReady] = useState(false);
+  const [restartSpace, setRestartSpace] = useState<RestartSpace | null>(null);
   const report = useMemo(()=>withCurrentDisk(page === "space" ? volumeReport ?? overviewReport : overviewReport ?? volumeReport,liveStatus),[page,volumeReport,overviewReport,liveStatus]);
   const apps = liveStatus?.appGroups ?? [];
   const [settings, setSettings] = useState<Settings>(structuredClone(defaultSettings));
@@ -101,6 +104,16 @@ function App() {
     void check();const timer=setInterval(()=>void check(),10000);
     return()=>{stopped=true;clearInterval(timer);};
   },[aiOpen]);
+  const [quota,setQuota]=useState<CleanupQuota|null>(null);
+  const quotaPrompted=useRef(false);
+  const refreshQuota=useCallback(()=>{void api.cleanupQuota().then(setQuota).catch(()=>setQuota(null));},[]);
+  useEffect(()=>{refreshQuota();const timer=setInterval(refreshQuota,30000);return()=>clearInterval(timer);},[refreshQuota]);
+  useEffect(()=>{
+    if(!quota)return;
+    if(quota.remaining<=0&&!quotaPrompted.current){quotaPrompted.current=true;setAiOpen(true);}
+    if(quota.remaining>0)quotaPrompted.current=false;
+  },[quota]);
+  const quotaBlocked=!!quota&&quota.remaining<=0;
   const [confirmation, setConfirmation] = useState<Confirmation | null>(null);
   const [toast, setToast] = useState<{ message: string; error: boolean } | null>(null);
   const [trashNotice,setTrashNotice]=useState<{key:string;bytes:number|null}|null>(null);
@@ -201,6 +214,13 @@ function App() {
   }, []);
   useEffect(() => {
     let live = true;
+    const refresh = () => { void api.restartSpace().then(value => { if (live) setRestartSpace(value); }).catch(() => {}); };
+    refresh();
+    const timer = setInterval(() => { if (document.visibilityState === "visible") refresh(); }, 60000);
+    return () => { live = false; clearInterval(timer); };
+  }, []);
+  useEffect(() => {
+    let live = true;
     api.state().then((state) => {
       if (live) { setSettings(state.settings); setSavedSettings(state.settings); setHistory(state.history); }
     }).catch((e) => notify(String(e), true));
@@ -239,7 +259,7 @@ function App() {
       if (page === "space") await scan();
     } catch (e) { notify(String(e), true); } finally { setActionBusy(false); }
   };
-  const runCare = () => {setCleanupDaily(true);setRequestedRunId("");setCleanupScope("");setPage("assistant");setCleanupRequest(n=>n+1);};
+  const runCare = () => {if (quotaBlocked) { setAiOpen(true); return; }setCleanupDaily(true);setRequestedRunId("");setCleanupScope("");setPage("assistant");setCleanupRequest(n=>n+1);};
   const profileLabel = settings.profiles.length === 1 ? profiles.find((p) => p.id === settings.profiles[0])?.name : `${settings.profiles.length} profiles`;
   const chooseFolder = async () => {
     try {
@@ -263,17 +283,18 @@ function App() {
     <main className="main-content">
       {!cleanupFocused && <><header className="topbar"><span><span className={`status-dot ${native ? "" : "demo-dot"}`} />{native ? "Your Mac · live local data" : "Interactive preview · example data"}</span><button className="text-button" onClick={() => setAiOpen(true)}><Sparkles size={16} />AI care</button></header>
       {!native && <div className="preview-banner"><CircleHelp size={16} /><span>This browser preview uses example data. Actions never change your Mac.</span></div>}</>}
-      {(!cleanupFocused||trashNotice) && <div className="status-dock">
+      {(!cleanupFocused||trashNotice||quotaBlocked) && <div className="status-dock">
+        {quotaBlocked&&quota&&<CleanupQuotaBanner quota={quota} onOpen={()=>setAiOpen(true)}/>}
         <div className="status-dock-row">
           {!cleanupFocused && maintenanceActivity && operationCollapsed && <button className="compact-operation" title={maintenanceActivity.detail} onClick={() => setCollapsedOperation(null)} aria-label={`Expand running operation: ${maintenanceActivity.title}`} aria-expanded={false} aria-controls="expanded-operation"><LoaderCircle className="spin" size={15}/><span role="status">{maintenanceActivity.title}</span><ChevronDown size={14}/></button>}
-          {!cleanupFocused && (metricsCollapsed || page === "assistant") && <LiveStatusBar status={liveStatus} navigate={setPage} compact onExpand={() => setMetricsCollapsed(false)}/>}
+          {!cleanupFocused && (metricsCollapsed || page === "assistant") && <LiveStatusBar status={liveStatus} navigate={setPage} compact onExpand={() => setMetricsCollapsed(false)} restartSpace={restartSpace}/>}
         </div>
-        {!cleanupFocused && !metricsCollapsed && page !== "assistant" && <div id="expanded-metrics" className="expanded-metrics"><LiveStatusBar status={liveStatus} navigate={setPage}/><button className="icon-button metrics-collapse" onClick={() => setMetricsCollapsed(true)} aria-label="Collapse metrics" aria-expanded={true} aria-controls="expanded-metrics"><X size={14}/><span className="metrics-collapse-tooltip" role="tooltip">Collapse metrics</span></button></div>}
+        {!cleanupFocused && !metricsCollapsed && page !== "assistant" && <div id="expanded-metrics" className="expanded-metrics"><LiveStatusBar status={liveStatus} navigate={setPage} restartSpace={restartSpace}/><button className="icon-button metrics-collapse" onClick={() => setMetricsCollapsed(true)} aria-label="Collapse metrics" aria-expanded={true} aria-controls="expanded-metrics"><X size={14}/><span className="metrics-collapse-tooltip" role="tooltip">Collapse metrics</span></button></div>}
         {!cleanupFocused && maintenanceActivity && !operationCollapsed && <div id="expanded-operation" className="global-maintenance" role="status" aria-live="polite"><span className="global-maintenance-icon"><LoaderCircle className="spin" size={23} /></span><div><strong>{maintenanceActivity.title}</strong><p>{maintenanceActivity.detail}</p><small>{blocksAgent(maintenanceActivity) ? "Other maintenance waits until this operation finishes" : "Your agent is available while the disk map updates"}{maintenanceActivity.startedAt ? ` · running for ${Math.max(0, Math.floor((clock / 1000 - maintenanceActivity.startedAt) / 60))}m ${Math.max(0, Math.floor(clock / 1000 - maintenanceActivity.startedAt) % 60)}s` : ""}</small></div>{nativeActivity?.cancellable&&<button className="text-button" onClick={()=>void api.cleanupStop().catch(e=>notify(String(e),true))}>Stop discovery <X size={15}/></button>}<button className="text-button" onClick={() => setPage(maintenanceActivity.page)}>View operation <ChevronRight size={16}/></button><button className="icon-button" title="Dismiss to status bar" aria-label="Dismiss operation notification to status bar" onClick={() => setCollapsedOperation(operationKey)}><X size={16}/></button></div>}
         {trashNotice&&<TrashCleanupNotice key={trashNotice.key} bytes={trashNotice.bytes} preview={!native} onOpen={()=>void api.openTrash().catch(error=>notify(String(error),true))} onDismiss={()=>setTrashNotice(null)}/>}
       </div>}
       {page === "home" && <>
-          <div className="page-heading"><div><h1>Room to do your thing.</h1><p>Your space, your apps, a little less clutter.</p></div><Button className="big-button assistant-clean-button" onClick={() => reviewWithAi()} disabled={agentBlocked || !!assistantBusy || capabilities.sandboxed}><Sparkles />Clean up my Mac</Button></div>
+          <div className="page-heading"><div><h1>Room to do your thing.</h1><p>Your space, your apps, a little less clutter.</p></div><Button className="big-button assistant-clean-button" onClick={() => reviewWithAi()} disabled={quotaBlocked || agentBlocked || !!assistantBusy || capabilities.sandboxed}><Sparkles />Clean up my Mac</Button></div>
         <section className="overview-grid" aria-label="Mac overview">
           <div className="space-panel panel"><div className="panel-heading"><h2>A little breathing room</h2><HardDrive size={20} /></div>
             {report ? <div className="space-visual"><StorageRing total={report.totalBytes} available={report.availableBytes} buckets={categoryGroups} /><div className="ring-legend">{categoryGroups.slice(0, 4).map((item) => <button key={item.id} onClick={() => { setView("category"); setPage("space"); setSelectedBucket(item.id); }}><i style={{ background: item.color }} /><span>{item.name}</span><strong>{formatBytes(item.bytes)}</strong></button>)}<span className="legend-note">{report.partial ? "Measured folders · partial coverage" : "Measured folders"}</span></div></div> : <div className="scan-placeholder"><LoaderCircle className="spin" size={35} /><p>Finding what takes up space…</p></div>}
@@ -293,9 +314,10 @@ function App() {
         {history.length > 0 && <History events={history.slice(0, 3)} recovered={recovered} />}
       </>}
       {page === "space" && <>
-        <div className="page-heading"><div><h1>Find your breathing room.</h1><p>Your whole disk, from big folders to individual files.</p>{volumeReport && <p className="space-cache-status">{volumeBusy ? "Refreshing in background · " : ""}Last updated {new Date(volumeReport.scannedAt * 1000).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}</p>}</div><div className="space-heading-actions"><Button variant="outline" className="big-button" disabled={actionBusy || volumeBusy || scanBusy} onClick={scanVolume}>{volumeBusy ? <LoaderCircle className="spin" /> : <RefreshCw />}{volumeBusy ? volumeReport ? "Refreshing…" : "Scanning…" : "Scan disk"}</Button><Button className="big-button" onClick={() => reviewWithAi()} disabled={capabilities.sandboxed}><Sparkles />Cleanup my Mac</Button></div></div>
+        <div className="page-heading"><div><h1>Find your breathing room.</h1><p>Your whole disk, from big folders to individual files.</p>{volumeReport && <p className="space-cache-status">{volumeBusy ? "Refreshing in background · " : ""}Last updated {new Date(volumeReport.scannedAt * 1000).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}</p>}</div><div className="space-heading-actions"><Button variant="outline" className="big-button" disabled={actionBusy || volumeBusy || scanBusy} onClick={scanVolume}>{volumeBusy ? <LoaderCircle className="spin" /> : <RefreshCw />}{volumeBusy ? volumeReport ? "Refreshing…" : "Scanning…" : "Scan disk"}</Button><Button className="big-button" onClick={() => reviewWithAi()} disabled={quotaBlocked || capabilities.sandboxed}><Sparkles />Cleanup my Mac</Button></div></div>
         {volumeBusy && !volumeReport && <div className="cleanup-progress" role="status"><LoaderCircle className="spin" /><span>Mapping the Data volume with df and du… Large disks may take up to three minutes.</span></div>}
         {liveStatus?.totalBytes!=null&&liveStatus.availableBytes!=null&&<p className="metric-note">Current disk: {formatBytes(liveStatus.availableBytes)} free of {formatBytes(liveStatus.totalBytes)} · {Math.round((1-liveStatus.availableBytes/liveStatus.totalBytes)*100)}% used. Folder sizes below are from the saved disk map.</p>}
+        <RestartSpaceCard data={restartSpace} />
         <SpaceView report={report} profiles={settings.profiles} view={view} onViewChange={setView} selected={selectedBucket} onSelect={setSelectedBucket} onReview={reviewWithAi} />
       </>}
       {page === "apps" && <>
@@ -321,23 +343,25 @@ function App() {
         <div className="settings-grid"><section className="settings-panel panel"><h2><Clock3 size={22} />A good moment</h2><label className="field-label">Start time<select value={settings.hour} onChange={(e) => setSettings({ ...settings, hour: Number(e.target.value) })}>{Array.from({ length: 24 }, (_, h) => <option key={h} value={h}>{String(h).padStart(2, "0")}:00</option>)}</select></label><label className="field-label">Give it a window<select value={settings.windowHours} onChange={(e) => setSettings({ ...settings, windowHours: Number(e.target.value) })}>{[1, 2, 3, 4, 6].map((h) => <option key={h} value={h}>{h} {h === 1 ? "hour" : "hours"}</option>)}</select></label><p className="metric-note">No waking your Mac. No overlapping runs. Opt into menu-bar operation to keep care running after closing the window. Quitting the app stops it.</p></section>
           <ApprovedLocationsPreview approvals={dailyApprovals} onViewAll={()=>setApprovalsOpen(true)} onRevoke={async key=>{await api.revokeDailyApproval(key);setDailyApprovals(current=>current.filter(approval=>approval.key!==key));refreshDaily();}} onError={error=>notify(String(error),true)}/></div>
         <section className="settings-panel panel folders-panel"><h2><FolderOpen size={22} />Where to look</h2><Button variant="outline" className="big-button folder-picker" onClick={chooseFolder}><FolderOpen />Choose a folder</Button><label className="field-label">Home-folder paths, one per line<textarea rows={3} value={settings.scanPaths.join("\n")} onChange={(e) => setSettings({ ...settings, scanPaths: e.target.value.split("\n").filter((p) => p.trim()).map((p) => p.trim()) })} placeholder={native ? "/Users/you/Projects\n/Users/you/Downloads" : "Example: /Users/you/Projects"} /></label><p className="metric-note">Use the folder picker to grant access. Grants are stored as security-scoped bookmarks for later scans. Leave blank for accessible common home folders; symlink descendants are not followed.</p></section>
-        <div className="care-strip"><span className="care-symbol"><Play size={25} /></span><div><h3>Want to check right now?</h3><p>Starts the same agent as the Assistant, with saved-approval cleanup enabled. Uses the same AI allowance.</p></div><Button className="big-button" disabled={agentBlocked || !!assistantBusy || dirty || capabilities.sandboxed} onClick={runCare}><Play />Run agent care</Button></div>
+        <div className="care-strip"><span className="care-symbol"><Play size={25} /></span><div><h3>Want to check right now?</h3><p>Starts the same agent as the Assistant, with saved-approval cleanup enabled. Uses the same AI allowance.</p></div><Button className="big-button" disabled={quotaBlocked || agentBlocked || !!assistantBusy || dirty || capabilities.sandboxed} onClick={runCare}><Play />Run agent care</Button></div>
         {dailyNotifications.filter(n=>n.pendingCount>0||n.needsAttention).map(n=><section className="settings-panel panel" key={n.runId}><h2>{n.title}</h2><p>{n.body}</p><Button variant="outline" disabled={!!assistantBusy} onClick={()=>reviewDaily(n.runId)}>Review agent findings</Button></section>)}
         <History events={history} recovered={recovered} />
       </>}
       {page === "activity" && <ActivityPage status={liveStatus} onRefresh={refreshLive} onReview={reviewWithAi} navigation={panelDestination?.page==="activity"?panelDestination:undefined} navigationRequest={panelRequest}/>}
-      {!cleanupFocused&&dailyNotice&&<section className="global-maintenance" role="status"><span className="global-maintenance-icon"><Leaf size={23}/></span><div><strong>{dailyNotice.title}</strong><p>{dailyNotice.body}</p></div><Button variant="outline" disabled={!!assistantBusy} onClick={()=>reviewDaily(dailyNotice.runId)}>Review findings</Button><button className="icon-button" aria-label="Dismiss daily care notification" onClick={()=>void api.markDailyNotificationSeen(dailyNotice.runId).then(refreshDaily)}><X size={16}/></button></section>}
-      <CleanupAssistant active={page === "assistant"} request={cleanupRequest} requestScope={cleanupScope} requestDaily={cleanupDaily} requestedRunId={requestedRunId} runReviewRequest={runReviewRequest} profiles={settings.profiles} apps={apps} disabled={capabilities.sandboxed} operationRunning={agentBlocked} onBusyChange={setAssistantBusy} onFocusChange={setAssistantFocused} navigate={setPage} onCompleted={(run,isNew)=>{const moved=trashCompletion(run);if(isNew&&moved)setTrashNotice({key:`${run.id}:${run.outcomes.length}`,bytes:moved.bytes});volumeRequested.current=false;refreshDaily();void loadState();void scan();}} />
+      {!cleanupFocused&&dailyNotice&&<section className="global-maintenance daily-attention" role="status"><span className="global-maintenance-icon"><Leaf size={23}/></span><div><strong>{dailyNotice.title}</strong><p>{dailyNotice.body}</p></div><Button variant="outline" disabled={!!assistantBusy} onClick={()=>reviewDaily(dailyNotice.runId)}>Review findings</Button><button className="icon-button" aria-label="Dismiss daily care notification" onClick={()=>void api.markDailyNotificationSeen(dailyNotice.runId).then(refreshDaily)}><X size={16}/></button></section>}
+      <CleanupAssistant active={page === "assistant"} request={cleanupRequest} requestScope={cleanupScope} requestDaily={cleanupDaily} requestedRunId={requestedRunId} runReviewRequest={runReviewRequest} profiles={settings.profiles} apps={apps} disabled={capabilities.sandboxed} quotaBlocked={quotaBlocked} operationRunning={agentBlocked} onBusyChange={setAssistantBusy} onFocusChange={setAssistantFocused} navigate={setPage} onCompleted={(run,isNew)=>{const moved=trashCompletion(run);if(isNew&&moved)setTrashNotice({key:`${run.id}:${run.outcomes.length}`,bytes:moved.bytes});volumeRequested.current=false;refreshDaily();refreshQuota();void loadState();void scan();}} />
       <footer className="main-footer" hidden={cleanupFocused}><span><ShieldCheck size={15} />Local measurements. Clear choices.</span><AppUpdates hidden={cleanupFocused} blocked={scanBusy || volumeBusy || actionBusy || !!assistantBusy || !!nativeActivity}/></footer>
     </main>
     <Dialog open={profileOpen} onOpenChange={setProfileOpen}><DialogContent className="room-dialog"><DialogTitle>Make yourself at home.</DialogTitle><DialogDescription>Choose how you use your Mac. Mix profiles; every feature stays included.</DialogDescription><div className="profile-options">{profiles.map(({ id, name, description, icon: Icon }) => <button key={id} className={settings.profiles.includes(id) ? "chosen" : ""} aria-pressed={settings.profiles.includes(id)} onClick={() => setSettings((current) => ({ ...current, profiles: current.profiles.includes(id) ? current.profiles.length > 1 ? current.profiles.filter((p) => p !== id) : current.profiles : [...current.profiles, id] }))}><Icon size={26} /><span><strong>{name}</strong><small>{description}</small></span>{settings.profiles.includes(id) && <Check size={21} />}</button>)}</div><Button className="big-button" disabled={actionBusy} onClick={async () => { await save(); }}>Save profiles</Button><button className="text-button" onClick={() => setProfileOpen(false)}>Back to my Mac</button></DialogContent></Dialog>
     <Dialog open={aiOpen} onOpenChange={setAiOpen}><DialogContent className="room-dialog ai-dialog"><div className="ai-care-eyebrow"><Sparkles size={20} aria-hidden="true"/>AI Care</div><DialogTitle>Automatic daily cleanup</DialogTitle><DialogDescription className="ai-care-intro">Instead of starting every cleanup yourself, let AI care check your Mac each day. It remembers what you’ve approved and asks you to review anything new.</DialogDescription>
       <ul className="ai-care-benefits">
+        <li><Sparkles size={20}/><div><strong>100 cleanups every month</strong><p>Use them whenever you like, including daily care. Free accounts get 4 cleanups a month; the allowance resets each calendar month.</p></div></li>
         <li><Clock3 size={20}/><div><strong>No need to remember to run cleanup</strong><p>Daily care checks at your chosen time and cleans only the locations you’ve already approved.</p></div></li>
         <li><Search size={20}/><div><strong>Find new cleanup opportunities</strong><p>Looks for temporary app files and other cleanup opportunities as you use your Mac. New locations wait for your approval.</p></div></li>
         <li><Activity size={20}/><div><strong>See where disk space is going</strong><p>Recent file changes and disk activity help your agent identify folders that may be filling up again, so you know what needs attention.</p></div></li>
       </ul>
       <p className="metric-note ai-care-schedule-note">Runs while Breathing Room is open, including in the menu bar. Busy or low-battery Macs may run later.</p>
+      {quota&&<p className="metric-note ai-care-allowance" role="status">{quota.plan==="ai_care"?`${quota.remaining} of ${quota.limit} AI Care cleanups left this month.`:`${quota.remaining} of ${quota.limit} free cleanups left this month.`}{quota.remaining<=0&&quota.resetsAt?` Resets ${new Date(quota.resetsAt*1000).toLocaleDateString(undefined,{month:"short",day:"numeric"})}.`:""}</p>}
       {aiCareActive?<p className="ai-care-active" role="status">Your AI Care subscription is active.</p>:<div className="ai-care-plan-options" aria-label="Subscribe to AI care">
         <Button className="big-button ai-care-subscribe" disabled={!billingConfig.liveCheckoutEnabled||!aiCareCheckoutUrl} onClick={()=>{if(aiCareCheckoutUrl)void api.openAiCareCheckout(aiCareCheckoutUrl).catch(error=>notify(String(error),true));}}>Monthly · $5 <ArrowUpRight size={17}/></Button>
         <Button className="big-button ai-care-subscribe" disabled={!billingConfig.liveCheckoutEnabled||!aiCareAnnualUrl} onClick={()=>{if(aiCareAnnualUrl)void api.openAiCareCheckout(aiCareAnnualUrl).catch(error=>notify(String(error),true));}}>Yearly · $50 <ArrowUpRight size={17}/></Button>

@@ -1,4 +1,5 @@
 pub mod model;
+pub mod cli;
 pub mod cleanup_session;
 mod cleanup_discovery;
 mod discovery_inventory;
@@ -28,6 +29,7 @@ mod state;
 pub mod storage;
 mod system;
 pub mod daily_care;
+pub mod volatile_space;
 mod update_gate;
 #[cfg(feature = "gui")]
 mod updates;
@@ -107,6 +109,10 @@ pub(crate) mod gui {
     #[tauri::command]
     async fn cached_volume() -> Result<Option<serde_json::Value>, String> {
         tauri::async_runtime::spawn_blocking(disk_map_cache::load).await.map_err(|error|error.to_string())?
+    }
+    #[tauri::command]
+    async fn restart_space() -> Result<serde_json::Value, String> {
+        tauri::async_runtime::spawn_blocking(volatile_space::inspect).await.map_err(|error|error.to_string())
     }
     #[tauri::command]
     async fn scan_volume(app: tauri::AppHandle, engine: State<'_, Shared>) -> Result<serde_json::Value, String> {
@@ -189,6 +195,8 @@ pub(crate) mod gui {
     }
     #[tauri::command]
     async fn ai_care_billing_status()->Result<serde_json::Value,String>{tauri::async_runtime::spawn_blocking(remote_agent::billing_status).await.map_err(|e|e.to_string())?}
+    #[tauri::command]
+    async fn cleanup_quota()->Result<serde_json::Value,String>{tauri::async_runtime::spawn_blocking(remote_agent::quota).await.map_err(|e|e.to_string())?}
     #[tauri::command]
     async fn open_ai_care_portal()->Result<(),String>{
         tauri::async_runtime::spawn_blocking(||{let url=remote_agent::billing_portal()?;let status=std::process::Command::new("/usr/bin/open").arg(url).status().map_err(|_|"Could not open subscription management")?;if status.success(){Ok(())}else{Err("Could not open subscription management".to_string())}}).await.map_err(|e|e.to_string())?
@@ -644,6 +652,7 @@ pub(crate) mod gui {
                 scan_storage,
                 scan_volume,
                 cached_volume,
+                restart_space,
                 browse_storage,
                 cancel_scan,
                 choose_folder,
@@ -665,7 +674,7 @@ pub(crate) mod gui {
                 trash_file,
                 cleanup_discover, cleanup_assess, cleanup_execute, cleanup_catalog, cleanup_update_catalog, cleanup_approve, cleanup_agent_status, cleanup_last_result, cleanup_execution_progress,
                 open_trash, assistant_message, agent_cleanup_connection, agent_cleanup_inspect, agent_cleanup_inventory, agent_cleanup_state, agent_cleanup_approve, agent_cleanup_cancel,
-                agent_cleanup_latest, agent_cleanup_resume, agent_auth_start, agent_auth_poll, agent_auth_logout, agent_api_configure, open_ai_care_checkout, ai_care_billing_status, open_ai_care_portal,
+                agent_cleanup_latest, agent_cleanup_resume, agent_auth_start, agent_auth_poll, agent_auth_logout, agent_api_configure, open_ai_care_checkout, ai_care_billing_status, cleanup_quota, open_ai_care_portal,
                 cleanup_progress, cleanup_findings, cleanup_stop
             ])
             .build(tauri::generate_context!())

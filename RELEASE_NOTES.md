@@ -1,6 +1,26 @@
-# Breathing Room 0.1.0-preview.1
+# Breathing Room 0.1.0-preview.2
 
 **Preview build for testing and development. Not a production-ready release.**
+
+## What's new
+
+- **Monthly cleanup allowance.** Free accounts get 4 agent cleanups per calendar
+  month. AI Care includes 100 cleanups per month. One cleanup is one new agent
+  run; reviewing an existing plan, local scans, and approving saved actions do
+  not spend another slot. The allowance resets on the 1st of each month.
+- **Clear allowance prompts.** When the allowance is used up, a top banner explains
+  the limit and remaining reset date, and the app offers AI Care. Local tools
+  still work without a subscription.
+- **Restart guidance for swap.** When swap in use (or swap files on disk) reaches
+  2 GB, the Space view shows a visible recommendation to restart. macOS rebuilds
+  swap and the sleep image at boot; Breathing Room never deletes them while macOS
+  is using them.
+- **Command-line diagnostics.** The same Rust package now offers a read-only CLI
+  for storage scans, app/process summaries, and disk measurements. Run
+  `breathing-room --help` for the available commands.
+- **More reliable local inspection.** Additional restart-space measurement,
+  process and inventory improvements, and a more resilient inference fallback
+  chain for hosted AI Care.
 
 ## Download
 
@@ -34,8 +54,9 @@
   `/usr/local/bin/python3`, or `/usr/bin/python3`.
 - In-app updates are configured with a pinned public key and HTTPS preview feed.
   Downloads, installation, and restart require your approval. Update signatures
-  do not mean the app is Apple-notarized. This first release establishes the feed;
-  a cross-version installation will be verified when a newer release exists.
+  do not mean the app is Apple-notarized. This preview continues the existing
+  feed; cross-version installation from the previous preview still needs a real
+  installed upgrade test.
 - Scheduled care requires the app to remain running, including in the menu bar.
   Busy or low-battery Macs may run later.
 - The direct-distribution build is not App Sandbox restricted. macOS privacy

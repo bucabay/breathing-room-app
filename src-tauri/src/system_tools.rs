@@ -22,6 +22,7 @@ pub(crate) fn inspect(home:&Path,name:&str,args:&Value)->Result<Value,String>{
             let path=args["path"].as_str().map(str::to_owned).unwrap_or_else(||home.to_string_lossy().into_owned());
             crate::recent_space::metadata(home,&path,&json!({"hours":args["hours"].as_u64().unwrap_or(24),"seconds":5,"maxEntries":50000,"limit":20}))
         },
+        "inspect_restart_space"=>Ok(crate::volatile_space::inspect_at(home)),
         _=>Err("Unknown read-only system tool".into())
     }
 }

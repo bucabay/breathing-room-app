@@ -13,6 +13,24 @@ export interface Candidate {
   id: string; name: string; path: string; bytes: number; description: string; method: string; executable: boolean;
 }
 export interface LargeFile { path: string; bytes: number; identity: string; removable: boolean }
+export interface RestartSpaceItem {
+  id: string; name: string; bytes: number | null; files: number; description: string;
+}
+export interface RestartSpace {
+  timestamp: number; totalBytes: number; availableBytes: number;
+  bootedAt: number | null; uptimeSeconds: number | null;
+  swap: { totalBytes: number | null; usedBytes: number | null; freeBytes: number | null };
+  swapFiles: number; swapFileBytes: number; sleepImageBytes: number;
+  hibernateMode: number | null; localSnapshotCount: number;
+  memoryPressure: { level: number | null; label: string };
+  restartReclaimBytes: number; estimatedAvailableAfterRestartBytes: number;
+  items: RestartSpaceItem[];
+  lastRestart: {
+    previousBootAt: number; availableBeforeBytes: number; availableAfterBytes: number;
+    freedBytes: number; volatileBeforeBytes: number; observedBeforeAt: number;
+  } | null;
+  warnings: string[]; note: string;
+}
 export interface Capabilities { sandboxed: boolean; cacheCommands: boolean; cloudAi: boolean }
 export interface StorageReport {
   directories?: { path: string; name: string; parent: string; bytes: number; partial: boolean }[];

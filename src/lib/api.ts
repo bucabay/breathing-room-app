@@ -1,12 +1,12 @@
 import { invoke, isTauri } from "@tauri-apps/api/core";
 import { demoApps, demoReport, demoState } from "./demo";
-import type { AppGroup, Capabilities, LargeFile, Process, SavedState, Settings, StorageReport } from "./model";
+import type { AppGroup, Capabilities, LargeFile, Process, RestartSpace, SavedState, Settings, StorageReport } from "./model";
 import type { Profile } from "./model";
 import { bundledCatalog, previewPlan, type CleanupPlan, type CleanupResult, type DiscoveryProgress } from "./cleanup";
 import { demoLive, demoLog, type LiveStatus, type ActivityLog, type MonitorConfig } from "./live";
 import type { AgentCleanupConnection, AgentCleanupRun, DiscoveryPolicy, InventoryPage, DailyApproval, DailyNotification } from "./agent-cleanup";
 import { metricsCache } from "./metrics-cache";
-import { stripeCheckoutUrl, type AiCareBillingStatus } from "./ai-care";
+import { stripeCheckoutUrl, previewQuota, type AiCareBillingStatus, type CleanupQuota } from "./ai-care";
 import billingConfig from "../billing-config.json";
 import type { AssistantMessage, AssistantReply } from "./assistant";
 export const native = isTauri();
@@ -31,6 +31,7 @@ export const api = {
     }
   },
   async aiCareBillingStatus():Promise<AiCareBillingStatus>{return native?invoke("ai_care_billing_status"):{mode:"live",active:false};},
+  async cleanupQuota():Promise<CleanupQuota>{return native?invoke("cleanup_quota"):structuredClone(previewQuota);},
   async openAiCarePortal():Promise<void>{if(native)await invoke("open_ai_care_portal");else window.open("https://breathing-room-api.worker-sendhub.workers.dev/billing/start?plan=manage","_blank","noopener,noreferrer");},
   async agentCleanupConnection(): Promise<AgentCleanupConnection> {
     return native ? invoke("agent_cleanup_connection") : { available: true, reachable: true, authenticated: true, authConfigured: true, models: ["@cf/qwen/qwen3-30b-a3b-fp8"], defaultModel: "@cf/qwen/qwen3-30b-a3b-fp8", baseUrl: "https://example.workers.dev", message: "Interactive preview · no agent request or Mac changes" };
@@ -128,6 +129,29 @@ export const api = {
     report.directories = report.groups.map(g => ({ path: `/Users/example/${g.id}`, name: g.name, parent: "/", bytes: g.bytes, partial: false }));
     try { localStorage.setItem("breathing-room-disk-map-preview", JSON.stringify({ version: 1, report })); } catch { /* Preview storage can be unavailable. */ }
     return report;
+  },
+  async restartSpace(): Promise<RestartSpace> {
+    if (native) return invoke<RestartSpace>("restart_space");
+    await wait(120);
+    const report = demoReport;
+    const swapFileBytes = 4.75e9, sleepImageBytes = 2.0e9;
+    return {
+      timestamp: Math.floor(Date.now()/1000), totalBytes: report.totalBytes, availableBytes: report.availableBytes,
+      bootedAt: Math.floor(Date.now()/1000) - 7200, uptimeSeconds: 7200,
+      swap: { totalBytes: 4.86e9, usedBytes: 4.24e9, freeBytes: 0.62e9 },
+      swapFiles: 6, swapFileBytes, sleepImageBytes, hibernateMode: 3, localSnapshotCount: 0,
+      memoryPressure: { level: 1, label: "normal" },
+      restartReclaimBytes: swapFileBytes + sleepImageBytes,
+      estimatedAvailableAfterRestartBytes: report.availableBytes + swapFileBytes + sleepImageBytes,
+      items: [
+        { id: "swap", name: "Memory swap", bytes: swapFileBytes, files: 6, description: "Paging space macOS wrote to disk while RAM was under pressure. It is rebuilt at boot, not left behind by cleanup." },
+        { id: "sleep-image", name: "Sleep image", bytes: sleepImageBytes, files: 1, description: "Hibernation copy of memory. macOS rewrites it after a restart, and its size follows installed RAM and hibernation mode." },
+        { id: "snapshots", name: "Local snapshots", bytes: null, files: 0, description: "Time Machine may release these under disk pressure or after a restart. Their size is not reliably attributable, so it is not counted here." },
+      ],
+      lastRestart: { previousBootAt: Math.floor(Date.now()/1000) - 90000, availableBeforeBytes: report.availableBytes - 6.4e9, availableAfterBytes: report.availableBytes, freedBytes: 6.4e9, volatileBeforeBytes: 6.1e9, observedBeforeAt: Math.floor(Date.now()/1000) - 90060 },
+      warnings: ["Interactive preview · illustrative restart measurements only"],
+      note: "Swap and the sleep image are disk that macOS reuses while the Mac runs. They are not clutter, and Breathing Room does not delete them. A restart is the supported way to release them; how much returns depends on memory pressure and what else changes before the next boot.",
+    };
   },
   async cleanupDiscover(prompt: string, scope: string, profiles: Profile[], jev: boolean): Promise<CleanupPlan> {
     if (native) return invoke("cleanup_discover", { prompt, scope, profiles, jev });

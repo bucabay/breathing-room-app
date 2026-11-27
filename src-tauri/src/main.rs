@@ -43,24 +43,16 @@ fn main() {
                 Err(error) => { eprintln!("{error}"); std::process::exit(1); }
             }
         }
-        Some("scan") => {
-            let mut settings = breathing_room_lib::model::Settings::default();
-            settings.scan_paths = args.iter().skip(2).cloned().collect();
-            match breathing_room_lib::storage::scan(&settings, &std::sync::atomic::AtomicBool::new(false)) {
-                Ok(report) => println!("{}", serde_json::to_string_pretty(&report).unwrap()),
-                Err(error) => { eprintln!("{error}"); std::process::exit(1); }
-            }
-        }
-        Some("apps") => match breathing_room_lib::processes::groups() {
-            Ok(report) => println!("{}", serde_json::to_string_pretty(&report).unwrap()),
-            Err(error) => { eprintln!("{error}"); std::process::exit(1); }
-        },
-        Some(_) => println!("Breathing Room\n  scan [home-folder-paths…] — bounded read-only storage scan\n  apps — read-only app/process groups\n  no arguments — desktop app"),
+        Some(_) => std::process::exit(breathing_room_lib::cli::run()),
         None => {
             #[cfg(feature = "gui")]
             breathing_room_lib::run();
             #[cfg(not(feature = "gui"))]
-            println!("Use scan or apps; build with the gui feature for the desktop app.");
+            {
+                use clap::CommandFactory;
+                breathing_room_lib::cli::Cli::command().print_help().ok();
+                println!();
+            }
         }
     }
 }

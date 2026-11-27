@@ -83,6 +83,10 @@ The first scan can take several minutes and may not cover protected locations.
 Choose the profiles that match how you use your Mac from the profile control in
 the sidebar. Profiles focus findings; a large file is not automatically disposable.
 
+When swap in use (or swap files on disk) reaches 2 GB, Space shows a visible
+recommendation to restart. macOS rebuilds swap and the sleep image at boot;
+Breathing Room never deletes them while macOS is using them.
+
 ### 2. Review a cleanup plan
 
 Open **AI Assistant** or choose **Clean up my Mac**. Sign in when prompted, then
@@ -134,8 +138,8 @@ and installing an available update require approval. Signatures are verified
 before installation; **Restart now** is a separate action. Installation is blocked
 while an agent or maintenance operation is active.
 
-The first preview establishes the signed update feed. A full upgrade from this
-preview to a later version still needs cross-version release validation. Updater
+This preview continues the signed update feed. A full upgrade from the previous
+preview to this one still needs a real cross-version release validation. Updater
 signatures are separate from Apple's Developer ID signing and notarization.
 
 ## Free app and optional AI Care
@@ -143,6 +147,9 @@ signatures are separate from Apple's Developer ID signing and notarization.
 The core app is free to download and use. Local storage views, inspection/manual
 tools, and CPU/memory monitoring do not require an AI Care subscription.
 Agent-assisted workflows require an authenticated hosted service connection.
+Free accounts include 4 agent cleanups per calendar month; AI Care includes 100.
+One cleanup is one new agent run. Reviewing an existing plan, local scans, and
+approving saved actions do not spend another slot.
 
 **AI Care is optional: $5 USD/month or $50 USD/year.** It is the ongoing-care offer
 for scheduled approved cleanup, new cleanup opportunities, and AI-assisted

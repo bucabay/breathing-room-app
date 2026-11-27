@@ -45,8 +45,57 @@ fn insert(db:&rusqlite::Connection,id:&str,home:&Path,path:&Path,state:&str)->Re
     db.execute("INSERT OR IGNORE INTO discovery_inventory VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",params![id,path.to_string_lossy(),path.parent().unwrap_or(path).to_string_lossy(),kind,category(home,path),if meta.is_file(){meta.blocks().saturating_mul(512).min(i64::MAX as u64)}else{0},if meta.is_file(){meta.len().min(i64::MAX as u64)}else{0},meta.mtime().max(0),meta.dev() as i64,meta.ino() as i64,meta.uid()==unsafe{libc::getuid()},state]).map_err(|e|e.to_string())?;Ok(())
 }
 
+/// Every inspection writes a new immutable snapshot keyed by scan id; that is why the rows are
+/// inserts rather than updates. A snapshot has to stay stable so an interrupted scan can resume
+/// from its own checkpoint, and so two scans can be compared without one overwriting the other.
+/// What grew without bound was the number of *retained* snapshots, not the write pattern. Keep
+/// the newest few plus any scan a live run still owns, and delete older rows in small batches so
+/// the write lock is only ever held for one batch — housekeeping must never stall a conversation.
+const RETAINED_SCANS: usize = 5;
+const RETENTION_BATCH: usize = 5_000;
+const RETENTION_BUDGET: usize = 60;
+
+pub fn retention(home:&Path,current:&str)->Result<u64,String>{
+    let mut db=runtime_store::open(home)?;
+    let mut keep:HashSet<String>=HashSet::new();
+    keep.insert(current.to_owned());
+    {
+        let mut query=db.prepare("SELECT id FROM agent_runs WHERE json_extract(payload,'$.status') IN ('inspecting','executing')").map_err(|e|e.to_string())?;
+        let rows=query.query_map([],|row|row.get::<_,String>(0)).map_err(|e|e.to_string())?;
+        for row in rows{keep.insert(row.map_err(|e|e.to_string())?);}
+    }
+    let scans:Vec<String>={
+        let mut query=db.prepare("SELECT id FROM discovery_scans ORDER BY updated_at DESC,rowid DESC").map_err(|e|e.to_string())?;
+        let rows=query.query_map([],|row|row.get::<_,String>(0)).map_err(|e|e.to_string())?;
+        rows.collect::<Result<Vec<_>,_>>().map_err(|e|e.to_string())?
+    };
+    for id in scans.iter().take(RETAINED_SCANS){keep.insert(id.clone());}
+    let mut deleted=0u64;let mut batches=0usize;
+    for id in scans.iter().filter(|id|!keep.contains(*id)){
+        let mut complete=true;
+        loop{
+            if batches>=RETENTION_BUDGET{complete=false;break;}
+            let tx=db.transaction_with_behavior(rusqlite::TransactionBehavior::Immediate).map_err(|e|e.to_string())?;
+            let inventory=tx.execute("DELETE FROM discovery_inventory WHERE rowid IN (SELECT rowid FROM discovery_inventory WHERE scan_id=?1 LIMIT ?2)",params![id,RETENTION_BATCH]).map_err(|e|e.to_string())?;
+            let pending=tx.execute("DELETE FROM discovery_pending WHERE rowid IN (SELECT rowid FROM discovery_pending WHERE scan_id=?1 LIMIT ?2)",params![id,RETENTION_BATCH]).map_err(|e|e.to_string())?;
+            tx.commit().map_err(|e|e.to_string())?;
+            batches+=1;deleted+=(inventory+pending) as u64;
+            if inventory+pending<RETENTION_BATCH{break;}
+        }
+        // The snapshot row is only removed once its rows are gone, so an interrupted prune is
+        // retried from the same place instead of leaving orphans behind.
+        if !complete{break;}
+        db.execute("DELETE FROM discovery_scans WHERE id=?",params![id]).map_err(|e|e.to_string())?;
+    }
+    if deleted>0{let _=db.execute_batch("PRAGMA wal_checkpoint(TRUNCATE);");}
+    Ok(deleted)
+}
+
 pub fn scan(home:&Path,id:&str,roots:Vec<PathBuf>,seconds:u64,max_entries:usize)->Result<Summary,String>{
     let mut db=runtime_store::open(home)?;
+    // Housekeeping first, then the new snapshot. Bounded and idempotent, so a prune that runs
+    // out of budget simply resumes on the next inspection.
+    let _=retention(home,id);
     let saved:Option<String>=db.query_row("SELECT payload FROM discovery_scans WHERE id=?",[id],|r|r.get(0)).optional().map_err(|e|e.to_string())?;
     let mut checkpoint=if let Some(saved)=saved{serde_json::from_str::<Checkpoint>(&saved).map_err(|_|"Invalid inventory checkpoint")?}else{
         let mut distinct=vec![];
@@ -146,5 +195,51 @@ pub fn list(home:&Path,id:&str,offset:usize,limit:usize,category:Option<&str>,ki
         let page=list(&h,"fixture",0,50,None,"file",0).unwrap();assert_eq!(page["totalEntries"],71);assert_eq!(page["nextOffset"],50);
         assert_eq!(page["entries"][0]["severity"],"critical");assert_eq!(page["entries"][0]["recoverability"],"not-rebuildable");assert_eq!(page["entries"][0]["cleanupEligible"],false);
         assert_eq!(list(&h,"fixture",50,50,None,"file",0).unwrap()["entries"].as_array().unwrap().len(),21);fs::remove_dir_all(h).unwrap();
+    }
+    #[test]fn retention_keeps_recent_and_live_scans_and_deletes_old_snapshots_in_batches(){
+        let h=fs::canonicalize(std::env::temp_dir()).unwrap().join(format!("br-retention-{}-{}",std::process::id(),now()));
+        fs::create_dir_all(&h).unwrap();
+        let db=runtime_store::open(&h).unwrap();
+        for scan in 0..9u64{
+            db.execute("INSERT INTO discovery_scans VALUES(?,?,?)",params![format!("scan-{scan}"),"{}",scan+1]).unwrap();
+            for file in 0..12u64{
+                db.execute("INSERT INTO discovery_inventory VALUES(?1,?2,'/fixture',?3,'other',?4,?4,0,1,1,1,'complete')",params![format!("scan-{scan}"),format!("/fixture/{file}"),if file%3==0{"file"}else{"directory"},file]).unwrap();
+            }
+            db.execute("INSERT INTO discovery_pending VALUES(?1,'/fixture',NULL,1)",params![format!("scan-{scan}")]).unwrap();
+        }
+        // An old scan is still owned by a running cleanup, so it must survive even though newer
+        // snapshots exist.
+        db.execute("INSERT INTO agent_runs VALUES('scan-0','{\"status\":\"inspecting\"}',0,0)",[]).unwrap();
+        drop(db);
+        assert!(retention(&h,"scan-8").unwrap()>0);
+        let db=runtime_store::open(&h).unwrap();
+        let kept=|id:&str|db.query_row("SELECT COUNT(*) FROM discovery_inventory WHERE scan_id=?",[id],|r|r.get::<_,u64>(0)).unwrap();
+        for id in ["scan-0","scan-4","scan-5","scan-6","scan-7","scan-8"]{assert_eq!(kept(id),12,"{id} should be retained");}
+        for id in ["scan-1","scan-2","scan-3"]{assert_eq!(kept(id),0,"{id} should be pruned");}
+        assert_eq!(db.query_row("SELECT COUNT(*) FROM discovery_pending WHERE scan_id IN ('scan-1','scan-2','scan-3')",[],|r|r.get::<_,u64>(0)).unwrap(),0);
+        assert_eq!(db.query_row("SELECT COUNT(*) FROM discovery_pending WHERE scan_id='scan-8'",[],|r|r.get::<_,u64>(0)).unwrap(),1);
+        assert_eq!(db.query_row("SELECT COUNT(*) FROM discovery_scans WHERE id IN ('scan-1','scan-2','scan-3')",[],|r|r.get::<_,u64>(0)).unwrap(),0);
+        // Second pass has nothing left to do and must not disturb retained evidence.
+        assert_eq!(retention(&h,"scan-8").unwrap(),0);
+        drop(db);
+        fs::remove_dir_all(h).unwrap();
+    }
+    #[test]fn retention_batches_never_delete_a_retained_neighbours_rows(){
+        let h=fs::canonicalize(std::env::temp_dir()).unwrap().join(format!("br-retention-mix-{}-{}",std::process::id(),now()));
+        fs::create_dir_all(&h).unwrap();
+        let db=runtime_store::open(&h).unwrap();
+        for scan in 0..8u64{
+            db.execute("INSERT INTO discovery_scans VALUES(?,?,?)",params![format!("scan-{scan}"),"{}",scan+1]).unwrap();
+            for file in 0..7u64{db.execute("INSERT INTO discovery_inventory VALUES(?1,?2,'/fixture','file','other',?3,?3,0,1,1,1,'complete')",params![format!("scan-{scan}"),format!("/fixture/{file}"),file+10]).unwrap();}
+        }
+        drop(db);
+        let deleted=retention(&h,"scan-2").unwrap();
+        let db=runtime_store::open(&h).unwrap();
+        let rows=|id:&str|db.query_row("SELECT COUNT(*) FROM discovery_inventory WHERE scan_id=?",[id],|r|r.get::<_,u64>(0)).unwrap();
+        for id in ["scan-0","scan-1"]{assert_eq!(rows(id),0,"{id} should be pruned");}
+        for id in ["scan-2","scan-3","scan-4","scan-5","scan-6","scan-7"]{assert_eq!(rows(id),7,"{id} should be retained");}
+        assert_eq!(deleted,14);
+        drop(db);
+        fs::remove_dir_all(h).unwrap();
     }
 }

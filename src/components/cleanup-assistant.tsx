@@ -14,8 +14,8 @@ import { pendingCleanupActions, defaultDiscoveryPolicy } from "@/lib/agent-clean
 import { reviewStorageLocations } from "@/lib/review-storage";
 import { formatBytes, type AppGroup, type Page, type Profile } from "@/lib/model";
 
-export function CleanupAssistant({ active, request, requestScope, requestDaily, requestedRunId, runReviewRequest, disabled: unsupported, operationRunning, onBusyChange, onFocusChange, navigate, onCompleted }: {
-  active: boolean; request: number; requestScope: string; profiles: Profile[]; apps: AppGroup[]; disabled: boolean;
+export function CleanupAssistant({ active, request, requestScope, requestDaily, requestedRunId, runReviewRequest, disabled: unsupported, quotaBlocked, operationRunning, onBusyChange, onFocusChange, navigate, onCompleted }: {
+  active: boolean; request: number; requestScope: string; profiles: Profile[]; apps: AppGroup[]; disabled: boolean; quotaBlocked?: boolean;
   operationRunning: boolean; onBusyChange: (title: string) => void; navigate: (page: Page) => void; onCompleted: (run:AgentCleanupRun,newCompletion:boolean) => void;
   onFocusChange: (focused: boolean) => void;
   requestDaily?:boolean;requestedRunId?:string;runReviewRequest?:number;
@@ -130,6 +130,7 @@ export function CleanupAssistant({ active, request, requestScope, requestDaily, 
   }, [runId]);
   const inspect = async (text = input, scope = "",daily=false) => {
     if (busy || disabled || !text.trim()) return;
+    if (quotaBlocked) { setError("You’ve used all your cleanups this month. Get AI Care for 100 cleanups a month, or wait for your free allowance to reset."); return; }
     if (loginRequired) { setLoginOpen(true); navigate("assistant"); return; }
     if (!connection?.available) { setError(connection?.message || "The agent connection is unavailable."); return; }
     const current = ++generation.current;
@@ -140,6 +141,7 @@ export function CleanupAssistant({ active, request, requestScope, requestDaily, 
   };
   const ask = async(text=input)=>{
     if(busy||disabled||!text.trim())return;
+    if(quotaBlocked){setError("You’ve used all your cleanups this month. Get AI Care for 100 cleanups a month, or wait for your free allowance to reset.");return;}
     if(loginRequired){setLoginOpen(true);navigate("assistant");return;}
     if(!connection?.available){setError(connection?.message||"The agent connection is unavailable.");return;}
     const current=++generation.current;restored.current=true;setConversing(true);setError("");navigate("assistant");
@@ -183,8 +185,8 @@ export function CleanupAssistant({ active, request, requestScope, requestDaily, 
   return <>
     {!active && !focused && <div className="assistant-dock"><form className="assistant-composer" onSubmit={e => { e.preventDefault(); setInput(dockInput); void ask(dockInput); setDockInput(""); }}>
       <button type="button" className="assistant-avatar" aria-label="Open Cleanup AI Assistant" onClick={() => navigate("assistant")}><Bot size={25}/></button>
-      <input aria-label="Ask your Cleanup AI Assistant" placeholder={loginRequired ? "Sign in to use your agent…" : "Ask a question or investigate your Mac…"} value={dockInput} onChange={e => setDockInput(e.target.value)} disabled={!!busy || disabled || loginRequired}/>
-      {loginRequired ? <button type="button" className="assistant-dock-login" onClick={() => { navigate("assistant"); setLoginOpen(true); }}>Sign in</button> : <button className="assistant-send" aria-label="Send AI assistant request" disabled={!dockInput.trim() || !!busy || disabled}><Send size={20}/></button>}
+      <input aria-label="Ask your Cleanup AI Assistant" placeholder={quotaBlocked ? "Monthly cleanups used — get AI Care" : loginRequired ? "Sign in to use your agent…" : "Ask a question or investigate your Mac…"} value={dockInput} onChange={e => setDockInput(e.target.value)} disabled={!!busy || disabled || loginRequired || quotaBlocked}/>
+      {loginRequired ? <button type="button" className="assistant-dock-login" onClick={() => { navigate("assistant"); setLoginOpen(true); }}>Sign in</button> : <button className="assistant-send" aria-label="Send AI assistant request" disabled={!dockInput.trim() || !!busy || disabled || quotaBlocked}><Send size={20}/></button>}
     </form></div>}
     {active && <section ref={flowRoot} tabIndex={-1} className={`agent-cleanup-page ${focused ? "agent-cleanup-focused" : ""}`} aria-label="Cleanup agent">
       {!focused && <header className="agent-cleanup-heading"><div><h1 id="cleanup-assistant-title">How can I help?</h1><p>Ask a question, investigate your Mac, or find space to free.</p></div><span className="agent-cleanup-mark"><Bot size={32}/></span></header>}
@@ -194,10 +196,10 @@ export function CleanupAssistant({ active, request, requestScope, requestDaily, 
       <AssistantConversation turns={turns} focused={focused}/>
       {!focused && <form className="agent-cleanup-request" onSubmit={e => { e.preventDefault(); void ask(); }}>
         <label htmlFor="agent-cleanup-request">What would you like to know?</label>
-        <textarea id="agent-cleanup-request" value={input} maxLength={2000} rows={3} onChange={e => setInput(e.target.value)} disabled={!!busy || loginRequired} aria-describedby={loginRequired ? "agent-login-required" : undefined} />
+        <textarea id="agent-cleanup-request" value={input} maxLength={2000} rows={3} onChange={e => setInput(e.target.value)} disabled={!!busy || loginRequired || quotaBlocked} aria-describedby={loginRequired ? "agent-login-required" : undefined} />
         <label className="agent-automatic-option"><input type="checkbox" checked={automatic} onChange={event=>setAutomatic(event.target.checked)} disabled={!!busy || loginRequired}/><span>Automatically move verified Ruff lint caches to Trash<small>Only owned, tagged project caches. Other cleanup methods need your approval.</small></span></label>
         <details className="agent-cleanup-settings"><summary>Discovery settings <ChevronDown size={16}/></summary><p>When you request disk investigation, agent exploration, known/app locations, recent files and general inventory run in parallel. Native-verified findings merge into one list. Personal files remain review-only.</p><label className="field-label">Maximum discovery turns<input type="number" min={1} max={32} value={limits.maxTurns} onChange={e=>setLimits({...limits,maxTurns:Number(e.target.value)})}/></label><label className="field-label">Maximum discovery tool calls<input type="number" min={1} max={192} value={limits.maxToolCalls} onChange={e=>setLimits({...limits,maxToolCalls:Number(e.target.value)})}/></label><p>Read-only terminal calls can run for up to two minutes each. The discovery session has a ten-minute reasoning limit. Reaching a limit means partial coverage, not a complete scan.</p></details>
-        <div className="agent-cleanup-request-footer"><span><Check size={17}/>{loginRequired ? "Sign in required to use the agent" : automatic ? "Automatic lint-cache cleanup enabled for disk investigations" : "Nothing changes before your approval"}</span><Button className="big-button" disabled={!!busy || disabled || !input.trim() || !connection?.available || loginRequired}><Sparkles/>{conversing ? "Thinking…" : "Ask agent"}</Button></div>
+        <div className="agent-cleanup-request-footer"><span><Check size={17}/>{loginRequired ? "Sign in required to use the agent" : quotaBlocked ? "Monthly cleanups used — get AI Care" : automatic ? "Automatic lint-cache cleanup enabled for disk investigations" : "Nothing changes before your approval"}</span><Button className="big-button" disabled={!!busy || disabled || quotaBlocked || !input.trim() || !connection?.available || loginRequired}><Sparkles/>{conversing ? "Thinking…" : "Ask agent"}</Button></div>
       </form>}
       {loginRequired && !focused && <section className="agent-auth-panel" aria-label="Agent sign-in"><div><strong>Sign in to your cleanup agent</strong><p id="agent-login-required">Sign in is required before the agent can inspect your Mac or clean approved locations.</p><p>{authBusy ? "Complete sign-in in your browser. You’ll return to the app automatically." : connection?.message || "Checking the remote connection…"}</p></div><AuthProviderButtons disabled={authBusy || !connection?.authConfigured} onSelect={provider => void signIn(provider)} /><button type="button" className="text-button agent-login-open" onClick={() => setLoginOpen(true)}>{authBusy ? "View sign-in progress" : "Open sign-in"}</button></section>}
       {!focused && <details className="agent-cleanup-settings"><summary><span>Cloudflare Workers AI · {connection?.authenticated ? "signed in" : native ? "sign-in required" : "preview"}</span><ChevronDown size={16}/></summary><p>{connection?.message || "Checking your remote agent connection…"}</p><p>The model is configured by the API. Inspection and usage are saved locally in SQLite.</p><label className="field-label">API origin<input aria-label="Agent API origin" value={apiUrl} onChange={event => setApiUrl(event.target.value)} /></label><div className="agent-auth-actions"><Button variant="outline" onClick={async () => { try { await api.agentApiConfigure(apiUrl); await checkConnection(); } catch (error) { setError(String(error)); } }}>Save API origin</Button><Button variant="outline" onClick={() => void checkConnection()}>Check connection</Button>{native && connection?.authenticated && <Button variant="outline" onClick={async () => { try { await api.agentAuthLogout(); await checkConnection(); } catch (error) { setError(String(error)); } }}>Sign out</Button>}</div>{connection?.usage && <p>{connection.usage.requests} inference requests recorded in the local ledger{connection.usage.neuronEstimate != null ? ` · ${Math.round(connection.usage.neuronEstimate)} estimated Neurons` : ""}</p>}</details>}

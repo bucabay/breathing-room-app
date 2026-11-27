@@ -8,14 +8,14 @@ test("AI care checkout accepts only real HTTPS Stripe-hosted links",()=>{
   assert.equal(stripeCheckoutUrl("https://checkout.stripe.com/c/pay/fixture"),"https://checkout.stripe.com/c/pay/fixture");
   for(const url of [null,"","javascript:alert(1)","http://buy.stripe.com/fixture","https://buy.stripe.com.evil.test/fixture","https://user:password@buy.stripe.com/fixture","https://buy.stripe.com:8443/fixture","https://buy.stripe.com/"])assert.equal(stripeCheckoutUrl(url),null);
 });
-test("AI care explains three concrete benefits over manual cleanup without overstating automation",()=>{
+test("AI care explains the monthly allowance and three concrete benefits over manual cleanup without overstating automation",()=>{
   const app=readFileSync(new URL("../src/App.tsx",import.meta.url),"utf8");
   const modal=app.slice(app.indexOf('<Dialog open={aiOpen}'),app.indexOf('<Dialog open={confirmation'));
   assert.match(modal,/<DialogTitle>Automatic daily cleanup<\/DialogTitle>/);
   assert.doesNotMatch(modal,/Automatic daily cleanup, at a time you choose/);
-  for(const benefit of ["No need to remember to run cleanup","Find new cleanup opportunities","See where disk space is going"])assert.ok(modal.includes(benefit));
+  for(const benefit of ["100 cleanups every month","No need to remember to run cleanup","Find new cleanup opportunities","See where disk space is going"])assert.ok(modal.includes(benefit));
   const benefits=modal.slice(modal.indexOf('<ul className="ai-care-benefits">'),modal.indexOf('</ul>'));
-  assert.equal((benefits.match(/<li>/g)||[]).length,3);
+  assert.equal((benefits.match(/<li>/g)||[]).length,4);
   for(const constraint of ["already approved","New locations wait for your approval","while Breathing Room is open","may run later"])assert.ok(modal.includes(constraint));
   assert.doesNotMatch(modal,/Care with a little context|usual scan misses|runs even when|guaranteed/);
 });
